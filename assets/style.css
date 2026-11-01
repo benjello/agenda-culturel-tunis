@@ -51,7 +51,7 @@ table.sources small { color: var(--muted); }
 .programme-image { display: block; width: 100%; max-width: 640px; height: auto; margin: 8px 0; border-radius: 8px; }
 .programme-texte { white-space: normal; font-size: .9rem; }
 .programme details { margin: 8px 0; color: var(--muted); }
-.resume-films { display: block; width: 100%; text-align: left; font: inherit; cursor: pointer; background: var(--card); border: 1px solid var(--line); border-left: 4px solid #c0392b; border-radius: 10px; padding: 12px 14px; margin: 8px 0 16px; color: var(--fg); }
+.resume-films { display: block; text-decoration: none; width: 100%; text-align: left; font: inherit; cursor: pointer; background: var(--card); border: 1px solid var(--line); border-left: 4px solid #c0392b; border-radius: 10px; padding: 12px 14px; margin: 8px 0 16px; color: var(--fg); }
 .event.film .event-date { display: none; }
 .days span { display: inline-block; margin: 2px 4px 2px 0; padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; }
 .perime { background: #fff4d6; color: #6b4b00; padding: 6px 10px; border-radius: 6px; font-size: .9rem; }
