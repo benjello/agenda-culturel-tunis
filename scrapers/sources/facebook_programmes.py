@@ -128,7 +128,11 @@ def lire_publications(source: dict) -> list[Publication]:
         for n, (uri, texte_fb) in enumerate(images_de(item)[:4]):
             nom = hashlib.sha1(f"{lien}#{n}".encode()).hexdigest()[:12]
             gardees.add(f"{nom}.jpg")
-            chemin = enregistrer_image(uri, dossier, nom)
+            try:
+                chemin = enregistrer_image(uri, dossier, nom)
+            except Exception as exc:  # noqa: BLE001 — une image injoignable ne bloque pas la source
+                print(f"  image illisible ({exc.__class__.__name__}) : {lien}")
+                continue
             chemins.append(chemin)
             if texte_fb:
                 ocr_fb.append(texte_fb)

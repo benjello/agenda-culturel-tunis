@@ -86,3 +86,13 @@ table.sources small { color: var(--muted); }
 .month[hidden] { display: none; }
 .we-evt:has(.discret) { order: 1; }
 .film-salles .heures { margin-left: 8px; font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600; font-size: .9rem; }
+/* Page Festivals */
+.festival { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; }
+.festival h3 { margin: 6px 0 2px; }
+.festival .info { font-size: .85rem; color: var(--muted); margin: 4px 0; }
+.festival-tete { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.badge.statut { background: var(--line); color: var(--fg); }
+.badge.statut.en-cours { background: #d8efe0; color: #1d6b3a; }
+.badge.programme { background: #fdecc8; color: #7a5200; }
+.festival-evts summary { cursor: pointer; font-size: .9rem; }
+.festival-evts ul { margin: 6px 0 0; padding-left: 18px; font-size: .9rem; }

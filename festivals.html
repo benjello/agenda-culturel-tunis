@@ -1,0 +1,77 @@
+---
+layout: default
+title: Festivals
+permalink: /festivals/
+description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la Médina, Carthage…), avec les dates confirmées et l'état du programme.
+---
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+<section class="intro">
+  <h1>Festivals</h1>
+  <p>Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram.</p>
+</section>
+
+<div id="festivals">
+{%- for f in site.data.festivals %}
+  {%- assign cat = site.data.categories[f.genre] | default: site.data.categories.autre -%}
+  <article class="festival" data-debut="{{ f.debut | date: '%Y-%m-%d' }}" data-fin="{{ f.fin | default: f.debut | date: '%Y-%m-%d' }}">
+    <div class="festival-tete">
+      <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
+      <span class="badge statut"></span>
+      {%- if f.programme %}<span class="badge programme">Programme publié</span>{% endif -%}
+    </div>
+    <h3>{{ f.nom }}</h3>
+    <p class="meta">
+      {%- if f.debut %}{% if f.date_estimee %}Vers le {% endif %}{% include date-fr.html date=f.debut %}{% if f.fin %} → {% include date-fr.html date=f.fin %}{% endif %}{% else %}{{ f.periode }}{% endif %}
+      {%- if f.edition %} · {{ f.edition }}{% endif %}
+    </p>
+    <p class="info">
+      {%- if f.debut and f.date_estimee %}Date estimée (Ramadan), à confirmer.
+      {%- elsif f.debut %}Dates confirmées{% if f.source_dates %} (<a href="{{ f.source_dates }}" rel="noopener">source</a>){% endif %}.
+      {%- else %}Dates pas encore annoncées.{% endif %}
+      {% unless f.programme %}Programme pas encore publié (vérifié le 1er novembre).{% endunless %}
+    </p>
+    <p class="actions">
+      {%- if f.facebook %}<a href="{{ f.facebook }}" rel="noopener">Facebook</a>{% endif -%}
+      {%- if f.instagram %}<a href="{{ f.instagram }}" rel="noopener">Instagram</a>{% endif -%}
+      {%- if f.site %}<a href="{{ f.site }}" rel="noopener">Site officiel</a>{% endif -%}
+    </p>
+    {%- assign mots = f.mots | split: "|" -%}
+    {%- capture liste -%}
+      {%- for e in events -%}
+        {%- assign fin = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
+        {%- if fin >= today -%}
+          {%- for m in mots -%}{%- if e.title contains m %}<li><a href="{{ e.link | default: e.url | relative_url }}" rel="noopener">{{ e.title }}</a> · {% include date-fr.html date=e.date %} · {{ e.venue }}</li>{% break %}{% endif -%}{%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+    {%- if liste != "" %}
+    <details class="festival-evts"><summary>Dans l'agenda</summary><ul>{{ liste }}</ul></details>
+    {%- endif %}
+  </article>
+{%- endfor %}
+</div>
+<p class="updated">Un festival manque, ou son programme est sorti ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Dites-le-nous</a>.</p>
+
+<script>
+(function () {
+  function iso(d) { return d.toISOString().slice(0, 10); }
+  var auj = iso(new Date());
+  var liste = document.getElementById('festivals');
+  var cartes = Array.prototype.slice.call(liste.querySelectorAll('.festival'));
+  cartes.forEach(function (c) {
+    var d = c.dataset.debut, f = c.dataset.fin, s = c.querySelector('.statut'), rang;
+    if (!d) { s.textContent = 'Dates à venir'; rang = 2; }
+    else if (f < auj) { s.textContent = 'Terminé'; rang = 3; }
+    else if (d <= auj) { s.textContent = 'En cours'; s.classList.add('en-cours'); rang = 0; }
+    else {
+      var n = Math.round((new Date(d + 'T12:00:00') - new Date(auj + 'T12:00:00')) / 864e5);
+      s.textContent = n <= 1 ? 'Demain' : 'Dans ' + n + ' jours'; rang = 1;
+    }
+    c.dataset.rang = rang;
+  });
+  cartes.sort(function (a, b) {
+    return (a.dataset.rang - b.dataset.rang) || (a.dataset.debut || '9').localeCompare(b.dataset.debut || '9');
+  }).forEach(function (c) { liste.appendChild(c); });
+})();
+</script>

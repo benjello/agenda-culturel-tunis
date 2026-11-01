@@ -1,0 +1,145 @@
+# Calendrier des festivals. Une entrée par festival, pour l'édition à venir (ou la dernière).
+# programme : true dès que le programme de l'édition est publié (sinon on affiche « programme pas encore publié »).
+# mots : mots du titre qui rattachent un événement de l'agenda au festival.
+# Vérifié le 1er novembre 2026 (voir bilan-sources/festivals.md).
+
+- id: jtc
+  nom: Journées Théâtrales de Carthage (JTC)
+  genre: theatre
+  edition: "27e édition"
+  debut: 2026-11-21
+  fin: 2026-11-28
+  periode: Novembre
+  programme: false
+  site: https://jtcarthage.tn/
+  facebook: https://www.facebook.com/JTCTunisie/
+  instagram: https://www.instagram.com/jtc_tunisie/
+  source_dates: https://www.webdo.tn/fr/actualite/culture/le-ministere-de-la-culture-devoile-les-dates-des-grands-rendez-vous-culturels-de-carthage-en-2026/397823/
+  mots: "Journées Théâtrales de Carthage|JTC"
+
+- id: jcc
+  nom: Journées Cinématographiques de Carthage (JCC)
+  genre: cinema
+  edition: "37e édition"
+  debut: 2026-12-12
+  fin: 2026-12-19
+  periode: Décembre
+  programme: false
+  site: https://www.jcc.tn/
+  facebook: https://www.facebook.com/JCC.TN
+  instagram: https://www.instagram.com/jcctunisieofficial/
+  source_dates: https://www.lapresse.tn/2026/10/14/jcc-2026-decouvrez-laffiche-de-la-37e-edition/
+  mots: "Journées Cinématographiques de Carthage|JCC"
+
+- id: fabrika
+  nom: Fabrika Festival
+  genre: musique
+  edition: "14e édition, Monastir"
+  debut: 2026-11-05
+  fin: 2026-11-09
+  periode: Novembre
+  programme: false
+  instagram: https://www.instagram.com/fabrika_festival/
+  source_dates: https://www.instagram.com/fabrika_festival/
+  mots: "Fabrika"
+
+- id: jaou
+  nom: Jaou Tunis (Fondation Kamel Lazaar)
+  genre: expo
+  edition: "2026"
+  periode: Automne
+  programme: false
+  site: https://kamellazaarfoundation.org
+  instagram: https://www.instagram.com/jaoutunis/
+  mots: "Jaou"
+
+- id: medina
+  nom: Festival de la Médina
+  genre: musique
+  edition: "43e édition (Ramadan)"
+  debut: 2027-02-10
+  periode: Ramadan (vers le 10 février en 2027)
+  programme: false
+  date_estimee: true
+  facebook: https://www.facebook.com/FestivalMedina/
+  mots: "Festival de la Médina"
+
+- id: jamc
+  nom: Journées des Arts de la Marionnette de Carthage (JAMC)
+  genre: spectacle
+  edition: "8e édition, Cité de la Culture"
+  debut: 2027-03-20
+  fin: 2027-03-26
+  periode: Mars
+  programme: false
+  facebook: https://www.facebook.com/JAMCTunisia/
+  source_dates: https://fr.allafrica.com/stories/202607300457.html
+  mots: "Marionnette|JAMC"
+
+- id: foire-livre
+  nom: Foire internationale du livre de Tunis
+  genre: litterature
+  edition: "41e édition, Le Kram"
+  periode: Avril
+  programme: false
+  mots: "Foire internationale du livre|Foire du livre"
+
+- id: jazz-carthage
+  nom: Jazz à Carthage
+  genre: musique
+  periode: Avril (parfois octobre)
+  programme: false
+  facebook: https://www.facebook.com/jazzacarthage/
+  instagram: https://www.instagram.com/jazz_a_carthage/
+  mots: "Jazz à Carthage"
+
+- id: carthage-dance
+  nom: Carthage Dance (Journées chorégraphiques)
+  genre: danse
+  periode: Juin
+  programme: false
+  facebook: https://www.facebook.com/carthage.dance.day
+  mots: "Carthage Dance"
+
+- id: carthage
+  nom: Festival International de Carthage
+  genre: musique
+  edition: "61e édition"
+  periode: Mi-juillet à mi-août
+  programme: false
+  site: https://festivaldecarthage.tn/
+  facebook: https://www.facebook.com/Festivaldecarthageofficiel/
+  instagram: https://www.instagram.com/carthage.festival/
+  mots: "Festival de Carthage|Festival International de Carthage"
+
+- id: hammamet
+  nom: Festival International de Hammamet
+  genre: musique
+  edition: "61e édition"
+  periode: Mi-juillet à mi-août
+  programme: false
+  site: https://festivaldehammamet.com/
+  instagram: https://www.instagram.com/festivaldehammamet/
+  mots: "Festival de Hammamet|Festival International de Hammamet"
+
+- id: jmc
+  nom: Journées Musicales de Carthage (JMC)
+  genre: musique
+  edition: "12e édition"
+  periode: Octobre
+  programme: false
+  site: https://jmc.tn/
+  facebook: https://www.facebook.com/jmctunisia/
+  instagram: https://www.instagram.com/jmctunisia/
+  mots: "Journées Musicales de Carthage|JMC"
+
+- id: dream-city
+  nom: Dream City (L'Art Rue)
+  genre: spectacle
+  edition: "Biennale, prochaine édition en 2027"
+  periode: Octobre, années impaires
+  programme: false
+  site: https://lartrue.org/fr/agenda
+  facebook: https://www.facebook.com/FestivalDreamCity/
+  instagram: https://www.instagram.com/lartruetunisie/
+  mots: "Dream City"
