@@ -151,6 +151,11 @@ def _titre_affiche(texte: str) -> str:
     return ""
 
 
+# Publications qui ne sont pas des événements : recrutement, horaires, cours à l'année…
+_PAS_EVENEMENT = re.compile(r"recrut|candidature|offre d.emploi|ouvre exceptionnel|horaires d.ouverture|"
+                            r"formation professionnelle|inscriptions? (?:ouvertes|en cours)|fermeture", re.I)
+
+
 def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Une publication = une affiche = un événement (clubs, bars, concerts), à la date lue
     dans la légende ou sur l'image. Plusieurs dates sur une affiche : un événement par date."""
@@ -159,6 +164,8 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
     for p in publications:
         texte, ocr = normaliser(p.get("texte", "")), p.get("ocr") or ""
         tout = f"{texte}\n{ocr}"
+        if _PAS_EVENEMENT.search(texte[:300]):
+            continue
         ref = dt.date.fromisoformat(p["date"]) if p.get("date") else aujourd_hui
         jours = {d.date() for d in toutes_dates(tout)}
         jours |= {dt.date.fromisoformat(j) for j in jours_sans_annee(tout, ref)}

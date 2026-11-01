@@ -323,7 +323,7 @@
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     compte: "downtown_vibes_tunis"
@@ -337,7 +337,7 @@
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     compte: "hamdiryder"
@@ -351,7 +351,7 @@
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     compte: "blcv.tunis"
@@ -365,7 +365,7 @@
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     compte: "syndicateoflove.tn"
@@ -421,7 +421,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "eddiscorecordstore"
@@ -437,7 +437,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: musique
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "Club.Tahar.Haddad"
@@ -469,7 +469,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "liberthelafayette"
@@ -485,7 +485,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "centraltunis"
@@ -501,7 +501,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "CentreCulturel421"
@@ -517,7 +517,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: expo
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "maisonimagetn"
@@ -533,7 +533,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: expo
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "atelier.l.empreinte"
@@ -549,7 +549,7 @@
   type: lieu
   scraper: facebook_programmes
   categorie: expo
-  actif: true
+  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
   tous_les_jours: 3
   options:
     page: "REGARDSCROISESTN"

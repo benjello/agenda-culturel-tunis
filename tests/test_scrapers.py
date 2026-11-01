@@ -452,7 +452,9 @@ class Instagram(unittest.TestCase):
         pubs = [{"lien": "https://instagram.com/p/1", "date": auj.isoformat(), "images": ["assets/x.jpg"],
                  "texte": f"🔥 JAOU NIGHTS 🔥\nSamedi {j.day:02d}/{j.month:02d} dès 23h\n📍 B7L9, La Marsa\n#tunis #gammarth", "ocr": ""},
                 {"lien": "https://instagram.com/p/2", "date": auj.isoformat(), "images": [],
-                 "texte": "Merci pour hier soir ! #throwback", "ocr": ""}]
+                 "texte": "Merci pour hier soir ! #throwback", "ocr": ""},
+                {"lien": "https://instagram.com/p/3", "date": auj.isoformat(), "images": [],
+                 "texte": f"LE HABIBI RECRUTE ! Entretiens le {j.day:02d}/{j.month:02d}", "ocr": ""}]
         evts = lecteurs.une_affiche_par_evenement(pubs, [], "Habibi Downtown")
         self.assertEqual(len(evts), 1)
         self.assertEqual(evts[0].titre, "JAOU NIGHTS")
