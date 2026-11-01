@@ -88,6 +88,11 @@ class Teskerti(unittest.TestCase):
         self.assertEqual((e.lieu, e.adresse), ("Théâtre Le 4ème Art", "7 Av. de Paris"))
         self.assertEqual((f.lieu, f.adresse), ("Carthage Thalasso Resort", "Gammarth"))
 
+    def test_lieu_dans_un_header(self):
+        with faux_reseau({"/evenement/fuite": "teskerti-header.html"}):
+            e = teskerti.lire_fiche("https://teskerti.tn/evenement/fuite", "theatre")
+        self.assertEqual(e.lieu, "Théâtre Le 4ème Art")
+
 
 class JsonLd(unittest.TestCase):
     def test_evenement_schema_org(self):

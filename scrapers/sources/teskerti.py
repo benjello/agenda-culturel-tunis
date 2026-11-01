@@ -56,8 +56,10 @@ def _separer(ligne: str) -> tuple[str, str]:
 
 
 def lieu_de_la_fiche(soup, titre: str = "") -> tuple[str, str]:
-    corps = soup.find("main") or soup.body or soup
-    for el in corps.find_all(["header", "nav", "footer", "script", "style"]):
+    # On garde toute la page : sur teskerti.tn, le bloc titre + lieu peut être dans un <header>.
+    # Les liens de menu (« Espace pro »…) sont écartés par FAUX_LIEUX.
+    corps = soup.body or soup
+    for el in corps.find_all(["script", "style", "noscript"]):
         el.decompose()
     lignes = [propre(x) for x in corps.get_text("\n").split("\n") if propre(x)]
     # Un élément dont la classe désigne un lieu (le plus fiable quand il existe)
