@@ -1623,3 +1623,18 @@
     lieu: "L'Art Rue, Dar Bach Hamba, Médina de Tunis"
     resultats: 8
   note: Association d'art contemporain de la médina (Dream City, résidences, ateliers). Proposé par Mahdi.
+
+- id: ig-echos-electrik
+  nom: Échos Électrik (Instagram)
+  url: https://www.instagram.com/echos.electrik/
+  type: lieu
+  genre: collectif
+  scraper: instagram
+  categorie: musique
+  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "echos.electrik"
+    lieu: "Tunis, voir l'annonce"
+    resultats: 8
+  note: Association des cultures électroniques (E-Fest, E-Fest Camp à Ksar El Ferch, Tataouine). Proposé par Mahdi.
