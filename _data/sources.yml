@@ -779,6 +779,18 @@
   actif: false  # le flux ne renvoie aucun article lisible (protection anti-robots ?), à revoir
   note: "Publie aussi « Agenda culturel : où sortir… »."
 
+- id: tn-agenda-du-jour
+  nom: Tunisie Numérique (agenda du jour)
+  url: https://www.tunisienumerique.com
+  type: agenda
+  genre: presse
+  scraper: agenda_du_jour
+  categorie: autre
+  actif: true
+  note: "Article quotidien « les principaux rendez-vous en Tunisie » : festivals et spectacles de tout le pays, régions comprises."
+  options:
+    flux: https://www.tunisienumerique.com/tunisie-actualite/agenda-culturel/feed/
+
 - id: presse-kapitalis
   nom: Kapitalis (culture)
   url: https://kapitalis.com/tunisie/category/culture/feed/

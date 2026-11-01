@@ -10,13 +10,14 @@ import unicodedata
 # Le premier motif qui correspond gagne. Écrits sans accents (le texte est normalisé).
 _VILLES = [
     ("sousse", r"sousse|port el kantaoui|hammam sousse|msaken|akouda"),
-    ("sfax", r"sfax|sakiet ezzit|kerkennah"),
-    ("monastir", r"monastir|mahdia|ksar hellal|moknine|skanes"),
+    ("sfax", r"sfax|sakiet ezzit|kerkennah|mahres|agareb"),
+    ("monastir", r"monastir|mahdia|ksar hellal|moknine|skanes|el jem|ksour essef|chebba"),
     ("nabeul", r"nabeul|hammamet|kelibia|korba|menzel temime|yasmine|cap bon|grombalia|dar chaabane"),
     ("bizerte", r"bizerte|menzel bourguiba|ras jebel"),
     ("kairouan", r"kairouan|raqqada"),
-    ("sud", r"djerba|houmt souk|midoun|zarzis|gabes|medenine|tataouine|tozeur|nefta|douz|kebili|matmata|gafsa"),
-    ("autres", r"\b(?:beja|jendouba|tabarka|le kef|kef|siliana|zaghouan|kasserine|sidi bouzid|dougga|ain draham)\b"),
+    ("sud", r"djerba|houmt souk|midoun|zarzis|gabes|medenine|tataouine|tozeur|nefta|douz|kebili|matmata|gafsa|"
+            r"ben guerdane|chenini|tamerza|chebika|mides|el hamma|mareth|ghomrassen|metlaoui|redeyef|ksar ghilane|guellala|erriadh"),
+    ("autres", r"\b(?:beja|jendouba|tabarka|le kef|kef|siliana|zaghouan|kasserine|sidi bouzid|dougga|ain draham|sbeitla|testour|thala|makthar|haidra|teboursouk|bulla regia|el kef)\b"),
 ]
 
 

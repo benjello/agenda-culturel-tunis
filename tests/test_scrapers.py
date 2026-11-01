@@ -384,6 +384,21 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
 
 
+class AgendaDuJour(unittest.TestCase):
+    def test_blocs_heure_ville(self):
+        from scrapers.sources.agenda_du_jour import evenements
+        contenu = ("<h3>16h00 — Ben Guerdane</h3><p><strong>37e Festival international d’équitation</strong></p>"
+                   "<p>📍 Hippodrome Marsa El Ksiba</p><ul><li>Course nationale</li></ul>"
+                   "<h3>19h00 — Carthage</h3><p><strong>Musée national de Carthage</strong></p>"
+                   "<ul><li>Spectacle « 100 violons » de <strong>Zied Zouari</strong></li></ul>")
+        evts = evenements({"titre": "Agenda du samedi 25 juillet 2026 : les principaux rendez-vous", "lien": "x"}, contenu)
+        self.assertEqual([(e.debut.hour, e.titre, e.lieu) for e in evts], [
+            (16, "37e Festival international d’équitation", "Hippodrome Marsa El Ksiba, Ben Guerdane"),
+            (19, "Spectacle « 100 violons » de Zied Zouari", "Musée national de Carthage")])
+        from scrapers.villes import ville
+        self.assertEqual(ville(evts[0].lieu), "sud")
+
+
 class Bilan(unittest.TestCase):
     def test_compte_par_ville_et_source(self):
         import datetime as dt
