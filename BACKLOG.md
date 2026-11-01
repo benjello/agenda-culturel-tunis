@@ -30,7 +30,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 | Institut français | `liste_fiches` | ❌ en panne | liste chargée en JavaScript : chercher l'API cachée |
 | Pathé Tunis City, Azur City | `pathe` | ❌ bloqué | pathe.tn refuse GitHub (403) : lancer depuis un cron perso |
 | Agora, Alhambra Zéphyr, Colisée, CinéMadart | `facebook` | ❌ rien | Apify : « page d'événements invalide », ces pages ne publient pas d'événements Facebook |
-| Amilcar, Cinévog (groupes) | `facebook` | ⚠️ 0 événement | Apify renvoie 3 éléments, tous écartés : à diagnostiquer |
+| Amilcar, Cinévog (groupes) | `facebook` | ⚠️ 0 événement | Apify lit le groupe, mais seulement 3 événements passés : rien d'annoncé à venir |
 | tunis.events, monticket, b7l9, IIC, Cervantes, Cinémathèque, Ciné 360 | — | à étudier | `actif: false` dans le registre |
 
 ## Fait
@@ -51,7 +51,6 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - [ ] Pathé : lancer le scraper depuis un cron sur une machine perso (ligne dans le README).
 - [ ] Facebook : les cinémas publient leur programme en **affiches**, pas en événements.
       Piste : lire les publications et extraire les séances de l'image (IA). Mis de côté pour l'instant.
-- [ ] Groupes Amilcar et Cinévog : comprendre pourquoi les 3 éléments sont écartés.
 - [ ] Institut français : trouver l'API qui charge la liste en JavaScript.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
