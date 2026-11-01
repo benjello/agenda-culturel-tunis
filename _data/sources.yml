@@ -150,6 +150,8 @@
   scraper: tunis_events_cinema
   categorie: cinema
   actif: true
+  options:
+    explorer: true
   note: Films et jours de séance de plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé).
 
 - id: monticket

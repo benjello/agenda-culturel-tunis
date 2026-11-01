@@ -40,7 +40,32 @@ def recuperer(source: dict) -> list[Evenement]:
             "titre": titre, "lien": o.get("url") or source["url"], "lieu": lieu,
             "adresse": adresse, "image": _image(o.get("image")), "jours": set()})
         f["jours"].add(debut.date().isoformat())  # un objet par jour : on garde le jour
+    if source.get("options", {}).get("explorer"):
+        _explorer(source)
     if not films:
         raise RuntimeError("aucun film en schema.org sur la page (site modifié ?)")
     return [film(f["titre"], f["lien"], f["lieu"], f["jours"], f["adresse"], image=f["image"])
             for f in films.values()]
+
+
+def _explorer(source: dict) -> None:
+    """Journal pour régler la lecture des horaires (temporaire)."""
+    import re
+    objets = json_ld_evenements(page(source["url"]))
+    print("  startDate :", sorted({str(o.get("startDate")) for o in objets})[:15])
+    url = next((o.get("url") for o in objets if o.get("url")), None)
+    print("  fiche :", url)
+    if not url:
+        return
+    s = page(url)
+    for a in s.find_all("a", href=True):
+        if re.search(r"\b\d{1,2}:\d{2}\b", a.get_text()):
+            print("   lien", a.get_text(" ", strip=True)[:40], "->", a["href"][:160])
+    for el in s.find_all(string=re.compile(r"^\s*\d{1,2}:\d{2}\s*$"))[:10]:
+        print("   texte", el.strip(), "| parent", el.parent.name, el.parent.get("class"))
+    for b in s.find_all(["button", "a"], string=re.compile(r"Demain|Aujourd")):
+        print("   jour", b.name, b.get("href"), b.attrs)
+    for sc in s.find_all("script"):
+        txt = sc.string or ""
+        if "startDate" in txt or "showtime" in txt.lower() or "seance" in txt.lower():
+            print("   script", txt[:1500])
