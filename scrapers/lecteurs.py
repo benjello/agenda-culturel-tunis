@@ -173,12 +173,15 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
         heures = {(int(h), int(mn or 0)) for h, mn in _RE_HEURE.findall(tout)}
         h, mn = heures.pop() if len(heures) == 1 else (0, 0)
         titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
+        # Artistes et collectifs jouent dans plusieurs lieux : « 📍 B7L9, La Marsa » dans la légende.
+        m = re.search(r"📍\s*([^\n#@]{3,60})", texte)
+        ici = propre(m.group(1)).rstrip(" .,") if m else lieu
         for j in jours:
             if (j, titre) in vus:
                 continue
             vus.add((j, titre))
             res.append(Evenement(titre=titre, debut=dt.datetime(j.year, j.month, j.day, h, mn),
-                                 lien=p["lien"], lieu=lieu, image=(p.get("images") or [""])[0]))
+                                 lien=p["lien"], lieu=ici, image=(p.get("images") or [""])[0]))
     return res
 
 

@@ -316,3 +316,277 @@
     lieu: Rock'n'Rolla, La Goulette
   note: Pub avec programmation musicale. Trouvé par la recherche Instagram (dernière publication le 31/10/2026).
 
+# Artistes, collectifs et petits lieux (bilan artistes.md) : une affiche datée = un événement.
+- id: ig-downtown-vibes
+  nom: Downtown Vibes (Instagram)
+  url: https://www.instagram.com/downtown_vibes_tunis/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "downtown_vibes_tunis"
+    lieu: "Downtown Vibes"
+    resultats: 8
+  note: "Collectif house/disco depuis 2013 (Secret Vibes, Wax Day)."
+
+- id: ig-hamdi-ryder
+  nom: Hamdi RydEr (Instagram)
+  url: https://www.instagram.com/hamdiryder/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "hamdiryder"
+    lieu: "Hamdi RydEr"
+    resultats: 8
+  note: "DJ, cofondateur de Downtown Vibes."
+
+- id: ig-balaclava
+  nom: Balaclava (Instagram)
+  url: https://www.instagram.com/blcv.tunis/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "blcv.tunis"
+    lieu: "Balaclava"
+    resultats: 8
+  note: "Collectif électro / rap, billetterie « lien en bio »."
+
+- id: ig-syndicate-of-love
+  nom: Syndicate of Love (Instagram)
+  url: https://www.instagram.com/syndicateoflove.tn/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "syndicateoflove.tn"
+    lieu: "Syndicate of Love"
+    resultats: 8
+  note: "Soirées house/disco."
+
+- id: ig-kadhem
+  nom: Kadhem (Instagram)
+  url: https://www.instagram.com/kadhemusic/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "kadhemusic"
+    lieu: "Kadhem"
+    resultats: 8
+  note: "DJ / producteur."
+
+- id: ig-jaou-tunis
+  nom: Jaou Tunis (Instagram)
+  url: https://www.instagram.com/jaoutunis/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "jaoutunis"
+    lieu: "Jaou Tunis"
+    resultats: 8
+  note: "Festival et soirées Jaou Nights (Fondation Kamel Lazaar)."
+
+- id: ig-b7l9
+  nom: B7L9 Art Station (Instagram)
+  url: https://www.instagram.com/b7l9_tunis/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "b7l9_tunis"
+    lieu: "B7L9 Art Station"
+    resultats: 8
+  note: "Centre d'art à Bhar Lazreg : concerts, performances, projections."
+
+- id: fb-eddisco
+  nom: Eddisco
+  url: https://www.facebook.com/eddiscorecordstore
+  type: lieu
+  scraper: facebook_programmes
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "eddiscorecordstore"
+    lieu: "Eddisco"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Disquaire et label, soirées sur liste d'invités."
+
+- id: fb-club-tahar-haddad
+  nom: Club culturel Tahar Haddad
+  url: https://www.facebook.com/Club.Tahar.Haddad
+  type: lieu
+  scraper: facebook_programmes
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "Club.Tahar.Haddad"
+    lieu: "Club culturel Tahar Haddad"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Médina : concerts, festival du oud, rencontres."
+
+- id: fb-artisto
+  nom: Espace L'Artisto
+  url: https://www.facebook.com/espace.artisto
+  type: lieu
+  scraper: facebook_programmes
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "espace.artisto"
+    lieu: "Espace L'Artisto"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Espace théâtre privé (Ghazi Zaghbani)."
+
+- id: fb-liberthe
+  nom: Liber'thé
+  url: https://www.facebook.com/liberthelafayette
+  type: lieu
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "liberthelafayette"
+    lieu: "Liber'thé"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Café culturel à Lafayette."
+
+- id: fb-central-tunis
+  nom: Central Tunis
+  url: https://www.facebook.com/centraltunis
+  type: lieu
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "centraltunis"
+    lieu: "Central Tunis"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Lieu culturel."
+
+- id: fb-centre-421
+  nom: Centre culturel 421
+  url: https://www.facebook.com/CentreCulturel421
+  type: lieu
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "CentreCulturel421"
+    lieu: "Centre culturel 421"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Centre culturel à Cebalat."
+
+- id: fb-maison-image
+  nom: Maison de l'image
+  url: https://www.facebook.com/maisonimagetn
+  type: lieu
+  scraper: facebook_programmes
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "maisonimagetn"
+    lieu: "Maison de l'image"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Photo, image : expos, ateliers."
+
+- id: fb-empreinte
+  nom: Atelier L'Empreinte
+  url: https://www.facebook.com/atelier.l.empreinte
+  type: lieu
+  scraper: facebook_programmes
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "atelier.l.empreinte"
+    lieu: "Atelier L'Empreinte"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Ateliers et expos, Manar 2."
+
+- id: fb-regards-croises
+  nom: Regards Croisés
+  url: https://www.facebook.com/REGARDSCROISESTN
+  type: lieu
+  scraper: facebook_programmes
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "REGARDSCROISESTN"
+    lieu: "Regards Croisés"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Galerie, Lac 2."
+
+- id: fb-cav-rades
+  nom: Centre des Arts Vivants de Radès
+  url: https://www.facebook.com/cav.rades
+  type: lieu
+  scraper: facebook_programmes
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "cav.rades"
+    lieu: "Centre des Arts Vivants de Radès"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Danse, théâtre, arts vivants."
+
+- id: fb-ift-facebook
+  nom: Institut français de Tunisie (Facebook)
+  url: https://www.facebook.com/IFTunisie
+  type: lieu
+  scraper: facebook_programmes
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "IFTunisie"
+    lieu: "Institut français de Tunisie (Facebook)"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "L'agenda du site est en JavaScript : on lit les affiches Facebook."

@@ -450,7 +450,7 @@ class Instagram(unittest.TestCase):
         auj = dt.date.today()
         j = auj + dt.timedelta(days=5)
         pubs = [{"lien": "https://instagram.com/p/1", "date": auj.isoformat(), "images": ["assets/x.jpg"],
-                 "texte": f"🔥 JAOU NIGHTS 🔥\nSamedi {j.day:02d}/{j.month:02d} dès 23h\n#tunis #gammarth", "ocr": ""},
+                 "texte": f"🔥 JAOU NIGHTS 🔥\nSamedi {j.day:02d}/{j.month:02d} dès 23h\n📍 B7L9, La Marsa\n#tunis #gammarth", "ocr": ""},
                 {"lien": "https://instagram.com/p/2", "date": auj.isoformat(), "images": [],
                  "texte": "Merci pour hier soir ! #throwback", "ocr": ""}]
         evts = lecteurs.une_affiche_par_evenement(pubs, [], "Habibi Downtown")
@@ -458,6 +458,7 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].titre, "JAOU NIGHTS")
         self.assertEqual(evts[0].debut, dt.datetime(j.year, j.month, j.day, 23, 0))
         self.assertEqual(evts[0].image, "assets/x.jpg")
+        self.assertEqual(evts[0].lieu, "B7L9, La Marsa")
 
     def test_lecture_apify(self):
         from scrapers.sources import instagram
