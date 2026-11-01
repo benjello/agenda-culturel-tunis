@@ -1486,3 +1486,49 @@
     lecteur: une_affiche_par_evenement
     max: 4
     resultats: 6
+
+# Régions (recherche Instagram du 1er nov. 2026 : comptes actifs à Sfax, Sousse, Tozeur)
+- id: ig-chantarts-sfax
+  nom: ChantArts, Sfax (Instagram)
+  url: https://www.instagram.com/chantarts.culture/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "chantarts.culture"
+    lieu: "ChantArts, Sfax"
+    resultats: 8
+  note: "Espace de musique, d'arts et de culture à Sfax."
+
+- id: ig-sousse-culturelle
+  nom: Sousse Culturelle (Instagram)
+  url: https://www.instagram.com/sousseculturelle/
+  type: agenda
+  genre: agenda
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "sousseculturelle"
+    lieu: "Sousse, voir l'annonce"
+    resultats: 8
+  note: "Plateforme qui relaie l'actualité culturelle de Sousse."
+
+- id: ig-festival-oasis-tozeur
+  nom: Festival international des oasis de Tozeur (Instagram)
+  url: https://www.instagram.com/festivaldesoasistozeur/
+  type: lieu
+  genre: festival
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "festivaldesoasistozeur"
+    lieu: "Tozeur, voir l'annonce"
+    resultats: 8
+  note: "Festival chaque fin d'année, à Tozeur."
