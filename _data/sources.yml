@@ -320,28 +320,28 @@
 # Artistes, collectifs et petits lieux (bilan artistes.md) : une affiche datée = un événement.
 - id: ig-downtown-vibes
   nom: Downtown Vibes (Instagram)
-  url: https://www.instagram.com/downtown_vibes_tunis/
+  url: https://www.instagram.com/downtown.vibes.world/
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: true
   tous_les_jours: 3
   options:
-    compte: "downtown_vibes_tunis"
+    compte: "downtown.vibes.world"
     lieu: "Downtown Vibes"
     resultats: 8
   note: "Collectif house/disco depuis 2013 (Secret Vibes, Wax Day)."
 
 - id: ig-hamdi-ryder
   nom: Hamdi RydEr (Instagram)
-  url: https://www.instagram.com/hamdiryder/
+  url: https://www.instagram.com/thehamditheryder/
   type: lieu
   scraper: instagram
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: true
   tous_les_jours: 3
   options:
-    compte: "hamdiryder"
+    compte: "thehamditheryder"
     lieu: "Hamdi RydEr"
     resultats: 8
   note: "DJ, cofondateur de Downtown Vibes."
@@ -621,3 +621,71 @@
     max: 6
     resultats: 8
   note: "Identifiant de page trouvé par recherche, non vérifié."
+
+- id: ig-eddisco
+  nom: Eddisco Records (Instagram)
+  url: https://www.instagram.com/eddisco_records/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "eddisco_records"
+    lieu: "Eddisco Records, Tunis"
+    resultats: 8
+  note: "Label et disquaire du centre-ville (Downtown Vibes) : écoutes, DJ sets."
+
+- id: ig-theatre-national
+  nom: Théâtre national tunisien (Instagram)
+  url: https://www.instagram.com/theatre.national.tunisien/
+  type: lieu
+  scraper: instagram
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "theatre.national.tunisien"
+    lieu: "Théâtre national tunisien, Halfaouine"
+    resultats: 8
+  note: "Salle El Hamra, Le 4ème Art, Halfaouine."
+
+- id: ig-fabrika
+  nom: Fabrika festival (Instagram)
+  url: https://www.instagram.com/fabrika_festival/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "fabrika_festival"
+    lieu: "One Resort, Monastir"
+    resultats: 8
+  note: "Festival électro, 5 au 9 novembre 2026 à Monastir."
+
+- id: ig-cinemadart
+  nom: CinéMadart (Instagram)
+  url: https://www.instagram.com/cinemadart/
+  type: lieu
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "cinemadart"
+    lieu: "CinéMadart, Carthage Dermech"
+    resultats: 8
+  note: "Débats, spectacles et ateliers en plus des films (les séances viennent de tunis.events)."
+
+- id: kapitalis-cite-sciences
+  nom: Cité des sciences (via Kapitalis)
+  url: https://kapitalis.com/tunisie/tag/cite-des-sciences/feed/
+  type: agenda
+  scraper: rss
+  categorie: conference
+  actif: true
+  options:
+    lieu: "Cité des sciences de Tunis"
+    garder: 'soirée|atelier|journée|conférence|exposition|planétarium|observation|ouvert au public|festival'
+  note: "Le site de la Cité des sciences est illisible ; Kapitalis reprend ses communiqués."
