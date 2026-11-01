@@ -1,49 +1,7 @@
-# Liste à sonder une fois (bilan « ambassades, étudiants, associations »).
-# facebook : pages dont on veut la date de la dernière publication
-# instagram : comptes connus (profil + dernières publications)
-# chercher_instagram : noms à chercher sur Instagram pour trouver les comptes
-# sites : pages web que nos outils de recherche ne peuvent pas lire (robots)
-# 2e passage : pages non trouvées au 1er, comptes trouvés par la recherche.
-facebook:
-  - Club.Tahar.Haddad
-  - CentreDesMusiquesArabesEtMediterraneennes
-  - EnnejmaEzzahra
-  - LaRachidiaTunis
-  - TheatreOperaTunis
-  - CiteDeLaCultureTunis
-  - InstitutoCervantesTunez
-  - EmbajadaEspanaTunez
-  - JapanEmbassyinTunisia
-  - KoreanEmbassyTunisia
-  - FTCATunisie
-  - FIFAK.Kelibia
-  - paparouni
-  - Massart.Tunis
-  - MinistereCultureTunisie
-instagram:
-  - festivaldelamedinatunis
-  - institutocervantestunez
-  - theatre.national.tunisien
-  - ennejmaezzahra
-  - paparouni
-chercher_instagram:
-  - rachidia tunis
-  - opera tunis
-  - theatre opera tunis
-  - cite de la culture
-  - tahar haddad
-  - dar lasram
-  - japan embassy tunisia
-  - embassy korea tunisia
-  - ftcc
-  - ftca
-  - cine club tunis
-  - massart
-  - isbat
-  - isamm
-  - esac tunis
-  - spazio italia
-  - ibn rachiq
-  - houmetna fannena
-  - mouldeya stambali
-  - ministere affaires culturelles
+# Liste à sonder (bilans de sources). Format :
+# facebook : pages (facebook.com/<nom>) ; instagram : comptes ;
+# chercher_instagram : noms à chercher ; sites : pages web.
+# Crédit Apify épuisé jusqu'au 1er décembre 2026 : ne pas remettre de rubrique
+# facebook / instagram / chercher_instagram avant. La rubrique sites n'utilise pas Apify.
+sites:
+  - https://iictunisi.esteri.it/it/feed/
