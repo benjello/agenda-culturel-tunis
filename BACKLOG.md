@@ -7,6 +7,9 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
+0. **Chercher aussi la page Facebook** (et Instagram) du lieu : à Tunis, c'est souvent là que
+   l'information à jour se trouve. Une page Facebook se branche avec `scraper: facebook_programmes`
+   (dernières publications avec image + OCR), et un lecteur si le programme a un format récurrent.
 1. **Ajouter la source** dans [`_data/sources.yml`](_data/sources.yml) : `id`, `nom`, `url`, `type`,
    `scraper`, `categorie`, `actif: true`. Un scraper générique suffit souvent (voir le README).
 2. **La lancer seule** : GitHub → Actions → Scrapers → Run workflow, et mettre son `id` dans
