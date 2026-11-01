@@ -21,7 +21,8 @@
   type: cinema
   scraper: pathe
   categorie: cinema
-  actif: true
+  actif: false
+  note: pathe.tn bloque GitHub ; Pathé est lu via tunis.events (cinéma).
   options:
     cinema: cinema-pathe-tunis-city
 
@@ -31,7 +32,8 @@
   type: cinema
   scraper: pathe
   categorie: cinema
-  actif: true
+  actif: false
+  note: pathe.tn bloque GitHub ; Pathé est lu via tunis.events (cinéma).
   options:
     cinema: cinema-pathe-azur-city
 
@@ -107,8 +109,8 @@
   type: agenda
   scraper: tunis_events_cinema
   categorie: cinema
-  actif: false
-  note: Séances de plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé). En cours d'étude.
+  actif: true
+  note: Films et jours de séance de plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé).
 
 - id: monticket
   nom: MonTicket.tn

@@ -7,8 +7,12 @@ avec « scraper: jsonld », sans écrire de code.
 from __future__ import annotations
 
 import datetime as dt
+from zoneinfo import ZoneInfo
 
 from ..commun import Evenement, json_ld_evenements, page, propre
+
+
+TUNIS = ZoneInfo("Africa/Tunis")
 
 
 def _date(v):
@@ -16,7 +20,8 @@ def _date(v):
         return None
     try:
         d = dt.datetime.fromisoformat(v.replace("Z", "+00:00"))
-        return d.replace(tzinfo=None)
+        # Heure avec fuseau (souvent UTC) : on la ramène à l'heure de Tunis.
+        return d.astimezone(TUNIS).replace(tzinfo=None) if d.tzinfo else d
     except ValueError:
         return None
 

@@ -38,6 +38,8 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
     vus = set()
     for e in a_venir:
         nom = f"{e.debut:%Y-%m-%d}-{slug(e.titre)[:60]}"
+        if nom in vus:  # même titre le même jour, dans un autre lieu
+            nom += "-" + slug(e.lieu)[:30]
         if nom in vus:
             continue
         vus.add(nom)
