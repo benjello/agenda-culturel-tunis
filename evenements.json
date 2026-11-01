@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: /evenements.json
+---
+{%- comment -%}
+  Données ouvertes : tous les événements à venir, en JSON.
+  Licence : CC BY 4.0 (voir la page À propos).
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign events = site.events | sort: "date" -%}
+{
+  "titre": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "site": {{ site.url | append: site.baseurl | append: "/" | jsonify }},
+  "licence": "CC BY 4.0",
+  "genere_le": {{ site.time | date_to_xmlschema | jsonify }},
+  "evenements": [
+  {%- assign first = true -%}
+  {%- for e in events -%}
+    {%- assign last_day = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
+    {%- if last_day >= today -%}
+    {%- unless first %},{% endunless %}{% assign first = false %}
+    {
+      "titre": {{ e.title | jsonify }},
+      "debut": {{ e.date | date: "%Y-%m-%dT%H:%M:00+01:00" | jsonify }},
+      "fin": {% if e.end_date %}{{ e.end_date | date: "%Y-%m-%dT%H:%M:00+01:00" | jsonify }}{% else %}null{% endif %},
+      "lieu": {{ e.venue | jsonify }},
+      "adresse": {{ e.address | jsonify }},
+      "categorie": {{ e.category | default: "autre" | jsonify }},
+      "prix": {{ e.price | jsonify }},
+      "lien": {{ e.link | default: e.url | jsonify }},
+      "source": {{ e.source_name | default: "saisie manuelle" | jsonify }}
+    }
+    {%- endif -%}
+  {%- endfor %}
+  ]
+}

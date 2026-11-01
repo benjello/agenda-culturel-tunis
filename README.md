@@ -70,9 +70,28 @@ Exemple de ligne cron (tous les jours à 6h) :
 Certains sites (pathe.tn par exemple) refusent les requêtes venant des serveurs de GitHub.
 Ces sources marchent mieux depuis un cron sur une machine ordinaire.
 
+### Ajouter une source sans écrire de code
+
+Plusieurs scrapers sont génériques : une ligne dans `_data/sources.yml` suffit.
+
+| Scraper | Pour une source qui… | Options |
+|---|---|---|
+| `rss` | publie un flux RSS/Atom d'événements (dates dans le titre ou le texte) | `lieu`, `nettoyer_titre` |
+| `ical` | publie un calendrier `.ics` (agenda Google public, etc.) | `lieu` |
+| `jsonld` | décrit ses événements en schema.org dans ses pages | aucune |
+| `liste_fiches` | a une page de programme avec un lien vers une fiche par événement | `motif` (morceau d'adresse des fiches), `lieu` |
+
+Les sources repérées mais pas encore branchées sont dans le registre avec `actif: false`
+(affichées « à étudier » sur la page Sources).
+
 ### Tests
 
 `python3 -m unittest discover tests` vérifie les scrapers sur des pages d'exemple (`tests/fixtures/`).
+
+## Données ouvertes
+
+Le site publie `agenda.ics` (abonnement calendrier) et `evenements.json` (événements à venir),
+générés à chaque construction. Licence des données : CC BY 4.0 (voir la page À propos).
 
 ## Organisation du dépôt
 
@@ -103,7 +122,7 @@ Puis ouvrez http://localhost:4000/agenda-culturel-tunis/
 ## Prochaines étapes
 
 - Formulaire de contribution (issue GitHub préremplie, ou Google Form) pour signaler un événement.
-- Autres sources : Goethe-Institut (flux RSS), Institut français…
+- Brancher les sources « à étudier » du registre.
 - Contrôle de santé : alerte automatique quand une source meurt.
 - Formulaire « Proposer une source ».
 - Pages Facebook : saisie via le formulaire en attendant mieux.

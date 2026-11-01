@@ -14,7 +14,7 @@ url: "https://benjello.github.io"
 collections:
   events:
     output: true
-    permalink: /evenements/:year/:month/:title/
+    permalink: /evenements/:path/
 
 defaults:
   - scope:

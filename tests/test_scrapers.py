@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest import mock
 
 from scrapers import commun, ecriture
-from scrapers.sources import billetterie_sktech, jsonld, pathe, teskerti
+from scrapers.sources import billetterie_sktech, ical, jsonld, liste_fiches, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
@@ -82,6 +82,36 @@ class JsonLd(unittest.TestCase):
         self.assertEqual(evs[0].titre, "Concert de oud")
         self.assertEqual(evs[0].lieu, "Dar Ben Abdallah")
         self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 12, 3, 20, 0))
+
+
+class Rss(unittest.TestCase):
+    def test_goethe(self):
+        evs = rss.depuis_flux(fixture("goethe.rss"), {"id": "goethe", "nom": "Goethe-Institut Tunis", "url": "u",
+                                                      "options": {"nettoyer_titre": r"\d{2}\.\d{2}\.\d{4},\s*"}})
+        self.assertEqual(len(evs), 2)  # l'actualité sans date est ignorée
+        self.assertEqual(evs[0].titre, "Lecture musicale : Rainer Maria Rilke, entre arabe et allemand")
+        self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 9, 26, 19, 0))
+        self.assertEqual(evs[1].debut, dt.datetime(FUTUR, 9, 27))
+        self.assertEqual(evs[0].lien, "https://www.goethe.de/ins/tn/fr/ver.cfm?event_id=27355849")
+
+
+class Ical(unittest.TestCase):
+    def test_ics(self):
+        evs = ical.depuis_ics(fixture("agenda.ics"), {"id": "x", "nom": "X", "url": "u"})
+        self.assertEqual([(e.titre, e.debut, e.lieu) for e in evs],
+                         [("Soirée slam, poésie", dt.datetime(FUTUR, 12, 5, 19, 0), "Café culturel")])
+
+
+class ListeFiches(unittest.TestCase):
+    def test_dates_en_chiffres(self):
+        src = {"id": "ift", "nom": "Institut français de Tunisie", "url": "https://www.institutfrancais-tunisie.com/list-agenda",
+               "options": {"motif": "details-agenda", "lieu": "Institut français de Tunis"}}
+        with faux_reseau({"/list-agenda": "ift-liste.html", "eventId=6509": "ift-fiche.html"}), mock.patch("time.sleep"):
+            evs = liste_fiches.recuperer(src)
+        self.assertEqual(len(evs), 1)  # deux liens vers la même fiche
+        self.assertEqual(evs[0].titre, "What else ?")
+        self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 11, 4, 18, 0))
+        self.assertEqual(evs[0].lieu, "Institut français de Tunis")
 
 
 class Pathe(unittest.TestCase):
