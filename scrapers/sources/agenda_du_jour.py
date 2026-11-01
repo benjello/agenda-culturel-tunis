@@ -41,6 +41,17 @@ RECHERCHES = "agenda national|principaux rendez-vous|événements nationaux atte
 TITRES = r"agenda|rendez-vous|[ée]v[ée]nements nationaux|programm[ée]s ce soir"
 
 
+# L'agenda du jour mêle culture, économie et politique : on ne garde que les blocs culturels.
+CULTURE = re.compile(r"festival|concert|spectacle|exposition|vernissage|projection|th[ée][âa]tre|pi[èe]ce|danse|"
+                     r"cin[ée]ma|\bfilms?\b|musique|musical|r[ée]cital|soir[ée]e|chant|po[ée]sie|lecture|livre|"
+                     r"mus[ée]e|patrimoine|\bart\b|\barts\b|artiste|culturel|culture|carnaval|op[ée]ra|orchestre|"
+                     r"humour|stand.?up|one.?man|conte|marionnette|photo|galerie|biennale|"
+                     r"مهرجان|عرض|حفل|معرض|مسرح|سينما|موسيق|ثقاف|فن", re.I)
+PAS_CULTURE = re.compile(r"parlement|\bARP\b|assembl[ée]e|budget|ministre|minist[èe]re|conseil|commission|"
+                         r"pl[ée]ni[èe]re|bourse|\bBCT\b|entreprise|investissement|agricult|exportation|"
+                         r"syndicat|\bUGTT\b|tribunal|proc[èe]s|[ée]lection", re.I)
+
+
 def _lignes(contenu: str) -> list[str]:
     soupe = BeautifulSoup(contenu, "html.parser")
     for br in soupe.find_all("br"):
@@ -87,6 +98,9 @@ def evenements(article: dict, contenu: str) -> list[Evenement]:
     res = []
     for b in blocs(contenu):
         nom, prog = b["nom"], b["programme"]
+        tout = " ".join([nom, b["lieu"]] + prog)
+        if not CULTURE.search(tout) or (PAS_CULTURE.search(tout) and not re.search(r"festival|مهرجان", tout, re.I)):
+            continue
         lieu = b["lieu"] or (nom if _LIEU.match(nom) else "")
         festival = "" if lieu == nom else nom
         titre = festival or (prog[0] if prog else lieu)

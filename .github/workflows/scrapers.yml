@@ -3,6 +3,7 @@ name: Scrapers
 on:
   schedule:
     - cron: "0 5 * * *"   # tous les jours à 6h, heure de Tunis
+    - cron: "30 10 * * *" # 11h30 : l'agenda du jour de Tunisie Numérique, paru dans la matinée
   workflow_dispatch:       # bouton « Run workflow » pour lancer à la main
     inputs:
       sources:
@@ -39,7 +40,7 @@ jobs:
         run: python3 -m scrapers $SOURCES ${{ inputs.debug && '--debug' || '' }}
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}   # pages Facebook ; facultatif
-          SOURCES: ${{ inputs.sources }}
+          SOURCES: ${{ github.event.schedule == '30 10 * * *' && 'tn-agenda-du-jour' || inputs.sources }}
         continue-on-error: true   # on enregistre quand même ce qui a marché et l'état des sources
       - name: Fiches lieux, organisateurs, artistes et carte
         run: |
