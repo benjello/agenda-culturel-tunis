@@ -1,0 +1,65 @@
+# Musées de Tunisie, pour la page /musees/.
+#   nom    nom usuel
+#   ville  région du site (_data/villes.yml) : tunis, sousse, sfax, monastir, nabeul, bizerte, kairouan, sud, autres
+#   lieu   ville ou quartier
+#   genre  archeologie | arts-traditions | art | histoire | sciences
+#   mots   (facultatif) mots qui, dans le lieu d'un événement, désignent ce musée
+# Liste faite à la main (novembre 2026) : horaires et tarifs à vérifier auprès de chaque musée.
+# Un musée manque ? Ajoutez-le ici ou proposez-le sur la page « Proposer ».
+
+# Grand Tunis
+- { nom: "Musée national du Bardo", ville: tunis, lieu: "Le Bardo", genre: archeologie, mots: ["bardo"] }
+- { nom: "Musée national de Carthage", ville: tunis, lieu: "Carthage, colline de Byrsa", genre: archeologie, mots: ["musée national de carthage", "byrsa"] }
+- { nom: "Musée paléochrétien de Carthage", ville: tunis, lieu: "Carthage", genre: archeologie }
+- { nom: "Musée océanographique de Salammbô", ville: tunis, lieu: "Salammbô", genre: sciences, mots: ["océanographique"] }
+- { nom: "Centre des musiques arabes et méditerranéennes Ennejma Ezzahra", ville: tunis, lieu: "Sidi Bou Saïd", genre: histoire, mots: ["ennejma", "nejma ezzahra"] }
+- { nom: "Musée Dar Ben Abdallah (arts et traditions populaires)", ville: tunis, lieu: "Médina de Tunis", genre: arts-traditions, mots: ["ben abdallah"] }
+- { nom: "Musée de la ville de Tunis, palais Kheireddine", ville: tunis, lieu: "Médina de Tunis", genre: art, mots: ["kheireddine", "kheiriddine"] }
+- { nom: "MACAM, Musée national d'art moderne et contemporain", ville: tunis, lieu: "Cité de la culture, Tunis", genre: art, mots: ["macam", "art moderne et contemporain"] }
+- { nom: "Musée de la monnaie (Banque centrale)", ville: tunis, lieu: "Tunis, avenue Mohamed V", genre: histoire, mots: ["musée de la monnaie"] }
+- { nom: "Musée de la poste", ville: tunis, lieu: "Tunis", genre: histoire }
+- { nom: "Musée militaire national", ville: tunis, lieu: "La Manouba", genre: histoire, mots: ["musée militaire"] }
+- { nom: "Musée du mouvement national", ville: tunis, lieu: "Tunis, Kasbah", genre: histoire }
+- { nom: "Musée Safia Farhat", ville: tunis, lieu: "Radès", genre: art, mots: ["safia farhat"] }
+- { nom: "Site et musée d'Utique", ville: bizerte, lieu: "Utique", genre: archeologie, mots: ["utique"] }
+- { nom: "Musée de Thuburbo Majus (site)", ville: autres, lieu: "El Fahs, Zaghouan", genre: archeologie, mots: ["thuburbo"] }
+
+# Cap Bon, Bizerte
+- { nom: "Musée archéologique de Nabeul", ville: nabeul, lieu: "Nabeul", genre: archeologie }
+- { nom: "Site et musée de Kerkouane", ville: nabeul, lieu: "Kerkouane, El Haouaria", genre: archeologie, mots: ["kerkouane"] }
+- { nom: "Musée de Dar Sebastian (Centre culturel international)", ville: nabeul, lieu: "Hammamet", genre: art, mots: ["dar sebastian", "centre culturel international de hammamet"] }
+- { nom: "Musée océanographique de Bizerte", ville: bizerte, lieu: "Bizerte, fort d'Espagne", genre: sciences }
+
+# Sahel
+- { nom: "Musée archéologique de Sousse (Kasbah)", ville: sousse, lieu: "Sousse, médina", genre: archeologie, mots: ["musée de sousse", "kasbah de sousse", "musée archéologique de sousse"] }
+- { nom: "Musée Dar Essid", ville: sousse, lieu: "Sousse, médina", genre: arts-traditions, mots: ["dar essid"] }
+- { nom: "Musée du ribat et des arts islamiques de Monastir", ville: monastir, lieu: "Monastir", genre: histoire, mots: ["ribat"] }
+- { nom: "Musée du costume traditionnel de Monastir", ville: monastir, lieu: "Monastir", genre: arts-traditions }
+- { nom: "Musée archéologique de Lamta", ville: monastir, lieu: "Lamta", genre: archeologie }
+- { nom: "Musée archéologique d'El Jem", ville: monastir, lieu: "El Jem", genre: archeologie, mots: ["el jem", "eljem"] }
+- { nom: "Musée de Mahdia", ville: monastir, lieu: "Mahdia", genre: archeologie }
+- { nom: "Musée de Salakta", ville: monastir, lieu: "Salakta, Ksour Essef", genre: archeologie }
+
+# Kairouan, centre et nord-ouest
+- { nom: "Musée national d'art islamique de Raqqada", ville: kairouan, lieu: "Raqqada, Kairouan", genre: art, mots: ["raqqada", "rakkada"] }
+- { nom: "Site et musée de Dougga", ville: autres, lieu: "Dougga, Téboursouk", genre: archeologie, mots: ["dougga", "thugga"] }
+- { nom: "Site et musée de Bulla Regia", ville: autres, lieu: "Jendouba", genre: archeologie, mots: ["bulla regia"] }
+- { nom: "Musée de Chemtou", ville: autres, lieu: "Chemtou, Jendouba", genre: archeologie, mots: ["chemtou"] }
+- { nom: "Musée des arts et traditions populaires du Kef", ville: autres, lieu: "Le Kef", genre: arts-traditions }
+- { nom: "Site et musée de Makthar", ville: autres, lieu: "Makthar, Siliana", genre: archeologie, mots: ["makthar", "mactaris"] }
+- { nom: "Site et musée de Sbeïtla", ville: autres, lieu: "Sbeïtla, Kasserine", genre: archeologie, mots: ["sbeitla", "sufetula"] }
+
+# Sfax
+- { nom: "Musée archéologique de Sfax", ville: sfax, lieu: "Sfax, hôtel de ville", genre: archeologie }
+- { nom: "Musée Dar Jallouli (arts et traditions populaires)", ville: sfax, lieu: "Sfax, médina", genre: arts-traditions, mots: ["jallouli"] }
+- { nom: "Musée de Kerkennah", ville: sfax, lieu: "Kerkennah", genre: arts-traditions }
+
+# Sud
+- { nom: "Musée Dar Cherait", ville: sud, lieu: "Tozeur", genre: arts-traditions, mots: ["dar cherait"] }
+- { nom: "Musée archéologique de Gafsa", ville: sud, lieu: "Gafsa", genre: archeologie }
+- { nom: "Musée des arts et traditions populaires de Gabès", ville: sud, lieu: "Gabès", genre: arts-traditions }
+- { nom: "Musée du Sahara", ville: sud, lieu: "Douz", genre: arts-traditions, mots: ["musée du sahara"] }
+- { nom: "Musée Lalla Hadria", ville: sud, lieu: "Djerba, Midoun", genre: art, mots: ["lalla hadria"] }
+- { nom: "Musée de Guellala (patrimoine de Djerba)", ville: sud, lieu: "Djerba, Guellala", genre: arts-traditions, mots: ["musée de guellala"] }
+- { nom: "Musée des arts et traditions populaires de Houmt Souk", ville: sud, lieu: "Djerba, Houmt Souk", genre: arts-traditions }
+- { nom: "Musée de Zarzis", ville: sud, lieu: "Zarzis", genre: archeologie }

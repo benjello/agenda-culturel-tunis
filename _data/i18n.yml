@@ -10,6 +10,10 @@ nav.apropos: { ar: "من نحن", en: "About" }
 nav.sources: { ar: "المصادر", en: "Sources" }
 nav.carte: { ar: "الخريطة", en: "Map" }
 nav.nouveau: { ar: "جديد", en: "New" }
+nav.musees: { ar: "المتاحف", en: "Museums" }
+musees_titre: { ar: "متاحف تونس", en: "Museums in Tunisia" }
+musees_intro: { ar: "متاحف كامل البلاد حسب الجهة، مع ما تعلن عنه.", en: "Museums across the country, by region, with what they announce." }
+musees_gratuit: { ar: "الدخول مجاني غالبا يوم الأحد الأول من كل شهر: تثبتوا من إعلان المتحف.", en: "Entry is often free on the first Sunday of the month: check the museum's announcement." }
 nav.couverture: { ar: "التغطية", en: "Coverage" }
 intro_titre: { ar: "ماذا نفعل في تونس؟", en: "What's on in Tunis?" }
 intro_texte: { ar: "حفلات، سينما، مسرح، معارض… كل الأنشطة الثقافية في مكان واحد.", en: "Concerts, cinema, theatre, exhibitions… every cultural event in one place." }

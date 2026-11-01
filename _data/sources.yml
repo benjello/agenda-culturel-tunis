@@ -1532,3 +1532,18 @@
     lieu: "Tozeur, voir l'annonce"
     resultats: 8
   note: "Festival chaque fin d'année, à Tozeur."
+
+- id: ig-fics-ksar-ghilane
+  nom: Festival international du cinéma au Sahara, Ksar Ghilane (Instagram)
+  url: https://www.instagram.com/fics.tunisie/
+  type: lieu
+  genre: festival
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "fics.tunisie"
+    lieu: "Ksar Ghilane, voir l'annonce"
+    resultats: 8
+  note: "Trouvé par la recherche Instagram du 1er nov. 2026 (Douz, Sahara)."
