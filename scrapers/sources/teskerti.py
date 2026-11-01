@@ -40,6 +40,15 @@ def liens(soup, motif: str) -> list[tuple[str, str]]:
     return res
 
 
+# Liens de menu qui ressemblent à des noms de lieux : « Espace pro », « Mon espace »…
+FAUX_LIEUX = re.compile(r"^(mon |votre )?espace (pro|client|organisateur|membre)s?$|^mon espace$|teskerti", re.I)
+
+
+def _est_lieu(ligne: str) -> bool:
+    return (3 < len(ligne) < 80 and bool(MOTS_LIEU.search(ligne)) and not FAUX_LIEUX.search(ligne)
+            and not dates_fr(ligne))
+
+
 def lieu_de_la_fiche(soup) -> tuple[str, str]:
     # 1) un élément dont la classe parle de lieu
     for el in soup.find_all(class_=re.compile(r"(lieu|venue|location|salle|place|adresse|address)", re.I)):
@@ -47,10 +56,15 @@ def lieu_de_la_fiche(soup) -> tuple[str, str]:
         if 2 < len(t) < 120:
             lignes = [propre(x) for x in el.get_text("\n").split("\n") if propre(x)]
             return lignes[0], ", ".join(lignes[1:2])
-    # 2) une ligne courte qui ressemble à un nom de lieu
-    for ligne in soup.get_text("\n").split("\n"):
-        ligne = propre(ligne)
-        if 3 < len(ligne) < 80 and MOTS_LIEU.search(ligne) and not dates_fr(ligne):
+    # 2) une ligne qui ressemble à un nom de lieu, de préférence juste après la date
+    corps = soup.find("main") or soup.body or soup
+    for el in corps.find_all(["header", "nav", "footer"]):
+        el.decompose()
+    lignes = [propre(x) for x in corps.get_text("\n").split("\n") if propre(x)]
+    i_date = next((i for i, l in enumerate(lignes) if dates_fr(l)), None)
+    proches = lignes[i_date + 1:i_date + 8] if i_date is not None else []
+    for ligne in proches + lignes:
+        if _est_lieu(ligne):
             return ligne, ""
     return "", ""
 
@@ -64,6 +78,7 @@ def lire_fiche(url: str, categorie: str) -> Evenement | None:
         return e
     titre = meta(soup, "og:title") or propre((soup.find("h1") or soup.find("title") or soup).get_text(" "))
     titre = re.sub(r"\s*[|–-]\s*Teskerti.*$", "", titre, flags=re.I)
+    titre = re.sub(r"\s*[-–]\s*le\s+\d{1,2}/\d{1,2}(/\d{2,4})?\s*$", "", titre, flags=re.I)  # « Fuite - Le 02/11 »
     dates = sorted(set(dates_fr(soup.get_text(" "))))
     if not titre or not dates:
         return None
