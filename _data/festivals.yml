@@ -1,6 +1,7 @@
 # Calendrier des festivals. Une entrée par festival, pour l'édition à venir (ou la dernière).
 # programme : true dès que le programme de l'édition est publié (sinon on affiche « programme pas encore publié »).
 # mots : mots du titre qui rattachent un événement de l'agenda au festival.
+# enfants : true pour un festival jeune public (affiché aussi sur la page Enfants).
 # Vérifié le 1er novembre 2026 (voir bilan-sources/festivals.md).
 
 - id: jtc
@@ -75,6 +76,7 @@
   facebook: https://www.facebook.com/JAMCTunisia/
   source_dates: https://fr.allafrica.com/stories/202607300457.html
   mots: "Marionnette|JAMC"
+  enfants: true
 
 - id: foire-livre
   nom: Foire internationale du livre de Tunis
@@ -143,3 +145,143 @@
   facebook: https://www.facebook.com/FestivalDreamCity/
   instagram: https://www.instagram.com/lartruetunisie/
   mots: "Dream City"
+
+# Festivals des régions (ajoutés le 1er novembre 2026). lieu et ville : pour l'agenda et le choix de ville.
+- id: douz
+  nom: Festival international du Sahara de Douz
+  genre: autre
+  edition: "58e édition"
+  debut: 2026-12-19
+  fin: 2026-12-22
+  periode: Décembre
+  programme: false
+  lieu: Douz
+  ville: sud
+  source_dates: https://www.tunisienumerique.com/tunisie-douz-prepare-la-58e-edition-de-son-festival-international-du-sahara/
+  mots: "Douz|Sahara de Douz"
+
+- id: tozeur-oasis
+  nom: Festival international des oasis de Tozeur
+  genre: autre
+  periode: Fin décembre
+  programme: false
+  lieu: Tozeur
+  ville: sud
+  instagram: https://www.instagram.com/festivaldesoasistozeur/
+  mots: "oasis de Tozeur|Festival des oasis"
+
+- id: fics
+  nom: Festival international du cinéma au Sahara (Ksar Ghilane)
+  genre: cinema
+  periode: Dates à venir
+  programme: false
+  lieu: Ksar Ghilane
+  ville: sud
+  instagram: https://www.instagram.com/fics.tunisie/
+  mots: "cinéma au Sahara|Ksar Ghilane"
+
+- id: ksour-tataouine
+  nom: Festival international des ksour sahariens de Tataouine
+  genre: autre
+  periode: Printemps
+  programme: false
+  lieu: Tataouine
+  ville: sud
+  mots: "ksour sahariens|Tataouine"
+
+- id: gabes-cinema-fen
+  nom: Gabès Cinéma Fen
+  genre: cinema
+  periode: Avril
+  programme: false
+  lieu: Gabès
+  ville: sud
+  mots: "Gabès Cinéma Fen|Gabes Cinema Fen"
+
+- id: medina-sfax
+  nom: Festival de la Médina de Sfax
+  genre: musique
+  periode: Ramadan
+  programme: false
+  lieu: Sfax
+  ville: sfax
+  mots: "Médina de Sfax"
+
+- id: dougga
+  nom: Festival international de Dougga
+  genre: musique
+  periode: Été
+  programme: false
+  lieu: Théâtre antique de Dougga
+  ville: autres
+  mots: "Dougga"
+
+- id: el-jem
+  nom: Festival international de musique symphonique d'El Jem
+  genre: musique
+  periode: Juillet-août
+  programme: false
+  lieu: Amphithéâtre d'El Jem
+  ville: monastir
+  mots: "El Jem|symphonique"
+
+- id: sousse
+  nom: Festival international de Sousse
+  genre: musique
+  periode: Juillet-août
+  programme: false
+  lieu: Sousse
+  ville: sousse
+  mots: "Festival international de Sousse"
+
+- id: sfax
+  nom: Festival international de Sfax
+  genre: musique
+  periode: Juillet-août
+  programme: false
+  lieu: Sfax
+  ville: sfax
+  mots: "Festival international de Sfax"
+
+- id: bizerte
+  nom: Festival international de Bizerte
+  genre: musique
+  periode: Juillet-août
+  programme: false
+  lieu: Bizerte
+  ville: bizerte
+  mots: "Festival international de Bizerte"
+
+- id: djerba-music-land
+  nom: Djerba Music Land
+  genre: musique
+  periode: Août
+  programme: false
+  lieu: Djerba
+  ville: sud
+  mots: "Djerba Music Land"
+
+# Jeune public
+- id: marionnette-bardo
+  nom: Festival Moncef Ben Haj Yahia des arts de la marionnette et du théâtre pour enfants
+  genre: spectacle
+  edition: "Dar El Massrahi, Bardo"
+  periode: Fin décembre (vacances d'hiver)
+  programme: false
+  lieu: Dar El Massrahi, Le Bardo
+  ville: tunis
+  source_dates: https://kapitalis.com/tunisie/2025/12/17/bardo-des-vacances-scolaires-magiques-avec-le-festival-de-la-marionnette/
+  mots: "Ben Haj Yahia|marionnette et du théâtre pour enfants"
+  enfants: true
+
+- id: fifej
+  nom: Festival international du film pour l'enfance et la jeunesse (FIFEJ)
+  genre: cinema
+  edition: "16e édition, Sousse"
+  periode: Avril
+  programme: false
+  lieu: Sousse
+  ville: sousse
+  source_dates: https://kapitalis.com/tunisie/2026/04/07/cinema-ouverture-du-15e-fifej-a-sousse/
+  mots: "FIFEJ|film pour l'enfance"
+  enfants: true

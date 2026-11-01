@@ -167,3 +167,10 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 .signaler a { color: var(--muted); }
 .ramadan-bandeau { display: block; background: #1f3a5f; color: #fff; border-radius: 10px; padding: 10px 14px; margin: 8px 0 12px; text-decoration: none; }
 .doc-api pre { background: var(--card); border: 1px solid var(--line); padding: 10px; border-radius: 8px; overflow-x: auto; font-size: .85rem; }
+
+/* Page Enfants */
+.tag.age { background: #2f7d8c; }
+.enf-we { border: 2px solid #1d6b3a; border-radius: 10px; padding: .6rem 1rem; margin: 1rem 0; }
+.enf-we h2 { margin: .2rem 0 .4rem; font-size: 1.1rem; }
+.enf-we ul, .enf-festivals { margin: 0; padding-inline-start: 1.2rem; }
+.enf-musees { margin-top: .5rem; }

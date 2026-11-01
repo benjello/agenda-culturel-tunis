@@ -22,6 +22,16 @@
       if (el._fr === undefined) el._fr = el.textContent;
       el.textContent = langue === 'fr' ? el._fr : t(el.dataset.t, el._fr);
     });
+    // Textes écrits par les scripts des pages, avec un nombre : data-tn (clé), data-n, data-tn-fr
+    document.querySelectorAll('[data-tn]').forEach(function (el) {
+      el.textContent = t(el.dataset.tn, el.dataset.tnFr || el.textContent).replace('%n', el.dataset.n || '');
+    });
+    // Paragraphes avec liens : la traduction est du HTML (« {base} » = racine du site)
+    document.querySelectorAll('[data-th]').forEach(function (el) {
+      if (el._fr === undefined) el._fr = el.innerHTML;
+      var v = langue === 'fr' ? null : t(el.dataset.th, null);
+      el.innerHTML = v ? v.replace(/\{base\}/g, window.BASE || '/') : el._fr;
+    });
     document.querySelectorAll('[data-t-title]').forEach(function (el) {
       var v = t(el.dataset.tTitle, el.title); el.title = v; el.setAttribute('aria-label', v);
     });

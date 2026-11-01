@@ -232,12 +232,33 @@ def est_discret(titre: str) -> bool:
 
 _FAMILLE = re.compile(r"jeune public|\benfants?\b|en famille|\bfamilial|\bkids?\b|\bjunior|marionnette|\bcontes?\b|"
                       r"atelier (?:pour )?(?:les )?(?:petits|enfants)|d[èe]s \d{1,2} ans|\bpetits\b|"
-                      r"أطفال|للأطفال|الطفل|عرائس|العائلة", re.I)
+                      r"cin[ée].?go[ûu]ter|heure du conte|atelier cr[ée]atif|[ée]veil musical|\bjeunesse\b|"
+                      r"vacances scolaires|\bclowns?\b|\bfamily\b|children|"
+                      r"أطفال|للأطفال|الطفل|الأطفال|عرائس|العائلة|الصغار", re.I)
+# Dans une notice, « enfants » seul ne suffit pas (« le mariage de leurs enfants ») : il faut une tournure claire.
+_FAMILLE_NOTICE = re.compile(r"jeune public|en famille|pour (?:les )?(?:petits|enfants)|d[èe]s \d{1,2} ans|[àa] partir de \d{1,2} ans|"
+                             r"cin[ée].?go[ûu]ter|heure du conte|ateliers? (?:pour |des )?enfants|spectacle (?:pour )?enfants|marionnette|"
+                             r"\bkids?\b|children|family|للأطفال|مسرح الطفل|عرائس", re.I)
+_AGE_MIN = re.compile(r"(?:d[èe]s|[àa] partir de|from|ages?|من)\s*(\d{1,2})\s*(?:ans|years|yrs|سنوات|سنة)", re.I)
+_AGE_PLAGE = re.compile(r"\b(\d{1,2})\s*(?:-|–|à|a|to|إلى)\s*(\d{1,2})\s*(?:ans|years|سنوات|سنة)", re.I)
+
+
+def age_conseille(*textes: str) -> str | None:
+    """« 4 » (dès 4 ans) ou « 3-6 » (de 3 à 6 ans), lu dans l'annonce."""
+    for t in textes:
+        m = _AGE_PLAGE.search(t or "")
+        if m and int(m.group(1)) < int(m.group(2)) <= 18:
+            return f"{int(m.group(1))}-{int(m.group(2))}"
+        m = _AGE_MIN.search(t or "")
+        if m and 1 <= int(m.group(1)) <= 16:
+            return str(int(m.group(1)))
+    return None
 
 
 def est_famille(*textes: str) -> bool:
     """Spectacle, atelier ou film pour les enfants ou à voir en famille."""
-    return any(_FAMILLE.search(t or "") for t in textes)
+    titre, *notices = textes or [""]
+    return bool(_FAMILLE.search(titre or "")) or any(_FAMILLE_NOTICE.search(t or "") for t in notices)
 
 
 def resume(texte: str, n: int = 500) -> str:

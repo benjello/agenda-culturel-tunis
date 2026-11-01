@@ -15,7 +15,7 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
 {%- assign ms = site.data.musees | where: "ville", v.id -%}
 {%- if ms.size > 0 %}
 <section class="month bloc-ville" data-ville-bloc="{{ v.id }}">
-  <h2>{{ v.nom }}</h2>
+  <h2 data-t="ville.{{ v.id }}">{{ v.nom }}</h2>
   <ul class="liste-fiches liste-musees">
   {%- for m in ms %}
     {%- assign mots = m.mots | default: empty -%}{%- if mots.size == 0 %}{% assign mots = "" | split: "" | push: m.nom %}{% endif -%}
@@ -26,7 +26,7 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
     {%- capture g %}{% for x in genres %}{% assign p = x | split: ":" %}{% if p[0] == m.genre %}{{ p[1] }}{% endif %}{% endfor %}{% endcapture -%}
     <li>
       <a href="https://www.google.com/maps/search/?api=1&query={{ m.nom | append: ', ' | append: m.lieu | append: ', Tunisie' | url_encode }}" rel="noopener">{{ m.nom }}</a>
-      <small>{{ m.lieu }} · {{ g }}</small>
+      <small>{{ m.lieu }} · <span data-t="musee.{{ m.genre }}">{{ g }}</span></small>
       {%- if evts.size > 0 %}<br><small>{% for e in evts limit: 3 %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a> ({{ e.date | date: "%d/%m" }}){% unless forloop.last %} · {% endunless %}{% endfor %}</small>{% endif %}
     </li>
   {%- endfor %}
@@ -34,7 +34,7 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
 </section>
 {%- endif %}
 {%- endfor %}
-<p class="updated">Liste faite à la main : horaires et tarifs à vérifier auprès de chaque musée. Un musée manque ? <a href="{{ '/proposer/' | relative_url }}">Dites-le-nous</a>.</p>
+<p class="updated" data-th="musees_note">Liste faite à la main : horaires et tarifs à vérifier auprès de chaque musée. Un musée manque ? <a href="{{ '/proposer/' | relative_url }}">Dites-le-nous</a>.</p>
 <script>
 (function () {
   function f() {

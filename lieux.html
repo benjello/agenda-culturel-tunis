@@ -13,7 +13,7 @@ description: Les lieux culturels de Tunisie et ce qu'ils programment.
 {%- assign ls = site.lieux | where: "ville", v.id | sort: "title" -%}
 {%- if ls.size > 0 %}
 <section class="month bloc-ville" data-ville-bloc="{{ v.id }}">
-  <h2>{{ v.nom }}</h2>
+  <h2 data-t="ville.{{ v.id }}">{{ v.nom }}</h2>
   <ul class="liste-fiches">
   {%- for l in ls %}{% assign n = site.events | where_exp: "e", "l.noms contains e.venue" | where_exp: "e", "e.doublon != true" | size %}
     <li><a href="{{ l.url | relative_url }}">{{ l.title }}</a> <small>{{ n }}</small></li>

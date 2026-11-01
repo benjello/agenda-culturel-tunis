@@ -12,8 +12,8 @@ description: Que faire à Tunis ce week-end ? Concerts, théâtre, conférences,
 {%- assign events = site.events | where_exp: "e", "e.doublon != true" | where_exp: "e", "e.film != true" | sort: "date" -%}
 {%- assign films_l = site.data.films | default: empty -%}
 <section class="intro">
-  <h1 id="we-titre">Ce week-end</h1>
-  <p>Ce qui se passe à Tunis du vendredi au dimanche. Le détail de chaque événement est sur sa source.</p>
+  <h1 id="we-titre" data-t="nav.weekend">Ce week-end</h1>
+  <p data-t="we_intro">Ce qui se passe à Tunis du vendredi au dimanche. Le détail de chaque événement est sur sa source.</p>
 </section>
 {% include choix-ville.html %}
 
@@ -31,10 +31,10 @@ description: Que faire à Tunis ce week-end ? Concerts, théâtre, conférences,
   {%- endif -%}
 {%- endfor %}
 </div>
-<p id="we-vide" class="empty" hidden>Rien d'annoncé pour ce week-end pour l'instant.</p>
+<p id="we-vide" class="empty" hidden data-t="we_vide">Rien d'annoncé pour ce week-end pour l'instant.</p>
 
 {%- if films_l.size > 0 %}
-<a class="resume-films" href="{{ '/' | relative_url }}#cinema">🎬 <strong>Au cinéma</strong> : {{ films_l.size }} films à l'affiche, choisissez le jour →</a>
+<a class="resume-films" href="{{ '/' | relative_url }}#cinema">🎬 <strong data-t="au_cinema">Au cinéma</strong> : {{ films_l.size }} <span data-t="films_choisir_jour">films à l'affiche, choisissez le jour →</span></a>
 {%- endif %}
 
 <script>

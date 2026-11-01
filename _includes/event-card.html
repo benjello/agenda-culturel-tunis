@@ -14,7 +14,7 @@
     <span class="mon" data-mc="{{ e.date | date: '%-m' }}">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
   </div>
   <div class="event-body">
-    <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ cat_id }}">{{ cat.label }}</span>{% if e.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}
+    <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ cat_id }}">{{ cat.label }}</span>{% if e.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}{% if e.age %} <span class="tag age" data-tn="{% if e.age contains "-" %}age.plage{% else %}age.des{% endif %}" data-n="{{ e.age }}" data-tn-fr="{% if e.age contains "-" %}%n ans{% else %}dès %n ans{% endif %}">{% if e.age contains "-" %}{{ e.age }} ans{% else %}dès {{ e.age }} ans{% endif %}</span>{% endif %}
     {%- assign tr = site.data.traductions.titres[e.title] %}
     <h3><a href="{{ e.url | relative_url }}"{% for l in tr %} data-tr-{{ l[0] }}="{{ l[1] | escape }}"{% endfor %}>{{ e.title }}</a></h3>
     {%- if e.film %}

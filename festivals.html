@@ -7,8 +7,8 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
 {%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
 <section class="intro">
-  <h1>Festivals</h1>
-  <p>Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram. <a href="{{ '/ramadan/' | relative_url }}">🌙 Soirées de Ramadan</a></p>
+  <h1 data-t="nav.festivals">Festivals</h1>
+  <p data-th="fest_intro">Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram. <a href="{{ '/ramadan/' | relative_url }}">🌙 Soirées de Ramadan</a></p>
 </section>
 
 <div id="festivals">
@@ -18,7 +18,7 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
     <div class="festival-tete">
       <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
       <span class="badge statut"></span>
-      {%- if f.programme %}<span class="badge programme">Programme publié</span>{% endif -%}
+      {%- if f.programme %}<span class="badge programme" data-t="fest.programme_publie">Programme publié</span>{% endif -%}
     </div>
     <h3>{{ f.nom }}</h3>
     <p class="meta">
@@ -26,10 +26,10 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
       {%- if f.edition %} · {{ f.edition }}{% endif %}
     </p>
     <p class="info">
-      {%- if f.debut and f.date_estimee %}Date estimée (Ramadan), à confirmer.
-      {%- elsif f.debut %}Dates confirmées{% if f.source_dates %} (<a href="{{ f.source_dates }}" rel="noopener">source</a>){% endif %}.
-      {%- else %}Dates pas encore annoncées.{% endif %}
-      {% unless f.programme %}Programme pas encore publié (vérifié le 1er novembre).{% endunless %}
+      {%- if f.debut and f.date_estimee %}<span data-t="fest.estimee">Date estimée (Ramadan), à confirmer.</span>
+      {%- elsif f.debut %}<span data-t="fest.confirmees">Dates confirmées</span>{% if f.source_dates %} (<a href="{{ f.source_dates }}" rel="noopener">source</a>){% endif %}.
+      {%- else %}<span data-t="fest.pas_annoncees">Dates pas encore annoncées.</span>{% endif %}
+      {% unless f.programme %}<span data-t="fest.pas_programme">Programme pas encore publié (vérifié le 1er novembre).</span>{% endunless %}
     </p>
     <p class="actions">
       {%- if f.facebook %}<a href="{{ f.facebook }}" rel="noopener">Facebook</a>{% endif -%}
@@ -46,12 +46,12 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
       {%- endfor -%}
     {%- endcapture -%}
     {%- if liste != "" %}
-    <details class="festival-evts"><summary>Dans l'agenda</summary><ul>{{ liste }}</ul></details>
+    <details class="festival-evts"><summary data-t="fest.dans_agenda">Dans l'agenda</summary><ul>{{ liste }}</ul></details>
     {%- endif %}
   </article>
 {%- endfor %}
 </div>
-<p class="updated">Un festival manque, ou son programme est sorti ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Dites-le-nous</a>.</p>
+<p class="updated" data-th="fest_note">Un festival manque, ou son programme est sorti ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Dites-le-nous</a>.</p>
 
 <script>
 (function () {
@@ -61,12 +61,15 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
   var cartes = Array.prototype.slice.call(liste.querySelectorAll('.festival'));
   cartes.forEach(function (c) {
     var d = c.dataset.debut, f = c.dataset.fin, s = c.querySelector('.statut'), rang;
-    if (!d) { s.textContent = 'Dates à venir'; rang = 2; }
-    else if (f < auj) { s.textContent = 'Terminé'; rang = 3; }
-    else if (d <= auj) { s.textContent = 'En cours'; s.classList.add('en-cours'); rang = 0; }
+    // texte en français ; site.js le traduit (data-tn)
+    function statut(cle, fr, n) { s.dataset.tn = cle; s.dataset.tnFr = fr; if (n) s.dataset.n = n; s.textContent = fr.replace('%n', n || ''); }
+    if (!d) { statut('fest.dates_a_venir', 'Dates à venir'); rang = 2; }
+    else if (f < auj) { statut('fest.termine', 'Terminé'); rang = 3; }
+    else if (d <= auj) { statut('fest.en_cours', 'En cours'); s.classList.add('en-cours'); rang = 0; }
     else {
       var n = Math.round((new Date(d + 'T12:00:00') - new Date(auj + 'T12:00:00')) / 864e5);
-      s.textContent = n <= 1 ? 'Demain' : 'Dans ' + n + ' jours'; rang = 1;
+      if (n <= 1) statut('demain', 'Demain'); else statut('fest.dans_n', 'Dans %n jours', n);
+      rang = 1;
     }
     c.dataset.rang = rang;
   });
