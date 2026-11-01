@@ -17,8 +17,8 @@
   },
   "cine-amilcar": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
-    "dernier_succes": "2026-11-01T06:54:48",
+    "dernier_passage": "2026-11-01T06:57:23",
+    "dernier_succes": "2026-11-01T06:57:23",
     "erreur": null,
     "nb": 0,
     "ok": true
@@ -41,8 +41,8 @@
   },
   "cine-vog": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
-    "dernier_succes": "2026-11-01T06:54:48",
+    "dernier_passage": "2026-11-01T06:57:23",
+    "dernier_succes": "2026-11-01T06:57:23",
     "erreur": null,
     "nb": 0,
     "ok": true
