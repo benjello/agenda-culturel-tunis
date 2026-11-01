@@ -1,4 +1,12 @@
 {
+  "beit-al-hikma": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T07:37:55",
+    "dernier_succes": "2026-11-01T07:37:55",
+    "erreur": null,
+    "nb": 2,
+    "ok": true
+  },
   "cine-360": {
     "attente": null,
     "dernier_passage": "2026-11-01T07:34:58",
@@ -74,6 +82,11 @@
   "institut-francais": {
     "dernier_passage": "2026-11-01T07:12:29",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
+    "ok": false
+  },
+  "irmc": {
+    "dernier_passage": "2026-11-01T07:37:55",
+    "erreur": "ParseError: junk after document element: line 186, column 0",
     "ok": false
   },
   "opera-tunis": {
