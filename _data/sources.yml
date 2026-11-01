@@ -1302,3 +1302,17 @@
     lieu: "Tunisia Podcasts Festival"
     resultats: 8
   note: "Proposé par Mahdi. Festival du podcast (Podcast Days, 6 et 7 novembre 2026)."
+
+- id: ig-rosalux-afrique-nord
+  nom: Fondation Rosa Luxemburg, Afrique du Nord (Instagram)
+  url: https://www.instagram.com/rosalux_northafrica/
+  type: agenda
+  scraper: instagram
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "rosalux_northafrica"
+    lieu: "Fondation Rosa Luxemburg, Tunis"
+    resultats: 8
+  note: "Proposé par Mahdi. Conférences, projections et rencontres (bureau de Tunis)."
