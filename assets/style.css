@@ -10,7 +10,8 @@ a { color: var(--accent); }
 main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; max-width: 760px; margin: 0 auto; padding: 16px; }
 .brand { font-weight: 700; font-size: 1.15rem; color: var(--fg); text-decoration: none; }
-.site-header nav a { margin-left: 16px; text-decoration: none; }
+.site-header nav { display: flex; gap: 16px; }
+.site-header nav a { text-decoration: none; }
 .intro h1 { margin: 16px 0 4px; font-size: 1.8rem; }
 .intro p { margin: 0 0 16px; color: var(--muted); }
 .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
@@ -34,3 +35,9 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .description { margin-top: 24px; }
 .site-footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 24px 16px; border-top: 1px solid var(--line); }
 [hidden] { display: none !important; }
+.cinema h2 { font-size: 1.1rem; margin: 28px 0 8px; }
+.cinema h2 a { color: var(--fg); }
+.film .poster { flex: 0 0 64px; width: 64px; height: 96px; object-fit: cover; border-radius: 6px; }
+.days { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 0; }
+.days span { font-size: .78rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--muted); }
+.updated { color: var(--muted); font-size: .85rem; margin-top: 24px; }
