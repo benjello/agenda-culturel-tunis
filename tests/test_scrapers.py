@@ -138,3 +138,32 @@ class Ecriture(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Lanceur(unittest.TestCase):
+    def test_vide_ok_et_panne_garde_les_fichiers(self):
+        from scrapers import __main__ as lanceur
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            ancien = d / "auto" / "panne"
+            ancien.mkdir(parents=True)
+            (ancien / "vieux.md").write_text("---\ntitle: x\n---\n")
+            sources = [{"id": "vide", "nom": "Vide", "scraper": "x", "actif": True},
+                       {"id": "panne", "nom": "Panne", "scraper": "x", "actif": True}]
+
+            def lancer(s):
+                if s["id"] == "panne":
+                    raise RuntimeError("site modifié")
+                return []
+            with mock.patch.object(lanceur, "charger_sources", return_value=sources), \
+                 mock.patch.object(lanceur, "lancer", lancer), \
+                 mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
+                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"):
+                code = lanceur.main([])
+            etat = json.loads((d / "etat.json").read_text())
+            self.assertEqual(code, 0)
+            self.assertTrue(etat["vide"]["ok"])
+            self.assertEqual(etat["vide"]["nb"], 0)
+            self.assertFalse(etat["panne"]["ok"])
+            self.assertIn("site modifié", etat["panne"]["erreur"])
+            self.assertTrue((ancien / "vieux.md").exists())

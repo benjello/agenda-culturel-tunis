@@ -88,6 +88,8 @@ def recuperer(source: dict) -> list[Evenement]:
         time.sleep(0.5)
     if not categories:  # si les catégories ne sont pas trouvées, on se contente de l'accueil
         a_lire = {u: source.get("categorie", "autre") for u, _ in liens(accueil, "/evenement/")}
+    if not a_lire:
+        raise RuntimeError("aucun lien /evenement/ trouvé sur teskerti.tn (site modifié ?)")
     evenements = []
     for url, cat in a_lire.items():
         try:

@@ -52,9 +52,10 @@ def main(argv=None) -> int:
         e["dernier_passage"] = maintenant
         try:
             resultat = lancer(s)
-            if not resultat:
-                raise RuntimeError("aucun événement trouvé (page vide ou site modifié ?)")
-            n = (ecrire_films if isinstance(resultat[0], Film) else ecrire_evenements)(s, resultat)
+            # Une liste vide n'est pas une panne : la source peut n'avoir rien à venir.
+            # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
+            est_cinema = s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film))
+            n = (ecrire_films if est_cinema else ecrire_evenements)(s, resultat)
             e.update(ok=True, nb=n, erreur=None, dernier_succes=maintenant)
             print(f"✓ {s['id']} : {n}")
         except Exception as exc:  # noqa: BLE001 — une source en panne ne doit pas arrêter les autres

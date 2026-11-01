@@ -65,4 +65,7 @@ def recuperer(source: dict) -> list[Film]:
             return films
     except Exception:  # noqa: BLE001
         pass
-    return films_depuis_html(page(f"{BASE}/fr/cinemas/{cinema}"))
+    films = films_depuis_html(page(f"{BASE}/fr/cinemas/{cinema}"))
+    if not films:
+        raise RuntimeError("aucun film trouvé, ni par l'API ni sur la page du cinéma")
+    return films
