@@ -76,6 +76,10 @@ Sources
 - [ ] Agendas de presse (Tunisie Numérique, La Presse) comme filet de sécurité pour repérer des lieux non suivis.
 - [ ] Une adresse où les organisateurs envoient leur affiche (e-mail ou formulaire), lue comme les affiches Instagram.
 - [ ] Musées et expos : INP, galerie Selma Feriani (voir `bilan-sources/musees-expos.md`).
+- [ ] Ambassades et centres culturels étrangers (Italie, Espagne, Japon, Corée…) : projections et concerts souvent gratuits.
+- [ ] Clubs étudiants et ciné-clubs universitaires (ENS, ISAM, ISAD, Manouba).
+- [ ] Associations de la médina (L'Art Rue / Dream City) et festivals de quartier.
+- [ ] Calendrier spécial des soirées de Ramadan.
 
 Usage
 - [x] Page « Ce week-end » (`week-end.html`).
@@ -84,6 +88,15 @@ Usage
 - [ ] Carte des lieux (OpenStreetMap).
 - [ ] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour.
+- [ ] Site installable comme une appli (PWA, hors ligne, sans store).
+- [ ] Favoris sans compte, gardés dans le téléphone.
+- [ ] Image prête à partager (WhatsApp, story) pour chaque événement.
+- [ ] Liste « Nouveau cette semaine ».
+
+Ouverture
+- [ ] API publique documentée (JSON des événements) pour médias, applis, chercheurs.
+- [ ] Langue de l'événement (français, arabe, anglais…).
+- [ ] Accessibilité des lieux (fauteuil) : basse priorité, difficile à collecter.
 
 Présentation (demandé le 1er novembre)
 - [ ] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
