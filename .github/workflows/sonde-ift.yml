@@ -1,0 +1,16 @@
+name: Sonde IFT (temporaire)
+on:
+  push:
+    branches: [claude/project-thread-ole3m3]
+    paths: [".github/sonde/**", ".github/workflows/sonde-ift.yml"]
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q playwright requests && python -m playwright install --with-deps chromium > /dev/null
+      - run: python .github/sonde/ift.py
+      - uses: actions/upload-artifact@v4
+        with: { name: ift-rendu, path: ift-rendu.html }
