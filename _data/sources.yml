@@ -822,8 +822,7 @@
     lieu: "Institut français de Tunisie"
     aec:  # agenda en ligne (API publique de la billetterie AEC) : lien vers la fiche de chaque événement
       page: "https://www.institutfrancais-tunisie.com/list-agenda"
-      # clé publique envoyée par le site à chaque visiteur (relue dans la page si elle change)
-      api_key: "NGUyMDUwYjA5OTZjMGU2MjlhYWY4NjljYTE0NWYxNmVhYzMyNGQ2ZDRmYTQ3MWUyOWE4MTliNDUxMTg0"
+      # la clé publique de l'API est relue dans cette page à chaque passage (option api_key en secours)
   note: "Programme mensuel en PDF découpé case par case (titre, jour, genre, salle, heure), rapproché de l'agenda en ligne pour avoir la fiche de chaque événement."
 
 # Festivals : leurs comptes annoncent le programme en premier.
