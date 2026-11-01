@@ -1,0 +1,60 @@
+# Liste à sonder une fois (bilan « ambassades, étudiants, associations »).
+# facebook : pages dont on veut la date de la dernière publication
+# instagram : comptes connus (profil + dernières publications)
+# chercher_instagram : noms à chercher sur Instagram pour trouver les comptes
+# sites : pages web que nos outils de recherche ne peuvent pas lire (robots)
+facebook:
+  - FestivalMedina
+  - IICTunisi-192973730733919
+  - BritishCouncilTunisia
+  - EUTunisie
+  - usembassytunis
+  - LArtRueTunisie
+  - IRMC.Tunis
+  - Club.Tahar.Haddad
+  - operadetunis
+  - citedelaculture.tn
+  - CervantesTunez
+  - JapanEmbassyTunisia
+  - TheatreNationalTunisien
+  - cmam.ennejma.ezzahra
+  - larachidia
+  - FTCC.Tunisie
+instagram:
+  - iictunisi
+  - lartruetunisie
+  - ue_tunisie
+  - usembassytunis
+chercher_instagram:
+  - Festival de la Médina Tunis
+  - La Rachidia
+  - Club Tahar Haddad
+  - Théâtre de l'Opéra de Tunis
+  - Cité de la Culture Tunis
+  - Instituto Cervantes Túnez
+  - Ambassade du Japon en Tunisie
+  - Korean Embassy Tunisia
+  - Théâtre National Tunisien
+  - Ennejma Ezzahra
+  - ciné-club Tunis
+  - FTCC ciné-clubs
+  - FTCA cinéastes amateurs
+  - ISAD Tunis
+  - ESAC Gammarth
+  - ISBAT beaux-arts Tunis
+  - Mass'art Tunis
+  - Paparouni cirque
+  - Biben Lemdina
+  - Spazio Italia Tunisi
+  - Maison de la culture Ibn Rachiq
+  - Délégation affaires culturelles Tunis
+sites:
+  - https://tunez.cervantes.es/fr/default.shtm
+  - https://overseas.mofa.go.kr/tn-fr/index.do
+  - https://www.citedelaculture.tn/
+  - https://www.operadetunis.tn/
+  - https://iictunisi.esteri.it/it/gli_eventi/calendario/
+  - https://iictunisi.esteri.it/it/feed/
+  - https://irmcmaghreb.org/feed/
+  - https://tn.usembassy.gov/feed/
+  - https://lartrue.org/fr/agenda

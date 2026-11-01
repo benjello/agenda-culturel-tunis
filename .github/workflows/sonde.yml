@@ -1,0 +1,31 @@
+name: Sonde réseaux
+
+# Sonde ponctuelle pour les bilans de sources : se lance quand la liste
+# outils/sonde.yml change sur une branche, ou à la main. N'écrit rien dans le site.
+on:
+  push:
+    paths: ["outils/sonde.yml", "outils/sonder_reseaux.py"]
+    branches-ignore: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests PyYAML
+      - run: python3 outils/sonder_reseaux.py outils/sonde.yml
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sonde-rapport
+          path: sonde-rapport.md
+          retention-days: 14
