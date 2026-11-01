@@ -80,6 +80,27 @@ Plusieurs scrapers sont génériques : une ligne dans `_data/sources.yml` suffit
 | `ical` | publie un calendrier `.ics` (agenda Google public, etc.) | `lieu` |
 | `jsonld` | décrit ses événements en schema.org dans ses pages | aucune |
 | `liste_fiches` | a une page de programme avec un lien vers une fiche par événement | `motif` (morceau d'adresse des fiches), `lieu` |
+| `facebook` | annonce ses événements sur une page ou un groupe Facebook (voir ci-dessous) | `page`, `lieu`, `max` |
+
+### Pages Facebook
+
+Beaucoup de lieux de Tunis n'annoncent leur programme que sur Facebook. Facebook bloque les
+robots, et son API ne donne les événements d'une page qu'à ses administrateurs. Le scraper
+`facebook` passe donc par [Apify](https://apify.com), un service qui lit les événements
+publics sans compte Facebook et les renvoie en JSON.
+
+Pour l'activer, une seule fois :
+
+1. Créer un compte gratuit sur apify.com (5 $ de crédit offerts chaque mois).
+2. Copier la clé : **Settings → API & Integrations → Personal API token**.
+3. Sur GitHub : **Settings → Secrets and variables → Actions → New repository secret**,
+   nom `APIFY_TOKEN`, valeur la clé.
+
+Sans clé, les sources Facebook sont « en attente » sur la page Sources et rien d'autre ne change.
+Chaque événement lu coûte environ un centime : `tous_les_jours: 3` dans le registre limite la
+fréquence. Ajouter une page = copier un bloc `scraper: facebook` et changer `page`.
+
+Limite : seuls les **événements** Facebook sont lus, pas les publications (affiches de la semaine).
 
 Les sources repérées mais pas encore branchées sont dans le registre avec `actif: false`
 (affichées « à étudier » sur la page Sources).
@@ -125,4 +146,4 @@ Puis ouvrez http://localhost:4000/agenda-culturel-tunis/
 - Brancher les sources « à étudier » du registre.
 - Contrôle de santé : alerte automatique quand une source meurt.
 - Formulaire « Proposer une source ».
-- Pages Facebook : saisie via le formulaire en attendant mieux.
+- Pages Facebook : lire aussi les publications (affiches) et en extraire les séances.

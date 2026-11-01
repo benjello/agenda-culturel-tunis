@@ -21,6 +21,8 @@ jobs:
       - name: Lancer les scrapers
         id: run
         run: python3 -m scrapers
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}   # pages Facebook ; facultatif
         continue-on-error: true   # on enregistre quand même ce qui a marché et l'état des sources
       - name: Enregistrer s'il y a du nouveau
         run: |

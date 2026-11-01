@@ -25,6 +25,11 @@ _session = requests.Session()
 _session.headers.update(ENTETES)
 
 
+class EnAttente(Exception):
+    """La source n'a pas pu être lue, mais ce n'est pas une panne du site
+    (clé d'accès pas encore configurée…). Les événements déjà récupérés sont gardés."""
+
+
 def telecharger(url: str) -> str:
     r = _session.get(url, timeout=30)
     r.raise_for_status()

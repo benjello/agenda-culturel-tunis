@@ -12,6 +12,7 @@
 #   categorie  catégorie par défaut des événements (voir _data/categories.yml)
 #   actif      false : source repérée mais pas encore branchée (ou en pause)
 #   options    réglages propres au scraper (facultatif)
+#   tous_les_jours  relire la source seulement tous les N jours (facultatif)
 #   note       remarque libre (facultatif)
 
 - id: pathe-tunis-city
@@ -149,3 +150,84 @@
   scraper: aucun
   actif: false
   note: Seulement sur Facebook, pas de récupération automatique possible.
+
+# Salles de cinéma qui n'annoncent leur programme que sur Facebook.
+# Lues via Apify (voir scrapers/sources/facebook.py), tous les 3 jours pour limiter le coût.
+
+- id: cine-agora
+  nom: L'Agora (La Marsa)
+  url: https://www.facebook.com/espacelagora
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: espacelagora
+    lieu: "L'Agora"
+  note: page Facebook (événements publics seulement)
+
+- id: cine-alhambra
+  nom: Alhambra Zéphyr (La Marsa)
+  url: https://www.facebook.com/cine.alhambra.zephyr
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: cine.alhambra.zephyr
+    lieu: "Cinéma Alhambra"
+  note: page Facebook (événements publics seulement)
+
+- id: cine-colisee
+  nom: Le Colisée (Tunis)
+  url: https://www.facebook.com/Cinema.Colisee.Tunis
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: Cinema.Colisee.Tunis
+    lieu: "Cinéma Le Colisée"
+  note: page Facebook (événements publics seulement)
+
+- id: cine-madart
+  nom: CinéMadart (Carthage)
+  url: https://www.facebook.com/CineMadart
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: CineMadart
+    lieu: "CinéMadart"
+  note: page Facebook (événements publics seulement)
+
+- id: cine-amilcar
+  nom: Cinéma Amilcar (El Manar)
+  url: https://www.facebook.com/groups/265611163490450
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: https://www.facebook.com/groups/265611163490450
+    lieu: "Cinéma Amilcar"
+  note: page Facebook (événements publics seulement)
+
+- id: cine-vog
+  nom: Cinévog (Le Kram)
+  url: https://www.facebook.com/groups/485273898178867
+  type: lieu
+  scraper: facebook
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: https://www.facebook.com/groups/485273898178867
+    lieu: "Cinévog"
+  note: page Facebook (événements publics seulement)
