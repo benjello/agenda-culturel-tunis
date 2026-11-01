@@ -390,7 +390,9 @@ class AgendaDuJour(unittest.TestCase):
         contenu = ("<h3>16h00 — Ben Guerdane</h3><p><strong>37e Festival international d’équitation</strong></p>"
                    "<p>📍 Hippodrome Marsa El Ksiba</p><ul><li>Course nationale</li></ul>"
                    "<h3>19h00 — Carthage</h3><p><strong>Musée national de Carthage</strong></p>"
-                   "<ul><li>Spectacle « 100 violons » de <strong>Zied Zouari</strong></li></ul>")
+                   "<ul><li>Spectacle « 100 violons » de <strong>Zied Zouari</strong></li></ul>"
+                   "<h3>10h00 — Bardo</h3><p><strong>Assemblée des représentants du peuple</strong></p>"
+                   "<ul><li>Séance plénière consacrée au budget de la culture</li></ul>")
         evts = evenements({"titre": "Agenda du samedi 25 juillet 2026 : les principaux rendez-vous", "lien": "x"}, contenu)
         self.assertEqual([(e.debut.hour, e.titre, e.lieu) for e in evts], [
             (16, "37e Festival international d’équitation", "Hippodrome Marsa El Ksiba, Ben Guerdane"),
