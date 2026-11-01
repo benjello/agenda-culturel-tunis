@@ -101,6 +101,7 @@
   actif: true
   options:
     lieu: IRMC, Mutuelleville
+    lire_page: true
     garder: 'rencontre|débat|conférence|présentation|symposium|colloque|séminaire|journée d.étude|table ronde'
   note: Flux RSS des événements. Les bourses et stages sont écartés par « garder ».
 

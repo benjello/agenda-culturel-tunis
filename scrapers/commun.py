@@ -194,3 +194,25 @@ def categorie_du_titre(titre: str) -> str:
         if re.search(motif, titre, re.I):
             return cat
     return ""
+
+
+_RE_LIEU = re.compile(r"\bLieu\s*:\s*([^\n]{3,150})", re.I)
+_RE_PLAGE = re.compile(r"\b(\d{1,2})(?:er)?\s*(?:[–-]|au)\s*(\d{1,2})(?:er)?\s+([A-Za-zéèûôÉ.]+)\s+(\d{4})")
+
+
+def details_page(texte: str) -> dict:
+    """Ce que la page d'un événement dit mieux que le flux : « Lieu : … », « Dates : 3–5 décembre 2026 »."""
+    res = {}
+    m = _RE_LIEU.search(texte)
+    if m:
+        lieu = re.split(r"\s*(?:📅|🕒|⏰|Dates?\s*:|Horaires?\s*:|Heure\s*:)", m.group(1))[0]
+        res["lieu"] = propre(lieu).strip(" .,;")
+    m = _RE_PLAGE.search(texte)
+    if m and m.group(3).lower() in MOIS:
+        try:
+            mois, an = MOIS[m.group(3).lower()], int(m.group(4))
+            res["debut"] = dt.datetime(an, mois, int(m.group(1)))
+            res["fin"] = dt.datetime(an, mois, int(m.group(2)))
+        except ValueError:
+            pass
+    return res

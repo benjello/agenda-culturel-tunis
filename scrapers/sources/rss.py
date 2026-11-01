@@ -9,6 +9,8 @@ Options :
   nettoyer_titre: expression régulière à retirer du titre (facultatif)
   garder        : expression régulière : seuls les éléments dont le titre ou le texte la contiennent
                   sont gardés (pour écarter bourses, appels à candidatures…)
+  lire_page     : true pour ouvrir la page de chaque événement et y lire « Lieu : … » et
+                  « Dates : 3–5 décembre 2026 » (l'IRMC organise souvent ailleurs que chez lui)
 """
 from __future__ import annotations
 
@@ -17,7 +19,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from ..commun import Evenement, propre, telecharger, toutes_dates
+from ..commun import Evenement, details_page, propre, telecharger, toutes_dates
 
 ATOM = "{http://www.w3.org/2005/Atom}"
 _HEURE = re.compile(r"\b([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)\b")
@@ -76,9 +78,25 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
             continue
         if opts.get("nettoyer_titre"):
             titre = propre(re.sub(opts["nettoyer_titre"], "", titre))
-        res.append(Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
-                             lien=propre(el["lien"]) or source["url"], lieu=lieu))
+        e = Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
+                      lien=propre(el["lien"]) or source["url"], lieu=lieu)
+        if opts.get("lire_page") and el["lien"]:
+            _completer(e, el["lien"])
+        res.append(e)
     return res
+
+
+def _completer(e: Evenement, lien: str) -> None:
+    try:
+        texte = BeautifulSoup(telecharger(lien), "html.parser").get_text("\n")
+    except Exception as exc:  # noqa: BLE001 — la page manque : on garde ce que dit le flux
+        print(f"  page illisible {lien} ({exc})")
+        return
+    d = details_page(texte)
+    e.lieu = d.get("lieu") or e.lieu
+    if d.get("debut") and (e.fin is None or e.fin.date() == d["fin"].date() or e.debut.date() == d["fin"].date()):
+        heure = dict(hour=e.debut.hour, minute=e.debut.minute)
+        e.debut, e.fin = d["debut"].replace(**heure), d["fin"]
 
 
 def recuperer(source: dict) -> list[Evenement]:

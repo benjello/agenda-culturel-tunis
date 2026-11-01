@@ -92,6 +92,10 @@ Présentation (demandé le 1er novembre)
 - [ ] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
 - [ ] Catégories : affiner au fil des remarques (règles par mots du titre dans `commun.categorie_du_titre`).
 
+Couverture et langues (demandé le 1er novembre)
+- [ ] À terme, **toute la Tunisie** : on garde tous les événements (la Manouba, Carthage…) avec leur lieu réel ; plus tard, un filtre par ville ou gouvernorat. Le filtre « hors Grand Tunis » de tunis.events sera alors retiré.
+- [ ] Site **multilingue** : français, arabe (sens de lecture droite-gauche), peut-être anglais. Textes de l'interface dans `_data/fr.yml` → un fichier par langue.
+
 Fiabilité
 - [ ] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
 - [ ] Bouton « signaler une erreur » sur chaque événement.
