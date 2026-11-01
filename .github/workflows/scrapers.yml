@@ -9,6 +9,10 @@ on:
         description: "Ids des sources à relire, séparés par des espaces (vide = toutes)"
         required: false
         default: ""
+      debug:
+        description: "Garder les pages téléchargées (artefact « debug ») pour mettre au point un scraper"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,11 +31,18 @@ jobs:
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra tesseract-ocr-ara > /dev/null
       - name: Lancer les scrapers
         id: run
-        run: python3 -m scrapers $SOURCES
+        run: python3 -m scrapers $SOURCES ${{ inputs.debug && '--debug' || '' }}
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}   # pages Facebook ; facultatif
           SOURCES: ${{ inputs.sources }}
         continue-on-error: true   # on enregistre quand même ce qui a marché et l'état des sources
+      - name: Garder les pages téléchargées
+        if: inputs.debug
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug
+          path: debug/
+          retention-days: 3
       - name: Enregistrer s'il y a du nouveau
         run: |
           git config user.name "github-actions[bot]"

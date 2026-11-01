@@ -101,6 +101,15 @@
   actif: false
   note: Agrégateur très complet. À décider - le lire, ou s'en servir pour trouver les sites d'origine.
 
+- id: tunis-events-cinema
+  nom: tunis.events (cinéma)
+  url: https://tunis.events/cinema
+  type: agenda
+  scraper: tunis_events_cinema
+  categorie: cinema
+  actif: false
+  note: Séances de plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé). En cours d'étude.
+
 - id: monticket
   nom: MonTicket.tn
   url: https://monticket.tn/
