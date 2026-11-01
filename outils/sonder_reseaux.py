@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import os
 import re
+import unicodedata
 import sys
 import urllib.robotparser
 from urllib.parse import urlparse
@@ -38,25 +39,26 @@ def court(t, n=90) -> str:
     return re.sub(r"\s+", " ", str(t or "")).strip()[:n].replace("|", "/")
 
 
+def _une_page(p: str) -> list[dict]:
+    url = p if p.startswith("http") else f"https://www.facebook.com/{p}"
+    return apify("apify/facebook-posts-scraper", {"startUrls": [{"url": url}], "resultsLimit": 2})
+
+
 def facebook(pages: list[str]) -> None:
+    # Une page par appel : Apify renvoie parfois l'adresse canonique de la page
+    # (identifiant numérique, autre nom), qu'on ne saurait pas relier à la demande.
     dire("## Facebook (2 dernières publications par page)\n")
     dire("| Page | Dernière publication | Texte ou image | Extrait |")
     dire("|---|---|---|---|")
-    urls = [{"url": f"https://www.facebook.com/{p}"} for p in pages]
-    try:
-        items = apify("apify/facebook-posts-scraper", {"startUrls": urls, "resultsLimit": 2})
-    except Exception as e:  # noqa: BLE001
-        dire(f"| (toutes) | erreur : {court(e, 200)} | | |")
-        return
-    par_page: dict[str, list[dict]] = {}
-    for i in items:
-        cle = (i.get("facebookUrl") or i.get("inputUrl") or i.get("pageName") or "?").rstrip("/").split("/")[-1]
-        par_page.setdefault(cle.lower(), []).append(i)
     for p in pages:
-        its = par_page.get(p.lower().rstrip("/"), [])
+        try:
+            its = _une_page(p)
+        except Exception as e:  # noqa: BLE001
+            dire(f"| {p} | erreur | | {court(e, 80)} |")
+            continue
         bons = [i for i in its if not i.get("error")]
         if not bons:
-            err = court(its[0].get("error") if its else "rien renvoyé (page introuvable ou privée ?)", 80)
+            err = court(its[0].get("error") if its else "rien renvoyé (page introuvable, privée ou sans publication ?)", 80)
             dire(f"| {p} | — | — | {err} |")
             continue
         bons.sort(key=lambda i: str(i.get("time") or i.get("timestamp") or ""), reverse=True)
@@ -99,8 +101,11 @@ def chercher(noms: list[str]) -> None:
     dire("| Recherche | Comptes trouvés (abonnés) |")
     dire("|---|---|")
     for n in noms:
+        # la recherche Instagram refuse apostrophes, tirets et accents
+        q = re.sub(r"[^a-z0-9 ]", " ", unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().lower())
+        q = re.sub(r"\s+", " ", q).strip()
         try:
-            items = apify("apify/instagram-search-scraper", {"search": n, "searchType": "user", "searchLimit": 3})
+            items = apify("apify/instagram-search-scraper", {"search": q, "searchType": "user", "searchLimit": 3})
         except Exception as e:  # noqa: BLE001
             dire(f"| {n} | erreur : {court(e, 120)} |")
             continue
