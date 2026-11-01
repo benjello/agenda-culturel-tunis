@@ -12,7 +12,7 @@ from unittest import mock
 
 from scrapers import commun, ecriture
 from scrapers.commun import slug
-from scrapers.sources import billetterie_sktech, ical, jsonld, liste_fiches, pathe, rss, teskerti
+from scrapers.sources import billetterie_sktech, facebook, ical, jsonld, liste_fiches, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
@@ -188,6 +188,64 @@ class Lanceur(unittest.TestCase):
             self.assertFalse(etat["panne"]["ok"])
             self.assertIn("site modifié", etat["panne"]["erreur"])
             self.assertTrue((ancien / "vieux.md").exists())
+
+    def test_attente_et_frequence(self):
+        from scrapers import __main__ as lanceur
+        hier = (dt.datetime.now() - dt.timedelta(days=1)).isoformat(timespec="seconds")
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "etat.json").write_text(json.dumps({"lent": {"ok": True, "nb": 2, "dernier_succes": hier}}))
+            sources = [{"id": "sans-cle", "nom": "A", "scraper": "x"},
+                       {"id": "lent", "nom": "B", "scraper": "x", "tous_les_jours": 3}]
+            appels = []
+
+            def lancer(s):
+                appels.append(s["id"])
+                raise commun.EnAttente("clé absente")
+            with mock.patch.object(lanceur, "charger_sources", return_value=sources), \
+                 mock.patch.object(lanceur, "lancer", lancer), \
+                 mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
+                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"):
+                code = lanceur.main([])
+            etat = json.loads((d / "etat.json").read_text())
+            self.assertEqual(code, 0)
+            self.assertEqual(appels, ["sans-cle"])  # « lent » relu hier : pas relancé
+            self.assertEqual(etat["sans-cle"]["attente"], "clé absente")
+            self.assertEqual(etat["lent"]["nb"], 2)
+
+
+class Facebook(unittest.TestCase):
+    SOURCE = {"id": "cine-madart", "nom": "CinéMadart (Carthage)", "url": "https://www.facebook.com/CineMadart",
+              "scraper": "facebook", "categorie": "cinema", "options": {"page": "CineMadart", "lieu": "CinéMadart"}}
+
+    def test_sans_cle_en_attente(self):
+        with mock.patch.dict("os.environ", {}, clear=True):
+            with self.assertRaises(commun.EnAttente):
+                facebook.recuperer(self.SOURCE)
+
+    def test_conversion(self):
+        items = [  # acteur officiel (heure UTC) et autre acteur (heure locale ISO)
+            {"name": "Ciné-club : Les Silences du palais", "url": "https://www.facebook.com/events/123/?ref=x",
+             "utcStartDate": f"{FUTUR}-11-05T18:30:00.000Z", "location": {"name": "CinéMadart", "streetAddress": "Carthage Dermech"}},
+            {"name": "Avant-première", "url": "https://www.facebook.com/events/456/", "startISO": f"{FUTUR}-11-07T20:00:00+01:00"},
+            {"name": "Annulé", "url": "https://www.facebook.com/events/789/", "utcStartDate": f"{FUTUR}-11-08T18:00:00Z", "isCanceled": True},
+            {"error": "page introuvable"},
+        ]
+        with mock.patch.dict("os.environ", {"APIFY_TOKEN": "x"}), \
+             mock.patch.object(facebook, "appeler_apify", return_value=items) as appel:
+            evs = facebook.recuperer(self.SOURCE)
+        self.assertEqual(appel.call_args[0][1]["startUrls"], ["https://www.facebook.com/CineMadart/upcoming_hosted_events"])
+        self.assertEqual(len(evs), 2)
+        self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 11, 5, 19, 30))  # UTC+1 à Tunis
+        self.assertEqual(evs[0].lien, "https://www.facebook.com/events/123/")
+        self.assertEqual(evs[0].adresse, "Carthage Dermech")
+        self.assertEqual(evs[1].debut, dt.datetime(FUTUR, 11, 7, 20, 0))
+        self.assertEqual(evs[1].lieu, "CinéMadart")
+        self.assertEqual(evs[1].categorie, "cinema")
+
+    def test_url_groupe(self):
+        self.assertEqual(facebook.url_evenements("https://www.facebook.com/groups/265611163490450/"),
+                         "https://www.facebook.com/groups/265611163490450/events")
 
 
 class Doublons(unittest.TestCase):

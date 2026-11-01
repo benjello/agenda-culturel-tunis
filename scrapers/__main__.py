@@ -20,7 +20,7 @@ import traceback
 import yaml
 
 from . import commun
-from .commun import RACINE, Film
+from .commun import RACINE, EnAttente, Film
 from . import doublons
 from .ecriture import ecrire_etat, ecrire_evenements, ecrire_films, lire_etat
 
@@ -48,8 +48,17 @@ def main(argv=None) -> int:
     etat = lire_etat()
     maintenant = dt.datetime.now().isoformat(timespec="seconds")
     echecs = 0
+    attentes = sautees = 0
     for s in sources:
         e = etat.setdefault(s["id"], {})
+        # Sources payantes ou lentes (Facebook) : relues seulement tous les N jours.
+        tous_les = s.get("tous_les_jours")
+        if tous_les and not args.ids and e.get("ok") and e.get("dernier_succes"):
+            ecart = dt.datetime.now() - dt.datetime.fromisoformat(e["dernier_succes"])
+            if ecart < dt.timedelta(days=tous_les, hours=-2):
+                print(f"· {s['id']} : relue il y a {ecart.days} j, prochaine lecture plus tard")
+                sautees += 1
+                continue
         e["dernier_passage"] = maintenant
         try:
             resultat = lancer(s)
@@ -57,8 +66,12 @@ def main(argv=None) -> int:
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
             est_cinema = s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film))
             n = (ecrire_films if est_cinema else ecrire_evenements)(s, resultat)
-            e.update(ok=True, nb=n, erreur=None, dernier_succes=maintenant)
+            e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
             print(f"✓ {s['id']} : {n}")
+        except EnAttente as exc:
+            attentes += 1
+            e.update(attente=str(exc)[:300])
+            print(f"… {s['id']} : en attente ({exc})")
         except Exception as exc:  # noqa: BLE001 — une source en panne ne doit pas arrêter les autres
             echecs += 1
             e.update(ok=False, erreur=f"{type(exc).__name__}: {exc}"[:300])
@@ -68,7 +81,8 @@ def main(argv=None) -> int:
     ecrire_etat(etat)
     n = doublons.marquer(charger_sources())
     print(f"{len(sources) - echecs}/{len(sources)} sources à jour, {n} doublon(s) masqué(s).")
-    return 1 if sources and echecs == len(sources) else 0
+    essais = len(sources) - attentes - sautees
+    return 1 if essais and echecs == essais else 0
 
 
 if __name__ == "__main__":
