@@ -10,6 +10,6 @@ link: "https://tunis.events/events/31vlP8/undertow-contre-courant-b7l9-art-centr
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://api.tunis.events/storage/0b379c8882b9fedf74c6eab19d30c45e.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

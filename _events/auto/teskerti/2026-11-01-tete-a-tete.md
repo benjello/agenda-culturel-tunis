@@ -9,7 +9,7 @@ price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/tete-a-tete-le-0111"
 source: "teskerti"
 source_name: "Teskerti"
+ajoute: "2026-11-01"
 doublon: true
 auto: true
-ajoute: "2026-11-01"
 ---

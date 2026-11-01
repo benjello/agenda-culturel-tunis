@@ -10,6 +10,6 @@ link: "https://tunis.events/events/8vq6N3/a-coeur-ouvert-lartisto-theatre-et-cin
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/278bc219fbf7187c81034908610393229b.jpeg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

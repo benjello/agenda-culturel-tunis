@@ -8,6 +8,6 @@ link: "https://www.instagram.com/p/De2KaYgG6lL/"
 source: "ig-jcc"
 source_name: "Journées Cinématographiques de Carthage (Instagram)"
 image: "assets/programmes/ig-jcc/de8f4ea04458.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

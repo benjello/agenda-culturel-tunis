@@ -25,7 +25,10 @@
   "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
+  "Entre les rives": "entre-les-rives",
   "Journées Cinématographiques de Carthage, Tunis": "journees-cinematographiques-de-carthage-tunis",
+  "La Boîte": "la-boite",
+  "Shanti": "shanti",
   "رواق الفنون – قاعة الفن الرابع": "lieu-74853a33",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-74853a33",
   "Galerie TGM": "galerie-tgm",
@@ -43,5 +46,86 @@
   "Pathé Tunis City": "pathe-tunis-city",
   "One Resort, Monastir": "one-resort-monastir"
  },
- "carte": []
+ "carte": [
+  {
+   "slug": "mediatheque-institut-francais-de-tunis",
+   "nom": "Médiathèque, Institut français de Tunis",
+   "ville": "tunis",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 23
+  },
+  {
+   "slug": "el-teatro",
+   "nom": "El Teatro",
+   "ville": "tunis",
+   "lat": 36.81393,
+   "lon": 10.17371,
+   "n": 13
+  },
+  {
+   "slug": "pathe-tunis-city",
+   "nom": "Pathé Tunis City",
+   "ville": "tunis",
+   "lat": 36.89828,
+   "lon": 10.12451,
+   "n": 13
+  },
+  {
+   "slug": "institut-francais-de-tunis",
+   "nom": "Institut français de Tunis",
+   "ville": "tunis",
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 8
+  },
+  {
+   "slug": "auditorium-institut-francais-de-tunis",
+   "nom": "Auditorium, Institut français de Tunis",
+   "ville": "tunis",
+   "lat": 36.83088,
+   "lon": 10.18217,
+   "n": 7
+  },
+  {
+   "slug": "theatre-le-4eme-art",
+   "nom": "Théâtre Le 4ème Art",
+   "ville": "tunis",
+   "lat": 36.80189,
+   "lon": 10.18123,
+   "n": 7
+  },
+  {
+   "slug": "lagora-la-marsa",
+   "nom": "L’Agora La Marsa",
+   "ville": "tunis",
+   "lat": 36.88133,
+   "lon": 10.32585,
+   "n": 6
+  },
+  {
+   "slug": "mediatheque-institut-francais-de-sfax",
+   "nom": "Médiathèque, Institut français de Sfax",
+   "ville": "sfax",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 6
+  },
+  {
+   "slug": "cinema-le-colisee",
+   "nom": "Cinéma Le Colisée",
+   "ville": "tunis",
+   "lat": 36.80014,
+   "lon": 10.18189,
+   "n": 6
+  },
+  {
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "ville": "tunis",
+   "lat": 34.59926,
+   "lon": 9.59188,
+   "n": 5
+  }
+ ]
 }

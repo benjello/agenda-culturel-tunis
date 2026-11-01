@@ -8,7 +8,7 @@ price: "20 DT"
 link: "https://billetterie.elteatrotunis.com/fr/programme/hamlet_comedie_de_la_mort"
 source: "el-teatro"
 source_name: "El Teatro"
+ajoute: "2026-11-01"
 autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/hamlet", "source": "teskerti"}]
 auto: true
-ajoute: "2026-11-01"
 ---

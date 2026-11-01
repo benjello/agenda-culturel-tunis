@@ -8,7 +8,7 @@ link: "https://www.instagram.com/p/De1zOMGFY2I/"
 source: "ig-al-kitab"
 source_name: "Librairie Al Kitab (Instagram)"
 image: "assets/programmes/ig-al-kitab/d0a12c7282c2.jpg"
+ajoute: "2026-11-01"
 doublon: true
 auto: true
-ajoute: "2026-11-01"
 ---

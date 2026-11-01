@@ -8,6 +8,6 @@ link: "https://www.instagram.com/p/DfIILdxAlEC/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
 image: "assets/programmes/cine-agora/8f0138c0c709.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

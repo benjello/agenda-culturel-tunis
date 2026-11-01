@@ -8,7 +8,7 @@ price: "20 DT"
 link: "https://billetterie.elteatrotunis.com/fr/programme/testosterone"
 source: "el-teatro"
 source_name: "El Teatro"
+ajoute: "2026-11-01"
 autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/testosterones-le-511", "source": "teskerti"}]
 auto: true
-ajoute: "2026-11-01"
 ---

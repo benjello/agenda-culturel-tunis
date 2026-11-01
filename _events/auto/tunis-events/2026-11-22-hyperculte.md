@@ -10,6 +10,6 @@ link: "https://tunis.events/events/klvgE3/hyperculte-b7l9-art-centre"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/25655a577b15876786499182b51b53e7.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

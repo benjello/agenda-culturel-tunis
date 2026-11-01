@@ -10,6 +10,6 @@ link: "https://tunis.events/events/kVy7Q8/labes-selim-ben-safia-salle-des-jeunes
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/82ebca273eca6b0cb105cd0812ea952fe.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

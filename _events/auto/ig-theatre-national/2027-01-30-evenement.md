@@ -8,6 +8,6 @@ link: "https://www.instagram.com/p/DfLIEZVCbs3/"
 source: "ig-theatre-national"
 source_name: "Théâtre national tunisien (Instagram)"
 image: "assets/programmes/ig-theatre-national/152d1c877e0d.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

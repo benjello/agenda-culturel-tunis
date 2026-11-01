@@ -10,6 +10,6 @@ link: "https://tunis.events/events/kQn7qm/movie-night-regarde-moi-sociale-sidi-b
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/d935fc22e6010a3802d5dc300358def32.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

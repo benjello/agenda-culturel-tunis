@@ -11,6 +11,6 @@ source_name: "tunis.events (cinéma)"
 seances: ["2026-11-01", "2026-11-01 11:30", "2026-11-01 19:30"]
 image: "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg"
 film: true
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

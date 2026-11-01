@@ -1,1 +1,46 @@
-{}
+{
+ "auditorium institut francais de tunis": [
+  36.83088,
+  10.18217
+ ],
+ "cinema alhambra zephyr": null,
+ "cinema le colisee": [
+  36.80014,
+  10.18189
+ ],
+ "cinemadart": null,
+ "el teatro": [
+  36.81393,
+  10.17371
+ ],
+ "institut francais de sousse": null,
+ "institut francais de tunis": [
+  36.8021,
+  10.18066
+ ],
+ "l agora la marsa": [
+  36.88133,
+  10.32585
+ ],
+ "mediatheque institut francais de sfax": [
+  36.85392,
+  10.19632
+ ],
+ "mediatheque institut francais de tunis": [
+  36.85392,
+  10.19632
+ ],
+ "pathe azur city": null,
+ "pathe tunis city": [
+  36.89828,
+  10.12451
+ ],
+ "sociale sidi bou said": [
+  34.59926,
+  9.59188
+ ],
+ "theatre le 4eme art": [
+  36.80189,
+  10.18123
+ ]
+}

@@ -9,6 +9,6 @@ source: "cine-360"
 source_name: "Ciné 350"
 image: "assets/programmes/cine-360/ed1d5b6e62ca.jpg"
 film: true
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

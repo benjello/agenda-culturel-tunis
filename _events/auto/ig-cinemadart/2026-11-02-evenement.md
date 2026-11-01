@@ -8,6 +8,6 @@ link: "https://www.instagram.com/p/DfDDJ7jiMvE/"
 source: "ig-cinemadart"
 source_name: "CinéMadart (Instagram)"
 image: "assets/programmes/ig-cinemadart/67744d77c1d1.jpg"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

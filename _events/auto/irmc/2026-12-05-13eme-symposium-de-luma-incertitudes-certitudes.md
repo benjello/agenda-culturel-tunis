@@ -8,6 +8,6 @@ category: "conference"
 link: "https://irmcmaghreb.org/13eme-symposium-de-luma-incertitudes-certitudes/"
 source: "irmc"
 source_name: "IRMC (Institut de recherche sur le Maghreb contemporain)"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---

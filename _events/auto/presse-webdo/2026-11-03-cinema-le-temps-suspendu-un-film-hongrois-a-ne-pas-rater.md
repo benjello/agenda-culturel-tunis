@@ -7,6 +7,6 @@ category: "cinema"
 link: "https://www.webdo.tn/fr/actualite/culture/cinema-le-temps-suspendu-un-film-hongrois-a-ne-pas-rater/406394/"
 source: "presse-webdo"
 source_name: "Webdo"
-auto: true
 ajoute: "2026-11-01"
+auto: true
 ---
