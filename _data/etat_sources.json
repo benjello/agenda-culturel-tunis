@@ -71,6 +71,14 @@
     "nb": 7,
     "ok": true
   },
+  "fb-ajst": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:29:54",
+    "dernier_succes": "2026-11-01T09:29:54",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
+  },
   "fb-al-kitab": {
     "attente": null,
     "dernier_passage": "2026-11-01T08:34:55",
@@ -105,6 +113,14 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/CentreCulturel421', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
     "ok": false
   },
+  "fb-cite-sciences": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:29:54",
+    "dernier_succes": "2026-11-01T09:29:54",
+    "erreur": null,
+    "nb": 1,
+    "ok": true
+  },
   "fb-club-tahar-haddad": {
     "dernier_passage": "2026-11-01T08:00:14",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/Club.Tahar.Haddad', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
@@ -119,6 +135,14 @@
     "dernier_passage": "2026-11-01T08:00:14",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/atelier.l.empreinte', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
     "ok": false
+  },
+  "fb-ifest": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:29:54",
+    "dernier_succes": "2026-11-01T09:29:54",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "fb-ift-facebook": {
     "attente": null,
@@ -234,6 +258,14 @@
     "dernier_succes": "2026-11-01T08:00:14",
     "erreur": null,
     "nb": 0,
+    "ok": true
+  },
+  "ig-jcc": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:29:54",
+    "dernier_succes": "2026-11-01T09:29:54",
+    "erreur": null,
+    "nb": 2,
     "ok": true
   },
   "ig-kadhem": {
