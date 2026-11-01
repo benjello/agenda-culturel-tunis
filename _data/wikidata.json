@@ -1,1 +1,127 @@
-{}
+{
+ "bakma": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "clayface": {
+  "age": "",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt34890576",
+  "qid": "Q131460936",
+  "titre_wikidata": "Clayface",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "dar-el-3ers": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "ducobu-et-le-fantome-de-saint-potache": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Comédie"
+  ],
+  "imdb": "tt43622004",
+  "qid": "Q140363103",
+  "titre_wikidata": "Ducobu et le fantôme de Saint-Potache",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "klara-et-le-soleil": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Drame",
+   "Science-fiction"
+  ],
+  "imdb": "tt14371256",
+  "qid": "Q124409386",
+  "titre_wikidata": "Klara et le Soleil",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "l-ile-des-souvenirs-forgotten-island": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Fantastique",
+   "Aventure",
+   "Comédie"
+  ],
+  "imdb": "tt36583977",
+  "qid": "Q138335503",
+  "titre_wikidata": "L'Île des souvenirs",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "last-chance": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "le-fantome-de-l-opera": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "le-maitre-du-kabuki": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt35231039",
+  "qid": "Q134906322",
+  "titre_wikidata": "Le Maître du kabuki",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "le-mystere-lucy-lost": {
+  "age": "",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt10569744",
+  "qid": "Q141827108",
+  "titre_wikidata": "Le mystère Lucy Lost",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "mochy": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "other-mommy-malfaisante": {
+  "age": "-12",
+  "annee": 2026,
+  "genres": [
+   "Horreur"
+  ],
+  "imdb": "tt36586020",
+  "qid": "Q134588273",
+  "titre_wikidata": "Malfaisante",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "shaun-le-mouton-la-beeete-d-halloween": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "wala-kan-ala-el-bal": {
+  "age": "",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt43634235",
+  "qid": "Q141819066",
+  "titre_wikidata": "Never Crossed the Mind",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "weekend": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "what-else": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ }
+}

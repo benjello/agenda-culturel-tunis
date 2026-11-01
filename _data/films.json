@@ -349,9 +349,13 @@
   "titre": "L'île des souvenirs / Forgotten Island",
   "id": "l-ile-des-souvenirs-forgotten-island",
   "image": "https://api.tunis.events/storage/scraped/728f332ab04d48ad66210131a01a7ee2.jpeg",
-  "imdb": "",
+  "imdb": "tt36583977",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Fantastique",
+   "Aventure",
+   "Comédie"
+  ],
   "jours": [
    "2026-11-01"
   ],
@@ -386,7 +390,10 @@
      "2026-11-01"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q138335503",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
@@ -437,7 +444,7 @@
   "titre": "Clayface",
   "id": "clayface",
   "image": "https://api.tunis.events/storage/scraped/0ef2dd61387b35932f18ac6ff4defd54.jpeg",
-  "imdb": "",
+  "imdb": "tt34890576",
   "duree": null,
   "genres": [],
   "jours": [
@@ -466,15 +473,21 @@
      "2026-11-02"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q131460936",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "Klara et le soleil",
   "id": "klara-et-le-soleil",
   "image": "https://api.tunis.events/storage/scraped/d2ebfb303ce9f7f1fa0331bce7ea1c09.jpg",
-  "imdb": "",
+  "imdb": "tt14371256",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Drame",
+   "Science-fiction"
+  ],
   "jours": [
    "2026-11-01",
    "2026-11-02"
@@ -501,7 +514,10 @@
      "2026-11-01"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q124409386",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "Le fantôme de l'opéra",
@@ -540,7 +556,7 @@
   "titre": "Le Mystère Lucy Lost",
   "id": "le-mystere-lucy-lost",
   "image": "https://api.tunis.events/storage/scraped/ef31ae21165efd2203c62878ffdbdce8.jpg",
-  "imdb": "",
+  "imdb": "tt10569744",
   "duree": null,
   "genres": [],
   "jours": [
@@ -570,7 +586,10 @@
      "2026-11-02"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q141827108",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "Shaun le Mouton : La Bêêête d'Halloween",
@@ -609,9 +628,11 @@
   "titre": "Ducobu et le fantôme de Saint-Potache",
   "id": "ducobu-et-le-fantome-de-saint-potache",
   "image": "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg",
-  "imdb": "",
+  "imdb": "tt43622004",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Comédie"
+  ],
   "jours": [
    "2026-11-01",
    "2026-11-02"
@@ -628,15 +649,20 @@
      "2026-11-02"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q140363103",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "Le Maître du kabuki",
   "id": "le-maitre-du-kabuki",
   "image": "assets/programmes/cine-360/ed1d5b6e62ca.jpg",
-  "imdb": "",
+  "imdb": "tt35231039",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Drame"
+  ],
   "jours": [
    "2026-11-01"
   ],
@@ -651,7 +677,10 @@
      "2026-11-01"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q134906322",
+  "age": "Tous publics",
+  "tunisien": false
  },
  {
   "titre": "Mochy",
@@ -680,9 +709,11 @@
   "titre": "Other Mommy / Malfaisante",
   "id": "other-mommy-malfaisante",
   "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
-  "imdb": "",
+  "imdb": "tt36586020",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Horreur"
+  ],
   "jours": [
    "2026-11-01"
   ],
@@ -697,13 +728,16 @@
      "2026-11-01"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q134588273",
+  "age": "-12",
+  "tunisien": false
  },
  {
   "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
   "id": "wala-kan-ala-el-bal",
   "image": "https://api.tunis.events/storage/scraped/ee61c30ef50672548dff065a8d16ec33.jpg",
-  "imdb": "",
+  "imdb": "tt43634235",
   "duree": null,
   "genres": [],
   "jours": [
@@ -720,6 +754,9 @@
      "2026-11-01"
     ]
    }
-  ]
+  ],
+  "wikidata": "Q141819066",
+  "age": "",
+  "tunisien": false
  }
 ]
