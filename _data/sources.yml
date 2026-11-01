@@ -745,7 +745,7 @@
   type: lieu
   scraper: instagram
   categorie: theatre
-  actif: true
+  actif: false  # compte introuvable ou vide au 1er nov. 2026
   tous_les_jours: 3
   options:
     compte: "jtc_tunisie"
@@ -803,7 +803,7 @@
   type: lieu
   scraper: instagram
   categorie: conference
-  actif: true
+  actif: false  # compte introuvable ou vide au 1er nov. 2026
   tous_les_jours: 3
   options:
     compte: "info.atast"

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import datetime as dt
 import email.utils
+import html
 import re
 import xml.etree.ElementTree as ET
 
@@ -45,9 +46,30 @@ def _lire(xml: str):
         return _racine(re.sub(r"&(?!\w+;|#\d+;|#x[0-9a-fA-F]+;)", "&amp;", xml))
 
 
+class _Item:
+    """Élément d'un flux trop abîmé pour l'analyse XML, lu balise par balise."""
+    def __init__(self, bloc: str):
+        self.bloc = bloc
+
+    def findtext(self, nom: str, defaut: str = "") -> str:
+        nom = {_CONTENU: "content:encoded"}.get(nom, nom)
+        m = re.search(rf"<{nom}[^>]*>(.*?)</{nom}>", self.bloc, re.S)
+        if not m:
+            return defaut
+        v = m.group(1).strip()
+        return v[9:-3] if v.startswith("<![CDATA[") and v.endswith("]]>") else html.unescape(v)
+
+
+def _items(xml: str):
+    try:
+        return list(_lire(xml).iter("item"))
+    except ET.ParseError:
+        return [_Item(b) for b in re.findall(r"<item>(.*?)</item>", xml, re.S)]
+
+
 def _articles(xml: str) -> list[dict]:
     res = []
-    for it in _lire(xml).iter("item"):
+    for it in _items(xml):
         html = it.findtext(_CONTENU, "") or it.findtext("description", "")
         try:
             pub = email.utils.parsedate_to_datetime(it.findtext("pubDate", "")).date()
@@ -96,8 +118,6 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
 
 def recuperer(source: dict) -> list[Evenement]:
     xml = telecharger(source["url"])
-    try:
-        _lire(xml)
-    except ET.ParseError as exc:
-        raise RuntimeError(f"flux illisible ({exc})") from exc
+    if not _items(xml):
+        raise RuntimeError("flux vide ou illisible")
     return depuis_flux(xml, source)
