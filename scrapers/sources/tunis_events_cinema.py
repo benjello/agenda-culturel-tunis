@@ -36,8 +36,9 @@ def recuperer(source: dict) -> dict[str, dict]:
         # Un objet couvre une journée (parfois de 00:00 à 23:59) : on garde le jour.
         jour = debut.date().isoformat()
         s = salles.setdefault(lieu, {"adresse": adresse, "films": {}})
-        f = s["films"].setdefault(titre, Film(titre=titre, lien=o.get("url") or source["url"],
-                                              affiche=_image(o.get("image"))))
+        # « WEEKEND » et « Weekend » : un seul film (titre comparé sans casse ni accents).
+        f = s["films"].setdefault(slug(titre), Film(titre=titre, lien=o.get("url") or source["url"],
+                                                    affiche=_image(o.get("image"))))
         if jour not in f.jours:
             f.jours.append(jour)
     if not salles:
