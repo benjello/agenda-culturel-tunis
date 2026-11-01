@@ -7,6 +7,8 @@ dans un flux d'actualités, seuls ceux qui annoncent une date passent.
 Options :
   lieu          : nom du lieu par défaut
   nettoyer_titre: expression régulière à retirer du titre (facultatif)
+  garder        : expression régulière : seuls les éléments dont le titre ou le texte la contiennent
+                  sont gardés (pour écarter bourses, appels à candidatures…)
 """
 from __future__ import annotations
 
@@ -18,6 +20,7 @@ from bs4 import BeautifulSoup
 from ..commun import Evenement, propre, telecharger, toutes_dates
 
 ATOM = "{http://www.w3.org/2005/Atom}"
+_HEURE = re.compile(r"\b([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)\b")
 
 
 def _texte_html(h: str) -> str:
@@ -51,7 +54,14 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
             precises = [d for d in toutes_dates(description) if d.date() == dates[0].date() and (d.hour or d.minute)]
             dates = precises or dates
         dates = dates or toutes_dates(description)
+        heures = set(_HEURE.findall(description))
+        if len(dates) == 1 and not (dates[0].hour or dates[0].minute) and len(heures) == 1:
+            # « Le mardi 20 octobre 2026 à l'IRMC (17h30) » : une seule heure dans le texte
+            h, mn = heures.pop()
+            dates = [dates[0].replace(hour=int(h), minute=int(mn))]
         if not titre or not dates:
+            continue
+        if opts.get("garder") and not re.search(opts["garder"], f"{titre} {description}", re.I):
             continue
         if opts.get("nettoyer_titre"):
             titre = propre(re.sub(opts["nettoyer_titre"], "", titre))

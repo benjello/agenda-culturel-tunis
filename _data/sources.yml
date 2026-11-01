@@ -80,6 +80,30 @@
     nettoyer_titre: '\d{2}\.\d{2}\.\d{4},\s*'
   note: Flux RSS officiel des manifestations. Certaines ont lieu chez des partenaires.
 
+- id: beit-al-hikma
+  nom: Beit al-Hikma (Académie tunisienne des sciences, des lettres et des arts)
+  url: https://www.beitalhikma.tn/feed/
+  type: lieu
+  scraper: rss
+  categorie: conference
+  actif: true
+  options:
+    lieu: Beit al-Hikma, Carthage
+    nettoyer_titre: '\s*[-–]?\s*\d{1,2}\s+\S+\s+\d{4}\s*$'
+  note: Flux RSS du site, environ deux conférences par semaine. Date en arabe à la fin du titre.
+
+- id: irmc
+  nom: IRMC (Institut de recherche sur le Maghreb contemporain)
+  url: https://www.irmcmaghreb.org/catégories/page-events/feed/
+  type: lieu
+  scraper: rss
+  categorie: conference
+  actif: true
+  options:
+    lieu: IRMC, Mutuelleville
+    garder: 'rencontre|débat|conférence|présentation|symposium|colloque|séminaire|journée d.étude|table ronde'
+  note: Flux RSS des événements. Les bourses et stages sont écartés par « garder ».
+
 - id: institut-francais
   nom: Institut français de Tunisie
   url: https://www.institutfrancais-tunisie.com/list-agenda
