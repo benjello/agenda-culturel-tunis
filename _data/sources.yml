@@ -1653,3 +1653,19 @@
     lieu: "Tunisie, voir l'annonce"
     resultats: 8
   note: Programme de tourisme durable soutenu par l'Union européenne (circuits patrimoine, gastronomie, cinéma, événements dans les régions). Beaucoup de publications promotionnelles. Proposé par Mahdi.
+
+- id: ig-agora-djerba
+  nom: L'Agora Djerba (Instagram)
+  url: https://www.instagram.com/lagoradjerba/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: autre
+  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "lagoradjerba"
+    lieu: "L'Agora Djerba"
+    adresse: "Djerba"
+    resultats: 8
+  note: Salle de l'Agora à Djerba (cinéma, concerts). La billetterie lagora.tn ne couvre que La Marsa pour l'instant. Proposé par Mahdi.
