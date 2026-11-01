@@ -203,6 +203,25 @@ sante.r_pause: { ar: "متوقفة", en: "paused" }
 sante.r_attente: { ar: "في الانتظار", en: "waiting" }
 sante_note: { ar: "« صامت »: يقرأ المصدر جيدا لكنه لم يعلن شيئا منذ أكثر من 30 يوما. المصادر المتوقفة معروفة لكنها لم توصل بعد، أو عنوانها يحتاج تثبتا (انظر <code>_data/sources.yml</code>).", en: "“Silent”: the source reads fine but has announced nothing for more than 30 days. Paused sources are known but not connected yet, or their address needs checking (see <code>_data/sources.yml</code>)." }
 sante.a_verifier: { ar: "مداخل للتثبت", en: "Entries to check" }
+col.precision: { ar: "الدقة: ما ينقص", en: "Precision: what is missing" }
+col.scraper: { ar: "نوع المصدر", en: "Type of source (scraper)" }
+sante.granularite: { ar: "الدقة حسب نوع المصدر", en: "Precision by type of source" }
+sante.granularite_intro: { ar: "يكون المدخل دقيقا عندما يكون نشاطا مسمى (فيلم بعروضه، معرض بتواريخه)، برابط إلى صفحته الخاصة وفضاء معروف. يبين هذا الجدول، لكل طريقة قراءة، نسبة المداخل الدقيقة وما ينقصها: هناك يجب تحسين أداة القراءة.", en: "An entry is precise when it is a named event (a film with its showtimes, an exhibition with its dates), with a link to its own page and a known venue. This table shows, for each way of reading sources, the share of precise entries and what is missing: that is where the scraper needs work." }
+sante.voir_granularite: { ar: "دقة المداخل حسب نوع المصدر: ما ينقص", en: "Precision of entries by type of source: what is missing" }
+gran.precis: { ar: "دقيقة", en: "precise" }
+gran.manque: { ar: "ينقص:", en: "missing:" }
+gran.pas_evenement: { ar: "إعلان خدمة وليس نشاطا", en: "service notice, not an event" }
+gran.titre_generique: { ar: "عنوان عام (نوع أو باب، لا اسم العمل)", en: "generic title (genre or section, not the work's name)" }
+gran.titre_phrase: { ar: "العنوان جملة إعلان أو مقال", en: "title is an announcement or article headline" }
+gran.titre_prefixe: { ar: "باب قبل عنوان الفيلم", en: "section name before the film title" }
+gran.lien_general: { ar: "رابط إلى صفحة عامة (برنامج، PDF، رئيسية)", en: "link to a general page (programme, PDF, home)" }
+gran.lien_partage: { ar: "نفس الرابط لعدة أنشطة", en: "same link for several events" }
+gran.film_sans_seance: { ar: "فيلم بلا توقيت ولا عرض", en: "film without showtime" }
+gran.expo_sans_fin: { ar: "معرض بلا تاريخ نهاية", en: "exhibition without end date" }
+gran.lieu_vague: { ar: "فضاء غير محدد", en: "venue to be specified" }
+gran.sans_heure: { ar: "الساعة", en: "time" }
+gran.sans_image: { ar: "الصورة", en: "image" }
+gran.sans_notice: { ar: "النبذة", en: "description" }
 rien_signaler: { ar: "لا شيء يذكر.", en: "Nothing to report." }
 # Couverture
 couv_titre: { ar: "تغطية الأجندا", en: "Agenda coverage" }

@@ -16,7 +16,7 @@ import re
 import subprocess
 import tempfile
 
-from ..commun import MOIS, Evenement, _session, categorie_du_titre, propre
+from ..commun import MOIS, Evenement, _session, categorie_du_titre, propre, resume, titre_film, titre_generique
 
 # Mot-clé de la colonne de droite d'une case → catégorie du site
 _GENRES = {"exposition": "expo", "cinéma": "cinema", "cinema": "cinema", "concert": "musique", "musique": "musique",
@@ -35,6 +35,25 @@ _LIEUX = re.compile(r"m[ée]diath[èe]que|auditorium|galerie|salle|jardin|cin[é
 _SALLES = [(r"camus", "Salle Albert Camus"), (r"exposition|galerie", "Galerie"),
            (r"(?:s?a?l?le )?de cin[ée]ma|\bcin[ée]ma\b", "Salle de cinéma"), (r"m[ée]diath[èe]que", "Médiathèque"),
            (r"auditorium", "Auditorium"), (r"jardin", "Jardin"), (r"th[ée][âa]tre", "Théâtre")]
+
+
+# « de Jérémie Périn, 2023, 1h25mn » : la notice d'un film.
+_FICHE_FILM = re.compile(r"\b(?:19|20)\d{2}\s*,\s*\d{1,2}\s*h\s*\d{0,2}|\b\d{1,3}\s*min(?:utes)?\b|\br[ée]alis[ée] par\b|"
+                         r"\bun film de\b", re.I)
+
+
+def titre_precis(titre: str, notice: str) -> str:
+    """Le nom de l'œuvre quand la case ne donne qu'un genre (« TABLES RONDES », « EXPOSITION ») :
+    le premier titre entre guillemets de la notice, sinon le début de la notice avant « : »."""
+    if not titre_generique(titre) and not re.match(r"(?i)avec\b", titre):
+        return titre
+    m = re.search(r"[«“\"]\s*([^»”\"]{3,70}?)\s*[»”\"]", notice)
+    if m:
+        return propre(m.group(1))
+    m = re.match(r"\s*([^:.;!?]{3,60}?)\s*:", notice)
+    if m and len(m.group(1).split()) >= 2:
+        return propre(m.group(1))
+    return titre
 
 
 def _salle(texte: str) -> str:
@@ -119,6 +138,7 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
             titre.append(l)
         else:
             break
+    notice = " ".join(lignes[len(titre):])
     titre = " ".join(titre) or lignes[0]
     jours = []
     for l in infos:
@@ -135,8 +155,17 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
         except ValueError:
             continue
         titre_propre = titre.title() if len(titre) > 6 else titre
-        res.append(Evenement(titre=titre_propre, debut=d, lien=lien, lieu=lieu,
-                             categorie=categorie_du_titre(titre) or genre or "autre"))
+        categorie = categorie_du_titre(titre) or genre or "autre"
+        est_film = bool(_FICHE_FILM.search(notice)) and categorie in ("cinema", "autre")
+        if est_film or categorie == "cinema":
+            titre_propre = titre_film(titre_propre)  # « Mercredis-Ciné Level Five » → « Level Five »
+        titre_net = titre_precis(titre_propre, notice)
+        if titre_net != titre_propre:  # « Tables Rondes » → « Entre deux rives » (le genre reste dans la catégorie)
+            categorie = categorie if categorie != "autre" else (categorie_du_titre(titre_propre) or "autre")
+        res.append(Evenement(titre=titre_net, debut=d, lien=lien, lieu=lieu,
+                             categorie="cinema" if est_film else categorie,
+                             film=est_film and not titre_generique(titre_net),
+                             seances=[d] if est_film else [], description=resume(notice, 400)))
     return res
 
 

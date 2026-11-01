@@ -1,5 +1,5 @@
 ---
-title: "Movie Night: REGARDE MOI"
+title: "REGARDE MOI"
 date: 2026-11-12 19:00
 venue: "Sociale Sidi Bou Said"
 ville: "tunis"

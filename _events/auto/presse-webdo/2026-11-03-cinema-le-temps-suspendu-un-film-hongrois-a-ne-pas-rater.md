@@ -1,5 +1,5 @@
 ---
-title: "Cinéma : Le Temps suspendu, un film hongrois à ne pas rater"
+title: "Le Temps suspendu, un film hongrois à ne pas rater"
 date: 2026-11-03
 venue: "Tunisie, voir l'article"
 ville: "tunis"

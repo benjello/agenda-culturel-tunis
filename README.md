@@ -58,6 +58,10 @@ L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour de
   `assets/programmes/`, et les films qu'on y lit deviennent des événements.
 - L'état de chaque source (dernier passage, succès, erreur) est noté dans `_data/etat_sources.json`.
 - Si une source tombe en panne, ses événements déjà récupérés restent en place.
+- **Granularité** : chaque entrée doit être un événement précis (un film avec ses séances, une expo avec ses
+  dates, un lien vers sa propre fiche), pas une rubrique ni la page générale d'un institut. `scrapers/granularite.py`
+  le vérifie après chaque passage ; la page « Santé des sources » montre, par source et par type de scraper,
+  la part d'entrées précises et ce qui manque. Tests : `python3 -m unittest tests.test_granularite`.
 
 ### Lancer les scrapers
 

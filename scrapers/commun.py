@@ -286,3 +286,43 @@ def prix_du_texte(texte: str) -> str:
         return ""
     f = lambda x: f"{x:g}"  # noqa: E731
     return f"{f(montants[0])} DT" if len(montants) == 1 else f"{f(montants[0])} à {f(montants[-1])} DT"
+
+
+# --- Granularité : un événement précis (un film, une expo), pas une rubrique ni une annonce de service ---
+
+# Préfixes de cycle ou de rubrique devant le titre d'un film : « Movie Night: UN FILS », « Mercredis-Ciné Level Five ».
+_PREFIXE_FILM = re.compile(r"^\s*(?:(?:movie night|mercredis?[- ]?cin[ée]|cin[ée][- ]?club|cin[ée][- ]?go[ûu]ter|avant[- ]premi[èe]re|"
+                           r"soir[ée]e cin[ée]ma)\s*(?::|-|–|\|)?|(?:projection(?: du film)?|cin[ée]ma|film)\s*(?::|–|\|| - ))"
+                           r"\s*(?=\S)", re.I)
+
+
+def titre_film(titre: str) -> str:
+    """Le titre du film seul : « Movie Night: UN FILS » → « UN FILS ». Inchangé s'il ne reste rien de net."""
+    reste = _PREFIXE_FILM.sub("", titre or "", count=1).strip(" «»\"'")
+    return reste if len(re.findall(r"[^\W\d_]", reste)) >= 2 else titre
+
+
+# Titre qui n'est qu'un genre ou une rubrique : il ne dit pas quel film, quelle expo, quel débat.
+TITRES_GENERIQUES = re.compile(
+    r"^\W*(?:une?\s+|la\s+|le\s+|les\s+)?(?:exposition|expo|exhibition|vernissage|cin[ée]ma(?: d.animation)?|film|projection|"
+    r"cin[ée][- ]?club|movie night|tables? rondes?|conf[ée]rence|d[ée]bat|rencontre|atelier|lecture|concert|spectacle|"
+    r"soir[ée]e|programme|agenda|[ée]v[ée]nement|activit[ée]s?|festival|journ[ée]es?|diffusion des savoirs|"
+    r"sp[ée]cial \w+|nouveaut[ée]s?|à l.affiche|cette semaine|save the date|coming soon|bient[ôo]t|à venir)"
+    r"(?:\s+(?:du mois|de la semaine|\d{4}))?\W*$", re.I)
+
+
+def titre_generique(titre: str) -> bool:
+    return bool(TITRES_GENERIQUES.match(titre or ""))
+
+
+# Annonces de service : horaires, fermeture, recrutement… ce ne sont pas des événements.
+_PAS_UN_EVENEMENT = re.compile(
+    r"\b(?:ouvre|ouverture|ouverte|ferm[ée]e?s?|fermeture)\s+(?:exceptionnel|ses portes le|le dimanche|ce dimanche)|"
+    r"horaires? d.ouverture|fermeture (?:exceptionnelle|annuelle)|\bappel [àa] (?:candidatures?|projets?|participation)|"
+    r"\bcall for (?:applications|entries|artists|papers)|\brecrute\b|\brecrutement\b|offre d.emploi|"
+    r"inscriptions? (?:ouvertes|aux cours)|entr[ée]e gratuite (?:aux|dans les) (?:sites|mus[ée]es)|\bjoyeux anniversaire\b|\bbonne f[êe]te\b|\bAïd moubarak\b", re.I)
+
+
+def pas_un_evenement(titre: str) -> bool:
+    """Vrai pour une annonce de service (« la Médiathèque ouvre exceptionnellement… »)."""
+    return bool(_PAS_UN_EVENEMENT.search(titre or ""))

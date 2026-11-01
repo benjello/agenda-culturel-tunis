@@ -10,10 +10,12 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
   et _data/sources.yml. Les âges sont calculés par le script (la page n'est reconstruite qu'une fois par jour).
 {%- endcomment -%}
 {%- assign etat = site.data.etat_sources | default: empty -%}
+{%- assign gran = site.data.controle.granularite -%}
 <section class="intro">
   <h1 data-t="sante_titre">Santé des sources</h1>
   <p data-t="sante_intro">Chaque source est relue automatiquement. Ici, on voit celles qui marchent, celles qui n'ont rien annoncé depuis longtemps (lieu fermé, compte changé ?) et celles qui sont en panne ou en pause. Toute aide pour réparer une source est bienvenue.</p>
   <p class="sante-resume" id="sante-resume"></p>
+  {%- if gran %}<p><a href="#granularite" data-t="sante.voir_granularite">Précision des entrées par type de source : ce qui manque</a></p>{% endif %}
 </section>
 
 <div class="filters" id="sante-filtres">
@@ -26,7 +28,7 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
 </div>
 
 <table class="sources sante">
-  <thead><tr><th data-t="source">Source</th><th data-t="col.etat">État</th><th data-t="col.sur_site">Sur le site</th><th data-t="col.nouveaute">Dernière nouveauté</th><th data-t="col.lecture">Dernière lecture</th></tr></thead>
+  <thead><tr><th data-t="source">Source</th><th data-t="col.etat">État</th><th data-t="col.sur_site">Sur le site</th><th data-t="col.nouveaute">Dernière nouveauté</th><th data-t="col.lecture">Dernière lecture</th><th data-t="col.precision">Précision : ce qui manque</th></tr></thead>
   <tbody id="sante-lignes">
   {%- for s in site.data.sources %}
     {%- assign e = etat[s.id] -%}
@@ -51,6 +53,8 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
       <td>{{ n }}</td>
       <td class="nouveau">{% if e.dernier_non_vide %}{{ e.dernier_non_vide | date: "%d/%m/%Y" }}{% else %}<span data-t="etat.jamais">jamais</span>{% endif %}</td>
       <td>{% if e.dernier_passage %}{{ e.dernier_passage | date: "%d/%m/%Y" }}{% else %}—{% endif %}</td>
+      {%- assign gs = gran.sources[s.id] %}
+      <td class="precision">{% include granularite.html g=gs %}</td>
     </tr>
   {%- endfor %}
   </tbody>
@@ -62,6 +66,20 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
 {%- assign ap = site.data.apify %}
 {%- if ap and ap.limite > 0 %}
 <p class="updated"><span data-t="sante.apify">Crédit Apify du mois (Instagram, Facebook) :</span> {{ ap.depense }} $ / {{ ap.limite }} $ ({{ ap.pourcent }} %){% if ap.fin_cycle != "" %} · <span data-t="sante.recharge">recharge le</span> {{ ap.fin_cycle | date: "%d/%m/%Y" }}{% endif %}{% if ap.pourcent >= 100 %} · ⚠️ <span data-t="sante.apify_epuise">épuisé : Instagram et Facebook ne sont plus lus</span>{% endif %}</p>
+{%- endif %}
+
+{%- if gran %}
+<h2 id="granularite" data-t="sante.granularite">Précision par type de source</h2>
+<p data-t="sante.granularite_intro">Une entrée est précise quand c'est un événement nommé (un film avec ses séances, une expo avec ses dates), avec un lien vers sa propre fiche et un lieu connu. Ce tableau montre, pour chaque façon de lire les sources, la part d'entrées précises et ce qui manque : c'est là qu'il faut améliorer le scraper.</p>
+<table class="sources granularite">
+  <thead><tr><th data-t="col.scraper">Type de source (scraper)</th><th data-t="col.sur_site">Sur le site</th><th data-t="col.precision">Précision : ce qui manque</th></tr></thead>
+  <tbody>
+  {%- for t in gran.scrapers %}
+    {%- assign gt = t[1] %}
+    <tr><td><code>{{ t[0] }}</code></td><td>{{ gt.n }}</td><td class="precision">{% include granularite.html g=gt exemples=true %}</td></tr>
+  {%- endfor %}
+  </tbody>
+</table>
 {%- endif %}
 
 <h2 id="a-verifier" data-t="sante.a_verifier">Entrées à vérifier</h2>

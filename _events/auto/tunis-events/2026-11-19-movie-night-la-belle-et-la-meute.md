@@ -1,5 +1,5 @@
 ---
-title: "Movie Night: LA BELLE ET LA MEUTE"
+title: "LA BELLE ET LA MEUTE"
 date: 2026-11-19 19:00
 venue: "Sociale Sidi Bou Said"
 ville: "tunis"

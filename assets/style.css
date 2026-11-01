@@ -105,6 +105,14 @@ a.carte.seule { border: 0; margin-left: 4px; }
 .recherche { width: 100%; box-sizing: border-box; margin: 6px 0 4px; padding: 9px 12px; font-size: 1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); }
 .sante-resume { font-weight: 600; }
 table.sante code { font-size: .75rem; }
+td.precision { font-size: .85rem; min-width: 12em; }
+td.precision ul.manques { margin: 4px 0 2px; padding-left: 1.1em; }
+td.precision small.manques { display: block; }
+@media (max-width: 640px) {
+  table.sante th:nth-child(4), table.sante td:nth-child(4), table.sante th:nth-child(5), table.sante td:nth-child(5) { display: none; }
+  td.precision { min-width: 0; }
+  table.sources td { overflow-wrap: anywhere; }
+}
 .prix.gratuit { color: #1d6b3a; }
 .seul-gratuit { display: inline-flex; gap: 6px; align-items: center; font-size: .9rem; margin: 2px 0 8px; color: var(--muted); }
 

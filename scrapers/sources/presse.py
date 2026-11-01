@@ -97,6 +97,28 @@ def _dates(texte: str, ref: dt.date) -> tuple[dt.date | None, dt.date | None]:
     return (a_venir[0], None) if a_venir else (None, None)
 
 
+_RUBRIQUE = re.compile(r"^\s*(?:Tunisie|Culture|Cin[ée]ma|Th[ée][âa]tre|Musique|Expo(?:sition)?|Livres?|Agenda|Sortie|"
+                       r"Critique|Festival|Danse|Arts?)\s*[:|–-]\s+", re.I)
+_EVENEMENT = re.compile(r"festival|foire|salon|journ[ée]es|biennale|rencontres|semaine|mois|nuit|f[êe]te|"
+                        r"\b20\d{2}\b|مهرجان|أيام|معرض", re.I)
+
+
+def titre_evenement(titre: str) -> str:
+    """Le nom de l'événement dans un titre d'article :
+    « Cinéma : Le Temps suspendu, un film hongrois à ne pas rater » → « Le Temps suspendu » ;
+    « « Saveurs et amertume » à la Galerie TGM : Lorsque l'art… » → « Saveurs et amertume » ;
+    « Foire nationale du livre tunisien: Traduire, transmettre… » → « Foire nationale du livre tunisien »."""
+    t = _RUBRIQUE.sub("", titre, count=1).strip()
+    m = re.search(r"[«“\"]\s*([^»”\"]{3,80}?)\s*[»”\"]", t)
+    if m:
+        return propre(m.group(1))
+    avant, sep, apres = t.partition(":")
+    if sep and 2 <= len(avant.split()) <= 8 and len(apres.split()) >= 3 and _EVENEMENT.search(avant):
+        return propre(avant)
+    t = re.split(r",\s+(?:un|une|le|la|les|des|ce|cette)\s", t, maxsplit=1)[0]
+    return propre(t) or titre
+
+
 def depuis_flux(xml: str, source: dict) -> list[Evenement]:
     o = source.get("options") or {}
     mots = re.compile(o.get("garder", MOTS), re.I)
@@ -112,9 +134,11 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
             continue
         m = _LIEU.search(tout)
         lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "Tunisie, voir l'article")
-        res.append(Evenement(titre=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
+        categorie = categorie_du_titre(a["titre"]) or (
+            "expo" if re.search(r"\bgalerie\b|exposition|معرض", a["titre"], re.I) else source.get("categorie", "autre"))
+        res.append(Evenement(titre=titre_evenement(a["titre"]), debut=dt.datetime(debut.year, debut.month, debut.day),
                              fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None, lien=a["lien"] or source["url"],
-                             lieu=lieu, categorie=categorie_du_titre(a["titre"]) or source.get("categorie", "autre"),
+                             lieu=lieu, categorie=categorie,
                              prix=prix_du_texte(tout), description=resume(a["texte"], 400)))
     return res
 
