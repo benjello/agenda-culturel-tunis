@@ -19,6 +19,12 @@ carte.auj: { ar: "اليوم", en: "Today" }
 carte.sept: { ar: "7 أيام", en: "7 days" }
 carte.tout: { ar: "الكل", en: "All" }
 nav.nouveau: { ar: "جديد", en: "New" }
+nav.archives: { ar: "الأرشيف", en: "Archives" }
+arch.titre: { ar: "الأرشيف", en: "Archives" }
+arch.intro: { ar: "الأنشطة الماضية، محفوظة منذ نوفمبر 2026. ابحث عن فنان، فضاء، مهرجان…", en: "Past events, kept since November 2026. Search for an artist, a venue, a festival…" }
+arch.chercher: { fr: "Chercher dans les archives…", ar: "ابحث في الأرشيف…", en: "Search the archives…" }
+arch.vide: { ar: "لم نجد شيئا في الأرشيف.", en: "Nothing found in the archives." }
+arch.toutes: { ar: "الكل", en: "All" }
 nav.musees: { ar: "المتاحف", en: "Museums" }
 musees_titre: { ar: "متاحف تونس", en: "Museums in Tunisia" }
 musees_intro: { ar: "متاحف كامل البلاد حسب الجهة، مع ما تعلن عنه.", en: "Museums across the country, by region, with what they announce." }
