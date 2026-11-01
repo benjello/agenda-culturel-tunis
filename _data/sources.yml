@@ -1638,3 +1638,18 @@
     lieu: "Tunis, voir l'annonce"
     resultats: 8
   note: Association des cultures électroniques (E-Fest, E-Fest Camp à Ksar El Ferch, Tataouine). Proposé par Mahdi.
+
+- id: ig-tounes-wijhetouna
+  nom: Tounes Wijhetouna (Instagram)
+  url: https://www.instagram.com/tounes.wijhetouna/
+  type: agenda
+  genre: institution
+  scraper: instagram
+  categorie: autre
+  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "tounes.wijhetouna"
+    lieu: "Tunisie, voir l'annonce"
+    resultats: 8
+  note: Programme de tourisme durable soutenu par l'Union européenne (circuits patrimoine, gastronomie, cinéma, événements dans les régions). Beaucoup de publications promotionnelles. Proposé par Mahdi.
