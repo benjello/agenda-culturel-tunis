@@ -55,10 +55,15 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
   {%- endfor %}
   </tbody>
 </table>
-<p class="updated" data-t="sante_note">« Silencieuse » : la source se lit bien mais n'a rien annoncé depuis plus de 30 jours. Les sources en pause sont repérées mais pas encore branchées, ou leur adresse est à vérifier (voir <code>_data/sources.yml</code>).</p>
+<p class="updated" data-th="sante_note">« Silencieuse » : la source se lit bien mais n'a rien annoncé depuis plus de 30 jours. Les sources en pause sont repérées mais pas encore branchées, ou leur adresse est à vérifier (voir <code>_data/sources.yml</code>).</p>
 
 {%- assign ctl = site.data.controle -%}
 {%- if ctl %}
+{%- assign ap = site.data.apify %}
+{%- if ap and ap.limite > 0 %}
+<p class="updated"><span data-t="sante.apify">Crédit Apify du mois (Instagram, Facebook) :</span> {{ ap.depense }} $ / {{ ap.limite }} $ ({{ ap.pourcent }} %){% if ap.fin_cycle != "" %} · <span data-t="sante.recharge">recharge le</span> {{ ap.fin_cycle | date: "%d/%m/%Y" }}{% endif %}{% if ap.pourcent >= 100 %} · ⚠️ <span data-t="sante.apify_epuise">épuisé : Instagram et Facebook ne sont plus lus</span>{% endif %}</p>
+{%- endif %}
+
 <h2 id="a-verifier" data-t="sante.a_verifier">Entrées à vérifier</h2>
 <p><span data-t="sante.controle">Après chaque passage, un contrôle relit tous les événements. Il corrige seul les lieux qui sont en fait le nom d'une source (journal, agenda, collectif).</span>{% if ctl.corriges > 0 %} {{ ctl.corriges }} <span data-t="sante.corriges">corrigé(s) au dernier passage.</span>{% endif %} <span data-t="sante.signale">Il signale ici le reste : titre vague ou trop long, date lointaine, même événement deux fois.</span></p>
 {%- if ctl.a_verifier.size > 0 %}

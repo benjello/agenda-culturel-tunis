@@ -280,3 +280,6 @@ enf_festivals: { ar: "مهرجانات الأطفال والشباب", en: "Fest
 enf_note: { ar: "ينقص عرض أو ورشة للأطفال؟ <a href=\"{base}proposer/\">اقترحه</a>.", en: "A show or workshop for kids is missing? <a href=\"{base}proposer/\">Suggest it</a>." }
 age.des: { fr: "dès %n ans", ar: "من %n سنوات", en: "ages %n+" }
 age.plage: { fr: "%n ans", ar: "%n سنوات", en: "ages %n" }
+sante.apify: { ar: "رصيد Apify لهذا الشهر (إنستغرام، فيسبوك):", en: "Apify credit this month (Instagram, Facebook):" }
+sante.recharge: { ar: "يتجدد في", en: "renews on" }
+sante.apify_epuise: { ar: "نفد: لم يعد إنستغرام وفيسبوك يقرآن", en: "used up: Instagram and Facebook are no longer read" }

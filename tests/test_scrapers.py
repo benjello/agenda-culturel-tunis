@@ -693,6 +693,12 @@ class Fiches(unittest.TestCase):
         self.assertFalse(est_famille("Dar El 3ers", "Deux familles préparent le mariage de leurs enfants."))
         self.assertTrue(est_famille("Philo-Art", "Un atelier pour les enfants de 6 à 10 ans."))
 
+    def test_alerte_apify(self):
+        from scrapers.credit_apify import alerte
+        self.assertEqual(alerte({"depense": 1, "limite": 5, "pourcent": 20, "fin_cycle": ""}), "")
+        self.assertIn("épuisé", alerte({"depense": 5.1, "limite": 5, "pourcent": 102, "fin_cycle": "2026-12-01"}))
+        self.assertIn("presque", alerte({"depense": 4.2, "limite": 5, "pourcent": 84, "fin_cycle": ""}))
+
     def test_age_conseille(self):
         from scrapers.commun import age_conseille
         self.assertEqual(age_conseille("Spectacle jeune public dès 5 ans"), "5")
