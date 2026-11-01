@@ -6,7 +6,7 @@
 {%- endcomment -%}
 {%- assign l = include.lieu | default: "" | strip -%}
 {%- assign vague = false -%}
-{%- if l == "" or l == "Tunis" or l == "Tunisie" or l contains "voir l'article" or l contains " et " or l contains " / " or l contains "plusieurs" or l contains "Plusieurs" -%}{%- assign vague = true -%}{%- endif -%}
+{%- if l == "" or l == "Tunis" or l == "Tunisie" or l contains "voir l'article" or l contains "voir l'annonce" or l contains " et " or l contains " / " or l contains "plusieurs" or l contains "Plusieurs" -%}{%- assign vague = true -%}{%- endif -%}
 {%- if vague -%}{{ l }}{%- else -%}
 {%- capture q %}{{ include.lieu }}{% if include.adresse %}, {{ include.adresse }}{% endif %}, Tunisie{% endcapture -%}
 {%- assign fiche = site.data.lieux.index[l] -%}

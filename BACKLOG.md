@@ -86,6 +86,7 @@ Usage
 - [ ] Newsletter du jeudi générée depuis la page « Ce week-end ». Reportée : Buttondown proposé (gratuit jusqu'à 100 abonnés), il faudra le secret BUTTONDOWN_API_KEY.
 - [x] Filtres « gratuit » et « en famille ».
 - [x] Carte des lieux (OpenStreetMap).
+- [ ] Carte : placer à la main (lat/lon) les lieux que Nominatim ne trouve pas (valeur null dans `_data/geo.json`).
 - [x] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour. Reportée : bot @BotFather + secrets TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ; WhatsApp sans API, texte à copier-coller.
 - [x] Site installable comme une appli (PWA, hors ligne, sans store).
