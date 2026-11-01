@@ -887,18 +887,18 @@
 
 - id: ig-atast
   nom: ATAST (Instagram)
-  url: https://www.instagram.com/info.atast/
+  url: https://www.instagram.com/atast_/
   type: lieu
   genre: collectif
   scraper: instagram
   categorie: conference
-  actif: false  # compte introuvable ou vide au 1er nov. 2026
+  actif: false  # vrai compte trouvé le 1er nov. 2026 ; à allumer quand le crédit Apify revient (1er déc.)
   tous_les_jours: 3
   options:
-    compte: "info.atast"
+    compte: "atast_"
     lieu: "Tunis"
     resultats: 8
-  note: "Association tunisienne d'astronomie : soirées d'observation."
+  note: "Association tunisienne pour l'avenir des sciences et de la technologie : i-FEST², robotique jeunes."
 
 - id: fb-ajst
   nom: AJST (Facebook)
@@ -1495,7 +1495,7 @@
   genre: lieu
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
   tous_les_jours: 3
   options:
     compte: "chantarts.culture"
@@ -1510,7 +1510,7 @@
   genre: agenda
   scraper: instagram
   categorie: autre
-  actif: true
+  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
   tous_les_jours: 3
   options:
     compte: "sousseculturelle"
@@ -1525,7 +1525,7 @@
   genre: festival
   scraper: instagram
   categorie: autre
-  actif: true
+  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
   tous_les_jours: 3
   options:
     compte: "festivaldesoasistozeur"
@@ -1547,3 +1547,64 @@
     lieu: "Ksar Ghilane, voir l'annonce"
     resultats: 8
   note: "Trouvé par la recherche Instagram du 1er nov. 2026 (Douz, Sahara)."
+
+
+# Trouvés le 1er nov. 2026 (bilans sciences et musées). Instagram : en pause jusqu'au retour
+# du crédit Apify (1er décembre).
+- id: ig-cite-sciences
+  nom: Cité des sciences de Tunis (Instagram)
+  url: https://www.instagram.com/citedessciencestunis/
+  type: lieu
+  genre: institution
+  scraper: instagram
+  categorie: conference
+  actif: false  # à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "citedessciencestunis"
+    lieu: "Cité des sciences de Tunis"
+    resultats: 8
+  note: Soirées astronomiques, planétarium, ateliers des vacances scolaires.
+
+- id: ig-bardo
+  nom: Musée national du Bardo (Instagram)
+  url: https://www.instagram.com/bardo_museum/
+  type: lieu
+  genre: institution
+  scraper: instagram
+  categorie: expo
+  actif: false  # à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "bardo_museum"
+    lieu: "Musée national du Bardo"
+    resultats: 8
+  note: La page Facebook bardomuseum est abandonnée depuis 2019 ; seul l'Instagram vit.
+
+- id: ig-violon-bleu
+  nom: Galerie Le Violon Bleu (Instagram)
+  url: https://www.instagram.com/leviolonbleu.gallery/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: false  # à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "leviolonbleu.gallery"
+    lieu: "Le Violon Bleu, Sidi Bou Saïd"
+    resultats: 8
+  note: L'ancien domaine leviolonbleu.com est perdu et la page Facebook leviolonbleu est celle d'un violoniste.
+
+- id: sat-astronomie
+  nom: Société astronomique de Tunisie
+  url: https://www.sat.org.tn/feed/
+  type: lieu
+  genre: collectif
+  scraper: rss
+  categorie: conference
+  actif: true
+  options:
+    lieu: "Cité des sciences de Tunis"
+    garder: 'observation|soirée|éclipse|conférence|atelier|nuit des étoiles|رصد|سهرة|محاضرة'
+  note: Flux RSS lisible depuis GitHub (bilan sciences du 1er nov.). Surtout des calculs (Aïd, éclipses), peu d'événements.
