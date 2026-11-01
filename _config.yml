@@ -10,6 +10,9 @@ future: true
 # Mettre baseurl: "" le jour où on passe sur un nom de domaine à soi.
 baseurl: "/agenda-culturel-tunis"
 url: "https://benjello.github.io"
+depot: "https://github.com/benjello/agenda-culturel-tunis"
+# Adresse e-mail pour proposer un événement ou signaler une erreur sans compte GitHub (vide : pas de bouton e-mail)
+contact_email: ""
 
 collections:
   events:

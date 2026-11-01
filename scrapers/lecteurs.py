@@ -158,6 +158,38 @@ _PAS_EVENEMENT = re.compile(r"recrut|candidature|offre d.emploi|ouvre exceptionn
                             r"\bhier\b|a eu lieu|merci [àa] (?:tous|toutes|vous)|retour sur|mise [àa] jour", re.I)
 
 
+_EXPO = re.compile(r"\bexposition|\bexhibition|\bvernissage|\bexpo\b|معرض", re.I)
+_JUSQU = re.compile(r"(?:jusqu.?au|until|au|→|-)\s*((?:\w+\s+)?\d{1,2}(?:er)?\s+\w+(?:\s+\d{4})?)", re.I)
+EXPO_JOURS = 30  # durée supposée d'une expo quand l'affiche ne dit pas jusqu'à quand
+
+
+def _exposition(p: dict, texte: str, ocr: str, tout: str, jours: set, ref: dt.date,
+                aujourd_hui: dt.date, lieu: str) -> Evenement | None:
+    """Une expo : du vernissage (ou de la première date) à la date de fin lue, sinon 30 jours après."""
+    proches = sorted(j for j in jours if aujourd_hui - dt.timedelta(days=90) <= j <= aujourd_hui + dt.timedelta(days=120))
+    if not proches:
+        return None
+    debut = proches[0]
+    fin = None
+    for m in _JUSQU.finditer(tout):
+        bout = m.group(1)
+        cand = [d.date() for d in toutes_dates(bout)] + [dt.date.fromisoformat(j) for j in jours_sans_annee(bout, ref)]
+        cand = [c for c in cand if c > debut]
+        if cand:
+            fin = max(cand)
+    if not fin and len(proches) > 1 and (proches[-1] - debut).days <= 120:
+        fin = proches[-1]
+    fin = fin or debut + dt.timedelta(days=EXPO_JOURS)
+    if fin < aujourd_hui:
+        return None
+    titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Exposition à {lieu}"
+    m = re.search(r"📍\s*([^\n#]{3,80})", texte)
+    ici = propre(m.group(1).replace("@", "")).rstrip(" .,") if m else lieu
+    return Evenement(titre=titre, debut=dt.datetime(debut.year, debut.month, debut.day),
+                     fin=dt.datetime(fin.year, fin.month, fin.day), lien=p["lien"], lieu=ici, categorie="expo",
+                     image=(p.get("images") or [""])[0], prix=prix_du_texte(tout), description=resume(p.get("texte", "")))
+
+
 def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Une publication = une affiche = un événement (clubs, bars, concerts), à la date lue
     dans la légende ou sur l'image. Plusieurs dates sur une affiche : un événement par date."""
@@ -176,6 +208,13 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
                 jours.add(dt.date(_annee(int(m), ref), int(m), int(j)))
             except ValueError:
                 continue
+        # Une exposition dure : le vernissage peut être passé alors qu'on peut encore la voir.
+        if _EXPO.search(texte[:300] + "\n" + ocr[:300]):
+            e = _exposition(p, texte, ocr, tout, jours, ref, aujourd_hui, lieu)
+            if e and (e.debut.date(), e.titre) not in vus:
+                vus.add((e.debut.date(), e.titre))
+                res.append(e)
+            continue
         jours = sorted(j for j in jours if aujourd_hui <= j <= aujourd_hui + dt.timedelta(days=120))[:7]
         if not jours:
             continue

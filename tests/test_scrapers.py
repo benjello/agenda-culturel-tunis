@@ -606,3 +606,64 @@ class Fiches(unittest.TestCase):
         from scrapers.sources.pdf_programme import _salle
         self.assertEqual(_salle("alle de cinéma"), "Salle de cinéma")
         self.assertEqual(_salle("2024, 1h18mn, Médiathèque"), "Médiathèque")
+
+
+class Lot7(unittest.TestCase):
+    def test_resident_advisor(self):
+        from scrapers.sources.resident_advisor import depuis_listes
+        d = {"eventListings": {"data": [{"event": {
+            "id": "1", "title": "Syndicate of Love", "date": "2026-11-20T00:00:00.000",
+            "startTime": "2026-11-20T23:00:00.000", "endTime": "2026-11-21T05:00:00.000",
+            "contentUrl": "/events/1", "cost": "30 TND",
+            "venue": {"name": "Yuka", "address": "Gammarth", "area": {"name": "All"}}, "images": []}}]}}
+        e = depuis_listes(d)[0]
+        self.assertEqual((e.titre, e.debut.hour, e.fin, e.lien, e.prix), ("Syndicate of Love", 23, None, "https://ra.co/events/1", "30 TND"))
+
+    def test_alerte(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import alerte
+        etat = {"a": {"dernier_non_vide": "2026-09-01T06:00:00"}, "b": {"premier_passage": "2026-11-01T06:00:00"}}
+        sources = "- {id: a, nom: A, url: u}\n- {id: b, nom: B, url: u}\n- {id: c, nom: C, url: u, actif: false}\n"
+        with mock.patch.object(alerte, "lire_etat", return_value=etat), \
+             mock.patch("pathlib.Path.read_text", return_value=sources):
+            liste = alerte.silencieuses(dt.datetime(2026, 11, 10))
+        self.assertEqual([s["id"] for s, _, _ in liste], ["a"])
+        self.assertIn("| 69 |", alerte.rapport(liste))
+
+
+class Agora(unittest.TestCase):
+    def test_billetterie_woocommerce(self):
+        import datetime as dt
+        from scrapers.sources.woocommerce_seances import depuis_produits
+        produits = [{"name": "L&rsquo;Île des Souvenirs", "permalink": "https://lagora.tn/produit/lile-des-souvenirs/",
+                     "prices": {"price": "13000", "currency_minor_unit": 3},
+                     "images": [{"src": "https://lagora.tn/a.jpg"}], "description": "<p>Deux femmes…</p>",
+                     "attributes": [{"name": "Séances", "terms": [{"name": "Dim. 1 novembre - 15:00 - VF"},
+                                                                  {"name": "Ven. 30 octobre - 16:00 - VF"}]},
+                                    {"name": "Type du Ticket", "terms": [{"name": "Adulte"}]}]},
+                    {"name": "Sans séance", "attributes": []}]
+        evts = depuis_produits(produits, {"nom": "L'Agora", "url": "https://lagora.tn", "options": {"lieu": "L'Agora Marsa"}},
+                               dt.date(2026, 11, 1))
+        self.assertEqual(len(evts), 1)
+        e = evts[0]
+        self.assertEqual((e.titre, e.debut, e.prix, e.film), ("L’Île des Souvenirs", dt.datetime(2026, 11, 1, 15), "13 DT", True))
+
+
+class Expositions(unittest.TestCase):
+    def test_expo_vernissage_passe(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import lecteurs
+        pub = {"lien": "https://www.instagram.com/p/x/", "date": "2026-10-25", "images": ["a.jpg"],
+               "texte": "COSMOSE\\nSolo exhibition de Halim Karabibene.\\nVernissage le 29 octobre à partir de 18h.", "ocr": ""}
+        pub["texte"] = pub["texte"].replace("\\\\n", "\\n")
+        class Jour(dt.date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 11, 1)
+        with mock.patch.object(lecteurs.dt, "date", Jour):
+            evts = lecteurs.une_affiche_par_evenement([pub], [], "Agorgi Gallery")
+        self.assertEqual(len(evts), 1)
+        e = evts[0]
+        self.assertEqual((e.categorie, e.debut.date().isoformat(), e.fin.date().isoformat()), ("expo", "2026-10-29", "2026-11-28"))

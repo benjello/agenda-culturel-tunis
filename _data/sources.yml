@@ -213,17 +213,29 @@
 
 - id: cine-agora
   nom: L'Agora (La Marsa)
+  url: https://lagora.tn
+  type: cinema
+  scraper: woocommerce_seances
+  categorie: cinema
+  actif: true
+  options:
+    lieu: "L'Agora Marsa"
+    adresse: "La Marsa"
+  note: "Billetterie lagora.tn (WooCommerce) : chaque film avec ses séances, son prix, son affiche. Remplace Instagram, dont les publications « programme de la semaine » ne donnaient pas le titre du film."
+
+- id: ig-agora
+  nom: L'Agora (Instagram)
   url: https://www.instagram.com/lagoramarsa/
   type: lieu
   scraper: instagram
-  categorie: cinema
-  actif: true
+  categorie: autre
+  actif: false
   tous_les_jours: 3
   options:
     compte: "lagoramarsa"
     lieu: "L'Agora Marsa"
     resultats: 8
-  note: "La page Facebook n'est pas publique : on lit Instagram (films, concerts, expos). Les séances viennent aussi de tunis.events."
+  note: "En pause : les films viennent de la billetterie lagora.tn. À rallumer pour les concerts et expos si la billetterie ne les a pas."
 
 - id: cine-alhambra
   nom: Alhambra Zéphyr (La Marsa)
@@ -837,7 +849,7 @@
   tous_les_jours: 3
   options:
     compte: "agorgi_gallery"
-    lieu: "Agorgi Gallery"
+    lieu: "Agorgi Gallery, Sidi Bou Saïd"
     resultats: 8
   note: "Galerie d'art, proposée par Mahdi."
 
@@ -892,7 +904,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Tunis, voir l'article"
 
@@ -902,7 +915,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Ariana, voir l'article"
 
@@ -912,7 +926,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Ben Arous, voir l'article"
 
@@ -922,7 +937,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "La Manouba, voir l'article"
 
@@ -932,7 +948,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Nabeul, voir l'article"
 
@@ -942,7 +959,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Zaghouan, voir l'article"
 
@@ -952,7 +970,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Bizerte, voir l'article"
 
@@ -962,7 +981,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Béja, voir l'article"
 
@@ -972,7 +992,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Jendouba, voir l'article"
 
@@ -982,7 +1003,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Le Kef, voir l'article"
 
@@ -992,7 +1014,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Siliana, voir l'article"
 
@@ -1002,7 +1025,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Sousse, voir l'article"
 
@@ -1012,7 +1036,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Monastir, voir l'article"
 
@@ -1022,7 +1047,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Mahdia, voir l'article"
 
@@ -1032,7 +1058,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Sfax, voir l'article"
 
@@ -1042,7 +1069,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Kairouan, voir l'article"
 
@@ -1052,7 +1080,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Kasserine, voir l'article"
 
@@ -1062,7 +1091,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Sidi Bouzid, voir l'article"
 
@@ -1072,7 +1102,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Gabès, voir l'article"
 
@@ -1082,7 +1113,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Médenine, voir l'article"
 
@@ -1092,7 +1124,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Tataouine, voir l'article"
 
@@ -1102,7 +1135,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Gafsa, voir l'article"
 
@@ -1112,7 +1146,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Tozeur, voir l'article"
 
@@ -1122,7 +1157,8 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
   options:
     lieu: "Kébili, voir l'article"
 
@@ -1241,6 +1277,7 @@
   options:
     pays: tn
     zone: all
+    area: 196
   note: "Soirées électro et clubs, Tunisie entière, par l'API GraphQL du site."
 
 - id: ftcc

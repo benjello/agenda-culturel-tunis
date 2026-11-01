@@ -1,0 +1,58 @@
+---
+layout: default
+title: Proposer un événement
+permalink: /proposer/
+description: Annoncez gratuitement un concert, une expo, une projection ou une rencontre sur l'agenda culturel.
+---
+<section class="intro">
+  <h1 data-t="proposer_titre">Proposer un événement</h1>
+  <p data-t="proposer_intro">C'est gratuit. Petits lieux, collectifs et artistes sans billetterie sont les bienvenus. Un membre de l'équipe vérifie, puis l'événement apparaît sur l'agenda.</p>
+</section>
+<form id="proposition" class="formulaire">
+  <label><span data-t="f_titre">Titre</span> *<input name="titre" required placeholder="Concert de oud – Trio X"></label>
+  <div class="deux">
+    <label><span data-t="f_date">Date</span> *<input name="jour" type="date" required></label>
+    <label><span data-t="f_heure">Heure</span><input name="heure" type="time"></label>
+  </div>
+  <label><span data-t="f_fin">Date de fin (expo, festival)</span><input name="fin" type="date"></label>
+  <label><span data-t="f_lieu">Lieu</span> *<input name="lieu" required placeholder="Dar Lasram, Médina de Tunis"></label>
+  <label><span data-t="f_categorie">Catégorie</span>
+    <select name="categorie">
+      {%- for c in site.data.categories %}<option value="{{ c[1].label }}">{{ c[1].label }}</option>{% endfor %}
+    </select></label>
+  <label><span data-t="f_prix">Prix</span><input name="prix" placeholder="Gratuit, 20 DT…"></label>
+  <label><span data-t="f_lien">Lien (Facebook, Instagram, billetterie)</span> *<input name="lien" type="url" required placeholder="https://"></label>
+  <label><span data-t="f_description">Quelques lignes de description</span><textarea name="description" rows="4"></textarea></label>
+  <p class="envoi">
+    <button type="submit" class="bouton principal" data-t="f_github">Envoyer (compte GitHub)</button>
+    {%- if site.contact_email != "" %}<button type="button" class="bouton" id="par-email" data-t="f_email">Envoyer par e-mail</button>{% endif %}
+  </p>
+  <p class="aide"><small data-t="f_aide">L'envoi ouvre une page GitHub déjà remplie : il reste à cliquer « Submit new issue ». Vous pouvez y glisser l'affiche.</small></p>
+</form>
+<h2 data-t="proposer_source">Vous publiez souvent ?</h2>
+<p data-t="proposer_source_texte">Un lieu, un collectif ou un artiste qui annonce régulièrement ses dates sur un site, Facebook ou Instagram : donnez-nous l'adresse, l'agenda la lira tout seul chaque jour.</p>
+<p><a class="bouton" href="{{ site.depot }}/issues/new?title={{ 'Source : ' | url_encode }}&labels=source" rel="noopener" data-t="proposer_source_bouton">Proposer une source</a></p>
+<script>
+(function () {
+  var f = document.getElementById('proposition'), depot = {{ site.depot | jsonify }}, email = {{ site.contact_email | jsonify }};
+  function valeurs() {
+    var v = {}; new FormData(f).forEach(function (x, k) { v[k] = String(x).trim(); }); return v;
+  }
+  function date(v) { return v.jour + (v.heure ? ' ' + v.heure : ''); }
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var v = valeurs(), p = new URLSearchParams({
+      template: 'evenement.yml', title: 'Événement : ' + v.titre, titre: v.titre, date: date(v), fin: v.fin,
+      lieu: v.lieu, categorie: v.categorie, prix: v.prix, lien: v.lien, description: v.description });
+    window.open(depot + '/issues/new?' + p.toString(), '_blank', 'noopener');
+  });
+  var b = document.getElementById('par-email');
+  if (b) b.addEventListener('click', function () {
+    if (!f.reportValidity()) return;
+    var v = valeurs();
+    var corps = ['Titre : ' + v.titre, 'Date : ' + date(v), 'Fin : ' + v.fin, 'Lieu : ' + v.lieu, 'Catégorie : ' + v.categorie,
+      'Prix : ' + v.prix, 'Lien : ' + v.lien, '', v.description].join('\n');
+    location.href = 'mailto:' + email + '?subject=' + encodeURIComponent('Événement : ' + v.titre) + '&body=' + encodeURIComponent(corps);
+  });
+})();
+</script>

@@ -92,6 +92,6 @@ def recuperer(source: dict) -> list:
     lieu = o.get("lieu") or source["nom"]
     evts = [e for e in lecteur([p.en_dict() for p in publications], [], lieu) if e]
     for e in evts:
-        e.categorie = source.get("categorie", e.categorie)
+        e.categorie = e.categorie or source.get("categorie") or "autre"
     print(f"  {source['id']} : {len(evts)} événement(s) lu(s) sur les affiches")
     return evts

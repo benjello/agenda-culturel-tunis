@@ -73,7 +73,7 @@ carte_titre: { ar: "خريطة الفضاءات", en: "Venue map" }
 carte_intro: { ar: "اضغط على فضاء لترى برمجته.", en: "Tap a venue to see what's on." }
 liste_lieux: { ar: "قائمة الفضاءات", en: "Venue list" }
 carte_vide: { ar: "الخريطة تكتمل يوما بعد يوم.", en: "The map fills up day by day." }
-manque: { ar: "ينقص فضاء أو موقع؟", en: "A venue or a website is missing?" }
+manque: { ar: "ينقص نشاط؟", en: "An event is missing?" }
 proposer: { ar: "اقترح مصدرا", en: "Suggest a source" }
 aucun: { ar: "لا شيء قادم حاليا.", en: "Nothing coming up yet." }
 films_tous: { ar: "كل الأفلام", en: "All films" }
@@ -84,3 +84,25 @@ copie: { fr: "Lien copié", ar: "تم النسخ", en: "Link copied" }
 image: { fr: "Télécharger l'image", ar: "تحميل الصورة", en: "Download image" }
 fermer: { fr: "Fermer", ar: "إغلاق", en: "Close" }
 en_ce_moment: { ar: "حاليا", en: "Now on" }
+signaler: { ar: "⚑ الإبلاغ عن خطأ", en: "⚑ Report an error" }
+par_email: { ar: "بالبريد", en: "by e-mail" }
+proposer_titre: { ar: "اقترح نشاطا", en: "Suggest an event" }
+proposer_intro: { ar: "مجانا. الفضاءات الصغيرة والمجموعات والفنانون مرحب بهم. نتثبت ثم ينشر النشاط في الأجندا.", en: "It's free. Small venues, collectives and artists are welcome. We check it, then it appears on the agenda." }
+f_titre: { ar: "العنوان", en: "Title" }
+f_date: { ar: "التاريخ", en: "Date" }
+f_heure: { ar: "الساعة", en: "Time" }
+f_fin: { ar: "تاريخ النهاية (معرض، مهرجان)", en: "End date (exhibition, festival)" }
+f_lieu: { ar: "المكان", en: "Venue" }
+f_categorie: { ar: "الصنف", en: "Category" }
+f_prix: { ar: "السعر", en: "Price" }
+f_lien: { ar: "رابط (فيسبوك، إنستغرام، تذاكر)", en: "Link (Facebook, Instagram, tickets)" }
+f_description: { ar: "بضعة أسطر للتعريف", en: "A few lines of description" }
+f_github: { ar: "إرسال (حساب GitHub)", en: "Send (GitHub account)" }
+f_email: { ar: "إرسال بالبريد", en: "Send by e-mail" }
+f_aide: { ar: "يفتح الإرسال صفحة GitHub معبأة مسبقا.", en: "Sending opens a pre-filled GitHub page: just click « Submit new issue »." }
+proposer_source: { ar: "تنشر باستمرار؟", en: "You post often?" }
+proposer_source_texte: { ar: "أعطنا عنوان صفحتك وستقرؤها الأجندا كل يوم.", en: "Give us your page's address and the agenda will read it every day." }
+proposer_source_bouton: { ar: "اقترح مصدرا", en: "Suggest a source" }
+nav.proposer: { ar: "اقترح نشاطا", en: "Add an event" }
+ramadan_bandeau: { fr: "🌙 Soirées de Ramadan : le programme →", ar: "🌙 سهرات رمضان: البرنامج ←", en: "🌙 Ramadan nights: the programme →" }
+ramadan_titre: { ar: "سهرات رمضان", en: "Ramadan nights" }
