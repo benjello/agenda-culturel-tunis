@@ -1288,3 +1288,17 @@
   categorie: cinema
   actif: false
   note: "Page Facebook officielle introuvable par la recherche (nov. 2026). À brancher dès qu'on a l'adresse ; leurs dates passent aussi par la presse (Assises des ciné-clubs)."
+
+- id: ig-tunisia-podcasts-festival
+  nom: Tunisia Podcasts Festival (Instagram)
+  url: https://www.instagram.com/tunisiapodcastsfestival/
+  type: agenda
+  scraper: instagram
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "tunisiapodcastsfestival"
+    lieu: "Tunisia Podcasts Festival"
+    resultats: 8
+  note: "Proposé par Mahdi. Festival du podcast (Podcast Days, 6 et 7 novembre 2026)."
