@@ -9,5 +9,6 @@ link: "https://tunis.events/events/3DRYdk/yoga-for-busy-minds-with-judit-yoga_in
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/59bb5d3c10bb10e6fd8910a118a3104af13d.jpg"
+discret: true
 auto: true
 ---

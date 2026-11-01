@@ -96,6 +96,8 @@ Couverture et langues (demandé le 1er novembre)
 - [ ] À terme, **toute la Tunisie** : on garde tous les événements (la Manouba, Carthage…) avec leur lieu réel ; plus tard, un filtre par ville ou gouvernorat. Le filtre « hors Grand Tunis » de tunis.events sera alors retiré.
 - [ ] Site **multilingue** : français, arabe (sens de lecture droite-gauche), peut-être anglais. Textes de l'interface dans `_data/fr.yml` → un fichier par langue.
 
+- [ ] Événements commerciaux (yoga, fitness, brunchs…) : pour l'instant **gardés en bas de liste et en plus discret** (`commun.est_discret`). Décider plus tard s'il faut une rubrique à part ou les retirer.
+
 Fiabilité
 - [ ] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
 - [ ] Bouton « signaler une erreur » sur chaque événement.
