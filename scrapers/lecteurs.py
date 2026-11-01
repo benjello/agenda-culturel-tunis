@@ -163,10 +163,27 @@ _JUSQU = re.compile(r"(?:jusqu.?au|until|au|→|-)\s*((?:\w+\s+)?\d{1,2}(?:er)?\
 EXPO_JOURS = 30  # durée supposée d'une expo quand l'affiche ne dit pas jusqu'à quand
 
 
+_MAJUSCULES = re.compile(r"\b([A-ZÀ-Ü][A-ZÀ-Ü'’ -]{3,40}[A-ZÀ-Ü])\b")
+_DE_ARTISTE = re.compile(r"(?:solo exhibition|exposition(?: personnelle)?|exhibition)\s+(?:of|de|by|du peintre|de l.artiste)\s+"
+                         r"((?:[A-ZÀ-Ü][\w'’-]+\s?){1,4})")
+
+
+def _titre_expo(texte: str) -> str:
+    """Le nom d'une expo est souvent en capitales dans la légende (« COSMOSE »), l'artiste après « exposition de »."""
+    noms = [m for m in _MAJUSCULES.findall(texte) if not re.fullmatch(r"(?:EXPOSITION|EXHIBITION|VERNISSAGE|SOLO|OPEN|NEW)", m.strip())]
+    if not noms:
+        return ""
+    titre = noms[0].strip().title() if len(noms[0]) > 4 else noms[0].strip()
+    a = _DE_ARTISTE.search(texte)
+    return f"{titre} – {a.group(1).strip()}" if a and a.group(1).strip().lower() not in titre.lower() else titre
+
+
 def _exposition(p: dict, texte: str, ocr: str, tout: str, jours: set, ref: dt.date,
                 aujourd_hui: dt.date, lieu: str) -> Evenement | None:
     """Une expo : du vernissage (ou de la première date) à la date de fin lue, sinon 30 jours après."""
     proches = sorted(j for j in jours if aujourd_hui - dt.timedelta(days=90) <= j <= aujourd_hui + dt.timedelta(days=120))
+    if not proches and ref >= aujourd_hui - dt.timedelta(days=EXPO_JOURS):
+        proches = [ref]  # « la galerie est ouverte ce week-end » : l'expo est visible depuis la publication
     if not proches:
         return None
     debut = proches[0]
@@ -182,7 +199,7 @@ def _exposition(p: dict, texte: str, ocr: str, tout: str, jours: set, ref: dt.da
     fin = fin or debut + dt.timedelta(days=EXPO_JOURS)
     if fin < aujourd_hui:
         return None
-    titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Exposition à {lieu}"
+    titre = _titre_expo(texte) or _titre_affiche(texte) or _titre_affiche(ocr) or f"Exposition à {lieu}"
     m = re.search(r"📍\s*([^\n#]{3,80})", texte)
     ici = propre(m.group(1).replace("@", "")).rstrip(" .,") if m else lieu
     return Evenement(titre=titre, debut=dt.datetime(debut.year, debut.month, debut.day),
