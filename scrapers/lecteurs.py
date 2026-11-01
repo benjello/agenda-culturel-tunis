@@ -12,7 +12,7 @@ import json
 import re
 import unicodedata
 
-from .commun import MOIS, RACINE, Evenement, film, propre, slug
+from .commun import MOIS, RACINE, Evenement, film, propre, slug, toutes_dates
 
 _MOIS = "|".join(sorted(MOIS, key=len, reverse=True))
 # « Vendredi 30 octobre à 19h », « 1er novembre », « ler novembre » (OCR), sans année.
@@ -137,4 +137,50 @@ def un_film_par_affiche(publications: list[dict], connus: list[str], lieu: str =
     return [film(f["titre"], f["lien"], lieu, f["jours"], image=f["image"]) for f in films.values()]
 
 
-LECTEURS = {"liste_films": liste_films, "un_film_par_affiche": un_film_par_affiche}
+_RE_JJMM = re.compile(r"(?<![\d/.])(\d{1,2})[/.](\d{1,2})(?![\d/.])")
+_RE_HEURE = re.compile(r"(?<!\d)([01]?\d|2[0-3])\s*[hH:](?:\s*([0-5]\d))?(?!\d)")
+
+
+def _titre_affiche(texte: str) -> str:
+    """Première ligne parlante d'une légende : sans #hashtags, @comptes ni émojis."""
+    for ligne in normaliser(texte).splitlines():
+        l = re.sub(r"[#@]\S+", " ", ligne)
+        l = propre(re.sub(r"[^\w\s'’&:!?.,()+-]", " ", l))
+        if len(re.findall(r"[^\W\d_]", l)) >= 3:
+            return l[:90].rstrip(" .,:-")
+    return ""
+
+
+def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
+    """Une publication = une affiche = un événement (clubs, bars, concerts), à la date lue
+    dans la légende ou sur l'image. Plusieurs dates sur une affiche : un événement par date."""
+    aujourd_hui = dt.date.today()
+    res, vus = [], set()
+    for p in publications:
+        texte, ocr = normaliser(p.get("texte", "")), p.get("ocr") or ""
+        tout = f"{texte}\n{ocr}"
+        ref = dt.date.fromisoformat(p["date"]) if p.get("date") else aujourd_hui
+        jours = {d.date() for d in toutes_dates(tout)}
+        jours |= {dt.date.fromisoformat(j) for j in jours_sans_annee(tout, ref)}
+        for j, m in _RE_JJMM.findall(tout):
+            try:
+                jours.add(dt.date(_annee(int(m), ref), int(m), int(j)))
+            except ValueError:
+                continue
+        jours = sorted(j for j in jours if aujourd_hui <= j <= aujourd_hui + dt.timedelta(days=120))[:7]
+        if not jours:
+            continue
+        heures = {(int(h), int(mn or 0)) for h, mn in _RE_HEURE.findall(tout)}
+        h, mn = heures.pop() if len(heures) == 1 else (0, 0)
+        titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
+        for j in jours:
+            if (j, titre) in vus:
+                continue
+            vus.add((j, titre))
+            res.append(Evenement(titre=titre, debut=dt.datetime(j.year, j.month, j.day, h, mn),
+                                 lien=p["lien"], lieu=lieu, image=(p.get("images") or [""])[0]))
+    return res
+
+
+LECTEURS = {"liste_films": liste_films, "un_film_par_affiche": un_film_par_affiche,
+            "une_affiche_par_evenement": une_affiche_par_evenement}
