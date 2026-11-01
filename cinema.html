@@ -42,20 +42,21 @@ permalink: /cinema/
   {%- endif -%}
 {%- endfor %}
 {%- assign programmes = site.data.programmes | default: empty -%}
+{%- if programmes.size > 0 %}<h2 class="programmes-titre">Programmes publiés sur Facebook</h2>{% endif -%}
 {%- for entry in programmes -%}
   {%- assign c = entry[1] -%}
-  {%- if c.publications.size > 0 %}{% assign shown = shown | plus: 1 %}{% assign p = c.publications[0] %}
+  {%- if c.publications.size > 0 %}{% assign p = c.publications[0] %}
   <section class="cinema programme">
-    <h2><a href="{{ c.url }}" rel="noopener">{{ c.nom }}</a></h2>
-    <p class="meta">Programme publié sur Facebook{% if p.date != "" %} le {% include date-fr.html date=p.date %}{% endif %} · <a href="{{ p.lien }}" rel="noopener">voir la publication</a></p>
-    {%- for img in p.images %}
-    <a href="{{ p.lien }}" rel="noopener"><img class="programme-image" src="{{ img | relative_url }}" alt="Programme de {{ c.nom }}" loading="lazy"></a>
-    {%- endfor %}
-    {%- if p.texte != "" %}<p class="programme-texte">{{ p.texte | escape | truncate: 600 | newline_to_br }}</p>{% endif %}
-    {%- assign lu = p.ocr | default: p.ocr_facebook %}
-    {%- if lu != "" %}
-    <details><summary>Texte lu sur l'image (automatique, peut contenir des erreurs)</summary><p class="programme-texte">{{ lu | escape | newline_to_br }}</p></details>
-    {%- endif %}
+    <h3><a href="{{ c.url }}" rel="noopener">{{ c.nom }}</a> <small>· publié le {% include date-fr.html date=p.date %} · <a href="{{ p.lien }}" rel="noopener">voir sur Facebook</a></small></h3>
+    <details>
+      <summary>Voir le programme publié</summary>
+      {%- for img in p.images %}
+      <a href="{{ p.lien }}" rel="noopener"><img class="programme-image" src="{{ img | relative_url }}" alt="Programme de {{ c.nom }}" loading="lazy"></a>
+      {%- endfor %}
+      {%- if p.texte != "" %}<p class="programme-texte">{{ p.texte | escape | truncate: 600 | newline_to_br }}</p>{% endif %}
+      {%- assign lu = p.ocr | default: p.ocr_facebook %}
+      {%- if lu != "" %}<p class="programme-texte"><em>Texte lu sur l'image (automatique) :</em><br>{{ lu | escape | newline_to_br }}</p>{% endif %}
+    </details>
   </section>
   {%- endif -%}
 {%- endfor %}
