@@ -88,4 +88,9 @@ def recuperer(source: dict) -> list[Evenement]:
     items = appeler_apify(o.get("acteur", ACTEUR), entree, cle)
     if not isinstance(items, list):
         raise RuntimeError(f"réponse Apify inattendue : {str(items)[:200]}")
-    return [e for e in (convertir(i, source) for i in items) if e]
+    evenements = [e for e in (convertir(i, source) for i in items) if e]
+    print(f"  {source['id']} : {len(items)} élément(s) renvoyé(s) par Apify, {len(evenements)} événement(s) gardé(s)")
+    erreurs = [i for i in items if i.get("error")]
+    if erreurs and not evenements:
+        raise RuntimeError(f"Apify : {str(erreurs[0])[:250]}")
+    return evenements

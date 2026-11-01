@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 5 * * *"   # tous les jours à 6h, heure de Tunis
   workflow_dispatch:       # bouton « Run workflow » pour lancer à la main
+    inputs:
+      sources:
+        description: "Ids des sources à relire, séparés par des espaces (vide = toutes)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -20,9 +25,10 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Lancer les scrapers
         id: run
-        run: python3 -m scrapers
+        run: python3 -m scrapers $SOURCES
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}   # pages Facebook ; facultatif
+          SOURCES: ${{ inputs.sources }}
         continue-on-error: true   # on enregistre quand même ce qui a marché et l'état des sources
       - name: Enregistrer s'il y a du nouveau
         run: |
