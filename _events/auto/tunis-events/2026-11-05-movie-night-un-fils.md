@@ -3,7 +3,7 @@ title: "Movie Night: UN FILS"
 date: 2026-11-05 19:00
 venue: "Sociale Sidi Bou Said"
 address: "V8CW+8GM, Carthage, Carthage"
-category: "expo"
+category: "cinema"
 price: "20 TND"
 link: "https://tunis.events/events/moEXl8/movie-night-un-fils-sociale-sidi-bou-said"
 source: "tunis-events"

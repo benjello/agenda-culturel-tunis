@@ -432,6 +432,12 @@ class Wikidata(unittest.TestCase):
         self.assertTrue(f["tunisien"])
 
 class TunisEvents(unittest.TestCase):
+    def test_categorie_du_titre(self):
+        from scrapers.commun import categorie_du_titre
+        self.assertEqual(categorie_du_titre("Movie Night: UN FILS"), "cinema")
+        self.assertEqual(categorie_du_titre("Listening Session, Screening & Live Performance"), "musique")
+        self.assertEqual(categorie_du_titre("Becoming The Ocean - BIM'26"), "")
+
     def test_concerts_grand_tunis(self):
         from scrapers.sources import tunis_events
         src = {"id": "t", "nom": "t", "url": "https://tunis.events/concerts", "categorie": "musique",

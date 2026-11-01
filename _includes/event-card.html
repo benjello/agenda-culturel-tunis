@@ -19,6 +19,17 @@
     {%- else %}
     <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {{ e.venue }}</p>
     {%- endif %}
-    {%- if e.source_name %}<p class="source">Source : {{ e.source_name }}{% if e.seances and e.film != true %} · {{ e.seances.size }} séances{% endif %}{% if e.autres_sources %} · Aussi sur : {% for a in e.autres_sources %}<a href="{{ a.link }}" rel="noopener">{{ a.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}{% if e.category == "cinema" and e.film != true %} · {% include liens-film.html titre=e.title imdb=e.imdb %}{% endif %}</p>{% endif %}
+    {%- comment -%} Pas de « Source : … » : on propose ce que le lecteur veut faire (acheter, lire l'annonce). Le nom de la source reste en infobulle. {%- endcomment -%}
+    {%- assign src = site.data.sources | where: "id", e.source | first -%}
+    {%- assign billet = "" -%}{%- if src.type == "billetterie" -%}{%- assign billet = e.link -%}{%- endif -%}
+    {%- for a in e.autres_sources -%}{%- assign s2 = site.data.sources | where: "id", a.source | first -%}{%- if billet == "" and s2.type == "billetterie" -%}{%- assign billet = a.link -%}{%- endif -%}{%- endfor -%}
+    {%- if e.link or billet != "" %}
+    <p class="actions">
+      {%- if billet != "" %}<a class="billets" href="{{ billet }}" rel="noopener">🎟 Billets{% if e.price %} · {{ e.price }}{% endif %}</a>{% elsif e.price %}<span class="prix">{{ e.price }}</span>{% endif -%}
+      {%- if e.link and e.link != billet %}<a href="{{ e.link }}" rel="noopener" title="{{ e.source_name }}">{% if src.scraper == "instagram" or src.scraper == "facebook_programmes" %}Voir l'annonce{% else %}Plus d'infos{% endif %}</a>{% endif -%}
+      {%- if e.seances and e.film != true %}<span>{{ e.seances.size }} séances</span>{% endif -%}
+      {%- if e.category == "cinema" and e.film != true %}<span>{% include liens-film.html titre=e.title imdb=e.imdb %}</span>{% endif -%}
+    </p>
+    {%- endif %}
   </div>
 </article>
