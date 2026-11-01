@@ -1,0 +1,11 @@
+---
+title: "بضع ثواني |Laps de Temps"
+date: 2026-11-03 17:00
+venue: "El Teatro"
+category: "theatre"
+price: "20 DT"
+link: "https://billetterie.elteatrotunis.com/fr/programme/laps_de_temps"
+source: "el-teatro"
+source_name: "El Teatro"
+auto: true
+---
