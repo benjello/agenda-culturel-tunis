@@ -104,10 +104,10 @@
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:15:05",
-    "dernier_succes": "2026-11-01T07:15:05",
+    "dernier_passage": "2026-11-01T07:17:03",
+    "dernier_succes": "2026-11-01T07:17:03",
     "erreur": null,
-    "nb": 42,
+    "nb": 40,
     "ok": true
   }
 }
