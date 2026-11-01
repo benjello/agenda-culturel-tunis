@@ -15,6 +15,9 @@ nav.artistes: { ar: "الفنانون", en: "Artists" }
 nav.apropos: { ar: "من نحن", en: "About" }
 nav.sources: { ar: "المصادر", en: "Sources" }
 nav.carte: { ar: "الخريطة", en: "Map" }
+carte.auj: { ar: "اليوم", en: "Today" }
+carte.sept: { ar: "7 أيام", en: "7 days" }
+carte.tout: { ar: "الكل", en: "All" }
 nav.nouveau: { ar: "جديد", en: "New" }
 nav.musees: { ar: "المتاحف", en: "Museums" }
 musees_titre: { ar: "متاحف تونس", en: "Museums in Tunisia" }
