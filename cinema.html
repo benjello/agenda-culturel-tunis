@@ -23,6 +23,7 @@ permalink: /cinema/
         <p class="meta">
           {%- if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif -%}
           {%- if f.genres.size > 0 %}{% if f.duree %} · {% endif %}{{ f.genres | join: ", " }}{% endif -%}
+          {%- if f.duree or f.genres.size > 0 %} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}
         </p>
         {%- if f.jours.size > 0 %}
         <p class="days">
@@ -39,7 +40,28 @@ permalink: /cinema/
   </section>
   {%- endif -%}
 {%- endfor %}
-{%- if shown == 0 %}
+{%- assign projections = site.events | where: "category", "cinema" | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+{%- if projections.size > 0 %}
+  <section class="cinema">
+    <h2>Projections et ciné-clubs</h2>
+    <div class="events">
+    {%- for e in projections %}
+      {% include event-card.html event=e %}
+    {%- endfor %}
+    </div>
+  </section>
+{%- endif %}
+{%- if shown == 0 and projections.size == 0 %}
   <p class="empty">Les programmes des cinémas arrivent bientôt.</p>
 {%- endif %}
 <p class="updated">Horaires détaillés et billets sur le site de chaque cinéma.</p>
+
+<script>
+(function () {
+  // Masque les projections passées (le site n'est reconstruit qu'une fois par jour).
+  var today = new Date().toISOString().slice(0, 10);
+  document.querySelectorAll('.event[data-date]').forEach(function (el) {
+    el.hidden = el.dataset.date < today;
+  });
+})();
+</script>

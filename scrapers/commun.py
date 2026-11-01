@@ -147,6 +147,7 @@ class Film:
     duree: int | None = None                          # minutes
     genres: list[str] = field(default_factory=list)
     affiche: str | None = None
+    imdb: str | None = None                           # identifiant tt…, si connu
 
     def en_dict(self):
         return asdict(self)

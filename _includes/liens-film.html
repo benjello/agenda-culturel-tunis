@@ -1,0 +1,12 @@
+{%- comment -%}
+Liens vers les fiches et critiques d'un film.
+Paramètres : titre (obligatoire), imdb (identifiant tt… si connu, facultatif).
+Sans identifiant, on renvoie vers la recherche IMDb sur le titre.
+{%- endcomment -%}
+{%- if include.imdb -%}
+  {%- assign imdb_url = "https://www.imdb.com/title/" | append: include.imdb | append: "/" -%}
+{%- else -%}
+  {%- assign q = include.titre | url_encode -%}
+  {%- assign imdb_url = "https://www.imdb.com/find/?s=tt&q=" | append: q -%}
+{%- endif -%}
+<span class="liens-film"><a href="{{ imdb_url }}" rel="noopener">IMDb</a></span>

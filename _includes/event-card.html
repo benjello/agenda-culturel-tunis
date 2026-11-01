@@ -11,6 +11,6 @@
     <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
     <h3><a href="{{ href }}"{% if e.link %} rel="noopener"{% endif %}>{{ e.title }}</a></h3>
     <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {{ e.venue }}</p>
-    {%- if e.source_name %}<p class="source">Source : {{ e.source_name }}{% if e.seances %} · {{ e.seances.size }} séances{% endif %}{% if e.autres_sources %} · Aussi sur : {% for a in e.autres_sources %}<a href="{{ a.link }}" rel="noopener">{{ a.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>{% endif %}
+    {%- if e.source_name %}<p class="source">Source : {{ e.source_name }}{% if e.seances %} · {{ e.seances.size }} séances{% endif %}{% if e.autres_sources %} · Aussi sur : {% for a in e.autres_sources %}<a href="{{ a.link }}" rel="noopener">{{ a.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}{% if e.category == "cinema" %} · {% include liens-film.html titre=e.title imdb=e.imdb %}{% endif %}</p>{% endif %}
   </div>
 </article>
