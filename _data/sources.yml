@@ -1,0 +1,64 @@
+# Registre des sources de l'agenda.
+#
+# Une source = un endroit fiable où un lieu, une billetterie ou un festival
+# annonce sa programmation. Les scrapers relisent chaque source active chaque jour.
+#
+# Champs :
+#   id         identifiant court, unique (lettres, chiffres, tirets)
+#   nom        nom affiché sur le site
+#   url        page où la programmation est publiée
+#   type       lieu | billetterie | cinema | agenda
+#   scraper    nom du scraper qui sait lire cette source (dossier scrapers/sources/)
+#   categorie  catégorie par défaut des événements (voir _data/categories.yml)
+#   actif      false pour mettre une source en pause sans la supprimer
+#   options    réglages propres au scraper (facultatif)
+#   note       remarque libre (facultatif)
+
+- id: pathe-tunis-city
+  nom: Pathé Tunis City
+  url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city
+  type: cinema
+  scraper: pathe
+  categorie: cinema
+  actif: true
+  options:
+    cinema: cinema-pathe-tunis-city
+
+- id: pathe-azur-city
+  nom: Pathé Azur City
+  url: https://www.pathe.tn/fr/cinemas/cinema-pathe-azur-city
+  type: cinema
+  scraper: pathe
+  categorie: cinema
+  actif: true
+  options:
+    cinema: cinema-pathe-azur-city
+
+- id: teskerti
+  nom: Teskerti
+  url: https://teskerti.tn/
+  type: billetterie
+  scraper: teskerti
+  categorie: autre
+  actif: true
+  note: Couvre aussi Le Rio, le 4ème Art et le Théâtre municipal, qui n'ont pas de site.
+
+- id: el-teatro
+  nom: El Teatro
+  url: https://billetterie.elteatrotunis.com/fr/programmes
+  type: lieu
+  scraper: billetterie_sktech
+  categorie: theatre
+  actif: true
+  options:
+    lieu: El Teatro
+
+- id: opera-tunis
+  nom: Théâtre de l'Opéra de Tunis
+  url: https://www.tunisianopera.tn/fr/programmes
+  type: lieu
+  scraper: billetterie_sktech
+  categorie: musique
+  actif: true
+  options:
+    lieu: Théâtre de l'Opéra de Tunis, Cité de la Culture

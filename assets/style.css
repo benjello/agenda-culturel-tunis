@@ -41,3 +41,11 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .days { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 0; }
 .days span { font-size: .78rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--muted); }
 .updated { color: var(--muted); font-size: .85rem; margin-top: 24px; }
+.source { margin: 4px 0 0; font-size: .8rem; color: var(--muted); }
+table.sources { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; }
+table.sources th, table.sources td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.sources small { color: var(--muted); }
+.etat { font-size: .78rem; font-weight: 600; padding: 1px 8px; border-radius: 4px; white-space: nowrap; }
+.etat.ok { background: #d8efe0; color: #1d6b3a; }
+.etat.ko { background: #f6d6d2; color: #9b2c1f; }
+.etat.attente, .etat.pause { background: var(--line); color: var(--muted); }

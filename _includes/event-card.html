@@ -1,5 +1,7 @@
 {%- assign e = include.event -%}
 {%- assign cat = site.data.categories[e.category] | default: site.data.categories.autre -%}
+{%- comment -%} Le titre mène directement à la source quand on la connaît : l'agenda pointe vers les bons sites. {%- endcomment -%}
+{%- if e.link -%}{%- assign href = e.link -%}{%- else -%}{%- assign href = e.url | relative_url -%}{%- endif -%}
 <article class="event" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}">
   <div class="event-date">
     <span class="day">{{ e.date | date: "%-d" }}</span>
@@ -7,7 +9,8 @@
   </div>
   <div class="event-body">
     <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
-    <h3><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h3>
+    <h3><a href="{{ href }}"{% if e.link %} rel="noopener"{% endif %}>{{ e.title }}</a></h3>
     <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {{ e.venue }}</p>
+    {%- if e.source_name %}<p class="source">Source : {{ e.source_name }}{% if e.seances %} · {{ e.seances.size }} séances{% endif %}</p>{% endif %}
   </div>
 </article>

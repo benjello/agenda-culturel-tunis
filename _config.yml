@@ -28,3 +28,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _events/auto/README.md
+  - scrapers
+  - tests
+  - requirements.txt
+  - debug

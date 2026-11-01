@@ -11,10 +11,11 @@ le site d'un cinéma ou une affiche. Cet agenda essaie de les rassembler au mêm
 
 Pour l'instant, c'est un agenda entre amis. L'objectif est d'en faire un vrai site public.
 
-## Proposer un événement {#proposer}
+## Proposer une source {#proposer}
 
-Envoyez le lien de l'événement (page Facebook, site du lieu, affiche…) à l'équipe.
-Un formulaire de contribution arrive bientôt.
+L'agenda se remplit automatiquement à partir de [sources fiables](../sources/) : sites de lieux,
+billetteries, festivals. Le plus utile est de nous signaler **un site qui annonce régulièrement
+des événements**, plutôt qu'un événement isolé. Un formulaire de contribution arrive bientôt.
 
-Si vous connaissez GitHub, vous pouvez aussi ajouter directement un fichier dans le
-dossier `_events/` du [dépôt](https://github.com/benjello/agenda-culturel-tunis).
+En attendant, si vous connaissez GitHub, vous pouvez ouvrir une issue sur le
+[dépôt](https://github.com/benjello/agenda-culturel-tunis) avec l'adresse du site.
