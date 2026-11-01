@@ -1,0 +1,37 @@
+---
+layout: default
+title: Carte des lieux
+permalink: /carte/
+description: La carte des lieux culturels de Tunisie qui ont quelque chose à l'affiche.
+---
+<section class="intro">
+  <h1 data-t="carte_titre">Carte des lieux</h1>
+  <p><span data-t="carte_intro">Touchez un lieu pour voir ce qu'il programme.</span> <a href="{{ '/lieux/' | relative_url }}" data-t="liste_lieux">Liste des lieux</a></p>
+</section>
+{%- assign points = site.data.lieux.carte | default: empty -%}
+<div id="carte" class="carte-lieux" aria-label="Carte"></div>
+{%- if points.size == 0 %}<p class="empty" data-t="carte_vide">La carte se remplit au fil des passages : les lieux sont placés automatiquement chaque jour.</p>{% endif %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function () {
+  if (!window.L) return;  // carte injoignable : la liste des lieux reste là
+  var points = {{ points | jsonify }};
+  var base = {{ '/lieux/' | relative_url | jsonify }};
+  var carte = L.map('carte').setView([36.82, 10.18], 11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(carte);
+  var v = document.documentElement.dataset.ville;
+  try { v = localStorage.getItem('ville') || 'tunis'; } catch (e) { v = 'tunis'; }
+  var groupe = [];
+  points.forEach(function (p) {
+    var m = L.circleMarker([p.lat, p.lon], { radius: 6 + Math.min(p.n, 20) / 2, color: '#b5442f', weight: 2, fillOpacity: .6 }).addTo(carte);
+    var a = document.createElement('a'); a.href = base + p.slug + '/'; a.textContent = p.nom;
+    var d = document.createElement('div'); d.appendChild(a); d.appendChild(document.createTextNode(' · ' + p.n));
+    m.bindPopup(d);
+    if (v === 'toutes' || p.ville === v) groupe.push([p.lat, p.lon]);
+  });
+  if (groupe.length > 1) carte.fitBounds(groupe, { padding: [30, 30], maxZoom: 14 });
+})();
+</script>

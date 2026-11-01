@@ -1,16 +1,19 @@
 :root {
   --bg: #faf7f2; --fg: #222; --muted: #6b6b6b; --card: #fff; --line: #e6e0d6; --accent: #b5442f;
+  color-scheme: light;
 }
+/* Sombre : celui du téléphone par défaut, ou choisi avec le bouton 🌓 (data-theme) */
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #171614; --fg: #eee; --muted: #a09a90; --card: #22201d; --line: #36322c; --accent: #e57a5f; }
+  :root:not([data-theme="light"]) { --bg: #171614; --fg: #eee; --muted: #a09a90; --card: #22201d; --line: #36322c; --accent: #e57a5f; color-scheme: dark; }
 }
+:root[data-theme="dark"] { --bg: #171614; --fg: #eee; --muted: #a09a90; --card: #22201d; --line: #36322c; --accent: #e57a5f; color-scheme: dark; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
 a { color: var(--accent); }
 main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .site-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; max-width: 760px; margin: 0 auto; padding: 16px; }
 .brand { font-weight: 700; font-size: 1.15rem; color: var(--fg); text-decoration: none; }
-.site-header nav { display: flex; gap: 16px; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 6px 14px; }
 .site-header nav a { text-decoration: none; }
 .intro h1 { margin: 16px 0 4px; font-size: 1.8rem; }
 .intro p { margin: 0 0 16px; color: var(--muted); }
@@ -104,3 +107,51 @@ a.carte.seule { border: 0; margin-left: 4px; }
 table.sante code { font-size: .75rem; }
 .prix.gratuit { color: #1d6b3a; }
 .seul-gratuit { display: inline-flex; gap: 6px; align-items: center; font-size: .9rem; margin: 2px 0 8px; color: var(--muted); }
+
+/* Réglages : langue, thème, affichage léger */
+.reglages { display: flex; gap: 6px; align-items: center; }
+.reglages button { font: inherit; font-size: .8rem; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 6px; padding: 2px 7px; cursor: pointer; }
+.reglages .langues { display: inline-flex; }
+.reglages .langues button { border-radius: 0; margin-inline-start: -1px; }
+.reglages .langues button:first-child { border-start-start-radius: 6px; border-end-start-radius: 6px; }
+.reglages .langues button:last-child { border-start-end-radius: 6px; border-end-end-radius: 6px; }
+.reglages button.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+/* Carte d'événement : vignette, outils (favori, agenda, partage) */
+.event-body { flex: 1; min-width: 0; }
+.vignette { flex: 0 0 76px; align-self: flex-start; }
+.vignette img { width: 76px; height: 96px; object-fit: cover; border-radius: 6px; background: var(--line); display: block; }
+.outils { margin-inline-start: auto; display: inline-flex; gap: 2px; }
+.outils button, .bouton { font: inherit; border: 1px solid transparent; background: none; color: var(--muted); cursor: pointer; border-radius: 6px; padding: 1px 6px; font-size: .95rem; line-height: 1.4; }
+.outils button:hover, .outils button:focus-visible { border-color: var(--line); color: var(--fg); }
+.fav.on { color: #d4a017; }
+.tag.famille { background: #1d6b3a; }
+.actions.grandes { gap: 8px; margin: 16px 0; font-size: .95rem; }
+.actions.grandes .bouton { border-color: var(--line); background: var(--card); color: var(--fg); padding: 5px 12px; text-decoration: none; }
+.affiche-grande { display: block; max-width: 100%; max-height: 70vh; border-radius: 10px; margin: 8px 0 14px; }
+.description { white-space: normal; overflow-wrap: anywhere; }
+.note-source { color: var(--muted); }
+.menu-partage { position: fixed; inset-inline: 16px; bottom: 16px; max-width: 420px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; box-shadow: 0 8px 30px rgba(0,0,0,.25); z-index: 1000; }
+.menu-partage a, .menu-partage button { font: inherit; font-size: .95rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); text-decoration: none; cursor: pointer; }
+/* Affichage léger : sans images, cartes compactes */
+.leger .vignette, .leger .affiche-grande, .leger .film-fiche .affiche, .leger .programme-image { display: none !important; }
+.leger .event { padding: 6px 10px; margin-bottom: 6px; gap: 10px; }
+.leger .event .actions .secondaire { display: none; }
+.leger .event-date .day { font-size: 1.2rem; }
+/* Filtres de l'accueil */
+.moments button { font-size: .85rem; }
+.cases { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 2px 0 8px; }
+.cases label { display: inline-flex; gap: 6px; align-items: center; font-size: .9rem; color: var(--muted); }
+.nouveautes { display: inline-block; margin: 0 0 8px; font-size: .9rem; text-decoration: none; }
+/* Fiches lieux, artistes */
+.liste-fiches { list-style: none; padding: 0; columns: 2 220px; }
+.liste-fiches li { padding: 3px 0; break-inside: avoid; }
+.liste-fiches small { color: var(--muted); }
+.fiche h1 { margin-bottom: 4px; }
+.carte-lieux { height: 70vh; min-height: 360px; border-radius: 10px; border: 1px solid var(--line); margin: 8px 0; }
+a.lieu { color: inherit; }
+/* Arabe : de droite à gauche */
+[dir="rtl"] .resume-films { text-align: right; border-left: 1px solid var(--line); border-right: 4px solid #c0392b; }
+[dir="rtl"] .film-salles .heures { margin-left: 0; margin-right: 8px; }
+.types-films { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 10px; }
+.event-page.event { display: block; background: none; border: 0; padding: 0; margin: 0; }
+.event-page .tag { margin-top: 4px; }

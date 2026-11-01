@@ -1,0 +1,26 @@
+---
+layout: default
+title: Organisateurs et artistes
+permalink: /artistes/
+description: Les lieux, collectifs, festivals et artistes suivis par l'agenda, avec leurs dates à venir.
+---
+<section class="intro">
+  <h1 data-t="collectifs_titre">Organisateurs et artistes</h1>
+  <p data-t="collectifs_intro">Chaque fiche montre ce qu'ils ont annoncé. Un nom manque ? Proposez-le sur la page « À propos ».</p>
+</section>
+<h2 data-t="artistes">Artistes</h2>
+<ul class="liste-fiches">
+{%- assign tous = site.events | where_exp: "e", "e.doublon != true" -%}
+{%- for a in site.artistes %}
+  {%- assign n = 0 -%}
+  {%- for e in tous -%}{%- assign t = e.title | downcase -%}{%- for m in a.mots -%}{%- if t contains m -%}{%- assign n = n | plus: 1 -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+  {%- if n > 0 %}<li data-n="{{ n }}"><a href="{{ a.url | relative_url }}">{{ a.title }}</a> <small>{{ n }}</small></li>{% endif %}
+{%- endfor %}
+</ul>
+<h2 data-t="organisateurs">Organisateurs, lieux et collectifs</h2>
+<ul class="liste-fiches">
+{%- assign cs = site.collectifs | sort: "title" -%}
+{%- for c in cs %}{% assign n = site.events | where: "source", c.source | size %}
+  {%- if n > 0 %}<li><a href="{{ c.url | relative_url }}">{{ c.title | replace: " (Instagram)", "" | replace: " (Facebook)", "" }}</a> <small>{{ n }}</small></li>{% endif %}
+{%- endfor %}
+</ul>

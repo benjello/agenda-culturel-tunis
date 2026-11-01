@@ -13,4 +13,5 @@ seances: ["2026-11-01 10:20", "2026-11-02 10:40"]
 image: "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg"
 film: true
 auto: true
+ajoute: "2026-11-01"
 ---

@@ -19,7 +19,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from ..commun import Evenement, details_page, propre, telecharger, toutes_dates
+from ..commun import Evenement, details_page, propre, resume, telecharger, toutes_dates
 
 ATOM = "{http://www.w3.org/2005/Atom}"
 _HEURE = re.compile(r"\b([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)\b")
@@ -79,7 +79,7 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
         if opts.get("nettoyer_titre"):
             titre = propre(re.sub(opts["nettoyer_titre"], "", titre))
         e = Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
-                      lien=propre(el["lien"]) or source["url"], lieu=lieu)
+                      lien=propre(el["lien"]) or source["url"], lieu=lieu, description=resume(description))
         if opts.get("lire_page") and el["lien"]:
             _completer(e, el["lien"])
         res.append(e)

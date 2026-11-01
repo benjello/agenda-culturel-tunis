@@ -5,3 +5,4 @@ Gemfile.lock
 vendor/
 debug/
 __pycache__/
+.bundle/

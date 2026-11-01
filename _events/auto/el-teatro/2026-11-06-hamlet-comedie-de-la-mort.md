@@ -10,4 +10,5 @@ source: "el-teatro"
 source_name: "El Teatro"
 autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/hamlet", "source": "teskerti"}]
 auto: true
+ajoute: "2026-11-01"
 ---

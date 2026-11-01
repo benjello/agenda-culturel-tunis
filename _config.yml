@@ -15,6 +15,16 @@ collections:
   events:
     output: true
     permalink: /evenements/:path/
+  # Fiches écrites par scrapers/pages.py après chaque passage des scrapers
+  lieux:
+    output: true
+    permalink: /lieux/:name/
+  collectifs:
+    output: true
+    permalink: /collectifs/:name/
+  artistes:
+    output: true
+    permalink: /artistes/:name/
 
 defaults:
   - scope:
@@ -22,6 +32,12 @@ defaults:
       type: events
     values:
       layout: event
+  - scope: { path: "", type: lieux }
+    values: { layout: lieu }
+  - scope: { path: "", type: collectifs }
+    values: { layout: collectif }
+  - scope: { path: "", type: artistes }
+    values: { layout: artiste }
 
 exclude:
   - README.md

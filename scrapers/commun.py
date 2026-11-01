@@ -150,6 +150,7 @@ class Evenement:
     imdb: str = ""                 # identifiant IMDb (tt…), si connu
     duree: int | None = None       # minutes
     genres: list[str] = field(default_factory=list)
+    description: str = ""          # notice : quelques lignes tirées de la source (légende, résumé)
 
 
 @dataclass
@@ -226,6 +227,26 @@ _COMMERCIAL = re.compile(r"\byoga\b|pilates|fitness|zumba|m[ée]ditation|sophrol
 
 def est_discret(titre: str) -> bool:
     return bool(_COMMERCIAL.search(titre))
+
+
+_FAMILLE = re.compile(r"jeune public|\benfants?\b|en famille|\bfamilial|\bkids?\b|\bjunior|marionnette|\bcontes?\b|"
+                      r"atelier (?:pour )?(?:les )?(?:petits|enfants)|d[èe]s \d{1,2} ans|\bpetits\b|"
+                      r"أطفال|للأطفال|الطفل|عرائس|العائلة", re.I)
+
+
+def est_famille(*textes: str) -> bool:
+    """Spectacle, atelier ou film pour les enfants ou à voir en famille."""
+    return any(_FAMILLE.search(t or "") for t in textes)
+
+
+def resume(texte: str, n: int = 500) -> str:
+    """Notice courte : texte propre, coupé à la fin d'une phrase ou d'un mot."""
+    t = re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", (texte or "").strip()))
+    if len(t) <= n:
+        return t
+    coupe = t[:n]
+    fin = max(coupe.rfind(". "), coupe.rfind("\n"))
+    return (coupe[:fin + 1] if fin > n * 0.5 else coupe.rsplit(" ", 1)[0] + " …").strip()
 
 
 _GRATUIT = re.compile(r"entr[ée]e (?:libre|gratuite)|acc[eè]s (?:libre|gratuit)|\bgratuit|free entry|\bfree\b|"

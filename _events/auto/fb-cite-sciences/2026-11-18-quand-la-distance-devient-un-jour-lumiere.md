@@ -9,4 +9,5 @@ source: "fb-cite-sciences"
 source_name: "Cité des sciences de Tunis (Facebook)"
 image: "assets/programmes/fb-cite-sciences/b06c1ba52ef4.jpg"
 auto: true
+ajoute: "2026-11-01"
 ---

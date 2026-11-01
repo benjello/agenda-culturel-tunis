@@ -1,0 +1,38 @@
+# Artistes et collectifs suivis : une fiche chacun sur /artistes/, avec leurs dates à venir.
+# Un événement est rattaché quand son titre contient un des « mots » (minuscules ou non).
+# Les noms lus dans les titres (« Rencontre avec Sonia Hanihina ») ont aussi leur fiche,
+# sans rien ajouter ici. Ajouter une ligne pour donner des liens ou des variantes du nom.
+#
+# - nom: Emel Mathlouthi
+#   mots: [emel mathlouthi, emel, آمال المثلوثي]
+#   genre: musique
+#   instagram: https://www.instagram.com/…
+#   site: https://…
+
+- nom: Anouar Brahem
+  mots: [anouar brahem, أنور براهم]
+  genre: musique
+- nom: Dhafer Youssef
+  mots: [dhafer youssef, ظافر يوسف]
+  genre: musique
+- nom: Emel Mathlouthi
+  mots: [emel mathlouthi, آمال المثلوثي]
+  genre: musique
+- nom: Lotfi Bouchnak
+  mots: [lotfi bouchnak, لطفي بوشناق]
+  genre: musique
+- nom: Yasser Jradi
+  mots: [yasser jradi, ياسر الجرادي]
+  genre: musique
+- nom: Bendir Man
+  mots: [bendir man, بندير مان]
+  genre: musique
+- nom: Ghalia Benali
+  mots: [ghalia benali, غالية بنعلي]
+  genre: musique
+- nom: Fadhel Jaziri
+  mots: [fadhel jaziri, الفاضل الجزيري]
+  genre: théâtre
+- nom: Familia Productions
+  mots: [familia productions, jalila baccar, fadhel jaïbi, fadhel jaibi, جليلة بكار, الفاضل الجعايبي]
+  genre: théâtre

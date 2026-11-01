@@ -9,7 +9,10 @@ from __future__ import annotations
 import datetime as dt
 from zoneinfo import ZoneInfo
 
-from ..commun import Evenement, json_ld_evenements, page, propre
+import html
+import re
+
+from ..commun import Evenement, json_ld_evenements, page, propre, resume
 
 
 TUNIS = ZoneInfo("Africa/Tunis")
@@ -37,6 +40,13 @@ def _lieu(loc):
     return propre(loc.get("name", "") if isinstance(loc, dict) else ""), propre(adr)
 
 
+def _texte(v) -> str:
+    """Description schema.org : souvent du HTML échappé."""
+    if not isinstance(v, str):
+        return ""
+    return re.sub(r"<[^>]+>", " ", html.unescape(v)).strip()
+
+
 def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
     res = []
     for o in objets:
@@ -53,7 +63,8 @@ def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
         image = image.get("url") if isinstance(image, dict) else image
         res.append(Evenement(titre=propre(o["name"]), debut=debut, fin=_date(o.get("endDate")),
                              lien=o.get("url") or url_page, lieu=lieu, adresse=adresse, prix=prix,
-                             image=image if isinstance(image, str) else ""))
+                             image=image if isinstance(image, str) else "",
+                             description=resume(_texte(o.get("description")))))
     return res
 
 

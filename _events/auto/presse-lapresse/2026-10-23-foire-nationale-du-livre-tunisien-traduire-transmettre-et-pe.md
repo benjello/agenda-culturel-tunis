@@ -9,4 +9,5 @@ link: "https://www.lapresse.tn/2026/10/29/foire-nationale-du-livre-tunisien-trad
 source: "presse-lapresse"
 source_name: "La Presse (culture)"
 auto: true
+ajoute: "2026-11-01"
 ---

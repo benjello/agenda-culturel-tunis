@@ -16,6 +16,8 @@ import datetime as dt
 import json
 import re
 import unicodedata
+
+import yaml
 from pathlib import Path
 
 from .commun import RACINE, slug
@@ -102,10 +104,28 @@ def regrouper(dossier: Path = DOSSIER_AUTO) -> list[dict]:
     return films
 
 
+_JEUNE = re.compile(r"animation|anim[ée]|famil|enfant|jeunesse", re.I)
+
+
+def typologie(films: list[dict]) -> None:
+    """Corrections à la main (_data/films_infos.yml), puis « jeune public » :
+    tous publics et film d'animation ou familial, ou séance pour enfants (Mercredis-Ciné…)."""
+    try:
+        infos = yaml.safe_load((RACINE / "_data" / "films_infos.yml").read_text()) or {}
+    except FileNotFoundError:
+        infos = {}
+    infos = {slug(k): v for k, v in infos.items()}
+    for f in films:
+        f.update(infos.get(slug(f["titre"]), {}))
+        genres = " ".join(f.get("genres") or [])
+        f["jeune"] = bool(f.get("jeune") or (_JEUNE.search(genres) and f.get("age", "") in ("", "Tous publics", None)))
+
+
 def ecrire(dossier: Path = DOSSIER_AUTO, fichier: Path = FICHIER, enrichir: bool = True) -> int:
     films = regrouper(dossier)
     if enrichir:
         from . import wikidata
         wikidata.completer(films, morceaux)  # genres, âge, IMDb, film tunisien
+    typologie(films)
     fichier.write_text(json.dumps(films, ensure_ascii=False, indent=1) + "\n")
     return len(films)

@@ -8,4 +8,5 @@ link: "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALEN
 source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 auto: true
+ajoute: "2026-11-01"
 ---

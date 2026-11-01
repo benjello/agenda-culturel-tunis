@@ -57,9 +57,9 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 ## À faire
 
-- [ ] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
-- [ ] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
-- [ ] Institut français : lire le PDF mensuel du programme.
+- [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
+- [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
+- [x] Institut français : lire le PDF mensuel du programme.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
 - [ ] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
@@ -83,23 +83,23 @@ Sources
 
 Usage
 - [x] Page « Ce week-end » (`week-end.html`).
-- [ ] Newsletter du jeudi générée depuis la page « Ce week-end ».
-- [ ] Filtres « gratuit » et « en famille ».
-- [ ] Carte des lieux (OpenStreetMap).
-- [ ] Bouton « ajouter à mon agenda » par événement (.ics).
-- [ ] Chaîne Telegram ou WhatsApp des événements du jour.
-- [ ] Site installable comme une appli (PWA, hors ligne, sans store).
-- [ ] Favoris sans compte, gardés dans le téléphone.
-- [ ] Image prête à partager (WhatsApp, story) pour chaque événement.
-- [ ] Liste « Nouveau cette semaine ».
+- [ ] Newsletter du jeudi générée depuis la page « Ce week-end ». Reportée : Buttondown proposé (gratuit jusqu'à 100 abonnés), il faudra le secret BUTTONDOWN_API_KEY.
+- [x] Filtres « gratuit » et « en famille ».
+- [x] Carte des lieux (OpenStreetMap).
+- [x] Bouton « ajouter à mon agenda » par événement (.ics).
+- [ ] Chaîne Telegram ou WhatsApp des événements du jour. Reportée : bot @BotFather + secrets TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ; WhatsApp sans API, texte à copier-coller.
+- [x] Site installable comme une appli (PWA, hors ligne, sans store).
+- [x] Favoris sans compte, gardés dans le téléphone.
+- [x] Image prête à partager (WhatsApp, story) pour chaque événement.
+- [x] Liste « Nouveau cette semaine ».
 
 - [x] Barre de recherche (artiste, lieu, film) sur l'accueil.
-- [ ] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
+- [x] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
 - [x] Prix : « Gratuit » ou une fourchette lus dans les légendes et la presse, case « seulement gratuits ». À faire : lire le prix sur la page de chaque événement.
-- [ ] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
-- [ ] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
+- [x] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
+- [x] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
 - [x] Page Santé des sources (`/sante/`) : état, nombre d'événements, dernière nouveauté, sources silencieuses (rien depuis 30 jours), en panne, en pause.
-- [ ] Affichage léger pour les petits forfaits mobiles (images à la demande). Le mode sombre suit déjà le réglage du téléphone.
+- [x] Affichage léger pour les petits forfaits mobiles (images à la demande). Le mode sombre suit déjà le réglage du téléphone.
 - [x] Choix de la ville (Grand Tunis par défaut) et lien carte 📍 des lieux.
 
 Ouverture
@@ -108,7 +108,7 @@ Ouverture
 - [ ] Accessibilité des lieux (fauteuil) : basse priorité, difficile à collecter.
 
 Présentation (demandé le 1er novembre)
-- [ ] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
+- [x] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
 - [ ] Fiche artiste : photo et courte bio depuis Wikidata / Wikipédia (licence libre), lien Instagram.
 - [ ] Image des lieux depuis Wikimedia Commons (Théâtre municipal, Cité de la culture…).
 - [ ] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
@@ -116,7 +116,7 @@ Présentation (demandé le 1er novembre)
 
 Couverture et langues (demandé le 1er novembre)
 - [ ] À terme, **toute la Tunisie** : on garde tous les événements (la Manouba, Carthage…) avec leur lieu réel ; plus tard, un filtre par ville ou gouvernorat. Le filtre « hors Grand Tunis » de tunis.events sera alors retiré.
-- [ ] Site **multilingue** : français, arabe (sens de lecture droite-gauche), peut-être anglais. Textes de l'interface dans `_data/fr.yml` → un fichier par langue.
+- [x] Site **multilingue** : français, arabe (sens de lecture droite-gauche), peut-être anglais. Textes de l'interface dans `_data/fr.yml` → un fichier par langue. Fait pour l'interface (`_data/i18n.yml`) ; les titres restent dans la langue de la source.
 
 - [ ] Événements commerciaux (yoga, fitness, brunchs…) : pour l'instant **gardés en bas de liste et en plus discret** (`commun.est_discret`). Décider plus tard s'il faut une rubrique à part ou les retirer.
 

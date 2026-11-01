@@ -8,4 +8,5 @@ link: "https://www.lapresse.tn/2026/10/30/saveurs-et-amertume-a-la-galerie-tgm-l
 source: "presse-lapresse"
 source_name: "La Presse (culture)"
 auto: true
+ajoute: "2026-11-01"
 ---

@@ -8,4 +8,5 @@ link: "https://kapitalis.com/tunisie/2026/10/31/tunisie-entree-gratuite-aux-site
 source: "presse-kapitalis"
 source_name: "Kapitalis (culture)"
 auto: true
+ajoute: "2026-11-01"
 ---
