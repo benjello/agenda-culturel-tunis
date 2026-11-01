@@ -1,42 +1,35 @@
-# Liste à sonder une fois (bilan « musique et clubs du Grand Tunis »).
-# facebook : pages dont on veut la date de la dernière publication
-# instagram : comptes connus (profil + dernières publications)
-# chercher_instagram : noms à chercher sur Instagram pour trouver les comptes
-# sites : pages web que nos outils de recherche ne peuvent pas lire (robots)
+# Deuxième passage (bilan « musique et clubs ») : comptes trouvés au 1er passage,
+# et autres noms possibles pour les pages Facebook introuvables.
 facebook:
-  - Habibi-Tunis-1579917178797578
-  - downtown.vbs
-  - larachidia
-  - TheatreNationalTunisien
-  - cmam.ennejma.ezzahra
-  - AgoraLaMarsa
-  - JazzClubDeTunis
-  - b7l9art
-  - theatremunicipaltunis
+  - LaRachidia
+  - rachidia.tunis
+  - Rachidia.Tunisie
+  - ennejmaezzahra
+  - CMAMTunisie
+  - lagoramarsa
+  - Agora.LaMarsa
+  - B7L9ArtStation
+  - b7l9.tunis
+  - TheatreMunicipalDeTunis
+  - habibidowntown
+  - cercle.club.gammarth
+  - OClubLaGoulette
+  - rocknrollagoulette
 instagram:
-  - habibidowntown_
-  - downtown_vibes_tunis
-  - b7l9_tunis
+  - theatre.national.tunisien
+  - lagoramarsa
+  - jazzclubdetunis
+  - cercle.club
+  - o_club_la_goulette
+  - rocknrollagoulettepub
+  - eddisco_records
+  - yuka.tunis
+  - aina.gammarth
+  - zephyr_lamarsa
+  - larachidia
+  - ennejma_ezzahra
 chercher_instagram:
-  - Habibi Downtown Tunis
-  - La Rachidia Tunis
-  - Conservatoire de musique Tunis
-  - Institut supérieur de musique Tunis
-  - Théâtre municipal de Tunis
-  - Théâtre National Tunisien
-  - Agora La Marsa
-  - Jazz Club de Tunis
-  - Zephyr La Marsa
-  - Le Rio Tunis
-  - Yuka Gammarth
-  - Cercle Club Gammarth
-  - Aina Gammarth
-  - BSMNT Gammarth
-  - O Club La Goulette
-  - Rock N Rolla La Goulette
-  - Eddisco Tunis
-sites:
-  - https://www.out.tn/
-  - https://tunis.events/concerts
-  - https://tunis.events/billetterie-soiree-club
-  - https://www.cmam.tn/home/en/accueil.html
+  - Rachidia
+  - Ennejma Ezzahra
+  - Yüka
+  - Aïna Gammarth
