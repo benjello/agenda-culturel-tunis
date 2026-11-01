@@ -8,24 +8,25 @@ permalink: /cinema/
   <p>Les films à l'affiche dans les salles de Tunis, mis à jour automatiquement chaque jour.</p>
 </section>
 
-{%- assign data = site.data.cinema -%}
-{%- if data and data.cinemas -%}
-  {%- for c in data.cinemas -%}
-  {%- if c.films.size > 0 %}
+{%- assign cinemas = site.data.cinemas | default: empty -%}
+{%- assign shown = 0 -%}
+{%- for entry in cinemas -%}
+  {%- assign c = entry[1] -%}
+  {%- if c.films.size > 0 %}{% assign shown = shown | plus: 1 %}
   <section class="cinema">
-    <h2><a href="{{ c.url }}" rel="noopener">{{ c.name }}</a></h2>
+    <h2><a href="{{ c.url }}" rel="noopener">{{ c.nom }}</a></h2>
     {%- for f in c.films %}
     <article class="event film">
-      {%- if f.poster %}<img class="poster" src="{{ f.poster }}" alt="" loading="lazy">{% endif %}
+      {%- if f.affiche %}<img class="poster" src="{{ f.affiche }}" alt="" loading="lazy">{% endif %}
       <div class="event-body">
-        <h3><a href="{{ f.url }}" rel="noopener">{{ f.title }}</a></h3>
+        <h3><a href="{{ f.lien }}" rel="noopener">{{ f.titre }}</a></h3>
         <p class="meta">
-          {%- if f.duration %}{% assign h = f.duration | divided_by: 60 %}{% assign mn = f.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif -%}
-          {%- if f.genres.size > 0 %}{% if f.duration %} · {% endif %}{{ f.genres | join: ", " }}{% endif -%}
+          {%- if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif -%}
+          {%- if f.genres.size > 0 %}{% if f.duree %} · {% endif %}{{ f.genres | join: ", " }}{% endif -%}
         </p>
-        {%- if f.days.size > 0 %}
+        {%- if f.jours.size > 0 %}
         <p class="days">
-          {%- for d in f.days -%}
+          {%- for d in f.jours -%}
             {%- assign j = d | date: "%w" | plus: 0 -%}
             <span>{{ site.data.fr.jours_courts[j] }} {{ d | date: "%-d" }}</span>
           {%- endfor -%}
@@ -34,10 +35,11 @@ permalink: /cinema/
       </div>
     </article>
     {%- endfor %}
+    <p class="updated">Mis à jour le {% include date-fr.html date=c.mis_a_jour %}.</p>
   </section>
   {%- endif -%}
-  {%- endfor %}
-  <p class="updated">Mis à jour le {% include date-fr.html date=data.updated %}. Horaires détaillés et billets sur le site de chaque cinéma.</p>
-{%- else %}
+{%- endfor %}
+{%- if shown == 0 %}
   <p class="empty">Les programmes des cinémas arrivent bientôt.</p>
 {%- endif %}
+<p class="updated">Horaires détaillés et billets sur le site de chaque cinéma.</p>

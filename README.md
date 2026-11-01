@@ -33,28 +33,57 @@ Une courte description de l'événement (facultatif).
 
 Les événements passés disparaissent automatiquement de la page d'accueil. Pas besoin de les supprimer.
 
-## Programmes des cinémas (automatique)
+Pensez d'abord à vérifier si le lieu peut devenir une **source** (voir plus bas) : c'est plus durable qu'une saisie à la main.
 
-La page [Cinéma](https://benjello.github.io/agenda-culturel-tunis/cinema/) liste les films
-à l'affiche dans les 7 prochains jours. Elle est remplie par le script
-[`scripts/cinemas.py`](scripts/cinemas.py), lancé chaque matin par GitHub Actions
-(onglet **Actions → Programmes des cinémas**). Le script écrit `_data/cinema.json` :
-ne pas modifier ce fichier à la main, il est écrasé à chaque passage.
+## Sources et scrapers (automatique)
 
-- Cinémas suivis pour l'instant : Pathé Tunis City et Pathé Azur City (liste `CINEMAS` en haut du script).
-- Pour lancer une mise à jour tout de suite : **Actions → Programmes des cinémas → Run workflow**.
-- Si le site d'un cinéma change, le script échoue sans effacer les données existantes, et
-  GitHub vous prévient par e-mail.
-- Tester sans réseau : `python3 scripts/cinemas.py --fixture scripts/tests/pathe-exemple.json`
-  (remplacer d'abord `TODAY` par des dates réelles dans une copie du fichier).
+L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour des
+**sources fiables** (sites de lieux, billetteries) et chaque événement renvoie vers sa source.
+
+- La liste des sources est dans [`_data/sources.yml`](_data/sources.yml), visible sur la page
+  [Sources](https://benjello.github.io/agenda-culturel-tunis/sources/) avec l'état de chacune.
+- Chaque source indique quel scraper la lit (dossier [`scrapers/sources/`](scrapers/sources/)).
+  Une source qui publie ses événements en schema.org s'ajoute avec `scraper: jsonld`, sans code.
+- Les événements récupérés sont écrits en Markdown dans `_events/auto/<source>/`, comme ceux
+  saisis à la main. Ne pas les modifier : le dossier est réécrit à chaque passage.
+- Les films à l'affiche vont dans `_data/cinemas/`, affichés par la page Cinéma.
+- L'état de chaque source (dernier passage, succès, erreur) est noté dans `_data/etat_sources.json`.
+- Si une source tombe en panne, ses événements déjà récupérés restent en place.
+
+### Lancer les scrapers
+
+Sur GitHub : chaque jour à 6h, ou **Actions → Scrapers → Run workflow**.
+
+Sur un ordinateur ou un serveur (par exemple dans un cron) :
+
+```bash
+pip install -r requirements.txt
+python3 -m scrapers              # toutes les sources actives
+python3 -m scrapers teskerti     # une seule source
+python3 -m scrapers --debug      # garde les pages téléchargées dans debug/
+git add _events/auto _data/cinemas _data/etat_sources.json && git commit -m "Scrapers" && git push
+```
+
+Exemple de ligne cron (tous les jours à 6h) :
+`0 6 * * * cd ~/agenda-culturel-tunis && git pull -q && python3 -m scrapers && git add -A _events/auto _data && git commit -qm Scrapers && git push -q`
+
+Certains sites (pathe.tn par exemple) refusent les requêtes venant des serveurs de GitHub.
+Ces sources marchent mieux depuis un cron sur une machine ordinaire.
+
+### Tests
+
+`python3 -m unittest discover tests` vérifie les scrapers sur des pages d'exemple (`tests/fixtures/`).
 
 ## Organisation du dépôt
 
 | Dossier / fichier | Rôle |
 |---|---|
 | `_events/` | un fichier par événement |
-| `_data/cinema.json` | films à l'affiche (généré automatiquement) |
-| `scripts/cinemas.py` | récupération des programmes des cinémas |
+| `_events/auto/` | événements récupérés par les scrapers (généré) |
+| `_data/sources.yml` | registre des sources |
+| `_data/cinemas/`, `_data/etat_sources.json` | films à l'affiche et état des sources (générés) |
+| `scrapers/` | les scrapers (Python) |
+| `tests/` | tests des scrapers |
 | `_data/categories.yml` | catégories (nom affiché, couleur) |
 | `_data/fr.yml` | noms des jours et des mois en français |
 | `_layouts/`, `_includes/` | gabarits HTML des pages |
@@ -74,5 +103,7 @@ Puis ouvrez http://localhost:4000/agenda-culturel-tunis/
 ## Prochaines étapes
 
 - Formulaire de contribution (issue GitHub préremplie, ou Google Form) pour signaler un événement.
-- Autres cinémas (Ciné 360, Le Colisée, CinéMadart…).
+- Autres sources : Goethe-Institut (flux RSS), Institut français…
+- Contrôle de santé : alerte automatique quand une source meurt.
+- Formulaire « Proposer une source ».
 - Pages Facebook : saisie via le formulaire en attendant mieux.

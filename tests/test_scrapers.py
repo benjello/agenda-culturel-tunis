@@ -1,0 +1,110 @@
+"""Tests hors ligne des scrapers : python3 -m unittest discover tests
+
+Les pages de tests/fixtures/ imitent la structure des vrais sites. Si un site
+change, enregistrer la nouvelle page (python3 -m scrapers --debug) et l'ajouter ici.
+"""
+import datetime as dt
+import json
+import tempfile
+import unittest
+from pathlib import Path
+from unittest import mock
+
+from scrapers import commun, ecriture
+from scrapers.sources import billetterie_sktech, jsonld, pathe, teskerti
+
+FIX = Path(__file__).parent / "fixtures"
+FUTUR = dt.date.today().year + 1
+
+
+def fixture(nom):
+    return (FIX / nom).read_text().replace("{AN}", str(FUTUR))
+
+
+def faux_reseau(pages):
+    def telecharger(url):
+        for motif, nom in pages.items():
+            if url.rstrip("/").endswith(motif):
+                return fixture(nom)
+        raise AssertionError(f"page inattendue : {url}")
+    return mock.patch.object(commun, "telecharger", telecharger)
+
+
+class Dates(unittest.TestCase):
+    def test_formats(self):
+        self.assertEqual(commun.dates_fr("07 Novembre 2026 à 19:30"), [dt.datetime(2026, 11, 7, 19, 30)])
+        self.assertEqual(commun.dates_fr("01 Novembre 2026, 11:00"), [dt.datetime(2026, 11, 1, 11, 0)])
+        self.assertEqual(commun.dates_fr("le 1er déc. 2026 à 20h"), [dt.datetime(2026, 12, 1, 20, 0)])
+        self.assertEqual(commun.dates_fr("5 février 2027"), [dt.datetime(2027, 2, 5)])
+
+
+class BilletterieSktech(unittest.TestCase):
+    def test_el_teatro(self):
+        src = {"id": "el-teatro", "nom": "El Teatro", "url": "https://billetterie.elteatrotunis.com/fr/programmes",
+               "options": {"lieu": "El Teatro"}}
+        with faux_reseau({"/fr/programmes": "sktech-programmes.html", "/fr/programme/le_fou": "sktech-le-fou.html",
+                          "/fr/programme/vieux": "sktech-vieux.html"}), mock.patch("time.sleep"):
+            evs = billetterie_sktech.recuperer(src)
+        self.assertEqual(len(evs), 1)  # le spectacle passé est ignoré
+        e = evs[0]
+        self.assertEqual(e.titre, "Le Fou | المجنون")
+        self.assertEqual(e.debut, dt.datetime(FUTUR, 11, 7, 19, 30))
+        self.assertEqual(e.fin, dt.datetime(FUTUR, 11, 14, 19, 30))
+        self.assertEqual(len(e.seances), 5)
+        self.assertEqual(e.prix, "25 DT")
+        self.assertEqual(e.lien, "https://billetterie.elteatrotunis.com/fr/programme/le_fou")
+
+
+class Teskerti(unittest.TestCase):
+    def test_categories_et_fiches(self):
+        with faux_reseau({"teskerti.tn": "teskerti-accueil.html", "/category/spectacle": "teskerti-cat-spectacle.html",
+                          "/category/cinema": "teskerti-cat-cinema.html",
+                          "/evenement/taha-desouky": "teskerti-taha.html",
+                          "/evenement/poids-plume-le-rio": "teskerti-poids-plume.html"}), mock.patch("time.sleep"):
+            evs = teskerti.recuperer({"id": "teskerti", "nom": "Teskerti", "url": "https://teskerti.tn/"})
+        par_titre = {e.titre: e for e in evs}
+        self.assertEqual(set(par_titre), {"TAHA DESOUKY", "Poids plume"})  # la catégorie sport est exclue
+        t = par_titre["TAHA DESOUKY"]
+        self.assertEqual(t.debut, dt.datetime(FUTUR, 11, 5, 20, 0))
+        self.assertEqual(t.lieu, "Théâtre municipal de Tunis")
+        self.assertEqual(t.adresse, "2 Rue de Grèce, Tunis")
+        self.assertEqual(t.categorie, "spectacle")
+        self.assertEqual(t.prix, "À partir de 30 DT")
+        self.assertEqual(par_titre["Poids plume"].categorie, "cinema")
+        self.assertEqual(par_titre["Poids plume"].lieu, "Le Rio")
+
+
+class JsonLd(unittest.TestCase):
+    def test_evenement_schema_org(self):
+        with faux_reseau({"exemple.tn/agenda": "jsonld.html"}):
+            evs = jsonld.recuperer({"id": "x", "nom": "X", "url": "https://exemple.tn/agenda"})
+        self.assertEqual(len(evs), 1)
+        self.assertEqual(evs[0].titre, "Concert de oud")
+        self.assertEqual(evs[0].lieu, "Dar Ben Abdallah")
+        self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 12, 3, 20, 0))
+
+
+class Pathe(unittest.TestCase):
+    def test_api(self):
+        today = dt.date(2026, 11, 1)
+        seances = {"shows": {"el-sett": {"days": {"2026-11-02": {}, "2026-12-30": {}}}, "vieux": {"days": {"2020-01-01": {}}}}}
+        films = pathe.films_depuis_api(seances, {"el-sett": {"title": "El Sett", "duration": 155}}, today)
+        self.assertEqual([(f.titre, f.jours, f.duree) for f in films], [("El Sett", ["2026-11-02"], 155)])
+
+
+class Ecriture(unittest.TestCase):
+    def test_fichiers_markdown(self):
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(ecriture, "DOSSIER_AUTO", Path(d)):
+            e = commun.Evenement(titre="L'Effet : papillon", debut=dt.datetime(FUTUR, 11, 7, 19, 30),
+                                 fin=dt.datetime(FUTUR, 11, 9, 19, 30), lien="https://x.tn/a", lieu="Lartisto")
+            passe = commun.Evenement(titre="Vieux", debut=dt.datetime(2020, 1, 1), lien="https://x.tn/b")
+            n = ecriture.ecrire_evenements({"id": "src", "nom": "Source", "categorie": "theatre"}, [e, passe])
+            self.assertEqual(n, 1)
+            texte = next(Path(d, "src").glob("*.md")).read_text()
+            self.assertIn(f"date: {FUTUR}-11-07 19:30\n", texte)
+            self.assertIn('title: "L\'Effet : papillon"', texte)
+            self.assertIn('category: "theatre"', texte)
+
+
+if __name__ == "__main__":
+    unittest.main()

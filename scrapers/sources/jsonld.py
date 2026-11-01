@@ -1,0 +1,52 @@
+"""Scraper générique : toute page qui décrit ses événements en schema.org (JSON-LD).
+
+Beaucoup de sites (WordPress avec une extension d'agenda, billetteries…) le font
+sans le savoir. Pour une telle source, il suffit d'ajouter une ligne au registre
+avec « scraper: jsonld », sans écrire de code.
+"""
+from __future__ import annotations
+
+import datetime as dt
+
+from ..commun import Evenement, json_ld_evenements, page, propre
+
+
+def _date(v):
+    if not isinstance(v, str) or not v:
+        return None
+    try:
+        d = dt.datetime.fromisoformat(v.replace("Z", "+00:00"))
+        return d.replace(tzinfo=None)
+    except ValueError:
+        return None
+
+
+def _lieu(loc):
+    if isinstance(loc, list):
+        loc = loc[0] if loc else {}
+    if isinstance(loc, str):
+        return loc, ""
+    adr = loc.get("address", "") if isinstance(loc, dict) else ""
+    if isinstance(adr, dict):
+        adr = ", ".join(x for x in (adr.get("streetAddress"), adr.get("addressLocality")) if x)
+    return propre(loc.get("name", "") if isinstance(loc, dict) else ""), propre(adr)
+
+
+def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
+    res = []
+    for o in objets:
+        debut = _date(o.get("startDate"))
+        if not debut or not o.get("name"):
+            continue
+        lieu, adresse = _lieu(o.get("location") or {})
+        offre = o.get("offers") or {}
+        if isinstance(offre, list):
+            offre = offre[0] if offre else {}
+        prix = f"{offre.get('price')} {offre.get('priceCurrency', '')}".strip() if offre.get("price") else ""
+        res.append(Evenement(titre=propre(o["name"]), debut=debut, fin=_date(o.get("endDate")),
+                             lien=o.get("url") or url_page, lieu=lieu, adresse=adresse, prix=prix))
+    return res
+
+
+def recuperer(source: dict) -> list[Evenement]:
+    return depuis_json_ld(json_ld_evenements(page(source["url"])), source["url"])
