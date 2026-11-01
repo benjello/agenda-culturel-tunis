@@ -111,7 +111,7 @@
   type: lieu
   scraper: liste_fiches
   categorie: autre
-  actif: true
+  actif: false  # agenda en JavaScript : remplacé par ift-pdf
   options:
     motif: details-agenda
     lieu: Institut français de Tunis
@@ -150,8 +150,6 @@
   scraper: tunis_events_cinema
   categorie: cinema
   actif: true
-  options:
-    explorer: true
   note: Films et jours de séance de plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé).
 
 - id: monticket
@@ -734,8 +732,8 @@
   type: lieu
   scraper: pdf_programme
   categorie: autre
-  actif: false
+  actif: true
   options:
     modele: "https://www.institutfrancais-tunisie.com/wp-content/uploads/{annee_pub}/{mois_pub}/CALENDRIER-{mois}-{annee}.pdf"
     lieu: "Institut français de Tunisie"
-  note: "Programme mensuel en PDF (premier essai : on lit le texte pour régler le découpage)."
+  note: "Programme mensuel en PDF découpé case par case (titre, jour, genre, salle, heure)."

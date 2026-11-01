@@ -26,15 +26,26 @@ from .rss import _racine
 MOTS = (r"festival|concert|spectacle|exposition|vernissage|projection|pi[èe]ce|repr[ée]sentation|soir[ée]e|"
         r"rencontre|conf[ée]rence|journ[ée]es|r[ée]cital|one man show|stand.?up|salon du livre|foire|"
         r"carnaval|biennale|mus[ée]e|th[ée][âa]tre|op[ée]ra|danse|cin[ée]-?club")
+# Articles sur un événement à l'étranger (« Paris : la Saison Méditerranée… ») : écartés.
+_ETRANGER = re.compile(r"\b(?:Paris|Marseille|Lyon|Cannes|Venise|Rome|Berlin|Londres|Madrid|Bruxelles|Gen[èe]ve|"
+                       r"New York|Montr[ée]al|Le Caire|Duba[ïi]|Doha|Rabat|Casablanca|Marrakech|Alger|Oran|Beyrouth|Amman)\b")
 _CONTENU = "{http://purl.org/rss/1.0/modules/content/}encoded"
 _LIEU = re.compile(r"\b(?:à|au|aux|à la|à l['’])\s*((?:Cité|Théâtre|Maison|Palais|Espace|Centre|Musée|Galerie|"
                    r"Institut|Salle|Cinéma|Cinémathèque|Dar|Bir|Club|Opéra|Bibliothèque|Médiathèque|Complexe|"
                    r"Amphithéâtre|Fondation|Rotonde|Acropolium|Colisée|Ksar|Fort)\b[^,.;:()\n«»\"]{2,60})")
 
 
+def _lire(xml: str):
+    try:
+        return _racine(xml)
+    except ET.ParseError:
+        # « & » nu dans un titre (Tunisie Numérique) : on l'échappe et on réessaie
+        return _racine(re.sub(r"&(?!\w+;|#\d+;|#x[0-9a-fA-F]+;)", "&amp;", xml))
+
+
 def _articles(xml: str) -> list[dict]:
     res = []
-    for it in _racine(xml).iter("item"):
+    for it in _lire(xml).iter("item"):
         html = it.findtext(_CONTENU, "") or it.findtext("description", "")
         try:
             pub = email.utils.parsedate_to_datetime(it.findtext("pubDate", "")).date()
@@ -48,7 +59,7 @@ def _articles(xml: str) -> list[dict]:
 def _dates(texte: str, ref: dt.date) -> tuple[dt.date | None, dt.date | None]:
     """Première date à venir (ou période) citée dans le texte."""
     aujourd_hui = dt.date.today()
-    limite = aujourd_hui + dt.timedelta(days=180)
+    limite = aujourd_hui + dt.timedelta(days=120)
     p = periode(texte)
     if p:
         debut, fin = dt.date.fromisoformat(p[0]), dt.date.fromisoformat(p[-1])
@@ -68,6 +79,8 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
         tout = f"{a['titre']}. {a['texte']}"
         if not a["titre"] or not mots.search(a["titre"] + " " + a["texte"][:400]):
             continue
+        if _ETRANGER.search(a["titre"]):
+            continue
         debut, fin = _dates(tout, a["date"])
         if not debut:
             continue
@@ -82,7 +95,7 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
 def recuperer(source: dict) -> list[Evenement]:
     xml = telecharger(source["url"])
     try:
-        _racine(xml)
+        _lire(xml)
     except ET.ParseError as exc:
         raise RuntimeError(f"flux illisible ({exc})") from exc
     return depuis_flux(xml, source)

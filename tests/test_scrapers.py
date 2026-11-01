@@ -385,6 +385,17 @@ class Films(unittest.TestCase):
         self.assertEqual([s["nom"] for s in lc["salles"]], ["Alhambra", "Le Palace"])
         self.assertEqual(lc["salles"][0]["jours"], [demain])  # jour passé retiré
 
+    def test_horaires_par_jour(self):
+        from scrapers import films
+        demain = (dt.date.today() + dt.timedelta(days=1)).isoformat()
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "a").mkdir()
+            (d / "a" / "1.md").write_text(f'---\ntitle: "Bakma"\ndate: "{demain} 13:45"\nvenue: "Le Palace"\n'
+                                          f'seances:\n  - "{demain} 13:45"\n  - "{demain} 19:45"\nfilm: true\nsource: "a"\n---\n')
+            fs = films.regrouper(d)
+        self.assertEqual(fs[0]["salles"][0]["heures"], [{"jour": demain, "heures": ["13:45", "19:45"]}])
+
 
 class Conferences(unittest.TestCase):
     def sources(self):
@@ -431,6 +442,18 @@ class Wikidata(unittest.TestCase):
         self.assertEqual(f["genres"], ["Drame", "Thriller"])
         self.assertEqual(f["age"], "-12")
         self.assertTrue(f["tunisien"])
+
+class ProgrammePdf(unittest.TestCase):
+    def test_calendrier_ift(self):
+        from scrapers.sources.pdf_programme import depuis_texte
+        evts = depuis_texte(fixture("ift-calendrier.txt"), dt.date(2026, 11, 1), "IFT", "u")
+        par_titre = {(e.titre, e.debut.day): e for e in evts}
+        e = par_titre[("Kteb Tounsi Avec Abdelhamid Larguèche", 5)]
+        self.assertEqual((e.debut.hour, e.lieu, e.categorie), (18, "Médiathèque, Institut français de Tunis", "litterature"))
+        self.assertIn(("Mars Express", 6), par_titre)
+        self.assertEqual({d for t, d in par_titre if t.startswith("Bibliothérapie")}, {1, 8, 22})
+        self.assertEqual(par_titre[("Le Monde Sans Fin", 1)].categorie, "expo")
+
 
 class Presse(unittest.TestCase):
     def test_article_avec_periode_et_lieu(self):

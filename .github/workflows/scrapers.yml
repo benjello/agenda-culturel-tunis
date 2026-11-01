@@ -48,6 +48,8 @@ jobs:
           path: debug/
           retention-days: 3
       - name: Enregistrer s'il y a du nouveau
+        # sur une branche d'essai, on lit sans rien enregistrer (pas d'échec de push)
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
