@@ -79,6 +79,22 @@
     "nb": 0,
     "ok": true
   },
+  "ig-habibi-downtown": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T07:55:10",
+    "dernier_succes": "2026-11-01T07:55:10",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
+  },
+  "ig-rock-n-rolla": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T07:55:10",
+    "dernier_succes": "2026-11-01T07:55:10",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
+  },
   "institut-francais": {
     "dernier_passage": "2026-11-01T07:45:18",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
