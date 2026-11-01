@@ -72,7 +72,7 @@
     "ok": true
   },
   "institut-francais": {
-    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_passage": "2026-11-01T07:12:29",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
     "ok": false
   },
@@ -100,6 +100,14 @@
     "dernier_succes": "2026-11-01T06:51:29",
     "erreur": null,
     "nb": 14,
+    "ok": true
+  },
+  "tunis-events-cinema": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T07:12:29",
+    "dernier_succes": "2026-11-01T07:12:29",
+    "erreur": null,
+    "nb": 32,
     "ok": true
   }
 }
