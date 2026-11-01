@@ -1,7 +1,7 @@
 ---
 title: "13ème symposium de l’UMA: Incertitudes, certitudes"
 date: 2026-12-03
-end_date: 2026-12-05
+end_date: "2026-12-05"
 venue: "Université de La Manouba et Amphithéâtre Carthage Al Hadatha"
 category: "conference"
 link: "https://irmcmaghreb.org/13eme-symposium-de-luma-incertitudes-certitudes/"

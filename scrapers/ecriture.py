@@ -22,7 +22,7 @@ FICHIER_ETAT = RACINE / "_data" / "etat_sources.json"
 
 def _yaml(v) -> str:
     # Une chaîne JSON est aussi une chaîne YAML valide : pas de souci d'apostrophes ou de « : ».
-    return json.dumps(v, ensure_ascii=False)
+    return json.dumps(v, ensure_ascii=False, default=str)
 
 
 def _date(d: dt.datetime) -> str:
