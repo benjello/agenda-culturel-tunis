@@ -591,3 +591,33 @@
     max: 6
     resultats: 8
   note: "L'agenda du site est en JavaScript : on lit les affiches Facebook."
+
+- id: ig-al-kitab
+  nom: Librairie Al Kitab (Instagram)
+  url: https://www.instagram.com/alkitab_tunisie/
+  type: lieu
+  scraper: instagram
+  categorie: litterature
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "alkitab_tunisie"
+    lieu: "Librairie Al Kitab, Mutuelleville"
+    resultats: 8
+  note: "Librairie avec galerie, 108 av. Jugurtha (aussi La Marsa et av. Bourguiba) : rencontres, signatures."
+
+- id: fb-al-kitab
+  nom: Librairie Al Kitab (Facebook)
+  url: https://www.facebook.com/883511888330349
+  type: lieu
+  scraper: facebook_programmes
+  categorie: litterature
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "883511888330349"
+    lieu: "Librairie Al Kitab, Mutuelleville"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Identifiant de page trouvé par recherche, non vérifié."
