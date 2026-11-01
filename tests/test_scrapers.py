@@ -78,7 +78,15 @@ class Teskerti(unittest.TestCase):
         with faux_reseau({"/evenement/mirage": "teskerti-espace-pro.html"}):
             e = teskerti.lire_fiche("https://teskerti.tn/evenement/mirage", "theatre")
         self.assertEqual(e.titre, "Mirage")
-        self.assertEqual(e.lieu, "Théâtre Le 4ème Art")
+        self.assertEqual((e.lieu, e.adresse), ("Théâtre Le 4ème Art", "7 Av. de Paris"))
+
+
+    def test_lieu_sous_le_titre(self):
+        with faux_reseau({"/evenement/la-chaussure": "teskerti-chaussure.html", "/evenement/e-fest": "teskerti-efest.html"}):
+            e = teskerti.lire_fiche("https://teskerti.tn/evenement/la-chaussure", "theatre")
+            f = teskerti.lire_fiche("https://teskerti.tn/evenement/e-fest", "autre")
+        self.assertEqual((e.lieu, e.adresse), ("Théâtre Le 4ème Art", "7 Av. de Paris"))
+        self.assertEqual((f.lieu, f.adresse), ("Carthage Thalasso Resort", "Gammarth"))
 
 
 class JsonLd(unittest.TestCase):

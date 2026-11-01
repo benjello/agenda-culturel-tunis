@@ -45,27 +45,41 @@ FAUX_LIEUX = re.compile(r"^(mon |votre )?espace (pro|client|organisateur|membre)
 
 
 def _est_lieu(ligne: str) -> bool:
-    return (3 < len(ligne) < 80 and bool(MOTS_LIEU.search(ligne)) and not FAUX_LIEUX.search(ligne)
-            and not dates_fr(ligne))
+    return (3 < len(ligne) < 90 and ligne[:1].isupper() and bool(MOTS_LIEU.search(ligne))
+            and not FAUX_LIEUX.search(ligne) and not dates_fr(ligne))
 
 
-def lieu_de_la_fiche(soup) -> tuple[str, str]:
-    # 1) un élément dont la classe parle de lieu
-    for el in soup.find_all(class_=re.compile(r"(lieu|venue|location|salle|place|adresse|address)", re.I)):
-        t = propre(el.get_text(" "))
-        if 2 < len(t) < 120:
-            lignes = [propre(x) for x in el.get_text("\n").split("\n") if propre(x)]
-            return lignes[0], ", ".join(lignes[1:2])
-    # 2) une ligne qui ressemble à un nom de lieu, de préférence juste après la date
+def _separer(ligne: str) -> tuple[str, str]:
+    """« Théâtre Le 4ème Art : 7 Av. de Paris » → (lieu, adresse)."""
+    lieu, _, adresse = ligne.partition(" : ")
+    return propre(lieu), propre(adresse)
+
+
+def lieu_de_la_fiche(soup, titre: str = "") -> tuple[str, str]:
     corps = soup.find("main") or soup.body or soup
-    for el in corps.find_all(["header", "nav", "footer"]):
+    for el in corps.find_all(["header", "nav", "footer", "script", "style"]):
         el.decompose()
     lignes = [propre(x) for x in corps.get_text("\n").split("\n") if propre(x)]
+    # Un élément dont la classe désigne un lieu (le plus fiable quand il existe)
+    for el in corps.find_all(class_=re.compile(r"(^|[-_])(lieu|venue|location|salle|adresse|address)([-_]|$)", re.I)):
+        t = propre(el.get_text(" "))
+        if 2 < len(t) < 120:
+            lignes_el = [propre(x) for x in el.get_text("\n").split("\n") if propre(x)]
+            return _separer(lignes_el[0])[0], ", ".join(lignes_el[1:2]) or _separer(lignes_el[0])[1]
+    # Sur teskerti.tn, la ligne qui suit le titre est « Lieu : adresse ».
+    if titre and titre in lignes:
+        i = lignes.index(titre)
+        for ligne in lignes[i + 1:i + 3]:
+            if " : " in ligne and not dates_fr(ligne) and len(ligne) < 120:
+                return _separer(ligne)
+            if _est_lieu(ligne):
+                return _separer(ligne)
+    # Enfin : une ligne qui ressemble à un nom de lieu, de préférence après la date
     i_date = next((i for i, l in enumerate(lignes) if dates_fr(l)), None)
     proches = lignes[i_date + 1:i_date + 8] if i_date is not None else []
     for ligne in proches + lignes:
         if _est_lieu(ligne):
-            return ligne, ""
+            return _separer(ligne)
     return "", ""
 
 
@@ -77,12 +91,12 @@ def lire_fiche(url: str, categorie: str) -> Evenement | None:
         e.categorie = categorie
         return e
     titre = meta(soup, "og:title") or propre((soup.find("h1") or soup.find("title") or soup).get_text(" "))
-    titre = re.sub(r"\s*[|–-]\s*Teskerti.*$", "", titre, flags=re.I)
+    titre = titre_brut = re.sub(r"\s*[|–-]\s*Teskerti.*$", "", titre, flags=re.I)
     titre = re.sub(r"\s*[-–]\s*le\s+\d{1,2}/\d{1,2}(/\d{2,4})?\s*$", "", titre, flags=re.I)  # « Fuite - Le 02/11 »
     dates = sorted(set(dates_fr(soup.get_text(" "))))
     if not titre or not dates:
         return None
-    lieu, adresse = lieu_de_la_fiche(soup)
+    lieu, adresse = lieu_de_la_fiche(soup, titre_brut)
     prix = re.search(r"(?:à partir de|a partir de)\s*(\d+(?:[.,]\d+)?)\s*(?:TND|DT)", soup.get_text(" "), re.I)
     return Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
                      seances=dates, lien=url, lieu=lieu, adresse=adresse, categorie=categorie,
