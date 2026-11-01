@@ -7,7 +7,7 @@ permalink: /evenements.json
   Licence : CC BY 4.0 (voir la page À propos).
 {%- endcomment -%}
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
-{%- assign events = site.events | sort: "date" -%}
+{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
 {
   "titre": {{ site.title | jsonify }},
   "description": {{ site.description | jsonify }},
@@ -29,7 +29,8 @@ permalink: /evenements.json
       "categorie": {{ e.category | default: "autre" | jsonify }},
       "prix": {{ e.price | jsonify }},
       "lien": {{ e.link | default: e.url | jsonify }},
-      "source": {{ e.source_name | default: "saisie manuelle" | jsonify }}
+      "source": {{ e.source_name | default: "saisie manuelle" | jsonify }},
+      "autres_sources": {{ e.autres_sources | default: empty | jsonify }}
     }
     {%- endif -%}
   {%- endfor %}

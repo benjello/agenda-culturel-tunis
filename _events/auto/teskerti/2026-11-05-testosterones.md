@@ -8,5 +8,6 @@ price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/testosterones-le-511"
 source: "teskerti"
 source_name: "Teskerti"
+doublon: true
 auto: true
 ---

@@ -7,5 +7,6 @@ price: "20 DT"
 link: "https://billetterie.elteatrotunis.com/fr/programme/tete_a_tete"
 source: "el-teatro"
 source_name: "El Teatro"
+autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/tete-a-tete-le-0111"}]
 auto: true
 ---

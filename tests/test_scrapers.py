@@ -11,6 +11,7 @@ from pathlib import Path
 from unittest import mock
 
 from scrapers import commun, ecriture
+from scrapers.commun import slug
 from scrapers.sources import billetterie_sktech, ical, jsonld, liste_fiches, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
@@ -187,3 +188,26 @@ class Lanceur(unittest.TestCase):
             self.assertFalse(etat["panne"]["ok"])
             self.assertIn("site modifié", etat["panne"]["erreur"])
             self.assertTrue((ancien / "vieux.md").exists())
+
+
+class Doublons(unittest.TestCase):
+    def test_meme_lieu_meme_heure(self):
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for src, nom, lieu, titre in [("el-teatro", "El Teatro", "El Teatro", "هروب|FUITE"),
+                                          ("teskerti", "Teskerti", "El Teatro التياترو", "Fuite"),
+                                          ("teskerti", "Teskerti", "Théâtre Le 4ème Art", "Cloche")]:
+                (d / src).mkdir(exist_ok=True)
+                (d / src / f"{slug(titre)}.md").write_text(
+                    f'---\ntitle: "{titre}"\ndate: {FUTUR}-11-02 17:00\nvenue: "{lieu}"\n'
+                    f'link: "https://{src}.tn/{slug(titre)}"\nsource: "{src}"\nsource_name: "{nom}"\nauto: true\n---\n')
+            sources = [{"id": "el-teatro", "type": "lieu"}, {"id": "teskerti", "type": "billetterie"}]
+            self.assertEqual(doublons.marquer(sources, d), 1)
+            self.assertIn("doublon: true", (d / "teskerti" / "fuite.md").read_text())
+            garde = (d / "el-teatro" / f"{slug('هروب|FUITE')}.md").read_text()
+            self.assertIn('"name": "Teskerti"', garde)
+            self.assertIn(f"date: {FUTUR}-11-02 17:00\n", garde)
+            self.assertNotIn("doublon", (d / "teskerti" / "cloche.md").read_text())
+            # relancer ne change rien
+            self.assertEqual(doublons.marquer(sources, d), 1)
