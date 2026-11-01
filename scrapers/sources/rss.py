@@ -27,8 +27,19 @@ def _texte_html(h: str) -> str:
     return propre(BeautifulSoup(h or "", "html.parser").get_text(" "))
 
 
+def _racine(xml: str):
+    try:
+        return ET.fromstring(xml.encode())
+    except ET.ParseError:
+        # Flux suivi de texte parasite (liens injectés après </rss>, cas de l'IRMC) : on coupe.
+        fin = max(xml.rfind("</rss>") + 6, xml.rfind("</feed>") + 7)
+        if fin <= 6:
+            raise
+        return ET.fromstring(xml[:fin].encode())
+
+
 def elements(xml: str) -> list[dict]:
-    racine = ET.fromstring(xml.encode() if isinstance(xml, str) else xml)
+    racine = _racine(xml if isinstance(xml, str) else xml.decode("utf-8", "replace"))
     res = []
     for it in racine.iter("item"):
         res.append({"titre": it.findtext("title", ""), "lien": it.findtext("link", ""),
