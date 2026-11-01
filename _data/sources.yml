@@ -725,3 +725,15 @@
   scraper: presse
   categorie: autre
   actif: true
+
+- id: ift-pdf
+  nom: Institut français de Tunisie (programme PDF)
+  url: https://www.institutfrancais-tunisie.com/
+  type: lieu
+  scraper: pdf_programme
+  categorie: autre
+  actif: false
+  options:
+    modele: "https://www.institutfrancais-tunisie.com/wp-content/uploads/{annee_pub}/{mois_pub}/CALENDRIER-{mois}-{annee}.pdf"
+    lieu: "Institut français de Tunisie"
+  note: "Programme mensuel en PDF (premier essai : on lit le texte pour régler le découpage)."
