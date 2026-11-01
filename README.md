@@ -46,7 +46,12 @@ L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour de
   Une source qui publie ses événements en schema.org s'ajoute avec `scraper: jsonld`, sans code.
 - Les événements récupérés sont écrits en Markdown dans `_events/auto/<source>/`, comme ceux
   saisis à la main. Ne pas les modifier : le dossier est réécrit à chaque passage.
-- Les films à l'affiche vont dans `_data/cinemas/`, affichés par la page Cinéma.
+- **Un seul format pour tout** : chaque scraper produit des événements (`Evenement` dans
+  `scrapers/commun.py`) : titre, début, fin, séances, lieu, adresse, catégorie, prix, lien, image.
+  Un film à l'affiche est un événement de catégorie cinéma avec `film: true` et une séance par jour
+  de projection ; il apparaît dans le thème Cinéma de l'agenda, rangé par salle.
+- Les programmes publiés en image (Facebook) sont gardés dans `_data/programmes/` et
+  `assets/programmes/`, et les films qu'on y lit deviennent des événements.
 - L'état de chaque source (dernier passage, succès, erreur) est noté dans `_data/etat_sources.json`.
 - Si une source tombe en panne, ses événements déjà récupérés restent en place.
 
@@ -61,7 +66,7 @@ pip install -r requirements.txt
 python3 -m scrapers              # toutes les sources actives
 python3 -m scrapers teskerti     # une seule source
 python3 -m scrapers --debug      # garde les pages téléchargées dans debug/
-git add _events/auto _data/cinemas _data/etat_sources.json && git commit -m "Scrapers" && git push
+git add _events/auto _data/programmes assets/programmes _data/etat_sources.json && git commit -m "Scrapers" && git push
 ```
 
 Exemple de ligne cron (tous les jours à 6h) :
@@ -121,7 +126,7 @@ générés à chaque construction. Licence des données : CC BY 4.0 (voir la pag
 | `_events/` | un fichier par événement |
 | `_events/auto/` | événements récupérés par les scrapers (généré) |
 | `_data/sources.yml` | registre des sources |
-| `_data/cinemas/`, `_data/etat_sources.json` | films à l'affiche et état des sources (générés) |
+| `_data/programmes/`, `assets/programmes/`, `_data/etat_sources.json` | programmes en image et état des sources (générés) |
 | `scrapers/` | les scrapers (Python) |
 | `tests/` | tests des scrapers |
 | `_data/categories.yml` | catégories (nom affiché, couleur) |

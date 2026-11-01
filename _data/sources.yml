@@ -24,6 +24,7 @@
   actif: false
   note: pathe.tn bloque GitHub ; Pathé est lu via tunis.events (cinéma).
   options:
+    lieu: "Pathé Tunis City"
     cinema: cinema-pathe-tunis-city
 
 - id: pathe-azur-city
@@ -35,6 +36,7 @@
   actif: false
   note: pathe.tn bloque GitHub ; Pathé est lu via tunis.events (cinéma).
   options:
+    lieu: "Pathé Azur City"
     cinema: cinema-pathe-azur-city
 
 - id: teskerti
@@ -163,6 +165,7 @@
   actif: true
   tous_les_jours: 3
   options:
+    lieu: "Ciné 350 (Cité de la Culture)"
     lecteur: un_film_par_affiche
     page: sallecine350
   note: programme de la semaine publié en image sur Facebook
@@ -180,7 +183,7 @@
   tous_les_jours: 3
   options:
     page: espacelagora
-    lieu: "L'Agora"
+    lieu: "L'Agora Marsa"
   note: programme publié en image sur Facebook
 
 - id: cine-alhambra
@@ -194,7 +197,7 @@
   options:
     lecteur: liste_films
     page: cine.alhambra.zephyr
-    lieu: "Cinéma Alhambra"
+    lieu: "Cinéma Alhambra Zéphyr"
   note: programme publié en image sur Facebook
 
 - id: cine-colisee

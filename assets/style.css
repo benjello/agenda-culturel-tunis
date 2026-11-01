@@ -39,7 +39,6 @@ main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
 .cinema h2 a { color: var(--fg); }
 .film .poster { flex: 0 0 64px; width: 64px; height: 96px; object-fit: cover; border-radius: 6px; }
 .days { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 0; }
-.days span { font-size: .78rem; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--muted); }
 .updated { color: var(--muted); font-size: .85rem; margin-top: 24px; }
 .source { margin: 4px 0 0; font-size: .8rem; color: var(--muted); }
 table.sources { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; }
@@ -52,3 +51,12 @@ table.sources small { color: var(--muted); }
 .programme-image { display: block; width: 100%; max-width: 640px; height: auto; margin: 8px 0; border-radius: 8px; }
 .programme-texte { white-space: normal; font-size: .9rem; }
 .programme details { margin: 8px 0; color: var(--muted); }
+.resume-films { display: block; width: 100%; text-align: left; font: inherit; cursor: pointer; background: var(--card); border: 1px solid var(--line); border-left: 4px solid #c0392b; border-radius: 10px; padding: 12px 14px; margin: 8px 0 16px; color: var(--fg); }
+.salle { margin: 18px 0 26px; }
+.salle h2 { margin-bottom: 2px; }
+.event.film .event-date { display: none; }
+.days span { display: inline-block; margin: 2px 4px 2px 0; padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; }
+.perime { background: #fff4d6; color: #6b4b00; padding: 6px 10px; border-radius: 6px; font-size: .9rem; }
+.programme { margin: 8px 0; }
+.programme-image { display: block; width: 100%; max-width: 640px; height: auto; margin: 8px 0; border-radius: 8px; }
+.programme-texte { font-size: .9rem; }

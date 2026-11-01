@@ -30,7 +30,10 @@ permalink: /evenements.json
       "prix": {{ e.price | jsonify }},
       "lien": {{ e.link | default: e.url | jsonify }},
       "source": {{ e.source_name | default: "saisie manuelle" | jsonify }},
-      "autres_sources": {{ e.autres_sources | default: empty | jsonify }}
+      "autres_sources": {{ e.autres_sources | default: empty | jsonify }},
+      "film": {% if e.film %}true{% else %}false{% endif %},
+      "seances": {{ e.seances | default: empty | jsonify }},
+      "image": {{ e.image | jsonify }}
     }
     {%- endif -%}
   {%- endfor %}
