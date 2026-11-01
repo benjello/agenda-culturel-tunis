@@ -285,13 +285,13 @@ class TunisEventsCinema(unittest.TestCase):
                     "url": f"https://tunis.events/events/x/{slug(nom)}", "image": "https://api.tunis.events/storage/a.jpg",
                     "location": {"@type": "Place", "name": lieu, "address": {"streetAddress": adresse}}}
         objets = [ev("BAKMA", "CinéMadart", f"{FUTUR}-11-01"), ev("BAKMA", "CinéMadart", f"{FUTUR}-11-02"),
-                  ev("BAKMA", "Pathé Tunis City", f"{FUTUR}-11-01"), ev("Weekend", "Pathé Mall of Sousse", f"{FUTUR}-11-01", "Sousse")]
+                  ev("BAKMA", "Pathé Tunis City", f"{FUTUR}-11-01"), ev("Bakma", "CinéMadart", f"{FUTUR}-11-03"), ev("Weekend", "Pathé Mall of Sousse", f"{FUTUR}-11-01", "Sousse")]
         html = '<script type="application/ld+json">' + json.dumps(objets) + "</script>"
         source = {"id": "tunis-events-cinema", "nom": "tunis.events", "url": "https://tunis.events/cinema"}
         with mock.patch.object(commun, "telecharger", return_value=html):
             salles = tunis_events_cinema.recuperer(source)
         self.assertEqual(set(salles), {"CinéMadart", "Pathé Tunis City"})  # Sousse écarté
-        self.assertEqual(salles["CinéMadart"]["films"]["BAKMA"].jours, [f"{FUTUR}-11-01", f"{FUTUR}-11-02"])
+        self.assertEqual(salles["CinéMadart"]["films"]["bakma"].jours, [f"{FUTUR}-11-01", f"{FUTUR}-11-02", f"{FUTUR}-11-03"])
         with tempfile.TemporaryDirectory() as d, mock.patch.object(tunis_events_cinema, "DOSSIER_CINEMAS", Path(d)):
             self.assertEqual(tunis_events_cinema.ecrire(source, salles), 2)
             data = json.loads((Path(d) / "tunis-events-cinemadart.json").read_text())
