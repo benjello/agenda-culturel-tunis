@@ -43,3 +43,43 @@ layout: default
   <p class="note-source"><small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small>{% endif %}</p>
   {%- endif %}
 </article>
+{%- comment -%} Métadonnées schema.org : Google peut afficher l'événement dans ses résultats. {%- endcomment -%}
+{%- if heure != "" %}{% assign debut_iso = page.date | date: "%Y-%m-%dT%H:%M:00+01:00" %}{% else %}{% assign debut_iso = page.date | date: "%Y-%m-%d" %}{% endif -%}
+{%- assign prix_bas = page.price | default: "" | downcase -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": {{ page.title | jsonify }},
+  "startDate": {{ debut_iso | jsonify }},
+  {%- if page.end_date %}
+  "endDate": {{ page.end_date | date: "%Y-%m-%d" | jsonify }},
+  {%- endif %}
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": {{ page.venue | default: "Tunis" | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      {%- if page.address %}
+      "streetAddress": {{ page.address | jsonify }},
+      {%- endif %}
+      "addressCountry": "TN"
+    }
+  },
+  {%- if page.image %}
+  "image": [{% if page.image contains "://" %}{{ page.image | jsonify }}{% else %}{{ page.image | absolute_url | jsonify }}{% endif %}],
+  {%- endif %}
+  {%- if prix_bas contains "gratuit" or prix_bas contains "free" or prix_bas contains "libre" %}
+  "isAccessibleForFree": true,
+  {%- endif %}
+  {%- if billet != "" %}
+  "offers": { "@type": "Offer", "url": {{ billet | jsonify }}{% if page.price %}, "description": {{ page.price | jsonify }}{% endif %} },
+  {%- endif %}
+  {%- if src %}
+  "organizer": { "@type": "Organization", "name": {{ src.nom | jsonify }}{% if src.url %}, "url": {{ src.url | jsonify }}{% endif %} },
+  {%- endif %}
+  "url": {{ page.url | absolute_url | jsonify }}
+}
+</script>
