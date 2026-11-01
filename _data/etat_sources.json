@@ -1,71 +1,95 @@
 {
   "cine-agora": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "cine-alhambra": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "cine-amilcar": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "cine-colisee": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "cine-madart": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "cine-vog": {
-    "attente": "clé APIFY_TOKEN pas encore configurée",
-    "dernier_passage": "2026-11-01T06:37:09"
+    "attente": null,
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "el-teatro": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:37:09",
-    "dernier_succes": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
     "erreur": null,
     "nb": 7,
     "ok": true
   },
   "goethe-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:37:09",
-    "dernier_succes": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
     "erreur": null,
     "nb": 0,
     "ok": true
   },
   "institut-francais": {
-    "dernier_passage": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
     "ok": false
   },
   "opera-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:37:09",
-    "dernier_succes": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
     "erreur": null,
     "nb": 0,
     "ok": true
   },
   "pathe-azur-city": {
-    "dernier_passage": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-azur-city",
     "ok": false
   },
   "pathe-tunis-city": {
-    "dernier_passage": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city",
     "ok": false
   },
   "teskerti": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:37:09",
-    "dernier_succes": "2026-11-01T06:37:09",
+    "dernier_passage": "2026-11-01T06:51:29",
+    "dernier_succes": "2026-11-01T06:51:29",
     "erreur": null,
     "nb": 14,
     "ok": true
