@@ -85,6 +85,13 @@ Usage
 - [ ] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour.
 
+Présentation (demandé le 1er novembre)
+- [ ] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
+- [ ] Fiche artiste : photo et courte bio depuis Wikidata / Wikipédia (licence libre), lien Instagram.
+- [ ] Image des lieux depuis Wikimedia Commons (Théâtre municipal, Cité de la culture…).
+- [ ] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
+- [ ] Catégories : affiner au fil des remarques (règles par mots du titre dans `commun.categorie_du_titre`).
+
 Fiabilité
 - [ ] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
 - [ ] Bouton « signaler une erreur » sur chaque événement.

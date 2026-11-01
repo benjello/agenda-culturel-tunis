@@ -3,7 +3,7 @@ title: "Movie Night: REGARDE MOI"
 date: 2026-11-12 19:00
 venue: "Sociale Sidi Bou Said"
 address: "V8CW+8GM, Carthage, Carthage"
-category: "expo"
+category: "cinema"
 price: "20 TND"
 link: "https://tunis.events/events/kQn7qm/movie-night-regarde-moi-sociale-sidi-bou-said"
 source: "tunis-events"

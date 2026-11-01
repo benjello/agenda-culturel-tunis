@@ -76,3 +76,6 @@ table.sources small { color: var(--muted); }
 .badge.age { background: #2c3e50; color: #fff; font-weight: 600; }
 .badge.tunisien { background: #c0392b; color: #fff; }
 .event-date .jusqu { display: block; font-size: .65rem; text-transform: uppercase; letter-spacing: .02em; }
+.actions { margin: 6px 0 0; font-size: .85rem; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; color: var(--muted); }
+.actions .billets { background: var(--accent, #c0392b); color: #fff; padding: 3px 10px; border-radius: 4px; text-decoration: none; font-weight: 600; }
+.actions .prix { font-weight: 600; }

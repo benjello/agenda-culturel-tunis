@@ -71,7 +71,7 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
         garde = groupe[0]
         autres = [e for e in groupe[1:] if e[1].get("source") != garde[1].get("source")]
         if autres:
-            garde[1]["autres_sources"] = [{"name": e[1].get("source_name"), "link": e[1].get("link")} for e in autres]
+            garde[1]["autres_sources"] = [{"name": e[1].get("source_name"), "link": e[1].get("link"), "source": e[1].get("source")} for e in autres]
             for e in autres:
                 e[1]["doublon"] = True
                 n += 1

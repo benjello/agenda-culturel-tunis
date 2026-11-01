@@ -5,11 +5,13 @@ tunis_events_cinema). On lit plusieurs rubriques et on écarte les villes hors G
 
 Options :
   pages    liste de { url, categorie } (rubriques à lire)
+Le titre corrige la rubrique quand il est net (« Movie Night : … » → cinéma).
+
   exclure  mots qui écartent un lieu (défaut : Sousse, Sfax, Nabeul, Hammamet…)
 """
 from __future__ import annotations
 
-from ..commun import Evenement, json_ld_evenements, page
+from ..commun import Evenement, categorie_du_titre, json_ld_evenements, page
 from .jsonld import depuis_json_ld
 from .tunis_events_cinema import EXCLURE
 
@@ -30,7 +32,7 @@ def recuperer(source: dict) -> list[Evenement]:
             if any(m in f"{e.lieu} {e.adresse}".lower() for m in exclure) or (e.lien, e.debut) in vus:
                 continue
             vus.add((e.lien, e.debut))
-            e.categorie = p.get("categorie") or e.categorie
+            e.categorie = categorie_du_titre(e.titre) or p.get("categorie") or e.categorie
             res.append(e)
     if not lus:
         raise RuntimeError("aucun événement en schema.org sur les pages (site modifié ?)")

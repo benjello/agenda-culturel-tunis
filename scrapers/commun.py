@@ -174,3 +174,23 @@ def film(titre: str, lien: str, lieu: str, jours, adresse: str = "", **autres) -
         return None
     return Evenement(titre=titre, debut=seances[0], fin=seances[-1], lien=lien, lieu=lieu, adresse=adresse,
                      categorie="cinema", seances=seances, film=True, **autres)
+
+
+# Mots du titre qui disent la vraie catégorie, quand la rubrique de la source est trop large
+# (tunis.events range ses « Movie Night » dans « Arts & culture »). Le premier qui correspond gagne.
+_CATEGORIES_DU_TITRE = [
+    ("cinema", r"movie night|cin[ée][- ]?club|\bprojection\b|\bfilm\b|\bcin[ée]ma\b|court[s]?[- ]m[ée]trage"),
+    ("musique", r"\bconcert\b|\blive\b|\bdj\b|listening session|session d.[ée]coute|\bjazz\b|\brap\b|\bmalouf\b|\boud\b"),
+    ("danse", r"\bdanse\b|\bdance\b|\bballet\b|\bsalsa\b|\btango\b|\bbachata\b"),
+    ("conference", r"conf[ée]rence|table ronde|\bd[ée]bat\b|\btalk\b|\bmasterclass\b"),
+    ("litterature", r"\blecture\b|\bpo[ée]sie\b|\bdédicace\b|\blivre\b"),
+    ("expo", r"\bexposition\b|\bexpo\b|\bvernissage\b|\bexhibition\b"),
+]
+
+
+def categorie_du_titre(titre: str) -> str:
+    """Catégorie déduite du titre, ou "" si rien de net."""
+    for cat, motif in _CATEGORIES_DU_TITRE:
+        if re.search(motif, titre, re.I):
+            return cat
+    return ""
