@@ -220,3 +220,43 @@ class Publies(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AgendaEnLigneIFT(unittest.TestCase):
+    """API publique de la billetterie AEC (agenda en ligne de l'Institut français) et rapprochement avec le PDF."""
+
+    def setUp(self):
+        from scrapers.sources import aec
+        objets = json.loads((Path(__file__).parent / "fixtures" / "aec-evenements.json").read_text())
+        self.en_ligne = aec.depuis_api(objets, "Institut français de Tunisie")
+
+    def test_api(self):
+        par_titre = {e.titre: e for e in self.en_ligne}
+        film = par_titre["What else ? (فانا محط بش تتحط ؟)"]
+        self.assertEqual((film.categorie, film.film, film.prix, film.lieu), ("cinema", True, "6 DT", "Institut français de Tunis"))
+        self.assertEqual(film.lien, "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6509")
+        self.assertTrue(film.image.startswith("https://res.cloudinary.com/aec/"))
+        expo = par_titre["Images de Syrie, Palmyre, Alep, Damas"]
+        self.assertEqual((expo.categorie, expo.fin), ("expo", dt.datetime(2026, 11, 27)))
+        self.assertEqual(par_titre["RUCHE73 : Concert de Yosri"].lieu, "Institut français de Sousse")
+        self.assertIn("8e édition", par_titre["Jaou Tunis Biennale - 8e édition"].titre)  # entités HTML décodées
+        for e in self.en_ligne:
+            self.assertFalse(granularite.lien_general(e.lien), e.lien)
+
+    def test_rapprochement_avec_le_pdf(self):
+        from scrapers.sources.pdf_programme import depuis_texte, rapprocher
+        pdf_url = "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf"
+        texte = (Path(__file__).parent / "fixtures" / "ift-calendrier.txt").read_text()
+        evts = rapprocher(depuis_texte(texte, dt.date(2026, 11, 1), "IFT", pdf_url), self.en_ligne)
+        par_jour = {(e.debut.date().isoformat(), e.titre): e for e in evts}
+        # « KTEB TOUNSI AVEC ABDELHAMID LARGUÈCHE » (PDF) = « Kteb Tounsi : Rencontre-débat avec … » (en ligne)
+        kteb = par_jour[("2026-11-05", "Kteb Tounsi : Rencontre-débat avec Abdelhamid Larguèche")]
+        self.assertTrue(kteb.lien.endswith("eventId=6504"))
+        self.assertEqual(kteb.lieu, "Médiathèque, Institut français de Tunis")  # la salle du PDF est gardée
+        self.assertIn("Kazdaghli", kteb.description)
+        # la séance du 1er a sa fiche, celles du 8 et du 22 (absentes du fichier d'essai) gardent le PDF
+        biblio = sorted((e.debut.day, e.lien[-4:]) for e in evts if "ibliothérapie" in e.titre)
+        self.assertEqual(biblio, [(1, "6505"), (8, ".pdf"), (22, ".pdf")])
+        # les événements en ligne absents du PDF sont ajoutés, une seule fois
+        self.assertEqual(sum(1 for e in evts if e.lien.endswith("eventId=6509")), 1)
+        self.assertEqual(len(evts), len(depuis_texte(texte, dt.date(2026, 11, 1), "IFT", pdf_url)) + 4)

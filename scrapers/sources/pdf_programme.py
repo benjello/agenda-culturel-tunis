@@ -4,7 +4,12 @@ Le PDF est cherché dans wp-content/uploads, au mois courant et au mois suivant.
 extrait avec pdftotext (paquet poppler-utils) puis découpé : une ligne qui commence par une date
 ouvre un événement, les lignes suivantes donnent le titre et le lieu.
 
+Les cases sont ensuite rapprochées de l'agenda en ligne (option aec, voir sources/aec.py) :
+une case qui y figure prend le lien de sa fiche, son affiche, son prix et sa notice ; les
+événements en ligne absents du PDF sont ajoutés.
+
 Options :
+  aec     options de sources/aec.py (page, api_key…) ; absent = PDF seul
   modele  adresse du PDF, avec {annee}, {mois} (mois du programme) et {annee_pub}, {mois_pub}
           (dossier d'envoi, souvent le mois précédent)
   lieu    lieu par défaut
@@ -16,6 +21,8 @@ import re
 import subprocess
 import tempfile
 
+from ..doublons import mots, proches
+from . import aec
 from ..commun import MOIS, Evenement, _session, categorie_du_titre, propre, resume, titre_film, titre_generique
 
 # Mot-clé de la colonne de droite d'une case → catégorie du site
@@ -197,4 +204,38 @@ def recuperer(source: dict) -> list[Evenement]:
         res += evts
     if not lus:
         raise RuntimeError("aucun PDF de programme trouvé")
+    if "aec" in o:
+        try:
+            en_ligne = aec.depuis_api(aec.lire_api(o["aec"] or {}, (o["aec"] or {}).get("page", source["url"])),
+                                      o.get("lieu", source["nom"]))
+            print(f"  agenda en ligne : {len(en_ligne)} événement(s)")
+            res = rapprocher(res, en_ligne)
+        except Exception as exc:  # noqa: BLE001 — le PDF seul reste utilisable
+            print(f"  agenda en ligne illisible : {exc.__class__.__name__} {exc}")
     return res
+
+
+def rapprocher(pdf: list[Evenement], en_ligne: list[Evenement]) -> list[Evenement]:
+    """Chaque case du PDF qui a sa fiche en ligne (même jour, titres proches) en prend le lien,
+    l'affiche, le prix, le titre exact et la notice. Les événements en ligne absents du PDF sont ajoutés."""
+    restants = []
+    for a in en_ligne:
+        jours = (a.debut.date(), (a.fin or a.debut).date())
+        cles_a = mots(a.titre)
+        trouves = [p for p in pdf if jours[0] <= p.debut.date() <= jours[1]
+                   and proches(mots(p.titre), cles_a, 0.5, 2)]
+        for p in trouves:
+            p.lien, p.image, p.prix = a.lien, a.image or p.image, a.prix or p.prix
+            if not titre_generique(a.titre):
+                p.titre = a.titre
+            if len(a.description) > len(p.description):
+                p.description = a.description
+            if a.fin and p.categorie == "expo":
+                p.fin = a.fin
+            if p.debut.date() == a.debut.date() and (a.debut.hour or a.debut.minute):
+                p.debut = a.debut
+                p.seances = [a.debut] if p.seances else p.seances
+            p.film = p.film or a.film
+        if not trouves:
+            restants.append(a)
+    return pdf + restants

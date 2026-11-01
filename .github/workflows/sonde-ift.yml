@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -q playwright requests && python -m playwright install --with-deps chromium > /dev/null
-      - run: python .github/sonde/ift.py
+      - run: pip install -q -r requirements.txt && sudo apt-get install -y -qq poppler-utils > /dev/null
+      - run: python -m .github.sonde.ift || PYTHONPATH=. python .github/sonde/ift.py
