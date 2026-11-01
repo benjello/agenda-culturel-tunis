@@ -155,7 +155,14 @@ def _titre_affiche(texte: str) -> str:
 _PAS_EVENEMENT = re.compile(r"recrut|candidature|offre d.emploi|ouvre exceptionnel|horaires d.ouverture|"
                             r"formation professionnelle|inscriptions? (?:ouvertes|en cours)|fermeture|"
                             # comptes rendus d'un événement passé
-                            r"\bhier\b|a eu lieu|merci [àa] (?:tous|toutes|vous)|retour sur|mise [àa] jour", re.I)
+                            r"\bhier\b|a eu lieu|merci [àa] (?:tous|toutes|vous)|retour sur|mise [àa] jour|"
+                            # appels, accréditations, agendas d'autres événements
+                            r"accr[ée]ditation|appel [àa] (?:candidatures|projets|participation|films)|"
+                            r"\bcall for\b|\bopen call\b|l.agenda culturel|"
+                            r"باب الاعتماد|باب الترشح|باب المشاركة|طلب ترشحات", re.I)
+# Une affiche annonce des dates proches : au-delà d'un mois après la première, c'est une
+# autre information (date limite, prochaine édition), pas une séance de plus.
+ECART_MAX = 31
 
 
 _EXPO = re.compile(r"\bexposition|\bexhibition|\bvernissage|\bexpo\b|معرض", re.I)
@@ -232,7 +239,8 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
                 vus.add((e.debut.date(), e.titre))
                 res.append(e)
             continue
-        jours = sorted(j for j in jours if aujourd_hui <= j <= aujourd_hui + dt.timedelta(days=120))[:7]
+        jours = sorted(j for j in jours if aujourd_hui <= j <= aujourd_hui + dt.timedelta(days=120))
+        jours = [j for j in jours if (j - jours[0]).days <= ECART_MAX][:7] if jours else []
         if not jours:
             continue
         heures = {(int(h), int(mn or 0)) for h, mn in _RE_HEURE.findall(tout)}
@@ -248,7 +256,25 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
             res.append(Evenement(titre=titre, debut=dt.datetime(j.year, j.month, j.day, h, mn),
                                  lien=p["lien"], lieu=ici, image=(p.get("images") or [""])[0],
                                  prix=prix_du_texte(tout), description=resume(p.get("texte", ""))))
-    return res
+    return _une_expo_par_nom(res)
+
+
+def _une_expo_par_nom(evts: list[Evenement]) -> list[Evenement]:
+    """Deux publications sur la même expo (« Dix ans après… Cosmose » puis « COSMOSE ») :
+    on garde celle qui porte le nom de l'expo."""
+    expos = [e for e in evts if e.categorie == "expo"]
+    retirer = set()
+    for a in expos:
+        nom = a.titre.split(" – ")[0].lower()
+        if len(nom) < 4 or id(a) in retirer:
+            continue
+        for b in expos:
+            if b is a or id(b) in retirer or b.titre.lower().startswith(nom):
+                continue
+            chevauche = a.debut <= (b.fin or b.debut) and b.debut <= (a.fin or a.debut)
+            if chevauche and re.search(rf"\b{re.escape(nom)}\b", (b.description or "").lower()):
+                retirer.add(id(b))
+    return [e for e in evts if id(e) not in retirer]
 
 
 LECTEURS = {"liste_films": liste_films, "un_film_par_affiche": un_film_par_affiche,

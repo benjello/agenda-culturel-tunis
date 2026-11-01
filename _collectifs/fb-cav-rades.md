@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.facebook.com/cav.rades"
 reseau: "facebook"
 categorie: "theatre"
+genre: "lieu"
 ---

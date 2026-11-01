@@ -30,3 +30,16 @@ def ville(*textes: str) -> str:
         if re.search(motif, t):
             return v
     return "tunis"
+
+
+def mention(texte: str) -> tuple[str, str] | None:
+    """(ville, nom écrit) d'une ville hors du Grand Tunis citée dans un texte : « Direction Gabès ! » → (sud, Gabès)."""
+    brut = texte or ""
+    t = _norme(brut)
+    for v, motif in _VILLES:
+        m = re.search(motif, t)
+        if m:
+            # même position dans le texte d'origine (la normalisation garde la longueur des lettres latines)
+            mot = brut[m.start():m.end()] if _norme(brut[m.start():m.end()]) == m.group(0) else m.group(0)
+            return v, mot[:1].upper() + mot[1:]
+    return None

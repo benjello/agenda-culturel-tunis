@@ -3,7 +3,7 @@ layout: default
 ---
 {%- assign evts = "" | split: "" -%}
 {%- for e in site.events -%}{%- if e.doublon == true -%}{%- continue -%}{%- endif -%}
-  {%- assign t = e.title | downcase -%}
+  {%- capture t -%}{{ e.title }} {{ e.artists | join: " " }}{%- endcapture -%}{%- assign t = t | downcase -%}
   {%- for m in page.mots -%}{%- if t contains m -%}{%- assign evts = evts | push: e -%}{%- break -%}{%- endif -%}{%- endfor -%}
 {%- endfor -%}
 <section class="intro fiche">

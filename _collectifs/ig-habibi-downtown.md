@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.instagram.com/habibidowntown_/"
 reseau: "instagram"
 categorie: "musique"
+genre: "lieu"
 ---

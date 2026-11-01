@@ -20,7 +20,7 @@ layout: default
     <dd>{% include lien-carte.html lieu=page.venue adresse=page.address %}{% if page.address %}<br><small>{{ page.address }}</small>{% endif %}</dd>
     {% if page.price %}<dt data-t="prix">Prix</dt><dd>{{ page.price }}</dd>{% endif %}
     {% if page.link %}<dt data-t="source">Source</dt><dd><a href="{{ page.link }}" rel="noopener">{{ page.source_name | default: page.link }}</a>{% for a in page.autres_sources %} · <a href="{{ a.link }}" rel="noopener">{{ a.name }}</a>{% endfor %}</dd>{% endif %}
-    {% if src %}<dt data-t="organisateur">Annoncé par</dt><dd><a href="{{ '/collectifs/' | append: src.id | append: '/' | relative_url }}">{{ src.nom }}</a></dd>{% endif %}
+    {% if src %}{% if src.genre == "presse" %}<dt data-t="lu_dans">Article dans</dt>{% else %}<dt data-t="organisateur">Annoncé par</dt>{% endif %}<dd><a href="{{ '/collectifs/' | append: src.id | append: '/' | relative_url }}">{{ src.nom }}</a></dd>{% endif %}
   </dl>
   <p class="actions grandes">
     {%- if billet != "" %}<a class="billets" href="{{ billet }}" rel="noopener"><span data-t="billets">🎟 Billets</span>{% if page.price %} · {{ page.price }}{% endif %}</a>{% endif %}

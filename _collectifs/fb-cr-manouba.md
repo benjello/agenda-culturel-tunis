@@ -5,4 +5,5 @@ type: "agenda"
 url_source: "https://www.facebook.com/profile.php?id=100083115077638"
 reseau: "facebook"
 categorie: "autre"
+genre: "administration"
 ---

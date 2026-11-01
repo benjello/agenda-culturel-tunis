@@ -4,4 +4,5 @@ source: "presse-kapitalis"
 type: "agenda"
 url_source: "https://kapitalis.com/tunisie/category/culture/feed/"
 categorie: "autre"
+genre: "presse"
 ---

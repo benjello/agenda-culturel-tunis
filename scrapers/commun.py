@@ -151,6 +151,7 @@ class Evenement:
     duree: int | None = None       # minutes
     genres: list[str] = field(default_factory=list)
     description: str = ""          # notice : quelques lignes tirées de la source (légende, résumé)
+    artistes: list[str] = field(default_factory=list)  # line-up, si la source le donne
 
 
 @dataclass

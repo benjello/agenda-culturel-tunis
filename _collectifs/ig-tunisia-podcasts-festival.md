@@ -5,4 +5,5 @@ type: "agenda"
 url_source: "https://www.instagram.com/tunisiapodcastsfestival/"
 reseau: "instagram"
 categorie: "conference"
+genre: "festival"
 ---

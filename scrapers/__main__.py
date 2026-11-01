@@ -21,7 +21,7 @@ import yaml
 
 from . import commun
 from .commun import RACINE, EnAttente
-from . import doublons, films
+from . import controle, doublons, films
 from .ecriture import ecrire, ecrire_etat, lire_etat
 
 
@@ -83,6 +83,7 @@ def main(argv=None) -> int:
     ecrire_etat(etat)
     n = doublons.marquer(charger_sources())
     nf = films.ecrire()
+    controle.main()
     print(f"{len(sources) - echecs}/{len(sources)} sources à jour, {n} doublon(s) masqué(s), {nf} film(s) à l'affiche.")
     essais = len(sources) - attentes - sautees
     return 1 if essais and echecs == essais else 0

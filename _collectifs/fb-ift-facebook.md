@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.facebook.com/IFTunisie"
 reseau: "facebook"
 categorie: "conference"
+genre: "institution"
 ---

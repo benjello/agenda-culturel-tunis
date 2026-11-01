@@ -33,7 +33,7 @@ NOMINATIM = "https://nominatim.openstreetmap.org/search"
 GEO_PAR_PASSAGE = 25   # Nominatim demande 1 requête par seconde au plus : on y va doucement
 
 # Même règle que _includes/lien-carte.html : pas de fiche pour « Tunis » ou « X et Y ».
-_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|à venir|secret location)$|voir l'article|voir l'annonce|\bet\b| / |plusieurs", re.I)
+_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|à venir|secret location|lieu à préciser)$|voir l'article|voir l'annonce|\bet\b| / |plusieurs", re.I)
 # « Rencontre avec Sonia Hanihina », « Yoga with Judit » : 2 à 4 mots en capitales après avec/with.
 _AVEC = re.compile(r"\b(?:[Aa]vec|[Ww]ith)\s+((?:[A-ZÀ-Ý][\w'’-]+)(?:\s+(?:[A-ZÀ-Ý][\w'’-]+|ben|bel|el|de|du)){1,3})")
 _PAS_NOM = re.compile(r"^(?:Le|La|Les|Un|Une|Des|Vous|Nous|Papa|Maman)\b")
@@ -70,13 +70,36 @@ def _ecrire(fichier, champs: dict) -> None:
         fichier.write_text(texte)
 
 
-def lieux(evts: list[dict]) -> dict[str, dict]:
+GENRES_LIEU = {"lieu", "institution"}
+
+
+def faux_lieux(sources: list[dict]) -> set[str]:
+    """Noms qui ne sont pas des lieux : journaux, agendas, collectifs, festivals, délégations.
+
+    Ces sources écrivent leur propre nom comme lieu quand une annonce n'en donne pas
+    (« Kadhem », « Journées Cinématographiques de Carthage, Tunis »). Le lieu d'un festival
+    qui a vraiment lieu quelque part (Fabrika : « One Resort, Monastir ») reste un lieu."""
+    vrais, res = set(), set()
+    for s in sources:
+        nom = re.sub(r"\s*\((?:Instagram|Facebook|via [^)]*)\)$", "", s.get("nom") or "")
+        lieu = (s.get("options") or {}).get("lieu") or ""
+        if s.get("genre", "lieu") in GENRES_LIEU:
+            vrais |= {_cle(nom), _cle(lieu), _cle(lieu.split(",")[0])}
+            continue
+        res |= {_cle(s.get("nom") or ""), _cle(nom)}
+        premier = (_cle(nom).split() or [""])[0]
+        if lieu and _cle(lieu).split()[:1] == [premier]:  # « Kadhem » pour la source Kadhem
+            res |= {_cle(lieu), _cle(lieu.split(",")[0])}
+    return res - vrais - {""}
+
+
+def lieux(evts: list[dict], exclus: set[str] = frozenset()) -> dict[str, dict]:
     """Un lieu par nom normalisé : « Théâtre de l'Opéra » et « Theatre de l’Opera » ne font qu'un."""
     groupes: dict[str, dict] = {}
     alias = {_cle(k): v for k, v in (yaml.safe_load((RACINE / "_data" / "lieux_alias.yml").read_text()) or {}).items()}
     for e in evts:
         nom = str(e.get("venue") or "").strip()
-        if not nom or _VAGUE.search(nom) or len(nom) > 90:
+        if not nom or _VAGUE.search(nom) or len(nom) > 90 or _cle(nom) in exclus:
             continue
         cible = alias.get(_cle(nom), nom)
         g = groupes.setdefault(_cle(cible), {"noms": collections.Counter(), "adresse": "", "ville": "", "n": 0, "nom": ""})
@@ -160,7 +183,8 @@ def ecrire_collectifs(evts: list[dict]) -> int:
         reseau = re.search(r"(instagram|facebook)\.com/([^/?#]+)", s.get("url", ""))
         _ecrire(COLLECTIFS / f"{s['id']}.md", {
             "title": s["nom"], "source": s["id"], "type": s.get("type"), "url_source": s.get("url"),
-            "reseau": reseau.group(1) if reseau else None, "categorie": s.get("categorie")})
+            "reseau": reseau.group(1) if reseau else None, "categorie": s.get("categorie"),
+            "genre": s.get("genre", "lieu")})
         n += 1
     return n
 
@@ -169,6 +193,10 @@ def artistes_des_titres(evts: list[dict]) -> dict[str, str]:
     """{slug: nom} des noms lus après « avec » dans les titres."""
     res = {}
     for e in evts:
+        for nom in e.get("artists") or []:  # line-up donné par la source (Resident Advisor)
+            nom = str(nom).strip()
+            if 2 < len(nom) <= 60:
+                res.setdefault(_slug(nom), nom)
         for m in _AVEC.finditer(str(e.get("title") or "")):
             nom = m.group(1).strip(" -’'")
             if not _PAS_NOM.match(nom):
@@ -199,7 +227,8 @@ def main(argv=None) -> int:
     p.add_argument("--sans-geo", action="store_true", help="ne pas chercher les coordonnées des lieux")
     args = p.parse_args(argv)
     evts = evenements()
-    groupes = lieux(evts)
+    sources = yaml.safe_load((RACINE / "_data" / "sources.yml").read_text()) or []
+    groupes = lieux(evts, faux_lieux(sources))
     try:
         geo = json.loads(FICHIER_GEO.read_text())
     except (FileNotFoundError, json.JSONDecodeError):

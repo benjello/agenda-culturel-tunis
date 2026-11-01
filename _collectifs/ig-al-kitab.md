@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.instagram.com/alkitab_tunisie/"
 reseau: "instagram"
 categorie: "litterature"
+genre: "lieu"
 ---

@@ -5,4 +5,5 @@ type: "agenda"
 url_source: "https://www.instagram.com/rosalux_northafrica/"
 reseau: "instagram"
 categorie: "conference"
+genre: "institution"
 ---

@@ -66,6 +66,14 @@ collectifs_titre: { ar: "المنظمون والفنانون", en: "Organisers a
 collectifs_intro: { ar: "كل بطاقة تعرض ما أعلنوا عنه.", en: "Each page shows what they have announced." }
 artistes: { ar: "فنانون", en: "Artists" }
 organisateurs: { ar: "منظمون، فضاءات ومجموعات", en: "Organisers, venues and collectives" }
+genre.lieu: { ar: "الفضاءات", en: "Venues" }
+genre.institution: { ar: "المعاهد والمراكز الثقافية", en: "Cultural institutes and centres" }
+genre.festival: { ar: "المهرجانات", en: "Festivals" }
+genre.collectif: { ar: "مجموعات وجمعيات وفنانون", en: "Collectives, associations, DJs and artists" }
+genre.administration: { ar: "المندوبيات الجهوية للثقافة", en: "Regional culture offices" }
+genre.agenda: { ar: "أجندات ومنصات تذاكر", en: "Listings and ticketing" }
+genre.presse: { ar: "الصحف", en: "Newspapers" }
+lu_dans: { ar: "مقال في", en: "Read in" }
 nouveau_titre: { ar: "جديد هذا الأسبوع", en: "New this week" }
 nouveau_intro: { ar: "ما أضيف إلى الأجندا في الأيام السبعة الأخيرة.", en: "What arrived in the agenda over the last seven days." }
 rien_nouveau: { ar: "لا جديد هذا الأسبوع.", en: "Nothing new this week yet." }
