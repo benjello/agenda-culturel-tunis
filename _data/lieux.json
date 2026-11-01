@@ -45,6 +45,7 @@
   "Cinéma Le Palace": "cinema-le-palace",
   "Pathé Azur City": "pathe-azur-city",
   "Pathé Tunis City": "pathe-tunis-city",
+  "Douz": "douz",
   "One Resort, Monastir": "one-resort-monastir"
  },
  "carte": [
@@ -302,6 +303,14 @@
    "ville": "tunis",
    "lat": 36.8125,
    "lon": 10.1817,
+   "n": 1
+  },
+  {
+   "slug": "douz",
+   "nom": "Douz",
+   "ville": "sud",
+   "lat": 33.45711,
+   "lon": 9.02498,
    "n": 1
   },
   {

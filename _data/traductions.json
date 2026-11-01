@@ -100,6 +100,10 @@
    "ar": "Podcast Festival",
    "en": "Podcast Festival"
   },
+  "Festival international du Sahara de Douz (58e édition)": {
+   "ar": "مهرجان الصحراء الكبرى دي دوز الدولي (الطبعة 58)",
+   "en": "Sahara de Douz International Festival (58th edition)"
+  },
   "Foire nationale du livre tunisien: Traduire, transmettre et penser le savoir en arabe": {
    "ar": "معرض الكتاب الوطني التونسي: الترجمة التحريرية والترجمة والتفكير في المعارف باللغة العربية",
    "en": "Tunisian National Book Fair: Translating, Translating and Thinking about Knowledge in Arabic"
@@ -128,9 +132,21 @@
    "ar": "Jaou Tunis 2026: Bodies, territories of resistance",
    "en": "Jaou Tunis 2026: Bodies, territories of resistance"
   },
+  "Journées Cinématographiques de Carthage (JCC) (37e édition)": {
+   "ar": "أيام تصوير الكرتاج (الطبعة 37)",
+   "en": "Carthage Film Days (JCC) (37th edition)"
+  },
   "Journées Théâtrales De Carthage": {
    "ar": "أيام مسرح كارثيج",
    "en": "Carthage Theatre Days"
+  },
+  "Journées Théâtrales de Carthage (JTC) (27e édition)": {
+   "ar": "اليوم المسرحي للخراطيم (الطبعة 27)",
+   "en": "Theatrical Days of Carthage (JTC) (27th edition)"
+  },
+  "Journées des Arts de la Marionnette de Carthage (JAMC) (8e édition, Cité de la Culture)": {
+   "ar": "Carthage Puppet Arts Days (JAMC) (8th edition, Cité de la Culture)",
+   "en": "Carthage Puppet Arts Days (JAMC) (8th edition, Cité de la Culture)"
   },
   "Kteb Tounsi Avec Abdelhamid Larguèche": {
    "ar": "Kteb Tounsi with Abdelhamid Larguèche",
@@ -443,6 +459,26 @@
    "cle": "074fdd79fce1",
    "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
    "ar": "Line-up : Emine (2), harrison manett, Kian OK, Omar Fayyad, Pan-J, Picasso\nلا داعي للعجلة، لا اشارة، مجرد وجود كامل في الكثبان مع الناس الطيبين.\nلقد جمعنا أربعة أيام من الإصغاء العميق، والصباح البطيء، والممارسات الصوفية، وضوء الصحراء، وبقينا الأمور بسيطة ومتعمدة.\nمصنوعة من قبل الأصدقاء، للأصدقاء.\nوُلد من حب مشترك للصحراء، إنّ (ناماد مان) هو معتكفٌ عنيف وانتقائي حيث تلتقي الأرواح وتتواصل دون أيّ إلهاء خارجي."
+  },
+  "_events/festivals/2026-11-21-jtc.md": {
+   "cle": "57e4e4fa6c58",
+   "ar": "Dates confirmed ([source](https://www.webdo.tn/en/actualite/culture/le-ministere-de-la-culture-devile-dates-des-grands-rendez-vous-culturels-de-carthage-en-2026/397823)). ولم يُنشر البرنامج بعد: وهو يظهر أولاً على شبكات المهرجان.",
+   "en": "Dates confirmed ([source](https://www.webdo.tn/en/actualite/culture/le-ministere-de-la-culture-devile-les-dates-des-grands-rendez-vous-culturels-de-carthage-en-2026/397823/)). The programme is not yet published: it appears first on the festival networks."
+  },
+  "_events/festivals/2026-12-12-jcc.md": {
+   "cle": "cb9b5a381136",
+   "ar": "Dates confirmed ([source](https://www.lapresse.tn/2026/10/14/jcc-2026-decouvrir-la-37e-edition/)). ولم يُنشر البرنامج بعد: وهو يظهر أولاً على شبكات المهرجان.",
+   "en": "Dates confirmed ([source](https://www.lapresse.tn/2026/10/14/jcc-2026-decouvrir-la-la-37e-edition/)). The programme is not yet published: it appears first on the festival networks."
+  },
+  "_events/festivals/2026-12-19-douz.md": {
+   "cle": "d8bd1df25cb0",
+   "ar": "Dates confirmed ([source](https://www.tunisienumerique.com/tunisie-douz-prepare-la-58e-edition-de-son-festival-international-du-sahara/)). ولم يُنشر البرنامج بعد: وهو يظهر أولاً على شبكات المهرجان.",
+   "en": "Dates confirmed ([source](https://www.tunisienumerique.com/tunisie-douz-prepare-la-58e-edition-de-son-festival-international-du-sahara/)). The programme is not yet published: it appears first on the festival networks."
+  },
+  "_events/festivals/2027-03-20-jamc.md": {
+   "cle": "74b3510f07fc",
+   "ar": "Dates confirmed ([source](https://en.allafrica.com/stories/202607300457.html)). ولم يُنشر البرنامج بعد: وهو يظهر أولاً على شبكات المهرجان.",
+   "en": "Dates confirmed ([source](https://en.allafrica.com/stories/202607300457.html)). The programme is not yet published: it appears first on the festival networks."
   },
   "_events/manuel/2026-11-05-fabrika-festival-14.md": {
    "cle": "0df5272d95d9",

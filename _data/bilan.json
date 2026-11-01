@@ -2,9 +2,9 @@
  {
   "semaine": "2026-S44",
   "date": "2026-11-01",
-  "a_venir": 143,
+  "a_venir": 147,
   "sept_jours": 88,
-  "sources_actives": 62,
+  "sources_actives": 61,
   "sources_avec_evenements": 20,
   "sources_muettes": [
    "cine-amilcar",
@@ -28,12 +28,11 @@
    "goethe-tunis",
    "ig-al-kitab",
    "ig-b7l9",
-   "ig-chantarts-sfax",
    "ig-cineclub-tunis",
    "ig-downtown-vibes",
    "ig-eddisco",
    "ig-entre-les-rives",
-   "ig-festival-oasis-tozeur",
+   "ig-fics-ksar-ghilane",
    "ig-ftca",
    "ig-habibi-downtown",
    "ig-hamdi-ryder",
@@ -43,11 +42,11 @@
    "ig-rock-n-rolla",
    "ig-rosalux-afrique-nord",
    "ig-shanti",
-   "ig-sousse-culturelle",
    "ig-tunisia-podcasts-festival",
    "irmc",
    "kapitalis-cite-sciences",
    "opera-tunis",
+   "sat-astronomie",
    "tn-agenda-du-jour"
   ],
   "par_ville": {
