@@ -2,6 +2,7 @@
 title: "Wala Kan Ala El Bal - ولا كان عالبال"
 date: 2026-11-02 11:30
 venue: "Cinéma Le Colisée"
+ville: "tunis"
 address: "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/klvQn3"

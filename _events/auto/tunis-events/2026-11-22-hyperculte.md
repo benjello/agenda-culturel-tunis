@@ -2,6 +2,7 @@
 title: "Hyperculte"
 date: 2026-11-22 18:00
 venue: "B7L9 Art Centre"
+ville: "tunis"
 address: "La Marsa, La Marsa"
 category: "musique"
 price: "5 TND"

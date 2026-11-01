@@ -3,6 +3,7 @@ title: "Images de Syrie, Palmyre, Alep, Damas - Michel Eisenlohr"
 date: 2026-10-27 17:00
 end_date: "2026-11-27 19:00"
 venue: "Institut Français de Tunis"
+ville: "tunis"
 address: "20-22 Avenue de Paris, Tunis, Tunis"
 category: "expo"
 link: "https://tunis.events/events/krn29k/images-de-syrie-palmyre-alep-damas-michel-eisenlohr-institut-francais-de-tunis"

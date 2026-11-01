@@ -1,0 +1,13 @@
+{%- comment -%}
+  Lien « ouvrir sur une carte » pour un lieu : OpenStreetMap (libre, marche partout) ;
+  sur Android, le script le change en lien geo: pour proposer l'appli de cartes du téléphone.
+  Seulement pour un lieu précis : pas pour « Tunis », plusieurs lieux (« X et Y ») ou un lieu inconnu.
+  Usage : {% include lien-carte.html lieu=e.venue adresse=e.address %}
+{%- endcomment -%}
+{%- assign l = include.lieu | default: "" | strip -%}
+{%- assign vague = false -%}
+{%- if l == "" or l == "Tunis" or l == "Tunisie" or l contains "voir l'article" or l contains " et " or l contains " / " or l contains "plusieurs" or l contains "Plusieurs" -%}{%- assign vague = true -%}{%- endif -%}
+{%- if vague -%}{{ l }}{%- else -%}
+{%- capture q %}{{ include.lieu }}{% if include.adresse %}, {{ include.adresse }}{% endif %}, Tunisie{% endcapture -%}
+<a class="carte" href="https://www.openstreetmap.org/search?query={{ q | strip | url_encode }}" data-q="{{ q | strip | escape }}" rel="noopener" title="Ouvrir sur une carte">📍 {{ include.lieu }}</a>
+{%- endif -%}

@@ -2,6 +2,7 @@
 title: "Yoga for Busy Minds with Judit @yoga_in_sidibousaid"
 date: 2026-11-04 19:00
 venue: "Sociale Sidi Bou Said"
+ville: "tunis"
 address: "V8CW+8GM, Carthage, Carthage"
 category: "autre"
 price: "45 TND"

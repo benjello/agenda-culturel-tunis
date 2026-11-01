@@ -3,6 +3,7 @@ title: "Fabrika Festival 14"
 date: 2026-11-05
 end_date: "2026-11-09"
 venue: "One Resort, Monastir"
+ville: "monastir"
 category: "musique"
 link: "https://www.instagram.com/fabrika_festival/"
 source: "ig-fabrika"

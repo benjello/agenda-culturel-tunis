@@ -3,6 +3,7 @@ title: "Le Mystère Lucy Lost"
 date: 2026-11-01 17:30
 end_date: "2026-11-02 10:05"
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/le-mystere-lucy-lost"

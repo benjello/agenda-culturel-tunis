@@ -2,6 +2,7 @@
 title: "Cette semaine, ton prochain coup de cœur ciné t’attend à L’Agora !"
 date: 2026-11-02
 venue: "L’Agora La Marsa"
+ville: "tunis"
 category: "cinema"
 link: "https://www.instagram.com/p/DfIILdxAlEC/"
 source: "cine-agora"

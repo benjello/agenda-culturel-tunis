@@ -2,6 +2,7 @@
 title: "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم الإبداع يدعوكم المس"
 date: 2026-11-01 11:00
 venue: "رواق الفنون – قاعة الفن الرابع"
+ville: "tunis"
 category: "theatre"
 link: "https://www.instagram.com/p/DfLIEZVCbs3/"
 source: "ig-theatre-national"

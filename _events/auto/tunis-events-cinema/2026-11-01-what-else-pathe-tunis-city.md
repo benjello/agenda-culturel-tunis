@@ -3,6 +3,7 @@ title: "WHAT ELSE ? / فانا محط بش تتحط ؟"
 date: 2026-11-01 11:00
 end_date: "2026-11-02 11:00"
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7"

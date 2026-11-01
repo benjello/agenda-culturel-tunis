@@ -2,6 +2,7 @@
 title: "Dimanche 1er Novembre, la Médiathèque de l'Institut français de Tunisie ouvre exceptionnel"
 date: 2026-11-01
 venue: "Médiathèque de l'Institut français de Tunisie"
+ville: "tunis"
 category: "conference"
 link: "https://www.facebook.com/100064556987464/posts/1560731326088752"
 source: "fb-ift-facebook"

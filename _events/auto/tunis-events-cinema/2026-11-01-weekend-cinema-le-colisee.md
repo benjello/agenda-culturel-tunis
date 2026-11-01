@@ -2,6 +2,7 @@
 title: "WEEKEND"
 date: 2026-11-01
 venue: "Cinéma Le Colisée"
+ville: "tunis"
 address: "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
 category: "cinema"
 link: "https://tunis.events/events/moEQl8/weekend-cinema-le-colisee"

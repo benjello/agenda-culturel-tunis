@@ -2,6 +2,7 @@
 title: "Power Yoga with Nicole Skarpness @nskarp"
 date: 2026-11-03 19:00
 venue: "Sociale."
+ville: "tunis"
 address: "V8CW+8GM, Carthage, Carthage"
 category: "autre"
 price: "45 TND"

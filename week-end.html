@@ -15,6 +15,7 @@ description: Que faire à Tunis ce week-end ? Concerts, théâtre, conférences,
   <h1 id="we-titre">Ce week-end</h1>
   <p>Ce qui se passe à Tunis du vendredi au dimanche. Le détail de chaque événement est sur sa source.</p>
 </section>
+{% include choix-ville.html %}
 
 {%- for jour in (0..2) %}
 <section class="month we-jour" data-decalage="{{ jour }}" hidden>

@@ -2,6 +2,7 @@
 title: "BAKMA"
 date: 2026-11-01
 venue: "Cinéma Le Palace"
+ville: "tunis"
 address: "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis"
 category: "cinema"
 link: "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace"

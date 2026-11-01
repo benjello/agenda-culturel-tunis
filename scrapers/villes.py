@@ -1,0 +1,32 @@
+"""Range chaque événement dans une ville d'après son lieu et son adresse (voir _data/villes.yml).
+
+Par défaut « tunis » : la plupart de nos sources sont dans le Grand Tunis.
+"""
+from __future__ import annotations
+
+import re
+import unicodedata
+
+# Le premier motif qui correspond gagne. Écrits sans accents (le texte est normalisé).
+_VILLES = [
+    ("sousse", r"sousse|port el kantaoui|hammam sousse|msaken|akouda"),
+    ("sfax", r"sfax|sakiet ezzit|kerkennah"),
+    ("monastir", r"monastir|mahdia|ksar hellal|moknine|skanes"),
+    ("nabeul", r"nabeul|hammamet|kelibia|korba|menzel temime|yasmine|cap bon|grombalia|dar chaabane"),
+    ("bizerte", r"bizerte|menzel bourguiba|ras jebel"),
+    ("kairouan", r"kairouan|raqqada"),
+    ("sud", r"djerba|houmt souk|midoun|zarzis|gabes|medenine|tataouine|tozeur|nefta|douz|kebili|matmata|gafsa"),
+    ("autres", r"\b(?:beja|jendouba|tabarka|le kef|kef|siliana|zaghouan|kasserine|sidi bouzid|dougga|ain draham)\b"),
+]
+
+
+def _norme(t: str) -> str:
+    return unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode().lower()
+
+
+def ville(*textes: str) -> str:
+    t = _norme(" ".join(x for x in textes if x))
+    for v, motif in _VILLES:
+        if re.search(motif, t):
+            return v
+    return "tunis"
