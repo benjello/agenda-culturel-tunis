@@ -299,6 +299,35 @@ class TunisEventsCinema(unittest.TestCase):
         self.assertEqual(data["via"], "tunis.events")
 
 
+class Lecteurs(unittest.TestCase):
+    def setUp(self):
+        from scrapers import lecteurs
+        self.l = lecteurs
+
+    def test_liste_films(self):
+        texte = (f"À l'affiche du 02 au 09 Novembre {FUTUR} dans votre Cinéma Alhambra :\n\n"
+                 "🎬 𝗪𝗲𝗲𝗸𝗲𝗻𝗱\n🎬 𝗗𝗮𝗿 𝗘𝗹 𝟯𝗲𝗿𝘀 دار العرس\n🎫 Les tickets sont disponibles")
+        films = self.l.liste_films([{"texte": texte, "lien": "https://fb/p/1"}], ["Dar El 3ers - دار العرس"])
+        self.assertEqual([f.titre for f in films], ["Weekend", "Dar El 3ers - دار العرس"])
+        self.assertEqual(len(films[0].jours), 8)
+        self.assertEqual(films[0].jours[0], f"{FUTUR}-11-02")
+
+    def test_un_film_par_affiche(self):
+        pubs = [
+            {"texte": "Rappel Japan Festival", "lien": "https://fb/p/2", "date": f"{FUTUR}-10-28",
+             "ocr": "Le Maître du kabuki\nUn film de Lee Sang-il\nVendredi 30 octobre à 19h\n'et dimanche ler novembre à 13h"},
+            {"texte": 'تذكير فيلم "بكْمَة" بقاعة Ciné 350', "lien": "https://fb/p/3", "date": f"{FUTUR}-10-28",
+             "ocr": "Mercredi 29 Octobre\nJeudi 30 Octobre 16H00"},
+        ]
+        films = self.l.un_film_par_affiche(pubs, ["BAKMA - بكمة"])
+        self.assertEqual(films[0].titre, "Le Maître du kabuki")
+        self.assertEqual(films[0].jours, [f"{FUTUR}-10-30", f"{FUTUR}-11-01"])
+        self.assertEqual(films[1].titre, "BAKMA - بكمة")  # rapproché du titre connu, malgré les voyelles
+
+    def test_annee_deduite(self):
+        self.assertEqual(self.l.jours_sans_annee("samedi 3 janvier", dt.date(2026, 12, 20)), ["2027-01-03"])
+
+
 class Doublons(unittest.TestCase):
     def test_meme_lieu_meme_heure(self):
         from scrapers import doublons

@@ -17,6 +17,8 @@ Options :
   page     nom de la page (facebook.com/<page>)
   max      nombre de publications avec image à garder (défaut 3)
   jours    ne lire que les publications de moins de N jours (défaut 21)
+  lecteur  comment tirer les films du programme (voir scrapers/lecteurs.py) :
+           liste_films (une ligne « 🎬 Titre » par film), un_film_par_affiche
 """
 from __future__ import annotations
 
@@ -26,7 +28,9 @@ import os
 import shutil
 import subprocess
 
+from .. import lecteurs
 from ..commun import RACINE, EnAttente, Publication, _session, propre
+from ..ecriture import ecrire_films, ecrire_publications
 from .facebook import appeler_apify, _date
 
 ACTEUR = "apify/facebook-posts-scraper"
@@ -119,3 +123,14 @@ def recuperer(source: dict) -> list[Publication]:
         if f.name not in gardees:
             f.unlink()
     return publications
+
+
+def ecrire(source: dict, publications: list[Publication]) -> int:
+    """Garde les publications (affiches) et, si la salle a un lecteur, la liste des films."""
+    ecrire_publications(source, publications)
+    lecteur = lecteurs.LECTEURS.get(source.get("options", {}).get("lecteur", ""))
+    if not lecteur:
+        return len(publications)
+    films = lecteur([p.en_dict() for p in publications], lecteurs.titres_connus())
+    print(f"  {source['id']} : {len(films)} film(s) lu(s) sur le programme")
+    return ecrire_films(source, films)

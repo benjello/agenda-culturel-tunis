@@ -163,6 +163,7 @@
   actif: true
   tous_les_jours: 3
   options:
+    lecteur: un_film_par_affiche
     page: sallecine350
   note: programme de la semaine publié en image sur Facebook
 
@@ -191,6 +192,7 @@
   actif: true
   tous_les_jours: 3
   options:
+    lecteur: liste_films
     page: cine.alhambra.zephyr
     lieu: "Cinéma Alhambra"
   note: programme publié en image sur Facebook
