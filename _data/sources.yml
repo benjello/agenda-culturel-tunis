@@ -213,16 +213,17 @@
 
 - id: cine-agora
   nom: L'Agora (La Marsa)
-  url: https://www.facebook.com/espacelagora
+  url: https://www.instagram.com/lagoramarsa/
   type: lieu
-  scraper: facebook_programmes
+  scraper: instagram
   categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
-    page: espacelagora
+    compte: "lagoramarsa"
     lieu: "L'Agora Marsa"
-  note: programme publié en image sur Facebook
+    resultats: 8
+  note: "La page Facebook n'est pas publique : on lit Instagram (films, concerts, expos). Les séances viennent aussi de tunis.events."
 
 - id: cine-alhambra
   nom: Alhambra Zéphyr (La Marsa)
