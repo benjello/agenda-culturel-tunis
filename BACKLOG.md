@@ -86,7 +86,7 @@ Usage
 - [ ] Newsletter du jeudi générée depuis la page « Ce week-end ». Reportée : Buttondown proposé (gratuit jusqu'à 100 abonnés), il faudra le secret BUTTONDOWN_API_KEY.
 - [x] Filtres « gratuit » et « en famille ».
 - [x] Carte des lieux (OpenStreetMap).
-- [ ] Carte : placer à la main (lat/lon) les lieux que Nominatim ne trouve pas (valeur null dans `_data/geo.json`).
+- [x] Carte : placer à la main (lat/lon) les lieux que Nominatim ne trouve pas (valeur null dans `_data/geo.json`).
 - [x] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour. Reportée : bot @BotFather + secrets TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ; WhatsApp sans API, texte à copier-coller.
 - [x] Site installable comme une appli (PWA, hors ligne, sans store).
@@ -125,6 +125,6 @@ Fiabilité
 - [x] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
 - [x] Bouton « signaler une erreur » sur chaque événement.
 
-- [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 7 pages Facebook branchées ; trouver les 17 autres.
-- [ ] FTCC (ciné-clubs) : trouver la page Facebook officielle.
+- [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 8 pages Facebook branchées ; trouver les 16 autres.
+- [x] FTCC (ciné-clubs) : page Facebook FTCCTunisie, plus le Ciné-club de Tunis et la FTCA sur Instagram.
 - [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.

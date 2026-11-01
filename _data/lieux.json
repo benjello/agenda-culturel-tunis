@@ -35,7 +35,6 @@
   "Studio B52": "studio-b52",
   "Steps Club Sousse": "steps-club-sousse",
   "One Resort": "one-resort",
-  "TBA": "tba",
   "Ksar El Farch": "ksar-el-farch",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Caserne El Attarine": "caserne-el-attarine",
@@ -84,6 +83,14 @@
    "n": 13
   },
   {
+   "slug": "pathe-azur-city",
+   "nom": "Pathé Azur City",
+   "ville": "tunis",
+   "lat": 36.744,
+   "lon": 10.232,
+   "n": 10
+  },
+  {
    "slug": "institut-francais-de-tunis",
    "nom": "Institut français de Tunis",
    "ville": "tunis",
@@ -116,6 +123,22 @@
    "n": 6
   },
   {
+   "slug": "institut-francais-de-sousse",
+   "nom": "Institut français de Sousse",
+   "ville": "sousse",
+   "lat": 35.829,
+   "lon": 10.638,
+   "n": 6
+  },
+  {
+   "slug": "cinemadart",
+   "nom": "CinéMadart",
+   "ville": "tunis",
+   "lat": 36.854,
+   "lon": 10.324,
+   "n": 6
+  },
+  {
    "slug": "cinema-le-colisee",
    "nom": "Cinéma Le Colisée",
    "ville": "tunis",
@@ -130,6 +153,38 @@
    "lat": 34.59926,
    "lon": 9.59188,
    "n": 5
+  },
+  {
+   "slug": "cinema-alhambra-zephyr",
+   "nom": "Cinéma Alhambra Zéphyr",
+   "ville": "tunis",
+   "lat": 36.878,
+   "lon": 10.3245,
+   "n": 4
+  },
+  {
+   "slug": "cinema-le-palace",
+   "nom": "Cinéma Le Palace",
+   "ville": "tunis",
+   "lat": 36.8,
+   "lon": 10.183,
+   "n": 4
+  },
+  {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 3
+  },
+  {
+   "slug": "b7l9-art-centre",
+   "nom": "B7L9 Art Centre",
+   "ville": "tunis",
+   "lat": 36.889,
+   "lon": 10.307,
+   "n": 3
   },
   {
    "slug": "beit-al-hikma-carthage",
@@ -156,12 +211,28 @@
    "n": 2
   },
   {
+   "slug": "agorgi-gallery-sidi-bou-said",
+   "nom": "Agorgi Gallery, Sidi Bou Saïd",
+   "ville": "tunis",
+   "lat": 36.8697,
+   "lon": 10.3417,
+   "n": 2
+  },
+  {
    "slug": "one-resort",
    "nom": "One Resort",
    "ville": "monastir",
    "lat": 35.76372,
    "lon": 10.7399,
    "n": 2
+  },
+  {
+   "slug": "cine-350-cite-de-la-culture",
+   "nom": "Ciné 350 (Cité de la Culture)",
+   "ville": "tunis",
+   "lat": 36.8125,
+   "lon": 10.1817,
+   "n": 1
   },
   {
    "slug": "cite-des-sciences-de-tunis",
@@ -196,6 +267,14 @@
    "n": 1
   },
   {
+   "slug": "salle-albert-camus-institut-francais-de-sfax",
+   "nom": "Salle Albert Camus, Institut français de Sfax",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 1
+  },
+  {
    "slug": "la-boite",
    "nom": "La Boîte",
    "ville": "tunis",
@@ -217,6 +296,14 @@
    "ville": "tunis",
    "lat": 36.79763,
    "lon": 10.1717,
+   "n": 1
+  },
+  {
+   "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
+   "nom": "Salle des Jeunes Créateurs - Cité de la Culture",
+   "ville": "tunis",
+   "lat": 36.8125,
+   "lon": 10.1817,
    "n": 1
   },
   {
