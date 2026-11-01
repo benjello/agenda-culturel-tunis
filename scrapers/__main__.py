@@ -22,7 +22,10 @@ import yaml
 from . import commun
 from .commun import RACINE, EnAttente, Film
 from . import doublons
-from .ecriture import ecrire_etat, ecrire_evenements, ecrire_films, lire_etat
+from .ecriture import ecrire_etat, ecrire_evenements, ecrire_films, ecrire_publications, lire_etat
+
+
+SCRAPERS_PUBLICATIONS = {"facebook_programmes"}
 
 
 def charger_sources() -> list[dict]:
@@ -64,8 +67,13 @@ def main(argv=None) -> int:
             resultat = lancer(s)
             # Une liste vide n'est pas une panne : la source peut n'avoir rien à venir.
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
-            est_cinema = s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film))
-            n = (ecrire_films if est_cinema else ecrire_evenements)(s, resultat)
+            if s["scraper"] in SCRAPERS_PUBLICATIONS:
+                ecrire = ecrire_publications
+            elif s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film)):
+                ecrire = ecrire_films
+            else:
+                ecrire = ecrire_evenements
+            n = ecrire(s, resultat)
             e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
             print(f"✓ {s['id']} : {n}")
         except EnAttente as exc:
