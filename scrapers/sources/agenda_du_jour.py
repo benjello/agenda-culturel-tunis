@@ -111,7 +111,7 @@ def _par_api(source: dict) -> list[tuple[dict, str]]:
     base = "{0.scheme}://{0.netloc}".format(urlsplit(source["url"]))
     res, vus = [], set()
     for mots in o.get("recherche", RECHERCHES).split("|"):
-        url = f"{base}/wp-json/wp/v2/posts?search={quote_plus(mots.strip())}&per_page=10&_fields=title,link,date,content"
+        url = f"{base}/wp-json/wp/v2/posts?search={quote_plus(mots.strip())}&orderby=date&order=desc&per_page=10&_fields=title,link,date,content"
         for p in json.loads(telecharger(url)):
             if p.get("link") in vus:
                 continue
@@ -143,17 +143,21 @@ def _par_flux(source: dict) -> list[tuple[dict, str]]:
 def recuperer(source: dict) -> list[Evenement]:
     o = source.get("options") or {}
     garder = re.compile(o.get("titres", TITRES), re.I)
-    articles, erreurs = [], []
+    # Les deux chemins : le flux ne donne que les derniers articles de l'étiquette,
+    # l'API retrouve les autres séries (« événements nationaux attendus… »).
+    articles, erreurs, vus = [], [], set()
     for lire in (_par_flux, _par_api):
         try:
-            articles = [x for x in lire(source) if garder.search(x[0]["titre"])]
+            for a, contenu in lire(source):
+                if garder.search(a["titre"]) and a["lien"] not in vus:
+                    vus.add(a["lien"])
+                    articles.append((a, contenu))
         except Exception as exc:  # noqa: BLE001 — on essaie l'autre chemin
             erreurs.append(f"{lire.__name__}: {exc}"[:150])
-            continue
-        if articles:
-            break
     if not articles:
         raise RuntimeError("aucun article d'agenda lisible" + (f" ({'; '.join(erreurs)})" if erreurs else ""))
+    print(f"  {source['id']} : {len(articles)} article(s) d'agenda, " + ", ".join(a["titre"][:50] for a, _ in articles[:4])
+          + (f" ; {'; '.join(erreurs)}" if erreurs else ""))
     aujourd_hui = dt.date.today()
     res = []
     for a, contenu in articles:
