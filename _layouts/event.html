@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{%- assign cat = site.data.categories[page.category] | default: site.data.categories.autre -%}
+<article class="event-page">
+  <p><a href="{{ '/' | relative_url }}">← Retour à l'agenda</a></p>
+  <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
+  <h1>{{ page.title }}</h1>
+  <dl class="details">
+    <dt>Quand</dt>
+    <dd>{% include date-fr.html date=page.date %}{% if page.end_date %} → {% include date-fr.html date=page.end_date %}{% endif %}</dd>
+    <dt>Où</dt>
+    <dd>{{ page.venue }}{% if page.address %}, {{ page.address }}{% endif %}</dd>
+    {% if page.price %}<dt>Prix</dt><dd>{{ page.price }}</dd>{% endif %}
+    {% if page.link %}<dt>Plus d'infos</dt><dd><a href="{{ page.link }}" rel="noopener">{{ page.link | remove: "https://" | remove: "http://" | truncate: 50 }}</a></dd>{% endif %}
+  </dl>
+  <div class="description">{{ content }}</div>
+</article>

@@ -1,0 +1,10 @@
+# Catégories autorisées dans le champ « category » d'un événement.
+# clé: { nom affiché, couleur }
+cinema:   { label: "Cinéma",    color: "#c0392b" }
+musique:  { label: "Musique",   color: "#8e44ad" }
+theatre:  { label: "Théâtre",   color: "#d35400" }
+expo:     { label: "Exposition", color: "#16a085" }
+danse:    { label: "Danse",     color: "#2980b9" }
+litterature: { label: "Littérature", color: "#7f8c8d" }
+conference: { label: "Conférence", color: "#2c3e50" }
+autre:    { label: "Autre",     color: "#555555" }

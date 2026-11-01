@@ -1,0 +1,30 @@
+title: Agenda culturel Tunis
+description: Concerts, cinéma, théâtre, expos… tous les événements culturels de Tunis au même endroit.
+lang: fr
+timezone: Africa/Tunis
+
+# Indispensable : publier aussi les événements datés dans le futur.
+future: true
+
+# Chemin du site sur GitHub Pages : https://benjello.github.io/agenda-culturel-tunis/
+# Mettre baseurl: "" le jour où on passe sur un nom de domaine à soi.
+baseurl: "/agenda-culturel-tunis"
+url: "https://benjello.github.io"
+
+collections:
+  events:
+    output: true
+    permalink: /evenements/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

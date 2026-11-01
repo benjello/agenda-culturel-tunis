@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>Que faire à Tunis ?</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+<div class="filters" id="filters">
+  <button class="active" data-filter="all">Tout</button>
+  {% for c in site.data.categories %}<button data-filter="{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
+</div>
+
+{%- comment -%}
+  Tous les événements sont générés, triés par date. Le petit script en bas masque
+  les événements passés côté navigateur, pour que la page reste juste même si le
+  site n'a pas été reconstruit depuis quelques jours.
+{%- endcomment -%}
+{%- assign events = site.events | sort: "date" -%}
+{%- assign current_month = "" -%}
+<div id="agenda">
+{%- for e in events -%}
+  {%- assign month = e.date | date: "%Y-%m" -%}
+  {%- if month != current_month -%}
+    {%- unless forloop.first %}</section>{% endunless %}
+    {%- assign m = e.date | date: "%-m" | minus: 1 %}
+    <section class="month" data-month="{{ month }}">
+      <h2>{{ site.data.fr.mois[m] | capitalize }} {{ e.date | date: "%Y" }}</h2>
+    {%- assign current_month = month -%}
+  {%- endif %}
+  {% include event-card.html event=e %}
+  {%- if forloop.last %}</section>{% endif -%}
+{%- endfor %}
+</div>
+<p id="empty" class="empty" hidden>Aucun événement à venir pour l'instant.</p>
+
+<script>
+(function () {
+  var today = new Date().toISOString().slice(0, 10);
+  var events = document.querySelectorAll('.event');
+  var filter = 'all';
+  function refresh() {
+    var shown = 0;
+    events.forEach(function (el) {
+      var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter);
+      el.hidden = !visible;
+      if (visible) shown++;
+    });
+    document.querySelectorAll('.month').forEach(function (s) {
+      s.hidden = !s.querySelector('.event:not([hidden])');
+    });
+    document.getElementById('empty').hidden = shown > 0;
+  }
+  document.getElementById('filters').addEventListener('click', function (ev) {
+    var b = ev.target.closest('button');
+    if (!b) return;
+    filter = b.dataset.filter;
+    this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
+    refresh();
+  });
+  refresh();
+})();
+</script>
