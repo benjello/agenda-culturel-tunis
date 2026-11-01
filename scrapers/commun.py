@@ -76,6 +76,24 @@ def dates_fr(texte: str) -> list[dt.datetime]:
     return res
 
 
+_RE_NUM = re.compile(r"\b(\d{1,2})[./](\d{1,2})[./](\d{4})\b(?:\D{0,12}?(\d{1,2})\s*[:hH]\s*(\d{2})?)?")
+
+
+def dates_num(texte: str) -> list[dt.datetime]:
+    """Dates écrites en chiffres : « 26.09.2026 », « 26/09/2026 à 19h00 »."""
+    res = []
+    for j, m, a, h, mn in _RE_NUM.findall(texte):
+        try:
+            res.append(dt.datetime(int(a), int(m), int(j), int(h or 0), int(mn or 0)))
+        except ValueError:
+            continue
+    return res
+
+
+def toutes_dates(texte: str) -> list[dt.datetime]:
+    return sorted(set(dates_fr(texte) + dates_num(texte)))
+
+
 def json_ld_evenements(soup: BeautifulSoup) -> list[dict]:
     """Événements schema.org (JSON-LD) présents dans une page, s'il y en a."""
     trouves = []

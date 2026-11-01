@@ -10,7 +10,7 @@
 #   type       lieu | billetterie | cinema | agenda
 #   scraper    nom du scraper qui sait lire cette source (dossier scrapers/sources/)
 #   categorie  catégorie par défaut des événements (voir _data/categories.yml)
-#   actif      false pour mettre une source en pause sans la supprimer
+#   actif      false : source repérée mais pas encore branchée (ou en pause)
 #   options    réglages propres au scraper (facultatif)
 #   note       remarque libre (facultatif)
 
@@ -62,3 +62,90 @@
   actif: true
   options:
     lieu: Théâtre de l'Opéra de Tunis, Cité de la Culture
+
+- id: goethe-tunis
+  nom: Goethe-Institut Tunis
+  url: https://www.goethe.de/ins/tn/fr/rss/ver.rss
+  type: lieu
+  scraper: rss
+  categorie: conference
+  actif: true
+  options:
+    lieu: Goethe-Institut Tunis
+    nettoyer_titre: '\d{2}\.\d{2}\.\d{4},\s*'
+  note: Flux RSS officiel des manifestations. Certaines ont lieu chez des partenaires.
+
+- id: institut-francais
+  nom: Institut français de Tunisie
+  url: https://www.institutfrancais-tunisie.com/list-agenda
+  type: lieu
+  scraper: liste_fiches
+  categorie: autre
+  actif: true
+  options:
+    motif: details-agenda
+    lieu: Institut français de Tunis
+  note: La liste est peut-être chargée en JavaScript ; à vérifier au premier passage.
+
+# ---------------------------------------------------------------------------
+# Sources repérées mais pas encore branchées (actif: false). La page Sources les
+# affiche « à étudier ». Toute aide pour trouver une adresse fiable est bienvenue.
+# ---------------------------------------------------------------------------
+
+- id: tunis-events
+  nom: tunis.events
+  url: https://tunis.events/arts_culture
+  type: agenda
+  scraper: liste_fiches
+  actif: false
+  note: Agrégateur très complet. À décider - le lire, ou s'en servir pour trouver les sites d'origine.
+
+- id: monticket
+  nom: MonTicket.tn
+  url: https://monticket.tn/
+  type: billetterie
+  scraper: liste_fiches
+  actif: false
+  options:
+    motif: /evenement/
+  note: Surtout hors Tunis pour l'instant (Hammamet, Sousse).
+
+- id: b7l9
+  nom: B7L9 Art Station (Fondation Kamel Lazaar)
+  url: https://www.kamellazaarfoundation.org/
+  type: lieu
+  scraper: liste_fiches
+  actif: false
+  note: Pas de page d'agenda trouvée ; programme surtout sur les réseaux sociaux.
+
+- id: iic-tunisi
+  nom: Istituto Italiano di Cultura di Tunisi
+  url: https://iictunisi.esteri.it/
+  type: lieu
+  scraper: rss
+  actif: false
+  note: Programmes publiés en PDF ; le site WordPress a peut-être un flux /feed/ à tester.
+
+- id: cervantes-tunez
+  nom: Instituto Cervantes de Tunis
+  url: https://cervantes.org/es/cultura/agenda-semanal
+  type: lieu
+  scraper: liste_fiches
+  actif: false
+  note: Agenda commun à tous les centres Cervantes ; il faudra filtrer Tunis.
+
+- id: cinematheque
+  nom: Cinémathèque tunisienne (Cité de la Culture)
+  url: ""
+  type: cinema
+  scraper: aucun
+  actif: false
+  note: Programme annoncé seulement sur Facebook et dans la presse.
+
+- id: cine-360
+  nom: Ciné 360
+  url: ""
+  type: cinema
+  scraper: aucun
+  actif: false
+  note: Seulement sur Facebook, pas de récupération automatique possible.

@@ -15,10 +15,10 @@ permalink: /sources/
   {%- for s in site.data.sources %}
     {%- assign e = etat[s.id] %}
     <tr>
-      <td><a href="{{ s.url }}" rel="noopener">{{ s.nom }}</a>{% if s.note %}<br><small>{{ s.note }}</small>{% endif %}</td>
+      <td>{% if s.url != "" %}<a href="{{ s.url }}" rel="noopener">{{ s.nom }}</a>{% else %}{{ s.nom }}{% endif %}{% if s.note %}<br><small>{{ s.note }}</small>{% endif %}</td>
       <td>{{ s.type }}</td>
       <td>
-        {%- if s.actif == false %}<span class="etat pause">en pause</span>
+        {%- if s.actif == false %}<span class="etat pause">à étudier</span>
         {%- elsif e == nil %}<span class="etat attente">pas encore lue</span>
         {%- elsif e.ok %}<span class="etat ok">à jour</span> <small>{{ e.nb }} {% if s.type == "cinema" %}films{% else %}événements{% endif %}</small>
         {%- else %}<span class="etat ko">en panne</span>{% if e.dernier_succes %} <small>dernier succès le {{ e.dernier_succes | date: "%d/%m/%Y" }}</small>{% endif %}
@@ -28,5 +28,7 @@ permalink: /sources/
   {%- endfor %}
   </tbody>
 </table>
+
+<p>Les données de l'agenda sont ouvertes : voir <a href="{{ '/a-propos/' | relative_url }}#donnees">Données ouvertes</a>.</p>
 
 <p>Vous connaissez un site fiable qui annonce des événements à Tunis ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Proposez-le</a>.</p>
