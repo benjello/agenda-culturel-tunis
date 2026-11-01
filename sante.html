@@ -11,22 +11,22 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
 {%- endcomment -%}
 {%- assign etat = site.data.etat_sources | default: empty -%}
 <section class="intro">
-  <h1>Santé des sources</h1>
-  <p>Chaque source est relue automatiquement. Ici, on voit celles qui marchent, celles qui n'ont rien annoncé depuis longtemps (lieu fermé, compte changé ?) et celles qui sont en panne ou en pause. Toute aide pour réparer une source est bienvenue.</p>
+  <h1 data-t="sante_titre">Santé des sources</h1>
+  <p data-t="sante_intro">Chaque source est relue automatiquement. Ici, on voit celles qui marchent, celles qui n'ont rien annoncé depuis longtemps (lieu fermé, compte changé ?) et celles qui sont en panne ou en pause. Toute aide pour réparer une source est bienvenue.</p>
   <p class="sante-resume" id="sante-resume"></p>
 </section>
 
 <div class="filters" id="sante-filtres">
-  <button class="active" data-statut="tous">Toutes</button>
-  <button data-statut="ko">En panne</button>
-  <button data-statut="silence">Silencieuses</button>
-  <button data-statut="vide">Rien à venir</button>
-  <button data-statut="ok">Avec événements</button>
-  <button data-statut="pause">En pause</button>
+  <button class="active" data-statut="tous" data-t="sante.toutes">Toutes</button>
+  <button data-statut="ko" data-t="sante.ko">En panne</button>
+  <button data-statut="silence" data-t="sante.silence">Silencieuses</button>
+  <button data-statut="vide" data-t="sante.vide">Rien à venir</button>
+  <button data-statut="ok" data-t="sante.ok">Avec événements</button>
+  <button data-statut="pause" data-t="sante.pause">En pause</button>
 </div>
 
 <table class="sources sante">
-  <thead><tr><th>Source</th><th>État</th><th>Sur le site</th><th>Dernière nouveauté</th><th>Dernière lecture</th></tr></thead>
+  <thead><tr><th data-t="source">Source</th><th data-t="col.etat">État</th><th data-t="col.sur_site">Sur le site</th><th data-t="col.nouveaute">Dernière nouveauté</th><th data-t="col.lecture">Dernière lecture</th></tr></thead>
   <tbody id="sante-lignes">
   {%- for s in site.data.sources %}
     {%- assign e = etat[s.id] -%}
@@ -41,36 +41,36 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
       <td>{% if s.url != "" %}<a href="{{ s.url }}" rel="noopener">{{ s.nom }}</a>{% else %}{{ s.nom }}{% endif %}<br><small>{{ s.scraper }} · <code>{{ s.id }}</code></small></td>
       <td>
         {%- case st %}
-        {%- when "pause" %}<span class="etat pause">en pause</span>
-        {%- when "attente" %}<span class="etat attente">{% if e %}en attente{% else %}pas encore lue{% endif %}</span>{% if e.attente %}<br><small>{{ e.attente }}</small>{% endif %}
-        {%- when "ko" %}<span class="etat ko">en panne</span><br><small>{{ e.erreur | truncate: 140 }}</small>
-        {%- when "vide" %}<span class="etat attente">rien à venir</span>
-        {%- else %}<span class="etat ok">à jour</span>
+        {%- when "pause" %}<span class="etat pause" data-t="etat.en_pause">en pause</span>
+        {%- when "attente" %}<span class="etat attente">{% if e %}<span data-t="etat.en_attente">en attente</span>{% else %}<span data-t="etat.pas_lue">pas encore lue</span>{% endif %}</span>{% if e.attente %}<br><small>{{ e.attente }}</small>{% endif %}
+        {%- when "ko" %}<span class="etat ko" data-t="etat.en_panne">en panne</span><br><small>{{ e.erreur | truncate: 140 }}</small>
+        {%- when "vide" %}<span class="etat attente" data-t="etat.rien">rien à venir</span>
+        {%- else %}<span class="etat ok" data-t="etat.a_jour">à jour</span>
         {%- endcase %}
       </td>
       <td>{{ n }}</td>
-      <td class="nouveau">{% if e.dernier_non_vide %}{{ e.dernier_non_vide | date: "%d/%m/%Y" }}{% else %}jamais{% endif %}</td>
+      <td class="nouveau">{% if e.dernier_non_vide %}{{ e.dernier_non_vide | date: "%d/%m/%Y" }}{% else %}<span data-t="etat.jamais">jamais</span>{% endif %}</td>
       <td>{% if e.dernier_passage %}{{ e.dernier_passage | date: "%d/%m/%Y" }}{% else %}—{% endif %}</td>
     </tr>
   {%- endfor %}
   </tbody>
 </table>
-<p class="updated">« Silencieuse » : la source se lit bien mais n'a rien annoncé depuis plus de 30 jours. Les sources en pause sont repérées mais pas encore branchées, ou leur adresse est à vérifier (voir <code>_data/sources.yml</code>).</p>
+<p class="updated" data-t="sante_note">« Silencieuse » : la source se lit bien mais n'a rien annoncé depuis plus de 30 jours. Les sources en pause sont repérées mais pas encore branchées, ou leur adresse est à vérifier (voir <code>_data/sources.yml</code>).</p>
 
 {%- assign ctl = site.data.controle -%}
 {%- if ctl %}
-<h2 id="a-verifier">Entrées à vérifier</h2>
-<p>Après chaque passage, un contrôle relit tous les événements. Il corrige seul les lieux qui sont en fait le nom d'une source (journal, agenda, collectif){% if ctl.corriges > 0 %} : {{ ctl.corriges }} corrigé(s) au dernier passage{% endif %}. Il signale ici le reste : titre vague ou trop long, date lointaine, même événement deux fois.</p>
+<h2 id="a-verifier" data-t="sante.a_verifier">Entrées à vérifier</h2>
+<p><span data-t="sante.controle">Après chaque passage, un contrôle relit tous les événements. Il corrige seul les lieux qui sont en fait le nom d'une source (journal, agenda, collectif).</span>{% if ctl.corriges > 0 %} {{ ctl.corriges }} <span data-t="sante.corriges">corrigé(s) au dernier passage.</span>{% endif %} <span data-t="sante.signale">Il signale ici le reste : titre vague ou trop long, date lointaine, même événement deux fois.</span></p>
 {%- if ctl.a_verifier.size > 0 %}
 <table class="sources">
-  <thead><tr><th>Événement</th><th>Source</th><th>Problème</th></tr></thead>
+  <thead><tr><th data-t="col.evenement">Événement</th><th data-t="source">Source</th><th data-t="col.probleme">Problème</th></tr></thead>
   <tbody>
   {%- for x in ctl.a_verifier %}
     <tr><td>{{ x.date | date: "%d/%m" }} · {% if x.lien %}<a href="{{ x.lien }}" rel="noopener">{{ x.titre }}</a>{% else %}{{ x.titre }}{% endif %}</td><td>{{ x.source }}</td><td>{{ x.problemes | join: " ; " }}</td></tr>
   {%- endfor %}
   </tbody>
 </table>
-{%- else %}<p>Rien à signaler.</p>{% endif %}
+{%- else %}<p data-t="rien_signaler">Rien à signaler.</p>{% endif %}
 {%- endif %}
 
 <script>
@@ -82,7 +82,7 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
     var st = tr.dataset.statut;
     if ((st === 'vide' || st === 'ok') && tr.dataset.nouveau && tr.dataset.nouveau < limite) {
       st = 'silence';
-      tr.querySelector('td:nth-child(2)').insertAdjacentHTML('beforeend', ' <span class="etat attente">silencieuse</span>');
+      tr.querySelector('td:nth-child(2)').insertAdjacentHTML('beforeend', ' <span class="etat attente" data-t="etat.silencieuse">silencieuse</span>');
     }
     tr.dataset.statut = st;
     compte[st]++;
@@ -91,8 +91,10 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
   var ordre = { ko: 0, silence: 1, attente: 2, vide: 3, ok: 4, pause: 5 };
   var corps = document.getElementById('sante-lignes');
   lignes.sort(function (a, b) { return ordre[a.dataset.statut] - ordre[b.dataset.statut]; }).forEach(function (tr) { corps.appendChild(tr); });
-  document.getElementById('sante-resume').textContent = compte.ok + ' avec des événements · ' + compte.vide + ' sans rien à venir · ' +
-    compte.silence + ' silencieuses · ' + compte.ko + ' en panne · ' + compte.pause + ' en pause' + (compte.attente ? ' · ' + compte.attente + ' en attente' : '');
+  function part(n, cle, fr) { return n + ' <span data-t="' + cle + '">' + fr + '</span>'; }
+  document.getElementById('sante-resume').innerHTML = [part(compte.ok, 'sante.r_ok', 'avec des événements'), part(compte.vide, 'sante.r_vide', 'sans rien à venir'),
+    part(compte.silence, 'sante.r_silence', 'silencieuses'), part(compte.ko, 'sante.r_ko', 'en panne'), part(compte.pause, 'sante.r_pause', 'en pause')]
+    .concat(compte.attente ? [part(compte.attente, 'sante.r_attente', 'en attente')] : []).join(' · ');
   document.getElementById('sante-filtres').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
     document.querySelectorAll('#sante-filtres button').forEach(function (x) { x.classList.toggle('active', x === b); });

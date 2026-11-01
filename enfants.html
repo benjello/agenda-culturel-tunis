@@ -1,0 +1,106 @@
+---
+layout: default
+title: Enfants
+permalink: /enfants/
+description: Spectacles, ateliers, films et sorties pour les enfants en Tunisie.
+---
+{%- comment -%}
+  Les événements « en famille » (champ famille, posé par scrapers/ranger.py), rangés en quatre rubriques.
+  Un film joué dans plusieurs salles n'apparaît qu'une fois.
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign events = site.events | where: "famille", true | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+<section class="intro">
+  <h1 data-t="enf_titre">Enfants</h1>
+  <p data-t="enf_intro">Spectacles, ateliers, films et sorties pour les enfants. L'âge est indiqué quand l'annonce le donne.</p>
+</section>
+{% include choix-ville.html %}
+
+<aside class="enf-we" id="enf-we" hidden>
+  <h2 data-t="enf_we">Ce week-end avec les enfants</h2>
+  <ul></ul>
+</aside>
+
+{%- assign rubriques = "spectacles,ateliers,films,sorties" | split: "," -%}
+{%- assign titres_vus = "|" -%}
+{%- capture tri -%}
+{%- for e in events -%}
+  {%- assign fin = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
+  {%- if fin < today %}{% continue %}{% endif -%}
+  {%- if e.film -%}
+    {%- capture cle %}|{{ e.title | downcase }}|{% endcapture -%}
+    {%- if titres_vus contains cle %}{% continue %}{% endif -%}
+    {%- assign titres_vus = titres_vus | append: cle -%}
+  {%- endif -%}
+  {%- assign t = e.title | downcase -%}
+  {%- if t contains "atelier" or t contains "workshop" or t contains "ورشة" or t contains "ورشات" -%}ateliers
+  {%- elsif t contains "conte" or t contains "marionnette" or t contains "عرائس" -%}spectacles
+  {%- elsif e.category == "cinema" or e.film -%}films
+  {%- elsif e.category == "expo" -%}sorties
+  {%- elsif e.category == "theatre" or e.category == "spectacle" or e.category == "danse" or e.category == "musique" -%}spectacles
+  {%- else -%}ateliers{%- endif -%}:{{ forloop.index0 }};
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign paires = tri | split: ";" -%}
+
+{%- for r in rubriques %}
+<section class="month enf-rubrique" id="{{ r }}">
+  <h2 data-t="enf.{{ r }}">{% case r %}{% when "spectacles" %}Spectacles{% when "ateliers" %}Ateliers et activités{% when "films" %}Films{% else %}Musées et sorties{% endcase %}</h2>
+  {%- for p in paires -%}
+    {%- assign x = p | split: ":" -%}
+    {%- if x[0] == r -%}
+      {%- assign i = x[1] | plus: 0 -%}
+      {%- assign e = events[i] %}
+  <div class="enf-evt" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-fin="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}">{% include event-card.html event=e %}</div>
+    {%- endif -%}
+  {%- endfor %}
+  {%- if r == "sorties" %}
+  <p class="enf-musees"><a href="{{ '/musees/' | relative_url }}" data-t="enf_musees">Tous les musées de Tunisie →</a></p>
+  {%- endif %}
+</section>
+{%- endfor %}
+
+<p id="enf-vide" class="empty" hidden data-t="enf_vide">Rien d'annoncé pour les enfants dans cette ville pour l'instant.</p>
+
+{%- assign fest = site.data.festivals | where: "enfants", true %}
+<section class="month">
+  <h2 data-t="enf_festivals">Festivals jeune public</h2>
+  <ul class="enf-festivals">
+  {%- for f in fest %}
+    <li><a href="{{ '/festivals/' | relative_url }}#{{ f.id }}">{{ f.nom }}</a> · {% if f.debut %}{% include date-fr.html date=f.debut %}{% else %}{{ f.periode }}{% endif %}</li>
+  {%- endfor %}
+  </ul>
+</section>
+
+<p class="updated" data-th="enf_note">Un spectacle ou un atelier pour enfants manque ? <a href="{{ '/proposer/' | relative_url }}">Proposez-le</a>.</p>
+
+<script>
+(function () {
+  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  var auj = new Date(); auj.setHours(12, 0, 0, 0);
+  var ven = new Date(auj), j = auj.getDay();
+  ven.setDate(auj.getDate() + (j === 0 ? -2 : j === 6 ? -1 : 5 - j));
+  var dim = new Date(ven); dim.setDate(ven.getDate() + 2);
+  var de = iso(auj > ven ? auj : ven), a = iso(dim);
+  function visible(el) { return el.offsetParent !== null; }
+  function maj() {
+    var n = 0, liste = document.querySelector('#enf-we ul');
+    liste.innerHTML = '';
+    document.querySelectorAll('.enf-rubrique').forEach(function (s) {
+      var vus = [].filter.call(s.querySelectorAll('.event'), visible);
+      s.hidden = false; s.hidden = !vus.length; n += vus.length;
+    });
+    document.querySelectorAll('.enf-evt').forEach(function (e) {
+      var c = e.querySelector('.event');
+      if (e.dataset.debut <= a && e.dataset.fin >= de && visible(c)) {
+        var li = document.createElement('li'), l = document.createElement('a');
+        l.href = c.dataset.lien; l.textContent = c.dataset.titre; li.appendChild(l); liste.appendChild(li);
+      }
+    });
+    document.getElementById('enf-we').hidden = !liste.children.length;
+    document.getElementById('enf-vide').hidden = n > 0;
+  }
+  maj();
+  document.addEventListener('ville', maj);
+})();
+</script>

@@ -5,7 +5,7 @@
 {%- endcomment -%}
 {%- assign presentes = site.events | map: "ville" | compact | uniq -%}
 <div class="filters villes" id="villes" role="group" aria-label="Ville">
-  {%- for v in site.data.villes %}{% if include.toutes or presentes contains v.id or v.id == "tunis" %}<button data-ville="{{ v.id }}">{{ v.nom }}</button>{% endif %}{% endfor %}
+  {%- for v in site.data.villes %}{% if include.toutes or presentes contains v.id or v.id == "tunis" %}<button data-ville="{{ v.id }}" data-t="ville.{{ v.id }}">{{ v.nom }}</button>{% endif %}{% endfor %}
   <button data-ville="toutes" data-t="toute_tunisie">Toute la Tunisie</button>
 </div>
 <style>

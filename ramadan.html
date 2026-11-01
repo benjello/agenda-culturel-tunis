@@ -9,7 +9,7 @@ description: "Les soirées culturelles du Ramadan en Tunisie : festivals de la M
 {%- assign events = site.events | where_exp: "e", "e.doublon != true" | where_exp: "e", "e.film != true" | sort: "date" -%}
 <section class="intro">
   <h1 data-t="ramadan_titre">Soirées de Ramadan</h1>
-  <p>Ramadan {{ r.annee }} : du {% include date-fr.html date=r.debut %} au {% include date-fr.html date=r.fin %}{% if r.estime %} (dates estimées, à confirmer){% endif %}.
+  <p>Ramadan {{ r.annee }} : <span data-t="du">du</span> {% include date-fr.html date=r.debut %} <span data-t="au">au</span> {% include date-fr.html date=r.fin %}{% if r.estime %} <span data-t="ramadan_estime">(dates estimées, à confirmer)</span>{% endif %}.
   <span id="ramadan-compte"></span></p>
 </section>
 {% include choix-ville.html %}
@@ -27,8 +27,8 @@ description: "Les soirées culturelles du Ramadan en Tunisie : festivals de la M
   {%- endif -%}
 {%- endfor %}
 </div>
-<p class="empty" data-vide hidden>Le programme arrive en général une ou deux semaines avant le début du mois : les soirées annoncées apparaîtront ici.</p>
-<h2>Les rendez-vous habituels</h2>
+<p class="empty" data-vide hidden data-t="ramadan_vide">Le programme arrive en général une ou deux semaines avant le début du mois : les soirées annoncées apparaîtront ici.</p>
+<h2 data-t="ramadan_habituels">Les rendez-vous habituels</h2>
 <ul class="liste-fiches">
 {%- for x in r.rendez_vous %}
   <li>{% if x.festival %}<a href="{{ '/festivals/' | relative_url }}#{{ x.festival }}">{{ x.nom }}</a>{% else %}{{ x.nom }}{% endif %} <small>{{ x.lieu }}</small></li>
@@ -38,6 +38,7 @@ description: "Les soirées culturelles du Ramadan en Tunisie : festivals de la M
 (function () {
   var debut = new Date({{ debut | jsonify }} + 'T00:00:00'), auj = new Date();
   var j = Math.ceil((debut - auj) / 864e5), c = document.getElementById('ramadan-compte');
-  if (j > 0) c.textContent = 'Dans ' + j + ' jour' + (j > 1 ? 's' : '') + '.';
+  if (j > 1) { c.dataset.tn = 'fest.dans_n'; c.dataset.tnFr = 'Dans %n jours'; c.dataset.n = j; c.textContent = 'Dans ' + j + ' jours'; }
+  else if (j === 1) { c.dataset.tn = 'demain'; c.textContent = 'Demain'; }
 })();
 </script>

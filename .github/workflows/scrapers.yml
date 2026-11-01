@@ -44,6 +44,7 @@ jobs:
         continue-on-error: true   # on enregistre quand même ce qui a marché et l'état des sources
       - name: Fiches lieux, organisateurs, artistes et carte
         run: |
+          python3 -m scrapers.festivals
           python3 -m scrapers.ranger
           python3 -m scrapers.pages
           python3 -m scrapers.bilan

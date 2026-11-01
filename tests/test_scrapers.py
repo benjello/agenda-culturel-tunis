@@ -401,6 +401,23 @@ class AgendaDuJour(unittest.TestCase):
         self.assertEqual(ville(evts[0].lieu), "sud")
 
 
+class Festivals(unittest.TestCase):
+    def test_dates_confirmees_seulement(self):
+        import datetime as dt
+        from scrapers import festivals
+        fs = [{"id": "a", "nom": "Festival A", "debut": dt.date(2026, 12, 19), "fin": dt.date(2026, 12, 22), "lieu": "Douz", "ville": "sud"},
+              {"id": "b", "nom": "Festival B", "periode": "Été"},
+              {"id": "c", "nom": "Médina", "debut": dt.date(2027, 2, 10), "date_estimee": True},
+              {"id": "d", "nom": "Vieux", "debut": dt.date(2026, 1, 1)},
+              {"id": "e", "nom": "Fabrika Festival", "debut": dt.date(2026, 11, 5), "mots": "Fabrika"}]
+        gardes = festivals.a_ecrire(fs, ["Fabrika Festival 14"], dt.date(2026, 11, 1))
+        self.assertEqual([f["id"] for f in gardes], ["a"])
+        nom, texte = festivals.fichier(gardes[0])
+        self.assertEqual(nom, "2026-12-19-a.md")
+        self.assertIn('end_date: "2026-12-22"', texte)
+        self.assertIn('ville: "sud"', texte)
+
+
 class Bilan(unittest.TestCase):
     def test_compte_par_ville_et_source(self):
         import datetime as dt
@@ -672,6 +689,16 @@ class Fiches(unittest.TestCase):
         self.assertTrue(est_famille("عرض للأطفال"))
         self.assertFalse(est_famille("Concert de jazz"))
         self.assertLessEqual(len(resume("Une phrase. " * 100, 100)), 100)
+        # dans une notice, « enfants » seul ne suffit pas
+        self.assertFalse(est_famille("Dar El 3ers", "Deux familles préparent le mariage de leurs enfants."))
+        self.assertTrue(est_famille("Philo-Art", "Un atelier pour les enfants de 6 à 10 ans."))
+
+    def test_age_conseille(self):
+        from scrapers.commun import age_conseille
+        self.assertEqual(age_conseille("Spectacle jeune public dès 5 ans"), "5")
+        self.assertEqual(age_conseille("Atelier pour les 6-10 ans"), "6-10")
+        self.assertEqual(age_conseille("ورشة للأطفال من 7 سنوات"), "7")
+        self.assertIsNone(age_conseille("Festival, 20 ans de création"))
 
     def test_notice_sans_markdown(self):
         from scrapers.ecriture import _texte_brut

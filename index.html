@@ -48,7 +48,7 @@ layout: default
 {%- if films_l.size > 0 %}
 {%- assign noms_salles = films_l | map: "salles" | flatten | map: "nom" | uniq -%}
 <button type="button" class="resume-films" id="resume-films">
-  🎬 <strong data-t="au_cinema">Au cinéma</strong> : {{ films_l.size }} films à l'affiche dans {{ noms_salles.size }} salles →
+  🎬 <strong data-t="au_cinema">Au cinéma</strong> : {{ films_l.size }} <span data-t="films_affiche_dans">films à l'affiche dans</span> {{ noms_salles.size }} <span data-t="salles_fleche">salles →</span>
 </button>
 <div id="cinema-salles" hidden>
   <div class="jours-choix" id="jours-choix" role="group" aria-label="Jour"></div>

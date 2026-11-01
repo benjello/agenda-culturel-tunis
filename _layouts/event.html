@@ -11,7 +11,7 @@ layout: default
   {%- if page.image %}{% if page.image contains "://" %}{% assign img = page.image %}{% else %}{% assign img = page.image | relative_url %}{% endif %}
   <img class="affiche-grande" src="{{ img }}" alt="Affiche : {{ page.title | escape }}" decoding="async">
   {%- endif %}
-  <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ page.category | default: 'autre' }}">{{ cat.label }}</span>{% if page.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}
+  <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ page.category | default: 'autre' }}">{{ cat.label }}</span>{% if page.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}{% if page.age %} <span class="tag age" data-tn="{% if page.age contains "-" %}age.plage{% else %}age.des{% endif %}" data-n="{{ page.age }}" data-tn-fr="{% if page.age contains "-" %}%n ans{% else %}dès %n ans{% endif %}">{% if page.age contains "-" %}{{ page.age }} ans{% else %}dès {{ page.age }} ans{% endif %}</span>{% endif %}
   {%- assign tr = site.data.traductions.titres[page.title] -%}
   <h1{% for l in tr %} data-tr-{{ l[0] }}="{{ l[1] | escape }}"{% endfor %}>{{ page.title }}</h1>
   <dl class="details">

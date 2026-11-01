@@ -9,7 +9,9 @@ import datetime as dt
 import re
 import subprocess
 
-from .commun import RACINE, est_famille
+import yaml
+
+from .commun import RACINE, age_conseille, est_famille
 from .villes import ville
 
 
@@ -32,7 +34,13 @@ def _poser(tete: str, cle: str, valeur: str | None) -> str:
     return tete + ("\n" + ligne if ligne else "")
 
 
-def ranger(f) -> bool:
+def jeune_public() -> set[str]:
+    """Sources dont tout ce qu'elles annoncent est pour les enfants (« jeune_public: true »)."""
+    sources = yaml.safe_load((RACINE / "_data" / "sources.yml").read_text()) or []
+    return {s["id"] for s in sources if s.get("jeune_public")}
+
+
+def ranger(f, enfants: set[str] = frozenset()) -> bool:
     t = f.read_text()
     m = re.match(r"^---\n(.*?)\n---\n?(.*)", t, re.S)
     if not m:
@@ -40,7 +48,10 @@ def ranger(f) -> bool:
     tete, corps = m.group(1), m.group(2)
     champ = lambda k: (re.search(rf'^{k}: "?(.*?)"?$', tete, re.M) or [None, ""])[1]  # noqa: E731
     nouvelle = _poser(tete, "ville", f'"{ville(champ("venue"), champ("address"))}"')
-    nouvelle = _poser(nouvelle, "famille", "true" if est_famille(champ("title"), corps) else None)
+    famille = champ("source") in enfants or est_famille(champ("title"), corps)
+    nouvelle = _poser(nouvelle, "famille", "true" if famille else None)
+    age = age_conseille(champ("title"), corps) if famille else None
+    nouvelle = _poser(nouvelle, "age", f'"{age}"' if age else None)
     if not re.search(r"^ajoute: ", nouvelle, re.M):
         nouvelle = _poser(nouvelle, "ajoute", f'"{_date_ajout(f)}"')
     if nouvelle == tete:
@@ -50,7 +61,8 @@ def ranger(f) -> bool:
 
 
 def main() -> int:
-    n = sum(ranger(f) for f in sorted((RACINE / "_events").rglob("*.md")) if f.name != "README.md")
+    enfants = jeune_public()
+    n = sum(ranger(f, enfants) for f in sorted((RACINE / "_events").rglob("*.md")) if f.name != "README.md")
     print(f"{n} événement(s) rangé(s)")
     return 0
 
