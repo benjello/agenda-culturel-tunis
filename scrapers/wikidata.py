@@ -24,7 +24,8 @@ CACHE = RACINE / "_data" / "wikidata.json"
 API = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": "agenda-culturel-tunis/1.0 (https://github.com/benjello/agenda-culturel-tunis)"}
 TUNISIE = "Q948"
-P_IMDB, P_GENRE, P_PAYS, P_DATE = "P345", "P136", "P495", "P577"
+P_IMDB, P_GENRE, P_PAYS, P_DATE, P_NATURE = "P345", "P136", "P495", "P577", "P31"
+FILM = "Q11424"
 P_AGE_CNC = "P2758"  # classement CNC (France)
 LANGUES = ("fr", "en", "ar")
 
@@ -88,8 +89,13 @@ def chercher(morceaux: list[str], annee_min: int) -> dict | None:
                     ids.append(r["id"])
     if not ids:
         return None
-    films = [(qid, e) for qid, e in _entites(ids).items()
-             if any(str(v).startswith("tt") for v in _valeurs(e, P_IMDB)) and _annee(e) >= annee_min]
+    def est_film(e):
+        return any(str(v).startswith("tt") for v in _valeurs(e, P_IMDB)) or FILM in _valeurs(e, P_NATURE)
+
+    def recent(e):
+        # Les films tunisiens récents n'ont souvent pas encore de date de sortie sur Wikidata.
+        return _annee(e) >= annee_min or (_annee(e) == 0 and TUNISIE in _valeurs(e, P_PAYS))
+    films = [(qid, e) for qid, e in _entites(ids).items() if est_film(e) and recent(e)]
     if not films:
         return None
     qid, e = max(films, key=lambda f: _annee(f[1]))

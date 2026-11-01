@@ -17,6 +17,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: scrapers
+  cancel-in-progress: false
+
 jobs:
   scrapers:
     runs-on: ubuntu-latest
@@ -53,7 +57,12 @@ jobs:
           done
           git diff --cached --quiet && echo "Rien de nouveau." && exit 0
           git commit -m "Scrapers : mise à jour automatique"
-          git push
+          # main a pu bouger pendant le passage (merge d'une PR) : on rejoue notre commit par-dessus.
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
       - name: Signaler l'échec
         if: steps.run.outcome == 'failure'
         run: echo "::error::Toutes les sources ont échoué, voir l'étape « Lancer les scrapers »." && exit 1
