@@ -52,11 +52,21 @@ table.sources small { color: var(--muted); }
 .programme-texte { white-space: normal; font-size: .9rem; }
 .programme details { margin: 8px 0; color: var(--muted); }
 .resume-films { display: block; width: 100%; text-align: left; font: inherit; cursor: pointer; background: var(--card); border: 1px solid var(--line); border-left: 4px solid #c0392b; border-radius: 10px; padding: 12px 14px; margin: 8px 0 16px; color: var(--fg); }
-.salle { margin: 18px 0 26px; }
-.salle h2 { margin-bottom: 2px; }
 .event.film .event-date { display: none; }
 .days span { display: inline-block; margin: 2px 4px 2px 0; padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; }
 .perime { background: #fff4d6; color: #6b4b00; padding: 6px 10px; border-radius: 6px; font-size: .9rem; }
 .programme { margin: 8px 0; }
 .programme-image { display: block; width: 100%; max-width: 640px; height: auto; margin: 8px 0; border-radius: 8px; }
 .programme-texte { font-size: .9rem; }
+/* Cinéma : un film, son affiche, les salles du jour choisi */
+.jours-choix { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 12px; }
+.jours-choix button { flex: 0 0 auto; font: inherit; font-size: .9rem; padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); color: var(--fg); cursor: pointer; }
+.jours-choix button.active { background: #c0392b; border-color: #c0392b; color: #fff; }
+.film-fiche { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; }
+.film-fiche .affiche { flex: 0 0 92px; width: 92px; height: 136px; object-fit: cover; border-radius: 6px; background: var(--line); }
+.film-fiche .affiche.vide { display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.film-corps { min-width: 0; }
+.film-corps h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.film-salles { list-style: none; margin: 8px 0 0; padding: 0; }
+.film-salles li { padding: 3px 0; font-size: .95rem; }
+.perime-court { font-size: .8rem; color: #6b4b00; }

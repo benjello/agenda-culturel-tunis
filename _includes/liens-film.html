@@ -6,7 +6,8 @@ Sans identifiant, on renvoie vers la recherche IMDb sur le titre.
 {%- if include.imdb -%}
   {%- assign imdb_url = "https://www.imdb.com/title/" | append: include.imdb | append: "/" -%}
 {%- else -%}
-  {%- assign q = include.titre | url_encode -%}
+  {%- comment -%} « BAKMA - بكمة » : on cherche « BAKMA ». {%- endcomment -%}
+  {%- assign q = include.titre | split: " - " | first | split: " / " | first | url_encode -%}
   {%- assign imdb_url = "https://www.imdb.com/find/?s=tt&q=" | append: q -%}
 {%- endif -%}
 <span class="liens-film"><a href="{{ imdb_url }}" rel="noopener">IMDb</a></span>

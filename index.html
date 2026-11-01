@@ -22,25 +22,39 @@ layout: default
 {%- assign salles = films | group_by: "venue" | sort: "name" -%}
 
 {%- comment -%}
-  Les films à l'affiche sont des événements comme les autres (catégorie cinéma), mais
-  on les range par salle plutôt que par date : ils ne s'affichent qu'avec le thème Cinéma.
+  Les films à l'affiche sont des événements comme les autres (catégorie cinéma), mais la page
+  les montre par film : l'affiche, puis les salles qui le jouent le jour choisi.
+  _data/films.json est fait par scrapers/films.py, qui regroupe les salles d'un même film.
 {%- endcomment -%}
-{%- if films.size > 0 %}
-<button type="button" class="resume-films" id="resume-films" data-category="cinema-resume">
-  🎬 <strong>Au cinéma</strong> : {{ films.size }} films à l'affiche dans {{ salles.size }} salles →
+{%- assign films_l = site.data.films | default: empty -%}
+{%- if films_l.size > 0 %}
+{%- assign noms_salles = films_l | map: "salles" | flatten | map: "nom" | uniq -%}
+<button type="button" class="resume-films" id="resume-films">
+  🎬 <strong>Au cinéma</strong> : {{ films_l.size }} films à l'affiche dans {{ noms_salles.size }} salles →
 </button>
 <div id="cinema-salles" hidden>
-  {%- for salle in salles %}
-  {%- assign src = salle.items[0].source %}{% assign etat = site.data.etat_sources[src] %}
-  <section class="salle" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
-    <h2>{{ salle.name }}</h2>
-    {%- if salle.items[0].address %}<p class="meta">{{ salle.items[0].address }}</p>{% endif %}
-    {%- assign tries = salle.items | sort: "title" %}
-    {%- for e in tries %}{% include event-card.html event=e %}{% endfor %}
-    <p class="perime" hidden>⚠️ Programme pas vérifié depuis plusieurs jours : il est peut-être périmé, vérifiez auprès de la salle.</p>
-    <p class="updated">Source : {{ salle.items[0].source_name }}{% if etat.dernier_succes %}, vérifié le {% include date-fr.html date=etat.dernier_succes %}{% endif %}.</p>
-  </section>
+  <div class="jours-choix" id="jours-choix" role="group" aria-label="Jour"></div>
+  {%- for f in films_l %}
+  <article class="film-fiche" data-jours="{{ f.jours | join: ' ' }}">
+    {%- if f.image != "" %}{% if f.image contains "://" %}{% assign src = f.image %}{% else %}{% assign src = f.image | relative_url %}{% endif %}
+    <img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy">
+    {%- else %}<div class="affiche vide">🎬</div>{% endif %}
+    <div class="film-corps">
+      <h3>{{ f.titre }}</h3>
+      <p class="meta">{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if f.genres.size > 0 %}{{ f.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}</p>
+      <ul class="film-salles">
+        {%- for s in f.salles %}{% assign etat = site.data.etat_sources[s.source] %}
+        <li data-jours="{{ s.jours | join: ' ' }}" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
+          <a href="{{ s.lien }}" rel="noopener">{{ s.nom }}</a>
+          <span class="perime-court" hidden title="Programme pas vérifié depuis plusieurs jours">⚠️ à vérifier</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </article>
   {%- endfor %}
+  <p id="cinema-vide" class="empty" hidden>Aucun film annoncé ce jour-là.</p>
+  <p class="updated">Horaires et réservation : cliquez sur la salle. Sources : tunis.events et les pages des salles.</p>
   {%- assign programmes = site.data.programmes | default: empty -%}
   {%- if programmes.size > 0 %}
   <section class="programmes">
@@ -90,9 +104,45 @@ layout: default
   var salles = document.getElementById('cinema-salles');
   var resume = document.getElementById('resume-films');
   document.querySelectorAll('[data-jour]').forEach(function (el) { el.hidden = el.dataset.jour < today; });
-  document.querySelectorAll('.salle').forEach(function (s) {
-    s.querySelector('.perime').hidden = !s.dataset.maj || s.dataset.maj >= jour(-4);
+  document.querySelectorAll('.film-salles li').forEach(function (li) {
+    li.querySelector('.perime-court').hidden = !li.dataset.maj || li.dataset.maj >= jour(-4);
   });
+  // Cinéma : choix du jour (aujourd'hui et les 6 suivants), puis les films de ce jour.
+  var JOURS = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
+  var choixJour = today;
+  var choix = document.getElementById('jours-choix');
+  function etiquette(iso, i) {
+    if (i === 0) return "Aujourd'hui";
+    if (i === 1) return 'Demain';
+    var d = new Date(iso + 'T12:00:00');
+    return JOURS[d.getDay()] + ' ' + d.getDate();
+  }
+  function montrerFilms() {
+    var n = 0;
+    document.querySelectorAll('.film-fiche').forEach(function (f) {
+      var joue = f.dataset.jours.split(' ').indexOf(choixJour) >= 0;
+      f.hidden = !joue;
+      if (joue) n++;
+      f.querySelectorAll('.film-salles li').forEach(function (li) {
+        var jours = li.dataset.jours.split(' ');
+        li.hidden = jours.indexOf(choixJour) < 0;
+      });
+    });
+    document.getElementById('cinema-vide').hidden = n > 0;
+    if (choix) choix.querySelectorAll('button').forEach(function (b) { b.classList.toggle('active', b.dataset.jour === choixJour); });
+    return n;
+  }
+  if (choix) {
+    for (var i = 0; i < 7; i++) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.dataset.jour = jour(i); b.textContent = etiquette(b.dataset.jour, i);
+      choix.appendChild(b);
+    }
+    choix.addEventListener('click', function (ev) {
+      var b = ev.target.closest('button');
+      if (b) { choixJour = b.dataset.jour; montrerFilms(); }
+    });
+  }
   document.querySelectorAll('.programme[data-publie]').forEach(function (p) {
     p.hidden = p.dataset.publie < jour(-14);  // affiche de plus de deux semaines
   });
@@ -103,11 +153,8 @@ layout: default
       el.hidden = !visible;
       if (visible) shown++;
     });
-    document.querySelectorAll('#cinema-salles .event').forEach(function (el) {
-      el.hidden = el.dataset.date < today;
-      if (filter === 'cinema' && !el.hidden) shown++;
-    });
-    document.querySelectorAll('.month, .salle').forEach(function (s) {
+    if (salles) { var nf = montrerFilms(); if (filter === 'cinema') shown += nf || 1; }
+    document.querySelectorAll('.month').forEach(function (s) {
       s.hidden = !s.querySelector('.event:not([hidden])');
     });
     if (salles) salles.hidden = filter !== 'cinema';

@@ -354,3 +354,29 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "teskerti" / "cloche.md").read_text())
             # relancer ne change rien
             self.assertEqual(doublons.marquer(sources, d), 1)
+
+
+class Films(unittest.TestCase):
+    def test_regroupe_les_salles_par_film(self):
+        from scrapers import films
+        demain = (dt.date.today() + dt.timedelta(days=1)).isoformat()
+        hier = (dt.date.today() - dt.timedelta(days=1)).isoformat()
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            def ecrit(src, nom, titre, salle, jours, image=""):
+                (d / src).mkdir(exist_ok=True)
+                seances = "\n".join(f"  - {j}" for j in jours)
+                (d / src / nom).write_text(f'---\ntitle: "{titre}"\ndate: {jours[0]}\nvenue: "{salle}"\n'
+                                           f'seances:\n{seances}\nimage: "{image}"\nfilm: true\nsource: "{src}"\n---\n')
+            ecrit("a", "1.md", "LAST CHANCE - لص شايح", "Le Palace", [demain], "x.jpg")
+            ecrit("b", "2.md", "لص شايح", "Alhambra", [hier, demain])
+            ecrit("b", "3.md", "Weekend", "Alhambra", [demain])
+            ecrit("a", "4.md", "WEEKEND", "Le Palace", [demain])
+            ecrit("a", "5.md", "Vieux film", "Le Palace", [hier])
+            fs = films.regrouper(d)
+        self.assertEqual(len(fs), 2)
+        lc = next(f for f in fs if "LAST" in f["titre"])
+        self.assertEqual(lc["titre"], "LAST CHANCE - لص شايح")
+        self.assertEqual(lc["image"], "x.jpg")
+        self.assertEqual([s["nom"] for s in lc["salles"]], ["Alhambra", "Le Palace"])
+        self.assertEqual(lc["salles"][0]["jours"], [demain])  # jour passé retiré
