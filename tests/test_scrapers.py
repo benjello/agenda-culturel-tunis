@@ -184,7 +184,9 @@ class Lanceur(unittest.TestCase):
             with mock.patch.object(lanceur, "charger_sources", return_value=sources), \
                  mock.patch.object(lanceur, "lancer", lancer), \
                  mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
-                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"):
+                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"), \
+                 mock.patch.object(lanceur.doublons, "marquer", return_value=0), \
+                 mock.patch.object(lanceur.films, "ecrire", return_value=0):
                 code = lanceur.main([])
             etat = json.loads((d / "etat.json").read_text())
             self.assertEqual(code, 0)
@@ -210,7 +212,9 @@ class Lanceur(unittest.TestCase):
             with mock.patch.object(lanceur, "charger_sources", return_value=sources), \
                  mock.patch.object(lanceur, "lancer", lancer), \
                  mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
-                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"):
+                 mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"), \
+                 mock.patch.object(lanceur.doublons, "marquer", return_value=0), \
+                 mock.patch.object(lanceur.films, "ecrire", return_value=0):
                 code = lanceur.main([])
             etat = json.loads((d / "etat.json").read_text())
             self.assertEqual(code, 0)
@@ -380,3 +384,19 @@ class Films(unittest.TestCase):
         self.assertEqual(lc["image"], "x.jpg")
         self.assertEqual([s["nom"] for s in lc["salles"]], ["Alhambra", "Le Palace"])
         self.assertEqual(lc["salles"][0]["jours"], [demain])  # jour passé retiré
+
+
+class Conferences(unittest.TestCase):
+    def sources(self):
+        import yaml
+        return {s["id"]: s for s in yaml.safe_load((commun.RACINE / "_data" / "sources.yml").read_text())}
+
+    def test_beit_al_hikma_dates_en_arabe(self):
+        evts = rss.depuis_flux(fixture("beit-al-hikma.xml"), self.sources()["beit-al-hikma"])
+        self.assertEqual([e.debut.date() for e in evts], [dt.date(FUTUR, 11, 13), dt.date(FUTUR, 10, 22)])
+        self.assertEqual(evts[1].titre, "تقديم كتاب : المناهج الجامعيّة للأستاذ يونس محسين")
+
+    def test_irmc_garde_les_rencontres(self):
+        evts = rss.depuis_flux(fixture("irmc.xml"), self.sources()["irmc"])
+        self.assertEqual(len(evts), 1)
+        self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 10, 20, 17, 30))

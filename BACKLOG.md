@@ -26,15 +26,21 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 | Source | Scraper | État | Remarque |
 |---|---|---|---|
-| Teskerti | `teskerti` | ✅ marche | ~14 événements ; lieu et adresse corrects depuis la fiche |
+| Teskerti | `teskerti` | ✅ marche | ~14 événements ; couvre aussi Théâtre municipal, 4ème Art, Le Rio, Zéphyr |
 | El Teatro | `billetterie_sktech` | ✅ marche | ~7 événements ; doublons avec Teskerti masqués |
 | Opéra de Tunis | `billetterie_sktech` | ⚠️ 0 événement | à vérifier : pas de date sur les fiches ? |
-| Goethe-Institut | `rss` | ⚠️ 0 événement | flux lu, rien à venir pour l'instant |
-| Institut français | `liste_fiches` | ❌ en panne | liste chargée en JavaScript : chercher l'API cachée |
-| Pathé Tunis City, Azur City | `pathe` | ❌ bloqué | pathe.tn refuse GitHub (403) : lancer depuis un cron perso |
-| Agora, Alhambra Zéphyr, Colisée, CinéMadart | `facebook` | ❌ rien | Apify : « page d'événements invalide », ces pages ne publient pas d'événements Facebook |
-| Amilcar, Cinévog (groupes) | `facebook` | ⚠️ 0 événement | Apify lit le groupe, mais seulement 3 événements passés : rien d'annoncé à venir |
-| tunis.events, monticket, b7l9, IIC, Cervantes, Cinémathèque, Ciné 360 | — | à étudier | `actif: false` dans le registre |
+| Goethe-Institut | `rss` | ⚠️ 0 événement | flux lu, rien d'annoncé après le 1/11 |
+| Beit al-Hikma | `rss` | 🆕 branché | dates en arabe dans le titre |
+| IRMC | `rss` | 🆕 branché | `garder` écarte bourses et stages |
+| Institut français | `liste_fiches` | ❌ en panne | agenda en JavaScript ; piste : PDF mensuel `CALENDRIER-MM-AAAA.pdf` |
+| tunis.events (cinéma) | `tunis_events_cinema` | ✅ marche | ~40 films × salles : Colisée, Palace, CinéMadart, Agora, Pathé |
+| Pathé Tunis City, Azur City | — | ✅ via tunis.events | pathe.tn refuse GitHub (403) |
+| Alhambra Zéphyr, Ciné 350 | `facebook_programmes` + lecteur | ✅ marche | films lus dans les publications (texte + OCR) |
+| Colisée, CinéMadart, Agora | `facebook_programmes` | ✅ programmes gardés | Agora : page pas publique |
+| Amilcar, Cinévog (groupes) | `facebook` | ⚠️ 0 événement | rien d'annoncé à venir |
+| tunis.events (concerts, clubs) | — | à brancher | recommandé par le bilan musique : filtrer Grand Tunis |
+| Rachidia, Théâtre national, Club Tahar Haddad, Al Kitab, Cité de la Culture | `facebook_programmes` | à brancher | Facebook seulement (bilans dans `bilan-sources/`) |
+| monticket, b7l9, IIC, Cervantes, Cinémathèque | — | à étudier | `actif: false` dans le registre |
 
 ## Fait
 
@@ -46,15 +52,15 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - Une source en panne garde ses anciens événements ; `tous_les_jours` pour les sources payantes.
 - Détection des doublons entre sources.
 - Données ouvertes : `agenda.ics` et `evenements.json`, licence CC BY 4.0.
-- Page Cinéma : films des cinémas, projections de l'agenda, liens IMDb.
+- Thème Cinéma : une fiche par film (affiche, lien IMDb), puis les salles du jour choisi (`_data/films.json`).
 - Clé Apify configurée (secret `APIFY_TOKEN`).
 
 ## À faire
 
-- [ ] Pathé : lancer le scraper depuis un cron sur une machine perso (ligne dans le README).
-- [ ] Facebook : les cinémas publient leur programme en **affiches**, pas en événements.
-      Piste : lire les publications et extraire les séances de l'image (IA). Mis de côté pour l'instant.
-- [ ] Institut français : trouver l'API qui charge la liste en JavaScript.
+- [ ] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
+- [ ] tunis.events en entier (concerts, clubs), filtré Grand Tunis.
+- [ ] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
+- [ ] Institut français : lire le PDF mensuel du programme.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
 - [ ] Formulaire « Proposer une source » / « Signaler un événement ».
