@@ -384,6 +384,52 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
 
 
+class Bilan(unittest.TestCase):
+    def test_compte_par_ville_et_source(self):
+        import datetime as dt
+        from scrapers import bilan
+        auj = dt.date(2026, 11, 1)
+        evts = [{"date": "2026-11-02 20:00", "source": "a", "ville": "sfax", "category": "musique"},
+                {"date": "2026-11-03", "source": "b", "ville": "tunis", "film": True, "title": "F"},
+                {"date": "2026-11-03", "source": "c", "ville": "tunis", "film": True, "title": "F"},
+                {"date": "2026-10-20", "end_date": "2026-11-20", "source": "a", "ville": "sfax", "category": "expo"},
+                {"date": "2026-12-20", "source": "a", "ville": "sfax"},
+                {"date": "2026-10-01", "source": "a"}]
+        sources = [{"id": "a", "genre": "lieu"}, {"id": "b", "genre": "agenda"}, {"id": "c"}, {"id": "d"}]
+        b = bilan.compter(evts, auj, sources)
+        self.assertEqual((b["sept_jours"], b["a_venir"]), (3, 4))
+        self.assertEqual(b["par_ville"], {"sfax": 2, "tunis": 1})
+        self.assertEqual(b["sources_muettes"], ["c", "d"])
+        self.assertEqual(b["semaine"], "2026-S44")
+
+
+class Traduction(unittest.TestCase):
+    def test_langue_et_choix(self):
+        from scrapers import traduire
+        self.assertEqual(traduire.langue("محاضرة حول المسرح"), "ar")
+        self.assertEqual(traduire.langue("Live session with local DJs"), "en")
+        self.assertEqual(traduire.langue("Rencontre avec l'autrice"), "fr")
+        self.assertFalse(traduire.a_traduire("Hyperculte"))
+        self.assertFalse(traduire.a_traduire("هروب|FUITE"))
+        self.assertTrue(traduire.a_traduire("Rencontre avec Sonia Hanihina"))
+
+    def test_cache_et_pivot(self):
+        from scrapers import traduire
+        class Faux(traduire.Traducteur):
+            def __init__(self):
+                self.appels = []
+            def _direct(self, phrases, de, vers):
+                self.appels.append((de, vers))
+                return [f"{vers}:{p}" for p in phrases]
+        t = Faux()
+        self.assertEqual(t.traduire(["Bonjour. Au revoir."], "fr", "ar"), ["ar:en:Bonjour. ar:en:Au revoir."])
+        self.assertEqual(t.appels, [("fr", "en"), ("en", "ar")])
+        cache = {"titres": {"Déjà traduit ici": {"en": "x"}}, "notices": {}}
+        evts = [("_events/a.md", {"title": "Déjà traduit ici"}, ""), ("_events/b.md", {"title": "Concert de jazz"}, "")]
+        titres, notices = traduire.a_faire(evts, cache)
+        self.assertEqual((titres, notices), (["Concert de jazz"], []))
+
+
 class Films(unittest.TestCase):
     def test_regroupe_les_salles_par_film(self):
         from scrapers import films
