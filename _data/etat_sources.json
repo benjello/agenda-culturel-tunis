@@ -19,12 +19,13 @@
   },
   "cine-agora": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T08:56:52",
-    "dernier_passage": "2026-11-01T08:56:52",
-    "dernier_succes": "2026-11-01T08:56:52",
+    "dernier_non_vide": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
     "erreur": null,
-    "nb": 2,
-    "ok": true
+    "nb": 53,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
   },
   "cine-alhambra": {
     "attente": null,
@@ -135,6 +136,70 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/Club.Tahar.Haddad', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
     "ok": false
   },
+  "fb-cr-kef": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-mahdia": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-manouba": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-medenine": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-sfax": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-sidibouzid": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
+  "fb-cr-sousse": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
+  },
   "fb-eddisco": {
     "dernier_passage": "2026-11-01T08:00:14",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/eddiscorecordstore', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
@@ -196,11 +261,13 @@
   },
   "ig-agorgi-gallery": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:06:52",
-    "dernier_succes": "2026-11-01T10:06:52",
+    "dernier_non_vide": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
     "erreur": null,
-    "nb": 0,
-    "ok": true
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
   },
   "ig-al-kitab": {
     "attente": null,
@@ -418,6 +485,16 @@
     "erreur": null,
     "nb": 1,
     "ok": true
+  },
+  "resident-advisor": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-01T10:35:29",
+    "dernier_succes": "2026-11-01T10:35:29",
+    "erreur": null,
+    "nb": 7,
+    "ok": true,
+    "premier_passage": "2026-11-01T10:35:29"
   },
   "teskerti": {
     "attente": null,

@@ -3,7 +3,6 @@
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
   "Ciné 350 (Cité de la Culture)": "cine-350-cite-de-la-culture",
   "L'Agora Marsa": "lagora-la-marsa",
-  "L’Agora La Marsa": "lagora-la-marsa",
   "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
   "El Teatro التياترو": "el-teatro",
@@ -23,6 +22,7 @@
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
   "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
+  "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
   "Entre les rives": "entre-les-rives",
@@ -32,6 +32,10 @@
   "رواق الفنون – قاعة الفن الرابع": "lieu-74853a33",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-74853a33",
   "Galerie TGM": "galerie-tgm",
+  "Studio B52": "studio-b52",
+  "Steps Club Sousse": "steps-club-sousse",
+  "One Resort": "one-resort",
+  "TBA": "tba",
   "Ksar El Farch": "ksar-el-farch",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Caserne El Attarine": "caserne-el-attarine",
@@ -47,6 +51,14 @@
   "One Resort, Monastir": "one-resort-monastir"
  },
  "carte": [
+  {
+   "slug": "lagora-la-marsa",
+   "nom": "L’Agora La Marsa",
+   "ville": "tunis",
+   "lat": 36.88133,
+   "lon": 10.32585,
+   "n": 57
+  },
   {
    "slug": "mediatheque-institut-francais-de-tunis",
    "nom": "Médiathèque, Institut français de Tunis",
@@ -96,14 +108,6 @@
    "n": 7
   },
   {
-   "slug": "lagora-la-marsa",
-   "nom": "L’Agora La Marsa",
-   "ville": "tunis",
-   "lat": 36.88133,
-   "lon": 10.32585,
-   "n": 6
-  },
-  {
    "slug": "mediatheque-institut-francais-de-sfax",
    "nom": "Médiathèque, Institut français de Sfax",
    "ville": "sfax",
@@ -126,6 +130,62 @@
    "lat": 34.59926,
    "lon": 9.59188,
    "n": 5
+  },
+  {
+   "slug": "beit-al-hikma-carthage",
+   "nom": "Beit al-Hikma, Carthage",
+   "ville": "tunis",
+   "lat": 35.6619,
+   "lon": 10.08999,
+   "n": 2
+  },
+  {
+   "slug": "mediatheque-institut-francais-de-sousse",
+   "nom": "Médiathèque, Institut français de Sousse",
+   "ville": "sousse",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 2
+  },
+  {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
+   "n": 2
+  },
+  {
+   "slug": "one-resort",
+   "nom": "One Resort",
+   "ville": "monastir",
+   "lat": 35.76372,
+   "lon": 10.7399,
+   "n": 2
+  },
+  {
+   "slug": "cite-des-sciences-de-tunis",
+   "nom": "Cité des sciences de Tunis",
+   "ville": "tunis",
+   "lat": 36.84767,
+   "lon": 10.18839,
+   "n": 1
+  },
+  {
+   "slug": "l-art-rue",
+   "nom": "L'art rue",
+   "ville": "tunis",
+   "lat": 36.80742,
+   "lon": 10.16617,
+   "n": 1
+  },
+  {
+   "slug": "jardin-institut-francais-de-sfax",
+   "nom": "Jardin, Institut français de Sfax",
+   "ville": "sfax",
+   "lat": 36.82572,
+   "lon": 10.07976,
+   "n": 1
   }
  ]
 }

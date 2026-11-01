@@ -1,8 +1,7 @@
 ---
 title: "L'Agora (La Marsa)"
 source: "cine-agora"
-type: "lieu"
-url_source: "https://www.instagram.com/lagoramarsa/"
-reseau: "instagram"
+type: "cinema"
+url_source: "https://lagora.tn"
 categorie: "cinema"
 ---

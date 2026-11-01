@@ -1,5 +1,31 @@
 {
+ "13e-round": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "avatar-de-feu-et-de-cendres": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
  "bakma": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "biscuit-le-chien-fantastique": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Animation",
+   "Comédie",
+   "Familial"
+  ],
+  "imdb": "tt29612071",
+  "qid": "Q137535221",
+  "titre_wikidata": "Biscuit le chien fantastique",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "bob-leponge": {
   "qid": null,
   "verifie": "2026-11-01"
  },
@@ -17,6 +43,26 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "diamanti": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Comédie dramatique"
+  ],
+  "imdb": "tt32810496",
+  "qid": "Q131545404",
+  "titre_wikidata": "Diamanti",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "donald-de-issam-ayari": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "donia": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
  "ducobu-et-le-fantome-de-saint-potache": {
   "age": "",
   "annee": 2026,
@@ -27,6 +73,105 @@
   "qid": "Q140363103",
   "titre_wikidata": "Ducobu et le fantôme de Saint-Potache",
   "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "el-set": {
+  "age": "",
+  "annee": 2025,
+  "genres": [
+   "Biopic",
+   "Drame",
+   "Historique"
+  ],
+  "imdb": "tt31402484",
+  "qid": "Q137265100",
+  "titre_wikidata": "El Sett",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "gabby-et-la-maison-magique": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Familial",
+   "Fantastique",
+   "Aventure"
+  ],
+  "imdb": "tt32214143",
+  "qid": "Q126414863",
+  "titre_wikidata": "Gabby et la maison magique, le film",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "goat": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Aventure",
+   "Comédie",
+   "Familial"
+  ],
+  "imdb": "tt27613895",
+  "qid": "Q132456673",
+  "titre_wikidata": "Goat - Rêver plus haut",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "hola-frida": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Familial",
+   "Historique",
+   "Biopic"
+  ],
+  "imdb": "tt35683445",
+  "qid": "Q132315614",
+  "titre_wikidata": "Hola Frida",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "hurlevent": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt32897959",
+  "qid": "Q130393881",
+  "titre_wikidata": "Hurlevent",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "insaisissables-3": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Thriller",
+   "Policier"
+  ],
+  "imdb": "tt4712810",
+  "qid": "Q65146722",
+  "titre_wikidata": "Insaisissables 3",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "jad": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "jean-valjean": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt35363310",
+  "qid": "Q131995395",
+  "titre_wikidata": "Jean Valjean",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "jumpers": {
+  "qid": null,
   "verifie": "2026-11-01"
  },
  "klara-et-le-soleil": {
@@ -56,11 +201,31 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "la-femme-de-menage": {
+  "age": "-12",
+  "annee": 2026,
+  "genres": [
+   "Thriller"
+  ],
+  "imdb": "tt27543632",
+  "qid": "Q131630491",
+  "titre_wikidata": "La Femme de ménage",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "la9cha-mil-smaa": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
  "last-chance": {
   "qid": null,
   "verifie": "2026-11-01"
  },
  "le-fantome-de-l-opera": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "le-fantome-de-lopera": {
   "qid": null,
   "verifie": "2026-11-01"
  },
@@ -86,8 +251,87 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "le-reveil-de-la-momie": {
+  "age": "-16",
+  "annee": 2026,
+  "genres": [
+   "Horreur",
+   "Thriller"
+  ],
+  "imdb": "tt32612507",
+  "qid": "Q133505340",
+  "titre_wikidata": "Le Réveil de la momie",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "le-temps-suspendu": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "les-legendaires": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Aventure"
+  ],
+  "imdb": "tt35659725",
+  "qid": "Q123154969",
+  "titre_wikidata": "Les Légendaires",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "les-miserables": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "letranger": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "marsupilami": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Comédie",
+   "Aventure",
+   "Familial"
+  ],
+  "imdb": "tt33029380",
+  "qid": "Q129344299",
+  "titre_wikidata": "Le Marsupilami",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "marty-supreme": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt32916440",
+  "qid": "Q130118681",
+  "titre_wikidata": "Marty Supreme",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
  "mochy": {
   "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "nawar-achiya": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "nuremberg": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt29567915",
+  "qid": "Q124393313",
+  "titre_wikidata": "Nuremberg",
+  "tunisien": false,
   "verifie": "2026-11-01"
  },
  "other-mommy-malfaisante": {
@@ -102,8 +346,156 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "parasol": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "piece-de-theatre-lalalam": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "projet-derniere-chance": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Science-fiction",
+   "Aventure",
+   "Action"
+  ],
+  "imdb": "tt12042730",
+  "qid": "Q107105860",
+  "titre_wikidata": "Projet Dernière Chance",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "promis-le-ciel": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt33311007",
+  "qid": "Q135655630",
+  "titre_wikidata": "Promis le ciel",
+  "tunisien": true,
+  "verifie": "2026-11-01"
+ },
+ "regretting-you": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt33088452",
+  "qid": "Q132816896",
+  "titre_wikidata": "Regretting You",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "running-man": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "sahbek-rajel-2": {
+  "age": "",
+  "annee": 2025,
+  "genres": [],
+  "imdb": "tt38687444",
+  "qid": "Q137773897",
+  "titre_wikidata": "Sahbek Rajel 2",
+  "tunisien": true,
+  "verifie": "2026-11-01"
+ },
+ "scream-7": {
+  "age": "-12",
+  "annee": 2026,
+  "genres": [
+   "Thriller",
+   "Horreur"
+  ],
+  "imdb": "tt27047903",
+  "qid": "Q124758309",
+  "titre_wikidata": "Scream 7",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "send-help": {
+  "age": "-12",
+  "annee": 2026,
+  "genres": [
+   "Horreur"
+  ],
+  "imdb": "tt8036976",
+  "qid": "Q132200341",
+  "titre_wikidata": "Send Help",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
  "shaun-le-mouton-la-beeete-d-halloween": {
   "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "springsteen-deliver-me-from-nowhere": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "super-grand-prix": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Familial"
+  ],
+  "imdb": "tt32897929",
+  "qid": "Q128208470",
+  "titre_wikidata": "Super Grand Prix",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "the-drama": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame",
+   "Comédie"
+  ],
+  "imdb": "tt33071426",
+  "qid": "Q130590402",
+  "titre_wikidata": "The Drama",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "touskie-tounsi": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "un-simple-accident": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Drame"
+  ],
+  "imdb": "tt36491653",
+  "qid": "Q133866932",
+  "titre_wikidata": "Un simple accident",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "van-gogh": {
+  "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "verity": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Policier",
+   "Drame",
+   "Thriller"
+  ],
+  "imdb": "tt32261958",
+  "qid": "Q131523413",
+  "titre_wikidata": "Verity",
+  "tunisien": false,
   "verifie": "2026-11-01"
  },
  "wala-kan-ala-el-bal": {
@@ -122,6 +514,43 @@
  },
  "what-else": {
   "qid": null,
+  "verifie": "2026-11-01"
+ },
+ "where-the-wind-comes-from": {
+  "age": "",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt31392191",
+  "qid": "Q131836044",
+  "titre_wikidata": "D'où vient le vent",
+  "tunisien": true,
+  "verifie": "2026-11-01"
+ },
+ "wicked-part-two": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Musical",
+   "Fantastique"
+  ],
+  "imdb": "tt19847976",
+  "qid": "Q114817050",
+  "titre_wikidata": "Wicked : Partie 2",
+  "tunisien": false,
+  "verifie": "2026-11-01"
+ },
+ "zootopie-2": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [
+   "Comédie",
+   "Aventure",
+   "Policier"
+  ],
+  "imdb": "tt26443597",
+  "qid": "Q116764712",
+  "titre_wikidata": "Zootopie 2",
+  "tunisien": false,
   "verifie": "2026-11-01"
  }
 }
