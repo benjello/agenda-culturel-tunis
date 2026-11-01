@@ -153,7 +153,9 @@ def _titre_affiche(texte: str) -> str:
 
 # Publications qui ne sont pas des événements : recrutement, horaires, cours à l'année…
 _PAS_EVENEMENT = re.compile(r"recrut|candidature|offre d.emploi|ouvre exceptionnel|horaires d.ouverture|"
-                            r"formation professionnelle|inscriptions? (?:ouvertes|en cours)|fermeture", re.I)
+                            r"formation professionnelle|inscriptions? (?:ouvertes|en cours)|fermeture|"
+                            # comptes rendus d'un événement passé
+                            r"\bhier\b|a eu lieu|merci [àa] (?:tous|toutes|vous)|retour sur|mise [àa] jour", re.I)
 
 
 def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
@@ -181,8 +183,8 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
         h, mn = heures.pop() if len(heures) == 1 else (0, 0)
         titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
         # Artistes et collectifs jouent dans plusieurs lieux : « 📍 B7L9, La Marsa » dans la légende.
-        m = re.search(r"📍\s*([^\n#@]{3,60})", texte)
-        ici = propre(m.group(1)).rstrip(" .,") if m else lieu
+        m = re.search(r"📍\s*([^\n#]{3,80})", texte)
+        ici = propre(m.group(1).replace("@", "")).rstrip(" .,") if m else lieu
         for j in jours:
             if (j, titre) in vus:
                 continue
