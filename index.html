@@ -26,6 +26,8 @@ layout: default
   <label><input type="checkbox" id="favoris"> <span data-t="seul_favoris">Mes favoris</span></label>
 </div>
 <a class="nouveautes" id="nouveautes" href="{{ '/nouveau/' | relative_url }}" hidden></a>
+{%- comment -%} Bandeau Ramadan : deux semaines avant le début et pendant le mois (dates dans _data/ramadan.yml) {%- endcomment -%}
+<a class="ramadan-bandeau" id="ramadan-bandeau" href="{{ '/ramadan/' | relative_url }}" data-debut="{{ site.data.ramadan.debut | date: '%Y-%m-%d' }}" data-fin="{{ site.data.ramadan.fin | date: '%Y-%m-%d' }}" hidden data-t="ramadan_bandeau">🌙 Soirées de Ramadan : le programme →</a>
 
 {%- comment -%}
   Tous les événements sont générés, triés par date. Le petit script en bas masque
@@ -148,6 +150,8 @@ layout: default
       enCours.appendChild(el);
     }
   });
+  var rb = document.getElementById('ramadan-bandeau');
+  if (rb) rb.hidden = !(today <= rb.dataset.fin && jour(14) >= rb.dataset.debut);
   var filter = 'all';
   var salles = document.getElementById('cinema-salles');
   var resume = document.getElementById('resume-films');

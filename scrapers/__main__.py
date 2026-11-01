@@ -60,6 +60,7 @@ def main(argv=None) -> int:
                 sautees += 1
                 continue
         e["dernier_passage"] = maintenant
+        e.setdefault("premier_passage", maintenant)  # point de départ du délai « silencieuse »
         try:
             resultat = lancer(s)
             # Une liste vide n'est pas une panne : la source peut n'avoir rien à venir.

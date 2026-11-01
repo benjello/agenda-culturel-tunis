@@ -33,6 +33,7 @@
       <a href="{{ '/festivals/' | relative_url }}" data-t="nav.festivals">Festivals</a>
       <a href="{{ '/lieux/' | relative_url }}" data-t="nav.lieux">Lieux</a>
       <a href="{{ '/artistes/' | relative_url }}" data-t="nav.artistes">Artistes</a>
+      <a href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">+ Proposer</a>
       <a href="{{ '/a-propos/' | relative_url }}" data-t="nav.apropos">À propos</a>
     </nav>
     <div class="reglages" role="group" aria-label="Réglages">
@@ -45,8 +46,8 @@
     {{ content }}
   </main>
   <footer class="site-footer">
-    <p><span data-t="manque">Un lieu ou un site manque ?</span> <a href="{{ '/a-propos/' | relative_url }}#proposer" data-t="proposer">Proposez une source</a>.
-      · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a></p>
+    <p><span data-t="manque">Un événement manque ?</span> <a href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">Proposer un événement</a>.
+      · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a> · <a href="{{ '/api/' | relative_url }}">API</a></p>
   </footer>
   <script>window.I18N = {{ site.data.i18n | jsonify }}; window.BASE = {{ '/' | relative_url | jsonify }};</script>
   <script src="{{ '/assets/site.js' | relative_url }}"></script>

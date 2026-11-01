@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # alerte « Sources silencieuses »
 
 concurrency:
   group: scrapers
@@ -71,6 +72,22 @@ jobs:
             sleep 5
           done
           exit 1
+      - name: Alerte « Sources silencieuses » (rien depuis 30 jours)
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m scrapers.alerte > alerte.md
+          titre="Sources silencieuses"
+          num=$(gh issue list --state open --search "in:title \"$titre\"" --json number,title --jq ".[] | select(.title == \"$titre\") | .number" | head -1)
+          if [ -s alerte.md ] && grep -q . alerte.md; then
+            if [ -n "$num" ]; then gh issue edit "$num" --body-file alerte.md
+            else gh label create alerte --color B5442F --force >/dev/null 2>&1 || true
+                 gh issue create --title "$titre" --label alerte --body-file alerte.md; fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "Toutes les sources ont de nouveau annoncé quelque chose ces 30 derniers jours."
+          fi
       - name: Signaler l'échec
         if: steps.run.outcome == 'failure'
         run: echo "::error::Toutes les sources ont échoué, voir l'étape « Lancer les scrapers »." && exit 1

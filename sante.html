@@ -37,7 +37,7 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
     {%- elsif e.ok != true %}{% assign st = "ko" %}
     {%- elsif n > 0 %}{% assign st = "ok" %}
     {%- else %}{% assign st = "vide" %}{% endif %}
-    <tr data-statut="{{ st }}" data-nouveau="{{ e.dernier_non_vide | slice: 0, 10 }}">
+    <tr data-statut="{{ st }}" data-nouveau="{{ e.dernier_non_vide | default: e.premier_passage | slice: 0, 10 }}">
       <td>{% if s.url != "" %}<a href="{{ s.url }}" rel="noopener">{{ s.nom }}</a>{% else %}{{ s.nom }}{% endif %}<br><small>{{ s.scraper }} · <code>{{ s.id }}</code></small></td>
       <td>
         {%- case st %}
@@ -67,7 +67,7 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
     if ((st === 'vide' || st === 'ok') && tr.dataset.nouveau && tr.dataset.nouveau < limite) {
       st = 'silence';
       tr.querySelector('td:nth-child(2)').insertAdjacentHTML('beforeend', ' <span class="etat attente">silencieuse</span>');
-    } else if (st === 'vide' && !tr.dataset.nouveau) { st = 'silence'; }
+    }
     tr.dataset.statut = st;
     compte[st]++;
   });

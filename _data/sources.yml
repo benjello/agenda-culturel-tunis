@@ -213,17 +213,29 @@
 
 - id: cine-agora
   nom: L'Agora (La Marsa)
+  url: https://lagora.tn
+  type: cinema
+  scraper: woocommerce_seances
+  categorie: cinema
+  actif: true
+  options:
+    lieu: "L'Agora Marsa"
+    adresse: "La Marsa"
+  note: "Billetterie lagora.tn (WooCommerce) : chaque film avec ses séances, son prix, son affiche. Remplace Instagram, dont les publications « programme de la semaine » ne donnaient pas le titre du film."
+
+- id: ig-agora
+  nom: L'Agora (Instagram)
   url: https://www.instagram.com/lagoramarsa/
   type: lieu
   scraper: instagram
-  categorie: cinema
-  actif: true
+  categorie: autre
+  actif: false
   tous_les_jours: 3
   options:
     compte: "lagoramarsa"
     lieu: "L'Agora Marsa"
     resultats: 8
-  note: "La page Facebook n'est pas publique : on lit Instagram (films, concerts, expos). Les séances viennent aussi de tunis.events."
+  note: "En pause : les films viennent de la billetterie lagora.tn. À rallumer pour les concerts et expos si la billetterie ne les a pas."
 
 - id: cine-alhambra
   nom: Alhambra Zéphyr (La Marsa)
@@ -837,7 +849,7 @@
   tous_les_jours: 3
   options:
     compte: "agorgi_gallery"
-    lieu: "Agorgi Gallery"
+    lieu: "Agorgi Gallery, Sidi Bou Saïd"
     resultats: 8
   note: "Galerie d'art, proposée par Mahdi."
 
@@ -882,3 +894,397 @@
     lieu: "Shanti"
     resultats: 8
   note: "Proposé par Mahdi."
+
+# ---- Délégations (commissariats) régionales des affaires culturelles : une par gouvernorat.
+# Leur site (cultureregions-<gouvernorat>.gov.tn, WordPress) est lu par son flux RSS, gratuit.
+# Quelques-unes publient surtout sur Facebook : lues tous les 7 jours (Apify, payant).
+- id: cr-tunis
+  nom: Délégation régionale de la culture, Tunis
+  url: https://cultureregions-tunis.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Tunis, voir l'article"
+
+- id: cr-ariana
+  nom: Délégation régionale de la culture, Ariana
+  url: https://cultureregions-ariana.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Ariana, voir l'article"
+
+- id: cr-benarous
+  nom: Délégation régionale de la culture, Ben Arous
+  url: https://cultureregions-benarous.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Ben Arous, voir l'article"
+
+- id: cr-manouba
+  nom: Délégation régionale de la culture, La Manouba
+  url: https://cultureregions-manouba.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "La Manouba, voir l'article"
+
+- id: cr-nabeul
+  nom: Délégation régionale de la culture, Nabeul
+  url: https://cultureregions-nabeul.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Nabeul, voir l'article"
+
+- id: cr-zaghouan
+  nom: Délégation régionale de la culture, Zaghouan
+  url: https://cultureregions-zaghouan.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Zaghouan, voir l'article"
+
+- id: cr-bizerte
+  nom: Délégation régionale de la culture, Bizerte
+  url: https://cultureregions-bizerte.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Bizerte, voir l'article"
+
+- id: cr-beja
+  nom: Délégation régionale de la culture, Béja
+  url: https://cultureregions-beja.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Béja, voir l'article"
+
+- id: cr-jendouba
+  nom: Délégation régionale de la culture, Jendouba
+  url: https://cultureregions-jendouba.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Jendouba, voir l'article"
+
+- id: cr-kef
+  nom: Délégation régionale de la culture, Le Kef
+  url: https://cultureregions-kef.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Le Kef, voir l'article"
+
+- id: cr-siliana
+  nom: Délégation régionale de la culture, Siliana
+  url: https://cultureregions-siliana.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Siliana, voir l'article"
+
+- id: cr-sousse
+  nom: Délégation régionale de la culture, Sousse
+  url: https://cultureregions-sousse.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Sousse, voir l'article"
+
+- id: cr-monastir
+  nom: Délégation régionale de la culture, Monastir
+  url: https://cultureregions-monastir.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Monastir, voir l'article"
+
+- id: cr-mahdia
+  nom: Délégation régionale de la culture, Mahdia
+  url: https://cultureregions-mahdia.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Mahdia, voir l'article"
+
+- id: cr-sfax
+  nom: Délégation régionale de la culture, Sfax
+  url: https://cultureregions-sfax.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Sfax, voir l'article"
+
+- id: cr-kairouan
+  nom: Délégation régionale de la culture, Kairouan
+  url: https://cultureregions-kairouan.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Kairouan, voir l'article"
+
+- id: cr-kasserine
+  nom: Délégation régionale de la culture, Kasserine
+  url: https://cultureregions-kasserine.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Kasserine, voir l'article"
+
+- id: cr-sidibouzid
+  nom: Délégation régionale de la culture, Sidi Bouzid
+  url: https://cultureregions-sidibouzid.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Sidi Bouzid, voir l'article"
+
+- id: cr-gabes
+  nom: Délégation régionale de la culture, Gabès
+  url: https://cultureregions-gabes.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Gabès, voir l'article"
+
+- id: cr-medenine
+  nom: Délégation régionale de la culture, Médenine
+  url: https://cultureregions-medenine.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Médenine, voir l'article"
+
+- id: cr-tataouine
+  nom: Délégation régionale de la culture, Tataouine
+  url: https://cultureregions-tataouine.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Tataouine, voir l'article"
+
+- id: cr-gafsa
+  nom: Délégation régionale de la culture, Gafsa
+  url: https://cultureregions-gafsa.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Gafsa, voir l'article"
+
+- id: cr-tozeur
+  nom: Délégation régionale de la culture, Tozeur
+  url: https://cultureregions-tozeur.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Tozeur, voir l'article"
+
+- id: cr-kebili
+  nom: Délégation régionale de la culture, Kébili
+  url: https://cultureregions-kebili.gov.tn/?feed=rss2
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: false
+  note: "Site injoignable depuis GitHub (délai dépassé, novembre 2026) : sans doute réservé aux connexions depuis la Tunisie."
+  options:
+    lieu: "Kébili, voir l'article"
+
+- id: fb-cr-sfax
+  nom: Délégation régionale de la culture, Sfax (Facebook)
+  url: https://www.facebook.com/Culture.SFAX
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "Culture.SFAX"
+    lieu: "Sfax, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-sousse
+  nom: Délégation régionale de la culture, Sousse (Facebook)
+  url: https://www.facebook.com/crac.sousse
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "crac.sousse"
+    lieu: "Sousse, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-medenine
+  nom: Délégation régionale de la culture, Médenine (Facebook)
+  url: https://www.facebook.com/cultmedenine
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "cultmedenine"
+    lieu: "Médenine, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-kef
+  nom: Délégation régionale de la culture, Le Kef (Facebook)
+  url: https://www.facebook.com/profile.php?id=100091820807696
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "https://www.facebook.com/profile.php?id=100091820807696"
+    lieu: "Le Kef, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-manouba
+  nom: Délégation régionale de la culture, La Manouba (Facebook)
+  url: https://www.facebook.com/profile.php?id=100083115077638
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "https://www.facebook.com/profile.php?id=100083115077638"
+    lieu: "La Manouba, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-mahdia
+  nom: Délégation régionale de la culture, Mahdia (Facebook)
+  url: https://www.facebook.com/profile.php?id=100057049257017
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "https://www.facebook.com/profile.php?id=100057049257017"
+    lieu: "Mahdia, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: fb-cr-sidibouzid
+  nom: Délégation régionale de la culture, Sidi Bouzid (Facebook)
+  url: https://www.facebook.com/profile.php?id=100068921841441
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "https://www.facebook.com/profile.php?id=100068921841441"
+    lieu: "Sidi Bouzid, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+
+- id: resident-advisor
+  nom: Resident Advisor (Tunisie)
+  url: https://ra.co/events/tn/all
+  type: agenda
+  scraper: resident_advisor
+  categorie: musique
+  actif: true
+  options:
+    pays: tn
+    zone: all
+    area: 196
+  note: "Soirées électro et clubs, Tunisie entière, par l'API GraphQL du site."
+
+- id: ftcc
+  nom: Fédération tunisienne des ciné-clubs (FTCC)
+  url: https://www.naasnetwork.org/member/federation-tunisienne-des-cine-clubs
+  type: agenda
+  scraper: facebook_programmes
+  categorie: cinema
+  actif: false
+  note: "Page Facebook officielle introuvable par la recherche (nov. 2026). À brancher dès qu'on a l'adresse ; leurs dates passent aussi par la presse (Assises des ciné-clubs)."

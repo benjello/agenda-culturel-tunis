@@ -8,13 +8,13 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
 {%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
 <section class="intro">
   <h1>Festivals</h1>
-  <p>Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram.</p>
+  <p>Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram. <a href="{{ '/ramadan/' | relative_url }}">🌙 Soirées de Ramadan</a></p>
 </section>
 
 <div id="festivals">
 {%- for f in site.data.festivals %}
   {%- assign cat = site.data.categories[f.genre] | default: site.data.categories.autre -%}
-  <article class="festival" data-debut="{{ f.debut | date: '%Y-%m-%d' }}" data-fin="{{ f.fin | default: f.debut | date: '%Y-%m-%d' }}">
+  <article class="festival" id="{{ f.id }}" data-debut="{{ f.debut | date: '%Y-%m-%d' }}" data-fin="{{ f.fin | default: f.debut | date: '%Y-%m-%d' }}">
     <div class="festival-tete">
       <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
       <span class="badge statut"></span>

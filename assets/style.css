@@ -155,3 +155,15 @@ a.lieu { color: inherit; }
 .types-films { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 10px; }
 .event-page.event { display: block; background: none; border: 0; padding: 0; margin: 0; }
 .event-page .tag { margin-top: 4px; }
+/* Formulaire « Proposer un événement » */
+.formulaire { display: grid; gap: 10px; max-width: 560px; }
+.formulaire label { display: grid; gap: 4px; font-size: .9rem; color: var(--muted); }
+.formulaire input, .formulaire select, .formulaire textarea { font: inherit; font-size: 1rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); width: 100%; }
+.formulaire .deux { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.bouton.principal, a.bouton { display: inline-block; }
+.bouton.principal { background: var(--accent); color: #fff; border: 0; padding: 8px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; font: inherit; }
+a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px; text-decoration: none; color: var(--fg); background: var(--card); }
+.signaler { font-size: .85rem; margin-top: 24px; }
+.signaler a { color: var(--muted); }
+.ramadan-bandeau { display: block; background: #1f3a5f; color: #fff; border-radius: 10px; padding: 10px 14px; margin: 8px 0 12px; text-decoration: none; }
+.doc-api pre { background: var(--card); border: 1px solid var(--line); padding: 10px; border-radius: 8px; overflow-x: auto; font-size: .85rem; }

@@ -33,7 +33,7 @@ NOMINATIM = "https://nominatim.openstreetmap.org/search"
 GEO_PAR_PASSAGE = 25   # Nominatim demande 1 requête par seconde au plus : on y va doucement
 
 # Même règle que _includes/lien-carte.html : pas de fiche pour « Tunis » ou « X et Y ».
-_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online)$|voir l'article|\bet\b| / |plusieurs", re.I)
+_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online)$|voir l'article|voir l'annonce|\bet\b| / |plusieurs", re.I)
 # « Rencontre avec Sonia Hanihina », « Yoga with Judit » : 2 à 4 mots en capitales après avec/with.
 _AVEC = re.compile(r"\b(?:[Aa]vec|[Ww]ith)\s+((?:[A-ZÀ-Ý][\w'’-]+)(?:\s+(?:[A-ZÀ-Ý][\w'’-]+|ben|bel|el|de|du)){1,3})")
 _PAS_NOM = re.compile(r"^(?:Le|La|Les|Un|Une|Des|Vous|Nous|Papa|Maman)\b")

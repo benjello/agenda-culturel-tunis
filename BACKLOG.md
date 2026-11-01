@@ -62,7 +62,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - [x] Institut français : lire le PDF mensuel du programme.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
-- [ ] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
+- [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.
 - [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
 - [ ] Brancher les sources « à étudier ».
@@ -72,20 +72,21 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 Sources
 - [ ] Comptes Instagram des clubs et bars (scraper `instagram`, recherche avec le workflow « Recherche de sources Instagram »).
 - [ ] Suivre les **artistes et DJ** tunisiens sur Instagram plutôt que les lieux : ils annoncent toutes leurs dates.
-- [ ] Bandsintown et Resident Advisor (tournées, scène électro).
+- [x] Bandsintown et Resident Advisor (tournées, scène électro). RA branché (API GraphQL, zone 196) ; Bandsintown inutile pour Tunis.
 - [ ] Agendas de presse (Tunisie Numérique, La Presse) comme filet de sécurité pour repérer des lieux non suivis.
 - [ ] Une adresse où les organisateurs envoient leur affiche (e-mail ou formulaire), lue comme les affiches Instagram.
 - [ ] Musées et expos : INP, galerie Selma Feriani (voir `bilan-sources/musees-expos.md`).
 - [ ] Ambassades et centres culturels étrangers (Italie, Espagne, Japon, Corée…) : projections et concerts souvent gratuits.
 - [ ] Clubs étudiants et ciné-clubs universitaires (ENS, ISAM, ISAD, Manouba).
 - [ ] Associations de la médina (L'Art Rue / Dream City) et festivals de quartier.
-- [ ] Calendrier spécial des soirées de Ramadan.
+- [x] Calendrier spécial des soirées de Ramadan.
 
 Usage
 - [x] Page « Ce week-end » (`week-end.html`).
 - [ ] Newsletter du jeudi générée depuis la page « Ce week-end ». Reportée : Buttondown proposé (gratuit jusqu'à 100 abonnés), il faudra le secret BUTTONDOWN_API_KEY.
 - [x] Filtres « gratuit » et « en famille ».
 - [x] Carte des lieux (OpenStreetMap).
+- [ ] Carte : placer à la main (lat/lon) les lieux que Nominatim ne trouve pas (valeur null dans `_data/geo.json`).
 - [x] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour. Reportée : bot @BotFather + secrets TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ; WhatsApp sans API, texte à copier-coller.
 - [x] Site installable comme une appli (PWA, hors ligne, sans store).
@@ -103,7 +104,7 @@ Usage
 - [x] Choix de la ville (Grand Tunis par défaut) et lien carte 📍 des lieux.
 
 Ouverture
-- [ ] API publique documentée (JSON des événements) pour médias, applis, chercheurs.
+- [x] API publique documentée (JSON des événements) pour médias, applis, chercheurs.
 - [ ] Langue de l'événement (français, arabe, anglais…).
 - [ ] Accessibilité des lieux (fauteuil) : basse priorité, difficile à collecter.
 
@@ -121,5 +122,9 @@ Couverture et langues (demandé le 1er novembre)
 - [ ] Événements commerciaux (yoga, fitness, brunchs…) : pour l'instant **gardés en bas de liste et en plus discret** (`commun.est_discret`). Décider plus tard s'il faut une rubrique à part ou les retirer.
 
 Fiabilité
-- [ ] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
-- [ ] Bouton « signaler une erreur » sur chaque événement.
+- [x] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
+- [x] Bouton « signaler une erreur » sur chaque événement.
+
+- [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 7 pages Facebook branchées ; trouver les 17 autres.
+- [ ] FTCC (ciné-clubs) : trouver la page Facebook officielle.
+- [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.

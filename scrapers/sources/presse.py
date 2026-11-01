@@ -26,7 +26,9 @@ from .rss import _racine
 
 MOTS = (r"festival|concert|spectacle|exposition|vernissage|projection|pi[èe]ce|repr[ée]sentation|soir[ée]e|"
         r"rencontre|conf[ée]rence|journ[ée]es|r[ée]cital|one man show|stand.?up|salon du livre|foire|"
-        r"carnaval|biennale|mus[ée]e|th[ée][âa]tre|op[ée]ra|danse|cin[ée]-?club")
+        r"carnaval|biennale|mus[ée]e|th[ée][âa]tre|op[ée]ra|danse|cin[ée]-?club|"
+        # en arabe : festival, spectacle, concert, exposition, colloque, soirée, rencontre, pièce, journées
+        r"مهرجان|عرض|حفل|معرض|ندوة|أمسية|سهرة|تظاهرة|ملتقى|مسرحية|أيام|لقاء|ورشة")
 # Articles sur un événement à l'étranger (« Paris : la Saison Méditerranée… ») : écartés.
 _ETRANGER = re.compile(r"\b(?:Paris|Marseille|Lyon|Cannes|Venise|Rome|Berlin|Londres|Madrid|Bruxelles|Gen[èe]ve|"
                        r"New York|Montr[ée]al|Le Caire|Duba[ïi]|Doha|Rabat|Casablanca|Marrakech|Alger|Oran|Beyrouth|Amman)\b")
