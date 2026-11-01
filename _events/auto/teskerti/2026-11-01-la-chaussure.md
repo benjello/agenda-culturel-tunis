@@ -1,7 +1,8 @@
 ---
 title: "La chaussure"
 date: 2026-11-01 19:00
-venue: "Teskerti"
+venue: "Théâtre Le 4ème Art"
+address: "7 Av. de Paris"
 category: "theatre"
 price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/la-chaussure"

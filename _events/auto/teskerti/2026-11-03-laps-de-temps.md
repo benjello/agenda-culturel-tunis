@@ -1,7 +1,8 @@
 ---
 title: "Laps de temps"
 date: 2026-11-03 17:00
-venue: "Teskerti"
+venue: "El Teatro التياترو"
+address: "R57F+H93, Chedli Kallela, Tunis"
 category: "theatre"
 price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/laps-de-temps-le-0311"
