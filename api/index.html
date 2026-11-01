@@ -16,6 +16,8 @@ description: Les données de l'agenda culturel en JSON et en calendrier, libres 
   <tr><td><a href="{{ '/api/v1/lieux.json' | relative_url }}"><code>/api/v1/lieux.json</code></a></td><td data-t="api.f_lieux">Les lieux, avec coordonnées quand on les connaît</td></tr>
   <tr><td><a href="{{ '/api/v1/sources.json' | relative_url }}"><code>/api/v1/sources.json</code></a></td><td data-t="api.f_sources">Les sources lues et leur état</td></tr>
   <tr><td><a href="{{ '/agenda.ics' | relative_url }}"><code>/agenda.ics</code></a></td><td data-t="api.f_ics">Le calendrier, à ajouter dans Google Agenda, Apple Calendrier ou Outlook</td></tr>
+  <tr><td><code>/calendriers/&lt;categorie&gt;.ics</code>, <code>/calendriers/ville-&lt;ville&gt;.ics</code></td><td><span data-t="api.f_ics_filtres">Le même calendrier, pour une catégorie ou une ville :</span> <a href="{{ '/abonnements/' | relative_url }}" data-t="nav.abonner">S'abonner</a></td></tr>
+  <tr><td><a href="{{ '/feed.xml' | relative_url }}"><code>/feed.xml</code></a></td><td data-t="api.f_rss">Fil RSS des derniers événements ajoutés</td></tr>
 </table>
 <p><span data-t="api.adresse_complete">Adresse complète :</span> <code>{{ '/api/v1/evenements.json' | absolute_url }}</code>. <span data-t="api.v1">Les champs de la version 1 ne changent pas ; une nouvelle version aura une nouvelle adresse.</span></p>
 

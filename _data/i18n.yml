@@ -231,6 +231,22 @@ api.f_evts: { ar: "كل الأنشطة القادمة، كل تونس", en: "All
 api.f_lieux: { ar: "الفضاءات، مع الإحداثيات عندما نعرفها", en: "Venues, with coordinates when known" }
 api.f_sources: { ar: "المصادر المقروءة وحالتها", en: "The sources read and their status" }
 api.f_ics: { ar: "الرزنامة، تضاف إلى Google Agenda أو Apple Calendrier أو Outlook", en: "The calendar, to add to Google Calendar, Apple Calendar or Outlook" }
+api.f_ics_filtres: { ar: "نفس الرزنامة، لصنف أو لمدينة:", en: "The same calendar, for one category or one city:" }
+api.f_rss: { ar: "خلاصة RSS لآخر الأنشطة المضافة", en: "RSS feed of the latest events added" }
+nav.abonner: { ar: "اشترك", en: "Subscribe" }
+abo.titre: { ar: "اشترك", en: "Subscribe" }
+abo.intro: { ar: "أضف الأجندا إلى رزنامتك: تتحدث وحدها كل يوم. اختر الأجندا كاملة أو صنفا أو مدينة.", en: "Add the agenda to your calendar: it updates itself every day. Pick the whole agenda, a category or a city." }
+abo.tout: { ar: "الأجندا كاملة", en: "The whole agenda" }
+abo.tous_evts: { ar: "كل الأنشطة", en: "All events" }
+abo.par_cat: { ar: "حسب الصنف", en: "By category" }
+abo.par_ville: { ar: "حسب المدينة", en: "By city" }
+abo.rss: { ar: "خلاصة RSS", en: "RSS feed" }
+abo.rss_texte: { ar: "آخر الأنشطة التي وصلت إلى الأجندا، لقارئ خلاصات (Feedly، Inoreader…) أو قناة Telegram:", en: "The latest events added to the agenda, for a feed reader (Feedly, Inoreader…) or a Telegram channel:" }
+abo.comment: { ar: "كيف أفعل؟", en: "How to" }
+abo.calendrier: { ar: "📱 الرزنامة", en: "📱 Calendar" }
+abo.aide_tel: { ar: "<strong>الهاتف</strong> (iPhone، Android): المس « 📱 الرزنامة » ثم أكد الاشتراك.", en: "<strong>Phone</strong> (iPhone, Android): tap “📱 Calendar”, then confirm the subscription." }
+abo.aide_google: { ar: "<strong>Google Agenda</strong>: المس « Google Agenda » من حاسوب؛ تظهر الأجندا بعد ذلك في الهاتف أيضا.", en: "<strong>Google Calendar</strong>: tap “Google Agenda” on a computer; the calendar then also shows on your phone." }
+abo.aide_autre: { ar: "<strong>Outlook وغيره</strong>: انسخ عنوان الملف وألصقه في « إضافة رزنامة » ← « من الإنترنت ».", en: "<strong>Outlook, other</strong>: copy the file's address and paste it into “Add calendar” → “From the Internet”." }
 api.adresse_complete: { ar: "العنوان الكامل:", en: "Full address:" }
 api.v1: { ar: "حقول النسخة 1 لا تتغير؛ النسخة الجديدة سيكون لها عنوان جديد.", en: "Version 1 fields do not change; a new version will have a new address." }
 api.un_evt: { ar: "نشاط", en: "An event" }
