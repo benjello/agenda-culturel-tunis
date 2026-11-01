@@ -1,1 +1,453 @@
-{"titres": {}, "notices": {}}
+{
+ "titres": {
+  "13ème symposium de l’UMA: Incertitudes, certitudes": {
+   "ar": "الندوة الثالثة عشرة لوكالة الفضاء الدولية: حالات عدم اليقين",
+   "en": "13th UMA Symposium: Uncertainties, Certainties"
+  },
+  "2 Jours Avec Papa": {
+   "ar": "يومان مع أبي",
+   "en": "2 Days With Dad"
+  },
+  "A Coeur Ouvert": {
+   "ar": "قلب مفتوح",
+   "en": "A Heart Open"
+  },
+  "A Demain Sur La Lune": {
+   "ar": "غداً على القمر",
+   "en": "Tomorrow on the Moon"
+  },
+  "Action De Sensibilisation Et De Prévention Du Diabète": {
+   "ar": "التوعية بمرض السكري والوقاية منه",
+   "en": "Diabetes Awareness and Prevention Action"
+  },
+  "Avec Hafida Ben Rejeb Latta": {
+   "ar": "مع هافيدا بن رييب لايتا",
+   "en": "With Hafida Ben Rejeb Latta"
+  },
+  "Avec Lotfi Mlayah": {
+   "ar": "مع (لوفتي ملاياه)",
+   "en": "With Lotfi Mlayah"
+  },
+  "Avec Sonia Hanihina": {
+   "ar": "With Sonia Hanihina",
+   "en": "With Sonia Hanihina"
+  },
+  "Becoming The Ocean - BIM'26": {
+   "fr": "Devenir l'océan - BIM'26",
+   "ar": "\"المحيط \"بيم 26"
+  },
+  "Bibliothérapie Tunis Blues D'Ali Bêcheur": {
+   "ar": "Bibliotherapy Tunis Blues D'Ali Bêcheur",
+   "en": "Bibliotherapy Tunis Blues D'Ali Bêcheur"
+  },
+  "CHANTIERS06 - DERNIÈRE SESSION": {
+   "fr": "CHANTIERS06 - SESSION DE DERNIÈRE",
+   "ar": "CHANTIERS06 - DERNIRE session"
+  },
+  "Café Philo Avec Azza Filali": {
+   "ar": "مقهى فيلو مع عزة فيلالي",
+   "en": "Café Philo With Azza Filali"
+  },
+  "Cercle De Lectur Au Centre-Ville De Tunis": {
+   "ar": "دائرة ليكتور في مركز مدينة تونس",
+   "en": "Circle of Lectur in the city centre of Tunis"
+  },
+  "Cinéma : Le Temps suspendu, un film hongrois à ne pas rater": {
+   "ar": "سينيما: Le Temps suspendé, a Hungarian movie not to be missed",
+   "en": "Cinema : Le Temps suspendé, a Hungarian film not to be missed"
+  },
+  "Cinéma D’Animation": {
+   "ar": "Cinema D",
+   "en": "Cinema D"
+  },
+  "Contes En Scène": {
+   "ar": "Scene Tales",
+   "en": "Scene Tales"
+  },
+  "Créativité Avec Amina Hanini": {
+   "ar": "Creativity with Amina Hanini",
+   "en": "Creativity With Amina Hanini"
+  },
+  "Créativité Avec Bochra Taboubi": {
+   "ar": "Creativity with Bochra Taboubi",
+   "en": "Creativity With Bochra Taboubi"
+  },
+  "Diffusion Des Savoirs": {
+   "ar": "نشر المعرفة",
+   "en": "Dissemination of knowledge"
+  },
+  "Dimanche 1er Novembre, la Médiathèque de l'Institut français de Tunisie ouvre exceptionnel": {
+   "ar": "يوم الأحد 1 تشرين الثاني/نوفمبر، تفتتح مكتبة وسائط الإعلام التابعة للمعهد الفرنسي لتونس بصفة استثنائية",
+   "en": "Sunday 1 November, the Media Library of the French Institute of Tunisia opens exceptional"
+  },
+  "Direction Gabès pour les Oasis Days !": {
+   "ar": "توجه (غابيز) إلى أيام الواحة!",
+   "en": "Direction Gabes for the Oasis Days!"
+  },
+  "Disco baghded": {
+   "ar": "Disco Baghaded",
+   "en": "Disco Baghaded"
+  },
+  "Discussion Avec Elgas": {
+   "ar": "المناقشة مع إلغاز",
+   "en": "Discussion with Elgas"
+  },
+  "Fabrika Festival 14": {
+   "fr": "Fabrika Festival 14",
+   "ar": "مهرجان فابريكا 14"
+  },
+  "Festival Du Podcast": {
+   "ar": "Podcast Festival",
+   "en": "Podcast Festival"
+  },
+  "Foire nationale du livre tunisien: Traduire, transmettre et penser le savoir en arabe": {
+   "ar": "معرض الكتاب الوطني التونسي: الترجمة التحريرية والترجمة والتفكير في المعارف باللغة العربية",
+   "en": "Tunisian National Book Fair: Translating, Translating and Thinking about Knowledge in Arabic"
+  },
+  "HARAKAT TRAINING SCRATCH NIGHT": {
+   "fr": "LA NUIT DE LA FORMATION HARAKAT",
+   "ar": "HARAKAT TRAINING SCRATCH NIGHT"
+  },
+  "Héritages Croisés": {
+   "ar": "التراث المعبر",
+   "en": "Crossed heritage"
+  },
+  "Images de Syrie, Palmyre, Alep, Damas - Michel Eisenlohr": {
+   "ar": "صور من سوريا، بالميرا، حلب، دمشق - ميشيل إيزنولوه",
+   "en": "Images of Syria, Palmyra, Aleppo, Damascus - Michel Eisenlohr"
+  },
+  "Interlude 17 Sortie De Résidence Yellow Wasabi": {
+   "ar": "Interlude 17 Residence Exit Yellow Wasabi",
+   "en": "Interlude 17 Residence Exit Yellow Wasabi"
+  },
+  "JAOU TUNIS 26 - Full Fest Access": {
+   "ar": "JAOU TUNIS 26 - Full Fest Access",
+   "en": "JAOU TUNIS 26 - Full Fest Access"
+  },
+  "Jaou Tunis 2026: Les corps, ces territoires de résistance": {
+   "ar": "Jaou Tunis 2026: Bodies, territories of resistance",
+   "en": "Jaou Tunis 2026: Bodies, territories of resistance"
+  },
+  "Journées Théâtrales De Carthage": {
+   "ar": "أيام مسرح كارثيج",
+   "en": "Carthage Theatre Days"
+  },
+  "Kteb Tounsi Avec Abdelhamid Larguèche": {
+   "ar": "Kteb Tounsi with Abdelhamid Larguèche",
+   "en": "Kteb Tounsi With Abdelhamid Larguèche"
+  },
+  "Kteb Tounsi Avec Sonia Hanihina": {
+   "ar": "Kteb Tounsi with Sonia Hanihina",
+   "en": "Kteb Tounsi With Sonia Hanihina"
+  },
+  "Kteb Tounsi Sonia Hanihina": {
+   "ar": "Kteb Tounsi Sonia Hanihina",
+   "en": "Kteb Tounsi Sonia Hanihina"
+  },
+  "Kteb Tounsi Spécial Manga ! Avec Ahmed Touj": {
+   "ar": "(كتيب تونسي مانجا) الخاص! مع أحمد توجي",
+   "en": "Kteb Tounsi Manga Special! With Ahmed Touj"
+  },
+  "L'Effet Papillon": {
+   "ar": "\"باثرفلي إيفتي\"",
+   "en": "The Butterfly Effect"
+  },
+  "La chaussure": {
+   "ar": "الحذاء",
+   "en": "The shoe"
+  },
+  "Labes - Selim Ben Safia": {
+   "ar": "مختبرات - سيليم بن صوفيا",
+   "en": "Labs - Selim Ben Safia"
+  },
+  "Le Chant Des Forêts": {
+   "ar": "The Song of the Forests",
+   "en": "The Song of the Forests"
+  },
+  "Le Monde Sans Fin": {
+   "ar": "العالم الذي لا نهاية له",
+   "en": "The Endless World"
+  },
+  "Le chemin se termine, la fête commence": {
+   "ar": "نهاية الطريق، تبدأ الحفلة",
+   "en": "The road ends, the party begins"
+  },
+  "Le podcast de demain, vous l'imaginez comment ?": {
+   "ar": "كيف تتصورين أن الغد مذاق؟",
+   "en": "How do you imagine tomorrow's podcast?"
+  },
+  "Lecture Participative": {
+   "ar": "القراءــة التشاركيــة",
+   "en": "Participatory Reading"
+  },
+  "Les Malheurs De Sophie": {
+   "ar": "(صوفي ووز)",
+   "en": "Sophie's Woes"
+  },
+  "Listening Session, Screening & Live Performance": {
+   "fr": "Séance d'écoute, projection et performance en direct",
+   "ar": "جلسة الاستماع، فرز الأداء الحي"
+  },
+  "L’Heure Du Jeu": {
+   "ar": "وقت اللعب",
+   "en": "Game Time"
+  },
+  "L’Olivier, Trait D’Union De La Méditerranée": {
+   "ar": "L-Olivier, Mediterranean Treaty",
+   "en": "L-Olivier, Mediterranean Treaty"
+  },
+  "Mars Express": {
+   "ar": "March Express",
+   "en": "March Express"
+  },
+  "Mercredis-Ciné Level Five": {
+   "ar": "الأربعاء، المستوى الخامس",
+   "en": "Wednesdays-Cine Level Five"
+  },
+  "Mercredis-Ciné Un Monde Merveilleux": {
+   "ar": "\"الأربعاء\" \"عالم رائع\"",
+   "en": "Wednesdays-Cine A Wonderful World"
+  },
+  "Mort Express": {
+   "ar": "مسلسل الموت",
+   "en": "Death Express"
+  },
+  "Movie Night: LA BELLE ET LA MEUTE": {
+   "ar": "ليلة الفيلم: BELL وWATHER",
+   "en": "Movie Night: BELL AND WEATHER"
+  },
+  "Movie Night: REGARDE MOI": {
+   "fr": "Soirée cinéma: VOYAGE MOI",
+   "ar": "ليلة الفيلم: REGARDE MOI"
+  },
+  "Movie Night: UN FILS": {
+   "ar": "ليلة الفيلم:",
+   "en": "Movie Night: A FILS"
+  },
+  "Nōmad Man Festival 2026": {
+   "fr": "Festival de l'Homme Nōmad 2026",
+   "ar": "مهرجان نجوم مان 2026"
+  },
+  "ONWRD/FRWRD": {
+   "ar": "ONWRD/FRWRD",
+   "en": "ONWRD/FRWRD"
+  },
+  "Oasis Days": {
+   "ar": "أيام التخصيب",
+   "en": "Oasis Days"
+  },
+  "Philo-Art Pour Enfants En Français": {
+   "ar": "فيلو - آرت للأطفال في الفرنسية",
+   "en": "Philo-Art For Children In French"
+  },
+  "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du 6 et 7 novembre": {
+   "ar": "أيام البث التلفزيوني التونسي للمهرجان ال Podcast Festival unveils its November 6 and 7 program",
+   "en": "Podcast Days by Tunisia Podcast Festival unveils its November 6 and 7 program"
+  },
+  "Power Yoga with Nicole Skarpness @nskarp": {
+   "fr": "Yoga de puissance avec Nicole Skarpness @nskarp",
+   "ar": "Power Yoga with Nicole Skarpness @nskarp"
+  },
+  "Quand la distance devient un jour lumière": {
+   "ar": "عندما تصبح المسافة يوماً خفيفاً",
+   "en": "When the distance becomes a light day"
+  },
+  "Sous Les Étoiles De Paris": {
+   "ar": "تحت ستار باريس",
+   "en": "Under The Stars of Paris"
+  },
+  "Spécial Novembre Numérique": {
+   "ar": "Special November Digital",
+   "en": "Special November Digital"
+  },
+  "Tables Rondes": {
+   "ar": "اجتماعات المائدة المستديرة",
+   "en": "Round tables"
+  },
+  "Tunisie | Entrée gratuite aux sites et musées ce 1er novembre": {
+   "ar": "تونس: القبول الحر للمواقع والمتاحف في 1 تشرين الثاني/نوفمبر",
+   "en": "Tunisia: Free admission to sites and museums on November 1st"
+  },
+  "Un Monde Merveilleux": {
+   "ar": "عالم رائع",
+   "en": "A Wonderful World"
+  },
+  "Un Monstre À Paris": {
+   "ar": "وحش في باريس",
+   "en": "A Monster in Paris"
+  },
+  "Undertow / Contre ; Courant": {
+   "ar": "تحت الأرض/ضد؛",
+   "en": "Undertow / Against; Current"
+  },
+  "Village Environnemental": {
+   "ar": "القرية البيئية",
+   "en": "Environmental Village"
+  },
+  "Voyage Enchanteur": {
+   "ar": "السفر الميسر",
+   "en": "Enchanting Travel"
+  },
+  "Voyagez En Réalité Virtuelle !": {
+   "ar": "السفر في الواقع الافتراضي!",
+   "en": "Travel in Virtual Reality!"
+  },
+  "Watch Party Gaming": {
+   "fr": "Regarder les jeux de fête",
+   "ar": "مشاهدة الحزب الراقص"
+  },
+  "Yoga for Busy Minds with Judit @yoga_in_sidibousaid": {
+   "fr": "Yoga pour les esprits occupés avec Judit @yoga_in_sidibousaid",
+   "ar": "Yoga for Busy Minds with Judit @yoga_in_sidibousaid"
+  },
+  "« Saveurs et amertume » à la Galerie TGM : Lorsque l’art esquisse les contours de l’identité tunisienne": {
+   "ar": "&quot; الشعلة والمرارة &quot; في معرض الحركة: عندما تحدد المادة حدود الهوية التونسية",
+   "en": "« Flavors and bitterness » at the TGM Gallery: When art outlines the contours of Tunisian identity"
+  },
+  "أيام فلسطين السينمائية حول العالم في سينيمدار - قرطاج": {
+   "fr": "Journées du cinéma palestinien dans le monde à Sinemdar-Cartataj",
+   "en": "Palestinian film days around the world in Sinemdar-Cartataj"
+  },
+  "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد": {
+   "fr": "Présentations pour la Session Constituante de l'automne... Les jours de jeux à monsieur Bouzid.",
+   "en": "Presentations for the Constituent Session of the autumn... Playdays in sir Bouzid."
+  },
+  "الورشات الفنية الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد": {
+   "fr": "Les ateliers d'art pour la Session Constituante de l'automne... Les jours de jeux à monsieur Bouzid.",
+   "en": "The art workshops for the Constituent Session of the autumn... Playdays in sir Bouzid."
+  },
+  "شاشات المواسم ... ذاكرة المسرح التونسي على الشاشة": {
+   "fr": "Les écrans de saison... La mémoire du théâtre tunisien est à l'écran.",
+   "en": "The season screens... The Tunisian theater memory is on the screen."
+  },
+  "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم الإبداع يدعوكم المس": {
+   "fr": "Dans le cadre de la quatrième session du Festival National du Théâtre Tunisien, la cérémonie de créativité vous invite à toucher.",
+   "en": "In the context of the fourth session of the National Festival of the Tunisian Theatre, the creativity ceremony calls upon you to touch."
+  },
+  "مائدة مستديرة حول : البحر الأبيض المتوسط بحر من الكنوز التراثيّة": {
+   "fr": "Table ronde sur le thème: Mer Méditerranée des trésors du patrimoine",
+   "en": "Round table on: Mediterranean Sea of Heritage treasures"
+  },
+  "محاضرة: تحولات الكتابة الأثرية والتراثية في تونس: من الإرث الاستعماري إلى تجديد المقاربات المعرفية للأستاذ فوزي محفوظ": {
+   "fr": "Conférence : Transformations archéologiques et génétiques en Tunisie : de l'héritage colonial au renouveau des approches cognitives du professeur Fawzi réservé",
+   "en": "Lecture: Archaeological and genetic transformations in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi reserved"
+  }
+ },
+ "notices": {
+  "_events/auto/cine-agora/2026-11-01-bakma.md": {
+   "cle": "bd01c3eb7145",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة أعضاؤه تم قطع رأسهم واختفى في مكانه القاتل كان يتستر على رأس كلب",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, in its place, the murderer grotesquely sewn a dog's head."
+  },
+  "_events/auto/cine-agora/2026-11-01-le-fantome-de-lopera.md": {
+   "cle": "43b97b027874",
+   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا باريس المرموقة. كما تكرّر الـ(أورفيوس)، أوبرا ملعونة كانت لتتكون من شبح الأوبرا، تقع في غرام عازف بيانو غامض. ومثلما يقترب التمثيل الأول، بين الحوادث غير المفسَّرة والكشف المزعج، تجد أناستازيا نفسها مغمورة في قصة حب مستحيلة، على حدود الواقع والتخيل.",
+   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Paris Opera. As she repeats the Orpheus, a cursed opera that would have been composed by the Phantom of the Opera, she falls in love with a mysterious pianist. As the first representation approaches, between unexplained accidents and disturbing revelations, Anastasia finds herself immersed in an impossible love story, at the border of reality and fantasy."
+  },
+  "_events/auto/cine-agora/2026-11-01-lile-des-souvenirs.md": {
+   "cle": "61dfc8e8de21",
+   "ar": "(جو) و (ريسا) يجدان أنفسهما محاصرين في العالم الرائع لجزيرة (ناكالي) المنسية يكتشفون أن الطريقة الوحيدة للعودة للمنزل قد تكلفهم حياة من الذكريات والعواطف",
+   "en": "Jo and Raissa find themselves stranded on the fantastic world of the forgotten island of Nakali. They discover that the only way to get home could cost them a lifetime of memories and emotions."
+  },
+  "_events/auto/cine-agora/2026-11-01-weekend.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+  },
+  "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md": {
+   "cle": "0677768aa51f",
+   "ar": "في أوائل الستينات وفي مدرسة ثانوية في بودابست، يُعذّب الديانة الشابة ويُحتوى عليها. حتى أنه رفض دفعات (ماجدا) التي أحبها وخلال تمرد بودابست لعام 1956، حارب والده ضد الدبابات الروسية بأسلحة في يده، ثم اضطر إلى الفرار سراً في الخارج. أمه وعمه يجدان صعوبة كبيرة في تربيته وعندما يكون صديقاً لوالده مُطلقاً من السجن، يستقر في الأمور لا تتحسن",
+   "en": "Early '60s. In a high school in Budapest, the young Dene is tormented and contained. He even refused Magda's advances, which he liked. During the Budapest Insurrection of 1956, his father fought against Russian tanks with weapons in his hand, then had to flee clandestinely abroad. His mother and uncle find it very difficult to raise him, and when a friend of his father's, released from prison, settles in, things don't get better."
+  },
+  "_events/auto/cine-agora/2026-11-04-dar-el-3ers.md": {
+   "cle": "e87e429df307",
+   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز عُقد في سبيل القيام، بصورة سرية، بتوقيع اتفاق بشأن الالتزامات المتعلقة باستحقاقات السفر",
+   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers! عا的ل的ان لا 简شبه 的حداهما ال的ر体"
+  },
+  "_events/auto/cine-agora/2026-11-05-les-miserables.md": {
+   "cle": "af3404a1ef36",
+   "ar": "(جان فالجان) قرر أن يغير حياته وأن يبلي حسناً حوله تحت هوية زائفة، يصبح مع مرور الوقت احتراماً ملحوظاً للجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، وعد بأن ينقذ ابنته (كوسيت) من مخالب (الثنارديه) القاسية. لكن ماضيه يلحق به: المفتش جافرت، شرطي لا يطاق في الماضي، عذب أيضاً، يطارده بلا هوادة لإعادته إلى المشنقة.",
+   "en": "Freed after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, it becomes over time a notable respected of all. Coming to help Fantine, a dying worker, he promised to save his daughter, Cosette, from the claws of the cruel Thénardier. But his past catch up with him: Inspector Javert, an implacable policeman in the past, also tormented, hunts him unabated to send him back to the gallows."
+  },
+  "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md": {
+   "cle": "a66053e9d573",
+   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز رفض السكان. عندما تقابل ميلي فتاة صغيرة تستطيع رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
+   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly – a little girl she alone can see – Lucy embarks on a great adventure to break the secret of her mysterious powers."
+  },
+  "_events/auto/cine-agora/2026-11-08-verity.md": {
+   "cle": "d8628654da8e",
+   "ar": "(لوين آشلي) كاتب وحيد وبصفتها رساماً لمهنتها، وافقت على أن تصبح الكاتبة الناجحة، فيرتي كراوفورد، واستقرت في ممتلكاتها المنعزلة. بإكتشاف ما يبدو أنه ملاحظات شخصية لـ(فيرتي) الشاب (لوين) يجد نفسه يواجه مع مخاوف مقلقة ومقلقة بشأن زوج (فيرتي) (جيرمي)",
+   "en": "Lowen Ashleigh is a lonely writer. As a painter of her profession, she agreed to become the successful author, Verity Crawford, and settled in her secluded property. By discovering what seems to be Verity's personal notes, young Lowen finds herself confronted with disturbing and disturbing revelations about Verity's husband Jeremy."
+  },
+  "_events/auto/cine-agora/2026-11-18-van-gogh.md": {
+   "cle": "98d04974448e",
+   "ar": "بعد متدربه في الملجأ، انتقل (فينسنت فان غوغ) إلى (أوفرس-سويس) مع الدكتور (غاتش)، عاشق فني. الأيام الأخيرة للرسام كانت مُميزة بالعلاقات المُتضاربة التي كان يملكها مع أخيه (ثيو)، وصحته العقلية كانت مُتشردة. أصبح عاشق (مارغريت)، ابنة مضيفه، لكنها أدركت بسرعة أنه لا يحبه، أن فنه فقط جعله يعيش",
+   "en": "After his internment in the asylum, Vincent Van Gogh moved to Auvers-sur-Oise with Dr.Gachet, an art lover. The painter's last days were marked by the conflicting relations he had with his brother Theo, and his mental health was vagrant. He became the lover of Marguerite, the daughter of his host, but she quickly understood that he did not like him, that only his art made him live."
+  },
+  "_events/auto/fb-cr-sidibouzid/2026-11-01-evenement-sidi-bouzid-voir-l-annonce.md": {
+   "cle": "62afc675d9b8",
+   "fr": "<unk> Présentations pour la Session constituante de l'automne...\nLes jours de jeux à monsieur Bouzid.\nDu 26 octobre au 01 novembre 2026\nToutes les présentations : le showroom des Arts Deram et les Rocky à Sadie Bouzid.\nBureau régional des affaires culturelles, Sidi Bouzid\nBateau culturel Abubakar al-Vamodi, Sidi Bouzid\nCentre des Arts Dramatiques et Scènes De Sidi Bouzid",
+   "en": "<unk> Presentations for the Constituent Session of the Autumn...\nPlaydays in sir Bouzid.\nFrom October 26th to November 01 2026\nAll the presentations: the showroom at the Deram Arts and the Rocky in Sadie Bouzid.\nRegional Office for Cultural Affairs, Sidi Bouzid\nAbubakar al-Vamodi cultural boat, Sidi Bouzid\nCentre des Arts Dramatiques et Scéniques De Sidi Bouzid"
+  },
+  "_events/auto/fb-cr-sidibouzid/2026-11-01-evenement.md": {
+   "cle": "8c5341e2e5b8",
+   "fr": "<unk> <unk> oeuvres d'art pour le cours constituant de l'automne...\nLes jours de jeux à monsieur Bouzid.\nDu 26 octobre au 1er novembre 2026.\n<unk> à la station de théâtre et d'arts flasques de Sadie Bouzid.\n_\nThéâtre des mariées.\nPour vous inscrire, cliquez sur le lien suivant :\nhttps://docs.google.com/forms/d/f/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5Top6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book",
+   "en": "<unk> <unk> artworks for the Constituent Course of the Autumn...\nPlaydays in sir Bouzid.\nFrom October 26 to November 1, 2026.\n<unk> at the station of drama and flak arts in Sadie Bouzid.\n_\nTheater of the brides.\nFor registration, click on the following link:\nhttps://docs.google.com/forms/d/e/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5TOp6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book"
+  },
+  "_events/auto/ig-agorgi-gallery/2026-10-30-cosmose.md": {
+   "cle": "45577979df1a",
+   "fr": "La Galerie est ouverte ce samedi et dimanche, de 12h à 18h, pour vous accueillir à COSMOSE, l'exposition solo de @karabibenehalim .\nPrenez le temps de découvrir l'univers de l'artiste et d'explorer les œuvres en vue.\nNous avons hâte de vous voir à la galerie!\n\\#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart",
+   "ar": "المعرض مفتوح يوم السبت والأحد من 12 مساء إلى 6 مساء للترحيب بك في \"كوساموز\" المعرض المنفرد بـ \"الكارابينهاليم\"\nخذ الوقت لاكتشاف عالم الفنان واستكشاف الأعمال على مرأى.\nنتطلع لرؤيتك في المعرض!\n#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart"
+  },
+  "_events/auto/ig-la-boite/2026-10-31-oasis-days.md": {
+   "cle": "c6fc9d875a3c",
+   "fr": "Jours de 2026.\n&quot; Ce qui reste sous nos horizons &quot; (Ce qui demeure sous nos horizons), une exposition artistique appelée Ben Issa, qui explore à travers le tissu ce qu'est la mémoire et ce qui reste présent dans nos détails et histoires.\nLes images de la galerie, où les cordes et les matériaux se transforment en une zone d'expression et de mémoire.\nJOURS OASIS 2026 <unk> TEXTILE D'EXPOSITION\nRetour en images sur &quot; Ce qui demeure sous nos horizons &quot; , une exposition textile d-Asma Ben Aissa.",
+   "en": "Days of 2026.\n&quot; What remains under our horizons &quot; (Ce qui demeure sous nos horizons), a artistic exhibit named Ben Issa, which explores through fabric what memory is and what remains present in our details and stories.\nPictures from the gallery, where strings and materials turn into an area of expression and memory.\nOASIS DAYS 2026 <unk> EXPOSITION TEXTILE\nRetour en images sur &quot; Ce qui demeure sous nos horizons &quot; , une exposition textile d’Asma Ben Aissa."
+  },
+  "_events/auto/ig-la-boite/2026-11-03-direction-gabes-pour-les-oasis-days.md": {
+   "cle": "9b6d37085069",
+   "ar": "توجه (غابيز) إلى أيام الواحة!\nسيعود الصندوق في 3 نوفمبر\nأتطلع لمقابلتك قريباً",
+   "en": "Direction Gabes for the Oasis Days!\nThe Box will be back on November 3.\nLooking forward to meeting you very soon."
+  },
+  "_events/auto/ig-shanti/2026-11-15-le-chemin-se-termine-la-fete-commence.md": {
+   "cle": "82e59da503dd",
+   "ar": "نهاية الطريق، تبدأ الحفلة\nولسنوات، رافقت شانتي منظمي المشاريع العاطفة في مجالات الحرف والزراعة والسياحة.\nاليوم هو الوقت المناسب للإحتفال معاً بالرحلة التي قمنا بها، وقبل كل شيء لتقديمها لك!\nلأنه خلف كل منتج، كل معرفة، كل تجربة، هناك امرأة أو رجل يتعهد بالشجاعة والقناعة.",
+   "en": "The path ends, the party begins\nFor years, Shanti has accompanied passionate entrepreneurs in the fields of crafts, agriculture and tourism.\nToday is the time to celebrate together the journey we have made, and above all to present them to you!\nBecause behind every product, every know-how, every experience, there is a woman or a man who undertakes with courage and conviction."
+  },
+  "_events/auto/ig-theatre-national/2026-11-01-evenement-evenement.md": {
+   "cle": "c28b2ad97238",
+   "fr": "<unk> Dans le cadre des événements de la quatrième session du Festival national de théâtre tonsique, le Théâtre national tunisien vous invite à découvrir l'exposition artistique intitulée &quot; Mohammed Idriss: Maestro Art &quot; .\nStations d'art, mémoire de jeu, preuve de la marche de la créativité...\nUn voyage entre le passé et le présent, dictant la marche d'un artiste qui a laissé son silence dans la scène théâtrale tunisienne, et préparant la richesse de son expérience et sa contribution à l'enrichissement du quatrième art.\n<unk> Ouverture : demain, 01 novembre 2026\n<unk>11:00\nDu 01 novembre 2026 au 30 janvier 2027.\n- Parc des Arts - Quatrième Art Hall.\nInnovation.",
+   "en": "<unk> As part of the events of the fourth session of the National Tonsic Theatre Festival, the Tunisian National Theatre calls upon you to discover the artistic exhibition entitled &quot; Mohammed Idriss: Maestro Art &quot; .\nArt stations, play memory, evidence of the creativity march...\nA journey between the past and the present, dictating the march of an artist who left his silence in the Tunisian theatrical scene, and preparing the richness of his experience and contributions to the enrichment of the fourth art.\n<unk> Opening: tomorrow, 01 November 2026\n<unk>11:00\nFrom November 01 2026 to 30 Janvi 2027.\n- Arts Park - Fourth Art Hall.\nInnovation."
+  },
+  "_events/auto/ig-theatre-national/2026-11-01-evenement.md": {
+   "cle": "11cbbe6ec517",
+   "fr": "♪ Les écrans de saison...\n♪\nLa mémoire du théâtre tunisien est à l'écran.\nDans le cadre des activités de la quatrième session du Festival national du Théâtre Tonsien, Musam of Innovation, les écrans saisonniers sont du 31 octobre au 7 novembre 2026, dans la salle Ra &apos; s al-Manaqiyah, dans la quatrième salle d'art, à partir de 14 h 30.",
+   "en": "♪ The season screens... ♪\nThe Tunisian theater memory is on the screen.\nAs part of the activities of the fourth session of the National Festival of the Tonsian Theatre, Musam of Innovation, the seasonal screens are from 31 October to 7 November 2026, at the Ra &apos; s al-Manaqiyah Hall at the Fourth Art Hall from 2.30 p.m."
+  },
+  "_events/auto/ig-theatre-national/2026-11-07-evenement.md": {
+   "cle": "11cbbe6ec517",
+   "fr": "♪ Les écrans de saison...\n♪\nLa mémoire du théâtre tunisien est à l'écran.\nDans le cadre des activités de la quatrième session du Festival national du Théâtre Tonsien, Musam of Innovation, les écrans saisonniers sont du 31 octobre au 7 novembre 2026, dans la salle Ra &apos; s al-Manaqiyah, dans la quatrième salle d'art, à partir de 14 h 30.",
+   "en": "♪ The season screens... ♪\nThe Tunisian theater memory is on the screen.\nAs part of the activities of the fourth session of the National Festival of the Tonsian Theatre, Musam of Innovation, the seasonal screens are from 31 October to 7 November 2026, at the Ra &apos; s al-Manaqiyah Hall at the Fourth Art Hall from 2.30 p.m."
+  },
+  "_events/auto/resident-advisor/2026-11-03-onwrd-frwrd.md": {
+   "cle": "17b6718a74ab",
+   "fr": "Ligne : Gusik\nONWRD FRWRD 1ère édition présentée par Dove Molotov b2b avec Gusik.\nMontrant le nouveau son du centre-ville de Tunis avec un nouveau système de son dub fait main.\nBasse, pauses, dub techno, et tout entre les deux.\nPousser le vrai son souterrain de la ville un pas à la fois.\n03/11 studio b52",
+   "ar": "Line-up : Gusik\nONWRD FRWRD 1st Edition presented by Dove Molotov b2b with Gusik.\nعرض الصوت الجديد في وسط مدينة تونس مع دوب جديد مصنوع يدوياً\n(باس) ، إستراحة ، (دوب تينو) وكل شيء بينه\nدفع الصوت الأرضي الحقيقي للمدينة خطوة واحدة في كل مرة\n03/11 استوديو b52"
+  },
+  "_events/auto/resident-advisor/2026-11-04-disco-baghded.md": {
+   "cle": "a88896a49aaa",
+   "fr": "Ligne : Mercredi\nDISCO BAGHDED revient pour son 2ème anniversaire!\nNous nous réunissons une fois de plus sous la fréquence de l'exploration sonore pour célébrer 2 ans de musique, d'énergie et de communauté.\nMarquez vos dates, entrez dans le rite, et laissez le bruit dehors.\nLINEUP: 99 : @skoutchi99 ORLOK : @marouthedude APACHON : @apachon_ N_O_M_A_D : @an0uar0 KALEIDO B2B MONK : @saafussa @ach_ref_999 7AGUI B2B KAMPER : @7aguii @_kamer_0 Rendez-vous à l'étage.\nRespectez l'espace, respectez-vous les uns les autres.\nLaissez voyager l'esprit",
+   "ar": "السطر: الأربعاء\nعودة (إيسكو باغيد) للذكرى السنوية الثانية\nإننا نجتمع مرة أخرى تحت تردد الاستكشاف الصوتي للاحتفال بسنتين من الموسيقى والطاقة والمجتمع.\nضعوا تواريخكم، وادخلوا إلى الطقوس، واتركوا الضوضاء في الخارج.\nLINEUP: 99 : @skoutchi99 ORLOK : @marouthedude APACHON : @apachon_ N_O_M_A_D : @an0uar0 KALEIDO B2B MONK : @saafussa @ach_ref_999 7AGUI B2B KAMPER : @7aguii\nإحترام للفضاء، إحترام بعضهم البعض.\nدع العقل يسافر"
+  },
+  "_events/auto/resident-advisor/2026-11-27-nomad-man-festival-2026.md": {
+   "cle": "074fdd79fce1",
+   "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
+   "ar": "Line-up : Emine (2), harrison manett, Kian OK, Omar Fayyad, Pan-J, Picasso\nلا داعي للعجلة، لا اشارة، مجرد وجود كامل في الكثبان مع الناس الطيبين.\nلقد جمعنا أربعة أيام من الإصغاء العميق، والصباح البطيء، والممارسات الصوفية، وضوء الصحراء، وبقينا الأمور بسيطة ومتعمدة.\nمصنوعة من قبل الأصدقاء، للأصدقاء.\nوُلد من حب مشترك للصحراء، إنّ (ناماد مان) هو معتكفٌ عنيف وانتقائي حيث تلتقي الأرواح وتتواصل دون أيّ إلهاء خارجي."
+  },
+  "_events/manuel/2026-11-05-fabrika-festival-14.md": {
+   "cle": "0df5272d95d9",
+   "ar": "مهرجان الموسيقى الإلكتروني. تاريخ ومكان مأخوذين من المهرجان العضوي إنستغرام (1 تشرين الثاني/نوفمبر 2026).",
+   "en": "Electronic Music Festival. Dates and venue taken from the festival's organic Instagram (1 November 2026)."
+  }
+ }
+}

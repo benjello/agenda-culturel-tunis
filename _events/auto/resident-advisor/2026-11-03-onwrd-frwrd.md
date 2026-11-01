@@ -11,6 +11,11 @@ link: "https://ra.co/events/2570365"
 source: "resident-advisor"
 source_name: "Resident Advisor (Tunisie)"
 image: "https://images.ra.co/a1cb9455b2806aeed11344a3e04b6926a0c072db.png"
+artists: ["Gusik"]
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Line-up : Gusik
+
+ONWRD FRWRD 1st Edition presented by Dove Molotov b2b with Gusik. Showcasing the new sound of downtown Tunis with a new handmade dub soundsystem. Bass, breaks, dub techno, and everything in between. Pushing the true underground sound of the city one step at a time. 03/11 studio b52

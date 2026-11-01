@@ -1,8 +1,8 @@
 ---
 title: "Direction Gabès pour les Oasis Days !"
 date: 2026-11-03
-venue: "La Boîte"
-ville: "tunis"
+venue: "Gabès, voir l'annonce"
+ville: "sud"
 category: "expo"
 link: "https://www.instagram.com/p/De9E39qtWHF/"
 source: "ig-la-boite"

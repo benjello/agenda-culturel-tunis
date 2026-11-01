@@ -25,11 +25,10 @@
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
-  "Entre les rives": "entre-les-rives",
   "La Boîte": "la-boite",
   "Shanti": "shanti",
-  "رواق الفنون – قاعة الفن الرابع": "lieu-74853a33",
-  "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-74853a33",
+  "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
+  "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Galerie TGM": "galerie-tgm",
   "Studio B52": "studio-b52",
   "Steps Club Sousse": "steps-club-sousse",
@@ -210,22 +209,6 @@
    "n": 2
   },
   {
-   "slug": "agorgi-gallery-sidi-bou-said",
-   "nom": "Agorgi Gallery, Sidi Bou Saïd",
-   "ville": "tunis",
-   "lat": 36.8697,
-   "lon": 10.3417,
-   "n": 2
-  },
-  {
-   "slug": "one-resort",
-   "nom": "One Resort",
-   "ville": "monastir",
-   "lat": 35.76372,
-   "lon": 10.7399,
-   "n": 2
-  },
-  {
    "slug": "cine-350-cite-de-la-culture",
    "nom": "Ciné 350 (Cité de la Culture)",
    "ville": "tunis",
@@ -274,6 +257,14 @@
    "n": 1
   },
   {
+   "slug": "agorgi-gallery-sidi-bou-said",
+   "nom": "Agorgi Gallery, Sidi Bou Saïd",
+   "ville": "tunis",
+   "lat": 36.8697,
+   "lon": 10.3417,
+   "n": 1
+  },
+  {
    "slug": "la-boite",
    "nom": "La Boîte",
    "ville": "tunis",
@@ -287,6 +278,14 @@
    "ville": "tunis",
    "lat": 36.82213,
    "lon": 10.18498,
+   "n": 1
+  },
+  {
+   "slug": "one-resort",
+   "nom": "One Resort",
+   "ville": "monastir",
+   "lat": 35.76372,
+   "lon": 10.7399,
    "n": 1
   },
   {

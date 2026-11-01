@@ -1,0 +1,4 @@
+---
+title: "Picasso"
+mots: ["picasso"]
+---
