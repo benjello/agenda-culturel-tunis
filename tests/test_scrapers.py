@@ -667,3 +667,12 @@ class Expositions(unittest.TestCase):
         self.assertEqual(len(evts), 1)
         e = evts[0]
         self.assertEqual((e.categorie, e.debut.date().isoformat(), e.fin.date().isoformat()), ("expo", "2026-10-29", "2026-11-28"))
+
+    def test_annee_par_jour_de_semaine(self):
+        import datetime as dt
+        from scrapers.sources.woocommerce_seances import seances
+        auj = dt.date(2026, 11, 1)
+        # vieux produit : le 3 février était un mardi en 2026 (pas en 2027)
+        self.assertEqual(seances(["Mar. 3 février - 19:15 - VO"], auj), ["2026-02-03 19:15"])
+        self.assertEqual(seances(["Dim. 1 novembre - 15:00 - VF"], auj), ["2026-11-01 15:00"])
+        self.assertEqual(seances(["Ven. 1 janvier - 20:00 - VF"], auj), ["2027-01-01 20:00"])
