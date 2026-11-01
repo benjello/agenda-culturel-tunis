@@ -93,6 +93,15 @@ Usage
 - [ ] Image prête à partager (WhatsApp, story) pour chaque événement.
 - [ ] Liste « Nouveau cette semaine ».
 
+- [x] Barre de recherche (artiste, lieu, film) sur l'accueil.
+- [ ] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
+- [x] Prix : « Gratuit » ou une fourchette lus dans les légendes et la presse, case « seulement gratuits ». À faire : lire le prix sur la page de chaque événement.
+- [ ] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
+- [ ] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
+- [x] Page Santé des sources (`/sante/`) : état, nombre d'événements, dernière nouveauté, sources silencieuses (rien depuis 30 jours), en panne, en pause.
+- [ ] Affichage léger pour les petits forfaits mobiles (images à la demande). Le mode sombre suit déjà le réglage du téléphone.
+- [x] Choix de la ville (Grand Tunis par défaut) et lien carte 📍 des lieux.
+
 Ouverture
 - [ ] API publique documentée (JSON des événements) pour médias, applis, chercheurs.
 - [ ] Langue de l'événement (français, arabe, anglais…).

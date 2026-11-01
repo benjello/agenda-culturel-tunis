@@ -99,3 +99,8 @@ table.sources small { color: var(--muted); }
 .villes { margin-bottom: 4px; }
 a.carte { text-decoration: none; color: inherit; border-bottom: 1px dotted var(--muted); }
 a.carte.seule { border: 0; margin-left: 4px; }
+.recherche { width: 100%; box-sizing: border-box; margin: 6px 0 4px; padding: 9px 12px; font-size: 1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); }
+.sante-resume { font-weight: 600; }
+table.sante code { font-size: .75rem; }
+.prix.gratuit { color: #1d6b3a; }
+.seul-gratuit { display: inline-flex; gap: 6px; align-items: center; font-size: .9rem; margin: 2px 0 8px; color: var(--muted); }

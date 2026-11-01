@@ -226,3 +226,20 @@ _COMMERCIAL = re.compile(r"\byoga\b|pilates|fitness|zumba|m[ée]ditation|sophrol
 
 def est_discret(titre: str) -> bool:
     return bool(_COMMERCIAL.search(titre))
+
+
+_GRATUIT = re.compile(r"entr[ée]e (?:libre|gratuite)|acc[eè]s (?:libre|gratuit)|\bgratuit|free entry|\bfree\b|"
+                      r"الدخول مجاني|دخول مجاني|مجانا", re.I)
+_MONTANT = re.compile(r"(?<![\d.,])(\d{1,4}(?:[.,]\d{1,3})?)\s*(?:DT|TND|dinars?|د\.?ت)\b", re.I)
+
+
+def prix_du_texte(texte: str) -> str:
+    """« Gratuit », « 20 DT » ou « 10 à 30 DT » d'après une légende ou un article, sinon ""."""
+    if _GRATUIT.search(texte or ""):
+        return "Gratuit"
+    montants = sorted({float(m.replace(",", ".")) for m in _MONTANT.findall(texte or "")} - {0.0})
+    montants = [m for m in montants if m < 1000]  # « 1500 DT » : sans doute un prix ou une bourse, pas un billet
+    if not montants:
+        return ""
+    f = lambda x: f"{x:g}"  # noqa: E731
+    return f"{f(montants[0])} DT" if len(montants) == 1 else f"{f(montants[0])} à {f(montants[-1])} DT"

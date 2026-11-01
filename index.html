@@ -7,6 +7,8 @@ layout: default
 </section>
 
 {% include choix-ville.html %}
+<input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" aria-label="Chercher" autocomplete="off">
+<label class="seul-gratuit"><input type="checkbox" id="gratuit"> Seulement les événements gratuits</label>
 <div class="filters" id="filters">
   <button class="active" data-filter="all">Tout</button>
   {% for c in site.data.categories %}<button data-filter="{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
@@ -145,7 +147,7 @@ layout: default
   function montrerFilms() {
     var n = 0;
     document.querySelectorAll('.film-fiche').forEach(function (f) {
-      var joue = f.dataset.jours.split(' ').indexOf(choixJour) >= 0;
+      var joue = f.dataset.jours.split(' ').indexOf(choixJour) >= 0 && correspond(f);
       f.hidden = !joue;
       if (joue) n++;
       f.querySelectorAll('.film-salles li').forEach(function (li) {
@@ -172,12 +174,28 @@ layout: default
   document.querySelectorAll('.programme[data-publie]').forEach(function (p) {
     p.hidden = p.dataset.publie < jour(-14);  // affiche de plus de deux semaines
   });
+  // Recherche : tous les mots tapés doivent se trouver dans la carte (titre, lieu…), sans tenir compte des accents.
+  var champ = document.getElementById('recherche'), mots = [];
+  function norme(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
+  function correspond(el) {
+    if (!mots.length) return true;
+    var t = el._texte || (el._texte = norme(el.textContent));
+    return mots.every(function (m) { return t.indexOf(m) >= 0; });
+  }
+  if (champ) champ.addEventListener('input', function () {
+    mots = norme(champ.value).split(/\s+/).filter(Boolean);
+    if (mots.length && filter === 'cinema') choisir('all');
+    refresh();
+  });
+  var caseGratuit = document.getElementById('gratuit');
+  if (caseGratuit) caseGratuit.addEventListener('change', function () { refresh(); });
   function refresh() {
     var shown = 0;
     document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
       var v = document.documentElement.dataset.ville || 'tunis';
       var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
-        (v === 'toutes' || (el.dataset.ville || 'tunis') === v);
+        (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) &&
+        (!caseGratuit || !caseGratuit.checked || el.hasAttribute('data-gratuit'));
       el.hidden = !visible;
       if (visible) shown++;
     });
