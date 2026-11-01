@@ -19,11 +19,11 @@
   },
   "cine-agora": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T10:35:29",
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_non_vide": "2026-11-01T10:40:56",
+    "dernier_passage": "2026-11-01T10:40:56",
+    "dernier_succes": "2026-11-01T10:40:56",
     "erreur": null,
-    "nb": 53,
+    "nb": 10,
     "ok": true,
     "premier_passage": "2026-11-01T10:35:29"
   },

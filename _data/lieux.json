@@ -52,20 +52,20 @@
  },
  "carte": [
   {
-   "slug": "lagora-la-marsa",
-   "nom": "L’Agora La Marsa",
-   "ville": "tunis",
-   "lat": 36.88133,
-   "lon": 10.32585,
-   "n": 57
-  },
-  {
    "slug": "mediatheque-institut-francais-de-tunis",
    "nom": "Médiathèque, Institut français de Tunis",
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
    "n": 23
+  },
+  {
+   "slug": "lagora-la-marsa",
+   "nom": "L’Agora La Marsa",
+   "ville": "tunis",
+   "lat": 36.88133,
+   "lon": 10.32585,
+   "n": 14
   },
   {
    "slug": "el-teatro",
@@ -185,6 +185,46 @@
    "ville": "sfax",
    "lat": 36.82572,
    "lon": 10.07976,
+   "n": 1
+  },
+  {
+   "slug": "galerie-institut-francais-de-sousse",
+   "nom": "Galerie, Institut français de Sousse",
+   "ville": "sousse",
+   "lat": 36.83351,
+   "lon": 10.10422,
+   "n": 1
+  },
+  {
+   "slug": "la-boite",
+   "nom": "La Boîte",
+   "ville": "tunis",
+   "lat": 36.52364,
+   "lon": 10.55862,
+   "n": 1
+  },
+  {
+   "slug": "shanti",
+   "nom": "Shanti",
+   "ville": "tunis",
+   "lat": 36.82213,
+   "lon": 10.18498,
+   "n": 1
+  },
+  {
+   "slug": "caserne-el-attarine",
+   "nom": "Caserne El Attarine",
+   "ville": "tunis",
+   "lat": 36.79763,
+   "lon": 10.1717,
+   "n": 1
+  },
+  {
+   "slug": "one-resort-monastir",
+   "nom": "One Resort, Monastir",
+   "ville": "monastir",
+   "lat": 35.76372,
+   "lon": 10.7399,
    "n": 1
   }
  ]
