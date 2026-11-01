@@ -19,11 +19,17 @@ def main(mots: list[str]) -> int:
         return 1
     vus = set()
     for m in mots:
-        items = appeler_apify("apify/instagram-scraper", {
-            "search": m, "searchType": "user", "searchLimit": 20,
-            "resultsType": "details", "resultsLimit": 1}, cle)
+        try:
+            items = appeler_apify("apify/instagram-scraper", {
+                "search": m, "searchType": "user", "searchLimit": 20,
+                "resultsType": "details", "resultsLimit": 1}, cle)
+        except Exception as exc:  # noqa: BLE001 — Apify en panne pour un mot : on passe au suivant
+            print(f"\n## {m} : erreur {exc}")
+            continue
         print(f"\n## {m} : {len(items)} compte(s)")
-        for i in items:
+        def derniere_pub(i):
+            return max((p.get("timestamp") or "" for p in i.get("latestPosts") or []), default="")
+        for i in sorted(items, key=derniere_pub, reverse=True):
             nom = i.get("username")
             if not nom or nom in vus:
                 continue
