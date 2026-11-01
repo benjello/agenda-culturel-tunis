@@ -21,6 +21,7 @@ import yaml
 
 from . import commun
 from .commun import RACINE, Film
+from . import doublons
 from .ecriture import ecrire_etat, ecrire_evenements, ecrire_films, lire_etat
 
 
@@ -65,7 +66,8 @@ def main(argv=None) -> int:
             if args.debug:
                 traceback.print_exc()
     ecrire_etat(etat)
-    print(f"{len(sources) - echecs}/{len(sources)} sources à jour.")
+    n = doublons.marquer(charger_sources())
+    print(f"{len(sources) - echecs}/{len(sources)} sources à jour, {n} doublon(s) masqué(s).")
     return 1 if sources and echecs == len(sources) else 0
 
 

@@ -16,7 +16,7 @@ layout: default
   les événements passés côté navigateur, pour que la page reste juste même si le
   site n'a pas été reconstruit depuis quelques jours.
 {%- endcomment -%}
-{%- assign events = site.events | sort: "date" -%}
+{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
 {%- assign current_month = "" -%}
 <div id="agenda">
 {%- for e in events -%}

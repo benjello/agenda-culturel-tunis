@@ -3,7 +3,7 @@ layout: null
 permalink: /agenda.ics
 ---
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
-{%- assign events = site.events | sort: "date" -%}
+{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//agenda-culturel-tunis//FR
