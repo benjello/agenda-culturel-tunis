@@ -88,7 +88,10 @@ def regrouper(dossier: Path = DOSSIER_AUTO) -> list[dict]:
     return films
 
 
-def ecrire(dossier: Path = DOSSIER_AUTO, fichier: Path = FICHIER) -> int:
+def ecrire(dossier: Path = DOSSIER_AUTO, fichier: Path = FICHIER, enrichir: bool = True) -> int:
     films = regrouper(dossier)
+    if enrichir:
+        from . import wikidata
+        wikidata.completer(films, morceaux)  # genres, âge, IMDb, film tunisien
     fichier.write_text(json.dumps(films, ensure_ascii=False, indent=1) + "\n")
     return len(films)

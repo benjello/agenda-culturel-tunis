@@ -70,3 +70,8 @@ table.sources small { color: var(--muted); }
 .film-salles { list-style: none; margin: 8px 0 0; padding: 0; }
 .film-salles li { padding: 3px 0; font-size: .95rem; }
 .perime-court { font-size: .8rem; color: #6b4b00; }
+.badges { display: flex; flex-wrap: wrap; gap: 4px; margin: 2px 0 4px; }
+.badges:empty { display: none; }
+.badge { font-size: .75rem; padding: 1px 7px; border-radius: 4px; background: var(--line); color: var(--fg); }
+.badge.age { background: #2c3e50; color: #fff; font-weight: 600; }
+.badge.tunisien { background: #c0392b; color: #fff; }
