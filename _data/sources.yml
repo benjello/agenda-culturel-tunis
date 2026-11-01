@@ -707,7 +707,7 @@
   type: agenda
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false  # le flux ne renvoie aucun article lisible (protection anti-robots ?), à revoir
   note: "Publie aussi « Agenda culturel : où sortir… »."
 
 - id: presse-kapitalis
