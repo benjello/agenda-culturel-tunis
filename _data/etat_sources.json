@@ -1,43 +1,43 @@
 {
   "el-teatro": {
-    "dernier_passage": "2026-11-01T06:12:50",
-    "dernier_succes": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
+    "dernier_succes": "2026-11-01T06:15:21",
     "erreur": null,
     "nb": 7,
     "ok": true
   },
   "goethe-tunis": {
-    "dernier_passage": "2026-11-01T06:12:50",
-    "dernier_succes": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
+    "dernier_succes": "2026-11-01T06:15:21",
     "erreur": null,
     "nb": 0,
     "ok": true
   },
   "institut-francais": {
-    "dernier_passage": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
     "ok": false
   },
   "opera-tunis": {
-    "dernier_passage": "2026-11-01T06:12:50",
-    "dernier_succes": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
+    "dernier_succes": "2026-11-01T06:15:21",
     "erreur": null,
     "nb": 0,
     "ok": true
   },
   "pathe-azur-city": {
-    "dernier_passage": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-azur-city",
     "ok": false
   },
   "pathe-tunis-city": {
-    "dernier_passage": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city",
     "ok": false
   },
   "teskerti": {
-    "dernier_passage": "2026-11-01T06:12:50",
-    "dernier_succes": "2026-11-01T06:12:50",
+    "dernier_passage": "2026-11-01T06:15:21",
+    "dernier_succes": "2026-11-01T06:15:21",
     "erreur": null,
     "nb": 14,
     "ok": true

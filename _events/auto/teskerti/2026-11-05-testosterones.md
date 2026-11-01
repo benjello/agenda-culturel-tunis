@@ -1,7 +1,7 @@
 ---
-title: "Testostérones - Le 5/11"
+title: "Testostérones"
 date: 2026-11-05 17:00
-venue: "Espace pro"
+venue: "Teskerti"
 category: "theatre"
 price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/testosterones-le-511"

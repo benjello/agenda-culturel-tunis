@@ -1,7 +1,7 @@
 ---
 title: "La chaussure"
 date: 2026-11-01 19:00
-venue: "Espace pro"
+venue: "Teskerti"
 category: "theatre"
 price: "À partir de 20 DT"
 link: "https://teskerti.tn/evenement/la-chaussure"
