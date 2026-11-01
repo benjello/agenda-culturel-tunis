@@ -1685,29 +1685,12 @@
     resultats: 8
   note: Galerie d'art (adresse à confirmer au premier passage). Proposé par Mahdi.
 
-# Sources gratuites ajoutées le 1er nov. 2026 (presse culture, universités et instituts d'art). Sans Apify.
+# Presse culture ajoutée le 1er nov. 2026 (gratuit, sans Apify). Testés sans succès depuis GitHub :
+# sites des universités et instituts d'art (*.rnu.tn injoignables), Managers, WebManagerCenter, Tuniscope.
 
 - id: presse-economiste-maghrebin
   nom: L'Économiste Maghrébin (culture)
   url: https://www.leconomistemaghrebin.com/category/culture/feed/
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: true
-
-- id: presse-managers
-  nom: Managers (culture)
-  url: https://managers.tn/category/culture/feed/
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: true
-
-- id: presse-wmc
-  nom: WebManagerCenter (culture)
-  url: https://www.webmanagercenter.com/category/culture/feed/
   type: agenda
   genre: presse
   scraper: presse
@@ -1724,136 +1707,10 @@
   actif: true
 
 - id: presse-leaders
-  nom: Leaders (culture)
+  nom: Leaders
   url: https://www.leaders.com.tn/rss
   type: agenda
   genre: presse
   scraper: presse
   categorie: autre
   actif: true
-
-- id: presse-tuniscope
-  nom: Tuniscope
-  url: https://www.tuniscope.com/rss
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: true
-
-- id: univ-isbat
-  nom: Institut supérieur des beaux-arts de Tunis (ISBAT)
-  url: "http://www.isbat.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: expo
-  actif: true
-  options:
-    lieu: "Institut supérieur des beaux-arts de Tunis"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-isad
-  nom: Institut supérieur d'art dramatique de Tunis (ISAD)
-  url: "http://www.isad.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: theatre
-  actif: true
-  options:
-    lieu: "Institut supérieur d'art dramatique, Tunis"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-ismt
-  nom: Institut supérieur de musique de Tunis (ISMT)
-  url: "http://www.ismt.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: musique
-  actif: true
-  options:
-    lieu: "Institut supérieur de musique de Tunis"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-isamm
-  nom: ISAMM (arts multimédia, La Manouba)
-  url: "http://www.isamm.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: cinema
-  actif: true
-  options:
-    lieu: "ISAMM, La Manouba"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-manouba
-  nom: Université de la Manouba
-  url: "http://www.uma.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: conference
-  actif: true
-  options:
-    lieu: "Université de la Manouba"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-tunis
-  nom: Université de Tunis
-  url: "http://www.utunis.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: conference
-  actif: true
-  options:
-    lieu: "Université de Tunis"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-isams
-  nom: Institut supérieur des arts et métiers de Sfax (ISAMS)
-  url: "http://www.isams.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: expo
-  actif: true
-  options:
-    lieu: "ISAMS, Sfax"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-isms
-  nom: Institut supérieur de musique de Sfax (ISMS)
-  url: "http://www.isms.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: musique
-  actif: true
-  options:
-    lieu: "Institut supérieur de musique de Sfax"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
-
-- id: univ-isbas
-  nom: Institut supérieur des beaux-arts de Sousse
-  url: "http://www.isbas.rnu.tn/index.php?format=feed&type=rss"
-  type: lieu
-  genre: institution
-  scraper: rss
-  categorie: expo
-  actif: true
-  options:
-    lieu: "Institut supérieur des beaux-arts de Sousse"
-    garder: 'exposition|vernissage|concert|spectacle|projection|festival|journ[ée]es|r[ée]cital|pi[èe]ce|th[ée][âa]tre|ciné|conf[ée]rence publique|rencontre|معرض|حفل|عرض|مهرجان|أيام'
-  note: Flux Joomla du site (seuls les articles qui annoncent une date à venir passent).
