@@ -400,3 +400,16 @@ class Conferences(unittest.TestCase):
         evts = rss.depuis_flux(fixture("irmc.xml"), self.sources()["irmc"])
         self.assertEqual(len(evts), 1)
         self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 10, 20, 17, 30))
+
+
+class TunisEvents(unittest.TestCase):
+    def test_concerts_grand_tunis(self):
+        from scrapers.sources import tunis_events
+        src = {"id": "t", "nom": "t", "url": "https://tunis.events/concerts", "categorie": "musique",
+               "options": {"pages": [{"url": "https://tunis.events/concerts", "categorie": "musique"}]}}
+        with faux_reseau({"concerts": "tunis-events-concerts.html"}):
+            evts = tunis_events.recuperer(src)
+        self.assertEqual([e.titre for e in evts], ["Jaou Nights"])
+        self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 11, 21, 22, 0))
+        self.assertEqual(evts[0].categorie, "musique")
+        self.assertEqual(evts[0].image, "https://tunis.events/storage/a.jpg")

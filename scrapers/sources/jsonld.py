@@ -48,8 +48,12 @@ def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
         if isinstance(offre, list):
             offre = offre[0] if offre else {}
         prix = f"{offre.get('price')} {offre.get('priceCurrency', '')}".strip() if offre.get("price") else ""
+        image = o.get("image")
+        image = image[0] if isinstance(image, list) and image else image
+        image = image.get("url") if isinstance(image, dict) else image
         res.append(Evenement(titre=propre(o["name"]), debut=debut, fin=_date(o.get("endDate")),
-                             lien=o.get("url") or url_page, lieu=lieu, adresse=adresse, prix=prix))
+                             lien=o.get("url") or url_page, lieu=lieu, adresse=adresse, prix=prix,
+                             image=image if isinstance(image, str) else ""))
     return res
 
 
