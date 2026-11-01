@@ -1,60 +1,42 @@
-# Liste à sonder une fois (bilan « ambassades, étudiants, associations »).
+# Liste à sonder une fois (bilan « musique et clubs du Grand Tunis »).
 # facebook : pages dont on veut la date de la dernière publication
 # instagram : comptes connus (profil + dernières publications)
 # chercher_instagram : noms à chercher sur Instagram pour trouver les comptes
 # sites : pages web que nos outils de recherche ne peuvent pas lire (robots)
 facebook:
-  - FestivalMedina
-  - IICTunisi-192973730733919
-  - BritishCouncilTunisia
-  - EUTunisie
-  - usembassytunis
-  - LArtRueTunisie
-  - IRMC.Tunis
-  - Club.Tahar.Haddad
-  - operadetunis
-  - citedelaculture.tn
-  - CervantesTunez
-  - JapanEmbassyTunisia
+  - Habibi-Tunis-1579917178797578
+  - downtown.vbs
+  - larachidia
   - TheatreNationalTunisien
   - cmam.ennejma.ezzahra
-  - larachidia
-  - FTCC.Tunisie
+  - AgoraLaMarsa
+  - JazzClubDeTunis
+  - b7l9art
+  - theatremunicipaltunis
 instagram:
-  - iictunisi
-  - lartruetunisie
-  - ue_tunisie
-  - usembassytunis
+  - habibidowntown_
+  - downtown_vibes_tunis
+  - b7l9_tunis
 chercher_instagram:
-  - Festival de la Médina Tunis
-  - La Rachidia
-  - Club Tahar Haddad
-  - Théâtre de l'Opéra de Tunis
-  - Cité de la Culture Tunis
-  - Instituto Cervantes Túnez
-  - Ambassade du Japon en Tunisie
-  - Korean Embassy Tunisia
+  - Habibi Downtown Tunis
+  - La Rachidia Tunis
+  - Conservatoire de musique Tunis
+  - Institut supérieur de musique Tunis
+  - Théâtre municipal de Tunis
   - Théâtre National Tunisien
-  - Ennejma Ezzahra
-  - ciné-club Tunis
-  - FTCC ciné-clubs
-  - FTCA cinéastes amateurs
-  - ISAD Tunis
-  - ESAC Gammarth
-  - ISBAT beaux-arts Tunis
-  - Mass'art Tunis
-  - Paparouni cirque
-  - Biben Lemdina
-  - Spazio Italia Tunisi
-  - Maison de la culture Ibn Rachiq
-  - Délégation affaires culturelles Tunis
+  - Agora La Marsa
+  - Jazz Club de Tunis
+  - Zephyr La Marsa
+  - Le Rio Tunis
+  - Yuka Gammarth
+  - Cercle Club Gammarth
+  - Aina Gammarth
+  - BSMNT Gammarth
+  - O Club La Goulette
+  - Rock N Rolla La Goulette
+  - Eddisco Tunis
 sites:
-  - https://tunez.cervantes.es/fr/default.shtm
-  - https://overseas.mofa.go.kr/tn-fr/index.do
-  - https://www.citedelaculture.tn/
-  - https://www.operadetunis.tn/
-  - https://iictunisi.esteri.it/it/gli_eventi/calendario/
-  - https://iictunisi.esteri.it/it/feed/
-  - https://irmcmaghreb.org/feed/
-  - https://tn.usembassy.gov/feed/
-  - https://lartrue.org/fr/agenda
+  - https://www.out.tn/
+  - https://tunis.events/concerts
+  - https://tunis.events/billetterie-soiree-club
+  - https://www.cmam.tn/home/en/accueil.html
