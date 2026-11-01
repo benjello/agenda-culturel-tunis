@@ -1608,3 +1608,18 @@
     lieu: "Cité des sciences de Tunis"
     garder: 'observation|soirée|éclipse|conférence|atelier|nuit des étoiles|رصد|سهرة|محاضرة'
   note: Flux RSS lisible depuis GitHub (bilan sciences du 1er nov.). Surtout des calculs (Aïd, éclipses), peu d'événements.
+
+- id: ig-lart-rue
+  nom: L'Art Rue (Instagram)
+  url: https://www.instagram.com/lartruetunisie/
+  type: lieu
+  genre: collectif
+  scraper: instagram
+  categorie: autre
+  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "lartruetunisie"
+    lieu: "L'Art Rue, Dar Bach Hamba, Médina de Tunis"
+    resultats: 8
+  note: Association d'art contemporain de la médina (Dream City, résidences, ateliers). Proposé par Mahdi.
