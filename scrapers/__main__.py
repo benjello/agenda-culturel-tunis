@@ -20,12 +20,9 @@ import traceback
 import yaml
 
 from . import commun
-from .commun import RACINE, EnAttente, Film
+from .commun import RACINE, EnAttente
 from . import doublons
-from .ecriture import ecrire_etat, ecrire_evenements, ecrire_films, ecrire_publications, lire_etat
-
-
-SCRAPERS_PUBLICATIONS = {"facebook_programmes"}
+from .ecriture import ecrire, ecrire_etat, lire_etat
 
 
 def charger_sources() -> list[dict]:
@@ -35,14 +32,6 @@ def charger_sources() -> list[dict]:
 def lancer(source: dict):
     module = importlib.import_module(f".sources.{source['scraper']}", __package__)
     return module.recuperer(source)
-
-
-def ecriture_propre(source: dict):
-    try:
-        module = importlib.import_module(f".sources.{source['scraper']}", __package__)
-    except ModuleNotFoundError:
-        return None
-    return getattr(module, "ecrire", None)
 
 
 def main(argv=None) -> int:
@@ -75,14 +64,6 @@ def main(argv=None) -> int:
             resultat = lancer(s)
             # Une liste vide n'est pas une panne : la source peut n'avoir rien à venir.
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
-            if ecriture_propre(s):  # le scraper range lui-même ses résultats
-                ecrire = ecriture_propre(s)
-            elif s["scraper"] in SCRAPERS_PUBLICATIONS:
-                ecrire = ecrire_publications
-            elif s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film)):
-                ecrire = ecrire_films
-            else:
-                ecrire = ecrire_evenements
             n = ecrire(s, resultat)
             e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
             print(f"✓ {s['id']} : {n}")

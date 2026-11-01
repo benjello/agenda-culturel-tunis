@@ -1,7 +1,8 @@
 """Repère les événements annoncés par plusieurs sources (ex. El Teatro et Teskerti).
 
 Deux événements sont considérés comme le même s'ils commencent au même moment
-dans le même lieu. On garde celui de la source la plus proche du lieu (le site du
+dans le même lieu. Sans heure (films, expositions : seulement un jour), il faut
+en plus que le titre commence pareil. On garde celui de la source la plus proche du lieu (le site du
 lieu avant une billetterie, une billetterie avant un agrégateur) ; les autres sont
 marqués « doublon » et ne s'affichent pas, mais leur lien est ajouté à l'événement
 gardé (« Aussi sur : Teskerti »).
@@ -59,7 +60,11 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
     groupes: dict[tuple, list] = {}
     for e in evts:
         c = e[1]
-        groupes.setdefault((str(c["date"])[:16], _cle_lieu(c.get("venue", ""))), []).append(e)
+        date = str(c["date"])[:16]
+        cle = (date, _cle_lieu(c.get("venue", "")))
+        if len(date) <= 10 or date.endswith("00:00"):
+            cle += (slug(str(c.get("title", "")))[:8],)
+        groupes.setdefault(cle, []).append(e)
     n = 0
     for groupe in groupes.values():
         groupe.sort(key=lambda e: (PRIORITE.get(types.get(e[1].get("source")), 3), e[1].get("source", "")))

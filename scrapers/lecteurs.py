@@ -12,7 +12,7 @@ import json
 import re
 import unicodedata
 
-from .commun import MOIS, RACINE, Film, propre, slug
+from .commun import MOIS, RACINE, Evenement, film, propre, slug
 
 _MOIS = "|".join(sorted(MOIS, key=len, reverse=True))
 # « Vendredi 30 octobre à 19h », « 1er novembre », « ler novembre » (OCR), sans année.
@@ -56,14 +56,15 @@ def periode(texte: str) -> list[str]:
 
 
 def titres_connus() -> list[str]:
-    """Titres des films des autres cinémas (fichiers _data/cinemas/)."""
-    titres = []
-    for f in sorted((RACINE / "_data" / "cinemas").glob("*.json")):
-        try:
-            titres += [x["titre"] for x in json.loads(f.read_text()).get("films", [])]
-        except (json.JSONDecodeError, KeyError):
-            continue
-    return titres
+    """Titres des films déjà dans l'agenda (événements « film: true » des autres sources)."""
+    titres = set()
+    for f in sorted((RACINE / "_events" / "auto").glob("*/*.md")):
+        texte = f.read_text()
+        if "\nfilm: true\n" in texte:
+            m = re.search(r'^title: (".*")$', texte, re.M)
+            if m:
+                titres.add(json.loads(m.group(1)))
+    return sorted(titres)
 
 
 def _cle(titre: str) -> str:
@@ -100,7 +101,7 @@ def normaliser(texte: str) -> str:
     return unicodedata.normalize("NFKC", texte)
 
 
-def liste_films(publications: list[dict], connus: list[str]) -> list[Film]:
+def liste_films(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Programme de la semaine en texte : « À l'affiche du 02 au 09 Novembre » + une ligne « 🎬 Titre » par film.
     (Alhambra Zéphyr.) Seule la publication la plus récente qui a ce format compte."""
     for p in publications:
@@ -108,13 +109,13 @@ def liste_films(publications: list[dict], connus: list[str]) -> list[Film]:
         jours = _a_venir(periode(texte))
         lignes = [propre(l.split("🎬", 1)[1]) for l in texte.splitlines() if "🎬" in l]
         if jours and lignes:
-            return [Film(titre=titre_connu(t, connus) or t, lien=p["lien"], jours=jours) for t in lignes if t]
+            return [film(titre_connu(t, connus) or t, p["lien"], lieu, jours) for t in lignes if t]
     return []
 
 
-def un_film_par_affiche(publications: list[dict], connus: list[str]) -> list[Film]:
+def un_film_par_affiche(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Une affiche par film, avec ses jours de projection (Ciné 350)."""
-    films: dict[str, Film] = {}
+    films: dict[str, dict] = {}
     for p in publications:
         texte, ocr = normaliser(p.get("texte", "")), p.get("ocr") or ""
         ref = dt.date.fromisoformat(p["date"]) if p.get("date") else dt.date.today()
@@ -130,9 +131,9 @@ def un_film_par_affiche(publications: list[dict], connus: list[str]) -> list[Fil
             m = re.search(r"[«\"“]\s*([^»\"”]{2,60}?)\s*[»\"”]", texte)
             titre = m.group(1) if m else None
         titre = titre or propre(re.sub(r"[^\w\s'’:-]", " ", texte.splitlines()[0] if texte else "")) or "Film"
-        f = films.setdefault(slug(titre) or titre, Film(titre=titre, lien=p["lien"]))
-        f.jours = sorted(set(f.jours) | set(jours))
-    return list(films.values())
+        f = films.setdefault(slug(titre) or titre, {"titre": titre, "lien": p["lien"], "jours": set()})
+        f["jours"] |= set(jours)
+    return [film(f["titre"], f["lien"], lieu, f["jours"]) for f in films.values()]
 
 
 LECTEURS = {"liste_films": liste_films, "un_film_par_affiche": un_film_par_affiche}

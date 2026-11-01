@@ -30,7 +30,6 @@ import subprocess
 
 from .. import lecteurs
 from ..commun import RACINE, EnAttente, Publication, _session, propre
-from ..ecriture import ecrire_films, ecrire_publications
 from .facebook import appeler_apify, _date
 
 ACTEUR = "apify/facebook-posts-scraper"
@@ -81,7 +80,19 @@ def lire_image(chemin) -> str:
     return "\n".join(ligne.strip() for ligne in r.stdout.splitlines() if ligne.strip())
 
 
-def recuperer(source: dict) -> list[Publication]:
+def recuperer(source: dict) -> list:
+    """Les dernières publications avec image, et les films qu'un lecteur y trouve."""
+    publications = lire_publications(source)
+    lecteur = lecteurs.LECTEURS.get(source.get("options", {}).get("lecteur", ""))
+    if not lecteur:
+        return publications
+    lieu = source.get("options", {}).get("lieu") or source["nom"]
+    films = [f for f in lecteur([p.en_dict() for p in publications], lecteurs.titres_connus(), lieu) if f]
+    print(f"  {source['id']} : {len(films)} film(s) lu(s) sur le programme")
+    return publications + films
+
+
+def lire_publications(source: dict) -> list[Publication]:
     cle = os.environ.get("APIFY_TOKEN")
     if not cle:
         raise EnAttente("clé APIFY_TOKEN pas encore configurée")
@@ -124,13 +135,3 @@ def recuperer(source: dict) -> list[Publication]:
             f.unlink()
     return publications
 
-
-def ecrire(source: dict, publications: list[Publication]) -> int:
-    """Garde les publications (affiches) et, si la salle a un lecteur, la liste des films."""
-    ecrire_publications(source, publications)
-    lecteur = lecteurs.LECTEURS.get(source.get("options", {}).get("lecteur", ""))
-    if not lecteur:
-        return len(publications)
-    films = lecteur([p.en_dict() for p in publications], lecteurs.titres_connus())
-    print(f"  {source['id']} : {len(films)} film(s) lu(s) sur le programme")
-    return ecrire_films(source, films)

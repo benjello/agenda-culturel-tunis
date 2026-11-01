@@ -18,6 +18,10 @@ FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
 
 
+def jours(e):
+    return [d.date().isoformat() for d in e.seances]
+
+
 def fixture(nom):
     return (FIX / nom).read_text().replace("{AN}", str(FUTUR))
 
@@ -140,7 +144,8 @@ class Pathe(unittest.TestCase):
         today = dt.date(2026, 11, 1)
         seances = {"shows": {"el-sett": {"days": {"2026-11-02": {}, "2026-12-30": {}}}, "vieux": {"days": {"2020-01-01": {}}}}}
         films = pathe.films_depuis_api(seances, {"el-sett": {"title": "El Sett", "duration": 155}}, today)
-        self.assertEqual([(f.titre, f.jours, f.duree) for f in films], [("El Sett", ["2026-11-02"], 155)])
+        self.assertEqual([(f.titre, jours(f), f.duree, f.film, f.categorie) for f in films],
+                         [("El Sett", ["2026-11-02"], 155, True, "cinema")])
 
 
 class Ecriture(unittest.TestCase):
@@ -289,14 +294,13 @@ class TunisEventsCinema(unittest.TestCase):
         html = '<script type="application/ld+json">' + json.dumps(objets) + "</script>"
         source = {"id": "tunis-events-cinema", "nom": "tunis.events", "url": "https://tunis.events/cinema"}
         with mock.patch.object(commun, "telecharger", return_value=html):
-            salles = tunis_events_cinema.recuperer(source)
-        self.assertEqual(set(salles), {"CinéMadart", "Pathé Tunis City"})  # Sousse écarté
-        self.assertEqual(salles["CinéMadart"]["films"]["bakma"].jours, [f"{FUTUR}-11-01", f"{FUTUR}-11-02", f"{FUTUR}-11-03"])
-        with tempfile.TemporaryDirectory() as d, mock.patch.object(tunis_events_cinema, "DOSSIER_CINEMAS", Path(d)):
-            self.assertEqual(tunis_events_cinema.ecrire(source, salles), 2)
-            data = json.loads((Path(d) / "tunis-events-cinemadart.json").read_text())
-        self.assertEqual(data["films"][0]["titre"], "BAKMA")
-        self.assertEqual(data["via"], "tunis.events")
+            films = tunis_events_cinema.recuperer(source)
+        par_salle = {(f.lieu, f.titre): f for f in films}
+        self.assertEqual(set(par_salle), {("CinéMadart", "BAKMA"), ("Pathé Tunis City", "BAKMA")})  # Sousse écarté
+        madart = par_salle[("CinéMadart", "BAKMA")]  # « Bakma » fusionné avec « BAKMA »
+        self.assertEqual(jours(madart), [f"{FUTUR}-11-01", f"{FUTUR}-11-02", f"{FUTUR}-11-03"])
+        self.assertTrue(madart.film)
+        self.assertEqual(madart.image, "https://api.tunis.events/storage/a.jpg")
 
 
 class Lecteurs(unittest.TestCase):
@@ -309,8 +313,9 @@ class Lecteurs(unittest.TestCase):
                  "🎬 𝗪𝗲𝗲𝗸𝗲𝗻𝗱\n🎬 𝗗𝗮𝗿 𝗘𝗹 𝟯𝗲𝗿𝘀 دار العرس\n🎫 Les tickets sont disponibles")
         films = self.l.liste_films([{"texte": texte, "lien": "https://fb/p/1"}], ["Dar El 3ers - دار العرس"])
         self.assertEqual([f.titre for f in films], ["Weekend", "Dar El 3ers - دار العرس"])
-        self.assertEqual(len(films[0].jours), 8)
-        self.assertEqual(films[0].jours[0], f"{FUTUR}-11-02")
+        self.assertEqual(len(films[0].seances), 8)
+        self.assertEqual(jours(films[0])[0], f"{FUTUR}-11-02")
+        self.assertEqual(films[0].lieu, "")
 
     def test_un_film_par_affiche(self):
         pubs = [
@@ -321,7 +326,7 @@ class Lecteurs(unittest.TestCase):
         ]
         films = self.l.un_film_par_affiche(pubs, ["BAKMA - بكمة"])
         self.assertEqual(films[0].titre, "Le Maître du kabuki")
-        self.assertEqual(films[0].jours, [f"{FUTUR}-10-30", f"{FUTUR}-11-01"])
+        self.assertEqual(jours(films[0]), [f"{FUTUR}-10-30", f"{FUTUR}-11-01"])
         self.assertEqual(films[1].titre, "BAKMA - بكمة")  # rapproché du titre connu, malgré les voyelles
 
     def test_annee_deduite(self):

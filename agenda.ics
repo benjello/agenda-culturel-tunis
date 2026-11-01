@@ -3,7 +3,8 @@ layout: null
 permalink: /agenda.ics
 ---
 {%- assign today = site.time | date: "%Y-%m-%d" -%}
-{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+{%- comment -%} Les films à l'affiche (un par salle et par jour) ne vont pas dans le calendrier. {%- endcomment -%}
+{%- assign events = site.events | where_exp: "e", "e.doublon != true" | where_exp: "e", "e.film != true" | sort: "date" -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//agenda-culturel-tunis//FR

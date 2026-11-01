@@ -10,7 +10,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
-from ..commun import Film, page, propre, telecharger_json
+from ..commun import Evenement, film, page, propre, telecharger_json
 
 BASE = "https://www.pathe.tn"
 JOURS = 7
@@ -23,7 +23,7 @@ def _affiche(info: dict):
     return p if isinstance(p, str) and p.startswith("http") else None
 
 
-def films_depuis_api(seances: dict, catalogue: dict, aujourd_hui: dt.date) -> list[Film]:
+def films_depuis_api(seances: dict, catalogue: dict, aujourd_hui: dt.date, salle: str = "Pathé") -> list[Evenement]:
     debut, fin = aujourd_hui.isoformat(), (aujourd_hui + dt.timedelta(days=JOURS)).isoformat()
     films = []
     for slug_film, s in (seances.get("shows", seances) or {}).items():
@@ -31,14 +31,15 @@ def films_depuis_api(seances: dict, catalogue: dict, aujourd_hui: dt.date) -> li
         if not jours:
             continue
         info = catalogue.get(slug_film, {})
-        films.append(Film(
-            titre=info.get("title") or slug_film.replace("-", " ").capitalize(),
-            lien=f"{BASE}/fr/films/{slug_film}", jours=jours, duree=info.get("duration"),
-            genres=info.get("genres") or [], affiche=_affiche(info)))
+        films.append(film(
+            info.get("title") or slug_film.replace("-", " ").capitalize(),
+            f"{BASE}/fr/films/{slug_film}", salle, jours, duree=info.get("duration"),
+            genres=info.get("genres") or [], image=_affiche(info) or ""))
     return films
 
 
-def films_depuis_html(soup) -> list[Film]:
+def films_depuis_html(soup, salle: str = "Pathé") -> list[Evenement]:
+    """Repli : la page ne donne pas les jours ; on compte le film à l'affiche aujourd'hui."""
     films, vus = [], set()
     for a in soup.find_all("a", href=re.compile(r"^/fr/films/[a-z0-9-]+")):
         slug_film = a["href"].split("/")[3]
@@ -46,12 +47,13 @@ def films_depuis_html(soup) -> list[Film]:
         if slug_film in vus or not titre:
             continue
         vus.add(slug_film)
-        films.append(Film(titre=titre, lien=f"{BASE}/fr/films/{slug_film}"))
+        films.append(film(titre, f"{BASE}/fr/films/{slug_film}", salle, [dt.date.today().isoformat()]))
     return films
 
 
-def recuperer(source: dict) -> list[Film]:
+def recuperer(source: dict) -> list[Evenement]:
     cinema = source["options"]["cinema"]
+    salle = source["options"].get("lieu") or source["nom"]
     try:
         cat = telecharger_json(f"{BASE}/api/shows?language=fr")
         liste = cat.get("shows", cat) if isinstance(cat, dict) else cat
@@ -60,12 +62,12 @@ def recuperer(source: dict) -> list[Film]:
         catalogue = {}
     try:
         films = films_depuis_api(telecharger_json(f"{BASE}/api/cinema/{cinema}/shows?language=fr"),
-                                 catalogue, dt.date.today())
+                                 catalogue, dt.date.today(), salle)
         if films:
             return films
     except Exception:  # noqa: BLE001
         pass
-    films = films_depuis_html(page(f"{BASE}/fr/cinemas/{cinema}"))
+    films = films_depuis_html(page(f"{BASE}/fr/cinemas/{cinema}"), salle)
     if not films:
         raise RuntimeError("aucun film trouvé, ni par l'API ni sur la page du cinéma")
     return films

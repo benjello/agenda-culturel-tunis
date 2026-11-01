@@ -16,7 +16,50 @@ layout: default
   les événements passés côté navigateur, pour que la page reste juste même si le
   site n'a pas été reconstruit depuis quelques jours.
 {%- endcomment -%}
-{%- assign events = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+{%- assign tous = site.events | where_exp: "e", "e.doublon != true" | sort: "date" -%}
+{%- assign films = tous | where_exp: "e", "e.film == true" -%}
+{%- assign events = tous | where_exp: "e", "e.film != true" -%}
+{%- assign salles = films | group_by: "venue" | sort: "name" -%}
+
+{%- comment -%}
+  Les films à l'affiche sont des événements comme les autres (catégorie cinéma), mais
+  on les range par salle plutôt que par date : ils ne s'affichent qu'avec le thème Cinéma.
+{%- endcomment -%}
+{%- if films.size > 0 %}
+<button type="button" class="resume-films" id="resume-films" data-category="cinema-resume">
+  🎬 <strong>Au cinéma</strong> : {{ films.size }} films à l'affiche dans {{ salles.size }} salles →
+</button>
+<div id="cinema-salles" hidden>
+  {%- for salle in salles %}
+  {%- assign src = salle.items[0].source %}{% assign etat = site.data.etat_sources[src] %}
+  <section class="salle" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
+    <h2>{{ salle.name }}</h2>
+    {%- if salle.items[0].address %}<p class="meta">{{ salle.items[0].address }}</p>{% endif %}
+    {%- assign tries = salle.items | sort: "title" %}
+    {%- for e in tries %}{% include event-card.html event=e %}{% endfor %}
+    <p class="perime" hidden>⚠️ Programme pas vérifié depuis plusieurs jours : il est peut-être périmé, vérifiez auprès de la salle.</p>
+    <p class="updated">Source : {{ salle.items[0].source_name }}{% if etat.dernier_succes %}, vérifié le {% include date-fr.html date=etat.dernier_succes %}{% endif %}.</p>
+  </section>
+  {%- endfor %}
+  {%- assign programmes = site.data.programmes | default: empty -%}
+  {%- if programmes.size > 0 %}
+  <section class="programmes">
+    <h2>Programmes publiés sur Facebook</h2>
+    {%- for entry in programmes -%}{%- assign c = entry[1] -%}
+    {%- if c.publications.size > 0 %}{% assign p = c.publications[0] %}
+    <details class="programme" data-publie="{{ p.date }}">
+      <summary>{{ c.nom }} · publié le {% include date-fr.html date=p.date %}</summary>
+      <p><a href="{{ p.lien }}" rel="noopener">Voir la publication sur Facebook</a></p>
+      {%- for img in p.images %}<img class="programme-image" src="{{ img | relative_url }}" alt="Programme de {{ c.nom }}" loading="lazy">{% endfor %}
+      {%- if p.texte != "" %}<p class="programme-texte">{{ p.texte | escape | truncate: 600 | newline_to_br }}</p>{% endif %}
+    </details>
+    {%- endif -%}
+    {%- endfor %}
+  </section>
+  {%- endif %}
+</div>
+{%- endif %}
+
 {%- assign current_month = "" -%}
 <div id="agenda">
 {%- for e in events -%}
@@ -36,28 +79,53 @@ layout: default
 
 <script>
 (function () {
-  var today = new Date().toISOString().slice(0, 10);
-  var events = document.querySelectorAll('.event');
+  // Le site n'est reconstruit qu'une fois par jour et une source peut tomber en panne :
+  // on masque ici ce qui est passé, et on signale ce qui n'a pas été vérifié récemment.
+  function jour(decalage) {
+    var d = new Date(); d.setDate(d.getDate() + (decalage || 0));
+    return d.toISOString().slice(0, 10);
+  }
+  var today = jour();
   var filter = 'all';
+  var salles = document.getElementById('cinema-salles');
+  var resume = document.getElementById('resume-films');
+  document.querySelectorAll('[data-jour]').forEach(function (el) { el.hidden = el.dataset.jour < today; });
+  document.querySelectorAll('.salle').forEach(function (s) {
+    s.querySelector('.perime').hidden = !s.dataset.maj || s.dataset.maj >= jour(-4);
+  });
+  document.querySelectorAll('.programme[data-publie]').forEach(function (p) {
+    p.hidden = p.dataset.publie < jour(-14);  // affiche de plus de deux semaines
+  });
   function refresh() {
     var shown = 0;
-    events.forEach(function (el) {
+    document.querySelectorAll('#agenda .event').forEach(function (el) {
       var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter);
       el.hidden = !visible;
       if (visible) shown++;
     });
-    document.querySelectorAll('.month').forEach(function (s) {
+    document.querySelectorAll('#cinema-salles .event').forEach(function (el) {
+      el.hidden = el.dataset.date < today;
+      if (filter === 'cinema' && !el.hidden) shown++;
+    });
+    document.querySelectorAll('.month, .salle').forEach(function (s) {
       s.hidden = !s.querySelector('.event:not([hidden])');
     });
+    if (salles) salles.hidden = filter !== 'cinema';
+    if (resume) resume.hidden = filter !== 'all';
     document.getElementById('empty').hidden = shown > 0;
+  }
+  function choisir(f) {
+    filter = f;
+    document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === f); });
+    refresh();
   }
   document.getElementById('filters').addEventListener('click', function (ev) {
     var b = ev.target.closest('button');
-    if (!b) return;
-    filter = b.dataset.filter;
-    this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
-    refresh();
+    if (b) choisir(b.dataset.filter);
   });
-  refresh();
+  if (resume) resume.addEventListener('click', function () { choisir('cinema'); window.scrollTo(0, 0); });
+  // Lien direct vers un thème : …/#cinema, …/#theatre
+  var h = location.hash.slice(1);
+  choisir(document.querySelector('#filters button[data-filter="' + h + '"]') ? h : 'all');
 })();
 </script>

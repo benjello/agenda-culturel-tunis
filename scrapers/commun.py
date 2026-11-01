@@ -141,6 +141,11 @@ class Evenement:
     categorie: str = ""
     prix: str = ""
     seances: list[dt.datetime] = field(default_factory=list)
+    image: str = ""                # affiche, si la source en donne une
+    film: bool = False             # film à l'affiche (séances = jours de projection)
+    imdb: str = ""                 # identifiant IMDb (tt…), si connu
+    duree: int | None = None       # minutes
+    genres: list[str] = field(default_factory=list)
 
 
 @dataclass
@@ -157,16 +162,11 @@ class Publication:
         return asdict(self)
 
 
-@dataclass
-class Film:
-    """Format des cinémas : un film et ses jours de projection."""
-    titre: str
-    lien: str
-    jours: list[str] = field(default_factory=list)   # dates AAAA-MM-JJ
-    duree: int | None = None                          # minutes
-    genres: list[str] = field(default_factory=list)
-    affiche: str | None = None
-    imdb: str | None = None                           # identifiant tt…, si connu
-
-    def en_dict(self):
-        return asdict(self)
+def film(titre: str, lien: str, lieu: str, jours, adresse: str = "", **autres) -> Evenement | None:
+    """Un film à l'affiche dans une salle, au même format que tout événement :
+    catégorie cinéma, une séance par jour de projection (« AAAA-MM-JJ »)."""
+    seances = sorted({dt.datetime.fromisoformat(j[:10]) for j in jours})
+    if not seances:
+        return None
+    return Evenement(titre=titre, debut=seances[0], fin=seances[-1], lien=lien, lieu=lieu, adresse=adresse,
+                     categorie="cinema", seances=seances, film=True, **autres)
