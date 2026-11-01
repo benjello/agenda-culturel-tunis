@@ -144,6 +144,20 @@ class Evenement:
 
 
 @dataclass
+class Publication:
+    """Une publication Facebook avec image (programme, affiche) et le texte lu dessus."""
+    lien: str
+    date: str                                         # AAAA-MM-JJ
+    texte: str = ""                                   # texte de la publication
+    images: list[str] = field(default_factory=list)   # chemins dans le site (assets/…)
+    ocr_facebook: str = ""                            # texte de l'image lu par Facebook
+    ocr: str = ""                                     # texte de l'image lu par Tesseract
+
+    def en_dict(self):
+        return asdict(self)
+
+
+@dataclass
 class Film:
     """Format des cinémas : un film et ses jours de projection."""
     titre: str

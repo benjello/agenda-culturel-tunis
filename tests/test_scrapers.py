@@ -12,7 +12,7 @@ from unittest import mock
 
 from scrapers import commun, ecriture
 from scrapers.commun import slug
-from scrapers.sources import billetterie_sktech, facebook, ical, jsonld, liste_fiches, pathe, rss, teskerti
+from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, jsonld, liste_fiches, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
@@ -246,6 +246,36 @@ class Facebook(unittest.TestCase):
     def test_url_groupe(self):
         self.assertEqual(facebook.url_evenements("https://www.facebook.com/groups/265611163490450/"),
                          "https://www.facebook.com/groups/265611163490450/events")
+
+
+class FacebookProgrammes(unittest.TestCase):
+    def test_publications_avec_image(self):
+        source = {"id": "cine-test", "nom": "Ciné test", "url": "https://www.facebook.com/cinetest",
+                  "scraper": "facebook_programmes", "options": {"page": "cinetest", "max": 2}}
+        items = [
+            {"text": "Sans image", "url": "https://www.facebook.com/p/1", "time": "2026-10-28T10:00:00.000Z"},
+            {"text": "Programme du 29/10 au 4/11", "topLevelUrl": "https://www.facebook.com/p/2",
+             "time": "2026-10-29T09:00:00.000Z",
+             "media": [{"__typename": "Photo", "photo_image": {"uri": "https://scontent.x/a.jpg"},
+                        "ocrText": "May be an image of text that says 'MER 29 20H00 FILM A'"}]},
+            {"text": "Ancien", "url": "https://www.facebook.com/p/3", "time": "2026-10-20T09:00:00.000Z",
+             "media": [{"__typename": "Video", "thumbnail": "https://scontent.x/v.jpg"}]},
+        ]
+        with tempfile.TemporaryDirectory() as d, \
+             mock.patch.dict("os.environ", {"APIFY_TOKEN": "x"}), \
+             mock.patch.object(facebook_programmes, "appeler_apify", return_value=items), \
+             mock.patch.object(facebook_programmes, "RACINE", Path(d)), \
+             mock.patch.object(facebook_programmes, "DOSSIER_IMAGES", Path(d) / "assets" / "programmes"), \
+             mock.patch.object(facebook_programmes, "enregistrer_image",
+                               side_effect=lambda url, dossier, nom: f"assets/programmes/cine-test/{nom}.jpg"), \
+             mock.patch.object(facebook_programmes, "lire_image", return_value="MER 29 20H00 FILM A"):
+            pubs = facebook_programmes.recuperer(source)
+        self.assertEqual(len(pubs), 1)  # sans image et vidéo écartées
+        self.assertEqual(pubs[0].lien, "https://www.facebook.com/p/2")
+        self.assertEqual(pubs[0].date, "2026-10-29")
+        self.assertIn("FILM A", pubs[0].ocr_facebook)
+        self.assertEqual(pubs[0].ocr, "MER 29 20H00 FILM A")
+        self.assertTrue(pubs[0].images[0].startswith("assets/programmes/cine-test/"))
 
 
 class Doublons(unittest.TestCase):

@@ -49,3 +49,6 @@ table.sources small { color: var(--muted); }
 .etat.ok { background: #d8efe0; color: #1d6b3a; }
 .etat.ko { background: #f6d6d2; color: #9b2c1f; }
 .etat.attente, .etat.pause { background: var(--line); color: var(--muted); }
+.programme-image { display: block; width: 100%; max-width: 640px; height: auto; margin: 8px 0; border-radius: 8px; }
+.programme-texte { white-space: normal; font-size: .9rem; }
+.programme details { margin: 8px 0; color: var(--muted); }

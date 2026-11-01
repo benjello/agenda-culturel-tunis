@@ -11,10 +11,11 @@ import datetime as dt
 import json
 import shutil
 
-from .commun import RACINE, Evenement, Film, slug
+from .commun import RACINE, Evenement, Film, Publication, slug
 
 DOSSIER_AUTO = RACINE / "_events" / "auto"
 DOSSIER_CINEMAS = RACINE / "_data" / "cinemas"
+DOSSIER_PROGRAMMES = RACINE / "_data" / "programmes"
 FICHIER_ETAT = RACINE / "_data" / "etat_sources.json"
 
 
@@ -71,6 +72,18 @@ def ecrire_films(source: dict, films: list[Film]) -> int:
     (DOSSIER_CINEMAS / f"{source['id']}.json").write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     return len(films)
+
+
+def ecrire_publications(source: dict, publications: list[Publication]) -> int:
+    DOSSIER_PROGRAMMES.mkdir(parents=True, exist_ok=True)
+    data = {
+        "id": source["id"], "nom": source["nom"], "url": source["url"],
+        "mis_a_jour": dt.date.today().isoformat(),
+        "publications": [p.en_dict() for p in publications],
+    }
+    (DOSSIER_PROGRAMMES / f"{source['id']}.json").write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    return len(publications)
 
 
 def lire_etat() -> dict:

@@ -144,67 +144,71 @@
   note: Programme annoncé seulement sur Facebook et dans la presse.
 
 - id: cine-360
-  nom: Ciné 360
-  url: ""
-  type: cinema
-  scraper: aucun
-  actif: false
-  note: Seulement sur Facebook, pas de récupération automatique possible.
+  nom: Ciné 350
+  url: https://www.facebook.com/sallecine350
+  type: lieu
+  scraper: facebook_programmes
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: sallecine350
+  note: programme de la semaine publié en image sur Facebook
 
 # Salles de cinéma qui n'annoncent leur programme que sur Facebook.
-# Lues via Apify (voir scrapers/sources/facebook.py), tous les 3 jours pour limiter le coût.
+# Lues via Apify (scrapers/sources/facebook_programmes.py et facebook.py), tous les 3 jours.
 
 - id: cine-agora
   nom: L'Agora (La Marsa)
   url: https://www.facebook.com/espacelagora
   type: lieu
-  scraper: facebook
+  scraper: facebook_programmes
   categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
     page: espacelagora
     lieu: "L'Agora"
-  note: page Facebook (événements publics seulement)
+  note: programme publié en image sur Facebook
 
 - id: cine-alhambra
   nom: Alhambra Zéphyr (La Marsa)
   url: https://www.facebook.com/cine.alhambra.zephyr
   type: lieu
-  scraper: facebook
+  scraper: facebook_programmes
   categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
     page: cine.alhambra.zephyr
     lieu: "Cinéma Alhambra"
-  note: page Facebook (événements publics seulement)
+  note: programme publié en image sur Facebook
 
 - id: cine-colisee
   nom: Le Colisée (Tunis)
   url: https://www.facebook.com/Cinema.Colisee.Tunis
   type: lieu
-  scraper: facebook
+  scraper: facebook_programmes
   categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
     page: Cinema.Colisee.Tunis
     lieu: "Cinéma Le Colisée"
-  note: page Facebook (événements publics seulement)
+  note: programme publié en image sur Facebook
 
 - id: cine-madart
   nom: CinéMadart (Carthage)
   url: https://www.facebook.com/CineMadart
   type: lieu
-  scraper: facebook
+  scraper: facebook_programmes
   categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
     page: CineMadart
     lieu: "CinéMadart"
-  note: page Facebook (événements publics seulement)
+  note: programme publié en image sur Facebook
 
 - id: cine-amilcar
   nom: Cinéma Amilcar (El Manar)
