@@ -1,19 +1,27 @@
 {
+  "cine-360": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T07:07:54",
+    "dernier_succes": "2026-11-01T07:07:54",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
+  },
   "cine-agora": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
+    "dernier_passage": "2026-11-01T07:07:54",
     "dernier_succes": "2026-11-01T06:51:29",
-    "erreur": "RuntimeError: Apify : {'error': 'no_results', 'errorDescription': \"Invalid events page response, maybe the user or group doesn't exist?\", 'input': 'https://www.facebook.com/espacelagora/upcoming_hosted_events'}",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/espacelagora', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
     "nb": 0,
     "ok": false
   },
   "cine-alhambra": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
-    "dernier_succes": "2026-11-01T06:51:29",
-    "erreur": "RuntimeError: Apify : {'error': 'no_results', 'errorDescription': \"Invalid events page response, maybe the user or group doesn't exist?\", 'input': 'https://www.facebook.com/cine.alhambra.zephyr/upcoming_hosted_events'}",
-    "nb": 0,
-    "ok": false
+    "dernier_passage": "2026-11-01T07:07:54",
+    "dernier_succes": "2026-11-01T07:07:54",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
   },
   "cine-amilcar": {
     "attente": null,
@@ -25,19 +33,19 @@
   },
   "cine-colisee": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
-    "dernier_succes": "2026-11-01T06:51:29",
-    "erreur": "RuntimeError: Apify : {'error': 'no_results', 'errorDescription': \"Invalid events page response, maybe the user or group doesn't exist?\", 'input': 'https://www.facebook.com/Cinema.Colisee.Tunis/upcoming_hosted_events'}",
-    "nb": 0,
-    "ok": false
+    "dernier_passage": "2026-11-01T07:07:54",
+    "dernier_succes": "2026-11-01T07:07:54",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
   },
   "cine-madart": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:54:48",
-    "dernier_succes": "2026-11-01T06:51:29",
-    "erreur": "RuntimeError: Apify : {'error': 'no_results', 'errorDescription': \"Invalid events page response, maybe the user or group doesn't exist?\", 'input': 'https://www.facebook.com/CineMadart/upcoming_hosted_events'}",
-    "nb": 0,
-    "ok": false
+    "dernier_passage": "2026-11-01T07:07:54",
+    "dernier_succes": "2026-11-01T07:07:54",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
   },
   "cine-vog": {
     "attente": null,
