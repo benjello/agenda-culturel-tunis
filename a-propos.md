@@ -11,12 +11,6 @@ le site d'un cinéma ou une affiche. Cet agenda essaie de les rassembler au mêm
 
 Pour l'instant, c'est un agenda entre amis. L'objectif est d'en faire un vrai site public.
 
-## Proposer un événement {#evenement}
-
-Artistes, collectifs, petits lieux : vous pouvez annoncer votre événement gratuitement avec
-[ce formulaire](https://github.com/benjello/agenda-culturel-tunis/issues/new?template=evenement.yml) (titre, date, lieu, lien, affiche). Il faut un compte GitHub, gratuit.
-Après une vérification rapide, l'événement apparaît sur l'agenda.
-
 ## Proposer une source {#proposer}
 
 L'agenda se remplit automatiquement à partir de [sources fiables](../sources/) : sites de lieux,
