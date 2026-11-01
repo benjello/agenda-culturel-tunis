@@ -3,6 +3,12 @@
 titre_site: { ar: "الأجندا الثقافية تونس", en: "Tunis cultural agenda" }
 nav.agenda: { ar: "الأجندا", en: "Agenda" }
 nav.weekend: { ar: "نهاية الأسبوع", en: "This weekend" }
+nav.semaine: { ar: "هذا الأسبوع", en: "This week" }
+sem.titre: { ar: "هذا الأسبوع", en: "This week" }
+sem.intro: { ar: "الأيام السبعة القادمة، يوما بيوم. المعارض المفتوحة حاليا مرتبة في اليوم (ولا تدخل في رسالة واتساب).", en: "The next seven days, day by day. Exhibitions already open are listed under today (they are left out of the WhatsApp message)." }
+sem.whatsapp: { ar: "💬 شارك على واتساب", en: "💬 Share on WhatsApp" }
+sem.copier: { ar: "📋 انسخ النص", en: "📋 Copy the text" }
+sem.vide: { ar: "لا شيء معلن لهذا الأسبوع حاليا.", en: "Nothing announced for this week yet." }
 nav.festivals: { ar: "المهرجانات", en: "Festivals" }
 nav.lieux: { ar: "الفضاءات", en: "Venues" }
 nav.artistes: { ar: "الفنانون", en: "Artists" }
