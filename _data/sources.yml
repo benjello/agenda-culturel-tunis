@@ -868,3 +868,17 @@
     lieu: "La Boîte"
     resultats: 8
   note: "Espace d'art contemporain, proposé par Mahdi."
+
+- id: ig-shanti
+  nom: Shanti (Instagram)
+  url: https://www.instagram.com/shanti.tn/
+  type: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "shanti.tn"
+    lieu: "Shanti"
+    resultats: 8
+  note: "Proposé par Mahdi."
