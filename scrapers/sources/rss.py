@@ -94,7 +94,8 @@ def _completer(e: Evenement, lien: str) -> None:
         return
     d = details_page(texte)
     e.lieu = d.get("lieu") or e.lieu
-    if d.get("debut") and (e.fin is None or e.fin.date() == d["fin"].date() or e.debut.date() == d["fin"].date()):
+    # la plage de dates ne compte que si elle contient la date du flux (sinon c'est un autre événement cité)
+    if d.get("debut") and d["debut"].date() <= e.debut.date() <= d["fin"].date():
         heure = dict(hour=e.debut.hour, minute=e.debut.minute)
         e.debut, e.fin = d["debut"].replace(**heure), d["fin"]
 

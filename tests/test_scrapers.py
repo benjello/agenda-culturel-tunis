@@ -397,7 +397,8 @@ class Conferences(unittest.TestCase):
         self.assertEqual(evts[1].titre, "تقديم كتاب : المناهج الجامعيّة للأستاذ يونس محسين")
 
     def test_irmc_garde_les_rencontres(self):
-        evts = rss.depuis_flux(fixture("irmc.xml"), self.sources()["irmc"])
+        with faux_reseau({}):  # pages des événements non lues : on garde ce que dit le flux
+            evts = rss.depuis_flux(fixture("irmc.xml"), self.sources()["irmc"])
         self.assertEqual(len(evts), 1)
         self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 10, 20, 17, 30))
 
