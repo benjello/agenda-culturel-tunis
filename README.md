@@ -49,7 +49,8 @@ L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour de
 - **Un seul format pour tout** : chaque scraper produit des événements (`Evenement` dans
   `scrapers/commun.py`) : titre, début, fin, séances, lieu, adresse, catégorie, prix, lien, image.
   Un film à l'affiche est un événement de catégorie cinéma avec `film: true` et une séance par jour
-  de projection ; il apparaît dans le thème Cinéma de l'agenda, rangé par salle.
+  de projection. `scrapers/films.py` regroupe ensuite les salles de chaque film dans
+  `_data/films.json` : le thème Cinéma montre un film (avec son affiche), puis les salles du jour choisi.
 - Les programmes publiés en image (Facebook) sont gardés dans `_data/programmes/` et
   `assets/programmes/`, et les films qu'on y lit deviennent des événements.
 - L'état de chaque source (dernier passage, succès, erreur) est noté dans `_data/etat_sources.json`.
@@ -66,7 +67,7 @@ pip install -r requirements.txt
 python3 -m scrapers              # toutes les sources actives
 python3 -m scrapers teskerti     # une seule source
 python3 -m scrapers --debug      # garde les pages téléchargées dans debug/
-git add _events/auto _data/programmes assets/programmes _data/etat_sources.json && git commit -m "Scrapers" && git push
+git add _events/auto _data/films.json _data/programmes assets/programmes _data/etat_sources.json && git commit -m "Scrapers" && git push
 ```
 
 Exemple de ligne cron (tous les jours à 6h) :

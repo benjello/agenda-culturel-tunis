@@ -1,0 +1,725 @@
+[
+ {
+  "titre": "BAKMA - بكمة",
+  "id": "bakma",
+  "image": "https://api.tunis.events/storage/5b65ec103a07d3f0fbec6b23107ac79c2.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/kXEyBm/bakma-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/bakma-%D8%A8%D9%83%D9%85%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa",
+    "lien": "https://tunis.events/fr/cinema/bakma",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/bakma",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/bakma",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "WEEKEND",
+  "id": "weekend",
+  "image": "https://tunis.events/storage/610c124bad65cc71bdc2cda6d10aafe15c.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/8L4ZM8/weekend-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/moEQl8/weekend-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa",
+    "lien": "https://tunis.events/fr/cinema/weekend",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/weekend",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/weekend",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Dar El 3ers - دار العرس",
+  "id": "dar-el-3ers",
+  "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "https://api.tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "L'île des souvenirs / Forgotten Island",
+  "id": "l-ile-des-souvenirs-forgotten-island",
+  "image": "https://api.tunis.events/storage/scraped/728f332ab04d48ad66210131a01a7ee2.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa",
+    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
+  "id": "what-else",
+  "image": "https://api.tunis.events/storage/scraped/0bcb680e7928a3652a32654eb8f34e61.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Clayface",
+  "id": "clayface",
+  "image": "https://api.tunis.events/storage/scraped/0ef2dd61387b35932f18ac6ff4defd54.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/clayface",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/clayface",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Klara et le soleil",
+  "id": "klara-et-le-soleil",
+  "image": "https://api.tunis.events/storage/scraped/d2ebfb303ce9f7f1fa0331bce7ea1c09.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Le fantôme de l'opéra",
+  "id": "le-fantome-de-l-opera",
+  "image": "https://api.tunis.events/storage/scraped/44530d0a3d07fecbe5cf9fc99a6dd1c4.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa",
+    "lien": "https://tunis.events/fr/cinema/le-fantome-de-lopera",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/le-fantome-de-lopera",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "https://api.tunis.events/storage/scraped/ef31ae21165efd2203c62878ffdbdce8.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Shaun le Mouton : La Bêêête d'Halloween",
+  "id": "shaun-le-mouton-la-beeete-d-halloween",
+  "image": "https://api.tunis.events/storage/scraped/de3c2e9090785e4e297a19012f69a309.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Ducobu et le fantôme de Saint-Potache",
+  "id": "ducobu-et-le-fantome-de-saint-potache",
+  "image": "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01",
+     "2026-11-02"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Le Maître du kabuki",
+  "id": "le-maitre-du-kabuki",
+  "image": "",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "Ciné 350 (Cité de la Culture)",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100057029246724/posts/1654998313077794",
+    "source": "cine-360",
+    "source_nom": "Ciné 350",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Mochy",
+  "id": "mochy",
+  "image": "https://tunis.events/storage/85feea561689dcc48c66219765483e17.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Other Mommy / Malfaisante",
+  "id": "other-mommy-malfaisante",
+  "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ },
+ {
+  "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
+  "id": "wala-kan-ala-el-bal",
+  "image": "https://api.tunis.events/storage/scraped/ee61c30ef50672548dff065a8d16ec33.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ]
+   }
+  ]
+ }
+]

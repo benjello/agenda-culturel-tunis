@@ -131,9 +131,10 @@ def un_film_par_affiche(publications: list[dict], connus: list[str], lieu: str =
             m = re.search(r"[«\"“]\s*([^»\"”]{2,60}?)\s*[»\"”]", texte)
             titre = m.group(1) if m else None
         titre = titre or propre(re.sub(r"[^\w\s'’:-]", " ", texte.splitlines()[0] if texte else "")) or "Film"
-        f = films.setdefault(slug(titre) or titre, {"titre": titre, "lien": p["lien"], "jours": set()})
+        f = films.setdefault(slug(titre) or titre, {"titre": titre, "lien": p["lien"], "jours": set(),
+                                                     "image": (p.get("images") or [""])[0]})
         f["jours"] |= set(jours)
-    return [film(f["titre"], f["lien"], lieu, f["jours"]) for f in films.values()]
+    return [film(f["titre"], f["lien"], lieu, f["jours"], image=f["image"]) for f in films.values()]
 
 
 LECTEURS = {"liste_films": liste_films, "un_film_par_affiche": un_film_par_affiche}
