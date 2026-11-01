@@ -26,6 +26,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "16:30",
+       "21:00"
+      ]
+     }
     ]
    },
    {
@@ -43,7 +52,8 @@
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
-    ]
+    ],
+    "heures": []
    },
    {
     "nom": "Cinéma Le Colisée",
@@ -53,6 +63,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "13:45",
+       "17:30"
+      ]
+     }
     ]
    },
    {
@@ -63,6 +82,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "13:45",
+       "19:45"
+      ]
+     }
     ]
    },
    {
@@ -73,6 +101,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "21:15"
+      ]
+     }
     ]
    },
    {
@@ -84,6 +120,30 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:30",
+       "12:30",
+       "14:00",
+       "15:00",
+       "16:30",
+       "17:30",
+       "19:00",
+       "20:00",
+       "21:30",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:00",
+       "11:30"
+      ]
+     }
     ]
    },
    {
@@ -95,6 +155,33 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "10:25",
+       "11:20",
+       "12:55",
+       "13:50",
+       "15:20",
+       "16:15",
+       "17:45",
+       "18:45",
+       "19:30",
+       "20:15",
+       "21:15",
+       "22:00",
+       "22:45"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:25",
+       "11:20"
+      ]
+     }
     ]
    }
   ]
@@ -126,6 +213,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "19:00"
+      ]
+     }
     ]
    },
    {
@@ -143,7 +238,8 @@
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
-    ]
+    ],
+    "heures": []
    },
    {
     "nom": "Cinéma Le Colisée",
@@ -153,6 +249,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "15:45"
+      ]
+     }
     ]
    },
    {
@@ -163,6 +267,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "15:45"
+      ]
+     }
     ]
    },
    {
@@ -173,6 +285,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "19:30"
+      ]
+     }
     ]
    },
    {
@@ -183,6 +303,19 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "12:00",
+       "14:05",
+       "16:15",
+       "18:25",
+       "20:35",
+       "22:45"
+      ]
+     }
     ]
    },
    {
@@ -194,6 +327,26 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:05",
+       "13:15",
+       "15:25",
+       "16:50",
+       "17:35",
+       "19:45",
+       "21:45"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:05"
+      ]
+     }
     ]
    }
   ]
@@ -232,7 +385,8 @@
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
-    ]
+    ],
+    "heures": []
    },
    {
     "nom": "Cinéma Le Colisée",
@@ -242,6 +396,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:30",
+       "19:30"
+      ]
+     }
     ]
    },
    {
@@ -253,6 +416,21 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:00"
+      ]
+     }
     ]
    },
    {
@@ -262,7 +440,25 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01"
+     "2026-11-01",
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:25",
+       "17:00",
+       "19:45",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:25"
+      ]
+     }
     ]
    },
    {
@@ -273,6 +469,18 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:40",
+       "14:25",
+       "17:15",
+       "20:00",
+       "22:45"
+      ]
+     }
     ]
    }
   ]
@@ -311,7 +519,8 @@
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
-    ]
+    ],
+    "heures": []
    },
    {
     "nom": "Cinéma Le Colisée",
@@ -321,17 +530,26 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:00"
+      ]
+     }
     ]
    },
    {
     "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
-    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
-    ]
+    ],
+    "heures": []
    },
    {
     "nom": "Pathé Tunis City",
@@ -341,6 +559,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "14:50"
+      ]
+     }
     ]
    }
   ]
@@ -368,6 +594,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "15:00"
+      ]
+     }
     ]
    },
    {
@@ -378,6 +612,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "14:45"
+      ]
+     }
     ]
    },
    {
@@ -388,6 +630,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "12:20",
+       "15:15"
+      ]
+     }
     ]
    }
   ],
@@ -415,6 +666,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "14:00"
+      ]
+     }
     ]
    },
    {
@@ -424,7 +683,26 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01"
+     "2026-11-01",
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "10:15",
+       "14:15",
+       "16:55",
+       "19:35",
+       "22:15"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:30"
+      ]
+     }
     ]
    },
    {
@@ -436,6 +714,27 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:00",
+       "13:40",
+       "16:15",
+       "17:05",
+       "19:00",
+       "19:45",
+       "21:35",
+       "22:25"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:00"
+      ]
+     }
     ]
    }
   ]
@@ -460,6 +759,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "13:20"
+      ]
+     }
     ]
    },
    {
@@ -471,6 +778,20 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "11:05"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:05"
+      ]
+     }
     ]
    }
   ],
@@ -502,6 +823,21 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "10:50",
+       "17:45"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:50"
+      ]
+     }
     ]
    },
    {
@@ -512,6 +848,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "14:40"
+      ]
+     }
     ]
    }
   ],
@@ -538,6 +882,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "17:00"
+      ]
+     }
     ]
    },
    {
@@ -548,6 +900,15 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "12:05",
+       "19:00"
+      ]
+     }
     ]
    }
   ]
@@ -573,6 +934,20 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "15:45"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:05"
+      ]
+     }
     ]
    },
    {
@@ -584,6 +959,20 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:05"
+      ]
+     }
     ]
    }
   ],
@@ -610,6 +999,14 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "12:55"
+      ]
+     }
     ]
    },
    {
@@ -620,9 +1017,71 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "13:25"
+      ]
+     }
     ]
    }
   ]
+ },
+ {
+  "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
+  "id": "wala-kan-ala-el-bal",
+  "image": "https://api.tunis.events/storage/scraped/ee61c30ef50672548dff065a8d16ec33.jpg",
+  "imdb": "tt43634235",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-01",
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/klvQn3",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "20:15",
+       "22:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "wikidata": "Q141819066",
+  "age": "",
+  "tunisien": false
  },
  {
   "titre": "Ducobu et le fantôme de Saint-Potache",
@@ -647,6 +1106,20 @@
     "jours": [
      "2026-11-01",
      "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "10:20"
+      ]
+     },
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:40"
+      ]
+     }
     ]
    }
   ],
@@ -675,7 +1148,8 @@
     "source_nom": "Ciné 350",
     "jours": [
      "2026-11-01"
-    ]
+    ],
+    "heures": []
    }
   ],
   "wikidata": "Q134906322",
@@ -701,7 +1175,8 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
-    ]
+    ],
+    "heures": []
    }
   ]
  },
@@ -726,37 +1201,19 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-01",
+      "heures": [
+       "21:55"
+      ]
+     }
     ]
    }
   ],
   "wikidata": "Q134588273",
   "age": "-12",
-  "tunisien": false
- },
- {
-  "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
-  "id": "wala-kan-ala-el-bal",
-  "image": "https://api.tunis.events/storage/scraped/ee61c30ef50672548dff065a8d16ec33.jpg",
-  "imdb": "tt43634235",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ]
-   }
-  ],
-  "wikidata": "Q141819066",
-  "age": "",
   "tunisien": false
  }
 ]

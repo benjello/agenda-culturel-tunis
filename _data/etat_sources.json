@@ -151,6 +151,14 @@
     "nb": 0,
     "ok": true
   },
+  "ift-pdf": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:07:34",
+    "dernier_succes": "2026-11-01T09:07:34",
+    "erreur": null,
+    "nb": 57,
+    "ok": true
+  },
   "ig-al-kitab": {
     "attente": null,
     "dernier_passage": "2026-11-01T08:34:55",
@@ -296,6 +304,35 @@
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city",
     "ok": false
   },
+  "presse-kapitalis": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:07:34",
+    "dernier_succes": "2026-11-01T09:07:34",
+    "erreur": null,
+    "nb": 1,
+    "ok": true
+  },
+  "presse-lapresse": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:07:34",
+    "dernier_succes": "2026-11-01T09:07:34",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
+  },
+  "presse-tunisie-numerique": {
+    "dernier_passage": "2026-11-01T09:07:34",
+    "erreur": "RuntimeError: flux illisible (not well-formed (invalid token): line 35, column 31)",
+    "ok": false
+  },
+  "presse-webdo": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T09:07:34",
+    "dernier_succes": "2026-11-01T09:07:34",
+    "erreur": null,
+    "nb": 1,
+    "ok": true
+  },
   "teskerti": {
     "attente": null,
     "dernier_passage": "2026-11-01T07:45:18",
@@ -314,8 +351,8 @@
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_passage": "2026-11-01T09:07:34",
+    "dernier_succes": "2026-11-01T09:07:34",
     "erreur": null,
     "nb": 40,
     "ok": true

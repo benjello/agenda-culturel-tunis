@@ -1,6 +1,6 @@
 ---
 title: "BAKMA"
-date: 2026-11-01
+date: 2026-11-01 21:15
 venue: "L'Agora Marsa"
 address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 category: "cinema"

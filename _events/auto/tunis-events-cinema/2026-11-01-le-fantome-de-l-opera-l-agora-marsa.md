@@ -1,6 +1,6 @@
 ---
 title: "Le fantôme de l'opéra"
-date: 2026-11-01
+date: 2026-11-01 17:00
 venue: "L'Agora Marsa"
 address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 category: "cinema"

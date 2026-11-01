@@ -1,0 +1,10 @@
+---
+title: "Contes En Scène"
+date: 2026-11-14 14:30
+venue: "Médiathèque, Institut français de Tunis"
+category: "autre"
+link: "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf"
+source: "ift-pdf"
+source_name: "Institut français de Tunisie (programme PDF)"
+auto: true
+---

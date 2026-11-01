@@ -1,6 +1,6 @@
 ---
 title: "Shaun le Mouton : La Bêêête d'Halloween"
-date: 2026-11-01
+date: 2026-11-01 13:25
 venue: "Pathé Tunis City"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
