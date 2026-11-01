@@ -38,7 +38,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 | Alhambra Zéphyr, Ciné 350 | `facebook_programmes` + lecteur | ✅ marche | films lus dans les publications (texte + OCR) |
 | Colisée, CinéMadart, Agora | `facebook_programmes` | ✅ programmes gardés | Agora : page pas publique |
 | Amilcar, Cinévog (groupes) | `facebook` | ⚠️ 0 événement | rien d'annoncé à venir |
-| tunis.events (concerts, clubs) | — | à brancher | recommandé par le bilan musique : filtrer Grand Tunis |
+| tunis.events (agenda) | `tunis_events` | ✅ marche | ~15 événements : accueil, musique, vie nocturne, spectacles ; hors Grand Tunis écarté |
 | Rachidia, Théâtre national, Club Tahar Haddad, Al Kitab, Cité de la Culture | `facebook_programmes` | à brancher | Facebook seulement (bilans dans `bilan-sources/`) |
 | monticket, b7l9, IIC, Cervantes, Cinémathèque | — | à étudier | `actif: false` dans le registre |
 
@@ -58,7 +58,6 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 ## À faire
 
 - [ ] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
-- [ ] tunis.events en entier (concerts, clubs), filtré Grand Tunis.
 - [ ] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
 - [ ] Institut français : lire le PDF mensuel du programme.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
@@ -66,3 +65,25 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - [ ] Formulaire « Proposer une source » / « Signaler un événement ».
 - [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
 - [ ] Brancher les sources « à étudier ».
+
+### Idées (1er novembre 2026)
+
+Sources
+- [ ] Comptes Instagram des clubs et bars (scraper `instagram`, recherche avec le workflow « Recherche de sources Instagram »).
+- [ ] Suivre les **artistes et DJ** tunisiens sur Instagram plutôt que les lieux : ils annoncent toutes leurs dates.
+- [ ] Bandsintown et Resident Advisor (tournées, scène électro).
+- [ ] Agendas de presse (Tunisie Numérique, La Presse) comme filet de sécurité pour repérer des lieux non suivis.
+- [ ] Une adresse où les organisateurs envoient leur affiche (e-mail ou formulaire), lue comme les affiches Instagram.
+- [ ] Musées et expos : INP, galerie Selma Feriani (voir `bilan-sources/musees-expos.md`).
+
+Usage
+- [x] Page « Ce week-end » (`week-end.html`).
+- [ ] Newsletter du jeudi générée depuis la page « Ce week-end ».
+- [ ] Filtres « gratuit » et « en famille ».
+- [ ] Carte des lieux (OpenStreetMap).
+- [ ] Bouton « ajouter à mon agenda » par événement (.ics).
+- [ ] Chaîne Telegram ou WhatsApp des événements du jour.
+
+Fiabilité
+- [ ] Alerte quand une source n'a rien publié depuis 30 jours (lieu fermé, compte changé).
+- [ ] Bouton « signaler une erreur » sur chaque événement.
