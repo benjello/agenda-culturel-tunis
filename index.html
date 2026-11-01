@@ -80,6 +80,10 @@ layout: default
 {%- endif %}
 
 {%- assign current_month = "" -%}
+{%- comment -%} Rempli par le script : ce qui a commencé avant aujourd'hui et continue (expos, festivals). {%- endcomment -%}
+<section class="month" id="en-cours" hidden>
+  <h2>En ce moment</h2>
+</section>
 <div id="agenda">
 {%- for e in events -%}
   {%- assign month = e.date | date: "%Y-%m" -%}
@@ -105,6 +109,19 @@ layout: default
     return d.toISOString().slice(0, 10);
   }
   var today = jour();
+  // Une expo commencée en octobre et qui dure encore : on la met dans « En ce moment »,
+  // avec « jusqu'au … » à la place de sa date de début, pour ne pas faire croire que l'agenda est vieux.
+  var MOIS_C = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+  var enCours = document.getElementById('en-cours');
+  document.querySelectorAll('#agenda .event').forEach(function (el) {
+    if (el.dataset.debut < today && el.dataset.date >= today) {
+      var fin = el.dataset.date.split('-');
+      el.querySelector('.event-date').innerHTML = '<span class="jusqu">jusqu’au</span><span class="day">' +
+        (+fin[2]) + '</span><span class="mon">' + MOIS_C[+fin[1] - 1] + '</span>';
+      el.classList.add('en-cours');
+      enCours.appendChild(el);
+    }
+  });
   var filter = 'all';
   var salles = document.getElementById('cinema-salles');
   var resume = document.getElementById('resume-films');
@@ -153,7 +170,7 @@ layout: default
   });
   function refresh() {
     var shown = 0;
-    document.querySelectorAll('#agenda .event').forEach(function (el) {
+    document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
       var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter);
       el.hidden = !visible;
       if (visible) shown++;

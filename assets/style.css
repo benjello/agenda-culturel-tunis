@@ -75,3 +75,4 @@ table.sources small { color: var(--muted); }
 .badge { font-size: .75rem; padding: 1px 7px; border-radius: 4px; background: var(--line); color: var(--fg); }
 .badge.age { background: #2c3e50; color: #fff; font-weight: 600; }
 .badge.tunisien { background: #c0392b; color: #fff; }
+.event-date .jusqu { display: block; font-size: .65rem; text-transform: uppercase; letter-spacing: .02em; }
