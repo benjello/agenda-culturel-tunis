@@ -20,7 +20,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from ..commun import Evenement, categorie_du_titre, propre, telecharger, toutes_dates
+from ..commun import Evenement, categorie_du_titre, prix_du_texte, propre, telecharger, toutes_dates
 from ..lecteurs import jours_sans_annee, periode
 from .rss import _racine
 
@@ -112,7 +112,8 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
         lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "Tunisie, voir l'article")
         res.append(Evenement(titre=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
                              fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None, lien=a["lien"] or source["url"],
-                             lieu=lieu, categorie=categorie_du_titre(a["titre"]) or source.get("categorie", "autre")))
+                             lieu=lieu, categorie=categorie_du_titre(a["titre"]) or source.get("categorie", "autre"),
+                             prix=prix_du_texte(tout)))
     return res
 
 

@@ -455,6 +455,15 @@ class ProgrammePdf(unittest.TestCase):
         self.assertEqual(par_titre[("Le Monde Sans Fin", 1)].categorie, "expo")
 
 
+class Prix(unittest.TestCase):
+    def test_prix_du_texte(self):
+        from scrapers.commun import prix_du_texte
+        self.assertEqual(prix_du_texte("COVER 10DT, starting from 18:00"), "10 DT")
+        self.assertEqual(prix_du_texte("Entrée libre dans la limite des places"), "Gratuit")
+        self.assertEqual(prix_du_texte("Billets : 20 DT et 35 DT"), "20 à 35 DT")
+        self.assertEqual(prix_du_texte("Prix de 1500 DT pour le lauréat"), "")
+
+
 class Villes(unittest.TestCase):
     def test_ville(self):
         from scrapers.villes import ville

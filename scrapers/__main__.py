@@ -66,6 +66,8 @@ def main(argv=None) -> int:
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
             n = ecrire(s, resultat)
             e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
+            if n:  # page « Santé des sources » : depuis quand la source n'a plus rien annoncé
+                e["dernier_non_vide"] = maintenant
             print(f"✓ {s['id']} : {n}")
         except EnAttente as exc:
             attentes += 1

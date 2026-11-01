@@ -12,7 +12,7 @@ import json
 import re
 import unicodedata
 
-from .commun import MOIS, RACINE, Evenement, film, propre, slug, toutes_dates
+from .commun import MOIS, RACINE, Evenement, film, propre, slug, toutes_dates, prix_du_texte
 
 _MOIS = "|".join(sorted(MOIS, key=len, reverse=True))
 # « Vendredi 30 octobre à 19h », « 1er novembre », « ler novembre » (OCR), sans année.
@@ -190,7 +190,8 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
                 continue
             vus.add((j, titre))
             res.append(Evenement(titre=titre, debut=dt.datetime(j.year, j.month, j.day, h, mn),
-                                 lien=p["lien"], lieu=ici, image=(p.get("images") or [""])[0]))
+                                 lien=p["lien"], lieu=ici, image=(p.get("images") or [""])[0],
+                                 prix=prix_du_texte(tout)))
     return res
 
 
