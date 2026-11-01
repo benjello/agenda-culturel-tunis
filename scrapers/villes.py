@@ -16,7 +16,7 @@ _VILLES = [
     ("bizerte", r"bizerte|menzel bourguiba|ras jebel"),
     ("kairouan", r"kairouan|raqqada"),
     ("sud", r"djerba|houmt souk|midoun|zarzis|gabes|medenine|tataouine|tozeur|nefta|douz|kebili|matmata|gafsa|"
-            r"ben guerdane|chenini|tamerza|chebika|mides|el hamma|mareth|ghomrassen|metlaoui|redeyef|ksar ghilane|guellala|erriadh"),
+            r"ben guerdane|chenini|tamerza|chebika|mides|el hamma|mareth|ghomrassen|metlaoui|redeyef|ksar ghilane|guellala|erriadh|ksar el f[ae]rch|ksar ouled soltane|ksar hadada|beni khedache|bir lahmar|remada"),
     ("autres", r"\b(?:beja|jendouba|tabarka|le kef|kef|siliana|zaghouan|kasserine|sidi bouzid|dougga|ain draham|sbeitla|testour|thala|makthar|haidra|teboursouk|bulla regia|el kef)\b"),
 ]
 

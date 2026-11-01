@@ -1684,3 +1684,33 @@
     lieu: "Galerie Insular"
     resultats: 8
   note: Galerie d'art (adresse à confirmer au premier passage). Proposé par Mahdi.
+
+# Presse culture ajoutée le 1er nov. 2026 (gratuit, sans Apify). Testés sans succès depuis GitHub :
+# sites des universités et instituts d'art (*.rnu.tn injoignables), Managers, WebManagerCenter, Tuniscope.
+
+- id: presse-economiste-maghrebin
+  nom: L'Économiste Maghrébin (culture)
+  url: https://www.leconomistemaghrebin.com/category/culture/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+
+- id: presse-realites
+  nom: Réalités (culture)
+  url: https://realites.com.tn/fr/category/culture/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+
+- id: presse-leaders
+  nom: Leaders
+  url: https://www.leaders.com.tn/rss
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
