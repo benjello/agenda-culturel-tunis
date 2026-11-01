@@ -690,3 +690,38 @@
     lieu: "Cité des sciences de Tunis"
     garder: 'soirée|atelier|journée|conférence|exposition|planétarium|observation|ouvert au public|festival'
   note: "Le site de la Cité des sciences est illisible ; Kapitalis reprend ses communiqués."
+
+# Presse culturelle (scraper presse) : un article = un événement s'il annonce une date à venir.
+- id: presse-lapresse
+  nom: La Presse (culture)
+  url: https://www.lapresse.tn/category/culture/feed/
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Flux RSS de la rubrique Culture."
+
+- id: presse-tunisie-numerique
+  nom: Tunisie Numérique (culture)
+  url: https://www.tunisienumerique.com/actualite-tunisie/culture/feed/
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Publie aussi « Agenda culturel : où sortir… »."
+
+- id: presse-kapitalis
+  nom: Kapitalis (culture)
+  url: https://kapitalis.com/tunisie/category/culture/feed/
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: true
+
+- id: presse-webdo
+  nom: Webdo
+  url: https://www.webdo.tn/fr/rss
+  type: agenda
+  scraper: presse
+  categorie: autre
+  actif: true

@@ -432,6 +432,22 @@ class Wikidata(unittest.TestCase):
         self.assertEqual(f["age"], "-12")
         self.assertTrue(f["tunisien"])
 
+class Presse(unittest.TestCase):
+    def test_article_avec_periode_et_lieu(self):
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel>'
+               f'<item><title>Le festival du oud revient</title><link>https://x/1</link>'
+               f'<content:encoded><![CDATA[<p>Du {d.day} au {d.day} {mois} {d.year} à la Cité de la culture.</p>]]></content:encoded></item>'
+               f'<item><title>Le ministre inaugure une route</title><link>https://x/2</link><description>le {d.day} {mois}</description></item>'
+               f'</channel></rss>')
+        evts = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})
+        self.assertEqual([e.titre for e in evts], ["Le festival du oud revient"])
+        self.assertEqual(evts[0].lieu, "Cité de la culture")
+        self.assertEqual(evts[0].categorie, "musique")
+
+
 class TunisEvents(unittest.TestCase):
     def test_details_page(self):
         from scrapers.commun import details_page
