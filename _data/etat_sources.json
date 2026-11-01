@@ -1,8 +1,8 @@
 {
   "cine-360": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:19:13",
-    "dernier_succes": "2026-11-01T07:19:13",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 1,
     "ok": true
@@ -17,8 +17,8 @@
   },
   "cine-alhambra": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:19:13",
-    "dernier_succes": "2026-11-01T07:19:13",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 4,
     "ok": true
@@ -33,16 +33,16 @@
   },
   "cine-colisee": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:07:54",
-    "dernier_succes": "2026-11-01T07:07:54",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 3,
     "ok": true
   },
   "cine-madart": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:07:54",
-    "dernier_succes": "2026-11-01T07:07:54",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 3,
     "ok": true
@@ -57,16 +57,16 @@
   },
   "el-teatro": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:15:05",
-    "dernier_succes": "2026-11-01T07:15:05",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 7,
     "ok": true
   },
   "goethe-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:51:29",
-    "dernier_succes": "2026-11-01T06:51:29",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 0,
     "ok": true
@@ -78,8 +78,8 @@
   },
   "opera-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:51:29",
-    "dernier_succes": "2026-11-01T06:51:29",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 0,
     "ok": true
@@ -96,16 +96,16 @@
   },
   "teskerti": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:15:05",
-    "dernier_succes": "2026-11-01T07:15:05",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 14,
     "ok": true
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:19:13",
-    "dernier_succes": "2026-11-01T07:19:13",
+    "dernier_passage": "2026-11-01T07:25:49",
+    "dernier_succes": "2026-11-01T07:25:49",
     "erreur": null,
     "nb": 40,
     "ok": true
