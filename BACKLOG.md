@@ -62,7 +62,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - [ ] Institut français : lire le PDF mensuel du programme.
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
-- [x] Formulaire « Proposer un événement » (issue GitHub, validée par l'étiquette « valide »).
+- [ ] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.
 - [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
 - [ ] Brancher les sources « à étudier ».
