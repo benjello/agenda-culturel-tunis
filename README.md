@@ -33,11 +33,28 @@ Une courte description de l'événement (facultatif).
 
 Les événements passés disparaissent automatiquement de la page d'accueil. Pas besoin de les supprimer.
 
+## Programmes des cinémas (automatique)
+
+La page [Cinéma](https://benjello.github.io/agenda-culturel-tunis/cinema/) liste les films
+à l'affiche dans les 7 prochains jours. Elle est remplie par le script
+[`scripts/cinemas.py`](scripts/cinemas.py), lancé chaque matin par GitHub Actions
+(onglet **Actions → Programmes des cinémas**). Le script écrit `_data/cinema.json` :
+ne pas modifier ce fichier à la main, il est écrasé à chaque passage.
+
+- Cinémas suivis pour l'instant : Pathé Tunis City et Pathé Azur City (liste `CINEMAS` en haut du script).
+- Pour lancer une mise à jour tout de suite : **Actions → Programmes des cinémas → Run workflow**.
+- Si le site d'un cinéma change, le script échoue sans effacer les données existantes, et
+  GitHub vous prévient par e-mail.
+- Tester sans réseau : `python3 scripts/cinemas.py --fixture scripts/tests/pathe-exemple.json`
+  (remplacer d'abord `TODAY` par des dates réelles dans une copie du fichier).
+
 ## Organisation du dépôt
 
 | Dossier / fichier | Rôle |
 |---|---|
 | `_events/` | un fichier par événement |
+| `_data/cinema.json` | films à l'affiche (généré automatiquement) |
+| `scripts/cinemas.py` | récupération des programmes des cinémas |
 | `_data/categories.yml` | catégories (nom affiché, couleur) |
 | `_data/fr.yml` | noms des jours et des mois en français |
 | `_layouts/`, `_includes/` | gabarits HTML des pages |
@@ -57,5 +74,5 @@ Puis ouvrez http://localhost:4000/agenda-culturel-tunis/
 ## Prochaines étapes
 
 - Formulaire de contribution (issue GitHub préremplie, ou Google Form) pour signaler un événement.
-- Récupération automatique des programmes des cinémas.
+- Autres cinémas (Ciné 360, Le Colisée, CinéMadart…).
 - Pages Facebook : saisie via le formulaire en attendant mieux.

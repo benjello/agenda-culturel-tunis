@@ -1,0 +1,17 @@
+{
+  "catalog": {
+    "avatar-de-feu-et-de-cendres": {"slug": "avatar-de-feu-et-de-cendres", "title": "Avatar : de feu et de cendres", "duration": 192, "genres": ["Action", "Aventure"], "posterPath": {"md": "https://example.com/avatar.jpg"}},
+    "el-sett": {"slug": "el-sett", "title": "El Sett / الست", "duration": 155, "genres": ["Biopic", "Musical"]}
+  },
+  "cinemas": {
+    "cinema-pathe-tunis-city": {"shows": {
+      "avatar-de-feu-et-de-cendres": {"days": {"TODAY": {}, "TODAY+2": {}}},
+      "el-sett": {"days": {"TODAY+1": {}}},
+      "vieux-film": {"days": {"2020-01-01": {}}}
+    }},
+    "cinema-pathe-azur-city": {"shows": {
+      "el-sett": {"days": {"TODAY": {}}},
+      "film-sans-fiche": {"days": {"TODAY+3": {}}}
+    }}
+  }
+}
