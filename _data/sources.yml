@@ -288,3 +288,31 @@
     page: https://www.facebook.com/groups/485273898178867
     lieu: "Cinévog"
   note: page Facebook (événements publics seulement)
+
+# Instagram : clubs, bars et salles qui n'annoncent que là (une affiche datée = un événement).
+- id: ig-habibi-downtown
+  nom: Habibi Downtown (Instagram)
+  url: https://www.instagram.com/habibidowntown_/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: habibidowntown_
+    lieu: Habibi Downtown (av. de Paris, Tunis)
+  note: Club du centre-ville, soirées DJ. Aussi sur tunis.events.
+
+- id: ig-rock-n-rolla
+  nom: Rock'n'Rolla La Goulette (Instagram)
+  url: https://www.instagram.com/rocknrollagoulettepub/
+  type: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: rocknrollagoulettepub
+    lieu: Rock'n'Rolla, La Goulette
+  note: Pub avec programmation musicale. Trouvé par la recherche Instagram (dernière publication le 31/10/2026).
+
