@@ -51,6 +51,7 @@ layout: default
         {%- for s in f.salles %}{% assign etat = site.data.etat_sources[s.source] %}
         <li data-jours="{{ s.jours | join: ' ' }}" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
           <a href="{{ s.lien }}" rel="noopener">{{ s.nom }}</a>
+          {%- for h in s.heures %}<span class="heures" data-jour="{{ h.jour }}" hidden>{{ h.heures | join: " · " }}</span>{% endfor %}
           <span class="perime-court" hidden title="Programme pas vérifié depuis plusieurs jours">⚠️ à vérifier</span>
         </li>
         {%- endfor %}
@@ -59,7 +60,7 @@ layout: default
   </article>
   {%- endfor %}
   <p id="cinema-vide" class="empty" hidden>Aucun film annoncé ce jour-là.</p>
-  <p class="updated">Horaires et réservation : cliquez sur la salle. Sources : tunis.events et les pages des salles.</p>
+  <p class="updated">Réservation et détails : cliquez sur la salle. Sources : tunis.events et les pages des salles.</p>
   {%- assign programmes = site.data.programmes | default: empty -%}
   {%- if programmes.size > 0 %}
   <section class="programmes">
@@ -148,6 +149,7 @@ layout: default
       f.querySelectorAll('.film-salles li').forEach(function (li) {
         var jours = li.dataset.jours.split(' ');
         li.hidden = jours.indexOf(choixJour) < 0;
+        li.querySelectorAll('.heures').forEach(function (h) { h.hidden = h.dataset.jour !== choixJour; });
       });
     });
     document.getElementById('cinema-vide').hidden = n > 0;

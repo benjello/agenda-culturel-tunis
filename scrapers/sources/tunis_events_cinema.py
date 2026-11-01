@@ -5,8 +5,8 @@ plusieurs salles (Colisée, Palace, CinéMadart, Agora, Pathé…) en schema.org
 un objet par film, par salle et par jour, avec le lien vers la réservation.
 C'est aussi le seul moyen de lire Pathé, dont le site bloque GitHub.
 
-Résultat : un événement par film et par salle (catégorie cinéma), avec un jour
-de séance par jour de projection. Les salles hors Grand Tunis sont écartées.
+Résultat : un événement par film et par salle (catégorie cinéma), avec ses séances
+(jour et heure). Les salles hors Grand Tunis sont écartées.
 
 Options :
   exclure   mots qui écartent une salle (défaut : Sousse, Sfax, Nabeul, Bizerte…)
@@ -39,8 +39,10 @@ def recuperer(source: dict) -> list[Evenement]:
         f = films.setdefault((slug(lieu), slug(titre)), {
             "titre": titre, "lien": o.get("url") or source["url"], "lieu": lieu,
             "adresse": adresse, "image": _image(o.get("image")), "jours": set()})
-        f["jours"].add(debut.date().isoformat())  # un objet par jour : on garde le jour
+        # un objet par séance ; minuit = séance sans horaire connu (on garde le jour seul)
+        f["jours"].add(f"{debut:%Y-%m-%d %H:%M}" if (debut.hour or debut.minute) else debut.date().isoformat())
     if not films:
         raise RuntimeError("aucun film en schema.org sur la page (site modifié ?)")
     return [film(f["titre"], f["lien"], f["lieu"], f["jours"], f["adresse"], image=f["image"])
             for f in films.values()]
+

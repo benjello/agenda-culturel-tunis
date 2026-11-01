@@ -168,8 +168,8 @@ class Publication:
 
 def film(titre: str, lien: str, lieu: str, jours, adresse: str = "", **autres) -> Evenement | None:
     """Un film à l'affiche dans une salle, au même format que tout événement :
-    catégorie cinéma, une séance par jour de projection (« AAAA-MM-JJ »)."""
-    seances = sorted({dt.datetime.fromisoformat(j[:10]) for j in jours})
+    catégorie cinéma, une séance par jour (« AAAA-MM-JJ ») ou par horaire (« AAAA-MM-JJ HH:MM »)."""
+    seances = sorted({dt.datetime.fromisoformat(j[:16]) for j in jours})
     if not seances:
         return None
     return Evenement(titre=titre, debut=seances[0], fin=seances[-1], lien=lien, lieu=lieu, adresse=adresse,

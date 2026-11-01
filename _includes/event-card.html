@@ -14,7 +14,8 @@
     <p class="meta">{% if e.duration %}{% assign h = e.duration | divided_by: 60 %}{% assign mn = e.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if e.genres %}{{ e.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=e.title imdb=e.imdb %}</p>
     <p class="days">
       {%- assign jours = e.seances | default: empty -%}{%- if jours.size == 0 %}{% assign jours = "" | split: "" | push: e.date %}{% endif -%}
-      {%- for d in jours -%}{%- assign j = d | date: "%w" | plus: 0 -%}<span data-jour="{{ d | date: '%Y-%m-%d' }}">{{ site.data.fr.jours_courts[j] }} {{ d | date: "%-d" }}</span>{%- endfor -%}
+      {%- assign prec = "" -%}
+      {%- for d in jours -%}{%- assign iso = d | date: '%Y-%m-%d' -%}{%- if iso != prec -%}{%- assign prec = iso -%}{%- assign j = d | date: "%w" | plus: 0 -%}<span data-jour="{{ iso }}">{{ site.data.fr.jours_courts[j] }} {{ d | date: "%-d" }}</span>{%- endif -%}{%- endfor -%}
     </p>
     {%- else %}
     <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {{ e.venue }}</p>

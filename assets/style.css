@@ -85,3 +85,4 @@ table.sources small { color: var(--muted); }
 .event.discret h3 { font-size: .95rem; }
 .month[hidden] { display: none; }
 .we-evt:has(.discret) { order: 1; }
+.film-salles .heures { margin-left: 8px; font-variant-numeric: tabular-nums; color: var(--fg); font-weight: 600; font-size: .9rem; }

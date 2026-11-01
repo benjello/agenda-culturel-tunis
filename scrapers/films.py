@@ -34,6 +34,16 @@ def morceaux(titre: str) -> set[str]:
     return {p for p in (re.sub(r"[^\w]+", " ", x).strip().lower() for x in parts) if len(p) >= 3}
 
 
+def _heures(champs: dict) -> dict[str, list[str]]:
+    """{« AAAA-MM-JJ » : [« HH:MM », …]} pour les séances dont l'heure est connue."""
+    res: dict[str, set] = {}
+    for s in champs.get("seances") or [champs.get("date")]:
+        s = str(s or "")
+        if len(s) >= 16 and s[11:16] != "00:00":
+            res.setdefault(s[:10], set()).add(s[11:16])
+    return {j: sorted(h) for j, h in res.items()}
+
+
 def _jours(champs: dict) -> list[str]:
     jours = champs.get("seances") or [champs.get("date")]
     return sorted({str(j)[:10] for j in jours if j})
@@ -71,11 +81,15 @@ def regrouper(dossier: Path = DOSSIER_AUTO) -> list[dict]:
         for c, jours in items:
             s = salles.setdefault(slug(c.get("venue", ""))[:20], {
                 "nom": c.get("venue", ""), "adresse": c.get("address", ""), "lien": c.get("link", ""),
-                "source": c.get("source", ""), "source_nom": c.get("source_name", ""), "jours": set()})
+                "source": c.get("source", ""), "source_nom": c.get("source_name", ""), "jours": set(), "heures": {}})
             s["jours"] |= set(jours)
+            for j, h in _heures(c).items():
+                if j in jours:
+                    s["heures"][j] = sorted(set(s["heures"].get(j, [])) | set(h))
         salles_l = sorted(salles.values(), key=lambda s: s["nom"])
         for s in salles_l:
             s["jours"] = sorted(s["jours"])
+            s["heures"] = [{"jour": j, "heures": s["heures"][j]} for j in sorted(s["heures"])]
         films.append({
             "titre": titre, "id": slug(titre) or titre,
             "image": premier("image") or "", "imdb": premier("imdb") or "",

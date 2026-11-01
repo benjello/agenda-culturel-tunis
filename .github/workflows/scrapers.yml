@@ -32,7 +32,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Installer l'OCR (lecture des programmes en image)
-        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra tesseract-ocr-ara > /dev/null
+        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra tesseract-ocr-ara poppler-utils > /dev/null
       - name: Lancer les scrapers
         id: run
         run: python3 -m scrapers $SOURCES ${{ inputs.debug && '--debug' || '' }}
@@ -48,6 +48,8 @@ jobs:
           path: debug/
           retention-days: 3
       - name: Enregistrer s'il y a du nouveau
+        # sur une branche d'essai, on lit sans rien enregistrer (pas d'échec de push)
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
