@@ -737,3 +737,92 @@
     modele: "https://www.institutfrancais-tunisie.com/wp-content/uploads/{annee_pub}/{mois_pub}/CALENDRIER-{mois}-{annee}.pdf"
     lieu: "Institut français de Tunisie"
   note: "Programme mensuel en PDF découpé case par case (titre, jour, genre, salle, heure)."
+
+# Festivals : leurs comptes annoncent le programme en premier.
+- id: ig-jtc
+  nom: Journées Théâtrales de Carthage (Instagram)
+  url: https://www.instagram.com/jtc_tunisie/
+  type: lieu
+  scraper: instagram
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "jtc_tunisie"
+    lieu: "Journées Théâtrales de Carthage, Tunis"
+    resultats: 8
+
+- id: ig-jcc
+  nom: Journées Cinématographiques de Carthage (Instagram)
+  url: https://www.instagram.com/jcctunisieofficial/
+  type: lieu
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "jcctunisieofficial"
+    lieu: "Journées Cinématographiques de Carthage, Tunis"
+    resultats: 8
+
+# Sciences (voir bilan-sources/sciences.md) : activité à vérifier au premier passage.
+- id: fb-cite-sciences
+  nom: Cité des sciences de Tunis (Facebook)
+  url: https://www.facebook.com/cite.sciences.tunis
+  type: lieu
+  scraper: facebook_programmes
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "cite.sciences.tunis"
+    lieu: "Cité des sciences de Tunis"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+
+- id: fb-ifest
+  nom: IFEST (Facebook)
+  url: https://www.facebook.com/IFEST.TUNISIA
+  type: lieu
+  scraper: facebook_programmes
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "IFEST.TUNISIA"
+    lieu: "Tunis"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Festival des sciences et technologies."
+
+- id: ig-atast
+  nom: ATAST (Instagram)
+  url: https://www.instagram.com/info.atast/
+  type: lieu
+  scraper: instagram
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "info.atast"
+    lieu: "Tunis"
+    resultats: 8
+  note: "Association tunisienne d'astronomie : soirées d'observation."
+
+- id: fb-ajst
+  nom: AJST (Facebook)
+  url: https://www.facebook.com/AJSTunisie
+  type: lieu
+  scraper: facebook_programmes
+  categorie: conference
+  actif: true
+  tous_les_jours: 3
+  options:
+    page: "AJSTunisie"
+    lieu: "Tunis"
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Association des jeunes scientifiques de Tunisie."

@@ -40,6 +40,8 @@ def _lire(xml: str):
         return _racine(xml)
     except ET.ParseError:
         # « & » nu dans un titre (Tunisie Numérique) : on l'échappe et on réessaie
+        # caractères de contrôle invisibles (Tunisie Numérique) aussi
+        xml = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", xml)
         return _racine(re.sub(r"&(?!\w+;|#\d+;|#x[0-9a-fA-F]+;)", "&amp;", xml))
 
 
