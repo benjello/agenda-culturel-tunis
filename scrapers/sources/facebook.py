@@ -90,6 +90,10 @@ def recuperer(source: dict) -> list[Evenement]:
         raise RuntimeError(f"réponse Apify inattendue : {str(items)[:200]}")
     evenements = [e for e in (convertir(i, source) for i in items) if e]
     print(f"  {source['id']} : {len(items)} élément(s) renvoyé(s) par Apify, {len(evenements)} événement(s) gardé(s)")
+    for i in items:
+        if not convertir(i, source) and not i.get("error"):
+            print(f"    écarté : {i.get('name')!r} début={i.get('utcStartDate') or i.get('startISO') or i.get('startTime')} "
+                  f"passé={i.get('isPast')} annulé={i.get('isCanceled')}")
     erreurs = [i for i in items if i.get("error")]
     if erreurs and not evenements:
         raise RuntimeError(f"Apify : {str(erreurs[0])[:250]}")
