@@ -20,7 +20,11 @@ def recuperer(source: dict) -> list[Evenement]:
     pages = opts.get("pages") or [{"url": source["url"], "categorie": source.get("categorie", "autre")}]
     vus, res, lus = set(), [], 0
     for p in pages:
-        objets = json_ld_evenements(page(p["url"]))
+        try:
+            objets = json_ld_evenements(page(p["url"]))
+        except Exception as exc:  # noqa: BLE001 — une rubrique disparue ne bloque pas les autres
+            print(f"  {source['id']} : {p['url']} illisible ({exc})")
+            continue
         lus += len(objets)
         for e in depuis_json_ld(objets, p["url"]):
             if any(m in f"{e.lieu} {e.adresse}".lower() for m in exclure) or (e.lien, e.debut) in vus:

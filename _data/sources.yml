@@ -122,16 +122,24 @@
 # ---------------------------------------------------------------------------
 
 - id: tunis-events
-  nom: tunis.events (concerts et soirées)
+  nom: tunis.events (agenda)
   url: https://tunis.events/concerts
   type: billetterie
   scraper: tunis_events
   categorie: musique
   actif: true
   options:
+    # Les pages les plus précises d'abord : un événement garde la catégorie de la première page où il est vu.
     pages:
       - { url: "https://tunis.events/concerts", categorie: musique }
-      - { url: "https://tunis.events/billetterie-soiree-club", categorie: musique }
+      - { url: "https://tunis.events/music", categorie: musique }
+      - { url: "https://tunis.events/nightlife", categorie: musique }
+      - { url: "https://tunis.events/theatre", categorie: theatre }
+      - { url: "https://tunis.events/stand_up", categorie: theatre }
+      - { url: "https://tunis.events/spectacles", categorie: theatre }
+      - { url: "https://tunis.events/arts_culture", categorie: expo }
+      - { url: "https://tunis.events/city/tunis", categorie: autre }
+      - { url: "https://tunis.events/", categorie: autre }
   note: Billetterie qui couvre concerts et clubs (Gammarth, La Marsa, La Goulette, centre-ville). Hors Grand Tunis écarté.
 
 - id: tunis-events-cinema
