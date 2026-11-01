@@ -74,6 +74,13 @@ class Teskerti(unittest.TestCase):
         self.assertEqual(par_titre["Poids plume"].lieu, "Le Rio")
 
 
+    def test_ignore_les_liens_de_menu(self):
+        with faux_reseau({"/evenement/mirage": "teskerti-espace-pro.html"}):
+            e = teskerti.lire_fiche("https://teskerti.tn/evenement/mirage", "theatre")
+        self.assertEqual(e.titre, "Mirage")
+        self.assertEqual(e.lieu, "Théâtre Le 4ème Art")
+
+
 class JsonLd(unittest.TestCase):
     def test_evenement_schema_org(self):
         with faux_reseau({"exemple.tn/agenda": "jsonld.html"}):
