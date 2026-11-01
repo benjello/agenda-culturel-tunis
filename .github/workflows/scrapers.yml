@@ -26,7 +26,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
-          git add -A _events/auto _data/cinemas _data/etat_sources.json
+          git add -A _events/auto _data/etat_sources.json
+          if [ -d _data/cinemas ]; then git add -A _data/cinemas; fi
           git diff --cached --quiet && echo "Rien de nouveau." && exit 0
           git commit -m "Scrapers : mise à jour automatique"
           git push

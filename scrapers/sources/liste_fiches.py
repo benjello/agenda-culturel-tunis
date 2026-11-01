@@ -55,8 +55,12 @@ def recuperer(source: dict, motif_defaut: str = "") -> list[Evenement]:
         raise ValueError("option « motif » manquante")
     lieu = opts.get("lieu", source["nom"])
     aujourd_hui = dt.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    liens = liens_fiches(page(source["url"]), source["url"], motif)
+    if not liens:
+        raise RuntimeError(f"aucun lien contenant « {motif} » sur la page de programme "
+                           "(liste chargée en JavaScript, ou site modifié ?)")
     evenements = []
-    for url in liens_fiches(page(source["url"]), source["url"], motif):
+    for url in liens:
         try:
             e = lire_fiche(page(url), url, lieu, aujourd_hui)
             if e:

@@ -61,4 +61,7 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
 
 
 def recuperer(source: dict) -> list[Evenement]:
-    return depuis_flux(telecharger(source["url"]), source)
+    xml = telecharger(source["url"])
+    if not elements(xml):
+        raise RuntimeError("flux vide ou illisible")
+    return depuis_flux(xml, source)
