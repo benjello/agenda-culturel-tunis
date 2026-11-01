@@ -13,7 +13,7 @@ import datetime as dt
 import json
 import shutil
 
-from .commun import RACINE, Evenement, Publication, slug
+from .commun import RACINE, Evenement, Publication, est_discret, slug
 
 DOSSIER_AUTO = RACINE / "_events" / "auto"
 DOSSIER_PROGRAMMES = RACINE / "_data" / "programmes"
@@ -75,6 +75,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "imdb": e.imdb or None,
             "duration": e.duree or None,
             "genres": e.genres or None,
+            "discret": True if est_discret(e.titre) else None,
         }
         lignes = ["---"] + [f"{k}: {_yaml(v)}" for k, v in champs.items() if v is not None]
         lignes += ["auto: true", "---", ""]

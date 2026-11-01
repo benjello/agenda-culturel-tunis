@@ -439,6 +439,11 @@ class TunisEvents(unittest.TestCase):
         self.assertEqual(d["lieu"], "Université de La Manouba et Amphithéâtre Carthage Al Hadatha")
         self.assertEqual((d["debut"].day, d["fin"].day, d["fin"].month), (3, 5, 12))
 
+    def test_discret(self):
+        from scrapers.commun import est_discret
+        self.assertTrue(est_discret("Power Yoga with Nicole"))
+        self.assertFalse(est_discret("Labes - Selim Ben Safia"))
+
     def test_categorie_du_titre(self):
         from scrapers.commun import categorie_du_titre
         self.assertEqual(categorie_du_titre("Movie Night: UN FILS"), "cinema")

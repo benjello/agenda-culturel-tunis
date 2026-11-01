@@ -216,3 +216,13 @@ def details_page(texte: str) -> dict:
         except ValueError:
             pass
     return res
+
+
+# Cours et activités payantes récurrentes (yoga, fitness…) : gardés mais placés en bas de liste,
+# pour que l'agenda mette en avant la création (concerts, pièces, expos).
+_COMMERCIAL = re.compile(r"\byoga\b|pilates|fitness|zumba|m[ée]ditation|sophrologie|bien[- ][êe]tre|\bbrunch\b|"
+                         r"happy hour|team ?building|cours (?:de|d')|\bcoaching\b|d[ée]veloppement personnel", re.I)
+
+
+def est_discret(titre: str) -> bool:
+    return bool(_COMMERCIAL.search(titre))

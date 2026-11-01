@@ -9,5 +9,6 @@ link: "https://tunis.events/events/85Vwek/power-yoga-with-nicole-skarpness-nskar
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/ae19abdea2974720c3c69e1866bea188.jpg"
+discret: true
 auto: true
 ---

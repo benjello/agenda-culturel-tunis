@@ -2,7 +2,7 @@
 {%- assign cat = site.data.categories[e.category] | default: site.data.categories.autre -%}
 {%- comment -%} Le titre mène directement à la source quand on la connaît : l'agenda pointe vers les bons sites. {%- endcomment -%}
 {%- if e.link -%}{%- assign href = e.link -%}{%- else -%}{%- assign href = e.url | relative_url -%}{%- endif -%}
-<article class="event{% if e.film %} film{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}">
+<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}">
   <div class="event-date">
     <span class="day">{{ e.date | date: "%-d" }}</span>
     <span class="mon">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
