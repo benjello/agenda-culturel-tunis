@@ -57,8 +57,8 @@
   },
   "el-teatro": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:51:29",
-    "dernier_succes": "2026-11-01T06:51:29",
+    "dernier_passage": "2026-11-01T07:15:05",
+    "dernier_succes": "2026-11-01T07:15:05",
     "erreur": null,
     "nb": 7,
     "ok": true
@@ -96,18 +96,18 @@
   },
   "teskerti": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:51:29",
-    "dernier_succes": "2026-11-01T06:51:29",
+    "dernier_passage": "2026-11-01T07:15:05",
+    "dernier_succes": "2026-11-01T07:15:05",
     "erreur": null,
     "nb": 14,
     "ok": true
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:12:29",
-    "dernier_succes": "2026-11-01T07:12:29",
+    "dernier_passage": "2026-11-01T07:15:05",
+    "dernier_succes": "2026-11-01T07:15:05",
     "erreur": null,
-    "nb": 32,
+    "nb": 42,
     "ok": true
   }
 }
