@@ -16,9 +16,13 @@ import datetime as dt
 import html
 import re
 
-from ..commun import MOIS, film, propre, resume, telecharger_json
+from ..commun import MOIS, Evenement, categorie_du_titre, film, propre, resume, telecharger_json
 
-_SEANCE = re.compile(r"(\d{1,2})(?:er)?\s+([a-zéûè]+)\.?\s*(?:(\d{4}))?\s*-\s*(\d{1,2})[:hH](\d{2})", re.I)
+_SEANCE = re.compile(r"(?:\b(lun|mar|mer|jeu|ven|sam|dim)\w*\.?\s+)?(\d{1,2})(?:er)?\s+([a-zéûè]+)\.?\s*(?:(\d{4}))?"
+                     r"\s*-\s*(\d{1,2})[:hH](\d{2})", re.I)
+_JOURS = ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"]
+_PAS_FILM = re.compile(r"pi[èe]ce de th[ée][âa]tre|\bth[ée][âa]tre\b|spectacle|concert|stand.?up|one.?(?:wo)?man.?show|"
+                       r"humour|conf[ée]rence|atelier", re.I)
 
 
 def _texte(v: str) -> str:
@@ -30,16 +34,23 @@ def seances(termes: list[str], aujourd_hui: dt.date) -> list[str]:
     res = []
     for t in termes:
         m = _SEANCE.search(t)
-        if not m or m.group(2).lower() not in MOIS:
+        if not m or m.group(3).lower() not in MOIS:
             continue
-        mois, jour = MOIS[m.group(2).lower()], int(m.group(1))
-        annee = int(m.group(3)) if m.group(3) else aujourd_hui.year
-        if not m.group(3) and mois < aujourd_hui.month - 6:  # décembre → janvier
-            annee += 1
-        try:
-            d = dt.datetime(annee, mois, jour, int(m.group(4)), int(m.group(5)))
-        except ValueError:
+        mois, jour = MOIS[m.group(3).lower()], int(m.group(2))
+        # L'année n'est pas écrite : celle où le jour de la semaine (« Dim. ») tombe juste,
+        # parmi l'année passée, celle-ci et la suivante ; sinon la date la plus proche.
+        annees = [int(m.group(4))] if m.group(4) else [aujourd_hui.year - 1, aujourd_hui.year, aujourd_hui.year + 1]
+        possibles = []
+        for a in annees:
+            try:
+                d = dt.datetime(a, mois, jour, int(m.group(5)), int(m.group(6)))
+            except ValueError:
+                continue
+            if not m.group(1) or _JOURS[d.weekday()] == m.group(1).lower():
+                possibles.append(d)
+        if not possibles:
             continue
+        d = min(possibles, key=lambda x: abs((x.date() - aujourd_hui).days))
         res.append(f"{d:%Y-%m-%d %H:%M}")
     return res
 
@@ -62,15 +73,25 @@ def depuis_produits(produits: list[dict], source: dict, aujourd_hui: dt.date | N
         attr = next((a for a in p.get("attributes") or [] if (a.get("name") or "").lower() == nom_attr), None)
         if not attr:
             continue
+        limite = (aujourd_hui + dt.timedelta(days=120)).isoformat()
         jours = [j for j in seances([t.get("name", "") for t in attr.get("terms") or []], aujourd_hui)
-                 if j[:10] >= aujourd_hui.isoformat()]
+                 if aujourd_hui.isoformat() <= j[:10] <= limite]
         titre = _texte(p.get("name"))
         if not jours or not titre:
             continue
         images = p.get("images") or []
+        resume_p = resume(_texte(p.get("description") or p.get("short_description")))
+        if _PAS_FILM.search(titre):  # la billetterie vend aussi des pièces et des concerts
+            debuts = sorted(dt.datetime.fromisoformat(j) for j in jours)
+            res.append(Evenement(titre=titre, debut=debuts[0], lien=p.get("permalink") or source["url"],
+                                 lieu=o.get("lieu", source["nom"]), adresse=o.get("adresse", ""),
+                                 categorie=categorie_du_titre(titre) or "theatre", prix=_prix(p),
+                                 seances=debuts if len(debuts) > 1 else [],
+                                 image=(images[0].get("src") or "") if images else "", description=resume_p))
+            continue
         e = film(titre, p.get("permalink") or source["url"], o.get("lieu", source["nom"]), jours,
                  o.get("adresse", ""), image=(images[0].get("src") or "") if images else "",
-                 prix=_prix(p), description=resume(_texte(p.get("description") or p.get("short_description"))))
+                 prix=_prix(p), description=resume_p)
         if e:
             res.append(e)
     return res
