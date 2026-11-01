@@ -122,12 +122,17 @@
 # ---------------------------------------------------------------------------
 
 - id: tunis-events
-  nom: tunis.events
-  url: https://tunis.events/arts_culture
-  type: agenda
-  scraper: liste_fiches
-  actif: false
-  note: Agrégateur très complet. À décider - le lire, ou s'en servir pour trouver les sites d'origine.
+  nom: tunis.events (concerts et soirées)
+  url: https://tunis.events/concerts
+  type: billetterie
+  scraper: tunis_events
+  categorie: musique
+  actif: true
+  options:
+    pages:
+      - { url: "https://tunis.events/concerts", categorie: musique }
+      - { url: "https://tunis.events/billetterie-soiree-club", categorie: musique }
+  note: Billetterie qui couvre concerts et clubs (Gammarth, La Marsa, La Goulette, centre-ville). Hors Grand Tunis écarté.
 
 - id: tunis-events-cinema
   nom: tunis.events (cinéma)
