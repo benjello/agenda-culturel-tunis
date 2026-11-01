@@ -33,6 +33,9 @@ Une courte description de l'événement (facultatif).
 
 Les événements passés disparaissent automatiquement de la page d'accueil. Pas besoin de les supprimer.
 
+**Par le formulaire** : [Proposer un événement](https://github.com/benjello/agenda-culturel-tunis/issues/new?template=evenement.yml).
+Pour le publier, poser l'étiquette `valide` sur l'issue : le fichier est créé dans `_events/propositions/` et l'issue fermée.
+
 Pensez d'abord à vérifier si le lieu peut devenir une **source** (voir plus bas) : c'est plus durable qu'une saisie à la main.
 
 ## Sources et scrapers (automatique)

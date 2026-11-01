@@ -476,3 +476,25 @@ class Instagram(unittest.TestCase):
         self.assertEqual((evts[0].debut.hour, evts[0].debut.minute), (21, 30))
         self.assertEqual(evts[0].categorie, "musique")
         self.assertEqual(evts[0].lieu, "Le Bar")
+
+
+class Propositions(unittest.TestCase):
+    def test_issue_vers_evenement(self):
+        from scrapers import propositions
+        corps = ("### Titre\n\nConcert de oud\n\n### Date et heure\n\n2026-11-21 20h30\n\n"
+                 "### Date de fin (facultatif)\n\n_No response_\n\n### Lieu\n\nDar Lasram\n\n"
+                 "### Catégorie\n\nMusique\n\n### Prix (facultatif)\n\nGratuit\n\n### Lien\n\nhttps://instagram.com/x\n\n"
+                 "### Description et affiche (facultatif)\n\nUne soirée.\n\n"
+                 "![affiche](https://github.com/user-attachments/assets/abc-123)")
+        nom, contenu = propositions.evenement(corps, "42")
+        self.assertEqual(nom, "2026-11-21-concert-de-oud.md")
+        self.assertIn("date: 2026-11-21 20:30\n", contenu)
+        self.assertIn('category: "musique"', contenu)
+        self.assertIn('image: "https://github.com/user-attachments/assets/abc-123"', contenu)
+        self.assertNotIn("end_date", contenu)
+        self.assertTrue(contenu.rstrip().endswith("Une soirée."))
+
+    def test_date_illisible(self):
+        from scrapers import propositions
+        with self.assertRaises(ValueError):
+            propositions.evenement("### Titre\n\nX\n\n### Date et heure\n\nsamedi soir\n")
