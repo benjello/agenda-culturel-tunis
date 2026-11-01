@@ -33,7 +33,7 @@ NOMINATIM = "https://nominatim.openstreetmap.org/search"
 GEO_PAR_PASSAGE = 25   # Nominatim demande 1 requête par seconde au plus : on y va doucement
 
 # Même règle que _includes/lien-carte.html : pas de fiche pour « Tunis » ou « X et Y ».
-_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online)$|voir l'article|voir l'annonce|\bet\b| / |plusieurs", re.I)
+_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|à venir|secret location)$|voir l'article|voir l'annonce|\bet\b| / |plusieurs", re.I)
 # « Rencontre avec Sonia Hanihina », « Yoga with Judit » : 2 à 4 mots en capitales après avec/with.
 _AVEC = re.compile(r"\b(?:[Aa]vec|[Ww]ith)\s+((?:[A-ZÀ-Ý][\w'’-]+)(?:\s+(?:[A-ZÀ-Ý][\w'’-]+|ben|bel|el|de|du)){1,3})")
 _PAS_NOM = re.compile(r"^(?:Le|La|Les|Un|Une|Des|Vous|Nous|Papa|Maman)\b")
@@ -123,11 +123,12 @@ def coordonnees(groupes: dict[str, dict], geo: dict, avec_reseau: bool) -> None:
 
 def ecrire_lieux(groupes: dict[str, dict], geo: dict) -> dict:
     LIEUX.mkdir(exist_ok=True)
+    manuels = {_cle(k): v for k, v in (yaml.safe_load((RACINE / "_data" / "lieux_coords.yml").read_text()) or {}).items()}
     index, carte, fichiers = {}, [], set()
     for cle, g in groupes.items():
         nom = g["nom"] or g["noms"].most_common(1)[0][0]
         s = _slug(nom)
-        point = geo.get(cle)
+        point = manuels.get(cle) or geo.get(cle)
         fichier = LIEUX / f"{s}.md"
         fichiers.add(fichier.name)
         noms = sorted(g["noms"])

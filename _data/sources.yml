@@ -1282,12 +1282,19 @@
 
 - id: ftcc
   nom: Fédération tunisienne des ciné-clubs (FTCC)
-  url: https://www.naasnetwork.org/member/federation-tunisienne-des-cine-clubs
+  url: https://www.facebook.com/FTCCTunisie/
   type: agenda
   scraper: facebook_programmes
   categorie: cinema
-  actif: false
-  note: "Page Facebook officielle introuvable par la recherche (nov. 2026). À brancher dès qu'on a l'adresse ; leurs dates passent aussi par la presse (Assises des ciné-clubs)."
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "FTCCTunisie"
+    lieu: "Ciné-clubs FTCC, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
+  note: "Réseau national des ciné-clubs (Assises des ciné-clubs, projections)."
 
 - id: ig-tunisia-podcasts-festival
   nom: Tunisia Podcasts Festival (Instagram)
@@ -1316,3 +1323,46 @@
     lieu: "Fondation Rosa Luxemburg, Tunis"
     resultats: 8
   note: "Proposé par Mahdi. Conférences, projections et rencontres (bureau de Tunis)."
+
+- id: ig-cineclub-tunis
+  nom: Ciné-club de Tunis (Instagram)
+  url: https://www.instagram.com/cineclub_de_tunis/
+  type: lieu
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "cineclub_de_tunis"
+    lieu: "Ciné-club de Tunis"
+    resultats: 8
+  note: "Le plus ancien ciné-club du pays (Tahar Chériaa), membre de la FTCC."
+
+- id: ig-ftca
+  nom: FTCA, cinéastes amateurs (Instagram)
+  url: https://www.instagram.com/ftcafifak/
+  type: agenda
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 7
+  options:
+    compte: "ftcafifak"
+    lieu: "FTCA, voir l'annonce"
+    resultats: 6
+  note: "Fédération tunisienne des cinéastes amateurs, organise le FIFAK (Kélibia)."
+
+- id: fb-cr-gabes
+  nom: Délégation régionale de la culture, Gabès (Facebook)
+  url: https://www.facebook.com/cacgabes
+  type: agenda
+  scraper: facebook_programmes
+  categorie: autre
+  actif: true
+  tous_les_jours: 7
+  options:
+    page: "cacgabes"
+    lieu: "Gabès, voir l'annonce"
+    lecteur: une_affiche_par_evenement
+    max: 4
+    resultats: 6
