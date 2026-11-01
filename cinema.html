@@ -14,7 +14,8 @@ permalink: /cinema/
   {%- assign c = entry[1] -%}
   {%- if c.films.size > 0 %}{% assign shown = shown | plus: 1 %}
   <section class="cinema">
-    <h2><a href="{{ c.url }}" rel="noopener">{{ c.nom }}</a></h2>
+    <h2>{% if c.via %}{{ c.nom }}{% else %}<a href="{{ c.url }}" rel="noopener">{{ c.nom }}</a>{% endif %}</h2>
+    {%- if c.adresse %}<p class="meta">{{ c.adresse }}</p>{% endif %}
     {%- for f in c.films %}
     <article class="event film">
       {%- if f.affiche %}<img class="poster" src="{{ f.affiche }}" alt="" loading="lazy">{% endif %}
@@ -36,7 +37,7 @@ permalink: /cinema/
       </div>
     </article>
     {%- endfor %}
-    <p class="updated">Mis à jour le {% include date-fr.html date=c.mis_a_jour %}.</p>
+    <p class="updated">Mis à jour le {% include date-fr.html date=c.mis_a_jour %}{% if c.via %}, d'après <a href="{{ c.url }}" rel="noopener">{{ c.via }}</a>{% endif %}.</p>
   </section>
   {%- endif -%}
 {%- endfor %}

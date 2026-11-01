@@ -37,6 +37,14 @@ def lancer(source: dict):
     return module.recuperer(source)
 
 
+def ecriture_propre(source: dict):
+    try:
+        module = importlib.import_module(f".sources.{source['scraper']}", __package__)
+    except ModuleNotFoundError:
+        return None
+    return getattr(module, "ecrire", None)
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("ids", nargs="*", help="ids des sources à lancer (par défaut : toutes les actives)")
@@ -67,7 +75,9 @@ def main(argv=None) -> int:
             resultat = lancer(s)
             # Une liste vide n'est pas une panne : la source peut n'avoir rien à venir.
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
-            if s["scraper"] in SCRAPERS_PUBLICATIONS:
+            if ecriture_propre(s):  # le scraper range lui-même ses résultats
+                ecrire = ecriture_propre(s)
+            elif s["scraper"] in SCRAPERS_PUBLICATIONS:
                 ecrire = ecrire_publications
             elif s.get("type") == "cinema" or (resultat and isinstance(resultat[0], Film)):
                 ecrire = ecrire_films

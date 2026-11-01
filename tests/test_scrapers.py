@@ -12,7 +12,7 @@ from unittest import mock
 
 from scrapers import commun, ecriture
 from scrapers.commun import slug
-from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, jsonld, liste_fiches, pathe, rss, teskerti
+from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, tunis_events_cinema, jsonld, liste_fiches, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
@@ -276,6 +276,27 @@ class FacebookProgrammes(unittest.TestCase):
         self.assertIn("FILM A", pubs[0].ocr_facebook)
         self.assertEqual(pubs[0].ocr, "MER 29 20H00 FILM A")
         self.assertTrue(pubs[0].images[0].startswith("assets/programmes/cine-test/"))
+
+
+class TunisEventsCinema(unittest.TestCase):
+    def test_salles_et_jours(self):
+        def ev(nom, lieu, jour, adresse="Tunis"):
+            return {"@type": "Event", "name": nom, "startDate": f"{jour}T00:00:00+01:00",
+                    "url": f"https://tunis.events/events/x/{slug(nom)}", "image": "https://api.tunis.events/storage/a.jpg",
+                    "location": {"@type": "Place", "name": lieu, "address": {"streetAddress": adresse}}}
+        objets = [ev("BAKMA", "CinéMadart", f"{FUTUR}-11-01"), ev("BAKMA", "CinéMadart", f"{FUTUR}-11-02"),
+                  ev("BAKMA", "Pathé Tunis City", f"{FUTUR}-11-01"), ev("Weekend", "Pathé Mall of Sousse", f"{FUTUR}-11-01", "Sousse")]
+        html = '<script type="application/ld+json">' + json.dumps(objets) + "</script>"
+        source = {"id": "tunis-events-cinema", "nom": "tunis.events", "url": "https://tunis.events/cinema"}
+        with mock.patch.object(commun, "telecharger", return_value=html):
+            salles = tunis_events_cinema.recuperer(source)
+        self.assertEqual(set(salles), {"CinéMadart", "Pathé Tunis City"})  # Sousse écarté
+        self.assertEqual(salles["CinéMadart"]["films"]["BAKMA"].jours, [f"{FUTUR}-11-01", f"{FUTUR}-11-02"])
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(tunis_events_cinema, "DOSSIER_CINEMAS", Path(d)):
+            self.assertEqual(tunis_events_cinema.ecrire(source, salles), 2)
+            data = json.loads((Path(d) / "tunis-events-cinemadart.json").read_text())
+        self.assertEqual(data["films"][0]["titre"], "BAKMA")
+        self.assertEqual(data["via"], "tunis.events")
 
 
 class Doublons(unittest.TestCase):
