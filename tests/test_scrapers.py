@@ -402,6 +402,35 @@ class Conferences(unittest.TestCase):
         self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 10, 20, 17, 30))
 
 
+class Wikidata(unittest.TestCase):
+    def test_fiche_film(self):
+        from scrapers import wikidata
+        an = dt.date.today().year
+
+        def snak(v):
+            return {"mainsnak": {"datavalue": {"value": v}}}
+        film = {"claims": {"P345": [snak("tt1234567")], "P577": [snak({"time": f"+{an}-05-01T00:00:00Z"})],
+                           "P136": [snak({"id": "Q1"}), snak({"id": "Q2"})], "P495": [snak({"id": "Q948"})],
+                           "P2758": [snak({"id": "Q3"})]},
+                "labels": {"fr": {"value": "Bakma"}}}
+        vieux = {"claims": {"P345": [snak("tt0000001")], "P577": [snak({"time": "+1990-01-01T00:00:00Z"})]}}
+        libelles = {"Q1": "film dramatique", "Q2": "thriller", "Q3": "interdit aux moins de 12 ans"}
+
+        def api(**p):
+            if p["action"] == "wbsearchentities":
+                return {"search": [{"id": "Q10"}, {"id": "Q11"}, {"id": "Q12"}]}
+            ids = p["ids"].split("|")
+            base = {"Q10": film, "Q11": vieux, "Q12": {"claims": {}}}
+            return {"entities": {i: base.get(i) or {"labels": {"fr": {"value": libelles[i]}}} for i in ids}}
+        with mock.patch.object(wikidata, "_api", api):
+            t = wikidata.chercher(["bakma"], an - 3)
+            f = wikidata.fiche(t["qid"], t["entite"])
+        self.assertEqual(f["qid"], "Q10")
+        self.assertEqual(f["imdb"], "tt1234567")
+        self.assertEqual(f["genres"], ["Drame", "Thriller"])
+        self.assertEqual(f["age"], "-12")
+        self.assertTrue(f["tunisien"])
+
 class TunisEvents(unittest.TestCase):
     def test_concerts_grand_tunis(self):
         from scrapers.sources import tunis_events

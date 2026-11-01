@@ -41,7 +41,12 @@ layout: default
     {%- else %}<div class="affiche vide">🎬</div>{% endif %}
     <div class="film-corps">
       <h3>{{ f.titre }}</h3>
-      <p class="meta">{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if f.genres.size > 0 %}{{ f.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}</p>
+      <p class="badges">
+        {%- if f.age != "" and f.age %}<span class="badge age">{{ f.age }}</span>{% endif -%}
+        {%- if f.tunisien %}<span class="badge tunisien">Film tunisien</span>{% endif -%}
+        {%- for g in f.genres %}<span class="badge">{{ g }}</span>{% endfor -%}
+      </p>
+      <p class="meta">{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}{% if f.wikidata %} · <a href="https://www.wikidata.org/wiki/{{ f.wikidata }}" rel="noopener">Wikidata</a>{% endif %}</p>
       <ul class="film-salles">
         {%- for s in f.salles %}{% assign etat = site.data.etat_sources[s.source] %}
         <li data-jours="{{ s.jours | join: ' ' }}" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
