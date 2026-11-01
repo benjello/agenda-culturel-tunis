@@ -1669,3 +1669,18 @@
     adresse: "Djerba"
     resultats: 8
   note: Salle de l'Agora à Djerba (cinéma, concerts). La billetterie lagora.tn ne couvre que La Marsa pour l'instant. Proposé par Mahdi.
+
+- id: ig-galerie-insular
+  nom: Galerie Insular (Instagram)
+  url: https://www.instagram.com/galerieinsular/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  tous_les_jours: 3
+  options:
+    compte: "galerieinsular"
+    lieu: "Galerie Insular"
+    resultats: 8
+  note: Galerie d'art (adresse à confirmer au premier passage). Proposé par Mahdi.
