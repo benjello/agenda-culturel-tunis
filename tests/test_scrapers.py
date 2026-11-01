@@ -442,3 +442,37 @@ class TunisEvents(unittest.TestCase):
         self.assertEqual(evts[0].debut, dt.datetime(FUTUR, 11, 21, 22, 0))
         self.assertEqual(evts[0].categorie, "musique")
         self.assertEqual(evts[0].image, "https://tunis.events/storage/a.jpg")
+
+
+class Instagram(unittest.TestCase):
+    def test_affiche_par_evenement(self):
+        from scrapers import lecteurs
+        auj = dt.date.today()
+        j = auj + dt.timedelta(days=5)
+        pubs = [{"lien": "https://instagram.com/p/1", "date": auj.isoformat(), "images": ["assets/x.jpg"],
+                 "texte": f"🔥 JAOU NIGHTS 🔥\nSamedi {j.day:02d}/{j.month:02d} dès 23h\n#tunis #gammarth", "ocr": ""},
+                {"lien": "https://instagram.com/p/2", "date": auj.isoformat(), "images": [],
+                 "texte": "Merci pour hier soir ! #throwback", "ocr": ""}]
+        evts = lecteurs.une_affiche_par_evenement(pubs, [], "Habibi Downtown")
+        self.assertEqual(len(evts), 1)
+        self.assertEqual(evts[0].titre, "JAOU NIGHTS")
+        self.assertEqual(evts[0].debut, dt.datetime(j.year, j.month, j.day, 23, 0))
+        self.assertEqual(evts[0].image, "assets/x.jpg")
+
+    def test_lecture_apify(self):
+        from scrapers.sources import instagram
+        j = dt.date.today() + dt.timedelta(days=3)
+        items = [{"url": "https://www.instagram.com/p/abc/", "type": "Image", "timestamp": "2026-11-01T10:00:00.000Z",
+                  "displayUrl": "https://cdn/x.jpg", "caption": "Concert live au bar"}]
+        with tempfile.TemporaryDirectory() as d, \
+             mock.patch.dict("os.environ", {"APIFY_TOKEN": "x"}), \
+             mock.patch.object(instagram, "appeler_apify", return_value=items), \
+             mock.patch.object(instagram, "DOSSIER_IMAGES", Path(d)), \
+             mock.patch.object(instagram, "enregistrer_image", return_value="assets/programmes/t/a.jpg"), \
+             mock.patch.object(instagram, "lire_image", return_value=f"{j.day:02d}.{j.month:02d} 21H30"):
+            evts = instagram.recuperer({"id": "t", "nom": "Bar", "url": "bar", "categorie": "musique",
+                                        "options": {"compte": "bar", "lieu": "Le Bar"}})
+        self.assertEqual(len(evts), 1)
+        self.assertEqual((evts[0].debut.hour, evts[0].debut.minute), (21, 30))
+        self.assertEqual(evts[0].categorie, "musique")
+        self.assertEqual(evts[0].lieu, "Le Bar")

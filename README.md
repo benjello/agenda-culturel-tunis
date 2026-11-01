@@ -106,7 +106,10 @@ Sans clé, les sources Facebook sont « en attente » sur la page Sources et rie
 Chaque événement lu coûte environ un centime : `tous_les_jours: 3` dans le registre limite la
 fréquence. Ajouter une page = copier un bloc `scraper: facebook` et changer `page`.
 
-Limite : seuls les **événements** Facebook sont lus, pas les publications (affiches de la semaine).
+Les scrapers `facebook_programmes` (pages Facebook) et `instagram` (comptes Instagram) lisent les
+dernières **publications avec image** et le texte des affiches (OCR). Pour Instagram, chaque affiche
+datée devient un événement (`compte`, `lieu` dans les options). Pour trouver des comptes :
+**Actions → Recherche de sources Instagram → Run workflow**, avec des mots-clés.
 
 Les sources repérées mais pas encore branchées sont dans le registre avec `actif: false`
 (affichées « à étudier » sur la page Sources).
