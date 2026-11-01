@@ -2,6 +2,7 @@
 title: "A Coeur Ouvert"
 date: 2026-11-06 19:30
 venue: "Lartisto théâtre et cinéma"
+ville: "tunis"
 address: "3 Rue De Damas, Tunis 1002, Tunis"
 category: "theatre"
 price: "15 TND"

@@ -2,6 +2,7 @@
 title: "BAKMA"
 date: 2026-11-01 21:15
 venue: "L'Agora Marsa"
+ville: "tunis"
 address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/bakma"

@@ -3,6 +3,7 @@ title: "Le Mystère Lucy Lost"
 date: 2026-11-01 15:45
 end_date: "2026-11-02 10:05"
 venue: "Pathé Azur City"
+ville: "tunis"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/le-mystere-lucy-lost"

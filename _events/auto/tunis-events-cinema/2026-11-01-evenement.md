@@ -2,6 +2,7 @@
 title: "لص شايح"
 date: 2026-11-01 14:50
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD"

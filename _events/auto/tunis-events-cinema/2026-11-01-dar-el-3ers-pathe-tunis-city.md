@@ -2,6 +2,7 @@
 title: "Dar El 3ers - دار العرس"
 date: 2026-11-01 11:40
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3"

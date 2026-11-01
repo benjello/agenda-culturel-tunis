@@ -455,6 +455,15 @@ class ProgrammePdf(unittest.TestCase):
         self.assertEqual(par_titre[("Le Monde Sans Fin", 1)].categorie, "expo")
 
 
+class Villes(unittest.TestCase):
+    def test_ville(self):
+        from scrapers.villes import ville
+        self.assertEqual(ville("Institut français de Sousse"), "sousse")
+        self.assertEqual(ville("One Resort, Monastir"), "monastir")
+        self.assertEqual(ville("L'Agora Marsa", "5 avenue Taïeb Mhiri, La Marsa"), "tunis")
+        self.assertEqual(ville("Théâtre", "Houmt Souk, Djerba"), "sud")
+
+
 class Presse(unittest.TestCase):
     def test_article_avec_periode_et_lieu(self):
         from scrapers.sources import presse

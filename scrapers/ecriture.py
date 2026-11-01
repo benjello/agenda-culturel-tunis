@@ -14,6 +14,7 @@ import json
 import shutil
 
 from .commun import RACINE, Evenement, Publication, est_discret, slug
+from .villes import ville
 
 DOSSIER_AUTO = RACINE / "_events" / "auto"
 DOSSIER_PROGRAMMES = RACINE / "_data" / "programmes"
@@ -64,6 +65,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "end_date": _date(e.fin) if e.fin and e.fin.date() != e.debut.date() else None,
             "venue": e.lieu or source["nom"],
             "address": e.adresse or None,
+            "ville": ville(e.lieu or source["nom"], e.adresse),
             "category": e.categorie or source.get("categorie") or "autre",
             "price": e.prix or None,
             "link": e.lien,

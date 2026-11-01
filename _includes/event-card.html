@@ -2,7 +2,7 @@
 {%- assign cat = site.data.categories[e.category] | default: site.data.categories.autre -%}
 {%- comment -%} Le titre mène directement à la source quand on la connaît : l'agenda pointe vers les bons sites. {%- endcomment -%}
 {%- if e.link -%}{%- assign href = e.link -%}{%- else -%}{%- assign href = e.url | relative_url -%}{%- endif -%}
-<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}">
+<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}" data-ville="{{ e.ville | default: 'tunis' }}">
   <div class="event-date">
     <span class="day">{{ e.date | date: "%-d" }}</span>
     <span class="mon">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
@@ -18,7 +18,7 @@
       {%- for d in jours -%}{%- assign iso = d | date: '%Y-%m-%d' -%}{%- if iso != prec -%}{%- assign prec = iso -%}{%- assign j = d | date: "%w" | plus: 0 -%}<span data-jour="{{ iso }}">{{ site.data.fr.jours_courts[j] }} {{ d | date: "%-d" }}</span>{%- endif -%}{%- endfor -%}
     </p>
     {%- else %}
-    <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {{ e.venue }}</p>
+    <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {% include lien-carte.html lieu=e.venue adresse=e.address %}</p>
     {%- endif %}
     {%- comment -%} Pas de « Source : … » : on propose ce que le lecteur veut faire (acheter, lire l'annonce). Le nom de la source reste en infobulle. {%- endcomment -%}
     {%- assign src = site.data.sources | where: "id", e.source | first -%}

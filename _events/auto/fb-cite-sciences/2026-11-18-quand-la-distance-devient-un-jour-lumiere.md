@@ -2,6 +2,7 @@
 title: "Quand la distance devient un jour lumière"
 date: 2026-11-18
 venue: "Cité des sciences de Tunis"
+ville: "tunis"
 category: "conference"
 link: "https://www.facebook.com/100064701275208/posts/1638664498300244"
 source: "fb-cite-sciences"

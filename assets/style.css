@@ -96,3 +96,6 @@ table.sources small { color: var(--muted); }
 .badge.programme { background: #fdecc8; color: #7a5200; }
 .festival-evts summary { cursor: pointer; font-size: .9rem; }
 .festival-evts ul { margin: 6px 0 0; padding-left: 18px; font-size: .9rem; }
+.villes { margin-bottom: 4px; }
+a.carte { text-decoration: none; color: inherit; border-bottom: 1px dotted var(--muted); }
+a.carte.seule { border: 0; margin-left: 4px; }

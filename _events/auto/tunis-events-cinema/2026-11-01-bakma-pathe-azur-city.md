@@ -3,6 +3,7 @@ title: "BAKMA"
 date: 2026-11-01 11:30
 end_date: "2026-11-02 11:30"
 venue: "Pathé Azur City"
+ville: "tunis"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/bakma"

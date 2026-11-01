@@ -3,6 +3,7 @@ title: "Ducobu et le fantôme de Saint-Potache"
 date: 2026-11-01 10:20
 end_date: "2026-11-02 10:40"
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache"

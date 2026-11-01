@@ -2,6 +2,7 @@
 title: "L'île des souvenirs / Forgotten Island"
 date: 2026-11-01 14:45
 venue: "Pathé Azur City"
+ville: "tunis"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island"

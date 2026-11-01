@@ -3,6 +3,7 @@ title: "Becoming The Ocean - BIM'26"
 date: 2026-10-24 14:00
 end_date: "2026-11-22 18:00"
 venue: "Caserne El Attarine"
+ville: "tunis"
 address: "Souk El Attarine, Médina de Tunis, Tunis"
 category: "expo"
 link: "https://tunis.events/events/k4bdE3/becoming-the-ocean-bim26-caserne-el-attarine"

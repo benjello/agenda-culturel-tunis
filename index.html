@@ -6,6 +6,7 @@ layout: default
   <p>{{ site.description }}</p>
 </section>
 
+{% include choix-ville.html %}
 <div class="filters" id="filters">
   <button class="active" data-filter="all">Tout</button>
   {% for c in site.data.categories %}<button data-filter="{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
@@ -51,6 +52,7 @@ layout: default
         {%- for s in f.salles %}{% assign etat = site.data.etat_sources[s.source] %}
         <li data-jours="{{ s.jours | join: ' ' }}" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">
           <a href="{{ s.lien }}" rel="noopener">{{ s.nom }}</a>
+          <a class="carte seule" href="https://www.openstreetmap.org/search?query={{ s.nom | append: ', ' | append: s.adresse | append: ', Tunisie' | url_encode }}" data-q="{{ s.nom | append: ', ' | append: s.adresse | append: ', Tunisie' | escape }}" rel="noopener" title="Ouvrir sur une carte">📍</a>
           {%- for h in s.heures %}<span class="heures" data-jour="{{ h.jour }}" hidden>{{ h.heures | join: " · " }}</span>{% endfor %}
           <span class="perime-court" hidden title="Programme pas vérifié depuis plusieurs jours">⚠️ à vérifier</span>
         </li>
@@ -173,7 +175,9 @@ layout: default
   function refresh() {
     var shown = 0;
     document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
-      var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter);
+      var v = document.documentElement.dataset.ville || 'tunis';
+      var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
+        (v === 'toutes' || (el.dataset.ville || 'tunis') === v);
       el.hidden = !visible;
       if (visible) shown++;
     });
@@ -190,6 +194,7 @@ layout: default
     document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === f); });
     refresh();
   }
+  document.addEventListener('ville', function () { refresh(); });
   document.getElementById('filters').addEventListener('click', function (ev) {
     var b = ev.target.closest('button');
     if (b) choisir(b.dataset.filter);

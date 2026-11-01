@@ -2,6 +2,7 @@
 title: "Wala Kan Ala El Bal / ولا كان عالبال"
 date: 2026-11-01 20:15
 venue: "Pathé Azur City"
+ville: "tunis"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84"

@@ -2,6 +2,7 @@
 title: "Dar El 3ers - دار العرس"
 date: 2026-11-01
 venue: "Cinéma Le Colisée"
+ville: "tunis"
 address: "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
 category: "cinema"
 link: "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee"

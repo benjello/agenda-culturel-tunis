@@ -2,6 +2,7 @@
 title: "L'île des souvenirs / Forgotten Island"
 date: 2026-11-01 12:20
 venue: "Pathé Tunis City"
+ville: "tunis"
 address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island"

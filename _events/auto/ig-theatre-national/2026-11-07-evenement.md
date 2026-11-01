@@ -2,6 +2,7 @@
 title: "شاشات المواسم ... ذاكرة المسرح التونسي على الشاشة"
 date: 2026-11-07
 venue: "قاعة رشاد المناعي بقاعة الفن الرابع"
+ville: "tunis"
 category: "theatre"
 link: "https://www.instagram.com/p/DfLjUGOimGF/"
 source: "ig-theatre-national"

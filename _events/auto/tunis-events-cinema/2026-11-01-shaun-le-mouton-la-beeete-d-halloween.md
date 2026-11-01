@@ -2,6 +2,7 @@
 title: "Shaun le Mouton : La Bêêête d'Halloween"
 date: 2026-11-01 12:55
 venue: "Pathé Azur City"
+ville: "tunis"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween"
