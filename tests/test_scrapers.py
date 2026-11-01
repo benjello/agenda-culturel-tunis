@@ -186,7 +186,8 @@ class Lanceur(unittest.TestCase):
                  mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
                  mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"), \
                  mock.patch.object(lanceur.doublons, "marquer", return_value=0), \
-                 mock.patch.object(lanceur.films, "ecrire", return_value=0):
+                 mock.patch.object(lanceur.films, "ecrire", return_value=0), \
+                 mock.patch.object(lanceur.controle, "main", return_value=0):
                 code = lanceur.main([])
             etat = json.loads((d / "etat.json").read_text())
             self.assertEqual(code, 0)
@@ -214,7 +215,8 @@ class Lanceur(unittest.TestCase):
                  mock.patch.object(ecriture, "DOSSIER_AUTO", d / "auto"), \
                  mock.patch.object(ecriture, "FICHIER_ETAT", d / "etat.json"), \
                  mock.patch.object(lanceur.doublons, "marquer", return_value=0), \
-                 mock.patch.object(lanceur.films, "ecrire", return_value=0):
+                 mock.patch.object(lanceur.films, "ecrire", return_value=0), \
+                 mock.patch.object(lanceur.controle, "main", return_value=0):
                 code = lanceur.main([])
             etat = json.loads((d / "etat.json").read_text())
             self.assertEqual(code, 0)
@@ -358,6 +360,89 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "teskerti" / "cloche.md").read_text())
             # relancer ne change rien
             self.assertEqual(doublons.marquer(sources, d), 1)
+
+
+    def test_meme_jour_titres_proches(self):
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for src, lieu, titre, heure in [("ift-pdf", "Institut français de Tunis", "Festival Du Podcast", "10:00"),
+                                            ("fb-ift", "L'institut Français de Tunisie", "Podcast Days by Tunisia Podcast Festival", "11:00"),
+                                            ("fb-ift", "L'institut Français de Tunisie", "Concert de jazz", "20:00"),
+                                            ("presse", "Tunisie, voir l'article", "Concert de jazz Manouche Trio", "00:00"),
+                                            ("autre", "L'Agora", "Jazz Manouche Trio", "20:00")]:
+                (d / src).mkdir(exist_ok=True)
+                (d / src / f"{slug(titre)}.md").write_text(
+                    f'---\ntitle: "{titre}"\ndate: {FUTUR}-11-07 {heure}\nvenue: "{lieu}"\n'
+                    f'link: "https://{src}.tn/x"\nsource: "{src}"\nsource_name: "{src}"\nauto: true\n---\n')
+            sources = [{"id": "ift-pdf", "type": "lieu"}, {"id": "fb-ift", "type": "agenda"},
+                       {"id": "presse", "type": "agenda"}, {"id": "autre", "type": "lieu"}]
+            self.assertEqual(doublons.marquer(sources, d), 2)
+            self.assertIn("doublon: true", (d / "fb-ift" / "podcast-days-by-tunisia-podcast-festival.md").read_text())
+            self.assertIn("doublon: true", (d / "presse" / "concert-de-jazz-manouche-trio.md").read_text())
+            self.assertNotIn("doublon", (d / "fb-ift" / "concert-de-jazz.md").read_text())
+            self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
+
+
+class AgendaDuJour(unittest.TestCase):
+    def test_blocs_heure_ville(self):
+        from scrapers.sources.agenda_du_jour import evenements
+        contenu = ("<h3>16h00 — Ben Guerdane</h3><p><strong>37e Festival international d’équitation</strong></p>"
+                   "<p>📍 Hippodrome Marsa El Ksiba</p><ul><li>Course nationale</li></ul>"
+                   "<h3>19h00 — Carthage</h3><p><strong>Musée national de Carthage</strong></p>"
+                   "<ul><li>Spectacle « 100 violons » de <strong>Zied Zouari</strong></li></ul>")
+        evts = evenements({"titre": "Agenda du samedi 25 juillet 2026 : les principaux rendez-vous", "lien": "x"}, contenu)
+        self.assertEqual([(e.debut.hour, e.titre, e.lieu) for e in evts], [
+            (16, "37e Festival international d’équitation", "Hippodrome Marsa El Ksiba, Ben Guerdane"),
+            (19, "Spectacle « 100 violons » de Zied Zouari", "Musée national de Carthage")])
+        from scrapers.villes import ville
+        self.assertEqual(ville(evts[0].lieu), "sud")
+
+
+class Bilan(unittest.TestCase):
+    def test_compte_par_ville_et_source(self):
+        import datetime as dt
+        from scrapers import bilan
+        auj = dt.date(2026, 11, 1)
+        evts = [{"date": "2026-11-02 20:00", "source": "a", "ville": "sfax", "category": "musique"},
+                {"date": "2026-11-03", "source": "b", "ville": "tunis", "film": True, "title": "F"},
+                {"date": "2026-11-03", "source": "c", "ville": "tunis", "film": True, "title": "F"},
+                {"date": "2026-10-20", "end_date": "2026-11-20", "source": "a", "ville": "sfax", "category": "expo"},
+                {"date": "2026-12-20", "source": "a", "ville": "sfax"},
+                {"date": "2026-10-01", "source": "a"}]
+        sources = [{"id": "a", "genre": "lieu"}, {"id": "b", "genre": "agenda"}, {"id": "c"}, {"id": "d"}]
+        b = bilan.compter(evts, auj, sources)
+        self.assertEqual((b["sept_jours"], b["a_venir"]), (3, 4))
+        self.assertEqual(b["par_ville"], {"sfax": 2, "tunis": 1})
+        self.assertEqual(b["sources_muettes"], ["c", "d"])
+        self.assertEqual(b["semaine"], "2026-S44")
+
+
+class Traduction(unittest.TestCase):
+    def test_langue_et_choix(self):
+        from scrapers import traduire
+        self.assertEqual(traduire.langue("محاضرة حول المسرح"), "ar")
+        self.assertEqual(traduire.langue("Live session with local DJs"), "en")
+        self.assertEqual(traduire.langue("Rencontre avec l'autrice"), "fr")
+        self.assertFalse(traduire.a_traduire("Hyperculte"))
+        self.assertFalse(traduire.a_traduire("هروب|FUITE"))
+        self.assertTrue(traduire.a_traduire("Rencontre avec Sonia Hanihina"))
+
+    def test_cache_et_pivot(self):
+        from scrapers import traduire
+        class Faux(traduire.Traducteur):
+            def __init__(self):
+                self.appels = []
+            def _direct(self, phrases, de, vers):
+                self.appels.append((de, vers))
+                return [f"{vers}:{p}" for p in phrases]
+        t = Faux()
+        self.assertEqual(t.traduire(["Bonjour. Au revoir."], "fr", "ar"), ["ar:en:Bonjour. ar:en:Au revoir."])
+        self.assertEqual(t.appels, [("fr", "en"), ("en", "ar")])
+        cache = {"titres": {"Déjà traduit ici": {"en": "x"}}, "notices": {}}
+        evts = [("_events/a.md", {"title": "Déjà traduit ici"}, ""), ("_events/b.md", {"title": "Concert de jazz"}, "")]
+        titres, notices = traduire.a_faire(evts, cache)
+        self.assertEqual((titres, notices), (["Concert de jazz"], []))
 
 
 class Films(unittest.TestCase):
@@ -619,6 +704,40 @@ class Lot7(unittest.TestCase):
         e = depuis_listes(d)[0]
         self.assertEqual((e.titre, e.debut.hour, e.fin, e.lien, e.prix), ("Syndicate of Love", 23, None, "https://ra.co/events/1", "30 TND"))
 
+    def test_resident_advisor_line_up(self):
+        from scrapers.sources.resident_advisor import depuis_listes
+        soiree = {"id": "2", "title": "ONWRD", "startTime": "2026-11-03T19:00:00.000", "contentUrl": "/events/2",
+                  "venue": {"name": "TBA", "area": {"name": "Tunis"}}, "images": [],
+                  "artists": [{"name": "Amine K"}, {"name": "Deena Abdelwahed"}], "promoters": [{"name": "Downtown Vibes"}],
+                  "content": "<p>Une nuit</p>"}
+        d = {"eventListings": {"data": [{"event": soiree}, {"event": soiree}]}}
+        evts = depuis_listes(d)
+        self.assertEqual(len(evts), 1)  # la même soirée listée sur deux jours
+        self.assertEqual(evts[0].artistes, ["Amine K", "Deena Abdelwahed"])
+        self.assertEqual(evts[0].lieu, "Tunis")
+        self.assertIn("Line-up : Amine K, Deena Abdelwahed", evts[0].description)
+        self.assertIn("Organisé par Downtown Vibes", evts[0].description)
+
+    def test_source_pas_un_lieu(self):
+        from scrapers import pages
+        sources = [{"id": "w", "nom": "Webdo", "genre": "presse"},
+                   {"id": "k", "nom": "Kadhem (Instagram)", "genre": "collectif", "options": {"lieu": "Kadhem"}},
+                   {"id": "f", "nom": "Fabrika festival (Instagram)", "genre": "festival", "options": {"lieu": "One Resort, Monastir"}},
+                   {"id": "c", "nom": "Cité des sciences (Facebook)", "genre": "lieu"}]
+        faux = pages.faux_lieux(sources)
+        self.assertIn("webdo", faux)
+        self.assertIn("kadhem", faux)
+        self.assertNotIn("one resort", faux)
+        evts = [{"venue": "Kadhem"}, {"venue": "One Resort"}, {"venue": "Webdo"}, {"venue": "Lieu à préciser"}]
+        self.assertEqual([g["noms"].most_common(1)[0][0] for g in pages.lieux(evts, faux).values()], ["One Resort"])
+
+    def test_genre_des_sources(self):
+        import yaml
+        from scrapers.commun import RACINE
+        genres = yaml.safe_load((RACINE / "_data" / "genres.yml").read_text())
+        for s in yaml.safe_load((RACINE / "_data" / "sources.yml").read_text()):
+            self.assertIn(s.get("genre"), genres, f"{s['id']} : genre manquant ou inconnu")
+
     def test_alerte(self):
         import datetime as dt
         from unittest import mock
@@ -667,6 +786,37 @@ class Expositions(unittest.TestCase):
         self.assertEqual(len(evts), 1)
         e = evts[0]
         self.assertEqual((e.categorie, e.debut.date().isoformat(), e.fin.date().isoformat()), ("expo", "2026-10-29", "2026-11-28"))
+
+    def test_annonces_et_meme_expo(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import lecteurs
+        pubs = [
+            {"lien": "a", "date": "2026-10-19", "texte": "Dix ans après sa dernière exposition personnelle, Halim Karabibene revient avec Cosmose. Jusqu'au 18 novembre."},
+            {"lien": "b", "date": "2026-10-28", "texte": "COSMOSE\nExposition de Halim Karabibene. Vernissage le 30 octobre."},
+            {"lien": "c", "date": "2026-10-28", "texte": "تعلم لجنة تنظيم أيام قرطاج السينمائية أنه تم فتح باب الاعتماد للصحفيين يوم 23 نوفمبر"},
+            {"lien": "d", "date": "2026-10-28", "texte": "L'Agenda culturel de la Méditerranée : novembre, le 9 novembre"},
+            {"lien": "e", "date": "2026-10-28", "texte": "Soirée théâtre le 5 novembre à 20h, prochaine édition le 30 janvier"},
+        ]
+        class Jour(dt.date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 11, 1)
+        with mock.patch.object(lecteurs.dt, "date", Jour):
+            evts = lecteurs.une_affiche_par_evenement(pubs, [], "Agorgi Gallery")
+        self.assertEqual(sorted(e.lien for e in evts), ["b", "e"])
+        self.assertEqual([e.debut.date().isoformat() for e in evts if e.lien == "e"], ["2026-11-05"])
+
+    def test_autre_ville_dans_le_titre(self):
+        import datetime as dt
+        from scrapers import ecriture
+        from scrapers.commun import Evenement
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(ecriture, "DOSSIER_AUTO", Path(d)):
+            src = {"id": "ig-la-boite", "nom": "La Boîte (Instagram)", "genre": "lieu", "options": {"lieu": "La Boîte"}}
+            ecriture.ecrire_evenements(src, [Evenement("Direction Gabès pour les Oasis Days !", dt.datetime(2030, 11, 3), "x", "La Boîte")])
+            texte = next(Path(d).rglob("*.md")).read_text()
+        self.assertIn('venue: "Gabès, voir l\'annonce"', texte)
+        self.assertIn('ville: "sud"', texte)
 
     def test_annee_par_jour_de_semaine(self):
         import datetime as dt

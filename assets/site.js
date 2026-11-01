@@ -47,6 +47,18 @@
       var p = el.dataset.mois.split('-');
       el.textContent = langue === 'fr' ? el._fr : new Date(+p[0], +p[1] - 1, 15).toLocaleString(loc, { month: 'long', year: 'numeric' });
     });
+    // Titres et notices des événements : traduction automatique (_data/traductions.json)
+    var cle = 'tr' + langue.charAt(0).toUpperCase() + langue.slice(1);
+    document.querySelectorAll('[data-tr-fr],[data-tr-en],[data-tr-ar]').forEach(function (el) {
+      if (el._orig === undefined) el._orig = el.textContent;
+      var v = el.dataset[cle];
+      el.textContent = v || el._orig;
+      if (v) el.setAttribute('lang', langue); else el.removeAttribute('lang');
+    });
+    var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false;
+    blocs.forEach(function (b) { b.hidden = b.dataset.trBloc !== langue; traduit = traduit || !b.hidden; });
+    document.querySelectorAll('[data-tr-origine]').forEach(function (b) { b.hidden = traduit; });
+    document.querySelectorAll('.note-trad').forEach(function (b) { b.hidden = !traduit; });
     document.querySelectorAll('[data-langue]').forEach(function (b) { b.classList.toggle('active', b.dataset.langue === langue); });
     document.dispatchEvent(new CustomEvent('langue', { detail: langue }));
   }

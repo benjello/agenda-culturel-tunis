@@ -5,4 +5,5 @@ type: "agenda"
 url_source: "https://www.facebook.com/cultmedenine"
 reseau: "facebook"
 categorie: "autre"
+genre: "administration"
 ---

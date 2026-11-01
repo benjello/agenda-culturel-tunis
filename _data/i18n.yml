@@ -10,6 +10,7 @@ nav.apropos: { ar: "من نحن", en: "About" }
 nav.sources: { ar: "المصادر", en: "Sources" }
 nav.carte: { ar: "الخريطة", en: "Map" }
 nav.nouveau: { ar: "جديد", en: "New" }
+nav.couverture: { ar: "التغطية", en: "Coverage" }
 intro_titre: { ar: "ماذا نفعل في تونس؟", en: "What's on in Tunis?" }
 intro_texte: { ar: "حفلات، سينما، مسرح، معارض… كل الأنشطة الثقافية في مكان واحد.", en: "Concerts, cinema, theatre, exhibitions… every cultural event in one place." }
 recherche: { fr: "Chercher un artiste, un lieu, un film…", ar: "ابحث عن فنان، فضاء، فيلم…", en: "Search an artist, a venue, a film…" }
@@ -66,6 +67,15 @@ collectifs_titre: { ar: "المنظمون والفنانون", en: "Organisers a
 collectifs_intro: { ar: "كل بطاقة تعرض ما أعلنوا عنه.", en: "Each page shows what they have announced." }
 artistes: { ar: "فنانون", en: "Artists" }
 organisateurs: { ar: "منظمون، فضاءات ومجموعات", en: "Organisers, venues and collectives" }
+genre.lieu: { ar: "الفضاءات", en: "Venues" }
+genre.institution: { ar: "المعاهد والمراكز الثقافية", en: "Cultural institutes and centres" }
+genre.festival: { ar: "المهرجانات", en: "Festivals" }
+genre.collectif: { ar: "مجموعات وجمعيات وفنانون", en: "Collectives, associations, DJs and artists" }
+genre.administration: { ar: "المندوبيات الجهوية للثقافة", en: "Regional culture offices" }
+genre.agenda: { ar: "أجندات ومنصات تذاكر", en: "Listings and ticketing" }
+genre.presse: { ar: "الصحف", en: "Newspapers" }
+traduction_auto: { ar: "ترجمة آلية.", en: "Machine translation." }
+lu_dans: { ar: "مقال في", en: "Read in" }
 nouveau_titre: { ar: "جديد هذا الأسبوع", en: "New this week" }
 nouveau_intro: { ar: "ما أضيف إلى الأجندا في الأيام السبعة الأخيرة.", en: "What arrived in the agenda over the last seven days." }
 rien_nouveau: { ar: "لا جديد هذا الأسبوع.", en: "Nothing new this week yet." }

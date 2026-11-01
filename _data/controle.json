@@ -1,0 +1,156 @@
+{
+ "date": "2026-11-01",
+ "corriges": 0,
+ "a_verifier": [
+  {
+   "fichier": "beit-al-hikma/2026-11-13-evenement.md",
+   "source": "beit-al-hikma",
+   "titre": "محاضرة: تحولات الكتابة الأثرية والتراثية في تونس: من الإرث الاستعماري إلى تجديد المقاربات المعرفية ل",
+   "date": "2026-11-13",
+   "lien": "https://www.beitalhikma.tn/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a9-%d8%aa%d8%ad%d9%88%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%a3%d8%ab%d8%b1%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b1%d8%a7/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "fb-cr-sidibouzid/2026-11-01-evenement.md",
+   "source": "fb-cr-sidibouzid",
+   "titre": "الورشات الفنية الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد",
+   "date": "2026-11-01",
+   "lien": "https://www.facebook.com/100068921841441/posts/1436410405333007",
+   "problemes": [
+    "deux fois dans la source (voir 2026-11-01-evenement-sidi-bouzid-voir-l-annonce.md)"
+   ]
+  },
+  {
+   "fichier": "fb-ift-facebook/2026-11-01-dimanche-1er-novembre-la-mediatheque-de-l-institut-francais-.md",
+   "source": "fb-ift-facebook",
+   "titre": "Dimanche 1er Novembre, la Médiathèque de l'Institut français de Tunisie ouvre exceptionnel",
+   "date": "2026-11-01",
+   "lien": "https://www.facebook.com/100064556987464/posts/1560731326088752",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "fb-ift-facebook/2026-11-07-podcast-days-by-tunisia-podcast-festival-vous-devoile-son-pr.md",
+   "source": "fb-ift-facebook",
+   "titre": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du 6 et 7 novembre",
+   "date": "2026-11-07",
+   "lien": "https://www.facebook.com/100064556987464/posts/122298590240073523",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ift-pdf/2026-11-10-exposition.md",
+   "source": "ift-pdf",
+   "titre": "Exposition",
+   "date": "2026-11-10",
+   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+   "problemes": [
+    "titre trop vague"
+   ]
+  },
+  {
+   "fichier": "ift-pdf/2026-11-12-tables-rondes.md",
+   "source": "ift-pdf",
+   "titre": "Tables Rondes",
+   "date": "2026-11-12",
+   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+   "problemes": [
+    "titre trop vague"
+   ]
+  },
+  {
+   "fichier": "ig-agorgi-gallery/2026-10-19-dix-ans-apres-sa-derniere-exposition-personnelle-en-tunisie-.md",
+   "source": "ig-agorgi-gallery",
+   "titre": "Dix ans après sa dernière exposition personnelle en Tunisie, Halim Karabibene retrouve la",
+   "date": "2026-10-19",
+   "lien": "https://www.instagram.com/p/DerRMQzOTRj/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-jcc/2026-11-23-37.md",
+   "source": "ig-jcc",
+   "titre": "ت علم لجنة تنظيم أيام قرطاج السينمائية أنه تم فتح باب الاعتماد للصحفيين لتغطية الدورة 37 م",
+   "date": "2026-11-23",
+   "lien": "https://www.instagram.com/p/De2JsI8j7W5/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-jcc/2026-11-23-evenement.md",
+   "source": "ig-jcc",
+   "titre": "ت علم لجنة تنظيم أيام قرطاج السينمائية أنه تم فتح باب الاعتماد لرواد السينما لحضور الدورة",
+   "date": "2026-11-23",
+   "lien": "https://www.instagram.com/p/De2KaYgG6lL/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-theatre-national/2026-11-01-evenement-evenement.md",
+   "source": "ig-theatre-national",
+   "titre": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم الإبداع يدعوكم المس",
+   "date": "2026-11-01",
+   "lien": "https://www.instagram.com/p/DfLIEZVCbs3/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-theatre-national/2026-11-01-evenement.md",
+   "source": "ig-theatre-national",
+   "titre": "شاشات المواسم ... ذاكرة المسرح التونسي على الشاشة",
+   "date": "2026-11-01",
+   "lien": "https://www.instagram.com/p/DfLjUGOimGF/",
+   "problemes": [
+    "deux fois dans la source (voir 2026-11-01-evenement-evenement.md)"
+   ]
+  },
+  {
+   "fichier": "ig-theatre-national/2027-01-30-evenement.md",
+   "source": "ig-theatre-national",
+   "titre": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم الإبداع يدعوكم المس",
+   "date": "2027-01-30",
+   "lien": "https://www.instagram.com/p/DfLIEZVCbs3/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "resident-advisor/2026-11-03-onwrd-frwrd.md",
+   "source": "resident-advisor",
+   "titre": "ONWRD/FRWRD",
+   "date": "2026-11-03",
+   "lien": "https://ra.co/events/2570365",
+   "problemes": [
+    "deux fois dans la source (voir 2026-11-03-onwrd-frwrd-studio-b52.md)"
+   ]
+  },
+  {
+   "fichier": "resident-advisor/2026-11-05-fabrika-festival-14.md",
+   "source": "resident-advisor",
+   "titre": "Fabrika Festival 14",
+   "date": "2026-11-05",
+   "lien": "https://ra.co/events/2459015",
+   "problemes": [
+    "deux fois dans la source (voir 2026-11-05-fabrika-festival-14-one-resort.md)"
+   ]
+  },
+  {
+   "fichier": "resident-advisor/2026-11-27-nomad-man-festival-2026.md",
+   "source": "resident-advisor",
+   "titre": "Nōmad Man Festival 2026",
+   "date": "2026-11-27",
+   "lien": "https://ra.co/events/2539551",
+   "problemes": [
+    "deux fois dans la source (voir 2026-11-27-nomad-man-festival-2026-tba.md)"
+   ]
+  }
+ ]
+}

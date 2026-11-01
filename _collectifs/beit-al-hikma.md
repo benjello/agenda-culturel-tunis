@@ -4,4 +4,5 @@ source: "beit-al-hikma"
 type: "lieu"
 url_source: "https://www.beitalhikma.tn/feed/"
 categorie: "conference"
+genre: "lieu"
 ---

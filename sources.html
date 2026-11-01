@@ -10,13 +10,13 @@ permalink: /sources/
 
 {%- assign etat = site.data.etat_sources | default: empty %}
 <table class="sources">
-  <thead><tr><th>Source</th><th>Type</th><th>État</th></tr></thead>
+  <thead><tr><th>Source</th><th>Genre</th><th>État</th></tr></thead>
   <tbody>
   {%- for s in site.data.sources %}
     {%- assign e = etat[s.id] %}
     <tr>
       <td>{% if s.url != "" %}<a href="{{ s.url }}" rel="noopener">{{ s.nom }}</a>{% else %}{{ s.nom }}{% endif %}{% if s.note %}<br><small>{{ s.note }}</small>{% endif %}</td>
-      <td>{{ s.type }}</td>
+      <td>{{ site.data.genres[s.genre] | default: s.type }}{% if s.type == "billetterie" %} · billetterie{% endif %}</td>
       <td>
         {%- if s.actif == false %}<span class="etat pause">à étudier</span>
         {%- elsif e.ok != true and e.attente %}<span class="etat attente">en attente</span> <small>{{ e.attente }}</small>

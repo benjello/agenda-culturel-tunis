@@ -15,7 +15,8 @@
   </div>
   <div class="event-body">
     <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ cat_id }}">{{ cat.label }}</span>{% if e.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}
-    <h3><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h3>
+    {%- assign tr = site.data.traductions.titres[e.title] %}
+    <h3><a href="{{ e.url | relative_url }}"{% for l in tr %} data-tr-{{ l[0] }}="{{ l[1] | escape }}"{% endfor %}>{{ e.title }}</a></h3>
     {%- if e.film %}
     <p class="meta">{% if e.duration %}{% assign h = e.duration | divided_by: 60 %}{% assign mn = e.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if e.genres %}{{ e.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=e.title imdb=e.imdb %}</p>
     <p class="days">

@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.facebook.com/sallecine350"
 reseau: "facebook"
 categorie: "cinema"
+genre: "lieu"
 ---

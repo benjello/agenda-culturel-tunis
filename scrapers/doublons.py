@@ -1,8 +1,15 @@
 """Repère les événements annoncés par plusieurs sources (ex. El Teatro et Teskerti).
 
-Deux événements sont considérés comme le même s'ils commencent au même moment
-dans le même lieu. Sans heure (films, expositions : seulement un jour), il faut
-en plus que le titre commence pareil. On garde celui de la source la plus proche du lieu (le site du
+Deux événements sont considérés comme le même :
+- s'ils commencent au même moment dans le même lieu (sans heure, il faut en plus que
+  le titre commence pareil) ;
+- ou s'ils ont lieu le même jour, dans le même lieu écrit autrement (« Institut français
+  de Tunis » / « L'Institut Français de Tunisie »), avec des titres proches : la moitié
+  des mots du titre le plus court se retrouvent dans l'autre (« Festival du podcast » /
+  « Podcast Days by Tunisia Podcast Festival ») ;
+- ou, quand une source ne donne pas de lieu précis (presse : « Tunisie, voir l'article »),
+  le même jour avec des titres presque identiques (8 mots sur 10, 2 mots au moins).
+Les films ne sont pas concernés : ils sont regroupés par titre ailleurs (films.py). On garde celui de la source la plus proche du lieu (le site du
 lieu avant une billetterie, une billetterie avant un agrégateur) ; les autres sont
 marqués « doublon » et ne s'affichent pas, mais leur lien est ajouté à l'événement
 gardé (« Aussi sur : Teskerti »).
@@ -12,6 +19,7 @@ Lancé automatiquement à la fin de « python3 -m scrapers ».
 from __future__ import annotations
 
 import re
+import unicodedata
 from pathlib import Path
 
 import yaml
@@ -45,6 +53,46 @@ def _cle_lieu(lieu: str) -> str:
     return slug(lieu)[:12]
 
 
+_ARTICLES = re.compile(r"^(?:l|le|la|les|el|al|the) ")
+_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|a venir)$|voir l.article|voir l.annonce|plusieurs")
+_VIDES = {"les", "des", "une", "avec", "pour", "the", "and", "dans", "sur", "par", "aux", "est", "vous",
+          "cinema", "concert", "spectacle", "soiree", "exposition", "rencontre", "atelier", "theatre", "with"}
+
+
+def _norm(texte: str) -> str:
+    t = unicodedata.normalize("NFKD", str(texte or "").replace("’", "'")).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def _lieu_proche(lieu: str, alias: dict) -> str:
+    """« L'Institut Français de Tunisie, Tunis » → « institut fra » ; vide si le lieu est vague."""
+    brut = str(alias.get(_norm(lieu), lieu) or "")
+    if not _norm(brut) or _VAGUE.search(_norm(brut)):
+        return ""
+    return _ARTICLES.sub("", _norm(brut.split(",")[0]))[:12]
+
+
+def mots(titre: str) -> set[str]:
+    return {m for m in re.findall(r"[a-z0-9]{3,}", _norm(titre)) if m not in _VIDES} | \
+           set(re.findall(r"[\u0600-\u06ff]{3,}", str(titre or "")))
+
+
+def proches(a: set, b: set, seuil: float, minimum: int = 1) -> bool:
+    if not a or not b:
+        return False
+    commun = len(a & b)
+    return commun >= minimum and commun / min(len(a), len(b)) >= seuil
+
+
+def _alias() -> dict:
+    try:
+        from .commun import RACINE
+        brut = yaml.safe_load((RACINE / "_data" / "lieux_alias.yml").read_text()) or {}
+    except (OSError, yaml.YAMLError):
+        return {}
+    return {_norm(k): v for k, v in brut.items()}
+
+
 def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
     types = {s["id"]: s.get("type", "agenda") for s in sources}
     evts = []
@@ -57,25 +105,79 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
         if not isinstance(champs.get("date"), str):
             champs["date"] = str(champs.get("date"))[:16]
         evts.append((f, champs, corps))
-    groupes: dict[tuple, list] = {}
-    for e in evts:
+    # Les événements écrits à la main (_events/manuel) passent avant : on ne les modifie pas,
+    # mais une annonce automatique du même événement est masquée.
+    for f in sorted((dossier.parent / "manuel").glob("*.md")):
+        champs, _ = _lire(f)
+        if champs and champs.get("date"):
+            champs["date"] = str(champs["date"])[:16]
+            champs["_manuel"] = True
+            evts.append((None, champs, ""))
+    # 1. même moment, même lieu (règle d'origine)
+    parent = list(range(len(evts)))
+
+    def racine(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def unir(i, j):
+        if evts[i][1].get("source") != evts[j][1].get("source"):
+            parent[racine(j)] = racine(i)
+
+    premiers: dict[tuple, int] = {}
+    for i, e in enumerate(evts):
         c = e[1]
         date = str(c["date"])[:16]
         cle = (date, _cle_lieu(c.get("venue", "")))
         if len(date) <= 10 or date.endswith("00:00"):
             cle += (slug(str(c.get("title", "")))[:8],)
-        groupes.setdefault(cle, []).append(e)
+        if cle in premiers:
+            unir(premiers[cle], i)
+        else:
+            premiers[cle] = i
+    # 2. même jour, titres proches (lieu écrit autrement, ou pas de lieu précis)
+    alias = _alias()
+    par_jour: dict[str, list] = {}
+    for i, e in enumerate(evts):
+        if not e[1].get("film"):
+            par_jour.setdefault(str(e[1]["date"])[:10], []).append(
+                (i, _lieu_proche(e[1].get("venue", ""), alias), mots(e[1].get("title", ""))))
+    for jour in par_jour.values():
+        for x, (i, li, mi) in enumerate(jour):
+            for j, lj, mj in jour[x + 1:]:
+                if li and li == lj and proches(mi, mj, 0.5):
+                    unir(i, j)
+                elif (not li or not lj) and proches(mi, mj, 0.8, 2):
+                    unir(i, j)
+    groupes: dict[int, list] = {}
+    for i, e in enumerate(evts):
+        groupes.setdefault(racine(i), []).append(e)
     n = 0
     for groupe in groupes.values():
-        groupe.sort(key=lambda e: (PRIORITE.get(types.get(e[1].get("source")), 3), e[1].get("source", "")))
+        # la source la plus proche du lieu, puis celle qui donne une heure et un lieu précis
+        groupe.sort(key=lambda e: (not e[1].get("_manuel"), PRIORITE.get(types.get(e[1].get("source")), 3),
+                                   str(e[1]["date"]).endswith("00:00") or len(str(e[1]["date"])) <= 10,
+                                   not _lieu_proche(e[1].get("venue", ""), alias), e[1].get("source", "")))
         garde = groupe[0]
         autres = [e for e in groupe[1:] if e[1].get("source") != garde[1].get("source")]
-        if autres:
-            garde[1]["autres_sources"] = [{"name": e[1].get("source_name"), "link": e[1].get("link"), "source": e[1].get("source")} for e in autres]
+        if autres and garde[0] is None:  # gardé : l'événement écrit à la main
+            for e in autres:
+                if e[0] is not None:
+                    e[1]["doublon"] = True
+                    n += 1
+        elif autres:
+            vus = {}
+            for e in autres:
+                vus.setdefault(e[1].get("source"), e)
+            garde[1]["autres_sources"] = [{"name": e[1].get("source_name"), "link": e[1].get("link"), "source": e[1].get("source")} for e in vus.values()]
             for e in autres:
                 e[1]["doublon"] = True
                 n += 1
     for f, champs, corps in evts:
+        if f is None:
+            continue
         # « auto: true » en dernier, comme à l'écriture
         auto = champs.pop("auto", True)
         champs["auto"] = auto

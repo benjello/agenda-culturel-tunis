@@ -57,6 +57,22 @@ description: "L'état de chaque source de l'agenda : à jour, silencieuse, en pa
 </table>
 <p class="updated">« Silencieuse » : la source se lit bien mais n'a rien annoncé depuis plus de 30 jours. Les sources en pause sont repérées mais pas encore branchées, ou leur adresse est à vérifier (voir <code>_data/sources.yml</code>).</p>
 
+{%- assign ctl = site.data.controle -%}
+{%- if ctl %}
+<h2 id="a-verifier">Entrées à vérifier</h2>
+<p>Après chaque passage, un contrôle relit tous les événements. Il corrige seul les lieux qui sont en fait le nom d'une source (journal, agenda, collectif){% if ctl.corriges > 0 %} : {{ ctl.corriges }} corrigé(s) au dernier passage{% endif %}. Il signale ici le reste : titre vague ou trop long, date lointaine, même événement deux fois.</p>
+{%- if ctl.a_verifier.size > 0 %}
+<table class="sources">
+  <thead><tr><th>Événement</th><th>Source</th><th>Problème</th></tr></thead>
+  <tbody>
+  {%- for x in ctl.a_verifier %}
+    <tr><td>{{ x.date | date: "%d/%m" }} · {% if x.lien %}<a href="{{ x.lien }}" rel="noopener">{{ x.titre }}</a>{% else %}{{ x.titre }}{% endif %}</td><td>{{ x.source }}</td><td>{{ x.problemes | join: " ; " }}</td></tr>
+  {%- endfor %}
+  </tbody>
+</table>
+{%- else %}<p>Rien à signaler.</p>{% endif %}
+{%- endif %}
+
 <script>
 (function () {
   var auj = new Date(), lignes = Array.prototype.slice.call(document.querySelectorAll('#sante-lignes tr'));

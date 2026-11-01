@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.instagram.com/entrelesrives/"
 reseau: "instagram"
 categorie: "autre"
+genre: "lieu"
 ---

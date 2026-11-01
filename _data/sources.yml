@@ -8,6 +8,10 @@
 #   nom        nom affiché sur le site
 #   url        page où la programmation est publiée
 #   type       lieu | billetterie | cinema | agenda
+#   genre      ce qu'est la source, pour la ranger sur le site :
+#              lieu | institution | festival | collectif | administration | presse | agenda
+#              Hors « lieu » et « institution », le nom de la source n'est jamais pris pour un lieu
+#              (pas de fiche lieu ni de point sur la carte pour « Webdo » ou « tunis.events »).
 #   scraper    nom du scraper qui sait lire cette source (dossier scrapers/sources/)
 #   categorie  catégorie par défaut des événements (voir _data/categories.yml)
 #   actif      false : source repérée mais pas encore branchée (ou en pause)
@@ -19,6 +23,7 @@
   nom: Pathé Tunis City
   url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city
   type: cinema
+  genre: lieu
   scraper: pathe
   categorie: cinema
   actif: false
@@ -31,6 +36,7 @@
   nom: Pathé Azur City
   url: https://www.pathe.tn/fr/cinemas/cinema-pathe-azur-city
   type: cinema
+  genre: lieu
   scraper: pathe
   categorie: cinema
   actif: false
@@ -43,6 +49,7 @@
   nom: Teskerti
   url: https://teskerti.tn/
   type: billetterie
+  genre: agenda
   scraper: teskerti
   categorie: autre
   actif: true
@@ -52,6 +59,7 @@
   nom: El Teatro
   url: https://billetterie.elteatrotunis.com/fr/programmes
   type: lieu
+  genre: lieu
   scraper: billetterie_sktech
   categorie: theatre
   actif: true
@@ -62,6 +70,7 @@
   nom: Théâtre de l'Opéra de Tunis
   url: https://www.tunisianopera.tn/fr/programmes
   type: lieu
+  genre: lieu
   scraper: billetterie_sktech
   categorie: musique
   actif: true
@@ -72,6 +81,7 @@
   nom: Goethe-Institut Tunis
   url: https://www.goethe.de/ins/tn/fr/rss/ver.rss
   type: lieu
+  genre: institution
   scraper: rss
   categorie: conference
   actif: true
@@ -84,6 +94,7 @@
   nom: Beit al-Hikma (Académie tunisienne des sciences, des lettres et des arts)
   url: https://www.beitalhikma.tn/feed/
   type: lieu
+  genre: lieu
   scraper: rss
   categorie: conference
   actif: true
@@ -96,6 +107,7 @@
   nom: IRMC (Institut de recherche sur le Maghreb contemporain)
   url: https://www.irmcmaghreb.org/catégories/page-events/feed/
   type: lieu
+  genre: institution
   scraper: rss
   categorie: conference
   actif: true
@@ -109,6 +121,7 @@
   nom: Institut français de Tunisie
   url: https://www.institutfrancais-tunisie.com/list-agenda
   type: lieu
+  genre: institution
   scraper: liste_fiches
   categorie: autre
   actif: false  # agenda en JavaScript : remplacé par ift-pdf
@@ -126,6 +139,7 @@
   nom: tunis.events (agenda)
   url: https://tunis.events/concerts
   type: billetterie
+  genre: agenda
   scraper: tunis_events
   categorie: musique
   actif: true
@@ -147,6 +161,7 @@
   nom: tunis.events (cinéma)
   url: https://tunis.events/cinema
   type: agenda
+  genre: agenda
   scraper: tunis_events_cinema
   categorie: cinema
   actif: true
@@ -156,6 +171,7 @@
   nom: MonTicket.tn
   url: https://monticket.tn/
   type: billetterie
+  genre: agenda
   scraper: liste_fiches
   actif: false
   options:
@@ -166,6 +182,7 @@
   nom: B7L9 Art Station (Fondation Kamel Lazaar)
   url: https://www.kamellazaarfoundation.org/
   type: lieu
+  genre: lieu
   scraper: liste_fiches
   actif: false
   note: Pas de page d'agenda trouvée ; programme surtout sur les réseaux sociaux.
@@ -174,6 +191,7 @@
   nom: Istituto Italiano di Cultura di Tunisi
   url: https://iictunisi.esteri.it/
   type: lieu
+  genre: institution
   scraper: rss
   actif: false
   note: Programmes publiés en PDF ; le site WordPress a peut-être un flux /feed/ à tester.
@@ -182,6 +200,7 @@
   nom: Instituto Cervantes de Tunis
   url: https://cervantes.org/es/cultura/agenda-semanal
   type: lieu
+  genre: institution
   scraper: liste_fiches
   actif: false
   note: Agenda commun à tous les centres Cervantes ; il faudra filtrer Tunis.
@@ -190,6 +209,7 @@
   nom: Cinémathèque tunisienne (Cité de la Culture)
   url: ""
   type: cinema
+  genre: lieu
   scraper: aucun
   actif: false
   note: Programme annoncé seulement sur Facebook et dans la presse.
@@ -198,6 +218,7 @@
   nom: Ciné 350
   url: https://www.facebook.com/sallecine350
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: cinema
   actif: true
@@ -215,6 +236,7 @@
   nom: L'Agora (La Marsa)
   url: https://lagora.tn
   type: cinema
+  genre: lieu
   scraper: woocommerce_seances
   categorie: cinema
   actif: true
@@ -227,6 +249,7 @@
   nom: L'Agora (Instagram)
   url: https://www.instagram.com/lagoramarsa/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: autre
   actif: false
@@ -241,6 +264,7 @@
   nom: Alhambra Zéphyr (La Marsa)
   url: https://www.facebook.com/cine.alhambra.zephyr
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: cinema
   actif: true
@@ -255,6 +279,7 @@
   nom: Le Colisée (Tunis)
   url: https://www.facebook.com/Cinema.Colisee.Tunis
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: cinema
   actif: true
@@ -268,6 +293,7 @@
   nom: CinéMadart (Carthage)
   url: https://www.facebook.com/CineMadart
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: cinema
   actif: true
@@ -281,6 +307,7 @@
   nom: Cinéma Amilcar (El Manar)
   url: https://www.facebook.com/groups/265611163490450
   type: lieu
+  genre: lieu
   scraper: facebook
   categorie: cinema
   actif: true
@@ -294,6 +321,7 @@
   nom: Cinévog (Le Kram)
   url: https://www.facebook.com/groups/485273898178867
   type: lieu
+  genre: lieu
   scraper: facebook
   categorie: cinema
   actif: true
@@ -308,6 +336,7 @@
   nom: Habibi Downtown (Instagram)
   url: https://www.instagram.com/habibidowntown_/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: musique
   actif: true
@@ -321,6 +350,7 @@
   nom: Rock'n'Rolla La Goulette (Instagram)
   url: https://www.instagram.com/rocknrollagoulettepub/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: musique
   actif: true
@@ -335,6 +365,7 @@
   nom: Downtown Vibes (Instagram)
   url: https://www.instagram.com/downtown.vibes.world/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: musique
   actif: true
@@ -349,6 +380,7 @@
   nom: Hamdi RydEr (Instagram)
   url: https://www.instagram.com/thehamditheryder/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: musique
   actif: true
@@ -363,6 +395,7 @@
   nom: Balaclava (Instagram)
   url: https://www.instagram.com/blcv.tunis/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: musique
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -377,6 +410,7 @@
   nom: Syndicate of Love (Instagram)
   url: https://www.instagram.com/syndicateoflove.tn/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: musique
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -391,6 +425,7 @@
   nom: Kadhem (Instagram)
   url: https://www.instagram.com/kadhemusic/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: musique
   actif: true
@@ -405,6 +440,7 @@
   nom: Jaou Tunis (Instagram)
   url: https://www.instagram.com/jaoutunis/
   type: lieu
+  genre: festival
   scraper: instagram
   categorie: musique
   actif: true
@@ -419,6 +455,7 @@
   nom: B7L9 Art Station (Instagram)
   url: https://www.instagram.com/b7l9_tunis/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: musique
   actif: true
@@ -433,6 +470,7 @@
   nom: Eddisco
   url: https://www.facebook.com/eddiscorecordstore
   type: lieu
+  genre: collectif
   scraper: facebook_programmes
   categorie: musique
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -449,6 +487,7 @@
   nom: Club culturel Tahar Haddad
   url: https://www.facebook.com/Club.Tahar.Haddad
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: musique
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -465,6 +504,7 @@
   nom: Espace L'Artisto
   url: https://www.facebook.com/espace.artisto
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: theatre
   actif: true
@@ -481,6 +521,7 @@
   nom: Liber'thé
   url: https://www.facebook.com/liberthelafayette
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: autre
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -497,6 +538,7 @@
   nom: Central Tunis
   url: https://www.facebook.com/centraltunis
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: autre
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -513,6 +555,7 @@
   nom: Centre culturel 421
   url: https://www.facebook.com/CentreCulturel421
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: autre
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -529,6 +572,7 @@
   nom: Maison de l'image
   url: https://www.facebook.com/maisonimagetn
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: expo
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -545,6 +589,7 @@
   nom: Atelier L'Empreinte
   url: https://www.facebook.com/atelier.l.empreinte
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: expo
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -561,6 +606,7 @@
   nom: Regards Croisés
   url: https://www.facebook.com/REGARDSCROISESTN
   type: lieu
+  genre: collectif
   scraper: facebook_programmes
   categorie: expo
   actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
@@ -577,6 +623,7 @@
   nom: Centre des Arts Vivants de Radès
   url: https://www.facebook.com/cav.rades
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: theatre
   actif: true
@@ -593,6 +640,7 @@
   nom: Institut français de Tunisie (Facebook)
   url: https://www.facebook.com/IFTunisie
   type: lieu
+  genre: institution
   scraper: facebook_programmes
   categorie: conference
   actif: true
@@ -609,6 +657,7 @@
   nom: Librairie Al Kitab (Instagram)
   url: https://www.instagram.com/alkitab_tunisie/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: litterature
   actif: true
@@ -623,6 +672,7 @@
   nom: Librairie Al Kitab (Facebook)
   url: https://www.facebook.com/883511888330349
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: litterature
   actif: true
@@ -639,6 +689,7 @@
   nom: Eddisco Records (Instagram)
   url: https://www.instagram.com/eddisco_records/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: musique
   actif: true
@@ -653,6 +704,7 @@
   nom: Théâtre national tunisien (Instagram)
   url: https://www.instagram.com/theatre.national.tunisien/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: theatre
   actif: true
@@ -667,6 +719,7 @@
   nom: Fabrika festival (Instagram)
   url: https://www.instagram.com/fabrika_festival/
   type: lieu
+  genre: festival
   scraper: instagram
   categorie: musique
   actif: true
@@ -681,6 +734,7 @@
   nom: CinéMadart (Instagram)
   url: https://www.instagram.com/cinemadart/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: cinema
   actif: true
@@ -695,6 +749,7 @@
   nom: Cité des sciences (via Kapitalis)
   url: https://kapitalis.com/tunisie/tag/cite-des-sciences/feed/
   type: agenda
+  genre: presse
   scraper: rss
   categorie: conference
   actif: true
@@ -708,6 +763,7 @@
   nom: La Presse (culture)
   url: https://www.lapresse.tn/category/culture/feed/
   type: agenda
+  genre: presse
   scraper: presse
   categorie: autre
   actif: true
@@ -717,15 +773,29 @@
   nom: Tunisie Numérique (culture)
   url: https://www.tunisienumerique.com/actualite-tunisie/culture/feed/
   type: agenda
+  genre: presse
   scraper: presse
   categorie: autre
   actif: false  # le flux ne renvoie aucun article lisible (protection anti-robots ?), à revoir
   note: "Publie aussi « Agenda culturel : où sortir… »."
 
+- id: tn-agenda-du-jour
+  nom: Tunisie Numérique (agenda du jour)
+  url: https://www.tunisienumerique.com
+  type: agenda
+  genre: presse
+  scraper: agenda_du_jour
+  categorie: autre
+  actif: true
+  note: "Article quotidien « les principaux rendez-vous en Tunisie » : festivals et spectacles de tout le pays, régions comprises."
+  options:
+    flux: https://www.tunisienumerique.com/tunisie-actualite/agenda-culturel/feed/
+
 - id: presse-kapitalis
   nom: Kapitalis (culture)
   url: https://kapitalis.com/tunisie/category/culture/feed/
   type: agenda
+  genre: presse
   scraper: presse
   categorie: autre
   actif: true
@@ -734,6 +804,7 @@
   nom: Webdo
   url: https://www.webdo.tn/fr/rss
   type: agenda
+  genre: presse
   scraper: presse
   categorie: autre
   actif: true
@@ -742,6 +813,7 @@
   nom: Institut français de Tunisie (programme PDF)
   url: https://www.institutfrancais-tunisie.com/
   type: lieu
+  genre: institution
   scraper: pdf_programme
   categorie: autre
   actif: true
@@ -755,6 +827,7 @@
   nom: Journées Théâtrales de Carthage (Instagram)
   url: https://www.instagram.com/jtc_tunisie/
   type: lieu
+  genre: festival
   scraper: instagram
   categorie: theatre
   actif: false  # compte introuvable ou vide au 1er nov. 2026
@@ -768,6 +841,7 @@
   nom: Journées Cinématographiques de Carthage (Instagram)
   url: https://www.instagram.com/jcctunisieofficial/
   type: lieu
+  genre: festival
   scraper: instagram
   categorie: cinema
   actif: true
@@ -782,6 +856,7 @@
   nom: Cité des sciences de Tunis (Facebook)
   url: https://www.facebook.com/cite.sciences.tunis
   type: lieu
+  genre: lieu
   scraper: facebook_programmes
   categorie: conference
   actif: true
@@ -797,6 +872,7 @@
   nom: IFEST (Facebook)
   url: https://www.facebook.com/IFEST.TUNISIA
   type: lieu
+  genre: festival
   scraper: facebook_programmes
   categorie: conference
   actif: true
@@ -813,6 +889,7 @@
   nom: ATAST (Instagram)
   url: https://www.instagram.com/info.atast/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: conference
   actif: false  # compte introuvable ou vide au 1er nov. 2026
@@ -827,6 +904,7 @@
   nom: AJST (Facebook)
   url: https://www.facebook.com/AJSTunisie
   type: lieu
+  genre: collectif
   scraper: facebook_programmes
   categorie: conference
   actif: true
@@ -843,6 +921,7 @@
   nom: Agorgi Gallery (Instagram)
   url: https://www.instagram.com/agorgi_gallery/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: expo
   actif: true
@@ -857,6 +936,7 @@
   nom: Entre les rives (Instagram)
   url: https://www.instagram.com/entrelesrives/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: autre
   actif: true
@@ -871,6 +951,7 @@
   nom: La Boîte, art et architecture (Instagram)
   url: https://www.instagram.com/la_boite_art_architecture/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: expo
   actif: true
@@ -885,6 +966,7 @@
   nom: Shanti (Instagram)
   url: https://www.instagram.com/shanti.tn/
   type: lieu
+  genre: lieu
   scraper: instagram
   categorie: autre
   actif: true
@@ -902,6 +984,7 @@
   nom: Délégation régionale de la culture, Tunis
   url: https://cultureregions-tunis.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -913,6 +996,7 @@
   nom: Délégation régionale de la culture, Ariana
   url: https://cultureregions-ariana.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -924,6 +1008,7 @@
   nom: Délégation régionale de la culture, Ben Arous
   url: https://cultureregions-benarous.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -935,6 +1020,7 @@
   nom: Délégation régionale de la culture, La Manouba
   url: https://cultureregions-manouba.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -946,6 +1032,7 @@
   nom: Délégation régionale de la culture, Nabeul
   url: https://cultureregions-nabeul.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -957,6 +1044,7 @@
   nom: Délégation régionale de la culture, Zaghouan
   url: https://cultureregions-zaghouan.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -968,6 +1056,7 @@
   nom: Délégation régionale de la culture, Bizerte
   url: https://cultureregions-bizerte.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -979,6 +1068,7 @@
   nom: Délégation régionale de la culture, Béja
   url: https://cultureregions-beja.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -990,6 +1080,7 @@
   nom: Délégation régionale de la culture, Jendouba
   url: https://cultureregions-jendouba.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1001,6 +1092,7 @@
   nom: Délégation régionale de la culture, Le Kef
   url: https://cultureregions-kef.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1012,6 +1104,7 @@
   nom: Délégation régionale de la culture, Siliana
   url: https://cultureregions-siliana.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1023,6 +1116,7 @@
   nom: Délégation régionale de la culture, Sousse
   url: https://cultureregions-sousse.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1034,6 +1128,7 @@
   nom: Délégation régionale de la culture, Monastir
   url: https://cultureregions-monastir.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1045,6 +1140,7 @@
   nom: Délégation régionale de la culture, Mahdia
   url: https://cultureregions-mahdia.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1056,6 +1152,7 @@
   nom: Délégation régionale de la culture, Sfax
   url: https://cultureregions-sfax.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1067,6 +1164,7 @@
   nom: Délégation régionale de la culture, Kairouan
   url: https://cultureregions-kairouan.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1078,6 +1176,7 @@
   nom: Délégation régionale de la culture, Kasserine
   url: https://cultureregions-kasserine.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1089,6 +1188,7 @@
   nom: Délégation régionale de la culture, Sidi Bouzid
   url: https://cultureregions-sidibouzid.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1100,6 +1200,7 @@
   nom: Délégation régionale de la culture, Gabès
   url: https://cultureregions-gabes.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1111,6 +1212,7 @@
   nom: Délégation régionale de la culture, Médenine
   url: https://cultureregions-medenine.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1122,6 +1224,7 @@
   nom: Délégation régionale de la culture, Tataouine
   url: https://cultureregions-tataouine.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1133,6 +1236,7 @@
   nom: Délégation régionale de la culture, Gafsa
   url: https://cultureregions-gafsa.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1144,6 +1248,7 @@
   nom: Délégation régionale de la culture, Tozeur
   url: https://cultureregions-tozeur.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1155,6 +1260,7 @@
   nom: Délégation régionale de la culture, Kébili
   url: https://cultureregions-kebili.gov.tn/?feed=rss2
   type: agenda
+  genre: administration
   scraper: presse
   categorie: autre
   actif: false
@@ -1166,6 +1272,7 @@
   nom: Délégation régionale de la culture, Sfax (Facebook)
   url: https://www.facebook.com/Culture.SFAX
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1181,6 +1288,7 @@
   nom: Délégation régionale de la culture, Sousse (Facebook)
   url: https://www.facebook.com/crac.sousse
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1196,6 +1304,7 @@
   nom: Délégation régionale de la culture, Médenine (Facebook)
   url: https://www.facebook.com/cultmedenine
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1211,6 +1320,7 @@
   nom: Délégation régionale de la culture, Le Kef (Facebook)
   url: https://www.facebook.com/profile.php?id=100091820807696
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1226,6 +1336,7 @@
   nom: Délégation régionale de la culture, La Manouba (Facebook)
   url: https://www.facebook.com/profile.php?id=100083115077638
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1241,6 +1352,7 @@
   nom: Délégation régionale de la culture, Mahdia (Facebook)
   url: https://www.facebook.com/profile.php?id=100057049257017
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1256,6 +1368,7 @@
   nom: Délégation régionale de la culture, Sidi Bouzid (Facebook)
   url: https://www.facebook.com/profile.php?id=100068921841441
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1271,6 +1384,7 @@
   nom: Resident Advisor (Tunisie)
   url: https://ra.co/events/tn/all
   type: agenda
+  genre: agenda
   scraper: resident_advisor
   categorie: musique
   actif: true
@@ -1284,6 +1398,7 @@
   nom: Fédération tunisienne des ciné-clubs (FTCC)
   url: https://www.facebook.com/FTCCTunisie/
   type: agenda
+  genre: collectif
   scraper: facebook_programmes
   categorie: cinema
   actif: true
@@ -1300,6 +1415,7 @@
   nom: Tunisia Podcasts Festival (Instagram)
   url: https://www.instagram.com/tunisiapodcastsfestival/
   type: agenda
+  genre: festival
   scraper: instagram
   categorie: conference
   actif: true
@@ -1314,6 +1430,7 @@
   nom: Fondation Rosa Luxemburg, Afrique du Nord (Instagram)
   url: https://www.instagram.com/rosalux_northafrica/
   type: agenda
+  genre: institution
   scraper: instagram
   categorie: conference
   actif: true
@@ -1328,6 +1445,7 @@
   nom: Ciné-club de Tunis (Instagram)
   url: https://www.instagram.com/cineclub_de_tunis/
   type: lieu
+  genre: collectif
   scraper: instagram
   categorie: cinema
   actif: true
@@ -1342,6 +1460,7 @@
   nom: FTCA, cinéastes amateurs (Instagram)
   url: https://www.instagram.com/ftcafifak/
   type: agenda
+  genre: collectif
   scraper: instagram
   categorie: cinema
   actif: true
@@ -1356,6 +1475,7 @@
   nom: Délégation régionale de la culture, Gabès (Facebook)
   url: https://www.facebook.com/cacgabes
   type: agenda
+  genre: administration
   scraper: facebook_programmes
   categorie: autre
   actif: true
@@ -1366,3 +1486,49 @@
     lecteur: une_affiche_par_evenement
     max: 4
     resultats: 6
+
+# Régions (recherche Instagram du 1er nov. 2026 : comptes actifs à Sfax, Sousse, Tozeur)
+- id: ig-chantarts-sfax
+  nom: ChantArts, Sfax (Instagram)
+  url: https://www.instagram.com/chantarts.culture/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: musique
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "chantarts.culture"
+    lieu: "ChantArts, Sfax"
+    resultats: 8
+  note: "Espace de musique, d'arts et de culture à Sfax."
+
+- id: ig-sousse-culturelle
+  nom: Sousse Culturelle (Instagram)
+  url: https://www.instagram.com/sousseculturelle/
+  type: agenda
+  genre: agenda
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "sousseculturelle"
+    lieu: "Sousse, voir l'annonce"
+    resultats: 8
+  note: "Plateforme qui relaie l'actualité culturelle de Sousse."
+
+- id: ig-festival-oasis-tozeur
+  nom: Festival international des oasis de Tozeur (Instagram)
+  url: https://www.instagram.com/festivaldesoasistozeur/
+  type: lieu
+  genre: festival
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "festivaldesoasistozeur"
+    lieu: "Tozeur, voir l'annonce"
+    resultats: 8
+  note: "Festival chaque fin d'année, à Tozeur."

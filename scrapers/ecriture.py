@@ -15,11 +15,15 @@ import re
 import shutil
 
 from .commun import RACINE, Evenement, Publication, est_discret, est_famille, slug
-from .villes import ville
+from .pages import _cle, faux_lieux
+from .villes import mention, ville
 
 DOSSIER_AUTO = RACINE / "_events" / "auto"
 DOSSIER_PROGRAMMES = RACINE / "_data" / "programmes"
 FICHIER_ETAT = RACINE / "_data" / "etat_sources.json"
+
+
+LIEU_INCONNU = "Lieu à préciser"
 
 
 def _yaml(v) -> str:
@@ -66,6 +70,8 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
         shutil.rmtree(dossier)
     dossier.mkdir(parents=True)
     vus = set()
+    faux = faux_lieux([source])
+    defaut = (source.get("options") or {}).get("lieu") or source["nom"]
     for e in a_venir:
         nom = f"{e.debut:%Y-%m-%d}-{slug(e.titre)[:60]}"
         if nom in vus:  # même titre le même jour, dans un autre lieu
@@ -73,13 +79,22 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
         if nom in vus:
             continue
         vus.add(nom)
+        lieu = e.lieu or source["nom"]
+        if _cle(lieu) in faux:  # « Webdo », « Kadhem » : la source, pas un lieu
+            lieu = LIEU_INCONNU
+        if lieu in (defaut, LIEU_INCONNU) and not e.adresse:
+            # Lieu par défaut de la source, mais l'annonce parle d'une autre ville :
+            # « Direction Gabès pour les Oasis Days ! » chez La Boîte (Tunis) → Gabès.
+            ailleurs = mention(e.titre)
+            if ailleurs and ailleurs[0] != ville(lieu if lieu != LIEU_INCONNU else source["nom"]):
+                lieu = f"{ailleurs[1]}, voir l'annonce"
         champs = {
             "title": e.titre,
             "date": _date(e.debut),
             "end_date": _date(e.fin) if e.fin and e.fin.date() != e.debut.date() else None,
-            "venue": e.lieu or source["nom"],
+            "venue": lieu,
             "address": e.adresse or None,
-            "ville": ville(e.lieu or source["nom"], e.adresse),
+            "ville": ville(lieu if lieu != LIEU_INCONNU else source["nom"], e.adresse),
             "category": e.categorie or source.get("categorie") or "autre",
             "price": e.prix or None,
             "link": e.lien,
@@ -91,6 +106,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "imdb": e.imdb or None,
             "duration": e.duree or None,
             "genres": e.genres or None,
+            "artists": e.artistes or None,
             "discret": True if est_discret(e.titre) else None,
             "famille": True if est_famille(e.titre, e.description) else None,
             "ajoute": deja.get(nom) or dt.date.today().isoformat(),

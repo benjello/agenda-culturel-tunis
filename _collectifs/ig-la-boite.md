@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.instagram.com/la_boite_art_architecture/"
 reseau: "instagram"
 categorie: "expo"
+genre: "lieu"
 ---

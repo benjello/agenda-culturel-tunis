@@ -5,4 +5,5 @@ type: "lieu"
 url_source: "https://www.facebook.com/cite.sciences.tunis"
 reseau: "facebook"
 categorie: "conference"
+genre: "lieu"
 ---

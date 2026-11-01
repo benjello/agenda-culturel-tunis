@@ -13,10 +13,11 @@ Options :
 from __future__ import annotations
 
 import datetime as dt
+import re
 
 import requests
 
-from ..commun import Evenement, propre
+from ..commun import Evenement, propre, resume
 
 API = "https://ra.co/graphql"
 ENTETES = {
@@ -33,10 +34,14 @@ ZONE = """query GET_AREA($areaUrlName: String, $countryUrlCode: String) {
 SOIREES = """query GET_EVENT_LISTINGS($filters: FilterInputDtoInput, $pageSize: Int, $page: Int) {
   eventListings(filters: $filters, pageSize: $pageSize, page: $page) {
     data { event { id title date startTime endTime contentUrl cost
-                   venue { name address area { name } } images { filename } } }
+                   venue { name address area { name } } images { filename } CHAMPS } }
     totalResults
   }
 }"""
+# Line-up, organisateurs et texte de la soirée. Si RA change son schéma, on se contente
+# de la requête de base plutôt que de perdre toutes les soirées.
+EN_PLUS = "artists { name } promoters { name } content"
+_ANNONCE_LIEU = re.compile(r"^(?:tba|tbc|tbd|secret location|location tba|à venir)$", re.I)
 
 
 def _graphql(requete: str, variables: dict) -> dict:
@@ -58,9 +63,13 @@ def _heure(v: str | None) -> dt.datetime | None:
 
 
 def depuis_listes(donnees: dict) -> list[Evenement]:
-    res = []
+    res, vus = [], set()
     for item in (donnees.get("eventListings") or {}).get("data") or []:
         e = item.get("event") or {}
+        # une soirée sur deux jours apparaît une fois par jour dans la liste
+        if e.get("id") in vus:
+            continue
+        vus.add(e.get("id"))
         debut = _heure(e.get("startTime")) or _heure(e.get("date"))
         if not e.get("title") or not debut:
             continue
@@ -68,15 +77,27 @@ def depuis_listes(donnees: dict) -> list[Evenement]:
         lieu = e.get("venue") or {}
         zone = ((lieu.get("area") or {}).get("name") or "").strip()
         nom_lieu = propre(lieu.get("name") or "")
+        if _ANNONCE_LIEU.match(nom_lieu):
+            nom_lieu = ""  # lieu annoncé plus tard : « Lieu à préciser »
         if zone and zone.lower() not in nom_lieu.lower() and zone.lower() not in ("all", "tunisia", "tunisie"):
             nom_lieu = f"{nom_lieu}, {zone}" if nom_lieu else zone
         images = e.get("images") or []
+        artistes = [propre(a.get("name") or "") for a in e.get("artists") or [] if a.get("name")]
+        orga = [propre(p.get("name") or "") for p in e.get("promoters") or [] if p.get("name")]
+        texte = []
+        if artistes:
+            texte.append("Line-up : " + ", ".join(artistes))
+        if orga:
+            texte.append("Organisé par " + ", ".join(orga))
+        if e.get("content"):
+            texte.append(resume(propre(re.sub(r"<[^>]+>", " ", e["content"]))))
         res.append(Evenement(
             titre=propre(e["title"]), debut=debut,
             fin=fin if fin and fin.date() != debut.date() and (fin - debut).days >= 1 else None,
             lien=f"https://ra.co{e.get('contentUrl') or '/events/' + str(e.get('id'))}",
             lieu=nom_lieu, adresse=propre(lieu.get("address") or ""), categorie="musique",
-            prix=propre(e.get("cost") or ""), image=(images[0].get("filename") or "") if images else ""))
+            prix=propre(e.get("cost") or ""), image=(images[0].get("filename") or "") if images else "",
+            artistes=artistes, description="\n\n".join(texte)))
     return res
 
 
@@ -92,4 +113,9 @@ def recuperer(source: dict) -> list[Evenement]:
     auj = dt.date.today()
     filtres = {"areas": {"eq": int(area)}, "listingDate": {
         "gte": auj.isoformat(), "lte": (auj + dt.timedelta(days=o.get("jours", 90))).isoformat()}}
-    return depuis_listes(_graphql(SOIREES, {"filters": filtres, "pageSize": 50, "page": 1}))
+    variables = {"filters": filtres, "pageSize": 50, "page": 1}
+    try:
+        return depuis_listes(_graphql(SOIREES.replace("CHAMPS", EN_PLUS), variables))
+    except RuntimeError as exc:
+        print(f"  {source['id']} : requête complète refusée ({exc}), requête de base")
+        return depuis_listes(_graphql(SOIREES.replace("CHAMPS", ""), variables))
