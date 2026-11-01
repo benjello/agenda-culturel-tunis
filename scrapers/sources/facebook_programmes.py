@@ -87,6 +87,13 @@ def recuperer(source: dict) -> list:
     if not lecteur:
         return publications
     lieu = source.get("options", {}).get("lieu") or source["nom"]
+    if lecteur is lecteurs.une_affiche_par_evenement:
+        # Lieux et artistes (pas un cinéma) : seuls les événements lus vont sur le site.
+        evts = [e for e in lecteur([p.en_dict() for p in publications], [], lieu) if e]
+        for e in evts:
+            e.categorie = source.get("categorie", e.categorie)
+        print(f"  {source['id']} : {len(evts)} événement(s) lu(s) sur les affiches")
+        return evts
     films = [f for f in lecteur([p.en_dict() for p in publications], lecteurs.titres_connus(), lieu) if f]
     print(f"  {source['id']} : {len(films)} film(s) lu(s) sur le programme")
     return publications + films
