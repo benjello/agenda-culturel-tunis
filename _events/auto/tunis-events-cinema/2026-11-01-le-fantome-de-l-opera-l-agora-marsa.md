@@ -11,4 +11,5 @@ source_name: "tunis.events (cinéma)"
 image: "https://api.tunis.events/storage/scraped/44530d0a3d07fecbe5cf9fc99a6dd1c4.webp"
 film: true
 auto: true
+ajoute: "2026-11-01"
 ---

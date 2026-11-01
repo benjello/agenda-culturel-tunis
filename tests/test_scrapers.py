@@ -576,3 +576,33 @@ class Propositions(unittest.TestCase):
         from scrapers import propositions
         with self.assertRaises(ValueError):
             propositions.evenement("### Titre\n\nX\n\n### Date et heure\n\nsamedi soir\n")
+
+
+class Fiches(unittest.TestCase):
+    def test_famille_et_notice(self):
+        from scrapers.commun import est_famille, resume
+        self.assertTrue(est_famille("Contes en scène", "Spectacle jeune public dès 5 ans"))
+        self.assertTrue(est_famille("عرض للأطفال"))
+        self.assertFalse(est_famille("Concert de jazz"))
+        self.assertLessEqual(len(resume("Une phrase. " * 100, 100)), 100)
+
+    def test_notice_sans_markdown(self):
+        from scrapers.ecriture import _texte_brut
+        self.assertEqual(_texte_brut("#tunis {{x}}\n- liste"), "\\#tunis x\n\\- liste")
+
+    def test_artistes_des_titres(self):
+        from scrapers.pages import artistes_des_titres
+        noms = artistes_des_titres([{"title": "Kteb Tounsi Avec Sonia Hanihina"}, {"title": "2 Jours Avec Papa"},
+                                    {"title": "Café Philo avec Azza Filali"}])
+        self.assertEqual(sorted(noms.values()), ["Azza Filali", "Sonia Hanihina"])
+
+    def test_lieux_regroupes(self):
+        from scrapers.pages import lieux
+        g = lieux([{"venue": "L'Agora Marsa"}, {"venue": "L’Agora La Marsa"}, {"venue": "Tunis"},
+                   {"venue": "Théâtre de l'Opéra"}, {"venue": "Theatre de l’Opera"}])
+        self.assertEqual(len(g), 2)
+
+    def test_salle_ift(self):
+        from scrapers.sources.pdf_programme import _salle
+        self.assertEqual(_salle("alle de cinéma"), "Salle de cinéma")
+        self.assertEqual(_salle("2024, 1h18mn, Médiathèque"), "Médiathèque")

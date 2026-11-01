@@ -5,24 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#b5442f">
+  <link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/icones/icone-192.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icones/icone-192.png' | relative_url }}">
+  {%- if page.image %}<meta property="og:image" content="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}">{% endif %}
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <script>
+    // Avant l'affichage : thème, affichage léger et langue choisis, pour éviter un clignotement.
+    (function (d) {
+      try {
+        var t = localStorage.getItem('theme'), l = localStorage.getItem('leger'), g = localStorage.getItem('langue');
+        if (t) d.dataset.theme = t;
+        if (l === '1') d.classList.add('leger');
+        if (g && g !== 'fr') { d.lang = g; d.dir = g === 'ar' ? 'rtl' : 'ltr'; }
+      } catch (e) {}
+    })(document.documentElement);
+  </script>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <a class="brand" href="{{ '/' | relative_url }}" data-t="titre_site">{{ site.title }}</a>
     <nav>
-      <a href="{{ '/' | relative_url }}">Agenda</a>
-      <a href="{{ '/week-end/' | relative_url }}">Ce week-end</a>
-      <a href="{{ '/festivals/' | relative_url }}">Festivals</a>
-      <a href="{{ '/sources/' | relative_url }}">Sources</a>
-      <a href="{{ '/a-propos/' | relative_url }}">À propos</a>
+      <a href="{{ '/' | relative_url }}" data-t="nav.agenda">Agenda</a>
+      <a href="{{ '/week-end/' | relative_url }}" data-t="nav.weekend">Ce week-end</a>
+      <a href="{{ '/festivals/' | relative_url }}" data-t="nav.festivals">Festivals</a>
+      <a href="{{ '/lieux/' | relative_url }}" data-t="nav.lieux">Lieux</a>
+      <a href="{{ '/artistes/' | relative_url }}" data-t="nav.artistes">Artistes</a>
+      <a href="{{ '/a-propos/' | relative_url }}" data-t="nav.apropos">À propos</a>
     </nav>
+    <div class="reglages" role="group" aria-label="Réglages">
+      <span class="langues"><button type="button" data-langue="fr" lang="fr">FR</button><button type="button" data-langue="ar" lang="ar">عربي</button><button type="button" data-langue="en" lang="en">EN</button></span>
+      <button type="button" id="bouton-theme" title="Mode sombre ou clair" aria-label="Mode sombre ou clair">🌓</button>
+      <button type="button" id="bouton-leger" title="Affichage léger (sans images)" aria-label="Affichage léger">🍃</button>
+    </div>
   </header>
   <main>
     {{ content }}
   </main>
   <footer class="site-footer">
-    <p>Un lieu ou un site manque ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Proposez une source</a>.</p>
+    <p><span data-t="manque">Un lieu ou un site manque ?</span> <a href="{{ '/a-propos/' | relative_url }}#proposer" data-t="proposer">Proposez une source</a>.
+      · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a></p>
   </footer>
+  <script>window.I18N = {{ site.data.i18n | jsonify }}; window.BASE = {{ '/' | relative_url | jsonify }};</script>
+  <script src="{{ '/assets/site.js' | relative_url }}"></script>
 </body>
 </html>

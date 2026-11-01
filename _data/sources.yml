@@ -826,3 +826,59 @@
     max: 6
     resultats: 8
   note: "Association des jeunes scientifiques de Tunisie."
+
+- id: ig-agorgi-gallery
+  nom: Agorgi Gallery (Instagram)
+  url: https://www.instagram.com/agorgi_gallery/
+  type: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "agorgi_gallery"
+    lieu: "Agorgi Gallery"
+    resultats: 8
+  note: "Galerie d'art, proposée par Mahdi."
+
+- id: ig-entre-les-rives
+  nom: Entre les rives (Instagram)
+  url: https://www.instagram.com/entrelesrives/
+  type: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "entrelesrives"
+    lieu: "Entre les rives"
+    resultats: 8
+  note: "Proposé par Mahdi. Catégorie lue dans le titre quand c'est possible."
+
+- id: ig-la-boite
+  nom: La Boîte, art et architecture (Instagram)
+  url: https://www.instagram.com/la_boite_art_architecture/
+  type: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "la_boite_art_architecture"
+    lieu: "La Boîte"
+    resultats: 8
+  note: "Espace d'art contemporain, proposé par Mahdi."
+
+- id: ig-shanti
+  nom: Shanti (Instagram)
+  url: https://www.instagram.com/shanti.tn/
+  type: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "shanti.tn"
+    lieu: "Shanti"
+    resultats: 8
+  note: "Proposé par Mahdi."

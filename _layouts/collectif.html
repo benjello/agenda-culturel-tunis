@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%- assign evts = site.events | where: "source", page.source -%}
+<section class="intro fiche">
+  <p><a href="{{ '/artistes/' | relative_url }}" data-t="tous_collectifs">← Organisateurs et artistes</a></p>
+  <h1>{{ page.title | replace: " (Instagram)", "" | replace: " (Facebook)", "" }}</h1>
+  <p><a href="{{ page.url_source }}" rel="noopener">{% if page.reseau == "instagram" %}Instagram{% elsif page.reseau == "facebook" %}Facebook{% else %}<span data-t="site_web">Site web</span>{% endif %}</a></p>
+</section>
+<h2 data-t="a_venir">À venir</h2>
+{% include liste-evenements.html evenements=evts %}

@@ -8,4 +8,5 @@ link: "https://www.beitalhikma.tn/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a9-%d8%aa%d8
 source: "beit-al-hikma"
 source_name: "Beit al-Hikma (Académie tunisienne des sciences, des lettres et des arts)"
 auto: true
+ajoute: "2026-11-01"
 ---

@@ -10,4 +10,5 @@ source_name: "Librairie Al Kitab (Instagram)"
 image: "assets/programmes/ig-al-kitab/d0a12c7282c2.jpg"
 doublon: true
 auto: true
+ajoute: "2026-11-01"
 ---

@@ -9,4 +9,5 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 autres_sources: [{"name": "Librairie Al Kitab (Instagram)", "link": "https://www.instagram.com/p/De1zOMGFY2I/", "source": "ig-al-kitab"}]
 auto: true
+ajoute: "2026-11-01"
 ---

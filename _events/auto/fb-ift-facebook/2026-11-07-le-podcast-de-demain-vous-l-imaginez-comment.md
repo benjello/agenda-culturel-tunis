@@ -9,4 +9,5 @@ source: "fb-ift-facebook"
 source_name: "Institut français de Tunisie (Facebook)"
 image: "assets/programmes/fb-ift-facebook/173f834204f2.jpg"
 auto: true
+ajoute: "2026-11-01"
 ---

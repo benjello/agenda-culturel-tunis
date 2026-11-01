@@ -8,5 +8,6 @@ category: "musique"
 link: "https://www.instagram.com/fabrika_festival/"
 source: "ig-fabrika"
 source_name: "Fabrika festival (Instagram)"
+ajoute: "2026-11-01"
 ---
 Festival de musique électronique. Dates et lieu repris de la bio Instagram du festival (1er novembre 2026).

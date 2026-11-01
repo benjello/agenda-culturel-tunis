@@ -31,6 +31,16 @@ _LIEUX = re.compile(r"m[ée]diath[èe]que|auditorium|galerie|salle|jardin|cin[é
                     r"cit[ée] de la culture|sidi bou|la marsa|carthage", re.I)
 
 
+# Le texte des colonnes est souvent coupé (« alle de cinéma ») : on garde un nom de salle connu.
+_SALLES = [(r"camus", "Salle Albert Camus"), (r"exposition|galerie", "Galerie"),
+           (r"(?:s?a?l?le )?de cin[ée]ma|\bcin[ée]ma\b", "Salle de cinéma"), (r"m[ée]diath[èe]que", "Médiathèque"),
+           (r"auditorium", "Auditorium"), (r"jardin", "Jardin"), (r"th[ée][âa]tre", "Théâtre")]
+
+
+def _salle(texte: str) -> str:
+    return next((nom for motif, nom in _SALLES if re.search(motif, texte, re.I)), "")
+
+
 def _pdfs(modele: str) -> list[tuple[str, dt.date]]:
     auj = dt.date.today().replace(day=1)
     mois = [auj, (auj + dt.timedelta(days=32)).replace(day=1)]
@@ -115,7 +125,7 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
         if re.fullmatch(r"(?:>>\s*)?[\d\s&]+", l):
             jours += [int(j) for j in re.findall(r"\d{2}", l.replace(" ", "").replace("&", ""))]
     genre = next((_GENRES[k] for l in infos for k in _GENRES if k in l.lower()), "")
-    salle = next((l for l in infos if _LIEUX.search(l) and l.upper() != l), "")
+    salle = _salle(" ".join(l for l in infos if l.upper() != l))
     lieu = f"{salle}, {lieu_defaut}" if salle else lieu_defaut
     h = next((m for l in infos for m in [_HEURE.search(l)] if m), None)
     res = []

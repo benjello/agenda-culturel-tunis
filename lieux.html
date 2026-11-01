@@ -1,0 +1,33 @@
+---
+layout: default
+title: Lieux
+permalink: /lieux/
+description: Les lieux culturels de Tunisie et ce qu'ils programment.
+---
+<section class="intro">
+  <h1 data-t="lieux_titre">Lieux</h1>
+  <p><span data-t="lieux_intro">Salles, galeries, cinémas et théâtres qui ont quelque chose à l'affiche.</span> <a href="{{ '/carte/' | relative_url }}" data-t="voir_carte_lieux">🗺 Voir la carte</a></p>
+</section>
+{% include choix-ville.html %}
+{%- for v in site.data.villes %}
+{%- assign ls = site.lieux | where: "ville", v.id | sort: "title" -%}
+{%- if ls.size > 0 %}
+<section class="month bloc-ville" data-ville-bloc="{{ v.id }}">
+  <h2>{{ v.nom }}</h2>
+  <ul class="liste-fiches">
+  {%- for l in ls %}{% assign n = site.events | where_exp: "e", "l.noms contains e.venue" | where_exp: "e", "e.doublon != true" | size %}
+    <li><a href="{{ l.url | relative_url }}">{{ l.title }}</a> <small>{{ n }}</small></li>
+  {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+{%- endfor %}
+<script>
+(function () {
+  function f() {
+    var v = document.documentElement.dataset.ville || 'tunis';
+    document.querySelectorAll('.bloc-ville').forEach(function (s) { s.hidden = v !== 'toutes' && s.dataset.villeBloc !== v; });
+  }
+  document.addEventListener('ville', f); f();
+})();
+</script>

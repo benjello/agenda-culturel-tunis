@@ -2,16 +2,20 @@
 {%- assign prix_bas = e.price | default: "" | downcase -%}
 {%- assign est_gratuit = false -%}{%- if prix_bas contains "gratuit" or prix_bas contains "libre" or prix_bas contains "free" or prix_bas == "0" or prix_bas == "0 dt" or prix_bas == "0 tnd" -%}{%- assign est_gratuit = true -%}{%- endif -%}
 {%- assign cat = site.data.categories[e.category] | default: site.data.categories.autre -%}
-{%- comment -%} Le titre mène directement à la source quand on la connaît : l'agenda pointe vers les bons sites. {%- endcomment -%}
-{%- if e.link -%}{%- assign href = e.link -%}{%- else -%}{%- assign href = e.url | relative_url -%}{%- endif -%}
-<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-category="{{ e.category | default: 'autre' }}" data-ville="{{ e.ville | default: 'tunis' }}"{% if est_gratuit %} data-gratuit{% endif %}>
+{%- assign cat_id = e.category | default: "autre" -%}
+{%- assign heure = e.date | date: "%H:%M" -%}{%- if heure == "00:00" -%}{%- assign heure = "" -%}{%- endif -%}
+{%- comment -%}
+  Le titre mène à la fiche de l'événement sur le site (notice, affiche, billets, carte, partage).
+  Les liens vers la source restent en bas de carte.
+{%- endcomment -%}
+<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-category="{{ cat_id }}" data-ville="{{ e.ville | default: 'tunis' }}"{% if est_gratuit %} data-gratuit{% endif %}{% if e.famille %} data-famille{% endif %} data-ajoute="{{ e.ajoute }}" data-id="{{ e.url }}" data-titre="{{ e.title | escape }}" data-lieu="{{ e.venue | escape }}{% if e.address %}, {{ e.address | escape }}{% endif %}" data-lien="{{ e.url | absolute_url }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
   <div class="event-date">
     <span class="day">{{ e.date | date: "%-d" }}</span>
-    <span class="mon">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
+    <span class="mon" data-mc="{{ e.date | date: '%-m' }}">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
   </div>
   <div class="event-body">
-    <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
-    <h3><a href="{{ href }}"{% if e.link %} rel="noopener"{% endif %}>{{ e.title }}</a></h3>
+    <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ cat_id }}">{{ cat.label }}</span>{% if e.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}
+    <h3><a href="{{ e.url | relative_url }}">{{ e.title }}</a></h3>
     {%- if e.film %}
     <p class="meta">{% if e.duration %}{% assign h = e.duration | divided_by: 60 %}{% assign mn = e.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if e.genres %}{{ e.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=e.title imdb=e.imdb %}</p>
     <p class="days">
@@ -26,13 +30,19 @@
     {%- assign src = site.data.sources | where: "id", e.source | first -%}
     {%- assign billet = "" -%}{%- if src.type == "billetterie" -%}{%- assign billet = e.link -%}{%- endif -%}
     {%- for a in e.autres_sources -%}{%- assign s2 = site.data.sources | where: "id", a.source | first -%}{%- if billet == "" and s2.type == "billetterie" -%}{%- assign billet = a.link -%}{%- endif -%}{%- endfor -%}
-    {%- if e.link or billet != "" %}
     <p class="actions">
-      {%- if billet != "" %}<a class="billets" href="{{ billet }}" rel="noopener">🎟 Billets{% if e.price %} · {{ e.price }}{% endif %}</a>{% elsif est_gratuit %}<span class="prix gratuit">Gratuit</span>{% elsif e.price %}<span class="prix">{{ e.price }}</span>{% endif -%}
-      {%- if e.link and e.link != billet %}<a href="{{ e.link }}" rel="noopener" title="{{ e.source_name }}">{% if src.scraper == "instagram" or src.scraper == "facebook_programmes" %}Voir l'annonce{% else %}Plus d'infos{% endif %}</a>{% endif -%}
-      {%- if e.seances and e.film != true %}<span>{{ e.seances.size }} séances</span>{% endif -%}
-      {%- if e.category == "cinema" and e.film != true %}<span>{% include liens-film.html titre=e.title imdb=e.imdb %}</span>{% endif -%}
+      {%- if billet != "" %}<a class="billets" href="{{ billet }}" rel="noopener"><span data-t="billets">🎟 Billets</span>{% if e.price %} · {{ e.price }}{% endif %}</a>{% elsif est_gratuit %}<span class="prix gratuit" data-t="gratuit">Gratuit</span>{% elsif e.price %}<span class="prix">{{ e.price }}</span>{% endif -%}
+      {%- if e.link and e.link != billet %}<a class="secondaire" href="{{ e.link }}" rel="noopener" title="{{ e.source_name }}">{% if src.scraper == "instagram" or src.scraper == "facebook_programmes" %}<span data-t="annonce">Voir l'annonce</span>{% else %}<span data-t="infos">Plus d'infos</span>{% endif %}</a>{% endif -%}
+      {%- if e.seances and e.film != true %}<span>{{ e.seances.size }} <span data-t="seances">séances</span></span>{% endif -%}
+      {%- if e.category == "cinema" and e.film != true %}<span class="secondaire">{% include liens-film.html titre=e.title imdb=e.imdb %}</span>{% endif -%}
+      <span class="outils">
+        <button type="button" class="fav" aria-label="Garder en favori" data-t-title="favori" title="Garder en favori">☆</button>
+        <button type="button" class="ajout-agenda" aria-label="Ajouter à mon agenda" data-t-title="agenda" title="Ajouter à mon agenda">📅</button>
+        <button type="button" class="partager" aria-label="Partager" data-t-title="partager" title="Partager">↗</button>
+      </span>
     </p>
-    {%- endif %}
   </div>
+  {%- if e.image and e.film != true %}{% if e.image contains "://" %}{% assign img = e.image %}{% else %}{% assign img = e.image | relative_url %}{% endif %}
+  <a class="vignette" href="{{ e.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ img }}" alt="" loading="lazy" decoding="async"></a>
+  {%- endif %}
 </article>

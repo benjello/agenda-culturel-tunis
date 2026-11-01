@@ -11,4 +11,5 @@ source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/278bc219fbf7187c81034908610393229b.jpeg"
 auto: true
+ajoute: "2026-11-01"
 ---

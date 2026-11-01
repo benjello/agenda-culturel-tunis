@@ -11,9 +11,10 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import shutil
 
-from .commun import RACINE, Evenement, Publication, est_discret, slug
+from .commun import RACINE, Evenement, Publication, est_discret, est_famille, slug
 from .villes import ville
 
 DOSSIER_AUTO = RACINE / "_events" / "auto"
@@ -24,6 +25,13 @@ FICHIER_ETAT = RACINE / "_data" / "etat_sources.json"
 def _yaml(v) -> str:
     # Une chaîne JSON est aussi une chaîne YAML valide : pas de souci d'apostrophes ou de « : ».
     return json.dumps(v, ensure_ascii=False, default=str)
+
+
+def _texte_brut(t: str) -> str:
+    """La notice vient d'ailleurs : on neutralise le Markdown (titres, listes) et le Liquid."""
+    t = re.sub(r"[{}<>]", "", t)
+    return "\n".join("\\" + l.lstrip() if re.match(r"\s*(#|[>*+=-]|\d+\.\s)", l) else l
+                      for l in t.split("\n"))
 
 
 def _date(d: dt.datetime) -> str:
@@ -48,7 +56,13 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             e.debut = e.seances[0]
     a_venir = [e for e in evenements if (e.fin or e.debut) >= aujourd_hui]
     dossier = DOSSIER_AUTO / source["id"]
+    # « Nouveau cette semaine » : on garde la date où l'événement est apparu la première fois.
+    deja = {}
     if dossier.exists():
+        for f in dossier.glob("*.md"):
+            m = re.search(r"^ajoute: \"?(\d{4}-\d{2}-\d{2})", f.read_text(), re.M)
+            if m:
+                deja[f.stem] = m.group(1)
         shutil.rmtree(dossier)
     dossier.mkdir(parents=True)
     vus = set()
@@ -78,9 +92,13 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "duration": e.duree or None,
             "genres": e.genres or None,
             "discret": True if est_discret(e.titre) else None,
+            "famille": True if est_famille(e.titre, e.description) else None,
+            "ajoute": deja.get(nom) or dt.date.today().isoformat(),
         }
         lignes = ["---"] + [f"{k}: {_yaml(v)}" for k, v in champs.items() if v is not None]
         lignes += ["auto: true", "---", ""]
+        if e.description:  # notice, affichée sur la fiche de l'événement (texte brut, pas de Markdown)
+            lignes += [_texte_brut(e.description), ""]
         # Le nom de fichier commence par la date ; on force la date complète dans le front matter.
         (dossier / f"{nom}.md").write_text("\n".join(lignes).replace(
             f'date: "{champs["date"]}"', f'date: {champs["date"]}'))

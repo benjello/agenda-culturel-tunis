@@ -9,4 +9,5 @@ source: "ig-cinemadart"
 source_name: "CinéMadart (Instagram)"
 image: "assets/programmes/ig-cinemadart/2fa073517dd8.jpg"
 auto: true
+ajoute: "2026-11-01"
 ---

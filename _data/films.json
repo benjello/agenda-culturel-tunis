@@ -184,7 +184,9 @@
      }
     ]
    }
-  ]
+  ],
+  "tunisien": true,
+  "jeune": false
  },
  {
   "titre": "WEEKEND",
@@ -349,7 +351,8 @@
      }
     ]
    }
-  ]
+  ],
+  "jeune": false
  },
  {
   "titre": "Dar El 3ers - دار العرس",
@@ -483,7 +486,9 @@
      }
     ]
    }
-  ]
+  ],
+  "tunisien": true,
+  "jeune": false
  },
  {
   "titre": "LAST CHANCE - لص شايح",
@@ -569,7 +574,9 @@
      }
     ]
    }
-  ]
+  ],
+  "tunisien": true,
+  "jeune": false
  },
  {
   "titre": "L'île des souvenirs / Forgotten Island",
@@ -578,7 +585,7 @@
   "imdb": "tt36583977",
   "duree": null,
   "genres": [
-   "Fantastique",
+   "Animation",
    "Aventure",
    "Comédie"
   ],
@@ -644,7 +651,8 @@
   ],
   "wikidata": "Q138335503",
   "age": "",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": true
  },
  {
   "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
@@ -737,7 +745,9 @@
      }
     ]
    }
-  ]
+  ],
+  "tunisien": true,
+  "jeune": false
  },
  {
   "titre": "Clayface",
@@ -797,7 +807,8 @@
   ],
   "wikidata": "Q131460936",
   "age": "",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": false
  },
  {
   "titre": "Klara et le soleil",
@@ -861,7 +872,8 @@
   ],
   "wikidata": "Q124409386",
   "age": "",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": false
  },
  {
   "titre": "Le fantôme de l'opéra",
@@ -911,7 +923,8 @@
      }
     ]
    }
-  ]
+  ],
+  "jeune": false
  },
  {
   "titre": "Le Mystère Lucy Lost",
@@ -978,7 +991,8 @@
   ],
   "wikidata": "Q141827108",
   "age": "",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": false
  },
  {
   "titre": "Shaun le Mouton : La Bêêête d'Halloween",
@@ -986,7 +1000,9 @@
   "image": "https://api.tunis.events/storage/scraped/de3c2e9090785e4e297a19012f69a309.jpeg",
   "imdb": "",
   "duree": null,
-  "genres": [],
+  "genres": [
+   "Animation"
+  ],
   "jours": [
    "2026-11-01"
   ],
@@ -1027,7 +1043,8 @@
      }
     ]
    }
-  ]
+  ],
+  "jeune": true
  },
  {
   "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
@@ -1081,7 +1098,8 @@
   ],
   "wikidata": "Q141819066",
   "age": "",
-  "tunisien": false
+  "tunisien": true,
+  "jeune": false
  },
  {
   "titre": "Ducobu et le fantôme de Saint-Potache",
@@ -1125,7 +1143,8 @@
   ],
   "wikidata": "Q140363103",
   "age": "",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": true
  },
  {
   "titre": "Le Maître du kabuki",
@@ -1154,7 +1173,8 @@
   ],
   "wikidata": "Q134906322",
   "age": "Tous publics",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": false
  },
  {
   "titre": "Mochy",
@@ -1178,7 +1198,8 @@
     ],
     "heures": []
    }
-  ]
+  ],
+  "jeune": false
  },
  {
   "titre": "Other Mommy / Malfaisante",
@@ -1214,6 +1235,7 @@
   ],
   "wikidata": "Q134588273",
   "age": "-12",
-  "tunisien": false
+  "tunisien": false,
+  "jeune": false
  }
 ]

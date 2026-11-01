@@ -8,4 +8,5 @@ link: "https://www.webdo.tn/fr/actualite/culture/cinema-le-temps-suspendu-un-fil
 source: "presse-webdo"
 source_name: "Webdo"
 auto: true
+ajoute: "2026-11-01"
 ---

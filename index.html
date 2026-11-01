@@ -2,17 +2,30 @@
 layout: default
 ---
 <section class="intro">
-  <h1>Que faire à Tunis ?</h1>
-  <p>{{ site.description }}</p>
+  <h1 data-t="intro_titre">Que faire à Tunis ?</h1>
+  <p data-t="intro_texte">{{ site.description }}</p>
 </section>
 
 {% include choix-ville.html %}
-<input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" aria-label="Chercher" autocomplete="off">
-<label class="seul-gratuit"><input type="checkbox" id="gratuit"> Seulement les événements gratuits</label>
-<div class="filters" id="filters">
-  <button class="active" data-filter="all">Tout</button>
-  {% for c in site.data.categories %}<button data-filter="{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
+<input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" data-t-placeholder="recherche" aria-label="Chercher" autocomplete="off">
+<div class="filters moments" id="moments" role="group" aria-label="Quand">
+  <button class="active" data-moment="tout" data-t="moment.tout">Tout moment</button>
+  <button data-moment="aujourdhui" data-t="moment.aujourdhui">Aujourd'hui</button>
+  <button data-moment="soir" data-t="moment.soir">Ce soir</button>
+  <button data-moment="demain" data-t="moment.demain">Demain</button>
+  <button data-moment="semaine" data-t="moment.semaine">Cette semaine</button>
+  <button data-moment="weekend" data-t="moment.weekend">Ce week-end</button>
 </div>
+<div class="filters" id="filters">
+  <button class="active" data-filter="all" data-t="tout">Tout</button>
+  {% for c in site.data.categories %}<button data-filter="{{ c[0] }}" data-t="cat.{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
+</div>
+<div class="cases">
+  <label><input type="checkbox" id="gratuit"> <span data-t="seul_gratuit">Gratuit</span></label>
+  <label><input type="checkbox" id="famille"> <span data-t="seul_famille">En famille</span></label>
+  <label><input type="checkbox" id="favoris"> <span data-t="seul_favoris">Mes favoris</span></label>
+</div>
+<a class="nouveautes" id="nouveautes" href="{{ '/nouveau/' | relative_url }}" hidden></a>
 
 {%- comment -%}
   Tous les événements sont générés, triés par date. Le petit script en bas masque
@@ -33,12 +46,20 @@ layout: default
 {%- if films_l.size > 0 %}
 {%- assign noms_salles = films_l | map: "salles" | flatten | map: "nom" | uniq -%}
 <button type="button" class="resume-films" id="resume-films">
-  🎬 <strong>Au cinéma</strong> : {{ films_l.size }} films à l'affiche dans {{ noms_salles.size }} salles →
+  🎬 <strong data-t="au_cinema">Au cinéma</strong> : {{ films_l.size }} films à l'affiche dans {{ noms_salles.size }} salles →
 </button>
 <div id="cinema-salles" hidden>
   <div class="jours-choix" id="jours-choix" role="group" aria-label="Jour"></div>
+  {%- comment -%} Typologie : film tunisien, jeune public, genres (Wikidata et _data/films_infos.yml) {%- endcomment -%}
+  {%- assign genres_films = films_l | map: "genres" | flatten | compact | uniq | sort -%}
+  <div class="types-films filters" id="types-films" role="group" aria-label="Type de film">
+    <button class="active" data-type="" data-t="films_tous">Tous les films</button>
+    {%- assign tun = films_l | where: "tunisien", true -%}{% if tun.size > 0 %}<button data-type="tunisien" data-t="films_tunisiens">Films tunisiens</button>{% endif %}
+    {%- assign jeunes = films_l | where: "jeune", true -%}{% if jeunes.size > 0 %}<button data-type="jeune" data-t="films_jeunes">Jeune public</button>{% endif %}
+    {%- for g in genres_films %}<button data-type="g:{{ g | downcase }}">{{ g }}</button>{% endfor %}
+  </div>
   {%- for f in films_l %}
-  <article class="film-fiche" data-jours="{{ f.jours | join: ' ' }}">
+  <article class="film-fiche" data-jours="{{ f.jours | join: ' ' }}" data-types="{% if f.tunisien %}tunisien {% endif %}{% if f.jeune %}jeune {% endif %}{% for g in f.genres %}g:{{ g | downcase | replace: ' ', '_' }} {% endfor %}">
     {%- if f.image != "" %}{% if f.image contains "://" %}{% assign src = f.image %}{% else %}{% assign src = f.image | relative_url %}{% endif %}
     <img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy">
     {%- else %}<div class="affiche vide">🎬</div>{% endif %}
@@ -87,7 +108,7 @@ layout: default
 {%- assign current_month = "" -%}
 {%- comment -%} Rempli par le script : ce qui a commencé avant aujourd'hui et continue (expos, festivals). {%- endcomment -%}
 <section class="month" id="en-cours" hidden>
-  <h2>En ce moment</h2>
+  <h2 data-t="en_ce_moment">En ce moment</h2>
 </section>
 <div id="agenda">
 {%- for e in events -%}
@@ -96,14 +117,14 @@ layout: default
     {%- unless forloop.first %}</section>{% endunless %}
     {%- assign m = e.date | date: "%-m" | minus: 1 %}
     <section class="month" data-month="{{ month }}">
-      <h2>{{ site.data.fr.mois[m] | capitalize }} {{ e.date | date: "%Y" }}</h2>
+      <h2 data-mois="{{ month }}">{{ site.data.fr.mois[m] | capitalize }} {{ e.date | date: "%Y" }}</h2>
     {%- assign current_month = month -%}
   {%- endif %}
   {% include event-card.html event=e %}
   {%- if forloop.last %}</section>{% endif -%}
 {%- endfor %}
 </div>
-<p id="empty" class="empty" hidden>Aucun événement à venir pour l'instant.</p>
+<p id="empty" class="empty" hidden data-t="aucun">Aucun événement à venir pour l'instant.</p>
 
 <script>
 (function () {
@@ -144,10 +165,22 @@ layout: default
     var d = new Date(iso + 'T12:00:00');
     return JOURS[d.getDay()] + ' ' + d.getDate();
   }
+  var typeFilm = '';
+  var types = document.getElementById('types-films');
+  if (types) types.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button');
+    if (!b) return;
+    typeFilm = b.dataset.type.replace(/ /g, '_');
+    types.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
+    montrerFilms();
+  });
   function montrerFilms() {
     var n = 0;
+    var fam = document.getElementById('famille');
     document.querySelectorAll('.film-fiche').forEach(function (f) {
-      var joue = f.dataset.jours.split(' ').indexOf(choixJour) >= 0 && correspond(f);
+      var ty = f.dataset.types.split(' ');
+      var joue = f.dataset.jours.split(' ').indexOf(choixJour) >= 0 && correspond(f) &&
+        (!typeFilm || ty.indexOf(typeFilm) >= 0) && (!fam || !fam.checked || ty.indexOf('jeune') >= 0);
       f.hidden = !joue;
       if (joue) n++;
       f.querySelectorAll('.film-salles li').forEach(function (li) {
@@ -188,14 +221,65 @@ layout: default
     refresh();
   });
   var caseGratuit = document.getElementById('gratuit');
-  if (caseGratuit) caseGratuit.addEventListener('change', function () { refresh(); });
+  var caseFamille = document.getElementById('famille');
+  var caseFavoris = document.getElementById('favoris');
+  [caseGratuit, caseFamille, caseFavoris].forEach(function (c) { if (c) c.addEventListener('change', function () { refresh(); }); });
+  document.addEventListener('favoris', function () { if (caseFavoris && caseFavoris.checked) refresh(); });
+  // Filtre par moment. Un événement va du jour de début (data-debut) au jour de fin (data-date).
+  var moment = 'tout';
+  var demain = jour(1), dans7 = jour(6);
+  var vendredi = (function () {
+    var d = new Date(), j = d.getDay();
+    d.setDate(d.getDate() + (j === 0 ? -2 : j === 6 ? -1 : 5 - j));
+    return d.toISOString().slice(0, 10);
+  })();
+  var dimanche = (function () { var d = new Date(vendredi + 'T12:00:00'); d.setDate(d.getDate() + 2); return d.toISOString().slice(0, 10); })();
+  function dansMoment(el) {
+    var a = el.dataset.debut, b = el.dataset.date, h = el.dataset.heure || '';
+    function couvre(x, y) { return a <= y && b >= x; }
+    switch (moment) {
+      case 'aujourdhui': return couvre(today, today);
+      // Ce soir : ce qui a lieu aujourd'hui à partir de 17 h (ou sans heure connue), pas les expos de plusieurs jours
+      case 'soir': return a <= today && b >= today && (a === b || a === today) && (!h || h >= '17:00');
+      case 'demain': return couvre(demain, demain);
+      case 'semaine': return couvre(today, dans7);
+      case 'weekend': return couvre(vendredi > today ? vendredi : today, dimanche);
+      default: return true;
+    }
+  }
+  var moments = document.getElementById('moments');
+  if (moments) moments.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button');
+    if (!b) return;
+    moment = b.dataset.moment;
+    moments.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
+    if (moment === 'demain' && choixJour === today) choixJour = demain;
+    if (moment === 'aujourdhui' || moment === 'soir') choixJour = today;
+    refresh();
+  });
+  // « Nouveau cette semaine » : ce qui est arrivé dans l'agenda ces 7 derniers jours
+  var lienNouveau = document.getElementById('nouveautes');
+  function compterNouveautes() {
+    var v = document.documentElement.dataset.ville || 'tunis', il7 = jour(-7), n = 0;
+    document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
+      if (el.dataset.date >= today && (el.dataset.ajoute || '') >= il7 && (v === 'toutes' || el.dataset.ville === v)) n++;
+    });
+    if (lienNouveau) {
+      lienNouveau.hidden = !n;
+      lienNouveau.textContent = (window.t ? window.t('nouveautes', '✨ {n} nouveautés cette semaine →') : '✨ {n} nouveautés cette semaine →').replace('{n}', n);
+    }
+  }
+  document.addEventListener('langue', compterNouveautes);
   function refresh() {
     var shown = 0;
+    var favs = window.lireFavoris ? window.lireFavoris() : [];
     document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
       var v = document.documentElement.dataset.ville || 'tunis';
       var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
-        (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) &&
-        (!caseGratuit || !caseGratuit.checked || el.hasAttribute('data-gratuit'));
+        (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) && dansMoment(el) &&
+        (!caseGratuit || !caseGratuit.checked || el.hasAttribute('data-gratuit')) &&
+        (!caseFamille || !caseFamille.checked || el.hasAttribute('data-famille')) &&
+        (!caseFavoris || !caseFavoris.checked || favs.indexOf(el.dataset.id) >= 0);
       el.hidden = !visible;
       if (visible) shown++;
     });
@@ -212,7 +296,8 @@ layout: default
     document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === f); });
     refresh();
   }
-  document.addEventListener('ville', function () { refresh(); });
+  document.addEventListener('ville', function () { refresh(); compterNouveautes(); });
+  compterNouveautes();
   document.getElementById('filters').addEventListener('click', function (ev) {
     var b = ev.target.closest('button');
     if (b) choisir(b.dataset.filter);

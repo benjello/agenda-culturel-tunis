@@ -1,0 +1,11 @@
+# Corrections à la main pour les films à l'affiche, quand Wikidata ne sait pas (films tunisiens récents surtout).
+# Le titre est celui de l'affiche ; accents et majuscules ne comptent pas.
+# Champs : tunisien (true/false), jeune (true : jeune public), genres [liste], age ("Tous publics", "-12"…)
+"BAKMA - بكمة": { tunisien: true }
+"Dar El 3ers - دار العرس": { tunisien: true }
+"LAST CHANCE - لص شايح": { tunisien: true }
+"WHAT ELSE ? / فانا محط بش تتحط ؟": { tunisien: true }
+"Wala Kan Ala El Bal / ولا كان عالبال": { tunisien: true }
+"Shaun le Mouton : La Bêêête d'Halloween": { genres: [Animation], jeune: true }
+"L'île des souvenirs / Forgotten Island": { genres: [Animation, Aventure, Comédie], jeune: true }
+"Ducobu et le fantôme de Saint-Potache": { jeune: true }
