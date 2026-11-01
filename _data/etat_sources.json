@@ -172,10 +172,37 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/blcv.tunis/', 'username': 'blcv.tunis', 'error': 'not_found', 'errorDescription': 'Profile does not exist'}",
     "ok": false
   },
+  "ig-cinemadart": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 3,
+    "ok": true
+  },
   "ig-downtown-vibes": {
-    "dernier_passage": "2026-11-01T08:00:14",
-    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/downtown_vibes_tunis/', 'username': 'downtown_vibes_tunis', 'error': 'not_found', 'errorDescription': 'Profile does not exist'}",
-    "ok": false
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
+  },
+  "ig-eddisco": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
+  },
+  "ig-fabrika": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "ig-habibi-downtown": {
     "attente": null,
@@ -186,9 +213,12 @@
     "ok": true
   },
   "ig-hamdi-ryder": {
-    "dernier_passage": "2026-11-01T08:00:14",
-    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/hamdiryder/', 'username': 'hamdiryder', 'error': 'not_found', 'errorDescription': 'Profile does not exist'}",
-    "ok": false
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 0,
+    "ok": true
   },
   "ig-jaou-tunis": {
     "attente": null,
@@ -219,6 +249,14 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/syndicateoflove.tn/', 'inputUrl': 'https://www.instagram.com/syndicateoflove.tn/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false
   },
+  "ig-theatre-national": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 4,
+    "ok": true
+  },
   "institut-francais": {
     "dernier_passage": "2026-11-01T07:45:18",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
@@ -230,6 +268,14 @@
     "dernier_succes": "2026-11-01T07:45:18",
     "erreur": null,
     "nb": 1,
+    "ok": true
+  },
+  "kapitalis-cite-sciences": {
+    "attente": null,
+    "dernier_passage": "2026-11-01T08:50:24",
+    "dernier_succes": "2026-11-01T08:50:24",
+    "erreur": null,
+    "nb": 0,
     "ok": true
   },
   "opera-tunis": {
