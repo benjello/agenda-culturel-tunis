@@ -432,6 +432,12 @@ class Wikidata(unittest.TestCase):
         self.assertTrue(f["tunisien"])
 
 class TunisEvents(unittest.TestCase):
+    def test_details_page(self):
+        from scrapers.commun import details_page
+        d = details_page("📍 Lieu : Université de La Manouba et Amphithéâtre Carthage Al Hadatha\n📅 Dates : 3–5 décembre 2026")
+        self.assertEqual(d["lieu"], "Université de La Manouba et Amphithéâtre Carthage Al Hadatha")
+        self.assertEqual((d["debut"].day, d["fin"].day, d["fin"].month), (3, 5, 12))
+
     def test_categorie_du_titre(self):
         from scrapers.commun import categorie_du_titre
         self.assertEqual(categorie_du_titre("Movie Night: UN FILS"), "cinema")
