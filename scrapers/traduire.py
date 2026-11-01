@@ -98,7 +98,8 @@ class Traducteur:
         trad, sp = self._modele(de, vers)
         jetons = [sp.encode(p, out_type=str) for p in phrases]
         res = trad.translate_batch(jetons, beam_size=2, max_decoding_length=256)
-        return [sp.decode(r.hypotheses[0]).strip() for r in res]
+        # comme Argos : les jetons recollés, « ▁ » marquant les espaces
+        return [re.sub(r"\s+", " ", "".join(r.hypotheses[0]).replace("▁", " ")).strip() for r in res]
 
     def traduire(self, textes: list[str], de: str, vers: str) -> list[str]:
         """Traduit une liste de textes, phrase par phrase ; fr ↔ ar passe par l'anglais."""
