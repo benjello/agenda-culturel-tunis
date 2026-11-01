@@ -142,6 +142,9 @@ Puis ouvrez http://localhost:4000/agenda-culturel-tunis/
 
 ## Prochaines étapes
 
+Le suivi détaillé (état de chaque source, marche à suivre pour vérifier une nouvelle source) est dans [BACKLOG.md](BACKLOG.md).
+
+
 - Formulaire de contribution (issue GitHub préremplie, ou Google Form) pour signaler un événement.
 - Brancher les sources « à étudier » du registre.
 - Contrôle de santé : alerte automatique quand une source meurt.

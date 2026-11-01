@@ -25,6 +25,7 @@ defaults:
 
 exclude:
   - README.md
+  - BACKLOG.md
   - Gemfile
   - Gemfile.lock
   - vendor
