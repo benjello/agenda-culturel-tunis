@@ -80,6 +80,10 @@ def recuperer(source: dict) -> list:
     """Les événements lus sur les affiches (les publications elles-mêmes ne sont pas affichées)."""
     o = source.get("options", {})
     publications = lire_publications(source)
+    for p in publications:  # dans le journal, pour régler le lecteur
+        txt = " ".join(p.texte.split())[:110]
+        ocr = " ".join(p.ocr.split())[:80]
+        print(f"    {p.date} | {txt} | ocr: {ocr}")
     lecteur = lecteurs.LECTEURS[o.get("lecteur", "une_affiche_par_evenement")]
     lieu = o.get("lieu") or source["nom"]
     evts = [e for e in lecteur([p.en_dict() for p in publications], [], lieu) if e]
