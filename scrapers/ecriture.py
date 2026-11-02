@@ -111,6 +111,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "imdb": e.imdb or None,
             "duration": e.duree or None,
             "genres": e.genres or None,
+            "article_titre": e.article or None,
             "artists": e.artistes or None,
             "discret": True if est_discret(e.titre) else None,
             "famille": True if est_famille(e.titre, e.description) else None,

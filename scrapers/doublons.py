@@ -7,12 +7,15 @@ Deux événements sont considérés comme le même :
   de Tunis » / « L'Institut Français de Tunisie »), avec des titres proches : la moitié
   des mots du titre le plus court se retrouvent dans l'autre (« Festival du podcast » /
   « Podcast Days by Tunisia Podcast Festival ») ;
+- ou, quand l'un des deux est un article de presse, si leurs dates se chevauchent (exposition
+  du 27 octobre au 27 novembre, article du 31) dans le même lieu, avec des titres proches ;
 - ou, quand une source ne donne pas de lieu précis (presse : « Tunisie, voir l'article »),
   le même jour avec des titres presque identiques (8 mots sur 10, 2 mots au moins).
 Les films ne sont pas concernés : ils sont regroupés par titre ailleurs (films.py). On garde celui de la source la plus proche du lieu (le site du
 lieu avant une billetterie, une billetterie avant un agrégateur) ; les autres sont
 marqués « doublon » et ne s'affichent pas, mais leur lien est ajouté à l'événement
-gardé (« Aussi sur : Teskerti »).
+gardé (« Aussi sur : Teskerti »). Un article de presse n'est pas perdu : il passe dans la
+liste « presse » de l'événement gardé (section « Dans la presse » de la fiche).
 
 Lancé automatiquement à la fin de « python3 -m scrapers ».
 """
@@ -95,6 +98,7 @@ def _alias() -> dict:
 
 def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
     types = {s["id"]: s.get("type", "agenda") for s in sources}
+    presse = {s["id"] for s in sources if s.get("genre") == "presse"}
     evts = []
     for f in sorted(dossier.glob("*/*.md")):
         champs, corps = _lire(f)
@@ -102,6 +106,7 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
             continue
         champs.pop("doublon", None)
         champs.pop("autres_sources", None)
+        champs.pop("presse", None)
         if not isinstance(champs.get("date"), str):
             champs["date"] = str(champs.get("date"))[:16]
         evts.append((f, champs, corps))
@@ -151,17 +156,44 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
                     unir(i, j)
                 elif (not li or not lj) and proches(mi, mj, 0.8, 2):
                     unir(i, j)
+    # 3. un article de presse dont la période recoupe celle d'un événement du même lieu
+    def periode(c):
+        debut = str(c["date"])[:10]
+        return debut, max(debut, str(c.get("end_date") or debut)[:10])
+
+    for x, ei in enumerate(evts):
+        for j, ej in enumerate(evts[:x]):
+            ci, cj = ei[1], ej[1]
+            if (ci.get("source") in presse) == (cj.get("source") in presse) or ci.get("film") or cj.get("film"):
+                continue
+            (d1, f1), (d2, f2) = periode(ci), periode(cj)
+            li, lj = _lieu_proche(ci.get("venue", ""), alias), _lieu_proche(cj.get("venue", ""), alias)
+            if d1 <= f2 and d2 <= f1 and li and li == lj and \
+                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5, 2):
+                unir(j, x)
     groupes: dict[int, list] = {}
     for i, e in enumerate(evts):
         groupes.setdefault(racine(i), []).append(e)
     n = 0
     for groupe in groupes.values():
         # la source la plus proche du lieu, puis celle qui donne une heure et un lieu précis
-        groupe.sort(key=lambda e: (not e[1].get("_manuel"), PRIORITE.get(types.get(e[1].get("source")), 3),
+        groupe.sort(key=lambda e: (not e[1].get("_manuel"), e[1].get("source") in presse, PRIORITE.get(types.get(e[1].get("source")), 3),
                                    str(e[1]["date"]).endswith("00:00") or len(str(e[1]["date"])) <= 10,
                                    not _lieu_proche(e[1].get("venue", ""), alias), e[1].get("source", "")))
         garde = groupe[0]
         autres = [e for e in groupe[1:] if e[1].get("source") != garde[1].get("source")]
+        # Un article de presse en doublon d'un événement officiel : masqué, mais son lien est gardé
+        # dans « presse » (section de la fiche). Entre deux articles, c'est un doublon ordinaire.
+        articles = [e for e in autres if e[1].get("source") in presse] if garde[1].get("source") not in presse else []
+        if articles:
+            autres = [e for e in autres if e not in articles]
+            if garde[0] is not None:
+                garde[1]["presse"] = [{"titre": e[1].get("article_titre") or e[1].get("title"), "lien": e[1].get("link"),
+                                       "source_nom": e[1].get("source_name"), "date": e[1].get("ajoute")}
+                                      for e in articles]
+            for e in articles:
+                e[1]["doublon"] = True
+                n += 1
         if autres and garde[0] is None:  # gardé : l'événement écrit à la main
             for e in autres:
                 if e[0] is not None:

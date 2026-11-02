@@ -142,6 +142,7 @@ Usage
 - [x] Barre de recherche (artiste, lieu, film) sur l'accueil.
 - [x] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
 - [x] Prix : « Gratuit » ou une fourchette lus dans les légendes et la presse, case « seulement gratuits ». À faire : lire le prix sur la page de chaque événement.
+- [x] Presse : dates collées ou abrégées (« jusqu'au27nov. »), nom de l'événement cité dans le texte plutôt que le lieu du titre, catégorie lue dans le texte ; un article qui recoupe un événement officiel (même lieu, dates qui se chevauchent, titre proche) est masqué et lié dans la section « Dans la presse » de la fiche.
 - [x] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
 - [x] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
 - [x] Page Santé des sources (`/sante/`) : état, nombre d'événements, dernière nouveauté, sources silencieuses (rien depuis 30 jours), en panne, en pause.
