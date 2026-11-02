@@ -38,6 +38,11 @@ Pour le publier, poser l'étiquette `valide` sur l'issue : le fichier est créé
 
 Pensez d'abord à vérifier si le lieu peut devenir une **source** (voir plus bas) : c'est plus durable qu'une saisie à la main.
 
+**Contributeurs extérieurs** : la page [Contribuer](https://benjello.github.io/agenda-culturel-tunis/contribuer/) liste les
+sources recherchées (`_data/sources_recherchees.yml`, tenu à la main) et les sources à réparer (en pause, en panne,
+silencieuses). Chaque bouton ouvre le formulaire « Proposer une source ». Les plus à l'aise ouvrent une pull request
+sur `_data/sources.yml` ; le guide est dans [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md).
+
 ## Sources et scrapers (automatique)
 
 L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour des
@@ -168,5 +173,4 @@ Le suivi détaillé (état de chaque source, marche à suivre pour vérifier une
 - Formulaire de contribution (issue GitHub préremplie, ou Google Form) pour signaler un événement.
 - Brancher les sources « à étudier » du registre.
 - Contrôle de santé : alerte automatique quand une source meurt.
-- Formulaire « Proposer une source ».
 - Pages Facebook : lire aussi les publications (affiches) et en extraire les séances.

@@ -66,6 +66,28 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - Formulaire « Ajouter ou corriger une fiche » (lieu, artiste, conférencier, organisateur) : page Proposer et lien sur chaque fiche (issue GitHub, étiquette « fiche »).
 - Archives : `scrapers/archives.py` garde les événements passés (`archives/donnees/AAAA.json`), page de recherche `/archives/`.
 
+## Contributions extérieures (sources)
+
+- Page **Contribuer** (`/contribuer/`) : sources recherchées (`_data/sources_recherchees.yml`, à tenir à jour :
+  retirer une entrée quand elle est branchée) et sources à réparer (calculées depuis le registre).
+- Formulaire `source.yml`, issues vides désactivées, modèle de PR, `CODEOWNERS`, guide `.github/CONTRIBUTING.md`.
+- Chaque PR : tests (dont `tests/test_registre.py`, qui vérifie le registre) et résumé « Contribution »
+  (contribution extérieure ? fichiers de code ou de workflows touchés ?). Aucun workflow en `pull_request_target`.
+- **Réglages GitHub à faire par Mahdi** (pas scriptables) :
+  - [x] Settings → Actions → General → « Approval for running fork pull request workflows » :
+        **Require approval for all external contributors**.
+  - [x] Settings → Actions → General → « Workflow permissions » : **Read repository contents** par défaut
+        (les workflows qui écrivent le demandent déjà eux-mêmes).
+  - [ ] Settings → Rules → règle sur `main` : PR obligatoire avec relecture des Code Owners, vérification « Tests »
+        obligatoire, avec Mahdi et GitHub Actions dans la liste de contournement (les scrapers poussent sur `main`).
+        Facultatif : seul Mahdi peut fusionner, ce qui protège déjà de l'extérieur.
+  - [ ] En cas de vague de spam : Settings → Moderation → **Interaction limits** (24 h à 6 mois).
+- [ ] Formulaire sans compte GitHub : seulement avec un captcha (Cloudflare Turnstile, gratuit) et un relais
+      (ex. Formspree, Google Form) ; tant que tout passe par GitHub, le compte sert de protection.
+- Décision (2 nov. 2026) : les propositions de sources par IA restent **à la demande** (conversation avec Claude, validation par Mahdi) ;
+  pas de workflow hebdomadaire ni de clé d'API payante pour l'instant.
+- [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
+
 ## À faire
 
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).

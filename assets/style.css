@@ -206,6 +206,17 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 .infos-osm code { font-size: .85rem; }
 .prix.complet { background: #8a1c1c; color: #fff; padding: 0 .4rem; border-radius: 4px; font-weight: 600; }
 .tag.langue { background: #5b4b8a; }
+/* Page Contribuer : sources recherchées */
+.recherchees { list-style: none; padding: 0; display: grid; gap: 10px; }
+.recherchees li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.recherchees p { margin: 6px 0; }
+.recherchees small { color: var(--muted); }
+.recherchees li[hidden] { display: none; }
+.etat.niveau-facile { background: #d8efe0; color: #1d6b3a; }
+.etat.niveau-moyen { background: #f8e8c8; color: #8a5a00; }
+.etat.niveau-avance { background: #f6d6d2; color: #9b2c1f; }
+.etapes { margin: 0 0 16px; padding-left: 1.4em; } .etapes li { margin: 4px 0; }
+#pull-request { margin: 24px 0; } #pull-request summary { cursor: pointer; font-weight: 600; }
 
 /* ---- Grand écran (ordinateur, portable) : plus large, plus d'infos, moins de clics.
    Le téléphone garde l'affichage d'une colonne : tout ce qui suit ne s'applique qu'au-delà de 1100 px. */

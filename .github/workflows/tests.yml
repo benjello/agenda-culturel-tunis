@@ -4,7 +4,11 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths: ["scrapers/**", "tests/**", "requirements.txt"]
+    paths: ["scrapers/**", "tests/**", "requirements.txt", "_data/sources.yml", "_data/sources_recherchees.yml"]
+
+# Lecture seule : une PR venant d'un fork ne reçoit de toute façon ni secrets ni droit d'écriture.
+permissions:
+  contents: read
 
 jobs:
   tests:
