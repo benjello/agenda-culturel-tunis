@@ -9,5 +9,6 @@ source: "fb-ift-facebook"
 source_name: "Institut français de Tunisie (Facebook)"
 image: "assets/programmes/fb-ift-facebook/173f834204f2.jpg"
 ajoute: "2026-11-01"
+doublon: true
 auto: true
 ---

@@ -418,6 +418,19 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
 
 
+    def test_lieu_a_preciser_ne_bloque_pas_le_rapprochement(self):
+        """Même titre le même jour : « Lieu à préciser » est un lieu inconnu, pas un autre lieu."""
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for src, lieu in [("ig-x", "L'Art Rue"), ("fb-x", "Lieu à préciser")]:
+                (d / src).mkdir()
+                (d / src / "a.md").write_text(
+                    f'---\ntitle: "Le podcast de demain, vous l\'imaginez comment ?"\ndate: {FUTUR}-11-07\nvenue: "{lieu}"\n'
+                    f'link: "https://{src}.tn/x"\nsource: "{src}"\nsource_name: "{src}"\nauto: true\n---\n')
+            sources = [{"id": "ig-x", "type": "agenda"}, {"id": "fb-x", "type": "agenda"}]
+            self.assertEqual(doublons.marquer(sources, d), 1)
+
     def test_article_au_titre_generique_cite_le_titre_de_l_expo(self):
         """« À l'Institut français de Tunis » ne ressemble pas au titre de l'expo, mais son texte la cite."""
         from scrapers import doublons

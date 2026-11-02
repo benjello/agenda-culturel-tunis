@@ -57,7 +57,7 @@ def _cle_lieu(lieu: str) -> str:
 
 
 _ARTICLES = re.compile(r"^(?:l|le|la|les|el|al|the) ")
-_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|a venir)$|voir l.article|voir l.annonce|plusieurs")
+_VAGUE = re.compile(r"^(?:tunis|tunisie|en ligne|online|tba|tbd|a venir|lieu a preciser|lieu a definir)$|voir l.article|voir l.annonce|plusieurs")
 _VIDES = {"les", "des", "une", "avec", "pour", "the", "and", "dans", "sur", "par", "aux", "est", "vous",
           "cinema", "concert", "spectacle", "soiree", "exposition", "rencontre", "atelier", "theatre", "with"}
 
