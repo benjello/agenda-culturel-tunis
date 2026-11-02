@@ -55,6 +55,19 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
   </article>
 {%- endfor %}
 </div>
+{%- assign reperes = events | where_exp: "e", "e.festival and e.source contains 'presse-'" -%}
+{%- capture reperes_liste -%}
+  {%- for e in reperes -%}
+    {%- assign fin = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
+    {%- if fin >= today %}<li><a href="{{ e.url | relative_url }}">{{ e.title }}</a> · {% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} <small>· <a href="{{ e.link }}" rel="noopener">{{ e.source_name }}</a></small></li>{% endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if reperes_liste != "" %}
+<section class="festivals-presse">
+  <h2 data-t="fest.presse">Repérés dans la presse</h2>
+  <ul>{{ reperes_liste }}</ul>
+</section>
+{%- endif %}
 <p class="updated" data-th="fest_note">Un festival manque, ou son programme est sorti ? <a href="{{ '/a-propos/' | relative_url }}#proposer">Dites-le-nous</a>.</p>
 
 <script>

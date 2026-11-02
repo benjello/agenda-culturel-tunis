@@ -96,9 +96,12 @@ def _alias() -> dict:
     return {_norm(k): v for k, v in brut.items()}
 
 
-def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
+def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO, articles: list[dict] | None = None) -> int:
     types = {s["id"]: s.get("type", "agenda") for s in sources}
     presse = {s["id"] for s in sources if s.get("genre") == "presse"}
+    if articles is None:  # articles qui n'ont pas donné d'événement (scrapers/critiques.py)
+        from . import critiques
+        articles = critiques.lire(critiques.FICHIER_EVENEMENTS) if dossier == DOSSIER_AUTO else []
     evts = []
     for f in sorted(dossier.glob("*/*.md")):
         champs, corps = _lire(f)
@@ -168,8 +171,8 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
                 continue
             (d1, f1), (d2, f2) = periode(ci), periode(cj)
             li, lj = _lieu_proche(ci.get("venue", ""), alias), _lieu_proche(cj.get("venue", ""), alias)
-            if d1 <= f2 and d2 <= f1 and li and li == lj and \
-                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5, 2):
+            if d1 <= f2 and d2 <= f1 and (li == lj if (li and lj) else True) and \
+                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5 if (li and lj) else 0.8, 2):
                 unir(j, x)
     groupes: dict[int, list] = {}
     for i, e in enumerate(evts):
@@ -184,14 +187,14 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
         autres = [e for e in groupe[1:] if e[1].get("source") != garde[1].get("source")]
         # Un article de presse en doublon d'un événement officiel : masqué, mais son lien est gardé
         # dans « presse » (section de la fiche). Entre deux articles, c'est un doublon ordinaire.
-        articles = [e for e in autres if e[1].get("source") in presse] if garde[1].get("source") not in presse else []
-        if articles:
-            autres = [e for e in autres if e not in articles]
+        en_presse = [e for e in autres if e[1].get("source") in presse] if garde[1].get("source") not in presse else []
+        if en_presse:
+            autres = [e for e in autres if e not in en_presse]
             if garde[0] is not None:
                 garde[1]["presse"] = [{"titre": e[1].get("article_titre") or e[1].get("title"), "lien": e[1].get("link"),
                                        "source_nom": e[1].get("source_name"), "date": e[1].get("ajoute")}
-                                      for e in articles]
-            for e in articles:
+                                      for e in en_presse]
+            for e in en_presse:
                 e[1]["doublon"] = True
                 n += 1
         if autres and garde[0] is None:  # gardé : l'événement écrit à la main
@@ -207,6 +210,23 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO) -> int:
             for e in autres:
                 e[1]["doublon"] = True
                 n += 1
+    # 4. articles sans événement propre : rattachés à la manifestation officielle qu'ils couvrent
+    #    (dates qui se chevauchent, titre proche, même lieu s'il est connu)
+    for a in articles:
+        debut, fin = a.get("debut", ""), a.get("fin") or a.get("debut", "")
+        if not debut:
+            continue
+        for f, c, _ in evts:
+            if f is None or c.get("doublon") or c.get("source") in presse or c.get("film"):
+                continue
+            d2, f2 = periode(c)
+            lieu_a = _lieu_proche(a.get("lieu", ""), alias)
+            if debut <= f2 and d2 <= fin and (not lieu_a or lieu_a == _lieu_proche(c.get("venue", ""), alias)) and \
+                    (proches(mots(a.get("evenement", "")), mots(c.get("title", "")), 0.5, 2)
+                     or proches(mots(a.get("titre", "")), mots(c.get("title", "")), 0.8, 2)):
+                liste = c.setdefault("presse", [])
+                if all(x.get("lien") != a["lien"] for x in liste):
+                    liste.append({"titre": a["titre"], "lien": a["lien"], "source_nom": a.get("source_nom"), "date": a.get("date")})
     for f, champs, corps in evts:
         if f is None:
             continue

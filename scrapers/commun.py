@@ -164,6 +164,7 @@ class Evenement:
     genres: list[str] = field(default_factory=list)
     description: str = ""          # notice : quelques lignes tirées de la source (légende, résumé)
     artistes: list[str] = field(default_factory=list)  # line-up, si la source le donne
+    festival: str = ""             # presse : identifiant d'un festival ou d'une manifestation repérée dans un article
     article: str = ""              # presse : titre de l'article (le titre ci-dessus est le nom de l'événement)
 
 
