@@ -100,17 +100,16 @@
  {
   "semaine": "2026-S45",
   "date": "2026-11-02",
-  "a_venir": 160,
-  "sept_jours": 94,
+  "a_venir": 161,
+  "sept_jours": 95,
   "sources_actives": 74,
-  "sources_avec_evenements": 23,
+  "sources_avec_evenements": 24,
   "sources_muettes": [
    "cine-360",
    "cine-amilcar",
    "cine-colisee",
    "cine-madart",
    "cine-vog",
-   "fb-61595612945174",
    "fb-ajst",
    "fb-al-kitab",
    "fb-artisto",
@@ -158,7 +157,7 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 80,
+   "tunis": 81,
    "sud": 6,
    "sfax": 4,
    "sousse": 3,
@@ -170,8 +169,8 @@
    "theatre": 17,
    "expo": 8,
    "conference": 7,
-   "litterature": 4,
-   "musique": 4
+   "musique": 5,
+   "litterature": 4
   },
   "par_genre": {
    "lieu": 32,
@@ -179,7 +178,7 @@
    "institution": 20,
    "presse": 5,
    "festival": 4,
-   "collectif": 2
+   "collectif": 3
   },
   "par_source": {
    "ift-pdf": 17,
@@ -201,6 +200,7 @@
    "presse-webdo": 2,
    "resident-advisor": 2,
    "beit-al-hikma": 1,
+   "fb-61595612945174": 1,
    "ig-agorgi-gallery": 1,
    "ig-rosalux-afrique-nord": 1,
    "presse-lapresse": 1,
