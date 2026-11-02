@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Merci ! L'agenda relira cette page chaque jour, toute seule.
+        Merci ! Collez simplement l'adresse de la page : on s'occupe du reste.
         Liste des sources qu'on cherche : https://benjello.github.io/agenda-culturel-tunis/contribuer/
   - type: input
     id: nom
@@ -26,10 +26,8 @@ body:
   - type: dropdown
     id: genre
     attributes:
-      label: Quelle sorte de page ?
-      options: [Site avec un agenda, Page Facebook, Compte Instagram, Flux RSS ou iCal, Programme en PDF, Autre]
-    validations:
-      required: true
+      label: Quelle sorte de page ? (facultatif)
+      options: [Je ne sais pas, Site avec un agenda, Page Facebook, Compte Instagram, Flux RSS ou iCal, Programme en PDF, Autre]
   - type: input
     id: recherche
     attributes:

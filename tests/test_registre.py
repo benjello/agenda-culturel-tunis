@@ -75,8 +75,10 @@ class Recherchees(unittest.TestCase):
                 self.assertTrue(ID.fullmatch(str(r.get("id", ""))))
                 self.assertNotIn(r["id"], vus)
                 vus.add(r["id"])
-                self.assertLessEqual(set(r), {"id", "nom", "categorie", "cherche", "pistes", "source"})
+                self.assertLessEqual(set(r), {"id", "nom", "categorie", "cherche", "pistes", "source", "tache", "niveau"})
                 self.assertTrue(r.get("nom") and r.get("cherche"))
+                self.assertIn(r.get("tache"), {"trouver", "verifier", "brancher", "coder"})
+                self.assertIn(r.get("niveau"), {"facile", "moyen", "avance"})
                 self.assertIn(r.get("categorie", "autre"), categories)
                 if r.get("source"):
                     self.assertIn(r["source"], sources, "source absente de _data/sources.yml")
