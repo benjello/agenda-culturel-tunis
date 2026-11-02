@@ -84,7 +84,7 @@ layout: default
         {%- for g in f.genres %}<span class="badge">{{ g }}</span>{% endfor -%}
       </p>
       {%- capture duree %}{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif %}{% endcapture -%}
-      {%- capture lien_imdb %}{% include liens-film.html titre=f.titre imdb=f.imdb %}{% endcapture -%}
+      {%- capture lien_imdb %}{% include liens-film.html titre=f.titre imdb=f.imdb letterboxd=f.letterboxd %}{% endcapture -%}
       {%- assign parts = "" | split: "" -%}
       {%- if duree != "" %}{% assign parts = parts | push: duree %}{% endif -%}
       {%- if lien_imdb != "" %}{% assign parts = parts | push: lien_imdb %}{% endif -%}
