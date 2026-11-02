@@ -93,6 +93,12 @@ def recuperer(source: dict) -> list:
     lecteur = lecteurs.LECTEURS[o.get("lecteur", "une_affiche_par_evenement")]
     lieu = o.get("lieu") or source["nom"]
     evts = [e for e in lecteur([p.en_dict() for p in publications], [], lieu) if e]
+    if source.get("categorie") == "cinema":
+        # Une salle de cinéma : seule une publication qui nomme un film déjà à l'affiche compte.
+        # Les publicités (« cette semaine à L'Agora… ») ne créent pas d'événement ; la programmation
+        # vient de la billetterie ou du site de la salle.
+        connus = lecteurs.titres_connus()
+        evts = [e for e in evts if lecteurs.titre_connu(f"{e.titre} {e.description}", connus)]
     for e in evts:
         e.categorie = e.categorie or source.get("categorie") or "autre"
     print(f"  {source['id']} : {len(evts)} événement(s) lu(s) sur les affiches")
