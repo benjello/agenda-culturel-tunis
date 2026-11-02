@@ -11,7 +11,8 @@ Options :
   compte   nom du compte (instagram.com/<compte>)
   lieu     nom du lieu
   max      nombre de publications avec image à garder (défaut 6)
-  jours    ne lire que les publications de moins de N jours (défaut 21)
+  jours    garder les publications de moins de N jours (défaut 21) ; Apify ne relit que
+           celles parues depuis la dernière lecture, les autres viennent du cache
   lecteur  défaut : une_affiche_par_evenement
 """
 from __future__ import annotations
@@ -22,7 +23,7 @@ import os
 from .. import lecteurs
 from ..commun import RACINE, EnAttente, Publication
 from .facebook import appeler_apify, _date
-from .facebook_programmes import DOSSIER_IMAGES, enregistrer_image, lire_image
+from .facebook_programmes import DOSSIER_IMAGES, en_cache, enregistrer_image, fenetre, fusionner, lire_image, nettoyer_images
 
 ACTEUR = "apify/instagram-scraper"
 
@@ -43,7 +44,7 @@ def lire_publications(source: dict) -> list[Publication]:
     url = compte if compte.startswith("http") else f"https://www.instagram.com/{compte}/"
     items = appeler_apify(o.get("acteur", ACTEUR), {
         "directUrls": [url], "resultsType": "posts", "resultsLimit": o.get("resultats", 12),
-        "onlyPostsNewerThan": f"{o.get('jours', 21)} days"}, cle)
+        "onlyPostsNewerThan": f"{fenetre(source)} days"}, cle)
     if not isinstance(items, list):
         raise RuntimeError(f"réponse Apify inattendue : {str(items)[:200]}")
     erreurs = [i for i in items if i.get("error")]
@@ -55,14 +56,16 @@ def lire_publications(source: dict) -> list[Publication]:
 
     dossier = DOSSIER_IMAGES / source["id"]
     dossier.mkdir(parents=True, exist_ok=True)
-    gardees, publications = set(), []
+    publications, cache = [], en_cache(source)
     for item in avec_image[:o.get("max", 6)]:
         lien = item.get("url") or url
+        if lien in cache and all((RACINE / c).exists() for c in cache[lien].images):
+            publications.append(cache[lien])  # déjà lue : ni téléchargement ni OCR
+            continue
         debut = _date(item.get("timestamp"))
         chemins, ocr = [], []
         for n, uri in enumerate(images_de(item)[:2]):
             nom = hashlib.sha1(f"{lien}#{n}".encode()).hexdigest()[:12]
-            gardees.add(f"{nom}.jpg")
             try:
                 chemin = enregistrer_image(uri, dossier, nom)
             except Exception as exc:  # noqa: BLE001 — une image injoignable ne bloque pas la source
@@ -74,9 +77,8 @@ def lire_publications(source: dict) -> list[Publication]:
             lien=lien, date=debut.date().isoformat() if debut else "",
             texte=(item.get("caption") or "").strip(), images=chemins,
             ocr="\n\n".join(t for t in ocr if t)))
-    for f in dossier.iterdir():
-        if f.name not in gardees:
-            f.unlink()
+    publications = fusionner(source, publications, o.get("max", 6))
+    nettoyer_images(dossier, publications)
     return publications
 
 
