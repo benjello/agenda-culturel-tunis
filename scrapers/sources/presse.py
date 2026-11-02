@@ -21,13 +21,15 @@ from __future__ import annotations
 import datetime as dt
 import email.utils
 import html
+import json
 import re
+import unicodedata
 import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
 from ..commun import Evenement, slug, categorie_du_titre, prix_du_texte, propre, resume, telecharger, toutes_dates
-from ..commun import MOIS
+from ..commun import MOIS, RACINE
 from ..lecteurs import _annee, jours_sans_annee, periode
 from .rss import _racine
 
@@ -43,6 +45,50 @@ _CONTENU = "{http://purl.org/rss/1.0/modules/content/}encoded"
 _LIEU = re.compile(r"\b(?:à|au|aux|à la|à l['’])\s*((?:Cité|Théâtre|Maison|Palais|Espace|Centre|Musée|Galerie|"
                    r"Institut|Salle|Cinéma|Cinémathèque|Dar|Bir|Club|Opéra|Bibliothèque|Médiathèque|Complexe|"
                    r"Amphithéâtre|Fondation|Rotonde|Acropolium|Colisée|Ksar|Fort)\b[^,.;:()\n«»\"]{2,60})")
+
+
+_GENERIQUE = re.compile(r"^(?:(?:theatre|cinema|salle|maison|espace|le|la|les|l|du|de|des|el)\s+)+")
+_TROP_COURTS = {"tunis", "carthage", "la marsa", "marsa", "sousse", "sfax"}
+
+
+def _plat(texte: str) -> str:
+    """Texte sans accents ni ponctuation, « Quatrième » écrit « 4eme » comme dans le registre."""
+    t = unicodedata.normalize("NFKD", str(texte).replace("’", "'")).encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"\bquatrieme\b|\b4\s*e?me\b|\b4\s*eme\b", "4eme", t)
+    return " " + re.sub(r"[^a-z0-9]+", " ", t).strip() + " "
+
+
+_NOMS: list[tuple[str, str]] | None = None
+
+
+def noms_de_lieux() -> list[tuple[str, str]]:
+    """(forme cherchée dans un texte, nom du lieu dans le registre), du plus long au plus court.
+    Le registre est _data/lieux.json (noms de lieux déjà vus dans l'agenda, avec leur fiche)."""
+    global _NOMS
+    if _NOMS is None:
+        try:
+            index = json.loads((RACINE / "_data" / "lieux.json").read_text()).get("index", {})
+        except (OSError, ValueError):
+            index = {}
+        formes = {}
+        for nom in index:
+            if len(nom) > 60 or "http" in nom or any(ord(c) > 0x2000 for c in nom if not "\u0600" <= c <= "\u06ff"):
+                continue
+            base = _plat(nom.split(",")[0]).strip()
+            for forme in {base, _GENERIQUE.sub("", base)}:
+                if len(forme) >= 6 and forme not in _TROP_COURTS:
+                    formes.setdefault(forme, nom)
+        _NOMS = sorted(formes.items(), key=lambda kv: -len(kv[0]))
+    return _NOMS
+
+
+def lieu_connu(texte: str, noms: list[tuple[str, str]] | None = None) -> str:
+    """Le premier lieu du registre cité dans le texte (« la salle du Quatrième Art, à Tunis » →
+    « Théâtre Le 4ème Art »), ou "". Le lieu cité en premier gagne ; à égalité, le nom le plus long."""
+    plat = _plat(texte)
+    trouves = [(plat.find(f" {forme} "), -len(forme), nom) for forme, nom in (noms_de_lieux() if noms is None else noms)
+               if f" {forme} " in plat]
+    return min(trouves)[2] if trouves else ""
 
 
 def _lire(xml: str):
@@ -247,7 +293,8 @@ def analyser(xml: str, source: dict) -> tuple[list[Evenement], list[dict]]:
         if not debut:
             continue
         m = _LIEU.search(tout)
-        lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "" if journal else "Tunisie, voir l'article")
+        lieu = (lieu_connu(tout[:1500]) or (propre(m.group(1)).rstrip(" .") if m else "")
+                or o.get("lieu", "" if journal else "Tunisie, voir l'article"))
         categorie = _categorie(a, source) or ("" if journal else "autre")
         titre = titre_evenement(a["titre"], a["texte"])
         festival = journal and _est_festival(a["titre"], titre) and (fin is not None or _FESTIVAL.search(titre))
