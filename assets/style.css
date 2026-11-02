@@ -206,3 +206,8 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 .infos-osm code { font-size: .85rem; }
 .prix.complet { background: #8a1c1c; color: #fff; padding: 0 .4rem; border-radius: 4px; font-weight: 600; }
 .tag.langue { background: #5b4b8a; }
+/* Page Contribuer : sources recherchées */
+.recherchees { list-style: none; padding: 0; display: grid; gap: 10px; }
+.recherchees li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.recherchees p { margin: 6px 0; }
+.recherchees small { color: var(--muted); }

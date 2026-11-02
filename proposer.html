@@ -31,7 +31,7 @@ description: Annoncez gratuitement un concert, une expo, une projection ou une r
 </form>
 <h2 data-t="proposer_source">Vous publiez souvent ?</h2>
 <p data-t="proposer_source_texte">Un lieu, un collectif ou un artiste qui annonce régulièrement ses dates sur un site, Facebook ou Instagram : donnez-nous l'adresse, l'agenda la lira tout seul chaque jour.</p>
-<p><a class="bouton" href="{{ site.depot }}/issues/new?title={{ 'Source : ' | url_encode }}&labels=source" rel="noopener" data-t="proposer_source_bouton">Proposer une source</a></p>
+<p><a class="bouton" href="{{ site.depot }}/issues/new?template=source.yml" rel="noopener" data-t="proposer_source_bouton">Proposer une source</a> <a class="bouton" href="{{ '/contribuer/' | relative_url }}" data-t="contrib.voir">Les sources qu'on cherche</a></p>
 <script>
 (function () {
   var f = document.getElementById('proposition'), depot = {{ site.depot | jsonify }}, email = {{ site.contact_email | jsonify }};

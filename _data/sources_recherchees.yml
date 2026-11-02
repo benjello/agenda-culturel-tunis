@@ -1,0 +1,84 @@
+# Sources recherchées : ce que l'agenda ne sait pas encore lire, faute d'adresse.
+# Affichées sur la page « Contribuer » (/contribuer/) avec un bouton « J'ai trouvé ».
+# Les sources en pause ou en panne de _data/sources.yml s'y ajoutent toutes seules.
+#
+# Champs :
+#   id         identifiant court, unique (lettres, chiffres, tirets)
+#   nom        ce qu'on cherche
+#   categorie  catégorie (voir _data/categories.yml)
+#   cherche    ce qui nous manque : la page, le compte, le programme…
+#   pistes     ce qui a déjà été essayé (facultatif)
+#   source     id dans _data/sources.yml si la source existe déjà (facultatif)
+# Quand une entrée est trouvée et branchée, la retirer d'ici.
+
+- id: maisons-culture-grand-tunis
+  nom: Maisons de la culture du Grand Tunis
+  categorie: autre
+  cherche: "La page Facebook (ou Instagram) active de chaque maison de la culture : Ibn Khaldoun, Ibn Rachiq, El Menzah 6, El Omrane, Dar El Masrahi (Bardo), Abou El Kacem Chebbi (El Ouardia), Sidi Hassine, Mnihla, Ettadhamen, El Mourouj, Ezzahra…"
+  pistes: "La Délégation régionale de la culture de Tunis (facebook.com/culture.tunis) relaie une partie de leurs programmes ; la presse aussi, surtout pendant le Ramadan."
+
+- id: delegations-culture
+  nom: Délégations régionales des affaires culturelles
+  categorie: autre
+  cherche: "La page Facebook de chaque délégation (Ariana, Ben Arous, La Manouba…) : leurs sites ne répondent pas depuis l'étranger."
+  pistes: "Tunis : facebook.com/culture.tunis. Les autres sont à trouver."
+
+- id: cine-clubs
+  nom: Ciné-clubs de quartier et universitaires
+  categorie: cinema
+  cherche: "Le compte où chaque ciné-club annonce ses séances : ENS, ISAM, ISAD, université de la Manouba, Ciné-Citoyen (maison de la culture Ibn Khaldoun)…"
+  pistes: "La Fédération tunisienne des ciné-clubs et le Ciné-club de Tunis sont déjà suivis."
+
+- id: clubs-etudiants
+  nom: Clubs culturels étudiants
+  categorie: autre
+  cherche: "Les comptes des clubs théâtre, musique, photo des écoles et facultés du Grand Tunis qui organisent des soirées ouvertes au public."
+
+- id: atast
+  nom: ATAST (sciences et technologie)
+  categorie: conference
+  source: ig-atast
+  cherche: "Un site, une page Facebook ou un calendrier avec les dates (i-FEST², compétitions de robotique, clubs). Le compte Instagram est en pause."
+
+- id: rachidia
+  nom: La Rachidia
+  categorie: musique
+  cherche: "Une page Facebook ou un site actif : cinq noms ont été essayés sans succès."
+  pistes: "Ses concerts passent par la presse et par Teskerti quand ils ont lieu au Théâtre municipal."
+
+- id: ennejma-ezzahra
+  nom: Ennejma Ezzahra (CMAM, Sidi Bou Saïd)
+  categorie: musique
+  cherche: "La page Facebook active (la page ennejmaezzahra date de 2012)."
+
+- id: theatre-municipal
+  nom: Théâtre municipal de Tunis
+  categorie: theatre
+  cherche: "Une page qui publie la programmation : la page Facebook trouvée n'est plus active depuis 2019."
+  pistes: "Une partie des spectacles est lue via Teskerti."
+
+- id: cinematheque
+  nom: Cinémathèque tunisienne
+  categorie: cinema
+  source: cinematheque
+  cherche: "Une page qui publie le programme des projections (Cité de la Culture)."
+
+- id: opera-tunis
+  nom: Opéra de Tunis
+  categorie: musique
+  cherche: "Une page avec les dates de chaque spectacle : la billetterie est lue mais ne renvoie aucun événement."
+
+- id: kalyste
+  nom: Galerie Kalysté
+  categorie: expo
+  cherche: "La page Facebook ou Instagram de la galerie : les noms essayés ne renvoient rien."
+
+- id: carthage-dance
+  nom: Carthage Dance (Journées chorégraphiques)
+  categorie: danse
+  cherche: "Le programme de la prochaine édition : le site carthagedance.gov.tn refuse la lecture automatique."
+
+- id: medina-associations
+  nom: Associations et festivals de quartier de la médina
+  categorie: autre
+  cherche: "Les comptes de L'Art Rue (Dream City), des associations de la médina et des festivals de quartier."

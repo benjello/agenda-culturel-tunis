@@ -345,3 +345,21 @@ langue.ar: { ar: "بالعربية", en: "In Arabic" }
 langue.fr: { ar: "بالفرنسية", en: "In French" }
 langue.en: { ar: "بالإنجليزية", en: "In English" }
 langue.vo: { ar: "نسخة أصلية مترجمة", en: "Original version, subtitled" }
+nav.contribuer: { ar: "ساهم", en: "Contribute" }
+contrib.voir: { ar: "المصادر التي نبحث عنها", en: "Sources we are looking for" }
+contrib.titre: { ar: "ساهم: المصادر الناقصة", en: "Contribute: missing sources" }
+contrib.intro: { ar: "فضاءات كثيرة لا تعلن عن مواعيدها إلا على فيسبوك أو إنستغرام، ولا نعرف دائما صفحتها. تعرفها؟ أعطنا العنوان وستقرؤها الأجندا كل يوم.", en: "Many venues only announce their dates on Facebook or Instagram, and we don't always know their page. Do you? Give us the address and the agenda will read it every day." }
+contrib.recherchees: { ar: "مصادر نبحث عنها", en: "Sources we are looking for" }
+contrib.pistes: { ar: "جرّبنا:", en: "Already tried:" }
+contrib.trouve: { ar: "وجدتها", en: "I found it" }
+contrib.reparer: { ar: "مصادر يجب إصلاحها", en: "Sources to fix" }
+contrib.reparer_intro: { ar: "هذه المصادر معروفة، لكن الصفحة لم تعد تعمل، أو لم تنشر شيئا منذ أكثر من شهر، أو لم تربط بعد. عنوان أحدث يكفي غالبا.", en: "These sources are known, but the page no longer works, has posted nothing for over a month, or is not connected yet. A more recent address is often enough." }
+contrib.meilleure: { ar: "عنوان أفضل؟", en: "A better address?" }
+contrib.autre: { ar: "مصدر آخر؟", en: "Another source?" }
+contrib.autre_texte: { ar: "فضاء أو مجموعة أو فنان يعلن باستمرار عن مواعيده وغير موجود بعد في الأجندا: اقترحه أيضا.", en: "A venue, collective or artist that regularly announces dates and is not on the agenda yet: suggest it too." }
+contrib.compte: { ar: "الاستمارة على GitHub: يلزم حساب (مجاني). هذا أيضا حمايتنا من الروبوتات.", en: "The form is on GitHub: you need a (free) account. It is also our protection against bots." }
+contrib.pr: { ar: "أضف المصدر بنفسك", en: "Add the source yourself" }
+contrib.pr_texte: { ar: "تعرف GitHub؟ أضف المصدر مباشرة في السجل: افتح الملف، اضغط على القلم ✎، انسخ مدخلا مشابها، ثم «Propose changes». يتحقق منه آليا ثم يراجع قبل إضافته.", en: "Comfortable with GitHub? Add the source to the registry directly: open the file, click the pencil ✎, copy a similar entry, then « Propose changes ». It is checked automatically, then reviewed before being added." }
+contrib.editer: { ar: "تعديل سجل المصادر", en: "Edit the source registry" }
+contrib.guide: { ar: "اقرأ الدليل", en: "Read the guide" }
+contrib.regles: { ar: "مصادر عمومية فقط (تظهر دون تسجيل الدخول)، وأنشطة ثقافية. الإشهار والروابط التي لا علاقة لها تغلق دون رد.", en: "Public sources only (visible without logging in), cultural events. Advertising and unrelated links are closed without reply." }
