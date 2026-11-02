@@ -1,22 +1,37 @@
 ---
 layout: default
-title: Organisateurs et artistes
+title: Artistes, conférenciers et organisateurs
 permalink: /artistes/
-description: Les lieux, collectifs, festivals et artistes suivis par l'agenda, avec leurs dates à venir.
+description: Les artistes, conférenciers, lieux, collectifs et festivals suivis par l'agenda, avec leurs dates à venir.
 ---
 <section class="intro">
-  <h1 data-t="collectifs_titre">Organisateurs et artistes</h1>
-  <p data-t="collectifs_intro">Chaque fiche montre ce qu'ils ont annoncé. Un nom manque ? Proposez-le sur la page « À propos ».</p>
+  <h1 data-t="collectifs_titre">Artistes, conférenciers et organisateurs</h1>
+  <p data-t="collectifs_intro">Chaque fiche montre ce qu'ils ont annoncé. Un nom manque ? Signalez-le avec le lien en bas de la page.</p>
 </section>
-<h2 data-t="artistes">Artistes</h2>
-<ul class="liste-fiches">
+{%- comment -%}
+  Deux listes : les artistes, puis les conférenciers et intervenants (rencontres, débats).
+  Le rôle est écrit par scrapers/pages.py, ou choisi à la main dans _data/artistes.yml (role: conferencier).
+{%- endcomment -%}
 {%- assign tous = site.events | where_exp: "e", "e.doublon != true" -%}
-{%- for a in site.artistes %}
+{%- assign roles = "artiste,conferencier" | split: "," -%}
+{%- for r in roles %}
+{%- capture items -%}
+{%- for a in site.artistes %}{% assign ar = a.role | default: "artiste" %}{% if ar != r %}{% continue %}{% endif %}
   {%- assign n = 0 -%}
   {%- for e in tous -%}{%- capture t -%}{{ e.title }} {{ e.artists | join: " " }}{%- endcapture -%}{%- assign t = t | downcase -%}{%- for m in a.mots -%}{%- if t contains m -%}{%- assign n = n | plus: 1 -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
   {%- if n > 0 %}<li data-n="{{ n }}"><a href="{{ a.url | relative_url }}">{{ a.title }}</a> <small>{{ n }}</small></li>{% endif %}
+{%- endfor -%}
+{%- endcapture -%}
+{%- if items != "" %}
+{%- if r == "artiste" %}
+<h2 id="artistes" data-t="artistes">Artistes</h2>
+{%- else %}
+<h2 id="conferenciers" data-t="conferenciers">Conférenciers et intervenants</h2>
+<p><small data-t="conferenciers_intro">Les personnes qu'on vient écouter : conférences, rencontres, débats, cafés philo.</small></p>
+{%- endif %}
+<ul class="liste-fiches">{{ items }}</ul>
+{%- endif %}
 {%- endfor %}
-</ul>
 {%- comment -%} Une liste par genre de source (_data/sources.yml) : un journal n'est pas un lieu. {%- endcomment -%}
 {%- assign genres = "lieu,institution,festival,collectif,administration,agenda,presse" | split: "," -%}
 {%- assign cs = site.collectifs | sort: "title" -%}
@@ -31,3 +46,4 @@ description: Les lieux, collectifs, festivals et artistes suivis par l'agenda, a
 <ul class="liste-fiches">{{ items }}</ul>
 {%- endif %}
 {%- endfor %}
+{% include signaler-fiche.html quoi="artiste" %}

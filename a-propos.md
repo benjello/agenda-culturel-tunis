@@ -24,6 +24,7 @@ des événements**, plutôt qu'un événement isolé.
 
 Pour un événement précis, utilisez le [formulaire « Proposer un événement »]({{ '/proposer/' | relative_url }}).
 Une erreur sur une fiche ? Le lien « Signaler une erreur » en bas de chaque fiche ouvre un formulaire déjà rempli.
+Un lieu, un artiste ou un conférencier manque, ou sa fiche est incomplète ? [Dites-le-nous]({{ '/proposer/#fiche' | relative_url }}).
 {: data-th="apropos.p4"}
 
 ## Données ouvertes {#donnees}

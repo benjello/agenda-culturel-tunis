@@ -1,7 +1,7 @@
 """Fiches plus riches, depuis des sources ouvertes et gratuites :
 
 - photos des artistes et des lieux : Wikidata (propriété P18, image sur Wikimedia Commons) ;
-- accès fauteuil, horaires et site des lieux et des musées : OpenStreetMap (Overpass),
+- accès fauteuil, horaires, site et type (cinéma, théâtre…) des lieux et des musées : OpenStreetMap (Overpass),
   une seule requête pour toute la Tunisie.
 
 Les réponses sont gardées dans _data/enrichi.json (clé : identifiant de la fiche) pour ne pas
@@ -83,12 +83,20 @@ def fiches(dossier: str) -> list[tuple[str, str]]:
     return res
 
 
+# Étiquette OpenStreetMap → type de lieu du site (_data/types_lieux.yml)
+TYPES_OSM = {"cinema": "cinema", "theatre": "theatre", "gallery": "galerie", "museum": "musee",
+             "library": "bibliotheque", "arts_centre": "centre", "community_centre": "centre"}
+
+
 def osm_index(elements: list[dict]) -> dict:
     """{nom normalisé : étiquettes utiles}"""
     res = {}
     for el in elements:
         t = el.get("tags") or {}
         infos = {k: t[k] for k in ("wheelchair", "opening_hours", "website") if t.get(k)}
+        genre = TYPES_OSM.get(t.get("amenity") or "") or TYPES_OSM.get(t.get("tourism") or "")
+        if genre:
+            infos["type"] = genre
         if not infos:
             continue
         for cle in ("name", "name:fr", "name:en", "name:ar"):

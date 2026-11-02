@@ -762,6 +762,40 @@ class Fiches(unittest.TestCase):
                                     {"title": "Café Philo avec Azza Filali"}])
         self.assertEqual(sorted(noms.values()), ["Azza Filali", "Sonia Hanihina"])
 
+    def test_role_conferencier(self):
+        from scrapers.pages import role
+        evts = [{"title": "Café Philo avec Azza Filali", "category": "autre"},
+                {"title": "Kteb Tounsi : Rencontre-débat avec Sonia Hanihina"},
+                {"title": "Avec Hafida Ben Rejeb Latta", "category": "litterature"},
+                {"title": "Concert de Emel Mathlouthi", "category": "musique"},
+                {"title": "Fabrika Festival", "category": "musique", "artists": ["Hugo Martinez"]},
+                {"title": "Conférence : Hugo Martinez"}]
+        self.assertEqual(role(["azza filali"], evts), "conferencier")
+        self.assertEqual(role(["sonia hanihina"], evts), "conferencier")
+        self.assertEqual(role(["hafida ben rejeb latta"], evts), "conferencier")
+        self.assertEqual(role(["emel mathlouthi"], evts), "artiste")
+        self.assertEqual(role(["hugo martinez"], evts), "conferencier")  # 1 conférence, 1 line-up : égalité
+        self.assertEqual(role(["inconnu"], evts), "artiste")
+
+    def test_type_lieu(self):
+        from scrapers.pages import type_lieu, types_lieux
+        c = types_lieux()
+        self.assertEqual(type_lieu("Cinéma Le Colisée", "x", c, {}), "cinema")
+        self.assertEqual(type_lieu("Salle de cinéma, Institut français de Sousse", "x", c, {}), "cinema")
+        self.assertEqual(type_lieu("Théâtre municipal de Tunis", "x", c, {}), "theatre")
+        self.assertEqual(type_lieu("El Teatro", "x", c, {}), "theatre")
+        self.assertEqual(type_lieu("قاعة رشاد المناعي بقاعة الفن الرابع", "x", c, {}), "theatre")
+        self.assertEqual(type_lieu("Galerie, Institut français de Sousse", "x", c, {}), "galerie")
+        self.assertEqual(type_lieu("Institut français de Tunis", "x", c, {}), "centre")
+        self.assertEqual(type_lieu("Shanti", "x", c, {}), "club")  # choisi à la main
+        self.assertEqual(type_lieu("Le Rio", "le-rio", c, {"lieu:le-rio": {"type": "cinema"}}), "cinema")  # OSM
+        self.assertEqual(type_lieu("Douz", "douz", c, {}), "autre")
+
+    def test_type_osm(self):
+        from scrapers.enrichir import osm_index
+        i = osm_index([{"tags": {"name": "Le Rio", "amenity": "cinema"}}, {"tags": {"name": "Rien"}}])
+        self.assertEqual(i, {"rio": {"type": "cinema"}})
+
     def test_lieux_regroupes(self):
         from scrapers.pages import lieux
         g = lieux([{"venue": "L'Agora Marsa"}, {"venue": "L’Agora La Marsa"}, {"venue": "Tunis"},

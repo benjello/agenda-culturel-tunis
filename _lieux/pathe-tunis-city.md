@@ -1,6 +1,7 @@
 ---
 title: "Pathé Tunis City"
 noms: ["Pathé Tunis City"]
+type: "cinema"
 adresse: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 ville: "tunis"
 lat: 36.89828
