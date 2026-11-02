@@ -21,7 +21,8 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 
 from ..commun import Evenement, categorie_du_titre, prix_du_texte, propre, resume, telecharger, toutes_dates
-from ..lecteurs import jours_sans_annee, periode
+from ..commun import MOIS
+from ..lecteurs import _annee, jours_sans_annee, periode
 from .rss import _racine
 
 MOTS = (r"festival|concert|spectacle|exposition|vernissage|projection|pi[èe]ce|repr[ée]sentation|soir[ée]e|"
@@ -82,10 +83,57 @@ def _articles(xml: str) -> list[dict]:
     return res
 
 
+_M = "|".join(sorted(MOIS, key=len, reverse=True))
+
+
+def recoller(texte: str) -> str:
+    """Remet les espaces perdus par le HTML : « jusqu'au27nov. » → « jusqu'au 27 nov. »,
+    « du27 octobre au3 novembre » → « du 27 octobre au 3 novembre », « 27nov. » → « 27 nov. »."""
+    texte = re.sub(r"\b(jusqu['’]?au|jusqu['’]?[àa]|du|au|le|depuis|partir du)(?=\d)", r"\1 ", texte, flags=re.I)
+    texte = re.sub(rf"(?<=\d)(?=(?:{_M})\b)", " ", texte, flags=re.I)
+    return texte
+
+
+_RE_JUSQUAU = re.compile(rf"jusqu['’]?\s*(?:au|[àa])\s+(?:\w+\s+)?(\d{{1,2}}|1er)\s+({_M})\b\.?(?:\s+(\d{{4}}))?", re.I)
+_RE_DU_AU = re.compile(rf"\bdu\s+(?:\w+\s+)?(\d{{1,2}}|1er)\s*({_M})?\b\.?\s*(?:\d{{4}}\s*)?"
+                       rf"(?:au|[-–→])\s+(?:\w+\s+)?(\d{{1,2}}|1er)\s+({_M})\b\.?(?:\s+(\d{{4}}))?", re.I)
+
+
+def _jour(j: str, m: str, a: str, ref: dt.date) -> dt.date | None:
+    mois = MOIS[m.lower()]
+    try:
+        return dt.date(int(a) if a else _annee(mois, ref), mois, 1 if j.lower() == "1er" else int(j))
+    except ValueError:
+        return None
+
+
+def periode_abregee(texte: str, ref: dt.date) -> tuple[dt.date | None, dt.date | None]:
+    """« du 27 oct. au 27 nov. », « jusqu'au 27 novembre » (année facultative, mois abrégés)."""
+    m = _RE_DU_AU.search(texte)
+    if m:
+        j1, m1, j2, m2, a = m.groups()
+        fin = _jour(j2, m2, a, ref)
+        debut = _jour(j1, m1 or m2, a, ref)
+        if debut and fin:
+            if debut > fin:
+                debut = debut.replace(year=debut.year - 1)
+            return debut, fin
+    m = _RE_JUSQUAU.search(texte)
+    if m:
+        fin = _jour(*m.groups(), ref)
+        if fin:
+            return min(ref, fin), fin  # l'article est paru avant la fin : l'événement a déjà commencé
+    return None, None
+
+
 def _dates(texte: str, ref: dt.date) -> tuple[dt.date | None, dt.date | None]:
     """Première date à venir (ou période) citée dans le texte."""
     aujourd_hui = dt.date.today()
     limite = aujourd_hui + dt.timedelta(days=120)
+    texte = recoller(texte)
+    debut, fin = periode_abregee(texte, ref)
+    if debut and fin and fin >= aujourd_hui and debut <= limite:
+        return debut, fin
     p = periode(texte)
     if p:
         debut, fin = dt.date.fromisoformat(p[0]), dt.date.fromisoformat(p[-1])
@@ -103,12 +151,25 @@ _EVENEMENT = re.compile(r"festival|foire|salon|journ[ée]es|biennale|rencontres|
                         r"\b20\d{2}\b|مهرجان|أيام|معرض", re.I)
 
 
-def titre_evenement(titre: str) -> str:
+_LIEU_TITRE = re.compile(r"^(?:à|au|aux|chez|dans|en)\s", re.I)
+_CITE_TEXTE = re.compile(r"(?:exposition|spectacle|pi[èe]ce|film|concert|festival|[ée]v[ée]nement|rencontre|cycle|programme)"
+                         r"[^«“\"]{0,40}[«“\"]\s*([^»”\"]{3,80}?)\s*[»”\"]", re.I)
+
+
+def titre_evenement(titre: str, texte: str = "") -> str:
     """Le nom de l'événement dans un titre d'article :
     « Cinéma : Le Temps suspendu, un film hongrois à ne pas rater » → « Le Temps suspendu » ;
     « « Saveurs et amertume » à la Galerie TGM : Lorsque l'art… » → « Saveurs et amertume » ;
     « Foire nationale du livre tunisien: Traduire, transmettre… » → « Foire nationale du livre tunisien »."""
     t = _RUBRIQUE.sub("", titre, count=1).strip()
+    avant, sep, apres = t.partition(":")
+    if sep and _LIEU_TITRE.match(avant.strip()) and "«" not in avant:
+        # « À l'Institut français de Tunis : La Syrie regardée… » : l'avant est un lieu, pas un nom ;
+        # le vrai nom est cité dans le texte (« l'exposition « Images de Syrie… » »).
+        m = _CITE_TEXTE.search(texte[:600])
+        if m:
+            return propre(m.group(1))
+        t = apres.strip()
     m = re.search(r"[«“\"]\s*([^»”\"]{3,80}?)\s*[»”\"]", t)
     if m:
         return propre(m.group(1))
@@ -148,9 +209,11 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
             continue
         m = _LIEU.search(tout)
         lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "Tunisie, voir l'article")
-        categorie = categorie_du_titre(a["titre"]) or (
-            "expo" if re.search(r"\bgalerie\b|exposition|معرض", a["titre"], re.I) else source.get("categorie", "autre"))
-        res.append(Evenement(titre=titre_evenement(a["titre"]), debut=dt.datetime(debut.year, debut.month, debut.day),
+        categorie = (categorie_du_titre(a["titre"])
+                     or ("expo" if re.search(r"\bgalerie\b|exposition|معرض", a["titre"], re.I) else "")
+                     or categorie_du_titre(a["texte"][:300])
+                     or source.get("categorie", "autre"))
+        res.append(Evenement(titre=titre_evenement(a["titre"], a["texte"]), article=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
                              fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None, lien=a["lien"] or source["url"],
                              lieu=lieu, categorie=categorie,
                              prix=prix_du_texte(tout), description=resume(a["texte"], 400)))

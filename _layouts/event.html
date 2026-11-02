@@ -41,6 +41,16 @@ layout: default
     </ul>
   </aside>
   {%- endif %}
+  {%- if page.presse.size > 0 %}
+  <aside class="presse-film">
+    <h2 data-t="presse_evt">Dans la presse</h2>
+    <ul>
+      {%- for a in page.presse %}
+      <li><a href="{{ a.lien }}" rel="noopener">{{ a.titre }}</a> <small>· {{ a.source_nom }}{% if a.date %}, {% include date-fr.html date=a.date %}{% endif %}</small></li>
+      {%- endfor %}
+    </ul>
+  </aside>
+  {%- endif %}
   {%- capture sujet %}Erreur : {{ page.title | truncate: 80 }}{% endcapture -%}
   <p class="signaler"><a href="{{ site.depot }}/issues/new?template=erreur.yml&title={{ sujet | url_encode }}&lien={{ page.url | absolute_url | url_encode }}" rel="noopener" data-t="signaler">⚑ Signaler une erreur</a>
   {%- if site.contact_email != "" %} · <a href="mailto:{{ site.contact_email }}?subject={{ sujet | url_encode }}&body={{ page.url | absolute_url | url_encode }}" data-t="par_email">par e-mail</a>{% endif %}</p>
