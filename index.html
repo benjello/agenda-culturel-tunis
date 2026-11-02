@@ -36,6 +36,10 @@ layout: default
 </div>
 </aside>
 <div class="colonne-agenda">
+<section class="ce-soir" id="ce-soir" hidden aria-label="Ce soir">
+  <h2><span data-t="ce_soir_titre">Ce soir à Tunis</span></h2>
+  <ol class="frise" id="ce-soir-liste"></ol>
+</section>
 <a class="nouveautes" id="nouveautes" href="{{ '/nouveau/' | relative_url }}" hidden></a>
 {%- comment -%} Bandeau Ramadan : deux semaines avant le début et pendant le mois (dates dans _data/ramadan.yml) {%- endcomment -%}
 <a class="ramadan-bandeau" id="ramadan-bandeau" href="{{ '/ramadan/' | relative_url }}" data-debut="{{ site.data.ramadan.debut | date: '%Y-%m-%d' }}" data-fin="{{ site.data.ramadan.fin | date: '%Y-%m-%d' }}" hidden data-t="ramadan_bandeau">🌙 Soirées de Ramadan : le programme →</a>

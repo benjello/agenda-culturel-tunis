@@ -4,14 +4,17 @@
 {%- assign cat = site.data.categories[e.category] | default: site.data.categories.autre -%}
 {%- assign cat_id = e.category | default: "autre" -%}
 {%- assign heure = e.date | date: "%H:%M" -%}{%- if heure == "00:00" -%}{%- assign heure = "" -%}{%- endif -%}
+{%- assign resume = e.content | strip_html | strip_newlines | strip | truncatewords: 60, "…" -%}
+{%- assign img_bulle = "" -%}{%- if e.image and e.film != true -%}{%- if e.image contains "://" -%}{%- assign img_bulle = e.image -%}{%- else -%}{%- assign img_bulle = e.image | relative_url -%}{%- endif -%}{%- endif -%}
 {%- comment -%}
   Le titre mène à la fiche de l'événement sur le site (notice, affiche, billets, carte, partage).
   Les liens vers la source restent en bas de carte.
 {%- endcomment -%}
-<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-category="{{ cat_id }}" data-ville="{{ e.ville | default: 'tunis' }}"{% if est_gratuit %} data-gratuit{% endif %}{% if e.famille %} data-famille{% endif %} data-ajoute="{{ e.ajoute }}" data-id="{{ e.url }}" data-org="{{ e.source_name | escape }}" data-titre="{{ e.title | escape }}" data-lieu="{{ e.venue | escape }}{% if e.address %}, {{ e.address | escape }}{% endif %}" data-lien="{{ e.url | absolute_url }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
+<article class="event{% if e.film %} film{% endif %}{% if e.discret %} discret{% endif %}" data-date="{{ e.end_date | default: e.date | date: '%Y-%m-%d' }}" data-debut="{{ e.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-category="{{ cat_id }}" data-ville="{{ e.ville | default: 'tunis' }}"{% if est_gratuit %} data-gratuit{% endif %}{% if e.famille %} data-famille{% endif %} data-ajoute="{{ e.ajoute }}" data-id="{{ e.url }}" data-org="{{ e.source_name | escape }}" data-titre="{{ e.title | escape }}" data-lieu="{{ e.venue | escape }}{% if e.address %}, {{ e.address | escape }}{% endif %}" data-lien="{{ e.url | absolute_url }}" data-resume="{{ resume | escape }}" data-image="{{ img_bulle }}" data-prix="{{ e.price | escape }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
   <div class="event-date">
     <span class="day">{{ e.date | date: "%-d" }}</span>
     <span class="mon" data-mc="{{ e.date | date: '%-m' }}">{% assign m = e.date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[m] }}</span>
+    {%- if heure != "" and e.film != true %}<span class="heure">{{ e.date | date: "%Hh%M" | replace: "h00", "h" }}</span>{% endif %}
   </div>
   <div class="event-body">
     <span class="tag" style="background: {{ cat.color }}" data-t="cat.{{ cat_id }}">{{ cat.label }}</span>{% if e.famille %} <span class="tag famille" data-t="famille">En famille</span>{% endif %}{% if e.age %} <span class="tag age" data-tn="{% if e.age contains "-" %}age.plage{% else %}age.des{% endif %}" data-n="{{ e.age }}" data-tn-fr="{% if e.age contains "-" %}%n ans{% else %}dès %n ans{% endif %}">{% if e.age contains "-" %}{{ e.age }} ans{% else %}dès {{ e.age }} ans{% endif %}</span>{% endif %}{% for l in e.langues %} <span class="tag langue" data-t="langue.{{ l }}">{% case l %}{% when "ar" %}En arabe{% when "fr" %}En français{% when "en" %}En anglais{% when "vo" %}VO sous-titrée{% endcase %}</span>{% endfor %}
@@ -53,6 +56,7 @@
       {%- if e.seances and e.film != true %}<span>{{ e.seances.size }} <span data-t="seances">séances</span></span>{% endif -%}
       {%- if e.category == "cinema" and e.film != true %}<span class="secondaire">{% include liens-film.html titre=e.title imdb=e.imdb letterboxd=e.letterboxd %}</span>{% endif -%}
       <span class="outils">
+        <button type="button" class="apercu-rapide" aria-label="Aperçu rapide" data-t-title="apercu_rapide" title="Aperçu rapide">👁</button>
         <button type="button" class="fav" aria-label="Garder en favori" data-t-title="favori" title="Garder en favori">☆</button>
         <button type="button" class="ajout-agenda" aria-label="Ajouter à mon agenda" data-t-title="agenda" title="Ajouter à mon agenda">📅</button>
         <button type="button" class="partager" aria-label="Partager" data-t-title="partager" title="Partager">↗</button>

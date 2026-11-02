@@ -418,6 +418,29 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
 
 
+    def test_article_de_presse_recoupe_une_expo_officielle(self):
+        """Expo du 27 oct. au 27 nov. : l'article de presse (paru plus tard, même lieu) devient un lien « presse »."""
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for src, titre, debut, extra in [
+                ("ift-pdf", "Images de Syrie, Palmyre, Alep, Damas", f"{FUTUR}-10-27 18:00", ""),
+                ("presse-x", "Images de Syrie : Palmyre, Alep, Damas", f"{FUTUR}-10-31",
+                 'article_titre: "À l’Institut français de Tunis : la Syrie regardée"\n')]:
+                (d / src).mkdir()
+                (d / src / f"{slug(titre)}.md").write_text(
+                    f'---\ntitle: "{titre}"\ndate: {debut}\nend_date: "{FUTUR}-11-27"\nvenue: "Institut français de Tunis"\n'
+                    f'link: "https://{src}.tn/x"\nsource: "{src}"\nsource_name: "Journal"\n{extra}auto: true\n---\n')
+            sources = [{"id": "ift-pdf", "type": "lieu"}, {"id": "presse-x", "type": "agenda", "genre": "presse"}]
+            self.assertEqual(doublons.marquer(sources, d), 1)
+            officiel = (d / "ift-pdf" / "images-de-syrie-palmyre-alep-damas.md").read_text()
+            self.assertNotIn("doublon", officiel)
+            self.assertIn("presse:", officiel)
+            self.assertIn("la Syrie regardée", officiel)
+            self.assertNotIn("autres_sources", officiel)
+            self.assertIn("doublon: true", (d / "presse-x" / "images-de-syrie-palmyre-alep-damas.md").read_text())
+
+
 class AgendaDuJour(unittest.TestCase):
     def test_blocs_heure_ville(self):
         from scrapers.sources.agenda_du_jour import evenements
@@ -666,6 +689,32 @@ class Presse(unittest.TestCase):
         self.assertEqual([e.titre for e in evts], ["Le festival du oud revient"])
         self.assertEqual(evts[0].lieu, "Cité de la culture")
         self.assertEqual(evts[0].categorie, "musique")
+
+
+class PresseDatesTitres(unittest.TestCase):
+    def test_dates_collees_et_abregees(self):
+        from scrapers.sources import presse
+        self.assertEqual(presse.recoller("expo jusqu'au27nov. à Tunis"), "expo jusqu'au 27 nov. à Tunis")
+        self.assertEqual(presse.recoller("du27 octobre au3 novembre"), "du 27 octobre au 3 novembre")
+        ref = dt.date(2026, 10, 31)
+        self.assertEqual(presse.periode_abregee("du 27 oct. au 27 nov.", ref), (dt.date(2026, 10, 27), dt.date(2026, 11, 27)))
+        self.assertEqual(presse.periode_abregee("jusqu'au 27 novembre", ref)[1], dt.date(2026, 11, 27))
+
+    def test_titre_lieu_remplace_par_le_nom_cite(self):
+        from scrapers.sources.presse import titre_evenement
+        texte = "L'Institut français accueille l'exposition « Images de Syrie : Palmyre, Alep, Damas » du photographe."
+        self.assertEqual(titre_evenement("À l’Institut français de Tunis : La Syrie regardée sans indifférence", texte),
+                         "Images de Syrie : Palmyre, Alep, Damas")
+        self.assertEqual(titre_evenement("À l’Institut français de Tunis : La Syrie regardée", ""), "La Syrie regardée")
+
+    def test_categorie_depuis_le_texte(self):
+        from scrapers.sources import presse
+        xml = ('<?xml version="1.0"?><rss><channel><item><title>À l’Institut français de Tunis : La Syrie regardée</title>'
+               '<link>https://x/1</link><description>L\'Institut français accueille l\'exposition « Images de Syrie » '
+               'jusqu\'au27 décembre.</description></item></channel></rss>')
+        e = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})[0]
+        self.assertEqual((e.titre, e.categorie), ("Images de Syrie", "expo"))
+        self.assertEqual(e.article, "À l’Institut français de Tunis : La Syrie regardée")
 
 
 class TunisEvents(unittest.TestCase):

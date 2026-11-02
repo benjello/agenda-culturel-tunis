@@ -142,6 +142,7 @@ Usage
 - [x] Barre de recherche (artiste, lieu, film) sur l'accueil.
 - [x] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
 - [x] Prix : « Gratuit » ou une fourchette lus dans les légendes et la presse, case « seulement gratuits ». À faire : lire le prix sur la page de chaque événement.
+- [x] Presse : dates collées ou abrégées (« jusqu'au27nov. »), nom de l'événement cité dans le texte plutôt que le lieu du titre, catégorie lue dans le texte ; un article qui recoupe un événement officiel (même lieu, dates qui se chevauchent, titre proche) est masqué et lié dans la section « Dans la presse » de la fiche.
 - [x] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
 - [x] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
 - [x] Page Santé des sources (`/sante/`) : état, nombre d'événements, dernière nouveauté, sources silencieuses (rien depuis 30 jours), en panne, en pause.
@@ -175,3 +176,10 @@ Fiabilité
 - [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.
 
 - [ ] L'Agora Djerba : vérifier au premier passage que `www.lagoradjerba.tn` expose bien l'API WooCommerce (`/wp-json/wc/store/v1/products`, attribut « Séances ») ; sinon écrire un lecteur dédié (le site n'était pas joignable depuis l'environnement de développement).
+
+Comprendre sans cliquer (demandé le 2 novembre)
+- [x] Aperçu au survol (ordinateur) et bouton 👁 en feuille du bas (téléphone) : affiche, heure, lieu, prix, notice.
+- [x] « Ce soir à Tunis » en tête de l'accueil : événements du jour classés par heure, avec « dans 40 min ».
+- [x] Heure de début en évidence sous la date de chaque carte.
+- [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
+- [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
