@@ -1766,3 +1766,33 @@
     lieu: "Archivart Gallery"
     resultats: 8
   note: "Proposée par Mahdi le 2 nov. 2026. Adresse de la galerie à confirmer."
+
+- id: ig-le32bis
+  nom: Le 32Bis (Instagram)
+  url: https://www.instagram.com/le32bis/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "le32bis"
+    lieu: "Le 32Bis"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Type de lieu et adresse à confirmer."
+
+- id: ig-cavr-rades
+  nom: Centre des Arts Vivants de Radès (Instagram)
+  url: https://www.instagram.com/cavr_rades/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "cavr_rades"
+    lieu: "Centre des Arts Vivants de Radès"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Complète la page Facebook (fb-cav-rades)."
