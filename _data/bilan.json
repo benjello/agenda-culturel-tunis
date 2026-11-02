@@ -102,7 +102,7 @@
   "date": "2026-11-02",
   "a_venir": 160,
   "sept_jours": 94,
-  "sources_actives": 75,
+  "sources_actives": 74,
   "sources_avec_evenements": 23,
   "sources_muettes": [
    "cine-360",
@@ -138,7 +138,6 @@
    "ig-entre-les-rives",
    "ig-fics-ksar-ghilane",
    "ig-ftca",
-   "ig-ftcc",
    "ig-galerie-insular",
    "ig-habibi-downtown",
    "ig-hamdi-ryder",
