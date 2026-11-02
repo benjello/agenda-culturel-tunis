@@ -225,12 +225,12 @@ layout: default
   document.querySelectorAll('.programme[data-publie]').forEach(function (p) {
     p.hidden = p.dataset.publie < jour(-14);  // affiche de plus de deux semaines
   });
-  // Recherche : tous les mots tapés doivent se trouver dans la carte (titre, lieu…), sans tenir compte des accents.
+  // Recherche : tous les mots tapés doivent se trouver dans la carte (titre, lieu…) ou le nom de l'organisateur, sans tenir compte des accents.
   var champ = document.getElementById('recherche'), mots = [];
   function norme(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(); }
   function correspond(el) {
     if (!mots.length) return true;
-    var t = el._texte || (el._texte = norme(el.textContent));
+    var t = el._texte || (el._texte = norme(el.textContent + ' ' + (el.dataset.org || '')));  // + l'organisateur
     return mots.every(function (m) { return t.indexOf(m) >= 0; });
   }
   if (champ) champ.addEventListener('input', function () {
