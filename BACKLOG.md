@@ -5,7 +5,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 État en direct de chaque source : page [Sources](https://benjello.github.io/agenda-culturel-tunis/sources/).
 
-Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `CLAUDE.md`).
+Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `AGENTS.md`).
 
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
