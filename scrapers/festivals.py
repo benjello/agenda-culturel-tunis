@@ -12,11 +12,13 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 
 import yaml
 
 from .commun import RACINE
-from .doublons import _lire
+from .doublons import _ecrire, _lire, _norm
+from .ecriture import DOSSIER_AUTO
 
 DOSSIER = RACINE / "_events" / "festivals"
 
@@ -28,7 +30,7 @@ def _y(v) -> str:
 def a_ecrire(festivals: list[dict], titres_manuels: list[str], aujourd_hui: dt.date) -> list[dict]:
     res = []
     for f in festivals:
-        if not f.get("debut") or f.get("date_estimee"):
+        if not f.get("debut") or f.get("date_estimee") or f.get("sans_fiche"):
             continue
         fin = f.get("fin") or f["debut"]
         if fin < aujourd_hui:
@@ -56,6 +58,54 @@ def fichier(f: dict) -> tuple[str, str]:
              + ("Le programme est publié." if f.get("programme") else "Le programme n'est pas encore publié : "
                 "il paraît d'abord sur les réseaux du festival.") + "\n")
     return nom, "\n".join(lignes) + corps
+
+
+def _motif(mots: list[str]):
+    """Mots entiers, sans casse ni accents : « Jaou » ne trouve pas « Jaouhar »."""
+    return re.compile(r"\b(?:" + "|".join(re.escape(_norm(m)) for m in mots) + r")\b") if mots else None
+
+
+def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO) -> int:
+    """Étiquette chaque événement de l'agenda avec le festival auquel il appartient (champ « festival »).
+
+    Un événement est relié à un festival si :
+    - son titre contient un des mots du festival (`mots` dans _data/festivals.yml) ;
+    - ou le début de sa notice le cite, sauf pour les sigles (« JTC », « JCC » : trop ambigus dans un texte) ;
+    et si ses dates tombent pendant le festival (3 jours de marge avant, pour les avant-premières).
+    Les événements d'une source de presse ou du calendrier des festivals gardent le leur.
+    Renvoie le nombre d'événements étiquetés ; refait à chaque passage (rien n'est gardé d'un passage à l'autre)."""
+    regles = []
+    for f in festivals:
+        mots = [m.strip() for m in str(f.get("mots") or f["nom"]).split("|") if m.strip()]
+        debut, fin = f.get("debut"), f.get("fin") or f.get("debut")
+        marge = (debut - dt.timedelta(days=3)) if debut else None
+        regles.append((f["id"], _motif(mots), _motif([m for m in mots if len(m) >= 4 and m != m.upper()]), marge, fin))
+    n = 0
+    for chemin in sorted(dossier.glob("*/*.md")):
+        champs, corps = _lire(chemin)
+        if not champs or champs.get("source") == "festivals" or str(champs.get("source", "")).startswith("presse"):
+            continue
+        avant = champs.pop("festival", None)
+        debut_e = str(champs.get("date"))[:10]
+        fin_e = str(champs.get("end_date") or debut_e)[:10]
+        titre, texte = _norm(champs.get("title")), _norm(corps[:600])
+        trouve = None
+        for id_, dans_titre, dans_texte, marge, fin in regles:
+            if marge and (fin_e < marge.isoformat() or debut_e > fin.isoformat()):
+                continue
+            if (dans_titre and dans_titre.search(titre)) or (dans_texte and dans_texte.search(texte)):
+                trouve = id_
+                break
+        if trouve:
+            champs["festival"] = trouve
+            n += 1
+        if trouve != avant:
+            if not isinstance(champs.get("date"), str):
+                champs["date"] = str(champs.get("date"))[:16]
+            auto = champs.pop("auto", True)
+            champs["auto"] = auto
+            _ecrire(chemin, champs, corps)
+    return n
 
 
 def main() -> int:

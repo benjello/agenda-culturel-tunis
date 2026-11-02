@@ -45,7 +45,8 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
       {%- for e in events -%}
         {%- assign fin = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
         {%- if fin >= today -%}
-          {%- for m in mots -%}{%- if e.title contains m %}<li><a href="{{ e.link | default: e.url | relative_url }}" rel="noopener">{{ e.title }}</a> · {% include date-fr.html date=e.date %} · {{ e.venue }}</li>{% break %}{% endif -%}{%- endfor -%}
+          {%- assign relie = false -%}{%- if e.festival == f.id -%}{%- assign relie = true -%}{%- else -%}{%- for m in mots -%}{%- if e.title contains m -%}{%- assign relie = true -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+          {%- if relie %}<li><a href="{{ e.link | default: e.url | relative_url }}" rel="noopener">{{ e.title }}</a> · {% include date-fr.html date=e.date %} · {{ e.venue }}</li>{% endif -%}
         {%- endif -%}
       {%- endfor -%}
     {%- endcapture -%}

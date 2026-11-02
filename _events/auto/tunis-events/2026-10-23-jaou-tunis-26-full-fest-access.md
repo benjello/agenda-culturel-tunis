@@ -12,6 +12,7 @@ source: "tunis-events"
 source_name: "tunis.events (agenda)"
 image: "https://tunis.events/storage/1131413d8862ea4f79635d10a17e15f7b.png"
 ajoute: "2026-11-01"
+festival: "jaou"
 auto: true
 ---
 
