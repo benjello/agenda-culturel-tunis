@@ -1,5 +1,5 @@
 ---
-title: "Kteb Tounsi Spécial Manga ! Avec Ahmed Touj"
+title: "Kteb Tounsi Spécial Manga ! avec Ahmed Touj"
 date: 2026-11-28 15:30
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

@@ -9,8 +9,8 @@ source: "ig-lart-rue"
 source_name: "L'Art Rue (Instagram)"
 image: "assets/programmes/ig-lart-rue/455997756d37.jpg"
 ajoute: "2026-11-02"
-autres_sources: [{"name": "Tunisia Podcasts Festival (Instagram)", "link": "https://www.instagram.com/p/DfFy1eVj6sY/", "source": "ig-tunisia-podcasts-festival"}]
 festival: "podcast-days"
+autres_sources: [{"name": "Tunisia Podcasts Festival (Instagram)", "link": "https://www.instagram.com/p/DfFy1eVj6sY/", "source": "ig-tunisia-podcasts-festival"}]
 auto: true
 ---
 

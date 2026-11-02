@@ -1,17 +1,17 @@
 ---
-title: "Philo-Art Pour Enfants En Français"
+title: "Philo-Art pour Enfants en Français"
 date: 2026-11-18 15:00
 venue: "Galerie, Institut français de Sousse"
 ville: "sousse"
-category: "autre"
+category: "conference"
 link: "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf"
 source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 famille: true
 ajoute: "2026-11-01"
-langues: ["fr"]
 serie: "cafe-philo"
 auto: true
+langues: ["fr"]
 ---
 
 animé par Rabeb Ben Romdhane, cet atelier associe lecture d’histoire, réflexion philosophique et création artistique pour les enfants de 8 à Sa 12 ans. Inscription par email : info.sousse@institutfrancais- tunisie.com

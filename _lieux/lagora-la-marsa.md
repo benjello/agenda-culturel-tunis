@@ -1,6 +1,6 @@
 ---
 title: "L’Agora La Marsa"
-noms: ["L'Agora Marsa", "L’Agora La Marsa"]
+noms: ["L'Agora Marsa"]
 type: "cinema"
 adresse: "La Marsa"
 ville: "tunis"

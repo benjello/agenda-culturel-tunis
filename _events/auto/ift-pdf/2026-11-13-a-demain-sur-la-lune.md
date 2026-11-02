@@ -1,5 +1,5 @@
 ---
-title: "A Demain Sur La Lune"
+title: "A Demain sur la Lune"
 date: 2026-11-13 14:00
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

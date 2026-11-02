@@ -1,5 +1,5 @@
 ---
-title: "Cinéma D’Animation"
+title: "Cinéma d’Animation"
 date: 2026-11-11 16:00
 venue: "Institut français de Sousse"
 ville: "sousse"

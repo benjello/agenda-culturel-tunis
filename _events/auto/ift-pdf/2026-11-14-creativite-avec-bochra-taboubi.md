@@ -1,5 +1,5 @@
 ---
-title: "Créativité Avec Bochra Taboubi"
+title: "Créativité avec Bochra Taboubi"
 date: 2026-11-14 11:00
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

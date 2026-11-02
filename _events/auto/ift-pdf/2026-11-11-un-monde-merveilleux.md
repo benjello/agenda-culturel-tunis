@@ -1,5 +1,5 @@
 ---
-title: "Un Monde Merveilleux"
+title: "un Monde Merveilleux"
 date: 2026-11-11 18:00
 venue: "Salle de cinéma, Institut français de Sousse"
 ville: "sousse"

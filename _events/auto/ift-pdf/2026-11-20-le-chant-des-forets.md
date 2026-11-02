@@ -1,5 +1,5 @@
 ---
-title: "Le Chant Des Forêts"
+title: "Le Chant des Forêts"
 date: 2026-11-20 14:30
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

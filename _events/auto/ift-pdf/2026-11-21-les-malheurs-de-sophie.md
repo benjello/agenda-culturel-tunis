@@ -1,5 +1,5 @@
 ---
-title: "Les Malheurs De Sophie"
+title: "Les Malheurs de Sophie"
 date: 2026-11-21 14:00
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

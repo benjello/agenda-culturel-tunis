@@ -1,5 +1,5 @@
 ---
-title: "Créativité Avec Amina Hanini"
+title: "Créativité avec Amina Hanini"
 date: 2026-11-14 11:00
 venue: "Médiathèque, Institut français de Sfax"
 ville: "sfax"

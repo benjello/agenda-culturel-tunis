@@ -1,5 +1,5 @@
 ---
-title: "Cercle De Lectur Au Centre-Ville De Tunis"
+title: "Cercle de Lectur au Centre-Ville de Tunis"
 date: 2026-11-28 14:30
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

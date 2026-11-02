@@ -9,8 +9,8 @@ source: "ig-lart-rue"
 source_name: "L'Art Rue (Instagram)"
 image: "assets/programmes/ig-lart-rue/b6b5a0187f84.jpg"
 ajoute: "2026-11-02"
-autres_sources: [{"name": "Institut français de Tunisie (Facebook)", "link": "https://www.facebook.com/100064556987464/posts/122298343418073523", "source": "fb-ift-facebook"}, {"name": "Tunisia Podcasts Festival (Instagram)", "link": "https://www.instagram.com/p/DfIMsEzF0Ar/", "source": "ig-tunisia-podcasts-festival"}]
 festival: "podcast-days"
+autres_sources: [{"name": "Institut français de Tunisie (Facebook)", "link": "https://www.facebook.com/100064556987464/posts/122298343418073523", "source": "fb-ift-facebook"}, {"name": "Tunisia Podcasts Festival (Instagram)", "link": "https://www.instagram.com/p/DfIMsEzF0Ar/", "source": "ig-tunisia-podcasts-festival"}]
 auto: true
 ---
 

@@ -42,10 +42,11 @@
   "annee": 2026,
   "genres": [],
   "imdb": "tt34890576",
+  "letterboxd": "clayface",
   "qid": "Q131460936",
   "titre_wikidata": "Clayface",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "dar-el-3ers": {
   "qid": null,
@@ -78,10 +79,11 @@
    "Comédie"
   ],
   "imdb": "tt43622004",
+  "letterboxd": "ducobu-et-le-fantome-de-saint-potache",
   "qid": "Q140363103",
   "titre_wikidata": "Ducobu et le fantôme de Saint-Potache",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "el-set": {
   "age": "",
@@ -182,6 +184,20 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "klara-and-the-sun": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Drame",
+   "Science-fiction"
+  ],
+  "imdb": "tt14371256",
+  "letterboxd": "klara-and-the-sun",
+  "qid": "Q124409386",
+  "titre_wikidata": "Klara et le Soleil",
+  "tunisien": false,
+  "verifie": "2026-11-02"
+ },
  "klara-et-le-soleil": {
   "age": "",
   "annee": 2026,
@@ -190,10 +206,11 @@
    "Science-fiction"
   ],
   "imdb": "tt14371256",
+  "letterboxd": "klara-and-the-sun",
   "qid": "Q124409386",
   "titre_wikidata": "Klara et le Soleil",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "l-ile-des-souvenirs-forgotten-island": {
   "age": "",
@@ -204,10 +221,11 @@
    "Comédie"
   ],
   "imdb": "tt36583977",
+  "letterboxd": "forgotten-island-2026",
   "qid": "Q138335503",
   "titre_wikidata": "L'Île des souvenirs",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "la-belle-et-la-meute": {
   "qid": null,
@@ -240,6 +258,7 @@
    "Documentaire"
   ],
   "imdb": "tt32368068",
+  "letterboxd": "whispers-in-the-woods-2025",
   "qid": "Q136789573",
   "titre_wikidata": "Le Chant des forêts",
   "tunisien": false,
@@ -270,10 +289,11 @@
   "annee": 2026,
   "genres": [],
   "imdb": "tt10569744",
+  "letterboxd": "",
   "qid": "Q141827108",
   "titre_wikidata": "Le mystère Lucy Lost",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "le-reveil-de-la-momie": {
   "age": "-16",
@@ -325,6 +345,7 @@
    "Policier"
   ],
   "imdb": "tt26915336",
+  "letterboxd": "mars-express",
   "qid": "Q111210475",
   "titre_wikidata": "Mars Express",
   "tunisien": false,
@@ -383,10 +404,11 @@
    "Horreur"
   ],
   "imdb": "tt36586020",
+  "letterboxd": "other-mommy",
   "qid": "Q134588273",
   "titre_wikidata": "Malfaisante",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "palestine-cinema-days-the-dream-by-mohammad-malas": {
   "qid": null,
@@ -551,20 +573,22 @@
    "Thriller"
   ],
   "imdb": "tt32261958",
+  "letterboxd": "verity-2026",
   "qid": "Q131523413",
   "titre_wikidata": "Verity",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "wala-kan-ala-el-bal": {
   "age": "",
   "annee": 2026,
   "genres": [],
   "imdb": "tt43634235",
+  "letterboxd": "never-crossed-the-mind",
   "qid": "Q141819066",
   "titre_wikidata": "Never Crossed the Mind",
   "tunisien": false,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-02"
  },
  "weekend": {
   "qid": null,

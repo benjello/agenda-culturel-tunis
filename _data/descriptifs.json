@@ -1,4 +1,78 @@
 {
+ "artistes": {
+  "anouar-brahem": {
+   "source": "Wikipédia",
+   "texte": "Anouar Brahem, né le 20 octobre 1957 à Tunis, est un oudiste et compositeur tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Anouar_Brahem"
+  },
+  "azza-filali": {
+   "source": "Wikipédia",
+   "texte": "Azza Filali (arabe : عزة الفيلالي), née en 1952, est une scientifique et écrivaine, romancière, essayiste et nouvelliste tunisienne de langue française.",
+   "url": "https://fr.wikipedia.org/wiki/Azza_Filali"
+  },
+  "dhafer-youssef": {
+   "source": "Wikipédia",
+   "texte": "Dhafer Youssef, de son nom complet Dhafer bin Youssef bin Tahar Maarref, né le 19 novembre 1967 à Monastir, est un compositeur, chanteur et oudiste tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Dhafer_Youssef"
+  },
+  "emel-mathlouthi": {
+   "source": "Wikipédia",
+   "texte": "Emel Mathlouthi, aussi connue sous le nom d'Emel, née le 11 janvier 1982 à Tunis, est une chanteuse, auteure-compositrice et productrice de musique tunisienne. Elle se fait connaître en 2011 avec le titre Kelmti Horra.",
+   "url": "https://fr.wikipedia.org/wiki/Emel_Mathlouthi"
+  },
+  "fadhel-jaziri": {
+   "source": "Wikipédia",
+   "texte": "Fadhel Jaziri, né en 1948 à Tunis et mort le 11 août 2025, est un acteur et réalisateur tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Fadhel_Jaziri"
+  },
+  "ghalia-benali": {
+   "source": "Wikipédia",
+   "texte": "Ghalia Benali, née le 21 décembre 1968 à Bruxelles, est une chanteuse, danseuse et actrice belgo-tunisienne.",
+   "url": "https://fr.wikipedia.org/wiki/Ghalia_Benali"
+  },
+  "hugo-martinez": {
+   "source": "Wikipédia",
+   "texte": "Hugo Rafael Martínez Poveda, né en 1941 à Moniquirá et mort le 22 mars 2020 à Bogota, est un policier colombien, directeur de l’unité spéciale Bloc de recherche, créée à la fin des années 80 pour abattre le narcotrafiquant colombien Pablo Escobar.",
+   "url": "https://fr.wikipedia.org/wiki/Hugo_Mart%C3%ADnez_(policier)"
+  },
+  "james-creed": {
+   "source": "Wikipédia",
+   "texte": "Sir James Creed was an English merchant and politician.",
+   "url": "https://en.wikipedia.org/wiki/James_Creed"
+  },
+  "lotfi-bouchnak": {
+   "source": "Wikipédia",
+   "texte": "Lotfi Bouchnak, également orthographié Lotfi Bouchnaq, né le 18 janvier 1954 à Tunis, est un chanteur, oudiste et compositeur tunisien élève de La Rachidia.",
+   "url": "https://fr.wikipedia.org/wiki/Lotfi_Bouchnak"
+  }
+ },
+ "collectifs": {
+  "beit-al-hikma": {
+   "source": "Wikipédia",
+   "texte": "L'Académie tunisienne des sciences, des lettres et des arts, autrement connue sous le nom de Beït El Hikma, est une fondation tunisienne fondée en 1983.",
+   "url": "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_tunisienne_des_sciences%2C_des_lettres_et_des_arts"
+  },
+  "cine-agora": {
+   "source": "site officiel",
+   "texte": "Partager Diffusé à October 2026 Bakma Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont… Plus d'info Réserver Partager Diffusé à October 2026 Weekend Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de …",
+   "url": "https://lagora.tn"
+  },
+  "cine-agora-djerba": {
+   "source": "site officiel",
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
+   "url": "https://www.lagoradjerba.tn"
+  },
+  "el-teatro": {
+   "source": "Wikipédia",
+   "texte": "El Teatro est un théâtre privé tunisien — le premier du pays — situé à Tunis, dans une aile de l'hôtel El Mechtel.",
+   "url": "https://fr.wikipedia.org/wiki/El_Teatro"
+  },
+  "ig-agora-djerba": {
+   "source": "site officiel",
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
+   "url": "https://www.lagoradjerba.tn"
+  }
+ },
  "festivals": {
   "carthage": {
    "source": "Wikipédia",
@@ -91,6 +165,14 @@
    "source": "Wikipédia",
    "texte": "Ducobu et le Fantôme de Saint-Potache est une comédie française réalisée par Élie Semoun et sortie en 2026. Il s'agit du sixième film d'une saga inspirée de la série de bande dessinée belge L'Élève Ducobu de Godi et Zidrou.",
    "url": "https://fr.wikipedia.org/wiki/Ducobu_et_le_Fant%C3%B4me_de_Saint-Potache",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "klara-and-the-sun": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Klara et le Soleil est un film de science-fiction américano-britannico-néo-zélandais co-écrit et réalisé par Taika Waititi, sorti en 2026.",
+   "url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -212,6 +294,11 @@
   }
  },
  "lieux": {
+  "beit-al-hikma-carthage": {
+   "source": "Wikipédia",
+   "texte": "L'Académie tunisienne des sciences, des lettres et des arts, autrement connue sous le nom de Beït El Hikma, est une fondation tunisienne fondée en 1983.",
+   "url": "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_tunisienne_des_sciences%2C_des_lettres_et_des_arts"
+  },
   "cinema-le-palace": {
    "source": "Wikipédia",
    "texte": "Le cinéma Le Palace, anciennement appelé Politeama Rossini ou Rossini Palace, est un bâtiment tunisien situé sur l'avenue Habib-Bourguiba à Tunis. Il sert de nos jours de salle de cinéma.",
@@ -691,6 +778,11 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://tunis.events/fr/cinema/klara-and-the-sun": {
+   "texte": "KLARA AND THE SUN (2026)SynopsisLorsque Klara rencontre Josie, chacune perçoit immédiatement chez l'autre une âme soeur. Josie entretient une relation compliquée avec sa mère et toutes deux ont traversé de lourdes épreuves.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://tunis.events/fr/cinema/klara-et-le-soleil": {
    "texte": "Klara et le soleil au cinéma : 8 séances cette semaine à Pathé Azur City, Pathé Mall of Sousse et Pathé Tunis City. Prochaine séance lun. 2 nov. à 10:50.",
    "verifie": "2026-11-02",
@@ -708,6 +800,11 @@
   },
   "https://tunis.events/fr/cinema/le-mystere-lucy-lost": {
    "texte": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/le-temps-suspendu": {
+   "texte": "Début des années soixante. Dans un lycée de Budapest, le jeune Dénes est tourmenté et renfermé. Il refuse même les avances de Magda qui pourtant lui plaît. Pendant l'Insurrection de Budapest de 1956, son père a combattu contre les chars russes les armes à la main, puis il a dû fuir clandestinement à l'étranger. Sa [...]",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -738,6 +835,11 @@
   },
   "https://tunis.events/fr/cinema/weekend": {
    "texte": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWEEKENDSynopsisفيلم يجمع بين الغموض والتشويق والتحقيق بطولة: محمد علي بن جمعة ،سميرة مقرون ،نسيم زيادية، مريم بوقدّيدة ،خليل العبدولي ، بلقيس القصوري ، علي دقدوق ،ملاك حيدوسي، رفيق العوي و صبري البوهالي إخراج مطيع الدريدي و انتاج الفاضل بن عمار توزيع مجمع القوبنطيني",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/what-else": {
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -773,6 +875,464 @@
   }
  },
  "recherches": {
+  "artistes:abdelhamid-largueche": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:adema": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:ahmed-touj": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:alexander-skancke": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:aline-umber": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:always-late": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:amin": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:amina-hanini": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:anouar-brahem": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Anouar Brahem, né le 20 octobre 1957 à Tunis, est un oudiste et compositeur tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Anouar_Brahem",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:atef": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:automatic-writing": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:azza-filali": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Azza Filali (arabe : عزة الفيلالي), née en 1952, est une scientifique et écrivaine, romancière, essayiste et nouvelliste tunisienne de langue française.",
+   "url": "https://fr.wikipedia.org/wiki/Azza_Filali",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:baban": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:baloo": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:bendir-man": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:bila": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:bochra-taboubi": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:cabanne": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:cap": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:chedy": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:cristi-cons": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:daox": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:dhafer-youssef": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Dhafer Youssef, de son nom complet Dhafer bin Youssef bin Tahar Maarref, né le 19 novembre 1967 à Monastir, est un compositeur, chanteur et oudiste tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Dhafer_Youssef",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:dj-senc": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:elena-moroder": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:elise-jilian": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:emel-mathlouthi": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Emel Mathlouthi, aussi connue sous le nom d'Emel, née le 11 janvier 1982 à Tunis, est une chanteuse, auteure-compositrice et productrice de musique tunisienne. Elle se fait connaître en 2011 avec le titre Kelmti Horra.",
+   "url": "https://fr.wikipedia.org/wiki/Emel_Mathlouthi",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:emine-2": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:fadhel-jaziri": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Fadhel Jaziri, né en 1948 à Tunis et mort le 11 août 2025, est un acteur et réalisateur tunisien.",
+   "url": "https://fr.wikipedia.org/wiki/Fadhel_Jaziri",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:familia-productions": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:fares-a": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:foehn-jerome": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:formiq": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:ghalia-benali": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Ghalia Benali, née le 21 décembre 1968 à Bruxelles, est une chanteuse, danseuse et actrice belgo-tunisienne.",
+   "url": "https://fr.wikipedia.org/wiki/Ghalia_Benali",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:gojnea76": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:gusik": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:hafida-ben-rejeb-latta": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:hamdi-ryder": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:harrison-guyett": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:hearthug": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:hitsh": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:houz": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:hugo-martinez": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Hugo Rafael Martínez Poveda, né en 1941 à Moniquirá et mort le 22 mars 2020 à Bogota, est un policier colombien, directeur de l’unité spéciale Bloc de recherche, créée à la fin des années 80 pour abattre le narcotrafiquant colombien Pablo Escobar.",
+   "url": "https://fr.wikipedia.org/wiki/Hugo_Mart%C3%ADnez_(policier)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:ion-ludwig": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:james-creed": {
+   "langue": "en",
+   "source": "Wikipédia",
+   "texte": "Sir James Creed was an English merchant and politician.",
+   "url": "https://en.wikipedia.org/wiki/James_Creed",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:jonn": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:kby": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:kian-ok": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:krol": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:lil-jack": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:lotfi-bouchnak": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Lotfi Bouchnak, également orthographié Lotfi Bouchnaq, né le 18 janvier 1954 à Tunis, est un chanteur, oudiste et compositeur tunisien élève de La Rachidia.",
+   "url": "https://fr.wikipedia.org/wiki/Lotfi_Bouchnak",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:lotfi-mlayah": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:lowris": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:maher-daniel": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:maiora": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:majid": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:maks": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:manon": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:markus-nikolai": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:mihnea-rog": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:miller": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:min8": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:moez": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:n4bz": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:nicole-skarpness": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:olivier-romero": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:omar-c": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:omar-fayyad": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:omar-uy": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:pan-j": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:picasso": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:prichindel": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:raphael-merheb": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:rome-it": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:rslane": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:saadoon": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:serenne": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:sonia-hanihina": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:sweed": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:taieb-chekir": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:tatler": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:trent-voyage": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:wednesday": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:yasmin-sun": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:yasser-jradi": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "artistes:zaida": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:ajst": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:alhambra-zephyr": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:beit-al-hikma": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "L'Académie tunisienne des sciences, des lettres et des arts, autrement connue sous le nom de Beït El Hikma, est une fondation tunisienne fondée en 1983.",
+   "url": "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_tunisienne_des_sciences%2C_des_lettres_et_des_arts",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:centre-des-arts-vivants-de-rades": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:cine-350": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:cinema-amilcar": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:cinemadart": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:cinevog": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:cite-des-sciences-de-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:el-teatro": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "El Teatro est un théâtre privé tunisien — le premier du pays — situé à Tunis, dans une aile de l'hôtel El Mechtel.",
+   "url": "https://fr.wikipedia.org/wiki/El_Teatro",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:espace-l-artisto": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:l-agora": {
+   "source": "site officiel",
+   "texte": "Partager Diffusé à October 2026 Bakma Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont… Plus d'info Réserver Partager Diffusé à October 2026 Weekend Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de …",
+   "url": "https://lagora.tn",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:l-agora-djerba": {
+   "source": "site officiel",
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
+   "url": "https://www.lagoradjerba.tn",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:le-colisee": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:librairie-al-kitab": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "collectifs:steppers-sound-system": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "festivals:carthage-dance": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -926,7 +1486,23 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "festivals:podcast-days-by-tunisia-podcast-festival": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:11-rue-nelson-mandela": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:agorgi-gallery": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:agorgi-gallery-sidi-bou-said": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:auditorium": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -938,11 +1514,23 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:beit-al-hikma": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "L'Académie tunisienne des sciences, des lettres et des arts, autrement connue sous le nom de Beït El Hikma, est une fondation tunisienne fondée en 1983.",
+   "url": "https://fr.wikipedia.org/wiki/Acad%C3%A9mie_tunisienne_des_sciences%2C_des_lettres_et_des_arts",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:beit-al-hikma-carthage": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
   "lieux:caserne-el-attarine": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cine-350": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -974,6 +1562,14 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:creative-hub": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:dar-ziqua": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:dar-ziqua-zaghouan": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -998,11 +1594,23 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:fondation-rosa-luxemburg": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:fondation-rosa-luxemburg-tunis": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:galerie": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:galerie-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:galerie-insular": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1062,6 +1670,10 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:la-chapelle": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:la-chapelle-dar-bach-hamba": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -1070,7 +1682,15 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:le-32bis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:maison-des-arts-du-belvedere": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:mediatheque": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1102,7 +1722,15 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:salle-albert-camus": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:salle-albert-camus-institut-francais-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:salle-de-cinema": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1139,6 +1767,10 @@
    "source": "Wikipédia",
    "texte": "Le Théâtre municipal de Tunis est le principal théâtre de Tunis (Tunisie) et le plus célèbre des théâtres de la Tunisie moderne.",
    "url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_municipal_de_Tunis",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:vox-cafe": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },

@@ -1,5 +1,5 @@
 ---
-title: "Sous Les Étoiles De Paris"
+title: "Sous les Étoiles de Paris"
 date: 2026-11-27 15:00
 venue: "Médiathèque, Institut français de Sfax"
 ville: "sfax"

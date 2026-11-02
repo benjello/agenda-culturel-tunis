@@ -3,7 +3,7 @@ title: "Atelier de séances de bibliothérapie autour du roman Tunis Blues"
 date: 2026-11-22 11:00
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"
-category: "autre"
+category: "litterature"
 price: "Gratuit"
 link: "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6507"
 source: "ift-pdf"

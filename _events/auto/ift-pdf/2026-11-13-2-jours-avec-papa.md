@@ -1,5 +1,5 @@
 ---
-title: "2 Jours Avec Papa"
+title: "2 Jours avec Papa"
 date: 2026-11-13 15:00
 venue: "Médiathèque, Institut français de Sfax"
 ville: "sfax"

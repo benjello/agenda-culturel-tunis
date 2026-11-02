@@ -1,5 +1,5 @@
 ---
-title: "Un Monstre À Paris"
+title: "Un Monstre à Paris"
 date: 2026-11-06 15:00
 venue: "Médiathèque, Institut français de Sfax"
 ville: "sfax"

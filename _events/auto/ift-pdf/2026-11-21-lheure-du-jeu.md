@@ -1,5 +1,5 @@
 ---
-title: "L’Heure Du Jeu"
+title: "L’Heure du Jeu"
 date: 2026-11-21 15:00
 venue: "Médiathèque, Institut français de Tunis"
 ville: "tunis"

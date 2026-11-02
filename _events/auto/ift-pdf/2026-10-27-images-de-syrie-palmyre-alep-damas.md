@@ -12,7 +12,7 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/hlhslns75nydqlxsdbzg"
 ajoute: "2026-11-02"
-presse: [{"titre": "À l’Institut français de Tunis", "lien": "https://www.leconomistemaghrebin.com/2026/10/31/a-linstitut-francais-de-tunis-la-syrie-regardee-sans-indifference/", "source_nom": "L'Économiste Maghrébin (culture)", "date": "2026-11-02"}]
+presse: [{"titre": "À l’Institut français de Tunis, la Syrie regardée sans indifférence", "lien": "https://www.leconomistemaghrebin.com/2026/10/31/a-linstitut-francais-de-tunis-la-syrie-regardee-sans-indifference/", "source_nom": "L'Économiste Maghrébin (culture)", "date": "2026-11-02"}]
 autres_sources: [{"name": "tunis.events (agenda)", "link": "https://tunis.events/events/krn29k/images-de-syrie-palmyre-alep-damas-michel-eisenlohr-institut-francais-de-tunis", "source": "tunis-events"}]
 festival: "jaou"
 auto: true

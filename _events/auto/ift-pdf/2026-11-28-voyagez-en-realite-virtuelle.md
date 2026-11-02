@@ -1,5 +1,5 @@
 ---
-title: "Voyagez En Réalité Virtuelle !"
+title: "Voyagez en Réalité Virtuelle !"
 date: 2026-11-28 12:00
 venue: "Galerie, Institut français de Sousse"
 ville: "sousse"

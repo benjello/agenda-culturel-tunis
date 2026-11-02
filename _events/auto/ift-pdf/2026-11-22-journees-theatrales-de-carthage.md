@@ -1,6 +1,7 @@
 ---
-title: "Journées Théâtrales De Carthage"
+title: "Journées Théâtrales de Carthage"
 date: 2026-11-22
+end_date: "2026-11-29"
 venue: "Institut français de Tunis"
 ville: "tunis"
 category: "theatre"

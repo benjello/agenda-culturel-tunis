@@ -87,27 +87,91 @@
   }
  },
  "osm": {
+  "lieu:cinema-le-palace": {
+   "type": "cinema"
+  },
   "lieu:el-teatro": {
+   "type": "theatre",
    "website": "https://www.elteatro.net/"
   },
+  "lieu:le-32bis": {
+   "type": "galerie"
+  },
+  "lieu:pathe-tunis-city": {
+   "type": "cinema"
+  },
+  "lieu:salle-de-cinema-institut-francais-de-sousse": {
+   "type": "cinema"
+  },
   "lieu:theatre-municipal-de-tunis": {
+   "type": "theatre",
    "wheelchair": "no"
+  },
+  "musee:Musée Dar Ben Abdallah (arts et traditions populaires)": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Cherait": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Essid": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Jallouli (arts et traditions populaires)": {
+   "type": "musee"
+  },
+  "musee:Musée Lalla Hadria": {
+   "type": "musee"
   },
   "musee:Musée archéologique d'El Jem": {
    "opening_hours": "Sep 16-Apr 30: Mo-Su 07:30 - 17:30; May 01-Sep 15: Mo-Su 07:30 - 18:30; 08:00-17:00 \"Openings hours at Ramadan's month\"",
+   "type": "musee",
    "website": "https://eljem.virtualexperience.net/"
   },
   "musee:Musée archéologique de Sousse (Kasbah)": {
+   "type": "musee",
    "website": "https://www.patrimoinedetunisie.com.tn/eng/musees/sousse.php"
   },
+  "musee:Musée de Chemtou": {
+   "type": "musee"
+  },
+  "musee:Musée de Dar Sebastian (Centre culturel international)": {
+   "type": "centre"
+  },
+  "musee:Musée de Salakta": {
+   "type": "musee"
+  },
   "musee:Musée de Zarzis": {
+   "type": "musee",
    "website": "https://www.tunisiepatrimoine.tn/ar/%D9%85%D8%AA%D8%A7%D8%AD%D9%81/%D9%85%D8%AA%D8%AD%D9%81-%D8%AC%D8%B1%D8%AC%D9%8A%D8%B3/%D9%86%D8%B8%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9/"
   },
+  "musee:Musée de la monnaie (Banque centrale)": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires de Gabès": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires de Houmt Souk": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires du Kef": {
+   "type": "musee"
+  },
+  "musee:Musée du mouvement national": {
+   "type": "musee"
+  },
+  "musee:Musée national de Carthage": {
+   "type": "musee"
+  },
   "musee:Musée national du Bardo": {
+   "type": "musee",
    "website": "http://www.bardomuseum.tn/"
   },
+  "musee:Musée paléochrétien de Carthage": {
+   "type": "musee"
+  },
   "musee:Site et musée de Bulla Regia": {
-   "opening_hours": "May 1-Oct 30: 08:00-20:00"
+   "opening_hours": "May 1-Oct 30: 08:00-20:00",
+   "type": "musee"
   }
  },
  "vu": {
@@ -197,6 +261,7 @@
   "artiste:yasmin-sun": "2026-11-02",
   "artiste:yasser-jradi": "2026-11-02",
   "artiste:zaida": "2026-11-02",
+  "lieu:11-rue-nelson-mandela-jinene-eddonia-la-marsa-2046": "2026-11-02",
   "lieu:agorgi-gallery-sidi-bou-said": "2026-11-02",
   "lieu:auditorium-institut-francais-de-tunis": "2026-11-02",
   "lieu:b7l9-art-centre": "2026-11-02",
@@ -208,6 +273,7 @@
   "lieu:cinema-le-palace": "2026-11-02",
   "lieu:cinemadart": "2026-11-02",
   "lieu:cite-des-sciences-de-tunis": "2026-11-02",
+  "lieu:creative-hub-sidi-bou-said": "2026-11-02",
   "lieu:dar-ziqua-zaghouan": "2026-11-02",
   "lieu:douz": "2026-11-02",
   "lieu:el-teatro": "2026-11-02",
@@ -215,6 +281,7 @@
   "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
   "lieu:galerie-insular-erriadh-djerbahood": "2026-11-02",
   "lieu:galerie-tgm": "2026-11-02",
+  "lieu:grafiflow": "2026-11-02",
   "lieu:institut-francais-de-sfax": "2026-11-02",
   "lieu:institut-francais-de-sousse": "2026-11-02",
   "lieu:institut-francais-de-tunis": "2026-11-02",
@@ -225,6 +292,7 @@
   "lieu:la-boite": "2026-11-02",
   "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
   "lieu:lagora-la-marsa": "2026-11-02",
+  "lieu:le-32bis": "2026-11-02",
   "lieu:lieu-4d77648b": "2026-11-02",
   "lieu:maison-des-arts-du-belvedere": "2026-11-02",
   "lieu:mediatheque-institut-francais-de-sfax": "2026-11-02",
