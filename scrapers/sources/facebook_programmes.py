@@ -16,14 +16,17 @@ Clé : variable d'environnement APIFY_TOKEN (voir facebook.py).
 Options :
   page     nom de la page (facebook.com/<page>)
   max      nombre de publications avec image à garder (défaut 3)
-  jours    ne lire que les publications de moins de N jours (défaut 21)
+  jours    garder les publications de moins de N jours (défaut 21) ; Apify ne relit que
+           celles parues depuis la dernière lecture, les autres viennent du cache
   lecteur  comment tirer les films du programme (voir scrapers/lecteurs.py) :
            liste_films (une ligne « 🎬 Titre » par film), un_film_par_affiche
 """
 from __future__ import annotations
 
+import datetime as dt
 import hashlib
 import io
+import json
 import os
 import shutil
 import subprocess
@@ -34,7 +37,55 @@ from .facebook import appeler_apify, _date
 
 ACTEUR = "apify/facebook-posts-scraper"
 DOSSIER_IMAGES = RACINE / "assets" / "programmes"
+CACHE = RACINE / "_cache" / "publications"
 LARGEUR_MAX = 1400
+
+
+# Apify facture chaque publication lue, même déjà vue. On ne demande donc que les publications
+# parues depuis la dernière lecture réussie (+ 2 jours de marge) ; les plus anciennes, encore
+# dans la fenêtre « jours », sont reprises du cache _cache/publications/<source>.json.
+def fenetre(source: dict) -> int:
+    """Nombre de jours de publications à demander à Apify."""
+    from ..ecriture import lire_etat
+    jours = (source.get("options") or {}).get("jours", 21)
+    if not (CACHE / f"{source['id']}.json").exists():
+        return jours
+    e = lire_etat().get(source["id"]) or {}
+    if not (e.get("ok") and e.get("dernier_succes")):
+        return jours
+    ecart = (dt.datetime.now() - dt.datetime.fromisoformat(e["dernier_succes"])).days
+    return min(jours, ecart + 2)
+
+
+def en_cache(source: dict) -> dict[str, Publication]:
+    """{lien : publication} lues aux passages précédents."""
+    try:
+        liste = json.loads((CACHE / f"{source['id']}.json").read_text())
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return {p["lien"]: Publication(**p) for p in liste if isinstance(p, dict) and p.get("lien")}
+
+
+def fusionner(source: dict, nouvelles: list[Publication], n_max: int) -> list[Publication]:
+    """Nouvelles publications + celles du cache encore dans la fenêtre, les plus récentes d'abord."""
+    jours = (source.get("options") or {}).get("jours", 21)
+    limite = (dt.date.today() - dt.timedelta(days=jours)).isoformat()
+    vues = {p.lien for p in nouvelles}
+    anciennes = [p for p in en_cache(source).values()
+                 if p.lien not in vues and (p.date or "") >= limite and all((RACINE / c).exists() for c in p.images)]
+    toutes = sorted(nouvelles + anciennes, key=lambda p: p.date or "", reverse=True)[:n_max]
+    CACHE.mkdir(parents=True, exist_ok=True)
+    (CACHE / f"{source['id']}.json").write_text(
+        json.dumps([p.en_dict() for p in toutes], ensure_ascii=False, indent=1) + "\n")
+    return toutes
+
+
+def nettoyer_images(dossier, publications: list[Publication]) -> None:
+    """Supprime les images des publications qui ne sont plus gardées."""
+    gardees = {c.rsplit("/", 1)[-1] for p in publications for c in p.images}
+    for f in dossier.iterdir():
+        if f.name not in gardees:
+            f.unlink()
 
 
 def images_de(item: dict) -> list[tuple[str, str]]:
@@ -108,7 +159,7 @@ def lire_publications(source: dict) -> list[Publication]:
     url = page if page.startswith("http") else f"https://www.facebook.com/{page}"
     items = appeler_apify(o.get("acteur", ACTEUR), {
         "startUrls": [{"url": url}], "resultsLimit": o.get("resultats", 12),
-        "onlyPostsNewerThan": f"{o.get('jours', 21)} days"}, cle)
+        "onlyPostsNewerThan": f"{fenetre(source)} days"}, cle)
     if not isinstance(items, list):
         raise RuntimeError(f"réponse Apify inattendue : {str(items)[:200]}")
     erreurs = [i for i in items if i.get("error")]
@@ -120,14 +171,16 @@ def lire_publications(source: dict) -> list[Publication]:
 
     dossier = DOSSIER_IMAGES / source["id"]
     dossier.mkdir(parents=True, exist_ok=True)
-    gardees, publications = set(), []
+    publications, cache = [], en_cache(source)
     for item in avec_image[:o.get("max", 3)]:
         lien = item.get("topLevelUrl") or item.get("url") or url
+        if lien in cache and all((RACINE / c).exists() for c in cache[lien].images):
+            publications.append(cache[lien])  # déjà lue : ni téléchargement ni OCR
+            continue
         debut = _date(item.get("time") or item.get("timestamp"))
         chemins, ocr_fb, ocr = [], [], []
         for n, (uri, texte_fb) in enumerate(images_de(item)[:4]):
             nom = hashlib.sha1(f"{lien}#{n}".encode()).hexdigest()[:12]
-            gardees.add(f"{nom}.jpg")
             try:
                 chemin = enregistrer_image(uri, dossier, nom)
             except Exception as exc:  # noqa: BLE001 — une image injoignable ne bloque pas la source
@@ -141,8 +194,7 @@ def lire_publications(source: dict) -> list[Publication]:
             lien=lien, date=debut.date().isoformat() if debut else "",
             texte=(item.get("text") or "").strip(), images=chemins,
             ocr_facebook="\n\n".join(ocr_fb), ocr="\n\n".join(t for t in ocr if t)))
-    for f in dossier.iterdir():  # images des publications qui ne sont plus affichées
-        if f.name not in gardees:
-            f.unlink()
+    publications = fusionner(source, publications, o.get("max", 3))
+    nettoyer_images(dossier, publications)
     return publications
 
