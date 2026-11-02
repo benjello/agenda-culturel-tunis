@@ -518,20 +518,21 @@
   note: "Espace théâtre privé (Ghazi Zaghbani)."
 
 - id: fb-61595612945174
-  nom: Page Facebook proposée (nom à préciser)
+  nom: Steppers Sound System
   url: https://www.facebook.com/profile.php?id=61595612945174
   type: lieu
-  genre: lieu
+  genre: collectif
   scraper: facebook_programmes
-  categorie: autre
+  categorie: musique
   actif: true
   tous_les_jours: 3
   options:
     page: https://www.facebook.com/profile.php?id=61595612945174
+    lieu: "Lieu à préciser"
     lecteur: une_affiche_par_evenement
     max: 6
     resultats: 8
-  note: "Proposée par Mahdi le 2 nov. 2026 ; nom, lieu et ville à vérifier au premier passage."
+  note: "Sound system, soirées bass music (page STEPPERStn). Proposé par Mahdi."
 
 - id: fb-liberthe
   nom: Liber'thé
@@ -1650,7 +1651,7 @@
   genre: collectif
   scraper: instagram
   categorie: cinema
-  actif: true
+  actif: false  # compte privé ou vide chez Apify le 2 nov. 2026
   tous_les_jours: 3
   options:
     compte: "ftcc_tunisienne"
