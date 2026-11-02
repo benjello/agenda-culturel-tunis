@@ -681,6 +681,15 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].image, "assets/x.jpg")
         self.assertEqual(evts[0].lieu, "B7L9, La Marsa")
 
+    def test_titre_et_lieu_de_soiree(self):
+        from scrapers import lecteurs
+        j = dt.date.today() + dt.timedelta(days=6)
+        pubs = [{"lien": "https://facebook.com/p/1", "date": dt.date.today().isoformat(), "images": [], "ocr": "",
+                 "texte": "Some of the best selectors djs and producers of Bass Music will be playing tonight, all day long.\n\n"
+                          f"Welcome to the STEPPERS SOUND SYSTEM Launch party.\n{j.day:02d}/{j.month:02d}, at @dar_ziqua in Zaghouan."}]
+        evts = lecteurs.une_affiche_par_evenement(pubs, [], "Lieu à préciser")
+        self.assertEqual([(e.titre, e.lieu) for e in evts], [("STEPPERS SOUND SYSTEM Launch party", "Dar Ziqua, Zaghouan")])
+
     def test_dates_en_anglais(self):
         from scrapers import lecteurs
         ref = dt.date(2026, 10, 31)

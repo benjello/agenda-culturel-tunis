@@ -164,14 +164,27 @@ _RE_JJMM = re.compile(r"(?<![\d/.])(\d{1,2})[/.](\d{1,2})(?![\d/.])")
 _RE_HEURE = re.compile(r"(?<!\d)([01]?\d|2[0-3])\s*[hH:](?:\s*([0-5]\d))?(?!\d)")
 
 
+_NOM_SOIREE = re.compile(r"(?:welcome to (?:the )?|bienvenue (?:à|a) (?:la )?)?(.{3,60}?\b(?:launch party|release party|party|soirée|showcase)\b)", re.I)
+
+
 def _titre_affiche(texte: str) -> str:
-    """Première ligne parlante d'une légende : sans #hashtags, @comptes ni émojis."""
+    """Première ligne parlante d'une légende : sans #hashtags, @comptes ni émojis.
+    Si elle est longue (une phrase), on prend plutôt le nom de la soirée quand la légende le donne
+    (« Welcome to the STEPPERS SOUND SYSTEM Launch party. » → « STEPPERS SOUND SYSTEM Launch party »)."""
+    lignes = []
     for ligne in normaliser(texte).splitlines():
         l = re.sub(r"[#@]\S+", " ", ligne)
         l = propre(re.sub(r"[^\w\s'’&:!?.,()+-]", " ", l))
         if len(re.findall(r"[^\W\d_]", l)) >= 3:
-            return l[:90].rstrip(" .,:-")
-    return ""
+            lignes.append(l)
+    if not lignes:
+        return ""
+    if len(lignes[0]) > 60:
+        for l in lignes[:6]:
+            m = _NOM_SOIREE.search(l)
+            if m and len(l) <= 90:
+                return propre(m.group(1)).rstrip(" .,:-")
+    return lignes[0][:90].rstrip(" .,:-")
 
 
 # Publications qui ne sont pas des événements : recrutement, horaires, cours à l'année…
@@ -273,6 +286,11 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
         # Artistes et collectifs jouent dans plusieurs lieux : « 📍 B7L9, La Marsa » dans la légende.
         m = re.search(r"📍\s*([^\n#]{3,80})", texte)
         ici = propre(m.group(1).replace("@", "")).rstrip(" .,") if m else lieu
+        if not m and lieu == "Lieu à préciser":
+            # « at @dar_ziqua in Zaghouan » : le lieu est un compte cité dans la légende
+            m = re.search(r"\b(?:at|à|chez)\s+@([\w.]{3,40})(?:\s+(?:in|à)\s+([A-ZÀ-Ü][\w-]+))?", texte)
+            if m:
+                ici = m.group(1).replace("_", " ").replace(".", " ").strip().title() + (f", {m.group(2)}" if m.group(2) else "")
         for j in jours:
             if (j, titre) in vus:
                 continue
