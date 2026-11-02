@@ -22,6 +22,7 @@
       } catch (e) {}
     })(document.documentElement);
   </script>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
@@ -29,6 +30,7 @@
     <a class="brand" href="{{ '/' | relative_url }}" data-t="titre_site">{{ site.title }}</a>
     <nav>
       <a href="{{ '/' | relative_url }}" data-t="nav.agenda">Agenda</a>
+      <a href="{{ '/semaine/' | relative_url }}" data-t="nav.semaine">Cette semaine</a>
       <a href="{{ '/week-end/' | relative_url }}" data-t="nav.weekend">Ce week-end</a>
       <a href="{{ '/festivals/' | relative_url }}" data-t="nav.festivals">Festivals</a>
       <a href="{{ '/lieux/' | relative_url }}" data-t="nav.lieux">Lieux</a>
@@ -49,7 +51,7 @@
   </main>
   <footer class="site-footer">
     <p><span data-t="manque">Un événement manque ?</span> <a href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">Proposer un événement</a>.
-      · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a> · <a href="{{ '/couverture/' | relative_url }}" data-t="nav.couverture">Couverture</a> · <a href="{{ '/api/' | relative_url }}">API</a></p>
+      · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a> · <a href="{{ '/archives/' | relative_url }}" data-t="nav.archives">Archives</a> · <a href="{{ '/couverture/' | relative_url }}" data-t="nav.couverture">Couverture</a> · <a href="{{ '/abonnements/' | relative_url }}" data-t="nav.abonner">S'abonner</a> · <a href="{{ '/api/' | relative_url }}">API</a></p>
   </footer>
   <script>window.I18N = {{ site.data.i18n | jsonify }}; window.BASE = {{ '/' | relative_url | jsonify }};</script>
   <script src="{{ '/assets/site.js' | relative_url }}"></script>

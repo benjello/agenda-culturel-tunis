@@ -54,6 +54,11 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - Données ouvertes : `agenda.ics` et `evenements.json`, licence CC BY 4.0.
 - Thème Cinéma : une fiche par film (affiche, lien IMDb), puis les salles du jour choisi (`_data/films.json`).
 - Clé Apify configurée (secret `APIFY_TOKEN`).
+- Abonnements : calendriers `.ics` par catégorie et par ville (`calendriers/`), fil RSS `feed.xml`, page S'abonner.
+- Page « Cette semaine » avec message WhatsApp prêt à partager.
+- Carte : filtre Aujourd'hui / 7 jours / Tout, liste des événements dans chaque lieu.
+- Métadonnées schema.org (Event) sur chaque fiche, pour Google.
+- Archives : `scrapers/archives.py` garde les événements passés (`archives/donnees/AAAA.json`), page de recherche `/archives/`.
 
 ## À faire
 

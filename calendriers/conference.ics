@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /calendriers/conference.ics
+---
+{% include calendrier.ics categorie="conference" nom="Conférence" %}
