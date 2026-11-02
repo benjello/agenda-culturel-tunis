@@ -72,6 +72,13 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - [ ] Version sans compte GitHub du formulaire.
 - [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
 - [ ] Brancher les sources « à étudier ».
+- [ ] Synopsis des films : après le prochain passage des scrapers, compter les films sans synopsis
+  (`_data/films.json`, champ `synopsis`). S'il en manque beaucoup, choisir une clé :
+  **TMDb** (synopsis riches en français, inscription plus longue, conditions « usage personnel »)
+  ou **OMDb** (simple e-mail, synopsis courts en anglais, à brancher dans `scrapers/descriptifs.py`).
+  Secret à ajouter : `TMDB_API_KEY` (déjà lu par le workflow) ou `OMDB_API_KEY`.
+  Si TMDb : garder la mention obligatoire « ce site utilise l'API TMDb sans être approuvé ni certifié
+  par TMDb » (déjà dans `a-propos.md`) et ajouter le logo TMDb à côté.
 
 ### Idées (1er novembre 2026)
 
