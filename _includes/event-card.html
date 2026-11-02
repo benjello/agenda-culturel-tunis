@@ -18,7 +18,15 @@
     {%- assign tr = site.data.traductions.titres[e.title] %}
     <h3><a href="{{ e.url | relative_url }}"{% for l in tr %} data-tr-{{ l[0] }}="{{ l[1] | escape }}"{% endfor %}>{{ e.title }}</a></h3>
     {%- if e.film %}
-    <p class="meta">{% if e.duration %}{% assign h = e.duration | divided_by: 60 %}{% assign mn = e.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% if e.genres %}{{ e.genres | join: ", " }} · {% endif %}{% include liens-film.html titre=e.title imdb=e.imdb %}</p>
+    {%- capture duree %}{% if e.duration %}{% assign h = e.duration | divided_by: 60 %}{% assign mn = e.duration | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif %}{% endcapture -%}
+    {%- capture lien_imdb %}{% include liens-film.html titre=e.title imdb=e.imdb %}{% endcapture -%}
+    {%- assign parts = "" | split: "" -%}
+    {%- if duree != "" %}{% assign parts = parts | push: duree %}{% endif -%}
+    {%- if e.genres %}{% assign g = e.genres | join: ", " %}{% assign parts = parts | push: g %}{% endif -%}
+    {%- if lien_imdb != "" %}{% assign parts = parts | push: lien_imdb %}{% endif -%}
+    {%- if parts.size > 0 %}
+    <p class="meta">{{ parts | join: " · " }}</p>
+    {%- endif %}
     <p class="days">
       {%- assign jours = e.seances | default: empty -%}{%- if jours.size == 0 %}{% assign jours = "" | split: "" | push: e.date %}{% endif -%}
       {%- assign prec = "" -%}

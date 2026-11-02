@@ -72,7 +72,15 @@ layout: default
         {%- if f.tunisien %}<span class="badge tunisien">Film tunisien</span>{% endif -%}
         {%- for g in f.genres %}<span class="badge">{{ g }}</span>{% endfor -%}
       </p>
-      <p class="meta">{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}{% if f.wikidata %} · <a href="https://www.wikidata.org/wiki/{{ f.wikidata }}" rel="noopener">Wikidata</a>{% endif %}</p>
+      {%- capture duree %}{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }}{% endif %}{% endcapture -%}
+      {%- capture lien_imdb %}{% include liens-film.html titre=f.titre imdb=f.imdb %}{% endcapture -%}
+      {%- assign parts = "" | split: "" -%}
+      {%- if duree != "" %}{% assign parts = parts | push: duree %}{% endif -%}
+      {%- if lien_imdb != "" %}{% assign parts = parts | push: lien_imdb %}{% endif -%}
+      {%- if f.wikidata %}{% capture wd %}<a href="https://www.wikidata.org/wiki/{{ f.wikidata }}" rel="noopener">Wikidata</a>{% endcapture %}{% assign parts = parts | push: wd %}{% endif -%}
+      {%- if parts.size > 0 %}
+      <p class="meta">{{ parts | join: " · " }}</p>
+      {%- endif %}
       {%- if f.synopsis %}
       <details class="synopsis"><summary data-t="synopsis">Synopsis</summary><p>{{ f.synopsis | escape | newline_to_br }}{% if f.synopsis_source %} <small class="descriptif-source">· {% if f.synopsis_url %}<a href="{{ f.synopsis_url }}" rel="noopener">{{ f.synopsis_source }}</a>{% else %}{{ f.synopsis_source }}{% endif %}</small>{% endif %}</p></details>
       {%- endif %}
