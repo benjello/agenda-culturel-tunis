@@ -52,6 +52,10 @@
    "ar": "دائرة ليكتور في مركز مدينة تونس",
    "en": "Circle of Lectur in the city centre of Tunis"
   },
+  "Cette semaine, ton prochain coup de cœur ciné t’attend à L’Agora !": {
+   "ar": "هذا الإسبوع، إعجابكِ السينمائي القادم ينتظر (ل.. أغورا)",
+   "en": "This week, your next movie crush is waiting for L-Agora!"
+  },
   "Cinéma D’Animation": {
    "ar": "Cinema D",
    "en": "Cinema D"
@@ -834,6 +838,16 @@
    "cle": "11a1903510ea",
    "ar": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nاتجنبوا التكرار احجزوا تذاكركم الان",
    "en": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nAvoid the queue, book your tickets now!\n"
+  },
+  "_events/auto/ig-agora/2026-11-02-cette-semaine-ton-prochain-coup-de-cur-cine-tattend-a-lagora.md": {
+   "cle": "351a4717cb0e",
+   "ar": "هذا الإسبوع، إعجابكِ السينمائي القادم ينتظر (ل.. أغورا)\nالمادتان\nمن 2 إلى 8 من نوفمبر، بين العواطف، العواطف، الكوميديا والاكتشافات، لا بدّ من وجود فيلم لك!\nالمادتان\nاعثر على البرنامج واختار دورتك القادمة\nإذاً، أي فيلم هو الأكثر إغراءاً لك هذا الأسبوع؟\nتذاكر متاحة على المنضدة أو على شبكة الإنترنت في لاغورا.(ط)\nالمادتان L\n# لاغورا مارسا # سينما تونيسيا # ReleaseCinema",
+   "en": "This week, your next movie crush is waiting for L-Agora!\n的\nFrom November 2 to 8, between suspense, emotions, comedy and discoveries, there must be a movie for you!\n的\nSwipe to discover the program and choose your next session.\nSo, what movie is the most tempting for you this week?\nTickets available at the counter or online on lagora.tn\n的 L\n#LagoraMarsa #CinemaTunisia #ReleaseCinema"
+  },
+  "_events/auto/ig-agora/2026-11-08-cette-semaine-ton-prochain-coup-de-cur-cine-tattend-a-lagora.md": {
+   "cle": "351a4717cb0e",
+   "ar": "هذا الإسبوع، إعجابكِ السينمائي القادم ينتظر (ل.. أغورا)\nالمادتان\nمن 2 إلى 8 من نوفمبر، بين العواطف، العواطف، الكوميديا والاكتشافات، لا بدّ من وجود فيلم لك!\nالمادتان\nاعثر على البرنامج واختار دورتك القادمة\nإذاً، أي فيلم هو الأكثر إغراءاً لك هذا الأسبوع؟\nتذاكر متاحة على المنضدة أو على شبكة الإنترنت في لاغورا.(ط)\nالمادتان L\n# لاغورا مارسا # سينما تونيسيا # ReleaseCinema",
+   "en": "This week, your next movie crush is waiting for L-Agora!\n的\nFrom November 2 to 8, between suspense, emotions, comedy and discoveries, there must be a movie for you!\n的\nSwipe to discover the program and choose your next session.\nSo, what movie is the most tempting for you this week?\nTickets available at the counter or online on lagora.tn\n的 L\n#LagoraMarsa #CinemaTunisia #ReleaseCinema"
   },
   "_events/auto/ig-agorgi-gallery/2026-10-30-cosmose.md": {
    "cle": "45577979df1a",

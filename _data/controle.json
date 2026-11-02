@@ -392,6 +392,19 @@
      }
     ]
    },
+   "ig-agora": {
+    "n": 2,
+    "precis": 2,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     }
+    ]
+   },
    "ig-agora-djerba": {
     "n": 5,
     "precis": 5,
@@ -882,9 +895,9 @@
     ]
    },
    "instagram": {
-    "n": 22,
-    "precis": 17,
-    "pourcent": 77,
+    "n": 24,
+    "precis": 19,
+    "pourcent": 79,
     "defauts": [
      {
       "code": "titre_phrase",
@@ -909,7 +922,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 9
+      "n": 11
      },
      {
       "code": "sans_notice",

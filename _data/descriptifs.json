@@ -244,6 +244,66 @@
   }
  },
  "musees": {
+  "Musée Dar Cherait": {
+   "source": "Wikipédia",
+   "texte": "Le musée Dar Cheraït est un musée tunisien situé à Tozeur, plus précisément à quelques centaines de mètres de la palmeraie de la ville, aux portes du désert du Sahara.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Dar_Chera%C3%AFt"
+  },
+  "Musée Dar Essid": {
+   "source": "Wikipédia",
+   "texte": "Le musée Dar Essid est un musée tunisien situé dans un palais de la médina de Sousse ayant appartenu à une famille d'aristocrates.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Dar_Essid"
+  },
+  "Musée Lalla Hadria": {
+   "source": "Wikipédia",
+   "texte": "Le musée Lalla Hadria ou Lalla Hadria Museum, aussi dit Lella Hadhria, est un musée situé à Midoun sur l'île de Djerba en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Lalla_Hadria"
+  },
+  "Musée archéologique d'El Jem": {
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique d'El Jem est un musée tunisien situé dans la ville d'El Jem, l'antique Thysdrus. Fondé en 1970, il a fait l'objet d'une rénovation en 2002.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_d'El_Jem"
+  },
+  "Musée archéologique de Gafsa": {
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Gafsa, ouvert le 17 août 1990, est un musée tunisien situé dans la ville de Gafsa, l'antique Capsa, dans le quartier sud de la médina, nommé Guebli-Gafsa ou Houmet-El-Oued.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Gafsa"
+  },
+  "Musée archéologique de Lamta": {
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Lamta est un musée tunisien situé dans la ville de Lamta.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Lamta"
+  },
+  "Musée archéologique de Sfax": {
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Sfax est un musée tunisien situé dans la ville de Sfax, l'antique Taparura.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Sfax"
+  },
+  "Musée archéologique de Sousse (Kasbah)": {
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Sousse est un musée tunisien situé dans la ville de Sousse, l'ancienne Hadrumète, depuis 1951. Il possède la plus grande collection de mosaïques de Tunisie après celle du musée national du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Sousse"
+  },
+  "Musée de Chemtou": {
+   "source": "Wikipédia",
+   "texte": "Le musée de Chemtou est un musée archéologique tunisien situé sur le site de Chemtou, à une vingtaine de kilomètres de Jendouba, ville proche de la frontière tuniso-algérienne.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Chemtou"
+  },
+  "Musée de Guellala (patrimoine de Djerba)": {
+   "source": "Wikipédia",
+   "texte": "Le musée de Guellala est un musée ethnographique connu pour ses artisans et sa poterie, situé à Guellala, sur l'île de Djerba, dans le sud de la Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Guellala"
+  },
+  "Musée de Mahdia": {
+   "source": "Wikipédia",
+   "texte": "Le musée de Mahdia est un musée archéologique, ethnographique et patrimonial tunisien situé dans la ville de Mahdia. Ouvert dans son site actuel depuis les années 1990, il possède, outre des collections archéologiques, des éléments liés aux arts et traditions populaires de la région.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Mahdia"
+  },
+  "Musée de Zarzis": {
+   "source": "Wikipédia",
+   "texte": "Le musée de Zarzis est un musée archéologique et patrimonial tunisien situé dans la ville de Zarzis. Il occupe l'ancienne église catholique Notre-Dame de la Garde construite en 1920, à l'époque du protectorat français.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Zarzis"
+  },
   "Musée de la monnaie (Banque centrale)": {
    "source": "Wikipédia",
    "texte": "Le musée de la monnaie est un musée numismatique situé en plein centre de Tunis.",
@@ -254,10 +314,35 @@
    "texte": "Le musée de la poste est un musée tunisien présentant l'histoire philatélique et postale de la Tunisie, ouvert le 25 juillet 1959.",
    "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_poste_(Tunisie)"
   },
+  "Musée des arts et traditions populaires de Gabès": {
+   "source": "Wikipédia",
+   "texte": "Le musée ethnographique de Gabès, appelé aussi musée des arts et traditions populaires de Gabès ou musée Sidi Boulbaba, est un musée situé à Gabès en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_ethnographique_de_Gab%C3%A8s"
+  },
+  "Musée des arts et traditions populaires du Kef": {
+   "source": "Wikipédia",
+   "texte": "Le musée des Arts et Traditions populaires du Kef est un musée ethnographique tunisien situé dans la ville du Kef. Il occupe une partie des bâtiments de l’ancienne zaouïa de la confrérie musulmane de la Rahmaniyya.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_Traditions_populaires_du_Kef"
+  },
+  "Musée du Sahara": {
+   "source": "Wikipédia",
+   "texte": "Le musée du Sahara de Douz est un musée tunisien situé dans la ville de Douz.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Sahara_de_Douz"
+  },
+  "Musée du costume traditionnel de Monastir": {
+   "source": "Wikipédia",
+   "texte": "Le musée des Arts et Traditions populaires de Monastir est un musée situé à Monastir en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_Traditions_populaires_de_Monastir"
+  },
   "Musée militaire national": {
    "source": "Wikipédia",
    "texte": "Le musée militaire national est un musée tunisien présentant l'histoire militaire de la Tunisie, depuis l'époque carthaginoise jusqu'à nos jours.",
    "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_militaire_national_(Tunisie)"
+  },
+  "Musée national d'art islamique de Raqqada": {
+   "source": "Wikipédia",
+   "texte": "Le musée national d'art islamique de Raqqada est un musée spécialisé dans les arts de l'Islam et situé sur le site archéologique de Raqqada près de Kairouan.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_d'art_islamique_de_Raqqada"
   },
   "Musée national de Carthage": {
    "source": "Wikipédia",
@@ -268,6 +353,11 @@
    "source": "Wikipédia",
    "texte": "Le musée national du Bardo est un musée de Tunis, capitale de la Tunisie, situé dans la banlieue du Bardo.",
    "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_du_Bardo_(Tunisie)"
+  },
+  "Musée océanographique de Bizerte": {
+   "source": "Wikipédia",
+   "texte": "Le musée océanographique de Bizerte est un musée situé à Bizerte en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_oc%C3%A9anographique_de_Bizerte"
   },
   "Musée océanographique de Salammbô": {
    "source": "Wikipédia",
@@ -1060,11 +1150,95 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "musees:musee-archeologique-d-el-jem": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique d'El Jem est un musée tunisien situé dans la ville d'El Jem, l'antique Thysdrus. Fondé en 1970, il a fait l'objet d'une rénovation en 2002.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_d'El_Jem",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-archeologique-de-gafsa": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Gafsa, ouvert le 17 août 1990, est un musée tunisien situé dans la ville de Gafsa, l'antique Capsa, dans le quartier sud de la médina, nommé Guebli-Gafsa ou Houmet-El-Oued.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Gafsa",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-archeologique-de-lamta": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Lamta est un musée tunisien situé dans la ville de Lamta.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Lamta",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "musees:musee-archeologique-de-nabeul": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "musees:musee-archeologique-de-sfax": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Sfax est un musée tunisien situé dans la ville de Sfax, l'antique Taparura.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Sfax",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-archeologique-de-sousse": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée archéologique de Sousse est un musée tunisien situé dans la ville de Sousse, l'ancienne Hadrumète, depuis 1951. Il possède la plus grande collection de mosaïques de Tunisie après celle du musée national du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_arch%C3%A9ologique_de_Sousse",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "musees:musee-dar-ben-abdallah": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-dar-cherait": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée Dar Cheraït est un musée tunisien situé à Tozeur, plus précisément à quelques centaines de mètres de la palmeraie de la ville, aux portes du désert du Sahara.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Dar_Chera%C3%AFt",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-dar-essid": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée Dar Essid est un musée tunisien situé dans un palais de la médina de Sousse ayant appartenu à une famille d'aristocrates.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Dar_Essid",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-dar-jallouli": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-chemtou": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de Chemtou est un musée archéologique tunisien situé sur le site de Chemtou, à une vingtaine de kilomètres de Jendouba, ville proche de la frontière tuniso-algérienne.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Chemtou",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-dar-sebastian": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-guellala": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de Guellala est un musée ethnographique connu pour ses artisans et sa poterie, situé à Guellala, sur l'île de Djerba, dans le sud de la Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Guellala",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-kerkennah": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1088,11 +1262,79 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "musees:musee-de-mahdia": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de Mahdia est un musée archéologique, ethnographique et patrimonial tunisien situé dans la ville de Mahdia. Ouvert dans son site actuel depuis les années 1990, il possède, outre des collections archéologiques, des éléments liés aux arts et traditions populaires de la région.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Mahdia",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-salakta": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "musees:musee-de-thuburbo-majus": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "musees:musee-de-zarzis": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de Zarzis est un musée archéologique et patrimonial tunisien situé dans la ville de Zarzis. Il occupe l'ancienne église catholique Notre-Dame de la Garde construite en 1920, à l'époque du protectorat français.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Zarzis",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-des-arts-et-traditions-populaires-de-gabes": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée ethnographique de Gabès, appelé aussi musée des arts et traditions populaires de Gabès ou musée Sidi Boulbaba, est un musée situé à Gabès en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_ethnographique_de_Gab%C3%A8s",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-des-arts-et-traditions-populaires-de-houmt-souk": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-des-arts-et-traditions-populaires-du-kef": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée des Arts et Traditions populaires du Kef est un musée ethnographique tunisien situé dans la ville du Kef. Il occupe une partie des bâtiments de l’ancienne zaouïa de la confrérie musulmane de la Rahmaniyya.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_Traditions_populaires_du_Kef",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-du-costume-traditionnel-de-monastir": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée des Arts et Traditions populaires de Monastir est un musée situé à Monastir en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_Traditions_populaires_de_Monastir",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "musees:musee-du-mouvement-national": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-du-ribat-et-des-arts-islamiques-de-monastir": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-du-sahara": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée du Sahara de Douz est un musée tunisien situé dans la ville de Douz.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Sahara_de_Douz",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-lalla-hadria": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée Lalla Hadria ou Lalla Hadria Museum, aussi dit Lella Hadhria, est un musée situé à Midoun sur l'île de Djerba en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Lalla_Hadria",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1101,6 +1343,14 @@
    "source": "Wikipédia",
    "texte": "Le musée militaire national est un musée tunisien présentant l'histoire militaire de la Tunisie, depuis l'époque carthaginoise jusqu'à nos jours.",
    "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_militaire_national_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-national-d-art-islamique-de-raqqada": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée national d'art islamique de Raqqada est un musée spécialisé dans les arts de l'Islam et situé sur le site archéologique de Raqqada près de Kairouan.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_d'art_islamique_de_Raqqada",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1117,6 +1367,14 @@
    "source": "Wikipédia",
    "texte": "Le musée national du Bardo est un musée de Tunis, capitale de la Tunisie, situé dans la banlieue du Bardo.",
    "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_du_Bardo_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-oceanographique-de-bizerte": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée océanographique de Bizerte est un musée situé à Bizerte en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_oc%C3%A9anographique_de_Bizerte",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -1140,7 +1398,23 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "musees:site-et-musee-de-bulla-regia": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:site-et-musee-de-dougga": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "musees:site-et-musee-de-kerkouane": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:site-et-musee-de-makthar": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:site-et-musee-de-sbeitla": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   }

@@ -3,6 +3,7 @@
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
   "Ciné 350 (Cité de la Culture)": "cine-350-cite-de-la-culture",
   "L'Agora Marsa": "lagora-la-marsa",
+  "L’Agora La Marsa": "lagora-la-marsa",
   "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
   "El Teatro التياترو": "el-teatro",
@@ -79,20 +80,20 @@
    "n": 12
   },
   {
+   "slug": "lagora-la-marsa",
+   "nom": "L’Agora La Marsa",
+   "ville": "tunis",
+   "lat": 36.88133,
+   "lon": 10.32585,
+   "n": 11
+  },
+  {
    "slug": "el-teatro",
    "nom": "El Teatro",
    "ville": "tunis",
    "lat": 36.81393,
    "lon": 10.17371,
    "n": 11
-  },
-  {
-   "slug": "lagora-la-marsa",
-   "nom": "L’Agora La Marsa",
-   "ville": "tunis",
-   "lat": 36.88133,
-   "lon": 10.32585,
-   "n": 9
   },
   {
    "slug": "pathe-azur-city",

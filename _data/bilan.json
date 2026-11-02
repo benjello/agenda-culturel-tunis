@@ -100,10 +100,10 @@
  {
   "semaine": "2026-S45",
   "date": "2026-11-02",
-  "a_venir": 158,
-  "sept_jours": 92,
-  "sources_actives": 74,
-  "sources_avec_evenements": 22,
+  "a_venir": 160,
+  "sept_jours": 94,
+  "sources_actives": 75,
+  "sources_avec_evenements": 23,
   "sources_muettes": [
    "cine-360",
    "cine-amilcar",
@@ -128,7 +128,6 @@
    "ftcc",
    "goethe-tunis",
    "ig-al-kitab",
-   "ig-atast",
    "ig-b7l9",
    "ig-bardo",
    "ig-cineclub-tunis",
@@ -139,6 +138,7 @@
    "ig-entre-les-rives",
    "ig-fics-ksar-ghilane",
    "ig-ftca",
+   "ig-ftcc",
    "ig-galerie-insular",
    "ig-habibi-downtown",
    "ig-hamdi-ryder",
@@ -159,7 +159,7 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 78,
+   "tunis": 80,
    "sud": 6,
    "sfax": 4,
    "sousse": 3,
@@ -167,7 +167,7 @@
   },
   "par_categorie": {
    "cinema": 31,
-   "autre": 21,
+   "autre": 23,
    "theatre": 17,
    "expo": 8,
    "conference": 7,
@@ -175,8 +175,8 @@
    "musique": 4
   },
   "par_genre": {
+   "lieu": 32,
    "agenda": 31,
-   "lieu": 30,
    "institution": 20,
    "presse": 5,
    "festival": 4,
@@ -193,6 +193,7 @@
    "cine-alhambra": 4,
    "ig-tunisia-podcasts-festival": 3,
    "fb-ift-facebook": 2,
+   "ig-agora": 2,
    "ig-cinemadart": 2,
    "ig-la-boite": 2,
    "ig-lart-rue": 2,

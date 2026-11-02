@@ -1,6 +1,6 @@
 ---
 title: "L’Agora La Marsa"
-noms: ["L'Agora Marsa"]
+noms: ["L'Agora Marsa", "L’Agora La Marsa"]
 adresse: "La Marsa"
 ville: "tunis"
 lat: 36.88133

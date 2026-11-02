@@ -83,8 +83,8 @@
   },
   "fb-61595612945174": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-02T12:15:38",
+    "dernier_succes": "2026-11-02T12:15:38",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -290,6 +290,16 @@
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
+  "ig-agora": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T12:15:38",
+    "dernier_passage": "2026-11-02T12:15:38",
+    "dernier_succes": "2026-11-02T12:15:38",
+    "erreur": null,
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-02T12:15:38"
+  },
   "ig-agora-djerba": {
     "attente": null,
     "dernier_non_vide": "2026-11-02T11:54:47",
@@ -440,6 +450,12 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/ftcafifak/', 'inputUrl': 'https://www.instagram.com/ftcafifak/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-02T10:11:41"
+  },
+  "ig-ftcc": {
+    "dernier_passage": "2026-11-02T12:15:38",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/ftcc_tunisienne/', 'inputUrl': 'https://www.instagram.com/ftcc_tunisienne/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
+    "ok": false,
+    "premier_passage": "2026-11-02T12:15:38"
   },
   "ig-galerie-insular": {
     "attente": null,
