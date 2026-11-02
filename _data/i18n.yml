@@ -345,3 +345,9 @@ langue.ar: { ar: "بالعربية", en: "In Arabic" }
 langue.fr: { ar: "بالفرنسية", en: "In French" }
 langue.en: { ar: "بالإنجليزية", en: "In English" }
 langue.vo: { ar: "نسخة أصلية مترجمة", en: "Original version, subtitled" }
+# Affichage ordinateur : titres des filtres et panneau d'aperçu
+filtre_ou: { fr: "Où", ar: "أين", en: "Where" }
+filtre_quand: { fr: "Quand", ar: "متى", en: "When" }
+filtre_quoi: { fr: "Quoi", ar: "ماذا", en: "What" }
+ouvrir_page: { fr: "Ouvrir la page", ar: "فتح الصفحة", en: "Open the page" }
+apercu: { fr: "Aperçu", ar: "معاينة", en: "Preview" }

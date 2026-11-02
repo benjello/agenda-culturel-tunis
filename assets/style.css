@@ -206,3 +206,49 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 .infos-osm code { font-size: .85rem; }
 .prix.complet { background: #8a1c1c; color: #fff; padding: 0 .4rem; border-radius: 4px; font-weight: 600; }
 .tag.langue { background: #5b4b8a; }
+
+/* ---- Grand écran (ordinateur, portable) : plus large, plus d'infos, moins de clics.
+   Le téléphone garde l'affichage d'une colonne : tout ce qui suit ne s'applique qu'au-delà de 1100 px. */
+.titre-filtre, .extrait { display: none; }
+@media (min-width: 1100px) {
+  main, .site-header { max-width: 1360px; padding-left: 24px; padding-right: 24px; }
+  .accueil { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 28px; align-items: start; }
+  /* Filtres toujours visibles à gauche */
+  .panneau-filtres { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .panneau-filtres .recherche { order: -1; margin-top: 0; }
+  .panneau-filtres .filters button { font-size: .85rem; padding: 3px 10px; }
+  .panneau-filtres .cases { flex-direction: column; margin-top: 6px; }
+  .titre-filtre { display: block; margin: 10px 0 4px; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .colonne-agenda > .month:first-of-type h2, #en-cours h2 { margin-top: 8px; }
+  /* Cartes sur plusieurs colonnes */
+  /* Accueil, puis toute liste de cartes des autres pages (semaine, week-end, enfants…).
+     Une carte peut être dans un div intermédiaire (semaine, week-end) : ce div s'efface de la grille. */
+  #agenda .month, #en-cours, main section:has(> .event:not(.event-page), > div > .event) {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; align-items: start; }
+  main section:has(> .event:not(.event-page), > div > .event) > div:has(> .event) { display: contents; }
+  main section:has(> .event:not(.event-page), > div > .event) > :not(.event):not(:has(> .event)) { grid-column: 1 / -1; margin-bottom: 0; }
+  main section[hidden] { display: none; }
+  main section .event:not(.event-page) { margin-bottom: 0; }
+  .vignette { flex-basis: 104px; }
+  .vignette img { width: 104px; height: 140px; }
+  .extrait { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+    margin: 2px 0 6px; font-size: .88rem; line-height: 1.4; color: var(--muted); }
+  .event h3 a { cursor: pointer; }
+  .event.choisi { outline: 2px solid var(--accent); outline-offset: -1px; }
+  /* Films à l'affiche en grille */
+  #cinema-salles { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 0 12px; }
+  #cinema-salles > :not(.film-fiche) { grid-column: 1 / -1; }
+  .leger .extrait { display: none; }
+}
+/* Panneau d'aperçu : la fiche s'ouvre à droite sans quitter la liste (grand écran seulement, voir site.js) */
+.apercu { position: fixed; top: 0; bottom: 0; inset-inline-end: 0; width: min(500px, 42vw); z-index: 20; overflow-y: auto;
+  background: var(--bg); border-inline-start: 1px solid var(--line); box-shadow: -8px 0 24px rgba(0, 0, 0, .12); padding: 12px 22px 32px; }
+.apercu-barre { position: sticky; top: -12px; display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  background: var(--bg); padding: 10px 0 8px; margin-top: -12px; border-bottom: 1px solid var(--line); }
+.apercu-barre button { font: inherit; font-size: 1.3rem; line-height: 1; border: 0; background: none; color: var(--fg); cursor: pointer; padding: 4px 8px; }
+.apercu .event-page { display: block !important; }
+.apercu .event-page > p:first-child { display: none; } /* « ← Retour à l'agenda » */
+.apercu .affiche-grande { max-height: 46vh; }
+.apercu .event-page h1 { font-size: 1.5rem; line-height: 1.25; }
+.apercu .chargement { color: var(--muted); }

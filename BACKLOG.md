@@ -68,6 +68,10 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
 - [x] Institut français : lire le PDF mensuel du programme.
+- [x] Grand écran : filtres en colonne fixe à gauche, cartes sur 2-3 colonnes avec début de notice,
+  fiche ouverte dans un panneau à droite sans changer de page (le téléphone garde une colonne).
+- [ ] Données : certaines notices contiennent « rn » à la place des retours à la ligne (\r\n mal décodé
+  par un scraper, ex. El Teatro « FUITE »).
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
