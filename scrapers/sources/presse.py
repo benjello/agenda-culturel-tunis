@@ -119,6 +119,17 @@ def titre_evenement(titre: str) -> str:
     return propre(t) or titre
 
 
+# Un article sur un film (critique, sortie en salles) n'est pas un événement : ses séances viennent des
+# cinémas (doublon sinon). On garde seulement un film montré lors d'un événement précis.
+_FILM = re.compile(r"\bfilms?\b|cin[ée]ma|en salles?|[àa] l.affiche|\bsortie\b|long.m[ée]trage|documentaire|فيلم|سينما", re.I)
+_SEANCE_UNIQUE = re.compile(r"festival|cin[ée].?club|projection|avant.premi[èe]re|journ[ée]es|r[ée]trospective|cycle|"
+                            r"semaine du|nuit du|rencontre|d[ée]bat|مهرجان|نادي السينما|عرض خاص", re.I)
+
+
+def est_sortie_de_film(titre: str, texte: str = "") -> bool:
+    return bool(_FILM.search(titre)) and not _SEANCE_UNIQUE.search(f"{titre} {texte[:300]}")
+
+
 def depuis_flux(xml: str, source: dict) -> list[Evenement]:
     o = source.get("options") or {}
     mots = re.compile(o.get("garder", MOTS), re.I)
@@ -128,6 +139,8 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
         if not a["titre"] or not mots.search(a["titre"] + " " + a["texte"][:400]):
             continue
         if _ETRANGER.search(a["titre"]):
+            continue
+        if est_sortie_de_film(a["titre"], a["texte"]):
             continue
         debut, fin = _dates(tout, a["date"])
         if not debut:
