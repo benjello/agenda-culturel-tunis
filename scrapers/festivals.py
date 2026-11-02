@@ -75,7 +75,11 @@ def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO, series: list[dict] | 
     avant-premières). Une série (« Kteb Tounsi », un cercle de lecture…) revient à des dates différentes :
     aucune contrainte de dates. Mot entier, sans casse ni accents (« Jaou » ne trouve pas « Jaouhar »).
     Les événements d'une source de presse ou du calendrier des festivals gardent leur festival.
+    Une annonce qui ne porte que le nom du festival, sans heure (« Festival du podcast », « Programme à
+    découvrir très prochainement »), est masquée : ce n'est pas un événement.
     Renvoie le nombre d'événements reliés ; refait à chaque passage (rien n'est gardé d'un passage à l'autre)."""
+    nus: dict[str, str] = {}  # « Festival du podcast » tout court : annonce de remplissage, pas un événement
+
     def regles(registre, avec_dates):
         res = []
         for f in registre:
@@ -83,6 +87,7 @@ def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO, series: list[dict] | 
             debut, fin = (f.get("debut"), f.get("fin") or f.get("debut")) if avec_dates else (None, None)
             marge = (debut - dt.timedelta(days=3)) if debut else None
             res.append((f["id"], _motif(mots), _motif([m for m in mots if len(m) >= 4 and m != m.upper()]), marge, fin))
+            nus.update((_norm(m), f["id"]) for m in mots + [f.get("nom_court") or "", f["nom"]] if m)
         return res
 
     def chercher(rs, titre, texte, debut_e, fin_e):
@@ -114,9 +119,15 @@ def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO, series: list[dict] | 
         serie = chercher(r_serie, titre, texte, debut_e, fin_e)
         if serie:
             champs["serie"] = serie
+        # Une annonce qui ne porte que le nom du festival, sans heure ni séance (« Programme à découvrir
+        # très prochainement ») n'est pas un événement : masquée, les séances ont leur étiquette.
+        if champs.get("festival") and nus.get(titre) == champs["festival"] and len(str(champs.get("date"))) <= 10 \
+                and not champs.get("doublon"):
+            champs["doublon"] = True
+            ancien += ("masquer",)
         nouveau = (champs.get("festival"), champs.get("serie"))
         n += any(nouveau)
-        if nouveau != ancien:
+        if nouveau != ancien[:2] or len(ancien) > 2:
             if not isinstance(champs.get("date"), str):
                 champs["date"] = str(champs.get("date"))[:16]
             auto = champs.pop("auto", True)

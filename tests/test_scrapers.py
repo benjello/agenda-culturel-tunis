@@ -1235,6 +1235,12 @@ class AgoraDjerba(unittest.TestCase):
                 self.assertNotIn("festival:", lu[n])
             self.assertIn("date: 2026-10-27 18:00\n", lu["a"])
             self.assertEqual(festivals.rattacher(fs, d), 2)  # relancer ne change rien
+            # « Jaou » tout court, sans heure : annonce de remplissage, masquée
+            (d / "ift" / "g.md").write_text('---\ntitle: "Jaou Tunis"\ndate: 2026-11-06\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n')
+            festivals.rattacher(fs, d)
+            self.assertIn("doublon: true", (d / "ift" / "g.md").read_text())
+            self.assertNotIn("doublon", (d / "ift" / "b.md").read_text())
+            (d / "ift" / "g.md").unlink()
             # séries : mêmes mots, mais pas de contrainte de dates
             serie = [{"id": "kteb", "nom": "Kteb Tounsi", "mots": "Kteb Tounsi"}]
             (d / "ift" / "f.md").write_text('---\ntitle: "Kteb Tounsi : rencontre avec Sonia"\ndate: 2027-03-04 18:00\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n')
