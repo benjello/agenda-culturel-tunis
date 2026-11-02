@@ -63,6 +63,62 @@ def titre_precis(titre: str, notice: str) -> str:
     return titre
 
 
+_PETITS_MOTS = {"de", "du", "des", "la", "le", "les", "et", "en", "à", "au", "aux", "avec", "sur", "un", "une", "pour",
+                "par", "dans", "ou", "ce", "cette"}
+
+
+def titre_francais(titre: str) -> str:
+    """« L'HEURE DU JEU » → « L’Heure du Jeu » : majuscules aux mots pleins, minuscules aux petits mots
+    et aux élisions (« d’Ali Bêcheur »). Un titre déjà en casse mixte est laissé tel quel."""
+    if titre != titre.upper():
+        return titre
+
+    def mot(m: str, premier: bool) -> str:
+        m = m.replace("'", "’")
+        if "’" in m:  # élision : « l’heure » → « L’Heure », mais « d’ali » → « d’Ali » hors début de titre
+            elision, reste = m.split("’", 1)
+            return (elision.capitalize() if premier else elision) + "’" + mot(reste, False)
+        if "-" in m:
+            return "-".join(x.capitalize() for x in m.split("-"))
+        if not premier and m in _PETITS_MOTS:
+            return m
+        return m.capitalize()
+
+    return " ".join(mot(m, i == 0) for i, m in enumerate(titre.lower().split()))
+
+
+# Ce qui n'est pas culturel : santé, administratif, examens, don du sang…
+_NON_CULTUREL = re.compile(
+    r"pr[ée]vention|sensibilisation|d[ée]pistage|\bdiab[èe]te\b|don du sang|vaccination|\bsant[ée]\b|"
+    r"\bcampus france\b|\bexamens?\b|\b(?:tcf|delf|dalf)\b|inscriptions? (?:ouvertes|aux)|\bpermanence\b|portes ouvertes|"
+    r"r[ée]union d.information", re.I)
+
+# Catégorie lue dans le titre puis la notice quand la case ne donne qu'« ATELIER » ou « FESTIVAL ».
+_MOTS_CATEGORIE = [
+    ("litterature", r"kteb tounsi|biblioth[ée]rapie|cercle de lecture|club de lecture|\blecture\b|\bromans?\b|dédicace|\blivre\b|"
+                    r"\bauteure?\b|\bpo[ée]sie\b|\b[ée]criture\b"),
+    ("conference", r"caf[ée] philo|\bphilo\b|diffusion des savoirs|\bconf[ée]rence|village environnemental|\bnum[ée]rique\b|"
+                   r"discussion avec|table[s-]? ronde|\bforum\b"),
+    ("spectacle", r"\bcontes?\b|marionnette|\bcirque\b|one[- ]man|stand[- ]?up|\bspectacle\b"),
+    ("musique", r"\bconcert\b|\bruche73\b|r[ée]sidence|\bdj\b|\bjam\b"),
+    ("expo", r"\bbiennale\b|\bexposition\b|\bvernissage\b"),
+    ("theatre", r"\bth[ée][âa]tre\b|th[ée][âa]trales?"),
+]
+
+
+def categorie_ift(titre: str, notice: str, genre: str) -> str:
+    """La catégorie la plus précise : mot du titre, puis genre de la case, puis mots de la notice."""
+    for cat, motif in _MOTS_CATEGORIE:
+        if re.search(motif, titre, re.I):
+            return cat
+    if genre and genre != "autre":
+        return genre
+    for cat, motif in _MOTS_CATEGORIE:
+        if re.search(motif, notice, re.I):
+            return cat
+    return genre or "autre"
+
+
 def _salle(texte: str) -> str:
     return next((nom for motif, nom in _SALLES if re.search(motif, texte, re.I)), "")
 
@@ -147,29 +203,37 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
             break
     notice = " ".join(lignes[len(titre):])
     titre = " ".join(titre) or lignes[0]
-    jours = []
+    jours: list[tuple[int, int | None]] = []  # (jour, dernier jour si « >> 15 »)
     for l in infos:
         if re.fullmatch(r"(?:>>\s*)?[\d\s&]+", l):
-            jours += [int(j) for j in re.findall(r"\d{2}", l.replace(" ", "").replace("&", ""))]
-    genre = next((_GENRES[k] for l in infos for k in _GENRES if k in l.lower()), "")
+            nums = [int(j) for j in re.findall(r"\d{2}", l.replace(" ", "").replace("&", ""))]
+            if l.startswith(">>") and jours and nums:  # « 12 » puis « >> 15 » : du 12 au 15
+                jours[-1] = (jours[-1][0], nums[0])
+                nums = nums[1:]
+            jours += [(j, None) for j in nums]
+    genre = next((_GENRES[k] for l in infos if l.upper() == l for k in _GENRES if k in l.lower()), "") \
+        or next((_GENRES[k] for l in infos for k in _GENRES if k in l.lower()), "")
     salle = _salle(" ".join(l for l in infos if l.upper() != l))
     lieu = f"{salle}, {lieu_defaut}" if salle else lieu_defaut
     h = next((m for l in infos for m in [_HEURE.search(l)] if m), None)
+    titre_propre = titre_francais(titre) if len(titre) > 6 else titre
+    if _NON_CULTUREL.search(titre_propre) or _NON_CULTUREL.search(notice[:200]) and not genre:
+        return []  # santé, démarches, examens : pas un événement culturel
     res = []
-    for j in sorted(set(jours)):
+    for j, dernier in sorted(set(jours)):
         try:
             d = dt.datetime(mois.year, mois.month, j, int(h.group(1)) if h else 0, int(h.group(2) or 0) if h else 0)
+            fin = dt.datetime(mois.year, mois.month, dernier) if dernier and dernier > j else None
         except ValueError:
             continue
-        titre_propre = titre.title() if len(titre) > 6 else titre
-        categorie = categorie_du_titre(titre) or genre or "autre"
+        categorie = categorie_du_titre(titre) or categorie_ift(titre, notice, genre)
         est_film = bool(_FICHE_FILM.search(notice)) and categorie in ("cinema", "autre")
         if est_film or categorie == "cinema":
             titre_propre = titre_film(titre_propre)  # « Mercredis-Ciné Level Five » → « Level Five »
         titre_net = titre_precis(titre_propre, notice)
         if titre_net != titre_propre:  # « Tables Rondes » → « Entre deux rives » (le genre reste dans la catégorie)
             categorie = categorie if categorie != "autre" else (categorie_du_titre(titre_propre) or "autre")
-        res.append(Evenement(titre=titre_net, debut=d, lien=lien, lieu=lieu,
+        res.append(Evenement(titre=titre_net, debut=d, fin=fin, lien=lien, lieu=lieu,
                              categorie="cinema" if est_film else categorie,
                              film=est_film and not titre_generique(titre_net),
                              seances=[d] if est_film else [], description=resume(notice, 400)))
@@ -209,7 +273,7 @@ def recuperer(source: dict) -> list[Evenement]:
             en_ligne = aec.depuis_api(aec.lire_api(o["aec"] or {}, (o["aec"] or {}).get("page", source["url"])),
                                       o.get("lieu", source["nom"]))
             print(f"  agenda en ligne : {len(en_ligne)} événement(s)")
-            res = rapprocher(res, en_ligne)
+            res = rapprocher(res, [e for e in en_ligne if not _NON_CULTUREL.search(e.titre)])
         except Exception as exc:  # noqa: BLE001 — le PDF seul reste utilisable
             print(f"  agenda en ligne illisible : {exc.__class__.__name__} {exc}")
     return res

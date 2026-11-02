@@ -699,11 +699,32 @@ class ProgrammePdf(unittest.TestCase):
         from scrapers.sources.pdf_programme import depuis_texte
         evts = depuis_texte(fixture("ift-calendrier.txt"), dt.date(2026, 11, 1), "IFT", "u")
         par_titre = {(e.titre, e.debut.day): e for e in evts}
-        e = par_titre[("Kteb Tounsi Avec Abdelhamid Larguèche", 5)]
+        e = par_titre[("Kteb Tounsi avec Abdelhamid Larguèche", 5)]
         self.assertEqual((e.debut.hour, e.lieu, e.categorie), (18, "Médiathèque, Institut français de Tunis", "litterature"))
         self.assertIn(("Mars Express", 6), par_titre)
         self.assertEqual({d for t, d in par_titre if t.startswith("Bibliothérapie")}, {1, 8, 22})
         self.assertEqual(par_titre[("Le Monde Sans Fin", 1)].categorie, "expo")
+        # casse française, catégorie lue dans le titre/la notice, non culturel écarté
+        self.assertEqual({d for t, d in par_titre if t == "Bibliothérapie Tunis Blues d’Ali Bêcheur"}, {1, 8, 22})
+        self.assertEqual(par_titre[("Bibliothérapie Tunis Blues d’Ali Bêcheur", 1)].categorie, "litterature")
+        self.assertIn(("L’Heure du Jeu", 4), par_titre)
+        self.assertEqual(par_titre[("Voyage Enchanteur", 1)].categorie, "litterature")
+        self.assertFalse([t for t, d in par_titre if "Diabète" in t])
+
+    def test_dates_sur_plusieurs_jours_et_non_culturel(self):
+        from scrapers.sources.pdf_programme import categorie_ift, depuis_texte, titre_francais, _NON_CULTUREL
+        texte = ("INSTITUT FRANÇAIS DE TUNIS\n\n"
+                 "EXPOSITION D'ART                                          12\n"
+                 "Des oeuvres de plusieurs artistes.                         EXPOSITION\n"
+                 "                                                          >> 15\n"
+                 "                                                          Galerie\n")
+        evts = depuis_texte(texte, dt.date(2026, 11, 1), "IFT", "u")
+        for e in evts:
+            self.assertEqual((e.debut.day, e.fin.day if e.fin else None), (12, 15))
+        self.assertEqual(titre_francais("L'HEURE DU JEU"), "L’Heure du Jeu")
+        self.assertEqual(categorie_ift("Café Philo avec Azza Filali", "", "autre"), "conference")
+        self.assertEqual(categorie_ift("Contes en scène", "", "autre"), "spectacle")
+        self.assertTrue(_NON_CULTUREL.search("Action de sensibilisation et de prévention du diabète"))
 
 
 class Prix(unittest.TestCase):
