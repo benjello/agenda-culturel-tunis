@@ -488,6 +488,7 @@ class Films(unittest.TestCase):
         self.assertEqual(lc["image"], "x.jpg")
         self.assertEqual([s["nom"] for s in lc["salles"]], ["Alhambra", "Le Palace"])
         self.assertEqual(lc["salles"][0]["jours"], [demain])  # jour passé retiré
+        self.assertEqual([Path(c).name for c in lc["fichiers"]], ["1.md", "2.md"])  # pour l'encadré presse
 
     def test_horaires_par_jour(self):
         from scrapers import films
@@ -499,6 +500,45 @@ class Films(unittest.TestCase):
                                           f'seances:\n  - "{demain} 13:45"\n  - "{demain} 19:45"\nfilm: true\nsource: "a"\n---\n')
             fs = films.regrouper(d)
         self.assertEqual(fs[0]["salles"][0]["heures"], [{"jour": demain, "heures": ["13:45", "19:45"]}])
+
+
+class Critiques(unittest.TestCase):
+    def test_articles_de_film_du_flux(self):
+        from scrapers.sources import presse
+        xml = ('<?xml version="1.0"?><rss><channel>'
+               '<item><title>Cinéma : Le Temps suspendu, un film hongrois à ne pas rater</title><link>https://w/1</link>'
+               '<pubDate>Sun, 01 Nov 2026 10:00:00 +0100</pubDate><description>Critique</description></item>'
+               '<item><title>Le ministre inaugure une route</title><link>https://w/2</link></item>'
+               '</channel></rss>')
+        arts = presse.articles_de_film(xml, {"id": "presse-webdo", "nom": "Webdo"})
+        self.assertEqual(len(arts), 1)
+        self.assertEqual(arts[0]["film"], "Le Temps suspendu")
+        self.assertEqual((arts[0]["source_nom"], arts[0]["date"]), ("Webdo", "2026-11-01"))
+        self.assertEqual(presse.depuis_flux(xml, {"url": "u", "categorie": "autre"}), [])  # pas un événement
+
+    def test_rattache_les_articles_au_bon_film(self):
+        from scrapers.critiques import parle_du_film, rattacher
+        a = lambda titre, film="": {"titre": titre, "film": film, "lien": titre, "source_nom": "Webdo", "date": "2026-11-01"}  # noqa: E731
+        self.assertTrue(parle_du_film(a("Cinéma : Bakma, une comédie tunisienne", "Bakma"), "BAKMA - بكمة"))
+        self.assertTrue(parle_du_film(a("Pourquoi il faut voir Last Chance en salles"), "LAST CHANCE - لص شايح"))
+        self.assertTrue(parle_du_film(a("Le film « Weekend » cartonne"), "WEEKEND"))
+        self.assertFalse(parle_du_film(a("Un weekend de cinéma à Carthage"), "WEEKEND"))  # un seul mot, sans guillemets
+        self.assertFalse(parle_du_film(a("Cinéma : Nahla, premier film de…", "Nahla"), "BAKMA - بكمة"))
+        films = [{"titre": "BAKMA - بكمة"}, {"titre": "Autre film"}]
+        rattacher(films, [a("Cinéma : Bakma, une comédie", "Bakma")])
+        self.assertEqual([x["titre"] for x in films[0]["presse"]], ["Cinéma : Bakma, une comédie"])
+        self.assertEqual(films[1]["presse"], [])
+
+    def test_garder_accumule_et_oublie_les_vieux(self):
+        from scrapers import critiques
+        vieux = (dt.date.today() - dt.timedelta(days=critiques.JOURS_GARDES + 5)).isoformat()
+        aujourd_hui = dt.date.today().isoformat()
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "critiques.json"
+            critiques.garder([{"lien": "a", "date": vieux}, {"lien": "b", "date": aujourd_hui}], f)
+            n = critiques.garder([{"lien": "c", "date": aujourd_hui}], f)
+            self.assertEqual(n, 2)
+            self.assertEqual(sorted(x["lien"] for x in critiques.lire(f)), ["b", "c"])
 
 
 class Conferences(unittest.TestCase):

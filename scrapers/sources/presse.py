@@ -121,6 +121,7 @@ def titre_evenement(titre: str) -> str:
 
 # Un article sur un film (critique, sortie en salles) n'est pas un événement : ses séances viennent des
 # cinémas (doublon sinon). On garde seulement un film montré lors d'un événement précis.
+# L'article sert quand même : il est rattaché aux séances du film (articles_de_film, plus bas).
 _FILM = re.compile(r"\bfilms?\b|cin[ée]ma|en salles?|[àa] l.affiche|\bsortie\b|long.m[ée]trage|documentaire|فيلم|سينما", re.I)
 _SEANCE_UNIQUE = re.compile(r"festival|cin[ée].?club|projection|avant.premi[èe]re|journ[ée]es|r[ée]trospective|cycle|"
                             r"semaine du|nuit du|rencontre|d[ée]bat|مهرجان|نادي السينما|عرض خاص", re.I)
@@ -156,8 +157,19 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
     return res
 
 
+def articles_de_film(xml: str, source: dict) -> list[dict]:
+    """Les articles sur un film (critique, sortie…), pour l'encadré « Ce qu'en dit la presse »
+    des séances de ce film (voir scrapers/critiques.py)."""
+    return [{"titre": a["titre"], "film": titre_evenement(a["titre"]), "lien": a["lien"],
+             "source": source.get("id", ""), "source_nom": source.get("nom", ""), "date": a["date"].isoformat()}
+            for a in _articles(xml) if a["titre"] and a["lien"] and _FILM.search(a["titre"])]
+
+
 def recuperer(source: dict) -> list[Evenement]:
     xml = telecharger(source["url"])
     if not _items(xml):
         raise RuntimeError("flux vide ou illisible")
+    if source.get("genre") == "presse":
+        from .. import critiques
+        critiques.garder(articles_de_film(xml, source))
     return depuis_flux(xml, source)

@@ -54,6 +54,10 @@ L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour de
   Un film à l'affiche est un événement de catégorie cinéma avec `film: true` et une séance par jour
   de projection. `scrapers/films.py` regroupe ensuite les salles de chaque film dans
   `_data/films.json` : le thème Cinéma montre un film (avec son affiche), puis les salles du jour choisi.
+- **Ce qu'en dit la presse** : un article de journal sur un film en salles (critique, sortie) ne devient
+  pas un événement (doublon des séances). Le scraper presse le garde dans `_data/critiques.json`
+  (`scrapers/critiques.py`), et chaque film reçoit les articles qui le nomment : liens sur la fiche
+  du film et encadré « Ce qu'en dit la presse » sur la page de chaque séance.
 - Les programmes publiés en image (Facebook) sont gardés dans `_data/programmes/` et
   `assets/programmes/`, et les films qu'on y lit deviennent des événements.
 - L'état de chaque source (dernier passage, succès, erreur) est noté dans `_data/etat_sources.json`.

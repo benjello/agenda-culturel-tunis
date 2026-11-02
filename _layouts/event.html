@@ -30,6 +30,17 @@ layout: default
     <button type="button" class="partager bouton" data-t="partager_long">↗ Partager</button>
     <button type="button" class="fav bouton" data-t-title="favori" title="Garder en favori">☆</button>
   </p>
+  {%- assign film = nil -%}{%- if page.film %}{% assign film = site.data.films | where_exp: "f", "f.fichiers contains page.path" | first %}{% endif -%}
+  {%- if film.presse.size > 0 %}
+  <aside class="presse-film">
+    <h2 data-t="presse_film">Ce qu'en dit la presse</h2>
+    <ul>
+      {%- for a in film.presse %}
+      <li><a href="{{ a.lien }}" rel="noopener">{{ a.titre }}</a> <small>· {{ a.source_nom }}{% if a.date %}, {% include date-fr.html date=a.date %}{% endif %}</small></li>
+      {%- endfor %}
+    </ul>
+  </aside>
+  {%- endif %}
   {%- capture sujet %}Erreur : {{ page.title | truncate: 80 }}{% endcapture -%}
   <p class="signaler"><a href="{{ site.depot }}/issues/new?template=erreur.yml&title={{ sujet | url_encode }}&lien={{ page.url | absolute_url | url_encode }}" rel="noopener" data-t="signaler">⚑ Signaler une erreur</a>
   {%- if site.contact_email != "" %} · <a href="mailto:{{ site.contact_email }}?subject={{ sujet | url_encode }}&body={{ page.url | absolute_url | url_encode }}" data-t="par_email">par e-mail</a>{% endif %}</p>
