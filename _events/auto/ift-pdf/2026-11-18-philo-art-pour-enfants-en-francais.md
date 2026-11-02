@@ -9,6 +9,6 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 famille: true
 ajoute: "2026-11-01"
-auto: true
 langues: ["fr"]
+auto: true
 ---

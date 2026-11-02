@@ -12,3 +12,5 @@ ajoute: "2026-11-01"
 autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/tete-a-tete-le-0111", "source": "teskerti"}]
 auto: true
 ---
+
+محمد كواصrnMohamed Kouasrnبي أكتور ستوديوrnBe Actor Studio

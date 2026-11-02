@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-01",
    "2026-11-02",
    "2026-11-03",
    "2026-11-04",
@@ -18,25 +17,6 @@
    "2026-11-09"
   ],
   "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/kXEyBm/bakma-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "16:30",
-       "21:00"
-      ]
-     }
-    ]
-   },
    {
     "nom": "Cinéma Alhambra Zéphyr",
     "adresse": "",
@@ -56,51 +36,12 @@
     "heures": []
    },
    {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
-    "lien": "https://tunis.events/fr/cinema/bakma-%D8%A8%D9%83%D9%85%D8%A9",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "13:45",
-       "17:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "13:45",
-       "19:45"
-      ]
-     }
-    ]
-   },
-   {
     "nom": "L'Agora Marsa",
     "adresse": "La Marsa",
     "lien": "https://lagora.tn/produit/bakma/",
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-01",
      "2026-11-02",
      "2026-11-03",
      "2026-11-04",
@@ -110,12 +51,6 @@
      "2026-11-08"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -169,25 +104,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:30",
-       "12:30",
-       "14:00",
-       "15:00",
-       "16:30",
-       "17:30",
-       "19:00",
-       "20:00",
-       "21:30",
-       "22:30"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -204,28 +123,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "10:25",
-       "11:20",
-       "12:55",
-       "13:50",
-       "15:20",
-       "16:15",
-       "17:45",
-       "18:45",
-       "19:30",
-       "20:15",
-       "21:15",
-       "22:00",
-       "22:45"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -236,188 +136,18 @@
     ]
    }
   ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-01-bakma.md",
+   "_events/auto/cine-alhambra/2026-11-02-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-bakma-pathe-azur-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-bakma-pathe-tunis-city.md"
+  ],
   "tunisien": true,
-  "jeune": false
- },
- {
-  "titre": "Weekend",
-  "id": "weekend",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01",
-   "2026-11-02",
-   "2026-11-03",
-   "2026-11-04",
-   "2026-11-05",
-   "2026-11-06",
-   "2026-11-07",
-   "2026-11-08",
-   "2026-11-09"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/8L4ZM8/weekend-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "19:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Cinéma Alhambra Zéphyr",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
-    "source": "cine-alhambra",
-    "source_nom": "Alhambra Zéphyr (La Marsa)",
-    "jours": [
-     "2026-11-02",
-     "2026-11-03",
-     "2026-11-04",
-     "2026-11-05",
-     "2026-11-06",
-     "2026-11-07",
-     "2026-11-08",
-     "2026-11-09"
-    ],
-    "heures": []
-   },
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
-    "lien": "https://tunis.events/events/moEQl8/weekend-cinema-le-colisee",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "15:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-    "lien": "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "15:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/weekend/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-01",
-     "2026-11-07",
-     "2026-11-08"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "19:30"
-      ]
-     },
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "19:15"
-      ]
-     },
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "16:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/weekend",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "12:00",
-       "14:05",
-       "16:15",
-       "18:25",
-       "20:35",
-       "22:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/weekend",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01",
-     "2026-11-02"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:05",
-       "13:15",
-       "15:25",
-       "16:50",
-       "17:35",
-       "19:45",
-       "21:45"
-      ]
-     },
-     {
-      "jour": "2026-11-02",
-      "heures": [
-       "11:05"
-      ]
-     }
-    ]
-   }
-  ],
-  "jeune": false
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Dar El 3ers – دار العرس",
@@ -427,7 +157,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-01",
    "2026-11-02",
    "2026-11-03",
    "2026-11-04",
@@ -457,42 +186,15 @@
     "heures": []
    },
    {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
-    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:30",
-       "19:30"
-      ]
-     }
-    ]
-   },
-   {
     "nom": "Cinéma Le Palace",
     "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
     "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:30",
-       "17:30"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -533,19 +235,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:25",
-       "17:00",
-       "19:45",
-       "22:30"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -553,32 +245,200 @@
       ]
      }
     ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-04-dar-el-3ers.md",
+   "_events/auto/cine-alhambra/2026-11-02-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers-pathe-azur-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "imdb": "tt10569744",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-02",
+   "2026-11-07",
+   "2026-11-08"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-07",
+     "2026-11-08"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "15:00"
+      ]
+     },
+     {
+      "jour": "2026-11-08",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:05"
+      ]
+     }
+    ]
    },
    {
     "nom": "Pathé Tunis City",
     "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3",
+    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01"
+     "2026-11-02"
     ],
     "heures": [
      {
-      "jour": "2026-11-01",
+      "jour": "2026-11-02",
       "heures": [
-       "11:40",
-       "14:25",
-       "17:15",
-       "20:00",
-       "22:45"
+       "10:05"
       ]
      }
     ]
    }
   ],
-  "tunisien": true,
-  "jeune": false
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-le-mystere-lucy-lost-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-le-mystere-lucy-lost.md"
+  ],
+  "wikidata": "Q141827108",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
+ },
+ {
+  "titre": "Weekend",
+  "id": "weekend",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-02",
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/weekend/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-07",
+     "2026-11-08"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-08",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/weekend",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:05"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-01-weekend.md",
+   "_events/auto/cine-alhambra/2026-11-02-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-weekend-pathe-tunis-city.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "LAST CHANCE - لص شايح",
@@ -588,7 +448,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-01",
    "2026-11-02",
    "2026-11-03",
    "2026-11-04",
@@ -634,210 +493,15 @@
       ]
      }
     ]
-   },
-   {
-    "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": []
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "14:50"
-      ]
-     }
-    ]
    }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-02-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-02-evenement.md"
   ],
   "tunisien": true,
-  "jeune": false
- },
- {
-  "titre": "L'île des souvenirs / Forgotten Island",
-  "id": "l-ile-des-souvenirs-forgotten-island",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/LIle-des-Souvenirs.webp",
-  "imdb": "tt36583977",
-  "duree": null,
-  "genres": [
-   "Animation",
-   "Aventure",
-   "Comédie"
-  ],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/lile-des-souvenirs/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "14:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "12:20",
-       "15:15"
-      ]
-     }
-    ]
-   }
-  ],
-  "wikidata": "Q138335503",
-  "age": "",
-  "tunisien": false,
-  "jeune": true
- },
- {
-  "titre": "Le Mystère Lucy Lost",
-  "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
-  "imdb": "tt10569744",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01",
-   "2026-11-02",
-   "2026-11-07",
-   "2026-11-08"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-07",
-     "2026-11-08"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "15:00"
-      ]
-     },
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01",
-     "2026-11-02"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "15:45"
-      ]
-     },
-     {
-      "jour": "2026-11-02",
-      "heures": [
-       "10:05"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01",
-     "2026-11-02"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "17:30"
-      ]
-     },
-     {
-      "jour": "2026-11-02",
-      "heures": [
-       "10:05"
-      ]
-     }
-    ]
-   }
-  ],
-  "wikidata": "Q141827108",
-  "age": "",
-  "tunisien": false,
-  "jeune": false
+  "jeune": false,
+  "presse": []
  },
  {
   "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
@@ -847,28 +511,9 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-01",
    "2026-11-02"
   ],
   "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "14:00"
-      ]
-     }
-    ]
-   },
    {
     "nom": "Pathé Azur City",
     "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
@@ -876,20 +521,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "10:15",
-       "14:15",
-       "16:55",
-       "19:35",
-       "22:15"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -905,23 +539,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:00",
-       "13:40",
-       "16:15",
-       "17:05",
-       "19:00",
-       "19:45",
-       "21:35",
-       "22:25"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -931,8 +551,13 @@
     ]
    }
   ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-01-what-else-pathe-azur-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-01-what-else-pathe-tunis-city.md"
+  ],
   "tunisien": true,
-  "jeune": false
+  "jeune": false,
+  "presse": []
  },
  {
   "titre": "Clayface",
@@ -942,28 +567,9 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-01",
    "2026-11-02"
   ],
   "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/clayface",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "13:20"
-      ]
-     }
-    ]
-   },
    {
     "nom": "Pathé Tunis City",
     "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
@@ -971,16 +577,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "11:05"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -990,10 +589,61 @@
     ]
    }
   ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-01-clayface.md"
+  ],
   "wikidata": "Q131460936",
   "age": "",
   "tunisien": false,
-  "jeune": false
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Clayface est un film de super-héros horrifique américain réalisé par James Watkins, écrit par Mike Flanagan et Hossein Amini et sorti en 2026.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Clayface_(film)"
+ },
+ {
+  "titre": "Ducobu et le fantôme de Saint-Potache",
+  "id": "ducobu-et-le-fantome-de-saint-potache",
+  "image": "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg",
+  "imdb": "tt43622004",
+  "duree": null,
+  "genres": [
+   "Comédie"
+  ],
+  "jours": [
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "10:40"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-01-ducobu-et-le-fantome-de-saint-potache.md"
+  ],
+  "wikidata": "Q140363103",
+  "age": "",
+  "tunisien": false,
+  "jeune": true,
+  "presse": [],
+  "synopsis": "Ducobu et le Fantôme de Saint-Potache est une comédie française réalisée par Élie Semoun et sortie en 2026. Il s'agit du sixième film d'une saga inspirée de la série de bande dessinée belge L'Élève Ducobu de Godi et Zidrou.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Ducobu_et_le_Fant%C3%B4me_de_Saint-Potache"
  },
  {
   "titre": "Klara et le soleil",
@@ -1006,7 +656,6 @@
    "Science-fiction"
   ],
   "jours": [
-   "2026-11-01",
    "2026-11-02"
   ],
   "salles": [
@@ -1017,17 +666,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-01",
      "2026-11-02"
     ],
     "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "10:50",
-       "17:45"
-      ]
-     },
      {
       "jour": "2026-11-02",
       "heures": [
@@ -1035,263 +676,19 @@
       ]
      }
     ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "14:40"
-      ]
-     }
-    ]
    }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-01-klara-et-le-soleil.md"
   ],
   "wikidata": "Q124409386",
   "age": "",
   "tunisien": false,
-  "jeune": false
- },
- {
-  "titre": "Le fantôme de l’opéra",
-  "id": "le-fantome-de-lopera",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-fantome-de-lopera.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/le-fantome-de-lopera/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "17:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/le-fantome-de-lopera",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "12:05",
-       "19:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "jeune": false
- },
- {
-  "titre": "Shaun le Mouton : La Bêêête d'Halloween",
-  "id": "shaun-le-mouton-la-beeete-d-halloween",
-  "image": "https://api.tunis.events/storage/scraped/de3c2e9090785e4e297a19012f69a309.jpeg",
-  "imdb": "",
-  "duree": null,
-  "genres": [
-   "Animation"
-  ],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "12:55"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "13:25"
-      ]
-     }
-    ]
-   }
-  ],
-  "jeune": true
- },
- {
-  "titre": "Wala Kan Ala El Bal / ولا كان عالبال",
-  "id": "wala-kan-ala-el-bal",
-  "image": "https://api.tunis.events/storage/scraped/ee61c30ef50672548dff065a8d16ec33.jpg",
-  "imdb": "tt43634235",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01",
-   "2026-11-02"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
-    "lien": "https://tunis.events/fr/cinema/klvQn3",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-02"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-02",
-      "heures": [
-       "11:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "20:15",
-       "22:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "wikidata": "Q141819066",
-  "age": "",
-  "tunisien": true,
-  "jeune": false
- },
- {
-  "titre": "Ducobu et le fantôme de Saint-Potache",
-  "id": "ducobu-et-le-fantome-de-saint-potache",
-  "image": "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg",
-  "imdb": "tt43622004",
-  "duree": null,
-  "genres": [
-   "Comédie"
-  ],
-  "jours": [
-   "2026-11-01",
-   "2026-11-02"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01",
-     "2026-11-02"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "10:20"
-      ]
-     },
-     {
-      "jour": "2026-11-02",
-      "heures": [
-       "10:40"
-      ]
-     }
-    ]
-   }
-  ],
-  "wikidata": "Q140363103",
-  "age": "",
-  "tunisien": false,
-  "jeune": true
- },
- {
-  "titre": "Le Maître du kabuki",
-  "id": "le-maitre-du-kabuki",
-  "image": "assets/programmes/cine-360/ed1d5b6e62ca.jpg",
-  "imdb": "tt35231039",
-  "duree": null,
-  "genres": [
-   "Drame"
-  ],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "Ciné 350 (Cité de la Culture)",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100057029246724/posts/1654998313077794",
-    "source": "cine-360",
-    "source_nom": "Ciné 350",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": []
-   }
-  ],
-  "wikidata": "Q134906322",
-  "age": "Tous publics",
-  "tunisien": false,
-  "jeune": false
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Klara et le Soleil est un film de science-fiction américano-britannico-néo-zélandais co-écrit et réalisé par Taika Waititi, sorti en 2026.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)"
  },
  {
   "titre": "Le Temps suspendu",
@@ -1323,7 +720,21 @@
     ]
    }
   ],
-  "jeune": false
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md"
+  ],
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "Cinéma : Le Temps suspendu, un film hongrois à ne pas rater",
+    "lien": "https://www.webdo.tn/fr/actualite/culture/cinema-le-temps-suspendu-un-film-hongrois-a-ne-pas-rater/406394/",
+    "source_nom": "Webdo",
+    "date": "2026-11-01"
+   }
+  ],
+  "synopsis": "Début des années soixante. Dans un lycée de Budapest, le jeune Dénes est tourmenté et renfermé. Il refuse même les avances de Magda qui pourtant lui plaît. Pendant l’Insurrection de Budapest de 1956, son père a combattu contre les chars russes les armes à la main, puis il a dû fuir clandestinement à l’étranger.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Les misérables",
@@ -1364,69 +775,14 @@
     ]
    }
   ],
-  "jeune": false
- },
- {
-  "titre": "Mochy",
-  "id": "mochy",
-  "image": "https://tunis.events/storage/85feea561689dcc48c66219765483e17.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-01"
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-05-les-miserables.md"
   ],
-  "salles": [
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
-    "lien": "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": []
-   }
-  ],
-  "jeune": false
- },
- {
-  "titre": "Other Mommy / Malfaisante",
-  "id": "other-mommy-malfaisante",
-  "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
-  "imdb": "tt36586020",
-  "duree": null,
-  "genres": [
-   "Horreur"
-  ],
-  "jours": [
-   "2026-11-01"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-01"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-01",
-      "heures": [
-       "21:55"
-      ]
-     }
-    ]
-   }
-  ],
-  "wikidata": "Q134588273",
-  "age": "-12",
-  "tunisien": false,
-  "jeune": false
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Venant en aide à Fantine, une ouvrière mourante, il promet de sauver sa fille, Cosette, des griffes des cruels Thénardier.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Van Gogh",
@@ -1458,7 +814,14 @@
     ]
    }
   ],
-  "jeune": false
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-18-van-gogh.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Après son internement à l’asile, Vincent Van Gogh s’installe à Auvers-sur-Oise chez le docteur Gachet, amateur d’art. Les derniers jours du peintre, sont marqués par les relations conflictuelles qu’il entretient avec son frère Théo, et sa santé mentale vacillante.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Verity",
@@ -1494,9 +857,55 @@
     ]
    }
   ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-08-verity.md"
+  ],
   "wikidata": "Q131523413",
   "age": "",
   "tunisien": false,
-  "jeune": false
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Verity est film américain réalisé par Michael Showalter et sorti en 2026. Il s'agit d'une adaptation du roman du même nom de Colleen Hoover.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Verity_(film)"
+ },
+ {
+  "titre": "Wala Kan Ala El Bal - ولا كان عالبال",
+  "id": "wala-kan-ala-el-bal",
+  "image": "https://api.tunis.events/storage/6f10bb992d3cee872754d261e65e6c496.jpg",
+  "imdb": "tt43634235",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-02"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/klvQn3",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-02",
+      "heures": [
+       "11:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-02-wala-kan-ala-el-bal.md"
+  ],
+  "wikidata": "Q141819066",
+  "age": "",
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
  }
 ]

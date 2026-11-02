@@ -10,3 +10,5 @@ source_name: "La Presse (culture)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Inaugurée, le 24 octobre, à Kechlet El Attarine, ancienne caserne militaire ottomane du XIXe siècle située au cœur de la Médina de Tunis, dont une partie

@@ -14,3 +14,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Dar El 3ers - دار العرس au cinéma : 38 séances cette semaine à Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colisée et L'Agora Marsa. Prochaine séance lun. 2 nov. à 10:00. .

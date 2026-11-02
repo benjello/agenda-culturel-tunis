@@ -1,0 +1,102 @@
+{
+ "images": {
+  "artiste:anouar-brahem": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Anouar_Brahem_(01).JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anouar_Brahem_(01).JPG?width=400",
+   "qid": "Q548428"
+  },
+  "artiste:azza-filali": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Azza_Filali.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Azza_Filali.jpg?width=400",
+   "qid": "Q794425"
+  },
+  "artiste:dhafer-youssef": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Dhafer_Youssef_(223157).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhafer_Youssef_(223157).jpg?width=400",
+   "qid": "Q957007"
+  },
+  "artiste:emel-mathlouthi": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg?width=400",
+   "qid": "Q469256"
+  },
+  "artiste:fadhel-jaziri": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Fadhel_Jaziri.JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fadhel_Jaziri.JPG?width=400",
+   "qid": "Q3064377"
+  },
+  "artiste:ghalia-benali": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Ghalia_Ben_Ali.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghalia_Ben_Ali.jpg?width=400",
+   "qid": "Q2777889"
+  },
+  "artiste:lotfi-bouchnak": {
+   "credit": "https://commons.wikimedia.org/wiki/File:LotfiBouchnak.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LotfiBouchnak.jpg?width=400",
+   "qid": "Q3259988"
+  }
+ },
+ "osm": {},
+ "vu": {
+  "artiste:abdelhamid-largueche": "2026-11-02",
+  "artiste:adema": "2026-11-02",
+  "artiste:ahmed-touj": "2026-11-02",
+  "artiste:alexander-skancke": "2026-11-02",
+  "artiste:aline-umber": "2026-11-02",
+  "artiste:always-late": "2026-11-02",
+  "artiste:amin": "2026-11-02",
+  "artiste:amina-hanini": "2026-11-02",
+  "artiste:anouar-brahem": "2026-11-02",
+  "artiste:atef": "2026-11-02",
+  "artiste:automatic-writing": "2026-11-02",
+  "artiste:azza-filali": "2026-11-02",
+  "artiste:baban": "2026-11-02",
+  "artiste:baloo": "2026-11-02",
+  "artiste:bendir-man": "2026-11-02",
+  "artiste:bila": "2026-11-02",
+  "artiste:bochra-taboubi": "2026-11-02",
+  "artiste:cabanne": "2026-11-02",
+  "artiste:cap": "2026-11-02",
+  "artiste:chedy": "2026-11-02",
+  "artiste:cristi-cons": "2026-11-02",
+  "artiste:daox": "2026-11-02",
+  "artiste:dhafer-youssef": "2026-11-02",
+  "artiste:dj-senc": "2026-11-02",
+  "artiste:elena-moroder": "2026-11-02",
+  "artiste:elise-jilian": "2026-11-02",
+  "artiste:emel-mathlouthi": "2026-11-02",
+  "artiste:emine-2": "2026-11-02",
+  "artiste:fadhel-jaziri": "2026-11-02",
+  "artiste:familia-productions": "2026-11-02",
+  "artiste:fares-a": "2026-11-02",
+  "artiste:foehn-jerome": "2026-11-02",
+  "artiste:formiq": "2026-11-02",
+  "artiste:ghalia-benali": "2026-11-02",
+  "artiste:gojnea76": "2026-11-02",
+  "artiste:gusik": "2026-11-02",
+  "artiste:hafida-ben-rejeb-latta": "2026-11-02",
+  "artiste:hamdi-ryder": "2026-11-02",
+  "artiste:harrison-guyett": "2026-11-02",
+  "artiste:hearthug": "2026-11-02",
+  "artiste:hitsh": "2026-11-02",
+  "artiste:houz": "2026-11-02",
+  "artiste:hugo-martinez": "2026-11-02",
+  "artiste:ion-ludwig": "2026-11-02",
+  "artiste:james-creed": "2026-11-02",
+  "artiste:jonn": "2026-11-02",
+  "artiste:kby": "2026-11-02",
+  "artiste:kian-ok": "2026-11-02",
+  "artiste:krol": "2026-11-02",
+  "artiste:lil-jack": "2026-11-02",
+  "artiste:lotfi-bouchnak": "2026-11-02",
+  "artiste:lotfi-mlayah": "2026-11-02",
+  "artiste:lowris": "2026-11-02",
+  "artiste:maher-daniel": "2026-11-02",
+  "artiste:maiora": "2026-11-02",
+  "artiste:majid": "2026-11-02",
+  "artiste:maks": "2026-11-02",
+  "artiste:manon": "2026-11-02",
+  "artiste:markus-nikolai": "2026-11-02",
+  "artiste:mihnea-rog": "2026-11-02"
+ }
+}

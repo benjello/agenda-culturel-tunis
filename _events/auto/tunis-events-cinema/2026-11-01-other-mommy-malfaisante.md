@@ -13,3 +13,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Puis-je entrer dans ton cœur? Par le producteur James Wan, l’un des artistes les plus influents du cinéma d’horreur moderne, et Blumhouse Atomic Monster, le studio à l’origine de Backrooms et Obsession, vous invite à un voyage terrifiant signé par le réalisateur de genre et révélation Rob Savage.

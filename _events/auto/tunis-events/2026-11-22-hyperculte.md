@@ -13,3 +13,5 @@ image: "https://tunis.events/storage/25655a577b15876786499182b51b53e7.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. The duo creates a trance-like blend of disco, pop, krautrock, punk, and post-rock.

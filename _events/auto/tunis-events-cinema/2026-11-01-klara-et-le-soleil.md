@@ -15,3 +15,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Klara et le soleil au cinéma : 8 séances cette semaine à Pathé Azur City, Pathé Mall of Sousse et Pathé Tunis City. Prochaine séance lun. 2 nov. à 10:50.

@@ -11,3 +11,5 @@ source_name: "IRMC (Institut de recherche sur le Maghreb contemporain)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+L’Université de La Manouba organise, du 3 au 5 décembre 2026, la 13 ème édition de son symposium international interdisciplinaire, dédiée cette année au binôme Incertitudes/Certitudes.

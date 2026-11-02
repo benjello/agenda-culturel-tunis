@@ -13,3 +13,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Wala Kan Ala El Bal - ولا كان عالبال au cinéma : 2 séances cette semaine à Le Colisée. Prochaine séance lun. 2 nov. à 11:30. ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a...

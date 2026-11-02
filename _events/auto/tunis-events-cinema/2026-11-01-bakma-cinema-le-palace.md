@@ -14,3 +14,8 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+BAKMA (2026)
+Réalisateur : Abdelhamid Bouchnak
+Genre : Horreur
+Durée : 117 min

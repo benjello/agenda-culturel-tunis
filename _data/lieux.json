@@ -7,10 +7,8 @@
   "El Teatro": "el-teatro",
   "El Teatro التياترو": "el-teatro",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
-  "Médiathèque de l'Institut français de Tunisie": "mediatheque-institut-francais-de-tunis",
   "Médiathèque de l'ift_tunisie": "mediatheque-institut-francais-de-tunis",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
-  "L'art rue": "l-art-rue",
   "Jardin, Institut français de Sfax": "jardin-institut-francais-de-sfax",
   "Institut français de Sfax": "institut-francais-de-sfax",
   "Institut Français de Tunis": "institut-francais-de-tunis",
@@ -55,7 +53,7 @@
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 23
+   "n": 22
   },
   {
    "slug": "lagora-la-marsa",
@@ -223,14 +221,6 @@
    "ville": "tunis",
    "lat": 36.84767,
    "lon": 10.18839,
-   "n": 1
-  },
-  {
-   "slug": "l-art-rue",
-   "nom": "L'art rue",
-   "ville": "tunis",
-   "lat": 36.80742,
-   "lon": 10.16617,
    "n": 1
   },
   {

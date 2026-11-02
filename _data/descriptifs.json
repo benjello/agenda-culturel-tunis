@@ -1,8 +1,573 @@
 {
  "festivals": {},
- "films": {},
- "lieux": {},
+ "films": {
+  "bakma": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "clayface": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Clayface est un film de super-héros horrifique américain réalisé par James Watkins, écrit par Mike Flanagan et Hossein Amini et sorti en 2026.",
+   "url": "https://fr.wikipedia.org/wiki/Clayface_(film)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "dar-el-3ers": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "ducobu-et-le-fantome-de-saint-potache": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Ducobu et le Fantôme de Saint-Potache est une comédie française réalisée par Élie Semoun et sortie en 2026. Il s'agit du sixième film d'une saga inspirée de la série de bande dessinée belge L'Élève Ducobu de Godi et Zidrou.",
+   "url": "https://fr.wikipedia.org/wiki/Ducobu_et_le_Fant%C3%B4me_de_Saint-Potache",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "klara-et-le-soleil": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Klara et le Soleil est un film de science-fiction américano-britannico-néo-zélandais co-écrit et réalisé par Taika Waititi, sorti en 2026.",
+   "url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "last-chance": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "le-mystere-lucy-lost": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+   "url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "le-temps-suspendu": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "les-miserables": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "van-gogh": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "verity": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Verity est film américain réalisé par Michael Showalter et sorti en 2026. Il s'agit d'une adaptation du roman du même nom de Colleen Hoover.",
+   "url": "https://fr.wikipedia.org/wiki/Verity_(film)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "wala-kan-ala-el-bal": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "weekend": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "what-else": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  }
+ },
+ "lieux": {
+  "cinema-le-palace": {
+   "source": "Wikipédia",
+   "texte": "Le cinéma Le Palace, anciennement appelé Politeama Rossini ou Rossini Palace, est un bâtiment tunisien situé sur l'avenue Habib-Bourguiba à Tunis. Il sert de nos jours de salle de cinéma.",
+   "url": "https://fr.wikipedia.org/wiki/Cin%C3%A9ma_Le_Palace_(Tunis)"
+  },
+  "douz": {
+   "source": "Wikipédia",
+   "texte": "Douz est une ville du sud de la Tunisie connue comme la « porte du Sahara ».",
+   "url": "https://fr.wikipedia.org/wiki/Douz"
+  },
+  "el-teatro": {
+   "source": "Wikipédia",
+   "texte": "El Teatro est un théâtre privé tunisien — le premier du pays — situé à Tunis, dans une aile de l'hôtel El Mechtel.",
+   "url": "https://fr.wikipedia.org/wiki/El_Teatro"
+  },
+  "institut-francais-de-tunis": {
+   "source": "Wikipédia",
+   "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
+   "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie"
+  }
+ },
  "musees": {},
- "pages": {},
- "recherches": {}
+ "pages": {
+  "https://billetterie.elteatrotunis.com/fr/programme/fuite": {
+   "texte": "محمد البركاتيrnMohamed Baraketirnمسرح بيكولو ببنزرتrnThéâtre Piccolo-Bizerte",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/hamlet_comedie_de_la_mort": {
+   "texte": "خبيب العياريrnKhoubaib Ayarirnشركة أرسطو فانيس للإنتاج والتوزيع الفنيrnAristophanes Production et Distribution Artistique",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/laps_de_temps": {
+   "texte": "حمزة الورتتانيrnHamza Ouertatenirnحنبعل للإنتاجrnHannibal-Prod",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/le_fou": {
+   "texte": "Besoin d’une voix nous poussant vers notre Humanité, vers la Clémence...rnUne voix s’élevant au-dessus de l’autoritarisme, de l’exclusion...rnUne voix prophétique, une voix spirituelle...rnLa voix d’un Fou...rnLa voix de Gibran...",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/testosterone": {
+   "texte": "سيرين قنونrnCyrine Gannounrnمسرح الحمراءrnThéâtre El Hamra",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/tete_a_tete": {
+   "texte": "محمد كواصrnMohamed Kouasrnبي أكتور ستوديوrnBe Actor Studio",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://billetterie.elteatrotunis.com/fr/programme/une_nuit_dautomne": {
+   "texte": "محمد البرهوميrnMohamed Barhoumirnوهرة للإنتاجrnWahra-Prod",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://irmcmaghreb.org/13eme-symposium-de-luma-incertitudes-certitudes/": {
+   "texte": "L’Université de La Manouba organise, du 3 au 5 décembre 2026, la 13 ème édition de son symposium international interdisciplinaire, dédiée cette année au binôme Incertitudes/Certitudes.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/brouva": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/cloche": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/e-fest": {
+   "texte": "L’accès au Ksar pour visiter le village du festival et participer aux activités de jour est entièrement gratuit. La billetterie concerne essentiellement l’accès aux concerts de la Main Stage et les Afters à l’hôtel Dakyanus.\nOptions de prix libre au choix, payer ce que vous pouvez/voulez :\nAvec la première édition d’E-FEST Camp en Avril 2025, nous faisions le pari d'un retour.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/fuite": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/hamlet": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/la-chaussure": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/laps-de-temps-le-0311": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/mirage-le-0211": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/mort-express-le-411": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/nouma-le-0611": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/tchaika": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/testosterones-le-511": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/tete-a-tete-le-0111": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/une-nuit-dautomne": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/31vlP8/undertow-contre-courant-b7l9-art-centre": {
+   "texte": "Contre ; Courant (Undertow) fait référence aux flux de l'eau sous la surface, se déplaçant dans la direction opposée à celle perceptible en surface. Tandis qu'une navigation suit le sens du courant, les contre-courants, les marées montantes et les flots de retours sont autant de dangers potentiels pour le voyage.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/3DRYdk/yoga-for-busy-minds-with-judit-yoga_in_sidibousaid-sociale-sidi-bou-said": {
+   "texte": "This class combines Hatha and Yin yoga, beginning with Hatha to gently open the body before transitioning into restorative Yin postures. The practice takes an intuitive approach, adapting to the energy of the group, and includes demonstrations and hands-on guidance in an intimate setting. Rather than focusing on fitness, the emphasis is on healing, balance, and developing intuition.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/3G2Prm/listening-session-screening-live-performance-b7l9-art-centre": {
+   "texte": "Roads to Sintīr\nTania Feghali\nFirst look at the work in progress\nRoads to Sintīr is a long-term film and sound research project by Tania Feghali, following the traces of an “endless sound” that keeps resurfacing across forms, instruments and geographies, while being profoundly and subtly connected to a place in us that remains untouched across time and space.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/3jQ5Ym/movie-night-la-belle-et-la-meute-sociale-sidi-bou-said": {
+   "texte": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/3xOGGm/what-else-cinemadart": {
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/85Vwek/power-yoga-with-nicole-skarpness-nskarp-sociale": {
+   "texte": "-A dynamic, grounding flow to reconnect with your body after breaking fast offering a perfect balance of strength, breath, and movement in a calm night setting.\nLevel: Intermediate and Advanced\nComplimentary mats, tea and snacks available and access to rooftop after the session!\nTickets are refundable only up to 24 hours before the scheduled event.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/8L4ZM8/weekend-cinemadart": {
+   "texte": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace": {
+   "texte": "WEEKEND (2026)\nSynopsis\nفيلم يجمع بين الغموض والتشويق والتحقيق بطولة: محمد علي بن جمعة ،سميرة مقرون ،نسيم زيادية، مريم بوقدّيدة ،خليل العبدولي ، بلقيس القصوري ، علي دقدوق ،ملاك حيدوسي، رفيق العوي و صبري البوهالي إخراج مطيع ال��ريدي و انتاج الفاضل بن عمار توزيع مجمع القوبنطيني",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/8vq6N3/a-coeur-ouvert-lartisto-theatre-et-cinema": {
+   "texte": "rt | بقلب مفتوح\nما بين التخدير والحلم …بين العطل والإصلاح … بين الواقع و الخيال ، يقف القلب عاجزا عن فهم عبثية هذا الواقع حيث يصبح الاحساس نفسه شيئًا قابلاً للفحص، والتفكيك، وربما… للاستبدال .",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/8vqaK3/jaou-tunis-26-full-fest-access-tunis": {
+   "texte": "Programmation :\nhttps://jaou.tunis.events\nhttps://jaou.tn/",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/k4bdE3/becoming-the-ocean-bim26-caserne-el-attarine": {
+   "texte": "Co-produced by the Centre d'Art Contemporain Genève and the Kamel Lazaar Foundation, BIM'26 is a dedicated platform for moving image that seeks to establish a sustained space for artistic production, critical inquiry, and transregional dialogue across the Global Majority.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kQn7qm/movie-night-regarde-moi-sociale-sidi-bou-said": {
+   "texte": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nREGARDE MOIDirector: Nejib Belkadhi1h 36mVOSTFR",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee": {
+   "texte": "دار العرس\nRéalisateur : Heifel Ben Youssef\nDurée : 135 min",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kVy7Q8/labes-selim-ben-safia-salle-des-jeunes-createurs-cite-de-la-culture": {
+   "texte": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kXEyBm/bakma-cinemadart": {
+   "texte": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee": {
+   "texte": "Mochy (2026)\nRéalisateur : Jérémie Degruson\nGenre : Aventure, Animation, Comédie, Familial\nDurée : 84 min\nSynopsis\nMochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/klvgE3/hyperculte-b7l9-art-centre": {
+   "texte": "Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. The duo creates a trance-like blend of disco, pop, krautrock, punk, and post-rock.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/krn29k/images-de-syrie-palmyre-alep-damas-michel-eisenlohr-institut-francais-de-tunis": {
+   "texte": "Exposition photographique de Michel Eisenlohr. Vernissage le 27 octobre à 18h00. Entrée libre.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/mZrNZm/leffet-papillon-lartisto-theatre-et-cinema": {
+   "texte": "يدخل صانع محتوى مكاناً مهجوراً ليبث مغامرة مباشرة، فيتصادم مع مجموعة من أطفال الشوارع، لتتحول المغامرة إلى صدام بين زيف العالم الافتراضي وقسوة الواقع الهامش",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/mnMOgk/zyoland-grafiflow-v7jh6j7": {
+   "texte": "ZYOLAND — Là où les livres prennent vie\nEt si votre enfant entrait dans un livre pour devenir le héros de sa propre aventure ?\nZYOLAND invite les enfants à explorer des décors immersifs où les histoires se vivent à travers des énigmes, des défis et des expériences à partager. Observer, chercher, imaginer et faire équipe : chaque découverte les fait avancer dans l’aventure !",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/moEQl8/weekend-cinema-le-colisee": {
+   "texte": "WEEKEND\nSynopsis\nفيلم يجمع بين الغموض والتشويق والتحقيق بطولة: محمد علي بن جمعة ،سميرة مقرون ،نسيم زيادية، مريم بوقدّيدة ،خليل العبدولي ، بلقيس القصوري ، علي دقدوق ،ملاك حيدوسي، رفيق العوي و صبري البوهالي إخراج مطيع الدريدي و انتاج الفاضل بن عمار توزيع مجمع القوبنطيني",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/moEXl8/movie-night-un-fils-sociale-sidi-bou-said": {
+   "texte": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nUN FILSDirector: Mehdi Barsaoui1h 35mVOSTFR",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace": {
+   "texte": "BAKMA (2026)\nRéalisateur : Abdelhamid Bouchnak\nGenre : Horreur\nDurée : 117 min",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD": {
+   "texte": "لص شايح au cinéma : 4 séances cette semaine à Le Colisée, Pathé Tunis City et Le Palace. Prochaine séance lun. 2 nov. à 10:00. .",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/bakma": {
+   "texte": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/bakma-%D8%A8%D9%83%D9%85%D8%A9": {
+   "texte": "1 h 57 · Horreur · de Abdelhamid Bouchnak · avec Aziz Jebali, Hedy Krissane, Mounira Zakraoui, Mahmoud Essaidi",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/clayface": {
+   "texte": "L'ascension fulgurante de Matt Hagen, de gamin des rues de Gotham à star hollywoodienne, est brutalement interrompue lorsqu'un baron du crime le laisse atrocement défiguré. Abandonné de tous et n'ayant plus rien à perdre, Matt se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3": {
+   "texte": "Dar El 3ers - دار العرس au cinéma : 38 séances cette semaine à Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colisée et L'Agora Marsa. Prochaine séance lun. 2 nov. à 10:00. .",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache": {
+   "texte": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le fantôme d’Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache. Ce fantôme farceur va entraîner Ducobu, Léonie, leurs parents et Kitrish dans une série de péripéties aussi drôles qu’inattendues.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/klara-et-le-soleil": {
+   "texte": "Klara et le soleil au cinéma : 8 séances cette semaine à Pathé Azur City, Pathé Mall of Sousse et Pathé Tunis City. Prochaine séance lun. 2 nov. à 10:50.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/klvQn3": {
+   "texte": "Wala Kan Ala El Bal - ولا كان عالبال au cinéma : 2 séances cette semaine à Le Colisée. Prochaine séance lun. 2 nov. à 11:30. ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a...",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/le-fantome-de-lopera": {
+   "texte": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra Garnier. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/le-mystere-lucy-lost": {
+   "texte": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/lile-des-souvenirs": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island": {
+   "texte": "Alors qu’elles fêtent leur dernière soirée ensemble, les deux jeunes filles tombent sur un portail mystérieux qui les transporte sur l’île fantastique de Nakali, peuplée de créatures magiques tout droit sorties des contes mythologiques Philippins de leur enfance. Ensemble les filles vont s’allier à certaines d’entre elles, tandis qu’elles devront en affronter d’autres.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/other-mommy-malfaisante": {
+   "texte": "Puis-je entrer dans ton cœur? Par le producteur James Wan, l’un des artistes les plus influents du cinéma d’horreur moderne, et Blumhouse Atomic Monster, le studio à l’origine de Backrooms et Obsession, vous invite à un voyage terrifiant signé par le réalisateur de genre et révélation Rob Savage.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween": {
+   "texte": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/wala-kan-ala-el-bal-%D9%88%D9%84%D8%A7-%D9%83%D8%A7%D9%86-%D8%B9%D8%A7%D9%84%D8%A8%D8%A7%D9%84": {
+   "texte": "ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a wealthy businessman: win over his daughter and help her move on from her ex. But a case of mistaken identity turns the plan upside down, sending Hassan on an unexpected adventure and into a love story he never saw coming.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/weekend": {
+   "texte": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWEEKENDSynopsisفيلم يجمع بين الغموض والتشويق والتحقيق بطولة: محمد علي بن جمعة ،سميرة مقرون ،نسيم زيادية، مريم بوقدّيدة ،خليل العبدولي ، بلقيس القصوري ، علي دقدوق ،ملاك حيدوسي، رفيق العوي و صبري البوهالي إخراج مطيع الدريدي و انتاج الفاضل بن عمار توزيع مجمع القوبنطيني",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7": {
+   "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://www.beitalhikma.tn/%d9%85%d8%a7%d8%a6%d8%af%d8%a9-%d9%85%d8%b3%d8%aa%d8%af%d9%8a%d8%b1%d8%a9-%d8%ad%d9%88%d9%84-%d8%a7%d9%84%d8%a8%d8%ad%d8%b1-%d8%a7%d9%84%d8%a3%d8%a8%d9%8a%d8%b6-%d8%a7%d9%84%d9%85%d8%aa%d9%88%d8%b3-2/": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://www.beitalhikma.tn/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a9-%d8%aa%d8%ad%d9%88%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%a3%d8%ab%d8%b1%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b1%d8%a7/": {
+   "texte": "الملخص تتناول هذه المحاضرة التحولات التي شهدتها الكتابة الأثرية والتراثية في تونس منذ أواخر القرن التاسع عشر إلى اليوم، من خلال تتبع تطور مناهج البحث وإشكالياته، […]",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://www.lapresse.tn/2026/10/29/foire-nationale-du-livre-tunisien-traduire-transmettre-et-penser-le-savoir-en-arabe/": {
+   "texte": "Deux colloques ont mis en lumière les enjeux de la traduction littéraire et spécialisée, entre circulation des œuvres, transmission des héritages et",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://www.lapresse.tn/2026/10/30/saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-les-contours-de-lidentite-tunisienne/": {
+   "texte": "Les toiles de Jellal Ben Abdallah s’entrelacent avec celles d’artistes de différentes générations, tissant ensemble les fils d’une même histoire : celle",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/": {
+   "texte": "Inaugurée, le 24 octobre, à Kechlet El Attarine, ancienne caserne militaire ottomane du XIXe siècle située au cœur de la Médina de Tunis, dont une partie",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  }
+ },
+ "recherches": {
+  "lieux:agorgi-gallery-sidi-bou-said": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:auditorium-institut-francais-de-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:b7l9-art-centre": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:beit-al-hikma-carthage": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:caserne-el-attarine": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cine-350-cite-de-la-culture": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cinema-alhambra-zephyr": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cinema-le-colisee": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cinema-le-palace": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le cinéma Le Palace, anciennement appelé Politeama Rossini ou Rossini Palace, est un bâtiment tunisien situé sur l'avenue Habib-Bourguiba à Tunis. Il sert de nos jours de salle de cinéma.",
+   "url": "https://fr.wikipedia.org/wiki/Cin%C3%A9ma_Le_Palace_(Tunis)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cinemadart": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:cite-des-sciences-de-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:douz": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Douz est une ville du sud de la Tunisie connue comme la « porte du Sahara ».",
+   "url": "https://fr.wikipedia.org/wiki/Douz",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:el-teatro": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "El Teatro est un théâtre privé tunisien — le premier du pays — situé à Tunis, dans une aile de l'hôtel El Mechtel.",
+   "url": "https://fr.wikipedia.org/wiki/El_Teatro",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:evenement": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:galerie-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:galerie-tgm": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:grafiflow": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:institut-francais-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:institut-francais-de-tunis": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
+   "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:jardin-institut-francais-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:ksar-el-farch": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:la-boite": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:lagora-la-marsa": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:mediatheque-institut-francais-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:mediatheque-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  }
+ }
 }

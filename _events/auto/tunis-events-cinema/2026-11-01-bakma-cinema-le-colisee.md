@@ -14,3 +14,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+1 h 57 · Horreur · de Abdelhamid Bouchnak · avec Aziz Jebali, Hedy Krissane, Mounira Zakraoui, Mahmoud Essaidi

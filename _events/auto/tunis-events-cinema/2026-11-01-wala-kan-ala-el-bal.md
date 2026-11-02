@@ -14,3 +14,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a wealthy businessman: win over his daughter and help her move on from her ex. But a case of mistaken identity turns the plan upside down, sending Hassan on an unexpected adventure and into a love story he never saw coming.

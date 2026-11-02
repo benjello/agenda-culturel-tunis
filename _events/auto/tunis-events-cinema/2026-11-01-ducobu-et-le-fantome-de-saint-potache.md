@@ -15,3 +15,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le fantôme d’Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache. Ce fantôme farceur va entraîner Ducobu, Léonie, leurs parents et Kitrish dans une série de péripéties aussi drôles qu’inattendues.

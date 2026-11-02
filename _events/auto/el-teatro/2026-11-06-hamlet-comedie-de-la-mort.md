@@ -12,3 +12,5 @@ ajoute: "2026-11-01"
 autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/hamlet", "source": "teskerti"}]
 auto: true
 ---
+
+خبيب العياريrnKhoubaib Ayarirnشركة أرسطو فانيس للإنتاج والتوزيع الفنيrnAristophanes Production et Distribution Artistique

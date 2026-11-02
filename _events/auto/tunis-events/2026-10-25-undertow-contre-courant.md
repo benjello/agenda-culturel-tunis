@@ -13,3 +13,5 @@ image: "https://api.tunis.events/storage/0b379c8882b9fedf74c6eab19d30c45e.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Contre ; Courant (Undertow) fait référence aux flux de l'eau sous la surface, se déplaçant dans la direction opposée à celle perceptible en surface. Tandis qu'une navigation suit le sens du courant, les contre-courants, les marées montantes et les flots de retours sont autant de dangers potentiels pour le voyage.

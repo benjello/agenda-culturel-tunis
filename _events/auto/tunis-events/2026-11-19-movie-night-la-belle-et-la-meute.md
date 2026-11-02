@@ -13,3 +13,7 @@ image: "https://tunis.events/storage/a9a8780a69ef2a101f314f100390132380.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+. ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun
+Tickets are 20 DT and include popcorn and refreshments.
+LA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR

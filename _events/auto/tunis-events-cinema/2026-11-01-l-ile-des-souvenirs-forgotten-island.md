@@ -14,3 +14,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Alors qu’elles fêtent leur dernière soirée ensemble, les deux jeunes filles tombent sur un portail mystérieux qui les transporte sur l’île fantastique de Nakali, peuplée de créatures magiques tout droit sorties des contes mythologiques Philippins de leur enfance. Ensemble les filles vont s’allier à certaines d’entre elles, tandis qu’elles devront en affronter d’autres.

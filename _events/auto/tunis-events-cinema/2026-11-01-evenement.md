@@ -13,3 +13,5 @@ film: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+لص شايح au cinéma : 4 séances cette semaine à Le Colisée, Pathé Tunis City et Le Palace. Prochaine séance lun. 2 nov. à 10:00. .

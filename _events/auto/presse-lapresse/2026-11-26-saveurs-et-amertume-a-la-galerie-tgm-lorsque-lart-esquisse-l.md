@@ -10,3 +10,5 @@ source_name: "La Presse (culture)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Les toiles de Jellal Ben Abdallah s’entrelacent avec celles d’artistes de différentes générations, tissant ensemble les fils d’une même histoire : celle

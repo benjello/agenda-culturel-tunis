@@ -13,3 +13,5 @@ image: "https://api.tunis.events/storage/010c4dceaee978a9d491b9e7106c5fb211.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Exposition photographique de Michel Eisenlohr. Vernissage le 27 octobre à 18h00. Entrée libre.

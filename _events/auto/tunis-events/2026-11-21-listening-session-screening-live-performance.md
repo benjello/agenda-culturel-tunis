@@ -12,3 +12,8 @@ image: "https://tunis.events/storage/12b39edf8291e83832e28e7bc2fe4ee8.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Roads to Sintīr
+Tania Feghali
+First look at the work in progress
+Roads to Sintīr is a long-term film and sound research project by Tania Feghali, following the traces of an “endless sound” that keeps resurfacing across forms, instruments and geographies, while being profoundly and subtly connected to a place in us that remains untouched across time and space.

@@ -13,3 +13,5 @@ image: "https://tunis.events/storage/82ebca273eca6b0cb105cd0812ea952fe.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability.

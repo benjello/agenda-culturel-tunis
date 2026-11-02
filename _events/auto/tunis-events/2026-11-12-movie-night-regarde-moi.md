@@ -13,3 +13,7 @@ image: "https://tunis.events/storage/d935fc22e6010a3802d5dc300358def32.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+. ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun
+Tickets are 20 DT and include popcorn and refreshments.
+REGARDE MOIDirector: Nejib Belkadhi1h 36mVOSTFR

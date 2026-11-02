@@ -14,3 +14,5 @@ discret: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+This class combines Hatha and Yin yoga, beginning with Hatha to gently open the body before transitioning into restorative Yin postures. The practice takes an intuitive approach, adapting to the energy of the group, and includes demonstrations and hands-on guidance in an intimate setting. Rather than focusing on fitness, the emphasis is on healing, balance, and developing intuition.

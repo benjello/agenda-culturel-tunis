@@ -11,3 +11,5 @@ source_name: "La Presse (culture)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Deux colloques ont mis en lumière les enjeux de la traduction littéraire et spécialisée, entre circulation des œuvres, transmission des héritages et

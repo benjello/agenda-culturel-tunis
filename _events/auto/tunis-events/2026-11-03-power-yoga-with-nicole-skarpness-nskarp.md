@@ -14,3 +14,8 @@ discret: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+\-A dynamic, grounding flow to reconnect with your body after breaking fast offering a perfect balance of strength, breath, and movement in a calm night setting.
+Level: Intermediate and Advanced
+Complimentary mats, tea and snacks available and access to rooftop after the session!
+Tickets are refundable only up to 24 hours before the scheduled event.
