@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "corriges": 0,
+ "corriges": 8,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -10,6 +10,16 @@
    "lien": "https://www.beitalhikma.tn/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a9-%d8%aa%d8%ad%d9%88%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%a3%d8%ab%d8%b1%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b1%d8%a7/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "cine-360/2026-11-01-le-maitre-du-kabuki.md",
+   "source": "cine-360",
+   "titre": "Le Maître du kabuki",
+   "date": "2026-11-01",
+   "lien": "https://www.facebook.com/100057029246724/posts/1654998313077794",
+   "problemes": [
+    "film sans horaire ni séance"
    ]
   },
   {
@@ -23,23 +33,14 @@
    ]
   },
   {
-   "fichier": "fb-ift-facebook/2026-11-01-dimanche-1er-novembre-la-mediatheque-de-l-institut-francais-.md",
-   "source": "fb-ift-facebook",
-   "titre": "Dimanche 1er Novembre, la Médiathèque de l'Institut français de Tunisie ouvre exceptionnel",
-   "date": "2026-11-01",
-   "lien": "https://www.facebook.com/100064556987464/posts/1560731326088752",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
    "fichier": "fb-ift-facebook/2026-11-07-podcast-days-by-tunisia-podcast-festival-vous-devoile-son-pr.md",
    "source": "fb-ift-facebook",
    "titre": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du 6 et 7 novembre",
    "date": "2026-11-07",
    "lien": "https://www.facebook.com/100064556987464/posts/122298590240073523",
    "problemes": [
-    "titre trop long (début d'une légende ?)"
+    "titre trop long (début d'une légende ?)",
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
    ]
   },
   {
@@ -49,7 +50,28 @@
    "date": "2026-11-10",
    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
    "problemes": [
-    "titre trop vague"
+    "titre trop vague",
+    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
+   ]
+  },
+  {
+   "fichier": "ift-pdf/2026-11-11-cinema-danimation.md",
+   "source": "ift-pdf",
+   "titre": "Cinéma D’Animation",
+   "date": "2026-11-11",
+   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+   "problemes": [
+    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
+   ]
+  },
+  {
+   "fichier": "ift-pdf/2026-11-12-diffusion-des-savoirs.md",
+   "source": "ift-pdf",
+   "titre": "Diffusion Des Savoirs",
+   "date": "2026-11-12",
+   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+   "problemes": [
+    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
    ]
   },
   {
@@ -59,7 +81,8 @@
    "date": "2026-11-12",
    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
    "problemes": [
-    "titre trop vague"
+    "titre trop vague",
+    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
    ]
   },
   {
@@ -69,7 +92,8 @@
    "date": "2026-11-01",
    "lien": "https://www.instagram.com/p/DfLIEZVCbs3/",
    "problemes": [
-    "titre trop long (début d'une légende ?)"
+    "titre trop long (début d'une légende ?)",
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
    ]
   },
   {
@@ -81,6 +105,826 @@
    "problemes": [
     "deux fois dans la source (voir 2026-11-01-evenement-evenement.md)"
    ]
+  },
+  {
+   "fichier": "presse-lapresse/2026-10-23-foire-nationale-du-livre-tunisien-traduire-transmettre-et-pe.md",
+   "source": "presse-lapresse",
+   "titre": "Foire nationale du livre tunisien: Traduire, transmettre et penser le savoir en arabe",
+   "date": "2026-10-23",
+   "lien": "https://www.lapresse.tn/2026/10/29/foire-nationale-du-livre-tunisien-traduire-transmettre-et-penser-le-savoir-en-arabe/",
+   "problemes": [
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+   ]
+  },
+  {
+   "fichier": "presse-lapresse/2026-11-22-jaou-tunis-2026-les-corps-ces-territoires-de-resistance.md",
+   "source": "presse-lapresse",
+   "titre": "Jaou Tunis 2026: Les corps, ces territoires de résistance",
+   "date": "2026-11-22",
+   "lien": "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/",
+   "problemes": [
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+   ]
+  },
+  {
+   "fichier": "presse-lapresse/2026-11-26-saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-l.md",
+   "source": "presse-lapresse",
+   "titre": "« Saveurs et amertume » à la Galerie TGM : Lorsque l’art esquisse les contours de l’identité tunisie",
+   "date": "2026-11-26",
+   "lien": "https://www.lapresse.tn/2026/10/30/saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-les-contours-de-lidentite-tunisienne/",
+   "problemes": [
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+   ]
+  },
+  {
+   "fichier": "presse-webdo/2026-11-03-cinema-le-temps-suspendu-un-film-hongrois-a-ne-pas-rater.md",
+   "source": "presse-webdo",
+   "titre": "Le Temps suspendu, un film hongrois à ne pas rater",
+   "date": "2026-11-03",
+   "lien": "https://www.webdo.tn/fr/actualite/culture/cinema-le-temps-suspendu-un-film-hongrois-a-ne-pas-rater/406394/",
+   "problemes": [
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-01-last-chance.md",
+   "source": "tunis-events-cinema",
+   "titre": "LAST CHANCE - لص شايح",
+   "date": "2026-11-01",
+   "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-01-mochy.md",
+   "source": "tunis-events-cinema",
+   "titre": "Mochy",
+   "date": "2026-11-01",
+   "lien": "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
   }
- ]
+ ],
+ "granularite": {
+  "sources": {
+   "beit-al-hikma": {
+    "n": 2,
+    "precis": 2,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 2
+     }
+    ]
+   },
+   "cine-360": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 1,
+      "exemple": "Le Maître du kabuki"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
+     }
+    ]
+   },
+   "cine-agora": {
+    "n": 10,
+    "precis": 10,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
+   "cine-alhambra": {
+    "n": 4,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lien_partage",
+      "texte": "même lien pour plusieurs événements différents",
+      "n": 4,
+      "exemple": "BAKMA - بكمة"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
+     }
+    ]
+   },
+   "el-teatro": {
+    "n": 7,
+    "precis": 7,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 7
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 7
+     }
+    ]
+   },
+   "fb-cite-sciences": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
+     }
+    ]
+   },
+   "fb-cr-sidibouzid": {
+    "n": 2,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 2,
+      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
+   },
+   "fb-ift-facebook": {
+    "n": 2,
+    "precis": 1,
+    "pourcent": 50,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 2
+     }
+    ]
+   },
+   "ift-pdf": {
+    "n": 56,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_generique",
+      "texte": "titre générique (genre ou rubrique, pas le nom de l'œuvre)",
+      "n": 4,
+      "exemple": "Exposition"
+     },
+     {
+      "code": "lien_general",
+      "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
+      "n": 56,
+      "exemple": "Bibliothérapie Tunis Blues D'Ali Bêcheur"
+     },
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 6,
+      "exemple": "Le Monde Sans Fin"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 7
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 56
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 56
+     }
+    ]
+   },
+   "ig-agorgi-gallery": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
+   "ig-cinemadart": {
+    "n": 3,
+    "precis": 3,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 3
+     }
+    ]
+   },
+   "ig-la-boite": {
+    "n": 2,
+    "precis": 1,
+    "pourcent": 50,
+    "defauts": [
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 1,
+      "exemple": "Direction Gabès pour les Oasis Days !"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Direction Gabès pour les Oasis Days !"
+     }
+    ],
+    "manques": []
+   },
+   "ig-shanti": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
+   },
+   "ig-theatre-national": {
+    "n": 3,
+    "precis": 2,
+    "pourcent": 67,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     }
+    ]
+   },
+   "irmc": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
+     }
+    ]
+   },
+   "presse-lapresse": {
+    "n": 3,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 3,
+      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 2,
+      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 3
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 3
+     }
+    ]
+   },
+   "presse-webdo": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Le Temps suspendu, un film hongrois à ne pas rater"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Le Temps suspendu, un film hongrois à ne pas rater"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
+     }
+    ]
+   },
+   "resident-advisor": {
+    "n": 3,
+    "precis": 2,
+    "pourcent": 67,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Nōmad Man Festival 2026"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
+   "teskerti": {
+    "n": 8,
+    "precis": 8,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 8
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 8
+     }
+    ]
+   },
+   "tunis-events": {
+    "n": 15,
+    "precis": 15,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 15
+     }
+    ]
+   },
+   "tunis-events-cinema": {
+    "n": 36,
+    "precis": 34,
+    "pourcent": 94,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 2,
+      "exemple": "LAST CHANCE - لص شايح"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 36
+     }
+    ]
+   }
+  },
+  "scrapers": {
+   "pdf_programme": {
+    "n": 56,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_generique",
+      "texte": "titre générique (genre ou rubrique, pas le nom de l'œuvre)",
+      "n": 4,
+      "exemple": "Exposition"
+     },
+     {
+      "code": "lien_general",
+      "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
+      "n": 56,
+      "exemple": "Bibliothérapie Tunis Blues D'Ali Bêcheur"
+     },
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 6,
+      "exemple": "Le Monde Sans Fin"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 7
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 56
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 56
+     }
+    ]
+   },
+   "presse": {
+    "n": 4,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 4,
+      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 3,
+      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 3
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
+     }
+    ]
+   },
+   "facebook_programmes": {
+    "n": 10,
+    "precis": 2,
+    "pourcent": 20,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
+     },
+     {
+      "code": "lien_partage",
+      "texte": "même lien pour plusieurs événements différents",
+      "n": 4,
+      "exemple": "BAKMA - بكمة"
+     },
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 1,
+      "exemple": "Le Maître du kabuki"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 2,
+      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 5
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 8
+     }
+    ]
+   },
+   "resident_advisor": {
+    "n": 3,
+    "precis": 2,
+    "pourcent": 67,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Nōmad Man Festival 2026"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
+   "instagram": {
+    "n": 10,
+    "precis": 8,
+    "pourcent": 80,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم"
+     },
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 1,
+      "exemple": "Direction Gabès pour les Oasis Days !"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Direction Gabès pour les Oasis Days !"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 3
+     }
+    ]
+   },
+   "tunis_events_cinema": {
+    "n": 36,
+    "precis": 34,
+    "pourcent": 94,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 2,
+      "exemple": "LAST CHANCE - لص شايح"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 36
+     }
+    ]
+   },
+   "tunis_events": {
+    "n": 15,
+    "precis": 15,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 15
+     }
+    ]
+   },
+   "woocommerce_seances": {
+    "n": 10,
+    "precis": 10,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
+   "teskerti": {
+    "n": 8,
+    "precis": 8,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 8
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 8
+     }
+    ]
+   },
+   "billetterie_sktech": {
+    "n": 7,
+    "precis": 7,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 7
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 7
+     }
+    ]
+   },
+   "rss": {
+    "n": 3,
+    "precis": 3,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 3
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 3
+     }
+    ]
+   }
+  }
+ }
 }

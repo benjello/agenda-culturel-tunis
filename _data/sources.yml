@@ -820,7 +820,10 @@
   options:
     modele: "https://www.institutfrancais-tunisie.com/wp-content/uploads/{annee_pub}/{mois_pub}/CALENDRIER-{mois}-{annee}.pdf"
     lieu: "Institut français de Tunisie"
-  note: "Programme mensuel en PDF découpé case par case (titre, jour, genre, salle, heure)."
+    aec:  # agenda en ligne (API publique de la billetterie AEC) : lien vers la fiche de chaque événement
+      page: "https://www.institutfrancais-tunisie.com/list-agenda"
+      # la clé publique de l'API est relue dans cette page à chaque passage (option api_key en secours)
+  note: "Programme mensuel en PDF découpé case par case (titre, jour, genre, salle, heure), rapproché de l'agenda en ligne pour avoir la fiche de chaque événement."
 
 # Festivals : leurs comptes annoncent le programme en premier.
 - id: ig-jtc

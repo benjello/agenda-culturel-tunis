@@ -4,7 +4,12 @@ Le PDF est cherché dans wp-content/uploads, au mois courant et au mois suivant.
 extrait avec pdftotext (paquet poppler-utils) puis découpé : une ligne qui commence par une date
 ouvre un événement, les lignes suivantes donnent le titre et le lieu.
 
+Les cases sont ensuite rapprochées de l'agenda en ligne (option aec, voir sources/aec.py) :
+une case qui y figure prend le lien de sa fiche, son affiche, son prix et sa notice ; les
+événements en ligne absents du PDF sont ajoutés.
+
 Options :
+  aec     options de sources/aec.py (page, api_key…) ; absent = PDF seul
   modele  adresse du PDF, avec {annee}, {mois} (mois du programme) et {annee_pub}, {mois_pub}
           (dossier d'envoi, souvent le mois précédent)
   lieu    lieu par défaut
@@ -16,7 +21,9 @@ import re
 import subprocess
 import tempfile
 
-from ..commun import MOIS, Evenement, _session, categorie_du_titre, propre
+from ..doublons import mots, proches
+from . import aec
+from ..commun import MOIS, Evenement, _session, categorie_du_titre, propre, resume, titre_film, titre_generique
 
 # Mot-clé de la colonne de droite d'une case → catégorie du site
 _GENRES = {"exposition": "expo", "cinéma": "cinema", "cinema": "cinema", "concert": "musique", "musique": "musique",
@@ -35,6 +42,25 @@ _LIEUX = re.compile(r"m[ée]diath[èe]que|auditorium|galerie|salle|jardin|cin[é
 _SALLES = [(r"camus", "Salle Albert Camus"), (r"exposition|galerie", "Galerie"),
            (r"(?:s?a?l?le )?de cin[ée]ma|\bcin[ée]ma\b", "Salle de cinéma"), (r"m[ée]diath[èe]que", "Médiathèque"),
            (r"auditorium", "Auditorium"), (r"jardin", "Jardin"), (r"th[ée][âa]tre", "Théâtre")]
+
+
+# « de Jérémie Périn, 2023, 1h25mn » : la notice d'un film.
+_FICHE_FILM = re.compile(r"\b(?:19|20)\d{2}\s*,\s*\d{1,2}\s*h\s*\d{0,2}|\b\d{1,3}\s*min(?:utes)?\b|\br[ée]alis[ée] par\b|"
+                         r"\bun film de\b", re.I)
+
+
+def titre_precis(titre: str, notice: str) -> str:
+    """Le nom de l'œuvre quand la case ne donne qu'un genre (« TABLES RONDES », « EXPOSITION ») :
+    le premier titre entre guillemets de la notice, sinon le début de la notice avant « : »."""
+    if not titre_generique(titre) and not re.match(r"(?i)avec\b", titre):
+        return titre
+    m = re.search(r"[«“\"]\s*([^»”\"]{3,70}?)\s*[»”\"]", notice)
+    if m:
+        return propre(m.group(1))
+    m = re.match(r"\s*([^:.;!?]{3,60}?)\s*:", notice)
+    if m and len(m.group(1).split()) >= 2:
+        return propre(m.group(1))
+    return titre
 
 
 def _salle(texte: str) -> str:
@@ -119,6 +145,7 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
             titre.append(l)
         else:
             break
+    notice = " ".join(lignes[len(titre):])
     titre = " ".join(titre) or lignes[0]
     jours = []
     for l in infos:
@@ -135,8 +162,17 @@ def _case(texte: list[str], cote: list[str], mois: dt.date, lieu_defaut: str, li
         except ValueError:
             continue
         titre_propre = titre.title() if len(titre) > 6 else titre
-        res.append(Evenement(titre=titre_propre, debut=d, lien=lien, lieu=lieu,
-                             categorie=categorie_du_titre(titre) or genre or "autre"))
+        categorie = categorie_du_titre(titre) or genre or "autre"
+        est_film = bool(_FICHE_FILM.search(notice)) and categorie in ("cinema", "autre")
+        if est_film or categorie == "cinema":
+            titre_propre = titre_film(titre_propre)  # « Mercredis-Ciné Level Five » → « Level Five »
+        titre_net = titre_precis(titre_propre, notice)
+        if titre_net != titre_propre:  # « Tables Rondes » → « Entre deux rives » (le genre reste dans la catégorie)
+            categorie = categorie if categorie != "autre" else (categorie_du_titre(titre_propre) or "autre")
+        res.append(Evenement(titre=titre_net, debut=d, lien=lien, lieu=lieu,
+                             categorie="cinema" if est_film else categorie,
+                             film=est_film and not titre_generique(titre_net),
+                             seances=[d] if est_film else [], description=resume(notice, 400)))
     return res
 
 
@@ -168,4 +204,38 @@ def recuperer(source: dict) -> list[Evenement]:
         res += evts
     if not lus:
         raise RuntimeError("aucun PDF de programme trouvé")
+    if "aec" in o:
+        try:
+            en_ligne = aec.depuis_api(aec.lire_api(o["aec"] or {}, (o["aec"] or {}).get("page", source["url"])),
+                                      o.get("lieu", source["nom"]))
+            print(f"  agenda en ligne : {len(en_ligne)} événement(s)")
+            res = rapprocher(res, en_ligne)
+        except Exception as exc:  # noqa: BLE001 — le PDF seul reste utilisable
+            print(f"  agenda en ligne illisible : {exc.__class__.__name__} {exc}")
     return res
+
+
+def rapprocher(pdf: list[Evenement], en_ligne: list[Evenement]) -> list[Evenement]:
+    """Chaque case du PDF qui a sa fiche en ligne (même jour, titres proches) en prend le lien,
+    l'affiche, le prix, le titre exact et la notice. Les événements en ligne absents du PDF sont ajoutés."""
+    restants = []
+    for a in en_ligne:
+        jours = (a.debut.date(), (a.fin or a.debut).date())
+        cles_a = mots(a.titre)
+        trouves = [p for p in pdf if jours[0] <= p.debut.date() <= jours[1]
+                   and proches(mots(p.titre), cles_a, 0.5, 2)]
+        for p in trouves:
+            p.lien, p.image, p.prix = a.lien, a.image or p.image, a.prix or p.prix
+            if not titre_generique(a.titre):
+                p.titre = a.titre
+            if len(a.description) > len(p.description):
+                p.description = a.description
+            if a.fin and p.categorie == "expo":
+                p.fin = a.fin
+            if p.debut.date() == a.debut.date() and (a.debut.hour or a.debut.minute):
+                p.debut = a.debut
+                p.seances = [a.debut] if p.seances else p.seances
+            p.film = p.film or a.film
+        if not trouves:
+            restants.append(a)
+    return pdf + restants

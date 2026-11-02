@@ -1,5 +1,5 @@
 ---
-title: "Mercredis-Ciné Level Five"
+title: "Level Five"
 date: 2026-11-25 18:00
 venue: "Salle de cinéma, Institut français de Sousse"
 ville: "sousse"

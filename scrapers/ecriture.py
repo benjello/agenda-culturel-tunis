@@ -14,7 +14,7 @@ import json
 import re
 import shutil
 
-from .commun import RACINE, Evenement, Publication, est_discret, est_famille, slug
+from .commun import RACINE, Evenement, Publication, est_discret, est_famille, pas_un_evenement, slug, titre_film
 from .pages import _cle, faux_lieux
 from .villes import mention, ville
 
@@ -58,7 +58,12 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
         if e.seances:
             e.seances = [s for s in e.seances if s >= aujourd_hui] or e.seances
             e.debut = e.seances[0]
-    a_venir = [e for e in evenements if (e.fin or e.debut) >= aujourd_hui]
+    # Granularité : une annonce de service (« la Médiathèque ouvre exceptionnellement ») n'est pas un événement,
+    # et un film s'affiche sous son titre, sans la rubrique (« Movie Night: UN FILS » → « UN FILS »).
+    a_venir = [e for e in evenements if (e.fin or e.debut) >= aujourd_hui and not pas_un_evenement(e.titre)]
+    for e in a_venir:
+        if e.film or e.categorie == "cinema":
+            e.titre = titre_film(e.titre)
     dossier = DOSSIER_AUTO / source["id"]
     # « Nouveau cette semaine » : on garde la date où l'événement est apparu la première fois.
     deja = {}
