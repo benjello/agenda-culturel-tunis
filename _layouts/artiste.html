@@ -14,6 +14,7 @@ layout: default
   {%- if page.facebook %} · <a href="{{ page.facebook }}" rel="noopener">Facebook</a>{% endif %}
   {%- if page.site %} · <a href="{{ page.site }}" rel="noopener" data-t="site_web">Site web</a>{% endif %}</p>
   {%- capture cle %}artiste:{{ page.slug }}{% endcapture %}{% include enrichi.html cle=cle nom=page.title %}
+  {%- assign d = site.data.descriptifs.artistes[page.slug] -%}{% include descriptif.html d=d %}
 </section>
 <h2 data-t="a_venir">À venir</h2>
 {% include liste-evenements.html evenements=evts %}
