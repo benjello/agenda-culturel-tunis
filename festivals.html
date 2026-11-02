@@ -25,6 +25,10 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
       {%- if f.debut %}{% if f.date_estimee %}Vers le {% endif %}{% include date-fr.html date=f.debut %}{% if f.fin %} → {% include date-fr.html date=f.fin %}{% endif %}{% else %}{{ f.periode }}{% endif %}
       {%- if f.edition %} · {{ f.edition }}{% endif %}
     </p>
+    {%- assign d = site.data.descriptifs.festivals[f.id] -%}
+    {%- if d %}
+    <p class="descriptif">{{ d.texte | escape }}{% if d.source %} <small class="descriptif-source">· {% if d.url %}<a href="{{ d.url }}" rel="noopener">{{ d.source }}</a>{% else %}{{ d.source }}{% endif %}</small>{% endif %}</p>
+    {%- endif %}
     <p class="info">
       {%- if f.debut and f.date_estimee %}<span data-t="fest.estimee">Date estimée (Ramadan), à confirmer.</span>
       {%- elsif f.debut %}<span data-t="fest.confirmees">Dates confirmées</span>{% if f.source_dates %} (<a href="{{ f.source_dates }}" rel="noopener">source</a>){% endif %}.

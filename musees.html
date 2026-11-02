@@ -27,6 +27,10 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
     <li>
       <a href="https://www.google.com/maps/search/?api=1&query={{ m.nom | append: ', ' | append: m.lieu | append: ', Tunisie' | url_encode }}" rel="noopener">{{ m.nom }}</a>
       <small>{{ m.lieu }} · <span data-t="musee.{{ m.genre }}">{{ g }}</span></small>
+      {%- assign d = site.data.descriptifs.musees[m.nom] -%}
+      {%- if d %}
+      <details class="descriptif-plie"><summary data-t="en_savoir_plus">En savoir plus</summary><p class="descriptif">{{ d.texte | escape }}{% if d.source %} <small class="descriptif-source">· {% if d.url %}<a href="{{ d.url }}" rel="noopener">{{ d.source }}</a>{% else %}{{ d.source }}{% endif %}</small>{% endif %}</p></details>
+      {%- endif %}
       {%- if evts.size > 0 %}<br><small>{% for e in evts limit: 3 %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a> ({{ e.date | date: "%d/%m" }}){% unless forloop.last %} · {% endunless %}{% endfor %}</small>{% endif %}
     </li>
   {%- endfor %}

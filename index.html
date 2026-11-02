@@ -73,6 +73,9 @@ layout: default
         {%- for g in f.genres %}<span class="badge">{{ g }}</span>{% endfor -%}
       </p>
       <p class="meta">{% if f.duree %}{% assign h = f.duree | divided_by: 60 %}{% assign mn = f.duree | modulo: 60 %}{{ h }}h{% if mn < 10 %}0{% endif %}{{ mn }} · {% endif %}{% include liens-film.html titre=f.titre imdb=f.imdb %}{% if f.wikidata %} · <a href="https://www.wikidata.org/wiki/{{ f.wikidata }}" rel="noopener">Wikidata</a>{% endif %}</p>
+      {%- if f.synopsis %}
+      <details class="synopsis"><summary data-t="synopsis">Synopsis</summary><p>{{ f.synopsis | escape | newline_to_br }}{% if f.synopsis_source %} <small class="descriptif-source">· {% if f.synopsis_url %}<a href="{{ f.synopsis_url }}" rel="noopener">{{ f.synopsis_source }}</a>{% else %}{{ f.synopsis_source }}{% endif %}</small>{% endif %}</p></details>
+      {%- endif %}
       <ul class="film-salles">
         {%- for s in f.salles %}{% assign etat = site.data.etat_sources[s.source] %}
         <li data-jours="{{ s.jours | join: ' ' }}" data-maj="{{ etat.dernier_succes | slice: 0, 10 }}">

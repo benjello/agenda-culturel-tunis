@@ -333,3 +333,5 @@ age.plage: { fr: "%n ans", ar: "%n سنوات", en: "ages %n" }
 sante.apify: { ar: "رصيد Apify لهذا الشهر (إنستغرام، فيسبوك):", en: "Apify credit this month (Instagram, Facebook):" }
 sante.recharge: { ar: "يتجدد في", en: "renews on" }
 sante.apify_epuise: { ar: "نفد: لم يعد إنستغرام وفيسبوك يقرآن", en: "used up: Instagram and Facebook are no longer read" }
+synopsis: { ar: "ملخص الفيلم", en: "Synopsis" }
+en_savoir_plus: { ar: "للمزيد", en: "Learn more" }

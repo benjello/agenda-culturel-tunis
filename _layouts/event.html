@@ -40,7 +40,7 @@ layout: default
   {%- for l in trn %}{% if l[0] != "cle" %}
   <div class="description" data-tr-bloc="{{ l[0] }}" lang="{{ l[0] }}" hidden>{{ l[1] | escape | newline_to_br }}</div>
   {%- endif %}{% endfor %}
-  <p class="note-source"><small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small>{% endif %}</p>
+  <p class="note-source">{% if page.notice_source %}<small>Texte : {{ page.notice_source }}.</small>{% else %}<small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% endif %}{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small>{% endif %}</p>
   {%- endif %}
 </article>
 {%- comment -%} Métadonnées schema.org : Google peut afficher l'événement dans ses résultats. {%- endcomment -%}

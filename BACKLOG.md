@@ -58,6 +58,7 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 - Page « Cette semaine » avec message WhatsApp prêt à partager.
 - Carte : filtre Aujourd'hui / 7 jours / Tout, liste des événements dans chaque lieu.
 - Métadonnées schema.org (Event) sur chaque fiche, pour Google.
+- Descriptifs (`scrapers/descriptifs.py`) : notice lue sur la page de l'annonce, synopsis des films (salle, Wikipédia, TMDb si `TMDB_API_KEY`), courte présentation des lieux, festivals et musées (Wikipédia) ; textes à la main dans `_data/descriptifs_manuels.yml`.
 - Archives : `scrapers/archives.py` garde les événements passés (`archives/donnees/AAAA.json`), page de recherche `/archives/`.
 
 ## À faire
