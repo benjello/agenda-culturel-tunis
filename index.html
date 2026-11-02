@@ -86,6 +86,9 @@ layout: default
         </li>
         {%- endfor %}
       </ul>
+      {%- if f.presse.size > 0 %}
+      <p class="presse-film court"><span data-t="presse_film">Ce qu'en dit la presse</span> : {% for a in f.presse %}<a href="{{ a.lien }}" rel="noopener" title="{{ a.titre | escape }}">{{ a.source_nom }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+      {%- endif %}
     </div>
   </article>
   {%- endfor %}

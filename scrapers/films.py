@@ -3,7 +3,8 @@
 Chaque source écrit un événement par film et par salle (« BAKMA » au Colisée, « BAKMA - بكمة »
 au Palace…). Pour la page Cinéma, on veut l'inverse : un film, puis les salles qui le jouent
 et leurs jours. Ce module lit les événements « film: true » de _events/auto et écrit
-_data/films.json, lu par la page d'accueil.
+_data/films.json, lu par la page d'accueil. Chaque film y reçoit aussi ses articles de presse
+(scrapers/critiques.py) et la liste des fiches de ses séances, pour l'encadré de event.html.
 
 Deux titres désignent le même film s'ils partagent un morceau : « LAST CHANCE - لص شايح »
 et « لص شايح », ou « WEEKEND » et « Weekend ». L'affiche vient de la première salle qui en a une.
@@ -59,18 +60,21 @@ def regrouper(dossier: Path = DOSSIER_AUTO) -> list[dict]:
         if champs and champs.get("film") and champs.get("title"):
             jours = [j for j in _jours(champs) if j >= aujourd_hui]
             if jours:
-                seances.append((champs, morceaux(champs["title"]) or {champs["title"].lower()}, jours))
+                seances.append((champs, morceaux(champs["title"]) or {champs["title"].lower()}, jours,
+                                f.relative_to(RACINE).as_posix() if f.is_relative_to(RACINE) else f.as_posix()))
 
     # Union des titres qui partagent un morceau.
     groupes: list[dict] = []
-    for champs, cles, jours in seances:
+    for champs, cles, jours, chemin in seances:
         lies = [g for g in groupes if g["cles"] & cles]
-        g = {"cles": set(cles), "items": []}
+        g = {"cles": set(cles), "items": [], "fichiers": []}
         for autre in lies:
             g["cles"] |= autre["cles"]
             g["items"] += autre["items"]
+            g["fichiers"] += autre["fichiers"]
             groupes.remove(autre)
         g["items"].append((champs, jours))
+        g["fichiers"].append(chemin)
         groupes.append(g)
 
     films = []
@@ -98,6 +102,8 @@ def regrouper(dossier: Path = DOSSIER_AUTO) -> list[dict]:
             "duree": premier("duration"), "genres": premier("genres") or [],
             "jours": sorted({j for s in salles_l for j in s["jours"]}),
             "salles": salles_l,
+            # Les fiches des séances (page.path) : event.html y retrouve le film et sa presse.
+            "fichiers": sorted(g["fichiers"]),
         })
     # Les films qui passent dans le plus de salles d'abord, puis par titre.
     films.sort(key=lambda f: (-len(f["salles"]), f["titre"].lower()))
@@ -127,5 +133,7 @@ def ecrire(dossier: Path = DOSSIER_AUTO, fichier: Path = FICHIER, enrichir: bool
         from . import wikidata
         wikidata.completer(films, morceaux)  # genres, âge, IMDb, film tunisien
     typologie(films)
+    from . import critiques
+    critiques.rattacher(films)  # « Ce qu'en dit la presse »
     fichier.write_text(json.dumps(films, ensure_ascii=False, indent=1) + "\n")
     return len(films)
