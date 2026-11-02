@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "corriges": 2,
+ "corriges": 0,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -64,6 +64,76 @@
    ]
   },
   {
+   "fichier": "ig-agora-djerba/2026-11-02-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md",
+   "source": "ig-agora-djerba",
+   "titre": "Retrouvez tous les horaires sur l'application L'AGORA Cinéma ou sur www.lagoradjerba.tn",
+   "date": "2026-11-02",
+   "lien": "https://www.instagram.com/p/DfNXNZjEZr9/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-agora-djerba/2026-11-03-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md",
+   "source": "ig-agora-djerba",
+   "titre": "Retrouvez tous les horaires sur l'application L'AGORA Cinéma ou sur www.lagoradjerba.tn",
+   "date": "2026-11-03",
+   "lien": "https://www.instagram.com/p/DfNXNZjEZr9/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-agora-djerba/2026-11-04-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md",
+   "source": "ig-agora-djerba",
+   "titre": "Retrouvez tous les horaires sur l'application L'AGORA Cinéma ou sur www.lagoradjerba.tn",
+   "date": "2026-11-04",
+   "lien": "https://www.instagram.com/p/DfNKUF7jz7x/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-agora-djerba/2026-11-06-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md",
+   "source": "ig-agora-djerba",
+   "titre": "Retrouvez tous les horaires sur l'application L'AGORA Cinéma ou sur www.lagoradjerba.tn",
+   "date": "2026-11-06",
+   "lien": "https://www.instagram.com/p/DfNKUF7jz7x/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-galerie-insular/2026-11-20-la-galerie-insular-a-le-privilege-daccueillir-la-3eme-editio.md",
+   "source": "ig-galerie-insular",
+   "titre": "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be",
+   "date": "2026-11-20",
+   "lien": "https://www.instagram.com/p/De7EOPYirHz/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-lart-rue/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md",
+   "source": "ig-lart-rue",
+   "titre": "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v",
+   "date": "2026-11-07",
+   "lien": "https://www.instagram.com/p/DfIMsEzF0Ar/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-lart-rue/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md",
+   "source": "ig-lart-rue",
+   "titre": "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30",
+   "date": "2026-11-07",
+   "lien": "https://www.instagram.com/p/DfFy1eVj6sY/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
    "fichier": "ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md",
    "source": "ig-rosalux-afrique-nord",
    "titre": "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e",
@@ -103,26 +173,6 @@
    "problemes": [
     "titre trop long (début d'une légende ?)",
     "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "ig-tunisia-podcasts-festival/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md",
-   "source": "ig-tunisia-podcasts-festival",
-   "titre": "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfIMsEzF0Ar/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "ig-tunisia-podcasts-festival/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md",
-   "source": "ig-tunisia-podcasts-festival",
-   "titre": "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfFy1eVj6sY/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
    ]
   },
   {
@@ -227,11 +277,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 6
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 6
      }
     ]
@@ -347,6 +392,19 @@
      }
     ]
    },
+   "ig-agora-djerba": {
+    "n": 5,
+    "precis": 5,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     }
+    ]
+   },
    "ig-agorgi-gallery": {
     "n": 1,
     "precis": 1,
@@ -372,6 +430,13 @@
      }
     ]
    },
+   "ig-galerie-insular": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
    "ig-la-boite": {
     "n": 2,
     "precis": 1,
@@ -391,6 +456,19 @@
      }
     ],
     "manques": []
+   },
+   "ig-lart-rue": {
+    "n": 2,
+    "precis": 2,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
    },
    "ig-rosalux-afrique-nord": {
     "n": 1,
@@ -439,9 +517,9 @@
     ]
    },
    "ig-tunisia-podcasts-festival": {
-    "n": 5,
-    "precis": 2,
-    "pourcent": 40,
+    "n": 3,
+    "precis": 0,
+    "pourcent": 0,
     "defauts": [
      {
       "code": "titre_phrase",
@@ -460,7 +538,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 1
      }
     ]
    },
@@ -618,7 +696,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 13
+      "n": 12
      }
     ]
    },
@@ -650,7 +728,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 32
+      "n": 2
      }
     ]
    }
@@ -804,9 +882,9 @@
     ]
    },
    "instagram": {
-    "n": 16,
-    "precis": 11,
-    "pourcent": 69,
+    "n": 22,
+    "precis": 17,
+    "pourcent": 77,
     "defauts": [
      {
       "code": "titre_phrase",
@@ -831,7 +909,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 7
+      "n": 9
      },
      {
       "code": "sans_notice",
@@ -861,7 +939,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 32
+      "n": 2
      }
     ]
    },
@@ -879,7 +957,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 13
+      "n": 12
      }
     ]
    },
@@ -906,11 +984,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 6
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 6
      }
     ]

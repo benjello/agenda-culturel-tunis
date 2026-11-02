@@ -81,6 +81,15 @@
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
+  "fb-61595612945174": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "fb-ajst": {
     "attente": null,
     "dernier_passage": "2026-11-01T09:29:54",
@@ -281,6 +290,16 @@
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
+  "ig-agora-djerba": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 5,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "ig-agorgi-gallery": {
     "attente": null,
     "dernier_non_vide": "2026-11-01T11:53:01",
@@ -300,6 +319,12 @@
     "nb": 3,
     "ok": true
   },
+  "ig-atast": {
+    "dernier_passage": "2026-11-02T11:54:47",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/atast_/', 'inputUrl': 'https://www.instagram.com/atast_/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
+    "ok": false,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "ig-b7l9": {
     "attente": null,
     "dernier_passage": "2026-11-01T08:00:14",
@@ -312,6 +337,15 @@
     "dernier_passage": "2026-11-01T08:00:14",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/blcv.tunis/', 'username': 'blcv.tunis', 'error': 'not_found', 'errorDescription': 'Profile does not exist'}",
     "ok": false
+  },
+  "ig-bardo": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
   },
   "ig-chantarts-sfax": {
     "dernier_passage": "2026-11-01T11:53:01",
@@ -334,6 +368,15 @@
     "nb": 3,
     "ok": true
   },
+  "ig-cite-sciences": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "ig-downtown-vibes": {
     "attente": null,
     "dernier_passage": "2026-11-01T08:50:24",
@@ -341,6 +384,15 @@
     "erreur": null,
     "nb": 0,
     "ok": true
+  },
+  "ig-echos-electrik": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
   },
   "ig-eddisco": {
     "attente": null,
@@ -388,6 +440,16 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/ftcafifak/', 'inputUrl': 'https://www.instagram.com/ftcafifak/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-02T10:11:41"
+  },
+  "ig-galerie-insular": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
   },
   "ig-habibi-downtown": {
     "attente": null,
@@ -441,6 +503,16 @@
     "ok": true,
     "premier_passage": "2026-11-01T11:53:01"
   },
+  "ig-lart-rue": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 3,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "ig-rock-n-rolla": {
     "attente": null,
     "dernier_passage": "2026-11-01T07:57:26",
@@ -489,6 +561,15 @@
     "ok": true,
     "premier_passage": "2026-11-01T11:53:01"
   },
+  "ig-tounes-wijhetouna": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
+  },
   "ig-tunisia-podcasts-festival": {
     "attente": null,
     "dernier_non_vide": "2026-11-02T10:11:41",
@@ -498,6 +579,15 @@
     "nb": 6,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
+  },
+  "ig-violon-bleu": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T11:54:47",
+    "dernier_succes": "2026-11-02T11:54:47",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47"
   },
   "institut-francais": {
     "dernier_passage": "2026-11-01T07:45:18",

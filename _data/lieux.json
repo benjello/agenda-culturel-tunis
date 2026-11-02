@@ -22,16 +22,18 @@
   "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
+  "L'Agora Djerba": "l-agora-djerba",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
+  "Galerie Insular, Erriadh (Djerbahood)": "galerie-insular-erriadh-djerbahood",
   "La Boîte": "la-boite",
+  "L'art Rue 🎟️ Entrée sur inscription — lien en bio": "l-art-rue-entree-sur-inscription-lien-en-bio",
+  "La Chapelle, Dar Bach Hamba": "la-chapelle-dar-bach-hamba",
   "Fondation Rosa Luxemburg, Tunis": "fondation-rosa-luxemburg-tunis",
   "Shanti": "shanti",
   "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
-  "L'art Rue 🎟️ Entrée sur inscription — lien en bio": "l-art-rue-entree-sur-inscription-lien-en-bio",
-  "La Chapelle, Dar Bach Hamba": "la-chapelle-dar-bach-hamba",
   "Galerie TGM": "galerie-tgm",
   "Maison des Arts du Belvédère": "maison-des-arts-du-belvedere",
   "Studio B52": "studio-b52",
@@ -229,6 +231,14 @@
    "n": 2
   },
   {
+   "slug": "la-chapelle-dar-bach-hamba",
+   "nom": "La Chapelle, Dar Bach Hamba",
+   "ville": "tunis",
+   "lat": 36.86183,
+   "lon": 10.33874,
+   "n": 2
+  },
+  {
    "slug": "cine-350-cite-de-la-culture",
    "nom": "Ciné 350 (Cité de la Culture)",
    "ville": "tunis",
@@ -298,14 +308,6 @@
    "ville": "tunis",
    "lat": 36.82213,
    "lon": 10.18498,
-   "n": 1
-  },
-  {
-   "slug": "la-chapelle-dar-bach-hamba",
-   "nom": "La Chapelle, Dar Bach Hamba",
-   "ville": "tunis",
-   "lat": 36.86183,
-   "lon": 10.33874,
    "n": 1
   },
   {

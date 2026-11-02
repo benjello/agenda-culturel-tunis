@@ -184,6 +184,10 @@
    "ar": "BELL AND WeATHER",
    "en": "BELL AND WEATHER"
   },
+  "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be": {
+   "ar": "معرض الإنسولي له شرف استضافة الطبعة الثالثة من البلد الصغير، أحب أن أكون",
+   "en": "The Insular Gallery has the privilege of hosting the 3rd edition of Little Country, I like to be"
+  },
   "La création sonore donne vie à l’invisible et transforme l’écoute en expérience": {
    "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة",
    "en": "Sound creation gives life to the invisible and transforms listening into experience"
@@ -304,6 +308,10 @@
    "ar": "RUCHE73 : Concert by Yosri",
    "en": "RUCHE73 : Concert by Yosri"
   },
+  "Retrouvez tous les horaires sur l'application L'AGORA Cinéma ou sur www.lagoradjerba.tn": {
+   "ar": "البحث عن جميع الجداول الزمنية في تطبيق AGORA Cinema أو على الموقع www.lagoradjerba.tn",
+   "en": "Find all schedules on the AGORA Cinema app or on www.lagoradjerba.tn"
+  },
   "Saisons de la création": {
    "ar": "بحار الخلق",
    "en": "Seasons of Creation"
@@ -323,6 +331,10 @@
   "Spécial Novembre Numérique": {
    "ar": "Special November Digital",
    "en": "Special November Digital"
+  },
+  "SÉANCE CINÉPHILES À L'AGORA DJERBA !": {
+   "ar": "! (سينفيلز) في (أوغورا ديربا)",
+   "en": "CINEPHILES AT AGORA DJERBA!"
   },
   "TAHA DESOUKY": {
    "ar": "تاها دوسك",
@@ -798,10 +810,40 @@
    "ar": "لأسبوع، تتحول تونس إلى مشهد حي ضخم، يخلط بين المسابقات الرسمية، عروض الشوارع، حلقات عمل مهنية...",
    "en": "For a week, Tunis is transformed into a huge living scene, mixing official competitions, street shows, professional workshops..."
   },
+  "_events/auto/ig-agora-djerba/2026-11-02-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md": {
+   "cle": "11a1903510ea",
+   "ar": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nاتجنبوا التكرار احجزوا تذاكركم الان",
+   "en": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nAvoid the queue, book your tickets now!\n"
+  },
+  "_events/auto/ig-agora-djerba/2026-11-03-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md": {
+   "cle": "11a1903510ea",
+   "ar": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nاتجنبوا التكرار احجزوا تذاكركم الان",
+   "en": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nAvoid the queue, book your tickets now!\n"
+  },
+  "_events/auto/ig-agora-djerba/2026-11-04-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md": {
+   "cle": "11a1903510ea",
+   "ar": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nاتجنبوا التكرار احجزوا تذاكركم الان",
+   "en": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nAvoid the queue, book your tickets now!\n"
+  },
+  "_events/auto/ig-agora-djerba/2026-11-05-seance-cinephiles-a-l-agora-djerba.md": {
+   "cle": "edca5a8f083d",
+   "ar": "- مهلا، مهلا، مهلا، مهلا، مهلا.\nالمادتان\nفيلم (فريد كافاى) على أساس تحفة (فيكتور هوجو)\nالخميس 5 تشرين الثاني/نوفمبر 2026\nيَلْعبُ إلى a فرس تاريخي مزعج، بين الظلمِ، الحبّ، الشجاعةِ و السعي للحريةِ.\nعمل عظيم من الأدب الفرنسي يأتي إلى الحياة على شاشة كبيرة، يحمله توزيع استثنائي!\nالمادتان\nاحجزوا تذاكركم الآن\nwww.lagoradjerba.tn",
+   "en": "- Hey, hey, hey, hey, hey.\n的\nThe MISSÉABLES – A film by Fred Cavayé, based on Victor Hugo's masterpiece.\nThursday 5 November 2026 14h00\nDive into an upsetting historical fresco, between injustice, love, courage and the quest for freedom.\n\nA great work of French literature comes to life on a large screen, carried by an exceptional distribution!\n的\nBook your tickets now!\nwww.lagoradjerba.tn"
+  },
+  "_events/auto/ig-agora-djerba/2026-11-06-retrouvez-tous-les-horaires-sur-l-application-l-agora-cinema.md": {
+   "cle": "11a1903510ea",
+   "ar": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nاتجنبوا التكرار احجزوا تذاكركم الان",
+   "en": "Find all schedules on the AGORA Cinéma app or on www.lagoradjerba.tn\nAvoid the queue, book your tickets now!\n"
+  },
   "_events/auto/ig-agorgi-gallery/2026-10-30-cosmose.md": {
    "cle": "45577979df1a",
    "fr": "La Galerie est ouverte ce samedi et dimanche, de 12h à 18h, pour vous accueillir à COSMOSE, l'exposition solo de @karabibenehalim .\nPrenez le temps de découvrir l'univers de l'artiste et d'explorer les œuvres en vue.\nNous avons hâte de vous voir à la galerie!\n\\#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart",
    "ar": "المعرض مفتوح يوم السبت والأحد من 12 مساء إلى 6 مساء للترحيب بك في \"كوساموز\" المعرض المنفرد بـ \"الكارابينهاليم\"\nخذ الوقت لاكتشاف عالم الفنان واستكشاف الأعمال على مرأى.\nنتطلع لرؤيتك في المعرض!\n#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart"
+  },
+  "_events/auto/ig-galerie-insular/2026-11-20-la-galerie-insular-a-le-privilege-daccueillir-la-3eme-editio.md": {
+   "cle": "ef0c4a4a781a",
+   "ar": "المسابقة الداخلية لها شرف استضافة الطبعة الثالثة من \"بلد ليتل\"، أحبك كثيراً، @liv.advisory في قلب قرية دربة الفنون\nمن خلال أعين المصورين الموهوبين، تأتي وتكتشف تونس الصادقة والنابضة بالحياة.\nالمعرض ينتهي في 20 نوفمبر 2026 لذا لا تتأخر\nInsular Gallery, Erriadh (Djerbahood)\nحتى يوم الجمعة 20 تشرين الثاني/نوفمبر 2026",
+   "en": "The Insular Gallery has the privilege of hosting the 3rd edition of \"Little country, I love you very much\", @liv.advisory in the heart of the Djerbahood Art Village.\nThrough the eyes of talented photographers, come and discover an intimate and vibrant Tunisia.\nThe exhibition ends on November 20, 2026, so don't delay!\nInsular Gallery, Erriadh (Djerbahood)\nUntil Friday 20 November 2026"
   },
   "_events/auto/ig-la-boite/2026-10-31-oasis-days.md": {
    "cle": "c6fc9d875a3c",
@@ -812,6 +854,16 @@
    "cle": "9b6d37085069",
    "ar": "توجه (غابيز) إلى أيام الواحة!\nسيعود الصندوق في 3 نوفمبر\nأتطلع لمقابلتك قريباً",
    "en": "Direction Gabes for the Oasis Days!\nThe Box will be back on November 3.\nLooking forward to meeting you very soon."
+  },
+  "_events/auto/ig-lart-rue/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md": {
+   "cle": "6bc8c2ed7576",
+   "ar": "كيف تتصورين أن الغد مذاق؟\nيوم الاذاعة من قبل مهرجان الاذاعة التونسية يمنحك موعدا في نوفمبر 07 مع اثنين من الطبقة الرئيسية مصممين خصيصا لمن يرغبون في دفع حدود الإنشاء الاذاعي\nMASTERCLASS 01 - Podcast &apos; Artificial Intelligence\nمع (تانيت ويب)\nالمتكلم: صاحب السعادة عبد الناصر\n30/10-30/11 صباحاً\nكيف تخلق بث فيديوك؟\nWith Yaluna @yaluna.media\nالمتكلم: عزيز شيبي\n14h00 - 15h30",
+   "en": "How do you imagine tomorrow's podcast?\nPodcast Days by Tunisia Podcast Festival gives you an appointment on November 07 with two masterclasses specially designed for those who wish to push the limits of podcast creation\nMASTERCLASS 01 — Podcast & Artificial Intelligence\nWith Tanitweb\nSpeaker: Hatem Abdennadher\n10.30 - 11.30 a.m.\n的 MASTERCLASS 02 — How to create your video podcast?\nWith Yaluna @yaluna.media\nSpeaker: Aziz Chaibi\n14h00 - 15h30"
+  },
+  "_events/auto/ig-lart-rue/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md": {
+   "cle": "d174dbabd97e",
+   "ar": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nاجتماع أخير للاحتفال بالأصوات والقصص والمبادلات التي تجعل من الطائفة التونسية من اليقظة.\nThe Chapel, Dar Bach Hamba\n\"بودكاست\" \"دونيسيا\" \"بودكاستونيسيا\"",
+   "en": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nA final meeting to celebrate the voices, stories and exchanges that make the Tunisian podcast vibrate.\nThe Chapel, Dar Bach Hamba\n\n\\#podcast #tunisia #podcasttunisia #podcastdays"
   },
   "_events/auto/ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md": {
    "cle": "db5d85e9766b",
@@ -852,16 +904,6 @@
    "cle": "12a840784cda",
    "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة\nانضم إلى أوسيما غايدي في حلقة عمل غير مُزدحمة يوم 7 تشرين الثاني/نوفمبر في الساعة 10: 30 صباحاً\nفي LArt Rue.\nArt Street\nنحن ننتظرك لتستكشف وتشعر بالصوت بشكل مختلف!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
    "en": "Sound creation gives life to the invisible and transforms listening into experience.\nJoin Ussema Gaidi for an immersive workshop on November 7th at 10:30 a.m. at L的Art Rue.\n\nArt Street\nWe're waiting for you to explore and feel the sound differently!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
-  },
-  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md": {
-   "cle": "6bc8c2ed7576",
-   "ar": "كيف تتصورين أن الغد مذاق؟\nيوم الاذاعة من قبل مهرجان الاذاعة التونسية يمنحك موعدا في نوفمبر 07 مع اثنين من الطبقة الرئيسية مصممين خصيصا لمن يرغبون في دفع حدود الإنشاء الاذاعي\nMASTERCLASS 01 - Podcast &apos; Artificial Intelligence\nمع (تانيت ويب)\nالمتكلم: صاحب السعادة عبد الناصر\n30/10-30/11 صباحاً\nكيف تخلق بث فيديوك؟\nWith Yaluna @yaluna.media\nالمتكلم: عزيز شيبي\n14h00 - 15h30",
-   "en": "How do you imagine tomorrow's podcast?\nPodcast Days by Tunisia Podcast Festival gives you an appointment on November 07 with two masterclasses specially designed for those who wish to push the limits of podcast creation\nMASTERCLASS 01 — Podcast & Artificial Intelligence\nWith Tanitweb\nSpeaker: Hatem Abdennadher\n10.30 - 11.30 a.m.\n的 MASTERCLASS 02 — How to create your video podcast?\nWith Yaluna @yaluna.media\nSpeaker: Aziz Chaibi\n14h00 - 15h30"
-  },
-  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md": {
-   "cle": "d174dbabd97e",
-   "ar": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nاجتماع أخير للاحتفال بالأصوات والقصص والمبادلات التي تجعل من الطائفة التونسية من اليقظة.\nThe Chapel, Dar Bach Hamba\n\"بودكاست\" \"دونيسيا\" \"بودكاستونيسيا\"",
-   "en": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nA final meeting to celebrate the voices, stories and exchanges that make the Tunisian podcast vibrate.\nThe Chapel, Dar Bach Hamba\n\n\\#podcast #tunisia #podcasttunisia #podcastdays"
   },
   "_events/auto/irmc/2026-12-03-13eme-symposium-de-luma-incertitudes-certitudes.md": {
    "cle": "f3422e7aad96",

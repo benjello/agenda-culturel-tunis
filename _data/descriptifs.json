@@ -1,14 +1,59 @@
 {
  "festivals": {
+  "carthage": {
+   "source": "Wikipédia",
+   "texte": "Le Festival international de Carthage est un festival annuel de musique, théâtre et danse, ayant lieu aux mois de juillet et août, depuis 1964, dans la ville côtière de Carthage (Tunisie).",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_Carthage"
+  },
+  "dougga": {
+   "source": "Wikipédia",
+   "texte": "Le Festival international de Dougga est un festival annuel de musique ayant lieu aux mois de juillet et août, depuis 1920, au sein du site archéologique de Dougga en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_Dougga"
+  },
+  "dream-city": {
+   "source": "site officiel",
+   "texte": "L'association L'Art Rue est une fabrique d'espaces artistiques au coeur de la médina de Tunis.",
+   "url": "https://lartrue.org/fr/agenda"
+  },
+  "el-jem": {
+   "source": "Wikipédia",
+   "texte": "Le Festival international de musique symphonique d'El Jem est un festival de musique symphonique qui se tient chaque été dans la ville tunisienne d'El Jem depuis 1986.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_musique_symphonique_d'El_Jem"
+  },
+  "fifej": {
+   "source": "Wikipédia",
+   "texte": "Le Festival international du film pour l'enfance et la jeunesse (FIFEJ) est un festival de cinéma tunisien consacré aux œuvres destinées aux enfants et aux adolescents. Il se tient dans la ville de Sousse et vise à promouvoir le cinéma pour le jeune public ainsi que l'éducation à l'image.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_du_film_pour_l'enfance_et_la_jeunesse"
+  },
+  "gabes-cinema-fen": {
+   "source": "Wikipédia",
+   "texte": "Le Gabès Cinéma Fen est un festival de cinéma annuel qui se tient à Gabès dans le sud de la Tunisie. Il fait se côtoyer cinéma, art vidéo et réalité virtuelle pendant neuf jours.",
+   "url": "https://fr.wikipedia.org/wiki/Gab%C3%A8s_Cin%C3%A9ma_Fen"
+  },
+  "hammamet": {
+   "source": "Wikipédia",
+   "texte": "Le Festival international d'Hammamet est un festival annuel de musique et d'art organisé depuis 1964 dans la ville côtière d'Hammamet en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_d'Hammamet"
+  },
   "jaou": {
    "source": "site officiel",
    "texte": "Cultural Initiatives in North Africa and the Middle East",
    "url": "https://kamellazaarfoundation.org"
   },
+  "jazz-carthage": {
+   "source": "Wikipédia",
+   "texte": "Jazz à Carthage est un festival international tunisien consacré au jazz et aux musiques assimilées depuis 2005.",
+   "url": "https://fr.wikipedia.org/wiki/Jazz_%C3%A0_Carthage"
+  },
   "jcc": {
    "source": "Wikipédia",
    "texte": "Les Journées cinématographiques de Carthage ou JCC sont un festival de cinéma créé en 1966. Il se tient à Tunis, capitale de la Tunisie, et a lieu au mois d'octobre ou de novembre tous les ans depuis 2015.",
    "url": "https://fr.wikipedia.org/wiki/Journ%C3%A9es_cin%C3%A9matographiques_de_Carthage"
+  },
+  "jmc": {
+   "source": "site officiel",
+   "texte": "نعلمكم أن تذاكر أيام قرطاج الموسيقية 2026 متوفرة في مدينة الثقافة ابتداءً من 03 أكتوبر 2026\nيحق لكل شخص اقتناء تذاكر يوم ما قبل العرض ويوم العرض على ان لاتتجاوز 4 تذاكر للعرض الواحد.",
+   "url": "https://jmc.tn/"
   },
   "jtc": {
    "source": "Wikipédia",
@@ -198,7 +243,38 @@
    "url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_municipal_de_Tunis"
   }
  },
- "musees": {},
+ "musees": {
+  "Musée de la monnaie (Banque centrale)": {
+   "source": "Wikipédia",
+   "texte": "Le musée de la monnaie est un musée numismatique situé en plein centre de Tunis.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_monnaie_(Tunisie)"
+  },
+  "Musée de la poste": {
+   "source": "Wikipédia",
+   "texte": "Le musée de la poste est un musée tunisien présentant l'histoire philatélique et postale de la Tunisie, ouvert le 25 juillet 1959.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_poste_(Tunisie)"
+  },
+  "Musée militaire national": {
+   "source": "Wikipédia",
+   "texte": "Le musée militaire national est un musée tunisien présentant l'histoire militaire de la Tunisie, depuis l'époque carthaginoise jusqu'à nos jours.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_militaire_national_(Tunisie)"
+  },
+  "Musée national de Carthage": {
+   "source": "Wikipédia",
+   "texte": "Le musée national de Carthage, actuellement en travaux, est un musée archéologique situé sur la colline de Byrsa au cœur de la ville de Carthage en Tunisie. C'est l'un des deux principaux musées archéologiques de Tunisie avec le musée national du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_de_Carthage"
+  },
+  "Musée national du Bardo": {
+   "source": "Wikipédia",
+   "texte": "Le musée national du Bardo est un musée de Tunis, capitale de la Tunisie, situé dans la banlieue du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_du_Bardo_(Tunisie)"
+  },
+  "Musée océanographique de Salammbô": {
+   "source": "Wikipédia",
+   "texte": "Le musée océanographique de Salammbô, aussi appelé Dar El Hout en arabe, est le principal musée tunisien consacré à la mer. Il est situé à Carthage, en banlieue nord de Tunis, sur l'emplacement de son ancien port punique.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_oc%C3%A9anographique_de_Salammb%C3%B4"
+  }
+ },
  "pages": {
   "https://billetterie.elteatrotunis.com/fr/programme/fuite": {
    "texte": "محمد البركاتيrnMohamed Baraketirnمسرح بيكولو ببنزرتrnThéâtre Piccolo-Bizerte",
@@ -607,6 +683,21 @@
   }
  },
  "recherches": {
+  "festivals:carthage-dance": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:djerba-music-land": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:dream-city": {
+   "source": "site officiel",
+   "texte": "L'association L'Art Rue est une fabrique d'espaces artistiques au coeur de la médina de Tunis.",
+   "url": "https://lartrue.org/fr/agenda",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "festivals:fabrika-festival": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -615,10 +706,106 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "festivals:festival-de-la-medina-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-bizerte": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-carthage": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Festival international de Carthage est un festival annuel de musique, théâtre et danse, ayant lieu aux mois de juillet et août, depuis 1964, dans la ville côtière de Carthage (Tunisie).",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_Carthage",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-dougga": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Festival international de Dougga est un festival annuel de musique ayant lieu aux mois de juillet et août, depuis 1920, au sein du site archéologique de Dougga en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_Dougga",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-hammamet": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Festival international d'Hammamet est un festival annuel de musique et d'art organisé depuis 1964 dans la ville côtière d'Hammamet en Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_d'Hammamet",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-musique-symphonique-d-el-jem": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Festival international de musique symphonique d'El Jem est un festival de musique symphonique qui se tient chaque été dans la ville tunisienne d'El Jem depuis 1986.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_de_musique_symphonique_d'El_Jem",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-des-ksour-sahariens-de-tataouine": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-des-oasis-de-tozeur": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-du-cinema-au-sahara": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-du-film-pour-l-enfance-et-la-jeunesse": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Festival international du film pour l'enfance et la jeunesse (FIFEJ) est un festival de cinéma tunisien consacré aux œuvres destinées aux enfants et aux adolescents. Il se tient dans la ville de Sousse et vise à promouvoir le cinéma pour le jeune public ainsi que l'éducation à l'image.",
+   "url": "https://fr.wikipedia.org/wiki/Festival_international_du_film_pour_l'enfance_et_la_jeunesse",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-international-du-sahara-de-douz": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-moncef-ben-haj-yahia-des-arts-de-la-marionnette-et-du-theatre-pour-enfants": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:foire-internationale-du-livre-de-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:gabes-cinema-fen": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Gabès Cinéma Fen est un festival de cinéma annuel qui se tient à Gabès dans le sud de la Tunisie. Il fait se côtoyer cinéma, art vidéo et réalité virtuelle pendant neuf jours.",
+   "url": "https://fr.wikipedia.org/wiki/Gab%C3%A8s_Cin%C3%A9ma_Fen",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "festivals:jaou-tunis": {
    "source": "site officiel",
    "texte": "Cultural Initiatives in North Africa and the Middle East",
    "url": "https://kamellazaarfoundation.org",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:jazz-a-carthage": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Jazz à Carthage est un festival international tunisien consacré au jazz et aux musiques assimilées depuis 2005.",
+   "url": "https://fr.wikipedia.org/wiki/Jazz_%C3%A0_Carthage",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -631,6 +818,13 @@
    "vu": "2026-11-02"
   },
   "festivals:journees-des-arts-de-la-marionnette-de-carthage": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:journees-musicales-de-carthage": {
+   "source": "site officiel",
+   "texte": "نعلمكم أن تذاكر أيام قرطاج الموسيقية 2026 متوفرة في مدينة الثقافة ابتداءً من 03 أكتوبر 2026\nيحق لكل شخص اقتناء تذاكر يوم ما قبل العرض ويوم العرض على ان لاتتجاوز 4 تذاكر للعرض الواحد.",
+   "url": "https://jmc.tn/",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -718,6 +912,10 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:galerie-insular-erriadh-djerbahood": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:galerie-tgm": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -755,6 +953,10 @@
    "vu": "2026-11-02"
   },
   "lieux:ksar-el-farch": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:l-agora-djerba": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -847,6 +1049,98 @@
    "vu": "2026-11-02"
   },
   "lieux:vox-cafe-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:centre-des-musiques-arabes-et-mediterraneennes-ennejma-ezzahra": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:macam-musee-national-d-art-moderne-et-contemporain": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-archeologique-de-nabeul": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-dar-ben-abdallah": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-la-monnaie": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de la monnaie est un musée numismatique situé en plein centre de Tunis.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_monnaie_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-la-poste": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée de la poste est un musée tunisien présentant l'histoire philatélique et postale de la Tunisie, ouvert le 25 juillet 1959.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_poste_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-la-ville-de-tunis-palais-kheireddine": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-de-thuburbo-majus": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-du-mouvement-national": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-militaire-national": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée militaire national est un musée tunisien présentant l'histoire militaire de la Tunisie, depuis l'époque carthaginoise jusqu'à nos jours.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_militaire_national_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-national-de-carthage": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée national de Carthage, actuellement en travaux, est un musée archéologique situé sur la colline de Byrsa au cœur de la ville de Carthage en Tunisie. C'est l'un des deux principaux musées archéologiques de Tunisie avec le musée national du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_de_Carthage",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-national-du-bardo": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée national du Bardo est un musée de Tunis, capitale de la Tunisie, situé dans la banlieue du Bardo.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_du_Bardo_(Tunisie)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-oceanographique-de-salammbo": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le musée océanographique de Salammbô, aussi appelé Dar El Hout en arabe, est le principal musée tunisien consacré à la mer. Il est situé à Carthage, en banlieue nord de Tunis, sur l'emplacement de son ancien port punique.",
+   "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_oc%C3%A9anographique_de_Salammb%C3%B4",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-paleochretien-de-carthage": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:musee-safia-farhat": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:site-et-musee-d-utique": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "musees:site-et-musee-de-kerkouane": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   }

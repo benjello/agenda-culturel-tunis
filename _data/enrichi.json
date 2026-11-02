@@ -79,6 +79,11 @@
    "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
    "qid": "Q17449190"
+  },
+  "lieu:theatre-municipal-de-tunis": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Le_théâtre_de_Tunis_(3301451272).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_théâtre_de_Tunis_(3301451272).jpg?width=400",
+   "qid": "Q3527872"
   }
  },
  "osm": {
@@ -207,12 +212,14 @@
   "lieu:el-teatro": "2026-11-02",
   "lieu:fondation-rosa-luxemburg-tunis": "2026-11-02",
   "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
+  "lieu:galerie-insular-erriadh-djerbahood": "2026-11-02",
   "lieu:galerie-tgm": "2026-11-02",
   "lieu:institut-francais-de-sfax": "2026-11-02",
   "lieu:institut-francais-de-sousse": "2026-11-02",
   "lieu:institut-francais-de-tunis": "2026-11-02",
   "lieu:institut-francais-de-tunisie": "2026-11-02",
   "lieu:jardin-institut-francais-de-sfax": "2026-11-02",
+  "lieu:l-agora-djerba": "2026-11-02",
   "lieu:l-art-rue-entree-sur-inscription-lien-en-bio": "2026-11-02",
   "lieu:la-boite": "2026-11-02",
   "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
@@ -225,6 +232,16 @@
   "lieu:one-resort": "2026-11-02",
   "lieu:one-resort-monastir": "2026-11-02",
   "lieu:pathe-azur-city": "2026-11-02",
-  "lieu:pathe-tunis-city": "2026-11-02"
+  "lieu:pathe-tunis-city": "2026-11-02",
+  "lieu:salle-albert-camus-institut-francais-de-sfax": "2026-11-02",
+  "lieu:salle-de-cinema-institut-francais-de-sousse": "2026-11-02",
+  "lieu:salle-des-jeunes-createurs-cite-de-la-culture": "2026-11-02",
+  "lieu:shanti": "2026-11-02",
+  "lieu:sociale-sidi-bou-said": "2026-11-02",
+  "lieu:steps-club-sousse": "2026-11-02",
+  "lieu:studio-b52": "2026-11-02",
+  "lieu:theatre-le-4eme-art": "2026-11-02",
+  "lieu:theatre-municipal-de-tunis": "2026-11-02",
+  "lieu:vox-cafe-institut-francais-de-sousse": "2026-11-02"
  }
 }
