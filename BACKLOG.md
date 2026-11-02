@@ -80,7 +80,7 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.
 - [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
-- [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
+- [x] Critiques de films : lien Letterboxd à côté d'IMDb (identifiant Wikidata P6127, jamais de lien vide). À faire : AlloCiné.
 - [ ] Brancher les sources « à étudier ».
 - [ ] Synopsis des films : après le prochain passage des scrapers, compter les films sans synopsis
   (`_data/films.json`, champ `synopsis`). S'il en manque beaucoup, choisir une clé :
@@ -128,14 +128,14 @@ Usage
 
 Ouverture
 - [x] API publique documentée (JSON des événements) pour médias, applis, chercheurs.
-- [ ] Langue de l'événement (français, arabe, anglais…).
+- [x] Langue de l'événement (français, arabe, anglais, VO sous-titrée) : étiquette sur les cartes et les fiches.
 - [ ] Accessibilité des lieux (fauteuil) : basse priorité, difficile à collecter.
 
 Présentation (demandé le 1er novembre)
 - [x] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
 - [ ] Fiche artiste : photo et courte bio depuis Wikidata / Wikipédia (licence libre), lien Instagram.
 - [ ] Image des lieux depuis Wikimedia Commons (Théâtre municipal, Cité de la culture…).
-- [ ] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
+- [x] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
 - [ ] Catégories : affiner au fil des remarques (règles par mots du titre dans `commun.categorie_du_titre`).
 
 Couverture et langues (demandé le 1er novembre)

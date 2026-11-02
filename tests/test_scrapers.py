@@ -565,7 +565,7 @@ class Wikidata(unittest.TestCase):
 
         def snak(v):
             return {"mainsnak": {"datavalue": {"value": v}}}
-        film = {"claims": {"P345": [snak("tt1234567")], "P577": [snak({"time": f"+{an}-05-01T00:00:00Z"})],
+        film = {"claims": {"P345": [snak("tt1234567")], "P6127": [snak("bakma")], "P577": [snak({"time": f"+{an}-05-01T00:00:00Z"})],
                            "P136": [snak({"id": "Q1"}), snak({"id": "Q2"})], "P495": [snak({"id": "Q948"})],
                            "P2758": [snak({"id": "Q3"})]},
                 "labels": {"fr": {"value": "Bakma"}}}
@@ -583,6 +583,7 @@ class Wikidata(unittest.TestCase):
             f = wikidata.fiche(t["qid"], t["entite"])
         self.assertEqual(f["qid"], "Q10")
         self.assertEqual(f["imdb"], "tt1234567")
+        self.assertEqual(f["letterboxd"], "bakma")
         self.assertEqual(f["genres"], ["Drame", "Thriller"])
         self.assertEqual(f["age"], "-12")
         self.assertTrue(f["tunisien"])

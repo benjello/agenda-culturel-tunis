@@ -25,6 +25,7 @@ API = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": "agenda-culturel-tunis/1.0 (https://github.com/benjello/agenda-culturel-tunis)"}
 TUNISIE = "Q948"
 P_IMDB, P_GENRE, P_PAYS, P_DATE, P_NATURE = "P345", "P136", "P495", "P577", "P31"
+P_LETTERBOXD = "P6127"  # identifiant Letterboxd du film (sa « slug », CC0 comme le reste de Wikidata)
 FILM = "Q11424"
 P_AGE_CNC = "P2758"  # classement CNC (France)
 LANGUES = ("fr", "en", "ar")
@@ -103,7 +104,7 @@ def chercher(morceaux: list[str], annee_min: int) -> dict | None:
 
 
 def fiche(qid: str, e: dict) -> dict:
-    """Ce qu'on garde d'un film : imdb, genres (liste courte), age, tunisien."""
+    """Ce qu'on garde d'un film : imdb, letterboxd, genres (liste courte), age, tunisien."""
     genres_q = _valeurs(e, P_GENRE)
     ages_q = _valeurs(e, P_AGE_CNC)
     libelles = {q: _libelle(x) for q, x in _entites(genres_q + ages_q).items()} if genres_q or ages_q else {}
@@ -119,6 +120,7 @@ def fiche(qid: str, e: dict) -> dict:
     for q in ages_q:
         age = next((nom for motif, nom in AGES if re.search(motif, libelles.get(q, "").lower())), age)
     return {"qid": qid, "imdb": next((v for v in _valeurs(e, P_IMDB) if str(v).startswith("tt")), ""),
+            "letterboxd": next((str(v) for v in _valeurs(e, P_LETTERBOXD) if isinstance(v, str) and v), ""),
             "genres": genres[:3], "age": age, "tunisien": TUNISIE in _valeurs(e, P_PAYS),
             "annee": _annee(e), "titre_wikidata": _libelle(e)}
 
@@ -137,7 +139,8 @@ def completer(films: list[dict], morceaux_de) -> None:
         cle = f["id"]
         c = cache.get(cle)
         a_refaire = c is None or (c.get("qid") is None and
-                                  aujourd_hui - dt.date.fromisoformat(c["verifie"]) > dt.timedelta(days=7))
+                                  aujourd_hui - dt.date.fromisoformat(c["verifie"]) > dt.timedelta(days=7)) \
+            or (c.get("qid") and "letterboxd" not in c)  # notices écrites avant l'ajout de Letterboxd
         if a_refaire:
             try:
                 trouve = chercher(sorted(morceaux_de(f["titre"])), aujourd_hui.year - 3)
@@ -152,6 +155,7 @@ def completer(films: list[dict], morceaux_de) -> None:
         if c and c.get("qid"):
             f["wikidata"] = c["qid"]
             f["imdb"] = f.get("imdb") or c.get("imdb", "")
+            f["letterboxd"] = c.get("letterboxd", "")
             f["genres"] = f.get("genres") or c.get("genres", [])
             f["age"] = c.get("age", "")
             f["tunisien"] = bool(c.get("tunisien"))
