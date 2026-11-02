@@ -414,3 +414,8 @@ filtre_quand: { fr: "Quand", ar: "متى", en: "When" }
 filtre_quoi: { fr: "Quoi", ar: "ماذا", en: "What" }
 ouvrir_page: { fr: "Ouvrir la page", ar: "فتح الصفحة", en: "Open the page" }
 apercu: { fr: "Aperçu", ar: "معاينة", en: "Preview" }
+
+apercu_rapide: { fr: "Aperçu rapide", ar: "معاينة سريعة", en: "Quick preview" }
+ce_soir_titre: { fr: "Ce soir à Tunis", ar: "هذا المساء في تونس", en: "Tonight in Tunis" }
+dans: { fr: "dans", ar: "بعد", en: "in" }
+en_cours_maintenant: { fr: "a commencé", ar: "بدأ", en: "started" }

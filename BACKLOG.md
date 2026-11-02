@@ -174,3 +174,10 @@ Fiabilité
 - [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 8 pages Facebook branchées ; trouver les 16 autres.
 - [x] FTCC (ciné-clubs) : page Facebook FTCCTunisie, plus le Ciné-club de Tunis et la FTCA sur Instagram.
 - [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.
+
+Comprendre sans cliquer (demandé le 2 novembre)
+- [x] Aperçu au survol (ordinateur) et bouton 👁 en feuille du bas (téléphone) : affiche, heure, lieu, prix, notice.
+- [x] « Ce soir à Tunis » en tête de l'accueil : événements du jour classés par heure, avec « dans 40 min ».
+- [x] Heure de début en évidence sous la date de chaque carte.
+- [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
+- [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
