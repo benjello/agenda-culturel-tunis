@@ -19,6 +19,7 @@ from pathlib import Path
 from .commun import RACINE
 
 FICHIER = RACINE / "_data" / "critiques.json"
+FICHIER_EVENEMENTS = RACINE / "_data" / "presse.json"  # articles sur une manifestation (pas un film)
 JOURS_GARDES = 180
 
 
