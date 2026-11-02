@@ -11,10 +11,7 @@ layout: default
   {%- capture q %}{{ page.title }}{% if page.adresse %}, {{ page.adresse }}{% endif %}, Tunisie{% endcapture %}
   · <a class="carte" href="{% if page.lat %}https://www.openstreetmap.org/?mlat={{ page.lat }}&mlon={{ page.lon }}#map=17/{{ page.lat }}/{{ page.lon }}{% else %}https://www.openstreetmap.org/search?query={{ q | strip | url_encode }}{% endif %}" data-q="{% if page.lat %}{{ page.lat }},{{ page.lon }}{% else %}{{ q | strip | escape }}{% endif %}" rel="noopener">📍 <span data-t="voir_carte">Voir sur la carte</span></a></p>
   {%- capture cle %}lieu:{{ page.slug }}{% endcapture %}{% include enrichi.html cle=cle nom=page.title %}
-  {%- assign d = site.data.descriptifs.lieux[page.slug] -%}
-  {%- if d %}
-  <p class="descriptif">{{ d.texte | escape }}{% if d.source %} <small class="descriptif-source">· {% if d.url %}<a href="{{ d.url }}" rel="noopener">{{ d.source }}</a>{% else %}{{ d.source }}{% endif %}</small>{% endif %}</p>
-  {%- endif %}
+  {%- assign d = site.data.descriptifs.lieux[page.slug] -%}{% include descriptif.html d=d %}
 </section>
 <h2 data-t="a_venir">À venir</h2>
 {% include liste-evenements.html evenements=evts %}

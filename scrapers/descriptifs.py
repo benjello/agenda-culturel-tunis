@@ -1,4 +1,4 @@
-"""Petits descriptifs : événements, films, lieux, festivals, musées.
+"""Petits descriptifs : événements, films, lieux, festivals, musées, artistes, organisateurs.
 
 Tout est gratuit et sans clé obligatoire :
   événements  la page d'origine de l'annonce (lien « Source ») : description schema.org,
@@ -10,15 +10,20 @@ Tout est gratuit et sans clé obligatoire :
               2. sinon Wikipédia (début de l'article), par l'élément Wikidata déjà trouvé ;
               3. sinon la notice d'une salle qui le projette.
               IMDb n'a pas d'API gratuite et interdit la copie de ses pages : on garde le lien.
-  lieux, festivals, musées
+  lieux, festivals, musées, organisateurs
               Wikipédia en français (ou anglais), par Wikidata, seulement pour un élément situé
-              en Tunisie ; pour un festival sans article, la description de son site officiel.
+              en Tunisie (organisateurs : le nom doit être exactement celui de l'élément) ;
+              sinon la description du site officiel (OpenStreetMap pour un lieu, lien « Site web »
+              d'un organisateur ; jamais Facebook ni Instagram).
+  artistes    Wikipédia, par Wikidata : une personne dont le nom (au moins deux mots) est exactement
+              celui de la fiche et qui a un article ; la personne tunisienne passe devant.
+              En cas d'homonyme, corriger à la main (_data/descriptifs_manuels.yml).
 
 Un texte écrit à la main dans _data/descriptifs_manuels.yml passe toujours devant.
 
 Les réponses sont gardées dans _data/descriptifs.json : chaque page n'est lue qu'une fois,
 une recherche sans résultat est refaite après 30 jours. Le site lit dans ce même fichier
-les sections « lieux », « festivals », « musees » ; le synopsis est ajouté à _data/films.json
+les sections « lieux », « festivals », « musees », « artistes », « collectifs » ; le synopsis est ajouté à _data/films.json
 et la notice d'un événement est écrite dans son fichier, comme celles des scrapers.
 
   python3 -m scrapers.descriptifs              tout
@@ -43,6 +48,8 @@ from bs4 import BeautifulSoup
 from .commun import RACINE, propre, resume, retours_ligne_casses, slug, telecharger
 from .doublons import _lire
 from .ecriture import DOSSIER_AUTO, _texte_brut
+from .enrichir import _norm
+from .wikidata import _valeurs
 
 CACHE = RACINE / "_data" / "descriptifs.json"
 MANUELS = RACINE / "_data" / "descriptifs_manuels.yml"
@@ -50,7 +57,7 @@ FILMS = RACINE / "_data" / "films.json"
 LONGUEUR = 400            # une notice courte, coupée en fin de phrase
 LONGUEUR_LIEU = 320
 MAX_PAGES = 80            # pages nouvelles lues par passage (on reste discret avec les sites)
-MAX_RECHERCHES = 40       # recherches Wikidata / TMDb nouvelles par passage
+MAX_RECHERCHES = 120      # recherches Wikidata / TMDb nouvelles par passage (films d'abord, puis fiches)
 REESSAI = dt.timedelta(days=30)
 OUBLI = dt.timedelta(days=90)  # une page plus citée par aucun événement est oubliée
 
@@ -98,7 +105,7 @@ def lire_cache() -> dict:
         d = json.loads(CACHE.read_text())
     except (OSError, ValueError):
         d = {}
-    for k in ("pages", "recherches", "lieux", "festivals", "musees", "films"):
+    for k in ("pages", "recherches", "lieux", "festivals", "musees", "films", "artistes", "collectifs"):
         d.setdefault(k, {})
     return d
 
@@ -113,7 +120,7 @@ def manuels() -> dict:
     except (OSError, yaml.YAMLError):
         d = {}
     return {k: {str(c): str(v).strip() for c, v in (d.get(k) or {}).items() if v} for k in
-            ("evenements", "films", "lieux", "festivals", "musees")}
+            ("evenements", "films", "lieux", "festivals", "musees", "artistes", "collectifs")}
 
 
 # ---------------------------------------------------------------- pages d'annonce
@@ -226,8 +233,17 @@ def wikipedia(qid: str, n: int = LONGUEUR) -> dict | None:
     return None
 
 
-def chercher_lieu(nom: str) -> str | None:
-    """Élément Wikidata d'un lieu, musée ou festival situé en Tunisie, ou None."""
+def _noms(e: dict) -> set[str]:
+    """Libellés et alias (toutes langues demandées) d'un élément, normalisés."""
+    noms = {l["value"] for l in e.get("labels", {}).values()}
+    for alias in e.get("aliases", {}).values():
+        noms |= {a["value"] for a in alias}
+    return {n for n in (_norm(x) for x in noms) if n}
+
+
+def chercher_lieu(nom: str, strict: bool = False) -> str | None:
+    """Élément Wikidata d'un lieu, musée, festival ou organisme situé en Tunisie, ou None.
+    strict : le nom doit être celui de l'élément (ou un alias), pas seulement lui ressembler."""
     ids = []
     for langue in ("fr", "en"):
         for r in _wd(action="wbsearchentities", search=nom, language=langue, uselang="fr",
@@ -236,14 +252,42 @@ def chercher_lieu(nom: str) -> str | None:
                 ids.append(r["id"])
     if not ids:
         return None
-    entites = _wd(action="wbgetentities", ids="|".join(ids), props="claims|sitelinks").get("entities", {})
+    entites = _wd(action="wbgetentities", ids="|".join(ids), props="claims|sitelinks|labels|aliases",
+                  languages="fr|en|ar").get("entities", {})
+    cible = _norm(nom)
     for qid in ids:  # dans l'ordre de pertinence de Wikidata
         e = entites.get(qid, {})
+        if strict and cible not in _noms(e):
+            continue
         pays = [c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id")
                 for c in e.get("claims", {}).get("P17", [])]
         if TUNISIE in pays and any(k in e.get("sitelinks", {}) for k in ("frwiki", "enwiki")):
             return qid
     return None
+
+
+def chercher_personne(nom: str) -> str | None:
+    """Élément Wikidata d'une personne dont le nom est exactement celui cherché et qui a un article
+    Wikipédia ; à égalité, la personne tunisienne passe devant. Un seul mot (« Amin ») : trop de
+    homonymes, on ne cherche pas."""
+    if len(nom.split()) < 2:
+        return None
+    ids = []
+    for langue in ("fr", "en"):
+        for r in _wd(action="wbsearchentities", search=nom, language=langue, uselang="fr",
+                     type="item", limit=7).get("search", []):
+            if r["id"] not in ids:
+                ids.append(r["id"])
+    if not ids:
+        return None
+    entites = _wd(action="wbgetentities", ids="|".join(ids), props="claims|sitelinks|labels|aliases",
+                  languages="fr|en|ar").get("entities", {})
+    cible, candidats = _norm(nom), []
+    for rang, qid in enumerate(ids):
+        e = entites.get(qid, {})
+        if "Q5" in _valeurs(e, "P31") and cible in _noms(e) and any(k in e.get("sitelinks", {}) for k in ("frwiki", "enwiki")):
+            candidats.append((TUNISIE in _valeurs(e, "P27"), -rang, qid))
+    return max(candidats)[2] if candidats else None
 
 
 def tmdb(film: dict, cle: str) -> dict | None:
@@ -387,17 +431,67 @@ def ecrire_notices(evts, cache: dict, films: list[dict], mains: dict) -> int:
     return n
 
 
-def _fiches_lieux() -> dict[str, str]:
+def _fiches(dossier: str) -> dict[str, tuple[str, dict]]:
+    """{nom de fichier sans .md : (titre, en-tête)} des fiches d'un dossier (_lieux, _artistes, _collectifs)."""
     res = {}
-    for f in sorted((RACINE / "_lieux").glob("*.md")):
+    for f in sorted((RACINE / dossier).glob("*.md")):
         c, _ = _lire(f)
         if c and c.get("title"):
-            res[f.stem] = c["title"]
+            res[f.stem] = (str(c["title"]), c)
     return res
 
 
+def _nom_court(titre: str) -> str:
+    """« Beit al-Hikma (Académie…) », « La Boîte (Instagram) » → le nom seul."""
+    return re.sub(r"\s*\([^)]*\)\s*", " ", titre).strip() or titre
+
+
+def _accueil(url: str) -> str:
+    """Page d'accueil du site d'une adresse de flux ou de page (…/feed/ → …/)."""
+    u = urlparse(url)
+    if re.search(r"feed|rss|atom|\.xml|\.ics|\.json|wp-json", u.path, re.I):
+        return f"{u.scheme}://{u.netloc}/"
+    return url
+
+
+def _site_collectif(c: dict) -> str:
+    """Site web (pas un réseau social) d'un organisateur, ou une chaîne vide."""
+    for l in c.get("liens") or []:
+        if l.get("reseau") == "site" and _lisible(l.get("url", "")):
+            return l["url"]
+    url = c.get("url_source") or ""
+    return _accueil(url) if _lisible(url) else ""
+
+
+def _site_lieu(stem: str) -> str:
+    """Site du lieu trouvé par OpenStreetMap (scrapers/enrichir.py)."""
+    try:
+        osm = json.loads((RACINE / "_data" / "enrichi.json").read_text()).get("osm") or {}
+    except (OSError, ValueError):
+        return ""
+    site = (osm.get(f"lieu:{stem}") or {}).get("website", "")
+    return site if _lisible(site) else ""
+
+
+def _lire_site(site: str, nom: str) -> dict | None:
+    t = extraire(telecharger(site), nom)
+    return {"texte": _nettoyer(t, LONGUEUR_LIEU), "source": "site officiel", "url": site} if t else None
+
+
+def _trouver(groupe: str, el: dict) -> dict | None:
+    """Wikipédia (par Wikidata), puis la description du site officiel."""
+    if groupe == "artistes":
+        qid = chercher_personne(el["nom"])
+    else:
+        qid = chercher_lieu(el["nom"], strict=groupe == "collectifs")
+    trouve = wikipedia(qid, LONGUEUR_LIEU) if qid else None
+    if not trouve and el.get("site"):
+        trouve = _lire_site(el["site"], el["nom"])
+    return trouve
+
+
 def completer_lieux(cache: dict, budget: Budget, mains: dict) -> None:
-    """Sections « lieux », « festivals », « musees » lues par le site."""
+    """Sections « lieux », « festivals », « musees », « artistes », « collectifs » lues par le site."""
     try:
         festivals = yaml.safe_load((RACINE / "_data" / "festivals.yml").read_text()) or []
     except OSError:
@@ -407,10 +501,12 @@ def completer_lieux(cache: dict, budget: Budget, mains: dict) -> None:
     except OSError:
         musees = []
     groupes = {
-        "lieux": {k: {"nom": v} for k, v in _fiches_lieux().items()},
+        "lieux": {k: {"nom": _nom_court(t).split(",")[0], "site": _site_lieu(k)} for k, (t, _) in _fiches("_lieux").items()},
         "festivals": {f["id"]: {"nom": re.sub(r"\s*\([^)]*\)\s*$", "", f["nom"]), "site": f.get("site")}
                       for f in festivals if f.get("id")},
         "musees": {m["nom"]: {"nom": re.sub(r"\s*\([^)]*\)\s*$", "", m["nom"])} for m in musees if m.get("nom")},
+        "artistes": {k: {"nom": t} for k, (t, _) in _fiches("_artistes").items()},
+        "collectifs": {k: {"nom": _nom_court(t), "site": _site_collectif(c)} for k, (t, c) in _fiches("_collectifs").items()},
     }
     for groupe, elements in groupes.items():
         sortie = {}
@@ -421,14 +517,8 @@ def completer_lieux(cache: dict, budget: Budget, mains: dict) -> None:
             r_cle = f"{groupe}:{slug(el['nom'])}"
             entree = cache["recherches"].get(r_cle)
             if _perime(entree) and budget.prendre():
-                trouve = None
                 try:
-                    qid = chercher_lieu(el["nom"])
-                    trouve = wikipedia(qid, LONGUEUR_LIEU) if qid else None
-                    if not trouve and el.get("site") and _lisible(el["site"]):
-                        t = extraire(telecharger(el["site"]), el["nom"])
-                        trouve = {"texte": _nettoyer(t, LONGUEUR_LIEU), "source": "site officiel",
-                                  "url": el["site"]} if t else None
+                    trouve = _trouver(groupe, el)
                 except Exception as exc:  # noqa: BLE001
                     print(f"  {groupe} · {el['nom']} : {type(exc).__name__}: {exc}")
                     continue
@@ -464,7 +554,8 @@ def main(argv=None) -> int:
     ecrire_cache(cache)
     avec = sum(1 for f in films if f.get("synopsis"))
     print(f"Descriptifs : {n} notice(s) ajoutée(s) aux événements, {avec}/{len(films)} films avec synopsis, "
-          f"{len(cache['lieux'])} lieux, {len(cache['festivals'])} festivals, {len(cache['musees'])} musées.")
+          f"{len(cache['lieux'])} lieux, {len(cache['festivals'])} festivals, {len(cache['musees'])} musées, "
+          f"{len(cache['artistes'])} artistes, {len(cache['collectifs'])} organisateurs.")
     return 0
 
 
