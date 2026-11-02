@@ -23,16 +23,6 @@
    ]
   },
   {
-   "fichier": "fb-61595612945174/2026-11-08-some-of-the-best-selectors-djs-and-producers-of-bass-music-w.md",
-   "source": "fb-61595612945174",
-   "titre": "Some of the best selectors djs and producers of Bass Music will be playing. We are not pre",
-   "date": "2026-11-08",
-   "lien": "https://www.facebook.com/61595612945174/posts/122107469277520431",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
    "fichier": "fb-cr-sidibouzid/2026-11-01-evenement.md",
    "source": "fb-cr-sidibouzid",
    "titre": "الورشات الفنية الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد",
@@ -293,16 +283,9 @@
    },
    "fb-61595612945174": {
     "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Some of the best selectors djs and producers of Bass Music will be pla"
-     }
-    ],
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
@@ -777,54 +760,6 @@
    }
   },
   "scrapers": {
-   "facebook_programmes": {
-    "n": 11,
-    "precis": 1,
-    "pourcent": 9,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
-     },
-     {
-      "code": "lien_partage",
-      "texte": "même lien pour plusieurs événements différents",
-      "n": 4,
-      "exemple": "BAKMA - بكمة"
-     },
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 1,
-      "exemple": "Le Maître du kabuki"
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 4,
-      "exemple": "Some of the best selectors djs and producers of Bass Music will be pla"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 6
-     },
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 4
-     }
-    ]
-   },
    "presse": {
     "n": 8,
     "precis": 1,
@@ -901,6 +836,54 @@
       "code": "sans_notice",
       "texte": "notice",
       "n": 1
+     }
+    ]
+   },
+   "facebook_programmes": {
+    "n": 11,
+    "precis": 2,
+    "pourcent": 18,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
+     },
+     {
+      "code": "lien_partage",
+      "texte": "même lien pour plusieurs événements différents",
+      "n": 4,
+      "exemple": "BAKMA - بكمة"
+     },
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 1,
+      "exemple": "Le Maître du kabuki"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 3,
+      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 6
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
      }
     ]
    },

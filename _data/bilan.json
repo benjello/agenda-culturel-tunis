@@ -157,10 +157,11 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 81,
+   "tunis": 80,
    "sud": 6,
    "sfax": 4,
    "sousse": 3,
+   "autres": 1,
    "monastir": 1
   },
   "par_categorie": {

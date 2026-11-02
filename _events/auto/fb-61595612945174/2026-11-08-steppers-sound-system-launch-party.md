@@ -1,8 +1,8 @@
 ---
-title: "Some of the best selectors djs and producers of Bass Music will be playing. We are not pre"
+title: "STEPPERS SOUND SYSTEM Launch party"
 date: 2026-11-08
-venue: "Lieu à préciser"
-ville: "tunis"
+venue: "Dar Ziqua, Zaghouan"
+ville: "autres"
 category: "musique"
 price: "40 DT"
 link: "https://www.facebook.com/61595612945174/posts/122107469277520431"
