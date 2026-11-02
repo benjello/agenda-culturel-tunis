@@ -40,7 +40,7 @@ import requests
 import yaml
 from bs4 import BeautifulSoup
 
-from .commun import RACINE, propre, resume, slug, telecharger
+from .commun import RACINE, propre, resume, retours_ligne_casses, slug, telecharger
 from .doublons import _lire
 from .ecriture import DOSSIER_AUTO, _texte_brut
 
@@ -86,6 +86,7 @@ def _perime(entree: dict | None) -> bool:
 
 def _nettoyer(texte: str, n: int = LONGUEUR) -> str:
     t = BeautifulSoup(texte or "", "html.parser").get_text(" ") if "<" in (texte or "") else (texte or "")
+    t = retours_ligne_casses(t)
     t = re.sub(r"[ \t\r\f\v]+", " ", t)
     t = re.sub(r"\s*\n\s*", "\n", t).strip()
     t = re.sub(r"\n{2,}", "\n", t)

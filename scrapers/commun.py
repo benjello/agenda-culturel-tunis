@@ -57,6 +57,18 @@ def propre(texte: str | None) -> str:
     return re.sub(r"\s+", " ", texte or "").strip()
 
 
+# « rn » à la place des retours à la ligne : la billetterie d'El Teatro sépare les noms par « \r\n »,
+# l'échappement se perd et il reste « rn » collé au mot suivant (« Baraketirn Mohamed »).
+# On ne remplace que « rn » entre une lettre (ou une fin de phrase) et une majuscule ou une lettre arabe,
+# pour ne pas toucher aux mots ordinaires (« journée », « Marne »…).
+_RN_CASSE = re.compile(r"(?<=[^\W\d_]|[.…!?»)])rn(?=[A-ZÀ-ÖØ-Þ؀-ۿ])")
+
+
+def retours_ligne_casses(texte: str | None) -> str:
+    """Remet les retours à la ligne là où une source a laissé « rn » à la place."""
+    return _RN_CASSE.sub("\n", texte or "")
+
+
 MOIS = {
     "janvier": 1, "janv": 1, "fevrier": 2, "février": 2, "fevr": 2, "févr": 2, "mars": 3,
     "avril": 4, "avr": 4, "mai": 5, "juin": 6, "juillet": 7, "juil": 7, "aout": 8, "août": 8,

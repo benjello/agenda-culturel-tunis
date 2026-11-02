@@ -30,6 +30,26 @@ def liens_fiches(soup, base: str, motif: str) -> list[str]:
     return vus
 
 
+_RE_ISO = re.compile(r"\b(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2}))?")
+
+
+def dates_iso(corps) -> list[dt.datetime]:
+    """Dates au format ISO (« 2026-11-07 », « 2026-11-07T19:30 ») : dans le texte ou une balise <time datetime>."""
+    res = []
+    for m in _RE_ISO.findall(corps.get_text(" ")):
+        try:
+            res.append(dt.datetime(int(m[0]), int(m[1]), int(m[2]), int(m[3] or 0), int(m[4] or 0)))
+        except ValueError:
+            continue
+    for t in corps.find_all("time", attrs={"datetime": True}):
+        for m in _RE_ISO.findall(t["datetime"]):
+            try:
+                res.append(dt.datetime(int(m[0]), int(m[1]), int(m[2]), int(m[3] or 0), int(m[4] or 0)))
+            except ValueError:
+                continue
+    return sorted(set(res))
+
+
 def lire_fiche(soup, url: str, lieu: str, aujourd_hui: dt.datetime) -> Evenement | None:
     ld = [e for e in depuis_json_ld(json_ld_evenements(soup), url) if (e.fin or e.debut) >= aujourd_hui]
     if ld:
@@ -39,8 +59,11 @@ def lire_fiche(soup, url: str, lieu: str, aujourd_hui: dt.datetime) -> Evenement
     titre = propre((soup.find("h1") or soup.find("h2") or soup.new_tag("x")).get_text(" ")) or meta(soup, "og:title")
     titre = re.sub(r"\s*(::|\|\s*Institut|–\s*Institut).*$", "", titre)
     corps = soup.find("main") or soup.find("article") or soup
-    dates = [d for d in toutes_dates(corps.get_text(" ")) if d >= aujourd_hui]
+    dates = [d for d in toutes_dates(corps.get_text(" ")) + dates_iso(corps) if d >= aujourd_hui]
+    dates = sorted(set(dates))
     if not titre or not dates:
+        # Journal de l'exécution : une fiche rejetée doit se voir (sinon une source reste à 0 sans explication).
+        print(f"    fiche ignorée (titre : {bool(titre)}, date à venir : {bool(dates)}) : {url}")
         return None
     prix = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:DT|TND)\b", corps.get_text(" "))
     return Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
