@@ -4,6 +4,6 @@ source: "ig-agora"
 type: "lieu"
 url_source: "https://www.instagram.com/lagoramarsa/"
 reseau: "instagram"
-categorie: "autre"
+categorie: "cinema"
 genre: "lieu"
 ---

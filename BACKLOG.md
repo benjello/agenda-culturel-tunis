@@ -143,6 +143,7 @@ Usage
 - [x] Filtre par moment : ce soir, cet après-midi, en semaine, le week-end.
 - [x] Prix : « Gratuit » ou une fourchette lus dans les légendes et la presse, case « seulement gratuits ». À faire : lire le prix sur la page de chaque événement.
 - [x] Presse : dates collées ou abrégées (« jusqu'au27nov. »), nom de l'événement cité dans le texte plutôt que le lieu du titre, catégorie lue dans le texte ; un article qui recoupe un événement officiel (même lieu, dates qui se chevauchent, titre proche) est masqué et lié dans la section « Dans la presse » de la fiche.
+- [x] Presse : un article d'un journal (genre « presse ») ne devient jamais une entrée « Autre » ni sans lieu : il faut une catégorie reconnue et un lieu précis. Sinon il est gardé dans `_data/presse.json` et rattaché à la manifestation officielle qui recoupe ses dates et son titre (section « Dans la presse »). Un article sur un festival ou une manifestation multi-jours (Jaou Tunis, Saisons de la création…) devient une entrée de festival (champ `festival`, catégorie de sa discipline, « spectacle » à défaut), listée sur la page Festivals (« Repérés dans la presse »). À faire : page « Presse » listant les articles non rattachés.
 - [x] Fiche lieu : adresse, carte, liens et tous ses événements à venir.
 - [x] Fiche artiste ou collectif : ses dates à venir (aide les petits à être visibles).
 - [x] Page Santé des sources (`/sante/`) : état, nombre d'événements, dernière nouveauté, sources silencieuses (rien depuis 30 jours), en panne, en pause.
@@ -183,3 +184,7 @@ Comprendre sans cliquer (demandé le 2 novembre)
 - [x] Heure de début en évidence sous la date de chaque carte.
 - [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
 - [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
+
+Entrées « Autre » à réduire (relevé du 2 novembre) : une entrée « Autre » devrait rester rare.
+- [ ] `ift-pdf` en produit 19 (programme PDF de l'Institut français : trouver la vraie catégorie dans le texte), puis `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
+- [x] Annonces hors culture (santé, prévention, caritatif…) : mots-clés dans `_data/hors_culture.yml`, appliqués à toutes les sources sur le titre.

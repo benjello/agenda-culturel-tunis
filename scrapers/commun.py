@@ -164,6 +164,7 @@ class Evenement:
     genres: list[str] = field(default_factory=list)
     description: str = ""          # notice : quelques lignes tirées de la source (légende, résumé)
     artistes: list[str] = field(default_factory=list)  # line-up, si la source le donne
+    festival: str = ""             # presse : identifiant d'un festival ou d'une manifestation repérée dans un article
     article: str = ""              # presse : titre de l'article (le titre ci-dessus est le nom de l'événement)
 
 
@@ -336,9 +337,30 @@ _PAS_UN_EVENEMENT = re.compile(
     r"inscriptions? (?:ouvertes|aux cours)|entr[ée]e gratuite (?:aux|dans les) (?:sites|mus[ée]es)|\bjoyeux anniversaire\b|\bbonne f[êe]te\b|\bAïd moubarak\b", re.I)
 
 
+_HORS_CULTURE: re.Pattern | None = None
+
+
+def _hors_culture() -> re.Pattern:
+    """Mots de `_data/hors_culture.yml` (santé, prévention, caritatif…), lus une fois."""
+    global _HORS_CULTURE
+    if _HORS_CULTURE is None:
+        import yaml
+        try:
+            mots = (yaml.safe_load((RACINE / "_data" / "hors_culture.yml").read_text()) or {}).get("mots") or []
+        except OSError:
+            mots = []
+        motifs = [re.escape(unicodedata.normalize("NFKD", str(m).lower()).encode("ascii", "ignore").decode()) for m in mots]
+        _HORS_CULTURE = re.compile("|".join(motifs) if motifs else "$^")
+    return _HORS_CULTURE
+
+
 def pas_un_evenement(titre: str) -> bool:
-    """Vrai pour une annonce de service (« la Médiathèque ouvre exceptionnellement… »)."""
-    return bool(_PAS_UN_EVENEMENT.search(titre or ""))
+    """Vrai pour une annonce de service (« la Médiathèque ouvre exceptionnellement… ») ou qui n'est
+    pas de la culture (santé, prévention : `_data/hors_culture.yml`)."""
+    if _PAS_UN_EVENEMENT.search(titre or ""):
+        return True
+    simple = unicodedata.normalize("NFKD", (titre or "").lower().replace("’", "'")).encode("ascii", "ignore").decode()
+    return bool(_hors_culture().search(simple))
 
 
 # Langue de l'événement, seulement quand l'annonce la donne clairement : « pièce en arabe », « en langue

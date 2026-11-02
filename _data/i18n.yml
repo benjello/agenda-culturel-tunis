@@ -121,6 +121,7 @@ genre.agenda: { ar: "أجندات ومنصات تذاكر", en: "Listings and ti
 genre.presse: { ar: "الصحف", en: "Newspapers" }
 traduction_auto: { ar: "ترجمة آلية.", en: "Machine translation." }
 lu_dans: { ar: "مقال في", en: "Read in" }
+fest.presse: { ar: "رُصدت في الصحافة", en: "Spotted in the press" }
 presse_evt: { ar: "في الصحافة", en: "In the press" }
 presse_film: { ar: "ماذا تقول الصحافة", en: "What the press says" }
 nouveau_titre: { ar: "جديد هذا الأسبوع", en: "New this week" }

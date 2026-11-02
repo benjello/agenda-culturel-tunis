@@ -441,6 +441,24 @@ class Doublons(unittest.TestCase):
             self.assertIn("doublon: true", (d / "presse-x" / "images-de-syrie-palmyre-alep-damas.md").read_text())
 
 
+    def test_article_sans_evenement_rattache_a_la_manifestation(self):
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "ift").mkdir()
+            (d / "ift" / "jaou.md").write_text(
+                f'---\ntitle: "Jaou Tunis biennale 8e édition"\ndate: {FUTUR}-10-23\nend_date: "{FUTUR}-11-22"\n'
+                f'venue: "Institut français de Tunis"\nlink: "https://ift.tn/x"\nsource: "ift"\nsource_name: "IFT"\nauto: true\n---\n')
+            art = [{"titre": "Jaou Tunis 2026 : les corps", "evenement": "Jaou Tunis 2026", "lien": "https://lp/j",
+                    "source_nom": "La Presse", "date": f"{FUTUR}-10-31", "debut": f"{FUTUR}-11-22", "fin": f"{FUTUR}-11-22", "lieu": ""},
+                   {"titre": "Autre sujet", "evenement": "Autre sujet", "lien": "https://lp/k", "source_nom": "La Presse",
+                    "date": f"{FUTUR}-10-31", "debut": f"{FUTUR}-11-22", "fin": f"{FUTUR}-11-22", "lieu": ""}]
+            doublons.marquer([{"id": "ift", "type": "lieu"}], d, art)
+            texte = (d / "ift" / "jaou.md").read_text()
+            self.assertIn("https://lp/j", texte)
+            self.assertNotIn("https://lp/k", texte)
+
+
 class AgendaDuJour(unittest.TestCase):
     def test_blocs_heure_ville(self):
         from scrapers.sources.agenda_du_jour import evenements
@@ -715,6 +733,51 @@ class PresseDatesTitres(unittest.TestCase):
         e = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})[0]
         self.assertEqual((e.titre, e.categorie), ("Images de Syrie", "expo"))
         self.assertEqual(e.article, "À l’Institut français de Tunis : La Syrie regardée")
+
+
+    def test_journal_jamais_en_autre(self):
+        """Un article sans catégorie reconnue ou sans lieu n'est pas un événement : il est gardé comme article."""
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss><channel>'
+               f'<item><title>Remise du Prix Saint Augustin à Tunis</title><link>https://x/1</link>'
+               f'<description>Cérémonie le {d.day} {mois} {d.year} à la Maison de la culture, festival.</description></item>'
+               f'<item><title>Une pièce dans la ville</title><link>https://x/2</link>'
+               f'<description>Théâtre : le {d.day} {mois} {d.year}, une pièce dans la ville.</description></item>'
+               f'</channel></rss>')
+        journal = {"id": "j", "nom": "Journal", "url": "u", "genre": "presse", "categorie": "autre"}
+        evts, articles = presse.analyser(xml, journal)
+        self.assertEqual(evts, [])  # ni catégorie, ni lieu précis
+        self.assertEqual(sorted(a["lien"] for a in articles), ["https://x/1", "https://x/2"])
+        evts, _ = presse.analyser(xml, {**journal, "genre": "administration"})
+        self.assertEqual(len(evts), 2)  # sources officielles : règle inchangée (lieu par défaut, « autre » possible)
+
+
+    def test_nouvelle_au_passe_jamais_un_evenement(self):
+        """« Le Prix Saint Augustin distingue l'historien… » (Kapitalis) : une nouvelle, pas un événement."""
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss><channel><item><title>Le Prix Saint Augustin distingue l’historien Abdelhamid Larguèche</title>'
+               f'<link>https://x/1</link><description>L’historien et écrivain a été distingué par le Prix Saint Augustin, '
+               f'remis le {d.day} {mois} {d.year}.</description></item></channel></rss>')
+        for genre in ("presse", "administration"):
+            evts, articles = presse.analyser(xml, {"id": "k", "nom": "Kapitalis", "url": "u", "genre": genre})
+            self.assertEqual((evts, articles), ([], []))
+        self.assertTrue(presse._NOUVELLE.search("Il a été distingué par un prix"))
+        self.assertFalse(presse._NOUVELLE.search("Le festival a été inauguré vendredi soir"))
+
+    def test_festival_sans_lieu_devient_une_entree_festival(self):
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss><channel><item><title>Ouverture des « Saisons de la création » : un théâtre en mouvement</title>'
+               f'<link>https://x/1</link><description>Le festival se tient jusqu\'au {d.day} {mois} {d.year}.</description></item></channel></rss>')
+        evts, articles = presse.analyser(xml, {"id": "j", "nom": "Journal", "url": "u", "genre": "presse", "categorie": "autre"})
+        self.assertEqual(articles, [])
+        self.assertEqual((evts[0].titre, evts[0].festival), ("Saisons de la création", "saisons-de-la-creation"))
+        self.assertNotEqual(evts[0].categorie, "autre")
 
 
 class TunisEvents(unittest.TestCase):
@@ -1071,3 +1134,33 @@ class AgoraDjerba(unittest.TestCase):
                 return cls(2026, 11, 2)
         with mock.patch.object(lecteurs.dt, "date", Jour):
             self.assertEqual(lecteurs.une_affiche_par_evenement([pub], [], "L'Agora Djerba"), [])
+
+    def test_publicite_agora_marsa_et_filtre_cinema(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import lecteurs
+        from scrapers.sources import instagram
+        pub = {"lien": "https://www.instagram.com/p/y/", "date": "2026-10-30", "images": ["a.jpg"],
+               "texte": "🎬 Cette semaine, ton prochain coup de cœur ciné t'attend à L'Agora ! 🍿 Du 2 au 8 novembre",
+               "ocr": ""}
+        class Jour(dt.date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 11, 2)
+        with mock.patch.object(lecteurs.dt, "date", Jour):
+            self.assertEqual(lecteurs.une_affiche_par_evenement([pub], [], "L'Agora Marsa"), [])
+        # source de cinéma : un événement sans film connu est écarté
+        e = lecteurs.Evenement(titre="Soirée à L'Agora", debut=dt.datetime(2026, 11, 2), lien="x") \
+            if hasattr(lecteurs, "Evenement") else None
+        if e:
+            src = {"id": "t", "nom": "T", "url": "https://x", "categorie": "cinema", "options": {"lieu": "T"}}
+            with mock.patch.object(instagram, "lire_publications", return_value=[]), \
+                 mock.patch.dict(lecteurs.LECTEURS, {"une_affiche_par_evenement": lambda *a, **k: [e]}), \
+                 mock.patch.object(lecteurs, "titres_connus", return_value=["Le Mystère Lucy Lost"]):
+                self.assertEqual(instagram.recuperer(src), [])
+
+    def test_hors_culture(self):
+        from scrapers.commun import pas_un_evenement
+        self.assertTrue(pas_un_evenement("Action De Sensibilisation Et De Prévention Du Diabète"))
+        self.assertTrue(pas_un_evenement("Journée de dépistage gratuit"))
+        self.assertFalse(pas_un_evenement("Concert de oud à El Teatro"))
