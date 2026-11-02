@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+70 ans de coopération patrimoniale entre la Tunisie et la France. Avec : • Salma Gharbi, architecte- chercheure • Jallel Abdelkefi, architecte- urbaniste • Denis Lesage, architecte et expert en patrimoine • Haithem Abidi, chercheur à l’Institut National du Patrimoine

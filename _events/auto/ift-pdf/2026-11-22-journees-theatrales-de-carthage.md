@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Pendant une semaine, Tunis se transforme en une immense scène vivante, mêlant compétitions officielles, spectacles de rue, ateliers professionnels...

@@ -11,3 +11,5 @@ famille: true
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Découvrez un conte, incarnez ses personnages et vivez ses aventures à travers le jeu théâtral, les voix et les bruitages.

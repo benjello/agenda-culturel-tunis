@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Programme à découvrir très prochainement sur notre site web et les réseaux sociaux.

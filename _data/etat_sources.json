@@ -1,12 +1,13 @@
 {
   "beit-al-hikma": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:45:18",
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 2,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "cine-360": {
     "attente": null,
@@ -19,11 +20,11 @@
   },
   "cine-agora": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T10:40:56",
-    "dernier_passage": "2026-11-01T10:40:56",
-    "dernier_succes": "2026-11-01T10:40:56",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 10,
+    "nb": 8,
     "ok": true,
     "premier_passage": "2026-11-01T10:35:29"
   },
@@ -72,12 +73,13 @@
   },
   "el-teatro": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:45:18",
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 7,
-    "ok": true
+    "nb": 6,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "fb-ajst": {
     "attente": null,
@@ -135,6 +137,15 @@
     "dernier_passage": "2026-11-01T08:00:14",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.facebook.com/Club.Tahar.Haddad', 'error': 'not_available', 'errorDescription': \"This content isn't available because the owner only shared it with a small group of people or changed who can see it, or it's been deleted.\"}",
     "ok": false
+  },
+  "fb-cr-gabes": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "fb-cr-kef": {
     "attente": null,
@@ -242,10 +253,19 @@
     "erreur": "RuntimeError: Apify : {'inputUrl': 'https://www.facebook.com/REGARDSCROISESTN', 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false
   },
+  "ftcc": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
   "goethe-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-02T06:20:50",
-    "dernier_succes": "2026-11-02T06:20:50",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -253,12 +273,13 @@
   },
   "ift-pdf": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:07:34",
-    "dernier_passage": "2026-11-01T09:07:34",
-    "dernier_succes": "2026-11-01T09:07:34",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 57,
-    "ok": true
+    "nb": 59,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-agorgi-gallery": {
     "attente": null,
@@ -297,6 +318,12 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/chantarts.culture/', 'inputUrl': 'https://www.instagram.com/chantarts.culture/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-01T11:53:01"
+  },
+  "ig-cineclub-tunis": {
+    "dernier_passage": "2026-11-02T10:11:41",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/cineclub_de_tunis/', 'inputUrl': 'https://www.instagram.com/cineclub_de_tunis/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
+    "ok": false,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-cinemadart": {
     "attente": null,
@@ -346,6 +373,21 @@
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/festivaldesoasistozeur/', 'inputUrl': 'https://www.instagram.com/festivaldesoasistozeur/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-01T11:53:01"
+  },
+  "ig-fics-ksar-ghilane": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
+  "ig-ftca": {
+    "dernier_passage": "2026-11-02T10:11:41",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/ftcafifak/', 'inputUrl': 'https://www.instagram.com/ftcafifak/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
+    "ok": false,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-habibi-downtown": {
     "attente": null,
@@ -407,6 +449,16 @@
     "nb": 0,
     "ok": true
   },
+  "ig-rosalux-afrique-nord": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
   "ig-shanti": {
     "attente": null,
     "dernier_non_vide": "2026-11-01T10:06:52",
@@ -437,6 +489,16 @@
     "ok": true,
     "premier_passage": "2026-11-01T11:53:01"
   },
+  "ig-tunisia-podcasts-festival": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 6,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
   "institut-francais": {
     "dernier_passage": "2026-11-01T07:45:18",
     "erreur": "RuntimeError: aucun lien contenant « details-agenda » sur la page de programme (liste chargée en JavaScript, ou site modifié ?)",
@@ -444,28 +506,31 @@
   },
   "irmc": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:45:18",
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 1,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "kapitalis-cite-sciences": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:50:24",
-    "dernier_succes": "2026-11-01T08:50:24",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "opera-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "pathe-azur-city": {
     "dernier_passage": "2026-11-01T06:51:29",
@@ -477,23 +542,53 @@
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city",
     "ok": false
   },
+  "presse-economiste-maghrebin": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
   "presse-kapitalis": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:07:34",
-    "dernier_passage": "2026-11-01T09:07:34",
-    "dernier_succes": "2026-11-01T09:07:34",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 1,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "presse-lapresse": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:07:34",
-    "dernier_passage": "2026-11-01T09:07:34",
-    "dernier_succes": "2026-11-01T09:07:34",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 3,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
+  "presse-leaders": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
+  "presse-realites": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "presse-tunisie-numerique": {
     "dernier_passage": "2026-11-01T09:07:34",
@@ -502,36 +597,47 @@
   },
   "presse-webdo": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:07:34",
-    "dernier_passage": "2026-11-01T09:07:34",
-    "dernier_succes": "2026-11-01T09:07:34",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 1,
-    "ok": true
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "resident-advisor": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T11:53:01",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 4,
     "ok": true,
     "premier_passage": "2026-11-01T10:35:29"
   },
+  "sat-astronomie": {
+    "attente": null,
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
   "teskerti": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:45:18",
-    "dernier_passage": "2026-11-01T07:45:18",
-    "dernier_succes": "2026-11-01T07:45:18",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 14,
-    "ok": true
+    "nb": 18,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "tn-agenda-du-jour": {
     "attente": null,
-    "dernier_passage": "2026-11-01T12:05:17",
-    "dernier_succes": "2026-11-01T12:05:17",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -539,20 +645,22 @@
   },
   "tunis-events": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:49:57",
-    "dernier_passage": "2026-11-01T07:49:57",
-    "dernier_succes": "2026-11-01T07:49:57",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 15,
-    "ok": true
+    "nb": 14,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:07:34",
-    "dernier_passage": "2026-11-01T09:07:34",
-    "dernier_succes": "2026-11-01T09:07:34",
+    "dernier_non_vide": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-02T10:11:41",
+    "dernier_succes": "2026-11-02T10:11:41",
     "erreur": null,
-    "nb": 40,
-    "ok": true
+    "nb": 33,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
   }
 }

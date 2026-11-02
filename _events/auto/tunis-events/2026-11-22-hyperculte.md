@@ -2,8 +2,8 @@
 title: "Hyperculte"
 date: 2026-11-22 18:00
 venue: "B7L9 Art Centre"
-ville: "tunis"
 address: "La Marsa, La Marsa"
+ville: "tunis"
 category: "musique"
 price: "5 TND"
 link: "https://tunis.events/events/klvgE3/hyperculte-b7l9-art-centre"
@@ -14,4 +14,4 @@ ajoute: "2026-11-01"
 auto: true
 ---
 
-Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. The duo creates a trance-like blend of disco, pop, krautrock, punk, and post-rock.
+Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. The duo creates a trance-like blend of disco, pop, krautrock, punk, and post-rock. Driven by sharp rhythms, inventive composition, and poetic yet politically engaged lyrics, Hyperculte's albums are crafted from musical improvisations, fragments of literary texts, and political slogans to bear witness to the two musicians' sharp and uncompromising outlook on our times. br

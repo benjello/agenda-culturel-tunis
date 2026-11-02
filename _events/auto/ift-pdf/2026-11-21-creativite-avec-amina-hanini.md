@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Couleurs, idées et petites créations : rendez-vous pour des moments ludiques et créatifs Sur inscription : mediatheque.sfax@institutfrancais- tunisie.com

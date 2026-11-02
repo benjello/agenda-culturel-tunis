@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "corriges": 1,
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -44,17 +44,6 @@
    ]
   },
   {
-   "fichier": "ift-pdf/2026-11-10-exposition.md",
-   "source": "ift-pdf",
-   "titre": "Exposition",
-   "date": "2026-11-10",
-   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
-   "problemes": [
-    "titre trop vague",
-    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
-   ]
-  },
-  {
    "fichier": "ift-pdf/2026-11-11-cinema-danimation.md",
    "source": "ift-pdf",
    "titre": "Cinéma D’Animation",
@@ -75,14 +64,13 @@
    ]
   },
   {
-   "fichier": "ift-pdf/2026-11-12-tables-rondes.md",
-   "source": "ift-pdf",
-   "titre": "Tables Rondes",
-   "date": "2026-11-12",
-   "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+   "fichier": "ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md",
+   "source": "ig-rosalux-afrique-nord",
+   "titre": "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e",
+   "date": "2026-11-02",
+   "lien": "https://www.instagram.com/p/DfHtEeLAJBk/",
    "problemes": [
-    "titre trop vague",
-    "titre générique (genre ou rubrique, pas le nom de l'œuvre)"
+    "titre trop long (début d'une légende ?)"
    ]
   },
   {
@@ -107,51 +95,52 @@
    ]
   },
   {
-   "fichier": "presse-lapresse/2026-10-23-foire-nationale-du-livre-tunisien-traduire-transmettre-et-pe.md",
-   "source": "presse-lapresse",
-   "titre": "Foire nationale du livre tunisien: Traduire, transmettre et penser le savoir en arabe",
-   "date": "2026-10-23",
-   "lien": "https://www.lapresse.tn/2026/10/29/foire-nationale-du-livre-tunisien-traduire-transmettre-et-penser-le-savoir-en-arabe/",
+   "fichier": "ig-tunisia-podcasts-festival/2026-11-06-tout-commence-par-une-vibration-puis-une-voix-une-idee-une-h.md",
+   "source": "ig-tunisia-podcasts-festival",
+   "titre": "Tout commence par une vibration. Puis une voix, une idée, une histoire...Et si vous venez",
+   "date": "2026-11-06",
+   "lien": "https://www.instagram.com/p/DfFDKyulAAl/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)",
+    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+   ]
+  },
+  {
+   "fichier": "ig-tunisia-podcasts-festival/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md",
+   "source": "ig-tunisia-podcasts-festival",
+   "titre": "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v",
+   "date": "2026-11-07",
+   "lien": "https://www.instagram.com/p/DfIMsEzF0Ar/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-tunisia-podcasts-festival/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md",
+   "source": "ig-tunisia-podcasts-festival",
+   "titre": "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30",
+   "date": "2026-11-07",
+   "lien": "https://www.instagram.com/p/DfFy1eVj6sY/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "presse-webdo/2026-11-07-photo-memoires-en-partage-entre-sicile-et-tunisie.md",
+   "source": "presse-webdo",
+   "titre": "Photo : Mémoires en partage entre Sicile et Tunisie",
+   "date": "2026-11-07",
+   "lien": "https://www.webdo.tn/fr/actualite/culture/photo-memoires-en-partage-entre-sicile-et-tunisie/406430/",
    "problemes": [
     "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
    ]
   },
   {
-   "fichier": "presse-lapresse/2026-11-22-jaou-tunis-2026-les-corps-ces-territoires-de-resistance.md",
-   "source": "presse-lapresse",
-   "titre": "Jaou Tunis 2026: Les corps, ces territoires de résistance",
-   "date": "2026-11-22",
-   "lien": "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/",
-   "problemes": [
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "presse-lapresse/2026-11-26-saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-l.md",
-   "source": "presse-lapresse",
-   "titre": "« Saveurs et amertume » à la Galerie TGM : Lorsque l’art esquisse les contours de l’identité tunisie",
-   "date": "2026-11-26",
-   "lien": "https://www.lapresse.tn/2026/10/30/saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-les-contours-de-lidentite-tunisienne/",
-   "problemes": [
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-01-last-chance.md",
+   "fichier": "tunis-events-cinema/2026-11-02-last-chance.md",
    "source": "tunis-events-cinema",
    "titre": "LAST CHANCE - لص شايح",
-   "date": "2026-11-01",
-   "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-01-mochy.md",
-   "source": "tunis-events-cinema",
-   "titre": "Mochy",
-   "date": "2026-11-01",
-   "lien": "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee",
+   "date": "2026-11-02",
+   "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
    "problemes": [
     "film sans horaire ni séance"
    ]
@@ -173,11 +162,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 2
      }
     ]
@@ -208,8 +192,8 @@
     ]
    },
    "cine-agora": {
-    "n": 10,
-    "precis": 10,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -231,29 +215,24 @@
       "code": "sans_image",
       "texte": "image",
       "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 4
      }
     ]
    },
    "el-teatro": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
+      "n": 6
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 6
      }
     ]
    },
@@ -327,27 +306,27 @@
     ]
    },
    "ift-pdf": {
-    "n": 56,
-    "precis": 0,
-    "pourcent": 0,
+    "n": 58,
+    "precis": 9,
+    "pourcent": 16,
     "defauts": [
      {
       "code": "titre_generique",
       "texte": "titre générique (genre ou rubrique, pas le nom de l'œuvre)",
-      "n": 4,
-      "exemple": "Exposition"
+      "n": 2,
+      "exemple": "Cinéma D’Animation"
      },
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 56,
-      "exemple": "Bibliothérapie Tunis Blues D'Ali Bêcheur"
+      "n": 49,
+      "exemple": "L’Olivier, Trait D’Union De La Méditerranée"
      },
      {
       "code": "expo_sans_fin",
       "texte": "expo sans date de fin",
-      "n": 6,
-      "exemple": "Le Monde Sans Fin"
+      "n": 5,
+      "exemple": "L’Olivier, Trait D’Union De La Méditerranée"
      }
     ],
     "manques": [
@@ -359,12 +338,12 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 56
+      "n": 49
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 56
+      "n": 1
      }
     ]
    },
@@ -413,6 +392,19 @@
     ],
     "manques": []
    },
+   "ig-rosalux-afrique-nord": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
+   },
    "ig-shanti": {
     "n": 1,
     "precis": 1,
@@ -446,6 +438,32 @@
      }
     ]
    },
+   "ig-tunisia-podcasts-festival": {
+    "n": 5,
+    "precis": 2,
+    "pourcent": 40,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Tout commence par une vibration. Puis une voix, une idée, une histoire"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 2,
+      "exemple": "Et si l’IA réinventait notre façon de communiquer ?"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     }
+    ]
+   },
    "irmc": {
     "n": 1,
     "precis": 1,
@@ -456,10 +474,50 @@
       "code": "sans_image",
       "texte": "image",
       "n": 1
+     }
+    ]
+   },
+   "presse-economiste-maghrebin": {
+    "n": 2,
+    "precis": 1,
+    "pourcent": 50,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "RÉSILIENCE(S)"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 2
+     }
+    ]
+   },
+   "presse-kapitalis": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Le Prix Saint Augustin distingue l’historien Abdelhamid Larguèche"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
      },
      {
-      "code": "sans_notice",
-      "texte": "notice",
+      "code": "sans_image",
+      "texte": "image",
       "n": 1
      }
     ]
@@ -470,16 +528,16 @@
     "pourcent": 0,
     "defauts": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 3,
-      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 1,
+      "exemple": "Saveurs et amertume"
      },
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
       "n": 2,
-      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
+      "exemple": "Saisons de la création"
      }
     ],
     "manques": [
@@ -492,11 +550,37 @@
       "code": "sans_image",
       "texte": "image",
       "n": 3
+     }
+    ]
+   },
+   "presse-webdo": {
+    "n": 2,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Photo : Mémoires en partage entre Sicile et Tunisie"
      },
      {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Le Temps suspendu"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 2
      }
     ]
    },
@@ -521,55 +605,39 @@
     ]
    },
    "teskerti": {
-    "n": 8,
-    "precis": 8,
+    "n": 13,
+    "precis": 13,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
-     {
       "code": "sans_image",
       "texte": "image",
-      "n": 8
+      "n": 13
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 8
+      "n": 13
      }
     ]
    },
    "tunis-events": {
-    "n": 15,
-    "precis": 15,
+    "n": 13,
+    "precis": 13,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 15
-     }
-    ]
+    "manques": []
    },
    "tunis-events-cinema": {
-    "n": 36,
-    "precis": 34,
-    "pourcent": 94,
+    "n": 32,
+    "precis": 31,
+    "pourcent": 97,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 2,
+      "n": 1,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -577,95 +645,17 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 1
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 36
+      "n": 32
      }
     ]
    }
   },
   "scrapers": {
-   "pdf_programme": {
-    "n": 56,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "titre_generique",
-      "texte": "titre générique (genre ou rubrique, pas le nom de l'œuvre)",
-      "n": 4,
-      "exemple": "Exposition"
-     },
-     {
-      "code": "lien_general",
-      "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 56,
-      "exemple": "Bibliothérapie Tunis Blues D'Ali Bêcheur"
-     },
-     {
-      "code": "expo_sans_fin",
-      "texte": "expo sans date de fin",
-      "n": 6,
-      "exemple": "Le Monde Sans Fin"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 7
-     },
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 56
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 56
-     }
-    ]
-   },
-   "presse": {
-    "n": 3,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 3,
-      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "Foire nationale du livre tunisien: Traduire, transmettre et penser le "
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 2
-     },
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 3
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
-     }
-    ]
-   },
    "facebook_programmes": {
     "n": 10,
     "precis": 1,
@@ -710,7 +700,86 @@
      {
       "code": "sans_notice",
       "texte": "notice",
+      "n": 4
+     }
+    ]
+   },
+   "presse": {
+    "n": 8,
+    "precis": 1,
+    "pourcent": 12,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Photo : Mémoires en partage entre Sicile et Tunisie"
+     },
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 1,
+      "exemple": "Saveurs et amertume"
+     },
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 5,
+      "exemple": "RÉSILIENCE(S)"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 5
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
       "n": 8
+     }
+    ]
+   },
+   "pdf_programme": {
+    "n": 58,
+    "precis": 9,
+    "pourcent": 16,
+    "defauts": [
+     {
+      "code": "titre_generique",
+      "texte": "titre générique (genre ou rubrique, pas le nom de l'œuvre)",
+      "n": 2,
+      "exemple": "Cinéma D’Animation"
+     },
+     {
+      "code": "lien_general",
+      "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
+      "n": 49,
+      "exemple": "L’Olivier, Trait D’Union De La Méditerranée"
+     },
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 5,
+      "exemple": "L’Olivier, Trait D’Union De La Méditerranée"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 7
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 49
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    },
@@ -735,14 +804,14 @@
     ]
    },
    "instagram": {
-    "n": 10,
-    "precis": 8,
-    "pourcent": 80,
+    "n": 16,
+    "precis": 11,
+    "pourcent": 69,
     "defauts": [
      {
       "code": "titre_phrase",
       "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
+      "n": 2,
       "exemple": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم"
      },
      {
@@ -754,7 +823,7 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 1,
+      "n": 3,
       "exemple": "Direction Gabès pour les Oasis Days !"
      }
     ],
@@ -762,7 +831,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 4
+      "n": 7
      },
      {
       "code": "sans_notice",
@@ -772,14 +841,14 @@
     ]
    },
    "tunis_events_cinema": {
-    "n": 36,
-    "precis": 34,
-    "pourcent": 94,
+    "n": 32,
+    "precis": 31,
+    "pourcent": 97,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 2,
+      "n": 1,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -787,78 +856,62 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 1
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 36
+      "n": 32
+     }
+    ]
+   },
+   "teskerti": {
+    "n": 13,
+    "precis": 13,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 13
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 13
      }
     ]
    },
    "tunis_events": {
-    "n": 15,
-    "precis": 15,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 15
-     }
-    ]
-   },
-   "woocommerce_seances": {
-    "n": 10,
-    "precis": 10,
+    "n": 13,
+    "precis": 13,
     "pourcent": 100,
     "defauts": [],
     "manques": []
    },
-   "teskerti": {
+   "woocommerce_seances": {
     "n": 8,
     "precis": 8,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 8
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 8
-     }
-    ]
+    "manques": []
    },
    "billetterie_sktech": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
+      "n": 6
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 6
      }
     ]
    },
@@ -876,11 +929,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 3
      }
     ]

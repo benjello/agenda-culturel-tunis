@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Rencontre avec Sonia Hanihina autour de son roman Aller-retour. Modérée par Sarra Khaled, universitaire. Public adulte et jeune adulte.

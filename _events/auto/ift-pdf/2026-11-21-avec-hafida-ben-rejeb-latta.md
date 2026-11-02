@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Autour de son récit autobiographique Une fille de Kairouan. Modérée par Dr Anissa Zrigue Public adulte et jeune adulte.

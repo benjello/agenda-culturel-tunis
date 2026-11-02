@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Plongez dans l’univers du manga 100 % tunisien avec Obitha, la légende de Salha, paru aux éditions Enoya.

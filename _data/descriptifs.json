@@ -1,6 +1,30 @@
 {
- "festivals": {},
+ "festivals": {
+  "jaou": {
+   "source": "site officiel",
+   "texte": "Cultural Initiatives in North Africa and the Middle East",
+   "url": "https://kamellazaarfoundation.org"
+  },
+  "jcc": {
+   "source": "Wikipédia",
+   "texte": "Les Journées cinématographiques de Carthage ou JCC sont un festival de cinéma créé en 1966. Il se tient à Tunis, capitale de la Tunisie, et a lieu au mois d'octobre ou de novembre tous les ans depuis 2015.",
+   "url": "https://fr.wikipedia.org/wiki/Journ%C3%A9es_cin%C3%A9matographiques_de_Carthage"
+  },
+  "jtc": {
+   "source": "Wikipédia",
+   "texte": "Les Journées théâtrales de Carthage ou JTC sont un festival de théâtre qui se tient tous les deux ans à Tunis, capitale de la Tunisie, en alternance avec les Journées cinématographiques de Carthage à partir de 1983. Les JTC deviennent un festival annuel en 2015.",
+   "url": "https://fr.wikipedia.org/wiki/Journ%C3%A9es_th%C3%A9%C3%A2trales_de_Carthage"
+  }
+ },
  "films": {
+  "2-jours-avec-papa": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "a-demain-sur-la-lune": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "bakma": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -33,7 +57,31 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "l-ile-des-souvenirs-forgotten-island": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "L'Île des souvenirs ou L'Île de l'oubli au Québec est un film d'animation américain réalisé par Joel Crawford et Januel P. Mercado et sorti en 2026",
+   "url": "https://fr.wikipedia.org/wiki/L'%C3%8Ele_des_souvenirs",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "la-belle-et-la-meute": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "last-chance": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "le-chant-des-forets": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Chant des forêts est un documentaire français réalisé par Vincent Munier, sorti en 2025. Le film est un succès critique et en salles avec près d'1,3 million d'entrées. Il remporte deux récompenses lors de la 51e cérémonie des César.",
+   "url": "https://fr.wikipedia.org/wiki/Le_Chant_des_for%C3%AAts_(film)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "le-fantome-de-l-opera": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -49,7 +97,47 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "les-malheurs-de-sophie": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "les-miserables": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "mars-express": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Mars Express est un film d'animation français de science-fiction réalisé par Jérémie Périn, sorti en 2023. Il est écrit par Jérémie Périn et Laurent Sarfati, et produit par les studios Everybody On Deck et Je suis bien content.",
+   "url": "https://fr.wikipedia.org/wiki/Mars_Express_(film)",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "other-mommy-malfaisante": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Malfaisante ou Autre maman au Québec est un film américain réalisé par Rob Savage et sorti en 2026. Il s'agit d'une adaptation du roman Incidents Around the House de Josh Malerman (en). Il met en vedette Jessica Chastain, dans le rôle d'une mère qui doit tout faire pour protéger sa fille d'une entité surnaturelle lui ressemblant.",
+   "url": "https://fr.wikipedia.org/wiki/Malfaisante",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "palestine-cinema-days-the-dream-by-mohammad-malas": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "regarde-moi": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "shaun-le-mouton-la-beeete-d-halloween": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "sous-les-etoiles-de-paris": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "un-fils": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -98,6 +186,16 @@
    "source": "Wikipédia",
    "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
    "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie"
+  },
+  "institut-francais-de-tunisie": {
+   "source": "Wikipédia",
+   "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
+   "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie"
+  },
+  "theatre-municipal-de-tunis": {
+   "source": "Wikipédia",
+   "texte": "Le Théâtre municipal de Tunis est le principal théâtre de Tunis (Tunisie) et le plus célèbre des théâtres de la Tunisie moderne.",
+   "url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_municipal_de_Tunis"
   }
  },
  "musees": {},
@@ -142,6 +240,11 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://teskerti.tn/evenement/al-zahou-el-jerbi": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://teskerti.tn/evenement/brouva": {
    "texte": "",
    "verifie": "2026-11-02",
@@ -157,6 +260,16 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://teskerti.tn/evenement/eya-daghnouj-fi-hadhret-el-mougy": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/flashback-90s-80s-le-1711": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://teskerti.tn/evenement/fuite": {
    "texte": "",
    "verifie": "2026-11-02",
@@ -167,12 +280,22 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://teskerti.tn/evenement/kolna-nghani-saison-3": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://teskerti.tn/evenement/la-chaussure": {
    "texte": "",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
   "https://teskerti.tn/evenement/laps-de-temps-le-0311": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/lotfi-bouchnek": {
    "texte": "",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -189,6 +312,16 @@
   },
   "https://teskerti.tn/evenement/nouma-le-0611": {
    "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/spectacle-musical-caritatif": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/taha-desouky": {
+   "texte": "اعلان هام: سيتم تصوير العرض وتسجيله بالفيديو من قبل الجهة المنظمة، كما يمكن ظهور الجمهور ضمن الصور ومقاطع الفيديو الملتقطة خلال العرض\nAVIS IMPORTANT : Le spectacle sera filmé et enregistré en vidéo par l’organisateur. Le public est informé qu’il pourra également apparaître sur les photographies et les vidéos prises pendant le spectacle.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -237,6 +370,11 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://tunis.events/events/3xOGGm/what-else-cinemadart": {
    "texte": "À Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit. Ce qui semblait n’être qu’une rencontre passagère prend bientôt une tournure imprévue.",
    "verifie": "2026-11-02",
@@ -247,8 +385,18 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee": {
+   "texte": "",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "https://tunis.events/events/8L4ZM8/weekend-cinemadart": {
    "texte": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/8L4dM8/palestine-cinema-days-the-dream-by-mohammad-malas-cinemadart": {
+   "texte": "«أيام فلسطين السينمائية حول العالم» في سينيمدار - قرطاج ✌️🍉\nيقترح عليكم كلّ من نادي سينما سينيفيس لسينيمدار ونادي سينما العصفور لجمعيّة مسارب، ضمن برنامجهما نظرات فلسطينيّة، عرضا يليه نقاش مع إنصاف ماشطة وسامية العبيدي للفيلمين:\n\"المنام\" لمحمد ملص (وثائقي، 45 دقيقة )\nمجموعة من المقابلات مع لاجئين فلسطينيين في لبنان خلال الحرب الأهلية، أجراها ملص حول الأحلام التي رأوها عندما ذهبوا إلى النوم.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -299,6 +447,11 @@
   },
   "https://tunis.events/events/kgqpx3/mochy-cinema-le-colisee": {
    "texte": "Mochy (2026)\nRéalisateur : Jérémie Degruson\nGenre : Aventure, Animation, Comédie, Familial\nDurée : 84 min\nSynopsis\nMochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/klvQn3/wala-kan-ala-el-bal-ولا-كان-عالبال-cinema-le-colisee": {
+   "texte": "ولا كان عالبال (Original Title)\nA young tour guide in Luxor accepts an unusual deal from a wealthy businessman: win over his daughter and help her move on from her ex. But a case of mistaken identity turns the plan upside down, sending Hassan on an unexpected adventure and into a love story he never saw coming.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -364,6 +517,11 @@
   },
   "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache": {
    "texte": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le fantôme d’Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache. Ce fantôme farceur va entraîner Ducobu, Léonie, leurs parents et Kitrish dans une série de péripéties aussi drôles qu’inattendues.",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "https://tunis.events/fr/cinema/ext_21553": {
+   "texte": "Un jeune guide touristique de Louxor accepte une offre inhabituelle de la part d'un riche homme d'affaires : convaincre sa fille et l'aider à oublier son ex. Mais lorsque les choses ne se passent pas comme prévu, Hassan se retrouve pris dans une série comique de situations inattendues et dans une histoire d'amour qu'il n'avait jamais vue venir.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -449,6 +607,41 @@
   }
  },
  "recherches": {
+  "festivals:fabrika-festival": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:festival-de-la-medina": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:jaou-tunis": {
+   "source": "site officiel",
+   "texte": "Cultural Initiatives in North Africa and the Middle East",
+   "url": "https://kamellazaarfoundation.org",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:journees-cinematographiques-de-carthage": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Les Journées cinématographiques de Carthage ou JCC sont un festival de cinéma créé en 1966. Il se tient à Tunis, capitale de la Tunisie, et a lieu au mois d'octobre ou de novembre tous les ans depuis 2015.",
+   "url": "https://fr.wikipedia.org/wiki/Journ%C3%A9es_cin%C3%A9matographiques_de_Carthage",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:journees-des-arts-de-la-marionnette-de-carthage": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "festivals:journees-theatrales-de-carthage": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Les Journées théâtrales de Carthage ou JTC sont un festival de théâtre qui se tient tous les deux ans à Tunis, capitale de la Tunisie, en alternance avec les Journées cinématographiques de Carthage à partir de 1983. Les JTC deviennent un festival annuel en 2015.",
+   "url": "https://fr.wikipedia.org/wiki/Journ%C3%A9es_th%C3%A9%C3%A2trales_de_Carthage",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:agorgi-gallery-sidi-bou-said": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -517,6 +710,10 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:fondation-rosa-luxemburg-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:galerie-institut-francais-de-sousse": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -545,6 +742,14 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:institut-francais-de-tunisie": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
+   "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:jardin-institut-francais-de-sfax": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
@@ -553,11 +758,23 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:l-art-rue-entree-sur-inscription-lien-en-bio": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:la-boite": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
+  "lieux:la-chapelle-dar-bach-hamba": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
   "lieux:lagora-la-marsa": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:maison-des-arts-du-belvedere": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   },
@@ -566,6 +783,70 @@
    "vu": "2026-11-02"
   },
   "lieux:mediatheque-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:mediatheque-institut-francais-de-tunis": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:one-resort": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:one-resort-monastir": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:pathe-azur-city": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:pathe-tunis-city": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:salle-albert-camus-institut-francais-de-sfax": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:salle-de-cinema-institut-francais-de-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:salle-des-jeunes-createurs-cite-de-la-culture": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:shanti": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:sociale-sidi-bou-said": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:steps-club-sousse": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:studio-b52": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:theatre-le-4eme-art": {
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:theatre-municipal-de-tunis": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Le Théâtre municipal de Tunis est le principal théâtre de Tunis (Tunisie) et le plus célèbre des théâtres de la Tunisie moderne.",
+   "url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_municipal_de_Tunis",
+   "verifie": "2026-11-02",
+   "vu": "2026-11-02"
+  },
+  "lieux:vox-cafe-institut-francais-de-sousse": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
   }

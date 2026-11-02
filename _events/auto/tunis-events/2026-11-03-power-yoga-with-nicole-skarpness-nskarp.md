@@ -2,8 +2,8 @@
 title: "Power Yoga with Nicole Skarpness @nskarp"
 date: 2026-11-03 19:00
 venue: "Sociale."
-ville: "tunis"
 address: "V8CW+8GM, Carthage, Carthage"
+ville: "tunis"
 category: "autre"
 price: "45 TND"
 link: "https://tunis.events/events/85Vwek/power-yoga-with-nicole-skarpness-nskarp-sociale"
@@ -15,7 +15,8 @@ ajoute: "2026-11-01"
 auto: true
 ---
 
-\-A dynamic, grounding flow to reconnect with your body after breaking fast offering a perfect balance of strength, breath, and movement in a calm night setting.
-Level: Intermediate and Advanced
-Complimentary mats, tea and snacks available and access to rooftop after the session!
+\-A dynamic, grounding flow to reconnect with your body offering a perfect balance of strength, breath, and movement in a calm night setting.
+Level: Intermediate and Advanced 
+Complimentary mats, tea and snacks available after the session!
 Tickets are refundable only up to 24 hours before the scheduled event.
+After the 24-hour deadline, tickets will no longer be eligible for a refund.

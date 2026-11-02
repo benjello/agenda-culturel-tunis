@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Venez à la rencontre des acteurs locaux qui agissent en faveur de l’environnement à Sfax En partenariat avec le Forum des arts et cultures et la Municipalité de Sfax

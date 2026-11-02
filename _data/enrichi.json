@@ -34,9 +34,77 @@
    "credit": "https://commons.wikimedia.org/wiki/File:LotfiBouchnak.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LotfiBouchnak.jpg?width=400",
    "qid": "Q3259988"
+  },
+  "artiste:moez": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Moez_Echargui_(2026_US_Open)_03_(cropped).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Moez_Echargui_(2026_US_Open)_03_(cropped).jpg?width=400",
+   "qid": "Q29110073"
+  },
+  "artiste:yasser-jradi": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Asma_Mansour_with_Yasser_Jradi.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Asma_Mansour_with_Yasser_Jradi.jpg?width=400",
+   "qid": "Q128904556"
+  },
+  "lieu:beit-al-hikma-carthage": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Beit_Hikma_Tunis.JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beit_Hikma_Tunis.JPG?width=400",
+   "qid": "Q2822461"
+  },
+  "lieu:caserne-el-attarine": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Old_National_Library_of_Tunisia.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_National_Library_of_Tunisia.jpg?width=400",
+   "qid": "Q42595384"
+  },
+  "lieu:cinema-le-colisee": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Le_colisé_-_Tunis_03.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_colisé_-_Tunis_03.jpg?width=400",
+   "qid": "Q35710133"
+  },
+  "lieu:cinema-le-palace": {
+   "credit": "https://commons.wikimedia.org/wiki/File:TNDEV_08.JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TNDEV_08.JPG?width=400",
+   "qid": "Q29024306"
+  },
+  "lieu:douz": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Douz-souk.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Douz-souk.jpg?width=400",
+   "qid": "Q1009268"
+  },
+  "lieu:institut-francais-de-tunis": {
+   "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
+   "qid": "Q17449190"
+  },
+  "lieu:institut-francais-de-tunisie": {
+   "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
+   "qid": "Q17449190"
   }
  },
- "osm": {},
+ "osm": {
+  "lieu:el-teatro": {
+   "website": "https://www.elteatro.net/"
+  },
+  "lieu:theatre-municipal-de-tunis": {
+   "wheelchair": "no"
+  },
+  "musee:Musée archéologique d'El Jem": {
+   "opening_hours": "Sep 16-Apr 30: Mo-Su 07:30 - 17:30; May 01-Sep 15: Mo-Su 07:30 - 18:30; 08:00-17:00 \"Openings hours at Ramadan's month\"",
+   "website": "https://eljem.virtualexperience.net/"
+  },
+  "musee:Musée archéologique de Sousse (Kasbah)": {
+   "website": "https://www.patrimoinedetunisie.com.tn/eng/musees/sousse.php"
+  },
+  "musee:Musée de Zarzis": {
+   "website": "https://www.tunisiepatrimoine.tn/ar/%D9%85%D8%AA%D8%A7%D8%AD%D9%81/%D9%85%D8%AA%D8%AD%D9%81-%D8%AC%D8%B1%D8%AC%D9%8A%D8%B3/%D9%86%D8%B8%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9/"
+  },
+  "musee:Musée national du Bardo": {
+   "website": "http://www.bardomuseum.tn/"
+  },
+  "musee:Site et musée de Bulla Regia": {
+   "opening_hours": "May 1-Oct 30: 08:00-20:00"
+  }
+ },
  "vu": {
   "artiste:abdelhamid-largueche": "2026-11-02",
   "artiste:adema": "2026-11-02",
@@ -97,6 +165,66 @@
   "artiste:maks": "2026-11-02",
   "artiste:manon": "2026-11-02",
   "artiste:markus-nikolai": "2026-11-02",
-  "artiste:mihnea-rog": "2026-11-02"
+  "artiste:mihnea-rog": "2026-11-02",
+  "artiste:miller": "2026-11-02",
+  "artiste:min8": "2026-11-02",
+  "artiste:moez": "2026-11-02",
+  "artiste:n4bz": "2026-11-02",
+  "artiste:nicole-skarpness": "2026-11-02",
+  "artiste:olivier-romero": "2026-11-02",
+  "artiste:omar-c": "2026-11-02",
+  "artiste:omar-fayyad": "2026-11-02",
+  "artiste:omar-uy": "2026-11-02",
+  "artiste:pan-j": "2026-11-02",
+  "artiste:picasso": "2026-11-02",
+  "artiste:prichindel": "2026-11-02",
+  "artiste:raphael-merheb": "2026-11-02",
+  "artiste:rome-it": "2026-11-02",
+  "artiste:rslane": "2026-11-02",
+  "artiste:saadoon": "2026-11-02",
+  "artiste:serenne": "2026-11-02",
+  "artiste:sonia-hanihina": "2026-11-02",
+  "artiste:sweed": "2026-11-02",
+  "artiste:taieb-chekir": "2026-11-02",
+  "artiste:tatler": "2026-11-02",
+  "artiste:trent-voyage": "2026-11-02",
+  "artiste:wednesday": "2026-11-02",
+  "artiste:yasmin-sun": "2026-11-02",
+  "artiste:yasser-jradi": "2026-11-02",
+  "artiste:zaida": "2026-11-02",
+  "lieu:agorgi-gallery-sidi-bou-said": "2026-11-02",
+  "lieu:auditorium-institut-francais-de-tunis": "2026-11-02",
+  "lieu:b7l9-art-centre": "2026-11-02",
+  "lieu:beit-al-hikma-carthage": "2026-11-02",
+  "lieu:caserne-el-attarine": "2026-11-02",
+  "lieu:cine-350-cite-de-la-culture": "2026-11-02",
+  "lieu:cinema-alhambra-zephyr": "2026-11-02",
+  "lieu:cinema-le-colisee": "2026-11-02",
+  "lieu:cinema-le-palace": "2026-11-02",
+  "lieu:cinemadart": "2026-11-02",
+  "lieu:cite-des-sciences-de-tunis": "2026-11-02",
+  "lieu:douz": "2026-11-02",
+  "lieu:el-teatro": "2026-11-02",
+  "lieu:fondation-rosa-luxemburg-tunis": "2026-11-02",
+  "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
+  "lieu:galerie-tgm": "2026-11-02",
+  "lieu:institut-francais-de-sfax": "2026-11-02",
+  "lieu:institut-francais-de-sousse": "2026-11-02",
+  "lieu:institut-francais-de-tunis": "2026-11-02",
+  "lieu:institut-francais-de-tunisie": "2026-11-02",
+  "lieu:jardin-institut-francais-de-sfax": "2026-11-02",
+  "lieu:l-art-rue-entree-sur-inscription-lien-en-bio": "2026-11-02",
+  "lieu:la-boite": "2026-11-02",
+  "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
+  "lieu:lagora-la-marsa": "2026-11-02",
+  "lieu:lieu-4d77648b": "2026-11-02",
+  "lieu:maison-des-arts-du-belvedere": "2026-11-02",
+  "lieu:mediatheque-institut-francais-de-sfax": "2026-11-02",
+  "lieu:mediatheque-institut-francais-de-sousse": "2026-11-02",
+  "lieu:mediatheque-institut-francais-de-tunis": "2026-11-02",
+  "lieu:one-resort": "2026-11-02",
+  "lieu:one-resort-monastir": "2026-11-02",
+  "lieu:pathe-azur-city": "2026-11-02",
+  "lieu:pathe-tunis-city": "2026-11-02"
  }
 }

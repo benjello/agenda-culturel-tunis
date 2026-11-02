@@ -11,3 +11,5 @@ ajoute: "2026-11-01"
 doublon: true
 auto: true
 ---
+
+Programme à découvrir très prochainement sur notre site web et les réseaux sociaux.

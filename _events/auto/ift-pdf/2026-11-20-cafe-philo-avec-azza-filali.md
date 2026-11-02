@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Quelle place pour l’être humain et pour Dieu ? Comment les sciences transforment-elles notre vision du monde ? Qu’est-ce qui guide nos choix moraux ?

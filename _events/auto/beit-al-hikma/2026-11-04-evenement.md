@@ -10,3 +10,5 @@ source_name: "Beit al-Hikma (Académie tunisienne des sciences, des lettres et d
 ajoute: "2026-11-01"
 auto: true
 ---
+
+البرنامج L’article مائدة مستديرة حول : البحر الأبيض المتوسط بحر من الكنوز التراثيّة – 4 نوفمبر 2026 est apparu en premier sur Beit al-Hikma .

@@ -3,6 +3,14 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "2-jours-avec-papa": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
+ "a-demain-sur-la-lune": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
  "avatar-de-feu-et-de-cendres": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -201,6 +209,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "la-belle-et-la-meute": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
  "la-femme-de-menage": {
   "age": "-12",
   "annee": 2026,
@@ -220,6 +232,18 @@
  "last-chance": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "le-chant-des-forets": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Documentaire"
+  ],
+  "imdb": "tt32368068",
+  "qid": "Q136789573",
+  "titre_wikidata": "Le Chant des forêts",
+  "tunisien": false,
+  "verifie": "2026-11-02"
  },
  "le-fantome-de-l-opera": {
   "qid": null,
@@ -280,6 +304,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "les-malheurs-de-sophie": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
  "les-miserables": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -287,6 +315,20 @@
  "letranger": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "mars-express": {
+  "age": "Tous publics",
+  "annee": 2024,
+  "genres": [
+   "Science-fiction",
+   "Action",
+   "Policier"
+  ],
+  "imdb": "tt26915336",
+  "qid": "Q111210475",
+  "titre_wikidata": "Mars Express",
+  "tunisien": false,
+  "verifie": "2026-11-02"
  },
  "marsupilami": {
   "age": "Tous publics",
@@ -346,6 +388,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "palestine-cinema-days-the-dream-by-mohammad-malas": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
  "parasol": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -379,6 +425,10 @@
   "titre_wikidata": "Promis le ciel",
   "tunisien": true,
   "verifie": "2026-11-01"
+ },
+ "regarde-moi": {
+  "qid": null,
+  "verifie": "2026-11-02"
  },
  "regretting-you": {
   "age": "Tous publics",
@@ -435,6 +485,10 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "sous-les-etoiles-de-paris": {
+  "qid": null,
+  "verifie": "2026-11-02"
+ },
  "springsteen-deliver-me-from-nowhere": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -467,6 +521,10 @@
  "touskie-tounsi": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "un-fils": {
+  "qid": null,
+  "verifie": "2026-11-02"
  },
  "un-simple-accident": {
   "age": "Tous publics",

@@ -35,6 +35,10 @@
   10.17371
  ],
  "entre les rives": null,
+ "fondation rosa luxemburg tunis": [
+  36.82627,
+  10.17429
+ ],
  "galerie institut francais de sousse": [
   36.83351,
   10.10422
@@ -45,6 +49,10 @@
  "institut francais de sfax": null,
  "institut francais de sousse": null,
  "institut francais de tunis": [
+  36.8021,
+  10.18066
+ ],
+ "institut francais de tunisie": [
   36.8021,
   10.18066
  ],
@@ -62,10 +70,16 @@
   36.80742,
   10.16617
  ],
+ "l art rue entree sur inscription lien en bio": null,
  "la boite": [
   36.52364,
   10.55862
  ],
+ "la chapelle dar bach hamba": [
+  36.86183,
+  10.33874
+ ],
+ "maison des arts du belvedere": null,
  "mediatheque institut francais de sfax": [
   36.85392,
   10.19632
@@ -111,5 +125,10 @@
  "theatre le 4eme art": [
   36.80189,
   10.18123
- ]
+ ],
+ "theatre municipal de tunis": [
+  36.79911,
+  10.18081
+ ],
+ "vox cafe institut francais de sousse": null
 }

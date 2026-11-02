@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+En partenariat avec le Comité de Jumelage Grenoble Sfax, l’association Tunisie l’olivier et la Maison des huiles d’olive et des olives de France (Nyons).

@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+Venez partager un moment de détente où chacun est libre de choisir le jeu qu’il souhaite et d’y jouer à son rythme, seul ou avec les autres.

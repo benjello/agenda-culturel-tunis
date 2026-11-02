@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+En partenariat avec le Centre national de promotion de la transplantation d’organes (CNPTO) et l’Association générale des insuffisants rénaux (AGIR – Gabès). Tournée à Gabès, El Hamma, Métouia et Gabès-centre.

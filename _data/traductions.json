@@ -20,6 +20,14 @@
    "ar": "التوعية بمرض السكري والوقاية منه",
    "en": "Diabetes Awareness and Prevention Action"
   },
+  "Al Zahou El jerbi": {
+   "ar": "الزهري الجيربي",
+   "en": "Al Zahou El Jerbi"
+  },
+  "Atelier de séances de bibliothérapie autour du roman Tunis Blues": {
+   "ar": "حلقة عمل عن جلسات العلاج بمستشفيات الأطفال حول رواية تونس بلو",
+   "en": "Workshop of bibliotherapy sessions around the novel Tunis Blues"
+  },
   "Avec Hafida Ben Rejeb Latta": {
    "ar": "مع هافيدا بن رييب لايتا",
    "en": "With Hafida Ben Rejeb Latta"
@@ -28,17 +36,9 @@
    "ar": "مع (لوفتي ملاياه)",
    "en": "With Lotfi Mlayah"
   },
-  "Avec Sonia Hanihina": {
-   "ar": "With Sonia Hanihina",
-   "en": "With Sonia Hanihina"
-  },
   "Becoming The Ocean - BIM'26": {
    "fr": "Devenir l'océan - BIM'26",
    "ar": "\"المحيط \"بيم 26"
-  },
-  "Bibliothérapie Tunis Blues D'Ali Bêcheur": {
-   "ar": "Bibliotherapy Tunis Blues D'Ali Bêcheur",
-   "en": "Bibliotherapy Tunis Blues D'Ali Bêcheur"
   },
   "CHANTIERS06 - DERNIÈRE SESSION": {
    "fr": "CHANTIERS06 - SESSION DE DERNIÈRE",
@@ -68,6 +68,10 @@
    "ar": "Creativity with Bochra Taboubi",
    "en": "Creativity With Bochra Taboubi"
   },
+  "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e": {
+   "ar": "من المقاومة الجزائرية والإيطالية واللبنانية للنساء الكرديات اللواتي حافظن على",
+   "en": "From Algerian, Italian and Lebanese resistance to Kurdish women who have preserved the"
+  },
   "Diffusion Des Savoirs": {
    "ar": "نشر المعرفة",
    "en": "Dissemination of knowledge"
@@ -84,6 +88,18 @@
    "ar": "المناقشة مع إلغاز",
    "en": "Discussion with Elgas"
   },
+  "Entre deux rives": {
+   "ar": "بين مصرفين",
+   "en": "Between two banks"
+  },
+  "Et si l’IA réinventait notre façon de communiquer ?": {
+   "ar": "ماذا لو أنّ (آي آي) يعيد اختراع طريقتنا في التواصل؟",
+   "en": "What if the AI reinvents our way of communicating?"
+  },
+  "Eya Daghnouj Fi Hadhret El Mougy": {
+   "ar": "Eya Daghnouj Fi Hadhret El Mougy",
+   "en": "Eya Daghnouj Fi Hadhret El Mougy"
+  },
   "Fabrika Festival 14": {
    "fr": "Fabrika Festival 14",
    "ar": "مهرجان فابريكا 14"
@@ -96,10 +112,6 @@
    "ar": "مهرجان الصحراء الكبرى دي دوز الدولي (الطبعة 58)",
    "en": "Sahara de Douz International Festival (58th edition)"
   },
-  "Foire nationale du livre tunisien: Traduire, transmettre et penser le savoir en arabe": {
-   "ar": "معرض الكتاب الوطني التونسي: الترجمة التحريرية والترجمة والتفكير في المعارف باللغة العربية",
-   "en": "Tunisian National Book Fair: Translating, Translating and Thinking about Knowledge in Arabic"
-  },
   "HARAKAT TRAINING SCRATCH NIGHT": {
    "fr": "LA NUIT DE LA FORMATION HARAKAT",
    "ar": "HARAKAT TRAINING SCRATCH NIGHT"
@@ -108,9 +120,9 @@
    "ar": "التراث المعبر",
    "en": "Crossed heritage"
   },
-  "Images de Syrie, Palmyre, Alep, Damas - Michel Eisenlohr": {
-   "ar": "صور من سوريا، بالميرا، حلب، دمشق - ميشيل إيزنولوه",
-   "en": "Images of Syria, Palmyra, Aleppo, Damascus - Michel Eisenlohr"
+  "Images de Syrie, Palmyre, Alep, Damas": {
+   "ar": "صور سوريا، بالميرا، حلب، دمشق",
+   "en": "Images of Syria, Palmyra, Aleppo, Damascus"
   },
   "Interlude 17 Sortie De Résidence Yellow Wasabi": {
    "ar": "Interlude 17 Residence Exit Yellow Wasabi",
@@ -120,9 +132,13 @@
    "ar": "JAOU TUNIS 26 - Full Fest Access",
    "en": "JAOU TUNIS 26 - Full Fest Access"
   },
-  "Jaou Tunis 2026: Les corps, ces territoires de résistance": {
-   "ar": "Jaou Tunis 2026: Bodies, territories of resistance",
-   "en": "Jaou Tunis 2026: Bodies, territories of resistance"
+  "Jaou Tunis 2026": {
+   "ar": "Jaou Tunis 2026",
+   "en": "Jaou Tunis 2026"
+  },
+  "Jaou Tunis Biennale - 8e édition": {
+   "ar": "Jaou Tunis Biennial - 8th edition",
+   "en": "Jaou Tunis Biennial - 8th edition"
   },
   "Journées Cinématographiques de Carthage (JCC) (37e édition)": {
    "ar": "أيام تصوير الكرتاج (الطبعة 37)",
@@ -140,13 +156,17 @@
    "ar": "Carthage Puppet Arts Days (JAMC) (8th edition, Cité de la Culture)",
    "en": "Carthage Puppet Arts Days (JAMC) (8th edition, Cité de la Culture)"
   },
-  "Kteb Tounsi Avec Abdelhamid Larguèche": {
-   "ar": "Kteb Tounsi with Abdelhamid Larguèche",
-   "en": "Kteb Tounsi With Abdelhamid Larguèche"
+  "Kolna Nghani Saison 3": {
+   "ar": "كولنا نغاني سيسون 3",
+   "en": "Kolna Nghani Season 3"
   },
-  "Kteb Tounsi Avec Sonia Hanihina": {
-   "ar": "Kteb Tounsi with Sonia Hanihina",
-   "en": "Kteb Tounsi With Sonia Hanihina"
+  "Kteb Tounsi : Rencontre-débat avec Abdelhamid Larguèche": {
+   "ar": "Kteb Tounsi: Discussion with Abdelhamid Larguèche",
+   "en": "Kteb Tounsi: Discussion with Abdelhamid Larguèche"
+  },
+  "Kteb Tounsi : Rencontre-débat avec Sonia Hanihina": {
+   "ar": "Kteb Tounsi: Discussion with Sonia Hanihina",
+   "en": "Kteb Tounsi: Discussion with Sonia Hanihina"
   },
   "Kteb Tounsi Sonia Hanihina": {
    "ar": "Kteb Tounsi Sonia Hanihina",
@@ -164,9 +184,9 @@
    "ar": "BELL AND WeATHER",
    "en": "BELL AND WEATHER"
   },
-  "La chaussure": {
-   "ar": "الحذاء",
-   "en": "The shoe"
+  "La création sonore donne vie à l’invisible et transforme l’écoute en expérience": {
+   "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة",
+   "en": "Sound creation gives life to the invisible and transforms listening into experience"
   },
   "Labes - Selim Ben Safia": {
    "ar": "مختبرات - سيليم بن صوفيا",
@@ -176,9 +196,13 @@
    "ar": "The Song of the Forests",
    "en": "The Song of the Forests"
   },
-  "Le Monde Sans Fin": {
-   "ar": "العالم الذي لا نهاية له",
-   "en": "The Endless World"
+  "Le Prix Saint Augustin distingue l’historien Abdelhamid Larguèche": {
+   "ar": "يميز جائزة القديس أوغستين تاريخية عبد الحميد لارغوتشي",
+   "en": "The Saint Augustine Prize distinguishes historian Abdelhamid Larguèche"
+  },
+  "Le Temps suspendu": {
+   "ar": "الوقت مع وقف التنفيذ",
+   "en": "Time suspended"
   },
   "Le chemin se termine, la fête commence": {
    "ar": "نهاية الطريق، تبدأ الحفلة",
@@ -187,6 +211,14 @@
   "Le podcast de demain, vous l'imaginez comment ?": {
    "ar": "كيف تتصورين أن الغد مذاق؟",
    "en": "How do you imagine tomorrow's podcast?"
+  },
+  "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v": {
+   "ar": "كيف تتصورين أن الغد مذاق؟ Podcast Days by Tunisia Podcast Festival v",
+   "en": "How do you imagine tomorrow's podcast? Podcast Days by Tunisia Podcast Festival v"
+  },
+  "Le tube de R Coolidge": {
+   "ar": "أنبوب \"ر كولدج\"",
+   "en": "The R Coolidge tube"
   },
   "Lecture Participative": {
    "ar": "القراءــة التشاركيــة",
@@ -204,6 +236,10 @@
    "fr": "Séance d'écoute, projection et performance en direct",
    "ar": "جلسة الاستماع، فرز الأداء الحي"
   },
+  "Lotfi bouchnek": {
+   "ar": "Lotfi bulakhnek",
+   "en": "Lotfi bulakhnek"
+  },
   "L’Heure Du Jeu": {
    "ar": "وقت اللعب",
    "en": "Game Time"
@@ -211,6 +247,10 @@
   "L’Olivier, Trait D’Union De La Méditerranée": {
    "ar": "L-Olivier, Mediterranean Treaty",
    "en": "L-Olivier, Mediterranean Treaty"
+  },
+  "L’océan est toujours là (mais je ne le reconnais plus)": {
+   "ar": "المحيط لا يزال هناك (لكنني لم أعد أميزه)",
+   "en": "The ocean is still there (but I don't recognize it anymore)"
   },
   "Mars Express": {
    "ar": "March Express",
@@ -236,9 +276,17 @@
    "ar": "فيلو - آرت للأطفال في الفرنسية",
    "en": "Philo-Art For Children In French"
   },
+  "Photo : Mémoires en partage entre Sicile et Tunisie": {
+   "ar": "الصورة: مذكرات مشتركة بين صقلية وتونس",
+   "en": "Photo: Memoirs shared between Sicily and Tunisia"
+  },
   "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du 6 et 7 novembre": {
    "ar": "أيام البث التلفزيوني التونسي للمهرجان ال Podcast Festival unveils its November 6 and 7 program",
    "en": "Podcast Days by Tunisia Podcast Festival unveils its November 6 and 7 program"
+  },
+  "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30": {
+   "ar": "لإغلاق يوم البث ال Podcast Festival التونسي، يُجتمع في 7 تشرين الثاني/نوفمبر في الساعة 30/18",
+   "en": "To close Podcast Days by Tunisia Podcast Festival, meet on November 7 at 6.30 pm"
   },
   "Power Yoga with Nicole Skarpness @nskarp": {
    "fr": "Yoga de puissance avec Nicole Skarpness @nskarp",
@@ -252,17 +300,37 @@
    "ar": "انظر إليّ",
    "en": "Look at me."
   },
+  "RUCHE73 : Concert de Yosri": {
+   "ar": "RUCHE73 : Concert by Yosri",
+   "en": "RUCHE73 : Concert by Yosri"
+  },
+  "Saisons de la création": {
+   "ar": "بحار الخلق",
+   "en": "Seasons of Creation"
+  },
+  "Saveurs et amertume": {
+   "ar": "الشعلة والمرارة",
+   "en": "Flavors and bitterness"
+  },
   "Sous Les Étoiles De Paris": {
    "ar": "تحت ستار باريس",
    "en": "Under The Stars of Paris"
+  },
+  "Spectacle musical caritatif": {
+   "ar": "معرض موسيقي خيري",
+   "en": "Charitable musical show"
   },
   "Spécial Novembre Numérique": {
    "ar": "Special November Digital",
    "en": "Special November Digital"
   },
-  "Tables Rondes": {
-   "ar": "اجتماعات المائدة المستديرة",
-   "en": "Round tables"
+  "TAHA DESOUKY": {
+   "ar": "تاها دوسك",
+   "en": "TAHA DESOUKY"
+  },
+  "Tout commence par une vibration. Puis une voix, une idée, une histoire...Et si vous venez": {
+   "ar": "كل هذا يبدأ بالإهتزازات ثمّ صوت، فكرة، قصة... و إذا أتيت",
+   "en": "It all starts with a vibration. Then a voice, an idea, a story... And if you come"
   },
   "UN FILS": {
    "ar": "A LOT",
@@ -284,10 +352,6 @@
    "ar": "القرية البيئية",
    "en": "Environmental Village"
   },
-  "Voyage Enchanteur": {
-   "ar": "السفر الميسر",
-   "en": "Enchanting Travel"
-  },
   "Voyagez En Réalité Virtuelle !": {
    "ar": "السفر في الواقع الافتراضي!",
    "en": "Travel in Virtual Reality!"
@@ -300,9 +364,9 @@
    "fr": "Yoga pour les esprits occupés avec Judit @yoga_in_sidibousaid",
    "ar": "Yoga for Busy Minds with Judit @yoga_in_sidibousaid"
   },
-  "« Saveurs et amertume » à la Galerie TGM : Lorsque l’art esquisse les contours de l’identité tunisienne": {
-   "ar": "&quot; الشعلة والمرارة &quot; في معرض الحركة: عندما تحدد المادة حدود الهوية التونسية",
-   "en": "« Flavors and bitterness » at the TGM Gallery: When art outlines the contours of Tunisian identity"
+  "À l’Institut français de Tunis": {
+   "ar": "في المعهد الفرنسي في تونس",
+   "en": "At the French Institute in Tunis"
   },
   "أيام فلسطين السينمائية حول العالم في سينيمدار - قرطاج": {
    "fr": "Journées du cinéma palestinien dans le monde à Sinemdar-Cartataj",
@@ -334,30 +398,20 @@
   }
  },
  "notices": {
+  "_events/auto/beit-al-hikma/2026-11-04-evenement.md": {
+   "cle": "3b7575a794dd",
+   "fr": "Table ronde sur: Mer Méditerranéenne des trésors du patrimoine – 4 novembre 2026 est apparu en premier sur Beit al-Hikma.",
+   "en": "L’article Round Table on: Mediterranean Sea of Heritage treasures – 4 November 2026 est apparu en premier sur Beit al-Hikma."
+  },
   "_events/auto/beit-al-hikma/2026-11-13-evenement.md": {
-   "cle": "63e0dadaba2e",
-   "fr": "Le résumé de cette conférence aborde les changements de l'artefact et du patrimoine en Tunisie depuis la fin du XIXe siècle jusqu'à aujourd'hui, en suivant l'évolution des programmes de [...]",
-   "en": "The summary of this lecture addresses the changes in the artifact and heritage in Tunisia since the late nineteenth century to the day, by tracking the evolution of research curricula and its problems, [...]"
+   "cle": "e9b0f1e0ee82",
+   "fr": "Le résumé couvre les changements dans l'histoire et le patrimoine de la Tunisie depuis la fin du XIXe siècle, à travers l'évolution des programmes de recherche et de ses problèmes, [...] L'article conférence: les transformations de l'écriture ancienne et génétique en Tunisie: de l'héritage colonial au renouvellement des approches cognitives du professeur Fawzi, tenue le 13 novembre 2026 est apparu en premier sur Beit al-Hikma.",
+   "en": "The summary covers the changes in the history and heritage of Tunisia since the late nineteenth century, through the evolution of research curricula and its problems, [...] L’article lecture: the transformations of ancient and genetic writing in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi, held on 13 November 2026 est apparu en premier sur Beit al-Hikma."
   },
-  "_events/auto/cine-agora/2026-11-01-bakma.md": {
+  "_events/auto/cine-agora/2026-11-02-bakma.md": {
    "cle": "bd01c3eb7145",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة أعضاؤه تم قطع رأسهم واختفى في مكانه القاتل كان يتستر على رأس كلب",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, in its place, the murderer grotesquely sewn a dog's head."
-  },
-  "_events/auto/cine-agora/2026-11-01-le-fantome-de-lopera.md": {
-   "cle": "43b97b027874",
-   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا باريس المرموقة. كما تكرّر الـ(أورفيوس)، أوبرا ملعونة كانت لتتكون من شبح الأوبرا، تقع في غرام عازف بيانو غامض. ومثلما يقترب التمثيل الأول، بين الحوادث غير المفسَّرة والكشف المزعج، تجد أناستازيا نفسها مغمورة في قصة حب مستحيلة، على حدود الواقع والتخيل.",
-   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Paris Opera. As she repeats the Orpheus, a cursed opera that would have been composed by the Phantom of the Opera, she falls in love with a mysterious pianist. As the first representation approaches, between unexplained accidents and disturbing revelations, Anastasia finds herself immersed in an impossible love story, at the border of reality and fantasy."
-  },
-  "_events/auto/cine-agora/2026-11-01-lile-des-souvenirs.md": {
-   "cle": "61dfc8e8de21",
-   "ar": "(جو) و (ريسا) يجدان أنفسهما محاصرين في العالم الرائع لجزيرة (ناكالي) المنسية يكتشفون أن الطريقة الوحيدة للعودة للمنزل قد تكلفهم حياة من الذكريات والعواطف",
-   "en": "Jo and Raissa find themselves stranded on the fantastic world of the forgotten island of Nakali. They discover that the only way to get home could cost them a lifetime of memories and emotions."
-  },
-  "_events/auto/cine-agora/2026-11-01-weekend.md": {
-   "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة. أعضاؤه تم قطع رأسها واختفى وبدلا من ذلك، القاتل يتستر على رأس كلب",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, instead, the murderer grotesquely sewn a dog's head."
   },
   "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md": {
    "cle": "0677768aa51f",
@@ -378,6 +432,11 @@
    "cle": "a66053e9d573",
    "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز رفض السكان. عندما تقابل ميلي فتاة صغيرة تستطيع رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
    "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly – a little girl she alone can see – Lucy embarks on a great adventure to break the secret of her mysterious powers."
+  },
+  "_events/auto/cine-agora/2026-11-07-weekend.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
   "_events/auto/cine-agora/2026-11-08-verity.md": {
    "cle": "d8628654da8e",
@@ -408,11 +467,6 @@
    "cle": "aadab86f486f",
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
-  },
-  "_events/auto/el-teatro/2026-11-01-tete-a-tete.md": {
-   "cle": "92ec978ec447",
-   "ar": "(محمد ويلست) أنت في منتصف اليوم، أنت في منتصف اليوم.",
-   "en": "محمد وا Whilst you're in the middle of the day, you're in the middle of the day."
   },
   "_events/auto/el-teatro/2026-11-02-fuite.md": {
    "cle": "bbe175ee5abb",
@@ -454,6 +508,296 @@
    "fr": "<unk> <unk> oeuvres d'art pour le cours constituant de l'automne...\nLes jours de jeux à monsieur Bouzid.\nDu 26 octobre au 1er novembre 2026.\n<unk> à la station de théâtre et d'arts flasques de Sadie Bouzid.\n_\nThéâtre des mariées.\nPour vous inscrire, cliquez sur le lien suivant :\nhttps://docs.google.com/forms/d/f/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5Top6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book",
    "en": "<unk> <unk> artworks for the Constituent Course of the Autumn...\nPlaydays in sir Bouzid.\nFrom October 26 to November 1, 2026.\n<unk> at the station of drama and flak arts in Sadie Bouzid.\n_\nTheater of the brides.\nFor registration, click on the following link:\nhttps://docs.google.com/forms/d/e/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5TOp6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book"
   },
+  "_events/auto/ift-pdf/2026-10-23-jaou-tunis-biennale-8e-edition.md": {
+   "cle": "1922fef2c82d",
+   "ar": "ويفخر المعهد التونسي الفرنسي بأن يكون شريكا في الطبعة الثامنة من صحيفة &quot; جاكو تونس بيني 2026 &quot; التي ستعقد في الفترة من 23 تشرين الأول/أكتوبر إلى 22 تشرين الثاني/نوفمبر.\nبشأن البرنامج: المعارض والأداءات والحفلات الموسيقية والمحادثات والاجتماعات التي يشارك فيها الفنانون والكتاب والموسيقيون والجمهور من جميع أنحاء العالم.",
+   "en": "The French Institute of Tunisia is proud to be a partner in the 8th edition of \"Jaou Tunis Biennale 2026\" which will take place from 23 October to 22 November.\nOn the programme: exhibitions, performances, concerts, conversations and meetings involving artists, writers, musicians and audiences from all over the world."
+  },
+  "_events/auto/ift-pdf/2026-10-27-images-de-syrie-palmyre-alep-damas.md": {
+   "cle": "01408c4dc0ae",
+   "ar": "وفي إطار المهرجان &quot; جاكو تونس 2026 &quot; (23 تشرين الأول/أكتوبر - 22 تشرين الثاني/نوفمبر)، يستضيف المعهد الفرنسي لتونس المعرض التصويري &quot; صور سورية، بالمير، حلب، دمشق &quot; الذي قام به ميشيل إيزنلور.\nوسيُفتتح هذا الافتتاح يوم الثلاثاء 27 تشرين الأول/أكتوبر الساعة 00/17 بحضور المصور.\nوسيعقب الافتتاح، في الساعة ٣٠/١٨، اجتماع بشأن موضوع &quot; التصوير والتراث &quot; مع سومايا غز الله، وتاريخ الباحث خالد ميليتي والمصور ميشيل ايزنلور.",
+   "en": "As part of the festival \"Jaou Tunis 2026\" (23 October-22 November), the French Institute of Tunisia hosts the photographic exhibition \"Images de Syria, Palmyre, Aleppo, Damascus\" by Michel Eisenlohr.\nThe opening will take place on Tuesday 27 October at 5 p.m., in the presence of the photographer.\nThe opening will be followed, at 6.30 p.m., by a meeting on the theme \"Photography and Heritage\" with Soumaya Gharsallah, the researcher historian Khaled Melliti and photographer Michel Eisenlohr."
+  },
+  "_events/auto/ift-pdf/2026-11-02-lolivier-trait-dunion-de-la-mediterranee.md": {
+   "cle": "ecb3a49b7e57",
+   "ar": "In partnership with the Committee of Twinning Grenoble Sfax, the association Tunisia Olive and the House of Olive Oils and Olives of France (Nyons).",
+   "en": "In partnership with the Committee of Twinning Grenoble Sfax, the association Tunisia Olive and the House of Olive Oils and Olives of France (Nyons)."
+  },
+  "_events/auto/ift-pdf/2026-11-04-lheure-du-jeu.md": {
+   "cle": "11a1e0f79144",
+   "ar": "تعالوا و شاركوا لحظة من الراحة حيث الجميع حر في اختيار اللعبة التي يريدونها واللعب على سرعتهم، لوحدهم أو مع الآخرين",
+   "en": "Come and share a moment of relaxation where everyone is free to choose the game they want and play at their own pace, alone or with others."
+  },
+  "_events/auto/ift-pdf/2026-11-04-what-else.md": {
+   "cle": "e3ff63ee8bcd",
+   "ar": "ويقترح المعهد الفرنسي لتونس عرض الفيلم ماذا أيضاً؟\nندا مزيني هيفايده، في حضور فريق الفيلم، هو في حضور ندا مزيني هيفايده.\nموجز: (الصندوق)\nIn Tunis, Farah and Mourad see their plans for the future waver under the weight of expected disappointeds.\nالجميع يحاول تحويل الصفحة و العثور على مكعباتهم عندما تجمعهم منافسة من الظروف\nما يبدو أنه مجرد لقاء عابر قريباً أخذ تحولاً غير متوقع",
+   "en": "The French Institute of Tunisia proposes the screening of the film What else?\nNada Mezni Hefaiedh, in the presence of the film team, is in the presence of Nada Mezni Hefaiedh.\nSummary: (VOSTFR)\nIn Tunis, Farah and Mourad see their plans for the future waver under the weight of unexpected disappointments.\nEveryone tries to turn the page and find their cues, when a contest of circumstances brings them together.\nWhat seemed to be just a passing encounter soon took an unexpected turn."
+  },
+  "_events/auto/ift-pdf/2026-11-05-kteb-tounsi-rencontre-debat-avec-abdelhamid-largueche.md": {
+   "cle": "3ee3102caaea",
+   "ar": "ويسر مكتبة وسائط الإعلام التابعة للمعهد الفرنسي لتونس أن تدعوكم إلى إجراء مناقشة مع عبد الحميد لارغويتش بشأن عمله في لافويكس دي لا برايس، الذي نشره سيكلي إيتس (آذار/مارس 2026) وليه هيرييه دون صمت: الرق والعرق وما بعد الإلغاء في تونس، والذي نشره سانتيانا (آب/أغسطس 2026).",
+   "en": "The media library of the French Institute of Tunisia is pleased to invite you to a discussion with Abdelhamid Larguèche about his works La Voix de la braise, published by Sikelli Edition (March 2026) and Les Héritiers du silence: slavery, race and post-abolition in Tunisia, published by Santillana (August 2026)."
+  },
+  "_events/auto/ift-pdf/2026-11-05-le-tube-de-r-coolidge.md": {
+   "cle": "a3a1801aff80",
+   "ar": "(مملكة فيلا سلامبو). جولة تريب جود ساعة \"أنابيب (ريدج) أو (إكس إيتوس ديميتر)\" \"بشراكة مع (ليبرايري فندرى)\" أنا",
+   "en": "(Laureate of Villa Salammbô). Round-trip Joudhour \"Le tube de R Coolidge\" aux Editions Démeter – L In partnership with the Librairie Fendri. Its I"
+  },
+  "_events/auto/ift-pdf/2026-11-05-ruche73-concert-de-yosri.md": {
+   "cle": "81f9e0ae5636",
+   "ar": "المعهد الفرنسي لتونس في سوس، بالتعاون مع مقهى VOX، أطلق \"Ruche73\"، حدث موسيقي شهري مكرس للمواهب المحلية الناشئة.\n(يوري) يقدم عالماً من البوب الغامض المغناطيسي و المغناطيسي مع أنني لم أعد أصنع الإبتسامة في هذا المكان\nرحلة موسيقية ليلية حيث تستكشف الألوان مع حساسية الحساسية وعزلة عاطفية\nالدخول المجاني في حدود الأماكن المتاحة.",
+   "en": "The French Institute of Tunisia in Sousse, in collaboration with the VOX Café, launched \"Ruche73\", a monthly musical event dedicated to emerging local talent.\nYosri offers a world of intimate and hypnotic dark pop with I Don的t Smile Anymore in This Place.\nA night musical journey where melodies explore with sensitivity nostalgia and emotional isolation.\nFree entry within the limits of available places."
+  },
+  "_events/auto/ift-pdf/2026-11-06-festival-du-podcast.md": {
+   "cle": "76bdb529cdb9",
+   "ar": "البرنامج الذي سيكتشف قريباً جداً على موقعنا الشبكي وشبكاتنا الاجتماعية.",
+   "en": "Program to be discovered very soon on our website and social networks."
+  },
+  "_events/auto/ift-pdf/2026-11-06-kteb-tounsi-sonia-hanihina.md": {
+   "cle": "af655d2749fa",
+   "ar": "اجتماع مع (سونيا هانيها) حول مسابقتها الجديدة مُحاكاة من قِبل سارا خالد، طالب جامعي بالغ عام وشاب بالغ",
+   "en": "Meeting with Sonia Hanihina around her novel Round-trip. Moderated by Sarra Khaled, a university student. Public adult and young adult."
+  },
+  "_events/auto/ift-pdf/2026-11-06-mars-express.md": {
+   "cle": "7c687ffd8f8a",
+   "ar": "كجزء من عروض الأفلام عن مستقبل تعايشنا مع ذكاء اصطناعي وآليات March express, by Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
+   "en": "As part of film screenings about the future of our cohabitation with artificial intelligences and robots. March express, by Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction."
+  },
+  "_events/auto/ift-pdf/2026-11-06-un-monstre-a-paris.md": {
+   "cle": "3c26b6ebdd3a",
+   "ar": "من قبل بيبو بيرغرون، الإقلاع، المغامرة",
+   "en": "by Bibo Bergeron, .animation, adventurer"
+  },
+  "_events/auto/ift-pdf/2026-11-07-kteb-tounsi-rencontre-debat-avec-sonia-hanihina.md": {
+   "cle": "0ae9aff4b9e0",
+   "ar": "من دواعي سرور المعهد الفرنسي لتونس أن يدعوكم إلى مكتبة فهرنهايت 451 لمناقشة فريق مع سونيا هانيها عن روايتها\nLatès, Collection La Granada, 2024.\nوسيدير الاجتماع سارة خالد، وهي أكاديمية.\nGo-Back\n\"لقد ظننت منذ وقت طويل أنه ليس لدي ما أقوله\"\nثم قابلت تلك الراديوات",
+   "en": "The French Institute of Tunisia is pleased to invite you to the bookshop Fahrenheit 451 for a panel discussion with Sonia Hanihina about her novel\nLattès, Collection La Granada, 2024).\nThe meeting will be moderated by Sarra Khaled, an academic.\nGo-Back\n\"I long thought I had nothing to say.\nAnd then I ran into those radios."
+  },
+  "_events/auto/ift-pdf/2026-11-07-lecture-participative.md": {
+   "cle": "4a4a041cabd2",
+   "ar": "في حضور المؤلف رودها عمر من \"أومي سيسي: ضربة بروم على الشاطئ\" (إنويا إيتوس)، مع نبراز ترافي وفريدا غيارد، مصورين",
+   "en": "In the presence of author Rawdha Ammar of \"Omi Sissi: Broom blow on the beach\" (Enoya Editions), with Nebras Charfi and Frida Guillard, illustrators"
+  },
+  "_events/auto/ift-pdf/2026-11-07-shaun-le-mouton-la-beeete-d-halloween.md": {
+   "cle": "640b73758c90",
+   "ar": "المعهد الفرنسي لتونس يعرض على جمهوره الشاب فيلم (شون لو فرش) المتحرك وحش الهالوين من قبل (ستيف كوكس) و(ماثيو ووكر)\nموجز تنفيذي:\nفي عيد القديسين، سكان مزرعة (موسى بوتوم) يبهجون في المهرجانات، حتى يقوم المزارع الخبيث بسرقة اليقطين المحبوب من القطيع.\nعندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
+   "en": "The French Institute of Tunisia offers its young audience the animated film Shaun le brut: The Hallowen's Beast by Steve Cox and Matthew Walker.\nExecutive summary:\nOn Halloween, the inhabitants of Mossy Bottom's farm rejoice in the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd.\nWhen Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
+  },
+  "_events/auto/ift-pdf/2026-11-07-village-environnemental.md": {
+   "cle": "1f7c71e99b07",
+   "ar": "مقابلة الجهات الفاعلة البيئية المحلية في سفاكس في شراكة مع منتدى الفنون والثقافة وبلدية سفاكس",
+   "en": "Meet local environmental actors in Sfax In partnership with the Arts and Cultures Forum and the Municipality of Sfax"
+  },
+  "_events/auto/ift-pdf/2026-11-08-atelier-de-seances-de-bibliotherapie-autour-du-roman-tunis-b.md": {
+   "cle": "0bafb5142f42",
+   "ar": "مكتبة الإعلام في المعهد الفرنسي لتونس تقدم لكم، \"تونيس بلوز\"، حلقة عمل مدتها ثلاث دورات تستكشف الأبعاد الثلاثة للعلاج المكتبي: القراءة والكتابة وتبادل المعلومات.\nهذه التجربة تدعوك إلى الغوص في عالم روايات علي بيكور تونس بلو\nومع ظهور هذه القصة، سيسافر المشاركون عبر مدينة تمزقها ذكريات وتناقضات ودوافع مجتمع متغير.",
+   "en": "The media library of the French Institute of Tunisia offers you, \"Tunis Blues\", a three-session workshop that explores the three dimensions of library therapy: reading, writing and exchanging.\nThis experience invites you to dive into the world of Ali Bécheur's novel Tunis Blues.\nAs the story unfolds, the participants will travel through a city that is traversed by the memories, contradictions and impulses of a changing society."
+  },
+  "_events/auto/ift-pdf/2026-11-10-locean-est-toujours-la-mais-je-ne-le-reconnais-plus.md": {
+   "cle": "b1f229755af0",
+   "ar": "من قبل يوسف هنداوي لا يزال المحيط هناك (لكنني لا أعرفه بعد الآن) من خلال الصورة والفيديو، المعرض يستكشف الآثار في ذلك الوقت، الحداد والتجارب الحية يتركون هوياتنا.",
+   "en": "by Youssef Hendaoui 的The ocean is still there (but I don't recognize it any more) Through the photo and video, the exhibition explores the traces that time, mourning and lived experiences leave on our identities."
+  },
+  "_events/auto/ift-pdf/2026-11-11-cinema-danimation.md": {
+   "cle": "bc799bf5229b",
+   "ar": "من (شادوكس) إلى (أركان) من (ديزني بيكسار) إلى استوديو (غايبلي) يستكشف أسرار التصويب من الرسم التقليدي للـ3D التسجيل المطلوب: M mediatheque.sousse@G indépendants-tunisie.com Public from 7 to 15 years old",
+   "en": "From Shadoks to Arcane, from Disney- Pixar to Ghibli Studio, explore the secrets of animation, from traditional 3D drawing. Registration required: M mediatheque.sousse@ G indépendants-tunisie.com Public from 7 to 15 years old"
+  },
+  "_events/auto/ift-pdf/2026-11-11-un-monde-merveilleux.md": {
+   "cle": "eb8608bbbb60",
+   "ar": "من قبل جوليو كاليغاري (French Comédie with French subtitles, 1h18, 2024). في إطار دورة تشرين الثاني/نوفمبر رقميته",
+   "en": "by Giulio Callegari (French Comédie with French subtitles, 1h18, 2024). In the framework of the November cycle His Digital."
+  },
+  "_events/auto/ift-pdf/2026-11-12-action-de-sensibilisation-et-de-prevention-du-diabete.md": {
+   "cle": "eec4807be0c0",
+   "ar": "في شراكة مع المركز الوطني لتعزيز زراعة الأعضاء والرابطة العامة للاكتفاء الإيجاري. Toured in Gabès, El Hamma, Métouia and Gabès-centre.",
+   "en": "In partnership with the National Centre for the Promotion of Organ Transplantation (CNPTO) and the General Association of Renal Insufficiency (AGIR – Gabès). Toured in Gabès, El Hamma, Métouia and Gabès-centre."
+  },
+  "_events/auto/ift-pdf/2026-11-12-diffusion-des-savoirs.md": {
+   "cle": "beca3fefa15f",
+   "ar": "جغرافيا اجتماعية وسياسية للفيضانات في سفاكس. &quot; الآفاق البحثية &quot; ري فالينتين مونغاد - ليكرين - دكتوراه في الجغرافيا/جامعة سال سوربون (الوساطة المحلية: علوم الموقع، لينكس للعلوم)",
+   "en": "A social and political geography of the floods in Sfax. Research Perspectives by RE Valentin Moungad-Legrain – Doctor of Geography / Sal Sorbonne University (Laboratory Mediations: Site Sciences, Links Sciences)"
+  },
+  "_events/auto/ift-pdf/2026-11-12-entre-deux-rives.md": {
+   "cle": "89522cd9b78c",
+   "ar": "بين مصرفين: ما تقوم به علاقات تونس - الفرنسية من بناء وسلسلة من الموائد المستديرة وسلسلة من الوصلات بين تونس والتي تعبر أيضا عن نفسها في مسارات عائلية شخصية.",
+   "en": "Between two banks: What Tuniso-French relations build, traverse and inv Series of round tables aut links between Tunisia and which also express themselves in personal family trajectories."
+  },
+  "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md": {
+   "cle": "5ae1e1fa24f3",
+   "ar": "بواسطة مانويل فلورين هيندري 2017، 1h30mn، مغامرة، كوميدي، عائلة. CIN",
+   "en": "by Manuel Flurin Hendry 2017, 1h30mn, adventure, comedy, family. CIN"
+  },
+  "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-lune.md": {
+   "cle": "704e798331e1",
+   "ar": "من قبل توماس بالميس، 2026، 1h44mn Documentary كجزء من شهر الفيلم الوثائقي",
+   "en": "by Thomas Balmès, 2026, 1h44mn Documentary As part of the month of the documentary film"
+  },
+  "_events/auto/ift-pdf/2026-11-14-contes-en-scene.md": {
+   "cle": "215c5ca709d5",
+   "ar": "اكشفوا قصة، وجسدوا شخصياتها وتجربة مغامراتها من خلال مسرحية مسرحية، أصوات وصوت.",
+   "en": "Discover a tale, embody its characters and experience its adventures through theatrical play, voices and sounds."
+  },
+  "_events/auto/ift-pdf/2026-11-14-creativite-avec-amina-hanini.md": {
+   "cle": "8f7e8c8a4eb2",
+   "ar": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancai s-tunisie.com",
+   "en": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancai s-tunisie.com"
+  },
+  "_events/auto/ift-pdf/2026-11-14-creativite-avec-bochra-taboubi.md": {
+   "cle": "6e67600dda15",
+   "ar": "A Botanical workshop imagined ( my artist's notebook) by registration: amina.hamrouni@institutfrancais- tunisie.com",
+   "en": "A Botanical workshop imagined (my artist's notebook) By registration: amina.hamrouni@institutfrancais- tunisie.com"
+  },
+  "_events/auto/ift-pdf/2026-11-14-watch-party-gaming.md": {
+   "cle": "44eb94992d78",
+   "ar": "في شراكة مع أكاديمية غامافي وغوتي 13",
+   "en": "in partnership with Gamefy Academy and GOTEI 13"
+  },
+  "_events/auto/ift-pdf/2026-11-15-action-de-sensibilisation-et-de-prevention-du-diabete.md": {
+   "cle": "eec4807be0c0",
+   "ar": "في شراكة مع المركز الوطني لتعزيز زراعة الأعضاء والرابطة العامة للاكتفاء الإيجاري. Toured in Gabès, El Hamma, Métouia and Gabès-centre.",
+   "en": "In partnership with the National Centre for the Promotion of Organ Transplantation (CNPTO) and the General Association of Renal Insufficiency (AGIR – Gabès). Toured in Gabès, El Hamma, Métouia and Gabès-centre."
+  },
+  "_events/auto/ift-pdf/2026-11-18-philo-art-pour-enfants-en-francais.md": {
+   "cle": "779ada7914ac",
+   "ar": "وهذه الحلقة، التي يديرها رابي بن رومدان، تجمع بين قراءة التاريخ والتفكير الفلسفي والإبداع الفني للأطفال الذين تتراوح أعمارهم بين 8 سنوات و12 سنة. Inscription par email : info.sousse@institutfrancais- tunisie.com",
+   "en": "moderated by Rabeb Ben Romdhane, this workshop combines history reading, philosophical reflection and artistic creation for children from 8 to 12 years old. Inscription par email : info.sousse@institutfrancais- tunisie.com"
+  },
+  "_events/auto/ift-pdf/2026-11-19-heritages-croises.md": {
+   "cle": "8e795d9a9ec7",
+   "ar": "70 عاما من التعاون في مجال التراث بين تونس وفرنسا. مع: سلمى غربي، مهندس معماري - معماري - ريشير. جاليل عبد القادري، مهندس معماري - حضري. دينيس ليسيج، خبير معماري وتراثي. هايثم عبيدي، باحث في معهد التراث الوطني",
+   "en": "70 years of heritage cooperation between Tunisia and France. With: • Salma Gharbi, architect-researcher • Jallel Abdelkefi, architect-urbanist • Denis Lesage, architect and heritage expert • Haithem Abidi, researcher at the National Heritage Institute"
+  },
+  "_events/auto/ift-pdf/2026-11-20-avec-lotfi-mlayah.md": {
+   "cle": "719d47424987",
+   "ar": "حول دار سامت (بيت الصمت) هيكيت إيتس.",
+   "en": "around Dar Samt (The House of Silence) Hkeyet Edition."
+  },
+  "_events/auto/ift-pdf/2026-11-20-cafe-philo-avec-azza-filali.md": {
+   "cle": "e471f807abd2",
+   "ar": "أي مكان للإنسان وللرب؟ كيف يمكن للعلم أن يغير نظرنا العالمي؟ ما الذي يرشد خياراتنا الأخلاقية؟",
+   "en": "What place for the human being and for God? How do science transform our worldview? What guides our moral choices?"
+  },
+  "_events/auto/ift-pdf/2026-11-20-cercle-de-lectur-au-centre-ville-de-tunis.md": {
+   "cle": "a6cdfa11424a",
+   "ar": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,",
+   "en": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,"
+  },
+  "_events/auto/ift-pdf/2026-11-20-discussion-avec-elgas.md": {
+   "cle": "4ea08f8368a7",
+   "ar": "حول إستياءه ما بعد الاستعمارِ",
+   "en": "Around his post-colonial resentments Rivenuve en"
+  },
+  "_events/auto/ift-pdf/2026-11-20-le-chant-des-forets.md": {
+   "cle": "3b90a49a3d27",
+   "ar": "(فنسنت مونييه) 2025، 1h26mn، وثائقي.",
+   "en": "Vincent Munier 2025, 1h26mn, documentary."
+  },
+  "_events/auto/ift-pdf/2026-11-21-avec-hafida-ben-rejeb-latta.md": {
+   "cle": "cb892cd129e4",
+   "ar": "حول حسابه الأوتوماتيكي ابنة كيروان تحديث من قبل الدكتور. (أنيسا زريغ) بالغة وشابة راشدة",
+   "en": "Around his autobiographical account A daughter of Kairouan. Moderated by Dr. Anissa Zrigue Public adult and young adult."
+  },
+  "_events/auto/ift-pdf/2026-11-21-creativite-avec-amina-hanini.md": {
+   "cle": "138cfd16b10e",
+   "ar": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancais- tunisie.com",
+   "en": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancais- tunisie.com"
+  },
+  "_events/auto/ift-pdf/2026-11-21-les-malheurs-de-sophie.md": {
+   "cle": "51d8d50d9950",
+   "ar": "من قبل كريستوف أورينيه 2016، 1h46mn، الكوميديا.",
+   "en": "by Christophe Honoré 2016, 1h46mn, comedy."
+  },
+  "_events/auto/ift-pdf/2026-11-21-lheure-du-jeu.md": {
+   "cle": "11a1e0f79144",
+   "ar": "تعالوا و شاركوا لحظة من الراحة حيث الجميع حر في اختيار اللعبة التي يريدونها واللعب على سرعتهم، لوحدهم أو مع الآخرين",
+   "en": "Come and share a moment of relaxation where everyone is free to choose the game they want and play at their own pace, alone or with others."
+  },
+  "_events/auto/ift-pdf/2026-11-22-atelier-de-seances-de-bibliotherapie-autour-du-roman-tunis-b.md": {
+   "cle": "0bafb5142f42",
+   "ar": "مكتبة الإعلام في المعهد التونسي الفرنسي تقدم لكم، \"تونيس بلوز\"، حلقة عمل ثلاثية الدورة تستكشف الأبعاد الثلاثة للعلاج المكتبي: القراءة والكتابة وتبادل المعلومات.\nهذه التجربة تدعوك إلى الغوص في عالم روايات علي بيكور تونس بلو\nومع ظهور هذه القصة، سيسافر المشاركون عبر مدينة تمزقها ذكريات وتناقضات ودوافع مجتمع متغير.",
+   "en": "The media library of the French Institute of Tunisia offers you, \"Tunis Blues\", a three-session workshop that explores the three dimensions of library therapy: reading, writing and exchanging.\nThis experience invites you to dive into the world of Ali Bécheur's novel Tunis Blues.\nAs the story unfolds, the participants will travel through a city that is traversed by the memories, contradictions and impulses of a changing society."
+  },
+  "_events/auto/ift-pdf/2026-11-22-journees-theatrales-de-carthage.md": {
+   "cle": "b8f719543797",
+   "ar": "لأسبوع، تتحول تونس إلى مشهد حي ضخم، يخلط بين المسابقات الرسمية، عروض الشوارع، حلقات عمل مهنية...",
+   "en": "For a week, Tunis is transformed into a huge living scene, mixing official competitions, street shows, professional workshops..."
+  },
+  "_events/auto/ift-pdf/2026-11-23-discussion-avec-elgas.md": {
+   "cle": "4ea08f8368a7",
+   "ar": "حول إستياءه ما بعد الاستعمارِ",
+   "en": "Around his post-colonial resentments Rivenuve en"
+  },
+  "_events/auto/ift-pdf/2026-11-24-special-novembre-numerique.md": {
+   "cle": "b2bfbbef7547",
+   "ar": "وفاة صاحب البلاغ؟ ما تفعله الاستخبارات الاصطناعية للأدب. With Samia Kassab Charfi, Sonya Ben Behy, Sami Mokaddem, moderated by Raouf Medelgi.",
+   "en": "The author's death? What artificial intelligence does to literature. With Samia Kassab Charfi, Sonya Ben Behy, Sami Mokaddem, moderated by Raouf Medelgi."
+  },
+  "_events/auto/ift-pdf/2026-11-25-level-five.md": {
+   "cle": "274a8f06bb11",
+   "ar": "من قبل كريس ماركر (الوثيق الفرنسي الذي يحمل عنوانا فرعيا جزئيا باللغة الفرنسية، فيلم تراثي، 1:45 صباحا، 1996). جمهور الكبار كجزء من الدورة الرقمية لشهر نوفمبر",
+   "en": "by Chris Marker (French documentary with partial subtitles in French, heritage film, 1:45 am, 1996). Adult audience. As part of the Digital November S cycle."
+  },
+  "_events/auto/ift-pdf/2026-11-26-cercle-de-lectur-au-centre-ville-de-tunis.md": {
+   "cle": "a6cdfa11424a",
+   "ar": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,",
+   "en": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,"
+  },
+  "_events/auto/ift-pdf/2026-11-26-discussion-avec-elgas.md": {
+   "cle": "4ea08f8368a7",
+   "ar": "حول إستياءه ما بعد الاستعمارِ",
+   "en": "Around his post-colonial resentments Rivenuve en"
+  },
+  "_events/auto/ift-pdf/2026-11-26-interlude-17-sortie-de-residence-yellow-wasabi.md": {
+   "cle": "2873319e324a",
+   "ar": "(يلو فاسابي) سيقدم بحثه الموسيقي على مفترق طرق أصوات البحر الأبيض المتوسط، موسيقاه التقليدية، الرسم والرقمية.",
+   "en": "Yellow Wasabi will present his musical research, at the crossroads of the sounds of the Mediterranean, his traditional music, drawing and digital."
+  },
+  "_events/auto/ift-pdf/2026-11-26-voyagez-en-realite-virtuelle.md": {
+   "cle": "312206975eb4",
+   "ar": "ضع خوذة من طراز VR وتجرب تجربة لا تحصى في قلب العمل بين الفن والسينما. Mediatheque.sousse@institutfranca E is-tunisie.com I S",
+   "en": "Put on a VR helmet and experience an immersive experience at the heart of works between art and cinema. mediatheque.sousse@institutfranca E is-tunisie.com I S"
+  },
+  "_events/auto/ift-pdf/2026-11-27-sous-les-etoiles-de-paris.md": {
+   "cle": "252937e03680",
+   "ar": "من قبل كلوز دراكسيل 2020، 1h26mn، الكوميديا/Drama CI",
+   "en": "by Claus Drexel 2020, 1h26mn, Comedy/Drama CI"
+  },
+  "_events/auto/ift-pdf/2026-11-27-un-monde-merveilleux.md": {
+   "cle": "44c3e3e4458a",
+   "ar": "كجزء من الأفلام في المستقبل تتعايش مع ذكاء الروبوتات (موندي مي جوليو كاليغاري) كوميدي درامي",
+   "en": "As part of films on the future cohabitation with arti robot intelligences. Un Monde m Giulio Callegari, dramatic comedy"
+  },
+  "_events/auto/ift-pdf/2026-11-27-voyagez-en-realite-virtuelle.md": {
+   "cle": "312206975eb4",
+   "ar": "ضع خوذة من طراز VR وتجرب تجربة لا تحصى في قلب العمل بين الفن والسينما. Mediatheque.sousse@institutfranca E is-tunisie.com I S",
+   "en": "Put on a VR helmet and experience an immersive experience at the heart of works between art and cinema. mediatheque.sousse@institutfranca E is-tunisie.com I S"
+  },
+  "_events/auto/ift-pdf/2026-11-28-cercle-de-lectur-au-centre-ville-de-tunis.md": {
+   "cle": "a6cdfa11424a",
+   "ar": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,",
+   "en": "Les inhabitantes, éditions de Minu In absence of co Plantagenet, Jul Le Palais, F.H.D Gallimard, 2026 Standing in your Taia, Julliard,"
+  },
+  "_events/auto/ift-pdf/2026-11-28-creativite-avec-amina-hanini.md": {
+   "cle": "138cfd16b10e",
+   "ar": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancais- tunisie.com",
+   "en": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancais- tunisie.com"
+  },
+  "_events/auto/ift-pdf/2026-11-28-kteb-tounsi-special-manga-avec-ahmed-touj.md": {
+   "cle": "e1b065c88584",
+   "ar": "احيا في العالم 100% من المانغا التونسي مع اوبيثا اسطورة سالها التي نشرت في طبعات إينويا",
+   "en": "Dive into the world of 100% Tunisian manga with Obitha, the legend of Salha, published in the Enoya editions."
+  },
+  "_events/auto/ift-pdf/2026-11-28-voyagez-en-realite-virtuelle.md": {
+   "cle": "312206975eb4",
+   "ar": "ضع خوذة من طراز VR وتجرب تجربة لا تحصى في قلب العمل بين الفن والسينما. Mediatheque.sousse@institutfranca E is-tunisie.com I S",
+   "en": "Put on a VR helmet and experience an immersive experience at the heart of works between art and cinema. mediatheque.sousse@institutfranca E is-tunisie.com I S"
+  },
+  "_events/auto/ift-pdf/2026-11-29-journees-theatrales-de-carthage.md": {
+   "cle": "b8f719543797",
+   "ar": "لأسبوع، تتحول تونس إلى مشهد حي ضخم، يخلط بين المسابقات الرسمية، عروض الشوارع، حلقات عمل مهنية...",
+   "en": "For a week, Tunis is transformed into a huge living scene, mixing official competitions, street shows, professional workshops..."
+  },
   "_events/auto/ig-agorgi-gallery/2026-10-30-cosmose.md": {
    "cle": "45577979df1a",
    "fr": "La Galerie est ouverte ce samedi et dimanche, de 12h à 18h, pour vous accueillir à COSMOSE, l'exposition solo de @karabibenehalim .\nPrenez le temps de découvrir l'univers de l'artiste et d'explorer les œuvres en vue.\nNous avons hâte de vous voir à la galerie!\n\\#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart",
@@ -468,6 +812,11 @@
    "cle": "9b6d37085069",
    "ar": "توجه (غابيز) إلى أيام الواحة!\nسيعود الصندوق في 3 نوفمبر\nأتطلع لمقابلتك قريباً",
    "en": "Direction Gabes for the Oasis Days!\nThe Box will be back on November 3.\nLooking forward to meeting you very soon."
+  },
+  "_events/auto/ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md": {
+   "cle": "db5d85e9766b",
+   "ar": "من المقاومة الجزائرية والإيطالية واللبنانية للمرأة الكردية التي حافظت على تقاليد نغبج واجتازت تقليدها؛ ومن شهادات السجناء الفلسطينيين إلى الفنانين الذين لا يفتأون منذ فترة طويلة في اسطنبول؛ ومن النساء المتهمات بممارسة السحر في بلاد البسك إلى الممارسات الفنية والأغاني والتجارب العائلية المحالة في سوريا؛ ومن النساء - أو غيابهن - في الكتب المدرسية التونسية: تدور قصص قضيتنا في ...",
+   "en": "From Algerian, Italian and Lebanese resistance to Kurdish women who have preserved and passed on the tradition of dengbêj; from Palestinian prisoners' testimonies to long-invisibility artists in Istanbul; from women accused of witchcraft in the Basque Country to artisanal practices, songs and family stories transmitted in Syria; and from women — or their absence — in Tunisian school textbooks: the stories of our case go through the ..."
   },
   "_events/auto/ig-shanti/2026-11-15-le-chemin-se-termine-la-fete-commence.md": {
    "cle": "82e59da503dd",
@@ -489,25 +838,75 @@
    "fr": "♪ Les écrans de saison...\n♪\nLa mémoire du théâtre tunisien est à l'écran.\nDans le cadre des activités de la quatrième session du Festival national du Théâtre Tonsien, Musam of Innovation, les écrans saisonniers sont du 31 octobre au 7 novembre 2026, dans la salle Ra &apos; s al-Manaqiyah, dans la quatrième salle d'art, à partir de 14 h 30.",
    "en": "♪ The season screens... ♪\nThe Tunisian theater memory is on the screen.\nAs part of the activities of the fourth session of the National Festival of the Tonsian Theatre, Musam of Innovation, the seasonal screens are from 31 October to 7 November 2026, at the Ra &apos; s al-Manaqiyah Hall at the Fourth Art Hall from 2.30 p.m."
   },
-  "_events/auto/irmc/2026-12-05-13eme-symposium-de-luma-incertitudes-certitudes.md": {
-   "cle": "4f63c8ee3237",
-   "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة.",
-   "en": "From December 3 to 5, 2026, the University of La Manouba organizes the 13th edition of its international interdisciplinary symposium, dedicated this year to the binome Uncertainties/Certitudes."
+  "_events/auto/ig-tunisia-podcasts-festival/2026-11-06-tout-commence-par-une-vibration-puis-une-voix-une-idee-une-h.md": {
+   "cle": "3d8f7eb3e6e8",
+   "ar": "كل هذا يبدأ بالإهتزازات\nإذاً صوت، فكرة، قصة، وإذا جئت لكتابة \"الحياة\" قصة هذه الحلقة الخاصة:\nانضموا إلينا في الساعة السادسة من نوفمبر في الساعة السابعة من مساء في المعهد الفرنسي لتونس بمناسبة افتتاح مهرجان ال Podcast Days في تونس، وهو حدث كرّس لأصوات وأفكار ومواهب الطائفة التونسية",
+   "en": "It all starts with a vibration.\nThen a voice, an idea, a story...And if you come to write in LIVE 的 the story of this special episode:\nJoin us on November 6 at 7 pm at the French Institute of Tunisia for the opening ceremony of Podcast Days by Tunisia Podcast Festival, an event dedicated to the voices, ideas and talents of the Tunisian podcast"
   },
-  "_events/auto/presse-lapresse/2026-10-23-foire-nationale-du-livre-tunisien-traduire-transmettre-et-pe.md": {
-   "cle": "82a178393963",
-   "ar": "وأبرزت ندوتان تحديات الترجمة الأدبية والمتخصصة، بين تداول الأشغال، ونقل التراث،",
-   "en": "Two symposia highlighted the challenges of literary and specialized translation, between the circulation of works, the transmission of heritages and"
+  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-et-si-lia-reinventait-notre-facon-de-communiquer.md": {
+   "cle": "710192e42924",
+   "ar": "ماذا لو أنّ (آي آي) يعيد اختراع طريقتنا في التواصل؟\nقابل (وليد نافاتي) في 7 تشرين الثاني/نوفمبر لجلسة إحاطة عن بودكاس بشأن الاتصال والبث في عصر الاستخبارات الاصطناعية في الساعة 11:30 صباحاً\nفي شارع \"ل آرت\".\nالوصول المباشر، بدون تسجيل\nArt Street\nنحن في انتظارك لتستكشف مناظير جديدة معا!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
+   "en": "What if the AI reinvents our way of communicating?\nMeet Walid Naffati on November 7 for a Podcast Briefing on communication and podcasting in the era of artificial intelligence at 11:30 a.m. at L-Art Street.\nDirect access, without registration\nArt Street\nWe're waiting for you to explore new perspectives together!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
   },
-  "_events/auto/presse-lapresse/2026-11-22-jaou-tunis-2026-les-corps-ces-territoires-de-resistance.md": {
-   "cle": "9f37b282f91b",
-   "ar": "افتتاح في 24 تشرين الأول/أكتوبر، في كتشيلي العتارين، الثكنات العسكرية العثمانية السابقة في القرن التاسع عشر الواقعة في قلب ميدينا بتونس، الجزء منها",
-   "en": "Inauguration, 24 October, in Kechlet El Attarine, former Ottoman military barracks of the 19th century located in the heart of the Medina of Tunis, part of which"
+  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-la-creation-sonore-donne-vie-a-linvisible-et-transforme-leco.md": {
+   "cle": "12a840784cda",
+   "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة\nانضم إلى أوسيما غايدي في حلقة عمل غير مُزدحمة يوم 7 تشرين الثاني/نوفمبر في الساعة 10: 30 صباحاً\nفي LArt Rue.\nArt Street\nنحن ننتظرك لتستكشف وتشعر بالصوت بشكل مختلف!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
+   "en": "Sound creation gives life to the invisible and transforms listening into experience.\nJoin Ussema Gaidi for an immersive workshop on November 7th at 10:30 a.m. at L的Art Rue.\n\nArt Street\nWe're waiting for you to explore and feel the sound differently!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
   },
-  "_events/auto/presse-lapresse/2026-11-26-saveurs-et-amertume-a-la-galerie-tgm-lorsque-lart-esquisse-l.md": {
-   "cle": "fbc21371d881",
-   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة:",
-   "en": "The paintings of Jellal Ben Abdallah intertwine with those of artists of different generations, weaving together the sons of the same story: the one"
+  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md": {
+   "cle": "6bc8c2ed7576",
+   "ar": "كيف تتصورين أن الغد مذاق؟\nيوم الاذاعة من قبل مهرجان الاذاعة التونسية يمنحك موعدا في نوفمبر 07 مع اثنين من الطبقة الرئيسية مصممين خصيصا لمن يرغبون في دفع حدود الإنشاء الاذاعي\nMASTERCLASS 01 - Podcast &apos; Artificial Intelligence\nمع (تانيت ويب)\nالمتكلم: صاحب السعادة عبد الناصر\n30/10-30/11 صباحاً\nكيف تخلق بث فيديوك؟\nWith Yaluna @yaluna.media\nالمتكلم: عزيز شيبي\n14h00 - 15h30",
+   "en": "How do you imagine tomorrow's podcast?\nPodcast Days by Tunisia Podcast Festival gives you an appointment on November 07 with two masterclasses specially designed for those who wish to push the limits of podcast creation\nMASTERCLASS 01 — Podcast & Artificial Intelligence\nWith Tanitweb\nSpeaker: Hatem Abdennadher\n10.30 - 11.30 a.m.\n的 MASTERCLASS 02 — How to create your video podcast?\nWith Yaluna @yaluna.media\nSpeaker: Aziz Chaibi\n14h00 - 15h30"
+  },
+  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md": {
+   "cle": "d174dbabd97e",
+   "ar": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nاجتماع أخير للاحتفال بالأصوات والقصص والمبادلات التي تجعل من الطائفة التونسية من اليقظة.\nThe Chapel, Dar Bach Hamba\n\"بودكاست\" \"دونيسيا\" \"بودكاستونيسيا\"",
+   "en": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nA final meeting to celebrate the voices, stories and exchanges that make the Tunisian podcast vibrate.\nThe Chapel, Dar Bach Hamba\n\n\\#podcast #tunisia #podcasttunisia #podcastdays"
+  },
+  "_events/auto/irmc/2026-12-03-13eme-symposium-de-luma-incertitudes-certitudes.md": {
+   "cle": "f3422e7aad96",
+   "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة. المادة 13 من الندوة المشتركة بين الوكالات: حالات عدم اليقين، ظهرت حالات معينة أولاً في لجنة التنسيق المشتركة بين الوكالات والمعنية بإدارة المواد الكيميائية.",
+   "en": "From December 3 to 5, 2026, the University of La Manouba organizes the 13th edition of its international interdisciplinary symposium, dedicated this year to the binome Uncertainties/Certitudes. Article 13th UMA Symposium: Uncertainties, Certainties appeared first on IRMC ."
+  },
+  "_events/auto/presse-economiste-maghrebin/2026-10-14-resilience-s.md": {
+   "cle": "46738c0c9fbb",
+   "ar": "ويستضيف التحالف فرانسايس دي جربا 30 طبعة سوداء وبيضاء من المصور الموجود في كركنة في الفترة من 14 تشرين الأول/أكتوبر إلى 29 تشرين الثاني/نوفمبر. وستعقب ذلك في كانون الأول/ديسمبر مرحلة ثانية، مفتوحة أمام رسامين من الجزيرة. ويقدم صور فوتوغرافية بيير غاسين إلى التحالف فرانسايس دي جيربا، في الفترة من 14 تشرين الأول/أكتوبر إلى 29 تشرين الثاني/نوفمبر 2026، ريليس (S)، سلسلة من 30 صورة بيضاء وسودية.",
+   "en": "The Alliance Française de Djerba hosts 30 black and white prints of the photographer based in Kerkennah from 14 October to 29 November. A second stage, open to two painters from the island, will follow in December. Photographer Pierre Gassin presents to the Alliance Française de Djerba, from 14 October to 29 November 2026, RESILIENCE(S), a series of 30 black and white photographs."
+  },
+  "_events/auto/presse-economiste-maghrebin/2026-10-27-a-linstitut-francais-de-tunis.md": {
+   "cle": "f2a8a8a7ab2f",
+   "ar": "وبمناسبة صدور الطبعة الثامنة من تونس، وهو الفن المعاصر الذي تنظمه مؤسسة كمال لازار، يستضيف المعهد التونسي الفرنسي معرض &quot; صور سوريا: بالميرا، حلب، دمشق &quot; الذي يقامه المصور الفرنسي ميشيل إيزنلور.",
+   "en": "On the occasion of the eighth edition of Jaou Tunis, the biennial of contemporary art organized by the Kamel Lazaar Foundation, the French Institute of Tunisia hosts the exhibition \"Images of Syria: Palmyra, Aleppo, Damascus\" by French photographer Michel Eisenlohr."
+  },
+  "_events/auto/presse-kapitalis/2026-11-13-le-prix-saint-augustin-distingue-lhistorien-abdelhamid-largu.md": {
+   "cle": "309f43c29d0b",
+   "ar": "وقد تميز تاريخ وكاتب عبد الحميد لارغوشي بجائزة سانت أوغستين، في قائمة تضم أخصائيين دوليين بارزين في عمل باحث ماغريبين الوهمي.",
+   "en": "The historian and writer Abdelhamid Larguèche was distinguished by the Saint Augustine Prize, within a list of eminent international specialists in the work of the illustrious Maghrébin scholar."
+  },
+  "_events/auto/presse-lapresse/2026-11-07-saisons-de-la-creation.md": {
+   "cle": "9b734844079e",
+   "ar": "The fourth edition of the Tunisian National Theatre Festival \"Saisons de la création\" was inaugurated Friday evening at the Fourth Art Hall in Tunis. ولغاية 7 تشرين الثاني/نوفمبر 2026، تهدف هذه الطبعة الجديدة إلى الجمع بين الاحتفال بخلق المسارات المؤسسية وإبهارها والتفكير في تغيير المسرح المعاصر.",
+   "en": "The fourth edition of the Tunisian National Theatre Festival \"Saisons de la création\" was inaugurated Friday evening at the Fourth Art Hall in Tunis. Until 7 November 2026, this new edition aims to combine celebration of creation, valorisation of the founding paths and reflection on the changes of contemporary theatre."
+  },
+  "_events/auto/presse-lapresse/2026-11-22-jaou-tunis-2026.md": {
+   "cle": "77b379e68988",
+   "ar": "وقد افتتح في 24 تشرين الأول/أكتوبر في كيشلت العتارين، وهو ثكنة عسكرية عثمانية سابقة في القرن التاسع عشر تقع في قلب مدينة تونس، وقد استعيد بعضها في هذه المناسبة، ويواصل معرض Becoming للمحيطات، الذي اشتركت في إنتاجه مؤسسة كمال لازار ومركز أرت كونتيمبوراين جينيف، رحلته حتى 22 تشرين الثاني/نوفمبر.",
+   "en": "Inaugurated on 24 October in Kechlet El Attarine, a former Ottoman military barracks of the 19th century located in the heart of the Medina of Tunis, some of which was restored on this occasion, the Becoming the Ocean exhibition, co-produced by the Kamel Lazaar Foundation (FKL) and the Centre d'Art Contemporain Genève, continues its journey until 22 November."
+  },
+  "_events/auto/presse-lapresse/2026-11-26-saveurs-et-amertume.md": {
+   "cle": "0b275ad06667",
+   "ar": "لوحات جيلال بن عبد الله الداخلية مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة: هوية تونسية بحثاً عن التأكيد. إنه يحدث في معرض \"تي جي إم\" الذي يستضيف المعرض الفني \"الشجعان والمرارة\" حتى 26 نوفمبر 2026",
+   "en": "The paintings of Jellal Ben Abdallah intertwine with those of artists of different generations, weaving together the sons of the same story: that of a Tunisian identity in search of affirmation. It's happening at TGM Gallery, which hosts the artistic exhibition \"Savors and bitterness\" until November 26, 2026."
+  },
+  "_events/auto/presse-webdo/2026-11-03-le-temps-suspendu.md": {
+   "cle": "077bdb52b729",
+   "ar": "وتستمر الاحتفالات بالذكرى السنوية السبعين لإنشاء علاقات دبلوماسية بين تونس وهنغاريا في الأسبوع المقبل بعرض فيلم &quot; لي تيمبس &quot; الذي قام به بيتر غوثر، وهو عمل أُنجز في عام 1982 وموضوع الثورة الهنغارية في عام 1956. وعندما أُطلق سراحه، شارك الفيلم في مهرجان كانز للأفلام وفاز بنجاح كبير.",
+   "en": "The seventieth anniversary celebrations of the establishment of diplomatic relations between Tunisia and Hungary continue next week with the screening of the film \"Le Temps Suspended\" by Péter Gothàr, a work carried out in 1982 with the theme of the 1956 Hungarian revolution. When it was released, the film had participated in the Cannes Film Festival and won a great success."
+  },
+  "_events/auto/presse-webdo/2026-11-07-photo-memoires-en-partage-entre-sicile-et-tunisie.md": {
+   "cle": "e8ef0d401765",
+   "ar": "معرض الصور \"Lands of Sicily and Tunisia, shared memory\" سوف يفتتح يوم السبت 7 نوفمبر في \"مايسون دو بلفيدير\". بعد مرحلة أولى في متحف سانتا كاترينا، في قلب كريتو دي بوري في غيبيلينا، في إطار \"العاصمة الإيطالية للفن المعاصر 2026\" المعرض التصويري الجماعي \"Lands of Sicily and Tunisia, shared memory\"",
+   "en": "The photo exhibition \"Lands of Sicily and Tunisia, shared memory\" will be inaugurated Saturday, November 7 at the Maison des Arts du Belvedere. After a first stage at the Santa Caterina Museum, in the heart of the Cretto di Burri in Gibellina, in the framework of \"Gibellina Italian Capital of Contemporary Art 2026\" the collective photographic exhibition \"Lands of Sicily and Tunisia, shared memory\" ..."
   },
   "_events/auto/resident-advisor/2026-11-03-onwrd-frwrd.md": {
    "cle": "17b6718a74ab",
@@ -524,213 +923,193 @@
    "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
    "ar": "Line-up : Emine (2), harrison manett, Kian OK, Omar Fayyad, Pan-J, Picasso\nلا داعي للعجلة، لا اشارة، مجرد وجود كامل في الكثبان مع الناس الطيبين.\nلقد جمعنا أربعة أيام من الإصغاء العميق، والصباح البطيء، والممارسات الصوفية، وضوء الصحراء، وبقينا الأمور بسيطة ومتعمدة.\nمصنوعة من قبل الأصدقاء، للأصدقاء.\nوُلد من حب مشترك للصحراء، إنّ (ناماد مان) هو معتكفٌ عنيف وانتقائي حيث تلتقي الأرواح وتتواصل دون أيّ إلهاء خارجي."
   },
-  "_events/auto/teskerti/2026-11-01-e-fest.md": {
-   "cle": "c2783333eafd",
-   "ar": "Access to the Ksar to visit the festival village and participate in day activities is completely free.\nويتصل مكتب التذاكر أساساً بالوصول إلى حفلات المرحلة الرئيسية وحفلات الإرسال إلى فندق داكيانوس.\nخيارات السعر المجاني للاختيار من، دفع ما يمكنك/تفويه:\nمع الطبعة الأولى من معسكر (إي-فيس) في أبريل 2025، كنا نراهن على العودة.",
-   "en": "Access to the Ksar to visit the festival village and participate in day activities is completely free.\nThe ticket office mainly concerns access to the Main Stage concerts and the Afterrs to the Dakyanus hotel.\nFree price options to choose from, pay what you can/vote:\nWith the first edition of E-FEST Camp in April 2025, we were betting a return."
+  "_events/auto/teskerti/2026-11-05-taha-desouky.md": {
+   "cle": "0050b8e78ab6",
+   "ar": "مُراقبون مُراقبون مُراقبون مُراقبون يُقدّرون مُراقبون\nملاحظة: سيصور البرنامج ويسجله المنظم بالفيديو.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show.",
+   "en": "اعلان هام: سيلم Whilst العرs العرs العرs العرs العرs النs النs النs الs مs مs الs مs مs مs مs مs ن الs ومs الs الs مs مs الs مs مs مs مs مs مs مs مs الs مs مs مs وs وs اsاs اsاs مs اsيدs اsيs وs مs مs مs مs مs مs مs مs مs مs مs مs مs مs اsاsاsاsاsيsيsيsوs وs ا\nIMPORTANT NOTICE: The show will be filmed and recorded in video by the organizer.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-bakma-cinema-le-colisee.md": {
-   "cle": "10f45b368c11",
-   "ar": "1 h 57 · Horror · by Abdelhamid Boushnak ; with Aziz Jebali, Hedy Krissane, Mounira Zakroui, Mahmoud Esidi",
-   "en": "1 h 57 · Horror · by Abdelhamid Boushnak · with Aziz Jebali, Hedy Krissane, Mounira Zakroui, Mahmoud Essidi"
+  "_events/auto/tunis-events-cinema/2026-11-02-bakma-cinema-le-colisee.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-bakma-cinema-le-palace.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-bakma-cinema-le-palace.md": {
    "cle": "c90df92f8069",
    "ar": "BAKMA (2026)\nالمدير: عبد الحميد بوشناك\nرعب\nالمدة: 117 دقيقة",
    "en": "BAKMA (2026)\nDirector: Abdelhamid Boushnak\nGenre: Horror\nDuration: 117 min"
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-bakma-pathe-azur-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-bakma-pathe-azur-city.md": {
    "cle": "94b2ba3b975b",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-bakma-pathe-tunis-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-bakma-pathe-tunis-city.md": {
    "cle": "94b2ba3b975b",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-bakma.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-bakma.md": {
    "cle": "80243900e2cb",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-clayface-pathe-azur-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-clayface-pathe-azur-city.md": {
    "cle": "31bab58efea1",
    "ar": "(مات هاغن) يُثير الشفقة من شارع (غوثام) إلى (هوليوود ستار) مُقاطعة بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة تَركَ مِنْ كُلّ شيءِ لتَفْقدُ، مات يَتحوّلُ إلى a علاج تجريبي الذي بشكل مُعجّل يَجْعلُه يَبْدو... لكن تغيير عميق في تصوره للواقع.",
    "en": "Matt Hagen's fulcruming ascent from Gotham Street to Hollywood Star is abruptly interrupted when a crime baron leaves him atrociously disfigured. Abandoned from all and having nothing to lose, Matt turns to an experimental treatment that miraculously makes him look... but profoundly alters his perception of reality."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-clayface.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-clayface.md": {
    "cle": "31bab58efea1",
    "ar": "(مات هاغن) يُثير الشفقة من شارع (غوثام) إلى (هوليوود ستار) مُقاطعة بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة تَركَ مِنْ كُلّ شيءِ لتَفْقدُ، مات يَتحوّلُ إلى a علاج تجريبي الذي بشكل مُعجّل يَجْعلُه يَبْدو... لكن تغيير عميق في تصوره للواقع.",
    "en": "Matt Hagen's fulcruming ascent from Gotham Street to Hollywood Star is abruptly interrupted when a crime baron leaves him atrociously disfigured. Abandoned from all and having nothing to lose, Matt turns to an experimental treatment that miraculously makes him look... but profoundly alters his perception of reality."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers-cinema-le-colisee.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-cinema-le-colisee.md": {
    "cle": "0abda4052d24",
    "ar": "المذنبون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
    "en": "دار العرس\nDirector: Heifel Ben Youssef\nDuration: 135 min"
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers-pathe-azur-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-pathe-azur-city.md": {
    "cle": "2c1b1a4c8a81",
    "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
    "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. At 10:00. ."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers-pathe-tunis-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-pathe-tunis-city.md": {
    "cle": "2c1b1a4c8a81",
    "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
    "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. At 10:00. ."
   },
-  "_events/auto/tunis-events-cinema/2026-11-01-dar-el-3ers.md": {
-   "cle": "e87e429df307",
-   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد، والمنافسات، سوء الفهم والأوضاع المضحكة، هذا الإتحاد يَعِدُ بأَنْ لا يَكُونَ من أيّ راحة... لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز وإذا لم يكن الشخص الوحيد الذي يتأكد من هذا، فإنه ليس الوحيد الذي يتأكد من ذلك، فهو الوحيد الذي يمكنه أن يفعل ذلك.",
-   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come discover it at the cinema in Dar El 3ers! عا Whilst not the only one to be sure about this, it is not the only one to be sure about this, it is the only one to be able to do so."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-ducobu-et-le-fantome-de-saint-potache.md": {
-   "cle": "1bfb541413f0",
-   "ar": "إنه عيد القديسين، و (دوكوبو) يعود لمغامرة مليئة بالضحك والغموض! البروفيسور (لاتوش) والآنسة (راتو) ينتقلان إلى منزل... مطارد من شبح (أناتولي) أعظم مرساة في تاريخ (سانت) مدرسة الشارب. هذا الشبح سيقود (دوكوبو) و(ليوني) ووالديهم و(كيتريش) إلى سلسلة من المغامرات المضحكة وغير المتوقعة",
-   "en": "It's Halloween, and Ducobu comes back for an adventure full of laughter and mysteries! Professor Latouche and Miss Rateau move into a house... haunted by the ghost of Anatole, the greatest anchor in the history of the St. Potache school. This farce ghost will lead Ducobu, Léonie, their parents and Kitrish into a series of funny and unexpected adventures."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-evenement.md": {
-   "cle": "9c488266f1d8",
-   "ar": "تصوّر على النحو التالي: 4 فحوصات هذا الأسبوع في لي كولوسيوم، باثيه تونس العاصمة، ولي بالاس. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
-   "en": "ل的 شايح at the cinema: 4 screenings this week at Le Colosseum, Pathé Tunis City and Le Palace. Next session Mon. 2 Nov. At 10:00. ."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-klara-et-le-soleil-pathe-tunis-city.md": {
-   "cle": "2d10a8e8088a",
-   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
-   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-klara-et-le-soleil.md": {
-   "cle": "2d10a8e8088a",
-   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
-   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-l-ile-des-souvenirs-forgotten-island-pathe-azur-city.md": {
-   "cle": "06befcd53177",
-   "ar": "بينما يحتفلون بآخر مساء لهم معاً، تسقط الفتاتان على بوابة غامضة تنقلهما إلى جزيرة ناكالي الرائعة، مأهولة بمخلوقات سحرية مباشرة من القصص الخيالية الفلبينية في طفولتهما. وستنضم الفتيات مع بعضهن، بينما سيضطرن إلى مواجهة الآخرين.",
-   "en": "As they celebrate their last evening together, the two girls fall on a mysterious portal that transports them to the fantastic island of Nakali, populated by magical creatures straight out of Filipino mythological tales of their childhood. Together, the girls will join forces with some of them, while they will have to face others."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-l-ile-des-souvenirs-forgotten-island.md": {
-   "cle": "06befcd53177",
-   "ar": "بينما يحتفلون بآخر مساء لهم معاً، تسقط الفتاتان على بوابة غامضة تنقلهما إلى جزيرة ناكالي الرائعة، مأهولة بمخلوقات سحرية مباشرة من القصص الخيالية الفلبينية في طفولتهما. وستنضم الفتيات مع بعضهن، بينما سيضطرن إلى مواجهة الآخرين.",
-   "en": "As they celebrate their last evening together, the two girls fall on a mysterious portal that transports them to the fantastic island of Nakali, populated by magical creatures straight out of Filipino mythological tales of their childhood. Together, the girls will join forces with some of them, while they will have to face others."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-le-fantome-de-l-opera.md": {
-   "cle": "61de9705c8dc",
-   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا غارنيير المرموقة. كما تكرّر الـ(أورفيوس)، أوبرا ملعونة كانت لتتكون من شبح الأوبرا، تقع في غرام عازف بيانو غامض.",
-   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Opéra Garnier. As she repeats the Orpheus, a cursed opera that would have been composed by the Phantom of the Opera, she falls in love with a mysterious pianist."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-le-mystere-lucy-lost-pathe-tunis-city.md": {
-   "cle": "8567d16625c8",
-   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تقابل ميلي فتاة صغيرة يمكنها رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
-   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-le-mystere-lucy-lost.md": {
-   "cle": "8567d16625c8",
-   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تقابل ميلي فتاة صغيرة يمكنها رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
-   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-mochy.md": {
-   "cle": "2aa6a6828227",
-   "ar": "Mochy (2026)\nالمدير: جيريمي ديغروسون\nالمغامرة، المغامرة، الكوميديا، الأسرة\nالمدة: 84 دقيقة\nSynopsis\n(موتشي) كلب صغير ذو قلب كبير...\nلكن ليس لديه جسدي سهل\nإنه لا يمنعه من الحصول على حلم: المشاركة في مسابقة أجمل كلب.",
-   "en": "Mochy (2026)\nDirector: Jérémie Degruson\nGenre: Adventure, Animation, Comedy, Family\nDuration: 84 min\nSynopsis\nMochy is a young dog with a big heart...\nBut he doesn't have an easy physical...\nIt doesn't stop him from having a dream: participating in the contest of the most beautiful dog."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-other-mommy-malfaisante.md": {
-   "cle": "4f020117916c",
-   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، أحد أكثر الفنانين نفوذا من السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي خلق في الأصل قاعات الظهر والهجوم، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير عام وكشف روب سافاج.",
-   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-shaun-le-mouton-la-beeete-d-halloween-pathe-tunis-city.md": {
-   "cle": "60b32eac2d16",
-   "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبهجون في احتفالات، حتى يفرش المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
-   "en": "At Halloween, the inhabitants of Mossy Bottom's farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-shaun-le-mouton-la-beeete-d-halloween.md": {
-   "cle": "60b32eac2d16",
-   "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبهجون في احتفالات، حتى يفرش المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
-   "en": "At Halloween, the inhabitants of Mossy Bottom's farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-wala-kan-ala-el-bal.md": {
-   "cle": "b493ee0a062f",
-   "fr": "ولا юان عالبال (titre original)Un jeune guide touristique de Luxor accepte une offre inhabituelle d'un riche homme d'affaires : gagner sa fille et l'aider à passer de son ex. Mais un cas d'identité erronée bouleverse le plan, envoyant Hassan dans une aventure inattendue et dans une histoire d'amour qu'il n'a jamais vu venir.",
-   "ar": "ولا سيما دليل الرحلات الشابة في لوكسور يقبل صفقة غير عادية من رجل أعمال ثري: الفوز على ابنته ومساعدتها على الانتقال من زوجها السابق. لكن حالة هويّة خاطئة تُحوّلُ الخطةَ رأساً على عقب، تُرسلُ (حسان) في مغامرة غير متوقعة و إلى قصّة حبّ لم يَرَها أبداً."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-weekend-cinema-le-colisee.md": {
-   "cle": "a3bcea6b3378",
-   "fr": "SEMAINE\nSynopsis\nUn film alliant ambiguïté, mutilation et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui et Supre al-Buhali, l'exhudidi et la production du gubal Ben Ammar, le complexe de Koubatini.",
-   "en": "WEEKEND\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui and Supre al-Buhali, the exhudidi and the production of the gubal Ben Ammar, the Kubatini compound."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-weekend-cinema-le-palace.md": {
-   "cle": "f1346837d759",
-   "fr": "SEMAINE (2026)\nSynopsis\nUn film combinant ambiguïté, mutilations et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Azadiyé, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui et Subari al-Buhali, la production de Fad Bin Ammar, le complexe de Koubatiniya",
-   "en": "WEEKEND (2026)\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Azadiyah, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui and Subari al-Buhali, the production of Fad Bin Ammar, the Kubatinininiyah compound"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-weekend-pathe-azur-city.md": {
-   "cle": "322b19ae18d9",
-   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis alliant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Didi et la production de Fadil Ben Ammar al-Amur, Al-Qumatin",
-   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatin"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-weekend-pathe-tunis-city.md": {
-   "cle": "322b19ae18d9",
-   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis alliant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Didi et la production de Fadil Ben Ammar al-Amur, Al-Qumatin",
-   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatin"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-01-weekend.md": {
-   "cle": "3ca4bdb67391",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
   "_events/auto/tunis-events-cinema/2026-11-02-evenement.md": {
    "cle": "9c488266f1d8",
    "ar": "تصوّر على النحو التالي: 4 فحوصات هذا الأسبوع في لي كولوسيوم، باثيه تونس العاصمة، ولي بالاس. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
    "en": "ل的 شايح at the cinema: 4 screenings this week at Le Colosseum, Pathé Tunis City and Le Palace. Next session Mon. 2 Nov. At 10:00. ."
   },
+  "_events/auto/tunis-events-cinema/2026-11-02-klara-et-le-soleil-pathe-tunis-city.md": {
+   "cle": "2d10a8e8088a",
+   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
+   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-klara-et-le-soleil.md": {
+   "cle": "2d10a8e8088a",
+   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
+   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-l-ile-des-souvenirs-forgotten-island.md": {
+   "cle": "06befcd53177",
+   "ar": "بينما يحتفلون بآخر مساء لهم معاً، تسقط الفتاتان على بوابة غامضة تنقلهما إلى جزيرة ناكالي الرائعة، مأهولة بمخلوقات سحرية مباشرة من القصص الخيالية الفلبينية في طفولتهما. وستنضم الفتيات مع بعضهن، بينما سيضطرن إلى مواجهة الآخرين.",
+   "en": "As they celebrate their last evening together, the two girls fall on a mysterious portal that transports them to the fantastic island of Nakali, populated by magical creatures straight out of Filipino mythological tales of their childhood. Together, the girls will join forces with some of them, while they will have to face others."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-last-chance.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-le-fantome-de-l-opera.md": {
+   "cle": "61de9705c8dc",
+   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا غارنيير المرموقة. كما تكرّر الـ(أورفيوس)، أوبرا ملعونة كانت لتتكون من شبح الأوبرا، تقع في غرام عازف بيانو غامض.",
+   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Opéra Garnier. As she repeats the Orpheus, a cursed opera that would have been composed by the Phantom of the Opera, she falls in love with a mysterious pianist."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-le-mystere-lucy-lost-pathe-tunis-city.md": {
+   "cle": "8567d16625c8",
+   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تقابل ميلي فتاة صغيرة يمكنها رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
+   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-le-mystere-lucy-lost.md": {
+   "cle": "8567d16625c8",
+   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تقابل ميلي فتاة صغيرة يمكنها رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
+   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-other-mommy-malfaisante.md": {
+   "cle": "4f020117916c",
+   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، أحد أكثر الفنانين نفوذا من السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي خلق في الأصل قاعات الظهر والهجوم، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير عام وكشف روب سافاج.",
+   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-palestine-cinema-days-the-dream-by-mohammad-malas.md": {
+   "cle": "f32c7e6f5138",
+   "fr": "Journées du cinéma palestinien autour du monde &quot; à Sinemdar-Cartataj <unk>\nLe Simma Senefis Sinemdar Club et le Sima Assemblies Club de l'Assemblée Sarbe, dans le cadre de leur programme de perspectives palestiniennes, vous proposent une présentation, suivie d'une discussion équitable de l'activité savante et sympathique des films:\n\"Nam\" pour le tireur d'élite de Hamad.\nMes documents, 45 minutes.\nUne série d'entretiens avec des réfugiés palestiniens au Liban pendant la guerre civile, menés par un tireur d'élite sur les rêves qu'ils ont vus quand ils sont allés dormir.",
+   "en": "&quot; Palestinian film days around the world &quot; in Sinemdar-Cartataj <unk>\nThe Simma Senefis Sinemdar Club and the Sima Assemblies Club of the Sarb Assembly, within their programme of Palestinian perspectives, propose to you a presentation, followed by a discussion with equity of the scholarly and sympathetic activity of the films:\n\"Nam\" for Hamad's sniper. My documents, 45 minutes.\nA series of interviews with Palestinian refugees in Lebanon during the civil war, conducted by a sniper about the dreams they saw when they went to sleep."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-shaun-le-mouton-la-beeete-d-halloween.md": {
+   "cle": "60b32eac2d16",
+   "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبهجون في احتفالات، حتى يفرش المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
+   "en": "At Halloween, the inhabitants of Mossy Bottom's farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-wala-kan-ala-el-bal-pathe-azur-city.md": {
+   "cle": "c523299e4751",
+   "ar": "مرشد سياحي شاب من (لوكسور) يقبل عرض غير عادي من رجل أعمال غني: إقناع ابنته ومساعدتها على نسيان زوجها السابق. لكن عندما لا تسير الأمور كما هو مخطط لها، (حسان) يجد نفسه محاصراً في سلسلة من الحالات المصورة و في قصة حب لم يراها تأتي.",
+   "en": "A young tourist guide from Luxor accepts an unusual offer from a rich businessman: convincing his daughter and helping her forget her ex. But when things don't go as planned, Hassan finds himself caught up in a comic series of unexpected situations and in a love story he had never seen come."
+  },
   "_events/auto/tunis-events-cinema/2026-11-02-wala-kan-ala-el-bal.md": {
-   "cle": "d524f9757104",
-   "ar": "Wala Kan Ala El Bal - nor <unk>يين sur les cinema: 2 screenings this week in Le Colosseum. الدورة القادمة مون. 2 Nov. في الساعة 11: 30 مرشد جولات شاب في (لوكسور) يقبل صفقة غير عادية من...",
-   "en": "Wala Kan Ala El Bal - ولا 简ان عالبال at the cinema: 2 screenings this week in Le Colosseum. Next session Mon. 2 Nov. At 11:30. A young tour guide in Luxor accept an unusual deal from a..."
+   "cle": "4c4305bc1c1e",
+   "fr": "ولا юان عالبال (titre original)\nUn jeune guide touristique de Louxor accepte une affaire inhabituelle d'un riche homme d'affaires : gagner sa fille et l'aider à passer de son ex.\nMais un cas d'identité erronée bouleverse le plan, envoyant Hassan dans une aventure inattendue et dans une histoire d'amour qu'il n'a jamais vu venir.",
+   "ar": "لا ينطبق على النص الأصلي (الباب)\nدليل جولات شابة في (لوكسور) يقبل صفقة غير عادية من رجل أعمال ثري: الفوز على ابنته ومساعدتها على الانتقال من زوجها السابق.\nلكن حالة هويّة خاطئة تُحوّلُ الخطةَ رأساً على عقب، تُرسلُ (حسان) في مغامرة غير متوقعة و إلى قصّة حبّ لم يَرَها أبداً."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-weekend-cinema-le-palace.md": {
+   "cle": "f1346837d759",
+   "fr": "SEMAINE (2026)\nSynopsis\nUn film combinant ambiguïté, mutilations et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Azadiyé, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui et Subari al-Buhali, la production de Fad Bin Ammar, le complexe de Koubatiniya",
+   "en": "WEEKEND (2026)\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Azadiyah, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui and Subari al-Buhali, the production of Fad Bin Ammar, the Kubatinininiyah compound"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-weekend-pathe-azur-city.md": {
+   "cle": "322b19ae18d9",
+   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis combinant ambiguïté, confusion et enquête avec un héros : Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatinin",
+   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatinin"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-weekend-pathe-tunis-city.md": {
+   "cle": "322b19ae18d9",
+   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis combinant ambiguïté, confusion et enquête avec un héros : Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatinin",
+   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatinin"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-02-weekend.md": {
+   "cle": "a3bcea6b3378",
+   "fr": "SEMAINE\nSynopsis\nUn film alliant ambiguïté, mutilation et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui et Supre al-Buhali, l'exhudidi et la production du gubal Ben Ammar, le complexe de Koubatini.",
+   "en": "WEEKEND\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui and Supre al-Buhali, the exhudidi and the production of the gubal Ben Ammar, the Kubatini compound."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-ducobu-et-le-fantome-de-saint-potache.md": {
+   "cle": "1bfb541413f0",
+   "ar": "إنه عيد القديسين، و (دوكوبو) يعود لمغامرة مليئة بالضحك والغموض! البروفيسور (لاتوش) والآنسة (راتو) ينتقلان إلى منزل... مطارد من شبح (أناتولي) أعظم مرساة في تاريخ (سانت) مدرسة الشارب. هذا الشبح سيقود (دوكوبو) و(ليوني) ووالديهم و(كيتريش) إلى سلسلة من المغامرات المضحكة وغير المتوقعة",
+   "en": "It's Halloween, and Ducobu comes back for an adventure full of laughter and mysteries! Professor Latouche and Miss Rateau move into a house... haunted by the ghost of Anatole, the greatest anchor in the history of the St. Potache school. This farce ghost will lead Ducobu, Léonie, their parents and Kitrish into a series of funny and unexpected adventures."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-evenement.md": {
+   "cle": "9c488266f1d8",
+   "ar": "تصوّر على النحو التالي: 4 فحوصات هذا الأسبوع في لي كولوسيوم، باثيه تونس العاصمة، ولي بالاس. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
+   "en": "ل的 شايح at the cinema: 4 screenings this week at Le Colosseum, Pathé Tunis City and Le Palace. Next session Mon. 2 Nov. At 10:00. ."
   },
   "_events/auto/tunis-events/2026-10-23-jaou-tunis-26-full-fest-access.md": {
-   "cle": "9c9e4ae9edd8",
+   "cle": "d472f4fc576d",
    "ar": "البرمجة:\nhttps://jaou.tunis.events\nhttps://jaou.tn/",
    "en": "Programming:\nhttps://jaou.tunis.events\nhttps://jaou.tn/"
   },
   "_events/auto/tunis-events/2026-10-24-becoming-the-ocean-bim-26.md": {
-   "cle": "9918780309c1",
-   "fr": "Coproduit par le Centre d'Art Contemporain Genève et la Fondation Kamel Lazaar, le BIM'26 est une plateforme dédiée au mouvement de l'image qui cherche à créer un espace durable de production artistique, d'enquête critique et de dialogue transrégional dans la majorité mondiale.",
-   "ar": "وقد اشترك في إنتاجه مركز العتبة الجيني ومؤسسة كمال لازار، بيم 26، وهي منصة مكرسة للتحرك في صورة تسعى إلى إنشاء حيز مستدام للإنتاج الفني، وإجراء تحقيق نقدي، وإجراء حوار عبر إقليمي عبر الأغلبية العالمية."
+   "cle": "d1b354352b89",
+   "fr": "Coproduit par le Centre d'Art Contemporain Genève et la Fondation Kamel Lazaar, le BIM'26 est une plateforme dédiée au mouvement de l'image qui cherche à créer un espace durable de production artistique, d'enquête critique et de dialogue transrégional dans la majorité mondiale.\nCréation exceptionnelle en dehors de la Suisse, elle réunit une exposition à Tunis, un programme public et une publication co-éditée.\nCo-prévu par Lina Lazaar et Andrea Bellini, l'exposition réunit 16 nouveaux co-",
+   "ar": "وقد اشترك في إنتاجه مركز العتبة الجيني ومؤسسة كاميل لازار، بيم 26، وهي منصة مكرسة للتحرك في صورة تسعى إلى إنشاء حيز مستدام للإنتاج الفني، وإجراء تحقيق نقدي، وإجراء حوار عبر المنطقة عبر الأغلبية العالمية.\nويجمع هذا البرنامج، الذي يشرف عليه بصفة استثنائية خارج سويسرا، معرضا في تونس، وبرنامجا عاما، ومحررا مشتركا.\nشارك في تأليفه لينا لازار وأندريا بيليني، ويجمع المعرض 16 مشاركا حديثا"
   },
   "_events/auto/tunis-events/2026-10-25-undertow-contre-courant.md": {
-   "cle": "5133526c8a7c",
-   "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح. وفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.",
-   "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface. While a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage."
-  },
-  "_events/auto/tunis-events/2026-10-27-images-de-syrie-palmyre-alep-damas-michel-eisenlohr.md": {
-   "cle": "1d9b570c3a17",
-   "ar": "معرض الصور الفوتوغرافية من قبل ميشيل ايزنلور. الافتتاح في 27 تشرين الأول/أكتوبر الساعة 00/18 مدخل مجاني",
-   "en": "Photographic exhibition by Michel Eisenlohr. Opening on October 27 at 6 p.m. Free entrance."
-  },
-  "_events/auto/tunis-events/2026-11-01-zyoland.md": {
-   "cle": "84106cbca60a",
-   "ar": "(زيولد) حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو منظمة &quot; زيولوان &quot; الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات اللازمة لتبادلها.\nالملاحظه , البحث , التخيل و التفرق كل اكتشاف يجعلهم يتقدمون في المغامره",
-   "en": "ZYOLD — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!"
+   "cle": "74d8614c0b3d",
+   "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح.\nوفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.\nكيف نقترب من البحر الأبيض المتوسط ومن منطقته دون أن نبحر بأعماق تجارب البشر؟\nهذا البحر كان دائماً ممراً، قناة سابقة",
+   "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface.\nWhile a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage.\nHow to approach the Mediterranean Sea and its region without navigating the depths of the odysseys of human experiments?\nThis sea has always been a passageway; a canal of ex"
   },
   "_events/auto/tunis-events/2026-11-03-power-yoga-with-nicole-skarpness-nskarp.md": {
-   "cle": "d7c618bf0d5c",
-   "fr": "\\-Un flux dynamique et de mise à la terre pour se reconnecter avec votre corps après une rupture rapide offrant un équilibre parfait de la force, de la respiration et du mouvement dans un cadre de nuit calme.\nNiveau: intermédiaire et avancé\nTapis, thé et collations gratuits disponibles et accès au toit après la session!\nLes billets ne sont remboursables que 24 heures avant l'événement prévu.",
-   "ar": "تدفق ديناميكي، أرضي لإعادة التواصل مع جسمك بعد كسر سريع يوفر توازناً مثالياً من القوة والتنفس والحركة في بيئة ليلية هادئة\nالمستوى: الوسيط والمتقدم\nفراشات مُملة، شاي ووجبات خفيفة، متاحة، ووصولها إلى السطح بعد الدورة!\nولا يمكن رد التذاكر إلا قبل 24 ساعة من انعقاد الحدث المقرر."
+   "cle": "085424bd88d7",
+   "fr": "\\-Un flux dynamique, de mise à la terre pour se reconnecter avec votre corps offrant un équilibre parfait de force, de respiration et de mouvement dans un cadre de nuit calme.\nNiveau: intermédiaire et avancé\nTapis, thé et collations gratuits disponibles après la session!\nLes billets ne sont remboursables que 24 heures avant l'événement prévu.\nAprès la date limite de 24 heures, les billets ne seront plus admissibles à un remboursement.",
+   "ar": "تدفق ديناميكي، أرضي لإعادة التواصل مع جسدك يعرض توازناً مثالياً من القوّة، والتنفس، والحركة في بيئة ليلية هادئة.\nالمستوى: الوسيط والمتقدم\nفراشات مُملة، شاي ووجبات خفيفة متاحة بعد الدورة!\nولا يمكن رد التذاكر إلا قبل 24 ساعة من انعقاد الحدث المقرر.\nوبعد انقضاء مهلة الـ 24 ساعة، لم تعد التذاكر مؤهلة للاسترداد."
   },
   "_events/auto/tunis-events/2026-11-04-yoga-for-busy-minds-with-judit-yoga-in-sidibousaid.md": {
-   "cle": "dd91c9f68fa1",
-   "fr": "Cette classe combine Hatha et Yin yoga, en commençant par Hatha pour ouvrir doucement le corps avant de passer à des postures de Yin réparatrices. La pratique adopte une approche intuitive, s'adaptant à l'énergie du groupe, et comprend des démonstrations et des conseils pratiques dans un cadre intime. Plutôt que de se concentrer sur la forme physique, l'accent est mis sur la guérison, l'équilibre et le développement de l'intuition.",
-   "ar": "هذا الفصل يجمع بين هاثا ويين يوغا، بدءاً من هاثا لفتح الجسم بلطف قبل الانتقال إلى مواقع يين الإصلاحية. وتأخذ هذه الممارسة نهجاً غير ملائم، وتتكيف مع طاقة المجموعة، وتشمل المظاهرات والتوجيه العملي في بيئة حميمة. وبدلاً من التركيز على اللياقة البدنية، فإن التركيز ينصب على الشفاء والتوازن وتطوير الحدس."
+   "cle": "0a27831368f6",
+   "fr": "Cette classe combine Hatha et Yin yoga, en commençant par Hatha pour ouvrir doucement le corps avant de passer à des postures de Yin réparatrices.\nLa pratique adopte une approche intuitive, s'adaptant à l'énergie du groupe, et comprend des démonstrations et des conseils pratiques dans un cadre intime.\nPlutôt que de se concentrer sur la forme physique, l'accent est mis sur la guérison, l'équilibre et le développement de l'intuition.\nIl s'agit d'une expérience de base conçue pour vous aider à naviguer dans le stress, les nouvelles et les événements mondiaux avec stabilité.\nTravaux sur",
+   "ar": "هذا الفصل يجمع بين هاثا ويين يوغا، بدءاً من هاثا لفتح الجسم بلطف قبل الانتقال إلى مواقع يين الإصلاحية.\nوتأخذ هذه الممارسة نهجاً غير ملائم، وتتكيف مع طاقة المجموعة، وتشمل المظاهرات والتوجيه العملي في بيئة حميمة.\nوبدلاً من التركيز على اللياقة البدنية، فإن التركيز ينصب على الشفاء والتوازن وتطوير الحدس.\nإنها تجربة أرضية مصممة لمساعدتك في نقل الإجهاد والأخبار والأحداث العالمية ذات البخار\nالعمل على"
   },
-  "_events/auto/tunis-events/2026-11-05-movie-night-un-fils.md": {
+  "_events/auto/tunis-events/2026-11-05-un-fils.md": {
    "cle": "8a7fe15fcd4f",
    "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nDirecteur du FILS de l'ONU: Mehdi Barsaoui1h 35mVOSTFR",
    "ar": ".\n<unk> + <unk>\n<unk>.<unk> انضموا إلينا في هذا تشرين الثاني/نوفمبر لسلسلة أفلام خاصة تم شفاؤها بواسطة @hakkadistribution واستضافها @so_sociale بالتعاون مع @cinematun\nالتذاكر هي 20 دي تي وتشمل الفشار والزجاجات.\nUN FILSDirector: Mehdi Barsaoui1h 35mVOSTFR"
   },
   "_events/auto/tunis-events/2026-11-06-a-coeur-ouvert.md": {
-   "cle": "3ec103078fde",
+   "cle": "e63389895025",
    "fr": "♪ Avec un cœur ouvert ♪\nEntre l'anesthésie et le rêve entre les vacances et les réparations...\nEntre réalité et fantasme, le cœur est incapable de comprendre la manipulation de cette réalité, où le même sens devient quelque chose qui peut être examiné, désintégré, et peut-être...\nPour remplacer.",
    "en": "♪ With an open heart ♪\nBetween the anesthesia and the dream between holidays and repairs...\nBetween reality and fantasy, the heart stands incapable of understanding the tamper of this reality, where the same sense becomes something that can be examined, disintegrated, and perhaps...\nTo replace."
   },
@@ -739,30 +1118,30 @@
    "fr": "Un fabricant de contenu entre dans un endroit abandonné pour diffuser une aventure directe, collision avec un groupe d'enfants de la rue, transformant l'aventure en un conflit entre le faux monde virtuel et la cruauté de la réalité marginale.",
    "en": "A content manufacturer enters an abandoned place to broadcast a direct adventure, collision with a group of street children, turning the adventure into a clash between the virtual world's fake and the cruelty of the marginal reality."
   },
-  "_events/auto/tunis-events/2026-11-12-movie-night-regarde-moi.md": {
+  "_events/auto/tunis-events/2026-11-12-regarde-moi.md": {
    "cle": "ac821b2f2db2",
    "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nVU MOIDirecteur: Nejib Belkadhi1h 36mVOSTFR",
    "ar": ".\n<unk> + <unk>\n<unk>.<unk> انضموا إلينا في هذا تشرين الثاني/نوفمبر لسلسلة أفلام خاصة تم شفاؤها بواسطة @hakkadistribution واستضافها @so_sociale بالتعاون مع @cinematun\nالتذاكر هي 20 دي تي وتشمل الفشار والزجاجات.\nREGARDE MOIDirector: Nejib Belkadhi1h 36mVOSTFR"
   },
-  "_events/auto/tunis-events/2026-11-19-movie-night-la-belle-et-la-meute.md": {
+  "_events/auto/tunis-events/2026-11-19-la-belle-et-la-meute.md": {
    "cle": "5f9ad5fa6919",
    "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nLA BELLE ET LA MEUTEDirecteur: Kaouther Ben Hania1h 40mVOSTFR",
    "ar": ".\n<unk> + <unk>\n<unk>.<unk> انضموا إلينا في هذا تشرين الثاني/نوفمبر لسلسلة أفلام خاصة تم شفاؤها بواسطة @hakkadistribution واستضافها @so_sociale بالتعاون مع @cinematun\nالتذاكر هي 20 دي تي وتشمل الفشار والزجاجات.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR"
   },
   "_events/auto/tunis-events/2026-11-20-labes-selim-ben-safia.md": {
-   "cle": "d36aa5ea7cbe",
-   "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité.",
-   "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability."
+   "cle": "ea05befc3a15",
+   "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité. La chorégraphie de Selim Ben Safia traverse des gestes de résilience à travers le dabke palestinien, les rythmes tunisiens et l'alto da gamba, alors que les corps s'opposent à la paralysie par impulsion.",
+   "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability. The choreography by Selim Ben Safia traverses gestures of resilience through Palestinian dabke, Tunisian rhythms, and the viola da gamba, as the bodies oppose paralysis with impulse."
   },
   "_events/auto/tunis-events/2026-11-21-listening-session-screening-live-performance.md": {
-   "cle": "df0ec798ac7b",
-   "fr": "Routes vers Sintīr\nTania Feghali\nPremier regard sur les travaux en cours\nRoads to Sintīr est un projet de recherche à long terme sur le film et le son réalisé par Tania Feghali, en suivant les traces d'un son sans fin qui continue de se resurfacer à travers des formes, des instruments et des géographies, tout en étant profondément et subtilement connecté à un lieu qui reste intact à travers le temps et l'espace.",
-   "ar": "الطرق المؤدية إلى (سينتيكر)\nتانيا فيغالي\nأول نظرة على العمل الجاري\nإن الطرق المؤدية إلى شينتيكر هي مشروع طويل الأجل للأفلام والبحوث السليمة من جانب تانيا فيغالي، بعد آثار &quot; الصوت الذي لا نهاية له &quot; الذي يستمر في الارتداد عبر الأشكال والأدوات والجغرافيا، بينما يرتبط ارتباطا عميقا وخفيا بمكان فينا لا يزال غير مربوط عبر الزمان والمكان."
+   "cle": "ee6b664298c0",
+   "fr": "Routes vers Sintīr\nTania Feghali\nPremier regard sur les travaux en cours\nRoads to Sintīr est un projet de recherche à long terme sur le film et le son réalisé par Tania Feghali, en suivant les traces d'un son sans fin qui continue de se resurfacer à travers des formes, des instruments et des géographies, tout en étant profondément et subtilement connecté à un lieu qui reste intact à travers le temps et l'espace.\nLe sintīr, un luth de basse recouvert de peau prenant des noms et des formes différents à travers les latitudes, devient une métaphore pour cette quête.\nSon nom",
+   "ar": "الطرق المؤدية إلى (سينتيكر)\nتانيا فيغالي\nأول نظرة على العمل الجاري\nإن الطرق المؤدية إلى سنتيكر هي مشروع طويل الأجل للأفلام والبحوث السليمة من جانب تانيا فيغالي، بعد آثار &quot; صوت لا نهاية له &quot; الذي يتردد في أشكاله وأدواته وجغرافياته، بينما يكون متصلاً ارتباطاً عميقاً وخفياً بمكان فينا لا يزال غير مربوط عبر الزمان والمكان.\nالمُخنث، مظلة مُغطاة بالجلد تأخذ أسماءً و أشكالاً مختلفة عبر خطوط العرض، تصبح مجازاً لهذا المسعى.\nاسمه"
   },
   "_events/auto/tunis-events/2026-11-22-hyperculte.md": {
-   "cle": "0ec9d312c0ea",
-   "fr": "Hyperculte, formé en 2013, avec Simone Aubert à la batterie, à la guitare et à la voix, et Vincent Bertholet à la contrebasse et à la voix. Le duo crée un mélange de disco, pop, krautrock, punk et post-rock.",
-   "ar": "Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. الدوق يخلق مزيجاً من الديسكو والبوب والكروتوك والثروة"
+   "cle": "765042cd5525",
+   "fr": "Hyperculte, formé en 2013, avec Simone Aubert à la batterie, à la guitare et à la voix, et Vincent Bertholet à la contrebasse et à la voix. Le duo crée un mélange de disco, pop, krautrock, punk et post-rock. Animés par des rythmes aigus, des compositions inventives et des paroles poétiques mais politiquement engagées, les albums d'Hyperculte sont conçus à partir d'improvisations musicales, de fragments de textes littéraires et de slogans politiques pour témoigner de la vision aiguë et intransigeante des deux musiciens à notre époque. br",
+   "ar": "Hyperculte, formed in 2013, with Simone Aubert on drums, guitar, and vocals, and Vincent Bertholet on double bass and vocals. الدوق يخلق مزيجاً من الديسكو والبوب والكروتوك والثروة مدفوعاً بنظائر حادة، تركيبة ابتكارية، وشعرية ومع ذلك منخرطة سياسياً، ألبومات (هايبركولت) مصممة من الإرتجالات الموسيقية، وشظايا النصوص الأدبية، وشعارات سياسية للشاهد على النظرة الموسيقية الحادة والثابتة في عصرنا. br"
   },
   "_events/festivals/2026-11-21-jtc.md": {
    "cle": "57e4e4fa6c58",

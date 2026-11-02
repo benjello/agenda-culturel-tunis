@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+IA : la mort de l’auteur ? Ce que l’intelligence artificielle fait à la littérature. Avec Samia Kassab Charfi, Sonya Ben Behy, Sami Mokaddem, modéré par Raouf Medelgi.

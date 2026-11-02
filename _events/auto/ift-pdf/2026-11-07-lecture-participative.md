@@ -10,3 +10,5 @@ source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 auto: true
 ---
+
+En présence de l’auteure Rawdha Ammar de « Omi Sissi : coup de balai sur la plage » (Editions Enoya), avec Nebras Charfi et Frida Guillard, illustratrices
