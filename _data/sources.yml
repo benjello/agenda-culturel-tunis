@@ -1691,13 +1691,26 @@
     resultats: 8
   note: Programme de tourisme durable soutenu par l'Union européenne (circuits patrimoine, gastronomie, cinéma, événements dans les régions). Beaucoup de publications promotionnelles. Proposé par Mahdi.
 
+- id: cine-agora-djerba
+  nom: L'Agora Djerba (cinéma)
+  url: https://www.lagoradjerba.tn
+  type: cinema
+  genre: lieu
+  scraper: woocommerce_seances
+  categorie: cinema
+  actif: true
+  options:
+    lieu: "L'Agora Djerba"
+    adresse: "Djerba"
+  note: "Programmation lue sur la billetterie du site (même principe que L'Agora La Marsa : films, séances, affiche). À vérifier au premier passage : si le site n'est pas WooCommerce, adapter le scraper. Remplace Instagram, dont les publications n'ont que la même légende sans titre de film."
+
 - id: ig-agora-djerba
   nom: L'Agora Djerba (Instagram)
   url: https://www.instagram.com/lagoradjerba/
   type: lieu
   genre: lieu
   scraper: instagram
-  categorie: autre
+  categorie: cinema
   actif: true
   tous_les_jours: 3
   options:
@@ -1705,7 +1718,7 @@
     lieu: "L'Agora Djerba"
     adresse: "Djerba"
     resultats: 8
-  note: Salle de l'Agora à Djerba (cinéma, concerts). La billetterie lagora.tn ne couvre que La Marsa pour l'instant. Proposé par Mahdi.
+  note: Salle de l'Agora à Djerba (cinéma). Les films viennent du site (cine-agora-djerba) ; ici seules passent les publications qui annoncent autre chose que « retrouvez tous les horaires sur l'application » (ignorées). Proposé par Mahdi.
 
 - id: ig-galerie-insular
   nom: Galerie Insular (Instagram)

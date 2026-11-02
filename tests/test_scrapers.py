@@ -1054,3 +1054,20 @@ class FicheRegroupee(unittest.TestCase):
             texte = (Path(d) / "ift-pdf.md").read_text()
             self.assertIn('title: "Institut français de Tunisie"', texte)
             self.assertIn('sources: ["ift-pdf", "fb-ift-facebook"]', texte)
+
+
+class AgoraDjerba(unittest.TestCase):
+    def test_publicite_sans_film_ignoree(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import lecteurs
+        pub = {"lien": "https://www.instagram.com/p/x/", "date": "2026-11-01", "images": ["a.jpg"],
+               "texte": "Retrouvez tous les horaires sur l'application L'AGORA Cinéma 📱 ou sur www.lagoradjerba.tn\\n"
+                        "Évitez la file d'attente, réservez vos places dès maintenant ! 🎟️",
+               "ocr": "Mardi 3 novembre 2026 16:30"}
+        class Jour(dt.date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 11, 2)
+        with mock.patch.object(lecteurs.dt, "date", Jour):
+            self.assertEqual(lecteurs.une_affiche_par_evenement([pub], [], "L'Agora Djerba"), [])
