@@ -517,6 +517,22 @@
     resultats: 8
   note: "Espace théâtre privé (Ghazi Zaghbani)."
 
+- id: fb-61595612945174
+  nom: Page Facebook proposée (nom à préciser)
+  url: https://www.facebook.com/profile.php?id=61595612945174
+  type: lieu
+  genre: lieu
+  scraper: facebook_programmes
+  categorie: autre
+  actif: false  # crédit Apify épuisé : à activer le 1er décembre 2026
+  tous_les_jours: 3
+  options:
+    page: https://www.facebook.com/profile.php?id=61595612945174
+    lecteur: une_affiche_par_evenement
+    max: 6
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026 ; nom, lieu et ville à vérifier au premier passage."
+
 - id: fb-liberthe
   nom: Liber'thé
   url: https://www.facebook.com/liberthelafayette
