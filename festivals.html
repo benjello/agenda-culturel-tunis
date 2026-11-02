@@ -55,7 +55,8 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
   </article>
 {%- endfor %}
 </div>
-{%- assign reperes = events | where_exp: "e", "e.festival and e.source contains 'presse-'" -%}
+{%- comment -%} Deux filtres à la suite : where_exp n'accepte pas « and » dans Liquid 4 (le build de GitHub Pages échouait). {%- endcomment -%}
+{%- assign reperes = events | where_exp: "e", "e.festival" | where_exp: "e", "e.source contains 'presse-'" -%}
 {%- capture reperes_liste -%}
   {%- for e in reperes -%}
     {%- assign fin = e.end_date | default: e.date | date: "%Y-%m-%d" -%}
