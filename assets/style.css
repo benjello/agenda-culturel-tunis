@@ -72,6 +72,13 @@ table.sources small { color: var(--muted); }
 .film-corps h3 { margin: 0 0 4px; font-size: 1.05rem; }
 .film-salles { list-style: none; margin: 8px 0 0; padding: 0; }
 .film-salles li { padding: 3px 0; font-size: .95rem; }
+.presse-film { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--muted); border-radius: 8px; padding: 10px 14px; margin: 14px 0; }
+.presse-film h2 { font-size: 1rem; margin: 0 0 6px; }
+.presse-film ul { margin: 0; padding-left: 18px; }
+.presse-film li { margin: 4px 0; }
+.presse-film.court { background: none; border: 0; padding: 0; margin: 6px 0 0; font-size: .9rem; color: var(--muted); }
+[dir="rtl"] .presse-film { border-left: 1px solid var(--line); border-right: 4px solid var(--muted); }
+[dir="rtl"] .presse-film ul { padding-left: 0; padding-right: 18px; }
 .perime-court { font-size: .8rem; color: #6b4b00; }
 .badges { display: flex; flex-wrap: wrap; gap: 4px; margin: 2px 0 4px; }
 .badges:empty { display: none; }
