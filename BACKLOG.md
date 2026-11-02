@@ -173,3 +173,5 @@ Fiabilité
 - [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 8 pages Facebook branchées ; trouver les 16 autres.
 - [x] FTCC (ciné-clubs) : page Facebook FTCCTunisie, plus le Ciné-club de Tunis et la FTCA sur Instagram.
 - [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.
+
+- [ ] L'Agora Djerba : vérifier au premier passage que `www.lagoradjerba.tn` expose bien l'API WooCommerce (`/wp-json/wc/store/v1/products`, attribut « Séances ») ; sinon écrire un lecteur dédié (le site n'était pas joignable depuis l'environnement de développement).

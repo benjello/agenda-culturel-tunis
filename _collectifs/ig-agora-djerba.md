@@ -4,6 +4,6 @@ source: "ig-agora-djerba"
 type: "lieu"
 url_source: "https://www.instagram.com/lagoradjerba/"
 reseau: "instagram"
-categorie: "autre"
+categorie: "cinema"
 genre: "lieu"
 ---
