@@ -1751,3 +1751,18 @@
   scraper: presse
   categorie: autre
   actif: true
+
+- id: ig-archivart
+  nom: Galerie Archivart (Instagram)
+  url: https://www.instagram.com/archivart_gallery/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "archivart_gallery"
+    lieu: "Archivart Gallery"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Adresse de la galerie à confirmer."
