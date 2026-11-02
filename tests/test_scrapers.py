@@ -10,6 +10,8 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
+from bs4 import BeautifulSoup
+
 from scrapers import commun, ecriture
 from scrapers.commun import slug
 from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, tunis_events_cinema, jsonld, liste_fiches, pathe, rss, teskerti
@@ -58,6 +60,38 @@ class BilletterieSktech(unittest.TestCase):
         self.assertEqual(len(e.seances), 5)
         self.assertEqual(e.prix, "25 DT")
         self.assertEqual(e.lien, "https://billetterie.elteatrotunis.com/fr/programme/le_fou")
+
+
+class RetoursLigne(unittest.TestCase):
+    def test_rn_redevient_retour_a_la_ligne(self):
+        texte = "محمد البركاتيrnMohamed Baraketirnمسرح بيكولو ببنزرتrnThéâtre Piccolo-Bizerte"
+        self.assertEqual(commun.retours_ligne_casses(texte),
+                         "محمد البركاتي\nMohamed Baraketi\nمسرح بيكولو ببنزرت\nThéâtre Piccolo-Bizerte")
+        self.assertEqual(commun.retours_ligne_casses("Une voix...rnUne autre voix"), "Une voix...\nUne autre voix")
+
+    def test_mots_ordinaires_intacts(self):
+        for mot in ["journée", "Marne", "carnet", "Cornu", "Ferrand", "CARNAVAL", "arnaque"]:
+            self.assertEqual(commun.retours_ligne_casses(mot), mot)
+
+
+class FicheAvecDateISO(unittest.TestCase):
+    """Opéra de Tunis : 0 événement. Les fiches peuvent donner la date en ISO (texte ou <time datetime>)."""
+
+    def test_date_iso_dans_le_texte(self):
+        soup = BeautifulSoup(f"<html><body><main><h1>Aida</h1><p>Séance le {FUTUR}-11-07 à 20h00</p></main></body></html>",
+                             "html.parser")
+        e = liste_fiches.lire_fiche(soup, "https://www.tunisianopera.tn/fr/programme/aida", "Opéra", dt.datetime(2000, 1, 1))
+        self.assertIsNotNone(e)
+        self.assertEqual(e.titre, "Aida")
+        self.assertEqual(e.debut, dt.datetime(FUTUR, 11, 7))
+
+    def test_balise_time(self):
+        soup = BeautifulSoup(f'<html><body><h1>Carmen</h1><time datetime="{FUTUR}-12-02T19:30">2 déc.</time>'
+                             f'<time datetime="{FUTUR}-12-03T19:30">3 déc.</time></body></html>', "html.parser")
+        e = liste_fiches.lire_fiche(soup, "https://www.tunisianopera.tn/fr/programme/carmen", "Opéra", dt.datetime(2000, 1, 1))
+        self.assertEqual(e.debut, dt.datetime(FUTUR, 12, 2, 19, 30))
+        self.assertEqual(e.fin, dt.datetime(FUTUR, 12, 3, 19, 30))
+        self.assertEqual(len(e.seances), 2)
 
 
 class Teskerti(unittest.TestCase):

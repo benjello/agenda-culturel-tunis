@@ -30,7 +30,7 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 |---|---|---|---|
 | Teskerti | `teskerti` | ✅ marche | ~14 événements ; couvre aussi Théâtre municipal, 4ème Art, Le Rio, Zéphyr |
 | El Teatro | `billetterie_sktech` | ✅ marche | ~7 événements ; doublons avec Teskerti masqués |
-| Opéra de Tunis | `billetterie_sktech` | ⚠️ 0 événement | à vérifier : pas de date sur les fiches ? |
+| Opéra de Tunis | `billetterie_sktech` | ⚠️ 0 événement | liste lue, fiches sans date reconnue ; dates ISO et balises `time` lues depuis, raison de chaque fiche rejetée dans le journal : à vérifier au prochain passage |
 | Goethe-Institut | `rss` | ⚠️ 0 événement | flux lu, rien d'annoncé après le 1/11 |
 | Beit al-Hikma | `rss` | 🆕 branché | dates en arabe dans le titre |
 | IRMC | `rss` | 🆕 branché | `garder` écarte bourses et stages |
@@ -95,9 +95,9 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - [x] Institut français : lire le PDF mensuel du programme.
 - [x] Grand écran : filtres en colonne fixe à gauche, cartes sur 2-3 colonnes avec début de notice,
   fiche ouverte dans un panneau à droite sans changer de page (le téléphone garde une colonne).
-- [ ] Données : certaines notices contiennent « rn » à la place des retours à la ligne (\r\n mal décodé
-  par un scraper, ex. El Teatro « FUITE »).
-- [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
+- [x] Données : certaines notices contiennent « rn » à la place des retours à la ligne (\r\n mal décodé
+  par un scraper, ex. El Teatro « FUITE ») : corrigé dans les textes partagés (`retours_ligne_casses`).
+- [ ] Opéra de Tunis : 0 événement. Liste trouvée, mais aucune fiche n'a donné de date reconnue. Dates ISO ajoutées ; à confirmer dans le journal du prochain passage (les fiches rejetées y sont listées avec la raison).
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.

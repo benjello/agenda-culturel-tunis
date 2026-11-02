@@ -14,7 +14,7 @@ import json
 import re
 import shutil
 
-from .commun import RACINE, Evenement, Publication, est_discret, est_famille, pas_un_evenement, slug, titre_film
+from .commun import RACINE, Evenement, Publication, est_discret, est_famille, pas_un_evenement, retours_ligne_casses, slug, titre_film
 from .pages import _cle, faux_lieux
 from .villes import mention, ville
 
@@ -33,7 +33,7 @@ def _yaml(v) -> str:
 
 def _texte_brut(t: str) -> str:
     """La notice vient d'ailleurs : on neutralise le Markdown (titres, listes) et le Liquid."""
-    t = re.sub(r"[{}<>]", "", t)
+    t = re.sub(r"[{}<>]", "", retours_ligne_casses(t))
     return "\n".join("\\" + l.lstrip() if re.match(r"\s*(#|[>*+=-]|\d+\.\s)", l) else l
                       for l in t.split("\n"))
 

@@ -13,4 +13,7 @@ autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/tes
 auto: true
 ---
 
-سيرين قنونrnCyrine Gannounrnمسرح الحمراءrnThéâtre El Hamra
+سيرين قنون
+Cyrine Gannoun
+مسرح الحمراء
+Théâtre El Hamra

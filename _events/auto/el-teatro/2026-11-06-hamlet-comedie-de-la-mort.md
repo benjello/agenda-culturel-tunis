@@ -13,4 +13,7 @@ autres_sources: [{"name": "Teskerti", "link": "https://teskerti.tn/evenement/ham
 auto: true
 ---
 
-خبيب العياريrnKhoubaib Ayarirnشركة أرسطو فانيس للإنتاج والتوزيع الفنيrnAristophanes Production et Distribution Artistique
+خبيب العياري
+Khoubaib Ayari
+شركة أرسطو فانيس للإنتاج والتوزيع الفني
+Aristophanes Production et Distribution Artistique
