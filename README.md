@@ -69,7 +69,7 @@ L'agenda se remplit surtout tout seul : des **scrapers** relisent chaque jour de
 
 ### Lancer les scrapers
 
-Sur GitHub : chaque jour à 6h, ou **Actions → Scrapers → Run workflow**.
+Sur GitHub : chaque jour vers 6h20, ou **Actions → Scrapers → Run workflow**.
 
 Sur un ordinateur ou un serveur (par exemple dans un cron) :
 
