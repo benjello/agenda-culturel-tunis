@@ -699,6 +699,12 @@ class Fiches(unittest.TestCase):
         self.assertIn("épuisé", alerte({"depense": 5.1, "limite": 5, "pourcent": 102, "fin_cycle": "2026-12-01"}))
         self.assertIn("presque", alerte({"depense": 4.2, "limite": 5, "pourcent": 84, "fin_cycle": ""}))
 
+    def test_presse_sans_sorties_de_film(self):
+        from scrapers.sources.presse import est_sortie_de_film
+        self.assertTrue(est_sortie_de_film("Cinéma : Le Temps suspendu, un film hongrois à ne pas rater"))
+        self.assertFalse(est_sortie_de_film("JCC 2026 : les films de la compétition", "Le festival s'ouvre le 12 décembre"))
+        self.assertFalse(est_sortie_de_film("Ciné-club : projection de Nahla au CinéMadart"))
+
     def test_age_conseille(self):
         from scrapers.commun import age_conseille
         self.assertEqual(age_conseille("Spectacle jeune public dès 5 ans"), "5")
