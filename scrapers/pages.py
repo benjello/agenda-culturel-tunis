@@ -173,18 +173,31 @@ def ecrire_collectifs(evts: list[dict]) -> int:
     actives = {e.get("source") for e in evts}
     COLLECTIFS.mkdir(exist_ok=True)
     gardes = {s["id"] for s in sources if s.get("actif", True) or s["id"] in actives}
+    regroupees = {s["id"] for s in sources if s.get("fiche")}
     for f in COLLECTIFS.glob("*.md"):
-        if f.stem not in gardes:
+        if f.stem not in gardes or f.stem in regroupees:
             f.unlink()
-    n = 0
+    # Plusieurs sources d'un même organisateur (site + Facebook…) : une seule fiche,
+    # celle de la source nommée par « fiche: <id> » ; ses événements sont ceux de toutes.
+    n, groupes = 0, {}
     for s in sources:
-        if s["id"] not in gardes:
+        if s["id"] in gardes:
+            groupes.setdefault(s.get("fiche") or s["id"], []).append(s)
+    for s in sources:
+        if s["id"] not in gardes or s.get("fiche"):
             continue
-        reseau = re.search(r"(instagram|facebook)\.com/([^/?#]+)", s.get("url", ""))
+        membres = sorted(groupes.get(s["id"], [s]), key=lambda m: m is not s)  # la source principale d'abord
+        liens = []
+        for m in membres:
+            reseau = re.search(r"(instagram|facebook)\.com/([^/?#]+)", m.get("url", ""))
+            liens.append({"reseau": reseau.group(1) if reseau else "site", "url": m.get("url")})
         _ecrire(COLLECTIFS / f"{s['id']}.md", {
-            "title": s["nom"], "source": s["id"], "type": s.get("type"), "url_source": s.get("url"),
-            "reseau": reseau.group(1) if reseau else None, "categorie": s.get("categorie"),
-            "genre": s.get("genre", "lieu")})
+            "title": s.get("nom_fiche") or s["nom"], "source": s["id"],
+            "sources": [m["id"] for m in membres] if len(membres) > 1 else None,
+            "type": s.get("type"), "url_source": s.get("url"),
+            "reseau": liens[0]["reseau"] if liens[0]["reseau"] != "site" else None,
+            "liens": liens if len(liens) > 1 else None,
+            "categorie": s.get("categorie"), "genre": s.get("genre", "lieu")})
         n += 1
     return n
 

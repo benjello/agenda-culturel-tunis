@@ -914,3 +914,16 @@ class Expositions(unittest.TestCase):
         self.assertEqual(seances(["Mar. 3 février - 19:15 - VO"], auj), ["2026-02-03 19:15"])
         self.assertEqual(seances(["Dim. 1 novembre - 15:00 - VF"], auj), ["2026-11-01 15:00"])
         self.assertEqual(seances(["Ven. 1 janvier - 20:00 - VF"], auj), ["2027-01-01 20:00"])
+
+
+class FicheRegroupee(unittest.TestCase):
+    def test_ift_une_seule_fiche(self):
+        from scrapers import pages
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pages, "COLLECTIFS", Path(d)):
+            pages.ecrire_collectifs([])
+            noms = {f.stem for f in Path(d).glob("*.md")}
+            self.assertIn("ift-pdf", noms)
+            self.assertNotIn("fb-ift-facebook", noms)
+            texte = (Path(d) / "ift-pdf.md").read_text()
+            self.assertIn('title: "Institut français de Tunisie"', texte)
+            self.assertIn('sources: ["ift-pdf", "fb-ift-facebook"]', texte)

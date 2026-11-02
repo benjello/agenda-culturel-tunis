@@ -22,7 +22,7 @@ description: Les lieux, collectifs, festivals et artistes suivis par l'agenda, a
 {%- assign cs = site.collectifs | sort: "title" -%}
 {%- for g in genres %}
 {%- capture items -%}
-{%- for c in cs %}{% assign cg = c.genre | default: "lieu" %}{% if cg == g %}{% assign n = site.events | where: "source", c.source | size %}
+{%- for c in cs %}{% assign cg = c.genre | default: "lieu" %}{% if cg == g %}{% if c.sources %}{% assign n = site.events | where_exp: "e", "c.sources contains e.source" | size %}{% else %}{% assign n = site.events | where: "source", c.source | size %}{% endif %}
   {%- if n > 0 %}<li><a href="{{ c.url | relative_url }}">{{ c.title | replace: " (Instagram)", "" | replace: " (Facebook)", "" }}</a> <small>{{ n }}</small></li>{% endif %}{% endif %}
 {%- endfor -%}
 {%- endcapture -%}
