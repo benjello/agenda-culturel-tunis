@@ -1811,3 +1811,18 @@
     lieu: "Creative Hub, Sidi Bou Saïd"
     resultats: 8
   note: "Proposée par Mahdi le 2 nov. 2026. Type de lieu à confirmer."
+
+- id: ig-yosr-ben-ammar
+  nom: Galerie Yosr Ben Ammar (Instagram)
+  url: https://www.instagram.com/yosr_ben_ammar_gallery/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "yosr_ben_ammar_gallery"
+    lieu: "Galerie Yosr Ben Ammar"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Adresse à confirmer."
