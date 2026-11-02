@@ -10,6 +10,7 @@ source_name: "Institut français de Tunisie (programme PDF)"
 famille: true
 ajoute: "2026-11-01"
 langues: ["fr"]
+serie: "cafe-philo"
 auto: true
 ---
 

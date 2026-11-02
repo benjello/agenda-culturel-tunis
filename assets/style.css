@@ -292,3 +292,4 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 /* Étiquette « festival » sur les cartes : mène à la page du festival */
 .tag.festival { background: #6c3483; color: #fff; text-decoration: none; }
 .tag.festival:hover { filter: brightness(1.15); }
+.tag.serie { background: #1f618d; color: #fff; }

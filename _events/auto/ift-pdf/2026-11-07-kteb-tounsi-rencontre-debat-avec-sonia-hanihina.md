@@ -10,6 +10,7 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/dkzfjonxihcv4rly51ge"
 ajoute: "2026-11-02"
+serie: "kteb-tounsi"
 auto: true
 ---
 

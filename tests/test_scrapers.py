@@ -1235,6 +1235,12 @@ class AgoraDjerba(unittest.TestCase):
                 self.assertNotIn("festival:", lu[n])
             self.assertIn("date: 2026-10-27 18:00\n", lu["a"])
             self.assertEqual(festivals.rattacher(fs, d), 2)  # relancer ne change rien
+            # séries : mêmes mots, mais pas de contrainte de dates
+            serie = [{"id": "kteb", "nom": "Kteb Tounsi", "mots": "Kteb Tounsi"}]
+            (d / "ift" / "f.md").write_text('---\ntitle: "Kteb Tounsi : rencontre avec Sonia"\ndate: 2027-03-04 18:00\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n')
+            self.assertEqual(festivals.rattacher(fs, d, serie), 3)
+            self.assertIn('serie: "kteb"', (d / "ift" / "f.md").read_text())
+            self.assertNotIn("festival:", (d / "ift" / "f.md").read_text())
 
     def test_hors_culture(self):
         from scrapers.commun import pas_un_evenement

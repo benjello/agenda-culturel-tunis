@@ -65,41 +65,58 @@ def _motif(mots: list[str]):
     return re.compile(r"\b(?:" + "|".join(re.escape(_norm(m)) for m in mots) + r")\b") if mots else None
 
 
-def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO) -> int:
-    """Étiquette chaque événement de l'agenda avec le festival auquel il appartient (champ « festival »).
+def rattacher(festivals: list[dict], dossier=DOSSIER_AUTO, series: list[dict] | None = None) -> int:
+    """Étiquette chaque événement de l'agenda avec son festival (champ « festival ») et sa série (« serie »).
 
-    Un événement est relié à un festival si :
-    - son titre contient un des mots du festival (`mots` dans _data/festivals.yml) ;
+    Un événement est relié à un festival ou à une série si :
+    - son titre contient un des mots de l'entrée (`mots` dans _data/festivals.yml ou _data/series.yml) ;
     - ou le début de sa notice le cite, sauf pour les sigles (« JTC », « JCC » : trop ambigus dans un texte) ;
-    et si ses dates tombent pendant le festival (3 jours de marge avant, pour les avant-premières).
-    Les événements d'une source de presse ou du calendrier des festivals gardent le leur.
-    Renvoie le nombre d'événements étiquetés ; refait à chaque passage (rien n'est gardé d'un passage à l'autre)."""
-    regles = []
-    for f in festivals:
-        mots = [m.strip() for m in str(f.get("mots") or f["nom"]).split("|") if m.strip()]
-        debut, fin = f.get("debut"), f.get("fin") or f.get("debut")
-        marge = (debut - dt.timedelta(days=3)) if debut else None
-        regles.append((f["id"], _motif(mots), _motif([m for m in mots if len(m) >= 4 and m != m.upper()]), marge, fin))
-    n = 0
-    for chemin in sorted(dossier.glob("*/*.md")):
-        champs, corps = _lire(chemin)
-        if not champs or champs.get("source") == "festivals" or str(champs.get("source", "")).startswith("presse"):
-            continue
-        avant = champs.pop("festival", None)
-        debut_e = str(champs.get("date"))[:10]
-        fin_e = str(champs.get("end_date") or debut_e)[:10]
-        titre, texte = _norm(champs.get("title")), _norm(corps[:600])
-        trouve = None
-        for id_, dans_titre, dans_texte, marge, fin in regles:
+    et, pour un festival, si ses dates tombent pendant le festival (3 jours de marge avant, pour les
+    avant-premières). Une série (« Kteb Tounsi », un cercle de lecture…) revient à des dates différentes :
+    aucune contrainte de dates. Mot entier, sans casse ni accents (« Jaou » ne trouve pas « Jaouhar »).
+    Les événements d'une source de presse ou du calendrier des festivals gardent leur festival.
+    Renvoie le nombre d'événements reliés ; refait à chaque passage (rien n'est gardé d'un passage à l'autre)."""
+    def regles(registre, avec_dates):
+        res = []
+        for f in registre:
+            mots = [m.strip() for m in str(f.get("mots") or f["nom"]).split("|") if m.strip()]
+            debut, fin = (f.get("debut"), f.get("fin") or f.get("debut")) if avec_dates else (None, None)
+            marge = (debut - dt.timedelta(days=3)) if debut else None
+            res.append((f["id"], _motif(mots), _motif([m for m in mots if len(m) >= 4 and m != m.upper()]), marge, fin))
+        return res
+
+    def chercher(rs, titre, texte, debut_e, fin_e):
+        for id_, dans_titre, dans_texte, marge, fin in rs:
             if marge and (fin_e < marge.isoformat() or debut_e > fin.isoformat()):
                 continue
             if (dans_titre and dans_titre.search(titre)) or (dans_texte and dans_texte.search(texte)):
-                trouve = id_
-                break
-        if trouve:
-            champs["festival"] = trouve
-            n += 1
-        if trouve != avant:
+                return id_
+        return None
+
+    r_fest, r_serie = regles(festivals, True), regles(series or [], False)
+    n = 0
+    for chemin in sorted(dossier.glob("*/*.md")):
+        champs, corps = _lire(chemin)
+        if not champs:
+            continue
+        ancien = (champs.get("festival"), champs.get("serie"))
+        champs.pop("serie", None)
+        garde_festival = champs.get("source") == "festivals" or str(champs.get("source", "")).startswith("presse")
+        if not garde_festival:
+            champs.pop("festival", None)
+        debut_e = str(champs.get("date"))[:10]
+        fin_e = str(champs.get("end_date") or debut_e)[:10]
+        titre, texte = _norm(champs.get("title")), _norm(corps[:600])
+        if not garde_festival:
+            trouve = chercher(r_fest, titre, texte, debut_e, fin_e)
+            if trouve:
+                champs["festival"] = trouve
+        serie = chercher(r_serie, titre, texte, debut_e, fin_e)
+        if serie:
+            champs["serie"] = serie
+        nouveau = (champs.get("festival"), champs.get("serie"))
+        n += any(nouveau)
+        if nouveau != ancien:
             if not isinstance(champs.get("date"), str):
                 champs["date"] = str(champs.get("date"))[:16]
             auto = champs.pop("auto", True)
