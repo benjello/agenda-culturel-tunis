@@ -59,7 +59,7 @@ def lire_publications(source: dict) -> list[Publication]:
     publications, cache = [], en_cache(source)
     for item in avec_image[:o.get("max", 6)]:
         lien = item.get("url") or url
-        if lien in cache and all((RACINE / c).exists() for c in cache[lien].images):
+        if lien in cache and cache[lien].images and all((RACINE / c).exists() for c in cache[lien].images):
             publications.append(cache[lien])  # déjà lue : ni téléchargement ni OCR
             continue
         debut = _date(item.get("timestamp"))
