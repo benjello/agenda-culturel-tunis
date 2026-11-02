@@ -1240,4 +1240,5 @@ class AgoraDjerba(unittest.TestCase):
         from scrapers.commun import pas_un_evenement
         self.assertTrue(pas_un_evenement("Action De Sensibilisation Et De Prévention Du Diabète"))
         self.assertTrue(pas_un_evenement("Journée de dépistage gratuit"))
+        self.assertTrue(pas_un_evenement("JAOU TUNIS 26 - Full Fest Access"))  # un pass, pas un spectacle
         self.assertFalse(pas_un_evenement("Concert de oud à El Teatro"))
