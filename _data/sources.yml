@@ -1751,3 +1751,78 @@
   scraper: presse
   categorie: autre
   actif: true
+
+- id: ig-archivart
+  nom: Galerie Archivart (Instagram)
+  url: https://www.instagram.com/archivart_gallery/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "archivart_gallery"
+    lieu: "Archivart Gallery"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Adresse de la galerie à confirmer."
+
+- id: ig-le32bis
+  nom: Le 32Bis (Instagram)
+  url: https://www.instagram.com/le32bis/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "le32bis"
+    lieu: "Le 32Bis"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Type de lieu et adresse à confirmer."
+
+- id: ig-cavr-rades
+  nom: Centre des Arts Vivants de Radès (Instagram)
+  url: https://www.instagram.com/cavr_rades/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: theatre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "cavr_rades"
+    lieu: "Centre des Arts Vivants de Radès"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Complète la page Facebook (fb-cav-rades)."
+
+- id: ig-creative-hub-sbs
+  nom: Creative Hub Sidi Bou Saïd (Instagram)
+  url: https://www.instagram.com/creativehubsidibousaid/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "creativehubsidibousaid"
+    lieu: "Creative Hub, Sidi Bou Saïd"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Type de lieu à confirmer."
+
+- id: ig-yosr-ben-ammar
+  nom: Galerie Yosr Ben Ammar (Instagram)
+  url: https://www.instagram.com/yosr_ben_ammar_gallery/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: expo
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "yosr_ben_ammar_gallery"
+    lieu: "Galerie Yosr Ben Ammar"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Adresse à confirmer."
