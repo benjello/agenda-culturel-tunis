@@ -21,6 +21,29 @@ _RE_PERIODE = re.compile(r"du\s+(\d{1,2})(?:er)?\s*(?:(" + _MOIS + r")\s*)?(?:\d
                          + _MOIS + r")\s+(\d{4})", re.IGNORECASE)
 
 
+# Dates en anglais (comptes Instagram et Facebook) : « November 8th », « 8th of Nov », « Nov. 8 ».
+MOIS_EN = {"january": 1, "jan": 1, "february": 2, "feb": 2, "march": 3, "april": 4, "apr": 4,
+           "may": 5, "june": 6, "jun": 6, "july": 7, "jul": 7, "august": 8, "aug": 8,
+           "september": 9, "sept": 9, "sep": 9, "october": 10, "oct": 10, "november": 11, "nov": 11,
+           "december": 12, "dec": 12}
+_MOIS_EN = "|".join(sorted(MOIS_EN, key=len, reverse=True))
+_RE_EN_MJ = re.compile(r"\b(" + _MOIS_EN + r")\.?\s+(\d{1,2})(?:st|nd|rd|th)?\b(?!\s*[:h]\d)", re.IGNORECASE)
+_RE_EN_JM = re.compile(r"\b(\d{1,2})(?:st|nd|rd|th)\s+(?:of\s+)?(" + _MOIS_EN + r")\b", re.IGNORECASE)
+
+
+def jours_anglais(texte: str, ref: dt.date) -> list[str]:
+    """« November 8th », « 8th of November », « Nov 8 » : jours sans année, vus depuis la publication."""
+    res = set()
+    paires = [(m, j) for m, j in _RE_EN_MJ.findall(texte)] + [(m, j) for j, m in _RE_EN_JM.findall(texte)]
+    for m, j in paires:
+        mois = MOIS_EN[m.lower()]
+        try:
+            res.add(dt.date(_annee(mois, ref), mois, int(j)).isoformat())
+        except ValueError:
+            continue
+    return sorted(res)
+
+
 def _annee(mois: int, ref: dt.date) -> int:
     """Année d'une date sans année, vue depuis la date de publication."""
     if mois < ref.month - 6:
@@ -227,6 +250,7 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
         ref = dt.date.fromisoformat(p["date"]) if p.get("date") else aujourd_hui
         jours = {d.date() for d in toutes_dates(tout)}
         jours |= {dt.date.fromisoformat(j) for j in jours_sans_annee(tout, ref)}
+        jours |= {dt.date.fromisoformat(j) for j in jours_anglais(tout, ref)}
         for j, m in _RE_JJMM.findall(tout):
             try:
                 jours.add(dt.date(_annee(int(m), ref), int(m), int(j)))
