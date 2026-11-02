@@ -741,8 +741,8 @@ class PresseDatesTitres(unittest.TestCase):
         d = dt.date.today() + dt.timedelta(days=10)
         mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
         xml = (f'<?xml version="1.0"?><rss><channel>'
-               f'<item><title>Le Prix Saint Augustin distingue un historien</title><link>https://x/1</link>'
-               f'<description>Remise du prix le {d.day} {mois} {d.year} à la Maison de la culture, festival.</description></item>'
+               f'<item><title>Remise du Prix Saint Augustin à Tunis</title><link>https://x/1</link>'
+               f'<description>Cérémonie le {d.day} {mois} {d.year} à la Maison de la culture, festival.</description></item>'
                f'<item><title>Une pièce dans la ville</title><link>https://x/2</link>'
                f'<description>Théâtre : le {d.day} {mois} {d.year}, une pièce dans la ville.</description></item>'
                f'</channel></rss>')
@@ -753,6 +753,20 @@ class PresseDatesTitres(unittest.TestCase):
         evts, _ = presse.analyser(xml, {**journal, "genre": "administration"})
         self.assertEqual(len(evts), 2)  # sources officielles : règle inchangée (lieu par défaut, « autre » possible)
 
+
+    def test_nouvelle_au_passe_jamais_un_evenement(self):
+        """« Le Prix Saint Augustin distingue l'historien… » (Kapitalis) : une nouvelle, pas un événement."""
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss><channel><item><title>Le Prix Saint Augustin distingue l’historien Abdelhamid Larguèche</title>'
+               f'<link>https://x/1</link><description>L’historien et écrivain a été distingué par le Prix Saint Augustin, '
+               f'remis le {d.day} {mois} {d.year}.</description></item></channel></rss>')
+        for genre in ("presse", "administration"):
+            evts, articles = presse.analyser(xml, {"id": "k", "nom": "Kapitalis", "url": "u", "genre": genre})
+            self.assertEqual((evts, articles), ([], []))
+        self.assertTrue(presse._NOUVELLE.search("Il a été distingué par un prix"))
+        self.assertFalse(presse._NOUVELLE.search("Le festival a été inauguré vendredi soir"))
 
     def test_festival_sans_lieu_devient_une_entree_festival(self):
         from scrapers.sources import presse

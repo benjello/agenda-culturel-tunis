@@ -194,6 +194,12 @@ _SEANCE_UNIQUE = re.compile(r"festival|cin[ée].?club|projection|avant.premi[èe
                             r"semaine du|nuit du|rencontre|d[ée]bat|مهرجان|نادي السينما|عرض خاص", re.I)
 
 
+# Une nouvelle au passé (prix décerné, décès, bilan) n'annonce rien à venir : ni événement ni article à rattacher.
+_NOUVELLE = re.compile(r"\b(?:distingue|distingu[ée]e?s?|r[ée]compense|remporte|d[ée]croche|rend hommage|d[ée]c[èe]s|"
+                       r"nous a quitt[ée]s?|s['’]est (?:tenue?|d[ée]roul[ée]e?)|a eu lieu|ont (?:re[çc]u|remport[ée]))\b|"
+                       r"\ba (?:[ée]t[ée] )?(?:distingu|re[çc]u|remport|obtenu|d[ée]cern|honor|sacr)", re.I)
+
+
 def est_sortie_de_film(titre: str, texte: str = "") -> bool:
     return bool(_FILM.search(titre)) and not _SEANCE_UNIQUE.search(f"{titre} {texte[:300]}")
 
@@ -234,6 +240,8 @@ def analyser(xml: str, source: dict) -> tuple[list[Evenement], list[dict]]:
         if _ETRANGER.search(a["titre"]):
             continue
         if est_sortie_de_film(a["titre"], a["texte"]):
+            continue
+        if _NOUVELLE.search(a["titre"]) or _NOUVELLE.search(a["texte"][:200]):
             continue
         debut, fin = _dates(tout, a["date"])
         if not debut:
