@@ -23,7 +23,7 @@
     })(document.documentElement);
   </script>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M" }}">
 </head>
 <body>
   <header class="site-header">
@@ -54,6 +54,6 @@
       · <a href="{{ '/contribuer/' | relative_url }}" data-t="nav.contribuer">Contribuer</a> · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a> · <a href="{{ '/archives/' | relative_url }}" data-t="nav.archives">Archives</a> · <a href="{{ '/couverture/' | relative_url }}" data-t="nav.couverture">Couverture</a> · <a href="{{ '/abonnements/' | relative_url }}" data-t="nav.abonner">S'abonner</a> · <a href="{{ '/api/' | relative_url }}">API</a></p>
   </footer>
   <script>window.I18N = {{ site.data.i18n | jsonify }}; window.BASE = {{ '/' | relative_url | jsonify }};</script>
-  <script src="{{ '/assets/site.js' | relative_url }}"></script>
+  <script src="{{ '/assets/site.js' | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M" }}"></script>
 </body>
 </html>

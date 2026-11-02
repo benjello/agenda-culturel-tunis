@@ -7,10 +7,13 @@ permalink: /sw.js
 // Style, script, icônes : copie gardée, mise à jour en arrière-plan.
 var VERSION = 'agenda-{{ site.time | date: "%Y%m%d%H%M" }}';
 var BASE = '{{ "/" | relative_url }}';
-var DE_BASE = [BASE, BASE + 'week-end/', BASE + 'assets/style.css', BASE + 'assets/site.js', BASE + 'assets/icones/icone-192.png'];
+// Style et script portent ?v=date de construction (voir _layouts/default.html) : une nouvelle version = une nouvelle adresse,
+// donc jamais une vieille copie servie après une mise en ligne.
+var V = '?v={{ site.time | date: "%Y%m%d%H%M" }}';
+var DE_BASE = [BASE, BASE + 'week-end/', BASE + 'assets/style.css' + V, BASE + 'assets/site.js' + V, BASE + 'assets/icones/icone-192.png'];
 
 self.addEventListener('install', function (e) {
-  e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(DE_BASE); }).then(function () { return self.skipWaiting(); }));
+  e.waitUntil(caches.open(VERSION).then(function (c) { return Promise.all(DE_BASE.map(function (u) { return c.add(new Request(u, { cache: 'reload' })); })); }).then(function () { return self.skipWaiting(); }));
 });
 self.addEventListener('activate', function (e) {
   e.waitUntil(caches.keys().then(function (cles) {

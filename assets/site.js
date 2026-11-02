@@ -299,7 +299,7 @@
 
   // ---- Comprendre sans cliquer : aperçu au survol (souris) ou au toucher du bouton 👁 (téléphone),
   // et « Ce soir à Tunis » en tête de l'accueil. Tout vient des attributs data-* de la carte.
-  var bulle = null, delaiBulle = 0, peutSurvoler = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : { matches: false };
+  var bulle = null, delaiBulle = 0, peutSurvoler = window.matchMedia ? window.matchMedia('(any-hover: hover) and (any-pointer: fine)') : { matches: false };
   function esc(x) { return (x || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function contenuApercu(c) {
     var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
