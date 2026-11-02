@@ -100,9 +100,11 @@ def lire_fiche(url: str, categorie: str) -> Evenement | None:
         return None
     lieu, adresse = lieu_de_la_fiche(soup, titre_brut)
     prix = re.search(r"(?:à partir de|a partir de)\s*(\d+(?:[.,]\d+)?)\s*(?:TND|DT)", soup.get_text(" "), re.I)
+    prix = f"À partir de {prix.group(1)} DT" if prix else ""
+    if re.search(r"\b(?:sold.?out|[ée]puis[ée]|guichet ferm[ée])\b", soup.get_text(" "), re.I):
+        prix = f"{prix} · Complet" if prix else "Complet"
     return Evenement(titre=titre, debut=dates[0], fin=dates[-1] if len(dates) > 1 else None,
-                     seances=dates, lien=url, lieu=lieu, adresse=adresse, categorie=categorie,
-                     prix=f"À partir de {prix.group(1)} DT" if prix else "")
+                     seances=dates, lien=url, lieu=lieu, adresse=adresse, categorie=categorie, prix=prix)
 
 
 def recuperer(source: dict) -> list[Evenement]:

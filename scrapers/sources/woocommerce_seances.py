@@ -61,6 +61,8 @@ def _prix(p: dict) -> str:
         v = int(prix.get("price") or 0) / 10 ** int(prix.get("currency_minor_unit") or 0)
     except (TypeError, ValueError):
         return ""
+    if p.get("is_in_stock") is False:
+        return f"{v:g} DT · Complet" if v else "Complet"
     return f"{v:g} DT" if v else ""
 
 
