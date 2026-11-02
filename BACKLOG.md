@@ -5,6 +5,8 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 État en direct de chaque source : page [Sources](https://benjello.github.io/agenda-culturel-tunis/sources/).
 
+Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `CLAUDE.md`).
+
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
 0. **Chercher aussi la page Facebook** (et Instagram) du lieu : à Tunis, c'est souvent là que
