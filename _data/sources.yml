@@ -252,7 +252,7 @@
   genre: lieu
   scraper: instagram
   categorie: autre
-  actif: false
+  actif: true
   tous_les_jours: 3
   options:
     compte: "lagoramarsa"
@@ -398,7 +398,7 @@
   genre: lieu
   scraper: instagram
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "blcv.tunis"
@@ -413,7 +413,7 @@
   genre: collectif
   scraper: instagram
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "syndicateoflove.tn"
@@ -473,7 +473,7 @@
   genre: collectif
   scraper: facebook_programmes
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "eddiscorecordstore"
@@ -490,7 +490,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: musique
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "Club.Tahar.Haddad"
@@ -540,7 +540,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "liberthelafayette"
@@ -557,7 +557,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "centraltunis"
@@ -574,7 +574,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "CentreCulturel421"
@@ -591,7 +591,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: expo
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "maisonimagetn"
@@ -608,7 +608,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: expo
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "atelier.l.empreinte"
@@ -625,7 +625,7 @@
   genre: collectif
   scraper: facebook_programmes
   categorie: expo
-  actif: false  # compte introuvable ou privé au 1er nov. 2026, à vérifier
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     page: "REGARDSCROISESTN"
@@ -849,7 +849,7 @@
   genre: festival
   scraper: instagram
   categorie: theatre
-  actif: false  # compte introuvable ou vide au 1er nov. 2026
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "jtc_tunisie"
@@ -911,7 +911,7 @@
   genre: collectif
   scraper: instagram
   categorie: conference
-  actif: true
+  actif: false  # « Empty or private data » chez Apify le 2 nov. 2026 : compte privé ?
   tous_les_jours: 3
   options:
     compte: "atast_"
@@ -1514,7 +1514,7 @@
   genre: lieu
   scraper: instagram
   categorie: musique
-  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "chantarts.culture"
@@ -1529,7 +1529,7 @@
   genre: agenda
   scraper: instagram
   categorie: autre
-  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "sousseculturelle"
@@ -1544,7 +1544,7 @@
   genre: festival
   scraper: instagram
   categorie: autre
-  actif: false  # aucun résultat Apify au 1er nov. 2026 : en pause pour ménager le crédit
+  actif: false  # introuvable ou privé chez Apify (1er et 2 nov. 2026) : trouver le bon compte
   tous_les_jours: 3
   options:
     compte: "festivaldesoasistozeur"
@@ -1642,6 +1642,21 @@
     lieu: "L'Art Rue, Dar Bach Hamba, Médina de Tunis"
     resultats: 8
   note: Association d'art contemporain de la médina (Dream City, résidences, ateliers). Proposé par Mahdi.
+
+- id: ig-ftcc
+  nom: Fédération tunisienne des ciné-clubs (Instagram)
+  url: https://www.instagram.com/ftcc_tunisienne/
+  type: lieu
+  genre: collectif
+  scraper: instagram
+  categorie: cinema
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "ftcc_tunisienne"
+    lieu: "Lieu à préciser"
+    resultats: 6
+  note: "Ciné-clubs de toute la Tunisie (projections-débats). Trouvé le 2 nov. 2026 par la recherche Instagram."
 
 - id: ig-echos-electrik
   nom: Échos Électrik (Instagram)

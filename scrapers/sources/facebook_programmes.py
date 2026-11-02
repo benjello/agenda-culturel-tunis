@@ -134,6 +134,8 @@ def lire_image(chemin) -> str:
 def recuperer(source: dict) -> list:
     """Les dernières publications avec image, et les films qu'un lecteur y trouve."""
     publications = lire_publications(source)
+    for p in publications:  # dans le journal, pour régler le lecteur
+        print(f"    {p.date} | {' '.join(p.texte.split())[:110]} | ocr: {' '.join((p.ocr_facebook or p.ocr).split())[:80]}")
     lecteur = lecteurs.LECTEURS.get(source.get("options", {}).get("lecteur", ""))
     if not lecteur:
         return publications
@@ -165,6 +167,9 @@ def lire_publications(source: dict) -> list[Publication]:
     erreurs = [i for i in items if i.get("error")]
     avec_image = [i for i in items if not i.get("error") and images_de(i)]
     print(f"  {source['id']} : {len(items)} publication(s) lue(s), {len(avec_image)} avec image")
+    if items:  # nom de la page, pour reconnaître une page donnée par son seul numéro
+        u = items[0].get("user") if isinstance(items[0].get("user"), dict) else {}
+        print(f"    page : {items[0].get('pageName') or u.get('name') or '?'}")
     if erreurs and not avec_image:
         raise RuntimeError(f"Apify : {str(erreurs[0])[:250]}")
     avec_image.sort(key=lambda i: i.get("time") or "", reverse=True)
