@@ -24,7 +24,8 @@ from .doublons import _lire
 from .wikidata import TUNISIE, UA, _api, _entites, _valeurs
 
 FICHIER = RACINE / "_data" / "enrichi.json"
-OVERPASS = "https://overpass-api.de/api/interpreter"
+OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
+            "https://overpass.private.coffee/api/interpreter"]
 MAX_RECHERCHES = 60          # recherches Wikidata par passage
 REESSAI_JOURS = 30
 HUMAIN = "Q5"
@@ -110,6 +111,19 @@ def chercher_osm(index: dict, nom: str) -> dict | None:
     return None
 
 
+def _overpass(requete: str) -> list[dict]:
+    """Essaie les serveurs Overpass l'un après l'autre (souvent saturés)."""
+    erreur = None
+    for url in OVERPASS:
+        try:
+            r = requests.post(url, data={"data": requete}, headers=UA, timeout=180)
+            r.raise_for_status()
+            return r.json().get("elements", [])
+        except (requests.RequestException, ValueError) as exc:
+            erreur = exc
+    raise erreur
+
+
 def lire() -> dict:
     try:
         d = json.loads(FICHIER.read_text())
@@ -138,17 +152,17 @@ def main() -> int:
             cache["vu"][k] = aujourd_hui.isoformat()
             if r:
                 cache["images"][k] = r
+                print(f"  photo : {nom} → {r['qid']}")
     # 2. Accès, horaires (OpenStreetMap)
     try:
-        r = requests.post(OVERPASS, data={"data": REQUETE_OSM}, headers=UA, timeout=180)
-        r.raise_for_status()
-        index = osm_index(r.json().get("elements", []))
+        index = osm_index(_overpass(REQUETE_OSM))
         musees = yaml.safe_load((RACINE / "_data" / "musees.yml").read_text()) or []
         osm = {}
         for cle, nom in fiches("_lieux"):
             t = chercher_osm(index, nom)
             if t:
                 osm[f"lieu:{cle}"] = t
+                print(f"  OSM : {nom} → {t}")
         for m in musees:
             t = chercher_osm(index, m["nom"]) or next((chercher_osm(index, x) for x in m.get("mots") or [] if chercher_osm(index, x)), None)
             if t:
