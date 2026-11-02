@@ -81,6 +81,8 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
   - [ ] En cas de vague de spam : Settings → Moderation → **Interaction limits** (24 h à 6 mois).
 - [ ] Formulaire sans compte GitHub : seulement avec un captcha (Cloudflare Turnstile, gratuit) et un relais
       (ex. Formspree, Google Form) ; tant que tout passe par GitHub, le compte sert de protection.
+- Décision (2 nov. 2026) : les propositions de sources par IA restent **à la demande** (conversation avec Claude, validation par Mahdi) ;
+  pas de workflow hebdomadaire ni de clé d'API payante pour l'instant.
 - [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
 
 ## À faire
