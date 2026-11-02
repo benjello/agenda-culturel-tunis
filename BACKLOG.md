@@ -183,3 +183,7 @@ Comprendre sans cliquer (demandé le 2 novembre)
 - [x] Heure de début en évidence sous la date de chaque carte.
 - [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
 - [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
+
+Entrées « Autre » à réduire (relevé du 2 novembre) : une entrée « Autre » devrait rester rare.
+- [ ] `ift-pdf` en produit 19 (programme PDF de l'Institut français : trouver la vraie catégorie dans le texte), puis `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
+- [x] Annonces hors culture (santé, prévention, caritatif…) : mots-clés dans `_data/hors_culture.yml`, appliqués à toutes les sources sur le titre.

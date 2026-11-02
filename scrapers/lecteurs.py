@@ -196,7 +196,7 @@ _PAS_EVENEMENT = re.compile(r"recrut|candidature|offre d.emploi|ouvre exceptionn
                             r"accr[ée]ditation|appel [àa] (?:candidatures|projets|participation|films)|"
                             r"\bcall for\b|\bopen call\b|l.agenda culturel|"
                             # publicités de salle sans film ni séance (« Retrouvez tous les horaires sur l'application… »)
-                            r"retrouvez tous les horaires|[ée]vitez la file d.attente|"
+                            r"retrouvez tous les horaires|coup de c(?:œ|oe)ur ciné|[ée]vitez la file d.attente|"
                             r"باب الاعتماد|باب الترشح|باب المشاركة|طلب ترشحات", re.I)
 # Une affiche annonce des dates proches : au-delà d'un mois après la première, c'est une
 # autre information (date limite, prochaine édition), pas une séance de plus.

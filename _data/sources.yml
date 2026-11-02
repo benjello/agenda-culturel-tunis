@@ -251,14 +251,14 @@
   type: lieu
   genre: lieu
   scraper: instagram
-  categorie: autre
-  actif: true
+  categorie: cinema
+  actif: false
   tous_les_jours: 3
   options:
     compte: "lagoramarsa"
     lieu: "L'Agora Marsa"
     resultats: 8
-  note: "En pause : les films viennent de la billetterie lagora.tn. À rallumer pour les concerts et expos si la billetterie ne les a pas."
+  note: "En pause : les films viennent de la billetterie lagora.tn, et les publications Instagram de la salle sont surtout des publicités sans film ni séance. Même une fois rallumée, une source de catégorie cinéma ne garde que les publications qui nomment un film à l'affiche."
 
 - id: cine-alhambra
   nom: Alhambra Zéphyr (La Marsa)

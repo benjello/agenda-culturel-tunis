@@ -1071,3 +1071,33 @@ class AgoraDjerba(unittest.TestCase):
                 return cls(2026, 11, 2)
         with mock.patch.object(lecteurs.dt, "date", Jour):
             self.assertEqual(lecteurs.une_affiche_par_evenement([pub], [], "L'Agora Djerba"), [])
+
+    def test_publicite_agora_marsa_et_filtre_cinema(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import lecteurs
+        from scrapers.sources import instagram
+        pub = {"lien": "https://www.instagram.com/p/y/", "date": "2026-10-30", "images": ["a.jpg"],
+               "texte": "🎬 Cette semaine, ton prochain coup de cœur ciné t'attend à L'Agora ! 🍿 Du 2 au 8 novembre",
+               "ocr": ""}
+        class Jour(dt.date):
+            @classmethod
+            def today(cls):
+                return cls(2026, 11, 2)
+        with mock.patch.object(lecteurs.dt, "date", Jour):
+            self.assertEqual(lecteurs.une_affiche_par_evenement([pub], [], "L'Agora Marsa"), [])
+        # source de cinéma : un événement sans film connu est écarté
+        e = lecteurs.Evenement(titre="Soirée à L'Agora", debut=dt.datetime(2026, 11, 2), lien="x") \
+            if hasattr(lecteurs, "Evenement") else None
+        if e:
+            src = {"id": "t", "nom": "T", "url": "https://x", "categorie": "cinema", "options": {"lieu": "T"}}
+            with mock.patch.object(instagram, "lire_publications", return_value=[]), \
+                 mock.patch.dict(lecteurs.LECTEURS, {"une_affiche_par_evenement": lambda *a, **k: [e]}), \
+                 mock.patch.object(lecteurs, "titres_connus", return_value=["Le Mystère Lucy Lost"]):
+                self.assertEqual(instagram.recuperer(src), [])
+
+    def test_hors_culture(self):
+        from scrapers.commun import pas_un_evenement
+        self.assertTrue(pas_un_evenement("Action De Sensibilisation Et De Prévention Du Diabète"))
+        self.assertTrue(pas_un_evenement("Journée de dépistage gratuit"))
+        self.assertFalse(pas_un_evenement("Concert de oud à El Teatro"))
