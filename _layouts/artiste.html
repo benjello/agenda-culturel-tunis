@@ -7,9 +7,9 @@ layout: default
   {%- for m in page.mots -%}{%- if t contains m -%}{%- assign evts = evts | push: e -%}{%- break -%}{%- endif -%}{%- endfor -%}
 {%- endfor -%}
 <section class="intro fiche">
-  <p><a href="{{ '/artistes/' | relative_url }}" data-t="tous_collectifs">← Organisateurs et artistes</a></p>
+  <p><a href="{{ '/artistes/' | relative_url }}{% if page.role == "conferencier" %}#conferenciers{% endif %}" data-t="tous_collectifs">← Artistes, conférenciers et organisateurs</a></p>
   <h1>{{ page.title }}</h1>
-  <p>{% if page.genre %}{{ page.genre | capitalize }}{% endif %}
+  <p>{% if page.role == "conferencier" %}<span data-t="conferencier">Conférences et rencontres</span>{% if page.genre %} · {% endif %}{% endif %}{% if page.genre %}{{ page.genre | capitalize }}{% endif %}
   {%- if page.instagram %} · <a href="{{ page.instagram }}" rel="noopener">Instagram</a>{% endif %}
   {%- if page.facebook %} · <a href="{{ page.facebook }}" rel="noopener">Facebook</a>{% endif %}
   {%- if page.site %} · <a href="{{ page.site }}" rel="noopener" data-t="site_web">Site web</a>{% endif %}</p>
@@ -17,3 +17,4 @@ layout: default
 </section>
 <h2 data-t="a_venir">À venir</h2>
 {% include liste-evenements.html evenements=evts %}
+{% include signaler-fiche.html nom=page.title %}

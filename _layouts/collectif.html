@@ -7,7 +7,7 @@ layout: default
   {%- assign evts = site.events | where: "source", page.source -%}
 {%- endif -%}
 <section class="intro fiche">
-  <p><a href="{{ '/artistes/' | relative_url }}" data-t="tous_collectifs">← Organisateurs et artistes</a></p>
+  <p><a href="{{ '/artistes/' | relative_url }}" data-t="tous_collectifs">← Artistes, conférenciers et organisateurs</a></p>
   <h1>{{ page.title | replace: " (Instagram)", "" | replace: " (Facebook)", "" }}</h1>
   {%- assign liens = page.liens -%}
   {%- unless liens %}{% assign liens = "" | split: "" %}{% endunless %}
@@ -15,3 +15,4 @@ layout: default
 </section>
 <h2 data-t="a_venir">À venir</h2>
 {% include liste-evenements.html evenements=evts %}
+{% include signaler-fiche.html nom=page.title %}

@@ -32,6 +32,11 @@ description: Annoncez gratuitement un concert, une expo, une projection ou une r
 <h2 data-t="proposer_source">Vous publiez souvent ?</h2>
 <p data-t="proposer_source_texte">Un lieu, un collectif ou un artiste qui annonce régulièrement ses dates sur un site, Facebook ou Instagram : donnez-nous l'adresse, l'agenda la lira tout seul chaque jour.</p>
 <p><a class="bouton" href="{{ site.depot }}/issues/new?title={{ 'Source : ' | url_encode }}&labels=source" rel="noopener" data-t="proposer_source_bouton">Proposer une source</a></p>
+<h2 id="fiche" data-t="proposer_fiche">Un nom manque, ou une information est fausse ?</h2>
+<p data-t="proposer_fiche_texte">Un lieu, un artiste, un conférencier ou un organisateur absent de l'agenda, ou une fiche à compléter (type de lieu, adresse, liens…) : dites-le-nous.</p>
+<p><a class="bouton" href="{{ site.depot }}/issues/new?template=fiche.yml&title={{ 'Fiche à ajouter : ' | url_encode }}" rel="noopener" data-t="proposer_fiche_ajouter">➕ Ajouter une fiche</a>
+  <a class="bouton" href="{{ site.depot }}/issues/new?template=fiche.yml&title={{ 'Fiche à corriger : ' | url_encode }}" rel="noopener" data-t="proposer_fiche_corriger">✎ Corriger une fiche</a></p>
+<p class="aide"><small>Sur chaque fiche (lieu, artiste, organisateur), le lien « Compléter ou corriger cette fiche » remplit le formulaire tout seul.</small></p>
 <script>
 (function () {
   var f = document.getElementById('proposition'), depot = {{ site.depot | jsonify }}, email = {{ site.contact_email | jsonify }};
