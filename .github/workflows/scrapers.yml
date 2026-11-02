@@ -34,7 +34,11 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Installer l'OCR (lecture des programmes en image)
-        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra tesseract-ocr-ara poppler-utils > /dev/null
+        # l'index des paquets de l'image peut être périmé (404) : on le rafraîchit ; sans OCR, les scrapers tournent quand même
+        continue-on-error: true
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-fra tesseract-ocr-ara poppler-utils > /dev/null
       - name: Archiver les événements passés (avant que les scrapers ne les effacent)
         run: python3 -m scrapers.archives
         continue-on-error: true
