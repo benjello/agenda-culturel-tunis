@@ -11,6 +11,7 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/a0drplag9wvq3vd3pedm"
 ajoute: "2026-11-02"
+festival: "jaou"
 auto: true
 ---
 

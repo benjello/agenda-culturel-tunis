@@ -10,6 +10,7 @@ source_name: "L'Art Rue (Instagram)"
 image: "assets/programmes/ig-lart-rue/5ed190a13b4e.jpg"
 ajoute: "2026-11-02"
 doublon: true
+festival: "podcast-days"
 auto: true
 ---
 

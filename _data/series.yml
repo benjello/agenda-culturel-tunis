@@ -1,0 +1,25 @@
+# Séries : des rendez-vous qui reviennent à des dates différentes (cycles, cercles, cafés…).
+# Un événement dont le titre (ou le début de la notice) contient un des mots reçoit l'étiquette de la série
+# (champ « serie », voir scrapers/festivals.py). Pas de dates : une série n'a pas de période.
+# mots : mots entiers séparés par « | », sans casse ni accents.
+# Pour ajouter une série : une entrée ici (id, nom, nom_court, mots).
+
+- id: kteb-tounsi
+  nom: Kteb Tounsi (Institut français de Tunisie)
+  nom_court: Kteb Tounsi
+  mots: "Kteb Tounsi"
+
+- id: cercle-lecture
+  nom: Cercle de lecture au centre-ville de Tunis (Institut français de Tunisie)
+  nom_court: Cercle de lecture
+  mots: "Cercle de lectur|Cercle de lecture"
+
+- id: cafe-philo
+  nom: Café philo et Philo-Art (Institut français de Tunisie)
+  nom_court: Café philo
+  mots: "Café Philo|Philo-Art"
+
+- id: heure-du-jeu
+  nom: L'Heure du jeu (Institut français de Tunisie)
+  nom_court: L'Heure du jeu
+  mots: "L'Heure du jeu"

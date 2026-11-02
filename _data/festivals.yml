@@ -46,13 +46,28 @@
 
 - id: jaou
   nom: Jaou Tunis (Fondation Kamel Lazaar)
+  nom_court: Jaou Tunis
   genre: expo
-  edition: "2026"
-  periode: Automne
-  programme: false
-  site: https://kamellazaarfoundation.org
+  edition: "8e édition, 2026"
+  debut: 2026-10-23
+  fin: 2026-11-22
+  programme: true
+  site: https://jaou.tn
   instagram: https://www.instagram.com/jaoutunis/
   mots: "Jaou"
+  sans_fiche: true   # ses événements sont déjà dans l'agenda : pas de carte en plus, seulement l'étiquette
+
+- id: podcast-days
+  nom: Podcast Days by Tunisia Podcast Festival
+  nom_court: Podcast Days
+  genre: conference
+  edition: "6 et 7 novembre 2026, Institut français de Tunisie"
+  debut: 2026-11-06
+  fin: 2026-11-07
+  programme: true
+  instagram: https://www.instagram.com/tunisiapodcastsfestival/
+  mots: "Podcast Days|Tunisia Podcast Festival|Tunisia Podcasts Festival|Festival du podcast"
+  sans_fiche: true
 
 - id: medina
   nom: Festival de la Médina

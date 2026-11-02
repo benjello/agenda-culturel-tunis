@@ -14,6 +14,7 @@ image: "https://images.ra.co/2437ec50e852073e4bfaeb3dfbe204142ab2a105.jpg"
 artists: ["Adema", "Alexander Skancke", "Aline Umber", "Always Late", "Amin", "Atef", "Automatic Writing", "Baban", "Baloo", "BILA", "Cap", "chedy", "Cristi Cons", "Daox", "DJ Senc", "Elise Jilian", "Emine (2)", "Farès A.", "Foehn & Jerome", "formiq", "Gojnea76", "Hamdi Ryder", "HearThug", "Hitsh", "Houz", "Hugo Martinez", "Ion Ludwig", "James Creed", "Jonn", "Cabanne", "Lowris", "KBY", "Krol", "Lil Jack", "Maher Daniel", "Maiora", "Majid", "Maks", "Manon", "Markus Nikolai", "Mihnea Rog", "Miller", "Min8", "Moez", "n4bz", "Olivier Romero", "OMAR (UY)", "OMAR C", "Pan-J", "Prichindel", "Raphael Merheb", "Rome (IT)", "Rslane", "Saadoon", "Serenne", "Sweed", "Taieb Chékir", "Tatler", "Trent Voyage", "Elena Moroder", "Yasmin Sun", "Zaida"]
 ajoute: "2026-11-01"
 doublon: true
+festival: "fabrika"
 auto: true
 ---
 

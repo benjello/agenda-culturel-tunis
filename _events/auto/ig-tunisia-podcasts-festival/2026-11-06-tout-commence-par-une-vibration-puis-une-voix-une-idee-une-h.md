@@ -9,6 +9,7 @@ source: "ig-tunisia-podcasts-festival"
 source_name: "Tunisia Podcasts Festival (Instagram)"
 image: "assets/programmes/ig-tunisia-podcasts-festival/b06e470541b6.jpg"
 ajoute: "2026-11-02"
+festival: "podcast-days"
 auto: true
 ---
 

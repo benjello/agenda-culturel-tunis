@@ -9,6 +9,7 @@ source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
 doublon: true
+festival: "podcast-days"
 auto: true
 ---
 

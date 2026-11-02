@@ -1211,8 +1211,46 @@ class AgoraDjerba(unittest.TestCase):
                  mock.patch.object(lecteurs, "titres_connus", return_value=["Le Mystère Lucy Lost"]):
                 self.assertEqual(instagram.recuperer(src), [])
 
+    def test_rattacher_les_evenements_a_leur_festival(self):
+        import datetime as dt
+        from scrapers import festivals
+        fs = [{"id": "jaou", "nom": "Jaou Tunis", "mots": "Jaou", "debut": dt.date(2026, 10, 23), "fin": dt.date(2026, 11, 22)},
+              {"id": "jtc", "nom": "JTC", "mots": "Journées Théâtrales de Carthage|JTC", "debut": dt.date(2026, 11, 21), "fin": dt.date(2026, 11, 28)}]
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "ift").mkdir()
+            for nom, titre, date, corps in [
+                ("a", "Images de Syrie", "2026-10-27 18:00", "Dans le cadre du festival Jaou Tunis 2026, l'exposition…"),  # cité dans la notice
+                ("b", "Jaou Tunis : visite guidée", "2026-11-05 10:00", ""),                                              # dans le titre
+                ("c", "Jaou Tunis 2027", "2027-10-30 10:00", ""),                                                         # une autre édition
+                ("d", "Un concert JTC", "2026-11-02 20:00", "Soirée"),                                                     # sigle, hors dates
+                ("e", "Concert de oud", "2026-11-05 20:00", "Au Jaouhar club")]:                                           # mot partiel
+                (d / "ift" / f"{nom}.md").write_text(
+                    f'---\ntitle: "{titre}"\ndate: {date}\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n{corps}\n')
+            self.assertEqual(festivals.rattacher(fs, d), 2)
+            lu = {n: (d / "ift" / f"{n}.md").read_text() for n in "abcde"}
+            self.assertIn('festival: "jaou"', lu["a"])
+            self.assertIn('festival: "jaou"', lu["b"])
+            for n in "cde":
+                self.assertNotIn("festival:", lu[n])
+            self.assertIn("date: 2026-10-27 18:00\n", lu["a"])
+            self.assertEqual(festivals.rattacher(fs, d), 2)  # relancer ne change rien
+            # « Jaou » tout court, sans heure : annonce de remplissage, masquée
+            (d / "ift" / "g.md").write_text('---\ntitle: "Jaou Tunis"\ndate: 2026-11-06\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n')
+            festivals.rattacher(fs, d)
+            self.assertIn("doublon: true", (d / "ift" / "g.md").read_text())
+            self.assertNotIn("doublon", (d / "ift" / "b.md").read_text())
+            (d / "ift" / "g.md").unlink()
+            # séries : mêmes mots, mais pas de contrainte de dates
+            serie = [{"id": "kteb", "nom": "Kteb Tounsi", "mots": "Kteb Tounsi"}]
+            (d / "ift" / "f.md").write_text('---\ntitle: "Kteb Tounsi : rencontre avec Sonia"\ndate: 2027-03-04 18:00\nvenue: "Tunis"\nsource: "ift"\nauto: true\n---\n')
+            self.assertEqual(festivals.rattacher(fs, d, serie), 3)
+            self.assertIn('serie: "kteb"', (d / "ift" / "f.md").read_text())
+            self.assertNotIn("festival:", (d / "ift" / "f.md").read_text())
+
     def test_hors_culture(self):
         from scrapers.commun import pas_un_evenement
         self.assertTrue(pas_un_evenement("Action De Sensibilisation Et De Prévention Du Diabète"))
         self.assertTrue(pas_un_evenement("Journée de dépistage gratuit"))
+        self.assertTrue(pas_un_evenement("JAOU TUNIS 26 - Full Fest Access"))  # un pass, pas un spectacle
         self.assertFalse(pas_un_evenement("Concert de oud à El Teatro"))
