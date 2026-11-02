@@ -524,7 +524,7 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: autre
-  actif: false  # crédit Apify épuisé : à activer le 1er décembre 2026
+  actif: true
   tous_les_jours: 3
   options:
     page: https://www.facebook.com/profile.php?id=61595612945174
@@ -911,7 +911,7 @@
   genre: collectif
   scraper: instagram
   categorie: conference
-  actif: false  # vrai compte trouvé le 1er nov. 2026 ; à allumer quand le crédit Apify revient (1er déc.)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "atast_"
@@ -1577,7 +1577,7 @@
   genre: institution
   scraper: instagram
   categorie: conference
-  actif: false  # à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "citedessciencestunis"
@@ -1592,7 +1592,7 @@
   genre: institution
   scraper: instagram
   categorie: expo
-  actif: false  # à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "bardo_museum"
@@ -1607,7 +1607,7 @@
   genre: lieu
   scraper: instagram
   categorie: expo
-  actif: false  # à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "leviolonbleu.gallery"
@@ -1635,7 +1635,7 @@
   genre: collectif
   scraper: instagram
   categorie: autre
-  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "lartruetunisie"
@@ -1650,7 +1650,7 @@
   genre: collectif
   scraper: instagram
   categorie: musique
-  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "echos.electrik"
@@ -1665,7 +1665,7 @@
   genre: institution
   scraper: instagram
   categorie: autre
-  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "tounes.wijhetouna"
@@ -1680,7 +1680,7 @@
   genre: lieu
   scraper: instagram
   categorie: autre
-  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "lagoradjerba"
@@ -1696,7 +1696,7 @@
   genre: lieu
   scraper: instagram
   categorie: expo
-  actif: false  # proposé par Mahdi le 1er nov. 2026 ; à allumer le 1er déc. (crédit Apify)
+  actif: true
   tous_les_jours: 3
   options:
     compte: "galerieinsular"
