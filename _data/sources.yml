@@ -1796,3 +1796,18 @@
     lieu: "Centre des Arts Vivants de Radès"
     resultats: 8
   note: "Proposée par Mahdi le 2 nov. 2026. Complète la page Facebook (fb-cav-rades)."
+
+- id: ig-creative-hub-sbs
+  nom: Creative Hub Sidi Bou Saïd (Instagram)
+  url: https://www.instagram.com/creativehubsidibousaid/
+  type: lieu
+  genre: lieu
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: "creativehubsidibousaid"
+    lieu: "Creative Hub, Sidi Bou Saïd"
+    resultats: 8
+  note: "Proposée par Mahdi le 2 nov. 2026. Type de lieu à confirmer."
