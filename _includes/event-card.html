@@ -35,6 +35,11 @@
     {%- else %}
     <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {% include lien-carte.html lieu=e.venue adresse=e.address %}</p>
     {%- endif %}
+    {%- comment -%} Début de la notice : affiché seulement sur grand écran (voir .extrait dans style.css). {%- endcomment -%}
+    {%- assign extrait = e.content | strip_html | strip_newlines | strip | truncatewords: 28, "…" -%}
+    {%- if extrait != "" and e.film != true %}
+    <p class="extrait">{{ extrait }}</p>
+    {%- endif %}
     {%- comment -%} Pas de « Source : … » : on propose ce que le lecteur veut faire (acheter, lire l'annonce). Le nom de la source reste en infobulle. {%- endcomment -%}
     {%- assign src = site.data.sources | where: "id", e.source | first -%}
     {%- assign billet = "" -%}{%- if src.type == "billetterie" -%}{%- assign billet = e.link -%}{%- endif -%}

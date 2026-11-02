@@ -6,8 +6,16 @@ layout: default
   <p data-t="intro_texte">{{ site.description }}</p>
 </section>
 
+{%- comment -%}
+  Sur ordinateur (écran large), les filtres forment une colonne à gauche qui reste visible
+  et l'agenda s'affiche sur plusieurs colonnes à droite. Sur téléphone, rien ne change.
+{%- endcomment -%}
+<div class="accueil">
+<aside class="panneau-filtres" aria-label="Filtres">
+<p class="titre-filtre" data-t="filtre_ou">Où</p>
 {% include choix-ville.html %}
 <input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" data-t-placeholder="recherche" aria-label="Chercher" autocomplete="off">
+<p class="titre-filtre" data-t="filtre_quand">Quand</p>
 <div class="filters moments" id="moments" role="group" aria-label="Quand">
   <button class="active" data-moment="tout" data-t="moment.tout">Tout moment</button>
   <button data-moment="aujourdhui" data-t="moment.aujourdhui">Aujourd'hui</button>
@@ -16,6 +24,7 @@ layout: default
   <button data-moment="semaine" data-t="moment.semaine">Cette semaine</button>
   <button data-moment="weekend" data-t="moment.weekend">Ce week-end</button>
 </div>
+<p class="titre-filtre" data-t="filtre_quoi">Quoi</p>
 <div class="filters" id="filters">
   <button class="active" data-filter="all" data-t="tout">Tout</button>
   {% for c in site.data.categories %}<button data-filter="{{ c[0] }}" data-t="cat.{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
@@ -25,6 +34,8 @@ layout: default
   <label><input type="checkbox" id="famille"> <span data-t="seul_famille">En famille</span></label>
   <label><input type="checkbox" id="favoris"> <span data-t="seul_favoris">Mes favoris</span></label>
 </div>
+</aside>
+<div class="colonne-agenda">
 <a class="nouveautes" id="nouveautes" href="{{ '/nouveau/' | relative_url }}" hidden></a>
 {%- comment -%} Bandeau Ramadan : deux semaines avant le début et pendant le mois (dates dans _data/ramadan.yml) {%- endcomment -%}
 <a class="ramadan-bandeau" id="ramadan-bandeau" href="{{ '/ramadan/' | relative_url }}" data-debut="{{ site.data.ramadan.debut | date: '%Y-%m-%d' }}" data-fin="{{ site.data.ramadan.fin | date: '%Y-%m-%d' }}" hidden data-t="ramadan_bandeau">🌙 Soirées de Ramadan : le programme →</a>
@@ -141,6 +152,8 @@ layout: default
 {%- endfor %}
 </div>
 <p id="empty" class="empty" hidden data-t="aucun">Aucun événement à venir pour l'instant.</p>
+</div>
+</div>
 
 <script>
 (function () {

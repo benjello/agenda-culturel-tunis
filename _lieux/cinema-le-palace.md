@@ -1,6 +1,7 @@
 ---
 title: "Cinéma Le Palace"
 noms: ["Cinéma Le Palace"]
+type: "cinema"
 adresse: "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis"
 ville: "tunis"
 lat: 36.8

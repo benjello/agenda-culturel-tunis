@@ -61,6 +61,9 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - Carte : filtre Aujourd'hui / 7 jours / Tout, liste des événements dans chaque lieu.
 - Métadonnées schema.org (Event) sur chaque fiche, pour Google.
 - Descriptifs (`scrapers/descriptifs.py`) : notice lue sur la page de l'annonce, synopsis des films (salle, Wikipédia, TMDb si `TMDB_API_KEY`), courte présentation des lieux, festivals et musées (Wikipédia) ; textes à la main dans `_data/descriptifs_manuels.yml`.
+- Artistes et conférenciers séparés sur la page Artistes (`role` deviné d'après les dates — conférences, rencontres, débats —, ou fixé dans `_data/artistes.yml`).
+- Types de lieux (cinéma, théâtre, galerie, musée, médiathèque, club, centre culturel) : lus dans le nom, sinon dans OpenStreetMap, corrections dans `_data/types_lieux.yml` ; intertitres et filtre sur la page Lieux.
+- Formulaire « Ajouter ou corriger une fiche » (lieu, artiste, conférencier, organisateur) : page Proposer et lien sur chaque fiche (issue GitHub, étiquette « fiche »).
 - Archives : `scrapers/archives.py` garde les événements passés (`archives/donnees/AAAA.json`), page de recherche `/archives/`.
 
 ## Contributions extérieures (sources)
@@ -90,10 +93,15 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
 - [x] Institut français : lire le PDF mensuel du programme.
+- [x] Grand écran : filtres en colonne fixe à gauche, cartes sur 2-3 colonnes avec début de notice,
+  fiche ouverte dans un panneau à droite sans changer de page (le téléphone garde une colonne).
+- [ ] Données : certaines notices contiennent « rn » à la place des retours à la ligne (\r\n mal décodé
+  par un scraper, ex. El Teatro « FUITE »).
 - [ ] Opéra de Tunis : comprendre pourquoi 0 événement.
 - [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.
+- [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
 - [ ] Critiques de films : ajouter d'autres liens (Letterboxd, AlloCiné…) à côté d'IMDb.
 - [ ] Brancher les sources « à étudier ».
 - [ ] Synopsis des films : après le prochain passage des scrapers, compter les films sans synopsis

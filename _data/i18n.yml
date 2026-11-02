@@ -74,7 +74,7 @@ source: { ar: "المصدر", en: "Source" }
 organisateur: { ar: "أعلن عنه", en: "Announced by" }
 notice_source: { ar: "النص مأخوذ من الإعلان الأصلي.", en: "Text taken from the original announcement." }
 tous_lieux: { ar: "→ كل الفضاءات", en: "← All venues" }
-tous_collectifs: { ar: "→ المنظمون والفنانون", en: "← Organisers and artists" }
+tous_collectifs: { ar: "→ الفنانون والمحاضرون والمنظمون", en: "← Artists, speakers and organisers" }
 voir_carte: { ar: "على الخريطة", en: "See on the map" }
 a_venir: { ar: "قريبا", en: "Coming up" }
 rien_a_venir: { ar: "لا شيء معلن حاليا.", en: "Nothing announced yet." }
@@ -82,9 +82,35 @@ site_web: { ar: "الموقع", en: "Website" }
 lieux_titre: { ar: "الفضاءات", en: "Venues" }
 lieux_intro: { ar: "قاعات، أروقة، سينما ومسارح لها برمجة.", en: "Halls, galleries, cinemas and theatres with something on." }
 voir_carte_lieux: { ar: "🗺 الخريطة", en: "🗺 See the map" }
-collectifs_titre: { ar: "المنظمون والفنانون", en: "Organisers and artists" }
-collectifs_intro: { ar: "كل بطاقة تعرض ما أعلنوا عنه.", en: "Each page shows what they have announced." }
+collectifs_titre: { ar: "الفنانون والمحاضرون والمنظمون", en: "Artists, speakers and organisers" }
+collectifs_intro: { ar: "كل بطاقة تعرض ما أعلنوا عنه. اسم ناقص؟ أعلمونا عبر الرابط أسفل الصفحة.", en: "Each page shows what they have announced. A name is missing? Tell us with the link at the bottom of the page." }
 artistes: { ar: "فنانون", en: "Artists" }
+conferenciers: { ar: "محاضرون ومتدخلون", en: "Speakers" }
+conferenciers_intro: { ar: "من نأتي للاستماع إليهم: محاضرات، لقاءات، نقاشات، مقاهي فلسفية.", en: "People you come to hear: talks, meet-the-author events, debates, philosophy cafés." }
+conferencier: { ar: "محاضرات ولقاءات", en: "Talks and meetings" }
+type_lieu.cinema: { ar: "قاعات السينما", en: "Cinemas" }
+type_lieu.theatre: { ar: "المسارح والأوبرا", en: "Theatres and opera" }
+type_lieu.musee: { ar: "المتاحف", en: "Museums" }
+type_lieu.galerie: { ar: "الأروقة", en: "Galleries" }
+type_lieu.bibliotheque: { ar: "المكتبات", en: "Libraries and bookshops" }
+type_lieu.club: { ar: "النوادي والحانات والمقاهي", en: "Clubs, bars and cafés" }
+type_lieu.centre: { ar: "المراكز الثقافية والمعاهد", en: "Cultural centres and institutes" }
+type_lieu.autre: { ar: "فضاءات أخرى", en: "Other venues" }
+type_lieu_un.cinema: { ar: "سينما", en: "Cinema" }
+type_lieu_un.theatre: { ar: "مسرح", en: "Theatre" }
+type_lieu_un.musee: { ar: "متحف", en: "Museum" }
+type_lieu_un.galerie: { ar: "رواق", en: "Gallery" }
+type_lieu_un.bibliotheque: { ar: "مكتبة", en: "Library" }
+type_lieu_un.club: { ar: "نادي، حانة", en: "Club, bar" }
+type_lieu_un.centre: { ar: "مركز ثقافي", en: "Cultural centre" }
+fiche.corriger: { ar: "✎ أكمل أو صحح هذه البطاقة", en: "✎ Complete or correct this page" }
+fiche.manque_lieu: { ar: "فضاء ناقص، أو معلومة خاطئة؟", en: "A venue is missing, or something is wrong?" }
+fiche.manque_artiste: { ar: "فنان أو محاضر أو منظم ناقص، أو معلومة خاطئة؟", en: "An artist, speaker or organiser is missing, or something is wrong?" }
+fiche.signaler: { ar: "أعلمونا", en: "Tell us" }
+proposer_fiche: { ar: "اسم ناقص أو معلومة خاطئة؟", en: "A name is missing, or something is wrong?" }
+proposer_fiche_texte: { ar: "فضاء، فنان، محاضر أو منظم غير موجود في الأجندا، أو بطاقة ينقصها شيء (نوع الفضاء، العنوان، الروابط…): أعلمونا.", en: "A venue, artist, speaker or organiser missing from the agenda, or a page that lacks something (type of venue, address, links…): tell us." }
+proposer_fiche_ajouter: { ar: "➕ إضافة بطاقة", en: "➕ Add a page" }
+proposer_fiche_corriger: { ar: "✎ تصحيح بطاقة", en: "✎ Correct a page" }
 organisateurs: { ar: "منظمون، فضاءات ومجموعات", en: "Organisers, venues and collectives" }
 genre.lieu: { ar: "الفضاءات", en: "Venues" }
 genre.institution: { ar: "المعاهد والمراكز الثقافية", en: "Cultural institutes and centres" }
@@ -306,7 +332,7 @@ apropos.p1: { ar: "كثير من الأنشطة الثقافية في تونس �
 apropos.p2: { ar: "هي حاليا أجندا بين أصدقاء. الهدف أن تصبح موقعا عموميا حقيقيا.", en: "For now it is an agenda among friends. The goal is to make it a real public site." }
 apropos.h_proposer: { ar: "اقترح مصدرا", en: "Suggest a source" }
 apropos.p3: { ar: "تملأ الأجندا آليا من <a href=\"{base}sources/\">مصادر موثوقة</a>: مواقع فضاءات، مواقع تذاكر، مهرجانات. الأكثر إفادة أن تدلنا على <strong>موقع يعلن بانتظام عن أنشطة</strong>، بدل نشاط منفرد.", en: "The agenda fills itself from <a href=\"{base}sources/\">reliable sources</a>: venue sites, ticketing sites, festivals. The most useful thing is to point us to <strong>a site that regularly announces events</strong>, rather than a single event." }
-apropos.p4: { ar: "لنشاط محدد، استعمل <a href=\"{base}proposer/\">استمارة « اقترح نشاطا »</a>. خطأ في صفحة؟ رابط « الإبلاغ عن خطأ » أسفل كل صفحة يفتح استمارة معبأة مسبقا.", en: "For a specific event, use the <a href=\"{base}proposer/\">“Suggest an event” form</a>. A mistake on a page? The “Report an error” link at the bottom of each page opens a pre-filled form." }
+apropos.p4: { ar: "لنشاط محدد، استعمل <a href=\"{base}proposer/\">استمارة « اقترح نشاطا »</a>. خطأ في صفحة؟ رابط « الإبلاغ عن خطأ » أسفل كل صفحة يفتح استمارة معبأة مسبقا. فضاء أو فنان أو محاضر ناقص، أو بطاقته غير مكتملة؟ <a href=\"{base}proposer/#fiche\">أعلمونا</a>.", en: "For a specific event, use the <a href=\"{base}proposer/\">“Suggest an event” form</a>. A mistake on a page? The “Report an error” link at the bottom of each page opens a pre-filled form. A venue, artist or speaker is missing, or their page is incomplete? <a href=\"{base}proposer/#fiche\">Tell us</a>." }
 apropos.h_donnees: { ar: "البيانات المفتوحة", en: "Open data" }
 apropos.p5: { ar: "كل ما في الأجندا قابل لإعادة الاستعمال بحرية:", en: "Everything in the agenda can be freely reused:" }
 apropos.liste: { ar: "<li><strong>الرزنامة</strong>: اشترك في <a href=\"{base}agenda.ics\"><code>agenda.ics</code></a> في Google Agenda أو Apple Calendrier أو Outlook (« إضافة رزنامة عبر رابط »). تتحدث وحدها.</li><li><strong>واجهة برمجة</strong>: ملفات JSON مفتوحة (أنشطة، فضاءات، مصادر)، موثقة في صفحة <a href=\"{base}api/\">API</a>، لمواقعكم وبرامجكم وتطبيقاتكم.</li><li><strong>سجل المصادر</strong> و<strong>شفرة البرامج الآلية</strong>: على <a href=\"https://github.com/benjello/agenda-culturel-tunis\">مستودع GitHub</a>، لإعادة الاستعمال أو التحسين.</li>", en: "<li><strong>Calendar</strong>: subscribe to <a href=\"{base}agenda.ics\"><code>agenda.ics</code></a> in Google Calendar, Apple Calendar or Outlook (“add calendar by URL”). It updates itself.</li><li><strong>API</strong>: open JSON files (events, venues, sources), documented on the <a href=\"{base}api/\">API</a> page, for your sites, bots or apps.</li><li><strong>Source registry</strong> and <strong>scraper code</strong>: on the <a href=\"https://github.com/benjello/agenda-culturel-tunis\">GitHub repository</a>, to reuse or improve.</li>" }
@@ -381,3 +407,9 @@ contrib.e3: { ar: "اضغط «وجدتها» والصق العنوان. هذا �
 contrib.tous: { ar: "عرض الكل", en: "Show all" }
 contrib.technique: { ar: "تقني: للمطورين", en: "Technical: for developers" }
 contrib.technique_court: { ar: "تقني", en: "technical" }
+# Affichage ordinateur : titres des filtres et panneau d'aperçu
+filtre_ou: { fr: "Où", ar: "أين", en: "Where" }
+filtre_quand: { fr: "Quand", ar: "متى", en: "When" }
+filtre_quoi: { fr: "Quoi", ar: "ماذا", en: "What" }
+ouvrir_page: { fr: "Ouvrir la page", ar: "فتح الصفحة", en: "Open the page" }
+apercu: { fr: "Aperçu", ar: "معاينة", en: "Preview" }
