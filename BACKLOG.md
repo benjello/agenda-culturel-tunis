@@ -71,9 +71,9 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 - Chaque PR : tests (dont `tests/test_registre.py`, qui vérifie le registre) et résumé « Contribution »
   (contribution extérieure ? fichiers de code ou de workflows touchés ?). Aucun workflow en `pull_request_target`.
 - **Réglages GitHub à faire par Mahdi** (pas scriptables) :
-  - [ ] Settings → Actions → General → « Approval for running fork pull request workflows » :
+  - [x] Settings → Actions → General → « Approval for running fork pull request workflows » :
         **Require approval for all external contributors**.
-  - [ ] Settings → Actions → General → « Workflow permissions » : **Read repository contents** par défaut
+  - [x] Settings → Actions → General → « Workflow permissions » : **Read repository contents** par défaut
         (les workflows qui écrivent le demandent déjà eux-mêmes).
   - [ ] Settings → Rules → règle sur `main` : PR obligatoire avec relecture des Code Owners, vérification « Tests »
         obligatoire, avec Mahdi et GitHub Actions dans la liste de contournement (les scrapers poussent sur `main`).
