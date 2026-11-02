@@ -2,7 +2,7 @@
 title: "À l’Institut français de Tunis"
 date: 2026-10-27
 end_date: "2026-11-27"
-venue: "Institut français de Tunis"
+venue: "Institut Français de Tunis"
 ville: "tunis"
 category: "expo"
 price: "Gratuit"

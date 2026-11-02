@@ -166,6 +166,16 @@
    ]
   },
   {
+   "fichier": "tunis-events-cinema/2026-11-02-palestine-cinema-days-the-dream-by-mohammad-malas.md",
+   "source": "tunis-events-cinema",
+   "titre": "Palestine Cinema Days: THE DREAM by Mohammad Malas",
+   "date": "2026-11-02",
+   "lien": "https://tunis.events/events/8L4dM8/palestine-cinema-days-the-dream-by-mohammad-malas-cinemadart",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
    "fichier": "tunis-events-cinema/2026-11-02-weekend.md",
    "source": "tunis-events-cinema",
    "titre": "WEEKEND",
@@ -569,16 +579,9 @@
    },
    "presse-lapresse": {
     "n": 2,
-    "precis": 1,
-    "pourcent": 50,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Saisons de la création"
-     }
-    ],
+    "precis": 2,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
      {
       "code": "sans_image",
@@ -660,13 +663,13 @@
    },
    "tunis-events-cinema": {
     "n": 36,
-    "precis": 34,
-    "pourcent": 94,
+    "precis": 33,
+    "pourcent": 92,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 2,
+      "n": 3,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -674,7 +677,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 3
      },
      {
       "code": "sans_notice",
@@ -777,20 +780,14 @@
    },
    "presse": {
     "n": 3,
-    "precis": 1,
-    "pourcent": 33,
+    "precis": 2,
+    "pourcent": 67,
     "defauts": [
      {
       "code": "titre_phrase",
       "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
       "n": 1,
       "exemple": "Photo : Mémoires en partage entre Sicile et Tunisie"
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Saisons de la création"
      }
     ],
     "manques": [
@@ -860,13 +857,13 @@
    },
    "tunis_events_cinema": {
     "n": 36,
-    "precis": 34,
-    "pourcent": 94,
+    "precis": 33,
+    "pourcent": 92,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 2,
+      "n": 3,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -874,7 +871,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 3
      },
      {
       "code": "sans_notice",

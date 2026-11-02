@@ -1,7 +1,7 @@
 ---
 title: "WEEKEND"
 date: 2026-11-02 20:35
-end_date: "2026-11-03 20:35"
+end_date: "2026-11-03 22:45"
 venue: "Pathé Azur City"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 ville: "tunis"
@@ -9,7 +9,7 @@ category: "cinema"
 link: "https://tunis.events/fr/cinema/weekend"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-02 20:35", "2026-11-02 22:45", "2026-11-03 12:00", "2026-11-03 14:05", "2026-11-03 16:15", "2026-11-03 18:25", "2026-11-03 20:35"]
+seances: ["2026-11-02 20:35", "2026-11-02 22:45", "2026-11-03 12:00", "2026-11-03 14:05", "2026-11-03 16:15", "2026-11-03 18:25", "2026-11-03 20:35", "2026-11-03 22:45"]
 image: "https://api.tunis.events/storage/54656839d0e7cae0d56661e05932464e.png"
 film: true
 ajoute: "2026-11-02"

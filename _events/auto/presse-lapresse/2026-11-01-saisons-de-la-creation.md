@@ -2,7 +2,7 @@
 title: "Saisons de la création"
 date: 2026-11-01
 end_date: "2026-11-07"
-venue: "Tunisie, voir l'article"
+venue: "Théâtre Le 4ème Art"
 ville: "tunis"
 category: "theatre"
 link: "https://www.lapresse.tn/2026/11/01/ouverture-des-saisons-de-la-creation-au-4e-art-une-scene-des-histoires-un-theatre-en-mouvement/"

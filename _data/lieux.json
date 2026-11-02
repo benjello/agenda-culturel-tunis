@@ -37,11 +37,11 @@
   "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Galerie TGM": "galerie-tgm",
+  "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Maison des Arts du Belvédère": "maison-des-arts-du-belvedere",
   "Studio B52": "studio-b52",
   "Steps Club Sousse": "steps-club-sousse",
   "One Resort": "one-resort",
-  "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
@@ -130,6 +130,15 @@
    "n": 7
   },
   {
+   "slug": "theatre-le-4eme-art",
+   "nom": "Théâtre Le 4ème Art",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.80189,
+   "lon": 10.18123,
+   "n": 7
+  },
+  {
    "slug": "theatre-municipal-de-tunis",
    "nom": "Théâtre municipal de Tunis",
    "type": "theatre",
@@ -154,15 +163,6 @@
    "ville": "sousse",
    "lat": 36.83351,
    "lon": 10.10422,
-   "n": 6
-  },
-  {
-   "slug": "theatre-le-4eme-art",
-   "nom": "Théâtre Le 4ème Art",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.80189,
-   "lon": 10.18123,
    "n": 6
   },
   {
@@ -330,7 +330,7 @@
   {
    "slug": "le-32bis",
    "nom": "Le 32Bis",
-   "type": "autre",
+   "type": "galerie",
    "ville": "tunis",
    "lat": 36.79509,
    "lon": 10.1838,

@@ -8,7 +8,6 @@ category: "cinema"
 link: "https://tunis.events/events/8L4dM8/palestine-cinema-days-the-dream-by-mohammad-malas-cinemadart"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-02", "2026-11-02 19:30"]
 image: "https://api.tunis.events/storage/1916c8b6d8588db188ff10175739a864.jpg"
 film: true
 ajoute: "2026-11-02"
