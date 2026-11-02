@@ -249,6 +249,53 @@
 
   if (langue !== 'fr') traduire(); else document.querySelectorAll('[data-langue="fr"]').forEach(function (b) { b.classList.add('active'); });
 
+  // ---- Grand écran : un clic sur un événement ouvre sa fiche dans un panneau à droite,
+  // sans quitter la liste. Ctrl/Cmd+clic ou clic du milieu ouvrent toujours la vraie page.
+  // Sur téléphone (écran étroit), rien ne change : le lien mène à la page.
+  var large = window.matchMedia ? window.matchMedia('(min-width: 1100px)') : { matches: false };
+  var panneau = null, carteChoisie = null, demande = 0;
+  function fermerApercu() {
+    if (panneau) { panneau.remove(); panneau = null; }
+    if (carteChoisie) { carteChoisie.classList.remove('choisi'); carteChoisie = null; }
+  }
+  function ouvrirApercu(carte, url) {
+    if (!panneau) {
+      panneau = document.createElement('aside');
+      panneau.className = 'apercu';
+      panneau.setAttribute('aria-label', t('apercu', 'Aperçu'));
+      document.body.appendChild(panneau);
+    }
+    if (carteChoisie) carteChoisie.classList.remove('choisi');
+    carteChoisie = carte; carte.classList.add('choisi');
+    panneau.innerHTML = '<div class="apercu-barre"><a class="ouvrir"></a><button type="button" class="fermer">×</button></div>' +
+      '<p class="chargement">…</p>';
+    var lien = panneau.querySelector('.ouvrir');
+    lien.href = url; lien.textContent = t('ouvrir_page', 'Ouvrir la page') + ' ↗';
+    var bf = panneau.querySelector('.fermer');
+    bf.title = t('fermer', 'Fermer'); bf.setAttribute('aria-label', bf.title);
+    bf.onclick = fermerApercu;
+    var n = ++demande;
+    fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (html) {
+      if (n !== demande || !panneau) return;
+      var fiche = new DOMParser().parseFromString(html, 'text/html').querySelector('.event-page');
+      if (!fiche) throw new Error('fiche');
+      if (d.classList.contains('leger')) fiche.querySelectorAll('img.affiche-grande').forEach(function (i) { i.remove(); });
+      panneau.querySelector('.chargement').replaceWith(document.importNode(fiche, true));
+      panneau.scrollTop = 0;
+      traduire(); marquerFavoris();
+    }).catch(function () { if (n === demande) location.href = url; });
+  }
+  document.addEventListener('click', function (ev) {
+    if (!large.matches || ev.defaultPrevented || ev.button !== 0 || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.altKey) return;
+    var a = ev.target.closest('.event h3 a, .event a.vignette');
+    var carte = a && a.closest('.event');
+    if (!carte || carte.classList.contains('event-page') || carte.closest('.apercu')) return;
+    ev.preventDefault();
+    ouvrirApercu(carte, a.href);
+  });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && panneau) fermerApercu(); });
+  if (large.addEventListener) large.addEventListener('change', function (m) { if (!m.matches) fermerApercu(); });
+
   // ---- Appli installable : le service worker garde les pages pour les consulter hors connexion
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
     navigator.serviceWorker.register((window.BASE || '/') + 'sw.js').catch(function () {});
