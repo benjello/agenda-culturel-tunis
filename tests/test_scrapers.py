@@ -820,6 +820,16 @@ class PresseDatesTitres(unittest.TestCase):
         self.assertTrue(presse._NOUVELLE.search("Il a été distingué par un prix"))
         self.assertFalse(presse._NOUVELLE.search("Le festival a été inauguré vendredi soir"))
 
+    def test_lieu_du_registre_cite_dans_le_corps(self):
+        from scrapers.sources.presse import lieu_connu
+        noms = [("4eme art", "Théâtre Le 4ème Art"), ("maison des arts du belvedere", "Maison des Arts du Belvédère")]
+        texte = "La quatrième édition a été inaugurée vendredi soir à la salle du Quatrième Art, à Tunis."
+        self.assertEqual(lieu_connu(texte, noms), "Théâtre Le 4ème Art")
+        self.assertEqual(lieu_connu("Au 4ème art puis à la Maison des Arts du Belvédère", noms), "Théâtre Le 4ème Art")
+        self.assertEqual(lieu_connu("Un festival à Tunis", noms), "")
+        # avec le vrai registre (_data/lieux.json)
+        self.assertEqual(lieu_connu("à la salle du Quatrième Art, à Tunis"), "Théâtre Le 4ème Art")
+
     def test_festival_sans_lieu_devient_une_entree_festival(self):
         from scrapers.sources import presse
         d = dt.date.today() + dt.timedelta(days=10)
