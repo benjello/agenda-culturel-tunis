@@ -296,6 +296,105 @@
   document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && panneau) fermerApercu(); });
   if (large.addEventListener) large.addEventListener('change', function (m) { if (!m.matches) fermerApercu(); });
 
+
+  // ---- Comprendre sans cliquer : aperçu au survol (souris) ou au toucher du bouton 👁 (téléphone),
+  // et « Ce soir à Tunis » en tête de l'accueil. Tout vient des attributs data-* de la carte.
+  var bulle = null, delaiBulle = 0, peutSurvoler = window.matchMedia ? window.matchMedia('(hover: hover) and (pointer: fine)') : { matches: false };
+  function esc(x) { return (x || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function contenuApercu(c) {
+    var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
+    var prix = c.dataset.prix || '', lignes = [];
+    if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h'));
+    if (c.dataset.lieu) lignes.push('📍 ' + esc(c.dataset.lieu));
+    if (c.hasAttribute('data-gratuit')) lignes.push('✓ ' + esc(t('gratuit', 'Gratuit')));
+    else if (prix) lignes.push('🎟 ' + esc(prix));
+    return (c.dataset.image ? '<img src="' + esc(c.dataset.image) + '" alt="" loading="lazy">' : '') +
+      '<div class="bulle-corps"><span class="tag" style="background:' + esc(c.dataset.couleur) + '">' + esc(c.dataset.categorie) + '</span>' +
+      '<strong>' + esc(c.dataset.titre) + '</strong>' +
+      (lignes.length ? '<p class="bulle-infos">' + lignes.join(' · ') + '</p>' : (meta ? '<p class="bulle-infos">' + esc(meta.textContent.trim()) + '</p>' : '')) +
+      (c.dataset.resume ? '<p class="bulle-texte">' + esc(c.dataset.resume) + '</p>' : '') + '</div>';
+  }
+  function fermerBulle() {
+    clearTimeout(delaiBulle);
+    if (bulle) { bulle.remove(); bulle = null; }
+    document.querySelectorAll('.feuille-fond').forEach(function (x) { x.remove(); });
+  }
+  function montrerBulle(c, feuille) {
+    fermerBulle();
+    bulle = document.createElement('div');
+    bulle.className = feuille ? 'bulle feuille' : 'bulle';
+    bulle.setAttribute('role', feuille ? 'dialog' : 'tooltip');
+    bulle.innerHTML = contenuApercu(c);
+    if (feuille) {
+      var fond = document.createElement('div'); fond.className = 'feuille-fond'; fond.onclick = fermerBulle;
+      document.body.appendChild(fond);
+      var lien = document.createElement('a'); lien.className = 'bulle-ouvrir'; lien.href = c.dataset.lien;
+      lien.textContent = t('ouvrir_page', 'Ouvrir la page') + ' ↗';
+      bulle.appendChild(lien);
+    }
+    document.body.appendChild(bulle);
+    if (!feuille) {
+      var r = c.getBoundingClientRect(), b = bulle.getBoundingClientRect();
+      var x = Math.min(Math.max(8, r.left + 16), window.innerWidth - b.width - 8);
+      var y = r.bottom + 6 + b.height > window.innerHeight - 8 ? Math.max(8, r.top - b.height - 6) : r.bottom + 6;
+      bulle.style.left = x + 'px'; bulle.style.top = y + 'px';
+    }
+  }
+  document.addEventListener('mouseover', function (ev) {
+    if (!peutSurvoler.matches) return;
+    var c = ev.target.closest && ev.target.closest('.event');
+    if (!c || c.classList.contains('event-page') || c.closest('.apercu')) { return; }
+    if (c === ev.relatedTarget || c.contains(ev.relatedTarget)) return;
+    clearTimeout(delaiBulle);
+    delaiBulle = setTimeout(function () { montrerBulle(c, false); }, 450);
+  });
+  document.addEventListener('mouseout', function (ev) {
+    if (!peutSurvoler.matches) return;
+    var c = ev.target.closest && ev.target.closest('.event');
+    if (!c || c.contains(ev.relatedTarget)) return;
+    fermerBulle();
+  });
+  document.addEventListener('click', function (ev) {
+    var b = ev.target.closest && ev.target.closest('.apercu-rapide');
+    if (!b) return;
+    ev.preventDefault();
+    montrerBulle(b.closest('.event'), true);
+  });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') fermerBulle(); });
+  window.addEventListener('scroll', function () { if (bulle && !bulle.classList.contains('feuille')) fermerBulle(); }, { passive: true });
+
+  // « Ce soir à Tunis » : les événements d'aujourd'hui avec une heure, classés par heure, avec le temps qui reste.
+  (function () {
+    var zone = document.getElementById('ce-soir'), liste = document.getElementById('ce-soir-liste');
+    if (!zone || !liste) return;
+    var aujourdhui = iso(new Date()), maintenant = new Date(), vus = {}, items = [];
+    document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (c) {
+      var h = c.dataset.heure;
+      if (!h || c.dataset.debut !== aujourdhui || c.dataset.date !== aujourdhui || vus[c.dataset.id]) return;
+      if (c.classList.contains('discret') || c.hasAttribute('hidden')) return;
+      vus[c.dataset.id] = 1;
+      var hm = h.split(':'), debut = new Date(); debut.setHours(+hm[0], +hm[1], 0, 0);
+      // Commencé depuis plus de 2 h : on ne le propose plus
+      if (maintenant - debut > 2 * 3600 * 1000) return;
+      items.push({ c: c, h: h, debut: debut });
+    });
+    if (!items.length) return;
+    items.sort(function (a, b) { return a.h < b.h ? -1 : a.h > b.h ? 1 : 0; });
+    items.slice(0, 8).forEach(function (it) {
+      var min = Math.round((it.debut - maintenant) / 60000), reste;
+      if (min <= 0) reste = t('en_cours_maintenant', 'a commencé');
+      else if (min < 60) reste = t('dans', 'dans') + ' ' + min + ' min';
+      else reste = t('dans', 'dans') + ' ' + Math.floor(min / 60) + ' h' + (min % 60 ? (' ' + ('0' + (min % 60)).slice(-2)) : '');
+      var a = document.createElement('li');
+      a.innerHTML = '<span class="frise-heure">' + it.h.replace(':', 'h').replace(/h00$/, 'h') + '</span>' +
+        '<a href="' + esc(it.c.dataset.lien) + '">' + esc(it.c.dataset.titre) + '</a>' +
+        '<span class="frise-lieu">' + esc((it.c.dataset.lieu || '').split(',')[0]) + '</span>' +
+        '<span class="frise-reste">' + esc(reste) + '</span>';
+      liste.appendChild(a);
+    });
+    zone.hidden = false;
+  })();
+
   // ---- Appli installable : le service worker garde les pages pour les consulter hors connexion
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
     navigator.serviceWorker.register((window.BASE || '/') + 'sw.js').catch(function () {});
