@@ -6,6 +6,11 @@ de la culture, festivals). Un article devient un événement s'il :
   - donne une date à venir (« du 5 au 9 novembre », « le 12 novembre », « 12 novembre 2026 »).
 Le lieu est cherché dans le texte (« à la Cité de la culture », « au Théâtre municipal »…).
 
+Un article ne devient JAMAIS une entrée « Autre » ni une entrée sans lieu précis : il faut une catégorie
+reconnue et un lieu. Sinon l'article est gardé dans _data/presse.json et rattaché, à la fin du passage
+(scrapers/doublons.py), à la manifestation officielle qu'il couvre (section « Dans la presse » de la fiche) ;
+s'il n'y en a pas, il reste simplement dans ce fichier.
+
 Options :
   garder   expression régulière qui remplace MOTS
   lieu     lieu par défaut quand le texte n'en donne pas (défaut : « Tunisie, voir l'article »)
@@ -192,10 +197,28 @@ def est_sortie_de_film(titre: str, texte: str = "") -> bool:
     return bool(_FILM.search(titre)) and not _SEANCE_UNIQUE.search(f"{titre} {texte[:300]}")
 
 
-def depuis_flux(xml: str, source: dict) -> list[Evenement]:
+def _categorie(a: dict, source: dict) -> str:
+    """Catégorie lue dans le titre puis dans le début du texte ; vide si rien de net."""
+    if re.search(r"\bgalerie\b|exposition|\bphoto|معرض", a["titre"], re.I):
+        return "expo"
+    c = categorie_du_titre(a["titre"]) or categorie_du_titre(a["texte"][:300])
+    if c:
+        return c
+    if re.search(r"\bgalerie\b|exposition|\btoiles\b|vernissage", a["texte"][:300], re.I):
+        return "expo"
+    if re.search(r"\bth[ée][âa]tre\b|\bpi[èe]ce\b|مسرحية", a["texte"][:300], re.I):
+        return "theatre"
+    cat = source.get("categorie", "")
+    return "" if cat in ("", "autre") else cat
+
+
+def analyser(xml: str, source: dict) -> tuple[list[Evenement], list[dict]]:
+    """(événements, articles seulement). Un article devient un événement s'il donne une date à venir,
+    un lieu précis et une catégorie ; sinon il est rangé avec les articles à rattacher."""
     o = source.get("options") or {}
     mots = re.compile(o.get("garder", MOTS), re.I)
-    res = []
+    journal = source.get("genre") == "presse"  # les délégations régionales (genre « administration ») gardent l'ancienne règle
+    res, articles = [], []
     for a in _articles(xml):
         tout = f"{a['titre']}. {a['texte']}"
         if not a["titre"] or not mots.search(a["titre"] + " " + a["texte"][:400]):
@@ -208,16 +231,23 @@ def depuis_flux(xml: str, source: dict) -> list[Evenement]:
         if not debut:
             continue
         m = _LIEU.search(tout)
-        lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "Tunisie, voir l'article")
-        categorie = (categorie_du_titre(a["titre"])
-                     or ("expo" if re.search(r"\bgalerie\b|exposition|معرض", a["titre"], re.I) else "")
-                     or categorie_du_titre(a["texte"][:300])
-                     or source.get("categorie", "autre"))
-        res.append(Evenement(titre=titre_evenement(a["titre"], a["texte"]), article=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
-                             fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None, lien=a["lien"] or source["url"],
-                             lieu=lieu, categorie=categorie,
-                             prix=prix_du_texte(tout), description=resume(a["texte"], 400)))
-    return res
+        lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "" if journal else "Tunisie, voir l'article")
+        categorie = _categorie(a, source) or ("" if journal else "autre")
+        titre = titre_evenement(a["titre"], a["texte"])
+        if lieu and categorie:
+            res.append(Evenement(titre=titre, article=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
+                                 fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None,
+                                 lien=a["lien"] or source["url"], lieu=lieu, categorie=categorie,
+                                 prix=prix_du_texte(tout), description=resume(a["texte"], 400)))
+        elif a["lien"]:
+            articles.append({"titre": a["titre"], "evenement": titre, "lien": a["lien"], "source": source.get("id", ""),
+                             "source_nom": source.get("nom", ""), "date": a["date"].isoformat(),
+                             "debut": debut.isoformat(), "fin": (fin or debut).isoformat(), "lieu": lieu})
+    return res, articles
+
+
+def depuis_flux(xml: str, source: dict) -> list[Evenement]:
+    return analyser(xml, source)[0]
 
 
 def articles_de_film(xml: str, source: dict) -> list[dict]:
@@ -235,4 +265,7 @@ def recuperer(source: dict) -> list[Evenement]:
     if source.get("genre") == "presse":
         from .. import critiques
         critiques.garder(articles_de_film(xml, source))
-    return depuis_flux(xml, source)
+    evenements, articles = analyser(xml, source)
+    if source.get("genre") == "presse":
+        critiques.garder(articles, critiques.FICHIER_EVENEMENTS)
+    return evenements
