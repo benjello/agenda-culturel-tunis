@@ -418,6 +418,24 @@ class Doublons(unittest.TestCase):
             self.assertNotIn("doublon", (d / "autre" / "jazz-manouche-trio.md").read_text())
 
 
+    def test_article_au_titre_generique_cite_le_titre_de_l_expo(self):
+        """« À l'Institut français de Tunis » ne ressemble pas au titre de l'expo, mais son texte la cite."""
+        from scrapers import doublons
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for src, titre, debut, corps in [
+                ("ift-pdf", "Images de Syrie, Palmyre, Alep, Damas", f"{FUTUR}-10-27 18:00", ""),
+                ("presse-x", "À l’Institut français de Tunis", f"{FUTUR}-10-27",
+                 "L'Institut accueille l'exposition « Images de Syrie, Palmyre, Alep, Damas ».")]:
+                (d / src).mkdir()
+                (d / src / f"{slug(titre)}.md").write_text(
+                    f'---\ntitle: "{titre}"\ndate: {debut}\nend_date: "{FUTUR}-11-27"\nvenue: "Institut français de Tunis"\n'
+                    f'link: "https://{src}.tn/x"\nsource: "{src}"\nsource_name: "Journal"\nauto: true\n---\n{corps}\n')
+            sources = [{"id": "ift-pdf", "type": "lieu"}, {"id": "presse-x", "type": "agenda", "genre": "presse"}]
+            self.assertEqual(doublons.marquer(sources, d), 1)
+            self.assertNotIn("doublon", (d / "ift-pdf" / "images-de-syrie-palmyre-alep-damas.md").read_text())
+            self.assertIn("doublon: true", (d / "presse-x" / f"{slug('À l’Institut français de Tunis')}.md").read_text())
+
     def test_article_de_presse_recoupe_une_expo_officielle(self):
         """Expo du 27 oct. au 27 nov. : l'article de presse (paru plus tard, même lieu) devient un lien « presse »."""
         from scrapers import doublons

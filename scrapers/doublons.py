@@ -87,6 +87,15 @@ def proches(a: set, b: set, seuil: float, minimum: int = 1) -> bool:
     return commun >= minimum and commun / min(len(a), len(b)) >= seuil
 
 
+def _titre_dans_texte(officiel: dict, article: tuple) -> bool:
+    """Le titre de l'événement officiel est cité dans le texte de l'article
+    (titre d'article générique : « À l'Institut français de Tunis », texte : « l'exposition Images de Syrie… »)."""
+    titre = _norm(officiel.get("title", ""))
+    if len(titre.split()) < 2 or len(titre) < 12:
+        return False
+    return titre in _norm(article[2])
+
+
 def _alias() -> dict:
     try:
         from .commun import RACINE
@@ -172,7 +181,8 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO, articles: list[di
             (d1, f1), (d2, f2) = periode(ci), periode(cj)
             li, lj = _lieu_proche(ci.get("venue", ""), alias), _lieu_proche(cj.get("venue", ""), alias)
             if d1 <= f2 and d2 <= f1 and (li == lj if (li and lj) else True) and \
-                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5 if (li and lj) else 0.8, 2):
+                    (proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5 if (li and lj) else 0.8, 2)
+                     or (li and li == lj and _titre_dans_texte(*((cj, ei) if ci.get("source") in presse else (ci, ej))))):
                 unir(j, x)
     groupes: dict[int, list] = {}
     for i, e in enumerate(evts):
