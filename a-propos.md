@@ -44,3 +44,7 @@ Les données sont publiées sous licence [CC BY 4.0](https://creativecommons.org
 réutilisation libre, y compris commerciale, en citant « Agenda culturel Tunis ».
 Chaque événement garde le lien vers sa source d'origine.
 {: data-th="apropos.p6"}
+
+Les courts descriptifs viennent de l'annonce d'origine, de [Wikipédia](https://fr.wikipedia.org)
+(licence CC BY-SA, lien vers l'article à chaque fois) et, pour certains synopsis de films,
+de [TMDb](https://www.themoviedb.org) : ce site utilise l'API TMDb sans être approuvé ni certifié par TMDb.
