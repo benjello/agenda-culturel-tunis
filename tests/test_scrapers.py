@@ -681,6 +681,13 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].image, "assets/x.jpg")
         self.assertEqual(evts[0].lieu, "B7L9, La Marsa")
 
+    def test_dates_en_anglais(self):
+        from scrapers import lecteurs
+        ref = dt.date(2026, 10, 31)
+        self.assertEqual(lecteurs.jours_anglais("Launch party. November 8th, at @dar_ziqua", ref), ["2026-11-08"])
+        self.assertEqual(lecteurs.jours_anglais("Sat 8th of Nov · Fri Dec. 12", ref), ["2026-11-08", "2026-12-12"])
+        self.assertEqual(lecteurs.jours_anglais("May be an image of text, from 12h to 21h", ref), [])
+
     def test_lecture_apify(self):
         from scrapers.sources import instagram
         j = dt.date.today() + dt.timedelta(days=3)
