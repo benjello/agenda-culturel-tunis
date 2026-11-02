@@ -6,8 +6,9 @@ de la culture, festivals). Un article devient un événement s'il :
   - donne une date à venir (« du 5 au 9 novembre », « le 12 novembre », « 12 novembre 2026 »).
 Le lieu est cherché dans le texte (« à la Cité de la culture », « au Théâtre municipal »…).
 
-Un article ne devient JAMAIS une entrée « Autre » ni une entrée sans lieu précis : il faut une catégorie
-reconnue et un lieu. Sinon l'article est gardé dans _data/presse.json et rattaché, à la fin du passage
+Un article ne devient JAMAIS une entrée « Autre » : il faut une catégorie reconnue et un lieu. Un article sur
+un festival ou une manifestation multi-jours (Jaou Tunis, Saisons de la création…) devient une entrée de festival
+(champ « festival », catégorie de sa discipline, « spectacle » à défaut) même si le lieu est vague. Sinon l'article est gardé dans _data/presse.json et rattaché, à la fin du passage
 (scrapers/doublons.py), à la manifestation officielle qu'il couvre (section « Dans la presse » de la fiche) ;
 s'il n'y en a pas, il reste simplement dans ce fichier.
 
@@ -25,7 +26,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from ..commun import Evenement, categorie_du_titre, prix_du_texte, propre, resume, telecharger, toutes_dates
+from ..commun import Evenement, slug, categorie_du_titre, prix_du_texte, propre, resume, telecharger, toutes_dates
 from ..commun import MOIS
 from ..lecteurs import _annee, jours_sans_annee, periode
 from .rss import _racine
@@ -197,6 +198,13 @@ def est_sortie_de_film(titre: str, texte: str = "") -> bool:
     return bool(_FILM.search(titre)) and not _SEANCE_UNIQUE.search(f"{titre} {texte[:300]}")
 
 
+_FESTIVAL = re.compile(r"festival|biennale|\bsalon\b|foire|carnaval|journ[ée]es|\bsaisons?\b|rencontres|مهرجان|أيام", re.I)
+
+
+def _est_festival(titre: str, nom: str) -> bool:
+    return bool(_FESTIVAL.search(nom) or _FESTIVAL.search(titre))
+
+
 def _categorie(a: dict, source: dict) -> str:
     """Catégorie lue dans le titre puis dans le début du texte ; vide si rien de net."""
     if re.search(r"\bgalerie\b|exposition|\bphoto|معرض", a["titre"], re.I):
@@ -234,8 +242,11 @@ def analyser(xml: str, source: dict) -> tuple[list[Evenement], list[dict]]:
         lieu = propre(m.group(1)).rstrip(" .") if m else o.get("lieu", "" if journal else "Tunisie, voir l'article")
         categorie = _categorie(a, source) or ("" if journal else "autre")
         titre = titre_evenement(a["titre"], a["texte"])
+        festival = journal and _est_festival(a["titre"], titre) and (fin is not None or _FESTIVAL.search(titre))
+        if festival and not (lieu and categorie):  # manifestation sans lieu précis : entrée de festival
+            lieu, categorie = lieu or "Tunisie, voir l'article", categorie or "spectacle"
         if lieu and categorie:
-            res.append(Evenement(titre=titre, article=a["titre"], debut=dt.datetime(debut.year, debut.month, debut.day),
+            res.append(Evenement(titre=titre, article=a["titre"], festival=slug(titre) if festival else "", debut=dt.datetime(debut.year, debut.month, debut.day),
                                  fin=dt.datetime(fin.year, fin.month, fin.day) if fin else None,
                                  lien=a["lien"] or source["url"], lieu=lieu, categorie=categorie,
                                  prix=prix_du_texte(tout), description=resume(a["texte"], 400)))

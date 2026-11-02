@@ -171,8 +171,8 @@ def marquer(sources: list[dict], dossier: Path = DOSSIER_AUTO, articles: list[di
                 continue
             (d1, f1), (d2, f2) = periode(ci), periode(cj)
             li, lj = _lieu_proche(ci.get("venue", ""), alias), _lieu_proche(cj.get("venue", ""), alias)
-            if d1 <= f2 and d2 <= f1 and li and li == lj and \
-                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5, 2):
+            if d1 <= f2 and d2 <= f1 and (li == lj if (li and lj) else True) and \
+                    proches(mots(ci.get("title", "")), mots(cj.get("title", "")), 0.5 if (li and lj) else 0.8, 2):
                 unir(j, x)
     groupes: dict[int, list] = {}
     for i, e in enumerate(evts):

@@ -743,7 +743,7 @@ class PresseDatesTitres(unittest.TestCase):
         xml = (f'<?xml version="1.0"?><rss><channel>'
                f'<item><title>Le Prix Saint Augustin distingue un historien</title><link>https://x/1</link>'
                f'<description>Remise du prix le {d.day} {mois} {d.year} à la Maison de la culture, festival.</description></item>'
-               f'<item><title>Festival de la création</title><link>https://x/2</link>'
+               f'<item><title>Une pièce dans la ville</title><link>https://x/2</link>'
                f'<description>Théâtre : le {d.day} {mois} {d.year}, une pièce dans la ville.</description></item>'
                f'</channel></rss>')
         journal = {"id": "j", "nom": "Journal", "url": "u", "genre": "presse", "categorie": "autre"}
@@ -752,6 +752,18 @@ class PresseDatesTitres(unittest.TestCase):
         self.assertEqual(sorted(a["lien"] for a in articles), ["https://x/1", "https://x/2"])
         evts, _ = presse.analyser(xml, {**journal, "genre": "administration"})
         self.assertEqual(len(evts), 2)  # sources officielles : règle inchangée (lieu par défaut, « autre » possible)
+
+
+    def test_festival_sans_lieu_devient_une_entree_festival(self):
+        from scrapers.sources import presse
+        d = dt.date.today() + dt.timedelta(days=10)
+        mois = list(commun.MOIS)[[v for v in commun.MOIS.values()].index(d.month)]
+        xml = (f'<?xml version="1.0"?><rss><channel><item><title>Ouverture des « Saisons de la création » : un théâtre en mouvement</title>'
+               f'<link>https://x/1</link><description>Le festival se tient jusqu\'au {d.day} {mois} {d.year}.</description></item></channel></rss>')
+        evts, articles = presse.analyser(xml, {"id": "j", "nom": "Journal", "url": "u", "genre": "presse", "categorie": "autre"})
+        self.assertEqual(articles, [])
+        self.assertEqual((evts[0].titre, evts[0].festival), ("Saisons de la création", "saisons-de-la-creation"))
+        self.assertNotEqual(evts[0].categorie, "autre")
 
 
 class TunisEvents(unittest.TestCase):
