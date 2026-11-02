@@ -11,7 +11,7 @@ import subprocess
 
 import yaml
 
-from .commun import RACINE, age_conseille, est_famille
+from .commun import RACINE, age_conseille, est_famille, langues_annoncees
 from .villes import ville
 
 
@@ -52,6 +52,8 @@ def ranger(f, enfants: set[str] = frozenset()) -> bool:
     nouvelle = _poser(nouvelle, "famille", "true" if famille else None)
     age = age_conseille(champ("title"), corps) if famille else None
     nouvelle = _poser(nouvelle, "age", f'"{age}"' if age else None)
+    langues = langues_annoncees(champ("title"), corps)
+    nouvelle = _poser(nouvelle, "langues", "[" + ", ".join(f'"{x}"' for x in langues) + "]" if langues else None)
     if not re.search(r"^ajoute: ", nouvelle, re.M):
         nouvelle = _poser(nouvelle, "ajoute", f'"{_date_ajout(f)}"')
     if nouvelle == tete:

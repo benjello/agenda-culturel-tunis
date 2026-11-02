@@ -197,3 +197,12 @@ a.bouton { border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px;
 .synopsis summary, .descriptif-plie summary { cursor: pointer; color: var(--muted); }
 .synopsis p { color: var(--fg); margin: 6px 0 0; max-width: 65ch; line-height: 1.45; }
 .descriptif-plie .descriptif { margin-top: 4px; }
+
+/* Photo et infos OpenStreetMap des fiches (scrapers/enrichir.py) */
+.photo-fiche { margin: .8rem 0; max-width: 400px; }
+.photo-fiche img { width: 100%; height: auto; border-radius: 8px; }
+.photo-fiche figcaption { font-size: .75rem; opacity: .7; }
+.infos-osm { font-size: .9rem; }
+.infos-osm code { font-size: .85rem; }
+.prix.complet { background: #8a1c1c; color: #fff; padding: 0 .4rem; border-radius: 4px; font-weight: 600; }
+.tag.langue { background: #5b4b8a; }

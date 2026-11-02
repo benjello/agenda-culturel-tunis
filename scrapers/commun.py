@@ -326,3 +326,25 @@ _PAS_UN_EVENEMENT = re.compile(
 def pas_un_evenement(titre: str) -> bool:
     """Vrai pour une annonce de service (« la Médiathèque ouvre exceptionnellement… »)."""
     return bool(_PAS_UN_EVENEMENT.search(titre or ""))
+
+
+# Langue de l'événement, seulement quand l'annonce la donne clairement : « pièce en arabe », « en langue
+# française », « VOSTFR », ou un titre qui finit par « en français ». « Traduire le savoir en arabe » ne compte pas.
+_EVT = r"(?:spectacle|pi[èe]ce|conf[ée]rence|lecture|film|projection|d[ée]bat|rencontre|atelier|visite|s[ée]ance|conte|table ronde)s?"
+_LANGUES = [
+    ("ar", r"en langue arabe|en dialecte tunisien|en darija|باللغة العربية|بالدارجة|باللهجة التونسية|"
+           rf"{_EVT}(?: \S+){{0,3}} en (?:arabe|tunisien)\b"),
+    ("fr", r"en langue fran[çc]aise|version fran[çc]aise|\bVF\b|باللغة الفرنسية|"
+           rf"{_EVT}(?: \S+){{0,3}} en fran[çc]ais\b"),
+    ("en", r"in english|en langue anglaise|باللغة الإنجليزية|"
+           rf"{_EVT}(?: \S+){{0,3}} en anglais\b"),
+    ("vo", r"\bVOST(?:FR|A)?\b|version originale"),
+]
+_FIN_TITRE = {"ar": r"en (?:arabe|tunisien)\s*$", "fr": r"en fran[çc]ais\s*$", "en": r"(?:en anglais|in english)\s*$"}
+
+
+def langues_annoncees(titre: str, *textes: str) -> list[str]:
+    t = " ".join(x or "" for x in (titre, *textes))
+    return [code for code, motif in _LANGUES
+            if re.search(motif, t, re.I)
+            or (":" not in (titre or "") and re.search(_FIN_TITRE.get(code, "$^"), titre or "", re.I))]

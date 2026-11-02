@@ -27,6 +27,7 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
     <li>
       <a href="https://www.google.com/maps/search/?api=1&query={{ m.nom | append: ', ' | append: m.lieu | append: ', Tunisie' | url_encode }}" rel="noopener">{{ m.nom }}</a>
       <small>{{ m.lieu }} · <span data-t="musee.{{ m.genre }}">{{ g }}</span></small>
+      {%- capture cle %}musee:{{ m.nom }}{% endcapture %}{% include enrichi.html cle=cle nom=m.nom photo=false %}
       {%- assign d = site.data.descriptifs.musees[m.nom] -%}
       {%- if d %}
       <details class="descriptif-plie"><summary data-t="en_savoir_plus">En savoir plus</summary><p class="descriptif">{{ d.texte | escape }}{% if d.source %} <small class="descriptif-source">· {% if d.url %}<a href="{{ d.url }}" rel="noopener">{{ d.source }}</a>{% else %}{{ d.source }}{% endif %}</small>{% endif %}</p></details>

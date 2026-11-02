@@ -47,6 +47,18 @@ def _texte(v) -> str:
     return re.sub(r"<[^>]+>", " ", html.unescape(v)).strip()
 
 
+def prix_offre(offre: dict) -> str:
+    """Prix d'une offre schema.org ; « Gratuit » si le prix est 0, « Complet » si épuisé."""
+    p = offre.get("price")
+    if p in (0, "0", "0.00", "0.0", 0.0):
+        prix = "Gratuit"
+    else:
+        prix = f"{p} {offre.get('priceCurrency', '')}".strip() if p else ""
+    if re.search(r"SoldOut", str(offre.get("availability") or ""), re.I):
+        prix = f"{prix} · Complet" if prix and prix != "Gratuit" else "Complet"
+    return prix
+
+
 def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
     res = []
     for o in objets:
@@ -57,7 +69,7 @@ def depuis_json_ld(objets: list[dict], url_page: str) -> list[Evenement]:
         offre = o.get("offers") or {}
         if isinstance(offre, list):
             offre = offre[0] if offre else {}
-        prix = f"{offre.get('price')} {offre.get('priceCurrency', '')}".strip() if offre.get("price") else ""
+        prix = prix_offre(offre)
         image = o.get("image")
         image = image[0] if isinstance(image, list) and image else image
         image = image.get("url") if isinstance(image, dict) else image
