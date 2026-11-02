@@ -655,6 +655,7 @@
 
 - id: fb-ift-facebook
   nom: Institut français de Tunisie (Facebook)
+  fiche: ift-pdf  # une seule fiche « organisateur » avec le programme PDF
   url: https://www.facebook.com/IFTunisie
   type: lieu
   genre: institution
@@ -664,7 +665,7 @@
   tous_les_jours: 3
   options:
     page: "IFTunisie"
-    lieu: "Institut français de Tunisie (Facebook)"
+    lieu: "Institut français de Tunisie"
     lecteur: une_affiche_par_evenement
     max: 6
     resultats: 8
@@ -828,6 +829,7 @@
 
 - id: ift-pdf
   nom: Institut français de Tunisie (programme PDF)
+  nom_fiche: Institut français de Tunisie
   url: https://www.institutfrancais-tunisie.com/
   type: lieu
   genre: institution

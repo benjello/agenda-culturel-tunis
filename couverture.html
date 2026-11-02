@@ -35,7 +35,7 @@ description: "Bilan de la semaine : combien d'événements l'agenda couvre, par 
 <table class="sources">
   <tbody>
   {%- for s in b.par_source %}{% assign src = site.data.sources | where: "id", s[0] | first %}
-    <tr><td>{% if src %}<a href="{{ '/collectifs/' | append: src.id | append: '/' | relative_url }}">{{ src.nom }}</a>{% else %}{{ s[0] }}{% endif %}</td><td>{{ s[1] }}</td></tr>
+    <tr><td>{% if src %}<a href="{% assign fiche = src.fiche | default: src.id %}{{ '/collectifs/' | append: fiche | append: '/' | relative_url }}">{{ src.nom }}</a>{% else %}{{ s[0] }}{% endif %}</td><td>{{ s[1] }}</td></tr>
   {%- endfor %}
   </tbody>
 </table>
