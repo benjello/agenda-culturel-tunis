@@ -63,6 +63,16 @@ infos: { ar: "تفاصيل أكثر", en: "More info" }
 seances: { ar: "عروض", en: "screenings" }
 favori: { fr: "Garder en favori", ar: "إضافة إلى المفضلة", en: "Save as favourite" }
 agenda: { fr: "Ajouter à mon agenda", ar: "أضف إلى رزنامتي", en: "Add to my calendar" }
+lib_apercu: { fr: "Aperçu", ar: "معاينة", en: "Preview" }
+lib_favori: { fr: "Favori", ar: "مفضلة", en: "Save" }
+lib_agenda: { fr: "Agenda", ar: "رزنامة", en: "Calendar" }
+lib_partager: { fr: "Partager", ar: "مشاركة", en: "Share" }
+menu_plus: { fr: "Menu", ar: "القائمة", en: "Menu" }
+aller_contenu: { fr: "Aller au contenu", ar: "انتقل إلى المحتوى", en: "Skip to content" }
+filtres_bouton: { fr: "Filtres", ar: "تصفية", en: "Filters" }
+compteur_un: { fr: "1 événement", ar: "حدث واحد", en: "1 event" }
+compteur_n: { fr: "{n} événements", ar: "{n} حدثًا", en: "{n} events" }
+tout_effacer: { fr: "Tout effacer", ar: "مسح الكل", en: "Clear all" }
 partager: { fr: "Partager", ar: "مشاركة", en: "Share" }
 agenda_long: { ar: "📅 أضف إلى رزنامتي", en: "📅 Add to my calendar" }
 partager_long: { ar: "↗ مشاركة", en: "↗ Share" }

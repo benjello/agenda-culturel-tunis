@@ -12,9 +12,12 @@ layout: default
 {%- endcomment -%}
 <div class="accueil">
 <aside class="panneau-filtres" aria-label="Filtres">
+<div class="tiroir" id="tiroir-ou">
 <p class="titre-filtre" data-t="filtre_ou">Où</p>
 {% include choix-ville.html %}
+</div>
 <input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" data-t-placeholder="recherche" aria-label="Chercher" autocomplete="off">
+<button type="button" class="bouton-filtres" id="bouton-filtres" aria-expanded="false" aria-controls="tiroir-ou tiroir-quoi"><span data-t="filtres_bouton">Filtres</span><span class="nb-filtres" id="nb-filtres" hidden></span></button>
 <p class="titre-filtre" data-t="filtre_quand">Quand</p>
 <div class="filters moments" id="moments" role="group" aria-label="Quand">
   <button class="active" data-moment="tout" data-t="moment.tout">Tout moment</button>
@@ -24,6 +27,7 @@ layout: default
   <button data-moment="semaine" data-t="moment.semaine">Cette semaine</button>
   <button data-moment="weekend" data-t="moment.weekend">Ce week-end</button>
 </div>
+<div class="tiroir" id="tiroir-quoi">
 <p class="titre-filtre" data-t="filtre_quoi">Quoi</p>
 <div class="filters" id="filters">
   <button class="active" data-filter="all" data-t="tout">Tout</button>
@@ -34,8 +38,10 @@ layout: default
   <label><input type="checkbox" id="famille"> <span data-t="seul_famille">En famille</span></label>
   <label><input type="checkbox" id="favoris"> <span data-t="seul_favoris">Mes favoris</span></label>
 </div>
+</div>
 </aside>
 <div class="colonne-agenda">
+<p class="compteur" id="compteur-zone"><span id="compteur" role="status" aria-live="polite"></span> <button type="button" class="effacer" id="effacer" hidden data-t="tout_effacer">Tout effacer</button></p>
 <section class="ce-soir" id="ce-soir" hidden aria-label="Ce soir">
   <h2><span data-t="ce_soir_titre">Ce soir à Tunis</span></h2>
   <ol class="frise" id="ce-soir-liste"></ol>
@@ -325,7 +331,35 @@ layout: default
     if (salles) salles.hidden = filter !== 'cinema';
     if (resume) resume.hidden = filter !== 'all';
     document.getElementById('empty').hidden = shown > 0;
+    majAide(shown);
   }
+  // Compteur de résultats, « Tout effacer », nombre de filtres du tiroir, états annoncés aux lecteurs d'écran
+  var cCompteur = document.getElementById('compteur'), bEffacer = document.getElementById('effacer');
+  var bTiroir = document.getElementById('bouton-filtres'), nbF = document.getElementById('nb-filtres');
+  var dernierN = 0;
+  function tt(k, d) { return window.t ? window.t(k, d) : d; }
+  function majAide(n) {
+    if (n !== undefined) dernierN = n;
+    var actifs = (filter !== 'all' ? 1 : 0) + [caseGratuit, caseFamille, caseFavoris].filter(function (c) { return c && c.checked; }).length;
+    var aFiltre = actifs > 0 || moment !== 'tout' || mots.length > 0;
+    if (cCompteur) cCompteur.textContent = dernierN === 1 ? tt('compteur_un', '1 événement') : tt('compteur_n', '{n} événements').replace('{n}', dernierN);
+    if (bEffacer) bEffacer.hidden = !aFiltre;
+    if (nbF) { nbF.hidden = !actifs; nbF.textContent = actifs; }
+    document.querySelectorAll('#filters button, #moments button, #villes button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.classList.contains('active') ? 'true' : 'false');
+    });
+  }
+  document.addEventListener('langue', function () { majAide(); });
+  if (bEffacer) bEffacer.addEventListener('click', function () {
+    moment = 'tout'; mots = []; if (champ) champ.value = '';
+    [caseGratuit, caseFamille, caseFavoris].forEach(function (c) { if (c) c.checked = false; });
+    if (moments) moments.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x.dataset.moment === 'tout'); });
+    choisir('all');
+  });
+  if (bTiroir) bTiroir.addEventListener('click', function () {
+    var ouvert = document.querySelector('.panneau-filtres').classList.toggle('ouvert');
+    bTiroir.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+  });
   function choisir(f) {
     filter = f;
     document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === f); });

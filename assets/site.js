@@ -111,6 +111,13 @@
     if (vide) vide.hidden = n > 0;
   });
 
+  // ---- Menu réduit sur téléphone : « Menu ☰ » ouvre les pages secondaires et les réglages
+  var bm = document.getElementById('bouton-menu');
+  if (bm) bm.addEventListener('click', function () {
+    var ouvert = bm.closest('.site-header').classList.toggle('ouvert');
+    bm.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+  });
+
   // ---- Favoris, gardés dans le navigateur (sans compte)
   var favoris = [];
   try { favoris = JSON.parse(lire('favoris', '[]')); } catch (e) {}
@@ -118,7 +125,7 @@
   function marquerFavoris() {
     document.querySelectorAll('.fav').forEach(function (b) {
       var c = b.closest('[data-id]'), on = c && favoris.indexOf(c.dataset.id) >= 0;
-      b.classList.toggle('on', !!on); b.textContent = on ? '★' : '☆';
+      b.classList.toggle('on', !!on); var ic = b.querySelector('.ico'); (ic || b).textContent = on ? '★' : '☆';
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
   }
