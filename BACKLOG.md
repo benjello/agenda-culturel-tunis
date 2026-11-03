@@ -204,3 +204,10 @@ Comprendre sans cliquer (demandé le 2 novembre)
 Entrées « Autre » à réduire (relevé du 2 novembre) : une entrée « Autre » devrait rester rare.
 - [ ] `ift-pdf` en produit 19 (programme PDF de l'Institut français : trouver la vraie catégorie dans le texte), puis `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
 - [x] Annonces hors culture (santé, prévention, caritatif…) : mots-clés dans `_data/hors_culture.yml`, appliqués à toutes les sources sur le titre.
+
+## Téléphone : suite de l'audit d'ergonomie (3 nov. 2026)
+- [x] Vues rapides « Ce soir / Demain / Ce week-end » avec compteurs, et bande de dates défilante collée en haut (téléphone seulement).
+- [x] Filtre « Quartier » (liste déroulante du tiroir), rangé d'après le lieu et l'adresse (`_data/quartiers.yml`).
+- [x] Formulaire « Proposer » : lien, titre, date d'abord ; le reste sous « Plus de détails » sur téléphone.
+- [ ] Tri par distance (géolocalisation demandée au clic) ; alléger la page d'accueil (30 premiers jours puis « Voir la suite »).
+- [ ] Contribution : lire titre et date depuis le lien collé.

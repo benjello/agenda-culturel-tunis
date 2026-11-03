@@ -75,6 +75,11 @@ aller_contenu: { fr: "Aller au contenu", ar: "انتقل إلى المحتوى",
 filtres_bouton: { fr: "Filtres", ar: "تصفية", en: "Filters" }
 compteur_un: { fr: "1 événement", ar: "حدث واحد", en: "1 event" }
 compteur_n: { fr: "{n} événements", ar: "{n} حدثًا", en: "{n} events" }
+quartier_titre: { fr: "Quartier", ar: "الحي", en: "Neighbourhood" }
+quartier_tous: { fr: "Tous les quartiers", ar: "كل الأحياء", en: "All neighbourhoods" }
+bande_tout: { fr: "Tout", ar: "الكل", en: "All" }
+bande_jours: { fr: "Choisir un jour", ar: "اختر يوما", en: "Pick a day" }
+f_plus: { fr: "Plus de détails (facultatif)", ar: "مزيد من التفاصيل (اختياري)", en: "More details (optional)" }
 tout_effacer: { fr: "Tout effacer", ar: "مسح الكل", en: "Clear all" }
 partager: { fr: "Partager", ar: "مشاركة", en: "Share" }
 agenda_long: { ar: "📅 أضف إلى رزنامتي", en: "📅 Add to my calendar" }

@@ -305,7 +305,7 @@ main:focus { outline: none; }
 .effacer { font: inherit; font-size: .9rem; border: 0; background: none; color: var(--accent); text-decoration: underline; cursor: pointer; padding: 4px 2px; }
 
 /* ---- Éléments propres au téléphone : invisibles sur grand écran ---- */
-.bouton-menu, .bouton-filtres, .date-courte, .outils .lib { display: none; }
+.bouton-menu, .bouton-filtres, .date-courte, .outils .lib, .mobile-seul { display: none; }
 .nav-plus { display: contents; }
 .nav-plus a:last-child { order: 2; }
 .nav-proposer { order: 1; }
@@ -341,6 +341,26 @@ main:focus { outline: none; }
   .cases label { min-height: 40px; }
   .cases input { width: 20px; height: 20px; }
 
+  /* Vues rapides et bande de dates, collées en haut de la liste */
+  .mobile-seul { display: block; }
+  #moments { display: none; }
+  .bande-mobile { position: sticky; top: 0; z-index: 12; background: var(--bg); margin: 0 -16px 6px; padding: 6px 16px 4px; border-bottom: 1px solid var(--line); }
+  .bande-rapide { display: flex; gap: 6px; margin-bottom: 6px; }
+  .bande-rapide button { flex: 1 1 0; min-height: 44px; font: inherit; font-size: .9rem; font-weight: 600; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 999px; padding: 4px 8px; cursor: pointer; white-space: nowrap; }
+  .bande-rapide button.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  .bande-rapide .nb { font-weight: 400; font-size: .8rem; opacity: .75; }
+  .bande-dates { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; scroll-snap-type: x proximity; }
+  .bande-dates button { flex: 0 0 auto; min-width: 48px; min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; font: inherit; line-height: 1.15; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 10px; padding: 4px 6px; cursor: pointer; scroll-snap-align: center; }
+  .bande-dates .js { font-size: .7rem; color: var(--muted); text-transform: uppercase; }
+  .bande-dates .jn { font-size: 1.1rem; font-weight: 700; }
+  .bande-dates button.we .jn { color: var(--accent); }
+  .bande-dates button.vide { opacity: .45; }
+  .bande-dates button.active { background: var(--fg); color: var(--bg); border-color: var(--fg); opacity: 1; }
+  .bande-dates button.active .js, .bande-dates button.active .jn { color: var(--bg); }
+  .quartier-choix { margin: 8px 0; }
+  .quartier-choix > span { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 4px; }
+  .quartier-choix select { width: 100%; min-height: 44px; font: inherit; font-size: 1rem; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--fg); }
+
   /* Cartes : date courte (le jour et le mois sont déjà dans la pastille de date) */
   .date-longue { display: none; }
   .date-courte { display: inline; }
@@ -356,3 +376,14 @@ main:focus { outline: none; }
 
 /* Événement sur plusieurs jours : la fin est dite sous la date de début (« jusqu’au 22 nov. ») */
 .event-date .au { display: block; margin-top: 4px; font-size: .65rem; line-height: 1.2; color: var(--muted); }
+
+/* Formulaire « Proposer » : sur téléphone, lien, titre et date d'abord ; le reste derrière « Plus de détails » */
+.formulaire .plus > summary { display: none; }
+@media (max-width: 700px) {
+  .formulaire .plus > summary { display: block; cursor: pointer; font-weight: 600; min-height: 44px; line-height: 44px; color: var(--accent); }
+  .formulaire .plus[open] > summary { margin-bottom: 6px; }
+  .formulaire .plus > .plus-champs { display: grid; gap: 10px; }
+  .formulaire input, .formulaire select, .formulaire textarea { min-height: 44px; }
+  .formulaire .bouton { min-height: 48px; }
+}
+.formulaire .plus-champs { display: grid; gap: 10px; }

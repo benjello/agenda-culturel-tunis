@@ -15,6 +15,9 @@ layout: default
 <div class="tiroir" id="tiroir-ou">
 <p class="titre-filtre" data-t="filtre_ou">Où</p>
 {% include choix-ville.html %}
+{%- comment -%} Quartier : téléphone seulement (voir .mobile-seul). Rempli par le script d'après _data/quartiers.yml. {%- endcomment -%}
+<label class="quartier-choix mobile-seul"><span data-t="quartier_titre">Quartier</span>
+  <select id="quartier"><option value="" data-t="quartier_tous">Tous les quartiers</option></select></label>
 </div>
 <input type="search" id="recherche" class="recherche" placeholder="Chercher un artiste, un lieu, un film…" data-t-placeholder="recherche" aria-label="Chercher" autocomplete="off">
 <button type="button" class="bouton-filtres" id="bouton-filtres" aria-expanded="false" aria-controls="tiroir-ou tiroir-quoi"><span data-t="filtres_bouton">Filtres</span><span class="nb-filtres" id="nb-filtres" hidden></span></button>
@@ -41,6 +44,15 @@ layout: default
 </div>
 </aside>
 <div class="colonne-agenda">
+{%- comment -%} Téléphone seulement : vues rapides et bande de dates, collées en haut de la liste. {%- endcomment -%}
+<div class="bande-mobile mobile-seul" id="bande-mobile">
+  <div class="bande-rapide" id="bande-rapide" role="group" aria-label="Quand">
+    <button type="button" data-moment="soir"><span data-t="moment.soir">Ce soir</span> <span class="nb"></span></button>
+    <button type="button" data-moment="demain"><span data-t="moment.demain">Demain</span> <span class="nb"></span></button>
+    <button type="button" data-moment="weekend"><span data-t="moment.weekend">Ce week-end</span> <span class="nb"></span></button>
+  </div>
+  <div class="bande-dates" id="bande-dates" role="group" aria-label="Choisir un jour"></div>
+</div>
 <p class="compteur" id="compteur-zone"><span id="compteur" role="status" aria-live="polite"></span> <button type="button" class="effacer" id="effacer" hidden data-t="tout_effacer">Tout effacer</button></p>
 <section class="ce-soir" id="ce-soir" hidden aria-label="Ce soir">
   <h2><span data-t="ce_soir_titre">Ce soir à Tunis</span></h2>
@@ -275,10 +287,12 @@ layout: default
     return d.toISOString().slice(0, 10);
   })();
   var dimanche = (function () { var d = new Date(vendredi + 'T12:00:00'); d.setDate(d.getDate() + 2); return d.toISOString().slice(0, 10); })();
-  function dansMoment(el) {
+  function dansMoment(el, m) {
+    m = m || moment;
     var a = el.dataset.debut, b = el.dataset.date, h = el.dataset.heure || '';
+    if (m.indexOf('jour:') === 0) return couvre(m.slice(5), m.slice(5));
     function couvre(x, y) { return a <= y && b >= x; }
-    switch (moment) {
+    switch (m) {
       case 'aujourdhui': return couvre(today, today);
       // Ce soir : ce qui a lieu aujourd'hui à partir de 17 h (ou sans heure connue), pas les expos de plusieurs jours
       case 'soir': return a <= today && b >= today && (a === b || a === today) && (!h || h >= '17:00');
@@ -289,15 +303,44 @@ layout: default
     }
   }
   var moments = document.getElementById('moments');
-  if (moments) moments.addEventListener('click', function (ev) {
-    var b = ev.target.closest('button');
-    if (!b) return;
-    moment = b.dataset.moment;
-    moments.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
-    if (moment === 'demain' && choixJour === today) choixJour = demain;
-    if (moment === 'aujourdhui' || moment === 'soir') choixJour = today;
+  var bandeRapide = document.getElementById('bande-rapide'), bandeDates = document.getElementById('bande-dates');
+  // Un seul état « moment » pour la rangée de l'ordinateur et les bandes du téléphone
+  function choisirMoment(m) {
+    moment = m;
+    [moments, bandeRapide, bandeDates].forEach(function (g) {
+      if (g) g.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x.dataset.moment === m); });
+    });
+    if (m === 'demain') choixJour = choixJour === today ? demain : choixJour;
+    if (m === 'aujourdhui' || m === 'soir') choixJour = today;
+    if (m.indexOf('jour:') === 0) choixJour = m.slice(5);
+    // Le jour choisi reste visible dans la bande défilante
+    var actif = bandeDates && bandeDates.querySelector('button.active');
+    if (actif && bandeDates.scrollWidth > bandeDates.clientWidth) bandeDates.scrollLeft = actif.offsetLeft - (bandeDates.clientWidth - actif.offsetWidth) / 2;
     refresh();
+  }
+  [moments, bandeRapide, bandeDates].forEach(function (g) {
+    if (g) g.addEventListener('click', function (ev) {
+      var b = ev.target.closest('button');
+      if (!b) return;
+      // Retoucher le jour déjà choisi dans la bande de dates revient à tout afficher
+      choisirMoment(b.dataset.moment === moment && g === bandeDates ? 'tout' : b.dataset.moment);
+    });
   });
+  // Bande de dates : « Tout », aujourd'hui, puis les 13 jours suivants (un bouton par jour)
+  if (bandeDates) {
+    var JS = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
+    var bt = document.createElement('button');
+    bt.type = 'button'; bt.dataset.moment = 'tout'; bt.className = 'jour-tout active';
+    bt.innerHTML = '<span data-t="bande_tout">Tout</span>';
+    bandeDates.appendChild(bt);
+    for (var k = 0; k < 14; k++) {
+      var iso = jour(k), dd = new Date(iso + 'T12:00:00'), bj = document.createElement('button');
+      bj.type = 'button'; bj.dataset.moment = 'jour:' + iso; bj.dataset.jour = iso;
+      if (dd.getDay() === 5 || dd.getDay() === 6) bj.classList.add('we');
+      bj.innerHTML = '<span class="js">' + (k === 0 ? "auj." : JS[dd.getDay()]) + '</span><span class="jn">' + dd.getDate() + '</span>';
+      bandeDates.appendChild(bj);
+    }
+  }
   // « Nouveau cette semaine » : ce qui est arrivé dans l'agenda ces 7 derniers jours
   var lienNouveau = document.getElementById('nouveautes');
   function compterNouveautes() {
@@ -311,19 +354,59 @@ layout: default
     }
   }
   document.addEventListener('langue', compterNouveautes);
+  // Quartier (téléphone) : déduit du lieu et de l'adresse, d'après les motifs de _data/quartiers.yml
+  var QUARTIERS = {{ site.data.quartiers | jsonify }}.map(function (q) { return { id: q.id, nom: q.nom, re: new RegExp(q.motif) }; });
+  var choixQuartier = '', selQ = document.getElementById('quartier');
+  function quartierDe(el) {
+    if (el._quartier === undefined) {
+      var t = norme((el.dataset.lieu || '') + ' ' + (el.dataset.titre || ''));
+      el._quartier = '';
+      for (var i = 0; i < QUARTIERS.length; i++) if (QUARTIERS[i].re.test(t)) { el._quartier = QUARTIERS[i].id; break; }
+    }
+    return el._quartier;
+  }
+  if (selQ) {
+    var presents = {};
+    document.querySelectorAll('#agenda .event').forEach(function (el) { if (el.dataset.date >= today) presents[quartierDe(el)] = (presents[quartierDe(el)] || 0) + 1; });
+    QUARTIERS.forEach(function (q) {
+      if (!presents[q.id]) return;
+      var o = document.createElement('option'); o.value = q.id; o.textContent = q.nom + ' (' + presents[q.id] + ')'; selQ.appendChild(o);
+    });
+    selQ.addEventListener('change', function () { choixQuartier = selQ.value; refresh(); });
+  }
+  // Un événement passe-t-il tous les filtres sauf le moment ? (sert aussi aux compteurs des bandes)
+  function horsMoment(el, favs) {
+    var v = document.documentElement.dataset.ville || 'tunis';
+    return el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
+      (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) &&
+      (!choixQuartier || quartierDe(el) === choixQuartier) &&
+      (!caseGratuit || !caseGratuit.checked || el.hasAttribute('data-gratuit')) &&
+      (!caseFamille || !caseFamille.checked || el.hasAttribute('data-famille')) &&
+      (!caseFavoris || !caseFavoris.checked || favs.indexOf(el.dataset.id) >= 0);
+  }
+  function majBandes(evts, favs) {
+    if (!bandeRapide) return;
+    var n = {};
+    var ms = ['soir', 'demain', 'weekend'];
+    bandeDates.querySelectorAll('button[data-jour]').forEach(function (b) { ms.push(b.dataset.moment); });
+    ms.forEach(function (m) { n[m] = 0; });
+    evts.forEach(function (el) {
+      if (!horsMoment(el, favs)) return;
+      ms.forEach(function (m) { if (dansMoment(el, m)) n[m]++; });
+    });
+    bandeRapide.querySelectorAll('button').forEach(function (b) { b.querySelector('.nb').textContent = n[b.dataset.moment] ? n[b.dataset.moment] : ''; });
+    bandeDates.querySelectorAll('button[data-jour]').forEach(function (b) { b.classList.toggle('vide', !n[b.dataset.moment]); });
+  }
   function refresh() {
     var shown = 0;
     var favs = window.lireFavoris ? window.lireFavoris() : [];
-    document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
-      var v = document.documentElement.dataset.ville || 'tunis';
-      var visible = el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
-        (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) && dansMoment(el) &&
-        (!caseGratuit || !caseGratuit.checked || el.hasAttribute('data-gratuit')) &&
-        (!caseFamille || !caseFamille.checked || el.hasAttribute('data-famille')) &&
-        (!caseFavoris || !caseFavoris.checked || favs.indexOf(el.dataset.id) >= 0);
+    var evts = document.querySelectorAll('#agenda .event, #en-cours .event');
+    evts.forEach(function (el) {
+      var visible = horsMoment(el, favs) && dansMoment(el);
       el.hidden = !visible;
       if (visible) shown++;
     });
+    majBandes(evts, favs);
     if (salles) { var nf = montrerFilms(); if (filter === 'cinema') shown += nf || 1; }
     document.querySelectorAll('.month').forEach(function (s) {
       s.hidden = !s.querySelector('.event:not([hidden])');
@@ -340,21 +423,23 @@ layout: default
   function tt(k, d) { return window.t ? window.t(k, d) : d; }
   function majAide(n) {
     if (n !== undefined) dernierN = n;
-    var actifs = (filter !== 'all' ? 1 : 0) + [caseGratuit, caseFamille, caseFavoris].filter(function (c) { return c && c.checked; }).length;
+    var actifs = (filter !== 'all' ? 1 : 0) + (choixQuartier ? 1 : 0) + [caseGratuit, caseFamille, caseFavoris].filter(function (c) { return c && c.checked; }).length;
     var aFiltre = actifs > 0 || moment !== 'tout' || mots.length > 0;
     if (cCompteur) cCompteur.textContent = dernierN === 1 ? tt('compteur_un', '1 événement') : tt('compteur_n', '{n} événements').replace('{n}', dernierN);
     if (bEffacer) bEffacer.hidden = !aFiltre;
     if (nbF) { nbF.hidden = !actifs; nbF.textContent = actifs; }
-    document.querySelectorAll('#filters button, #moments button, #villes button').forEach(function (b) {
+    document.querySelectorAll('#filters button, #moments button, #villes button, #bande-rapide button, #bande-dates button').forEach(function (b) {
       b.setAttribute('aria-pressed', b.classList.contains('active') ? 'true' : 'false');
     });
   }
   document.addEventListener('langue', function () { majAide(); });
   if (bEffacer) bEffacer.addEventListener('click', function () {
-    moment = 'tout'; mots = []; if (champ) champ.value = '';
+    mots = []; if (champ) champ.value = '';
+    choixQuartier = ''; if (selQ) selQ.value = '';
     [caseGratuit, caseFamille, caseFavoris].forEach(function (c) { if (c) c.checked = false; });
-    if (moments) moments.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x.dataset.moment === 'tout'); });
-    choisir('all');
+    filter = 'all';
+    document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === 'all'); });
+    choisirMoment('tout');
   });
   if (bTiroir) bTiroir.addEventListener('click', function () {
     var ouvert = document.querySelector('.panneau-filtres').classList.toggle('ouvert');
