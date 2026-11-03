@@ -10,6 +10,8 @@ source: "ig-la-boite"
 source_name: "La Boîte, art et architecture (Instagram)"
 image: "assets/programmes/ig-la-boite/8b53cdb1d7fa.jpg"
 ajoute: "2026-11-01"
+festival: "oasis-days"
+doublon: true
 auto: true
 ---
 

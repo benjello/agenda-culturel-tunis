@@ -31,7 +31,6 @@
   "La Boîte": "la-boite",
   "L'art Rue 🎟️ Entrée sur inscription — lien en bio": "l-art-rue-entree-sur-inscription-lien-en-bio",
   "La Chapelle, Dar Bach Hamba": "la-chapelle-dar-bach-hamba",
-  "Le 32Bis": "le-32bis",
   "Fondation Rosa Luxemburg, Tunis": "fondation-rosa-luxemburg-tunis",
   "Shanti": "shanti",
   "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
@@ -54,7 +53,42 @@
   "Pathé Azur City": "pathe-azur-city",
   "Pathé Tunis City": "pathe-tunis-city",
   "Douz": "douz",
-  "One Resort, Monastir": "one-resort-monastir"
+  "One Resort, Monastir": "one-resort-monastir",
+  "32bis": "le-32bis",
+  "Le 32 bis": "le-32bis",
+  "Le 32Bis": "le-32bis",
+  "Le 32bis": "le-32bis",
+  "El Warcha": "el-warcha",
+  "El Warcha Tunis": "el-warcha",
+  "Warcha": "el-warcha",
+  "Echos Electrik": "echos-electrik",
+  "Echos Electrik Tunis": "echos-electrik",
+  "Échos Électrik": "echos-electrik",
+  "Central": "central-tunis",
+  "Central Tunis": "central-tunis",
+  "Le Central Tunis": "central-tunis",
+  "Espace Mouhit": "mouhit",
+  "Mouhit": "mouhit",
+  "Mouhit Tunis": "mouhit",
+  "محيط": "mouhit",
+  "IIC Tunisi": "institut-culturel-italien-de-tunis",
+  "Institut culturel italien": "institut-culturel-italien-de-tunis",
+  "Institut culturel italien de Tunis": "institut-culturel-italien-de-tunis",
+  "Institut italien de Tunis": "institut-culturel-italien-de-tunis",
+  "Istituto Italiano di Cultura di Tunisi": "institut-culturel-italien-de-tunis",
+  "Goethe Institut Tunis": "goethe-institut-tunis",
+  "Goethe-Institut Tunis": "goethe-institut-tunis",
+  "Institut Goethe": "goethe-institut-tunis",
+  "Institut allemand de Tunis": "goethe-institut-tunis",
+  "Institut Cervantes": "instituto-cervantes-de-tunez",
+  "Instituto Cervantes Tunez": "instituto-cervantes-de-tunez",
+  "Instituto Cervantes de Tunis": "instituto-cervantes-de-tunez",
+  "Instituto Cervantes de Túnez": "instituto-cervantes-de-tunez",
+  "Cité de la Culture": "cite-de-la-culture",
+  "Cité de la Culture, Tunis": "cite-de-la-culture",
+  "Cité de la culture de Tunis": "cite-de-la-culture",
+  "La Cité de la Culture": "cite-de-la-culture",
+  "مدينة الثقافة": "cite-de-la-culture"
  },
  "carte": [
   {
@@ -231,7 +265,7 @@
   {
    "slug": "b7l9-art-centre",
    "nom": "B7L9 Art Centre",
-   "type": "centre",
+   "type": "centre_art",
    "ville": "tunis",
    "lat": 36.889,
    "lon": 10.307,
@@ -262,6 +296,15 @@
    "ville": "tunis",
    "lat": 36.86183,
    "lon": 10.33874,
+   "n": 2
+  },
+  {
+   "slug": "caserne-el-attarine",
+   "nom": "Caserne El Attarine",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.79763,
+   "lon": 10.1717,
    "n": 2
   },
   {
@@ -321,19 +364,10 @@
   {
    "slug": "la-boite",
    "nom": "La Boîte",
-   "type": "club",
+   "type": "centre_art",
    "ville": "tunis",
    "lat": 36.52364,
    "lon": 10.55862,
-   "n": 1
-  },
-  {
-   "slug": "le-32bis",
-   "nom": "Le 32Bis",
-   "type": "galerie",
-   "ville": "tunis",
-   "lat": 36.79509,
-   "lon": 10.1838,
    "n": 1
   },
   {
@@ -364,15 +398,6 @@
    "n": 1
   },
   {
-   "slug": "caserne-el-attarine",
-   "nom": "Caserne El Attarine",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.79763,
-   "lon": 10.1717,
-   "n": 1
-  },
-  {
    "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
    "nom": "Salle des Jeunes Créateurs - Cité de la Culture",
    "type": "centre",
@@ -397,6 +422,15 @@
    "ville": "monastir",
    "lat": 35.76372,
    "lon": 10.7399,
+   "n": 1
+  },
+  {
+   "slug": "le-32bis",
+   "nom": "Le 32Bis",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.79509,
+   "lon": 10.1838,
    "n": 1
   }
  ]

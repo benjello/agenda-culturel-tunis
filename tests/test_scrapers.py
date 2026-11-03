@@ -755,7 +755,8 @@ class Presse(unittest.TestCase):
                f'<content:encoded><![CDATA[<p>Du {d.day} au {d.day} {mois} {d.year} à la Cité de la culture.</p>]]></content:encoded></item>'
                f'<item><title>Le ministre inaugure une route</title><link>https://x/2</link><description>le {d.day} {mois}</description></item>'
                f'</channel></rss>')
-        evts = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})
+        with mock.patch.object(presse, "_NOMS", []):  # sans le registre réel des lieux (_data/lieux.json)
+            evts = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})
         self.assertEqual([e.titre for e in evts], ["Le festival du oud revient"])
         self.assertEqual(evts[0].lieu, "Cité de la culture")
         self.assertEqual(evts[0].categorie, "musique")
@@ -1264,3 +1265,64 @@ class AgoraDjerba(unittest.TestCase):
         self.assertTrue(pas_un_evenement("Journée de dépistage gratuit"))
         self.assertTrue(pas_un_evenement("JAOU TUNIS 26 - Full Fest Access"))  # un pass, pas un spectacle
         self.assertFalse(pas_un_evenement("Concert de oud à El Teatro"))
+
+
+class RetourBeta(unittest.TestCase):
+    """Retour d'une testeuse (3 novembre 2026) : catégories, festivals transversaux, lieux de référence."""
+
+    def test_categories_et_traductions(self):
+        import yaml
+        cats = yaml.safe_load((commun.RACINE / "_data" / "categories.yml").read_text())
+        i18n = yaml.safe_load((commun.RACINE / "_data" / "i18n.yml").read_text())
+        self.assertEqual(cats["spectacle"]["label"], "Arts du spectacle et de la rue")
+        self.assertEqual(cats["expo"]["label"], "Expositions & arts visuels")
+        self.assertEqual(cats["conference"]["label"], "Conférences & débats")
+        for cle in ("patrimoine", "multidisciplinaire"):
+            self.assertIn(cle, cats)
+            self.assertIn(f"cat.{cle}", i18n)
+        festivals = yaml.safe_load((commun.RACINE / "_data" / "festivals.yml").read_text())
+        for f in festivals:
+            self.assertIn(f["genre"], cats, f["id"])
+        genres = {f["id"]: f["genre"] for f in festivals}
+        self.assertEqual((genres["jaou"], genres["dream-city"], genres["oasis-days"]), ("multidisciplinaire",) * 3)
+        oasis = next(f for f in festivals if f["id"] == "oasis-days")
+        self.assertEqual((str(oasis["debut"]), str(oasis["fin"])), ("2026-10-29", "2026-11-01"))
+
+    def test_categorie_du_titre_nouvelles_categories(self):
+        self.assertEqual(commun.categorie_du_titre("Spectacle de cirque contemporain"), "spectacle")
+        self.assertEqual(commun.categorie_du_titre("Visite guidée de la médina"), "patrimoine")
+        self.assertEqual(commun.categorie_du_titre("Exposition d'artisanat"), "expo")
+
+    def test_proposition_nouvelles_categories(self):
+        from scrapers import propositions
+        corps = "### Titre\n\nX\n\n### Date et heure\n\n2026-12-01\n\n### Catégorie\n\nPatrimoine & traditions\n"
+        self.assertIn('category: "patrimoine"', propositions.evenement(corps)[1])
+        corps = corps.replace("Patrimoine & traditions", "Arts du spectacle et de la rue")
+        self.assertIn('category: "spectacle"', propositions.evenement(corps)[1])
+
+    def test_lieux_de_reference(self):
+        import collections
+        from scrapers import pages
+        groupes = {"goethe institut tunis": {"noms": collections.Counter({"Goethe-Institut Tunis": 2}),
+                                              "adresse": "", "ville": "tunis", "n": 2, "nom": ""}}
+        pages.references(groupes)
+        noms = {g["nom"] for g in groupes.values()}
+        for attendu in ("Le 32Bis", "El Warcha", "Echos Electrik", "Central Tunis", "Mouhit", "Cité de la Culture",
+                        "Institut culturel italien de Tunis", "Goethe-Institut Tunis"):
+            self.assertIn(attendu, noms)
+        goethe = groupes["goethe institut tunis"]
+        self.assertEqual(goethe["n"], 2)  # les événements déjà connus restent rattachés à la fiche
+        self.assertIn("Institut Goethe", goethe["noms"])
+        self.assertEqual(groupes["le 32bis"]["type"], "centre_art")
+
+    def test_la_boite_est_un_centre_d_art(self):
+        from scrapers import pages
+        config = pages.types_lieux()
+        self.assertEqual(pages.type_lieu("La Boîte", "la-boite", config, {}), "centre_art")
+        self.assertEqual(pages.type_lieu("Club Le Boîte de nuit", "x", config, {}), "club")
+
+    def test_annonce_de_partenariat(self):
+        notice = ("L'Institut français de Tunisie est fier d'être partenaire de la 8e édition de \"Jaou Tunis "
+                  "Biennale 2026\" qui se tiendra du 23 octobre au 22 novembre.")
+        self.assertTrue(commun.annonce_de_partenariat(notice))
+        self.assertFalse(commun.annonce_de_partenariat("Concert de jazz. Entrée libre, avec le soutien de la mairie."))

@@ -11,10 +11,17 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
   <p data-th="fest_intro">Les dates des grands festivals sont connues des mois à l'avance, mais leurs programmes sortent souvent quelques jours avant. Ici, on dit ce qui est confirmé et ce qui ne l'est pas encore. Les programmes paraissent d'abord sur Facebook et Instagram. <a href="{{ '/ramadan/' | relative_url }}">🌙 Soirées de Ramadan</a></p>
 </section>
 
+{%- comment -%} Filtre par discipline : un festival est transversal ; « Multidisciplinaire » (Jaou, Dream City…) a sa place à côté de théâtre, cinéma, musique. {%- endcomment -%}
+{%- assign genres_f = site.data.festivals | map: "genre" | uniq -%}
+<div class="filters" id="filtre-genre" role="group" aria-label="Discipline">
+  <button class="active" data-genre="all" data-t="tout">Tout</button>
+  {%- for c in site.data.categories %}{% if genres_f contains c[0] %}<button data-genre="{{ c[0] }}" data-t="cat.{{ c[0] }}"{% if c[1].aide %} title="{{ c[1].aide | escape }}"{% endif %}>{{ c[1].label }}</button>{% endif %}{% endfor %}
+</div>
+
 <div id="festivals">
 {%- for f in site.data.festivals %}
   {%- assign cat = site.data.categories[f.genre] | default: site.data.categories.autre -%}
-  <article class="festival" id="{{ f.id }}" data-debut="{{ f.debut | date: '%Y-%m-%d' }}" data-fin="{{ f.fin | default: f.debut | date: '%Y-%m-%d' }}">
+  <article class="festival" id="{{ f.id }}" data-genre="{{ f.genre | default: 'autre' }}" data-debut="{{ f.debut | date: '%Y-%m-%d' }}" data-fin="{{ f.fin | default: f.debut | date: '%Y-%m-%d' }}">
     <div class="festival-tete">
       <span class="tag" style="background: {{ cat.color }}">{{ cat.label }}</span>
       <span class="badge statut"></span>
@@ -91,6 +98,12 @@ description: Le calendrier des festivals en Tunisie (JTC, JCC, Festival de la M�
       rang = 1;
     }
     c.dataset.rang = rang;
+  });
+  document.getElementById('filtre-genre').addEventListener('click', function (ev) {
+    var b = ev.target.closest('button');
+    if (!b) return;
+    this.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
+    cartes.forEach(function (c) { c.hidden = b.dataset.genre !== 'all' && c.dataset.genre !== b.dataset.genre; });
   });
   cartes.sort(function (a, b) {
     return (a.dataset.rang - b.dataset.rang) || (a.dataset.debut || '9').localeCompare(b.dataset.debut || '9');

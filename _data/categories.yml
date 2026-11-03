@@ -3,9 +3,11 @@
 cinema:   { label: "Cinéma",    color: "#c0392b" }
 musique:  { label: "Musique",   color: "#8e44ad" }
 theatre:  { label: "Théâtre",   color: "#c04b00" }
-expo:     { label: "Exposition", color: "#0f7a64" }
+expo:     { label: "Expositions & arts visuels", color: "#0f7a64" }
 danse:    { label: "Danse",     color: "#1f6fa8" }
 litterature: { label: "Littérature", color: "#5f6b6d" }
-conference: { label: "Conférence", color: "#2c3e50" }
+conference: { label: "Conférences & débats", color: "#2c3e50" }
+spectacle: { label: "Arts du spectacle et de la rue", color: "#b03a5b", aide: "Cirque, arts de la rue, marionnettes…" }
+patrimoine: { label: "Patrimoine & traditions", color: "#8a6d1d", aide: "Visites, artisanat, traditions, patrimoine vivant…" }
+multidisciplinaire: { label: "Multidisciplinaire", color: "#3d5a80", aide: "Festivals et rendez-vous qui mêlent plusieurs disciplines (Jaou, Dream City…)" }
 autre:    { label: "Autre",     color: "#555555" }
-spectacle: { label: "Spectacle", color: "#b03a5b" }

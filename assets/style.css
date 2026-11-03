@@ -353,3 +353,6 @@ main:focus { outline: none; }
   .event .actions a.billets, .event .actions a.secondaire { padding: 8px 12px; }
   .event .actions .secondaire { min-height: 40px; display: inline-flex; align-items: center; }
 }
+
+/* Événement sur plusieurs jours : la fin est dite sous la date de début (« jusqu’au 22 nov. ») */
+.event-date .au { display: block; margin-top: 4px; font-size: .65rem; line-height: 1.2; color: var(--muted); }

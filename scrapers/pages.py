@@ -122,6 +122,39 @@ def lieux(evts: list[dict], exclus: set[str] = frozenset()) -> dict[str, dict]:
     return groupes
 
 
+def references(groupes: dict[str, dict]) -> None:
+    """Ajoute les lieux de _data/lieux_references.yml (listés même sans événement) et rattache
+    leurs autres écritures : un événement « Goethe-Institut Tunis » ou « Institut Goethe » mène à la même fiche."""
+    try:
+        liste = yaml.safe_load((RACINE / "_data" / "lieux_references.yml").read_text()) or []
+    except OSError:
+        return
+    for r in liste:
+        nom = r["nom"]
+        variantes = [nom, *(r.get("noms") or [])]
+        # le groupe existe déjà sous l'une des écritures : on le garde et on lui donne le nom choisi
+        existants = [k for k in dict.fromkeys(_cle(v) for v in variantes) if k and k in groupes]
+        g = groupes.get(existants[0]) if existants else None
+        if g is None:
+            g = {"noms": collections.Counter(), "adresse": "", "ville": "", "n": 0, "nom": ""}
+        for k in existants[1:]:  # deux groupes pour un même lieu : on les réunit
+            autre = groupes.pop(k)
+            g["noms"].update(autre["noms"])
+            g["n"] += autre["n"]
+            g["adresse"] = g["adresse"] or autre["adresse"]
+            g["ville"] = g["ville"] or autre["ville"]
+        for v in variantes:
+            g["noms"][v] += 0  # connu, même sans événement : la fiche retrouve ses événements par ce nom
+        g["nom"] = nom
+        if r.get("type"):
+            g["type"] = r["type"]
+        g["adresse"] = g["adresse"] or r.get("adresse", "")
+        g["ville"] = g["ville"] or r.get("ville", "tunis")
+        if existants:
+            groupes.pop(existants[0])
+        groupes[_cle(nom)] = g
+
+
 def _geocoder(requete: str) -> list[float] | None:
     r = requests.get(NOMINATIM, params={"q": requete, "format": "json", "limit": 1, "countrycodes": "tn"},
                      headers={"User-Agent": "agenda-culturel-tunis (https://github.com/benjello/agenda-culturel-tunis)"},
@@ -199,6 +232,8 @@ def ecrire_lieux(groupes: dict[str, dict], geo: dict) -> dict:
         fichiers.add(fichier.name)
         noms = sorted(g["noms"])
         t = type_lieu(nom, s, config, osm)
+        if g.get("type") in {r["id"] for r in config.get("types") or []}:
+            t = g["type"]  # type donné par _data/lieux_references.yml
         _ecrire(fichier, {"title": nom, "noms": noms, "type": t, "adresse": g["adresse"], "ville": g["ville"],
                           "lat": point[0] if point else None, "lon": point[1] if point else None})
         for n in noms:
@@ -312,6 +347,7 @@ def main(argv=None) -> int:
     evts = evenements()
     sources = yaml.safe_load((RACINE / "_data" / "sources.yml").read_text()) or []
     groupes = lieux(evts, faux_lieux(sources))
+    references(groupes)
     try:
         geo = json.loads(FICHIER_GEO.read_text())
     except (FileNotFoundError, json.JSONDecodeError):

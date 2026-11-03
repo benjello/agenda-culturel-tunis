@@ -16,6 +16,10 @@ types:
     nom: Musées
     un: Musée
     mots: ['\bmusee', '\bmuseum', 'متحف']
+  - id: centre_art
+    nom: Centres d'art
+    un: Centre d'art
+    mots: ['\bcentre d.art\b', '\bart cent(?:re|er)\b', '\bcentre d.arts\b', 'مركز الفن']
   - id: galerie
     nom: Galeries
     un: Galerie
@@ -38,9 +42,11 @@ types:
     nom: Autres lieux
     un: Lieu
 
-# Corrections à la main : « nom de la fiche » → type (cinema, theatre, musee, galerie,
+# Corrections à la main : « nom de la fiche » → type (cinema, theatre, musee, centre_art, galerie,
 # bibliotheque, club, centre, autre). Un type faux ? Proposez-le sur la page Proposer.
 lieux:
+  "La Boîte": centre_art
+  "B7L9 Art Centre": centre_art
   "Shanti": club
   "Sociale Sidi Bou Said": club
   "L’Agora La Marsa": cinema

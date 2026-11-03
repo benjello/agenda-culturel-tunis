@@ -16,7 +16,10 @@ from .ecriture import _yaml
 
 CATEGORIES = {"musique": "musique", "théâtre": "theatre", "spectacle": "spectacle", "danse": "danse",
               "exposition": "expo", "cinéma": "cinema", "conférence": "conference",
-              "littérature": "litterature", "autre": "autre"}
+              "littérature": "litterature", "autre": "autre",
+              "arts du spectacle et de la rue": "spectacle", "expositions & arts visuels": "expo",
+              "conférences & débats": "conference", "patrimoine & traditions": "patrimoine",
+              "multidisciplinaire": "multidisciplinaire"}
 DOSSIER = RACINE / "_events" / "propositions"
 
 

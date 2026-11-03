@@ -201,6 +201,8 @@ _CATEGORIES_DU_TITRE = [
     ("conference", r"conf[ée]rence|table ronde|\bd[ée]bat\b|\btalk\b|\bmasterclass\b"),
     ("litterature", r"\blecture\b|\bpo[ée]sie\b|\bdédicace\b|\blivre\b"),
     ("expo", r"\bexposition\b|\bexpo\b|\bvernissage\b|\bexhibition\b"),
+    ("spectacle", r"\bcirque\b|\bmarionnettes?\b|arts? de la rue|\bclown\b|\bmagie\b|\bcircus\b"),
+    ("patrimoine", r"\bpatrimoine\b|visite guid[ée]e|\bartisanat\b|\btraditions?\b|\btraditionnel(?:le)?s?\b|\bfolklore\b|\bheritage\b"),
 ]
 
 
@@ -335,6 +337,18 @@ _PAS_UN_EVENEMENT = re.compile(
     r"horaires? d.ouverture|fermeture (?:exceptionnelle|annuelle)|\bappel [àa] (?:candidatures?|projets?|participation)|"
     r"\bcall for (?:applications|entries|artists|papers)|\brecrute\b|\brecrutement\b|offre d.emploi|"
     r"inscriptions? (?:ouvertes|aux cours)|entr[ée]e gratuite (?:aux|dans les) (?:sites|mus[ée]es)|\bjoyeux anniversaire\b|\bbonne f[êe]te\b|\bAïd moubarak\b", re.I)
+
+
+# « L'Institut est fier d'être partenaire de la 8e édition de la Biennale… » : c'est l'annonce d'un partenariat,
+# pas un événement ; l'événement lui-même (expositions, concerts) a ses propres fiches.
+_PARTENARIAT = re.compile(r"\b(?:fi[eè]re?s?|heureu[xs]e?s?|ravie?s?|honor[ée]e?s?)\s+(?:d.[êe]tre|de compter parmi)\s+(?:les\s+)?partenaires?\b|"
+                          r"\best\s+partenaire\s+(?:de la|du|des)\s+(?:\d+\S*\s+)?(?:[ée]dition|festival|biennale)|"
+                          r"\ben partenariat avec\s+(?:la|le)\s+(?:biennale|festival)\b.{0,60}\bnous\s+(?:soutenons|accompagnons)", re.I)
+
+
+def annonce_de_partenariat(notice: str) -> bool:
+    """Vrai si le début de la notice dit que la structure est seulement partenaire de la manifestation."""
+    return bool(_PARTENARIAT.search((notice or "")[:400].replace("’", "'")))
 
 
 _HORS_CULTURE: re.Pattern | None = None
