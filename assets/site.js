@@ -399,4 +399,17 @@
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
     navigator.serviceWorker.register((window.BASE || '/') + 'sw.js').catch(function () {});
   }
+
+  // ---- Bouton « Installer l'application » (Android/Chrome) ; sur iPhone, les consignes de la page suffisent
+  var invite = null;
+  window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault(); invite = e;
+    var b = document.getElementById('bouton-installer'); if (b) b.hidden = false;
+  });
+  var bi = document.getElementById('bouton-installer');
+  if (bi) bi.addEventListener('click', function () {
+    if (!invite) return;
+    invite.prompt(); invite = null; bi.hidden = true;
+  });
+  window.addEventListener('appinstalled', function () { if (bi) bi.hidden = true; });
 })();
