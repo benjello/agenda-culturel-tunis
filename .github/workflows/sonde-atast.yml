@@ -1,0 +1,15 @@
+name: Sonde ATAST (temporaire)
+on:
+  workflow_dispatch:
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lire eco4science.org
+        run: |
+          for u in https://www.eco4science.org/ https://www.eco4science.org/feed https://www.eco4science.org/wp-json/wp/v2/posts https://www.eco4science.org/sitemap.xml; do
+            echo "=== $u"; curl -sL -m 30 -A "agenda-culturel-tunis" -o /tmp/p.html -w "%{http_code} %{content_type} %{size_download}\n" "$u" || echo "échec"
+            head -c 1500 /tmp/p.html | tr -s '\n ' ' '; echo
+          done
+          echo "=== liens"; curl -sL -m 30 -A "agenda-culturel-tunis" https://www.eco4science.org/ | grep -oE 'href="[^"]+"' | sort -u | head -60
+          echo "=== json-ld / dates"; curl -sL -m 30 https://www.eco4science.org/ | grep -ciE 'application/ld\+json|schema.org/Event'
