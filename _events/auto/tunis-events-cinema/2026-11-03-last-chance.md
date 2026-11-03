@@ -13,3 +13,5 @@ film: true
 ajoute: "2026-11-03"
 auto: true
 ---
+
+Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.

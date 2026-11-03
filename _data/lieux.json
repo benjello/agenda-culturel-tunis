@@ -37,7 +37,6 @@
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Galerie TGM": "galerie-tgm",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
-  "Maison des Arts du Belvédère": "maison-des-arts-du-belvedere",
   "Studio B52": "studio-b52",
   "Steps Club Sousse": "steps-club-sousse",
   "One Resort": "one-resort",
@@ -146,6 +145,15 @@
    "n": 9
   },
   {
+   "slug": "galerie-institut-francais-de-sousse",
+   "nom": "Galerie, Institut français de Sousse",
+   "type": "galerie",
+   "ville": "sousse",
+   "lat": 36.83351,
+   "lon": 10.10422,
+   "n": 7
+  },
+  {
    "slug": "auditorium-institut-francais-de-tunis",
    "nom": "Auditorium, Institut français de Tunis",
    "type": "centre",
@@ -182,15 +190,6 @@
    "n": 6
   },
   {
-   "slug": "galerie-institut-francais-de-sousse",
-   "nom": "Galerie, Institut français de Sousse",
-   "type": "galerie",
-   "ville": "sousse",
-   "lat": 36.83351,
-   "lon": 10.10422,
-   "n": 6
-  },
-  {
    "slug": "theatre-le-4eme-art",
    "nom": "Théâtre Le 4ème Art",
    "type": "theatre",
@@ -209,15 +208,6 @@
    "n": 5
   },
   {
-   "slug": "cinema-le-palace",
-   "nom": "Cinéma Le Palace",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.8,
-   "lon": 10.183,
-   "n": 5
-  },
-  {
    "slug": "cinema-alhambra-zephyr",
    "nom": "Cinéma Alhambra Zéphyr",
    "type": "cinema",
@@ -227,12 +217,12 @@
    "n": 4
   },
   {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
+   "slug": "cinema-le-palace",
+   "nom": "Cinéma Le Palace",
    "type": "cinema",
    "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
+   "lat": 36.8,
+   "lon": 10.183,
    "n": 4
   },
   {
@@ -269,6 +259,15 @@
    "ville": "tunis",
    "lat": 36.889,
    "lon": 10.307,
+   "n": 3
+  },
+  {
+   "slug": "cinema-le-colisee",
+   "nom": "Cinéma Le Colisée",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.80014,
+   "lon": 10.18189,
    "n": 3
   },
   {
@@ -432,6 +431,24 @@
    "lat": 36.79509,
    "lon": 10.1838,
    "n": 1
+  },
+  {
+   "slug": "central-tunis",
+   "nom": "Central Tunis",
+   "type": "club",
+   "ville": "tunis",
+   "lat": 35.2976,
+   "lon": 10.70592,
+   "n": 0
+  },
+  {
+   "slug": "cite-de-la-culture",
+   "nom": "Cité de la Culture",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8109,
+   "lon": 10.18608,
+   "n": 0
   }
  ]
 }

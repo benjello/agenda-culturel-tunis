@@ -394,6 +394,11 @@
    "texte": "Le cinéma Le Palace, anciennement appelé Politeama Rossini ou Rossini Palace, est un bâtiment tunisien situé sur l'avenue Habib-Bourguiba à Tunis. Il sert de nos jours de salle de cinéma.",
    "url": "https://fr.wikipedia.org/wiki/Cin%C3%A9ma_Le_Palace_(Tunis)"
   },
+  "cite-de-la-culture": {
+   "source": "Wikipédia",
+   "texte": "La Cité de la culture ou cité de la culture Chedli-Klibi est un complexe culturel tunisien de neuf hectares situé en plein centre de la ville de Tunis, à l'emplacement de l'ancienne Foire internationale de Tunis sur l'avenue Mohammed-V.",
+   "url": "https://fr.wikipedia.org/wiki/Cit%C3%A9_de_la_culture_(Tunisie)"
+  },
   "douz": {
    "source": "Wikipédia",
    "texte": "Douz est une ville du sud de la Tunisie connue comme la « porte du Sahara ».",
@@ -1870,6 +1875,10 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
   },
+  "festivals:oasis-days": {
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
+  },
   "festivals:podcast-days-by-tunisia-podcast-festival": {
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
@@ -1914,6 +1923,10 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
   },
+  "lieux:central-tunis": {
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
+  },
   "lieux:cine-350": {
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
@@ -1942,6 +1955,14 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
   },
+  "lieux:cite-de-la-culture": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "La Cité de la culture ou cité de la culture Chedli-Klibi est un complexe culturel tunisien de neuf hectares situé en plein centre de la ville de Tunis, à l'emplacement de l'ancienne Foire internationale de Tunis sur l'avenue Mohammed-V.",
+   "url": "https://fr.wikipedia.org/wiki/Cit%C3%A9_de_la_culture_(Tunisie)",
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
+  },
   "lieux:cite-des-sciences-de-tunis": {
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
@@ -1966,12 +1987,20 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
   },
+  "lieux:echos-electrik": {
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
+  },
   "lieux:el-teatro": {
    "langue": "fr",
    "source": "Wikipédia",
    "texte": "El Teatro est un théâtre privé tunisien — le premier du pays — situé à Tunis, dans une aile de l'hôtel El Mechtel.",
    "url": "https://fr.wikipedia.org/wiki/El_Teatro",
    "verifie": "2026-11-02",
+   "vu": "2026-11-03"
+  },
+  "lieux:el-warcha": {
+   "verifie": "2026-11-03",
    "vu": "2026-11-03"
   },
   "lieux:evenement": {
@@ -2006,8 +2035,16 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-03"
   },
+  "lieux:goethe-institut-tunis": {
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
+  },
   "lieux:grafiflow": {
    "verifie": "2026-11-02",
+   "vu": "2026-11-03"
+  },
+  "lieux:institut-culturel-italien-de-tunis": {
+   "verifie": "2026-11-03",
    "vu": "2026-11-03"
   },
   "lieux:institut-francais-de-sfax": {
@@ -2032,6 +2069,10 @@
    "texte": "L'Institut français de Tunisie (IFT) fait partie du réseau mondial des instituts français. Le bureau principal est situé à Tunis en Tunisie, tandis que deux antennes locales complètent son réseau à Sousse et Sfax.",
    "url": "https://fr.wikipedia.org/wiki/Institut_fran%C3%A7ais_de_Tunisie",
    "verifie": "2026-11-02",
+   "vu": "2026-11-03"
+  },
+  "lieux:instituto-cervantes-de-tunez": {
+   "verifie": "2026-11-03",
    "vu": "2026-11-03"
   },
   "lieux:jardin-institut-francais-de-sfax": {
@@ -2089,6 +2130,10 @@
   "lieux:mediatheque-institut-francais-de-tunis": {
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
+  },
+  "lieux:mouhit": {
+   "verifie": "2026-11-03",
+   "vu": "2026-11-03"
   },
   "lieux:one-resort": {
    "verifie": "2026-11-02",

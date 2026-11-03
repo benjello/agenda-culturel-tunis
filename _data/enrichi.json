@@ -65,10 +65,20 @@
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TNDEV_08.JPG?width=400",
    "qid": "Q29024306"
   },
+  "lieu:cite-de-la-culture": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Cité_de_la_culture,_Tunis_27_décembre_2014.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cité_de_la_culture,_Tunis_27_décembre_2014.jpg?width=400",
+   "qid": "Q2974756"
+  },
   "lieu:douz": {
    "credit": "https://commons.wikimedia.org/wiki/File:Douz-souk.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Douz-souk.jpg?width=400",
    "qid": "Q1009268"
+  },
+  "lieu:goethe-institut-tunis": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Africa_square_07.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Africa_square_07.jpg?width=400",
+   "qid": "Q28227346"
   },
   "lieu:institut-francais-de-tunis": {
    "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
@@ -89,6 +99,9 @@
  "osm": {
   "lieu:cinema-le-palace": {
    "type": "cinema"
+  },
+  "lieu:cite-de-la-culture": {
+   "type": "centre_art"
   },
   "lieu:el-teatro": {
    "type": "theatre",
@@ -135,7 +148,7 @@
    "type": "musee"
   },
   "musee:Musée de Dar Sebastian (Centre culturel international)": {
-   "type": "centre"
+   "type": "centre_art"
   },
   "musee:Musée de Salakta": {
    "type": "musee"
@@ -267,25 +280,32 @@
   "lieu:b7l9-art-centre": "2026-11-02",
   "lieu:beit-al-hikma-carthage": "2026-11-02",
   "lieu:caserne-el-attarine": "2026-11-02",
+  "lieu:central-tunis": "2026-11-03",
   "lieu:cine-350-cite-de-la-culture": "2026-11-02",
   "lieu:cinema-alhambra-zephyr": "2026-11-02",
   "lieu:cinema-le-colisee": "2026-11-02",
   "lieu:cinema-le-palace": "2026-11-02",
   "lieu:cinemadart": "2026-11-02",
+  "lieu:cite-de-la-culture": "2026-11-03",
   "lieu:cite-des-sciences-de-tunis": "2026-11-02",
   "lieu:creative-hub-sidi-bou-said": "2026-11-02",
   "lieu:dar-ziqua-zaghouan": "2026-11-02",
   "lieu:douz": "2026-11-02",
+  "lieu:echos-electrik": "2026-11-03",
   "lieu:el-teatro": "2026-11-02",
+  "lieu:el-warcha": "2026-11-03",
   "lieu:fondation-rosa-luxemburg-tunis": "2026-11-02",
   "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
   "lieu:galerie-insular-erriadh-djerbahood": "2026-11-02",
   "lieu:galerie-tgm": "2026-11-02",
+  "lieu:goethe-institut-tunis": "2026-11-03",
   "lieu:grafiflow": "2026-11-02",
+  "lieu:institut-culturel-italien-de-tunis": "2026-11-03",
   "lieu:institut-francais-de-sfax": "2026-11-02",
   "lieu:institut-francais-de-sousse": "2026-11-02",
   "lieu:institut-francais-de-tunis": "2026-11-02",
   "lieu:institut-francais-de-tunisie": "2026-11-02",
+  "lieu:instituto-cervantes-de-tunez": "2026-11-03",
   "lieu:jardin-institut-francais-de-sfax": "2026-11-02",
   "lieu:l-agora-djerba": "2026-11-02",
   "lieu:l-art-rue-entree-sur-inscription-lien-en-bio": "2026-11-02",
@@ -298,6 +318,7 @@
   "lieu:mediatheque-institut-francais-de-sfax": "2026-11-02",
   "lieu:mediatheque-institut-francais-de-sousse": "2026-11-02",
   "lieu:mediatheque-institut-francais-de-tunis": "2026-11-02",
+  "lieu:mouhit": "2026-11-03",
   "lieu:one-resort": "2026-11-02",
   "lieu:one-resort-monastir": "2026-11-02",
   "lieu:pathe-azur-city": "2026-11-02",

@@ -4,4 +4,6 @@ noms: ["Cité de la Culture", "Cité de la Culture, Tunis", "Cité de la culture
 type: "centre"
 adresse: "Avenue Mohamed V, Tunis"
 ville: "tunis"
+lat: 36.8109
+lon: 10.18608
 ---

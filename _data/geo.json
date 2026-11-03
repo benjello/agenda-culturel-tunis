@@ -18,6 +18,10 @@
   36.79763,
   10.1717
  ],
+ "central tunis": [
+  35.2976,
+  10.70592
+ ],
  "cine 350 cite de la culture": null,
  "cinema alhambra zephyr": null,
  "cinema le colisee": [
@@ -26,6 +30,10 @@
  ],
  "cinema le palace": null,
  "cinemadart": null,
+ "cite de la culture": [
+  36.8109,
+  10.18608
+ ],
  "cite des sciences de tunis": [
   36.84767,
   10.18839
@@ -36,10 +44,12 @@
   33.45711,
   9.02498
  ],
+ "echos electrik": null,
  "el teatro": [
   36.81393,
   10.17371
  ],
+ "el warcha": null,
  "entre les rives": null,
  "fondation rosa luxemburg tunis": [
   36.82627,
@@ -51,8 +61,10 @@
  ],
  "galerie insular erriadh djerbahood": null,
  "galerie tgm": null,
+ "goethe institut tunis": null,
  "grafiflow": null,
  "grafiflow v7jh 6j7": null,
+ "institut culturel italien de tunis": null,
  "institut francais de sfax": null,
  "institut francais de sousse": null,
  "institut francais de tunis": [
@@ -63,6 +75,7 @@
   36.8021,
   10.18066
  ],
+ "instituto cervantes de tunez": null,
  "jardin institut francais de sfax": [
   36.82572,
   10.07976
@@ -104,6 +117,7 @@
   36.85392,
   10.19632
  ],
+ "mouhit": null,
  "one resort": [
   35.76372,
   10.7399

@@ -13,6 +13,8 @@ image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_
 ajoute: "2026-11-02"
 presse: [{"titre": "Jaou Tunis 2026 : Les corps, ces territoires de résistance", "lien": "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/", "source_nom": "La Presse (culture)", "date": "2026-10-31"}]
 festival: "jaou"
+doublon: true
+partenariat: true
 auto: true
 ---
 
