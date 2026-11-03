@@ -85,7 +85,7 @@ def fiches(dossier: str) -> list[tuple[str, str]]:
 
 # Étiquette OpenStreetMap → type de lieu du site (_data/types_lieux.yml)
 TYPES_OSM = {"cinema": "cinema", "theatre": "theatre", "gallery": "galerie", "museum": "musee",
-             "library": "bibliotheque", "arts_centre": "centre", "community_centre": "centre"}
+             "library": "bibliotheque", "arts_centre": "centre_art", "community_centre": "centre"}
 
 
 def osm_index(elements: list[dict]) -> dict:

@@ -38,11 +38,14 @@ tout: { ar: "الكل", en: "All" }
 cat.cinema: { ar: "سينما", en: "Cinema" }
 cat.musique: { ar: "موسيقى", en: "Music" }
 cat.theatre: { ar: "مسرح", en: "Theatre" }
-cat.expo: { ar: "معرض", en: "Exhibition" }
+cat.expo: { ar: "معارض وفنون بصرية", en: "Exhibitions & visual arts" }
 cat.danse: { ar: "رقص", en: "Dance" }
 cat.litterature: { ar: "أدب", en: "Literature" }
-cat.conference: { ar: "محاضرة", en: "Talk" }
-cat.spectacle: { ar: "عرض", en: "Show" }
+cat.conference: { ar: "محاضرات ونقاشات", en: "Talks & debates" }
+cat.spectacle: { ar: "فنون العرض والشارع", en: "Performing & street arts" }
+cat.patrimoine: { ar: "تراث وتقاليد", en: "Heritage & traditions" }
+cat.multidisciplinaire: { ar: "متعدد الاختصاصات", en: "Multidisciplinary" }
+jusquau: { ar: "إلى غاية", en: "until" }
 cat.autre: { ar: "أخرى", en: "Other" }
 moment.tout: { ar: "في أي وقت", en: "Any time" }
 moment.aujourdhui: { ar: "اليوم", en: "Today" }
@@ -101,6 +104,7 @@ conferencier: { ar: "محاضرات ولقاءات", en: "Talks and meetings" }
 type_lieu.cinema: { ar: "قاعات السينما", en: "Cinemas" }
 type_lieu.theatre: { ar: "المسارح والأوبرا", en: "Theatres and opera" }
 type_lieu.musee: { ar: "المتاحف", en: "Museums" }
+type_lieu.centre_art: { ar: "مراكز الفن", en: "Art centres" }
 type_lieu.galerie: { ar: "الأروقة", en: "Galleries" }
 type_lieu.bibliotheque: { ar: "المكتبات", en: "Libraries and bookshops" }
 type_lieu.club: { ar: "النوادي والحانات والمقاهي", en: "Clubs, bars and cafés" }
@@ -109,6 +113,7 @@ type_lieu.autre: { ar: "فضاءات أخرى", en: "Other venues" }
 type_lieu_un.cinema: { ar: "سينما", en: "Cinema" }
 type_lieu_un.theatre: { ar: "مسرح", en: "Theatre" }
 type_lieu_un.musee: { ar: "متحف", en: "Museum" }
+type_lieu_un.centre_art: { ar: "مركز فني", en: "Art centre" }
 type_lieu_un.galerie: { ar: "رواق", en: "Gallery" }
 type_lieu_un.bibliotheque: { ar: "مكتبة", en: "Library" }
 type_lieu_un.club: { ar: "نادي، حانة", en: "Club, bar" }

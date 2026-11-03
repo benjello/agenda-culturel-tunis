@@ -1,0 +1,45 @@
+# Lieux culturels importants, toujours listés sur la page Lieux, même sans événement à l'affiche.
+# (Retour d'une testeuse, 3 novembre 2026.) Les lieux qui ont des événements sont déjà ajoutés
+# automatiquement ; cette liste complète la couverture et rattache les variantes d'écriture.
+# nom : nom de la fiche · type : voir _data/types_lieux.yml · ville : voir _data/villes.yml
+# noms : autres écritures du lieu dans les annonces · adresse : aide la recherche sur OpenStreetMap
+# Les coordonnées (carte) sont cherchées sur OpenStreetMap au prochain passage, ou à placer dans
+# _data/lieux_coords.yml si le lieu n'y est pas trouvé.
+- nom: Le 32Bis
+  type: centre_art
+  ville: tunis
+  noms: ["Le 32bis", "32bis", "Le 32 bis"]
+- nom: El Warcha
+  type: centre_art
+  ville: tunis
+  noms: ["Warcha", "El Warcha Tunis"]
+- nom: Echos Electrik
+  type: club
+  ville: tunis
+  noms: ["Echos Electrik Tunis", "Échos Électrik"]
+- nom: Central Tunis
+  type: club
+  ville: tunis
+  noms: ["Central", "Le Central Tunis"]
+- nom: Mouhit
+  type: centre
+  ville: tunis
+  noms: ["Mouhit Tunis", "Espace Mouhit", "محيط"]
+- nom: Institut culturel italien de Tunis
+  type: centre
+  ville: tunis
+  adresse: Rue de Rome, Tunis
+  noms: ["Istituto Italiano di Cultura di Tunisi", "Institut italien de Tunis", "Institut culturel italien", "IIC Tunisi"]
+- nom: Goethe-Institut Tunis
+  type: centre
+  ville: tunis
+  noms: ["Institut Goethe", "Institut allemand de Tunis", "Goethe Institut Tunis"]
+- nom: Instituto Cervantes de Túnez
+  type: centre
+  ville: tunis
+  noms: ["Instituto Cervantes Tunez", "Institut Cervantes", "Instituto Cervantes de Tunis"]
+- nom: Cité de la Culture
+  type: centre
+  ville: tunis
+  adresse: Avenue Mohamed V, Tunis
+  noms: ["Cité de la culture de Tunis", "La Cité de la Culture", "Cité de la Culture, Tunis", "مدينة الثقافة"]

@@ -47,7 +47,7 @@
 - id: jaou
   nom: Jaou Tunis (Fondation Kamel Lazaar)
   nom_court: Jaou Tunis
-  genre: expo
+  genre: multidisciplinaire
   edition: "8e édition, 2026"
   debut: 2026-10-23
   fin: 2026-11-22
@@ -56,6 +56,18 @@
   instagram: https://www.instagram.com/jaoutunis/
   mots: "Jaou"
   sans_fiche: true   # ses événements sont déjà dans l'agenda : pas de carte en plus, seulement l'étiquette
+
+- id: oasis-days
+  nom: Oasis Days (La Boîte)
+  nom_court: Oasis Days
+  genre: multidisciplinaire
+  edition: "2026"
+  debut: 2026-10-29
+  fin: 2026-11-01
+  programme: true
+  instagram: https://www.instagram.com/la_boite_art_architecture/
+  mots: "Oasis Days"
+  sans_fiche: true   # c'est un festival, pas une exposition : les posts de La Boîte portent son étiquette
 
 - id: podcast-days
   nom: Podcast Days by Tunisia Podcast Festival
@@ -152,7 +164,7 @@
 
 - id: dream-city
   nom: Dream City (L'Art Rue)
-  genre: spectacle
+  genre: multidisciplinaire
   edition: "Biennale, prochaine édition en 2027"
   periode: Octobre, années impaires
   programme: false

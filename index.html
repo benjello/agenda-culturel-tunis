@@ -31,7 +31,7 @@ layout: default
 <p class="titre-filtre" data-t="filtre_quoi">Quoi</p>
 <div class="filters" id="filters">
   <button class="active" data-filter="all" data-t="tout">Tout</button>
-  {% for c in site.data.categories %}<button data-filter="{{ c[0] }}" data-t="cat.{{ c[0] }}">{{ c[1].label }}</button>{% endfor %}
+  {% for c in site.data.categories %}<button data-filter="{{ c[0] }}" data-t="cat.{{ c[0] }}"{% if c[1].aide %} title="{{ c[1].aide | escape }}"{% endif %}>{{ c[1].label }}</button>{% endfor %}
 </div>
 <div class="cases">
   <label><input type="checkbox" id="gratuit"> <span data-t="seul_gratuit">Gratuit</span></label>

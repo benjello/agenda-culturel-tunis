@@ -4,6 +4,7 @@ Corrige ce qui est sûr :
 - un lieu qui est en fait le nom de la source (« Webdo », « Kadhem ») → « Lieu à préciser » ;
 - un code Google Maps collé au lieu (« Grafiflow V7JH+6J7 » → « Grafiflow ») ;
 - une annonce de service (« la Médiathèque ouvre exceptionnellement… ») → retirée ;
+- une annonce de partenariat (« fier d'être partenaire de la 8e édition de… ») → masquée ;
 - une rubrique devant le titre d'un film (« Movie Night: UN FILS » → « UN FILS »).
   Utile pour les sources qui ne sont pas relues chaque jour (Instagram, Facebook).
 
@@ -24,7 +25,7 @@ from pathlib import Path
 
 import yaml
 
-from .commun import RACINE, pas_un_evenement, titre_film
+from .commun import RACINE, annonce_de_partenariat, pas_un_evenement, titre_film
 from .doublons import _ecrire, _lire
 from .ecriture import DOSSIER_AUTO, LIEU_INCONNU
 from .granularite import A_SIGNALER, DEFAUTS, bilan
@@ -86,6 +87,15 @@ def controler(sources: list[dict], dossier: Path = DOSSIER_AUTO, aujourd_hui: dt
         film = titre_film(titre) if (champs.get("film") or champs.get("category") == "cinema") else titre
         if nouveau != lieu or film != titre:
             champs["venue"], champs["title"] = nouveau, film
+            auto = champs.pop("auto", True)
+            champs["auto"] = auto
+            _ecrire(f, champs, corps)
+            corriges += 1
+        if annonce_de_partenariat(corps or "") and not champs.get("doublon"):
+            champs["doublon"] = True  # masquée : un partenariat n'est pas un événement
+            champs["partenariat"] = True
+            if not isinstance(champs.get("date"), str):
+                champs["date"] = str(champs.get("date"))[:16]
             auto = champs.pop("auto", True)
             champs["auto"] = auto
             _ecrire(f, champs, corps)

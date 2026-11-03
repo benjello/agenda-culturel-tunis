@@ -39,7 +39,7 @@ body:
     id: categorie
     attributes:
       label: Catégorie
-      options: [Musique, Théâtre, Spectacle, Danse, Exposition, Cinéma, Conférence, Littérature, Autre]
+      options: [Musique, Théâtre, Arts du spectacle et de la rue, Danse, Expositions & arts visuels, Cinéma, Conférences & débats, Littérature, Patrimoine & traditions, Multidisciplinaire, Autre]
     validations:
       required: true
   - type: input
