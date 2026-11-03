@@ -36,7 +36,7 @@
       {%- for d in jours -%}{%- assign iso = d | date: '%Y-%m-%d' -%}{%- if iso != prec -%}{%- assign prec = iso -%}{%- assign j = d | date: "%w" | plus: 0 -%}<span data-jour="{{ iso }}">{{ site.data.fr.jours_courts[j] }} {{ d | date: "%-d" }}</span>{%- endif -%}{%- endfor -%}
     </p>
     {%- else %}
-    <p class="meta">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · {% include lien-carte.html lieu=e.venue adresse=e.address %}</p>
+    <p class="meta"><span class="date-longue">{% include date-fr.html date=e.date %}{% if e.end_date %} → {% include date-fr.html date=e.end_date %}{% endif %} · </span>{% if e.end_date %}<span class="date-courte">→ {{ e.end_date | date: "%-d" }} <span data-mc="{{ e.end_date | date: '%-m' }}">{% assign mf = e.end_date | date: "%-m" | minus: 1 %}{{ site.data.fr.mois_courts[mf] }}</span> · </span>{% endif %}{% include lien-carte.html lieu=e.venue adresse=e.address %}</p>
     {%- endif %}
     {%- comment -%} Début de la notice : affiché seulement sur grand écran (voir .extrait dans style.css). {%- endcomment -%}
     {%- assign extrait = e.content | strip_html | strip_newlines | strip | truncatewords: 28, "…" -%}
@@ -56,10 +56,10 @@
       {%- if e.seances and e.film != true %}<span>{{ e.seances.size }} <span data-t="seances">séances</span></span>{% endif -%}
       {%- if e.category == "cinema" and e.film != true %}<span class="secondaire">{% include liens-film.html titre=e.title imdb=e.imdb letterboxd=e.letterboxd %}</span>{% endif -%}
       <span class="outils">
-        <button type="button" class="apercu-rapide" aria-label="Aperçu rapide" data-t-title="apercu_rapide" title="Aperçu rapide">👁</button>
-        <button type="button" class="fav" aria-label="Garder en favori" data-t-title="favori" title="Garder en favori">☆</button>
-        <button type="button" class="ajout-agenda" aria-label="Ajouter à mon agenda" data-t-title="agenda" title="Ajouter à mon agenda">📅</button>
-        <button type="button" class="partager" aria-label="Partager" data-t-title="partager" title="Partager">↗</button>
+        <button type="button" class="apercu-rapide" aria-label="Aperçu rapide" data-t-title="apercu_rapide" title="Aperçu rapide"><span class="ico" aria-hidden="true">👁</span><span class="lib" aria-hidden="true" data-t="lib_apercu">Aperçu</span></button>
+        <button type="button" class="fav" aria-label="Garder en favori" data-t-title="favori" title="Garder en favori"><span class="ico" aria-hidden="true">☆</span><span class="lib" aria-hidden="true" data-t="lib_favori">Favori</span></button>
+        <button type="button" class="ajout-agenda" aria-label="Ajouter à mon agenda" data-t-title="agenda" title="Ajouter à mon agenda"><span class="ico" aria-hidden="true">📅</span><span class="lib" aria-hidden="true" data-t="lib_agenda">Agenda</span></button>
+        <button type="button" class="partager" aria-label="Partager" data-t-title="partager" title="Partager"><span class="ico" aria-hidden="true">↗</span><span class="lib" aria-hidden="true" data-t="lib_partager">Partager</span></button>
       </span>
     </p>
   </div>

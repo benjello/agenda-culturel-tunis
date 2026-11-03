@@ -30,19 +30,23 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M" }}">
 </head>
 <body>
+  <a class="aller-contenu" href="#contenu" data-t="aller_contenu">Aller au contenu</a>
   <header class="site-header">
     <a class="brand" href="{{ '/' | relative_url }}" data-t="titre_site">{{ site.title }}</a>
     <nav>
       <a href="{{ '/' | relative_url }}" data-t="nav.agenda">Agenda</a>
       <a href="{{ '/semaine/' | relative_url }}" data-t="nav.semaine">Cette semaine</a>
       <a href="{{ '/week-end/' | relative_url }}" data-t="nav.weekend">Ce week-end</a>
+      <span class="nav-plus" id="menu-plus-zone">
       <a href="{{ '/festivals/' | relative_url }}" data-t="nav.festivals">Festivals</a>
       <a href="{{ '/lieux/' | relative_url }}" data-t="nav.lieux">Lieux</a>
       <a href="{{ '/musees/' | relative_url }}" data-t="nav.musees">Musées</a>
       <a href="{{ '/enfants/' | relative_url }}" data-t="nav.enfants">Enfants</a>
       <a href="{{ '/artistes/' | relative_url }}" data-t="nav.artistes">Artistes</a>
-      <a href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">+ Proposer</a>
       <a href="{{ '/a-propos/' | relative_url }}" data-t="nav.apropos">À propos</a>
+      </span>
+      <a class="nav-proposer" href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">+ Proposer</a>
+      <button type="button" class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="menu-plus-zone"><span data-t="menu_plus">Menu</span> ☰</button>
     </nav>
     <div class="reglages" role="group" aria-label="Réglages">
       <span class="langues"><button type="button" data-langue="fr" lang="fr">FR</button><button type="button" data-langue="ar" lang="ar">عربي</button><button type="button" data-langue="en" lang="en">EN</button></span>
@@ -50,7 +54,7 @@
       <button type="button" id="bouton-leger" title="Affichage léger (sans images)" aria-label="Affichage léger">🍃</button>
     </div>
   </header>
-  <main>
+  <main id="contenu" tabindex="-1">
     {{ content }}
   </main>
   <footer class="site-footer">

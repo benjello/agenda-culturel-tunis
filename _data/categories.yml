@@ -2,10 +2,10 @@
 # clé: { nom affiché, couleur }
 cinema:   { label: "Cinéma",    color: "#c0392b" }
 musique:  { label: "Musique",   color: "#8e44ad" }
-theatre:  { label: "Théâtre",   color: "#d35400" }
-expo:     { label: "Exposition", color: "#16a085" }
-danse:    { label: "Danse",     color: "#2980b9" }
-litterature: { label: "Littérature", color: "#7f8c8d" }
+theatre:  { label: "Théâtre",   color: "#c04b00" }
+expo:     { label: "Exposition", color: "#0f7a64" }
+danse:    { label: "Danse",     color: "#1f6fa8" }
+litterature: { label: "Littérature", color: "#5f6b6d" }
 conference: { label: "Conférence", color: "#2c3e50" }
 autre:    { label: "Autre",     color: "#555555" }
 spectacle: { label: "Spectacle", color: "#b03a5b" }
