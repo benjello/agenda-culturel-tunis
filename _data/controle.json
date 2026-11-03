@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "corriges": 2,
+ "corriges": 1,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -257,11 +257,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 5
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 5
      }
     ]
@@ -647,7 +642,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 12
+      "n": 11
      }
     ]
    },
@@ -685,7 +680,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 30
+      "n": 3
      }
     ]
    }
@@ -879,7 +874,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 30
+      "n": 3
      }
     ]
    },
@@ -910,7 +905,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 12
+      "n": 11
      }
     ]
    },
@@ -930,11 +925,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 5
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 5
      }
     ]

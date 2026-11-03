@@ -230,7 +230,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -540,7 +540,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -1061,7 +1061,10 @@
   ],
   "tunisien": true,
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers !",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "KLARA AND THE SUN",
@@ -1274,7 +1277,10 @@
    "_events/auto/tunis-events-cinema/2026-11-03-le-fantome-de-l-opera.md"
   ],
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra Garnier. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Le Temps suspendu",
@@ -1781,7 +1787,10 @@
   "age": "",
   "tunisien": true,
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a wealthy businessman: win over his daughter and help her move on from her ex. But a case of mistaken identity turns the plan upside down, sending Hassan on an unexpected adventure and into a love story he never saw coming.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "What else ? (فانا محط بش تتحط ؟)",
