@@ -100,8 +100,8 @@
  {
   "semaine": "2026-S45",
   "date": "2026-11-03",
-  "a_venir": 141,
-  "sept_jours": 80,
+  "a_venir": 136,
+  "sept_jours": 75,
   "sources_actives": 79,
   "sources_avec_evenements": 24,
   "sources_muettes": [
@@ -162,38 +162,38 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 67,
+   "tunis": 61,
    "sousse": 7,
-   "sfax": 3,
+   "sfax": 4,
    "autres": 1,
    "sud": 1,
    "monastir": 1
   },
   "par_categorie": {
-   "cinema": 29,
-   "theatre": 16,
-   "expo": 10,
-   "autre": 9,
+   "cinema": 26,
+   "theatre": 14,
+   "expo": 11,
+   "autre": 8,
    "conference": 6,
    "musique": 5,
    "litterature": 5
   },
   "par_genre": {
-   "agenda": 28,
-   "lieu": 24,
-   "institution": 17,
+   "lieu": 23,
+   "agenda": 23,
+   "institution": 18,
    "festival": 5,
    "collectif": 3,
    "presse": 3
   },
   "par_source": {
-   "ift-pdf": 16,
-   "tunis-events-cinema": 11,
-   "tunis-events": 8,
+   "ift-pdf": 17,
+   "tunis-events-cinema": 8,
    "cine-agora": 7,
-   "teskerti": 7,
-   "el-teatro": 5,
+   "tunis-events": 7,
+   "teskerti": 6,
    "cine-alhambra": 4,
+   "el-teatro": 4,
    "ig-tunisia-podcasts-festival": 3,
    "ig-lart-rue": 2,
    "ig-theatre-national": 2,

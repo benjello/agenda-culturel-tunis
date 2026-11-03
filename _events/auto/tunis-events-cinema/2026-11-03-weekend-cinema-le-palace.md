@@ -8,7 +8,6 @@ category: "cinema"
 link: "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-03", "2026-11-03 15:45", "2026-11-03 19:30"]
 image: "https://tunis.events/storage/54656839d0e7cae0d56661e05932464e.png"
 film: true
 ajoute: "2026-11-03"

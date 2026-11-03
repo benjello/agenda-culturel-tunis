@@ -1,8 +1,8 @@
 ---
 title: "Klara et le soleil"
-date: 2026-11-03 17:45
-venue: "Pathé Azur City"
-address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
+date: 2026-11-03 21:55
+venue: "Pathé Tunis City"
+address: "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
 ville: "tunis"
 category: "cinema"
 link: "https://tunis.events/fr/cinema/klara-et-le-soleil"

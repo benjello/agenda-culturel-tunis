@@ -236,6 +236,10 @@
    "ar": "ONWRD/FRWRD",
    "en": "ONWRD/FRWRD"
   },
+  "Oliv'Alliance : L'Olivier, trait d'union de la Méditerranée": {
+   "ar": "أوليفر، معاهدة اتحاد البحر الأبيض المتوسط",
+   "en": "Oliv'Alliance: The Oliver, a Treaty of Union of the Mediterranean"
+  },
   "On the occasion of its 10th anniversary, The Funambulist is welcomed by 32Bis from Novembe": {
    "fr": "A l'occasion de son 10ème anniversaire, The Funambulist est accueilli par 32Bis de Novembe",
    "ar": "وبمناسبة الذكرى العاشرة للذكرى السنوية العاشرة، يرحّب بـ 32 بيزو من نوفيمبي"
@@ -251,10 +255,6 @@
   "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30": {
    "ar": "لإغلاق يوم البث ال Podcast Festival التونسي، يُجتمع في 7 تشرين الثاني/نوفمبر في الساعة 30/18",
    "en": "To close Podcast Days by Tunisia Podcast Festival, meet on November 7 at 6.30 pm"
-  },
-  "Power Yoga with Nicole Skarpness @nskarp": {
-   "fr": "Yoga de puissance avec Nicole Skarpness @nskarp",
-   "ar": "Power Yoga with Nicole Skarpness @nskarp"
   },
   "Quand la distance devient un jour lumière": {
    "ar": "عندما تصبح المسافة يوماً خفيفاً",
@@ -432,11 +432,6 @@
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
-  "_events/auto/el-teatro/2026-11-03-laps-de-temps.md": {
-   "cle": "420d1322961f",
-   "ar": "حرق النفايات\nHamza Ouertateni\nمثبتة على نطاق واسع\nHannibal-Prod",
-   "en": "حمز\nHamza Ouertateni\nحنبعل لل\nHannibal-Prod"
-  },
   "_events/auto/el-teatro/2026-11-04-une-nuit-dautomne.md": {
    "cle": "92e8d1915800",
    "ar": "■ المندوبية\nمحمد برهومي\nand the\nWahra-Prod",
@@ -476,6 +471,11 @@
    "cle": "01408c4dc0ae",
    "ar": "وفي إطار المهرجان &quot; جاكو تونس 2026 &quot; (23 تشرين الأول/أكتوبر - 22 تشرين الثاني/نوفمبر)، يستضيف المعهد الفرنسي لتونس المعرض التصويري &quot; صور سورية، بالمير، حلب، دمشق &quot; الذي قام به ميشيل إيزنلور.\nوسيُفتتح هذا الافتتاح يوم الثلاثاء 27 تشرين الأول/أكتوبر الساعة 00/17 بحضور المصور.\nوسيعقب الافتتاح، في الساعة ٣٠/١٨، اجتماع بشأن موضوع &quot; التصوير والتراث &quot; مع سومايا غز الله، وتاريخ الباحث خالد ميليتي والمصور ميشيل ايزنلور.",
    "en": "As part of the festival \"Jaou Tunis 2026\" (23 October-22 November), the French Institute of Tunisia hosts the photographic exhibition \"Images de Syria, Palmyre, Aleppo, Damascus\" by Michel Eisenlohr.\nThe opening will take place on Tuesday 27 October at 5 p.m., in the presence of the photographer.\nThe opening will be followed, at 6.30 p.m., by a meeting on the theme \"Photography and Heritage\" with Soumaya Gharsallah, the researcher historian Khaled Melliti and photographer Michel Eisenlohr."
+  },
+  "_events/auto/ift-pdf/2026-11-02-oliv-alliance-l-olivier-trait-d-union-de-la-mediterranee.md": {
+   "cle": "80ddae2cf207",
+   "ar": "وفي الفترة من 2 تشرين الثاني/نوفمبر إلى 31 كانون الأول/ديسمبر، يرحب المعهد التونسي الفرنسي في سفاكس في حديقته بمعرض &quot; الشجر الزيتوني &quot; ، وهو اتحاد البحر الأبيض المتوسط، الذي دعا إلى اكتشاف شجرة الزيتون كرمز عالمي للسلام والتشارك والتراث والحوار بين ثقافات البحر الأبيض المتوسط.",
+   "en": "From 2 November to 31 December, the French Institute of Tunisia in Sfax welcomes in its garden the exhibition \"Olivanity: The olive tree, the union of the Mediterranean\", an invitation to discover the olive tree as a universal symbol of peace, sharing, heritage and dialogue between Mediterranean cultures."
   },
   "_events/auto/ift-pdf/2026-11-04-lheure-du-jeu.md": {
    "cle": "11a1e0f79144",
@@ -907,55 +907,20 @@
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
-  "_events/auto/tunis-events-cinema/2026-11-03-evenement.md": {
-   "cle": "9c488266f1d8",
-   "ar": "تصوّر على النحو التالي: 4 فحوصات هذا الأسبوع في لي كولوسيوم، باثيه تونس العاصمة، ولي بالاس. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
-   "en": "ل的 شايح at the cinema: 4 screenings this week at Le Colosseum, Pathé Tunis City and Le Palace. Next session Mon. 2 Nov. At 10:00. ."
-  },
   "_events/auto/tunis-events-cinema/2026-11-03-klara-and-the-sun.md": {
    "cle": "617326298fe4",
    "ar": "KLARA and the SUN (2026)\nالمدير: تيكا وايتي\nGenre: Science-Fiction, Drama\nالمدة: 116 دقيقة\nSynopsis\nعندما تقابل (كلارا) (جوسي) كل واحد على الفور يتصور توأم روح في الآخر\nجوسي لديها علاقة معقدة مع والدتها وكلاهما مر بالكثير من المشقات",
    "en": "KLARA AND THE SUN (2026)\nDirector: Taika Waititi\nGenre: Science-Fiction, Drama\nDuration: 116 min\nSynopsis\nWhen Klara meets Josie, each one immediately perceives a soul mate in the other.\nJosie has a complicated relationship with her mother and both have been through a lot of hardships."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil-pathe-tunis-city.md": {
-   "cle": "2d10a8e8088a",
-   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
-   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil.md": {
    "cle": "2d10a8e8088a",
    "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
    "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
   },
-  "_events/auto/tunis-events-cinema/2026-11-03-l-ile-des-souvenirs-forgotten-island.md": {
-   "cle": "06befcd53177",
-   "ar": "بينما يحتفلون بآخر مساء لهم معاً، تسقط الفتاتان على بوابة غامضة تنقلهما إلى جزيرة ناكالي الرائعة، مأهولة بمخلوقات سحرية من القصص الخيالية الفلبينية في طفولتهما. وستنضم الفتيات معاً إلى بعضهن، في حين سيتعين عليهن مواجهة الآخرين.",
-   "en": "As they celebrate their last evening together, the two girls fall on a mysterious portal that transports them to the fantastic island of Nakali, populated by magical creatures straight out of Filipino mythological tales of their childhood. Together, the girls will join some of them, while they will have to face others."
-  },
   "_events/auto/tunis-events-cinema/2026-11-03-last-chance.md": {
    "cle": "aadab86f486f",
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-le-fantome-de-l-opera.md": {
-   "cle": "61de9705c8dc",
-   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا غارنيير المرموقة. كما تكرّر الأورفيوس، أوبرا ملعونة يُزعم أنها مؤلفة من شبح الأوبرا، تقع في غرام عازف بيانو غامض.",
-   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Opéra Garnier. As she repeats the Orpheus, a cursed opera allegedly composed by the Phantom of the Opera, she falls in love with a mysterious pianist."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-le-mystere-lucy-lost-pathe-tunis-city.md": {
-   "cle": "8567d16625c8",
-   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تلتقي بـ (ميلى) فتاه صغيره يمكنها رؤيتها لوحدها (لوسي) تشرع بمغامرة كبيرة لكسر سر قوتها الغامضة",
-   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-le-mystere-lucy-lost.md": {
-   "cle": "8567d16625c8",
-   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تلتقي بـ (ميلى) فتاه صغيره يمكنها رؤيتها لوحدها (لوسي) تشرع بمغامرة كبيرة لكسر سر قوتها الغامضة",
-   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-other-mommy-malfaisante.md": {
-   "cle": "4f020117916c",
-   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، واحد من أكثر الفنانين نفوذا في السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي أنشأ أصلا الغرف الخلفية والهوس، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير الجينات والكشف عن روب سافاج.",
-   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-wala-kan-ala-el-bal.md": {
    "cle": "b493ee0a062f",
@@ -982,6 +947,11 @@
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
+  "_events/auto/tunis-events-cinema/2026-11-04-bakma.md": {
+   "cle": "94b2ba3b975b",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
+  },
   "_events/auto/tunis-events-cinema/2026-11-04-dar-el-3ers.md": {
    "cle": "bf37d01ad643",
    "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز",
@@ -1006,11 +976,6 @@
    "cle": "74d8614c0b3d",
    "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح.\nوفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.\nكيف نقترب من البحر الأبيض المتوسط ومن منطقته دون أن نبحر بأعماق تجارب البشر؟\nهذا البحر كان دائماً ممراً، قناة سابقة",
    "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface.\nWhile a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage.\nHow to approach the Mediterranean Sea and its region without navigating the depths of the odysseys of human experiments?\nThis sea has always been a passageway; a canal of ex"
-  },
-  "_events/auto/tunis-events/2026-11-03-power-yoga-with-nicole-skarpness-nskarp.md": {
-   "cle": "085424bd88d7",
-   "fr": "\\-Un flux dynamique, de mise à la terre pour se reconnecter avec votre corps offrant un équilibre parfait de force, de respiration et de mouvement dans un cadre de nuit calme.\nNiveau: intermédiaire et avancé\nTapis, thé et collations gratuits disponibles après la session!\nLes billets ne sont remboursables que 24 heures avant l'événement prévu.\nAprès la date limite de 24 heures, les billets ne seront plus admissibles à un remboursement.",
-   "ar": "تدفق ديناميكي، أرضي لإعادة التواصل مع جسدك يعرض توازناً مثالياً من القوّة، والتنفس، والحركة في بيئة ليلية هادئة.\nالمستوى: الوسيط والمتقدم\nفراشات مُملة، شاي ووجبات خفيفة متاحة بعد الدورة!\nولا يمكن رد التذاكر إلا قبل 24 ساعة من انعقاد الحدث المقرر.\nوبعد انقضاء مهلة الـ 24 ساعة، لم تعد التذاكر مؤهلة للاسترداد."
   },
   "_events/auto/tunis-events/2026-11-04-yoga-for-busy-minds-with-judit-yoga-in-sidibousaid.md": {
    "cle": "0a27831368f6",

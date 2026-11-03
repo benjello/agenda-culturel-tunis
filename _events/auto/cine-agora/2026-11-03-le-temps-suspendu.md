@@ -12,7 +12,6 @@ source_name: "L'Agora (La Marsa)"
 image: "https://lagora.tn/wp-content/uploads/2026/10/Le-Temps-suspendu-DVD.jpg"
 film: true
 ajoute: "2026-11-01"
-autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/le-temps-suspendu", "source": "tunis-events-cinema"}]
 auto: true
 ---
 

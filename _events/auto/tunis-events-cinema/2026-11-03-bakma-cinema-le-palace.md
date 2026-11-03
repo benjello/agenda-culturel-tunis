@@ -8,7 +8,6 @@ category: "cinema"
 link: "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-03", "2026-11-03 13:45", "2026-11-03 17:30"]
 image: "https://tunis.events/storage/8cf23cd50c02ce7712493c19dbe82f7e.jpeg"
 film: true
 ajoute: "2026-11-03"

@@ -11,6 +11,7 @@
   "Institut français de Tunisie": "institut-francais-de-tunisie",
   "Institut Français de Tunis": "institut-francais-de-tunis",
   "Institut français de Tunis": "institut-francais-de-tunis",
+  "Institut français de Sfax": "institut-francais-de-sfax",
   "Médiathèque de l'ift_tunisie": "mediatheque-institut-francais-de-tunis",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
   "Institut français de Sousse": "institut-francais-de-sousse",
@@ -18,7 +19,6 @@
   "VOX Café, Institut français de Sousse": "vox-cafe-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
-  "Institut français de Sfax": "institut-francais-de-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
@@ -43,7 +43,6 @@
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
-  "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
   "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
   "Cinéma Le Colisée": "cinema-le-colisee",
@@ -105,25 +104,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 15
-  },
-  {
-   "slug": "pathe-tunis-city",
-   "nom": "Pathé Tunis City",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.89828,
-   "lon": 10.12451,
-   "n": 10
-  },
-  {
-   "slug": "el-teatro",
-   "nom": "El Teatro",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.81393,
-   "lon": 10.17371,
-   "n": 9
+   "n": 14
   },
   {
    "slug": "institut-francais-de-tunis",
@@ -135,13 +116,13 @@
    "n": 9
   },
   {
-   "slug": "pathe-azur-city",
-   "nom": "Pathé Azur City",
-   "type": "cinema",
+   "slug": "el-teatro",
+   "nom": "El Teatro",
+   "type": "theatre",
    "ville": "tunis",
-   "lat": 36.744,
-   "lon": 10.232,
-   "n": 8
+   "lat": 36.81393,
+   "lon": 10.17371,
+   "n": 7
   },
   {
    "slug": "galerie-institut-francais-de-sousse",
@@ -189,21 +170,30 @@
    "n": 6
   },
   {
+   "slug": "pathe-azur-city",
+   "nom": "Pathé Azur City",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.744,
+   "lon": 10.232,
+   "n": 6
+  },
+  {
    "slug": "theatre-le-4eme-art",
    "nom": "Théâtre Le 4ème Art",
    "type": "theatre",
    "ville": "tunis",
    "lat": 36.80189,
    "lon": 10.18123,
-   "n": 6
+   "n": 5
   },
   {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
+   "slug": "pathe-tunis-city",
+   "nom": "Pathé Tunis City",
+   "type": "cinema",
    "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
+   "lat": 36.89828,
+   "lon": 10.12451,
    "n": 5
   },
   {
@@ -213,6 +203,15 @@
    "ville": "tunis",
    "lat": 36.878,
    "lon": 10.3245,
+   "n": 4
+  },
+  {
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
+   "ville": "tunis",
+   "lat": 34.59926,
+   "lon": 9.59188,
    "n": 4
   },
   {
@@ -279,6 +278,15 @@
    "n": 2
   },
   {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 2
+  },
+  {
    "slug": "institut-francais-de-sousse",
    "nom": "Institut français de Sousse",
    "type": "centre",
@@ -330,15 +338,6 @@
    "ville": "tunis",
    "lat": 36.84767,
    "lon": 10.18839,
-   "n": 1
-  },
-  {
-   "slug": "institut-francais-de-sfax",
-   "nom": "Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
    "n": 1
   },
   {

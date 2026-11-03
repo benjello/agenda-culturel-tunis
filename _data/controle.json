@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "corriges": 1,
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -156,6 +156,36 @@
    ]
   },
   {
+   "fichier": "tunis-events-cinema/2026-11-03-bakma-cinema-le-colisee.md",
+   "source": "tunis-events-cinema",
+   "titre": "BAKMA - بكمة",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-03-bakma-cinema-le-palace.md",
+   "source": "tunis-events-cinema",
+   "titre": "BAKMA",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-03-dar-el-3ers-cinema-le-colisee.md",
+   "source": "tunis-events-cinema",
+   "titre": "Dar El 3ers - دار العرس",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
    "fichier": "tunis-events-cinema/2026-11-03-dar-el-3ers.md",
    "source": "tunis-events-cinema",
    "titre": "Dar El 3ers - دار العرس",
@@ -166,11 +196,31 @@
    ]
   },
   {
+   "fichier": "tunis-events-cinema/2026-11-03-klara-and-the-sun.md",
+   "source": "tunis-events-cinema",
+   "titre": "KLARA AND THE SUN",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/8JQqQ3/klara-and-the-sun-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
    "fichier": "tunis-events-cinema/2026-11-03-last-chance.md",
    "source": "tunis-events-cinema",
    "titre": "LAST CHANCE - لص شايح",
    "date": "2026-11-03",
    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-03-weekend-cinema-le-palace.md",
+   "source": "tunis-events-cinema",
+   "titre": "WEEKEND",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace",
    "problemes": [
     "film sans horaire ni séance"
    ]
@@ -249,15 +299,20 @@
     ]
    },
    "el-teatro": {
-    "n": 5,
-    "precis": 5,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 5
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
      }
     ]
    },
@@ -338,9 +393,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 52,
-    "precis": 11,
-    "pourcent": 21,
+    "n": 53,
+    "precis": 12,
+    "pourcent": 23,
     "defauts": [
      {
       "code": "titre_generique",
@@ -629,15 +684,15 @@
     ]
    },
    "teskerti": {
-    "n": 12,
-    "precis": 12,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 12
+      "n": 11
      },
      {
       "code": "sans_notice",
@@ -647,8 +702,8 @@
     ]
    },
    "tunis-events": {
-    "n": 13,
-    "precis": 13,
+    "n": 12,
+    "precis": 12,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -660,27 +715,27 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 30,
-    "precis": 28,
-    "pourcent": 93,
+    "n": 24,
+    "precis": 17,
+    "pourcent": 71,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 2,
-      "exemple": "Dar El 3ers - دار العرس"
+      "n": 7,
+      "exemple": "BAKMA - بكمة"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 7
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 3
+      "n": 24
      }
     ]
    }
@@ -735,9 +790,9 @@
     ]
    },
    "pdf_programme": {
-    "n": 52,
-    "precis": 11,
-    "pourcent": 21,
+    "n": 53,
+    "precis": 12,
+    "pourcent": 23,
     "defauts": [
      {
       "code": "titre_generique",
@@ -816,6 +871,31 @@
      }
     ]
    },
+   "tunis_events_cinema": {
+    "n": 24,
+    "precis": 17,
+    "pourcent": 71,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 7,
+      "exemple": "BAKMA - بكمة"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 7
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 24
+     }
+    ]
+   },
    "instagram": {
     "n": 21,
     "precis": 16,
@@ -853,34 +933,9 @@
      }
     ]
    },
-   "tunis_events_cinema": {
-    "n": 30,
-    "precis": 28,
-    "pourcent": 93,
-    "defauts": [
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 2,
-      "exemple": "Dar El 3ers - دار العرس"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 2
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
-     }
-    ]
-   },
    "tunis_events": {
-    "n": 13,
-    "precis": 13,
+    "n": 12,
+    "precis": 12,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -892,15 +947,15 @@
     ]
    },
    "teskerti": {
-    "n": 12,
-    "precis": 12,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 12
+      "n": 11
      },
      {
       "code": "sans_notice",
@@ -917,15 +972,20 @@
     "manques": []
    },
    "billetterie_sktech": {
-    "n": 5,
-    "precis": 5,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 5
+      "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
      }
     ]
    },

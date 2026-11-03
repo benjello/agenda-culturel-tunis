@@ -25,15 +25,13 @@
     "jours": [
      "2026-11-03",
      "2026-11-04",
-     "2026-11-05"
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-04",
       "heures": [
@@ -44,6 +42,30 @@
       "jour": "2026-11-05",
       "heures": [
        "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-06",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-08",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "19:00"
       ]
      }
     ]
@@ -74,15 +96,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "14:00",
-       "18:15"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "Cinéma Le Palace",
@@ -93,15 +107,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "13:45",
-       "17:30"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -170,12 +176,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "14:00",
-       "15:00",
-       "16:30",
-       "17:30",
-       "19:00",
-       "20:00",
        "21:30",
        "22:30"
       ]
@@ -195,14 +195,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "13:50",
-       "15:20",
-       "16:15",
-       "17:45",
-       "18:45",
-       "19:30",
-       "20:15",
-       "21:15",
        "22:00",
        "22:45"
       ]
@@ -215,10 +207,10 @@
    "_events/auto/cine-alhambra/2026-11-02-bakma.md",
    "_events/auto/tunis-events-cinema/2026-11-03-bakma-cinema-le-colisee.md",
    "_events/auto/tunis-events-cinema/2026-11-03-bakma-cinema-le-palace.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-bakma-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-03-bakma-pathe-azur-city.md",
    "_events/auto/tunis-events-cinema/2026-11-03-bakma-pathe-tunis-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-bakma.md"
+   "_events/auto/tunis-events-cinema/2026-11-03-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-04-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -230,7 +222,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -277,14 +269,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "16:00"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "Cinéma Le Palace",
@@ -335,9 +320,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "14:10",
-       "17:00",
-       "19:45",
        "22:30"
       ]
      }
@@ -356,9 +338,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "14:25",
-       "17:15",
-       "20:00",
        "22:45"
       ]
      }
@@ -406,17 +385,18 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-03",
-     "2026-11-05"
+     "2026-11-05",
+     "2026-11-08"
     ],
     "heures": [
      {
-      "jour": "2026-11-03",
+      "jour": "2026-11-05",
       "heures": [
        "16:30"
       ]
      },
      {
-      "jour": "2026-11-05",
+      "jour": "2026-11-08",
       "heures": [
        "16:30"
       ]
@@ -449,15 +429,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "15:45",
-       "19:30"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -497,10 +469,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "14:05",
-       "16:15",
-       "18:25",
-       "20:35",
        "22:45"
       ]
      }
@@ -519,10 +487,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "15:25",
-       "16:50",
-       "17:35",
-       "19:45",
        "21:45"
       ]
      }
@@ -540,14 +504,124 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
  {
+  "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
+  "id": "what-else",
+  "image": "https://api.tunis.events/storage/scraped/0bcb680e7928a3652a32654eb8f34e61.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-03",
+   "2026-11-04",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-03",
+     "2026-11-04",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-08",
+     "2026-11-09"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-04",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-06",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-08",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "21:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-03"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-03",
+      "heures": [
+       "22:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-03"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-03",
+      "heures": [
+       "21:35",
+       "22:25"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-03-what-else-pathe-azur-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-03-what-else-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-03-what-else.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
   "titre": "LAST CHANCE - لص شايح",
   "id": "last-chance",
-  "image": "https://api.tunis.events/storage/scraped/0c6a948143bdcb630b1665e453e220ca.jpeg",
+  "image": "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -588,29 +662,10 @@
      "2026-11-03"
     ],
     "heures": []
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "14:50"
-      ]
-     }
-    ]
    }
   ],
   "fichiers": [
    "_events/auto/cine-alhambra/2026-11-02-last-chance.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-evenement.md",
    "_events/auto/tunis-events-cinema/2026-11-03-last-chance.md"
   ],
   "tunisien": true,
@@ -619,326 +674,6 @@
   "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
- },
- {
-  "titre": "Le Mystère Lucy Lost",
-  "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
-  "imdb": "tt10569744",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-03",
-   "2026-11-07",
-   "2026-11-08"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-07",
-     "2026-11-08"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "15:00"
-      ]
-     },
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "15:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/le-mystere-lucy-lost",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "17:30"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-le-mystere-lucy-lost-pathe-tunis-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-le-mystere-lucy-lost.md"
-  ],
-  "wikidata": "Q141827108",
-  "letterboxd": "",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
- },
- {
-  "titre": "WHAT ELSE ? / فانا محط بش تتحط ؟",
-  "id": "what-else",
-  "image": "https://api.tunis.events/storage/scraped/0bcb680e7928a3652a32654eb8f34e61.jpeg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-03",
-   "2026-11-04"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03",
-     "2026-11-04"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "19:00"
-      ]
-     },
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "21:15"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "14:15",
-       "16:55",
-       "19:35",
-       "22:15"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/what-else-%D9%81%D8%A7%D9%86%D8%A7-%D9%85%D8%AD%D8%B7-%D8%A8%D8%B4-%D8%AA%D8%AA%D8%AD%D8%B7",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "16:15",
-       "17:05",
-       "19:00",
-       "19:45",
-       "21:35",
-       "22:25"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-what-else-pathe-azur-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-what-else-pathe-tunis-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-what-else.md"
-  ],
-  "tunisien": true,
-  "jeune": false,
-  "presse": []
- },
- {
-  "titre": "Klara et le soleil",
-  "id": "klara-et-le-soleil",
-  "image": "https://api.tunis.events/storage/scraped/d2ebfb303ce9f7f1fa0331bce7ea1c09.jpg",
-  "imdb": "tt14371256",
-  "duree": null,
-  "genres": [
-   "Drame",
-   "Science-fiction"
-  ],
-  "jours": [
-   "2026-11-03"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "17:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "21:55"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil-pathe-tunis-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil.md"
-  ],
-  "wikidata": "Q124409386",
-  "letterboxd": "klara-and-the-sun",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Klara et le Soleil est un film de science-fiction américano-britannico-néo-zélandais co-écrit et réalisé par Taika Waititi, sorti en 2026.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)"
- },
- {
-  "titre": "Other Mommy / Malfaisante",
-  "id": "other-mommy-malfaisante",
-  "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
-  "imdb": "tt36586020",
-  "duree": null,
-  "genres": [
-   "Horreur"
-  ],
-  "jours": [
-   "2026-11-03",
-   "2026-11-04",
-   "2026-11-05"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-04",
-     "2026-11-05"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "17:15"
-      ]
-     },
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "17:15"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-other-mommy-malfaisante.md",
-   "_events/auto/tunis-events-cinema/2026-11-04-other-mommy-malfaisante.md"
-  ],
-  "wikidata": "Q134588273",
-  "letterboxd": "other-mommy",
-  "age": "-12",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Malfaisante ou Autre maman au Québec est un film américain réalisé par Rob Savage et sorti en 2026. Il s'agit d'une adaptation du roman Incidents Around the House de Josh Malerman (en). Il met en vedette Jessica Chastain, dans le rôle d'une mère qui doit tout faire pour protéger sa fille d'une entité surnaturelle lui ressemblant.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Malfaisante"
  },
  {
   "titre": "2 Jours avec Papa",
@@ -1027,7 +762,10 @@
   "genres": [],
   "jours": [
    "2026-11-04",
-   "2026-11-05"
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-09"
   ],
   "salles": [
    {
@@ -1038,7 +776,10 @@
     "source_nom": "tunis.events (cinéma)",
     "jours": [
      "2026-11-04",
-     "2026-11-05"
+     "2026-11-05",
+     "2026-11-06",
+     "2026-11-07",
+     "2026-11-09"
     ],
     "heures": [
      {
@@ -1052,6 +793,24 @@
       "heures": [
        "19:00"
       ]
+     },
+     {
+      "jour": "2026-11-06",
+      "heures": [
+       "16:30"
+      ]
+     },
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "16:30"
+      ]
+     },
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "16:30"
+      ]
      }
     ]
    }
@@ -1061,10 +820,7 @@
   ],
   "tunisien": true,
   "jeune": false,
-  "presse": [],
-  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers !",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "presse": []
  },
  {
   "titre": "KLARA AND THE SUN",
@@ -1089,14 +845,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "20:15"
-      ]
-     }
-    ]
+    "heures": []
    }
   ],
   "fichiers": [
@@ -1113,15 +862,14 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)"
  },
  {
-  "titre": "L'île des souvenirs / Forgotten Island",
-  "id": "l-ile-des-souvenirs-forgotten-island",
-  "image": "https://api.tunis.events/storage/scraped/728f332ab04d48ad66210131a01a7ee2.jpeg",
-  "imdb": "tt36583977",
+  "titre": "Klara et le soleil",
+  "id": "klara-et-le-soleil",
+  "image": "https://api.tunis.events/storage/scraped/d2ebfb303ce9f7f1fa0331bce7ea1c09.jpg",
+  "imdb": "tt14371256",
   "duree": null,
   "genres": [
-   "Animation",
-   "Aventure",
-   "Comédie"
+   "Drame",
+   "Science-fiction"
   ],
   "jours": [
    "2026-11-03"
@@ -1130,7 +878,7 @@
    {
     "nom": "Pathé Tunis City",
     "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
+    "lien": "https://tunis.events/fr/cinema/klara-et-le-soleil",
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
@@ -1140,24 +888,24 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "15:15"
+       "21:55"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-l-ile-des-souvenirs-forgotten-island.md"
+   "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil.md"
   ],
-  "wikidata": "Q138335503",
-  "letterboxd": "forgotten-island-2026",
+  "wikidata": "Q124409386",
+  "letterboxd": "klara-and-the-sun",
   "age": "",
   "tunisien": false,
-  "jeune": true,
+  "jeune": false,
   "presse": [],
-  "synopsis": "L'Île des souvenirs ou L'Île de l'oubli au Québec est un film d'animation américain réalisé par Joel Crawford et Januel P. Mercado et sorti en 2026",
+  "synopsis": "Klara et le Soleil est un film de science-fiction américano-britannico-néo-zélandais co-écrit et réalisé par Taika Waititi, sorti en 2026.",
   "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/L'%C3%8Ele_des_souvenirs"
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Klara_et_le_Soleil_(film)"
  },
  {
   "titre": "LA BELLE ET LA MEUTE",
@@ -1244,43 +992,56 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Chant_des_for%C3%AAts_(film)"
  },
  {
-  "titre": "Le Fantôme de l'Opéra",
-  "id": "le-fantome-de-l-opera",
-  "image": "https://api.tunis.events/storage/scraped/f07082f176753996d7a451c861351eeb.jpg",
-  "imdb": "",
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "imdb": "tt10569744",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-03"
+   "2026-11-07",
+   "2026-11-08"
   ],
   "salles": [
    {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/le-fantome-de-lopera",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-03"
+     "2026-11-07",
+     "2026-11-08"
     ],
     "heures": [
      {
-      "jour": "2026-11-03",
+      "jour": "2026-11-07",
       "heures": [
-       "19:00"
+       "15:00"
+      ]
+     },
+     {
+      "jour": "2026-11-08",
+      "heures": [
+       "15:00"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-le-fantome-de-l-opera.md"
+   "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-07-le-mystere-lucy-lost.md"
   ],
+  "wikidata": "Q141827108",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
   "jeune": false,
   "presse": [],
-  "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra Garnier. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
  },
  {
   "titre": "Le Temps suspendu",
@@ -1313,8 +1074,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-le-temps-suspendu.md"
+   "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md"
   ],
   "jeune": false,
   "presse": [
@@ -1463,6 +1223,59 @@
   "synopsis": "Mars Express est un film d'animation français de science-fiction réalisé par Jérémie Périn, sorti en 2023. Il est écrit par Jérémie Périn et Laurent Sarfati, et produit par les studios Everybody On Deck et Je suis bien content.",
   "synopsis_source": "Wikipédia",
   "synopsis_url": "https://fr.wikipedia.org/wiki/Mars_Express_(film)"
+ },
+ {
+  "titre": "Other Mommy / Malfaisante",
+  "id": "other-mommy-malfaisante",
+  "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
+  "imdb": "tt36586020",
+  "duree": null,
+  "genres": [
+   "Horreur"
+  ],
+  "jours": [
+   "2026-11-04",
+   "2026-11-05"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-04",
+     "2026-11-05"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-04",
+      "heures": [
+       "17:15"
+      ]
+     },
+     {
+      "jour": "2026-11-05",
+      "heures": [
+       "17:15"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-04-other-mommy-malfaisante.md"
+  ],
+  "wikidata": "Q134588273",
+  "letterboxd": "other-mommy",
+  "age": "-12",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Malfaisante ou Autre maman au Québec est un film américain réalisé par Rob Savage et sorti en 2026. Il s'agit d'une adaptation du roman Incidents Around the House de Josh Malerman (en). Il met en vedette Jessica Chastain, dans le rôle d'une mère qui doit tout faire pour protéger sa fille d'une entité surnaturelle lui ressemblant.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Malfaisante"
  },
  {
   "titre": "Projection-débat autour du film La Meule (قلب الرحى)",
@@ -1772,7 +1585,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "20:15",
        "22:45"
       ]
      }
@@ -1787,10 +1599,7 @@
   "age": "",
   "tunisien": true,
   "jeune": false,
-  "presse": [],
-  "synopsis": "ولا كان عالبال (Original Title)A young tour guide in Luxor accepts an unusual deal from a wealthy businessman: win over his daughter and help her move on from her ex. But a case of mistaken identity turns the plan upside down, sending Hassan on an unexpected adventure and into a love story he never saw coming.",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "presse": []
  },
  {
   "titre": "What else ? (فانا محط بش تتحط ؟)",

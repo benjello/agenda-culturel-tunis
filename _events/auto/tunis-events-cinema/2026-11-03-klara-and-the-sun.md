@@ -8,7 +8,6 @@ category: "cinema"
 link: "https://tunis.events/events/8JQqQ3/klara-and-the-sun-cinema-le-colisee"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-03", "2026-11-03 20:15"]
 image: "https://tunis.events/storage/bbd7d5e76155881d9820c9a2b65d382b.jpg"
 film: true
 ajoute: "2026-11-02"
