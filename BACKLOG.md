@@ -7,6 +7,21 @@ pour vérifier chaque nouvelle source. À mettre à jour à chaque changement.
 
 Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `AGENTS.md`).
 
+## Tickets ouverts
+
+Les points restants sont suivis en issues GitHub : [liste des issues](https://github.com/benjello/agenda-culturel-tunis/issues).
+
+- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107).
+- Étiquette **vérification humaine** (contrôles ouverts à tous) :
+  [#106 festivals et séries manquants](https://github.com/benjello/agenda-culturel-tunis/issues/106),
+  [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
+  [#109 fiches de l'Institut français](https://github.com/benjello/agenda-culturel-tunis/issues/109).
+- Étiquette **amélioration** : [#110 relecture par catégorie](https://github.com/benjello/agenda-culturel-tunis/issues/110),
+  [#111 rapport après les scrapers](https://github.com/benjello/agenda-culturel-tunis/issues/111),
+  [#112 accès Facebook](https://github.com/benjello/agenda-culturel-tunis/issues/112),
+  [#113 version anglaise ou arabe](https://github.com/benjello/agenda-culturel-tunis/issues/113),
+  [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
+
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
 0. **Chercher aussi la page Facebook** (et Instagram) du lieu : à Tunis, c'est souvent là que
