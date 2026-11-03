@@ -1,4 +1,8 @@
+import json
+import tempfile
 import unittest
+from pathlib import Path
+from unittest import mock
 
 from scrapers.archives import _ajouter, _lire
 
@@ -32,6 +36,17 @@ class TestArchives(unittest.TestCase):
         self.assertTrue(_ajouter(annees, e, "2026-10-08"))
         self.assertFalse(_ajouter(annees, dict(e, fichier="y"), "2026-10-08"))
         self.assertEqual(list(annees), ["2026"])
+
+
+    def test_charger_ignore_index(self):
+        """index.json (décompte par année) n'est pas un fichier d'événements : il faisait planter l'archivage."""
+        from scrapers import archives
+        e = {"titre": "A", "debut": "2026-11-01", "fin": "2026-11-01", "heure": "", "lieu": "Lieu", "source": "", "fichier": "x"}
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "2026.json").write_text(json.dumps([e]))
+            (Path(d) / "index.json").write_text(json.dumps({"2026": 1}))
+            with mock.patch.object(archives, "DOSSIER", Path(d)):
+                self.assertEqual(list(archives._charger()), ["2026"])
 
 
 if __name__ == "__main__":
