@@ -134,7 +134,7 @@ Usage
 - [x] Carte : placer à la main (lat/lon) les lieux que Nominatim ne trouve pas (valeur null dans `_data/geo.json`).
 - [x] Bouton « ajouter à mon agenda » par événement (.ics).
 - [ ] Chaîne Telegram ou WhatsApp des événements du jour. Reportée : bot @BotFather + secrets TELEGRAM_BOT_TOKEN et TELEGRAM_CHAT_ID ; WhatsApp sans API, texte à copier-coller.
-- [x] Site installable comme une appli (PWA, hors ligne, sans store).
+- [x] Site installable comme une appli (PWA, hors ligne, sans store). Complété : icônes maskable, méta iOS, page hors ligne, encart « Installer l’application » (a-propos), test `tests/test_pwa.py`.
 - [x] Favoris sans compte, gardés dans le téléphone.
 - [x] Image prête à partager (WhatsApp, story) pour chaque événement.
 - [x] Liste « Nouveau cette semaine ».
