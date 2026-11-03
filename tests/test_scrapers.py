@@ -755,7 +755,8 @@ class Presse(unittest.TestCase):
                f'<content:encoded><![CDATA[<p>Du {d.day} au {d.day} {mois} {d.year} à la Cité de la culture.</p>]]></content:encoded></item>'
                f'<item><title>Le ministre inaugure une route</title><link>https://x/2</link><description>le {d.day} {mois}</description></item>'
                f'</channel></rss>')
-        evts = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})
+        with mock.patch.object(presse, "_NOMS", []):  # sans le registre réel des lieux (_data/lieux.json)
+            evts = presse.depuis_flux(xml, {"url": "u", "categorie": "autre"})
         self.assertEqual([e.titre for e in evts], ["Le festival du oud revient"])
         self.assertEqual(evts[0].lieu, "Cité de la culture")
         self.assertEqual(evts[0].categorie, "musique")
