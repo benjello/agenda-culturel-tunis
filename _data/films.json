@@ -170,8 +170,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:30",
-       "12:30",
        "14:00",
        "15:00",
        "16:30",
@@ -197,9 +195,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "10:25",
-       "11:20",
-       "12:55",
        "13:50",
        "15:20",
        "16:15",
@@ -286,7 +281,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:45",
        "16:00"
       ]
      }
@@ -301,14 +295,7 @@
     "jours": [
      "2026-11-03"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "11:30"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -348,7 +335,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:25",
        "14:10",
        "17:00",
        "19:45",
@@ -370,7 +356,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:40",
        "14:25",
        "17:15",
        "20:00",
@@ -512,7 +497,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "12:00",
        "14:05",
        "16:15",
        "18:25",
@@ -535,8 +519,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:05",
-       "13:15",
        "15:25",
        "16:50",
        "17:35",
@@ -779,7 +761,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:30",
        "14:15",
        "16:55",
        "19:35",
@@ -801,8 +782,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "11:00",
-       "13:40",
        "16:15",
        "17:05",
        "19:00",
@@ -822,68 +801,6 @@
   "tunisien": true,
   "jeune": false,
   "presse": []
- },
- {
-  "titre": "Clayface",
-  "id": "clayface",
-  "image": "https://api.tunis.events/storage/scraped/0ef2dd61387b35932f18ac6ff4defd54.jpeg",
-  "imdb": "tt34890576",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-03"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/clayface",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "13:20"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/clayface",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "11:05"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-clayface-pathe-azur-city.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-clayface.md"
-  ],
-  "wikidata": "Q131460936",
-  "letterboxd": "clayface",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Clayface est un film de super-héros horrifique américain réalisé par James Watkins, écrit par Mike Flanagan et Hossein Amini et sorti en 2026.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Clayface_(film)"
  },
  {
   "titre": "Klara et le soleil",
@@ -912,7 +829,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "10:50",
        "17:45"
       ]
      }
@@ -1023,67 +939,6 @@
   "synopsis": "Malfaisante ou Autre maman au Québec est un film américain réalisé par Rob Savage et sorti en 2026. Il s'agit d'une adaptation du roman Incidents Around the House de Josh Malerman (en). Il met en vedette Jessica Chastain, dans le rôle d'une mère qui doit tout faire pour protéger sa fille d'une entité surnaturelle lui ressemblant.",
   "synopsis_source": "Wikipédia",
   "synopsis_url": "https://fr.wikipedia.org/wiki/Malfaisante"
- },
- {
-  "titre": "Shaun le mouton : La bêêête d'Halloween",
-  "id": "shaun-le-mouton-la-beeete-d-halloween",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/azvgrl6crz2k8lrmojzh",
-  "imdb": "",
-  "duree": null,
-  "genres": [
-   "Animation"
-  ],
-  "jours": [
-   "2026-11-03",
-   "2026-11-07"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6511",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-07"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "15:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "13:25"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-07-shaun-le-mouton-la-beeete-d-halloween.md",
-   "_events/auto/tunis-events-cinema/2026-11-03-shaun-le-mouton-la-beeete-d-halloween.md"
-  ],
-  "jeune": true,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie propose à son jeune public le film d'animation Shaun le mouton : La Bêêête d'Hallowen de Steve Cox et Matthew Walker.\nRésumé :\nÀ Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau.",
-  "synopsis_source": "",
-  "synopsis_url": ""
  },
  {
   "titre": "2 Jours avec Papa",
@@ -1209,51 +1064,6 @@
   "presse": []
  },
  {
-  "titre": "Ducobu et le fantôme de Saint-Potache",
-  "id": "ducobu-et-le-fantome-de-saint-potache",
-  "image": "https://api.tunis.events/storage/scraped/7fb41e862de841f5f0891d7b168fdaba.jpeg",
-  "imdb": "tt43622004",
-  "duree": null,
-  "genres": [
-   "Comédie"
-  ],
-  "jours": [
-   "2026-11-03"
-  ],
-  "salles": [
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/ducobu-et-le-fantome-de-saint-potache",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-03"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-03",
-      "heures": [
-       "10:40"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-03-ducobu-et-le-fantome-de-saint-potache.md"
-  ],
-  "wikidata": "Q140363103",
-  "letterboxd": "ducobu-et-le-fantome-de-saint-potache",
-  "age": "",
-  "tunisien": false,
-  "jeune": true,
-  "presse": [],
-  "synopsis": "Ducobu et le Fantôme de Saint-Potache est une comédie française réalisée par Élie Semoun et sortie en 2026. Il s'agit du sixième film d'une saga inspirée de la série de bande dessinée belge L'Élève Ducobu de Godi et Zidrou.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Ducobu_et_le_Fant%C3%B4me_de_Saint-Potache"
- },
- {
   "titre": "KLARA AND THE SUN",
   "id": "klara-and-the-sun",
   "image": "https://tunis.events/storage/bbd7d5e76155881d9820c9a2b65d382b.jpg",
@@ -1327,7 +1137,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "12:40",
        "15:15"
       ]
      }
@@ -1455,7 +1264,6 @@
      {
       "jour": "2026-11-03",
       "heures": [
-       "12:05",
        "19:00"
       ]
      }
@@ -1651,6 +1459,45 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Mars_Express_(film)"
  },
  {
+  "titre": "Projection-débat autour du film La Meule (قلب الرحى)",
+  "id": "projection-debat-autour-du-film-la-meule",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/muku7p8ktxbgsj5804cw",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-04"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Sousse",
+    "adresse": "Institut français de Sousse 15 rue Hamed Ghazali",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6510",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-04"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-04",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-04-projection-debat-autour-du-film-la-meule.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie à Sousse vous invite à une projection-débat du film La Meule (قلب الرحى) en présence du réalisateur Fredj Trabelsi.\nRésumé : (VOSTFR)\nRachid retourne dans son village natal, là où tout a commencé. Mais quelque chose en lui se défait. Lentement.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
   "titre": "REGARDE MOI",
   "id": "regarde-moi",
   "image": "https://tunis.events/storage/d935fc22e6010a3802d5dc300358def32.jpg",
@@ -1686,6 +1533,47 @@
   "jeune": false,
   "presse": [],
   "synopsis": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nREGARDE MOIDirector: Nejib Belkadhi1h 36mVOSTFR",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Shaun le mouton : La bêêête d'Halloween",
+  "id": "shaun-le-mouton-la-beeete-d-halloween",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/azvgrl6crz2k8lrmojzh",
+  "imdb": "",
+  "duree": null,
+  "genres": [
+   "Animation"
+  ],
+  "jours": [
+   "2026-11-07"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6511",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-07"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-07",
+      "heures": [
+       "15:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-07-shaun-le-mouton-la-beeete-d-halloween.md"
+  ],
+  "jeune": true,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie propose à son jeune public le film d'animation Shaun le mouton : La Bêêête d'Hallowen de Steve Cox et Matthew Walker.\nRésumé :\nÀ Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau.",
   "synopsis_source": "",
   "synopsis_url": ""
  },

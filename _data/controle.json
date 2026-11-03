@@ -156,6 +156,16 @@
    ]
   },
   {
+   "fichier": "tunis-events-cinema/2026-11-03-dar-el-3ers.md",
+   "source": "tunis-events-cinema",
+   "titre": "Dar El 3ers - دار العرس",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
    "fichier": "tunis-events-cinema/2026-11-03-last-chance.md",
    "source": "tunis-events-cinema",
    "titre": "LAST CHANCE - لص شايح",
@@ -334,8 +344,8 @@
    },
    "ift-pdf": {
     "n": 52,
-    "precis": 13,
-    "pourcent": 25,
+    "precis": 11,
+    "pourcent": 21,
     "defauts": [
      {
       "code": "titre_generique",
@@ -346,7 +356,7 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 39,
+      "n": 41,
       "exemple": "L’Heure du Jeu"
      },
      {
@@ -365,7 +375,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 39
+      "n": 41
      },
      {
       "code": "sans_notice",
@@ -571,15 +581,15 @@
     ]
    },
    "presse-lapresse": {
-    "n": 2,
-    "precis": 2,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 1
      }
     ]
    },
@@ -655,27 +665,27 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 34,
-    "precis": 33,
-    "pourcent": 97,
+    "n": 30,
+    "precis": 28,
+    "pourcent": 93,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 1,
-      "exemple": "LAST CHANCE - لص شايح"
+      "n": 2,
+      "exemple": "Dar El 3ers - دار العرس"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 2
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 34
+      "n": 30
      }
     ]
    }
@@ -731,8 +741,8 @@
    },
    "pdf_programme": {
     "n": 52,
-    "precis": 13,
-    "pourcent": 25,
+    "precis": 11,
+    "pourcent": 21,
     "defauts": [
      {
       "code": "titre_generique",
@@ -743,7 +753,7 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 39,
+      "n": 41,
       "exemple": "L’Heure du Jeu"
      },
      {
@@ -762,12 +772,32 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 39
+      "n": 41
      },
      {
       "code": "sans_notice",
       "texte": "notice",
       "n": 1
+     }
+    ]
+   },
+   "presse": {
+    "n": 3,
+    "precis": 2,
+    "pourcent": 67,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 3
      }
     ]
    },
@@ -788,26 +818,6 @@
       "code": "sans_image",
       "texte": "image",
       "n": 1
-     }
-    ]
-   },
-   "presse": {
-    "n": 4,
-    "precis": 3,
-    "pourcent": 75,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 4
      }
     ]
    },
@@ -849,27 +859,27 @@
     ]
    },
    "tunis_events_cinema": {
-    "n": 34,
-    "precis": 33,
-    "pourcent": 97,
+    "n": 30,
+    "precis": 28,
+    "pourcent": 93,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 1,
-      "exemple": "LAST CHANCE - لص شايح"
+      "n": 2,
+      "exemple": "Dar El 3ers - دار العرس"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 2
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 34
+      "n": 30
      }
     ]
    },

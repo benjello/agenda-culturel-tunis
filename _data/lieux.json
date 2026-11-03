@@ -13,13 +13,13 @@
   "Institut français de Tunis": "institut-francais-de-tunis",
   "Médiathèque de l'ift_tunisie": "mediatheque-institut-francais-de-tunis",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
+  "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "VOX Café, Institut français de Sousse": "vox-cafe-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
   "Institut français de Sfax": "institut-francais-de-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
-  "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
@@ -35,7 +35,6 @@
   "Shanti": "shanti",
   "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
-  "Galerie TGM": "galerie-tgm",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Studio B52": "studio-b52",
   "Steps Club Sousse": "steps-club-sousse",
@@ -115,7 +114,7 @@
    "ville": "tunis",
    "lat": 36.89828,
    "lon": 10.12451,
-   "n": 13
+   "n": 10
   },
   {
    "slug": "el-teatro",
@@ -142,7 +141,7 @@
    "ville": "tunis",
    "lat": 36.744,
    "lon": 10.232,
-   "n": 9
+   "n": 8
   },
   {
    "slug": "galerie-institut-francais-de-sousse",
@@ -235,15 +234,6 @@
    "n": 3
   },
   {
-   "slug": "mediatheque-institut-francais-de-sousse",
-   "nom": "Médiathèque, Institut français de Sousse",
-   "type": "bibliotheque",
-   "ville": "sousse",
-   "lat": 36.85392,
-   "lon": 10.19632,
-   "n": 3
-  },
-  {
    "slug": "salle-de-cinema-institut-francais-de-sousse",
    "nom": "Salle de cinéma, Institut français de Sousse",
    "type": "cinema",
@@ -289,6 +279,24 @@
    "n": 2
   },
   {
+   "slug": "institut-francais-de-sousse",
+   "nom": "Institut français de Sousse",
+   "type": "centre",
+   "ville": "sousse",
+   "lat": 35.829,
+   "lon": 10.638,
+   "n": 2
+  },
+  {
+   "slug": "mediatheque-institut-francais-de-sousse",
+   "nom": "Médiathèque, Institut français de Sousse",
+   "type": "bibliotheque",
+   "ville": "sousse",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 2
+  },
+  {
    "slug": "la-chapelle-dar-bach-hamba",
    "nom": "La Chapelle, Dar Bach Hamba",
    "type": "centre",
@@ -331,15 +339,6 @@
    "ville": "sfax",
    "lat": 34.74,
    "lon": 10.76,
-   "n": 1
-  },
-  {
-   "slug": "institut-francais-de-sousse",
-   "nom": "Institut français de Sousse",
-   "type": "centre",
-   "ville": "sousse",
-   "lat": 35.829,
-   "lon": 10.638,
    "n": 1
   },
   {

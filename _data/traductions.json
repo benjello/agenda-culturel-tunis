@@ -20,6 +20,10 @@
    "ar": "حلقة عمل عن جلسات العلاج بمستشفيات الأطفال حول رواية تونس بلو",
    "en": "Workshop of bibliotherapy sessions around the novel Tunis Blues"
   },
+  "Avec Hafida Ben Rejeb Latta": {
+   "ar": "مع هافيدا بن رييب لايتا",
+   "en": "With Hafida Ben Rejeb Latta"
+  },
   "Avec Lotfi Mlayah": {
    "ar": "مع (لوفتي ملاياه)",
    "en": "With Lotfi Mlayah"
@@ -39,10 +43,6 @@
   "Café Philo avec Azza Filali": {
    "ar": "مقهى فيلو مع عزة فيلالي",
    "en": "Café Philo with Azza Filali"
-  },
-  "Café-Philo : La conscience": {
-   "ar": "Café-Philo : Conscience",
-   "en": "Café-Philo : Conscience"
   },
   "Cercle de Lectur au Centre-Ville de Tunis": {
    "ar": "دائرة ليكتور في مركز مدينة تونس",
@@ -120,9 +120,9 @@
    "ar": "صور سوريا، بالميرا، حلب، دمشق",
    "en": "Images of Syria, Palmyra, Aleppo, Damascus"
   },
-  "Interlude #17 : Yellow Wasabi": {
-   "ar": "Interlude #17: Yellow Wasabi",
-   "en": "Interlude #17: Yellow Wasabi"
+  "Interlude 17 Sortie de Résidence Yellow Wasabi": {
+   "ar": "Interlude 17 Exit from Yellow Wasabi Residence",
+   "en": "Interlude 17 Exit from Yellow Wasabi Residence"
   },
   "Jaou Tunis 2026 : exposition à Kechlet El Attarine": {
    "ar": "Jaou Tunis 2026: exhibition in Kechlet El Attarine",
@@ -268,14 +268,6 @@
    "ar": "RUCHE73 : Concert by Yosri",
    "en": "RUCHE73 : Concert by Yosri"
   },
-  "Rencontre avec Hafida Ben Rejeb Latta": {
-   "ar": "اجتماع مع هافيدا بن ريب لاتا",
-   "en": "Meeting with Hafida Ben Rejeb Latta"
-  },
-  "Rencontre avec Sonia Hanihina": {
-   "ar": "اجتماع مع سونيا هانيهينا",
-   "en": "Meeting with Sonia Hanihina"
-  },
   "STEPPERS SOUND SYSTEM Launch party": {
    "fr": "SYSTEME SONDE DE STEPPERS Partie de lancement",
    "ar": "حفلة إطلاق نظام (سيستيم)"
@@ -283,10 +275,6 @@
   "Saisons de la création": {
    "ar": "بحار الخلق",
    "en": "Seasons of Creation"
-  },
-  "Saveurs et amertume": {
-   "ar": "الشعلة والمرارة",
-   "en": "Flavors and bitterness"
   },
   "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning": {
    "ar": "Sidi Bou Saïd : The two iconicprints of Jo Ann morning",
@@ -494,6 +482,11 @@
    "ar": "تعالوا و شاركوا لحظة من الراحة حيث الجميع حر في اختيار اللعبة التي يريدونها واللعب على سرعتهم، لوحدهم أو مع الآخرين",
    "en": "Come and share a moment of relaxation where everyone is free to choose the game they want and play at their own pace, alone or with others."
   },
+  "_events/auto/ift-pdf/2026-11-04-projection-debat-autour-du-film-la-meule.md": {
+   "cle": "59762c5fe977",
+   "ar": "المعهد الفرنسي لتونس في سوس يدعوكم إلى عرض فيلم لا ميول بحضور المدير فريدي ترابلسى\nموجز: (الصندوق الاستئماني للتعاون التقني)\nراشيد يعود إلى قريته الأصلية حيث بدأ كل شيء\nلكن شيئاً ما بداخله لا يتقاعد\nببطئ\nمع مرض الزهايمر، ينزلق تدريجيا من نفسه، بينما أولئك الذين يحبون مساعدة لا حول لها في فترة راحته.",
+   "en": "The French Institute of Tunisia in Sousse invites you to a screening-debate of the film La Meule in the presence of director Fredj Trabelsi.\nSummary: (VOSTFR)\nRachid returns to his native village, where it all started.\nBut something in him is untiring.\nSlowly.\nWith Alzheimer's disease, he gradually slides out of himself, while those who love helplessly assist in his erasure."
+  },
   "_events/auto/ift-pdf/2026-11-04-what-else.md": {
    "cle": "e3ff63ee8bcd",
    "ar": "ويقترح المعهد الفرنسي لتونس عرض الفيلم ماذا أيضاً؟\nندا مزيني هيفايده، في حضور فريق الفيلم، هو في حضور ندا مزيني هيفايده.\nموجز: (الصندوق)\nIn Tunis, Farah and Mourad see their plans for the future waver under the weight of expected disappointeds.\nالجميع يحاول تحويل الصفحة و العثور على مكعباتهم عندما تجمعهم منافسة من الظروف\nما يبدو أنه مجرد لقاء عابر قريباً أخذ تحولاً غير متوقع",
@@ -514,15 +507,15 @@
    "ar": "المعهد الفرنسي لتونس في سوس، بالتعاون مع مقهى VOX، أطلق \"Ruche73\"، حدث موسيقي شهري مكرس للمواهب المحلية الناشئة.\n(يوري) يقدم عالماً من البوب الغامض المغناطيسي و المغناطيسي مع أنني لم أعد أصنع الإبتسامة في هذا المكان\nرحلة موسيقية ليلية حيث تستكشف الألوان مع حساسية الحساسية وعزلة عاطفية\nالدخول المجاني في حدود الأماكن المتاحة.",
    "en": "The French Institute of Tunisia in Sousse, in collaboration with the VOX Café, launched \"Ruche73\", a monthly musical event dedicated to emerging local talent.\nYosri offers a world of intimate and hypnotic dark pop with I Don的t Smile Anymore in This Place.\nA night musical journey where melodies explore with sensitivity nostalgia and emotional isolation.\nFree entry within the limits of available places."
   },
+  "_events/auto/ift-pdf/2026-11-06-kteb-tounsi-rencontre-debat-avec-sonia-hanihina.md": {
+   "cle": "7f6abd444c45",
+   "ar": "يدعوكم المعهد الفرنسي لتونس في سوس إلى حلقة نقاش مع سونيا هانيهانا حول مصلحتها الجديدة التي نشرها ديميتر (2026).\nالعودة إلى الوراء ()\n\"لقد ظننت منذ فترة طويلة أنه ليس لدي ما أقوله\"\nثم قابلت تلك الراديوات\nلقد كان مثل الوحي\nبعد أن أصبحوا خرائط لإستكشافها، أراضي للسفر، قاموا بتخصيب ذاكرتي.\nلقد شككت في ظلالهم",
+   "en": "The French Institute of Tunisia in Sousse invites you to a panel discussion with Sonia Hanihina about her novel Aller-retour, published by Démeter (2026).\nBack-to-back ()\n\"I long thought I had nothing to say.\nAnd then I ran into those radios.\nIt was like a revelation.\nHaving become maps to explore, territories to travel, they have fertilized my memory.\nI questioned their shadows."
+  },
   "_events/auto/ift-pdf/2026-11-06-mars-express.md": {
    "cle": "7c687ffd8f8a",
    "ar": "كجزء من عروض الأفلام عن مستقبل تعايشنا مع ذكاء اصطناعي وآليات March express, by Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
    "en": "As part of film screenings about the future of our cohabitation with artificial intelligences and robots. March express, by Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction."
-  },
-  "_events/auto/ift-pdf/2026-11-06-rencontre-avec-sonia-hanihina.md": {
-   "cle": "b2156be3014e",
-   "ar": "يدعوكم المعهد الفرنسي لتونس في سوس، يوم الجمعة 6 تشرين الثاني/نوفمبر، الساعة 00/18، إلى اجتماع مع سونيا هانيهانا، كجزء من إصدار روايتها العودة، المنشورة في صحيفة Éditions Déméter (2026).\nدخول مجاني في حدود الأماكن المتاحة.",
-   "en": "The French Institute of Tunisia in Sousse invites you, Friday 6 November at 6 pm, to a meeting with Sonia Hanihina, as part of the release of her novel Go back, published at Éditions Déméter (2026).\nFree entry within the limits of available places."
   },
   "_events/auto/ift-pdf/2026-11-06-un-monstre-a-paris.md": {
    "cle": "3c26b6ebdd3a",
@@ -530,9 +523,9 @@
    "en": "by Bibo Bergeron, .animation, adventurer"
   },
   "_events/auto/ift-pdf/2026-11-07-kteb-tounsi-rencontre-debat-avec-sonia-hanihina.md": {
-   "cle": "0ae9aff4b9e0",
-   "ar": "من دواعي سرور المعهد الفرنسي لتونس أن يدعوكم إلى مكتبة فهرنهايت 451 لمناقشة فريق مع سونيا هانيها عن روايتها\nLatès, Collection La Granada, 2024.\nوسيدير الاجتماع سارة خالد، وهي أكاديمية.\nGo-Back\n\"لقد ظننت منذ وقت طويل أنه ليس لدي ما أقوله\"\nثم قابلت تلك الراديوات",
-   "en": "The French Institute of Tunisia is pleased to invite you to the bookshop Fahrenheit 451 for a panel discussion with Sonia Hanihina about her novel\nLattès, Collection La Granada, 2024).\nThe meeting will be moderated by Sarra Khaled, an academic.\nGo-Back\n\"I long thought I had nothing to say.\nAnd then I ran into those radios."
+   "cle": "e50afe40d135",
+   "ar": "The French Institute of Tunisia is pleased to invite you to the bookshop Fahrenheit 451 for a panel discussion with Sonia Hanihina about her novel Go back () published by Démeter (Collection Roman de l'autre rive, 2026), reissued by Le Tube de Colidge (J.C.\nLatès, Collection La Granada, 2024.\nوسيدير الاجتماع سارة خالد، وهي أكاديمية.\nالعودة إلى الوراء ()\n\"لقد ظننت منذ فترة طويلة أنه ليس لدي ما أقوله\"\nثم قابلت تلك الراديوات",
+   "en": "The French Institute of Tunisia is pleased to invite you to the bookshop Fahrenheit 451 for a panel discussion with Sonia Hanihina about her novel Go back () published by Démeter (Collection Roman de l'autre rive, 2026), reissued by Le Tube de Coolidge (J.C.\nLattès, Collection La Granada, 2024).\nThe meeting will be moderated by Sarra Khaled, an academic.\nBack-to-back ()\n\"I long thought I had nothing to say.\nAnd then I ran into those radios."
   },
   "_events/auto/ift-pdf/2026-11-07-lecture-participative.md": {
    "cle": "4a4a041cabd2",
@@ -555,9 +548,9 @@
    "en": "The media library of the French Institute of Tunisia offers you, \"Tunis Blues\", a three-session workshop that explores the three dimensions of library therapy: reading, writing and exchanging.\nThis experience invites you to dive into the world of Ali Bécheur's novel Tunis Blues.\nAs the story unfolds, the participants will travel through a city that is traversed by the memories, contradictions and impulses of a changing society."
   },
   "_events/auto/ift-pdf/2026-11-10-l-ocean-est-toujours-la-une-exposition-de-youssef-hn.md": {
-   "cle": "518b90e6d235",
-   "ar": "المعهد الفرنسي لتونس في سوس يدعوك لاكتشاف المعرض \"المحيط موجود دائماً \"لكنني لا أعرفه بعد الآن\" من قبل يوسف هان حتى 23 نوفمبر في غرفة المعرض من المعهد الفرنسي للسويس\nمن خلال سلسلة من الصور والفيديو التجريبي، يستكشف الفنان آثار ذلك الوقت، الحداد والتجارب الحية يترك على هويتنا بين العواطف و الذكريات المشوهة.\nدخول مجاني في حدود الأماكن المتاحة.",
-   "en": "The French Institute of Tunisia in Sousse invites you to discover the exhibition \"The ocean is always there (but I don't recognize it anymore)\" by Youssef Hn until November 23rd in the exhibition room of the French Institute of Sousse.\nThrough a series of photos and an experimental video, the artist explores the traces that time, mourning and lived experiences leave on our identities between nostalgia and distorted memories.\nFree entry within the limits of available places."
+   "cle": "fc9345d98f43",
+   "ar": "المعهد الفرنسي لتونس في سوس يدعوك لاكتشاف المعرض \"المحيط لا يزال هناك (لكنني لا أعرفه بعد الآن) من قبل يوسف هن\nوستفتتح الجلسة يوم الثلاثاء، 10 تشرين الثاني/نوفمبر، الساعة 00/19.\nمن خلال سلسلة من الصور والفيديو التجريبي، يستكشف الفنان آثار ذلك الوقت، الحداد والتجارب الحية يترك على هويتنا بين العواطف و الذكريات المشوهة.\nالمعرض سيكون مرئياً في المعرض حتى 23 تشرين الثاني/نوفمبر",
+   "en": "The French Institute of Tunisia in Sousse invites you to discover the exhibition \"The ocean is still there (but I don't recognize it anymore)\" by Youssef Hn.\nThe opening will take place on Tuesday, November 10, at 7 p.m.\nThrough a series of photos and an experimental video, the artist explores the traces that time, mourning and lived experiences leave on our identities between nostalgia and distorted memories.\nThe exhibition will be visible in the gallery until November 23."
   },
   "_events/auto/ift-pdf/2026-11-11-cinema-danimation.md": {
    "cle": "bc799bf5229b",
@@ -644,6 +637,11 @@
    "ar": "(فنسنت مونييه) 2025، 1h26mn، وثائقي.",
    "en": "Vincent Munier 2025, 1h26mn, documentary."
   },
+  "_events/auto/ift-pdf/2026-11-21-avec-hafida-ben-rejeb-latta.md": {
+   "cle": "cb892cd129e4",
+   "ar": "حول حسابه الأوتوماتيكي ابنة كيروان مُحاكاة من قبل الدّكتورة (أنيسا زريغ) والبالغة الشابّة.",
+   "en": "Around his autobiographical account A daughter of Kairouan. Moderated by Dr Anissa Zrigue Adult and young adult."
+  },
   "_events/auto/ift-pdf/2026-11-21-creativite-avec-amina-hanini.md": {
    "cle": "138cfd16b10e",
    "ar": "Colors, ideas and small creations: an appointment for fun and creative moments Registration: mediatheque.sfax@institutfrancais- tunisie.com",
@@ -658,11 +656,6 @@
    "cle": "11a1e0f79144",
    "ar": "تعالوا و شاركوا لحظة من الراحة حيث الجميع حر في اختيار اللعبة التي يريدونها واللعب على سرعتهم، لوحدهم أو مع الآخرين",
    "en": "Come and share a moment of relaxation where everyone is free to choose the game they want and play at their own pace, alone or with others."
-  },
-  "_events/auto/ift-pdf/2026-11-21-rencontre-avec-hafida-ben-rejeb-latta.md": {
-   "cle": "0f18f72cc8d3",
-   "ar": "يدعوكم المعهد الفرنسي لتونس في سوس يوم السبت 21 تشرين الثاني/نوفمبر في الساعة 00/16 إلى اجتماع مع هافيدا بن ريب لاتا، كجزء من إطلاق روايته الذاتية &quot; يونبلو دي كيروان &quot; .\nدخول مجاني في حدود الأماكن المتاحة.",
-   "en": "The French Institute of Tunisia in Sousse invites you, Saturday 21 November at 4pm, to a meeting with Hafida Ben Rejeb Latta, as part of the release of his autobiography novel Une fille de Kairouan.\nFree entry within the limits of available places."
   },
   "_events/auto/ift-pdf/2026-11-22-atelier-de-seances-de-bibliotherapie-autour-du-roman-tunis-b.md": {
    "cle": "0bafb5142f42",
@@ -694,10 +687,10 @@
    "ar": "حول إستياءه ما بعد الاستعمارِ",
    "en": "Around his post-colonial resentments Rivenuve en"
   },
-  "_events/auto/ift-pdf/2026-11-26-interlude-17-yellow-wasabi.md": {
-   "cle": "e9c944444126",
-   "ar": "كجزء من \"فيلا سلامبو\" \"إنترلودي رقم 17 دي لا سلامبو\" المعهد الفرنسي لتونس في سووسس يدعوك إلى التداخل رقم 17 لاكتشاف الأعمال الموسيقية والرقمية والبصرية للفنان يلو فاسابي",
-   "en": "As part of the Villa Salammbô \"Interlude #17 de la villa Salammbô\", the French Institute of Tunisia in Sousse invites you to interlude n°17 to discover the musical, digital and visual work of the artist Yellow Wasabi."
+  "_events/auto/ift-pdf/2026-11-26-interlude-17-sortie-de-residence-yellow-wasabi.md": {
+   "cle": "2873319e324a",
+   "ar": "(يلو فاسابي) سيقدم بحثه الموسيقي على مفترق طرق أصوات البحر الأبيض المتوسط، موسيقاه التقليدية، الرسم والرقمية.",
+   "en": "Yellow Wasabi will present his musical research, at the crossroads of the sounds of the Mediterranean, his traditional music, drawing and digital."
   },
   "_events/auto/ift-pdf/2026-11-26-voyagez-en-realite-virtuelle.md": {
    "cle": "312206975eb4",
@@ -718,11 +711,6 @@
    "cle": "312206975eb4",
    "ar": "ضع خوذة من طراز VR وتجرب تجربة لا تحصى في قلب العمل بين الفن والسينما. Mediatheque.sousse@institutfranca E is-tunisie.com I S",
    "en": "Put on a VR helmet and experience an immersive experience at the heart of works between art and cinema. mediatheque.sousse@institutfranca E is-tunisie.com I S"
-  },
-  "_events/auto/ift-pdf/2026-11-28-cafe-philo-la-conscience.md": {
-   "cle": "c28e50a43985",
-   "ar": "مكتبة (جيزيل هاليمي) الإعلامية للمعهد الفرنسي لتونس في سوس تعطيك موعداً لـ \"كافي - فيلو\" جديد: مناقشة فلسفية حول الوعي، وعلاقتنا بالعالم، والأسئلة التي تثيرها الاستخبارات الاصطناعية.\nوسيدير المناقشة فرانسوا بيليه، أستاذ الفلسفة في المعهد الدولي للمدرسة الثانوية الفرنسية (Mhamed Driss).\nدخول مجاني في حدود الأماكن المتاحة.",
-   "en": "The Gisèle Halimi media library of the French Institute of Tunisia in Sousse gives you an appointment for a new \"Café-Philo\": a philosophical discussion about consciousness, our relationship to the world and the questions raised by artificial intelligence.\nThe discussion will be moderated by François Pellet, professor of philosophy at the French High School International M的hamed Driss.\nFree entry within the limits of available places."
   },
   "_events/auto/ift-pdf/2026-11-28-cercle-de-lectur-au-centre-ville-de-tunis.md": {
    "cle": "a6cdfa11424a",
@@ -844,11 +832,6 @@
    "ar": "وفي شراكة مع المركز الوطني للألعاب السينمائية والصور (CNCI)، ينظم المعهد الطبعة الحادية عشرة من المهرجان الدولي للكشف عن النفس - سينكرين لحقوق الإنسان، 3-7 تشرين الثاني/نوفمبر 2026، في سينيه - تيهاتر لو ريو في تونس.",
    "en": "In partnership with the National Centre for Cinema and Image (CNCI), ACTIF organizes the 11th edition of the International Human Screen Festival – Screen of Human Rights, November 3-7, 2026, at the Ciné-Théâtre Le Rio in Tunis."
   },
-  "_events/auto/presse-lapresse/2026-10-30-saveurs-et-amertume.md": {
-   "cle": "0b275ad06667",
-   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة: هوية تونسية بحثاً عن التوكيد. إنه يحدث في معرض \"تي جي إم\" الذي يستضيف المعرض الفني \"الشجعان والمرارة\" حتى 26 نوفمبر 2026",
-   "en": "The paintings of Jellal Ben Abdallah intertwine with those of artists of different generations, weaving together the sons of the same story: that of a Tunisian identity in search of affirmation. It's happening at TGM Gallery, which hosts the artistic exhibition \"Savors and bitterness\" until November 26, 2026."
-  },
   "_events/auto/presse-lapresse/2026-11-01-saisons-de-la-creation.md": {
    "cle": "9b734844079e",
    "ar": "The fourth edition of the Tunisian National Theatre Festival \"Saisons de la création\" was inaugurated on Friday evening at the Fourth Art Hall in Tunis. ولغاية 7 تشرين الثاني/نوفمبر 2026، تهدف هذه الطبعة الجديدة إلى الجمع بين الاحتفال بخلق المسارات التأسيسية وتخليصها والتفكير في التغييرات التي طرأت على المسرح المعاصر.",
@@ -904,16 +887,6 @@
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-03-clayface-pathe-azur-city.md": {
-   "cle": "31bab58efea1",
-   "ar": "(مات هاغن) يُثير الشفقة من فتى شارع (غوثام) إلى نجم (هوليوود) يُقاطع بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة مهجورة من كل شيء وليس لديها ما تخسره، (مات) يتحول إلى علاج تجريبي يجعلها تبدوا بغرابة... لكن تغيير عميق في تصوره للواقع.",
-   "en": "Matt Hagen's fulcruming ascent from Gotham street kid to Hollywood star is abruptly interrupted when a crime baron leaves him atrociously disfigured. Abandoned from all and having nothing to lose, Matt turns to an experimental treatment that miraculously makes her look... but profoundly alters his perception of reality."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-clayface.md": {
-   "cle": "31bab58efea1",
-   "ar": "(مات هاغن) يُثير الشفقة من فتى شارع (غوثام) إلى نجم (هوليوود) يُقاطع بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة مهجورة من كل شيء وليس لديها ما تخسره، (مات) يتحول إلى علاج تجريبي يجعلها تبدوا بغرابة... لكن تغيير عميق في تصوره للواقع.",
-   "en": "Matt Hagen's fulcruming ascent from Gotham street kid to Hollywood star is abruptly interrupted when a crime baron leaves him atrociously disfigured. Abandoned from all and having nothing to lose, Matt turns to an experimental treatment that miraculously makes her look... but profoundly alters his perception of reality."
-  },
   "_events/auto/tunis-events-cinema/2026-11-03-dar-el-3ers-cinema-le-colisee.md": {
    "cle": "0abda4052d24",
    "ar": "الممتنعون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
@@ -933,11 +906,6 @@
    "cle": "aadab86f486f",
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-ducobu-et-le-fantome-de-saint-potache.md": {
-   "cle": "1bfb541413f0",
-   "ar": "إنه عيد القديسين، و (دوكوبو) يعود لمغامرة مليئة بالضحك والغموض! البروفيسور (لاتوش) والآنسة (راتو) ينتقلان إلى منزل... مطارد من شبح (أناتولي) أعظم مرساة في تاريخ (سانت) مدرسة الشارب. هذا الشبح سيقود (دوكوبو) و(ليوني) ووالديهم و(كيتريش) إلى سلسلة من المغامرات المضحكة وغير المتوقعة",
-   "en": "It's Halloween, and Ducobu comes back for an adventure full of laughter and mysteries! Professor Latouche and Miss Rateau move into a house... haunted by the ghost of Anatole, the greatest anchor in the history of the St. Potache school. This farce ghost will lead Ducobu, Léonie, their parents and Kitrish into a series of funny and unexpected adventures."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-evenement.md": {
    "cle": "9c488266f1d8",
@@ -988,11 +956,6 @@
    "cle": "4f020117916c",
    "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، واحد من أكثر الفنانين نفوذا في السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي أنشأ أصلا الغرف الخلفية والهوس، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير الجينات والكشف عن روب سافاج.",
    "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-03-shaun-le-mouton-la-beeete-d-halloween.md": {
-   "cle": "60b32eac2d16",
-   "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبتهجون في احتفالات، حتى يهز المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
-   "en": "At Halloween, the inhabitants of Mossy Bottom farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-wala-kan-ala-el-bal.md": {
    "cle": "b493ee0a062f",

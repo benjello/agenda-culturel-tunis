@@ -14,9 +14,9 @@ serie: "kteb-tounsi"
 auto: true
 ---
 
-L'Institut français de Tunisie a le plaisir de vous inviter à la librairie Fahrenheit 451 pour une rencontre-débat avec Sonia Hanihina autour de son roman جذور Aller-Retour, paru aux éditions Déméter (Collection Roman de l'autre rive, 2026), réédition du titre Le Tube de Coolidge (J.C. Lattès, Collection La Grenade, 2024).
+L'Institut français de Tunisie a le plaisir de vous inviter à la librairie Fahrenheit 451 pour une rencontre-débat avec Sonia Hanihina autour de son roman Aller-Retour (جذور) paru aux éditions Déméter (Collection Roman de l'autre rive, 2026), réédition du titre Le Tube de Coolidge (J.C. Lattès, Collection La Grenade, 2024).
 
 La rencontre sera modérée par Sarra Khaled, universitaire.
 
-جذور Aller-Retour
+ Aller-Retour (جذور)
 "J’ai longtemps cru que je n’avais rien à dire. Et puis je suis tombée sur ces radios.
