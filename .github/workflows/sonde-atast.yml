@@ -1,5 +1,7 @@
 name: Sonde ATAST (temporaire)
 on:
+  push:
+    branches: [sonde-atast]
   workflow_dispatch:
 jobs:
   sonde:
