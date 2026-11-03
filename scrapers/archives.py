@@ -59,7 +59,7 @@ def _cle(e: dict) -> str:
 
 def _charger() -> dict[str, dict[str, dict]]:
     annees = {}
-    for f in DOSSIER.glob("*.json"):
+    for f in DOSSIER.glob("[0-9][0-9][0-9][0-9].json"):  # pas index.json (le décompte par année)
         liste = json.loads(f.read_text())
         annees[f.stem] = {_cle(e): e for e in liste}
     return annees
