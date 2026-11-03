@@ -1,5 +1,5 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "corriges": 1,
  "a_verifier": [
   {
@@ -156,31 +156,11 @@
    ]
   },
   {
-   "fichier": "tunis-events-cinema/2026-11-02-last-chance.md",
+   "fichier": "tunis-events-cinema/2026-11-03-last-chance.md",
    "source": "tunis-events-cinema",
    "titre": "LAST CHANCE - لص شايح",
-   "date": "2026-11-02",
-   "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-02-palestine-cinema-days-the-dream-by-mohammad-malas.md",
-   "source": "tunis-events-cinema",
-   "titre": "Palestine Cinema Days: THE DREAM by Mohammad Malas",
-   "date": "2026-11-02",
-   "lien": "https://tunis.events/events/8L4dM8/palestine-cinema-days-the-dream-by-mohammad-malas-cinemadart",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-02-weekend.md",
-   "source": "tunis-events-cinema",
-   "titre": "WEEKEND",
-   "date": "2026-11-02",
-   "lien": "https://tunis.events/events/moEQl8/weekend-cinema-le-colisee",
+   "date": "2026-11-03",
+   "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
    "problemes": [
     "film sans horaire ni séance"
    ]
@@ -577,6 +557,19 @@
      }
     ]
    },
+   "presse-kapitalis": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
    "presse-lapresse": {
     "n": 2,
     "precis": 2,
@@ -631,20 +624,20 @@
     ]
    },
    "teskerti": {
-    "n": 13,
-    "precis": 13,
+    "n": 12,
+    "precis": 12,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 13
+      "n": 12
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 13
+      "n": 12
      }
     ]
    },
@@ -663,13 +656,13 @@
    },
    "tunis-events-cinema": {
     "n": 36,
-    "precis": 33,
-    "pourcent": 92,
+    "precis": 35,
+    "pourcent": 97,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 3,
+      "n": 1,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -677,7 +670,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 1
      },
      {
       "code": "sans_notice",
@@ -778,26 +771,6 @@
      }
     ]
    },
-   "presse": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Photo : Mémoires en partage entre Sicile et Tunisie"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 3
-     }
-    ]
-   },
    "resident_advisor": {
     "n": 3,
     "precis": 2,
@@ -815,6 +788,26 @@
       "code": "sans_image",
       "texte": "image",
       "n": 1
+     }
+    ]
+   },
+   "presse": {
+    "n": 4,
+    "precis": 3,
+    "pourcent": 75,
+    "defauts": [
+     {
+      "code": "titre_phrase",
+      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "n": 1,
+      "exemple": "Photo : Mémoires en partage entre Sicile et Tunisie"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
      }
     ]
    },
@@ -857,13 +850,13 @@
    },
    "tunis_events_cinema": {
     "n": 36,
-    "precis": 33,
-    "pourcent": 92,
+    "precis": 35,
+    "pourcent": 97,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 3,
+      "n": 1,
       "exemple": "LAST CHANCE - لص شايح"
      }
     ],
@@ -871,30 +864,12 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 1
      },
      {
       "code": "sans_notice",
       "texte": "notice",
       "n": 36
-     }
-    ]
-   },
-   "teskerti": {
-    "n": 13,
-    "precis": 13,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 13
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 13
      }
     ]
    },
@@ -908,6 +883,24 @@
       "code": "sans_heure",
       "texte": "heure",
       "n": 1
+     }
+    ]
+   },
+   "teskerti": {
+    "n": 12,
+    "precis": 12,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 12
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 12
      }
     ]
    },

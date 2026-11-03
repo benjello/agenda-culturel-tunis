@@ -1,7 +1,6 @@
 ---
 title: "BAKMA - بكمة"
-date: 2026-11-02
-end_date: "2026-11-03 18:15"
+date: 2026-11-03
 venue: "Cinéma Le Colisée"
 address: "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
 ville: "tunis"
@@ -9,10 +8,10 @@ category: "cinema"
 link: "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-02", "2026-11-03 14:00", "2026-11-03 18:15"]
+seances: ["2026-11-03", "2026-11-03 14:00", "2026-11-03 18:15"]
 image: "https://tunis.events/storage/5b65ec103a07d3f0fbec6b23107ac79c2.jpeg"
 film: true
-ajoute: "2026-11-02"
+ajoute: "2026-11-03"
 auto: true
 ---
 

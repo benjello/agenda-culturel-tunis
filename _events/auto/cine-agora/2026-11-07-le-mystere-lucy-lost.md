@@ -14,6 +14,7 @@ seances: ["2026-11-07 15:00", "2026-11-08 15:00"]
 image: "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp"
 film: true
 ajoute: "2026-11-01"
+autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/le-mystere-lucy-lost", "source": "tunis-events-cinema"}]
 auto: true
 ---
 

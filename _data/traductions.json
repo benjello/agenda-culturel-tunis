@@ -108,6 +108,10 @@
    "fr": "LA NUIT DE LA FORMATION HARAKAT",
    "ar": "HARAKAT TRAINING SCRATCH NIGHT"
   },
+  "Human screen festival | Le cinéma au service des droits humains": {
+   "ar": "مهرجان الشاشة البشرية - سينما في خدمة حقوق الإنسان",
+   "en": "Human screen festival - Cinema in the service of human rights"
+  },
   "Héritages Croisés": {
    "ar": "التراث المعبر",
    "en": "Crossed heritage"
@@ -384,10 +388,10 @@
    "fr": "Le résumé couvre les changements dans l'histoire et le patrimoine de la Tunisie depuis la fin du XIXe siècle, à travers l'évolution des programmes de recherche et de ses problèmes, [...] L'article conférence: les transformations de l'écriture ancienne et génétique en Tunisie: de l'héritage colonial au renouvellement des approches cognitives du professeur Fawzi, tenue le 13 novembre 2026 est apparu en premier sur Beit al-Hikma.",
    "en": "The summary covers the changes in the history and heritage of Tunisia since the late nineteenth century, through the evolution of research curricula and its problems, [...] L’article lecture: the transformations of ancient and genetic writing in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi, held on 13 November 2026 est apparu en premier sur Beit al-Hikma."
   },
-  "_events/auto/cine-agora/2026-11-02-bakma.md": {
+  "_events/auto/cine-agora/2026-11-03-bakma.md": {
    "cle": "bd01c3eb7145",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة. أعضاؤه تم قطع رأسها واختفى وبدلا من ذلك، القاتل يتستر على رأس كلب",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, instead, the murderer grotesquely sewn a dog's head."
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة أعضاؤه تم قطع رأسهم واختفى في مكانه القاتل كان يتستر على رأس كلب",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, in its place, the murderer grotesquely sewn a dog's head."
   },
   "_events/auto/cine-agora/2026-11-03-le-temps-suspendu.md": {
    "cle": "0677768aa51f",
@@ -849,6 +853,11 @@
    "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة. المادة 13 من الندوة المشتركة بين الوكالات: حالات عدم اليقين، ظهرت حالات معينة أولاً في لجنة التنسيق المشتركة بين الوكالات والمعنية بإدارة المواد الكيميائية.",
    "en": "From December 3 to 5, 2026, the University of La Manouba organizes the 13th edition of its international interdisciplinary symposium, dedicated this year to the binome Uncertainties/Certitudes. Article 13th UMA Symposium: Uncertainties, Certainties appeared first on IRMC ."
   },
+  "_events/auto/presse-kapitalis/2026-11-03-human-screen-festival-le-cinema-au-service-des-droits-humain.md": {
+   "cle": "e9ac10ed9f05",
+   "ar": "وفي شراكة مع المركز الوطني للألعاب السينمائية والصور (CNCI)، ينظم المعهد الطبعة الحادية عشرة من المهرجان الدولي للكشف عن النفس - سينكرين لحقوق الإنسان، 3-7 تشرين الثاني/نوفمبر 2026، في سينيه - تيهاتر لو ريو في تونس.",
+   "en": "In partnership with the National Centre for Cinema and Image (CNCI), ACTIF organizes the 11th edition of the International Human Screen Festival – Screen of Human Rights, November 3-7, 2026, at the Ciné-Théâtre Le Rio in Tunis."
+  },
   "_events/auto/presse-lapresse/2026-10-30-saveurs-et-amertume.md": {
    "cle": "0b275ad06667",
    "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة: هوية تونسية بحثاً عن التوكيد. إنه يحدث في معرض \"تي جي إم\" الذي يستضيف المعرض الفني \"الشجعان والمرارة\" حتى 26 نوفمبر 2026",
@@ -884,100 +893,30 @@
    "ar": "مُراقبون مُراقبون مُراقبون مُراقبون يُقدّرون مُراقبون\nملاحظة: سيصور البرنامج ويسجله المنظم بالفيديو.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show.",
    "en": "اعلان هام: سيلم Whilst العرs العرs العرs العرs العرs النs النs النs الs مs مs الs مs مs مs مs مs ن الs ومs الs الs مs مs الs مs مs مs مs مs مs مs مs الs مs مs مs وs وs اsاs اsاs مs اsيدs اsيs وs مs مs مs مs مs مs مs مs مs مs مs مs مs مs اsاsاsاsاsيsيsيsوs وs ا\nIMPORTANT NOTICE: The show will be filmed and recorded in video by the organizer.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show."
   },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma-cinema-le-colisee.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-bakma-cinema-le-colisee.md": {
    "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma-cinema-le-palace.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-bakma-cinema-le-palace.md": {
    "cle": "c90df92f8069",
    "ar": "BAKMA (2026)\nالمدير: عبد الحميد بوشناك\nرعب\nالمدة: 117 دقيقة",
    "en": "BAKMA (2026)\nDirector: Abdelhamid Boushnak\nGenre: Horror\nDuration: 117 min"
   },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma-l-agora-marsa.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-bakma-pathe-azur-city.md": {
    "cle": "94b2ba3b975b",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma-pathe-azur-city.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-bakma-pathe-tunis-city.md": {
    "cle": "94b2ba3b975b",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma-pathe-tunis-city.md": {
-   "cle": "94b2ba3b975b",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-bakma.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-bakma.md": {
    "cle": "80243900e2cb",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-cinema-le-colisee.md": {
-   "cle": "0abda4052d24",
-   "ar": "المذنبون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
-   "en": "دار العرس\nDirector: Heifel Ben Youssef\nDuration: 135 min"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-pathe-azur-city.md": {
-   "cle": "2c1b1a4c8a81",
-   "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
-   "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. At 10:00. ."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers-pathe-tunis-city.md": {
-   "cle": "2c1b1a4c8a81",
-   "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
-   "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. At 10:00. ."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-dar-el-3ers.md": {
-   "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-klara-et-le-soleil.md": {
-   "cle": "2d10a8e8088a",
-   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
-   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-last-chance.md": {
-   "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-palestine-cinema-days-the-dream-by-mohammad-malas.md": {
-   "cle": "f32c7e6f5138",
-   "fr": "Journées du cinéma palestinien autour du monde &quot; à Sinemdar-Cartataj <unk>\nLe Simma Senefis Sinemdar Club et le Sima Assemblies Club de l'Assemblée Sarbe, dans le cadre de leur programme de perspectives palestiniennes, vous proposent une présentation, suivie d'une discussion équitable de l'activité savante et sympathique des films:\n\"Nam\" pour le tireur d'élite de Hamad.\nMes documents, 45 minutes.\nUne série d'entretiens avec des réfugiés palestiniens au Liban pendant la guerre civile, menés par un tireur d'élite sur les rêves qu'ils ont vus quand ils sont allés dormir.",
-   "en": "&quot; Palestinian film days around the world &quot; in Sinemdar-Cartataj <unk>\nThe Simma Senefis Sinemdar Club and the Sima Assemblies Club of the Sarb Assembly, within their programme of Palestinian perspectives, propose to you a presentation, followed by a discussion with equity of the scholarly and sympathetic activity of the films:\n\"Nam\" for Hamad's sniper. My documents, 45 minutes.\nA series of interviews with Palestinian refugees in Lebanon during the civil war, conducted by a sniper about the dreams they saw when they went to sleep."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-wala-kan-ala-el-bal-pathe-azur-city.md": {
-   "cle": "b493ee0a062f",
-   "fr": "ولا هان عالبال (titre original)Un jeune guide touristique de Luxor accepte une affaire inhabituelle d'un riche homme d'affaires : gagner sa fille et l'aider à passer de son ex. Mais un cas d'identité erronée bouleverse le plan, en envoyant Hassan dans une aventure inattendue et dans une histoire d'amour qu'il n'a jamais vu venir.",
-   "ar": "ولا سيما دليل الرحلات السياحية الشابة في لوكسور يقبل صفقة غير عادية من رجل أعمال ثري: الفوز على ابنته ومساعدتها على الانتقال من زوجها السابق. لكن حالة هويّة خاطئة تُحوّلُ الخطةَ رأساً على عقب، تُرسلُ (حسان) في مغامرة غير متوقعة و إلى قصّة حبّ لم يَرَها أبداً."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-wala-kan-ala-el-bal.md": {
-   "cle": "4c4305bc1c1e",
-   "fr": "ولا юان عالبال (titre original)\nUn jeune guide touristique de Louxor accepte une affaire inhabituelle d'un riche homme d'affaires : gagner sa fille et l'aider à passer de son ex.\nMais un cas d'identité erronée bouleverse le plan, envoyant Hassan dans une aventure inattendue et dans une histoire d'amour qu'il n'a jamais vu venir.",
-   "ar": "لا ينطبق على النص الأصلي (الباب)\nدليل جولات شابة في (لوكسور) يقبل صفقة غير عادية من رجل أعمال ثري: الفوز على ابنته ومساعدتها على الانتقال من زوجها السابق.\nلكن حالة هويّة خاطئة تُحوّلُ الخطةَ رأساً على عقب، تُرسلُ (حسان) في مغامرة غير متوقعة و إلى قصّة حبّ لم يَرَها أبداً."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-weekend-cinema-le-palace.md": {
-   "cle": "f1346837d759",
-   "fr": "SEMAINE (2026)\nSynopsis\nUn film combinant ambiguïté, mutilations et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Azadiyé, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui et Subari al-Buhali, la production de Fad Bin Ammar, le complexe de Koubatiniya",
-   "en": "WEEKEND (2026)\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Azadiyah, Maryem Boukhdida, Khalil al-Abdoli, Al-Qaqil al-Abdugli, Ali Dahdouk, Mallaqawi, Rafiq al-Aoui and Subari al-Buhali, the production of Fad Bin Ammar, the Kubatinininiyah compound"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-weekend-pathe-azur-city.md": {
-   "cle": "322b19ae18d9",
-   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis combinant ambiguïté, confusion et enquête avec un héros : Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatinin",
-   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatinin"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-weekend-pathe-tunis-city.md": {
-   "cle": "322b19ae18d9",
-   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nFilm de WeEKENDSynopsis combinant ambiguïté, confusion et enquête avec un héros : Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatinin",
-   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddous, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatinin"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-02-weekend.md": {
-   "cle": "a3bcea6b3378",
-   "fr": "SEMAINE\nSynopsis\nUn film alliant ambiguïté, mutilation et enquête avec un héros: Mohamed Ali Ben Jama, Samarie, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui et Supre al-Buhali, l'exhudidi et la production du gubal Ben Ammar, le complexe de Koubatini.",
-   "en": "WEEKEND\nSynopsis\nA film combining ambiguity, maiming and investigation with a hero: Mohamed Ali Ben Jama, Samaria, Meim Boukhdida, Khalil Al-Abduli, Ali Dahdouq, Mallaqahid Al-Audosi, Rafiq al-Aoui and Supre al-Buhali, the exhudidi and the production of the gubal Ben Ammar, the Kubatini compound."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-clayface-pathe-azur-city.md": {
    "cle": "31bab58efea1",
@@ -988,6 +927,26 @@
    "cle": "31bab58efea1",
    "ar": "(مات هاغن) يُثير الشفقة من فتى شارع (غوثام) إلى نجم (هوليوود) يُقاطع بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة مهجورة من كل شيء وليس لديها ما تخسره، (مات) يتحول إلى علاج تجريبي يجعلها تبدوا بغرابة... لكن تغيير عميق في تصوره للواقع.",
    "en": "Matt Hagen's fulcruming ascent from Gotham street kid to Hollywood star is abruptly interrupted when a crime baron leaves him atrociously disfigured. Abandoned from all and having nothing to lose, Matt turns to an experimental treatment that miraculously makes her look... but profoundly alters his perception of reality."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-dar-el-3ers-cinema-le-colisee.md": {
+   "cle": "0abda4052d24",
+   "ar": "الممتنعون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
+   "en": "دار العرس\nDirector: Heifel Ben Youssef\nDuration: 135 min"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-dar-el-3ers-pathe-azur-city.md": {
+   "cle": "2c1b1a4c8a81",
+   "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
+   "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. at 10:00. ."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-dar-el-3ers-pathe-tunis-city.md": {
+   "cle": "2c1b1a4c8a81",
+   "ar": "Dar El 3ers - Making at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. الدورة القادمة مون. 2 Nov. في الساعة العاشرة .",
+   "en": "Dar El 3ers - دار العرس at the cinema: 38 screenings this week at Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colosseum and L'Agora Marsa. Next session Mon. 2 Nov. at 10:00. ."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-dar-el-3ers.md": {
+   "cle": "aadab86f486f",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-ducobu-et-le-fantome-de-saint-potache.md": {
    "cle": "1bfb541413f0",
@@ -1005,9 +964,14 @@
    "en": "ل的 شايح at the cinema: 4 screenings this week at Le Colosseum, Pathé Tunis City and Le Palace. Next session Mon. 2 Nov. At 10:00. ."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-klara-and-the-sun.md": {
-   "cle": "5a7b32f535c1",
-   "ar": "KLARA and the SUN (2026)SynopsisWhen Klara meets Josie, each immediately perceives a soul mate in the other. جوسي لديها علاقة معقدة مع والدتها وكلاهما مر بالكثير من المشقات",
-   "en": "KLARA AND THE SUN (2026)SynopsisWhen Klara meets Josie, each immediately perceives a soul mate in the other. Josie has a complicated relationship with her mother and both have been through a lot of hardships."
+   "cle": "617326298fe4",
+   "ar": "KLARA and the SUN (2026)\nالمدير: تيكا وايتي\nGenre: Science-Fiction, Drama\nالمدة: 116 دقيقة\nSynopsis\nعندما تقابل (كلارا) (جوسي) كل واحد على الفور يتصور توأم روح في الآخر\nجوسي لديها علاقة معقدة مع والدتها وكلاهما مر بالكثير من المشقات",
+   "en": "KLARA AND THE SUN (2026)\nDirector: Taika Waititi\nGenre: Science-Fiction, Drama\nDuration: 116 min\nSynopsis\nWhen Klara meets Josie, each one immediately perceives a soul mate in the other.\nJosie has a complicated relationship with her mother and both have been through a lot of hardships."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil-pathe-tunis-city.md": {
+   "cle": "2d10a8e8088a",
+   "ar": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. الدورة القادمة مون. 2 Nov. الساعة 10: 50",
+   "en": "Klara and the sun in the cinema: 8 sessions this week in Pathé Azur City, Pathé Mall of Sousse and Pathé Tunis City. Next session Mon. 2 Nov. At 10:50."
   },
   "_events/auto/tunis-events-cinema/2026-11-03-klara-et-le-soleil.md": {
    "cle": "2d10a8e8088a",
@@ -1044,10 +1008,50 @@
    "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبتهجون في احتفالات، حتى يهز المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
    "en": "At Halloween, the inhabitants of Mossy Bottom farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
   },
-  "_events/auto/tunis-events-cinema/2026-11-03-weekend.md": {
+  "_events/auto/tunis-events-cinema/2026-11-03-wala-kan-ala-el-bal-pathe-azur-city.md": {
+   "cle": "c523299e4751",
+   "ar": "مرشد سياحي شاب من (لوكسور) يقبل عرض غير عادي من رجل أعمال ثري: إقناع ابنته ومساعدتها على نسيان زوجها السابق. لكن عندما لا تسير الأمور كما هو مخطط لها، (حسان) يجد نفسه محاصراً في سلسلة من الحالات المصورة و في قصة حب لم يراها من قبل.",
+   "en": "A young tourist guide from Luxor accepts an unusual offer from a wealthy businessman: convincing his daughter and helping her forget her ex. But when things don't go as planned, Hassan finds himself caught up in a comic series of unexpected situations and in a love story he had never seen before."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-wala-kan-ala-el-bal.md": {
+   "cle": "b493ee0a062f",
+   "fr": "ولا هان عالبال (titre original)Un jeune guide touristique à Louxor accepte une affaire inhabituelle d'un riche homme d'affaires : gagner sa fille et l'aider à passer de son ex. Mais un cas d'identité erronée bouleverse le plan, en envoyant Hassan dans une aventure inattendue et dans une histoire d'amour qu'il n'a jamais vu venir.",
+   "ar": "ولا سيما دليل الرحلات السياحية الشابة في لوكسور يقبل صفقة غير عادية من رجل أعمال ثري: الفوز على ابنته ومساعدتها على الانتقال من زوجها السابق. لكن حالة هويّة خاطئة تُحوّلُ الخطةَ رأساً على عقب، تُرسلُ (حسان) في مغامرة غير متوقعة و إلى قصّة حبّ لم يَرَها أبداً."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-weekend-cinema-le-palace.md": {
+   "cle": "f1346837d759",
+   "fr": "SEMAINE (2026)\nSynopsis\nUn film alliant ambiguïté, mutilation et enquête avec un championnat : Mohamed Ali Ben Jama, Samarie, Meim Boukhdida, Khalil al-Abduliya, Ali Dahdouq, Mallaqawi, Rafiq al-Aoui et Supre al-Buhali, l'exhu &apos; idi et la production du trafiquant Ben Ammar, le complexe de Kubatini",
+   "en": "WEEKEND (2026)\nSynopsis\nA film combining ambiguity, maiming and investigation with a championship: Mohamed Ali Ben Jama, Samaria, Meim Boukhdida, Khalil al-Abduliya, Ali Dahdouq, Mallaqawi, Rafiq al-Aoui and Supre al-Buhali, the exhu &apos; idi and the production of trader Ben Ammar, the Kubatini compound"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-weekend-pathe-azur-city.md": {
    "cle": "322b19ae18d9",
-   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nWeEKENDSynopsis film combinant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malakah Haddous, Rafiq al-Aoui, Sabr al-Budhali, et la production de Fadil Ben Ammar Al-Amur, le complexe de Koubatini",
-   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malakah Haddous, Rafiq al-Aoui, Sabr al-Budhali, and the production of Fadil Ben Ammar Al-Amur, the Kubatini compound"
+   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nWeEKENDSynopsis film combinant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatin",
+   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatin"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-weekend-pathe-tunis-city.md": {
+   "cle": "322b19ae18d9",
+   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nWeEKENDSynopsis film combinant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatin",
+   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatin"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-03-weekend.md": {
+   "cle": "3ca4bdb67391",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
+   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-04-dar-el-3ers.md": {
+   "cle": "bf37d01ad643",
+   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز",
+   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers!"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-04-other-mommy-malfaisante.md": {
+   "cle": "4f020117916c",
+   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، واحد من أكثر الفنانين نفوذا في السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي خلق في الأصل قاعات الظهر والهوس، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير عام وكشف روب سافاج.",
+   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-05-les-miserables.md": {
+   "cle": "ee91f75d6d1e",
+   "ar": "وبعد 19 سنة من المكافأة على سرقة الخبز، يقرر جان فاليجان تغيير حياته وفعل الخير حوله. تحت هوية زائفة، يصبح مع مرور الوقت احتراماً ملحوظاً للجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، يَعِدُ بأن يُنقذ إبنته، (كوسيت)...",
+   "en": "Released after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, it becomes over time a notable respected of all. Coming to help Fantine, a dying worker, he promises to save his daughter, Cosette, [...]"
   },
   "_events/auto/tunis-events/2026-10-24-becoming-the-ocean-bim-26.md": {
    "cle": "d1b354352b89",

@@ -67,6 +67,15 @@
    "n": 19
   },
   {
+   "slug": "lagora-la-marsa",
+   "nom": "L’Agora La Marsa",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.88133,
+   "lon": 10.32585,
+   "n": 15
+  },
+  {
    "slug": "pathe-tunis-city",
    "nom": "Pathé Tunis City",
    "type": "cinema",
@@ -74,15 +83,6 @@
    "lat": 36.89828,
    "lon": 10.12451,
    "n": 13
-  },
-  {
-   "slug": "lagora-la-marsa",
-   "nom": "L’Agora La Marsa",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.88133,
-   "lon": 10.32585,
-   "n": 10
   },
   {
    "slug": "el-teatro",
@@ -109,7 +109,7 @@
    "ville": "tunis",
    "lat": 36.744,
    "lon": 10.232,
-   "n": 8
+   "n": 9
   },
   {
    "slug": "auditorium-institut-francais-de-tunis",
@@ -127,15 +127,6 @@
    "ville": "tunis",
    "lat": 36.854,
    "lon": 10.324,
-   "n": 7
-  },
-  {
-   "slug": "theatre-le-4eme-art",
-   "nom": "Théâtre Le 4ème Art",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.80189,
-   "lon": 10.18123,
    "n": 7
   },
   {
@@ -166,12 +157,12 @@
    "n": 6
   },
   {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
-   "type": "cinema",
+   "slug": "theatre-le-4eme-art",
+   "nom": "Théâtre Le 4ème Art",
+   "type": "theatre",
    "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
+   "lat": 36.80189,
+   "lon": 10.18123,
    "n": 6
   },
   {
@@ -184,6 +175,15 @@
    "n": 5
   },
   {
+   "slug": "cinema-le-palace",
+   "nom": "Cinéma Le Palace",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.8,
+   "lon": 10.183,
+   "n": 5
+  },
+  {
    "slug": "cinema-alhambra-zephyr",
    "nom": "Cinéma Alhambra Zéphyr",
    "type": "cinema",
@@ -193,12 +193,12 @@
    "n": 4
   },
   {
-   "slug": "cinema-le-palace",
-   "nom": "Cinéma Le Palace",
+   "slug": "cinema-le-colisee",
+   "nom": "Cinéma Le Colisée",
    "type": "cinema",
    "ville": "tunis",
-   "lat": 36.8,
-   "lon": 10.183,
+   "lat": 36.80014,
+   "lon": 10.18189,
    "n": 4
   },
   {
@@ -217,6 +217,15 @@
    "ville": "sousse",
    "lat": 36.85392,
    "lon": 10.19632,
+   "n": 3
+  },
+  {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
    "n": 3
   },
   {
@@ -244,15 +253,6 @@
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 2
-  },
-  {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
-   "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
    "n": 2
   },
   {
