@@ -2,6 +2,11 @@
 
 <!-- Par exemple : « Ajoute la page Facebook de la maison de la culture Ibn Khaldoun ». -->
 
+## Ticket
+
+- Ferme l'issue : `Closes #N` (ou « aucune »)
+- [ ] La case correspondante est cochée dans `BACKLOG.md` (ou il n'y en a pas).
+
 ## Source
 
 - Adresse de la page :
