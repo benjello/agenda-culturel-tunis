@@ -426,16 +426,33 @@
     navigator.serviceWorker.register((window.BASE || '/') + 'sw.js').catch(function () {});
   }
 
-  // ---- Bouton « Installer l'application » (Android/Chrome) ; sur iPhone, les consignes de la page suffisent
+  // ---- Bouton « Installer l'application » : un clic sur Chrome, Edge et Android (beforeinstallprompt) ;
+  // ailleurs (iPhone/Safari, Firefox), pas de clic unique possible : on affiche une aide pas à pas.
   var invite = null;
+  var zone = document.getElementById('installer-zone');
+  var boutons = document.querySelectorAll('[data-installer]');
+  var installee = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+  function montrerBoutons(v) { boutons.forEach(function (b) { b.hidden = !v; }); if (zone) zone.hidden = !v && !aideVisible; }
+  var aideVisible = false;
+  function montrerAide() {
+    var aide = document.getElementById('aide-installer'); if (!aide || installee) return;
+    var ua = navigator.userAgent, ios = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    document.getElementById('aide-ios').hidden = !ios;
+    document.getElementById('aide-autre').hidden = ios;
+    aide.hidden = false; aideVisible = true; if (zone) zone.hidden = false;
+  }
   window.addEventListener('beforeinstallprompt', function (e) {
     e.preventDefault(); invite = e;
-    var b = document.getElementById('bouton-installer'); if (b) b.hidden = false;
+    var aide = document.getElementById('aide-installer'); if (aide) aide.hidden = true; aideVisible = false;
+    montrerBoutons(true);
   });
-  var bi = document.getElementById('bouton-installer');
-  if (bi) bi.addEventListener('click', function () {
-    if (!invite) return;
-    invite.prompt(); invite = null; bi.hidden = true;
+  boutons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!invite) return;
+      invite.prompt(); invite = null; montrerBoutons(false);
+    });
   });
-  window.addEventListener('appinstalled', function () { if (bi) bi.hidden = true; });
+  window.addEventListener('appinstalled', function () { invite = null; montrerBoutons(false); if (zone) zone.hidden = true; });
+  // Si le navigateur n'a pas proposé l'installation au bout d'un moment, on montre l'aide (sauf appli déjà installée).
+  if (!installee) setTimeout(function () { if (!invite) montrerAide(); }, 1500);
 })();

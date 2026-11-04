@@ -390,3 +390,9 @@ main:focus { outline: none; }
 
 /* Bouton discret à côté d'une note (texte d'origine / traduction) */
 .lien-bouton { background: none; border: 0; padding: 0; font: inherit; font-size: .85em; color: var(--accent, inherit); text-decoration: underline; cursor: pointer; }
+
+/* Installer l'application */
+.installer { margin-top: 12px; }
+.bouton-installer { background: var(--accent, #b5442f); color: #fff; border: 0; border-radius: 999px; padding: 10px 20px; font: inherit; font-weight: 600; cursor: pointer; }
+.aide-installer { max-width: 32rem; margin: 0 auto; }
+.aide-installer summary { cursor: pointer; font-weight: 600; }

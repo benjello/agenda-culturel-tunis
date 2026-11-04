@@ -32,7 +32,7 @@ Un lieu, un artiste ou un conférencier manque, ou sa fiche est incomplète ? [D
 L'agenda s'installe sur le téléphone comme une application, sans magasin d'applications, gratuitement,
 et reste lisible hors connexion pour les pages déjà consultées.
 
-<button type="button" id="bouton-installer" hidden>Installer l'application</button>
+<button type="button" class="bouton-installer" data-installer hidden data-t="installer.bouton">Installer l'application</button>
 
 - **Android (Chrome)** : menu ⋮, puis « Installer l'application » ou « Ajouter à l'écran d'accueil ».
 - **iPhone (Safari)** : bouton Partager, puis « Sur l'écran d'accueil ».
