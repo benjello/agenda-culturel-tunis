@@ -7,7 +7,7 @@
 {%- assign l = include.lieu | default: "" | strip -%}
 {%- assign vague = false -%}
 {%- if l == "" or l == "Tunis" or l == "Tunisie" or l == "Lieu à préciser" or l == "TBA" or l contains "voir l'article" or l contains "voir l'annonce" or l contains " et " or l contains " / " or l contains "plusieurs" or l contains "Plusieurs" -%}{%- assign vague = true -%}{%- endif -%}
-{%- if vague -%}{{ l }}{%- else -%}
+{%- if vague -%}{%- if l == "Lieu à préciser" -%}<span data-t="lieu_preciser">Lieu à préciser</span>{%- elsif l contains ", voir l'annonce" -%}{{ l | remove: ", voir l'annonce" }}, <span data-t="voir_annonce">voir l'annonce</span>{%- elsif l contains ", voir l'article" -%}{{ l | remove: ", voir l'article" }}, <span data-t="voir_article">voir l'article</span>{%- else -%}{{ l }}{%- endif -%}{%- else -%}
 {%- capture q %}{{ include.lieu }}{% if include.adresse %}, {{ include.adresse }}{% endif %}, Tunisie{% endcapture -%}
 {%- assign fiche = site.data.lieux.index[l] -%}
 {%- if fiche -%}
