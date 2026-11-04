@@ -21,7 +21,7 @@ permalink: /sources/
         {%- if s.actif == false %}<span class="etat pause" data-t="etat.a_etudier">à étudier</span>
         {%- elsif e.ok != true and e.attente %}<span class="etat attente" data-t="etat.en_attente">en attente</span> <small>{{ e.attente }}</small>
         {%- elsif e == nil %}<span class="etat attente" data-t="etat.pas_lue">pas encore lue</span>
-        {%- elsif e.ok %}<span class="etat ok" data-t="etat.a_jour">à jour</span> <small>{{ e.nb }} {% if s.type == "cinema" %}<span data-t="films">films</span>{% else %}<span data-t="evenements">événements</span>{% endif %}</small>
+        {%- elsif e.ok %}<span class="etat ok" data-t="etat.a_jour">à jour</span> <small>{{ e.nb }} {% if s.type == "cinema" %}<span data-t="films">films</span>{% else %}<span data-t="evenements">événements</span>{% endif %}{% if e.sans_heure and e.sans_heure > 0 %} · {{ e.sans_heure }} <span data-t="sans_heure">sans heure</span>{% endif %}</small>
         {%- else %}<span class="etat ko" data-t="etat.en_panne">en panne</span>{% if e.dernier_succes %} <small><span data-t="etat.dernier_succes">dernier succès le</span> {{ e.dernier_succes | date: "%d/%m/%Y" }}</small>{% endif %}
         {%- endif %}
       </td>

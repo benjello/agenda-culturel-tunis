@@ -38,6 +38,12 @@ DTSTART;VALUE=DATE:{{ start | date: "%Y%m%d" }}
 {% endif -%}
 {%- else -%}
 DTSTART;TZID=Africa/Tunis:{{ start | date: "%Y%m%dT%H%M00" }}
+{% if e.end_time and e.seances == nil -%}
+{%- assign fin_s = start | date: "%Y-%m-%d" | append: " " | append: e.end_time | date: "%s" | plus: 0 -%}
+{%- assign deb_s = start | date: "%s" | plus: 0 -%}
+{%- if fin_s <= deb_s %}{% assign fin_s = fin_s | plus: 86400 %}{% endif -%}
+DTEND;TZID=Africa/Tunis:{{ fin_s | date: "%Y%m%dT%H%M00" }}
+{% endif -%}
 {% endif -%}
 SUMMARY:{{ e.title | replace: "\", "\\" | replace: ",", "\," | replace: ";", "\;" }}
 LOCATION:{{ loc | replace: ",", "\," | replace: ";", "\;" }}
