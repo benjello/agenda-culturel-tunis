@@ -60,6 +60,14 @@
   <footer class="site-footer">
     <p><span data-t="manque">Un événement manque ?</span> <a href="{{ '/proposer/' | relative_url }}" data-t="nav.proposer">Proposer un événement</a>.
       · <a href="{{ '/contribuer/' | relative_url }}" data-t="nav.contribuer">Contribuer</a> · <a href="{{ '/sources/' | relative_url }}" data-t="nav.sources">Sources</a> · <a href="{{ '/carte/' | relative_url }}" data-t="nav.carte">Carte</a> · <a href="{{ '/nouveau/' | relative_url }}" data-t="nav.nouveau">Nouveau</a> · <a href="{{ '/archives/' | relative_url }}" data-t="nav.archives">Archives</a> · <a href="{{ '/couverture/' | relative_url }}" data-t="nav.couverture">Couverture</a> · <a href="{{ '/abonnements/' | relative_url }}" data-t="nav.abonner">S'abonner</a> · <a href="{{ '/api/' | relative_url }}">API</a></p>
+    <div class="installer" id="installer-zone" hidden>
+      <button type="button" class="bouton-installer" data-installer hidden data-t="installer.bouton">Installer l'application</button>
+      <details class="aide-installer" id="aide-installer" hidden>
+        <summary data-t="installer.bouton">Installer l'application</summary>
+        <p id="aide-ios" hidden data-t="installer.ios">Sur iPhone ou iPad (Safari) : touchez le bouton Partager, puis « Sur l'écran d'accueil ».</p>
+        <p id="aide-autre" hidden data-t="installer.autre">Dans le menu de votre navigateur, cherchez « Installer l'application » ou « Ajouter à l'écran d'accueil ». Firefox sur ordinateur ne sait pas installer le site : utilisez Chrome ou Edge.</p>
+      </details>
+    </div>
   </footer>
   <script>window.I18N = {{ site.data.i18n | jsonify }}; window.BASE = {{ '/' | relative_url | jsonify }};</script>
   <script src="{{ '/assets/site.js' | relative_url }}?v={{ site.time | date: "%Y%m%d%H%M" }}"></script>
