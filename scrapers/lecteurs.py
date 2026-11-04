@@ -12,7 +12,7 @@ import json
 import re
 import unicodedata
 
-from .commun import MOIS, RACINE, Evenement, film, propre, resume, slug, toutes_dates, prix_du_texte
+from .commun import MOIS, RACINE, Evenement, film, horaire_du_texte, propre, resume, slug, toutes_dates, prix_du_texte
 
 _MOIS = "|".join(sorted(MOIS, key=len, reverse=True))
 # « Vendredi 30 octobre à 19h », « 1er novembre », « ler novembre » (OCR), sans année.
@@ -284,6 +284,11 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
             continue
         heures = {(int(h), int(mn or 0)) for h, mn in _RE_HEURE.findall(tout)}
         h, mn = heures.pop() if len(heures) == 1 else (0, 0)
+        h_fin = None
+        if (h, mn) == (0, 0) or len(_RE_HEURE.findall(tout)) > 1:  # plage « de 22h à 4h » ou heure précédée d'un mot-clé
+            debut_h, h_fin = horaire_du_texte(tout)
+            if debut_h:
+                h, mn = debut_h
         titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
         # Artistes et collectifs jouent dans plusieurs lieux : « 📍 B7L9, La Marsa » dans la légende.
         m = re.search(r"📍\s*([^\n#]{3,80})", texte)
@@ -298,6 +303,7 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
                 continue
             vus.add((j, titre))
             res.append(Evenement(titre=titre, debut=dt.datetime(j.year, j.month, j.day, h, mn),
+                                 fin=dt.datetime(j.year, j.month, j.day, *h_fin) if h_fin else None,
                                  lien=p["lien"], lieu=ici, image=(p.get("images") or [""])[0],
                                  prix=prix_du_texte(tout), description=resume(p.get("texte", ""))))
     return _une_expo_par_nom(res)

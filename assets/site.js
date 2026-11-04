@@ -145,7 +145,9 @@
     l.push('UID:' + c.dataset.id.replace(/\W+/g, '-') + '@agenda-culturel-tunis');
     l.push('DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z');
     if (h && fin === debut) {
-      l.push('DTSTART:' + utc(debut, h), 'DTEND:' + utc(debut, h, 2));
+      var hf = c.dataset.heureFin, finJour = debut;
+      if (hf && hf <= h) { var j = new Date(debut + 'T12:00:00'); j.setDate(j.getDate() + 1); finJour = iso(j); }
+      l.push('DTSTART:' + utc(debut, h), 'DTEND:' + (hf ? utc(finJour, hf) : utc(debut, h, 2)));
     } else {
       var f = new Date(fin + 'T12:00:00'); f.setDate(f.getDate() + 1);
       l.push('DTSTART;VALUE=DATE:' + debut.replace(/-/g, ''), 'DTEND;VALUE=DATE:' + iso(f).replace(/-/g, ''));
@@ -311,7 +313,7 @@
   function contenuApercu(c) {
     var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
     var prix = c.dataset.prix || '', lignes = [];
-    if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h'));
+    if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h') + (c.dataset.heureFin ? ' – ' + c.dataset.heureFin.replace(':', 'h').replace(/h00$/, 'h') : ''));
     if (c.dataset.lieu) lignes.push('📍 ' + esc(c.dataset.lieu));
     if (c.hasAttribute('data-gratuit')) lignes.push('✓ ' + esc(t('gratuit', 'Gratuit')));
     else if (prix) lignes.push('🎟 ' + esc(prix));

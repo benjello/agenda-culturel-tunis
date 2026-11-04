@@ -22,6 +22,15 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
   [#113 version anglaise ou arabe](https://github.com/benjello/agenda-culturel-tunis/issues/113),
   [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
 
+## Horaires
+
+Chaque événement porte son heure de début (`date: AAAA-MM-JJ HH:MM`) et, si on la connaît, son heure de fin
+(`end_time: "HH:MM"`). Si la source ne donne pas l'heure, `scrapers/commun.py: horaire_du_texte` la cherche dans le
+titre et la notice (« de 19h à 21h », « à 20h30 », « doors 9pm ») ; un texte ambigu (plusieurs heures) ne donne rien.
+Les films ont leurs séances, les expos leurs jours d'ouverture : pas d'heure unique. Le nombre d'événements
+sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.json` (`sans_heure`).
+À vérifier au prochain passage des scrapers : lire le journal (`heures : N/M`) et repérer les sources à 0.
+
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
 0. **Chercher aussi la page Facebook** (et Instagram) du lieu : à Tunis, c'est souvent là que

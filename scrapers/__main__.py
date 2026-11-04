@@ -22,7 +22,7 @@ import yaml
 from . import commun
 from .commun import RACINE, EnAttente
 from . import controle, doublons, festivals, films
-from .ecriture import ecrire, ecrire_etat, lire_etat
+from .ecriture import STATS_HORAIRE, ecrire, ecrire_etat, lire_etat
 
 
 def charger_sources() -> list[dict]:
@@ -67,6 +67,11 @@ def main(argv=None) -> int:
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
             n = ecrire(s, resultat)
             e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
+            if s["id"] in STATS_HORAIRE and STATS_HORAIRE[s["id"]][0]:
+                e["sans_heure"] = STATS_HORAIRE[s["id"]][0] - STATS_HORAIRE[s["id"]][1]
+                print(f"  heures : {STATS_HORAIRE[s['id']][1]}/{STATS_HORAIRE[s['id']][0]} événement(s) avec une heure")
+            else:
+                e.pop("sans_heure", None)
             if n:  # page « Santé des sources » : depuis quand la source n'a plus rien annoncé
                 e["dernier_non_vide"] = maintenant
             print(f"✓ {s['id']} : {n}")
