@@ -140,6 +140,8 @@ genre.administration: { ar: "المندوبيات الجهوية للثقافة"
 genre.agenda: { ar: "أجندات ومنصات تذاكر", en: "Listings and ticketing" }
 genre.presse: { ar: "الصحف", en: "Newspapers" }
 traduction_auto: { ar: "ترجمة آلية.", en: "Machine translation." }
+voir_original: { ar: "عرض النص الأصلي", en: "See the original text" }
+voir_traduction: { ar: "عرض الترجمة", en: "See the translation" }
 lu_dans: { ar: "مقال في", en: "Read in" }
 fest.presse: { ar: "رُصدت في الصحافة", en: "Spotted in the press" }
 presse_evt: { ar: "في الصحافة", en: "In the press" }

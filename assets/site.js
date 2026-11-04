@@ -9,7 +9,16 @@
   function jour(decalage) { var x = new Date(); x.setDate(x.getDate() + (decalage || 0)); return iso(x); }
 
   // ---- Langue : français dans les pages, arabe et anglais par le dictionnaire _data/i18n.yml
-  var langue = lire('langue', 'fr');
+  // Première visite : la langue du navigateur (arabe, anglais), sinon le français. Le choix du lecteur est gardé.
+  function langueDuNavigateur() {
+    var l = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'fr']);
+    for (var i = 0; i < l.length; i++) {
+      var c = String(l[i]).slice(0, 2).toLowerCase();
+      if (c === 'ar' || c === 'en' || c === 'fr') return c;
+    }
+    return 'fr';
+  }
+  var langue = lire('langue', langueDuNavigateur());
   var LOCALE = { fr: 'fr-FR', ar: 'ar-TN', en: 'en-GB' };
   function t(cle, defaut) {
     var e = I18N[cle];
@@ -65,15 +74,23 @@
       el.textContent = v || el._orig;
       if (v) el.setAttribute('lang', langue); else el.removeAttribute('lang');
     });
-    var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false;
-    blocs.forEach(function (b) { b.hidden = b.dataset.trBloc !== langue; traduit = traduit || !b.hidden; });
-    document.querySelectorAll('[data-tr-origine]').forEach(function (b) { b.hidden = traduit; });
-    document.querySelectorAll('.note-trad').forEach(function (b) { b.hidden = !traduit; });
+    var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false, original = window._voirOriginal === true;
+    blocs.forEach(function (b) { b.hidden = original || b.dataset.trBloc !== langue; traduit = traduit || b.dataset.trBloc === langue; });
+    document.querySelectorAll('[data-tr-origine]').forEach(function (b) { b.hidden = traduit && !original; });
+    document.querySelectorAll('.note-trad').forEach(function (b) { b.hidden = !traduit || original; });
+    // « Voir le texte d'origine » / « Voir la traduction » : seulement quand une traduction existe
+    document.querySelectorAll('.voir-original').forEach(function (b) {
+      b.hidden = !traduit;
+      b.textContent = original ? t('voir_traduction', 'Voir la traduction') : t('voir_original', 'Voir le texte d\'origine');
+    });
     document.querySelectorAll('[data-langue]').forEach(function (b) { b.classList.toggle('active', b.dataset.langue === langue); });
     document.dispatchEvent(new CustomEvent('langue', { detail: langue }));
   }
   document.querySelectorAll('[data-langue]').forEach(function (b) {
-    b.addEventListener('click', function () { langue = b.dataset.langue; ecrire('langue', langue); traduire(); });
+    b.addEventListener('click', function () { langue = b.dataset.langue; window._voirOriginal = false; ecrire('langue', langue); traduire(); });
+  });
+  document.querySelectorAll('.voir-original').forEach(function (b) {
+    b.addEventListener('click', function () { window._voirOriginal = !window._voirOriginal; traduire(); });
   });
 
   // ---- Thème sombre ou clair (par défaut : celui du téléphone) et affichage léger
