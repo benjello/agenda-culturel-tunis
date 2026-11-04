@@ -12,8 +12,8 @@ source_name: "Institut français de Tunisie (programme PDF)"
 image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/muku7p8ktxbgsj5804cw"
 film: true
 ajoute: "2026-11-03"
-auto: true
 langues: ["vo"]
+auto: true
 ---
 
 L'Institut français de Tunisie à Sousse vous invite à une projection-débat du film La Meule (قلب الرحى) en présence du réalisateur Fredj Trabelsi.
