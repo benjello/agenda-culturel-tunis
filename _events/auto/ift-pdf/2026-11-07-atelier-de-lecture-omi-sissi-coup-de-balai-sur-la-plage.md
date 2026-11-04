@@ -4,7 +4,7 @@ date: 2026-11-07 11:00
 venue: "Institut français de Tunis"
 address: "20-22, avenue de Paris"
 ville: "tunis"
-category: "expo"
+category: "litterature"
 price: "Gratuit"
 link: "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6515"
 source: "ift-pdf"

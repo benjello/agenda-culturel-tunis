@@ -1,6 +1,7 @@
 ---
 title: "L'Effet Papillon"
 date: 2026-11-07 19:30
+end_time: "21:00"
 venue: "Lartisto théâtre et cinéma"
 address: "3 Rue De Damas, Tunis 1002, Tunis"
 ville: "tunis"

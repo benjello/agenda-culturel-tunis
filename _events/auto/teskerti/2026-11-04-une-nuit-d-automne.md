@@ -10,6 +10,5 @@ link: "https://teskerti.tn/evenement/une-nuit-dautomne"
 source: "teskerti"
 source_name: "Teskerti"
 ajoute: "2026-11-01"
-doublon: true
 auto: true
 ---

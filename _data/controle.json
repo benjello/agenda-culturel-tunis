@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "corriges": 3,
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -178,29 +178,24 @@
       "code": "sans_image",
       "texte": "image",
       "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 4
      }
     ]
    },
    "el-teatro": {
-    "n": 4,
-    "precis": 4,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
+      "n": 3
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 4
+      "n": 3
      }
     ]
    },
@@ -283,10 +278,28 @@
      }
     ]
    },
+   "goethe-tunis": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
    "ift-pdf": {
-    "n": 56,
-    "precis": 15,
-    "pourcent": 27,
+    "n": 57,
+    "precis": 18,
+    "pourcent": 32,
     "defauts": [
      {
       "code": "titre_generique",
@@ -297,14 +310,14 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 40,
+      "n": 39,
       "exemple": "L’Heure du Jeu"
      },
      {
       "code": "expo_sans_fin",
       "texte": "expo sans date de fin",
-      "n": 4,
-      "exemple": "Atelier de lecture : Omi Sissi, coup de balai sur la plage"
+      "n": 3,
+      "exemple": "Voyagez en Réalité Virtuelle !"
      }
     ],
     "manques": [
@@ -316,7 +329,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 40
+      "n": 39
      },
      {
       "code": "sans_notice",
@@ -569,20 +582,20 @@
     ]
    },
    "teskerti": {
-    "n": 11,
-    "precis": 11,
+    "n": 12,
+    "precis": 12,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 11
+      "n": 12
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 11
+      "n": 12
      }
     ]
    },
@@ -600,24 +613,24 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 7,
+    "precis": 7,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 6
+      "n": 7
      }
     ]
    }
   },
   "scrapers": {
    "pdf_programme": {
-    "n": 56,
-    "precis": 15,
-    "pourcent": 27,
+    "n": 57,
+    "precis": 18,
+    "pourcent": 32,
     "defauts": [
      {
       "code": "titre_generique",
@@ -628,14 +641,14 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 40,
+      "n": 39,
       "exemple": "L’Heure du Jeu"
      },
      {
       "code": "expo_sans_fin",
       "texte": "expo sans date de fin",
-      "n": 4,
-      "exemple": "Atelier de lecture : Omi Sissi, coup de balai sur la plage"
+      "n": 3,
+      "exemple": "Voyagez en Réalité Virtuelle !"
      }
     ],
     "manques": [
@@ -647,7 +660,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 40
+      "n": 39
      },
      {
       "code": "sans_notice",
@@ -688,7 +701,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 3
      }
     ]
    },
@@ -764,6 +777,24 @@
      }
     ]
    },
+   "teskerti": {
+    "n": 12,
+    "precis": 12,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 12
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 12
+     }
+    ]
+   },
    "tunis_events": {
     "n": 12,
     "precis": 12,
@@ -777,24 +808,6 @@
      }
     ]
    },
-   "teskerti": {
-    "n": 11,
-    "precis": 11,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 11
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 11
-     }
-    ]
-   },
    "woocommerce_seances": {
     "n": 7,
     "precis": 7,
@@ -803,50 +816,50 @@
     "manques": []
    },
    "tunis_events_cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 7,
+    "precis": 7,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 6
+      "n": 7
      }
     ]
    },
-   "billetterie_sktech": {
+   "rss": {
     "n": 4,
     "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 4
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 3
      },
      {
-      "code": "sans_notice",
-      "texte": "notice",
+      "code": "sans_image",
+      "texte": "image",
       "n": 4
      }
     ]
    },
-   "rss": {
+   "billetterie_sktech": {
     "n": 3,
     "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 2
-     },
-     {
       "code": "sans_image",
       "texte": "image",
+      "n": 3
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 3
      }
     ]

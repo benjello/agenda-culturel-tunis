@@ -92,9 +92,9 @@
    "ar": "المناقشة مع إلغاز",
    "en": "Discussion with Elgas"
   },
-  "Entre deux rives": {
-   "ar": "بين مصرفين",
-   "en": "Between two banks"
+  "Entre deux rives : 70 ans de relations tuniso-françaises post-indépendance": {
+   "ar": "بين شاطئين: 70 سنة من العلاقات بين تونس وفرنسية بعد الاستقلال",
+   "en": "Between two shores: 70 years of post-independence Tuniso-French relations"
   },
   "Et si l’IA réinventait notre façon de communiquer ?": {
    "ar": "ماذا لو أنّ (آي آي) يعيد اختراع طريقتنا في التواصل؟",
@@ -248,6 +248,14 @@
    "ar": "مسلسل الموت",
    "en": "Death Express"
   },
+  "Musique électronique live : Fréquences croisées, entre Tunis & Düsseldorf": {
+   "fr": "Musique électronique live : Créquences croisées, entre Tunis & Düsseldorf",
+   "ar": "Musique électronique live : Fréquences croisées, entre Tunis &apos; Düsseldorf"
+  },
+  "Mémoires Récompensées : Une résidence d'écriture pour raconter Sfax autrement": {
+   "ar": "ذكريات مُجدّدة: كتاب الإقامة لإخبار (سفاكس) وإلاّ",
+   "en": "Rewarded Memories: A Writing Residence to Tell Sfax Otherwise"
+  },
   "Nōmad Man Festival 2026": {
    "fr": "Festival de l'Homme Nōmad 2026",
    "ar": "مهرجان نجوم مان 2026"
@@ -283,6 +291,10 @@
   "RUCHE73 : Concert de Yosri": {
    "ar": "RUCHE73 : Concert by Yosri",
    "en": "RUCHE73 : Concert by Yosri"
+  },
+  "Rencontre-débat avec Sonia Hanihina": {
+   "ar": "حلقة نقاش مع سونيا هانيهينا",
+   "en": "Panel discussion with Sonia Hanihina"
   },
   "STEPPERS SOUND SYSTEM Launch party": {
    "fr": "SYSTEME SONDE DE STEPPERS Partie de lancement",
@@ -323,6 +335,10 @@
   "Undertow / Contre ; Courant": {
    "ar": "تحت الأرض/ضد؛",
    "en": "Undertow / Against; Current"
+  },
+  "Une nuit d'automne": {
+   "ar": "ليلة الخريف",
+   "en": "Autumn night"
   },
   "Village Environnemental": {
    "ar": "القرية البيئية",
@@ -371,9 +387,9 @@
  },
  "notices": {
   "_events/auto/beit-al-hikma/2026-11-04-evenement.md": {
-   "cle": "a1a71f3843fd",
-   "fr": "Webdo 04-11-2026 En ligne 29-10-2026 Table ronde sur l'article: Mer Méditerranée des trésors du patrimoine – 4 novembre 2026 est apparu en premier sur Beit al-Hikma.",
-   "en": "Webdo 04-11-2026 Online 29-10-2026 L’article Round Table on: Mediterranean Sea of Heritage treasures – 4 November 2026 est apparu en premier sur Beit al-Hikma."
+   "cle": "f175ad716a9f",
+   "fr": "Webdo 04-11-2026 En ligne 29-10-2026 Albums, L'article Table ronde sur: Mer Méditerranée des trésors du patrimoine – 4 novembre 2026 est apparu en premier sur Beit al-Hikma.",
+   "en": "Webdo 04-11-2026 Online 29-10-2026 Albums, L’article Round Table on: Mediterranean Sea of Heritage treasures – 4 November 2026 est apparu en premier sur Beit al-Hikma."
   },
   "_events/auto/beit-al-hikma/2026-11-13-evenement.md": {
    "cle": "e9b0f1e0ee82",
@@ -434,11 +450,6 @@
    "cle": "e87e429df307",
    "ar": "ويجب على عائلتين تعارضان إعداد أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد، والمنافسات، سوء الفهم والأوضاع المضحكة، هذا الإتحاد يَعِدُ بأَنْ لا يَكُونَ من أيّ راحة... لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز عُقد في سبيل القيام، بصورة سرية، بتوقيع اتفاق بشأن الالتزامات المتعلقة باسترداد الموجودات",
    "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers! عا的ل的ان لا 简شبه 的حداهما ال的ر体"
-  },
-  "_events/auto/el-teatro/2026-11-04-une-nuit-dautomne.md": {
-   "cle": "92e8d1915800",
-   "ar": "■ المندوبية\nمحمد برهومي\nand the\nWahra-Prod",
-   "en": "محمد البرهومي\nMohamed Barhoumi\nوهر لل\nWahra-Prod"
   },
   "_events/auto/el-teatro/2026-11-05-testosterone.md": {
    "cle": "6ca23f79a901",
@@ -510,6 +521,11 @@
    "ar": "ولن تكتمل اجتماعات المائدة المستديرة في أيام البث.\nفي السابع من نوفمبر، قابلنا في شارع \"ل آرت\" في الساعة 10: 30 صباحاً حتى الساعة 12 مساءً لمائدة مستديرة حول البودكاست كأداة للتغيير والتأثير، أدارها \"إمنا بن جيما\" في شركة \"نويل بيزيد\" و \"كاوفر زانتور\"\nشارع الفن\nالوصول المباشر، دون تسجيل\nانضموا إلينا من أجل تبادل ملهم حول الأصوات التي تجعل الأمور تحدث\nLOS\n#podcast #podcastdays #tunísia #podcasttunisie",
    "en": "The round tables would not be complete for Podcast Days.\nOn November 7th, meet us at L-Art Street at 10.30am until 12pm for a round table around the podcast as a tool for change and influence, moderated by \"Emna Ben Jemaa\" in the company of \"Nawel Bizid\" and \"Kaouther Zantour\"\n\"The Art Street\"\nDirect access, without registration\nJoin us for an inspiring exchange around the voices that make things happen!\n的\n#podcast #podcastdays #tunísia #podcasttunisie"
   },
+  "_events/auto/goethe-tunis/2026-11-11-musique-electronique-live-frequences-croisees-entre-tunis-du.md": {
+   "cle": "4f558ba90fa1",
+   "ar": "The Goethe-Institut Tunis, in collaboration with Habi Downtown, invites you to an exceptional evening under the sign of the encounter between electronic music, experimental voice and Mediterranean influences. ثلاثة فنانين مع أكوان منفردة سيخلفون بعضهم البعض من أجل عبور موسيقي بين الإيقاعات المعاصرة، وإعادة النظر في التقاليد واستكشافات الصوت.",
+   "en": "The Goethe-Institut Tunis, in collaboration with Habibi Downtown, invites you to an exceptional evening under the sign of the encounter between electronic music, experimental sounds and Mediterranean influences. Three artists with singular universes will succeed each other for a musical crossing between contemporary rhythms, revisited traditions and sound explorations."
+  },
   "_events/auto/ift-pdf/2026-10-27-images-de-syrie-palmyre-alep-damas.md": {
    "cle": "01408c4dc0ae",
    "ar": "وفي إطار المهرجان &quot; جاكو تونس 2026 &quot; (23 تشرين الأول/أكتوبر - 22 تشرين الثاني/نوفمبر)، يستضيف المعهد الفرنسي لتونس المعرض التصويري &quot; صور سورية، بالمير، حلب، دمشق &quot; الذي قام به ميشيل إيزنلور.\nوسيُفتتح هذا الافتتاح يوم الثلاثاء 27 تشرين الأول/أكتوبر الساعة 00/17 بحضور المصور.\nوسيعقب الافتتاح، في الساعة ٣٠/١٨، اجتماع بشأن موضوع &quot; التصوير والتراث &quot; مع سومايا غز الله، وتاريخ الباحث خالد ميليتي والمصور ميشيل ايزنلور.",
@@ -519,6 +535,11 @@
    "cle": "80ddae2cf207",
    "ar": "وفي الفترة من 2 تشرين الثاني/نوفمبر إلى 31 كانون الأول/ديسمبر، يرحب المعهد التونسي الفرنسي في سفاكس في حديقته بمعرض &quot; الشجر الزيتوني &quot; ، وهو اتحاد البحر الأبيض المتوسط، الذي دعا إلى اكتشاف شجرة الزيتون كرمز عالمي للسلام والتشارك والتراث والحوار بين ثقافات البحر الأبيض المتوسط.",
    "en": "From 2 November to 31 December, the French Institute of Tunisia in Sfax welcomes in its garden the exhibition \"Olivanity: The olive tree, the union of the Mediterranean\", an invitation to discover the olive tree as a universal symbol of peace, sharing, heritage and dialogue between Mediterranean cultures."
+  },
+  "_events/auto/ift-pdf/2026-11-03-memoires-recompensees-une-residence-d-ecriture-pour-raconter.md": {
+   "cle": "204bc2b098eb",
+   "ar": "وفي الفترة من 3 إلى 19 تشرين الثاني/نوفمبر، يرحب المعهد الفرنسي لتونس في فاكس بفيرونيك ويلمان وسان أوادا جالو كجزء من كتابات الإقامة المخصصة لاكتشاف التراث والثراء الثقافي والفني في مدينة سفاكس وتطهيره.",
+   "en": "From 3 to 19 November, the French Institute of Tunisia in Sfax welcomes Véronique Willmann and Sawsan Awada Jalu as part of a writing residency dedicated to the discovery and valorisation of the heritage, cultural and artistic richness of the city of Sfax."
   },
   "_events/auto/ift-pdf/2026-11-04-lheure-du-jeu.md": {
    "cle": "11a1e0f79144",
@@ -545,10 +566,10 @@
    "ar": "(مملكة فيلا سلامبو). جولة تريب جود ساعة \"أنابيب (ريدج) أو (إكس إيتوس ديميتر)\" \"بشراكة مع (ليبرايري فندرى)\" أنا",
    "en": "(Laureate of Villa Salammbô). Round-trip Joudhour \"Le tube de R Coolidge\" aux Editions Démeter – L In partnership with the Librairie Fendri. Its I"
   },
-  "_events/auto/ift-pdf/2026-11-05-rencontre-debat-aller-retour.md": {
-   "cle": "31db5ca1799f",
-   "ar": "بعد إقامته في (فيلا سلامبو) في ربيع عام 2025، تأتي (سونيا هانيهانا) إلى (سفاكس) للاحتفال بإعادة إصدار روايته الأولى في (ديميتر)",
-   "en": "After his stay in residence at Villa Salambô in the spring of 2025, Sonia Hanihina comes to Sfax to celebrate the Tunisian reissue of his first novel at Demeter.From his mother's X-rays, Mona goes back to the thread of his family history, between wounds, exile and Tunisian heritage."
+  "_events/auto/ift-pdf/2026-11-05-rencontre-debat-avec-sonia-hanihina.md": {
+   "cle": "50d747cdd467",
+   "ar": "المعهد الفرنسي لتونس في (سفاكس) يدعوك إلى حلقة نقاش مع (سونيا هانيهانا) حول روايتها (عودت)\nومن خلال روايته، تدعونا سونيا هانيهينا إلى الدخول إلى عالم تصبح فيه الكلمات نقطة انطلاق لاستكشاف الخبرة البشرية، ومسارات الحياة، والأبعاد المتعددة للرحلة، سواء كانت حقيقية أو حميمية أو رمزية.",
+   "en": "The French Institute of Tunisia in Sfax invites you to a panel discussion with Sonia Hanihina around her novel Go back (\nThrough his novel, Sonia Hanihina invites us to enter a universe where words become the starting point for an exploration of human experience, life paths and the multiple dimensions of the journey, whether real, intimate or symbolic."
   },
   "_events/auto/ift-pdf/2026-11-05-ruche73-concert-de-yosri.md": {
    "cle": "81f9e0ae5636",
@@ -625,10 +646,10 @@
    "ar": "جغرافيا اجتماعية وسياسية للفيضانات في سفاكس. &quot; الآفاق البحثية &quot; ري فالينتين مونغاد - ليكرين - دكتوراه في الجغرافيا/جامعة سال سوربون (الوساطة المحلية: علوم الموقع، لينكس للعلوم)",
    "en": "A social and political geography of the floods in Sfax. Research Perspectives by RE Valentin Moungad-Legrain – Doctor of Geography / Sal Sorbonne University (Laboratory Mediations: Site Sciences, Links Sciences)"
   },
-  "_events/auto/ift-pdf/2026-11-12-entre-deux-rives.md": {
-   "cle": "89522cd9b78c",
-   "ar": "بين مصرفين: ما تقوم به علاقات تونس - الفرنسية من بناء وسلسلة من الموائد المستديرة وسلسلة من الوصلات بين تونس والتي تعبر أيضا عن نفسها في مسارات عائلية شخصية.",
-   "en": "Between two banks: What Tuniso-French relations build, traverse and inv Series of round tables aut links between Tunisia and which also express themselves in personal family trajectories."
+  "_events/auto/ift-pdf/2026-11-12-entre-deux-rives-70-ans-de-relations-tuniso-francaises-post-.md": {
+   "cle": "73961dcc5da0",
+   "ar": "وبعد مرور سبعين عاما على استقلال تونس والاحتفال بالصداقة الفرنسية - التونسية، يقترح عليكم المعهد الفرنسي لتونس ومعهد البحوث بشأن المغرب المعاصر عقد اجتماع كبير بين الأجيال والتخصصات حول موضوع &quot; بين مصرفين: ما هي 70 سنة من العلاقات بين تونس وفرنسية &quot; التي انقضت وتحولت وتدخلت.",
+   "en": "Seventy years after Tunisia's independence and to celebrate Franco-Tunisian friendship, the French Institute of Tunisia and the Institute for Research on the Contemporary Maghreb (IRMC) propose you a large intergenerational and interdisciplinary meeting-debate around the theme \"Between two banks: What 70 years of post-independence Tuniso-French relations have contrived, traversed and invented\"."
   },
   "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md": {
    "cle": "5ae1e1fa24f3",
@@ -945,15 +966,20 @@
    "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز",
    "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers!"
   },
-  "_events/auto/tunis-events-cinema/2026-11-04-other-mommy-malfaisante.md": {
-   "cle": "4f020117916c",
-   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، واحد من أكثر الفنانين نفوذا في السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي خلق في الأصل قاعات الظهر والهوس، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير عام وكشف روب سافاج.",
-   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
+  "_events/auto/tunis-events-cinema/2026-11-05-bakma.md": {
+   "cle": "94b2ba3b975b",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
   "_events/auto/tunis-events-cinema/2026-11-05-les-miserables.md": {
    "cle": "ee91f75d6d1e",
    "ar": "وبعد 19 سنة من المكافأة على سرقة الخبز، يقرر جان فاليجان تغيير حياته وفعل الخير حوله. تحت هوية زائفة، يصبح مع مرور الوقت احتراماً ملحوظاً للجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، يَعِدُ بأن يُنقذ إبنته، (كوسيت)...",
    "en": "Released after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, it becomes over time a notable respected of all. Coming to help Fantine, a dying worker, he promises to save his daughter, Cosette, [...]"
+  },
+  "_events/auto/tunis-events-cinema/2026-11-05-other-mommy-malfaisante.md": {
+   "cle": "4f020117916c",
+   "ar": "هل لي أن أدخل في قلبك؟ من قبل المنتج جيمس وان، واحد من أكثر الفنانين نفوذا في السينما الرعبية الحديثة، ووحش بلومهاوس الذري، الاستوديو الذي أنشأ أصلا الغرف الخلفية والهوس، يدعوكم إلى رحلة مرعبة موقعة من قبل مدير الجينات والكشف عن روب سافاج.",
+   "en": "May I enter into your heart? By producer James Wan, one of the most influential artists of modern horror cinema, and Blumhouse Atomic Monster, the studio that originally created Backrooms and Obsession, invites you to a terrifying journey signed by genre director and revelation Rob Savage."
   },
   "_events/auto/tunis-events-cinema/2026-11-05-weekend.md": {
    "cle": "3ca4bdb67391",

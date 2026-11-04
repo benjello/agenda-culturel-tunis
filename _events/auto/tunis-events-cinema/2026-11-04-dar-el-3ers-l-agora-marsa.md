@@ -6,7 +6,7 @@ venue: "L'Agora Marsa"
 address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 ville: "tunis"
 category: "cinema"
-link: "https://tunis.events/fr/cinema/ext_21656"
+link: "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-04 21:00", "2026-11-07 16:45"]
@@ -17,4 +17,4 @@ doublon: true
 auto: true
 ---
 
-Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos... Pourquoi une telle urgence? Venez le découvrir au cinéma dans Dar El 3ers! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما [...]
+Dar El 3ers - دار العرس au cinéma : 38 séances cette semaine à Le Palace, Pathé Mall of Sousse, Pathé Azur City, Pathé Tunis City, Le Colisée et L'Agora Marsa. Prochaine séance lun. 2 nov. à 10:00. .

@@ -1,6 +1,7 @@
 ---
 title: "Listening Session, Screening & Live Performance"
 date: 2026-11-21 17:00
+end_time: "18:00"
 venue: "B7L9 Art Centre"
 address: "La Marsa, La Marsa"
 ville: "tunis"

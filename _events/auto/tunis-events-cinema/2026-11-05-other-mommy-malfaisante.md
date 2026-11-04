@@ -1,7 +1,6 @@
 ---
 title: "Other Mommy / Malfaisante"
-date: 2026-11-04 17:15
-end_date: "2026-11-05 17:15"
+date: 2026-11-05 17:15
 venue: "Pathé Azur City"
 address: "Autoroute A1, entrée de Radès, 2098 Ben Arous"
 ville: "tunis"
@@ -9,10 +8,9 @@ category: "cinema"
 link: "https://tunis.events/fr/cinema/other-mommy-malfaisante"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-04 17:15", "2026-11-05 17:15"]
 image: "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg"
 film: true
-ajoute: "2026-11-03"
+ajoute: "2026-11-04"
 auto: true
 ---
 

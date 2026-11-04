@@ -1,6 +1,7 @@
 ---
 title: "Labes - Selim Ben Safia"
 date: 2026-11-20 19:30
+end_time: "20:30"
 venue: "Salle des Jeunes Créateurs - Cité de la Culture"
 address: "R56P+C9J, Av. Mohamed 5, Tunis, Tunis"
 ville: "tunis"

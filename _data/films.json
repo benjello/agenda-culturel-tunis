@@ -135,8 +135,8 @@
   "fichiers": [
    "_events/auto/cine-agora/2026-11-04-bakma.md",
    "_events/auto/cine-alhambra/2026-11-04-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-04-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-04-bakma.md"
+   "_events/auto/tunis-events-cinema/2026-11-04-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-05-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -148,7 +148,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -243,7 +243,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -425,12 +425,6 @@
     ],
     "heures": [
      {
-      "jour": "2026-11-04",
-      "heures": [
-       "16:30"
-      ]
-     },
-     {
       "jour": "2026-11-05",
       "heures": [
        "19:00"
@@ -541,7 +535,10 @@
   ],
   "tunisien": true,
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Le Chant des Forêts",
@@ -785,7 +782,6 @@
    "Horreur"
   ],
   "jours": [
-   "2026-11-04",
    "2026-11-05"
   ],
   "salles": [
@@ -796,16 +792,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-04",
      "2026-11-05"
     ],
     "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "17:15"
-      ]
-     },
      {
       "jour": "2026-11-05",
       "heures": [
@@ -816,7 +805,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-04-other-mommy-malfaisante.md"
+   "_events/auto/tunis-events-cinema/2026-11-05-other-mommy-malfaisante.md"
   ],
   "wikidata": "Q134588273",
   "letterboxd": "other-mommy",

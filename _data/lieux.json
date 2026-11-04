@@ -116,15 +116,6 @@
    "n": 10
   },
   {
-   "slug": "el-teatro",
-   "nom": "El Teatro",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.81393,
-   "lon": 10.17371,
-   "n": 7
-  },
-  {
    "slug": "galerie-institut-francais-de-sousse",
    "nom": "Galerie, Institut français de Sousse",
    "type": "galerie",
@@ -152,6 +143,15 @@
    "n": 7
   },
   {
+   "slug": "el-teatro",
+   "nom": "El Teatro",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.81393,
+   "lon": 10.17371,
+   "n": 6
+  },
+  {
    "slug": "mediatheque-institut-francais-de-sfax",
    "nom": "Médiathèque, Institut français de Sfax",
    "type": "bibliotheque",
@@ -176,6 +176,15 @@
    "ville": "tunis",
    "lat": 36.878,
    "lon": 10.3245,
+   "n": 4
+  },
+  {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
    "n": 4
   },
   {
@@ -212,15 +221,6 @@
    "ville": "tunis",
    "lat": 36.84767,
    "lon": 10.18839,
-   "n": 3
-  },
-  {
-   "slug": "institut-francais-de-sfax",
-   "nom": "Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
    "n": 3
   },
   {
