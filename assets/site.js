@@ -67,10 +67,11 @@
       el.textContent = langue === 'fr' ? el._fr : new Date(+p[0], +p[1] - 1, 15).toLocaleString(loc, { month: 'long', year: 'numeric' });
     });
     // Titres et notices des événements : traduction automatique (_data/traductions.json)
+    var decoder = window._decoder = function (v) { return v ? v.replace(/&quot;/g, '"').replace(/&apos;|&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&') : v; };
     var cle = 'tr' + langue.charAt(0).toUpperCase() + langue.slice(1);
     document.querySelectorAll('[data-tr-fr],[data-tr-en],[data-tr-ar]').forEach(function (el) {
       if (el._orig === undefined) el._orig = el.textContent;
-      var v = el.dataset[cle];
+      var v = decoder(el.dataset[cle]);
       el.textContent = v || el._orig;
       if (v) el.setAttribute('lang', langue); else el.removeAttribute('lang');
     });
@@ -330,15 +331,18 @@
   function contenuApercu(c) {
     var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
     var prix = c.dataset.prix || '', lignes = [];
+    var resume = c.dataset['resume' + langue.charAt(0).toUpperCase() + langue.slice(1)] || c.dataset.resume;
+    if (resume !== c.dataset.resume && window._decoder) resume = window._decoder(resume);
     if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h') + (c.dataset.heureFin ? ' – ' + c.dataset.heureFin.replace(':', 'h').replace(/h00$/, 'h') : ''));
-    if (c.dataset.lieu) lignes.push('📍 ' + esc(c.dataset.lieu));
+    var lieu = c.dataset.lieu === 'Lieu à préciser' ? t('lieu_preciser', c.dataset.lieu) : c.dataset.lieu;
+    if (lieu) lignes.push('📍 ' + esc(lieu));
     if (c.hasAttribute('data-gratuit')) lignes.push('✓ ' + esc(t('gratuit', 'Gratuit')));
     else if (prix) lignes.push('🎟 ' + esc(prix));
     return (c.dataset.image ? '<img src="' + esc(c.dataset.image) + '" alt="" loading="lazy">' : '') +
       '<div class="bulle-corps"><span class="tag" style="background:' + esc(c.dataset.couleur) + '">' + esc(c.dataset.categorie) + '</span>' +
-      '<strong>' + esc(c.dataset.titre) + '</strong>' +
+      '<strong>' + esc((titre && titre.textContent.trim()) || c.dataset.titre) + '</strong>' +
       (lignes.length ? '<p class="bulle-infos">' + lignes.join(' · ') + '</p>' : (meta ? '<p class="bulle-infos">' + esc(meta.textContent.trim()) + '</p>' : '')) +
-      (c.dataset.resume ? '<p class="bulle-texte">' + esc(c.dataset.resume) + '</p>' : '') + '</div>';
+      (resume ? '<p class="bulle-texte">' + esc(resume) + '</p>' : '') + '</div>';
   }
   function fermerBulle() {
     clearTimeout(delaiBulle);
