@@ -1,6 +1,6 @@
 ---
 title: "CinéMadart"
-noms: ["CinéMadart", "CinéMadart, Carthage Dermech"]
+noms: ["CinéMadart"]
 type: "cinema"
 adresse: "Rte de La Goulette, Site archéologique de Carthage, Carthage"
 ville: "tunis"

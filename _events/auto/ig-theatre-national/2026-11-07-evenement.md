@@ -4,10 +4,10 @@ date: 2026-11-07
 venue: "قاعة رشاد المناعي بقاعة الفن الرابع"
 ville: "tunis"
 category: "theatre"
-link: "https://www.instagram.com/p/DfLjUGOimGF/"
+link: "https://www.instagram.com/p/DfSZUoDFbtH/"
 source: "ig-theatre-national"
 source_name: "Théâtre national tunisien (Instagram)"
-image: "assets/programmes/ig-theatre-national/cb78da632a3c.jpg"
+image: "assets/programmes/ig-theatre-national/69f8eb082042.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---

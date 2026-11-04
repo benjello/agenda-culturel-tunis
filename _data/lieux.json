@@ -1,39 +1,42 @@
 {
  "index": {
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
-  "Ciné 350 (Cité de la Culture)": "cine-350-cite-de-la-culture",
   "L'Agora Marsa": "lagora-la-marsa",
   "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
   "El Teatro التياترو": "el-teatro",
   "Dar Ziqua, Zaghouan": "dar-ziqua-zaghouan",
+  "Lieu : 3 rue de Damas le belvédère, Tunis": "lieu-3-rue-de-damas-le-belvedere-tunis",
+  "Espace L'Artisto": "espace-l-artisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
   "Institut français de Tunisie": "institut-francais-de-tunisie",
   "Institut Français de Tunis": "institut-francais-de-tunis",
   "Institut français de Tunis": "institut-francais-de-tunis",
   "Institut français de Sfax": "institut-francais-de-sfax",
-  "Médiathèque de l'ift_tunisie": "mediatheque-institut-francais-de-tunis",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
   "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "VOX Café, Institut français de Sousse": "vox-cafe-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
+  "Théâtre municipal, Institut français de Tunisie, Sfax -": "theatre-municipal-institut-francais-de-tunisie-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
+  "Médiathèque de l'iftunisie (202, avenue de Paris, Tunis)": "mediatheque-de-l-iftunisie-202-avenue-de-paris-tunis",
   "11 rue Nelson Mandela, Jinene Eddonia La Marsa, 2046": "11-rue-nelson-mandela-jinene-eddonia-la-marsa-2046",
-  "CinéMadart": "cinemadart",
-  "CinéMadart, Carthage Dermech": "cinemadart",
+  "B7L9 Art Station": "b7l9-art-station",
   "Creative Hub, Sidi Bou Saïd": "creative-hub-sidi-bou-said",
   "Galerie Insular, Erriadh (Djerbahood)": "galerie-insular-erriadh-djerbahood",
+  "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
+  "Salle des Jeunes Créateurs – Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
+  "Quechlet El Attarine": "quechlet-el-attarine",
   "La Boîte": "la-boite",
   "L'art Rue 🎟️ Entrée sur inscription — lien en bio": "l-art-rue-entree-sur-inscription-lien-en-bio",
   "La Chapelle, Dar Bach Hamba": "la-chapelle-dar-bach-hamba",
   "Fondation Rosa Luxemburg, Tunis": "fondation-rosa-luxemburg-tunis",
   "Shanti": "shanti",
-  "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Studio B52": "studio-b52",
@@ -44,11 +47,8 @@
   "B7L9 Art Centre": "b7l9-art-centre",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
-  "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
-  "Cinéma Le Colisée": "cinema-le-colisee",
-  "Cinéma Le Palace": "cinema-le-palace",
+  "CinéMadart": "cinemadart",
   "Pathé Azur City": "pathe-azur-city",
-  "Pathé Tunis City": "pathe-tunis-city",
   "Douz": "douz",
   "One Resort, Monastir": "one-resort-monastir",
   "32bis": "le-32bis",
@@ -95,7 +95,7 @@
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 19
+   "n": 18
   },
   {
    "slug": "lagora-la-marsa",
@@ -104,7 +104,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 14
+   "n": 13
   },
   {
    "slug": "institut-francais-de-tunis",
@@ -113,7 +113,7 @@
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 9
+   "n": 10
   },
   {
    "slug": "el-teatro",
@@ -143,15 +143,6 @@
    "n": 7
   },
   {
-   "slug": "cinemadart",
-   "nom": "CinéMadart",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.854,
-   "lon": 10.324,
-   "n": 7
-  },
-  {
    "slug": "theatre-municipal-de-tunis",
    "nom": "Théâtre municipal de Tunis",
    "type": "theatre",
@@ -170,30 +161,12 @@
    "n": 6
   },
   {
-   "slug": "pathe-azur-city",
-   "nom": "Pathé Azur City",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.744,
-   "lon": 10.232,
-   "n": 6
-  },
-  {
    "slug": "theatre-le-4eme-art",
    "nom": "Théâtre Le 4ème Art",
    "type": "theatre",
    "ville": "tunis",
    "lat": 36.80189,
    "lon": 10.18123,
-   "n": 5
-  },
-  {
-   "slug": "pathe-tunis-city",
-   "nom": "Pathé Tunis City",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.89828,
-   "lon": 10.12451,
    "n": 5
   },
   {
@@ -215,13 +188,40 @@
    "n": 4
   },
   {
-   "slug": "cinema-le-palace",
-   "nom": "Cinéma Le Palace",
+   "slug": "cinemadart",
+   "nom": "CinéMadart",
    "type": "cinema",
    "ville": "tunis",
-   "lat": 36.8,
-   "lon": 10.183,
+   "lat": 36.854,
+   "lon": 10.324,
    "n": 4
+  },
+  {
+   "slug": "beit-al-hikma-carthage",
+   "nom": "Beit al-Hikma, Carthage",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 35.6619,
+   "lon": 10.08999,
+   "n": 3
+  },
+  {
+   "slug": "cite-des-sciences-de-tunis",
+   "nom": "Cité des sciences de Tunis",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.84767,
+   "lon": 10.18839,
+   "n": 3
+  },
+  {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 3
   },
   {
    "slug": "salle-albert-camus-institut-francais-de-sfax",
@@ -242,6 +242,15 @@
    "n": 3
   },
   {
+   "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
+   "nom": "Salle des Jeunes Créateurs – Cité de la Culture",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8125,
+   "lon": 10.1817,
+   "n": 3
+  },
+  {
    "slug": "b7l9-art-centre",
    "nom": "B7L9 Art Centre",
    "type": "centre_art",
@@ -251,39 +260,12 @@
    "n": 3
   },
   {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
-   "n": 3
-  },
-  {
-   "slug": "beit-al-hikma-carthage",
-   "nom": "Beit al-Hikma, Carthage",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 35.6619,
-   "lon": 10.08999,
-   "n": 2
-  },
-  {
    "slug": "institut-francais-de-tunisie",
    "nom": "Institut français de Tunisie",
    "type": "centre",
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 2
-  },
-  {
-   "slug": "institut-francais-de-sfax",
-   "nom": "Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
    "n": 2
   },
   {
@@ -323,21 +305,12 @@
    "n": 2
   },
   {
-   "slug": "cine-350-cite-de-la-culture",
-   "nom": "Ciné 350 (Cité de la Culture)",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.8125,
-   "lon": 10.1817,
-   "n": 1
-  },
-  {
-   "slug": "cite-des-sciences-de-tunis",
-   "nom": "Cité des sciences de Tunis",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.84767,
-   "lon": 10.18839,
+   "slug": "theatre-municipal-institut-francais-de-tunisie-sfax",
+   "nom": "Théâtre municipal, Institut français de Tunisie, Sfax -",
+   "type": "theatre",
+   "ville": "sfax",
+   "lat": 36.79911,
+   "lon": 10.18081,
    "n": 1
   },
   {
@@ -395,12 +368,12 @@
    "n": 1
   },
   {
-   "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
-   "nom": "Salle des Jeunes Créateurs - Cité de la Culture",
-   "type": "centre",
+   "slug": "pathe-azur-city",
+   "nom": "Pathé Azur City",
+   "type": "cinema",
    "ville": "tunis",
-   "lat": 36.8125,
-   "lon": 10.1817,
+   "lat": 36.744,
+   "lon": 10.232,
    "n": 1
   },
   {

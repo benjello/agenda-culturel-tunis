@@ -97,9 +97,6 @@
   }
  },
  "osm": {
-  "lieu:cinema-le-palace": {
-   "type": "cinema"
-  },
   "lieu:cite-de-la-culture": {
    "type": "centre_art"
   },
@@ -109,9 +106,6 @@
   },
   "lieu:le-32bis": {
    "type": "galerie"
-  },
-  "lieu:pathe-tunis-city": {
-   "type": "cinema"
   },
   "lieu:salle-de-cinema-institut-francais-de-sousse": {
    "type": "cinema"
@@ -278,6 +272,7 @@
   "lieu:agorgi-gallery-sidi-bou-said": "2026-11-02",
   "lieu:auditorium-institut-francais-de-tunis": "2026-11-02",
   "lieu:b7l9-art-centre": "2026-11-02",
+  "lieu:b7l9-art-station": "2026-11-04",
   "lieu:beit-al-hikma-carthage": "2026-11-02",
   "lieu:caserne-el-attarine": "2026-11-02",
   "lieu:central-tunis": "2026-11-03",
@@ -294,6 +289,7 @@
   "lieu:echos-electrik": "2026-11-03",
   "lieu:el-teatro": "2026-11-02",
   "lieu:el-warcha": "2026-11-03",
+  "lieu:espace-l-artisto": "2026-11-04",
   "lieu:fondation-rosa-luxemburg-tunis": "2026-11-02",
   "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
   "lieu:galerie-insular-erriadh-djerbahood": "2026-11-02",
@@ -313,8 +309,10 @@
   "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
   "lieu:lagora-la-marsa": "2026-11-02",
   "lieu:le-32bis": "2026-11-02",
+  "lieu:lieu-3-rue-de-damas-le-belvedere-tunis": "2026-11-04",
   "lieu:lieu-4d77648b": "2026-11-02",
   "lieu:maison-des-arts-du-belvedere": "2026-11-02",
+  "lieu:mediatheque-de-l-iftunisie-202-avenue-de-paris-tunis": "2026-11-04",
   "lieu:mediatheque-institut-francais-de-sfax": "2026-11-02",
   "lieu:mediatheque-institut-francais-de-sousse": "2026-11-02",
   "lieu:mediatheque-institut-francais-de-tunis": "2026-11-02",
@@ -323,6 +321,7 @@
   "lieu:one-resort-monastir": "2026-11-02",
   "lieu:pathe-azur-city": "2026-11-02",
   "lieu:pathe-tunis-city": "2026-11-02",
+  "lieu:quechlet-el-attarine": "2026-11-04",
   "lieu:salle-albert-camus-institut-francais-de-sfax": "2026-11-02",
   "lieu:salle-de-cinema-institut-francais-de-sousse": "2026-11-02",
   "lieu:salle-des-jeunes-createurs-cite-de-la-culture": "2026-11-02",
@@ -332,6 +331,7 @@
   "lieu:studio-b52": "2026-11-02",
   "lieu:theatre-le-4eme-art": "2026-11-02",
   "lieu:theatre-municipal-de-tunis": "2026-11-02",
+  "lieu:theatre-municipal-institut-francais-de-tunisie-sfax": "2026-11-04",
   "lieu:vox-cafe-institut-francais-de-sousse": "2026-11-02"
  }
 }

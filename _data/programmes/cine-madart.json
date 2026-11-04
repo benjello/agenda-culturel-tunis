@@ -2,8 +2,24 @@
   "id": "cine-madart",
   "nom": "CinéMadart (Carthage)",
   "url": "https://www.facebook.com/CineMadart",
-  "mis_a_jour": "2026-11-01",
+  "mis_a_jour": "2026-11-04",
   "publications": [
+    {
+      "lien": "https://www.facebook.com/100078051604776/posts/1167051659239877",
+      "date": "2026-11-03",
+      "texte": "مازالو شويّا بلايص في ورشات المسرح والرقص للأطفال واليافعين\n\nIl reste quelques places dans les cours de théâtre et de danse pour enfants et adolescents aux Ateliers de Raja\n\nPour les inscriptions rendez-vous sur ce lien :\n🔗 https://linktr.ee/madartcarthage",
+      "images": [],
+      "ocr_facebook": "",
+      "ocr": ""
+    },
+    {
+      "lien": "https://www.facebook.com/100078051604776/posts/1166108722667504",
+      "date": "2026-11-02",
+      "texte": "برنامج الأسبوع\nتنجموا تقصّوا تساكركم على الموقع cinemadart.net وإلّا في شبّاك التّذاكر",
+      "images": [],
+      "ocr_facebook": "",
+      "ocr": ""
+    },
     {
       "lien": "https://www.facebook.com/100078051604776/posts/1161045189840524",
       "date": "2026-10-28",
@@ -16,29 +32,6 @@
       ],
       "ocr_facebook": "May be an image of mosquito net and text\n\nMay be an image of mosquito net and text\n\nMay be a graphic of one or more people and text\n\nMay be pop art of one or more people and text",
       "ocr": "1987 | 345 | وثائقي\n\nMohammad Malas\n4987 [45min | Documentary"
-    },
-    {
-      "lien": "https://www.facebook.com/100078051604776/posts/1155076407104069",
-      "date": "2026-10-22",
-      "texte": "خلطت على ساك سينيمدار 👜؟\n\nCinéMadart x Chkarty \nIllustration Hela Lamine  🙏🙏🙏\n\nSérie limitée -  exemplaires numérotés\nSacs réversibles\nDisponibles au CinéMadart",
-      "images": [
-        "assets/programmes/cine-madart/aa8a690328f9.jpg",
-        "assets/programmes/cine-madart/9a2be8cdb4ff.jpg",
-        "assets/programmes/cine-madart/3d3cb4c4d7f7.jpg",
-        "assets/programmes/cine-madart/33012578b7ea.jpg"
-      ],
-      "ocr_facebook": "May be an image of text\n\nMay be an image of text\n\nMay be an image of text\n\nMay be an image of tool bag and text",
-      "ocr": ""
-    },
-    {
-      "lien": "https://www.facebook.com/100078051604776/posts/1153975073880869",
-      "date": "2026-10-21",
-      "texte": "فيلم \"بكمة\" لعبد الحميد بوشناق\nمن اليوم في سينيمدار \nالتساكر متوفرة على cinemadart.net وفي سينيمدار",
-      "images": [
-        "assets/programmes/cine-madart/815668f377cc.jpg"
-      ],
-      "ocr_facebook": "May be an image of text",
-      "ocr": "MERCREDI 21.10.2026 : 21h15\nJEUDI 22.10.2026 : 19h\nVENDREDI 23.10.2026 : 21h\nSAMEDI 24.10.2026 : 21h INTERDIT AU MOINS DE 16 ANS\nDIMANCHE 25.10.2026 : 16h30 | 2.165 ‏ممنوع على أقل‎\nLUNDI 26.10.2026 : 19h"
     }
   ]
 }
