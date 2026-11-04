@@ -10,6 +10,8 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 ## Tickets ouverts
 
 Les points restants sont suivis en issues GitHub : [liste des issues](https://github.com/benjello/agenda-culturel-tunis/issues).
+Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées de ce fichier aux issues ouvertes
+(`scrapers/synchro_tickets.py`) et signale les écarts dans son résumé.
 
 - Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107).
 - Étiquette **vérification humaine** (contrôles ouverts à tous) :

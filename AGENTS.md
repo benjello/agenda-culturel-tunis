@@ -21,3 +21,7 @@ GitHub Actions (`.github/workflows/scrapers.yml`). Voir `README.md` et `BACKLOG.
 - Tout en français (code, commentaires, messages de commit, textes du site).
 - Tout ce qui peut être scripté l'est (GitHub Actions), pour ne pas dépendre d'un agent.
 - Tests hors ligne : `python3 -m unittest discover tests` (pages d'exemple dans `tests/fixtures/`).
+- Tickets et backlog alignés : chaque point ouvert est une case non cochée dans `BACKLOG.md` **et**
+  une issue GitHub (listée dans sa section « Tickets ouverts »). Une PR qui traite une issue écrit
+  « Closes #N » ; une issue ne se ferme qu'une fois sa case cochée. Le workflow « Synchro tickets »
+  (chaque lundi) lance `scrapers/synchro_tickets.py` et signale les écarts dans son résumé.
