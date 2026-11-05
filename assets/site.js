@@ -398,7 +398,19 @@
   // et « Ce soir à Tunis » en tête de l'accueil. Tout vient des attributs data-* de la carte.
   var bulle = null, delaiBulle = 0, peutSurvoler = window.matchMedia ? window.matchMedia('(any-hover: hover) and (any-pointer: fine)') : { matches: false };
   function esc(x) { return (x || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  // Fiche de film (page Au cinéma) : titre, badges, durée et synopsis, lus dans la fiche elle-même.
+  function contenuFilm(c) {
+    var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), syn = c.querySelector('.synopsis p');
+    var badges = Array.prototype.map.call(c.querySelectorAll('.badges .badge'), function (b) { return b.textContent.trim(); }).join(' · ');
+    var texte = syn ? syn.textContent.replace(/\s+/g, ' ').trim() : '';
+    if (texte.length > 420) texte = texte.slice(0, 420).replace(/\s+\S*$/, '') + '…';
+    var infos = [badges, meta ? meta.textContent.trim() : ''].filter(Boolean).join(' · ');
+    return '<div class="bulle-corps"><strong>' + esc(titre ? titre.textContent.trim() : '') + '</strong>' +
+      (infos ? '<p class="bulle-infos">' + esc(infos) + '</p>' : '') +
+      '<p class="bulle-texte">' + esc(texte || t('pas_de_synopsis', 'Pas de synopsis disponible')) + '</p></div>';
+  }
   function contenuApercu(c) {
+    if (c.classList.contains('film-fiche')) return contenuFilm(c);
     var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
     var prix = c.dataset.prix || '', lignes = [];
     var resume = c.dataset['resume' + langue.charAt(0).toUpperCase() + langue.slice(1)] || c.dataset.resume;
@@ -447,7 +459,7 @@
   function survolPossible() { return sourisVue || peutSurvoler.matches; }
   document.addEventListener('mouseover', function (ev) {
     if (!survolPossible()) return;
-    var c = ev.target.closest && ev.target.closest('.event');
+    var c = ev.target.closest && ev.target.closest('.event, .film-fiche');
     if (!c || c.classList.contains('event-page') || c.closest('.apercu')) { return; }
     if (c === ev.relatedTarget || c.contains(ev.relatedTarget)) return;
     clearTimeout(delaiBulle);
@@ -455,7 +467,7 @@
   });
   document.addEventListener('mouseout', function (ev) {
     if (!survolPossible()) return;
-    var c = ev.target.closest && ev.target.closest('.event');
+    var c = ev.target.closest && ev.target.closest('.event, .film-fiche');
     if (!c || c.contains(ev.relatedTarget)) return;
     fermerBulle();
   });
