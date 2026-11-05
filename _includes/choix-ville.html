@@ -16,9 +16,9 @@ html[data-ville="tunis"] .event:not([data-ville]) { display: flex; }
 </style>
 <script>
 (function () {
-  var v = 'tunis';
-  try { v = localStorage.getItem('ville') || 'tunis'; } catch (e) {}
-  if (!document.querySelector('#villes button[data-ville="' + v + '"]')) v = 'tunis';
+  var v = 'toutes';
+  try { v = localStorage.getItem('ville') || 'toutes'; } catch (e) {}
+  if (!document.querySelector('#villes button[data-ville="' + v + '"]')) v = 'toutes';
   function choisir(x) {
     document.documentElement.dataset.ville = x;
     document.querySelectorAll('#villes button').forEach(function (b) { b.classList.toggle('active', b.dataset.ville === x); });

@@ -344,7 +344,7 @@ layout: default
   // « Nouveau cette semaine » : ce qui est arrivé dans l'agenda ces 7 derniers jours
   var lienNouveau = document.getElementById('nouveautes');
   function compterNouveautes() {
-    var v = document.documentElement.dataset.ville || 'tunis', il7 = jour(-7), n = 0;
+    var v = document.documentElement.dataset.ville || 'toutes', il7 = jour(-7), n = 0;
     document.querySelectorAll('#agenda .event, #en-cours .event').forEach(function (el) {
       if (el.dataset.date >= today && (el.dataset.ajoute || '') >= il7 && (v === 'toutes' || el.dataset.ville === v)) n++;
     });
@@ -376,7 +376,7 @@ layout: default
   }
   // Un événement passe-t-il tous les filtres sauf le moment ? (sert aussi aux compteurs des bandes)
   function horsMoment(el, favs) {
-    var v = document.documentElement.dataset.ville || 'tunis';
+    var v = document.documentElement.dataset.ville || 'toutes';
     return el.dataset.date >= today && (filter === 'all' || el.dataset.category === filter) &&
       (v === 'toutes' || (el.dataset.ville || 'tunis') === v) && correspond(el) &&
       (!choixQuartier || quartierDe(el) === choixQuartier) &&
