@@ -8,7 +8,7 @@ link: "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALEN
 source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
 ajoute: "2026-11-01"
-autres_sources: [{"name": "L'Art Rue (Instagram)", "link": "https://www.instagram.com/p/DfKzeAODxwd/", "source": "ig-lart-rue"}, {"name": "Tunisia Podcasts Festival (Instagram)", "link": "https://www.instagram.com/p/DfKzeAODxwd/", "source": "ig-tunisia-podcasts-festival"}]
+autres_sources: [{"name": "L'Art Rue (Instagram)", "link": "https://www.instagram.com/p/DfKzeAODxwd/", "source": "ig-lart-rue"}]
 festival: "podcast-days"
 doublon: true
 auto: true

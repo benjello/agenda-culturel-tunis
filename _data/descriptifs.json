@@ -362,6 +362,14 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-05"
   },
+  "un-monde-fragile-et-merveilleux": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+   "url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux",
+   "verifie": "2026-11-05",
+   "vu": "2026-11-05"
+  },
   "van-gogh": {
    "verifie": "2026-11-02",
    "vu": "2026-11-05"
@@ -592,6 +600,11 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-05"
   },
+  "https://teskerti.tn/evenement/bambino": {
+   "texte": "",
+   "verifie": "2026-11-05",
+   "vu": "2026-11-05"
+  },
   "https://teskerti.tn/evenement/brouva": {
    "texte": "",
    "verifie": "2026-11-02",
@@ -606,6 +619,16 @@
    "texte": "L’accès au Ksar pour visiter le village du festival et participer aux activités de jour est entièrement gratuit. La billetterie concerne essentiellement l’accès aux concerts de la Main Stage et les Afters à l’hôtel Dakyanus.\nOptions de prix libre au choix, payer ce que vous pouvez/voulez :\nAvec la première édition d’E-FEST Camp en Avril 2025, nous faisions le pari d'un retour.",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
+  },
+  "https://teskerti.tn/evenement/echo-des-deux-rives": {
+   "texte": "",
+   "verifie": "2026-11-05",
+   "vu": "2026-11-05"
+  },
+  "https://teskerti.tn/evenement/echo-des-deux-rives-19-novembre": {
+   "texte": "",
+   "verifie": "2026-11-05",
+   "vu": "2026-11-05"
   },
   "https://teskerti.tn/evenement/eya-daghnouj-fi-hadhret-el-mougy": {
    "texte": "",
@@ -826,6 +849,11 @@
    "texte": "يدخل صانع محتوى مكاناً مهجوراً ليبث مغامرة مباشرة، فيتصادم مع مجموعة من أطفال الشوارع، لتتحول المغامرة إلى صدام بين زيف العالم الافتراضي وقسوة الواقع الهامش",
    "verifie": "2026-11-02",
    "vu": "2026-11-02"
+  },
+  "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart": {
+   "texte": "Nino et Yasmina tombent amoureux dans la cour de leur école à Beyrouth, et rêvent à leur vie d’adulte, à un monde merveilleux. 20 ans plus tard, ils se retrouvent par accident et c’est à nouveau l’amour fou, magnétique, incandescent. Peut-on construire un avenir, dans un pays fracturé, qu’on tente de quitter mais qui vous retient de façon irrésistible ?",
+   "verifie": "2026-11-05",
+   "vu": "2026-11-05"
   },
   "https://tunis.events/events/mnMOgk/zyoland-grafiflow-v7jh6j7": {
    "texte": "ZYOLAND — Là où les livres prennent vie\nEt si votre enfant entrait dans un livre pour devenir le héros de sa propre aventure ?\nZYOLAND invite les enfants à explorer des décors immersifs où les histoires se vivent à travers des énigmes, des défis et des expériences à partager. Observer, chercher, imaginer et faire équipe : chaque découverte les fait avancer dans l’aventure !",
@@ -2102,7 +2130,7 @@
   },
   "lieux:l-agora-djerba": {
    "verifie": "2026-11-02",
-   "vu": "2026-11-02"
+   "vu": "2026-11-05"
   },
   "lieux:l-art-rue-entree-sur-inscription-lien-en-bio": {
    "verifie": "2026-11-02",
@@ -2126,6 +2154,10 @@
   },
   "lieux:le-32bis": {
    "verifie": "2026-11-02",
+   "vu": "2026-11-05"
+  },
+  "lieux:le-violon-bleu": {
+   "verifie": "2026-11-05",
    "vu": "2026-11-05"
   },
   "lieux:lieu-3-rue-de-damas-le-belvedere": {

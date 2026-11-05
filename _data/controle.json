@@ -1,6 +1,6 @@
 {
  "date": "2026-11-05",
- "corriges": 1,
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -73,26 +73,6 @@
    ]
   },
   {
-   "fichier": "ig-lart-rue/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md",
-   "source": "ig-lart-rue",
-   "titre": "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfIMsEzF0Ar/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "ig-lart-rue/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md",
-   "source": "ig-lart-rue",
-   "titre": "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfFy1eVj6sY/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
    "fichier": "ig-le32bis/2026-11-06-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md",
    "source": "ig-le32bis",
    "titre": "On the occasion of its 10th anniversary, The Funambulist is welcomed by 32Bis from Novembe",
@@ -103,32 +83,31 @@
    ]
   },
   {
-   "fichier": "ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md",
-   "source": "ig-rosalux-afrique-nord",
-   "titre": "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e",
-   "date": "2026-11-02",
-   "lien": "https://www.instagram.com/p/DfHtEeLAJBk/",
+   "fichier": "ig-violon-bleu/2026-11-08-le-violon-bleu-gallery-a-le-plaisir-de-vous-inviter-a-decouv.md",
+   "source": "ig-violon-bleu",
+   "titre": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOURS , une rétrospecti",
+   "date": "2026-11-08",
+   "lien": "https://www.instagram.com/p/DfDBp-ziXMO/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
   },
   {
-   "fichier": "ig-tunisia-podcasts-festival/2026-11-06-tout-commence-par-une-vibration-puis-une-voix-une-idee-une-h.md",
-   "source": "ig-tunisia-podcasts-festival",
-   "titre": "Tout commence par une vibration. Puis une voix, une idée, une histoire...Et si vous venez",
-   "date": "2026-11-06",
-   "lien": "https://www.instagram.com/p/DfFDKyulAAl/",
+   "fichier": "ig-violon-bleu/2026-11-08-rafik-est-un-immense-artiste-qui-ne-se-prend-pas-au-serieux-.md",
+   "source": "ig-violon-bleu",
+   "titre": "Rafik est un immense artiste qui ne se prend pas au sérieux . La création chez lui est lud",
+   "date": "2026-11-08",
+   "lien": "https://www.instagram.com/p/DfVDO4tFNpI/",
    "problemes": [
-    "titre trop long (début d'une légende ?)",
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+    "titre trop long (début d'une légende ?)"
    ]
   },
   {
-   "fichier": "presse-webdo/2026-11-28-arts-plastiques-david-bond-de-retour-a-lespace-dart-imagin.md",
+   "fichier": "presse-webdo/2026-11-05-galerie-millefeuilles-mourad-salem-entre-la-rose-et-lepee.md",
    "source": "presse-webdo",
-   "titre": "Arts plastiques : David Bond de retour à l’espace d’art Imagin’",
-   "date": "2026-11-28",
-   "lien": "https://www.webdo.tn/fr/actualite/culture/arts-plastiques-david-bond-de-retour-a-lespace-dart-imagin/406584/",
+   "titre": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée",
+   "date": "2026-11-05",
+   "lien": "https://www.webdo.tn/fr/actualite/culture/galerie-millefeuilles-mourad-salem-entre-la-rose-et-lepee/406655/",
    "problemes": [
     "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
    ]
@@ -204,13 +183,7 @@
     "precis": 1,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "fb-artisto": {
     "n": 4,
@@ -258,26 +231,6 @@
      }
     ]
    },
-   "fb-ift-facebook": {
-    "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Podcast Days ne seraient pas complets sans leurs tables rondes"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
-   },
    "goethe-tunis": {
     "n": 1,
     "precis": 1,
@@ -297,9 +250,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 54,
-    "precis": 16,
-    "pourcent": 30,
+    "n": 55,
+    "precis": 17,
+    "pourcent": 31,
     "defauts": [
      {
       "code": "titre_generique",
@@ -337,6 +290,13 @@
       "n": 1
      }
     ]
+   },
+   "ig-agora-djerba": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
    },
    "ig-agorgi-gallery": {
     "n": 1,
@@ -406,32 +366,26 @@
     ]
    },
    "ig-lart-rue": {
-    "n": 2,
-    "precis": 2,
-    "pourcent": 100,
-    "defauts": [],
+    "n": 5,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 5,
+      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
+     }
+    ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 2
      }
     ]
    },
    "ig-le32bis": {
-    "n": 1,
-    "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
-   },
-   "ig-rosalux-afrique-nord": {
     "n": 1,
     "precis": 1,
     "pourcent": 100,
@@ -470,31 +424,19 @@
      }
     ]
    },
-   "ig-tunisia-podcasts-festival": {
-    "n": 3,
-    "precis": 0,
-    "pourcent": 0,
+   "ig-violon-bleu": {
+    "n": 2,
+    "precis": 1,
+    "pourcent": 50,
     "defauts": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
       "n": 1,
-      "exemple": "Tout commence par une vibration. Puis une voix, une idée, une histoire"
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "Et si l’IA réinventait notre façon de communiquer ?"
+      "exemple": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOU"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "irmc": {
     "n": 1,
@@ -510,15 +452,15 @@
     ]
    },
    "presse-kapitalis": {
-    "n": 2,
-    "precis": 2,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 3
      }
     ]
    },
@@ -544,13 +486,7 @@
       "code": "titre_phrase",
       "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
       "n": 1,
-      "exemple": "Arts plastiques : David Bond de retour à l’espace d’art Imagin’"
-     },
-     {
-      "code": "expo_sans_fin",
-      "texte": "expo sans date de fin",
-      "n": 1,
-      "exemple": "Arts plastiques : David Bond de retour à l’espace d’art Imagin’"
+      "exemple": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée"
      }
     ],
     "manques": [
@@ -576,20 +512,20 @@
     "manques": []
    },
    "teskerti": {
-    "n": 9,
-    "precis": 9,
+    "n": 12,
+    "precis": 12,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 9
+      "n": 12
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 9
+      "n": 12
      }
     ]
    },
@@ -601,15 +537,15 @@
     "manques": []
    },
    "tunis-events-cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 7,
+    "precis": 7,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 6
+      "n": 7
      }
     ]
    }
@@ -630,9 +566,9 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 54,
-    "precis": 16,
-    "pourcent": 30,
+    "n": 55,
+    "precis": 17,
+    "pourcent": 31,
     "defauts": [
      {
       "code": "titre_generique",
@@ -672,9 +608,9 @@
     ]
    },
    "facebook_programmes": {
-    "n": 15,
+    "n": 14,
     "precis": 8,
-    "pourcent": 53,
+    "pourcent": 57,
     "defauts": [
      {
       "code": "lien_partage",
@@ -685,7 +621,7 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 3,
+      "n": 2,
       "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
      }
     ],
@@ -693,7 +629,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 6
+      "n": 4
      },
      {
       "code": "sans_image",
@@ -708,20 +644,20 @@
     ]
    },
    "instagram": {
-    "n": 20,
-    "precis": 15,
-    "pourcent": 75,
+    "n": 22,
+    "precis": 14,
+    "pourcent": 64,
     "defauts": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
       "n": 1,
-      "exemple": "Tout commence par une vibration. Puis une voix, une idée, une histoire"
+      "exemple": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOU"
      },
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 4,
+      "n": 7,
       "exemple": "A few moments from C!STEM ERROR: The H in My Name Is Not Silent by Nad"
      }
     ],
@@ -729,33 +665,45 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 14
+      "n": 13
      }
     ]
    },
    "presse": {
-    "n": 4,
-    "precis": 3,
-    "pourcent": 75,
+    "n": 5,
+    "precis": 4,
+    "pourcent": 80,
     "defauts": [
      {
       "code": "titre_phrase",
       "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
       "n": 1,
-      "exemple": "Arts plastiques : David Bond de retour à l’espace d’art Imagin’"
-     },
-     {
-      "code": "expo_sans_fin",
-      "texte": "expo sans date de fin",
-      "n": 1,
-      "exemple": "Arts plastiques : David Bond de retour à l’espace d’art Imagin’"
+      "exemple": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée"
      }
     ],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
+      "n": 5
+     }
+    ]
+   },
+   "teskerti": {
+    "n": 12,
+    "precis": 12,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 12
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 12
      }
     ]
    },
@@ -766,24 +714,6 @@
     "defauts": [],
     "manques": []
    },
-   "teskerti": {
-    "n": 9,
-    "precis": 9,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 9
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 9
-     }
-    ]
-   },
    "woocommerce_seances": {
     "n": 7,
     "precis": 7,
@@ -792,15 +722,15 @@
     "manques": []
    },
    "tunis_events_cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 7,
+    "precis": 7,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 6
+      "n": 7
      }
     ]
    },

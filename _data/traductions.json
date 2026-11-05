@@ -20,10 +20,6 @@
    "ar": "الزهري الجيربي",
    "en": "Al Zahou El Jerbi"
   },
-  "Arts plastiques : David Bond de retour à l’espace d’art Imagin’": {
-   "ar": "الفنون البلاستيكية: ديفيد بوند العودة إلى الفن الفضائي",
-   "en": "Plastic Arts: David Bond Back to Art Space Imagine"
-  },
   "Atelier adultes : Croquis & Perspective": {
    "ar": "حلقة عمل الكبار: الرسم المنظوري",
    "en": "Adult workshop : Sketch & Perspective"
@@ -35,6 +31,10 @@
   "Atelier de séances de bibliothérapie autour du roman Tunis Blues": {
    "ar": "حلقة عمل عن جلسات العلاج بمستشفيات الأطفال حول رواية تونس بلو",
    "en": "Workshop of bibliotherapy sessions around the novel Tunis Blues"
+  },
+  "Au Ciné-Théâtre Le Rio | Le cinéma comme outil de dénonciation": {
+   "ar": "في سين - تياري السينما المسرحية ريو - ريو كأداة للتنصل",
+   "en": "At Ciné-Théâtre The Rio-Rio-Theatrical cinema as a tool for denunciation"
   },
   "Avec Hafida Ben Rejeb Latta": {
    "ar": "مع هافيدا بن رييب لايتا",
@@ -76,10 +76,6 @@
    "ar": "Creativity with Bochra Taboubi",
    "en": "Creativity with Bochra Taboubi"
   },
-  "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e": {
-   "ar": "من المقاومة الجزائرية والإيطالية واللبنانية للنساء الكرديات اللواتي حافظن على",
-   "en": "From Algerian, Italian and Lebanese resistance to Kurdish women who have preserved the"
-  },
   "Diffusion des Savoirs": {
    "ar": "نشر المعرفة",
    "en": "Dissemination of knowledge"
@@ -88,13 +84,17 @@
    "ar": "المناقشة مع إلغاز",
    "en": "Discussion with Elgas"
   },
+  "Echo des deux Rives": {
+   "ar": "Echo of the two Rives",
+   "en": "Echo of the two Rives"
+  },
+  "Echo des deux Rives 19-Novembre": {
+   "ar": "Echo of the two Rivers 19-November",
+   "en": "Echo of the two Rivers 19-November"
+  },
   "Entre deux rives : 70 ans de relations tuniso-françaises post-indépendance": {
    "ar": "بين شاطئين: 70 سنة من العلاقات بين تونس وفرنسية بعد الاستقلال",
    "en": "Between two shores: 70 years of post-independence Tuniso-French relations"
-  },
-  "Et si l’IA réinventait notre façon de communiquer ?": {
-   "ar": "ماذا لو أنّ (آي آي) يعيد اختراع طريقتنا في التواصل؟",
-   "en": "What if the AI reinvents our way of communicating?"
   },
   "Exposition à Carthage | Saint-Augustin et l’héritage chrétien de la Tunisie": {
    "ar": "Exhibition in Carthage, St. أوغستين والتراث المسيحي لتونس",
@@ -111,6 +111,10 @@
   "Festival international du Sahara de Douz (58e édition)": {
    "ar": "مهرجان الصحراء الكبرى دي دوز الدولي (الطبعة 58)",
    "en": "Sahara de Douz International Festival (58th edition)"
+  },
+  "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée": {
+   "ar": "Gallery Millefeuilles : Mourad Salem, between rose and policy",
+   "en": "Gallery Millefeuilles : Mourad Salem, between rose and sword"
   },
   "How can creativity become a force for entrepreneurship and change?": {
    "fr": "Comment la créativité peut-elle devenir une force pour l'esprit d'entreprise et le changement?",
@@ -192,13 +196,17 @@
    "ar": "مختبرات - سيليم بن صوفيا",
    "en": "Labs - Selim Ben Safia"
   },
+  "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOURS , une rétrospecti": {
+   "ar": "معرض (فيولين بليو) سعيد بدعوتك لإكتشاف (باركورس)",
+   "en": "The Violin Bleu Gallery is pleased to invite you to discover PARCOURS , a retrospective"
+  },
   "Le chemin se termine, la fête commence": {
    "ar": "نهاية الطريق، تبدأ الحفلة",
    "en": "The road ends, the party begins"
   },
-  "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v": {
-   "ar": "كيف تتصورين أن الغد مذاق؟ Podcast Days by Tunisia Podcast Festival v",
-   "en": "How do you imagine tomorrow's podcast? Podcast Days by Tunisia Podcast Festival v"
+  "Le podcast Dans le monde Arabe comment le qualifier et quels sont les défis?": {
+   "ar": "Podcast in the Arab world how to qualify it and what are the challenges?",
+   "en": "Podcast In the Arab world how to qualify it and what are the challenges?"
   },
   "Le tube de R Coolidge": {
    "ar": "أنبوب \"ر كولدج\"",
@@ -215,10 +223,6 @@
   "Level Five": {
    "ar": "المستوى الخامس",
    "en": "Level Five"
-  },
-  "Listening Session, Screening & Live Performance": {
-   "fr": "Séance d'écoute, projection et performance en direct",
-   "ar": "جلسة الاستماع، فرز الأداء الحي"
   },
   "Lotfi bouchnek": {
    "ar": "Lotfi bulakhnek",
@@ -240,9 +244,13 @@
    "fr": "Musique électronique live : Créquences croisées, entre Tunis & Düsseldorf",
    "ar": "Musique électronique live : Fréquences croisées, entre Tunis &apos; Düsseldorf"
   },
-  "Mémoires Récompensées : Une résidence d'écriture pour raconter Sfax autrement": {
-   "ar": "ذكريات مُجدّدة: كتاب الإقامة لإخبار (سفاكس) وإلاّ",
-   "en": "Rewarded Memories: A Writing Residence to Tell Sfax Otherwise"
+  "Mémoires récompensées : Une résidence d'écriture pour raconter Sfax autrement": {
+   "ar": "Reriting Residence to Tell Sfax otherwise",
+   "en": "Rewarded Memoirs: A Writing Residence to Tell Sfax Otherwise"
+  },
+  "NN 2026 : Atelier de LEGO et notions de base de la mécanique": {
+   "ar": "NN 2026: LEGO Workshop and Basic Concepts of Mechanical Engineering",
+   "en": "NN 2026: LEGO Workshop and Basic Concepts of Mechanical Engineering"
   },
   "Nōmad Man Festival 2026": {
    "fr": "Festival de l'Homme Nōmad 2026",
@@ -264,10 +272,6 @@
    "ar": "أيام البث لن تكتمل بدون اجتماعات المائدة المستديرة",
    "en": "Podcast Days would not be complete without their round tables"
   },
-  "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30": {
-   "ar": "لإغلاق يوم البث ال Podcast Festival التونسي، يُجتمع في 7 تشرين الثاني/نوفمبر في الساعة 30/18",
-   "en": "To close Podcast Days by Tunisia Podcast Festival, meet on November 7 at 6.30 pm"
-  },
   "REGARDE MOI": {
    "ar": "انظر إليّ",
    "en": "Look at me."
@@ -275,6 +279,10 @@
   "RUCHE73 : Concert de Yosri": {
    "ar": "RUCHE73 : Concert by Yosri",
    "en": "RUCHE73 : Concert by Yosri"
+  },
+  "Rafik est un immense artiste qui ne se prend pas au sérieux . La création chez lui est lud": {
+   "ar": "(رافيك) فنان ضخم لا يأخذ نفسه على محمل الجد الخلق فية هو مُحتَرم",
+   "en": "Rafik is an immense artist who does not take himself seriously. The creation in him is lud"
   },
   "Rencontre-débat avec Sonia Hanihina": {
    "ar": "حلقة نقاش مع سونيا هانيهينا",
@@ -296,13 +304,13 @@
    "ar": "Special November Digital",
    "en": "Special November Digital"
   },
+  "SÉANCE CINÉPHILES À L'AGORA DJERBA !": {
+   "ar": "(سينفيل) يجلس في (أوغورا ديربا)",
+   "en": "CINEPHILE SESSIONS AT AGORA DJERBA!"
+  },
   "TAHA DESOUKY": {
    "ar": "تاها دوسك",
    "en": "TAHA DESOUKY"
-  },
-  "Tout commence par une vibration. Puis une voix, une idée, une histoire...Et si vous venez": {
-   "ar": "كل هذا يبدأ بالإهتزازات ثمّ صوت، فكرة، قصة... و إذا أتيت",
-   "en": "It all starts with a vibration. Then a voice, an idea, a story... And if you come"
   },
   "UN FILS": {
    "ar": "A LOT",
@@ -483,11 +491,6 @@
    "fr": "<unk> <unk> oeuvres d'art pour le cours constituant de l'automne...\nLes jours de jeux à monsieur Bouzid.\nDu 26 octobre au 1er novembre 2026.\n<unk> à la station de théâtre et d'arts flasques de Sadie Bouzid.\n_\nThéâtre des mariées.\nPour vous inscrire, cliquez sur le lien suivant :\nhttps://docs.google.com/forms/d/f/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5Top6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book",
    "en": "<unk> <unk> artworks for the Constituent Course of the Autumn...\nPlaydays in sir Bouzid.\nFrom October 26 to November 1, 2026.\n<unk> at the station of drama and flak arts in Sadie Bouzid.\n_\nTheater of the brides.\nFor registration, click on the following link:\nhttps://docs.google.com/forms/d/e/1FAIpQLSce8YA1LMIYD1hys_89AmpxeDM5TOp6qcT4sBsX3BEJEhDOA/viewform?usp=dialogABusp=embedface_book"
   },
-  "_events/auto/fb-ift-facebook/2026-11-07-podcast-days-ne-seraient-pas-complets-sans-leurs-tables-rond.md": {
-   "cle": "3564e95e693c",
-   "ar": "ولن تكتمل اجتماعات المائدة المستديرة في أيام البث.\nفي السابع من نوفمبر، قابلنا في شارع \"ل آرت\" في الساعة 10: 30 صباحاً حتى الساعة 12 مساءً لمائدة مستديرة حول البودكاست كأداة للتغيير والتأثير، أدارها \"إمنا بن جيما\" في شركة \"نويل بيزيد\" و \"كاوفر زانتور\"\nشارع الفن\nالوصول المباشر، دون تسجيل\nانضموا إلينا من أجل تبادل ملهم حول الأصوات التي تجعل الأمور تحدث\nLOS\n#podcast #podcastdays #tunísia #podcasttunisie",
-   "en": "The round tables would not be complete for Podcast Days.\nOn November 7th, meet us at L-Art Street at 10.30am until 12pm for a round table around the podcast as a tool for change and influence, moderated by \"Emna Ben Jemaa\" in the company of \"Nawel Bizid\" and \"Kaouther Zantour\"\n\"The Art Street\"\nDirect access, without registration\nJoin us for an inspiring exchange around the voices that make things happen!\n的\n#podcast #podcastdays #tunísia #podcasttunisie"
-  },
   "_events/auto/goethe-tunis/2026-11-11-musique-electronique-live-frequences-croisees-entre-tunis-du.md": {
    "cle": "4f558ba90fa1",
    "ar": "The Goethe-Institut Tunis, in collaboration with Habi Downtown, invites you to an exceptional evening under the sign of the encounter between electronic music, experimental voice and Mediterranean influences. ثلاثة فنانين مع أكوان منفردة سيخلفون بعضهم البعض من أجل عبور موسيقي بين الإيقاعات المعاصرة، وإعادة النظر في التقاليد واستكشافات الصوت.",
@@ -517,6 +520,11 @@
    "cle": "a3a1801aff80",
    "ar": "(مملكة فيلا سلامبو). جولة تريب جود ساعة \"أنابيب (ريدج) أو (إكس إيتوس ديميتر)\" \"بشراكة مع (ليبرايري فندرى)\" أنا",
    "en": "(Laureate of Villa Salammbô). Round-trip Joudhour \"Le tube de R Coolidge\" aux Editions Démeter – L In partnership with the Librairie Fendri. Its I"
+  },
+  "_events/auto/ift-pdf/2026-11-05-nn-2026-atelier-de-lego-et-notions-de-base-de-la-mecanique.md": {
+   "cle": "2b00058f3de4",
+   "ar": "كجزء من \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سفاكس يقدم حلقة عمل ممتعة وتفاعلية بقيادة نادي الروبوتات\nوسيُدعى المشاركون، من خلال دورة عملية وملموسة، إلى اكتشاف أساسيات الميكانيكيين عن طريق بناء وبرمجة واختبار إنشاءات فريق الخبراء المعني بأقل البلدان نمواً.",
+   "en": "As part of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sfax offers a fun and interactive workshop, led by the Robotic Club SRTC, around the world of mechanics, code, simulation and artificial intelligence.\nThrough a practical and immersive session, participants will be invited to discover the basics of mechanics by building, programming and testing their own LEGO creations."
   },
   "_events/auto/ift-pdf/2026-11-05-rencontre-debat-avec-sonia-hanihina.md": {
    "cle": "50d747cdd467",
@@ -569,9 +577,9 @@
    "en": "The French Institute of Tunisia offers its young audience the animated film Shaun le brut: The Hallowen's Beast by Steve Cox and Matthew Walker.\nExecutive summary:\nOn Halloween, the inhabitants of Mossy Bottom's farm rejoice in the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd.\nWhen Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
   },
   "_events/auto/ift-pdf/2026-11-07-village-environnemental.md": {
-   "cle": "6d6591474848",
-   "ar": "وبمناسبة الطبعة الثانية من مهرجان سينيما Environnemental، ينظم المعهد الفرنسي لفاكس، بالاشتراك مع بلدية سفاكس، القرية البيئية في 7 تشرين الثاني/نوفمبر، على بعد 100 متر من سفاكس.",
-   "en": "On the occasion of the second edition of the Festival du Cinéma Environnemental, the French Institute of Sfax, in partnership with the Municipality of Sfax, organizes the Environmental Village, on November 7th, at 100 meters from Sfax.A day marked by commitment, discovery and action, which will bring together associations, clubs, companies and civil society actors mobilized to promote the protection of the environment, ..."
+   "cle": "4c5490549103",
+   "ar": "القرية البيئية: جميعهم عبؤوا لكوكب أكثر استدامة!\nوبمناسبة الطبعة الثانية من مجلة &quot; مهرجان سينيما Environnemental &quot; ، ينظم المعهد التونسي الفرنسي في سفاكس، بالشراكة مع بلدية سفاكس، القرية البيئية في مكان 100 متر.\nومنفتح للجميع، سيجمع هذا الحدث بين الرابطات والنوادي والشركات والجهات الفاعلة في المجتمع المدني المشاركة في حماية البيئة.",
+   "en": "Environmental Village: All mobilized for a more sustainable planet!\nOn the occasion of the 2nd edition of the \"Festival de Cinéma Environnemental\", the French Institute of Tunisia in Sfax, in partnership with the Municipality of Sfax, organizes the environmental village on the Place des 100 mètres.\nOpen to all, this event will bring together associations, clubs, companies and civil society actors involved in environmental protection."
   },
   "_events/auto/ift-pdf/2026-11-08-atelier-de-seances-de-bibliotherapie-autour-du-roman-tunis-b.md": {
    "cle": "0bafb5142f42",
@@ -763,6 +771,11 @@
    "ar": "ضع خوذة من طراز VR وتجرب تجربة لا تحصى في قلب العمل بين الفن والسينما. Mediatheque.sousse@institutfranca E is-tunisie.com I S",
    "en": "Put on a VR helmet and experience an immersive experience at the heart of works between art and cinema. mediatheque.sousse@institutfranca E is-tunisie.com I S"
   },
+  "_events/auto/ig-agora-djerba/2026-11-05-seance-cinephiles-a-l-agora-djerba.md": {
+   "cle": "edca5a8f083d",
+   "ar": "- مهلا، مهلا، مهلا، مهلا، مهلا.\nالمادتان\nفيلم (فريد كافاى) على أساس تحفة (فيكتور هوجو)\nالخميس 5 تشرين الثاني/نوفمبر 2026\nيَلْعبُ إلى a فرس تاريخي مزعج، بين الظلمِ، الحبّ، الشجاعةِ و السعي للحريةِ.\nعمل عظيم من الأدب الفرنسي يأتي إلى الحياة على شاشة كبيرة، يحمله توزيع استثنائي!\nالمادتان\nاحجزوا تذاكركم الآن\nwww.lagoradjerba.tn",
+   "en": "- Hey, hey, hey, hey, hey.\n的\nThe MISSÉABLES – A film by Fred Cavayé, based on Victor Hugo's masterpiece.\nThursday 5 November 2026 14h00\nDive into an upsetting historical fresco, between injustice, love, courage and the quest for freedom.\n\nA great work of French literature comes to life on a large screen, carried by an exceptional distribution!\n的\nBook your tickets now!\nwww.lagoradjerba.tn"
+  },
   "_events/auto/ig-agorgi-gallery/2026-10-30-cosmose.md": {
    "cle": "45577979df1a",
    "fr": "La Galerie est ouverte ce samedi et dimanche, de 12h à 18h, pour vous accueillir à COSMOSE, l'exposition solo de @karabibenehalim .\nPrenez le temps de découvrir l'univers de l'artiste et d'explorer les œuvres en vue.\nNous avons hâte de vous voir à la galerie!\n\\#AGorgiGallery #Cosmose #HalimKarabibene #contemporaryart",
@@ -813,25 +826,35 @@
    "fr": "Guide hebdomadaire de Jaou Tunis\nUne nouvelle semaine, plus d'art à découvrir, et plus de façons de découvrir Jaou à travers Tunis.\nDe l'exploration de la Biennale de l'Image en Mouvement et Undertow / Contre-Courant à la participation à nos ateliers et Jaou Nights, voici ce qui arrive cette semaine.\nBIENNAL DE L'IMAGE EN MOUVEMENT\nQuechlet El Attarine\n24 octobre – 22 novembre 2026\nMardi – dimanche de 10:00 à 18:00\nNocturnes: vendredi et samedi , 18:00 – 20:00\nVisites guidées: samedi à 14h30 et dimanche à 11h00",
    "ar": "Jaou Tunis <unk> weekly Guide\nأسبوع جديد، المزيد من الفن لاكتشافه، و المزيد من الطرق لتجربة جاو عبر تونس.\nومن خلال استكشاف &quot; بيينايل دي إيماج &quot; و &quot; دونتاو &quot; )٢٦(.\nBIENNALE DE L’IMAGE EN MOUVEMENT\nكويشلي العتارين\n24 تشرين الأول/أكتوبر - 22 تشرين الثاني/نوفمبر 2026\nالثلاثاء - يوم الأحد الساعة 00/10 صباحاً - الساعة السادسة مساءً\nنوهت: الجمعة، 6:00 مساء - 8: 00 مساء\nجولات مصحوبة بمرشدين: السبت الساعة 2:30 مساء يوم الأحد الساعة 11:00 صباحا"
   },
-  "_events/auto/ig-lart-rue/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md": {
-   "cle": "6bc8c2ed7576",
-   "ar": "كيف تتصورين أن الغد مذاق؟\nيوم الاذاعة من قبل مهرجان الاذاعة التونسية يمنحك موعدا في نوفمبر 07 مع اثنين من الطبقة الرئيسية مصممين خصيصا لمن يرغبون في دفع حدود الإنشاء الاذاعي\nMASTERCLASS 01 - Podcast &apos; Artificial Intelligence\nمع (تانيت ويب)\nالمتكلم: صاحب السعادة عبد الناصر\n30/10-30/11 صباحاً\nكيف تخلق بث فيديوك؟\nWith Yaluna @yaluna.media\nالمتكلم: عزيز شيبي\n14h00 - 15h30",
-   "en": "How do you imagine tomorrow's podcast?\nPodcast Days by Tunisia Podcast Festival gives you an appointment on November 07 with two masterclasses specially designed for those who wish to push the limits of podcast creation\nMASTERCLASS 01 — Podcast & Artificial Intelligence\nWith Tanitweb\nSpeaker: Hatem Abdennadher\n10.30 - 11.30 a.m.\n的 MASTERCLASS 02 — How to create your video podcast?\nWith Yaluna @yaluna.media\nSpeaker: Aziz Chaibi\n14h00 - 15h30"
+  "_events/auto/ig-lart-rue/2026-11-06-i-bird-act-ii.md": {
+   "cle": "69f043a9b347",
+   "fr": "— Oiseaux, loi II\nAprès le premier acte, Selma et Sofiane Ouissi présentent la première de la série --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nUne œuvre de Selma et Sofiane Ouisi\nCommissionné par la Fondation Sharjah Art\nCoproduit par L-Art Rue\nDirection technique de Mich\n_____",
+   "ar": "/ / / / / // / // / / / / / // // /// / / / / / / / / // / // // / // / / / // / // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / // / / / / / / // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /\nوفي أعقاب القانون الأول، يقدم كل من سيلما وصوفيان أوسي رئيس الوزراء، وهو ثاني عمل من أعمال بيرد، في 6 تشرين الثاني/نوفمبر و 7 و 8 و 2026، كجزء من برنامج &quot; بيرفورم شرجة &quot; ربما هنا.\nA work by Selma and Sofiane Ouissi\nمؤسسة شارقة للفنون\nشارك في إنتاجه لارت رو\nالتوجيه التقني من جانب شركة ميخ\n_"
   },
-  "_events/auto/ig-lart-rue/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md": {
-   "cle": "d174dbabd97e",
-   "ar": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nاجتماع أخير للاحتفال بالأصوات والقصص والمبادلات التي تجعل من الطائفة التونسية من اليقظة.\nThe Chapel, Dar Bach Hamba\n\"بودكاست\" \"دونيسيا\" \"بودكاستونيسيا\"",
-   "en": "To close Podcast Days by Tunisia Podcast Festival, head to La Chapelle, Dar Bach Hamba, on November 7 at 6.30 pm for a public closing recording with Raouia Khedher, who will receive Vipa.\nA final meeting to celebrate the voices, stories and exchanges that make the Tunisian podcast vibrate.\nThe Chapel, Dar Bach Hamba\n\n\\#podcast #tunisia #podcasttunisia #podcastdays"
+  "_events/auto/ig-lart-rue/2026-11-07-la-creation-sonore-donne-vie-a-linvisible-et-transforme-leco.md": {
+   "cle": "12a840784cda",
+   "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة\nانضم إلى أوسيما غايدي في حلقة عمل غير مُزدحمة يوم 7 تشرين الثاني/نوفمبر في الساعة 10: 30 صباحاً\nفي LArt Rue.\nArt Street\nنحن ننتظرك لتستكشف وتشعر بالصوت بشكل مختلف!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
+   "en": "Sound creation gives life to the invisible and transforms listening into experience.\nJoin Ussema Gaidi for an immersive workshop on November 7th at 10:30 a.m. at L的Art Rue.\n\nArt Street\nWe're waiting for you to explore and feel the sound differently!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
+  },
+  "_events/auto/ig-lart-rue/2026-11-07-le-podcast-dans-le-monde-arabe-comment-le-qualifier-et-quels.md": {
+   "cle": "4c101248440e",
+   "ar": "الناطق في العالم العربي كيف يصفها وما هي التحديات؟\nفي السابع من نوفمبر من الساعة 3: 30 مساءً إلى الساعة 5 مساءً في \"لورت رو\" الضيوف \"ريسلان لونتشي\" و \"محمد خريزات\" و \"خولد مابروك\" حول تبادل معتدل بـ \"ألياهاكيموفيسيل\" يتشاركون في ما سيكتشف من منظورات جديدة على الكون الصوتي\n@reslane.lou\n@mohkhreizat\n@khulud_mabrouk_\nسالم حوار\n• Art Street\nالوصول المباشر، بدون تسجيل",
+   "en": "The podcast In the Arab world how to qualify it and what are the challenges?\nOn November 7th, from 3:30pm to 5pm, at L'Art Rue, guests, Reslane Lunici, Mohamad Khreizat, Khouloud Mabrouk around a moderated exchange by @alyahakimofficiel share what new perspectives on the audio universe are to be discovered.\n@reslane.lou\n@mohkhreizat\n@khulud_mabrouk_\nSalem Haouar\n• Art Street\nDirect access, without registration"
+  },
+  "_events/auto/ig-lart-rue/2026-11-07-podcast-days-ne-seraient-pas-complets-sans-leurs-tables-rond.md": {
+   "cle": "3564e95e693c",
+   "ar": "ولن تكتمل بعد عقد اجتماعات المائدة المستديرة.\nفي السابع من نوفمبر، قابلنا في شارع (ل آرت) في الساعة 10: 30 صباحاً حتى الساعة 12 مساءً لمائدة مستديرة حول البودكاست كأداة للتغيير والتأثير، أدارها (إمنا بن جيما) بـ \"نويل بيزيد\" و \"كوافر زانتور\"\nشارع الفن\nالوصول المباشر، بدون تسجيل\nانضم إلينا من أجل تبادل ملهم حول الأصوات التي تجعل الأمور تحدث!\nالمادتان\n#podcast #podcastdays #tunísia #podcasttunisie",
+   "en": "的的 Podcast Days would not be complete without their round tables.\nOn November 7th, meet us at L-Art Street at 10.30am until 12pm for a round table around the podcast as a tool for change and influence, moderated by \"Emna Ben Jemaa\" with \"Nawel Bizid\" and \"Kaouther Zantour\"\n\"The Art Street\"\nDirect access, without registration\nJoin us for an inspiring exchange around the voices that make things happen!\n的\n#podcast #podcastdays #tunísia #podcasttunisie"
+  },
+  "_events/auto/ig-lart-rue/2026-11-08-i-bird-act-ii.md": {
+   "cle": "69f043a9b347",
+   "fr": "— Oiseaux, loi II\nAprès le premier acte, Selma et Sofiane Ouissi présentent la première de la série --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nUne œuvre de Selma et Sofiane Ouisi\nCommissionné par la Fondation Sharjah Art\nCoproduit par L-Art Rue\nDirection technique de Mich\n_____",
+   "ar": "/ / / / / // / // / / / / / // // /// / / / / / / / / // / // // / // / / / // / // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / // / / / / / / // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /\nوفي أعقاب القانون الأول، يقدم كل من سيلما وصوفيان أوسي رئيس الوزراء، وهو ثاني عمل من أعمال بيرد، في 6 تشرين الثاني/نوفمبر و 7 و 8 و 2026، كجزء من برنامج &quot; بيرفورم شرجة &quot; ربما هنا.\nA work by Selma and Sofiane Ouissi\nمؤسسة شارقة للفنون\nشارك في إنتاجه لارت رو\nالتوجيه التقني من جانب شركة ميخ\n_"
   },
   "_events/auto/ig-le32bis/2026-11-06-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md": {
    "cle": "0ca656d3110b",
    "fr": "À l'occasion de son 10e anniversaire, le funambuliste est accueilli par 32Bis du 6 novembre 2026 au 15 janvier 2027, pour réfléchir aux formes, méthodes et stratégies collectives pour construire nos pédagogies de libération.\nPensant de la même façon avec nos enfants et avec nos aînés, cette intervention se concentre sur l'apprentissage partagé.",
    "ar": "وبمناسبة الذكرى العاشرة لإنشائها، يرحب بـ 32 بيـس في الفترة من 6 تشرين الثاني/نوفمبر 2026 إلى 15 كانون الثاني/يناير 2027، للتفكير في الأشكال والأساليب والاستراتيجيات الجماعية لبناء نُظُم تحريرنا.\nوهذا التدخل يركز على التعلم المشترك، مع التفكير على قدم المساواة مع أطفالنا ومع شيوخنا."
-  },
-  "_events/auto/ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md": {
-   "cle": "db5d85e9766b",
-   "ar": "من المقاومة الجزائرية والإيطالية واللبنانية للمرأة الكردية التي حافظت على تقاليد نغبج واجتازت تقليدها؛ ومن شهادات السجناء الفلسطينيين إلى الفنانين الذين لا يفتأون منذ فترة طويلة في اسطنبول؛ ومن النساء المتهمات بممارسة السحر في بلاد البسك إلى الممارسات الفنية والأغاني والتجارب العائلية المحالة في سوريا؛ ومن النساء - أو غيابهن - في الكتب المدرسية التونسية: تدور قصص قضيتنا في ...",
-   "en": "From Algerian, Italian and Lebanese resistance to Kurdish women who have preserved and passed on the tradition of dengbêj; from Palestinian prisoners' testimonies to long-invisibility artists in Istanbul; from women accused of witchcraft in the Basque Country to artisanal practices, songs and family stories transmitted in Syria; and from women — or their absence — in Tunisian school textbooks: the stories of our case go through the ..."
   },
   "_events/auto/ig-shanti/2026-11-15-le-chemin-se-termine-la-fete-commence.md": {
    "cle": "82e59da503dd",
@@ -848,20 +871,15 @@
    "fr": "♪ Les écrans de saison...\n♪\nLa mémoire du théâtre tunisien est à l'écran.\nDans le cadre des activités de la quatrième session du Festival national du Théâtre Tonsien, Musam of Innovation, les écrans saisonniers sont du 31 octobre au 7 novembre 2026, dans la salle Ra &apos; s al-Manaqiyah, dans la quatrième salle d'art, à partir de 14 h 30.",
    "en": "♪ The season screens... ♪\nThe Tunisian theater memory is on the screen.\nAs part of the activities of the fourth session of the National Festival of the Tonsian Theatre, Musam of Innovation, the seasonal screens are from 31 October to 7 November 2026, at the Ra &apos; s al-Manaqiyah Hall at the Fourth Art Hall from 2.30 p.m."
   },
-  "_events/auto/ig-tunisia-podcasts-festival/2026-11-06-tout-commence-par-une-vibration-puis-une-voix-une-idee-une-h.md": {
-   "cle": "3d8f7eb3e6e8",
-   "ar": "كل هذا يبدأ بالإهتزازات\nإذاً صوت، فكرة، قصة، وإذا جئت لكتابة \"الحياة\" قصة هذه الحلقة الخاصة:\nانضموا إلينا في الساعة السادسة من نوفمبر في الساعة السابعة من مساء في المعهد الفرنسي لتونس بمناسبة افتتاح مهرجان ال Podcast Days في تونس، وهو حدث كرّس لأصوات وأفكار ومواهب الطائفة التونسية",
-   "en": "It all starts with a vibration.\nThen a voice, an idea, a story...And if you come to write in LIVE 的 the story of this special episode:\nJoin us on November 6 at 7 pm at the French Institute of Tunisia for the opening ceremony of Podcast Days by Tunisia Podcast Festival, an event dedicated to the voices, ideas and talents of the Tunisian podcast"
+  "_events/auto/ig-violon-bleu/2026-11-08-le-violon-bleu-gallery-a-le-plaisir-de-vous-inviter-a-decouv.md": {
+   "cle": "f0d29b786b34",
+   "ar": "معرض (فيولين بليو) سعيد بدعوتك لإكتشاف \"المُنظمة\" وإسترجاع مسار (رافيك آل كمال) الإستثنائي\nإن عبور عمل الكاميل هو مسرح عظيم للظاهرة: من وجوه إلى الضحك المسرحي والتخريبي منذ البداية، إلى شواهد الصمت والسخرية اللامعية.",
+   "en": "The Violin Bleu Gallery is pleased to invite you to discover \"COURSES\", a retrospective of Rafik El Kamel's exceptional trajectory, a major figure in Tunisian and Mediterranean modernity.\nCrossing the work of El Kamel is a great theatre of the visible: from faces to the theatrical and subversive laughter from the beginning, to the poetics of silence and lyrical abstraction."
   },
-  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-et-si-lia-reinventait-notre-facon-de-communiquer.md": {
-   "cle": "710192e42924",
-   "ar": "ماذا لو أنّ (آي آي) يعيد اختراع طريقتنا في التواصل؟\nقابل (وليد نافاتي) في 7 تشرين الثاني/نوفمبر لجلسة إحاطة عن بودكاس بشأن الاتصال والبث في عصر الاستخبارات الاصطناعية في الساعة 11:30 صباحاً\nفي شارع \"ل آرت\".\nالوصول المباشر، بدون تسجيل\nArt Street\nنحن في انتظارك لتستكشف مناظير جديدة معا!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
-   "en": "What if the AI reinvents our way of communicating?\nMeet Walid Naffati on November 7 for a Podcast Briefing on communication and podcasting in the era of artificial intelligence at 11:30 a.m. at L-Art Street.\nDirect access, without registration\nArt Street\nWe're waiting for you to explore new perspectives together!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
-  },
-  "_events/auto/ig-tunisia-podcasts-festival/2026-11-07-la-creation-sonore-donne-vie-a-linvisible-et-transforme-leco.md": {
-   "cle": "12a840784cda",
-   "ar": "الخلق الصوتي يعطي الحياة للغير مرئية ويحول الإستماع إلى تجربة\nانضم إلى أوسيما غايدي في حلقة عمل غير مُزدحمة يوم 7 تشرين الثاني/نوفمبر في الساعة 10: 30 صباحاً\nفي LArt Rue.\nArt Street\nنحن ننتظرك لتستكشف وتشعر بالصوت بشكل مختلف!\nالمادتان\n\"بودكاست\" \"دونيسيا\" \"بودكاسداي\"",
-   "en": "Sound creation gives life to the invisible and transforms listening into experience.\nJoin Ussema Gaidi for an immersive workshop on November 7th at 10:30 a.m. at L的Art Rue.\n\nArt Street\nWe're waiting for you to explore and feel the sound differently!\n的\n\\#podcast #tunisia #podcastdays #podcasttunisie"
+  "_events/auto/ig-violon-bleu/2026-11-08-rafik-est-un-immense-artiste-qui-ne-se-prend-pas-au-serieux-.md": {
+   "cle": "721134a35013",
+   "ar": "\"رافيك فنان هائل لا يأخذ نفسه على محمل الجد.\nالخلق فية ممتع، بفضل روح طفله.\n- إيسيا حمدي\nمن محفوظات المعرض:\n▪Visit of the Rafik El Kamel workshop - 2015\n:: معرض \"ترانزيف 2\" - معرض الفيولين الأزرق، 2014\nلا تفوت معرضنا القادم \"باركورز\" ، إنه ازدراء في العمل المميز لـ \"رافيك آل كمال\" العظيم\nالافتتاح: 08 تشرين الثاني/نوفمبر 2026 من الساعة 11: 00.",
+   "en": "\"Rafik is an immense artist who does not take himself seriously.\nThe creation in him is fun, thanks to his child's soul\".\n- Essia Hamdi\nFrom the gallery archive:\n▪Visit of the Rafik El Kamel workshop - 2015\n▪Exposition \"Transfiguration 2\" - Blue Violin Gallery , 2014\nDon't miss our next exhibition \"Parcours\", an immersion in the iconic work of the great Rafik El Kamel.\nOpening: November 08, 2026 from 11:00."
   },
   "_events/auto/irmc/2026-12-03-13eme-symposium-de-luma-incertitudes-certitudes.md": {
    "cle": "f3422e7aad96",
@@ -873,6 +891,11 @@
    "ar": "وفي شراكة مع المركز الوطني للألعاب السينمائية والصور (CNCI)، ينظم المعهد الطبعة الحادية عشرة من المهرجان الدولي للكشف عن النفس - سينكرين لحقوق الإنسان، 3-7 تشرين الثاني/نوفمبر 2026، في سينيه - تيهاتر لو ريو في تونس.",
    "en": "In partnership with the National Centre for Cinema and Image (CNCI), ACTIF organizes the 11th edition of the International Human Screen Festival – Screen of Human Rights, November 3-7, 2026, at the Ciné-Théâtre Le Rio in Tunis."
   },
+  "_events/auto/presse-kapitalis/2026-11-05-au-cine-theatre-le-rio-le-cinema-comme-outil-de-denonciation.md": {
+   "cle": "b81445d86c98",
+   "ar": "تم افتتاحه مساء أمس، الأربعاء، 3 تشرين الثاني/نوفمبر 2026 في سين - تيهاتر لو ريو، تونس، الطبعة الحادية عشرة من مهرجان &quot; البشر المكفوفين &quot; - المهرجان السينمائي الدولي لحقوق الإنسان، المعروف أيضا باسم &quot; كراما تونس &quot; - سوف يستمر حتى يوم السبت، 7 تشرين الثاني/نوفمبر.",
+   "en": "Opened yesterday evening, Wednesday, November 3, 2026 at the Ciné-Théâtre Le Rio, Tunis, the 11th edition of the Human Screen Festival — the International Film Festival of Human Rights, also known as \"Karama Tunisia\" — will continue until Saturday, November 7."
+  },
   "_events/auto/presse-kapitalis/2026-11-12-exposition-a-carthage-saint-augustin-et-lheritage-chretien-d.md": {
    "cle": "1b730703aad5",
    "ar": "وسيقام معرض بعنوان &quot; من كارثاج إلى كارثاج: الإرث المسيحي لتونس &quot; في إطار الأيام السابع من آب/أغسطس في كارتاج، الذي سيُعقد في الفترة من 12 إلى 15 تشرين الثاني/نوفمبر 2026 في الأكاديمية التونسية للعلوم والكتاب والفنون (بيت الحكيمة)، في مدينة رومان العقابية.",
@@ -883,10 +906,10 @@
    "ar": "The fourth edition of the Tunisian National Theatre Festival \"Saisons de la création\" was inaugurated on Friday evening at the Fourth Art Hall in Tunis. ولغاية 7 تشرين الثاني/نوفمبر 2026، تهدف هذه الطبعة الجديدة إلى الجمع بين الاحتفال بخلق المسارات التأسيسية وتخليصها والتفكير في التغييرات التي طرأت على المسرح المعاصر.",
    "en": "The fourth edition of the Tunisian National Theatre Festival \"Saisons de la création\" was inaugurated on Friday evening at the Fourth Art Hall in Tunis. Until 7 November 2026, this new edition aims to combine celebration of creation, valorisation of the founding paths and reflection on the changes of contemporary theatre."
   },
-  "_events/auto/presse-webdo/2026-11-28-arts-plastiques-david-bond-de-retour-a-lespace-dart-imagin.md": {
-   "cle": "aa6d7bb31b0e",
-   "ar": "بومة مذهلة من العامة و جامعي الفنون (ديفيد بوند) سيعود قريباً بمعرض جديد في مجال الفن مجموعة (ديفيد بوند) الجديدة ستُعرض على الجمهور في 28 نوفمبر ومن المتوقع أن تجذب جمهوراً كبيراً للإستمتاع برسومات الفنان",
-   "en": "A stunned owl of the public and art collectors, David Bond will soon be back with a new exhibition at the art space Imagine, the gallery of choice for this Scottish artist who has long resided in Tunisia. David Bond's new collection will be presented to the public on November 28 and is expected to attract a large audience to enjoy the artist's drawings."
+  "_events/auto/presse-webdo/2026-11-05-galerie-millefeuilles-mourad-salem-entre-la-rose-et-lepee.md": {
+   "cle": "81e992b7faea",
+   "ar": "(مراد سالم) يعثر على صورة محل بيع الكتب والمقامر (ميلفويليس) من (مارسا) وسيفتتح معرضه يوم السبت، 7 تشرين الثاني/نوفمبر الساعة 00/17. وبعد عرضه في المعهد العالمي العربي في باريس وفي متحف بيت ليتون في لندن، يعود الفنان إلى تونس لمعرض شخصي، بعد أكثر من عشر سنوات من آخر معرض.",
+   "en": "Mourad Salem finds the picture of the bookshop and gallery Millefeuilles de la Marsa. The opening of his exhibition will take place on Saturday, November 7 at 5 p.m. After exhibiting at the Arab World Institute in Paris and the Leighton House Museum in London, the artist returns to Tunisia for a personal exhibition, more than ten years after the last one."
   },
   "_events/auto/resident-advisor/2026-11-27-nomad-man-festival-2026.md": {
    "cle": "074fdd79fce1",
@@ -918,6 +941,11 @@
    "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
+  "_events/auto/tunis-events-cinema/2026-11-10-un-monde-fragile-et-merveilleux.md": {
+   "cle": "41e0fa66ceb7",
+   "ar": "يقع (نينو) و(ياسمينا) في الحب في فناء مدرستهم في (بيروت) ويحلمون بحياتهم البالغة بعد 20 عاماً، يجدون أنفسهم بالخطأ، ومرة أخرى، الحب المجنون، المغناطيسي، الوقح. أيمكننا بناء مستقبل في بلد ممزق، نحاول أن نغادر، لكن هذا يؤخرك بشكل لا رجعة فيه؟",
+   "en": "Nino and Yasmina fall in love in the courtyard of their school in Beirut, and dream of their adult life, of a wonderful world. 20 years later, they find themselves by accident and it's again mad love, magnetic, incandescent. Can we build a future, in a fractured country, that we are trying to leave, but that holds you back irresistibly?"
+  },
   "_events/auto/tunis-events/2026-10-24-becoming-the-ocean-bim-26.md": {
    "cle": "d1b354352b89",
    "fr": "Coproduit par le Centre d'Art Contemporain Genève et la Fondation Kamel Lazaar, le BIM'26 est une plateforme dédiée au mouvement de l'image qui cherche à créer un espace durable de production artistique, d'enquête critique et de dialogue transrégional dans la majorité mondiale.\nCréation exceptionnelle en dehors de la Suisse, elle réunit une exposition à Tunis, un programme public et une publication co-éditée.\nCo-prévu par Lina Lazaar et Andrea Bellini, l'exposition réunit 16 nouveaux co-",
@@ -943,6 +971,11 @@
    "fr": "Un fabricant de contenu entre dans un endroit abandonné pour diffuser une aventure directe, collision avec un groupe d'enfants de la rue, transformant l'aventure en un conflit entre le faux monde virtuel et la cruauté de la réalité marginale.",
    "en": "A content manufacturer enters an abandoned place to broadcast a direct adventure, collision with a group of street children, turning the adventure into a clash between the virtual world's fake and the cruelty of the marginal reality."
   },
+  "_events/auto/tunis-events/2026-11-11-testosterone.md": {
+   "cle": "6ea84fc400b8",
+   "ar": "(تيستوستيرون) في مسرح (لارتيستو) والسينما، (نوف) 11 2026.",
+   "en": "Testosterone in Lartisto theatre and cinema, Nov. 11. 2026."
+  },
   "_events/auto/tunis-events/2026-11-12-regarde-moi.md": {
    "cle": "ac821b2f2db2",
    "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nVU MOIDirecteur: Nejib Belkadhi1h 36mVOSTFR",
@@ -957,11 +990,6 @@
    "cle": "ea05befc3a15",
    "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité. La chorégraphie de Selim Ben Safia traverse des gestes de résilience à travers le dabke palestinien, les rythmes tunisiens et l'alto da gamba, alors que les corps s'opposent à la paralysie par impulsion.",
    "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability. The choreography by Selim Ben Safia traverses gestures of resilience through Palestinian dabke, Tunisian rhythms, and the viola da gamba, as the bodies oppose paralysis with impulse."
-  },
-  "_events/auto/tunis-events/2026-11-21-listening-session-screening-live-performance.md": {
-   "cle": "ee6b664298c0",
-   "fr": "Routes vers Sintīr\nTania Feghali\nPremier regard sur les travaux en cours\nRoads to Sintīr est un projet de recherche à long terme sur le film et le son réalisé par Tania Feghali, en suivant les traces d'un son sans fin qui continue de se resurfacer à travers des formes, des instruments et des géographies, tout en étant profondément et subtilement connecté à un lieu qui reste intact à travers le temps et l'espace.\nLe sintīr, un luth de basse recouvert de peau prenant des noms et des formes différents à travers les latitudes, devient une métaphore pour cette quête.\nSon nom",
-   "ar": "الطرق المؤدية إلى (سينتيكر)\nتانيا فيغالي\nأول نظرة على العمل الجاري\nإن الطرق المؤدية إلى سنتيكر هي مشروع طويل الأجل للأفلام والبحوث السليمة من جانب تانيا فيغالي، بعد آثار &quot; صوت لا نهاية له &quot; الذي يتردد في أشكاله وأدواته وجغرافياته، بينما يكون متصلاً ارتباطاً عميقاً وخفياً بمكان فينا لا يزال غير مربوط عبر الزمان والمكان.\nالمُخنث، مظلة مُغطاة بالجلد تأخذ أسماءً و أشكالاً مختلفة عبر خطوط العرض، تصبح مجازاً لهذا المسعى.\nاسمه"
   },
   "_events/auto/tunis-events/2026-11-22-hyperculte.md": {
    "cle": "765042cd5525",

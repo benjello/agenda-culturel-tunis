@@ -1,5 +1,5 @@
 ---
-title: "Mémoires Récompensées : Une résidence d'écriture pour raconter Sfax autrement"
+title: "Mémoires récompensées : Une résidence d'écriture pour raconter Sfax autrement"
 date: 2026-11-03
 end_date: "2026-11-19"
 venue: "Institut français de Sfax"

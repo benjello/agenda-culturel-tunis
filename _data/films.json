@@ -944,6 +944,49 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Un monde fragile et merveilleux",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-10"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-10"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-10",
+      "heures": [
+       "19:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-10-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
   "titre": "Van Gogh",
   "id": "van-gogh",
   "image": "https://lagora.tn/wp-content/uploads/2026/10/van-gogh.jpg",
