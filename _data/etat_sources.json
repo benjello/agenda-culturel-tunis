@@ -835,9 +835,9 @@
   },
   "tn-agenda-du-jour": {
     "attente": null,
-    "dernier_passage": "2026-11-05T13:10:30",
+    "dernier_passage": "2026-11-05T18:24:46",
     "dernier_succes": "2026-11-05T07:00:49",
-    "erreur": "RuntimeError: aucun article d'agenda lisible (_par_flux: HTTPSConnectionPool(host='www.tunisienumerique.com', port=443): Read timed out. (read timeout=30); _par_api: HTTPSConnectionPool(host='www.tunisienumerique.com', port=443): Read timed out. (read timeout=30))",
+    "erreur": "RuntimeError: aucun article d'agenda lisible (_par_api: HTTPSConnectionPool(host='www.tunisienumerique.com', port=443): Read timed out. (read timeout=30))",
     "nb": 0,
     "ok": false,
     "premier_passage": "2026-11-01T11:53:01"

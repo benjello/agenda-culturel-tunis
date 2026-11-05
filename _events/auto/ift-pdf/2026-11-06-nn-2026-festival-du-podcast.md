@@ -11,8 +11,8 @@ source_name: "Institut français de Tunisie (programme PDF)"
 image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/dm0e1boxpxsyv5zghach"
 ajoute: "2026-11-05"
 festival: "podcast-days"
-doublon: true
 partenariat: true
+doublon: true
 auto: true
 ---
 

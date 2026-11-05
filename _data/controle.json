@@ -170,11 +170,6 @@
       "code": "sans_image",
       "texte": "image",
       "n": 3
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
      }
     ]
    },
@@ -525,7 +520,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 12
+      "n": 11
      }
     ]
    },
@@ -545,7 +540,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 2
      }
     ]
    }
@@ -703,7 +698,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 12
+      "n": 11
      }
     ]
    },
@@ -730,7 +725,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 2
      }
     ]
    },
@@ -761,11 +756,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 3
      }
     ]
