@@ -25,6 +25,64 @@
     return (e && e[langue]) || (langue === 'fr' && e && e.fr) || defaut;
   }
   window.t = t;
+  // ---- Libellés (lieux, adresses, festivals, descriptifs, prix…) : libelles.json, produit par scrapers/libelles.py
+  var LIBELLES = null, chargementLibelles = false;
+  var MOTIF = { ar: { debut: 'ابتداءً من', dt: 'د.ت', ed: 'الدورة %n', gratuit: 'مجاني' }, en: { debut: 'From', dt: 'TND', ed: '%n edition', gratuit: 'Free' } };
+  function ordinal(n) { var r = n % 100; if (r >= 11 && r <= 13) return n + 'th'; return n + (['th', 'st', 'nd', 'rd'][n % 10] || 'th'); }
+  function convertir(c) {
+    var m, x = MOTIF[langue];
+    if (!x) return null;
+    if (/^gratuit$/i.test(c)) return t('gratuit', x.gratuit);
+    if ((m = c.match(/^(?:À partir de|A partir de)\s+([\d.,]+)\s*DT$/i))) return x.debut + ' ' + m[1] + ' ' + x.dt;
+    if ((m = c.match(/^([\d.,]+)\s*DT$/i))) return m[1] + ' ' + x.dt;
+    if ((m = c.match(/^(\d+)(?:e|er|ère|ème)\s+édition(.*)$/i))) return (langue === 'en' ? ordinal(+m[1]) + ' edition' : x.ed.replace('%n', m[1])) + (m[2] || '');
+    return null;
+  }
+  var SPECIAUX = { 'Lieu à préciser': 'lieu_preciser', 'voir l\'annonce': 'voir_annonce', 'voir l\'article': 'voir_article' };
+  function chercher(c, niveau) {
+    var e = LIBELLES && LIBELLES[c], k = SPECIAUX[c], m;
+    if (k) return t(k, null);
+    if (e && e[langue]) return e[langue];
+    var r = convertir(c);
+    if (r) return r;
+    if ((m = c.match(/^(.*?)\s*(\(\d+(?:e|er|ère|ème)\s+édition\))$/i)) && m[1]) {
+      var a = chercher(m[1], niveau + 1), b = convertir(m[2].slice(1, -1));
+      if (a || b) return (a || m[1]) + ' (' + (b || m[2].slice(1, -1)) + ')';
+    }
+    if (niveau > 1) return null;
+    var seps = [' · ', ', '];
+    for (var i = 0; i < seps.length; i++) {
+      var parts = c.split(seps[i]);
+      if (parts.length > 1) {
+        var change = false, sortie = parts.map(function (p) { var x = chercher(p.trim(), niveau + 1); if (x) change = true; return x || p; });
+        if (change) return sortie.join(seps[i]);
+      }
+    }
+    return null;
+  }
+  function appliquerLibelles() {
+    if (langue !== 'fr' && !LIBELLES && !chargementLibelles) {
+      chargementLibelles = true;
+      fetch((window.BASE || '/') + 'libelles.json').then(function (r) { return r.json(); })
+        .then(function (j) { LIBELLES = j || {}; traduire(); }).catch(function () { LIBELLES = {}; });
+    }
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        var p = n.parentNode;
+        return !p || /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA)$/.test(p.nodeName) || (p.closest && p.closest('[data-t],[data-tn],[data-th],[data-tr-fr],[data-tr-en],[data-tr-ar],[data-tr-bloc],[data-tr-origine],.titre-orig')) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var noeuds = [], n;
+    while ((n = w.nextNode())) noeuds.push(n);
+    noeuds.forEach(function (nd) {
+      if (nd._orig === undefined) nd._orig = nd.nodeValue;
+      var o = nd._orig, m = o.match(/^([\s·•|,:–—-]*)([\s\S]*?)([\s·•|,:–—-]*)$/);
+      if (!m || !m[2]) return;
+      var r = langue !== 'fr' ? chercher(m[2], 0) : null;
+      var v = r ? m[1] + r + m[3] : o;
+      if (nd.nodeValue !== v) nd.nodeValue = v;
+    });
+  }
   function traduire() {
     d.lang = langue; d.dir = langue === 'ar' ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-t]').forEach(function (el) {
@@ -74,6 +132,12 @@
       var v = decoder(el.dataset[cle]);
       el.textContent = v || el._orig;
       if (v) el.setAttribute('lang', langue); else el.removeAttribute('lang');
+      // seul le titre garde sa langue d'origine : on l'affiche à côté de sa traduction
+      if (el.matches('h1,h3 a')) {
+        var o = el._origTitre;
+        if (v && !o) { o = el._origTitre = document.createElement('span'); o.className = 'titre-orig'; o.setAttribute('dir', 'auto'); el.insertAdjacentElement('afterend', o); }
+        if (o) { o.textContent = v ? el._orig : ''; o.hidden = !v; }
+      }
     });
     var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false, original = window._voirOriginal === true;
     blocs.forEach(function (b) { b.hidden = original || b.dataset.trBloc !== langue; traduit = traduit || b.dataset.trBloc === langue; });
@@ -83,6 +147,12 @@
     document.querySelectorAll('.voir-original').forEach(function (b) {
       b.hidden = !traduit;
       b.textContent = original ? t('voir_traduction', 'Voir la traduction') : t('voir_original', 'Voir le texte d\'origine');
+    });
+    appliquerLibelles();
+    document.querySelectorAll('a.carte[data-q]').forEach(function (a) {
+      if (a.href.indexOf('geo:') === 0) return;
+      if (a._href === undefined) a._href = a.getAttribute('href');
+      a.setAttribute('href', langue === 'fr' || a._href.indexOf('openstreetmap.org/search') < 0 ? a._href : a._href + '&locale=' + langue);
     });
     document.querySelectorAll('[data-langue]').forEach(function (b) { b.classList.toggle('active', b.dataset.langue === langue); });
     document.dispatchEvent(new CustomEvent('langue', { detail: langue }));

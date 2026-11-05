@@ -138,12 +138,12 @@ layout: default
   {%- assign programmes = site.data.programmes | default: empty -%}
   {%- if programmes.size > 0 %}
   <section class="programmes">
-    <h2>Programmes publiés sur Facebook</h2>
+    <h2 data-t="programmes_facebook">Programmes publiés sur Facebook</h2>
     {%- for entry in programmes -%}{%- assign c = entry[1] -%}
     {%- if c.publications.size > 0 %}{% assign p = c.publications[0] %}
     <details class="programme" data-publie="{{ p.date }}">
-      <summary>{{ c.nom }} · publié le {% include date-fr.html date=p.date %}</summary>
-      <p><a href="{{ p.lien }}" rel="noopener">Voir la publication sur Facebook</a></p>
+      <summary>{{ c.nom }} · <span data-t="publie_le">publié le</span> {% include date-fr.html date=p.date %}</summary>
+      <p><a href="{{ p.lien }}" rel="noopener" data-t="voir_publication">Voir la publication sur Facebook</a></p>
       {%- for img in p.images %}<img class="programme-image" src="{{ img | relative_url }}" alt="Programme de {{ c.nom }}" loading="lazy">{% endfor %}
       {%- if p.texte != "" %}<p class="programme-texte">{{ p.texte | escape | truncate: 600 | newline_to_br }}</p>{% endif %}
     </details>
@@ -193,8 +193,8 @@ layout: default
   document.querySelectorAll('#agenda .event').forEach(function (el) {
     if (el.dataset.debut < today && el.dataset.date >= today) {
       var fin = el.dataset.date.split('-');
-      el.querySelector('.event-date').innerHTML = '<span class="jusqu">jusqu’au</span><span class="day">' +
-        (+fin[2]) + '</span><span class="mon">' + MOIS_C[+fin[1] - 1] + '</span>';
+      el.querySelector('.event-date').innerHTML = '<span class="jusqu" data-t="jusquau">jusqu’au</span><span class="day">' +
+        (+fin[2]) + '</span><span class="mon" data-mc="' + (+fin[1]) + '">' + MOIS_C[+fin[1] - 1] + '</span>';
       el.classList.add('en-cours');
       enCours.appendChild(el);
     }
