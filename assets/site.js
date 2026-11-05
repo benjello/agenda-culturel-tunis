@@ -440,8 +440,13 @@
       bulle.style.left = x + 'px'; bulle.style.top = y + 'px';
     }
   }
+  // Certains navigateurs (Firefox avec protection renforcée, écrans tactiles + souris…) annoncent mal (any-hover) :
+  // on se fie aussi au type du dernier pointeur vu (souris ou stylet = survol possible, doigt = non).
+  var sourisVue = false;
+  document.addEventListener('pointerover', function (ev) { sourisVue = ev.pointerType === 'mouse' || ev.pointerType === 'pen'; }, true);
+  function survolPossible() { return sourisVue || peutSurvoler.matches; }
   document.addEventListener('mouseover', function (ev) {
-    if (!peutSurvoler.matches) return;
+    if (!survolPossible()) return;
     var c = ev.target.closest && ev.target.closest('.event');
     if (!c || c.classList.contains('event-page') || c.closest('.apercu')) { return; }
     if (c === ev.relatedTarget || c.contains(ev.relatedTarget)) return;
@@ -449,7 +454,7 @@
     delaiBulle = setTimeout(function () { montrerBulle(c, false); }, 450);
   });
   document.addEventListener('mouseout', function (ev) {
-    if (!peutSurvoler.matches) return;
+    if (!survolPossible()) return;
     var c = ev.target.closest && ev.target.closest('.event');
     if (!c || c.contains(ev.relatedTarget)) return;
     fermerBulle();
