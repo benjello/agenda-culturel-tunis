@@ -14,6 +14,10 @@ depot: "https://github.com/benjello/agenda-culturel-tunis"
 # Adresse e-mail pour proposer un événement ou signaler une erreur sans compte GitHub (vide : pas de bouton e-mail)
 contact_email: ""
 
+# Plan du site (sitemap.xml) généré par GitHub Pages
+plugins:
+  - jekyll-sitemap
+
 collections:
   events:
     output: true

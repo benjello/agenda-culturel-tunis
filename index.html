@@ -462,3 +462,14 @@ layout: default
   choisir(document.querySelector('#filters button[data-filter="' + h + '"]') ? h : 'all');
 })();
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "inLanguage": ["fr", "ar", "en"]
+}
+</script>

@@ -72,6 +72,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 
 ## Fait
 
+- Référencement : plan du site (`sitemap.xml`), balises canonique, Open Graph et Twitter, données structurées `Event` (fiches) et `WebSite` (accueil).
 - Site Jekyll sur GitHub Pages, dates en français, événements passés masqués.
 - Registre des sources et page Sources avec l'état de chacune (à jour, en panne, en attente).
 - Scrapers génériques : `jsonld`, `rss`, `ical`, `liste_fiches` ; spécifiques : `teskerti`,
@@ -115,6 +116,8 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 - [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
 
 ## À faire
+
+- [ ] Référencement : déclarer le site dans Google Search Console et Bing Webmaster, puis soumettre `sitemap.xml` (action de Mahdi, #127).
 
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
