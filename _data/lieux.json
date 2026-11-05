@@ -14,13 +14,13 @@
   "Institut français de Tunis": "institut-francais-de-tunis",
   "Institut français de Sfax": "institut-francais-de-sfax",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
-  "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "VOX Café, Institut français de Sousse": "vox-cafe-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
   "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
   "Théâtre municipal, Institut français de Tunisie, Sfax -": "theatre-municipal-institut-francais-de-tunisie-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
+  "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
@@ -39,14 +39,11 @@
   "Shanti": "shanti",
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Théâtre Le 4ème Art": "theatre-le-4eme-art",
-  "Studio B52": "studio-b52",
-  "Steps Club Sousse": "steps-club-sousse",
   "One Resort": "one-resort",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
-  "Grafiflow": "grafiflow",
   "CinéMadart": "cinemadart",
   "Pathé Azur City": "pathe-azur-city",
   "Douz": "douz",
@@ -95,7 +92,7 @@
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 18
+   "n": 17
   },
   {
    "slug": "lagora-la-marsa",
@@ -113,7 +110,7 @@
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 10
+   "n": 9
   },
   {
    "slug": "galerie-institut-francais-de-sousse",
@@ -134,24 +131,6 @@
    "n": 7
   },
   {
-   "slug": "theatre-municipal-de-tunis",
-   "nom": "Théâtre municipal de Tunis",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.79911,
-   "lon": 10.18081,
-   "n": 7
-  },
-  {
-   "slug": "el-teatro",
-   "nom": "El Teatro",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.81393,
-   "lon": 10.17371,
-   "n": 6
-  },
-  {
    "slug": "mediatheque-institut-francais-de-sfax",
    "nom": "Médiathèque, Institut français de Sfax",
    "type": "bibliotheque",
@@ -161,12 +140,21 @@
    "n": 6
   },
   {
-   "slug": "theatre-le-4eme-art",
-   "nom": "Théâtre Le 4ème Art",
+   "slug": "theatre-municipal-de-tunis",
+   "nom": "Théâtre municipal de Tunis",
    "type": "theatre",
    "ville": "tunis",
-   "lat": 36.80189,
-   "lon": 10.18123,
+   "lat": 36.79911,
+   "lon": 10.18081,
+   "n": 6
+  },
+  {
+   "slug": "el-teatro",
+   "nom": "El Teatro",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.81393,
+   "lon": 10.17371,
    "n": 5
   },
   {
@@ -188,12 +176,12 @@
    "n": 4
   },
   {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
+   "slug": "theatre-le-4eme-art",
+   "nom": "Théâtre Le 4ème Art",
+   "type": "theatre",
    "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
+   "lat": 36.80189,
+   "lon": 10.18123,
    "n": 4
   },
   {
@@ -204,15 +192,6 @@
    "lat": 36.854,
    "lon": 10.324,
    "n": 4
-  },
-  {
-   "slug": "beit-al-hikma-carthage",
-   "nom": "Beit al-Hikma, Carthage",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 35.6619,
-   "lon": 10.08999,
-   "n": 3
   },
   {
    "slug": "cite-des-sciences-de-tunis",
@@ -260,21 +239,30 @@
    "n": 3
   },
   {
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
+   "ville": "tunis",
+   "lat": 34.59926,
+   "lon": 9.59188,
+   "n": 3
+  },
+  {
+   "slug": "beit-al-hikma-carthage",
+   "nom": "Beit al-Hikma, Carthage",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 35.6619,
+   "lon": 10.08999,
+   "n": 2
+  },
+  {
    "slug": "institut-francais-de-tunisie",
    "nom": "Institut français de Tunisie",
    "type": "centre",
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 2
-  },
-  {
-   "slug": "institut-francais-de-sousse",
-   "nom": "Institut français de Sousse",
-   "type": "centre",
-   "ville": "sousse",
-   "lat": 35.829,
-   "lon": 10.638,
    "n": 2
   },
   {
@@ -311,6 +299,15 @@
    "ville": "sfax",
    "lat": 36.79911,
    "lon": 10.18081,
+   "n": 1
+  },
+  {
+   "slug": "institut-francais-de-sousse",
+   "nom": "Institut français de Sousse",
+   "type": "centre",
+   "ville": "sousse",
+   "lat": 35.829,
+   "lon": 10.638,
    "n": 1
   },
   {

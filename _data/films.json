@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
@@ -22,7 +21,6 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -30,12 +28,6 @@
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-05",
       "heures": [
@@ -75,7 +67,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -91,20 +82,12 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08"
     ],
     "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "18:45",
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-05",
       "heures": [
@@ -133,9 +116,9 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-04-bakma.md",
+   "_events/auto/cine-agora/2026-11-05-bakma.md",
    "_events/auto/cine-alhambra/2026-11-04-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-04-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-05-bakma-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-05-bakma.md"
   ],
   "tunisien": true,
@@ -148,7 +131,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -160,7 +143,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
@@ -200,7 +182,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -243,7 +224,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -255,7 +236,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
@@ -270,7 +250,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -286,16 +265,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-07"
     ],
     "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "21:00"
-      ]
-     },
      {
       "jour": "2026-11-07",
       "heures": [
@@ -306,9 +278,9 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-04-dar-el-3ers.md",
+   "_events/auto/cine-agora/2026-11-07-dar-el-3ers.md",
    "_events/auto/cine-alhambra/2026-11-04-dar-el-3ers.md",
-   "_events/auto/tunis-events-cinema/2026-11-04-dar-el-3ers-l-agora-marsa.md"
+   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -403,7 +375,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
@@ -417,7 +388,6 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -452,7 +422,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-04-dar-el-3ers.md"
+   "_events/auto/tunis-events-cinema/2026-11-05-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -505,7 +475,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-05",
    "2026-11-06",
    "2026-11-07",
@@ -520,7 +489,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-04",
      "2026-11-05",
      "2026-11-06",
      "2026-11-07",
@@ -818,45 +786,6 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Malfaisante"
  },
  {
-  "titre": "Projection-débat autour du film La Meule (قلب الرحى)",
-  "id": "projection-debat-autour-du-film-la-meule",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/muku7p8ktxbgsj5804cw",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-04"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Sousse",
-    "adresse": "Institut français de Sousse 15 rue Hamed Ghazali",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6510",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-04"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "19:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-04-projection-debat-autour-du-film-la-meule.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie à Sousse vous invite à une projection-débat du film La Meule (قلب الرحى) en présence du réalisateur Fredj Trabelsi.\nRésumé : (VOSTFR)\nRachid retourne dans son village natal, là où tout a commencé. Mais quelque chose en lui se défait. Lentement.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "REGARDE MOI",
   "id": "regarde-moi",
   "image": "https://tunis.events/storage/d935fc22e6010a3802d5dc300358def32.jpg",
@@ -1109,7 +1038,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-04",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
@@ -1123,19 +1051,12 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-04",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-06",
       "heures": [
@@ -1164,50 +1085,10 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-04-what-else.md"
+   "_events/auto/tunis-events-cinema/2026-11-06-what-else.md"
   ],
   "tunisien": true,
   "jeune": false,
   "presse": []
- },
- {
-  "titre": "What else ? (فانا محط بش تتحط ؟)",
-  "id": "what-else",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/cwa4mthbydqq9vbtkaby",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-04"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6509",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-04"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-04",
-      "heures": [
-       "18:30"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-04-what-else.md"
-  ],
-  "tunisien": true,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie vous propose la projection du film What else ? (فانا محط باش تتحط ؟) de Nada Mezni Hefaiedh, en présence de l'équipe du film.\nRésumé : (VOSTFR)\nÀ Tunis, Farah et Mourad voient leurs projets d’avenir vaciller sous le poids de déceptions inattendues. Chacun tente de tourner la page et de retrouver ses repères, lorsqu’un concours de circonstances les réunit.",
-  "synopsis_source": "",
-  "synopsis_url": ""
  }
 ]

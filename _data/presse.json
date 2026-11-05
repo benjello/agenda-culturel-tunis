@@ -17,8 +17,8 @@
   "source": "presse-webdo",
   "source_nom": "Webdo",
   "date": "2026-11-04",
-  "debut": "2026-11-04",
-  "fin": "2026-11-04",
+  "debut": "2026-12-12",
+  "fin": "2026-12-12",
   "lieu": "Central"
  },
  {
@@ -41,6 +41,17 @@
   "date": "2026-11-04",
   "debut": "2026-11-04",
   "fin": "2026-11-04",
+  "lieu": ""
+ },
+ {
+  "titre": "« L’intellectuel et l’IA : Une liaison dangereuse » | Décryptage avec le Pr Abdelaziz Kacem",
+  "evenement": "L’intellectuel et l’IA : Une liaison dangereuse",
+  "lien": "https://kapitalis.com/tunisie/2026/11/04/lintellectuel-et-lia-une-liaison-dangereuse-decryptage-avec-le-pr-abdelaziz-kacem/",
+  "source": "presse-kapitalis",
+  "source_nom": "Kapitalis (culture)",
+  "date": "2026-11-04",
+  "debut": "2026-11-06",
+  "fin": "2026-11-06",
   "lieu": ""
  },
  {

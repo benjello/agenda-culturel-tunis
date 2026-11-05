@@ -1,5 +1,5 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "corriges": 1,
  "a_verifier": [
   {
@@ -137,20 +137,20 @@
  "granularite": {
   "sources": {
    "beit-al-hikma": {
-    "n": 2,
-    "precis": 2,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 1
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 1
      }
     ]
    },
@@ -190,6 +190,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 3
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 3
      }
     ]
@@ -292,9 +297,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 57,
-    "precis": 18,
-    "pourcent": 32,
+    "n": 54,
+    "precis": 16,
+    "pourcent": 30,
     "defauts": [
      {
       "code": "titre_generique",
@@ -305,8 +310,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 39,
-      "exemple": "L’Heure du Jeu"
+      "n": 38,
+      "exemple": "Le tube de R Coolidge"
      },
      {
       "code": "expo_sans_fin",
@@ -324,7 +329,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 39
+      "n": 38
      },
      {
       "code": "sans_notice",
@@ -557,9 +562,9 @@
     ]
    },
    "resident-advisor": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
@@ -568,64 +573,66 @@
       "exemple": "Nōmad Man Festival 2026"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "teskerti": {
-    "n": 12,
-    "precis": 12,
+    "n": 9,
+    "precis": 9,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 12
+      "n": 9
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 11
+      "n": 9
      }
     ]
    },
    "tunis-events": {
-    "n": 12,
-    "precis": 12,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "tunis-events-cinema": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    }
   },
   "scrapers": {
+   "resident_advisor": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Nōmad Man Festival 2026"
+     }
+    ],
+    "manques": []
+   },
    "pdf_programme": {
-    "n": 57,
-    "precis": 18,
-    "pourcent": 32,
+    "n": 54,
+    "precis": 16,
+    "pourcent": 30,
     "defauts": [
      {
       "code": "titre_generique",
@@ -636,8 +643,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 39,
-      "exemple": "L’Heure du Jeu"
+      "n": 38,
+      "exemple": "Le tube de R Coolidge"
      },
      {
       "code": "expo_sans_fin",
@@ -655,7 +662,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 39
+      "n": 38
      },
      {
       "code": "sans_notice",
@@ -697,26 +704,6 @@
       "code": "sans_notice",
       "texte": "notice",
       "n": 3
-     }
-    ]
-   },
-   "resident_advisor": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Nōmad Man Festival 2026"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
      }
     ]
    },
@@ -772,34 +759,28 @@
      }
     ]
    },
+   "tunis_events": {
+    "n": 10,
+    "precis": 10,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
    "teskerti": {
-    "n": 12,
-    "precis": 12,
+    "n": 9,
+    "precis": 9,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 12
+      "n": 9
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 11
-     }
-    ]
-   },
-   "tunis_events": {
-    "n": 12,
-    "precis": 12,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
+      "n": 9
      }
     ]
    },
@@ -811,33 +792,33 @@
     "manques": []
    },
    "tunis_events_cinema": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    },
    "rss": {
-    "n": 4,
-    "precis": 4,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 2
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
+      "n": 3
      }
     ]
    },
@@ -850,6 +831,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 3
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 3
      }
     ]

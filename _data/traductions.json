@@ -84,10 +84,6 @@
    "ar": "نشر المعرفة",
    "en": "Dissemination of knowledge"
   },
-  "Disco baghded": {
-   "ar": "Disco Baghaded",
-   "en": "Disco Baghaded"
-  },
   "Discussion avec Elgas": {
    "ar": "المناقشة مع إلغاز",
    "en": "Discussion with Elgas"
@@ -103,10 +99,6 @@
   "Exposition à Carthage | Saint-Augustin et l’héritage chrétien de la Tunisie": {
    "ar": "Exhibition in Carthage, St. أوغستين والتراث المسيحي لتونس",
    "en": "Exhibition in Carthage, St. Augustine and the Christian heritage of Tunisia"
-  },
-  "Eya Daghnouj Fi Hadhret El Mougy": {
-   "ar": "Eya Daghnouj Fi Hadhret El Mougy",
-   "en": "Eya Daghnouj Fi Hadhret El Mougy"
   },
   "Fabrika Festival 14": {
    "fr": "Fabrika Festival 14",
@@ -244,10 +236,6 @@
    "ar": "رسم درجة الماجستير بعد أن كان نموذجاً حياً",
    "en": "Masterclass drawing after living model"
   },
-  "Mort Express": {
-   "ar": "مسلسل الموت",
-   "en": "Death Express"
-  },
   "Musique électronique live : Fréquences croisées, entre Tunis & Düsseldorf": {
    "fr": "Musique électronique live : Créquences croisées, entre Tunis & Düsseldorf",
    "ar": "Musique électronique live : Fréquences croisées, entre Tunis &apos; Düsseldorf"
@@ -259,10 +247,6 @@
   "Nōmad Man Festival 2026": {
    "fr": "Festival de l'Homme Nōmad 2026",
    "ar": "مهرجان نجوم مان 2026"
-  },
-  "ONWRD/FRWRD": {
-   "ar": "ONWRD/FRWRD",
-   "en": "ONWRD/FRWRD"
   },
   "Oliv'Alliance : L'Olivier, trait d'union de la Méditerranée": {
    "ar": "أوليفر، معاهدة اتحاد البحر الأبيض المتوسط",
@@ -336,10 +320,6 @@
    "ar": "تحت الأرض/ضد؛",
    "en": "Undertow / Against; Current"
   },
-  "Une nuit d'automne": {
-   "ar": "ليلة الخريف",
-   "en": "Autumn night"
-  },
   "Village Environnemental": {
    "ar": "القرية البيئية",
    "en": "Environmental Village"
@@ -351,10 +331,6 @@
   "Watch Party Gaming": {
    "fr": "Regarder les jeux de fête",
    "ar": "مشاهدة الحزب الراقص"
-  },
-  "Yoga for Busy Minds with Judit @yoga_in_sidibousaid": {
-   "fr": "Yoga pour les esprits occupés avec Judit @yoga_in_sidibousaid",
-   "ar": "Yoga for Busy Minds with Judit @yoga_in_sidibousaid"
   },
   "un Monde Merveilleux": {
    "ar": "عالم رائع",
@@ -376,40 +352,31 @@
    "fr": "Les écrans de saison... La mémoire du théâtre tunisien est à l'écran.",
    "en": "The season screens... The Tunisian theater memory is on the screen."
   },
-  "مائدة مستديرة حول : البحر الأبيض المتوسط بحر من الكنوز التراثيّة": {
-   "fr": "Table ronde sur le thème: Mer Méditerranée des trésors du patrimoine",
-   "en": "Round table on: Mediterranean Sea of Heritage treasures"
-  },
   "محاضرة: تحولات الكتابة الأثرية والتراثية في تونس: من الإرث الاستعماري إلى تجديد المقاربات المعرفية للأستاذ فوزي محفوظ": {
    "fr": "Conférence : Transformations archéologiques et génétiques en Tunisie : de l'héritage colonial au renouveau des approches cognitives du professeur Fawzi réservé",
    "en": "Lecture: Archaeological and genetic transformations in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi reserved"
   }
  },
  "notices": {
-  "_events/auto/beit-al-hikma/2026-11-04-evenement.md": {
-   "cle": "f175ad716a9f",
-   "fr": "Webdo 04-11-2026 En ligne 29-10-2026 Albums, L'article Table ronde sur: Mer Méditerranée des trésors du patrimoine – 4 novembre 2026 est apparu en premier sur Beit al-Hikma.",
-   "en": "Webdo 04-11-2026 Online 29-10-2026 Albums, L’article Round Table on: Mediterranean Sea of Heritage treasures – 4 November 2026 est apparu en premier sur Beit al-Hikma."
-  },
   "_events/auto/beit-al-hikma/2026-11-13-evenement.md": {
    "cle": "e9b0f1e0ee82",
    "fr": "Le résumé couvre les changements dans l'histoire et le patrimoine de la Tunisie depuis la fin du XIXe siècle, à travers l'évolution des programmes de recherche et de ses problèmes, [...] L'article conférence: les transformations de l'écriture ancienne et génétique en Tunisie: de l'héritage colonial au renouvellement des approches cognitives du professeur Fawzi, tenue le 13 novembre 2026 est apparu en premier sur Beit al-Hikma.",
    "en": "The summary covers the changes in the history and heritage of Tunisia since the late nineteenth century, through the evolution of research curricula and its problems, [...] L’article lecture: the transformations of ancient and genetic writing in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi, held on 13 November 2026 est apparu en premier sur Beit al-Hikma."
   },
-  "_events/auto/cine-agora/2026-11-04-bakma.md": {
+  "_events/auto/cine-agora/2026-11-05-bakma.md": {
    "cle": "bd01c3eb7145",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة أعضاؤه تم قطع رأسهم واختفى في مكانه القاتل كان يتستر على رأس كلب",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, in its place, the murderer grotesquely sewn a dog's head."
-  },
-  "_events/auto/cine-agora/2026-11-04-dar-el-3ers.md": {
-   "cle": "e87e429df307",
-   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز عُقد في سبيل القيام، بصورة سرية، بتوقيع اتفاق بشأن الالتزامات المتعلقة باستحقاقات السفر",
-   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers! عا的ل的ان لا 简شبه 的حداهما ال的ر体"
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مفترسة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة. أعضاؤه تم قطع رأسها واختفى وبدلا من ذلك، القاتل يتستر على رأس كلب",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, instead, the murderer grotesquely sewn a dog's head."
   },
   "_events/auto/cine-agora/2026-11-05-les-miserables.md": {
    "cle": "af3404a1ef36",
    "ar": "(جان فالجان) قرر أن يغير حياته وأن يبلي حسناً حوله تحت هوية زائفة، يصبح مع مرور الوقت احتراماً ملحوظاً للجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، وعد بأن ينقذ ابنته (كوسيت) من مخالب (الثنارديه) القاسية. لكن ماضيه يلحق به: المفتش جافرت، شرطي لا يطاق في الماضي، عذب أيضاً، يطارده بلا هوادة لإعادته إلى المشنقة.",
    "en": "Freed after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, it becomes over time a notable respected of all. Coming to help Fantine, a dying worker, he promised to save his daughter, Cosette, from the claws of the cruel Thénardier. But his past catch up with him: Inspector Javert, an implacable policeman in the past, also tormented, hunts him unabated to send him back to the gallows."
+  },
+  "_events/auto/cine-agora/2026-11-07-dar-el-3ers.md": {
+   "cle": "e87e429df307",
+   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد، والمنافسات، سوء الفهم والأوضاع المضحكة، هذا الإتحاد يَعِدُ بأَنْ لا يَكُونَ من أيّ راحة... لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز وإذا لم يكن الشخص الوحيد الذي يتأكد من هذا، فإنه ليس الوحيد الذي يتأكد من ذلك، فهو الوحيد الذي يمكنه أن يفعل ذلك.",
+   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come discover it at the cinema in Dar El 3ers! عا Whilst not the only one to be sure about this, it is not the only one to be sure about this, it is the only one to be able to do so."
   },
   "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md": {
    "cle": "a66053e9d573",
@@ -540,21 +507,6 @@
    "cle": "204bc2b098eb",
    "ar": "وفي الفترة من 3 إلى 19 تشرين الثاني/نوفمبر، يرحب المعهد الفرنسي لتونس في فاكس بفيرونيك ويلمان وسان أوادا جالو كجزء من كتابات الإقامة المخصصة لاكتشاف التراث والثراء الثقافي والفني في مدينة سفاكس وتطهيره.",
    "en": "From 3 to 19 November, the French Institute of Tunisia in Sfax welcomes Véronique Willmann and Sawsan Awada Jalu as part of a writing residency dedicated to the discovery and valorisation of the heritage, cultural and artistic richness of the city of Sfax."
-  },
-  "_events/auto/ift-pdf/2026-11-04-lheure-du-jeu.md": {
-   "cle": "11a1e0f79144",
-   "ar": "تعالوا و شاركوا لحظة من الراحة حيث الجميع حر في اختيار اللعبة التي يريدونها واللعب على سرعتهم، لوحدهم أو مع الآخرين",
-   "en": "Come and share a moment of relaxation where everyone is free to choose the game they want and play at their own pace, alone or with others."
-  },
-  "_events/auto/ift-pdf/2026-11-04-projection-debat-autour-du-film-la-meule.md": {
-   "cle": "59762c5fe977",
-   "ar": "المعهد الفرنسي لتونس في سوس يدعوكم إلى عرض فيلم لا ميول بحضور المدير فريدي ترابلسى\nموجز: (الصندوق الاستئماني للتعاون التقني)\nراشيد يعود إلى قريته الأصلية حيث بدأ كل شيء\nلكن شيئاً ما بداخله لا يتقاعد\nببطئ\nمع مرض الزهايمر، ينزلق تدريجيا من نفسه، بينما أولئك الذين يحبون مساعدة لا حول لها في فترة راحته.",
-   "en": "The French Institute of Tunisia in Sousse invites you to a screening-debate of the film La Meule in the presence of director Fredj Trabelsi.\nSummary: (VOSTFR)\nRachid returns to his native village, where it all started.\nBut something in him is untiring.\nSlowly.\nWith Alzheimer's disease, he gradually slides out of himself, while those who love helplessly assist in his erasure."
-  },
-  "_events/auto/ift-pdf/2026-11-04-what-else.md": {
-   "cle": "e3ff63ee8bcd",
-   "ar": "ويقترح المعهد الفرنسي لتونس عرض الفيلم ماذا أيضاً؟\nندا مزيني هيفايده، في حضور فريق الفيلم، هو في حضور ندا مزيني هيفايده.\nموجز: (الصندوق)\nIn Tunis, Farah and Mourad see their plans for the future waver under the weight of expected disappointeds.\nالجميع يحاول تحويل الصفحة و العثور على مكعباتهم عندما تجمعهم منافسة من الظروف\nما يبدو أنه مجرد لقاء عابر قريباً أخذ تحولاً غير متوقع",
-   "en": "The French Institute of Tunisia proposes the screening of the film What else?\nNada Mezni Hefaiedh, in the presence of the film team, is in the presence of Nada Mezni Hefaiedh.\nSummary: (VOSTFR)\nIn Tunis, Farah and Mourad see their plans for the future waver under the weight of unexpected disappointments.\nEveryone tries to turn the page and find their cues, when a contest of circumstances brings them together.\nWhat seemed to be just a passing encounter soon took an unexpected turn."
   },
   "_events/auto/ift-pdf/2026-11-05-kteb-tounsi-rencontre-debat-avec-abdelhamid-largueche.md": {
    "cle": "3ee3102caaea",
@@ -936,16 +888,6 @@
    "ar": "بومة مذهلة من العامة و جامعي الفنون (ديفيد بوند) سيعود قريباً بمعرض جديد في مجال الفن مجموعة (ديفيد بوند) الجديدة ستُعرض على الجمهور في 28 نوفمبر ومن المتوقع أن تجذب جمهوراً كبيراً للإستمتاع برسومات الفنان",
    "en": "A stunned owl of the public and art collectors, David Bond will soon be back with a new exhibition at the art space Imagine, the gallery of choice for this Scottish artist who has long resided in Tunisia. David Bond's new collection will be presented to the public on November 28 and is expected to attract a large audience to enjoy the artist's drawings."
   },
-  "_events/auto/resident-advisor/2026-11-03-onwrd-frwrd.md": {
-   "cle": "17b6718a74ab",
-   "fr": "Ligne : Gusik\nONWRD FRWRD 1ère édition présentée par Dove Molotov b2b avec Gusik.\nMontrant le nouveau son du centre-ville de Tunis avec un nouveau système de son dub fait main.\nBasse, pauses, dub techno, et tout entre les deux.\nPousser le vrai son souterrain de la ville un pas à la fois.\n03/11 studio b52",
-   "ar": "Line-up : Gusik\nONWRD FRWRD 1st Edition presented by Dove Molotov b2b with Gusik.\nعرض الصوت الجديد في وسط مدينة تونس مع دوب جديد مصنوع يدوياً\n(باس) ، إستراحة ، (دوب تينو) وكل شيء بينه\nدفع الصوت الأرضي الحقيقي للمدينة خطوة واحدة في كل مرة\n03/11 استوديو b52"
-  },
-  "_events/auto/resident-advisor/2026-11-04-disco-baghded.md": {
-   "cle": "a88896a49aaa",
-   "fr": "Ligne : Mercredi\nDISCO BAGHDED revient pour son 2ème anniversaire!\nNous nous réunissons une fois de plus sous la fréquence de l'exploration sonore pour célébrer 2 ans de musique, d'énergie et de communauté.\nMarquez vos dates, entrez dans le rite, et laissez le bruit dehors.\nLINEUP: 99 : @skoutchi99 ORLOK : @marouthedude APACHON : @apachon_ N_O_M_A_D : @an0uar0 KALEIDO B2B MONK : @saafussa @ach_ref_999 7AGUI B2B KAMPER : @7aguii @_kamer_0 Rendez-vous à l'étage.\nRespectez l'espace, respectez-vous les uns les autres.\nLaissez voyager l'esprit",
-   "ar": "السطر: الأربعاء\nعودة (إيسكو باغيد) للذكرى السنوية الثانية\nإننا نجتمع مرة أخرى تحت تردد الاستكشاف الصوتي للاحتفال بسنتين من الموسيقى والطاقة والمجتمع.\nضعوا تواريخكم، وادخلوا إلى الطقوس، واتركوا الضوضاء في الخارج.\nLINEUP: 99 : @skoutchi99 ORLOK : @marouthedude APACHON : @apachon_ N_O_M_A_D : @an0uar0 KALEIDO B2B MONK : @saafussa @ach_ref_999 7AGUI B2B KAMPER : @7aguii\nإحترام للفضاء، إحترام بعضهم البعض.\nدع العقل يسافر"
-  },
   "_events/auto/resident-advisor/2026-11-27-nomad-man-festival-2026.md": {
    "cle": "074fdd79fce1",
    "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
@@ -956,20 +898,10 @@
    "ar": "مُراقبون مُراقبون مُراقبون مُراقبون يُقدّرون مُراقبون\nملاحظة: سيصور البرنامج ويسجله المنظم بالفيديو.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show.",
    "en": "اعلان هام: سيلم Whilst العرs العرs العرs العرs العرs النs النs النs الs مs مs الs مs مs مs مs مs ن الs ومs الs الs مs مs الs مs مs مs مs مs مs مs مs الs مs مs مs وs وs اsاs اsاs مs اsيدs اsيs وs مs مs مs مs مs مs مs مs مs مs مs مs مs مs اsاsاsاsاsيsيsيsوs وs ا\nIMPORTANT NOTICE: The show will be filmed and recorded in video by the organizer.\nThe public is informed that he will also be able to appear on photographs and videos taken during the show."
   },
-  "_events/auto/tunis-events-cinema/2026-11-04-bakma.md": {
-   "cle": "80243900e2cb",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-04-dar-el-3ers.md": {
-   "cle": "bf37d01ad643",
-   "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد والمنافسات و سوء الفهم و الحالات المضحكة هذا الإتحاد يتعهد بألا يكون من أي راحة لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز",
-   "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come and discover it at the cinema in Dar El 3ers!"
-  },
   "_events/auto/tunis-events-cinema/2026-11-05-bakma.md": {
-   "cle": "94b2ba3b975b",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
+   "cle": "80243900e2cb",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مفترسة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
   },
   "_events/auto/tunis-events-cinema/2026-11-05-les-miserables.md": {
    "cle": "ee91f75d6d1e",
@@ -995,16 +927,6 @@
    "cle": "74d8614c0b3d",
    "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح.\nوفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.\nكيف نقترب من البحر الأبيض المتوسط ومن منطقته دون أن نبحر بأعماق تجارب البشر؟\nهذا البحر كان دائماً ممراً، قناة سابقة",
    "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface.\nWhile a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage.\nHow to approach the Mediterranean Sea and its region without navigating the depths of the odysseys of human experiments?\nThis sea has always been a passageway; a canal of ex"
-  },
-  "_events/auto/tunis-events/2026-11-04-yoga-for-busy-minds-with-judit-yoga-in-sidibousaid.md": {
-   "cle": "0a27831368f6",
-   "fr": "Cette classe combine Hatha et Yin yoga, en commençant par Hatha pour ouvrir doucement le corps avant de passer à des postures de Yin réparatrices.\nLa pratique adopte une approche intuitive, s'adaptant à l'énergie du groupe, et comprend des démonstrations et des conseils pratiques dans un cadre intime.\nPlutôt que de se concentrer sur la forme physique, l'accent est mis sur la guérison, l'équilibre et le développement de l'intuition.\nIl s'agit d'une expérience de base conçue pour vous aider à naviguer dans le stress, les nouvelles et les événements mondiaux avec stabilité.\nTravaux sur",
-   "ar": "هذا الفصل يجمع بين هاثا ويين يوغا، بدءاً من هاثا لفتح الجسم بلطف قبل الانتقال إلى مواقع يين الإصلاحية.\nوتأخذ هذه الممارسة نهجاً غير ملائم، وتتكيف مع طاقة المجموعة، وتشمل المظاهرات والتوجيه العملي في بيئة حميمة.\nوبدلاً من التركيز على اللياقة البدنية، فإن التركيز ينصب على الشفاء والتوازن وتطوير الحدس.\nإنها تجربة أرضية مصممة لمساعدتك في نقل الإجهاد والأخبار والأحداث العالمية ذات البخار\nالعمل على"
-  },
-  "_events/auto/tunis-events/2026-11-04-zyoland.md": {
-   "cle": "b2e09e9ad2b7",
-   "ar": "\"زيولاند\" حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو زيولان الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات التي ينبغي تقاسمها.\nمراقبة، بحث، تخيل وتجميع: كل اكتشاف يجعلهم يتقدمون في المغامرة!\nحيزان مناسبان للسن:\n5-10 سنوات: رحلة ممتعة بين الخيال والفضول والمفاجئات.\n* 10-15 سنة:",
-   "en": "ZYOLAND — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!\nTwo age-appropriate spaces:\n5–10 years: a fun journey between fantasy, curiosity and surprises.\n* 10–15 years:"
   },
   "_events/auto/tunis-events/2026-11-05-un-fils.md": {
    "cle": "8a7fe15fcd4f",
