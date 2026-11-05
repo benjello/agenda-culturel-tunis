@@ -32,7 +32,7 @@ description: La carte des lieux culturels de Tunisie qui ont quelque chose à l'
     maxZoom: 19, attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(carte);
   var v = document.documentElement.dataset.ville;
-  try { v = localStorage.getItem('ville') || 'tunis'; } catch (e) { v = 'tunis'; }
+  try { v = localStorage.getItem('ville') || 'toutes'; } catch (e) { v = 'toutes'; }
   var evts = {{ liste | strip }};
   function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   var couche = L.layerGroup().addTo(carte), premiere = true;

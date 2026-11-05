@@ -43,7 +43,7 @@ description: "Les musées de toute la Tunisie, par région, avec leurs expositio
 <script>
 (function () {
   function f() {
-    var v = document.documentElement.dataset.ville || 'tunis';
+    var v = document.documentElement.dataset.ville || 'toutes';
     document.querySelectorAll('.bloc-ville').forEach(function (s) { s.hidden = v !== 'toutes' && s.dataset.villeBloc !== v; });
   }
   document.addEventListener('ville', f); f();
