@@ -388,6 +388,7 @@ sante.apify: { ar: "رصيد Apify لهذا الشهر (إنستغرام، في�
 sante.recharge: { ar: "يتجدد في", en: "renews on" }
 sante.apify_epuise: { ar: "نفد: لم يعد إنستغرام وفيسبوك يقرآن", en: "used up: Instagram and Facebook are no longer read" }
 synopsis: { ar: "ملخص الفيلم", en: "Synopsis" }
+pas_de_synopsis: { ar: "لا يوجد ملخص متاح", en: "No synopsis available" }
 en_savoir_plus: { ar: "للمزيد", en: "Learn more" }
 acces.yes: { ar: "مهيأ للكراسي المتحركة", en: "Wheelchair accessible" }
 acces.limited: { ar: "تهيئة جزئية للكراسي المتحركة", en: "Partial wheelchair access" }
