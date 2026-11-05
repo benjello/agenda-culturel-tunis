@@ -449,3 +449,6 @@ en_cours_maintenant: { fr: "a commencé", ar: "بدأ", en: "started" }
 installer.bouton: { fr: "Installer l'application", ar: "ثبّت التطبيق", en: "Install the app" }
 installer.ios: { fr: "Sur iPhone ou iPad (Safari) : touchez le bouton Partager, puis « Sur l'écran d'accueil ».", ar: "على آيفون أو آيباد (سفاري): اضغط على زر المشاركة ثم «إضافة إلى الشاشة الرئيسية».", en: "On iPhone or iPad (Safari): tap the Share button, then “Add to Home Screen”." }
 installer.autre: { fr: "Dans le menu de votre navigateur, cherchez « Installer l'application » ou « Ajouter à l'écran d'accueil ». Firefox sur ordinateur ne sait pas installer le site : utilisez Chrome ou Edge.", ar: "ابحث في قائمة المتصفح عن «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية». فايرفوكس على الحاسوب لا يثبّت المواقع: استعمل كروم أو إيدج.", en: "In your browser menu, look for “Install app” or “Add to Home Screen”. Desktop Firefox cannot install the site: use Chrome or Edge." }
+programmes_facebook: { ar: "برامج منشورة على فيسبوك", en: "Programmes posted on Facebook" }
+publie_le: { ar: "نُشر في", en: "posted on" }
+voir_publication: { ar: "انظر المنشور على فيسبوك", en: "See the post on Facebook" }

@@ -1326,3 +1326,33 @@ class RetourBeta(unittest.TestCase):
                   "Biennale 2026\" qui se tiendra du 23 octobre au 22 novembre.")
         self.assertTrue(commun.annonce_de_partenariat(notice))
         self.assertFalse(commun.annonce_de_partenariat("Concert de jazz. Entrée libre, avec le soutien de la mairie."))
+
+
+class Libelles(unittest.TestCase):
+    def test_textes_retenus(self):
+        from scrapers.libelles import retenu
+        self.assertTrue(retenu("Musée national du Bardo"))
+        self.assertTrue(retenu("11 rue Nelson Mandela, La Marsa"))
+        self.assertFalse(retenu("À partir de 20 DT"))
+        self.assertFalse(retenu("https://exemple.org/page web"))
+        self.assertFalse(retenu("Mo-Su 07:30 - 17:30"))
+        self.assertFalse(retenu("bardo"))
+
+    def test_traduction_gardee_une_fois(self):
+        from scrapers import libelles
+
+        class Faux:
+            appels = 0
+
+            def traduire(self, textes, de, vers):
+                Faux.appels += 1
+                return [f"{vers}:{t}" for t in textes]
+
+        cache = {}
+        n = libelles.traduire_libelles(Faux(), cache, {"Médiathèque de Tunis"})
+        self.assertEqual(n, 1)
+        self.assertEqual(cache["Médiathèque de Tunis"]["en"], "en:Médiathèque de Tunis")
+        self.assertEqual(cache["Médiathèque de Tunis"]["de"], "fr")
+        avant = Faux.appels
+        libelles.traduire_libelles(Faux(), cache, {"Médiathèque de Tunis"})
+        self.assertEqual(Faux.appels, avant)

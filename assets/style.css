@@ -396,3 +396,7 @@ main:focus { outline: none; }
 .bouton-installer { background: var(--accent, #b5442f); color: #fff; border: 0; border-radius: 999px; padding: 10px 20px; font: inherit; font-weight: 600; cursor: pointer; }
 .aide-installer { max-width: 32rem; margin: 0 auto; }
 .aide-installer summary { cursor: pointer; font-weight: 600; }
+
+/* Titre d'origine, à côté de sa traduction */
+.titre-orig { display: block; font-size: .78em; font-weight: 400; opacity: .7; }
+.titre-orig[hidden] { display: none; }
