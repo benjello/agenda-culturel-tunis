@@ -20,7 +20,7 @@ import traceback
 import yaml
 
 from . import commun
-from .commun import RACINE, EnAttente
+from .commun import RACINE, EnAttente, masquer_secrets, sans_balises
 from . import controle, doublons, festivals, films
 from .ecriture import STATS_HORAIRE, ecrire, ecrire_etat, lire_etat
 
@@ -81,7 +81,8 @@ def main(argv=None) -> int:
             print(f"… {s['id']} : en attente ({exc})")
         except Exception as exc:  # noqa: BLE001 — une source en panne ne doit pas arrêter les autres
             echecs += 1
-            e.update(ok=False, erreur=f"{type(exc).__name__}: {exc}"[:300])
+            # Le message finit dans un fichier public : pas de clé d'API, pas de balise HTML.
+            e.update(ok=False, erreur=sans_balises(masquer_secrets(f"{type(exc).__name__}: {exc}"))[:300])
             print(f"✗ {s['id']} : {e['erreur']}", file=sys.stderr)
             if args.debug:
                 traceback.print_exc()

@@ -11,7 +11,7 @@ import os
 import re
 import sys
 
-from .commun import RACINE, slug
+from .commun import RACINE, image_sure, lien_sur, sans_balises, slug
 from .ecriture import _yaml
 
 CATEGORIES = {"musique": "musique", "théâtre": "theatre", "spectacle": "spectacle", "danse": "danse",
@@ -41,8 +41,10 @@ def evenement(corps: str, numero: str = "") -> tuple[str, str]:
         raise ValueError(f"date illisible : {c.get('date et heure')!r} (attendu AAAA-MM-JJ HH:MM)")
     jour = dt.date.fromisoformat(m.group(1))
     date = f"{jour} {int(m.group(2)):02d}:{m.group(3)}" if m.group(2) else str(jour)
+    # Formulaire public : pas de balise HTML dans les champs, lien http(s) seulement (voir commun.sans_balises).
+    texte = c.get("description et affiche", "")  # brut : l'affiche est souvent une balise <img>
+    c = {k: sans_balises(v) for k, v in c.items()}
     titre = c.get("titre", "").strip() or "Événement"
-    texte = c.get("description et affiche", "")
     image = re.search(r"https://(?:github\.com/user-attachments/assets|user-images\.githubusercontent\.com)/\S+?(?=[)\"\s]|$)", texte)
     lignes = ["---", f"title: {_yaml(titre)}", f"date: {date}"]
     fin = re.match(r"\d{4}-\d{2}-\d{2}", c.get("date de fin", ""))
@@ -52,12 +54,13 @@ def evenement(corps: str, numero: str = "") -> tuple[str, str]:
                f"category: {_yaml(CATEGORIES.get(c.get('catégorie', '').lower(), 'autre'))}"]
     if c.get("prix"):
         lignes.append(f"price: {_yaml(c['prix'])}")
-    lignes += [f"link: {_yaml(c.get('lien', ''))}", 'source_name: "Proposé sur l\'agenda"']
+    lignes += [f"link: {_yaml(lien_sur(c.get('lien')))}", 'source_name: "Proposé sur l\'agenda"']
     if image:
-        lignes.append(f"image: {_yaml(image.group(0))}")
+        lignes.append(f"image: {_yaml(image_sure(image.group(0)))}")
     if numero:
         lignes.append(f"proposition: {numero}")
-    sans_image = re.sub(r"!\[[^\]]*\]\([^)]*\)|<img[^>]*>", "", texte).strip()
+    sans_image = sans_balises(re.sub(r"!\[[^\]]*\]\([^)]*\)|<img[^>]*>", "", texte)).replace("{", "").replace("}", "")
+    sans_image = re.sub(r"\]\(\s*(?!https?://)[^)]*\)", "]", sans_image).strip()  # liens Markdown : http(s) seulement
     contenu = "\n".join(lignes + ["---", sans_image]).rstrip() + "\n"
     return f"{jour}-{slug(titre)[:60]}.md", contenu
 

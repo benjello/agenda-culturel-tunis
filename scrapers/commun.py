@@ -67,6 +67,45 @@ def propre(texte: str | None) -> str:
     return re.sub(r"\s+", " ", texte or "").strip()
 
 
+# Sécurité : les textes et les liens viennent de sites qu'on ne contrôle pas (légendes Instagram,
+# flux RSS…). Les gabarits les affichent tels quels : on retire « < » et « > » (pas de balise HTML
+# possible) et on ne garde que les liens http(s) (pas de « javascript: », pas de guillemet qui
+# sortirait de l'attribut href).
+_LIEN_SUR = re.compile(r"https?://[^\s\"'<>`]+", re.I)
+
+
+def sans_balises(texte):
+    """Le texte sans « < » ni « > » (les autres valeurs, listes comprises, sont nettoyées élément par élément)."""
+    if isinstance(texte, str):
+        return re.sub(r"[<>]", "", texte)
+    if isinstance(texte, list):
+        return [sans_balises(t) for t in texte]
+    return texte
+
+
+def lien_sur(url: str | None) -> str:
+    """L'adresse si c'est un lien http(s) sans caractère dangereux, sinon une chaîne vide."""
+    url = (url or "").strip()
+    return url if _LIEN_SUR.fullmatch(url) else ""
+
+
+def image_sure(chemin: str | None) -> str:
+    """Une affiche : lien http(s), ou chemin dans le site (« assets/programmes/… »)."""
+    chemin = (chemin or "").strip()
+    if "://" in chemin or ":" in chemin.split("/")[0]:
+        return lien_sur(chemin)
+    return chemin if re.fullmatch(r"[\w./%+-]+", chemin) and ".." not in chemin else ""
+
+
+_SECRET = re.compile(r"((?:token|api_key|apikey|access_token|key)=)[^&\s'\"]+|(Bearer\s+)\S+", re.I)
+
+
+def masquer_secrets(texte: str) -> str:
+    """Remplace les clés d'API (« ?token=… », « Bearer … ») par *** : un message d'erreur
+    peut contenir l'adresse appelée, et il finit dans un fichier public (_data/etat_sources.json)."""
+    return _SECRET.sub(lambda m: (m.group(1) or m.group(2)) + "***", texte or "")
+
+
 # « rn » à la place des retours à la ligne : la billetterie d'El Teatro sépare les noms par « \r\n »,
 # l'échappement se perd et il reste « rn » collé au mot suivant (« Baraketirn Mohamed »).
 # On ne remplace que « rn » entre une lettre (ou une fin de phrase) et une majuscule ou une lettre arabe,

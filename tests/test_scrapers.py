@@ -641,10 +641,10 @@ class Critiques(unittest.TestCase):
         aujourd_hui = dt.date.today().isoformat()
         with tempfile.TemporaryDirectory() as d:
             f = Path(d) / "critiques.json"
-            critiques.garder([{"lien": "a", "date": vieux}, {"lien": "b", "date": aujourd_hui}], f)
-            n = critiques.garder([{"lien": "c", "date": aujourd_hui}], f)
+            critiques.garder([{"lien": "https://x.tn/a", "date": vieux}, {"lien": "https://x.tn/b", "date": aujourd_hui}], f)
+            n = critiques.garder([{"lien": "https://x.tn/c", "date": aujourd_hui}], f)
             self.assertEqual(n, 2)
-            self.assertEqual(sorted(x["lien"] for x in critiques.lire(f)), ["b", "c"])
+            self.assertEqual(sorted(x["lien"] for x in critiques.lire(f)), ["https://x.tn/b", "https://x.tn/c"])
 
 
 class Conferences(unittest.TestCase):

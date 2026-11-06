@@ -16,7 +16,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-from .commun import RACINE
+from .commun import RACINE, lien_sur, sans_balises
 
 FICHIER = RACINE / "_data" / "critiques.json"
 FICHIER_EVENEMENTS = RACINE / "_data" / "presse.json"  # articles sur une manifestation (pas un film)
@@ -33,9 +33,12 @@ def lire(fichier: Path = FICHIER) -> list[dict]:
 def garder(nouveaux: list[dict], fichier: Path = FICHIER) -> int:
     """Ajoute les articles (clé : le lien), oublie les vieux. Rend le nombre d'articles gardés."""
     limite = (dt.date.today() - dt.timedelta(days=JOURS_GARDES)).isoformat()
-    tous = {a["lien"]: a for a in lire(fichier)}
-    for a in nouveaux:
-        if a.get("lien"):
+    tous = {}
+    for a in lire(fichier) + list(nouveaux):
+        # Titre et lien d'un article de presse : affichés tels quels sur les fiches (voir commun.sans_balises).
+        a = {k: sans_balises(v) for k, v in a.items()}
+        a["lien"] = lien_sur(a.get("lien"))
+        if a["lien"]:
             tous[a["lien"]] = a
     garde = sorted((a for a in tous.values() if a.get("date", "") >= limite),
                    key=lambda a: (a.get("date", ""), a["lien"]), reverse=True)

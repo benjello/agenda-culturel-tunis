@@ -4,7 +4,8 @@ Facebook bloque les robots et son API ne donne plus les événements des pages
 qu'à leurs administrateurs. Apify (apify.com) lit les événements publics, sans
 compte Facebook, depuis ses propres adresses, et nous renvoie du JSON.
 
-- Clé : variable d'environnement APIFY_TOKEN (secret du dépôt GitHub). Sans clé,
+- Clé : variable d'environnement APIFY_TOKEN (secret du dépôt GitHub), envoyée dans l'en-tête
+  Authorization, jamais dans l'adresse (qui finit dans les messages d'erreur). Sans clé,
   la source est « en attente » et rien n'est effacé.
 - Coût : facturé à l'événement lu (environ 1 centime). Le compte gratuit
   d'Apify offre 5 $ par mois ; régler « tous_les_jours » dans le registre pour
@@ -40,7 +41,7 @@ def url_evenements(page: str) -> str:
 def appeler_apify(acteur: str, entree: dict, cle: str) -> list[dict]:
     r = requests.post(
         f"https://api.apify.com/v2/acts/{acteur.replace('/', '~')}/run-sync-get-dataset-items",
-        params={"token": cle}, json=entree, timeout=320)
+        headers={"Authorization": f"Bearer {cle}"}, json=entree, timeout=320)
     r.raise_for_status()
     return r.json()
 

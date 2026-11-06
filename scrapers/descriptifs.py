@@ -45,7 +45,7 @@ import requests
 import yaml
 from bs4 import BeautifulSoup
 
-from .commun import RACINE, propre, resume, retours_ligne_casses, slug, telecharger
+from .commun import RACINE, masquer_secrets, propre, resume, retours_ligne_casses, slug, telecharger
 from .doublons import _lire
 from .ecriture import DOSSIER_AUTO, _texte_brut
 from .enrichir import _norm
@@ -382,7 +382,7 @@ def completer_films(cache: dict, budget: Budget, evts, mains: dict) -> list[dict
                 if not trouve and f.get("wikidata"):
                     trouve = wikipedia(f["wikidata"])
             except Exception as exc:  # noqa: BLE001
-                print(f"  film · {f['titre']} : {type(exc).__name__}: {exc}")
+                print(f"  film · {f['titre']} : {type(exc).__name__}: {masquer_secrets(str(exc))}")
                 continue
             entree = {**(trouve or {}), "verifie": _aujourd_hui()}
             cache["films"][f["id"]] = entree

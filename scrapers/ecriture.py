@@ -14,7 +14,8 @@ import json
 import re
 import shutil
 
-from .commun import RACINE, Evenement, Publication, est_discret, est_famille, horaire_du_texte, pas_un_evenement, retours_ligne_casses, slug, titre_film
+from .commun import (RACINE, Evenement, Publication, est_discret, est_famille, horaire_du_texte, image_sure, lien_sur,
+                     pas_un_evenement, retours_ligne_casses, sans_balises, slug, titre_film)
 from .pages import _cle, faux_lieux
 from .villes import mention, ville
 
@@ -34,8 +35,8 @@ def _yaml(v) -> str:
 
 
 def _texte_brut(t: str) -> str:
-    """La notice vient d'ailleurs : on neutralise le Markdown (titres, listes) et le Liquid."""
-    t = re.sub(r"[{}<>]", "", retours_ligne_casses(t))
+    """La notice vient d'ailleurs : on neutralise le HTML, le Markdown (titres, listes, liens) et le Liquid."""
+    t = re.sub(r"[{}<>]", "", retours_ligne_casses(t)).replace("[", "\\[")  # pas de lien Markdown ([x](javascript:…))
     return "\n".join("\\" + l.lstrip() if re.match(r"\s*(#|[>*+=-]|\d+\.\s)", l) else l
                       for l in t.split("\n"))
 
@@ -152,6 +153,10 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             "famille": True if est_famille(e.titre, e.description) else None,
             "ajoute": deja.get(nom) or dt.date.today().isoformat(),
         }
+        # Textes et liens venus d'ailleurs : affichés tels quels par les gabarits (voir commun.sans_balises).
+        champs = {k: sans_balises(v) for k, v in champs.items()}
+        champs["link"] = lien_sur(e.lien) or None
+        champs["image"] = image_sure(e.image) or None
         lignes = ["---"] + [f"{k}: {_yaml(v)}" for k, v in champs.items() if v is not None]
         lignes += ["auto: true", "---", ""]
         if e.description:  # notice, affichée sur la fiche de l'événement (texte brut, pas de Markdown)
@@ -168,7 +173,7 @@ def ecrire_publications(source: dict, publications: list[Publication]) -> int:
     data = {
         "id": source["id"], "nom": source["nom"], "url": source["url"],
         "mis_a_jour": dt.date.today().isoformat(),
-        "publications": [p.en_dict() for p in publications],
+        "publications": [{**p.en_dict(), "lien": lien_sur(p.lien)} for p in publications],
     }
     (DOSSIER_PROGRAMMES / f"{source['id']}.json").write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n")
