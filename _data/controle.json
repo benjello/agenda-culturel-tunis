@@ -1,6 +1,6 @@
 {
- "date": "2026-11-05",
- "corriges": 2,
+ "date": "2026-11-06",
+ "corriges": 3,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -43,6 +43,16 @@
    ]
   },
   {
+   "fichier": "ig-al-kitab/2026-11-05-rencontre-debat-avec-abdelhamid-largueche-autour-de-ses-ouvr.md",
+   "source": "ig-al-kitab",
+   "titre": "Rencontre-débat avec Abdelhamid Larguèche autour de ses ouvrages La Voix de la braise (Édi",
+   "date": "2026-11-05",
+   "lien": "https://www.instagram.com/p/De1zOMGFY2I/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
    "fichier": "ig-galerie-insular/2026-11-20-la-galerie-insular-a-le-privilege-daccueillir-la-3eme-editio.md",
    "source": "ig-galerie-insular",
    "titre": "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be",
@@ -68,6 +78,16 @@
    "titre": "A look back at Ma Méditerranée Sensory Collage, a workshop led by Syrine Barouni at B7L9 A",
    "date": "2026-11-22",
    "lien": "https://www.instagram.com/p/DfPJPYQCNAW/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-le32bis/2026-11-06-designed-as-an-invitation-to-participate-this-exhibition-see.md",
+   "source": "ig-le32bis",
+   "titre": "Designed as an invitation to participate, this exhibition seeks to think equally with our",
+   "date": "2026-11-06",
+   "lien": "https://www.instagram.com/p/DfXUxr8CO9b/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
@@ -101,35 +121,25 @@
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
-  },
-  {
-   "fichier": "presse-webdo/2026-11-05-galerie-millefeuilles-mourad-salem-entre-la-rose-et-lepee.md",
-   "source": "presse-webdo",
-   "titre": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée",
-   "date": "2026-11-05",
-   "lien": "https://www.webdo.tn/fr/actualite/culture/galerie-millefeuilles-mourad-salem-entre-la-rose-et-lepee/406655/",
-   "problemes": [
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
   }
  ],
  "granularite": {
   "sources": {
    "beit-al-hikma": {
-    "n": 1,
-    "precis": 1,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 2
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
+      "n": 2
      }
     ]
    },
@@ -161,15 +171,20 @@
     ]
    },
    "el-teatro": {
-    "n": 3,
-    "precis": 3,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 2
      }
     ]
    },
@@ -245,9 +260,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 55,
-    "precis": 17,
-    "pourcent": 31,
+    "n": 51,
+    "precis": 15,
+    "pourcent": 29,
     "defauts": [
      {
       "code": "titre_generique",
@@ -258,8 +273,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 38,
-      "exemple": "Le tube de R Coolidge"
+      "n": 36,
+      "exemple": "Mars Express"
      },
      {
       "code": "expo_sans_fin",
@@ -277,7 +292,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 38
+      "n": 36
      },
      {
       "code": "sans_notice",
@@ -300,7 +315,7 @@
     "defauts": [],
     "manques": []
    },
-   "ig-archivart": {
+   "ig-al-kitab": {
     "n": 1,
     "precis": 1,
     "pourcent": 100,
@@ -329,7 +344,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 2
      }
     ]
    },
@@ -381,8 +396,8 @@
     ]
    },
    "ig-le32bis": {
-    "n": 1,
-    "precis": 1,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -459,39 +474,6 @@
      }
     ]
    },
-   "presse-lapresse": {
-    "n": 1,
-    "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
-   },
-   "presse-webdo": {
-    "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
-   },
    "resident-advisor": {
     "n": 1,
     "precis": 0,
@@ -507,40 +489,46 @@
     "manques": []
    },
    "teskerti": {
-    "n": 12,
-    "precis": 12,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 12
+      "n": 10
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 11
+      "n": 10
      }
     ]
    },
    "tunis-events": {
-    "n": 10,
-    "precis": 10,
+    "n": 16,
+    "precis": 16,
     "pourcent": 100,
     "defauts": [],
-    "manques": []
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
    },
    "tunis-events-cinema": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    }
@@ -561,9 +549,9 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 55,
-    "precis": 17,
-    "pourcent": 31,
+    "n": 51,
+    "precis": 15,
+    "pourcent": 29,
     "defauts": [
      {
       "code": "titre_generique",
@@ -574,8 +562,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 38,
-      "exemple": "Le tube de R Coolidge"
+      "n": 36,
+      "exemple": "Mars Express"
      },
      {
       "code": "expo_sans_fin",
@@ -593,7 +581,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 38
+      "n": 36
      },
      {
       "code": "sans_notice",
@@ -639,9 +627,9 @@
     ]
    },
    "instagram": {
-    "n": 22,
-    "precis": 14,
-    "pourcent": 64,
+    "n": 23,
+    "precis": 15,
+    "pourcent": 65,
     "defauts": [
      {
       "code": "expo_sans_fin",
@@ -660,54 +648,40 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 13
-     }
-    ]
-   },
-   "presse": {
-    "n": 5,
-    "precis": 4,
-    "pourcent": 80,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Galerie Millefeuilles : Mourad Salem, entre la rose et l’épée"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 5
-     }
-    ]
-   },
-   "teskerti": {
-    "n": 12,
-    "precis": 12,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
       "n": 12
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 11
      }
     ]
    },
    "tunis_events": {
+    "n": 16,
+    "precis": 16,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
+   },
+   "teskerti": {
     "n": 10,
     "precis": 10,
     "pourcent": 100,
     "defauts": [],
-    "manques": []
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 10
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 10
+     }
+    ]
    },
    "woocommerce_seances": {
     "n": 7,
@@ -717,29 +691,42 @@
     "manques": []
    },
    "tunis_events_cinema": {
-    "n": 7,
-    "precis": 7,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    },
    "rss": {
-    "n": 3,
-    "precis": 3,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 3
      },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 4
+     }
+    ]
+   },
+   "presse": {
+    "n": 3,
+    "precis": 3,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
      {
       "code": "sans_image",
       "texte": "image",
@@ -748,15 +735,20 @@
     ]
    },
    "billetterie_sktech": {
-    "n": 3,
-    "precis": 3,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 2
      }
     ]
    }

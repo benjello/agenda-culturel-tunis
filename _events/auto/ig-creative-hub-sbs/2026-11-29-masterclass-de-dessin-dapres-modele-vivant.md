@@ -1,6 +1,7 @@
 ---
 title: "Masterclass de dessin d’après modèle vivant"
-date: 2026-11-29
+date: 2026-11-29 10:00
+end_time: "13:00"
 venue: "Creative Hub, Sidi Bou Saïd"
 ville: "tunis"
 category: "autre"

@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
@@ -21,19 +20,12 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-06",
       "heures": [
@@ -67,7 +59,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -82,18 +73,11 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08"
     ],
     "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "18:30"
-      ]
-     },
      {
       "jour": "2026-11-06",
       "heures": [
@@ -116,10 +100,10 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-05-bakma.md",
+   "_events/auto/cine-agora/2026-11-06-bakma.md",
    "_events/auto/cine-alhambra/2026-11-04-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-05-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-05-bakma.md"
+   "_events/auto/tunis-events-cinema/2026-11-06-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-06-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -131,7 +115,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -143,7 +127,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
@@ -157,16 +140,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-05",
      "2026-11-08"
     ],
     "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -182,7 +158,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -219,12 +194,12 @@
   "fichiers": [
    "_events/auto/cine-agora/2026-11-07-weekend.md",
    "_events/auto/cine-alhambra/2026-11-04-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-05-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-weekend.md"
+   "_events/auto/tunis-events-cinema/2026-11-07-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-08-weekend.md"
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -236,7 +211,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
@@ -250,7 +224,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -375,7 +348,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-09"
@@ -388,18 +360,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-06",
       "heures": [
@@ -422,35 +387,35 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-05-dar-el-3ers.md"
+   "_events/auto/tunis-events-cinema/2026-11-06-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
   "presse": []
  },
  {
-  "titre": "LA BELLE ET LA MEUTE",
-  "id": "la-belle-et-la-meute",
-  "image": "https://tunis.events/storage/a9a8780a69ef2a101f314f100390132380.jpg",
+  "titre": "HARAKAT TRAINING/ SCRATCH NIGHT",
+  "id": "harakat-training-scratch-night",
+  "image": "https://api.tunis.events/storage/efd1b9efdd182e4138408fc814d10eccc.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-19"
+   "2026-11-06"
   ],
   "salles": [
    {
-    "nom": "Sociale Sidi Bou Said",
-    "adresse": "V8CW+8GM, Carthage, Carthage",
-    "lien": "https://tunis.events/events/3jQ5Ym/movie-night-la-belle-et-la-meute-sociale-sidi-bou-said",
-    "source": "tunis-events",
-    "source_nom": "tunis.events (agenda)",
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/k4bEA3/harakat-training-scratch-night-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-19"
+     "2026-11-06"
     ],
     "heures": [
      {
-      "jour": "2026-11-19",
+      "jour": "2026-11-06",
       "heures": [
        "19:00"
       ]
@@ -459,13 +424,10 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events/2026-11-19-la-belle-et-la-meute.md"
+   "_events/auto/tunis-events-cinema/2026-11-06-harakat-training-scratch-night.md"
   ],
   "jeune": false,
-  "presse": [],
-  "synopsis": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "presse": []
  },
  {
   "titre": "LAST CHANCE - لص شايح",
@@ -475,7 +437,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06",
    "2026-11-07",
    "2026-11-08",
@@ -489,7 +450,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06",
      "2026-11-07",
      "2026-11-08",
@@ -652,7 +612,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-05",
    "2026-11-06"
   ],
   "salles": [
@@ -663,17 +622,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-05",
      "2026-11-06"
     ],
     "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "20:30",
-       "20:45"
-      ]
-     },
      {
       "jour": "2026-11-06",
       "heures": [
@@ -684,8 +635,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-05-les-miserables.md",
-   "_events/auto/tunis-events-cinema/2026-11-05-les-miserables.md"
+   "_events/auto/cine-agora/2026-11-06-les-miserables.md",
+   "_events/auto/tunis-events-cinema/2026-11-06-les-miserables.md"
   ],
   "jeune": false,
   "presse": [],
@@ -741,49 +692,43 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Mars_Express_(film)"
  },
  {
-  "titre": "Other Mommy / Malfaisante",
-  "id": "other-mommy-malfaisante",
-  "image": "https://api.tunis.events/storage/scraped/cae729505094e04be6cbd430f3db740d.jpeg",
-  "imdb": "tt36586020",
+  "titre": "Projection-débat autour du film Save our souls",
+  "id": "projection-debat-autour-du-film-save-our-souls",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/xfjxfmbt0z2p3xqxa8ao",
+  "imdb": "",
   "duree": null,
-  "genres": [
-   "Horreur"
-  ],
+  "genres": [],
   "jours": [
-   "2026-11-05"
+   "2026-11-09"
   ],
   "salles": [
    {
-    "nom": "Pathé Azur City",
-    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
-    "lien": "https://tunis.events/fr/cinema/other-mommy-malfaisante",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6463",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
     "jours": [
-     "2026-11-05"
+     "2026-11-09"
     ],
     "heures": [
      {
-      "jour": "2026-11-05",
+      "jour": "2026-11-09",
       "heures": [
-       "17:15"
+       "18:30"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-05-other-mommy-malfaisante.md"
+   "_events/auto/ift-pdf/2026-11-09-projection-debat-autour-du-film-save-our-souls.md"
   ],
-  "wikidata": "Q134588273",
-  "letterboxd": "other-mommy",
-  "age": "-12",
-  "tunisien": false,
   "jeune": false,
   "presse": [],
-  "synopsis": "Malfaisante ou Autre maman au Québec est un film américain réalisé par Rob Savage et sorti en 2026. Il s'agit d'une adaptation du roman Incidents Around the House de Josh Malerman (en). Il met en vedette Jessica Chastain, dans le rôle d'une mère qui doit tout faire pour protéger sa fille d'une entité surnaturelle lui ressemblant.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Malfaisante"
+  "synopsis": "L'Institut français de Tunisie vous invite à la projection du film documentaire Save our souls , suivie d'un débat en visioconférence avec le réalisateur Jean-Baptiste Bonnet.\nRésumé :\nAprès un sauvetage à hauts risques au large de la Libye, naufragés et sauveteurs vivent ensemble sur le bateau de l’ONG SOS Méditerranée, dans l’attente d’un port d’accueil.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "REGARDE MOI",
@@ -901,45 +846,6 @@
   "jeune": false,
   "presse": [],
   "synopsis": "Dans le cadre de projections de films sur l'avenir de notre cohabitation avec les intelligences artificielles et les robots. Mars express, de Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "UN FILS",
-  "id": "un-fils",
-  "image": "https://tunis.events/storage/e25d03c624ce37d5cb1772e8810b59e110.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-05"
-  ],
-  "salles": [
-   {
-    "nom": "Sociale Sidi Bou Said",
-    "adresse": "V8CW+8GM, Carthage, Carthage",
-    "lien": "https://tunis.events/events/moEXl8/movie-night-un-fils-sociale-sidi-bou-said",
-    "source": "tunis-events",
-    "source_nom": "tunis.events (agenda)",
-    "jours": [
-     "2026-11-05"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-05",
-      "heures": [
-       "19:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events/2026-11-05-un-fils.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nUN FILSDirector: Mehdi Barsaoui1h 35mVOSTFR",
   "synopsis_source": "",
   "synopsis_url": ""
  },

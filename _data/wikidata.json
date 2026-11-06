@@ -127,6 +127,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "harakat-training-scratch-night": {
+  "qid": null,
+  "verifie": "2026-11-06"
+ },
  "hola-frida": {
   "age": "Tous publics",
   "annee": 2025,
@@ -425,6 +429,10 @@
  "projection-debat-autour-du-film-la-meule": {
   "qid": null,
   "verifie": "2026-11-03"
+ },
+ "projection-debat-autour-du-film-save-our-souls": {
+  "qid": null,
+  "verifie": "2026-11-06"
  },
  "projet-derniere-chance": {
   "age": "Tous publics",
