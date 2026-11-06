@@ -13,8 +13,22 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <link rel="icon" href="{{ '/assets/icones/icone-192.png' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/icones/icone-maskable-192.png' | relative_url }}">
-  {%- if page.image %}<meta property="og:image" content="{% if page.image contains '://' %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}">{% endif %}
-  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  {%- assign seo_titre = page.title | default: site.title -%}
+  {%- assign seo_desc = page.description | default: site.description -%}
+  {%- if page.layout == 'event' and page.description == nil %}{% capture seo_desc %}{{ page.date | date: '%d/%m/%Y' }} · {{ page.venue }}{% if page.address %}, {{ page.address }}{% endif %} — {{ site.description }}{% endcapture %}{% endif -%}
+  {%- if page.image %}{% if page.image contains '://' %}{% assign seo_image = page.image %}{% else %}{% assign seo_image = page.image | absolute_url %}{% endif %}{% else %}{% assign seo_image = '/assets/icones/icone-512.png' | absolute_url %}{% endif %}
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <meta property="og:type" content="{% if page.layout == 'event' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="{{ seo_titre | escape }}">
+  <meta property="og:description" content="{{ seo_desc | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ seo_titre | escape }}">
+  <meta name="twitter:description" content="{{ seo_desc | strip_html | escape }}">
+  <meta name="twitter:image" content="{{ seo_image }}">
   <script>
     // Avant l'affichage : thème, affichage léger et langue choisis, pour éviter un clignotement.
     (function (d) {
