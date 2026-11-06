@@ -115,7 +115,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -199,7 +199,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -427,7 +427,10 @@
    "_events/auto/tunis-events-cinema/2026-11-06-harakat-training-scratch-night.md"
   ],
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Join us on November 6 at 7 PM at Cinémad’Art to celebrate the culmination of the Harakat Training dramaturgical support programme\nDiscover the participants’ texts brought to life by actors in a live reading performance\nAn evening celebrating new voices, stories, and creative journeys\n📅 November\n🕖 7 PM\n📍 CinéMadart\n🎟️ Tickets on site (cinémad'art box office): 15 DT\n🔴 بيناتنا نص : قراءات مسرحية",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "LAST CHANCE - لص شايح",
