@@ -4,6 +4,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import time
 import unicodedata
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -31,7 +32,16 @@ class EnAttente(Exception):
 
 
 def telecharger(url: str) -> str:
-    r = _session.get(url, timeout=30)
+    # Un délai dépassé ou une coupure passagère n'est pas une panne du site : on réessaie
+    # (2 s, 5 s) avant d'abandonner. Les erreurs HTTP (404, 403…) ne sont pas réessayées.
+    for attente in (2, 5, None):
+        try:
+            r = _session.get(url, timeout=30)
+            break
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attente is None:
+                raise
+            time.sleep(attente)
     r.raise_for_status()
     r.encoding = r.encoding if r.encoding and r.encoding.lower() != "iso-8859-1" else "utf-8"
     if DEBUG_DIR:
