@@ -100,8 +100,8 @@
  {
   "semaine": "2026-S45",
   "date": "2026-11-07",
-  "a_venir": 131,
-  "sept_jours": 77,
+  "a_venir": 130,
+  "sept_jours": 76,
   "sources_actives": 79,
   "sources_avec_evenements": 24,
   "sources_muettes": [
@@ -162,7 +162,7 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 61,
+   "tunis": 60,
    "sfax": 7,
    "sousse": 5,
    "monastir": 3,
@@ -173,8 +173,8 @@
    "expo": 13,
    "theatre": 12,
    "conference": 8,
-   "autre": 7,
    "musique": 6,
+   "autre": 6,
    "litterature": 4,
    "spectacle": 1
   },
@@ -182,9 +182,9 @@
    "institution": 24,
    "lieu": 23,
    "agenda": 18,
-   "collectif": 4,
    "festival": 4,
-   "presse": 4
+   "presse": 4,
+   "collectif": 3
   },
   "par_source": {
    "ift-pdf": 22,
@@ -194,8 +194,8 @@
    "teskerti": 4,
    "tunis-events-cinema": 4,
    "ig-fabrika": 3,
-   "ig-lart-rue": 3,
    "presse-kapitalis": 3,
+   "ig-lart-rue": 2,
    "ig-violon-bleu": 2,
    "beit-al-hikma": 1,
    "el-teatro": 1,

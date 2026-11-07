@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "corriges": 3,
+ "corriges": 1,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -137,11 +137,6 @@
       "code": "sans_image",
       "texte": "image",
       "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 4
      }
     ]
    },
@@ -154,11 +149,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 1
      }
     ]
@@ -366,14 +356,14 @@
     "manques": []
    },
    "ig-lart-rue": {
-    "n": 4,
+    "n": 3,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 4,
+      "n": 3,
       "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
@@ -525,7 +515,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 5
+      "n": 2
      }
     ]
    }
@@ -614,14 +604,14 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 5
+      "n": 1
      }
     ]
    },
    "instagram": {
-    "n": 21,
+    "n": 20,
     "precis": 16,
-    "pourcent": 76,
+    "pourcent": 80,
     "defauts": [
      {
       "code": "expo_sans_fin",
@@ -632,7 +622,7 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 4,
+      "n": 3,
       "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
@@ -691,7 +681,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 5
+      "n": 2
      }
     ]
    },
@@ -735,11 +725,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 1
      }
     ]

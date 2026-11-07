@@ -9,8 +9,8 @@ source: "ig-jaou-tunis"
 source_name: "Jaou Tunis (Instagram)"
 image: "assets/programmes/ig-jaou-tunis/2d13b2d5548f.jpg"
 ajoute: "2026-11-04"
-presse: [{"titre": "Jaou Tunis 2026 : Les corps, ces territoires de résistance", "lien": "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/", "source_nom": "La Presse (culture)", "date": "2026-10-31"}]
 festival: "jaou"
+presse: [{"titre": "Jaou Tunis 2026 : Les corps, ces territoires de résistance", "lien": "https://www.lapresse.tn/2026/10/31/jaou-tunis-2026-les-corps-ces-territoires-de-resistance/", "source_nom": "La Presse (culture)", "date": "2026-10-31"}]
 auto: true
 ---
 

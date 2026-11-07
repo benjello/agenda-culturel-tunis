@@ -9,6 +9,7 @@ source: "ig-lart-rue"
 source_name: "L'Art Rue (Instagram)"
 image: "assets/programmes/ig-lart-rue/4c1b789f3d3e.jpg"
 ajoute: "2026-11-05"
+doublon: true
 auto: true
 ---
 
