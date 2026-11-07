@@ -1,6 +1,6 @@
 {
- "date": "2026-11-06",
- "corriges": 2,
+ "date": "2026-11-07",
+ "corriges": 3,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -43,41 +43,11 @@
    ]
   },
   {
-   "fichier": "ig-al-kitab/2026-11-05-rencontre-debat-avec-abdelhamid-largueche-autour-de-ses-ouvr.md",
-   "source": "ig-al-kitab",
-   "titre": "Rencontre-débat avec Abdelhamid Larguèche autour de ses ouvrages La Voix de la braise (Édi",
-   "date": "2026-11-05",
-   "lien": "https://www.instagram.com/p/De1zOMGFY2I/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
    "fichier": "ig-galerie-insular/2026-11-20-la-galerie-insular-a-le-privilege-daccueillir-la-3eme-editio.md",
    "source": "ig-galerie-insular",
    "titre": "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be",
    "date": "2026-11-20",
    "lien": "https://www.instagram.com/p/De7EOPYirHz/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "ig-jaou-tunis/2026-11-22-a-few-moments-from-c-stem-error-the-h-in-my-name-is-not-sile.md",
-   "source": "ig-jaou-tunis",
-   "titre": "A few moments from C!STEM ERROR: The H in My Name Is Not Silent by Nadim Bahsoun, presente",
-   "date": "2026-11-22",
-   "lien": "https://www.instagram.com/p/DfNkcItkaUz/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "ig-jaou-tunis/2026-11-22-a-look-back-at-ma-mediterranee-sensory-collage-a-workshop-le.md",
-   "source": "ig-jaou-tunis",
-   "titre": "A look back at Ma Méditerranée Sensory Collage, a workshop led by Syrine Barouni at B7L9 A",
-   "date": "2026-11-22",
-   "lien": "https://www.instagram.com/p/DfPJPYQCNAW/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
@@ -144,8 +114,8 @@
     ]
    },
    "cine-agora": {
-    "n": 7,
-    "precis": 7,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -167,19 +137,29 @@
       "code": "sans_image",
       "texte": "image",
       "n": 4
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 4
      }
     ]
    },
    "el-teatro": {
-    "n": 2,
-    "precis": 2,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    },
@@ -204,15 +184,15 @@
     ]
    },
    "fb-cite-sciences": {
-    "n": 3,
-    "precis": 3,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 3
+      "n": 1
      }
     ]
    },
@@ -236,6 +216,20 @@
      }
     ]
    },
+   "fb-ift-facebook": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "Podcast Days ne seraient pas complets sans leurs tables rondes"
+     }
+    ],
+    "manques": []
+   },
    "goethe-tunis": {
     "n": 1,
     "precis": 1,
@@ -255,8 +249,8 @@
     ]
    },
    "ift-pdf": {
-    "n": 51,
-    "precis": 15,
+    "n": 48,
+    "precis": 14,
     "pourcent": 29,
     "defauts": [
      {
@@ -268,8 +262,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 36,
-      "exemple": "Mars Express"
+      "n": 34,
+      "exemple": "Lecture Participative"
      },
      {
       "code": "expo_sans_fin",
@@ -287,12 +281,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 36
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
+      "n": 34
      }
     ]
    },
@@ -310,29 +299,22 @@
     "defauts": [],
     "manques": []
    },
-   "ig-al-kitab": {
-    "n": 1,
-    "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": []
-   },
-   "ig-b7l9": {
-    "n": 1,
-    "precis": 1,
+   "ig-creative-hub-sbs": {
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 2
      }
     ]
    },
-   "ig-creative-hub-sbs": {
-    "n": 3,
-    "precis": 3,
+   "ig-fabrika": {
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -350,35 +332,48 @@
     "defauts": [],
     "manques": []
    },
-   "ig-jaou-tunis": {
-    "n": 3,
+   "ig-habibi-downtown": {
+    "n": 1,
     "precis": 1,
-    "pourcent": 33,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "A few moments from C!STEM ERROR: The H in My Name Is Not Silent by Nad"
-     }
-    ],
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 1
      }
     ]
    },
+   "ig-jaou-tunis": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     }
+    ]
+   },
+   "ig-la-boite": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
    "ig-lart-rue": {
-    "n": 5,
+    "n": 4,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 5,
+      "n": 4,
       "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
@@ -417,17 +412,11 @@
     ]
    },
    "ig-theatre-national": {
-    "n": 2,
-    "precis": 2,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 2
-     }
-    ]
+    "manques": []
    },
    "ig-violon-bleu": {
     "n": 2,
@@ -469,6 +458,19 @@
      }
     ]
    },
+   "presse-leaders": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
    "resident-advisor": {
     "n": 1,
     "precis": 0,
@@ -484,20 +486,20 @@
     "manques": []
    },
    "teskerti": {
-    "n": 10,
-    "precis": 10,
+    "n": 9,
+    "precis": 9,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 10
+      "n": 9
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 10
+      "n": 9
      }
     ]
    },
@@ -515,15 +517,15 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 5,
+    "precis": 5,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    }
@@ -544,8 +546,8 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 51,
-    "precis": 15,
+    "n": 48,
+    "precis": 14,
     "pourcent": 29,
     "defauts": [
      {
@@ -557,8 +559,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 36,
-      "exemple": "Mars Express"
+      "n": 34,
+      "exemple": "Lecture Participative"
      },
      {
       "code": "expo_sans_fin",
@@ -576,19 +578,14 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 36
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
+      "n": 34
      }
     ]
    },
    "facebook_programmes": {
-    "n": 14,
-    "precis": 8,
-    "pourcent": 57,
+    "n": 13,
+    "precis": 6,
+    "pourcent": 46,
     "defauts": [
      {
       "code": "lien_partage",
@@ -599,7 +596,7 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 2,
+      "n": 3,
       "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
      }
     ],
@@ -617,14 +614,14 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 3
+      "n": 5
      }
     ]
    },
    "instagram": {
-    "n": 23,
-    "precis": 15,
-    "pourcent": 65,
+    "n": 21,
+    "precis": 16,
+    "pourcent": 76,
     "defauts": [
      {
       "code": "expo_sans_fin",
@@ -635,15 +632,15 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 7,
-      "exemple": "A few moments from C!STEM ERROR: The H in My Name Is Not Silent by Nad"
+      "n": 4,
+      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 12
+      "n": 10
      }
     ]
    },
@@ -660,41 +657,41 @@
      }
     ]
    },
-   "teskerti": {
+   "woocommerce_seances": {
     "n": 10,
     "precis": 10,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
+   "teskerti": {
+    "n": 9,
+    "precis": 9,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 10
+      "n": 9
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 10
+      "n": 9
      }
     ]
    },
-   "woocommerce_seances": {
-    "n": 7,
-    "precis": 7,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": []
-   },
    "tunis_events_cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 5,
+    "precis": 5,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    },
@@ -717,28 +714,33 @@
     ]
    },
    "presse": {
-    "n": 3,
-    "precis": 3,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
+      "n": 4
      }
     ]
    },
    "billetterie_sktech": {
-    "n": 2,
-    "precis": 2,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    }

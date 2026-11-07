@@ -1,7 +1,7 @@
 ---
 title: "Le Mystère Lucy Lost"
 date: 2026-11-07 15:00
-end_date: "2026-11-08 15:00"
+end_date: "2026-11-14 15:00"
 venue: "L'Agora Marsa"
 address: "La Marsa"
 ville: "tunis"
@@ -10,7 +10,7 @@ price: "13 DT"
 link: "https://lagora.tn/produit/le-mystere-lucy-lost/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
-seances: ["2026-11-07 15:00", "2026-11-08 15:00"]
+seances: ["2026-11-07 15:00", "2026-11-08 15:00", "2026-11-14 15:00"]
 image: "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp"
 film: true
 ajoute: "2026-11-01"

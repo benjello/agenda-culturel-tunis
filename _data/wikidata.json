@@ -340,6 +340,21 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "lile-des-souvenirs": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Fantastique",
+   "Aventure",
+   "Comédie"
+  ],
+  "imdb": "tt36583977",
+  "letterboxd": "forgotten-island-2026",
+  "qid": "Q138335503",
+  "titre_wikidata": "L'Île des souvenirs",
+  "tunisien": false,
+  "verifie": "2026-11-07"
+ },
  "mars-express": {
   "age": "Tous publics",
   "annee": 2024,
@@ -388,6 +403,19 @@
  "nawar-achiya": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "naza": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Documentaire"
+  ],
+  "imdb": "tt44766123",
+  "letterboxd": "naza",
+  "qid": "Q141168534",
+  "titre_wikidata": "NAZA",
+  "tunisien": false,
+  "verifie": "2026-11-07"
  },
  "nuremberg": {
   "age": "Tous publics",
@@ -502,6 +530,10 @@
   "titre_wikidata": "Scream 7",
   "tunisien": false,
   "verifie": "2026-11-01"
+ },
+ "scrooge": {
+  "qid": null,
+  "verifie": "2026-11-07"
  },
  "send-help": {
   "age": "-12",

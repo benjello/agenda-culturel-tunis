@@ -7,10 +7,11 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-14"
   ],
   "salles": [
    {
@@ -20,18 +21,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-06",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-07",
       "heures": [
@@ -59,7 +53,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
@@ -73,17 +66,13 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
-     "2026-11-08"
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-06",
-      "heures": [
-       "21:30"
-      ]
-     },
      {
       "jour": "2026-11-07",
       "heures": [
@@ -95,15 +84,33 @@
       "heures": [
        "21:00"
       ]
+     },
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-10",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-14",
+      "heures": [
+       "21:00"
+      ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-06-bakma.md",
-   "_events/auto/cine-alhambra/2026-11-04-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-06-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-06-bakma.md"
+   "_events/auto/cine-agora/2026-11-07-bakma.md",
+   "_events/auto/cine-alhambra/2026-11-07-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-07-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-07-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -115,7 +122,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -127,10 +134,10 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-15"
   ],
   "salles": [
    {
@@ -158,7 +165,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
@@ -173,7 +179,9 @@
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
      "2026-11-07",
-     "2026-11-08"
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-15"
     ],
     "heures": [
      {
@@ -187,19 +195,31 @@
       "heures": [
        "16:45"
       ]
+     },
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-15",
+      "heures": [
+       "17:00"
+      ]
      }
     ]
    }
   ],
   "fichiers": [
    "_events/auto/cine-agora/2026-11-07-weekend.md",
-   "_events/auto/cine-alhambra/2026-11-04-weekend.md",
+   "_events/auto/cine-alhambra/2026-11-07-weekend.md",
    "_events/auto/tunis-events-cinema/2026-11-07-weekend.md",
    "_events/auto/tunis-events-cinema/2026-11-08-weekend.md"
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -211,10 +231,12 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-12",
+   "2026-11-14"
   ],
   "salles": [
    {
@@ -224,7 +246,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
@@ -238,11 +259,32 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-07"
+     "2026-11-07",
+     "2026-11-10",
+     "2026-11-12",
+     "2026-11-14"
     ],
     "heures": [
      {
       "jour": "2026-11-07",
+      "heures": [
+       "16:45"
+      ]
+     },
+     {
+      "jour": "2026-11-10",
+      "heures": [
+       "21:15"
+      ]
+     },
+     {
+      "jour": "2026-11-12",
+      "heures": [
+       "20:30"
+      ]
+     },
+     {
+      "jour": "2026-11-14",
       "heures": [
        "16:45"
       ]
@@ -252,8 +294,8 @@
   ],
   "fichiers": [
    "_events/auto/cine-agora/2026-11-07-dar-el-3ers.md",
-   "_events/auto/cine-alhambra/2026-11-04-dar-el-3ers.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers.md"
+   "_events/auto/cine-alhambra/2026-11-07-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers-l-agora-marsa.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -297,7 +339,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Dans le cadre de projections de films sur l'avenir de notre cohabitation avec les intelligences artificielles et les robots. Mars express, de Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
+  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -336,7 +378,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Dans le cadre de projections de films sur l'avenir de notre cohabitation avec les intelligences artificielles et les robots. Mars express, de Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
+  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -348,7 +390,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-09"
   ],
@@ -360,17 +401,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-06",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-07",
       "heures": [
@@ -387,50 +421,11 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-06-dar-el-3ers.md"
+   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
   "presse": []
- },
- {
-  "titre": "HARAKAT TRAINING/ SCRATCH NIGHT",
-  "id": "harakat-training-scratch-night",
-  "image": "https://api.tunis.events/storage/efd1b9efdd182e4138408fc814d10eccc.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-06"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/k4bEA3/harakat-training-scratch-night-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-06"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-06",
-      "heures": [
-       "19:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-06-harakat-training-scratch-night.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Join us on November 6 at 7 PM at Cinémad’Art to celebrate the culmination of the Harakat Training dramaturgical support programme\nDiscover the participants’ texts brought to life by actors in a live reading performance\nAn evening celebrating new voices, stories, and creative journeys\n📅 November\n🕖 7 PM\n📍 CinéMadart\n🎟️ Tickets on site (cinémad'art box office): 15 DT\n🔴 بيناتنا نص : قراءات مسرحية",
-  "synopsis_source": "",
-  "synopsis_url": ""
  },
  {
   "titre": "LAST CHANCE - لص شايح",
@@ -440,7 +435,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
    "2026-11-09"
@@ -453,7 +447,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
@@ -462,14 +455,11 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-alhambra/2026-11-04-last-chance.md"
+   "_events/auto/cine-alhambra/2026-11-07-last-chance.md"
   ],
   "tunisien": true,
   "jeune": false,
-  "presse": [],
-  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "presse": []
  },
  {
   "titre": "Le Chant des Forêts",
@@ -525,7 +515,8 @@
   "genres": [],
   "jours": [
    "2026-11-07",
-   "2026-11-08"
+   "2026-11-08",
+   "2026-11-14"
   ],
   "salles": [
    {
@@ -536,7 +527,8 @@
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
      "2026-11-07",
-     "2026-11-08"
+     "2026-11-08",
+     "2026-11-14"
     ],
     "heures": [
      {
@@ -547,6 +539,12 @@
      },
      {
       "jour": "2026-11-08",
+      "heures": [
+       "15:00"
+      ]
+     },
+     {
+      "jour": "2026-11-14",
       "heures": [
        "15:00"
       ]
@@ -603,7 +601,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Dans le cadre de projections de films sur l'avenir de notre cohabitation avec les intelligences artificielles et les robots. Mars express, de Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
+  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -615,7 +613,7 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06"
+   "2026-11-13"
   ],
   "salles": [
    {
@@ -625,21 +623,21 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-06"
+     "2026-11-13"
     ],
     "heures": [
      {
-      "jour": "2026-11-06",
+      "jour": "2026-11-13",
       "heures": [
-       "18:15"
+       "20:15"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-06-les-miserables.md",
-   "_events/auto/tunis-events-cinema/2026-11-06-les-miserables.md"
+   "_events/auto/cine-agora/2026-11-13-les-miserables.md",
+   "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md"
   ],
   "jeune": false,
   "presse": [],
@@ -648,51 +646,129 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Mars Express",
-  "id": "mars-express",
-  "image": "",
-  "imdb": "tt26915336",
+  "titre": "L’Île des Souvenirs",
+  "id": "lile-des-souvenirs",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/LIle-des-Souvenirs.webp",
+  "imdb": "tt36583977",
   "duree": null,
   "genres": [
-   "Science-fiction",
-   "Action",
-   "Policier"
+   "Fantastique",
+   "Aventure",
+   "Comédie"
   ],
   "jours": [
-   "2026-11-06"
+   "2026-11-15"
   ],
   "salles": [
    {
-    "nom": "Médiathèque, Institut français de Tunis",
-    "adresse": "",
-    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/lile-des-souvenirs/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-06"
+     "2026-11-15"
     ],
     "heures": [
      {
-      "jour": "2026-11-06",
+      "jour": "2026-11-15",
       "heures": [
-       "14:30"
+       "15:00"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/ift-pdf/2026-11-06-mars-express.md"
+   "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md"
   ],
-  "wikidata": "Q111210475",
-  "letterboxd": "mars-express",
-  "age": "Tous publics",
+  "wikidata": "Q138335503",
+  "letterboxd": "forgotten-island-2026",
+  "age": "",
   "tunisien": false,
   "jeune": false,
   "presse": [],
-  "synopsis": "Mars Express est un film d'animation français de science-fiction réalisé par Jérémie Périn, sorti en 2023. Il est écrit par Jérémie Périn et Laurent Sarfati, et produit par les studios Everybody On Deck et Je suis bien content.",
+  "synopsis": "L'Île des souvenirs ou L'Île de l'oubli au Québec est un film d'animation américain réalisé par Joel Crawford et Januel P. Mercado et sorti en 2026",
   "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Mars_Express_(film)"
+  "synopsis_url": "https://fr.wikipedia.org/wiki/L'%C3%8Ele_des_souvenirs"
+ },
+ {
+  "titre": "NAZA",
+  "id": "naza",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-NAZA.webp",
+  "imdb": "tt44766123",
+  "duree": null,
+  "genres": [
+   "Documentaire"
+  ],
+  "jours": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/naza/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-11",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-12",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-13",
+      "heures": [
+       "18:30"
+      ]
+     },
+     {
+      "jour": "2026-11-14",
+      "heures": [
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-15",
+      "heures": [
+       "21:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-11-naza.md",
+   "_events/auto/tunis-events-cinema/2026-11-11-naza.md"
+  ],
+  "wikidata": "Q141168534",
+  "letterboxd": "naza",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Naza, parfois stylisé NAZA, est un film documentaire britannique sorti en 2026 et réalisé par les journalistes et cinéastes israéliens Yuval Abraham et Rachel Szor, déjà auteurs du film primé No Other Land en 2024.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Naza_(film)"
  },
  {
   "titre": "Projection-débat autour du film Save our souls",
@@ -773,6 +849,54 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Scrooge",
+  "id": "scrooge",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-11",
+   "2026-11-15"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/scrooge/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-11",
+     "2026-11-15"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-11",
+      "heures": [
+       "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-15",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-11-scrooge.md",
+   "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C’est alors qu’il reçoit la visite du fantôme d’un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
   "titre": "Shaun le mouton : La bêêête d'Halloween",
   "id": "shaun-le-mouton-la-beeete-d-halloween",
   "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/azvgrl6crz2k8lrmojzh",
@@ -848,7 +972,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Dans le cadre de projections de films sur l'avenir de notre cohabitation avec les intelligences artificielles et les robots. Mars express, de Jérémie Périn, 2023, 1h25mn, Animation, Science-Fiction.",
+  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -990,7 +1114,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-06",
    "2026-11-07",
    "2026-11-08",
    "2026-11-09"
@@ -1003,18 +1126,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-06",
      "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-06",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-07",
       "heures": [
@@ -1037,7 +1153,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-06-what-else.md"
+   "_events/auto/tunis-events-cinema/2026-11-07-what-else.md"
   ],
   "tunisien": true,
   "jeune": false,

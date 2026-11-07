@@ -17,5 +17,5 @@ De novembre 2026 à Janvier 2027, la Médiathèque de l'Institut français de Tu
 
 Cet atelier se déroulera sur 6 séances selon les dates suivantes tous les samedis, de 11h à 13h : 14 et 28 novembre, 12 et 19 décembre, et 9 et 23 janvier. 
 
-L'inscription est exigée auprès des participants.
+L'inscription à la Médiathèque est exigée auprès des participants.
 Tarif : 10 DT par séance.

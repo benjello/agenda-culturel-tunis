@@ -2,8 +2,18 @@
   "id": "cine-alhambra",
   "nom": "Alhambra Zéphyr (La Marsa)",
   "url": "https://www.facebook.com/cine.alhambra.zephyr",
-  "mis_a_jour": "2026-11-04",
+  "mis_a_jour": "2026-11-07",
   "publications": [
+    {
+      "lien": "https://www.facebook.com/100064660932929/posts/1581098474055502",
+      "date": "2026-11-05",
+      "texte": "🎭 سهرة كوميدية استثنائية في المرسى! ✨🇹🇳\nاستعدوا لسهرة مليئة بالضحك والفرجة مع العرض «ولد الطلياني»، بمشاركة سفيان الداهش، لبنى السديري ونور الدين بوحجبة.\n📅 06 نوفمبر 2026\n📍 الزفير - المرسى\n🕗 20H00\n🎟️ التذاكر متوفرة على:\nhttps://teskerti.tn/evenement/weld-talyani",
+      "images": [
+        "assets/programmes/cine-alhambra/7f16bbd0613c.jpg"
+      ],
+      "ocr_facebook": "May be an image of one or more people and text",
+      "ocr": "a ١ MARSA\n1 0 bis"
+    },
     {
       "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
       "date": "2026-10-30",
