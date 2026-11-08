@@ -211,6 +211,7 @@ Fiabilité
 Comprendre sans cliquer (demandé le 2 novembre)
 - [x] Aperçu au survol (ordinateur) et bouton 👁 en feuille du bas (téléphone) : affiche, heure, lieu, prix, notice.
 - [x] « Ce soir à Tunis » en tête de l'accueil : événements du jour classés par heure, avec « dans 40 min ».
+- [x] Titre de « Ce soir à Tunis » adapté à l'heure affichée : « Ce matin », « Cet après-midi », « Ce soir », ou « Aujourd'hui » si la liste mêle les moments (fr, ar, en).
 - [x] Heure de début en évidence sous la date de chaque carte.
 - [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
 - [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.

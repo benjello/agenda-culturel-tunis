@@ -497,7 +497,18 @@
     });
     if (!items.length) return;
     items.sort(function (a, b) { return a.h < b.h ? -1 : a.h > b.h ? 1 : 0; });
-    items.slice(0, 8).forEach(function (it) {
+    // Le titre suit l'heure des événements affichés : « Ce matin » (avant 12 h), « Cet après-midi » (12 h à 17 h),
+    // « Ce soir » (à partir de 17 h) ; « Aujourd'hui » si la liste mêle plusieurs moments de la journée.
+    var affiches = items.slice(0, 8);
+    var moments = affiches.map(function (it) { return it.h < '12:00' ? 'matin' : it.h < '17:00' ? 'apres_midi' : 'soir'; });
+    var cleTitre = moments.every(function (m) { return m === moments[0]; })
+      ? { matin: 'ce_soir_matin', apres_midi: 'ce_soir_apres_midi', soir: 'ce_soir_titre' }[moments[0]] : 'ce_soir_jour';
+    var titre = zone.querySelector('[data-t]');
+    if (titre && I18N[cleTitre]) {
+      titre.dataset.t = cleTitre; titre._fr = I18N[cleTitre].fr;
+      titre.textContent = t(cleTitre, I18N[cleTitre].fr);
+    }
+    affiches.forEach(function (it) {
       var min = Math.round((it.debut - maintenant) / 60000), reste;
       if (min <= 0) reste = t('en_cours_maintenant', 'a commencé');
       else if (min < 60) reste = t('dans', 'dans') + ' ' + min + ' min';
