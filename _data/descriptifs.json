@@ -117,6 +117,11 @@
    "texte": "Kapitalis est un site web tunisien d'actualités en langue française lancé en mars 2010.",
    "url": "https://fr.wikipedia.org/wiki/Kapitalis"
   },
+  "presse-kapitalis-ar": {
+   "source": "Wikipédia",
+   "texte": "Kapitalis est un site web tunisien d'actualités en langue française lancé en mars 2010.",
+   "url": "https://fr.wikipedia.org/wiki/Kapitalis"
+  },
   "presse-lapresse": {
    "source": "site officiel",
    "texte": "a Presse de Tunisie, quotidien de référence depuis 1936 : actualité nationale, économie, sport, culture et international.",
@@ -126,6 +131,11 @@
    "source": "site officiel",
    "texte": "Leaders le journal en ligne qui présente l'actualité et les News de la Tunisie et du monde : Actualité politique et économique, infos nationale et régionale.",
    "url": "https://www.leaders.com.tn/"
+  },
+  "presse-mosaique-ar": {
+   "source": "Wikipédia",
+   "texte": "Mosaïque FM est la première station de radio privée de Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_(Tunisie)"
   },
   "presse-realites": {
    "source": "site officiel",
@@ -1723,6 +1733,14 @@
   },
   "collectifs:librairie-al-kitab": {
    "verifie": "2026-11-02",
+   "vu": "2026-11-08"
+  },
+  "collectifs:mosaique-fm": {
+   "langue": "fr",
+   "source": "Wikipédia",
+   "texte": "Mosaïque FM est la première station de radio privée de Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_(Tunisie)",
+   "verifie": "2026-11-08",
    "vu": "2026-11-08"
   },
   "collectifs:musee-national-du-bardo": {

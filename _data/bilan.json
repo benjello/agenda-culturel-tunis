@@ -102,7 +102,7 @@
   "date": "2026-11-08",
   "a_venir": 122,
   "sept_jours": 69,
-  "sources_actives": 79,
+  "sources_actives": 81,
   "sources_avec_evenements": 24,
   "sources_muettes": [
    "cine-360",
@@ -154,7 +154,9 @@
    "kapitalis-cite-sciences",
    "opera-tunis",
    "presse-economiste-maghrebin",
+   "presse-kapitalis-ar",
    "presse-lapresse",
+   "presse-mosaique-ar",
    "presse-realites",
    "presse-webdo",
    "resident-advisor",

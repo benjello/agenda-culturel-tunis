@@ -771,6 +771,15 @@
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
+  "presse-kapitalis-ar": {
+    "attente": null,
+    "dernier_passage": "2026-11-08T15:43:37",
+    "dernier_succes": "2026-11-08T15:43:37",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-08T15:43:37"
+  },
   "presse-lapresse": {
     "attente": null,
     "dernier_non_vide": "2026-11-05T13:10:30",
@@ -790,6 +799,15 @@
     "nb": 1,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
+  },
+  "presse-mosaique-ar": {
+    "attente": null,
+    "dernier_passage": "2026-11-08T15:43:37",
+    "dernier_succes": "2026-11-08T15:43:37",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-08T15:43:37"
   },
   "presse-realites": {
     "attente": null,

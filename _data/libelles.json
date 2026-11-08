@@ -1624,6 +1624,16 @@
   "ar": "Kairouan",
   "en": "Kairouan"
  },
+ "Kapitalis (Anbaa Tounes": {
+  "de": "fr",
+  "ar": "كابتاليس (أنبا تونيس)",
+  "en": "Kapitalis (Anbaa Tunes"
+ },
+ "Kapitalis (Anbaa Tounes, en arabe)": {
+  "de": "fr",
+  "ar": "كابتاليس (أنبا تونز، بالعربية)",
+  "en": "Kapitalis (Anbaa Tunes, in Arabic)"
+ },
  "Kapitalis (culture)": {
   "de": "fr",
   "ar": "الكابيتاليس (الثقافة)",
@@ -2378,6 +2388,16 @@
   "de": "fr",
   "ar": "الدير",
   "en": "Monastir"
+ },
+ "Mosaïque FM (en arabe)": {
+  "de": "fr",
+  "ar": "موجة FM (عربية)",
+  "en": "Mosaic FM (Arabic)"
+ },
+ "Mosaïque FM est la première station de radio privée de Tunisie.": {
+  "de": "fr",
+  "ar": "موزيك إف إم هو أول محطة إذاعية خاصة في تونس",
+  "en": "Mosaic FM is Tunisia's first private radio station."
  },
  "Mouhit": {
   "de": "fr",
@@ -3623,6 +3643,11 @@
   "de": "fr",
   "ar": "والفنون)",
   "en": "and Arts)"
+ },
+ "en arabe)": {
+  "de": "fr",
+  "ar": "العربية(",
+  "en": "in Arabic)"
  },
  "harrison guyett": {
   "de": "fr",
