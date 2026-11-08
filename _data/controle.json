@@ -1,6 +1,6 @@
 {
- "date": "2026-11-07",
- "corriges": 1,
+ "date": "2026-11-08",
+ "corriges": 3,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -10,16 +10,6 @@
    "lien": "https://www.beitalhikma.tn/%d9%85%d8%ad%d8%a7%d8%b6%d8%b1%d8%a9-%d8%aa%d8%ad%d9%88%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%83%d8%aa%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d8%a3%d8%ab%d8%b1%d9%8a%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b1%d8%a7/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "fb-cr-sidibouzid/2026-11-01-evenement.md",
-   "source": "fb-cr-sidibouzid",
-   "titre": "الورشات الفنية الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد",
-   "date": "2026-11-01",
-   "lien": "https://www.facebook.com/100068921841441/posts/1436410405333007",
-   "problemes": [
-    "deux fois dans la source (voir 2026-11-01-evenement-sidi-bouzid-voir-l-annonce.md)"
    ]
   },
   {
@@ -114,8 +104,8 @@
     ]
    },
    "cine-agora": {
-    "n": 10,
-    "precis": 10,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -150,6 +140,11 @@
       "code": "sans_image",
       "texte": "image",
       "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    },
@@ -161,8 +156,8 @@
     "manques": []
    },
    "fb-artisto": {
-    "n": 4,
-    "precis": 4,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -186,16 +181,16 @@
      }
     ]
    },
-   "fb-cr-sidibouzid": {
-    "n": 2,
+   "fb-cr-sousse": {
+    "n": 1,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+      "n": 1,
+      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
      }
     ],
     "manques": [
@@ -239,9 +234,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 48,
-    "precis": 14,
-    "pourcent": 29,
+    "n": 43,
+    "precis": 10,
+    "pourcent": 23,
     "defauts": [
      {
       "code": "titre_generique",
@@ -252,8 +247,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 34,
-      "exemple": "Lecture Participative"
+      "n": 33,
+      "exemple": "Cinéma d’Animation"
      },
      {
       "code": "expo_sans_fin",
@@ -271,16 +266,22 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 34
+      "n": 33
      }
     ]
    },
    "ig-agora-djerba": {
-    "n": 1,
-    "precis": 1,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
-    "manques": []
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     }
+    ]
    },
    "ig-agorgi-gallery": {
     "n": 1,
@@ -356,14 +357,14 @@
     "manques": []
    },
    "ig-lart-rue": {
-    "n": 3,
+    "n": 1,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 3,
+      "n": 1,
       "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
@@ -371,7 +372,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 1
      }
     ]
    },
@@ -436,15 +437,15 @@
     ]
    },
    "presse-kapitalis": {
-    "n": 3,
-    "precis": 3,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
+      "n": 1
      }
     ]
    },
@@ -476,20 +477,20 @@
     "manques": []
    },
    "teskerti": {
-    "n": 9,
-    "precis": 9,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 9
+      "n": 8
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 9
+      "n": 8
      }
     ]
    },
@@ -507,15 +508,15 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 5,
-    "precis": 5,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    }
@@ -536,9 +537,9 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 48,
-    "precis": 14,
-    "pourcent": 29,
+    "n": 43,
+    "precis": 10,
+    "pourcent": 23,
     "defauts": [
      {
       "code": "titre_generique",
@@ -549,8 +550,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 34,
-      "exemple": "Lecture Participative"
+      "n": 33,
+      "exemple": "Cinéma d’Animation"
      },
      {
       "code": "expo_sans_fin",
@@ -568,14 +569,14 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 34
+      "n": 33
      }
     ]
    },
    "facebook_programmes": {
-    "n": 13,
-    "precis": 6,
-    "pourcent": 46,
+    "n": 11,
+    "precis": 5,
+    "pourcent": 45,
     "defauts": [
      {
       "code": "lien_partage",
@@ -586,8 +587,8 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 3,
-      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+      "n": 2,
+      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
      }
     ],
     "manques": [
@@ -609,9 +610,9 @@
     ]
    },
    "instagram": {
-    "n": 20,
-    "precis": 16,
-    "pourcent": 80,
+    "n": 19,
+    "precis": 17,
+    "pourcent": 89,
     "defauts": [
      {
       "code": "expo_sans_fin",
@@ -622,7 +623,7 @@
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 3,
+      "n": 1,
       "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
@@ -630,7 +631,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 10
+      "n": 11
      }
     ]
    },
@@ -648,40 +649,40 @@
     ]
    },
    "woocommerce_seances": {
-    "n": 10,
-    "precis": 10,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": []
    },
    "teskerti": {
-    "n": 9,
-    "precis": 9,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 9
+      "n": 8
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 9
+      "n": 8
      }
     ]
    },
    "tunis_events_cinema": {
-    "n": 5,
-    "precis": 5,
+    "n": 6,
+    "precis": 6,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 6
      }
     ]
    },
@@ -704,15 +705,15 @@
     ]
    },
    "presse": {
-    "n": 4,
-    "precis": 4,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
+      "n": 2
      }
     ]
    },
@@ -725,6 +726,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]

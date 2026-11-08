@@ -5,7 +5,6 @@
   "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
   "Dar Ziqua, Zaghouan": "dar-ziqua-zaghouan",
-  "Lieu : 3 rue de Damas le belvédère, Tunis": "lieu-3-rue-de-damas-le-belvedere-tunis",
   "Espace L'Artisto": "espace-l-artisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
   "Institut français de Tunisie": "institut-francais-de-tunisie",
@@ -35,11 +34,9 @@
   "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Le Violon Bleu, Sidi Bou Saïd": "le-violon-bleu-sidi-bou-said",
   "One Resort": "one-resort",
-  "Théâtre Le 4ème Art": "theatre-le-4eme-art",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
-  "La Verrière (Le sous-sol)- Café Resto": "la-verriere-le-sous-sol-cafe-resto",
   "Grafiflow": "grafiflow",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
   "UTICA UNION TUN. THE IND. TRADE & ART": "utica-union-tun-the-ind-trade-art",
@@ -89,7 +86,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 18
+   "n": 19
   },
   {
    "slug": "mediatheque-institut-francais-de-tunis",
@@ -98,16 +95,7 @@
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 15
-  },
-  {
-   "slug": "institut-francais-de-tunis",
-   "nom": "Institut français de Tunis",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8021,
-   "lon": 10.18066,
-   "n": 9
+   "n": 14
   },
   {
    "slug": "theatre-municipal-de-tunis",
@@ -137,6 +125,15 @@
    "n": 6
   },
   {
+   "slug": "institut-francais-de-tunis",
+   "nom": "Institut français de Tunis",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 5
+  },
+  {
    "slug": "mediatheque-institut-francais-de-sfax",
    "nom": "Médiathèque, Institut français de Sfax",
    "type": "bibliotheque",
@@ -164,30 +161,12 @@
    "n": 4
   },
   {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
-   "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
-   "n": 4
-  },
-  {
    "slug": "beit-al-hikma-carthage",
    "nom": "Beit al-Hikma, Carthage",
    "type": "centre",
    "ville": "tunis",
    "lat": 35.6619,
    "lon": 10.08999,
-   "n": 3
-  },
-  {
-   "slug": "institut-francais-de-sfax",
-   "nom": "Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
    "n": 3
   },
   {
@@ -207,6 +186,24 @@
    "lat": 36.8125,
    "lon": 10.1817,
    "n": 3
+  },
+  {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 2
+  },
+  {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
+   "n": 2
   },
   {
    "slug": "salle-albert-camus-institut-francais-de-sfax",
@@ -251,6 +248,15 @@
    "ville": "tunis",
    "lat": 36.889,
    "lon": 10.307,
+   "n": 2
+  },
+  {
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
+   "ville": "tunis",
+   "lat": 34.59926,
+   "lon": 9.59188,
    "n": 2
   },
   {
@@ -341,24 +347,6 @@
    "ville": "monastir",
    "lat": 35.76372,
    "lon": 10.7399,
-   "n": 1
-  },
-  {
-   "slug": "theatre-le-4eme-art",
-   "nom": "Théâtre Le 4ème Art",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.80189,
-   "lon": 10.18123,
-   "n": 1
-  },
-  {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
-   "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
    "n": 1
   },
   {

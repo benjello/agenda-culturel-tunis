@@ -9,10 +9,10 @@ price: "13 DT"
 link: "https://lagora.tn/produit/les-miserables/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
+seances: ["2026-11-13 20:15", "2026-11-13 20:45"]
 image: "https://lagora.tn/wp-content/uploads/2026/10/les-miserables.jpg"
 film: true
 ajoute: "2026-11-07"
-autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/les-miserables", "source": "tunis-events-cinema"}]
 auto: true
 ---
 

@@ -11,7 +11,6 @@ source_name: "Institut français de Tunisie (Facebook)"
 image: "assets/programmes/fb-ift-facebook/e0a14d6890b0.jpg"
 ajoute: "2026-11-04"
 festival: "podcast-days"
-autres_sources: [{"name": "L'Art Rue (Instagram)", "link": "https://www.instagram.com/p/DfNU2jPjOKM/", "source": "ig-lart-rue"}]
 auto: true
 ---
 

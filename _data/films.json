@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
@@ -21,17 +20,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -53,7 +45,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
@@ -66,19 +57,12 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09",
      "2026-11-10",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -107,10 +91,10 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-07-bakma.md",
+   "_events/auto/cine-agora/2026-11-08-bakma.md",
    "_events/auto/cine-alhambra/2026-11-07-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-bakma.md"
+   "_events/auto/tunis-events-cinema/2026-11-08-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-08-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -122,7 +106,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -134,7 +118,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-15"
@@ -165,7 +148,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
@@ -178,18 +160,11 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "19:15"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -212,14 +187,14 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-07-weekend.md",
+   "_events/auto/cine-agora/2026-11-08-weekend.md",
    "_events/auto/cine-alhambra/2026-11-07-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-08-weekend-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-08-weekend.md"
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -231,7 +206,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09",
    "2026-11-10",
@@ -246,7 +220,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
@@ -259,18 +232,11 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-10",
      "2026-11-12",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "16:45"
-      ]
-     },
      {
       "jour": "2026-11-10",
       "heures": [
@@ -293,9 +259,9 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-07-dar-el-3ers.md",
+   "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md",
    "_events/auto/cine-alhambra/2026-11-07-dar-el-3ers.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers-l-agora-marsa.md"
+   "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -390,7 +356,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-09"
   ],
   "salles": [
@@ -401,16 +366,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-07",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-09",
       "heures": [
@@ -421,7 +379,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-07-dar-el-3ers.md"
+   "_events/auto/tunis-events-cinema/2026-11-09-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -435,7 +393,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09"
   ],
@@ -447,7 +404,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
@@ -517,7 +473,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-14"
   ],
@@ -529,17 +484,10 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "15:00"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -556,8 +504,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-07-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-07-le-mystere-lucy-lost.md"
+   "_events/auto/cine-agora/2026-11-08-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-08-le-mystere-lucy-lost.md"
   ],
   "wikidata": "Q141827108",
   "letterboxd": "",
@@ -632,7 +580,8 @@
      {
       "jour": "2026-11-13",
       "heures": [
-       "20:15"
+       "20:15",
+       "20:45"
       ]
      }
     ]
@@ -707,7 +656,6 @@
   "jours": [
    "2026-11-11",
    "2026-11-12",
-   "2026-11-13",
    "2026-11-14",
    "2026-11-15"
   ],
@@ -721,7 +669,6 @@
     "jours": [
      "2026-11-11",
      "2026-11-12",
-     "2026-11-13",
      "2026-11-14",
      "2026-11-15"
     ],
@@ -736,12 +683,6 @@
       "jour": "2026-11-12",
       "heures": [
        "19:00"
-      ]
-     },
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "18:30"
       ]
      },
      {
@@ -900,47 +841,6 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Shaun le mouton : La bêêête d'Halloween",
-  "id": "shaun-le-mouton-la-beeete-d-halloween",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/azvgrl6crz2k8lrmojzh",
-  "imdb": "",
-  "duree": null,
-  "genres": [
-   "Animation"
-  ],
-  "jours": [
-   "2026-11-07"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6511",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-07"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "15:30"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-07-shaun-le-mouton-la-beeete-d-halloween.md"
-  ],
-  "jeune": true,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie propose à son jeune public le film d'animation Shaun le mouton : La Bêêête d'Hallowen de Steve Cox et Matthew Walker.\nRésumé :\nÀ Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "Sous les Étoiles de Paris",
   "id": "sous-les-etoiles-de-paris",
   "image": "",
@@ -976,6 +876,45 @@
   "jeune": false,
   "presse": [],
   "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Touskié Tounsi",
+  "id": "touskie-tounsi",
+  "image": "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/touskie-tounsi/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Plongez dans l’univers drôle et percutant de « Touskié Tounsi », le spectacle de Mehdi Bachtarzi ! À travers des anecdotes savoureuses et un regard tendre sur les cultures et le quotidien, il nous embarque dans un voyage hilarant entre traditions, identité et modernité. Un moment de partage, de rires et d’émotions à ne pas manquer.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -1117,7 +1056,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-07",
    "2026-11-08",
    "2026-11-09"
   ],
@@ -1129,17 +1067,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-07",
      "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-07",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-08",
       "heures": [
@@ -1156,7 +1087,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-07-what-else.md"
+   "_events/auto/tunis-events-cinema/2026-11-08-what-else.md"
   ],
   "tunisien": true,
   "jeune": false,

@@ -1,6 +1,6 @@
 ---
 title: "Les misérables"
-date: 2026-11-13 20:15
+date: 2026-11-13 20:45
 venue: "L'Agora Marsa"
 address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 ville: "tunis"
@@ -11,7 +11,6 @@ source_name: "tunis.events (cinéma)"
 image: "https://api.tunis.events/storage/scraped/a2ef21242b240453669023e31437b845.jpg"
 film: true
 ajoute: "2026-11-07"
-doublon: true
 auto: true
 ---
 
