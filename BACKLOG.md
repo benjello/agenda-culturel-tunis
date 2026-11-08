@@ -24,6 +24,14 @@ Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées d
   [#113 version anglaise ou arabe](https://github.com/benjello/agenda-culturel-tunis/issues/113),
   [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
 
+## Public arabophone
+
+Demande de Mahdi du 8 nov. 2026 : élargir aux concerts et événements pour le public arabophone. Fait : presse en arabe branchée
+(`presse-kapitalis-ar`, `presse-mosaique-ar`, flux RSS vérifiés). Les pages Facebook/Instagram des lieux arabophones restent à trouver
+(entrée `musique-arabophone` de `_data/sources_recherchees.yml`).
+
+- [ ] Trouver les comptes Facebook/Instagram des lieux et organisateurs de concerts arabophones (musique tunisienne et arabe, mezoued, rap), puis les brancher.
+
 ## Horaires
 
 Chaque événement porte son heure de début (`date: AAAA-MM-JJ HH:MM`) et, si on la connaît, son heure de fin

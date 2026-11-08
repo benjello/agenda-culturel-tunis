@@ -1839,3 +1839,23 @@
     lieu: "Galerie Yosr Ben Ammar"
     resultats: 8
   note: "Proposée par Mahdi le 2 nov. 2026. Adresse à confirmer."
+
+- id: presse-kapitalis-ar
+  nom: Kapitalis (Anbaa Tounes, en arabe)
+  url: https://kapitalis.com/anbaa-tounes/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Édition arabe de Kapitalis : annonces de concerts, soirées et festivals pour le public arabophone. Flux vérifié le 8 nov. 2026 (RSS valide)."
+
+- id: presse-mosaique-ar
+  nom: Mosaïque FM (en arabe)
+  url: https://www.mosaiquefm.net/ar/rss
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Flux général en arabe (surtout actualité) : le scraper ne garde que les articles qui annoncent un événement daté. Flux vérifié le 8 nov. 2026 (RSS valide)."
