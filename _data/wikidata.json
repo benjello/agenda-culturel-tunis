@@ -17,7 +17,7 @@
  },
  "bakma": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "biscuit-le-chien-fantastique": {
   "age": "Tous publics",
@@ -50,7 +50,7 @@
  },
  "dar-el-3ers": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "diamanti": {
   "age": "Tous publics",
@@ -188,6 +188,10 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "karma": {
+  "qid": null,
+  "verifie": "2026-11-09"
+ },
  "klara-and-the-sun": {
   "age": "",
   "annee": 2026,
@@ -253,7 +257,7 @@
  },
  "last-chance": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "le-chant-des-forets": {
   "age": "Tous publics",
@@ -334,7 +338,7 @@
  },
  "les-miserables": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "letranger": {
   "qid": null,
@@ -586,7 +590,7 @@
  },
  "touskie-tounsi": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "un-fils": {
   "qid": null,
@@ -617,7 +621,7 @@
  },
  "van-gogh": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "verity": {
   "age": "",
@@ -647,11 +651,11 @@
  },
  "weekend": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "what-else": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "where-the-wind-comes-from": {
   "age": "",

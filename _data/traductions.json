@@ -108,13 +108,13 @@
    "fr": "Fabrika Festival 14",
    "ar": "مهرجان فابريكا 14"
   },
-  "Festival de Cinéma Environnemental - 2e édition": {
-   "ar": "Environmental Cinema Festival - 2nd edition",
-   "en": "Environmental Cinema Festival - 2nd edition"
-  },
   "Festival international du Sahara de Douz (58e édition)": {
    "ar": "مهرجان الصحراء الكبرى دي دوز الدولي (الطبعة 58)",
    "en": "Sahara de Douz International Festival (58th edition)"
+  },
+  "GLIBETT ILLUSTRATION MARKET": {
+   "ar": "GLIBETT ILUSTRATION MARKET",
+   "en": "GLIBETT ILLUSTRATION MARKET"
   },
   "Héritages Croisés": {
    "ar": "التراث المعبر",
@@ -284,6 +284,10 @@
    "fr": "Regarder les jeux de fête",
    "ar": "مشاهدة الحزب الراقص"
   },
+  "marwen 777 – Batterie": {
+   "ar": "ماروين ٧٧٧ - البطارية",
+   "en": "marwen 777 – Battery"
+  },
   "un Monde Merveilleux": {
    "ar": "عالم رائع",
    "en": "A Wonderful World"
@@ -304,6 +308,10 @@
    "fr": "Conférence : Transformations archéologiques et génétiques en Tunisie : de l'héritage colonial au renouveau des approches cognitives du professeur Fawzi réservé",
    "en": "Lecture: Archaeological and genetic transformations in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi reserved"
   },
+  "مهرجان القاهرة السينمائي الدولي يكرّم الفنان الكبير فاروق فلوكس بالهرم الذهبي لإنجاز العمر": {
+   "fr": "Le Festival international du film du Caire rend hommage au grand artiste, Farooq Floakes, avec la pyramide d'or pour atteindre l'âge.",
+   "en": "The Cairo International Film Festival honors the great artist, Farooq Floakes, with the golden pyramid to achieve age."
+  },
   "ندوة يومي 19 و": {
    "fr": "Colloque des 19 et 19",
    "en": "Colloquium on 19 and 19"
@@ -320,24 +328,14 @@
    "ar": "وظهرت أول كلمة في بيت الحكيمة.",
    "en": "البرنام的 L的 article ندو的 يومي 19 و20 نوفمبر 2026 appeared first on Beit al-Hikma."
   },
-  "_events/auto/cine-agora/2026-11-08-bakma.md": {
+  "_events/auto/cine-agora/2026-11-09-bakma.md": {
    "cle": "bd01c3eb7145",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة أعضاؤه تم قطع رأسهم واختفى في مكانه القاتل كان يتستر على رأس كلب",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, in its place, the murderer grotesquely sewn a dog's head."
   },
-  "_events/auto/cine-agora/2026-11-08-le-mystere-lucy-lost.md": {
-   "cle": "a66053e9d573",
-   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز على رفض السكان. عندما تقابل ميلي فتاة صغيرة تستطيع رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
-   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly – a little girl she alone can see – Lucy embarks on a great adventure to break the secret of her mysterious powers."
-  },
-  "_events/auto/cine-agora/2026-11-08-verity.md": {
-   "cle": "d8628654da8e",
-   "ar": "(لوين آشلي) كاتب وحيد وبصفتها رساماً لمهنتها، وافقت على أن تصبح الكاتبة الناجحة، فيرتي كراوفورد، واستقرت في ممتلكاتها المنعزلة. بإكتشاف ما يبدو أنه ملاحظات شخصية لـ(فيرتي) الشاب (لوين) يجد نفسه يواجه مع مخاوف مقلقة ومقلقة بشأن زوج (فيرتي) (جيرمي)",
-   "en": "Lowen Ashleigh is a lonely writer. As a painter of her profession, she agreed to become the successful author, Verity Crawford, and settled in her secluded property. By discovering what seems to be Verity's personal notes, young Lowen finds herself confronted with disturbing and disturbing revelations about Verity's husband Jeremy."
-  },
-  "_events/auto/cine-agora/2026-11-08-weekend.md": {
+  "_events/auto/cine-agora/2026-11-09-weekend.md": {
    "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها الوقت.",
+   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم (نور) سيحوّل هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
    "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
   "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md": {
@@ -359,6 +357,11 @@
    "cle": "af3404a1ef36",
    "ar": "(جان فالجان) قرر أن يغير حياته ويفعل الخير حوله تحت هوية زائفة، أصبح، بمرور الوقت، جديراً بالتقدير من الجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، يُعد بأن ينقذ ابنته (كوسيت)، من مخالب (الثناردي) القاسي. ولكن ماضيه أمسك به: المفتش جافرت، شرطي لا يطاق في الماضي كان مُعذباً أيضاً، ولاحقه بلا هوادة لإعادته إلى المشنقة.",
    "en": "Freed after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, he became, over time, a respected notable of all. Coming to help Fantine, a dying worker, he promises to save his daughter, Cosette, from the claws of the cruel Thénardier. But his past caught him up: Inspector Javert, an implacable policeman in the past who was also tormented, pursued him relentlessly in order to send him back to the gallows."
+  },
+  "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md": {
+   "cle": "a66053e9d573",
+   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز رفض السكان. عندما تقابل ميلي فتاة صغيرة تستطيع رؤيتها لوحدها لوسي بدأت بمغامرة كبيرة لكسر سر قوتها الغامضة",
+   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly – a little girl she alone can see – Lucy embarks on a great adventure to break the secret of her mysterious powers."
   },
   "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md": {
    "cle": "61dfc8e8de21",
@@ -395,7 +398,7 @@
    "ar": "ويجب على عائلتين تعارضان أن تعدا أطفالهما للزواج في أسبوع واحد فقط. بين التقاليد، والمنافسات، سوء الفهم والأوضاع المضحكة، هذا الإتحاد يَعِدُ بأَنْ لا يَكُونَ من أيّ راحة... لماذا مثل هذه الحالة الطارئة؟ تعال و إكتشفه في السينما في دار ال 3رز وإذا لم يكن الشخص الوحيد الذي يتأكد من هذا، فإنه ليس الوحيد الذي يتأكد من ذلك، فهو الوحيد الذي يمكنه أن يفعل ذلك.",
    "en": "Two families that are opposed must prepare their children for marriage in just one week. Between traditions, rivalries, misunderstandings and hilarious situations, this union promises not to be of any rest... Why such an emergency? Come discover it at the cinema in Dar El 3ers! عا Whilst not the only one to be sure about this, it is not the only one to be sure about this, it is the only one to be able to do so."
   },
-  "_events/auto/el-teatro/2026-11-08-le-fou.md": {
+  "_events/auto/el-teatro/2026-11-12-le-fou.md": {
    "cle": "6be25bf3fe33",
    "ar": "نحتاج إلى صوت يدفعنا نحو إنسانيتنا، نحو (كليمنس)...\nصوت يرتفع فوق السلطه والاستبعاد\nصوت نبوء، صوت روحي...\nصوت أحمق...\nصوت (جيبران)...",
    "en": "Need a voice pushing us towards our Humanity, towards Clemence...\nA voice rising above authoritarianism, exclusion...\nA prophetic voice, a spiritual voice...\nThe voice of a fool...\nGibran's voice..."
@@ -455,16 +458,6 @@
    "ar": "وفي الفترة من 3 إلى 19 تشرين الثاني/نوفمبر، يرحب المعهد الفرنسي لتونس في فاكس بفيرونيك ويلمان وسان أوادا جالو كجزء من كتابات الإقامة المخصصة لاكتشاف التراث والثراء الثقافي والفني في مدينة سفاكس وتطهيره.",
    "en": "From 3 to 19 November, the French Institute of Tunisia in Sfax welcomes Véronique Willmann and Sawsan Awada Jalu as part of a writing residency dedicated to the discovery and valorisation of the heritage, cultural and artistic richness of the city of Sfax."
   },
-  "_events/auto/ift-pdf/2026-11-07-festival-de-cinema-environnemental-2e-edition.md": {
-   "cle": "2d9ba8155f39",
-   "ar": "وستُعقد الطبعة الثانية من مهرجان سينما البيئي في 7 و 8 تشرين الثاني/نوفمبر في مسرح بلدية سفاكس لوضع الفن السابع في قلب القضايا البيئية.\nوينظم هذا الحدث المعهد الفرنسي لتونس في سفاكس في شراكة مع منتدى سفاكس للفنون والثقافة ومؤسسة جي سي سيدي منصور.",
-   "en": "The 2nd edition of the \"Environmental Cinema Festival\" will be held on November 7 and 8 at the Sfax Municipal Theatre to place the 7th art at the heart of environmental issues.\nThis event is organized by the French Institute of Tunisia in Sfax in partnership with the Sfax Forum of Arts and Cultures and the JCI Sidi Mansour."
-  },
-  "_events/auto/ift-pdf/2026-11-08-atelier-de-seances-de-bibliotherapie-autour-du-roman-tunis-b.md": {
-   "cle": "0bafb5142f42",
-   "ar": "مكتبة الإعلام في المعهد الفرنسي لتونس تقدم لكم، \"تونيس بلوز\"، حلقة عمل مدتها ثلاث دورات تستكشف الأبعاد الثلاثة للعلاج المكتبي: القراءة والكتابة وتبادل المعلومات.\nهذه التجربة تدعوك إلى الغوص في عالم روايات علي بيكور تونس بلو\nومع ظهور هذه القصة، سيسافر المشاركون عبر مدينة تمزقها ذكريات وتناقضات ودوافع مجتمع متغير.",
-   "en": "The media library of the French Institute of Tunisia offers you, \"Tunis Blues\", a three-session workshop that explores the three dimensions of library therapy: reading, writing and exchanging.\nThis experience invites you to dive into the world of Ali Bécheur's novel Tunis Blues.\nAs the story unfolds, the participants will travel through a city that is traversed by the memories, contradictions and impulses of a changing society."
-  },
   "_events/auto/ift-pdf/2026-11-09-projection-debat-autour-du-film-save-our-souls.md": {
    "cle": "6c438bbaca17",
    "ar": "يدعوكم المعهد الفرنسي لتونس إلى عرض الفيلم الوثائقي إنقاذ روحنا، تليه مناقشة في مؤتمر فيديو مع المدير جان بابتيست بونيت.\nموجز تنفيذي:\nAfter a high-risk rescue off the coast of Libya, shipwrecked and rescuers live together on the boat of the NGO SOS Méditerranée, waiting for a welcome port.\nهذه المرة على متن الطائرة هي أول ملجأ للناجين\nمع المنقذين، تُشكّلُ علاقة مِنْ الإستماع والرعاية والحضورِ.",
@@ -479,6 +472,11 @@
    "cle": "bc799bf5229b",
    "ar": "من (شادوكس) إلى (أركان) من (ديزني بيكسار) إلى استوديو (غايبلي) يستكشف أسرار التصويب من الرسم التقليدي للـ3D التسجيل المطلوب: M mediatheque.sousse@G indépendants-tunisie.com Public from 7 to 15 years old",
    "en": "From Shadoks to Arcane, from Disney- Pixar to Ghibli Studio, explore the secrets of animation, from traditional 3D drawing. Registration required: M mediatheque.sousse@ G indépendants-tunisie.com Public from 7 to 15 years old"
+  },
+  "_events/auto/ift-pdf/2026-11-11-karma.md": {
+   "cle": "974c31d37633",
+   "ar": "المعهد الفرنسي لتونس يقترح عرض فيلم (غييوم كانيت) لـ(كارما)\nخلاصة: (مُنِع - 12 سنة)\nفي قرية شمال إسبانيا، (جين) تحاول إعادة بناء حياتها مع (دانيال) التي لا تعرف شيئاً عن ماضيها المضطرب\nيوماً ما، (ماتيو)، طفل (جين) ذو الست سنوات، يختفي بغموض...\nومن أجل الهروب من الشرطة التي شكت في أنها كانت تلجأ إلى فرنسا في المجتمع المحلي الذي ولدت فيه وهربت قبل بضع سنوات.",
+   "en": "The French Institute of Tunisia proposes the screening of Guillaume Canet's film Karma.\nAbstract: (Forbidden -12years)\nIn a village north of Spain, Jeanne tries to rebuild her life with Daniel, who knows nothing of her troubled past.\nOne day, Mateo, the six-year-old godchild of Jeanne, mysteriously disappears...\nIn order to escape from the police who suspected her quickly, Jeanne took refuge in France in the community where she was born and fled a few years earlier."
   },
   "_events/auto/ift-pdf/2026-11-11-un-monde-merveilleux.md": {
    "cle": "eb8608bbbb60",
@@ -685,6 +683,11 @@
    "fr": "Apportez vos illustrations.\nPartagez votre créativité.\nFaites partie de la communauté !\nVous avez des illustrations que vous n'avez pas eu l'occasion de montrer ?\nOu peut-être que vous cherchez juste une excuse pour créer quelque chose de nouveau ?\nGlibett vous invite à rejoindre notre marché d'illustration à Creative Hub, Sidi Bou Saïd !\nUn espace pour mettre en valeur et vendre vos créations, rencontrer d'autres illustrateurs, échanger des idées et partager votre univers créatif.\n- Oui, oui.\nImprimer, autocollants, T-shirts, ateliers...\nApportez vos idées et laissez-les arriver !",
    "ar": "أحضروا صوركم\nشاركي إبداعك\nكن جزءاً من المجتمع!\nحصلت على توضيحات لم تتح لك الفرصة لتظهرها؟\nأو ربما كنت تبحث عن عذر لخلق شيء جديد؟\n(غليبيت) يدعوك للإنضمام إلى سوق التجميل في (هوب) الإبداعي، (سيدي بو سعيد)!\nمساحة لتظهر وتبيع إبداعاتك، ومقابلة زملائك المصورين، تبادل الأفكار، وتشاطر كونك الإبداعي.\n?\n<unk> طباعة، ملصقات، قميص، ورش...\nأحضر أفكارك ودعنا نحققها"
   },
+  "_events/auto/ig-creative-hub-sbs/2026-12-12-glibett-illustration-market.md": {
+   "cle": "b81437f3b3b1",
+   "fr": "MARCHÉ DE L'ILLUSTRATION GLIBETT\nمرشي الرسامين\nUn week-end célébrant l'illustration, la créativité et la communauté!\nDécouvrez un monde d'illustrations, d'imprimés, d'autocollants, de créations artisanales et plus encore.\nRencontrez des illustrateurs locaux, explorez leurs univers, magasinez leurs créations et profitez d'ateliers créatifs.\nCentre créatif, Sidi Bou Saïd\n12 et 13 décembre\nVenez pour l'art, restez pour l'inspiration!\nLes résultats\nPlus de détails: Lien dans la bio!",
+   "ar": "GLIBETT ILUSTRATION MARKET <unk>\nحامض السلفونيك البيرفلوروكتاني\nعطله نهاية الاسبوع احتفالاً بالصور الإبداعية والمجتمع\nالكشف عن عالم من التوضيحات، والمطبوعات، والملصقات، والإبداعات اليدوية والأكثر.\nقابلوا المصورين المحليين، وبحثوا عن كونهم، وتسوقوا إبداعاتهم والتمتع بحلقات عمل خلاقة.\n<unk> Creative Hub, Sidi Bou Saïd\n12 كانون الأول/ديسمبر 13\nتعالوا من أجل الفن، إبقوا من أجل الإلهام!\n?\nالمزيد من التفاصيل:"
+  },
   "_events/auto/ig-fabrika/2026-11-07-2-flight-tickets-to-win-to-any-destination-on-the-nouvelair-.md": {
    "cle": "4f6d822e6bd1",
    "fr": "2 billets d'avion à gagner, vers n'importe quelle destination sur le réseau Nouvelair.\nScannez le QR code à la réception de l'hôtel et vous êtes dans le tirage.\nLe premier gagnant a annoncé nos histoires samedi, deuxième dimanche.",
@@ -725,10 +728,10 @@
    "fr": "Conçue comme une invitation à participer, cette exposition cherche à penser à la fois avec nos enfants et avec nos aînés, en contemplant les conditions matérielles de la production et de la circulation des connaissances.\nIl nous invite à envisager la conscience collective que nous pouvons développer ensemble en élargissant notre conception de la classe.\nL'exposition s'ouvre au 32bis, rue Ben Gedhahem, Tunis (troisième étage) le 6 novembre 2026, à 17h00 et sera en vue jusqu'au 15 janvier 2027.",
    "ar": "ويسعى هذا المعرض، الذي صمم كدعوة للمشاركة، إلى التفكير على قدم المساواة مع أطفالنا وكذلك مع شيوخنا، في تهيئة الظروف المادية لإنتاج المعرفة وتعميمها.\nويدعونا إلى تصور الوعي الجماعي الذي يمكن أن نتطوره معاً عن طريق توسيع مفهومنا للصف الدراسي.\nويفتتح المعرض في الساعة الخامسة مساءا، رو بن غيدهام، تونس (الطابق الثالث) في 6 تشرين الثاني/نوفمبر، 2026، في الساعة الخامسة مساءا، وسينظر فيه إلى الساعة 15 كانون الثاني/يناير 2027."
   },
-  "_events/auto/ig-le32bis/2026-11-06-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md": {
+  "_events/auto/ig-le32bis/2027-01-15-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md": {
    "cle": "0ca656d3110b",
    "fr": "À l'occasion de son 10e anniversaire, le funambuliste est accueilli par 32Bis du 6 novembre 2026 au 15 janvier 2027, pour réfléchir aux formes, méthodes et stratégies collectives pour construire nos pédagogies de libération.\nPensant de la même façon avec nos enfants et avec nos aînés, cette intervention se concentre sur l'apprentissage partagé.",
-   "ar": "وبمناسبة الذكرى العاشرة لإنشائها، يرحب بـ 32 بيـس في الفترة من 6 تشرين الثاني/نوفمبر 2026 إلى 15 كانون الثاني/يناير 2027، للتفكير في الأشكال والأساليب والاستراتيجيات الجماعية لبناء نُظُم تحريرنا.\nوهذا التدخل يركز على التعلم المشترك، مع التفكير على قدم المساواة مع أطفالنا ومع شيوخنا."
+   "ar": "وبمناسبة الذكرى العاشرة لإنشائها، يرحب بـ 32 بيزو في الفترة من 6 تشرين الثاني/نوفمبر 2026 إلى 15 كانون الثاني/يناير 2027، للتفكير في الأشكال والأساليب والاستراتيجيات الجماعية لبناء نُظُم تحريرنا.\nوهذا التدخل يركز على التعلم المشترك، مع التفكير على قدم المساواة مع أطفالنا ومع شيوخنا."
   },
   "_events/auto/ig-shanti/2026-11-15-le-chemin-se-termine-la-fete-commence.md": {
    "cle": "82e59da503dd",
@@ -755,6 +758,11 @@
    "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة. المادة 13 من الندوة المشتركة بين الوكالات: حالات عدم اليقين، ظهرت حالات معينة أولاً في لجنة التنسيق المشتركة بين الوكالات والمعنية بإدارة المواد الكيميائية.",
    "en": "From December 3 to 5, 2026, the University of La Manouba organizes the 13th edition of its international interdisciplinary symposium, dedicated this year to the binome Uncertainties/Certitudes. Article 13th UMA Symposium: Uncertainties, Certainties appeared first on IRMC ."
   },
+  "_events/auto/presse-kapitalis-ar/2026-11-20-evenement.md": {
+   "cle": "a03169985f40",
+   "fr": "Le Festival International du Film du Caire, dirigé par le grand artiste Hussein Fahmy, a déclaré honorer le grand artiste Farouk Floux et a décerné le Prix Pyramide d'Or lors de la cérémonie d'ouverture de sa quarante-septième session, qui doit se tenir du 11 au 20 novembre 2026, en reconnaissance de sa carrière professionnelle depuis plus de six décennies, de ses contributions exceptionnelles au cinéma, au théâtre et à la télévision et de ses caractéristiques exceptionnelles des Républiques...",
+   "en": "The Cairo International Film Festival, led by the great artist Hussein Fahmy, declared honoring the great artist Farouk Floux and awarded the Golden Pyramid Award during the opening ceremony of its forty-seventh session, scheduled to be held from 11 to 20 November 2026, in recognition of his professional career for more than six decades, his outstanding contributions to the film, theatre and television and his outstanding features of the Republics..."
+  },
   "_events/auto/presse-kapitalis/2026-11-12-exposition-a-carthage-saint-augustin-et-lheritage-chretien-d.md": {
    "cle": "1b730703aad5",
    "ar": "وسيقام معرض بعنوان &quot; من كارثاج إلى كارثاج: الإرث المسيحي لتونس &quot; في إطار الأيام السابع من آب/أغسطس في كارتاج، الذي سيُعقد في الفترة من 12 إلى 15 تشرين الثاني/نوفمبر 2026 في الأكاديمية التونسية للعلوم والكتاب والفنون (بيت الحكيمة)، في مدينة رومان العقابية.",
@@ -770,15 +778,10 @@
    "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
    "ar": "Line-up : Emine (2), harrison manett, Kian OK, Omar Fayyad, Pan-J, Picasso\nلا داعي للعجلة، لا اشارة، مجرد وجود كامل في الكثبان مع الناس الطيبين.\nلقد جمعنا أربعة أيام من الإصغاء العميق، والصباح البطيء، والممارسات الصوفية، وضوء الصحراء، وبقينا الأمور بسيطة ومتعمدة.\nمصنوعة من قبل الأصدقاء، للأصدقاء.\nوُلد من حب مشترك للصحراء، إنّ (ناماد مان) هو معتكفٌ عنيف وانتقائي حيث تلتقي الأرواح وتتواصل دون أيّ إلهاء خارجي."
   },
-  "_events/auto/tunis-events-cinema/2026-11-08-bakma.md": {
+  "_events/auto/tunis-events-cinema/2026-11-09-bakma.md": {
    "cle": "80243900e2cb",
    "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
    "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building.\nIn the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-08-weekend.md": {
-   "cle": "3ca4bdb67391",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في عرض البحر لعطلة نهاية أسبوع مسترخية. لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded seafront villa for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
   },
   "_events/auto/tunis-events-cinema/2026-11-10-un-monde-fragile-et-merveilleux.md": {
    "cle": "41e0fa66ceb7",
@@ -800,10 +803,10 @@
    "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح.\nوفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.\nكيف نقترب من البحر الأبيض المتوسط ومن منطقته دون أن نبحر بأعماق تجارب البشر؟\nهذا البحر كان دائماً ممراً، قناة سابقة",
    "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface.\nWhile a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage.\nHow to approach the Mediterranean Sea and its region without navigating the depths of the odysseys of human experiments?\nThis sea has always been a passageway; a canal of ex"
   },
-  "_events/auto/tunis-events/2026-11-08-zyoland.md": {
-   "cle": "b2e09e9ad2b7",
-   "ar": "\"زيولاند\" حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو زيولان الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات التي ينبغي تقاسمها.\nمراقبة، بحث، تخيل وتجميع: كل اكتشاف يجعلهم يتقدمون في المغامرة!\nحيزان مناسبان للسن:\n5-10 سنوات: رحلة ممتعة بين الخيال والفضول والمفاجئات.\n* 10-15 سنة:",
-   "en": "ZYOLAND — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!\nTwo age-appropriate spaces:\n5–10 years: a fun journey between fantasy, curiosity and surprises.\n* 10–15 years:"
+  "_events/auto/tunis-events/2026-11-09-marwen-777-batterie.md": {
+   "cle": "b2d402caf8b1",
+   "ar": "سأقابلك يوم الإثنين لأبدأ الأسبوع في الموسيقى\nوتستأنف شركة غروف الاجتماعية تعييناتها في 28 تشرين الثاني/نوفمبر مع ما يلي:\n@marwen_777 – Battery\n@ala_bejaoui99 - Counter bass\n@omar_elouaer — Piano\nموسيقى جيدة، موسيقى حية وجو لطيف لتشاركه\nالاثنين، 9 تشرين الثاني/نوفمبر\nThe 28 — Lafayette\nارجع اصدقائك واقضي الليلة معنا",
+   "en": "I'll meet you on Monday to start the week in music!\nSocial Groove Company resumes its appointments on November 28th with:\n@marwen_777 – Battery\n@ala_bejaoui99 – Counter bass\n@omar_elouaer – Piano\nGood music, live music and a nice atmosphere to share.\nMonday, 9 November\nThe 28 – Lafayette\nBring your friends back and spend the evening with us!"
   },
   "_events/auto/tunis-events/2026-11-09-new-moon-reflections-sound-bath-meditation-with-maya-cherif.md": {
    "cle": "149ba1e135b1",

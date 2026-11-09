@@ -12,6 +12,7 @@ source_name: "L'Agora (La Marsa)"
 image: "https://lagora.tn/wp-content/uploads/2026/10/LIle-des-Souvenirs.webp"
 film: true
 ajoute: "2026-11-07"
+autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/lile-des-souvenirs", "source": "tunis-events-cinema"}]
 auto: true
 ---
 

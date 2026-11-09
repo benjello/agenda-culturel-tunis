@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-08",
    "2026-11-09",
    "2026-11-10",
    "2026-11-14"
@@ -20,16 +19,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-09",
       "heures": [
@@ -45,7 +37,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-08",
      "2026-11-09"
     ],
     "heures": []
@@ -57,18 +48,11 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-08",
      "2026-11-09",
      "2026-11-10",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "21:00"
-      ]
-     },
      {
       "jour": "2026-11-09",
       "heures": [
@@ -91,10 +75,10 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-08-bakma.md",
+   "_events/auto/cine-agora/2026-11-09-bakma.md",
    "_events/auto/cine-alhambra/2026-11-07-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-bakma.md"
+   "_events/auto/tunis-events-cinema/2026-11-09-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-09-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -106,95 +90,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "Weekend",
-  "id": "weekend",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-08",
-   "2026-11-09",
-   "2026-11-15"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/8L4ZM8/weekend-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-08"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "16:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Cinéma Alhambra Zéphyr",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
-    "source": "cine-alhambra",
-    "source_nom": "Alhambra Zéphyr (La Marsa)",
-    "jours": [
-     "2026-11-08",
-     "2026-11-09"
-    ],
-    "heures": []
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/weekend/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-08",
-     "2026-11-09",
-     "2026-11-15"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "16:45"
-      ]
-     },
-     {
-      "jour": "2026-11-09",
-      "heures": [
-       "19:15"
-      ]
-     },
-     {
-      "jour": "2026-11-15",
-      "heures": [
-       "17:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-08-weekend.md",
-   "_events/auto/cine-alhambra/2026-11-07-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-weekend-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-weekend.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l'une d'elles, Nour, va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n'a pas effacées.",
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -206,7 +102,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-08",
    "2026-11-09",
    "2026-11-10",
    "2026-11-12",
@@ -220,7 +115,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-08",
      "2026-11-09"
     ],
     "heures": []
@@ -264,6 +158,66 @@
    "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md"
   ],
   "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Weekend",
+  "id": "weekend",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-09",
+   "2026-11-15"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1574499701382046",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-09"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/weekend/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-09",
+     "2026-11-15"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-09",
+      "heures": [
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-15",
+      "heures": [
+       "17:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-09-weekend.md",
+   "_events/auto/cine-alhambra/2026-11-07-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-09-weekend.md"
+  ],
   "jeune": false,
   "presse": [],
   "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
@@ -386,6 +340,45 @@
   "presse": []
  },
  {
+  "titre": "Karma",
+  "id": "karma",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fdcphzpdlitz4odye3ah",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-11"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6533",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-11"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-11",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-11-karma.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Karma de Guillaume Canet.\nRésumé : (Interdit -12ans)\nDans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
   "titre": "LAST CHANCE - لص شايح",
   "id": "last-chance",
   "image": "",
@@ -393,7 +386,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-08",
    "2026-11-09"
   ],
   "salles": [
@@ -404,7 +396,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-08",
      "2026-11-09"
     ],
     "heures": []
@@ -473,7 +464,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-08",
    "2026-11-14"
   ],
   "salles": [
@@ -484,16 +474,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-08",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "15:00"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -504,8 +487,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-08-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-le-mystere-lucy-lost.md"
+   "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md"
   ],
   "wikidata": "Q141827108",
   "letterboxd": "",
@@ -632,7 +615,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md"
+   "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md",
+   "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md"
   ],
   "wikidata": "Q138335503",
   "letterboxd": "forgotten-island-2026",
@@ -1001,54 +985,6 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Verity",
-  "id": "verity",
-  "image": "https://lagora.tn/wp-content/uploads/2026/09/Film-Verity.webp",
-  "imdb": "tt32261958",
-  "duree": null,
-  "genres": [
-   "Policier",
-   "Drame",
-   "Thriller"
-  ],
-  "jours": [
-   "2026-11-08"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/verity/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-08"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "18:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-08-verity.md",
-   "_events/auto/tunis-events-cinema/2026-11-08-verity.md"
-  ],
-  "wikidata": "Q131523413",
-  "letterboxd": "verity-2026",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Verity est film américain réalisé par Michael Showalter et sorti en 2026. Il s'agit d'une adaptation du roman du même nom de Colleen Hoover.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Verity_(film)"
- },
- {
   "titre": "What Else",
   "id": "what-else",
   "image": "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg",
@@ -1056,7 +992,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-08",
    "2026-11-09"
   ],
   "salles": [
@@ -1067,16 +1002,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-08",
      "2026-11-09"
     ],
     "heures": [
-     {
-      "jour": "2026-11-08",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-09",
       "heures": [
@@ -1087,7 +1015,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-08-what-else.md"
+   "_events/auto/tunis-events-cinema/2026-11-09-what-else.md"
   ],
   "tunisien": true,
   "jeune": false,

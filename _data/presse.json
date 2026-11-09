@@ -1,5 +1,16 @@
 [
  {
+  "titre": "Trafic de drogue : Un entraîneur interpellé dans une affaire impliquant des supporters",
+  "evenement": "Trafic de drogue : Un entraîneur interpellé dans une affaire impliquant des supporters",
+  "lien": "https://www.webdo.tn/fr/actualite/divers/trafic-de-drogue-un-entraineur-interpelle-dans-une-affaire-impliquant-des-supporters/406859/",
+  "source": "presse-webdo",
+  "source_nom": "Webdo",
+  "date": "2026-11-09",
+  "debut": "2026-11-09",
+  "fin": "2026-11-09",
+  "lieu": ""
+ },
+ {
   "titre": "CAN 2027 : Mouine Chaâbani dévoile sa liste, la Tunisie face à un double défi contre la Libye",
   "evenement": "CAN 2027",
   "lien": "https://www.webdo.tn/fr/actualite/sport/can-2027-mouine-chaabani-devoile-sa-liste-la-tunisie-face-a-un-double-defi-contre-la-libye/406810/",
@@ -19,6 +30,28 @@
   "date": "2026-11-08",
   "debut": "2026-11-05",
   "fin": "2026-11-10",
+  "lieu": ""
+ },
+ {
+  "titre": "Nouveau cycle de « Le Fou » de Taoufik Jebali à El Teatro: La parole nécessaire",
+  "evenement": "Le Fou",
+  "lien": "https://www.lapresse.tn/2026/11/08/nouveau-cycle-de-le-fou-de-taoufik-jebali-a-el-teatro-la-parole-necessaire/",
+  "source": "presse-lapresse",
+  "source_nom": "La Presse (culture)",
+  "date": "2026-11-08",
+  "debut": "2026-11-14",
+  "fin": "2026-11-14",
+  "lieu": "El Teatro"
+ },
+ {
+  "titre": "اختتام الدورة الرابعة للمهرجان الوطني للمسرح التونسي: تتويج مسرحية “جرس” بجائزة العمل المتكامل",
+  "evenement": "جرس",
+  "lien": "https://kapitalis.com/anbaa-tounes/2026/11/08/%d8%a7%d8%ae%d8%aa%d8%aa%d8%a7%d9%85-%d8%a7%d9%84%d8%af%d9%88%d8%b1%d8%a9-%d8%a7%d9%84%d8%b1%d8%a7%d8%a8%d8%b9%d8%a9-%d9%84%d9%84%d9%85%d9%87%d8%b1%d8%ac%d8%a7%d9%86-%d8%a7%d9%84%d9%88%d8%b7%d9%86/",
+  "source": "presse-kapitalis-ar",
+  "source_nom": "Kapitalis (Anbaa Tounes, en arabe)",
+  "date": "2026-11-08",
+  "debut": "2027-01-30",
+  "fin": "2027-01-30",
   "lieu": ""
  },
  {

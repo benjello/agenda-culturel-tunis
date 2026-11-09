@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "corriges": 1,
  "a_verifier": [
   {
@@ -53,10 +53,10 @@
    ]
   },
   {
-   "fichier": "ig-le32bis/2026-11-06-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md",
+   "fichier": "ig-le32bis/2027-01-15-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md",
    "source": "ig-le32bis",
    "titre": "On the occasion of its 10th anniversary, The Funambulist is welcomed by 32Bis from Novembe",
-   "date": "2026-11-06",
+   "date": "2027-01-15",
    "lien": "https://www.instagram.com/p/DfAW60xCOOK/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
@@ -104,8 +104,8 @@
     ]
    },
    "cine-agora": {
-    "n": 11,
-    "precis": 11,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -139,6 +139,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]
@@ -229,9 +234,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 43,
-    "precis": 10,
-    "pourcent": 23,
+    "n": 42,
+    "precis": 9,
+    "pourcent": 21,
     "defauts": [
      {
       "code": "titre_generique",
@@ -286,15 +291,15 @@
     "manques": []
    },
    "ig-creative-hub-sbs": {
-    "n": 3,
-    "precis": 3,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 3
      }
     ]
    },
@@ -444,6 +449,31 @@
      }
     ]
    },
+   "presse-kapitalis-ar": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "مهرجان القاهرة السينمائي الدولي يكرّم الفنان الكبير فاروق فلوكس بالهرم"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
    "presse-leaders": {
     "n": 1,
     "precis": 1,
@@ -494,24 +524,18 @@
     "precis": 16,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "tunis-events-cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 5,
+    "precis": 5,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    }
@@ -532,9 +556,9 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 43,
-    "precis": 10,
-    "pourcent": 23,
+    "n": 42,
+    "precis": 9,
+    "pourcent": 21,
     "defauts": [
      {
       "code": "titre_generique",
@@ -604,10 +628,35 @@
      }
     ]
    },
+   "presse": {
+    "n": 3,
+    "precis": 2,
+    "pourcent": 67,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "مهرجان القاهرة السينمائي الدولي يكرّم الفنان الكبير فاروق فلوكس بالهرم"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 3
+     }
+    ]
+   },
    "instagram": {
-    "n": 19,
-    "precis": 17,
-    "pourcent": 89,
+    "n": 20,
+    "precis": 18,
+    "pourcent": 90,
     "defauts": [
      {
       "code": "expo_sans_fin",
@@ -626,7 +675,7 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 11
+      "n": 12
      }
     ]
    },
@@ -635,17 +684,11 @@
     "precis": 16,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "woocommerce_seances": {
-    "n": 11,
-    "precis": 11,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -669,15 +712,15 @@
     ]
    },
    "tunis_events_cinema": {
-    "n": 6,
-    "precis": 6,
+    "n": 5,
+    "precis": 5,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    },
@@ -699,19 +742,6 @@
      }
     ]
    },
-   "presse": {
-    "n": 2,
-    "precis": 2,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 2
-     }
-    ]
-   },
    "billetterie_sktech": {
     "n": 1,
     "precis": 1,
@@ -721,6 +751,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]
