@@ -897,6 +897,19 @@
 "fichier": "_events/auto/teskerti/2026-11-05-brouva.md"
 },
 {
+"titre": "Fabrika Festival 14",
+"debut": "2026-11-05",
+"fin": "2026-11-09",
+"heure": "",
+"lieu": "One Resort, Monastir",
+"ville": "monastir",
+"categorie": "musique",
+"lien": "https://www.instagram.com/fabrika_festival/",
+"source": "Fabrika festival (Instagram)",
+"resume": "Festival de musique électronique. Dates et lieu repris de la bio Instagram du festival (1er novembre 2026).",
+"fichier": "_events/manuel/2026-11-05-fabrika-festival-14.md"
+},
+{
 "titre": "Kteb Tounsi : Rencontre-débat avec Abdelhamid Larguèche",
 "debut": "2026-11-05",
 "fin": "2026-11-05",
@@ -1415,5 +1428,31 @@
 "source": "Cité des sciences de Tunis (Facebook)",
 "resume": "البرنامج الاسبوعي للورشات العلمية",
 "fichier": "_events/auto/fb-cite-sciences/2026-11-08-evenement.md"
+},
+{
+"titre": "NEW MOON REFLECTIONS: Sound Bath & Meditation with Maya Cherif",
+"debut": "2026-11-09",
+"fin": "2026-11-09",
+"heure": "",
+"lieu": "Sociale Sidi Bou Said",
+"ville": "tunis",
+"categorie": "autre",
+"lien": "https://tunis.events/events/mnMEgk/new-moon-reflections-sound-bath-meditation-with-maya-cherif-sociale-sidi-bou-sai",
+"source": "tunis.events (agenda)",
+"resume": "☾⋆.˚ New Moon Reflections is our meditation and sound bath series occurring under each new moon.November’s New Moon in Scorpio starts a new chapter for your personal investments: everything financial, emotional, and related to your personal",
+"fichier": "_events/auto/tunis-events/2026-11-09-new-moon-reflections-sound-bath-meditation-with-maya-cherif.md"
+},
+{
+"titre": "marwen 777 – Batterie",
+"debut": "2026-11-09",
+"fin": "2026-11-09",
+"heure": "",
+"lieu": "TwentyOne",
+"ville": "tunis",
+"categorie": "autre",
+"lien": "https://tunis.events/events/3PwJLm/marwen-777-batterie-twentyone",
+"source": "tunis.events (agenda)",
+"resume": "On se retrouve lundi pour commencer la semaine en musique ! Social Groove Company reprend ses rendez-vous au 28 ce 9 novembre avec : @marwen 777 – Batterie @ala bejaoui99 – Contrebasse @omar elouaer – Piano De la bonne musique, du live et u",
+"fichier": "_events/auto/tunis-events/2026-11-09-marwen-777-batterie.md"
 }
 ]

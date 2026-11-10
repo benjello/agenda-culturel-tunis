@@ -49,11 +49,6 @@
   "ar": "2 Rue de Greece, Tunis",
   "en": "2 Rue de Greece, Tunis"
  },
- "2 flight tickets to win, to any destination on the Nouvelair network": {
-  "de": "en",
-  "fr": "2 billets de vol à gagner, vers n'importe quelle destination sur le réseau Nouvelair",
-  "ar": "تذكرتان للطيران للفوز، إلى أي وجهة على شبكة نوفيلير"
- },
  "20-22 Avenue de Paris": {
   "de": "fr",
   "ar": "20-22 Avenue de Paris",
@@ -78,6 +73,26 @@
   "de": "fr",
   "ar": "3 Rue De Damas, Tunis 1002, Tunis",
   "en": "3 Rue De Damas, Tunis 1002, Tunis"
+ },
+ "32 Bis accueille The Funambulist : Pour une réflexion autour des pédagogies de la libération": {
+  "de": "fr",
+  "ar": "32 Bis welcomes The Funambulist: For a reflection on the pedagogies of freedom",
+  "en": "32 Bis welcomes The Funambulist: For a reflection on the pedagogies of liberation"
+ },
+ "34 Av. de La Liberté": {
+  "de": "fr",
+  "ar": "34 Av. of Liberty",
+  "en": "34 Av. of Liberty"
+ },
+ "34 Av. de La Liberté, Tunis 1002, Tunis": {
+  "de": "fr",
+  "ar": "34 Av. Freedom, Tunis 1002, Tunis",
+  "en": "34 Av. Freedom, Tunis 1002, Tunis"
+ },
+ "40 TND · Complet": {
+  "de": "fr",
+  "ar": "40 TND · Complete",
+  "en": "40 TND · Complete"
  },
  "41e édition, Le Kram": {
   "de": "fr",
@@ -124,6 +139,11 @@
   "ar": "AJST (Facebook)",
   "en": "AJST (Facebook)"
  },
+ "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS": {
+  "de": "fr",
+  "ar": "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS",
+  "en": "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS"
+ },
  "ASM-ESS : La commission d’appel confirme le verdict de la Ligue": {
   "de": "fr",
   "ar": "ASM-ESS : The appeal commission confirms the verdict of the League",
@@ -168,11 +188,6 @@
   "de": "fr",
   "ar": "ألمبرا زيفير (لا مارسا)",
   "en": "Alhambra Zephyr (La Marsa)"
- },
- "Allemagne": {
-  "de": "fr",
-  "ar": "ألمانيا",
-  "en": "Germany"
  },
  "Alliance française de Tunis : Francophonie et fabrique de la Diplomatie": {
   "de": "fr",
@@ -224,6 +239,16 @@
   "ar": "قاعة المحاضرات",
   "en": "Auditorium"
  },
+ "Auditorium de l'IFT (20": {
+  "de": "fr",
+  "ar": "قاعة محاضرات الاتحاد الدولي للاتصالات (20",
+  "en": "IFT Auditorium (20"
+ },
+ "Auditorium de l'IFT (20, avenue de Paris, Tunis)": {
+  "de": "fr",
+  "ar": "قاعة محاضرات الاتحاد الدولي للاتصالات (20، مدخل باريس، تونس)",
+  "en": "IFT Auditorium (20, avenue de Paris, Tunis)"
+ },
  "Auditorium, Institut français de Tunis": {
   "de": "fr",
   "ar": "قاعة محاضرات، المعهد الفرنسي في تونس",
@@ -248,16 +273,6 @@
   "de": "fr",
   "ar": "Av. محمد 5",
   "en": "Av. Mohamed 5"
- },
- "Avec Hafida Ben Rejeb Latta": {
-  "de": "fr",
-  "ar": "مع هافيدا بن رييب لايتا",
-  "en": "With Hafida Ben Rejeb Latta"
- },
- "Avec Lotfi Mlayah": {
-  "de": "fr",
-  "ar": "مع (لوفتي ملاياه)",
-  "en": "With Lotfi Mlayah"
  },
  "Avenue Mohamed V": {
   "de": "fr",
@@ -429,6 +444,11 @@
   "ar": "رقصة الكرتاج (أيام تصويب)",
   "en": "Carthage Dance (Corregraphic Days)"
  },
+ "Carthage Dermech": {
+  "de": "fr",
+  "ar": "Carthage Dermech",
+  "en": "Carthage Dermech"
+ },
  "Carthage, colline de Byrsa": {
   "de": "fr",
   "ar": "Carthage, Byrsa Hill",
@@ -524,15 +544,15 @@
   "ar": "سيني مادارت (Instagram)",
   "en": "CinéMadart (Instagram)"
  },
+ "CinéMadart, Carthage Dermech": {
+  "de": "fr",
+  "ar": "CinéMadart, Carthage Dermech",
+  "en": "CinéMadart, Carthage Dermech"
+ },
  "Cinéma": {
   "de": "fr",
   "ar": "سينما",
   "en": "Cinema"
- },
- "Cinéma Alhambra Zéphyr": {
-  "de": "fr",
-  "ar": "Cinema Alhambra Zephyr",
-  "en": "Cinema Alhambra Zephyr"
  },
  "Cinéma Amilcar (El Manar)": {
   "de": "fr",
@@ -674,6 +694,11 @@
   "fr": "Initiatives culturelles en Afrique du Nord et au Moyen-Orient",
   "ar": "المبادرات الثقافية في شمال أفريقيا والشرق الأوسط"
  },
+ "Cyril Aris sera avec nous pour une discussion en visioconférence après la projection en av": {
+  "de": "fr",
+  "ar": "سيريل آريس سيكون معنا لمناقشه في مؤتمر الفيديو بعد الفرز",
+  "en": "Cyril Aris will be with us for a discussion in video conference after the screening in"
+ },
  "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le fantôme d’Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache. Ce fantôme farceur va entraîner Ducobu, Léonie, leurs parents et Kitrish dans une série de péripéties aussi drôles qu’inattendues.": {
   "de": "fr",
   "ar": "إنه عيد القديسين، و (دوكوبو) يعود لمغامرة مليئة بالضحك والغموض! البروفيسور (لاتوش) والآنسة (راتو) ينتقلان إلى منزل... مطارد من شبح (أناتولي) أعظم مرساة في تاريخ (سانت) مدرسة الشارب. هذا الشبح سيقود (دوكوبو) و(ليوني) ووالديهم و(كيتريش) إلى سلسلة من المغامرات المضحكة وغير المتوقعة",
@@ -683,6 +708,21 @@
   "de": "fr",
   "ar": "في باريس اليوم، أناستازيا، راقصة شابة، يدمج أوبرا غارنيير المرموقة. كما تكرّر الـ(أورفيوس)، أوبرا ملعونة كانت لتتكون من شبح الأوبرا، تقع في غرام عازف بيانو غامض.",
   "en": "In today's Paris, Anastasia, a young dancer, integrates the prestigious Opéra Garnier. As she repeats the Orpheus, a cursed opera that would have been composed by the Phantom of the Opera, she falls in love with a mysterious pianist."
+ },
+ "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Eat the Night de Caroline Poggi et Jonathan Vinel.\nRésumé :Pablo et sa sœur Apolline s’évadent de leur quotidien en jouant à Darknoon, un jeu vidéo qui les a vus grandir. Un jour, Pablo rencontre Night, qu’il initie à ses petits trafics, et s’éloigne d'Apolline.": {
+  "de": "fr",
+  "ar": "كجزء من \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سوس يقترح فحص \"كارولين بوغي\" في الليل و\"جوناثان فيل\"\nخلاصة: بابلو وشقيقته أبوللين يتهربان من حياتهم اليومية عن طريق لعب دوركنون، لعبة فيديو رأتهما ينموان.\nيوماً ما، يلتقي (بابلو) بليلة، الذي يبادر بحركته المرورية الصغيرة، ويبتعد عن (أبولين).",
+  "en": "As part of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sousse proposes the screening of Caroline Poggi's Eat the Night and Jonathan Vinel.\nAbstract:Pablo and his sister Apolline are evasive of their daily lives by playing Darknoon, a video game that has seen them grow.\nOne day, Pablo meets Night, who initiates his little traffics, and moves away from Apolline."
+ },
+ "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Level Five de Chris Marker.\nRésumé :\nUne femme, un ordinateur, un interlocuteur invisible : tel est le dispositif à partir duquel Level Five se construit.": {
+  "de": "fr",
+  "ar": "في إطار \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سوس يقترح فرز فيلم \"كريس ماركر\" الخامس\nموجز تنفيذي:\nامرأة، كمبيوتر، محاور غير مرئي: هذا هو الجهاز الذي يُبنى منه المستوى الخامس.",
+  "en": "In the framework of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sousse proposes the screening of Chris Marker's Level Five film.\nExecutive summary:\nA woman, a computer, an invisible interlocutor: this is the device from which Level Five is built."
+ },
+ "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Un monde merveilleux de Giulio Callegari.\nRésumé :\nDans un futur un peu trop proche où les humains dépendent des robots, Max, une ancienne prof réfractaire à la technologie, vivote avec sa fille grâce à des petites combines.": {
+  "de": "fr",
+  "ar": "في إطار \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سوس يعرض عليك عرض فيلم أون موندي الرائع من قبل جوليو كاليغاري\nموجز تنفيذي:\nفي مستقبل قريب جداً حيث يعتمد البشر على الروبوتات (ماكس)، المعلم السابق الذي يقاوم التكنولوجيا، يهتز مع ابنته من خلال تركيبات صغيرة.",
+  "en": "In the framework of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sousse offers you the screening of the film Un monde wonderfule by Giulio Callegari.\nExecutive summary:\nIn a little too close a future where humans depend on robots, Max, a former teacher who is resistant to technology, is vibrating with his daughter through small combinations."
  },
  "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.": {
   "de": "fr",
@@ -728,6 +768,11 @@
   "de": "fr",
   "ar": "التواريخ المقبلة",
   "en": "Forthcoming dates"
+ },
+ "De novembre 2026 à Janvier 2027, la Médiathèque de l'Institut français de Tunisie organise": {
+  "de": "fr",
+  "ar": "في الفترة من تشرين الثاني/نوفمبر 2026 إلى كانون الثاني/يناير 2027، تنظم مكتبة وسائط الإعلام التابعة للمعهد التونسي الفرنسي مكتبة الإعلام",
+  "en": "From November 2026 to January 2027, the Media Library of the French Institute of Tunisia organizes"
  },
  "Designed as an invitation to participate, this exhibition seeks to think equally with our": {
   "de": "en",
@@ -973,11 +1018,6 @@
   "de": "fr",
   "ar": "معرض الصور الفوتوغرافية من قبل ميشيل ايزنلور. الافتتاح في 27 تشرين الأول/أكتوبر الساعة 00/18 مدخل مجاني",
   "en": "Photographic exhibition by Michel Eisenlohr. Opening on October 27 at 6 p.m. Free entrance."
- },
- "Exposition à Carthage | Saint-Augustin et l’héritage chrétien de la Tunisie": {
-  "de": "fr",
-  "ar": "Exhibition in Carthage, St. أوغستين والتراث المسيحي لتونس",
-  "en": "Exhibition in Carthage, St. Augustine and the Christian heritage of Tunisia"
  },
  "Expositions & arts visuels": {
   "de": "fr",
@@ -1234,10 +1274,10 @@
   "ar": "Goethe-Institut Tunis",
   "en": "Goethe-Institut Tunis"
  },
- "Gottschedstraße 2, 04109 Leipzig, Allemagne": {
+ "Grafiflow": {
   "de": "fr",
-  "ar": "Gottschedstraße 2, 04109 Leipzig, Germany",
-  "en": "Gottschedstraße 2, 04109 Leipzig, Germany"
+  "ar": "Grafiflow",
+  "en": "Grafiflow"
  },
  "Grand Tunis": {
   "de": "fr",
@@ -1339,6 +1379,11 @@
   "ar": "Institut français de Sousse",
   "en": "Institut français de Sousse"
  },
+ "Institut français de Sousse 15 rue Hamed Ghazali": {
+  "de": "fr",
+  "ar": "Institut français de Sousse 15 rue Hamed Ghazali",
+  "en": "Institut français de Sousse 15 rue Hamed Ghazali"
+ },
  "Institut français de Tunis": {
   "de": "fr",
   "ar": "المعهد الفرنسي في تونس",
@@ -1413,11 +1458,6 @@
   "de": "fr",
   "ar": "Jaou Tunis 2026: exhibition in Kechlet El Attarine",
   "en": "Jaou Tunis 2026: exhibition in Kechlet El Attarine"
- },
- "Jaou Tunis Weekly Guide": {
-  "de": "fr",
-  "ar": "Jaou Tunis Weekly Guide",
-  "en": "Jaou Tunis Weekly Guide"
  },
  "Jazz à Carthage": {
   "de": "fr",
@@ -1634,11 +1674,6 @@
   "ar": "والمعهد الفرنسي لتونس هو جزء من الشبكة العالمية للمعاهد الفرنسية. ويقع المكتب الرئيسي في تونس، تونس، في حين أن فرعين محليين يكملان شبكتهما في سوس وسفاكس.",
   "en": "The French Institute of Tunisia (IFT) is part of the global network of French institutes. The main office is located in Tunis, Tunisia, while two local branches complete its network in Sousse and Sfax."
  },
- "L'Institut français de Tunisie vous invite à la projection du film documentaire Save our souls , suivie d'un débat en visioconférence avec le réalisateur Jean-Baptiste Bonnet.\nRésumé :\nAprès un sauvetage à hauts risques au large de la Libye, naufragés et sauveteurs vivent ensemble sur le bateau de l’ONG SOS Méditerranée, dans l’attente d’un port d’accueil.": {
-  "de": "fr",
-  "ar": "يدعوكم المعهد الفرنسي لتونس إلى عرض الفيلم الوثائقي إنقاذ روحنا، تليه مناقشة في مؤتمر فيديو مع المدير جان بابتيست بونيت.\nموجز تنفيذي:\nAfter a high-risk rescue off the coast of Libya, shipwrecked and rescuers live together on the boat of the NGO SOS Méditerranée, waiting for a welcome port.",
-  "en": "The French Institute of Tunisia invites you to the screening of the documentary film Save our soul , followed by a debate in video conference with director Jean-Baptiste Bonnet.\nExecutive Summary:\nAfter a high-risk rescue off the coast of Libya, shipwrecked and rescuers live together on the boat of the NGO SOS Méditerranée, waiting for a welcoming port."
- },
  "L'Institut français de Tunisie vous propose la projection du film Karma de Guillaume Canet.\nRésumé : (Interdit -12ans)\nDans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.": {
   "de": "fr",
   "ar": "المعهد الفرنسي لتونس يقترح عرض فيلم (غييوم كانيت) لـ(كارما)\nخلاصة: (مُنِع - 12 سنة)\nفي قرية شمال إسبانيا، (جين) تحاول إعادة بناء حياتها مع (دانيال) التي لا تعرف شيئاً عن ماضيها المضطرب",
@@ -1729,6 +1764,11 @@
   "ar": "La Presse (culture)",
   "en": "La Presse (culture)"
  },
+ "La poésie sicilienne du XVIe siècle en concert à la Manouba": {
+  "de": "fr",
+  "ar": "The Sixteenth Century Sicilian Poetry in Concert at the Manouba",
+  "en": "The Sixteenth Century Sicilian Poetry in Concert at the Manouba"
+ },
  "Labes - Selim Ben Safia": {
   "de": "fr",
   "ar": "مختبرات - سيليم بن صوفيا",
@@ -1748,6 +1788,11 @@
   "de": "fr",
   "ar": "ليالي القمار",
   "en": "Layali el Qamar"
+ },
+ "Le 32 bis": {
+  "de": "fr",
+  "ar": "32 مكرراً",
+  "en": "The 32 bis"
  },
  "Le 32Bis": {
   "de": "fr",
@@ -2034,11 +2079,6 @@
   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة:",
   "en": "The paintings of Jellal Ben Abdallah intertwine with those of artists of different generations, weaving together the sons of the same story: the one"
  },
- "Level Five": {
-  "de": "fr",
-  "ar": "المستوى الخامس",
-  "en": "Level Five"
- },
  "Librairie Al Kitab (Facebook)": {
   "de": "fr",
   "ar": "Al Kitab Bookshop (Facebook)",
@@ -2194,11 +2234,6 @@
   "ar": "May 1-Oct 30: 08:00-20:00",
   "en": "May 1-Oct 30: 08:00-20:00"
  },
- "Maya Cherif": {
-  "de": "fr",
-  "ar": "Maya Cherif",
-  "en": "Maya Cherif"
- },
  "Mi-juillet à mi-août": {
   "de": "fr",
   "ar": "منتصف تموز/يوليه إلى منتصف آب/أغسطس",
@@ -2238,6 +2273,11 @@
   "de": "fr",
   "ar": "الموسيقى",
   "en": "Music"
+ },
+ "Musique Russe": {
+  "de": "fr",
+  "ar": "الموسيقى الروسية",
+  "en": "Russian Music"
  },
  "Musée": {
   "de": "fr",
@@ -2454,6 +2494,16 @@
   "ar": "مكتبة وسائط الإعلام",
   "en": "Media Library"
  },
+ "Médiathèque de l'IFT (20": {
+  "de": "fr",
+  "ar": "مكتبة وسائط الإعلام التابعة للاتحاد الدولي للاتصالات (20)",
+  "en": "IFT Media Library (20)"
+ },
+ "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": {
+  "de": "fr",
+  "ar": "IFT Media Library (20, avenue de Paris, Tunis)",
+  "en": "IFT Media Library (20, avenue de Paris, Tunis)"
+ },
  "Médiathèque, Institut français de Sfax": {
   "de": "fr",
   "ar": "Media Library, Institut français de Sfax",
@@ -2484,10 +2534,20 @@
   "ar": "Reriting Residence to Tell Sfax otherwise",
   "en": "Rewarded Memoirs: A Writing Residence to Tell Sfax Otherwise"
  },
- "NEW MOON REFLECTIONS: Sound Bath & Meditation with Maya Cherif": {
+ "NN 2026 : Eat the Night": {
   "de": "en",
-  "fr": "NOUVELLES REFLECTIONS DE MOON: Baignoire sonore et méditation avec Maya Cherif",
-  "ar": "انتخابات جديدة: ميدالية باوند مع مايا شريف"
+  "fr": "NN 2026 : Manger la nuit",
+  "ar": "NN 2026: تناول الليل"
+ },
+ "NN 2026 : Un monde merveilleux": {
+  "de": "fr",
+  "ar": "NN 2026: عالم رائع",
+  "en": "NN 2026: A Wonderful World"
+ },
+ "NN2026 : Level Five": {
+  "de": "fr",
+  "ar": "NN2026: Level Five",
+  "en": "NN2026 : Level Five"
  },
  "Nabeul et Hammamet": {
   "de": "fr",
@@ -2498,6 +2558,11 @@
   "de": "fr",
   "ar": "نازا، التي تُطلَق أحياناً كنازية، هي فيلم وثائقي بريطاني لعام 2026 موجه من صحفيين وصانعي أفلام إسرائيليين يوفال أبراهام ورايتشل زور، الذين كتبوا بالفعل الفيلم الفائز بالجائزة لا أرض أخرى في عام 2024.",
   "en": "Naza, sometimes stylized as NAZA, is a 2026 British documentary film directed by Israeli journalists and filmmakers Yuval Abraham and Rachel Szor, who already wrote the award-winning film No Other Land in 2024."
+ },
+ "Nicole Skarpness": {
+  "de": "fr",
+  "ar": "Nicole Skarpness",
+  "en": "Nicole Skarpness"
  },
  "Nino et Yasmina tombent amoureux dans la cour de leur école à Beyrouth, et rêvent à leur vie d’adulte, à un monde merveilleux. 20 ans plus tard, ils se retrouvent par accident et c’est à nouveau l’amour fou, magnétique, incandescent. Peut-on construire un avenir, dans un pays fracturé, qu’on tente de quitter mais qui vous retient de façon irrésistible ?": {
   "de": "fr",
@@ -2614,11 +2679,6 @@
   "fr": "Journées de baladodiffusion en Tunisie Festival de baladodiffusion",
   "ar": "Podcast Days by Tunisia Podcast Festival"
  },
- "Podcast Days ne seraient pas complets sans leurs tables rondes": {
-  "de": "fr",
-  "ar": "أيام البث لن تكتمل بدون اجتماعات المائدة المستديرة",
-  "en": "Podcast Days would not be complete without their round tables"
- },
  "Pour ses vingt ans": {
   "de": "fr",
   "ar": "لعشرين عاماً",
@@ -2629,15 +2689,15 @@
   "ar": "يكرس مختبر &quot; ديرمان &quot; ، بمناسبة الذكرى السنوية العشرين لإنشائه، ندوة دولية لقانون الاستثمار",
   "en": "For its twenty-year anniversary, the DRIMAN laboratory devotes an international colloquium to investment law"
  },
+ "Power Yoga with Nicole Skarpness @nskarp": {
+  "de": "en",
+  "fr": "Power Yoga avec Nicole Skarpness @nskarp",
+  "ar": "Power Yoga with Nicole Skarpness @nskarp"
+ },
  "Programme. Programme et Billetterie en ligne pour les séances de théatre, cinéma et autres évènements, Théâtre de l'Opéra de Tunis": {
   "de": "fr",
   "ar": "البرنامج. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre",
   "en": "Programme. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre"
- },
- "Projection-débat autour du film Save our souls": {
-  "de": "fr",
-  "ar": "عرض مدمر حول الفيلم أنقذ روحنا",
-  "en": "Projection-debate around the movie Save our soul"
  },
  "Puis-je entrer dans ton cœur? Par le producteur James Wan, l’un des artistes les plus influents du cinéma d’horreur moderne, et Blumhouse Atomic Monster, le studio à l’origine de Backrooms et Obsession, vous invite à un voyage terrifiant signé par le réalisateur de genre et révélation Rob Savage.": {
   "de": "fr",
@@ -2648,11 +2708,6 @@
   "de": "fr",
   "ar": "قناديل رمضان",
   "en": "Qanadil Ramadan"
- },
- "Quechlet El Attarine": {
-  "de": "fr",
-  "ar": "Quechlet El Attarine",
-  "en": "Quechlet El Attarine"
  },
  "R56P+C9J, Av. Mohamed 5, Tunis, Tunis": {
   "de": "fr",
@@ -2683,6 +2738,16 @@
   "de": "fr",
   "ar": "الرقة، كيروان",
   "en": "Raqqada, Kairouan"
+ },
+ "Rencontre-littéraire avec Hafida Ben Rejeb Latta": {
+  "de": "fr",
+  "ar": "الاجتماع الأدبي مع حامدة بن ريجاب لاتا",
+  "en": "Literary meeting with Hafida Ben Rejeb Latta"
+ },
+ "Rencontre-littéraire avec Lotfi Mlayah": {
+  "de": "fr",
+  "ar": "الاجتماع الأدبي مع لوتي ملاياه",
+  "en": "Literary meeting with Lotfi Mlayah"
  },
  "Resident Advisor (Tunisie)": {
   "de": "fr",
@@ -2729,6 +2794,11 @@
   "ar": "Rue de Rome, Tunis",
   "en": "Rue de Rome, Tunis"
  },
+ "Russian House": {
+  "de": "fr",
+  "ar": "الدار الروسية",
+  "en": "Russian House"
+ },
  "Réalités (culture)": {
   "de": "fr",
   "ar": "(الثقافة)",
@@ -2768,11 +2838,6 @@
   "de": "fr",
   "ar": "صالة المبتكرين الشباب - لجنة الثقافة",
   "en": "Young Creators Hall - Cité de la Culture"
- },
- "Salle des Jeunes Créateurs – Cité de la Culture": {
-  "de": "fr",
-  "ar": "غرفة المبدعين الشباب - لجنة الثقافة",
-  "en": "Room of Young Creators – Cité de la Culture"
  },
  "Salon des arts plastiques": {
   "de": "fr",
@@ -2883,6 +2948,11 @@
   "de": "fr",
   "ar": "مساءات الرقة",
   "en": "Evenings of Raqqada"
+ },
+ "Soixante-dix ans après l’indépendance de la Tunisie et pour célébrer l'amitié franco-tunis": {
+  "de": "fr",
+  "ar": "بعد سبعين عاماً من استقلال (تونس) والاحتفال بصداقة (فرانكو تونيس)",
+  "en": "Seventy years after Tunisia's independence and to celebrate Franco-Tunis friendship"
  },
  "Souk El Attarine": {
   "de": "fr",
@@ -3084,11 +3154,6 @@
   "ar": "تونس - الصين: خلف جناح شنغهاي، التحدي المتمثل في تحويل الاهتمام إلى صادرات",
   "en": "Tunisia-China: Behind the Shanghai Pavilion, the challenge of turning interest into exports"
  },
- "TwentyOne": {
-  "de": "fr",
-  "ar": "21",
-  "en": "TwentyOne"
- },
  "UTICA UNION TUN. THE IND. TRADE & ART": {
   "de": "en",
   "fr": "UNION UTICA TUN. L'Inde. COMMERCE ET ART",
@@ -3103,6 +3168,11 @@
   "de": "fr",
   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+ },
+ "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.": {
+  "de": "fr",
+  "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
+  "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
  },
  "Un jeune guide touristique de Louxor accepte une offre inhabituelle de la part d'un riche homme d'affaires : convaincre sa fille et l'aider à oublier son ex. Mais lorsque les choses ne se passent pas comme prévu, Hassan se retrouve pris dans une série comique de situations inattendues et dans une histoire d'amour qu'il n'avait jamais vue venir.": {
   "de": "fr",
@@ -3119,6 +3189,11 @@
   "ar": "عالم هش ورائع هو كوميدي درامي ورومانسي موجه من قبل سيريل آريس وأطلق سراحه في عام 2025",
   "en": "A fragile and wonderful world is a dramatic and romantic comedy directed by Cyril Aris and released in 2025."
  },
+ "Un rooftop, deux artistes, une même scène... et une soirée": {
+  "de": "fr",
+  "ar": "السطح، فنانين، مشهد واحد... وليلة واحدة",
+  "en": "A rooftop, two artists, one scene... and one night"
+ },
  "Undertow / Contre ; Courant": {
   "de": "fr",
   "ar": "تحت الأرض/ضد؛",
@@ -3128,6 +3203,11 @@
   "de": "fr",
   "ar": "University of La Manouba and Amphitheatre Carthage Al Hadatha",
   "en": "University of La Manouba and Amphitheatre Carthage Al Hadatha"
+ },
+ "V7JH+6J7, La Marsa, La Marsa": {
+  "de": "fr",
+  "ar": "V7JH+6J7, La Marsa, La Marsa",
+  "en": "V7JH+6J7, La Marsa, La Marsa"
  },
  "V8CW+8GM": {
   "de": "fr",
@@ -3184,6 +3264,11 @@
   "ar": "ياسر جراد",
   "en": "Yasser Jradi"
  },
+ "Yoga for Busy Minds with Judit @yoga_in_sidibousaid": {
+  "de": "en",
+  "fr": "Yoga pour les esprits occupés avec Judit @yoga_in_sidibousaid",
+  "ar": "Yoga for Busy Minds with Judit @yoga_in_sidibousaid"
+ },
  "ZYOLAND — Là où les livres prennent vie\nEt si votre enfant entrait dans un livre pour devenir le héros de sa propre aventure ?\nZYOLAND invite les enfants à explorer des décors immersifs où les histoires se vivent à travers des énigmes, des défis et des expériences à partager. Observer, chercher, imaginer et faire équipe : chaque découverte les fait avancer dans l’aventure !": {
   "de": "fr",
   "ar": "(زيولد) حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو منظمة &quot; زيولوان &quot; الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات اللازمة لتبادلها.\nالملاحظه , البحث , التخيل و التفرق كل اكتشاف يجعلهم يتقدمون في المغامره",
@@ -3194,15 +3279,10 @@
   "ar": "Zaghuan",
   "en": "Zaghuan"
  },
- "_events/auto/cine-agora/2026-11-09-bakma.md": {
+ "_events/auto/cine-agora/2026-11-10-bakma.md": {
   "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-09-bakma.md",
-  "en": "_events/auto/cine-agora/2026-11-09-bakma.md"
- },
- "_events/auto/cine-agora/2026-11-09-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-09-weekend.md",
-  "en": "_events/auto/cine-agora/2026-11-09-weekend.md"
+  "ar": "_event/auto/cine-agora/2026-11-10-bakma.md",
+  "en": "_events/auto/cine-agora/2026-11-10-bakma.md"
  },
  "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md": {
   "de": "fr",
@@ -3234,6 +3314,11 @@
   "ar": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md",
   "en": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md"
  },
+ "_events/auto/cine-agora/2026-11-15-weekend.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-agora/2026-11-15-weekend.md",
+  "en": "_events/auto/cine-agora/2026-11-15-weekend.md"
+ },
  "_events/auto/cine-agora/2026-11-18-van-gogh.md": {
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-18-van-gogh.md",
@@ -3244,35 +3329,15 @@
   "ar": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md",
   "en": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
  },
- "_events/auto/cine-alhambra/2026-11-07-bakma.md": {
-  "de": "fr",
-  "ar": "_event/auto/cine-alhambra/2026-11-07-bakma.md",
-  "en": "_events/auto/cine-alhambra/2026-11-07-bakma.md"
- },
- "_events/auto/cine-alhambra/2026-11-07-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-alhambra/2026-11-07-dar-el-3ers.md",
-  "en": "_events/auto/cine-alhambra/2026-11-07-dar-el-3ers.md"
- },
- "_events/auto/cine-alhambra/2026-11-07-last-chance.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-alhambra/2026-11-07-last-chance.md",
-  "en": "_events/auto/cine-alhambra/2026-11-07-last-chance.md"
- },
- "_events/auto/cine-alhambra/2026-11-07-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-alhambra/2026-11-07-weekend.md",
-  "en": "_events/auto/cine-alhambra/2026-11-07-weekend.md"
- },
- "_events/auto/ift-pdf/2026-11-09-projection-debat-autour-du-film-save-our-souls.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-09-projection-debat-around-du-film-save-our-souls.md",
-  "en": "_events/auto/ift-pdf/2026-11-09-projection-debat-around-du-film-save-our-souls.md"
- },
  "_events/auto/ift-pdf/2026-11-11-karma.md": {
   "de": "fr",
   "ar": "_events/auto/ift-pdf/2026-11-11-karma.md",
   "en": "_events/auto/ift-pdf/2026-11-11-karma.md"
+ },
+ "_events/auto/ift-pdf/2026-11-11-nn-2026-un-monde-merveilleux.md": {
+  "de": "fr",
+  "ar": "_events/auto/ift-pdf/2026-11-11-nn-2026-un-world-wonderful.md",
+  "en": "_events/auto/ift-pdf/2026-11-11-nn-2026-un-world-wonderful.md"
  },
  "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md": {
   "de": "fr",
@@ -3284,6 +3349,16 @@
   "ar": "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-moon.md",
   "en": "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-moon.md"
  },
+ "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md": {
+  "de": "fr",
+  "ar": "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md",
+  "en": "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md"
+ },
+ "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-the-night.md": {
+  "de": "en",
+  "fr": "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-the-night.md",
+  "ar": "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-thenight.md"
+ },
  "_events/auto/ift-pdf/2026-11-20-le-chant-des-forets.md": {
   "de": "fr",
   "ar": "_events/auto/ift-pdf/2026-11-20-le-chant-des-forests.md",
@@ -3294,35 +3369,25 @@
   "ar": "_events/auto/ift-pdf/2026-11-21-les-malheurs-de-sophie.md",
   "en": "_events/auto/ift-pdf/2026-11-21-les-malheurs-de-sophie.md"
  },
+ "_events/auto/ift-pdf/2026-11-25-nn2026-level-five.md": {
+  "de": "fr",
+  "ar": "_events/auto/ift-pdf/2026-11-25-nn2026-level five.md",
+  "en": "_events/auto/ift-pdf/2026-11-25-nn2026-level-five.md"
+ },
  "_events/auto/ift-pdf/2026-11-27-sous-les-etoiles-de-paris.md": {
   "de": "fr",
   "ar": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md",
   "en": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-09-bakma-l-agora-marsa.md": {
+ "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-09-bakma-l-agora-marsa.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-09-bakma-l-agora-marsa.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-09-bakma.md": {
+ "_events/auto/tunis-events-cinema/2026-11-10-bakma.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-09-bakma.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-09-bakma.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-09-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-09-dar-el-3ers.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-09-dar-el-3ers.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-09-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-09-weekend.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-09-weekend.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-09-what-else.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-09- What-else.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-09-what-else.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-10-bakma.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-10-bakma.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md": {
   "de": "fr",
@@ -3344,6 +3409,16 @@
   "ar": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md"
  },
+ "_events/auto/tunis-events-cinema/2026-11-11-what-else.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-11- What-else.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-11-what-else.md"
+ },
+ "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md"
+ },
  "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md": {
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md",
@@ -3358,6 +3433,11 @@
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md"
+ },
+ "_events/auto/tunis-events-cinema/2026-11-15-weekend.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-15-weekend.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-15-weekend.md"
  },
  "_events/auto/tunis-events/2026-11-12-regarde-moi.md": {
   "de": "fr",
@@ -3409,11 +3489,6 @@
   "ar": "هاريسون ماينت",
   "en": "harrison guyett"
  },
- "marwen 777 – Batterie": {
-  "de": "fr",
-  "ar": "ماروين ٧٧٧ - البطارية",
-  "en": "marwen 777 – Battery"
- },
  "rt | بقلب مفتوح\nما بين التخدير والحلم …بين العطل والإصلاح … بين الواقع و الخيال ، يقف القلب عاجزا عن فهم عبثية هذا الواقع حيث يصبح الاحساس نفسه شيئًا قابلاً للفحص، والتفكيك، وربما… للاستبدال .": {
   "de": "ar",
   "fr": "♪ Avec un cœur ouvert ♪\nEntre l'anesthésie et le rêve entre les vacances et les réparations...\nEntre réalité et fantasme, le cœur est incapable de comprendre la manipulation de cette réalité, où le même sens devient quelque chose qui peut être examiné, désintégré, et peut-être...\nPour remplacer.",
@@ -3428,11 +3503,6 @@
   "de": "fr",
   "ar": "تونيس.أحداث (ملامح)",
   "en": "tunis.events (film)"
- },
- "un Monde Merveilleux": {
-  "de": "fr",
-  "ar": "عالم رائع",
-  "en": "A Wonderful World"
  },
  "voir l'article": {
   "de": "fr",
@@ -3489,6 +3559,11 @@
   "fr": "Programme hebdomadaire des documents scientifiques",
   "en": "Weekly Scientific Papers Programme"
  },
+ "الدورة السابعة للأيّام الأوغسطينيّة بقرطاج – يومي 12 و": {
+  "de": "ar",
+  "fr": "7èmes Jours d'Orchestre en Cartage - 12ème et 12ème",
+  "en": "7th Orchestian Days in Cartage - 12th and 12th"
+ },
  "الملخص تتناول هذه المحاضرة التحولات التي شهدتها الكتابة الأثرية والتراثية في تونس منذ أواخر القرن التاسع عشر إلى اليوم، من خلال تتبع تطور مناهج البحث وإشكالياته، […]": {
   "de": "ar",
   "fr": "Le résumé de cette conférence aborde les changements de l'artefact et du patrimoine en Tunisie depuis la fin du XIXe siècle jusqu'à aujourd'hui, en suivant l'évolution des programmes de [...]",
@@ -3499,25 +3574,25 @@
   "fr": "Communication du Ministère de la culture en particulier",
   "en": "Communication issued by the Ministry of Cultural Affairs in particular"
  },
- "شاشات المواسم ... ذاكرة المسرح التونسي على الشاشة": {
-  "de": "ar",
-  "fr": "Les écrans de saison... La mémoire du théâtre tunisien est à l'écran.",
-  "en": "The season screens... The Tunisian theater memory is on the screen."
- },
- "قاعة رشاد المناعي بقاعة الفن الرابع": {
-  "de": "ar",
-  "fr": "Salle Rashad al-Manaqiyah, quatrième salle d'art.",
-  "en": "Rashad al-Manaqiyah Hall, fourth art hall."
- },
  "محاضرة: تحولات الكتابة الأثرية والتراثية في تونس: من الإرث الاستعماري إلى تجديد المقاربات المعرفية للأستاذ فوزي محفوظ": {
   "de": "ar",
   "fr": "Conférence : Transformations archéologiques et génétiques en Tunisie : de l'héritage colonial au renouveau des approches cognitives du professeur Fawzi réservé",
   "en": "Lecture: Archaeological and genetic transformations in Tunisia: from colonial legacy to the renewal of the cognitive approaches of Professor Fawzi reserved"
  },
- "مهرجان القاهرة السينمائي الدولي يكرّم الفنان الكبير فاروق فلوكس بالهرم الذهبي لإنجاز العمر": {
+ "مركز الفنون B7L9": {
   "de": "ar",
-  "fr": "Le Festival international du film du Caire rend hommage au grand artiste, Farooq Floakes, avec la pyramide d'or pour atteindre l'âge.",
-  "en": "The Cairo International Film Festival honors the great artist, Farooq Floakes, with the golden pyramid to achieve age."
+  "fr": "Centre des arts B7L9",
+  "en": "Arts Centre B7L9"
+ },
+ "مركز النهوض بالصادرات يحتضن لقاءات مهنية تونسية عراقية": {
+  "de": "ar",
+  "fr": "Le Centre pour la promotion des exportations accueille des réunions professionnelles tunisiennes irakiennes",
+  "en": "The Centre for Export Promotion embraces Iraqi Tunisian professional meetings"
+ },
+ "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي": {
+  "de": "ar",
+  "fr": "Le Porsche Festival honore le grand artiste, Hussein, ma compréhension.",
+  "en": "The Porsche Festival honors the great artist, Hussein, my understanding."
  },
  "ندوة يومي 19 و": {
   "de": "ar",
@@ -3533,5 +3608,10 @@
   "de": "ar",
   "fr": "Un fabricant de contenu entre dans un endroit abandonné pour diffuser une aventure directe, collision avec un groupe d'enfants de la rue, transformant l'aventure en un conflit entre le faux monde virtuel et la cruauté de la réalité marginale.",
   "en": "A content manufacturer enters an abandoned place to broadcast a direct adventure, collision with a group of street children, turning the adventure into a clash between the virtual world's fake and the cruelty of the marginal reality."
+ },
+ "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis": {
+  "de": "fr",
+  "ar": "\"العالم الهش والرائع من قبل \"سيريل آريس يخرج في مسرحيات تونس",
+  "en": "‘‘A fragile and wonderful world' by Cyril Aris goes out in theaters in Tunis"
  }
 }

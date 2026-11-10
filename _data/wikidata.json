@@ -5,11 +5,11 @@
  },
  "2-jours-avec-papa": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "a-demain-sur-la-lune": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "avatar-de-feu-et-de-cendres": {
   "qid": null,
@@ -334,7 +334,7 @@
  },
  "les-malheurs-de-sophie": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "les-miserables": {
   "qid": null,
@@ -421,6 +421,18 @@
   "tunisien": false,
   "verifie": "2026-11-07"
  },
+ "nn-2026-eat-the-night": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
+ "nn-2026-un-monde-merveilleux": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
+ "nn2026-level-five": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
  "nuremberg": {
   "age": "Tous publics",
   "annee": 2026,
@@ -494,7 +506,7 @@
  },
  "regarde-moi": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "regretting-you": {
   "age": "Tous publics",
@@ -557,7 +569,7 @@
  },
  "sous-les-etoiles-de-paris": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "springsteen-deliver-me-from-nowhere": {
   "qid": null,

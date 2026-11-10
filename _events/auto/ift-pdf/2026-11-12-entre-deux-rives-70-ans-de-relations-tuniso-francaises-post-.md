@@ -13,4 +13,4 @@ ajoute: "2026-11-04"
 auto: true
 ---
 
-Soixante-dix ans après l’indépendance de la Tunisie et pour célébrer l'amitié franco-tunisienne, l'Institut français de Tunisie et l'Institut de recherche sur le Maghreb contemporain (IRMC) vous proposent une grande rencontre-débat intergénérationnelle et interdisciplinaire autour du thème "Entre deux rives : Ce que 70 ans de relations tuniso-françaises post-indépendance ont contruit, traversé et inventé".
+Soixante-dix ans après l’indépendance de la Tunisie et pour célébrer l'amitié franco-tunisienne, l'Institut français de Tunisie et l'Institut de recherche sur le Maghreb contemporain (IRMC) vous proposent une grande rencontre-débat intergénérationnelle et interdisciplinaire autour du thème "Entre deux rives : Ce que 70 ans de relations tuniso-françaises post-indépendance ont construit, traversé et inventé".

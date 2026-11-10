@@ -2,11 +2,12 @@
  "index": {
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
   "L'Agora Marsa": "lagora-la-marsa",
-  "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
   "Dar Ziqua, Zaghouan": "dar-ziqua-zaghouan",
   "Espace L'Artisto": "espace-l-artisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
+  "Auditorium de l'IFT (20, avenue de Paris, Tunis)": "auditorium-de-l-ift-20-avenue-de-paris-tunis",
+  "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": "mediatheque-de-l-ift-20-avenue-de-paris-tunis",
   "Institut français de Tunisie": "institut-francais-de-tunisie",
   "Institut Français de Tunis": "institut-francais-de-tunis",
   "Institut français de Tunis": "institut-francais-de-tunis",
@@ -21,25 +22,27 @@
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
   "L'Agora Djerba": "l-agora-djerba",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
+  "مركز الفنون B7L9": "b7l9",
+  "CinéMadart": "cinemadart",
+  "CinéMadart, Carthage Dermech": "cinemadart",
   "Creative Hub, Sidi Bou Saïd": "creative-hub-sidi-bou-said",
-  "One Resort, Monastir": "one-resort-monastir",
   "Galerie Insular, Erriadh (Djerbahood)": "galerie-insular-erriadh-djerbahood",
   "Habibi Downtown, Tunis": "habibi-downtown-tunis",
-  "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
-  "Salle des Jeunes Créateurs – Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
-  "Quechlet El Attarine": "quechlet-el-attarine",
+  "habibidowntown_": "habibidowntown",
   "La Boîte": "la-boite",
   "Shanti": "shanti",
-  "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
   "Le Violon Bleu, Sidi Bou Saïd": "le-violon-bleu-sidi-bou-said",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
-  "TwentyOne": "twentyone",
+  "Russian House": "russian-house",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
+  "Sociale.": "sociale-sidi-bou-said",
+  "Grafiflow": "grafiflow",
+  "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
   "UTICA UNION TUN. THE IND. TRADE & ART": "utica-union-tun-the-ind-trade-art",
-  "CinéMadart": "cinemadart",
   "Douz": "douz",
+  "One Resort, Monastir": "one-resort-monastir",
   "32bis": "le-32bis",
   "Le 32 bis": "le-32bis",
   "Le 32Bis": "le-32bis",
@@ -141,22 +144,13 @@
    "n": 5
   },
   {
-   "slug": "cinema-alhambra-zephyr",
-   "nom": "Cinéma Alhambra Zéphyr",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.878,
-   "lon": 10.3245,
-   "n": 4
-  },
-  {
    "slug": "cinemadart",
    "nom": "CinéMadart",
    "type": "cinema",
    "ville": "tunis",
    "lat": 36.854,
    "lon": 10.324,
-   "n": 4
+   "n": 5
   },
   {
    "slug": "beit-al-hikma-carthage",
@@ -168,21 +162,21 @@
    "n": 3
   },
   {
-   "slug": "one-resort-monastir",
-   "nom": "One Resort, Monastir",
-   "type": "club",
-   "ville": "monastir",
-   "lat": 35.76372,
-   "lon": 10.7399,
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
    "n": 3
   },
   {
-   "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
-   "nom": "Salle des Jeunes Créateurs – Cité de la Culture",
-   "type": "centre",
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
    "ville": "tunis",
-   "lat": 36.8125,
-   "lon": 10.1817,
+   "lat": 34.59926,
+   "lon": 9.59188,
    "n": 3
   },
   {
@@ -195,12 +189,12 @@
    "n": 2
   },
   {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
+   "slug": "institut-francais-de-sousse",
+   "nom": "Institut français de Sousse",
+   "type": "centre",
    "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
+   "lat": 35.829,
+   "lon": 10.638,
    "n": 2
   },
   {
@@ -249,15 +243,6 @@
    "n": 2
   },
   {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
-   "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
-   "n": 2
-  },
-  {
    "slug": "le-32bis",
    "nom": "Le 32Bis",
    "type": "centre_art",
@@ -294,15 +279,6 @@
    "n": 1
   },
   {
-   "slug": "institut-francais-de-sousse",
-   "nom": "Institut français de Sousse",
-   "type": "centre",
-   "ville": "sousse",
-   "lat": 35.829,
-   "lon": 10.638,
-   "n": 1
-  },
-  {
    "slug": "mediatheque-institut-francais-de-sousse",
    "nom": "Médiathèque, Institut français de Sousse",
    "type": "bibliotheque",
@@ -330,12 +306,30 @@
    "n": 1
   },
   {
+   "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
+   "nom": "Salle des Jeunes Créateurs - Cité de la Culture",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8125,
+   "lon": 10.1817,
+   "n": 1
+  },
+  {
    "slug": "douz",
    "nom": "Douz",
    "type": "autre",
    "ville": "sud",
    "lat": 33.45711,
    "lon": 9.02498,
+   "n": 1
+  },
+  {
+   "slug": "one-resort-monastir",
+   "nom": "One Resort, Monastir",
+   "type": "club",
+   "ville": "monastir",
+   "lat": 35.76372,
+   "lon": 10.7399,
    "n": 1
   },
   {

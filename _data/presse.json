@@ -1,5 +1,16 @@
 [
  {
+  "titre": "مركز النهوض بالصادرات يحتضن لقاءات مهنية تونسية عراقية",
+  "evenement": "مركز النهوض بالصادرات يحتضن لقاءات مهنية تونسية عراقية",
+  "lien": "https://www.mosaiquefm.net/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D9%85%D8%A7%D9%84-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%AA%D9%88%D9%86%D8%B3/1536344/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6-%D8%A8%D8%A7%D9%84%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D9%8A%D8%AD%D8%AA%D8%B6%D9%86-%D9%84%D9%82%D8%A7%D8%A1%D8%A7%D8%AA-%D9%85%D9%87%D9%86%D9%8A%D8%A9-%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9",
+  "source": "presse-mosaique-ar",
+  "source_nom": "Mosaïque FM (en arabe)",
+  "date": "2026-11-10",
+  "debut": "2026-11-23",
+  "fin": "2026-11-23",
+  "lieu": ""
+ },
+ {
   "titre": "Trafic de drogue : Un entraîneur interpellé dans une affaire impliquant des supporters",
   "evenement": "Trafic de drogue : Un entraîneur interpellé dans une affaire impliquant des supporters",
   "lien": "https://www.webdo.tn/fr/actualite/divers/trafic-de-drogue-un-entraineur-interpelle-dans-une-affaire-impliquant-des-supporters/406859/",
@@ -8,6 +19,28 @@
   "date": "2026-11-09",
   "debut": "2026-11-09",
   "fin": "2026-11-09",
+  "lieu": ""
+ },
+ {
+  "titre": "32 Bis accueille The Funambulist : Pour une réflexion autour des pédagogies de la libération",
+  "evenement": "32 Bis accueille The Funambulist : Pour une réflexion autour des pédagogies de la libération",
+  "lien": "https://www.lapresse.tn/2026/11/09/32-bis-accueille-the-funambulist-pour-une-reflexion-autour-des-pedagogies-de-la-liberation/",
+  "source": "presse-lapresse",
+  "source_nom": "La Presse (culture)",
+  "date": "2026-11-09",
+  "debut": "2026-11-06",
+  "fin": "2027-01-15",
+  "lieu": "Le 32 bis"
+ },
+ {
+  "titre": "La poésie sicilienne du XVIe siècle en concert à la Manouba",
+  "evenement": "La poésie sicilienne du XVIe siècle en concert à la Manouba",
+  "lien": "https://realites.com.tn/fr/la-poesie-sicilienne-du-xvie-siecle-en-concert-a-la-manouba/",
+  "source": "presse-realites",
+  "source_nom": "Réalités (culture)",
+  "date": "2026-11-09",
+  "debut": "2026-11-11",
+  "fin": "2026-11-11",
   "lieu": ""
  },
  {
