@@ -95,11 +95,13 @@ layout: default
   </div>
   {%- for f in films_l %}
   <article class="film-fiche" data-jours="{{ f.jours | join: ' ' }}" data-types="{% if f.tunisien %}tunisien {% endif %}{% if f.jeune %}jeune {% endif %}{% for g in f.genres %}g:{{ g | downcase | replace: ' ', '_' }} {% endfor %}">
+    {%- comment -%} Fiche du film : la dernière séance connue ; elle liste toutes les autres salles et dates (« Autres dates et autres lieux »). {%- endcomment -%}
+    {%- assign dernier = f.fichiers | last -%}{%- assign fiche_ev = site.events | where: "path", dernier | first -%}
     {%- if f.image != "" %}{% if f.image contains "://" %}{% assign src = f.image %}{% else %}{% assign src = f.image | relative_url %}{% endif %}
-    <img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy">
+    {%- if fiche_ev %}<a class="affiche-lien" href="{{ fiche_ev.url | relative_url }}" tabindex="-1" aria-hidden="true">{% endif %}<img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy">{% if fiche_ev %}</a>{% endif %}
     {%- else %}<div class="affiche vide">🎬</div>{% endif %}
     <div class="film-corps">
-      <h3>{{ f.titre }}</h3>
+      <h3>{% if fiche_ev %}<a href="{{ fiche_ev.url | relative_url }}" class="film-titre">{{ f.titre }}</a>{% else %}{{ f.titre }}{% endif %}</h3>
       <p class="badges">
         {%- if f.age != "" and f.age %}<span class="badge age">{{ f.age }}</span>{% endif -%}
         {%- if f.tunisien %}<span class="badge tunisien">Film tunisien</span>{% endif -%}
