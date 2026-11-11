@@ -388,6 +388,8 @@ main:focus { outline: none; }
 }
 .formulaire .plus-champs { display: grid; gap: 10px; }
 
+/* Autres occurrences d'un événement (autres salles, autres dates) */
+.occurrences { margin-top: 2rem; }
 /* Bouton discret à côté d'une note (texte d'origine / traduction) */
 .lien-bouton { background: none; border: 0; padding: 0; font: inherit; font-size: .85em; color: var(--accent, inherit); text-decoration: underline; cursor: pointer; }
 

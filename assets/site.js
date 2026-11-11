@@ -197,6 +197,7 @@
     });
     var vide = liste.parentNode.querySelector('[data-vide]');
     if (vide) vide.hidden = n > 0;
+    var occ = liste.closest('.occurrences'); if (occ) occ.hidden = n === 0;
   });
 
   // ---- Menu réduit sur téléphone : « Menu ☰ » ouvre les pages secondaires et les réglages
