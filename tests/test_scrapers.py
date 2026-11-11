@@ -913,6 +913,20 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].fin, dt.datetime(2026, 11, 17))
         self.assertEqual(evts[0].prix, "35 DT")
 
+    def test_festival_jour_par_jour_titre_du_spectacle(self):
+        """« Les Rencontres … continuent ! Place à « CHAUSSURE » » : le titre est le spectacle."""
+        from scrapers import lecteurs
+        pub = {"lien": "https://facebook.com/p/2", "date": "2026-11-11", "images": ["a.jpg"],
+               "texte": ("Les Rencontres Théâtrales de Lartisto continuent !\n\nCette fois-ci, place à « الصبّاط — CHAUSSURE », "
+                         "un spectacle de Mounir Argui.\n\n📅 Vendredi 13 novembre 2026\n🕢 À 19h30\n📍 Lartisto\n\n🎟️ Ticket : 10 DT")}
+        with mock.patch.object(lecteurs.dt, "date", wraps=dt.date) as d:
+            d.today.return_value = dt.date(2026, 11, 11)
+            d.fromisoformat = dt.date.fromisoformat
+            evts = lecteurs.une_affiche_par_evenement([pub], [], "Espace L'Artisto")
+        self.assertEqual(len(evts), 1)
+        self.assertEqual(evts[0].titre, "الصبّاط — CHAUSSURE")
+        self.assertEqual(evts[0].debut, dt.datetime(2026, 11, 13, 19, 30))
+
     def test_titre_et_lieu_de_soiree(self):
         from scrapers import lecteurs
         j = dt.date.today() + dt.timedelta(days=6)

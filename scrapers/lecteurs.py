@@ -288,6 +288,20 @@ def _titre_festival(texte: str) -> str:
     return nom or titre
 
 
+_ACCROCHE = re.compile(r"\b(?:commenc|continu|reviennent|revient|de retour|c.est (?:ce soir|demain)|ce soir|demain|ouverture|clôture|cl[ôo]ture|dernier(?:e)? (?:jour|soir))", re.I)
+_RE_SPECTACLE = re.compile(r"[«“\"]\s*([^»”\"\n]{3,80}?)\s*[»”\"]")
+
+
+def _titre_spectacle(texte: str) -> str:
+    """Annonce d'un festival jour par jour (« Les Rencontres … continuent ! Place à « CHAUSSURE », un spectacle de… ») :
+    le titre est le spectacle entre guillemets, pas la phrase d'accroche."""
+    premiere = _titre_affiche(texte)
+    if not (_ACCROCHE.search(premiere) and _FESTIVAL.search(premiere)):
+        return ""
+    m = _RE_SPECTACLE.search(texte)
+    return propre(m.group(1)) if m else ""
+
+
 def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Une publication = une affiche = un événement (clubs, bars, concerts), à la date lue
     dans la légende ou sur l'image. Plusieurs dates sur une affiche : un événement par date."""
@@ -338,7 +352,7 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
             debut_h, h_fin = horaire_du_texte(tout)
             if debut_h:
                 h, mn = debut_h
-        titre = _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
+        titre = _titre_spectacle(texte) or _titre_affiche(texte) or _titre_affiche(ocr) or f"Soirée à {lieu}"
         # Artistes et collectifs jouent dans plusieurs lieux : « 📍 B7L9, La Marsa » dans la légende.
         m = re.search(r"📍\s*([^\n#]{3,80})", texte)
         ici = propre(m.group(1).replace("@", "")).rstrip(" .,") if m else lieu
