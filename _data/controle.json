@@ -1,6 +1,6 @@
 {
- "date": "2026-11-03",
- "corriges": 2,
+ "date": "2026-11-10",
+ "corriges": 1,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -13,34 +13,33 @@
    ]
   },
   {
-   "fichier": "cine-360/2026-11-01-le-maitre-du-kabuki.md",
-   "source": "cine-360",
-   "titre": "Le Maître du kabuki",
-   "date": "2026-11-01",
-   "lien": "https://www.facebook.com/100057029246724/posts/1654998313077794",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "fb-cr-sidibouzid/2026-11-01-evenement.md",
-   "source": "fb-cr-sidibouzid",
-   "titre": "الورشات الفنية الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوزيد",
-   "date": "2026-11-01",
-   "lien": "https://www.facebook.com/100068921841441/posts/1436410405333007",
-   "problemes": [
-    "deux fois dans la source (voir 2026-11-01-evenement-sidi-bouzid-voir-l-annonce.md)"
-   ]
-  },
-  {
-   "fichier": "fb-ift-facebook/2026-11-07-podcast-days-by-tunisia-podcast-festival-vous-devoile-son-pr.md",
+   "fichier": "fb-ift-facebook/2026-11-12-soixante-dix-ans-apres-lindependance-de-la-tunisie-et-pour-c.md",
    "source": "fb-ift-facebook",
-   "titre": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du 6 et 7 novembre",
-   "date": "2026-11-07",
-   "lien": "https://www.facebook.com/100064556987464/posts/122298590240073523",
+   "titre": "Soixante-dix ans après l’indépendance de la Tunisie et pour célébrer l'amitié franco-tunis",
+   "date": "2026-11-12",
+   "lien": "https://www.facebook.com/100064556987464/posts/1572459074915977",
    "problemes": [
-    "titre trop long (début d'une légende ?)",
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "fb-ift-facebook/2026-11-28-de-novembre-2026-a-janvier-2027-la-mediatheque-de-l-institut.md",
+   "source": "fb-ift-facebook",
+   "titre": "De novembre 2026 à Janvier 2027, la Médiathèque de l'Institut français de Tunisie organise",
+   "date": "2026-11-28",
+   "lien": "https://www.facebook.com/100064556987464/posts/1571389561689595",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "fb-ift-facebook/2026-12-19-de-novembre-2026-a-janvier-2027-la-mediatheque-de-l-institut.md",
+   "source": "fb-ift-facebook",
+   "titre": "De novembre 2026 à Janvier 2027, la Médiathèque de l'Institut français de Tunisie organise",
+   "date": "2026-12-19",
+   "lien": "https://www.facebook.com/100064556987464/posts/1571389561689595",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
    ]
   },
   {
@@ -64,6 +63,16 @@
    ]
   },
   {
+   "fichier": "ig-cinemadart/2026-11-10-cyril-aris-sera-avec-nous-pour-une-discussion-en-visioconfer.md",
+   "source": "ig-cinemadart",
+   "titre": "Cyril Aris sera avec nous pour une discussion en visioconférence après la projection en av",
+   "date": "2026-11-10",
+   "lien": "https://www.instagram.com/p/DfhXg70TW3s/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
    "fichier": "ig-galerie-insular/2026-11-20-la-galerie-insular-a-le-privilege-daccueillir-la-3eme-editio.md",
    "source": "ig-galerie-insular",
    "titre": "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be",
@@ -74,245 +83,83 @@
    ]
   },
   {
-   "fichier": "ig-lart-rue/2026-11-07-le-podcast-de-demain-vous-l-imaginez-comment-podcast-days-by.md",
-   "source": "ig-lart-rue",
-   "titre": "Le podcast de demain, vous l'imaginez comment ? Podcast Days by Tunisia Podcast Festival v",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfIMsEzF0Ar/",
+   "fichier": "ig-le32bis/2026-11-06-designed-as-an-invitation-to-participate-this-exhibition-see.md",
+   "source": "ig-le32bis",
+   "titre": "Designed as an invitation to participate, this exhibition seeks to think equally with our",
+   "date": "2026-11-06",
+   "lien": "https://www.instagram.com/p/DfXUxr8CO9b/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
   },
   {
-   "fichier": "ig-lart-rue/2026-11-07-pour-cloturer-podcast-days-by-tunisia-podcast-festival-rende.md",
-   "source": "ig-lart-rue",
-   "titre": "Pour clôturer Podcast Days by Tunisia Podcast Festival, rendez-vous le 7 novembre à 18h30",
-   "date": "2026-11-07",
-   "lien": "https://www.instagram.com/p/DfFy1eVj6sY/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
-   "fichier": "ig-le32bis/2026-11-06-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md",
+   "fichier": "ig-le32bis/2027-01-15-on-the-occasion-of-its-10th-anniversary-the-funambulist-is-w.md",
    "source": "ig-le32bis",
    "titre": "On the occasion of its 10th anniversary, The Funambulist is welcomed by 32Bis from Novembe",
-   "date": "2026-11-06",
+   "date": "2027-01-15",
    "lien": "https://www.instagram.com/p/DfAW60xCOOK/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
   },
   {
-   "fichier": "ig-rosalux-afrique-nord/2026-11-02-des-resistantes-algeriennes-italiennes-et-libanaises-aux-fem.md",
-   "source": "ig-rosalux-afrique-nord",
-   "titre": "Des résistantes algériennes, italiennes et libanaises aux femmes kurdes qui ont préservé e",
-   "date": "2026-11-02",
-   "lien": "https://www.instagram.com/p/DfHtEeLAJBk/",
+   "fichier": "ig-violon-bleu/2026-11-08-le-violon-bleu-gallery-a-le-plaisir-de-vous-inviter-a-decouv.md",
+   "source": "ig-violon-bleu",
+   "titre": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOURS , une rétrospecti",
+   "date": "2026-11-08",
+   "lien": "https://www.instagram.com/p/DfDBp-ziXMO/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
   },
   {
-   "fichier": "ig-theatre-national/2026-11-01-evenement-evenement.md",
-   "source": "ig-theatre-national",
-   "titre": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم الإبداع يدعوكم المس",
-   "date": "2026-11-01",
-   "lien": "https://www.instagram.com/p/DfLIEZVCbs3/",
+   "fichier": "ig-violon-bleu/2026-11-08-rafik-est-un-immense-artiste-qui-ne-se-prend-pas-au-serieux-.md",
+   "source": "ig-violon-bleu",
+   "titre": "Rafik est un immense artiste qui ne se prend pas au sérieux . La création chez lui est lud",
+   "date": "2026-11-08",
+   "lien": "https://www.instagram.com/p/DfVDO4tFNpI/",
    "problemes": [
-    "titre trop long (début d'une légende ?)",
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "ig-theatre-national/2026-11-01-evenement.md",
-   "source": "ig-theatre-national",
-   "titre": "شاشات المواسم ... ذاكرة المسرح التونسي على الشاشة",
-   "date": "2026-11-01",
-   "lien": "https://www.instagram.com/p/DfLjUGOimGF/",
-   "problemes": [
-    "deux fois dans la source (voir 2026-11-01-evenement-evenement.md)"
-   ]
-  },
-  {
-   "fichier": "ig-tunisia-podcasts-festival/2026-11-06-tout-commence-par-une-vibration-puis-une-voix-une-idee-une-h.md",
-   "source": "ig-tunisia-podcasts-festival",
-   "titre": "Tout commence par une vibration. Puis une voix, une idée, une histoire...Et si vous venez",
-   "date": "2026-11-06",
-   "lien": "https://www.instagram.com/p/DfFDKyulAAl/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)",
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "presse-webdo/2026-11-03-sidi-bou-said-les-deux-estampes-iconiques-de-jo-ann-morning.md",
-   "source": "presse-webdo",
-   "titre": "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning",
-   "date": "2026-11-03",
-   "lien": "https://www.webdo.tn/fr/actualite/culture/sidi-bou-said-les-deux-estampes-iconiques-de-jo-ann-morning/406509/",
-   "problemes": [
-    "titre = phrase d'annonce ou d'article, pas le nom de l'événement"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-bakma-cinema-le-colisee.md",
-   "source": "tunis-events-cinema",
-   "titre": "BAKMA - بكمة",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-bakma-cinema-le-palace.md",
-   "source": "tunis-events-cinema",
-   "titre": "BAKMA",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-dar-el-3ers-cinema-le-colisee.md",
-   "source": "tunis-events-cinema",
-   "titre": "Dar El 3ers - دار العرس",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-dar-el-3ers.md",
-   "source": "tunis-events-cinema",
-   "titre": "Dar El 3ers - دار العرس",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-klara-and-the-sun.md",
-   "source": "tunis-events-cinema",
-   "titre": "KLARA AND THE SUN",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/8JQqQ3/klara-and-the-sun-cinema-le-colisee",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-last-chance.md",
-   "source": "tunis-events-cinema",
-   "titre": "LAST CHANCE - لص شايح",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
-   "problemes": [
-    "film sans horaire ni séance"
-   ]
-  },
-  {
-   "fichier": "tunis-events-cinema/2026-11-03-weekend-cinema-le-palace.md",
-   "source": "tunis-events-cinema",
-   "titre": "WEEKEND",
-   "date": "2026-11-03",
-   "lien": "https://tunis.events/events/8RPgrm/weekend-cinema-le-palace",
-   "problemes": [
-    "film sans horaire ni séance"
+    "titre trop long (début d'une légende ?)"
    ]
   }
  ],
  "granularite": {
   "sources": {
    "beit-al-hikma": {
-    "n": 2,
-    "precis": 2,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 3
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
-     }
-    ]
-   },
-   "cine-360": {
-    "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 1,
-      "exemple": "Le Maître du kabuki"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
+      "n": 3
      }
     ]
    },
    "cine-agora": {
-    "n": 8,
-    "precis": 8,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": []
    },
-   "cine-alhambra": {
-    "n": 4,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "lien_partage",
-      "texte": "même lien pour plusieurs événements différents",
-      "n": 4,
-      "exemple": "BAKMA - بكمة"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 4
-     }
-    ]
-   },
    "el-teatro": {
-    "n": 4,
-    "precis": 4,
+    "n": 1,
+    "precis": 1,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 4
+      "n": 1
      }
     ]
    },
@@ -321,11 +168,18 @@
     "precis": 1,
     "pourcent": 100,
     "defauts": [],
+    "manques": []
+   },
+   "fb-artisto": {
+    "n": 3,
+    "precis": 3,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 3
      }
     ]
    },
@@ -347,16 +201,16 @@
      }
     ]
    },
-   "fb-cr-sidibouzid": {
-    "n": 2,
+   "fb-cr-sousse": {
+    "n": 1,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+      "n": 1,
+      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
      }
     ],
     "manques": [
@@ -368,17 +222,23 @@
     ]
    },
    "fb-ift-facebook": {
-    "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
+    "n": 3,
+    "precis": 3,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
      }
-    ],
+    ]
+   },
+   "goethe-tunis": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
@@ -386,16 +246,16 @@
       "n": 1
      },
      {
-      "code": "sans_notice",
-      "texte": "notice",
+      "code": "sans_image",
+      "texte": "image",
       "n": 1
      }
     ]
    },
    "ift-pdf": {
-    "n": 53,
-    "precis": 12,
-    "pourcent": 23,
+    "n": 42,
+    "precis": 14,
+    "pourcent": 33,
     "defauts": [
      {
       "code": "titre_generique",
@@ -406,8 +266,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 41,
-      "exemple": "L’Heure du Jeu"
+      "n": 28,
+      "exemple": "Cinéma d’Animation"
      },
      {
       "code": "expo_sans_fin",
@@ -425,12 +285,20 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 41
-     },
+      "n": 28
+     }
+    ]
+   },
+   "ig-agora-djerba": {
+    "n": 2,
+    "precis": 2,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
      {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
      }
     ]
    },
@@ -441,16 +309,9 @@
     "defauts": [],
     "manques": []
    },
-   "ig-archivart": {
+   "ig-b7l9": {
     "n": 1,
     "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": []
-   },
-   "ig-cinemadart": {
-    "n": 3,
-    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -458,17 +319,19 @@
       "code": "sans_heure",
       "texte": "heure",
       "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
      }
     ]
    },
+   "ig-cinemadart": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": []
+   },
    "ig-creative-hub-sbs": {
-    "n": 3,
-    "precis": 3,
+    "n": 4,
+    "precis": 4,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -486,27 +349,7 @@
     "defauts": [],
     "manques": []
    },
-   "ig-la-boite": {
-    "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "expo_sans_fin",
-      "texte": "expo sans date de fin",
-      "n": 1,
-      "exemple": "Direction Gabès pour les Oasis Days !"
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "Direction Gabès pour les Oasis Days !"
-     }
-    ],
-    "manques": []
-   },
-   "ig-lart-rue": {
+   "ig-habibi-downtown": {
     "n": 2,
     "precis": 2,
     "pourcent": 100,
@@ -519,11 +362,25 @@
      }
     ]
    },
-   "ig-le32bis": {
+   "ig-la-boite": {
     "n": 1,
     "precis": 1,
     "pourcent": 100,
     "defauts": [],
+    "manques": []
+   },
+   "ig-lart-rue": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
+     }
+    ],
     "manques": [
      {
       "code": "sans_heure",
@@ -532,9 +389,9 @@
      }
     ]
    },
-   "ig-rosalux-afrique-nord": {
-    "n": 1,
-    "precis": 1,
+   "ig-le32bis": {
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -558,51 +415,19 @@
      }
     ]
    },
-   "ig-theatre-national": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
+   "ig-violon-bleu": {
+    "n": 2,
+    "precis": 1,
+    "pourcent": 50,
     "defauts": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
       "n": 1,
-      "exemple": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم"
+      "exemple": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOU"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 2
-     }
-    ]
-   },
-   "ig-tunisia-podcasts-festival": {
-    "n": 3,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Tout commence par une vibration. Puis une voix, une idée, une histoire"
-     },
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "Et si l’IA réinventait notre façon de communiquer ?"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "irmc": {
     "n": 1,
@@ -630,7 +455,32 @@
      }
     ]
    },
-   "presse-lapresse": {
+   "presse-kapitalis-ar": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
+   "presse-leaders": {
     "n": 1,
     "precis": 1,
     "pourcent": 100,
@@ -643,30 +493,10 @@
      }
     ]
    },
-   "presse-webdo": {
+   "resident-advisor": {
     "n": 1,
     "precis": 0,
     "pourcent": 0,
-    "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
-   },
-   "resident-advisor": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
     "defauts": [
      {
       "code": "lieu_vague",
@@ -675,35 +505,29 @@
       "exemple": "Nōmad Man Festival 2026"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
+    "manques": []
    },
    "teskerti": {
-    "n": 11,
-    "precis": 11,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 11
+      "n": 8
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 11
+      "n": 8
      }
     ]
    },
    "tunis-events": {
-    "n": 12,
-    "precis": 12,
+    "n": 18,
+    "precis": 18,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -715,84 +539,38 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 24,
-    "precis": 17,
-    "pourcent": 71,
-    "defauts": [
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 7,
-      "exemple": "BAKMA - بكمة"
-     }
-    ],
+    "n": 5,
+    "precis": 5,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 7
-     },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 24
+      "n": 2
      }
     ]
    }
   },
   "scrapers": {
-   "facebook_programmes": {
-    "n": 10,
-    "precis": 2,
-    "pourcent": 20,
+   "resident_advisor": {
+    "n": 1,
+    "precis": 0,
+    "pourcent": 0,
     "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Podcast Days by Tunisia Podcast Festival vous dévoile son programme du"
-     },
-     {
-      "code": "lien_partage",
-      "texte": "même lien pour plusieurs événements différents",
-      "n": 4,
-      "exemple": "BAKMA - بكمة"
-     },
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 1,
-      "exemple": "Le Maître du kabuki"
-     },
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "العروض الخاصة بالدورة التأسيسية لتظاهرة خريف ... أيام مسرحية بسيدي بوز"
+      "n": 1,
+      "exemple": "Nōmad Man Festival 2026"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 5
-     },
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 4
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 3
-     }
-    ]
+    "manques": []
    },
    "pdf_programme": {
-    "n": 53,
-    "precis": 12,
-    "pourcent": 23,
+    "n": 42,
+    "precis": 14,
+    "pourcent": 33,
     "defauts": [
      {
       "code": "titre_generique",
@@ -803,8 +581,8 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 41,
-      "exemple": "L’Heure du Jeu"
+      "n": 28,
+      "exemple": "Cinéma d’Animation"
      },
      {
       "code": "expo_sans_fin",
@@ -822,12 +600,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 41
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
+      "n": 28
      }
     ]
    },
@@ -837,105 +610,79 @@
     "pourcent": 67,
     "defauts": [
      {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 1,
-      "exemple": "Sidi Bou Saïd : Les deux estampes iconiques de Jo Ann Morning"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 3
-     }
-    ]
-   },
-   "resident_advisor": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
-    "defauts": [
-     {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
       "n": 1,
-      "exemple": "Nōmad Man Festival 2026"
-     }
-    ],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 1
-     }
-    ]
-   },
-   "tunis_events_cinema": {
-    "n": 24,
-    "precis": 17,
-    "pourcent": 71,
-    "defauts": [
-     {
-      "code": "film_sans_seance",
-      "texte": "film sans horaire ni séance",
-      "n": 7,
-      "exemple": "BAKMA - بكمة"
+      "exemple": "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 7
+      "n": 1
      },
      {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 24
+      "code": "sans_image",
+      "texte": "image",
+      "n": 3
      }
     ]
    },
    "instagram": {
-    "n": 21,
-    "precis": 16,
-    "pourcent": 76,
+    "n": 19,
+    "precis": 17,
+    "pourcent": 89,
     "defauts": [
-     {
-      "code": "titre_phrase",
-      "texte": "titre = phrase d'annonce ou d'article, pas le nom de l'événement",
-      "n": 2,
-      "exemple": "في إطار فعاليات الدورة الرابعة من المهرجان الوطني للمسرح التونسي مواسم"
-     },
      {
       "code": "expo_sans_fin",
       "texte": "expo sans date de fin",
       "n": 1,
-      "exemple": "Direction Gabès pour les Oasis Days !"
+      "exemple": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOU"
      },
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 3,
-      "exemple": "Direction Gabès pour les Oasis Days !"
+      "n": 1,
+      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 11
+      "n": 10
+     }
+    ]
+   },
+   "facebook_programmes": {
+    "n": 9,
+    "precis": 8,
+    "pourcent": 89,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 6
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 3
+      "n": 1
      }
     ]
    },
    "tunis_events": {
-    "n": 12,
-    "precis": 12,
+    "n": 18,
+    "precis": 18,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -946,64 +693,72 @@
      }
     ]
    },
-   "teskerti": {
-    "n": 11,
-    "precis": 11,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 11
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 11
-     }
-    ]
-   },
    "woocommerce_seances": {
-    "n": 8,
-    "precis": 8,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": []
    },
-   "billetterie_sktech": {
-    "n": 4,
-    "precis": 4,
+   "teskerti": {
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 4
+      "n": 8
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 4
+      "n": 8
      }
     ]
    },
    "rss": {
-    "n": 3,
-    "precis": 3,
+    "n": 5,
+    "precis": 5,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 2
+      "n": 4
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 3
+      "n": 5
+     }
+    ]
+   },
+   "tunis_events_cinema": {
+    "n": 5,
+    "precis": 5,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 2
+     }
+    ]
+   },
+   "billetterie_sktech": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
      }
     ]
    }

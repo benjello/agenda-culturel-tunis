@@ -9,13 +9,80 @@
   function jour(decalage) { var x = new Date(); x.setDate(x.getDate() + (decalage || 0)); return iso(x); }
 
   // ---- Langue : français dans les pages, arabe et anglais par le dictionnaire _data/i18n.yml
-  var langue = lire('langue', 'fr');
+  // Première visite : la langue du navigateur (arabe, anglais), sinon le français. Le choix du lecteur est gardé.
+  function langueDuNavigateur() {
+    var l = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'fr']);
+    for (var i = 0; i < l.length; i++) {
+      var c = String(l[i]).slice(0, 2).toLowerCase();
+      if (c === 'ar' || c === 'en' || c === 'fr') return c;
+    }
+    return 'fr';
+  }
+  var langue = lire('langue', langueDuNavigateur());
   var LOCALE = { fr: 'fr-FR', ar: 'ar-TN', en: 'en-GB' };
   function t(cle, defaut) {
     var e = I18N[cle];
     return (e && e[langue]) || (langue === 'fr' && e && e.fr) || defaut;
   }
   window.t = t;
+  // ---- Libellés (lieux, adresses, festivals, descriptifs, prix…) : libelles.json, produit par scrapers/libelles.py
+  var LIBELLES = null, chargementLibelles = false;
+  var MOTIF = { ar: { debut: 'ابتداءً من', dt: 'د.ت', ed: 'الدورة %n', gratuit: 'مجاني' }, en: { debut: 'From', dt: 'TND', ed: '%n edition', gratuit: 'Free' } };
+  function ordinal(n) { var r = n % 100; if (r >= 11 && r <= 13) return n + 'th'; return n + (['th', 'st', 'nd', 'rd'][n % 10] || 'th'); }
+  function convertir(c) {
+    var m, x = MOTIF[langue];
+    if (!x) return null;
+    if (/^gratuit$/i.test(c)) return t('gratuit', x.gratuit);
+    if ((m = c.match(/^(?:À partir de|A partir de)\s+([\d.,]+)\s*DT$/i))) return x.debut + ' ' + m[1] + ' ' + x.dt;
+    if ((m = c.match(/^([\d.,]+)\s*DT$/i))) return m[1] + ' ' + x.dt;
+    if ((m = c.match(/^(\d+)(?:e|er|ère|ème)\s+édition(.*)$/i))) return (langue === 'en' ? ordinal(+m[1]) + ' edition' : x.ed.replace('%n', m[1])) + (m[2] || '');
+    return null;
+  }
+  var SPECIAUX = { 'Lieu à préciser': 'lieu_preciser', 'voir l\'annonce': 'voir_annonce', 'voir l\'article': 'voir_article' };
+  function chercher(c, niveau) {
+    var e = LIBELLES && LIBELLES[c], k = SPECIAUX[c], m;
+    if (k) return t(k, null);
+    if (e && e[langue]) return e[langue];
+    var r = convertir(c);
+    if (r) return r;
+    if ((m = c.match(/^(.*?)\s*(\(\d+(?:e|er|ère|ème)\s+édition\))$/i)) && m[1]) {
+      var a = chercher(m[1], niveau + 1), b = convertir(m[2].slice(1, -1));
+      if (a || b) return (a || m[1]) + ' (' + (b || m[2].slice(1, -1)) + ')';
+    }
+    if (niveau > 1) return null;
+    var seps = [' · ', ', '];
+    for (var i = 0; i < seps.length; i++) {
+      var parts = c.split(seps[i]);
+      if (parts.length > 1) {
+        var change = false, sortie = parts.map(function (p) { var x = chercher(p.trim(), niveau + 1); if (x) change = true; return x || p; });
+        if (change) return sortie.join(seps[i]);
+      }
+    }
+    return null;
+  }
+  function appliquerLibelles() {
+    if (langue !== 'fr' && !LIBELLES && !chargementLibelles) {
+      chargementLibelles = true;
+      fetch((window.BASE || '/') + 'libelles.json').then(function (r) { return r.json(); })
+        .then(function (j) { LIBELLES = j || {}; traduire(); }).catch(function () { LIBELLES = {}; });
+    }
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (n) {
+        var p = n.parentNode;
+        return !p || /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA)$/.test(p.nodeName) || (p.closest && p.closest('[data-t],[data-tn],[data-th],[data-tr-fr],[data-tr-en],[data-tr-ar],[data-tr-bloc],[data-tr-origine],.titre-orig')) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var noeuds = [], n;
+    while ((n = w.nextNode())) noeuds.push(n);
+    noeuds.forEach(function (nd) {
+      if (nd._orig === undefined) nd._orig = nd.nodeValue;
+      var o = nd._orig, m = o.match(/^([\s·•|,:–—-]*)([\s\S]*?)([\s·•|,:–—-]*)$/);
+      if (!m || !m[2]) return;
+      var r = langue !== 'fr' ? chercher(m[2], 0) : null;
+      var v = r ? m[1] + r + m[3] : o;
+      if (nd.nodeValue !== v) nd.nodeValue = v;
+    });
+  }
   function traduire() {
     d.lang = langue; d.dir = langue === 'ar' ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-t]').forEach(function (el) {
@@ -58,22 +125,43 @@
       el.textContent = langue === 'fr' ? el._fr : new Date(+p[0], +p[1] - 1, 15).toLocaleString(loc, { month: 'long', year: 'numeric' });
     });
     // Titres et notices des événements : traduction automatique (_data/traductions.json)
+    var decoder = window._decoder = function (v) { return v ? v.replace(/&quot;/g, '"').replace(/&apos;|&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&') : v; };
     var cle = 'tr' + langue.charAt(0).toUpperCase() + langue.slice(1);
     document.querySelectorAll('[data-tr-fr],[data-tr-en],[data-tr-ar]').forEach(function (el) {
       if (el._orig === undefined) el._orig = el.textContent;
-      var v = el.dataset[cle];
+      var v = decoder(el.dataset[cle]);
       el.textContent = v || el._orig;
       if (v) el.setAttribute('lang', langue); else el.removeAttribute('lang');
+      // seul le titre garde sa langue d'origine : on l'affiche à côté de sa traduction
+      if (el.matches('h1,h3 a')) {
+        var o = el._origTitre;
+        if (v && !o) { o = el._origTitre = document.createElement('span'); o.className = 'titre-orig'; o.setAttribute('dir', 'auto'); el.insertAdjacentElement('afterend', o); }
+        if (o) { o.textContent = v ? el._orig : ''; o.hidden = !v; }
+      }
     });
-    var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false;
-    blocs.forEach(function (b) { b.hidden = b.dataset.trBloc !== langue; traduit = traduit || !b.hidden; });
-    document.querySelectorAll('[data-tr-origine]').forEach(function (b) { b.hidden = traduit; });
-    document.querySelectorAll('.note-trad').forEach(function (b) { b.hidden = !traduit; });
+    var blocs = document.querySelectorAll('[data-tr-bloc]'), traduit = false, original = window._voirOriginal === true;
+    blocs.forEach(function (b) { b.hidden = original || b.dataset.trBloc !== langue; traduit = traduit || b.dataset.trBloc === langue; });
+    document.querySelectorAll('[data-tr-origine]').forEach(function (b) { b.hidden = traduit && !original; });
+    document.querySelectorAll('.note-trad').forEach(function (b) { b.hidden = !traduit || original; });
+    // « Voir le texte d'origine » / « Voir la traduction » : seulement quand une traduction existe
+    document.querySelectorAll('.voir-original').forEach(function (b) {
+      b.hidden = !traduit;
+      b.textContent = original ? t('voir_traduction', 'Voir la traduction') : t('voir_original', 'Voir le texte d\'origine');
+    });
+    appliquerLibelles();
+    document.querySelectorAll('a.carte[data-q]').forEach(function (a) {
+      if (a.href.indexOf('geo:') === 0) return;
+      if (a._href === undefined) a._href = a.getAttribute('href');
+      a.setAttribute('href', langue === 'fr' || a._href.indexOf('openstreetmap.org/search') < 0 ? a._href : a._href + '&locale=' + langue);
+    });
     document.querySelectorAll('[data-langue]').forEach(function (b) { b.classList.toggle('active', b.dataset.langue === langue); });
     document.dispatchEvent(new CustomEvent('langue', { detail: langue }));
   }
   document.querySelectorAll('[data-langue]').forEach(function (b) {
-    b.addEventListener('click', function () { langue = b.dataset.langue; ecrire('langue', langue); traduire(); });
+    b.addEventListener('click', function () { langue = b.dataset.langue; window._voirOriginal = false; ecrire('langue', langue); traduire(); });
+  });
+  document.querySelectorAll('.voir-original').forEach(function (b) {
+    b.addEventListener('click', function () { window._voirOriginal = !window._voirOriginal; traduire(); });
   });
 
   // ---- Thème sombre ou clair (par défaut : celui du téléphone) et affichage léger
@@ -146,7 +234,9 @@
     l.push('UID:' + c.dataset.id.replace(/\W+/g, '-') + '@agenda-culturel-tunis');
     l.push('DTSTAMP:' + new Date().toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z');
     if (h && fin === debut) {
-      l.push('DTSTART:' + utc(debut, h), 'DTEND:' + utc(debut, h, 2));
+      var hf = c.dataset.heureFin, finJour = debut;
+      if (hf && hf <= h) { var j = new Date(debut + 'T12:00:00'); j.setDate(j.getDate() + 1); finJour = iso(j); }
+      l.push('DTSTART:' + utc(debut, h), 'DTEND:' + (hf ? utc(finJour, hf) : utc(debut, h, 2)));
     } else {
       var f = new Date(fin + 'T12:00:00'); f.setDate(f.getDate() + 1);
       l.push('DTSTART;VALUE=DATE:' + debut.replace(/-/g, ''), 'DTEND;VALUE=DATE:' + iso(f).replace(/-/g, ''));
@@ -309,18 +399,33 @@
   // et « Ce soir à Tunis » en tête de l'accueil. Tout vient des attributs data-* de la carte.
   var bulle = null, delaiBulle = 0, peutSurvoler = window.matchMedia ? window.matchMedia('(any-hover: hover) and (any-pointer: fine)') : { matches: false };
   function esc(x) { return (x || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  // Fiche de film (page Au cinéma) : titre, badges, durée et synopsis, lus dans la fiche elle-même.
+  function contenuFilm(c) {
+    var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), syn = c.querySelector('.synopsis p');
+    var badges = Array.prototype.map.call(c.querySelectorAll('.badges .badge'), function (b) { return b.textContent.trim(); }).join(' · ');
+    var texte = syn ? syn.textContent.replace(/\s+/g, ' ').trim() : '';
+    if (texte.length > 420) texte = texte.slice(0, 420).replace(/\s+\S*$/, '') + '…';
+    var infos = [badges, meta ? meta.textContent.trim() : ''].filter(Boolean).join(' · ');
+    return '<div class="bulle-corps"><strong>' + esc(titre ? titre.textContent.trim() : '') + '</strong>' +
+      (infos ? '<p class="bulle-infos">' + esc(infos) + '</p>' : '') +
+      '<p class="bulle-texte">' + esc(texte || t('pas_de_synopsis', 'Pas de synopsis disponible')) + '</p></div>';
+  }
   function contenuApercu(c) {
+    if (c.classList.contains('film-fiche')) return contenuFilm(c);
     var titre = c.querySelector('h3'), meta = c.querySelector('.meta'), h = c.dataset.heure;
     var prix = c.dataset.prix || '', lignes = [];
-    if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h'));
-    if (c.dataset.lieu) lignes.push('📍 ' + esc(c.dataset.lieu));
+    var resume = c.dataset['resume' + langue.charAt(0).toUpperCase() + langue.slice(1)] || c.dataset.resume;
+    if (resume !== c.dataset.resume && window._decoder) resume = window._decoder(resume);
+    if (h) lignes.push('🕗 ' + h.replace(':', 'h').replace(/h00$/, 'h') + (c.dataset.heureFin ? ' – ' + c.dataset.heureFin.replace(':', 'h').replace(/h00$/, 'h') : ''));
+    var lieu = c.dataset.lieu === 'Lieu à préciser' ? t('lieu_preciser', c.dataset.lieu) : c.dataset.lieu;
+    if (lieu) lignes.push('📍 ' + esc(lieu));
     if (c.hasAttribute('data-gratuit')) lignes.push('✓ ' + esc(t('gratuit', 'Gratuit')));
     else if (prix) lignes.push('🎟 ' + esc(prix));
     return (c.dataset.image ? '<img src="' + esc(c.dataset.image) + '" alt="" loading="lazy">' : '') +
       '<div class="bulle-corps"><span class="tag" style="background:' + esc(c.dataset.couleur) + '">' + esc(c.dataset.categorie) + '</span>' +
-      '<strong>' + esc(c.dataset.titre) + '</strong>' +
+      '<strong>' + esc((titre && titre.textContent.trim()) || c.dataset.titre) + '</strong>' +
       (lignes.length ? '<p class="bulle-infos">' + lignes.join(' · ') + '</p>' : (meta ? '<p class="bulle-infos">' + esc(meta.textContent.trim()) + '</p>' : '')) +
-      (c.dataset.resume ? '<p class="bulle-texte">' + esc(c.dataset.resume) + '</p>' : '') + '</div>';
+      (resume ? '<p class="bulle-texte">' + esc(resume) + '</p>' : '') + '</div>';
   }
   function fermerBulle() {
     clearTimeout(delaiBulle);
@@ -348,17 +453,22 @@
       bulle.style.left = x + 'px'; bulle.style.top = y + 'px';
     }
   }
+  // Certains navigateurs (Firefox avec protection renforcée, écrans tactiles + souris…) annoncent mal (any-hover) :
+  // on se fie aussi au type du dernier pointeur vu (souris ou stylet = survol possible, doigt = non).
+  var sourisVue = false;
+  document.addEventListener('pointerover', function (ev) { sourisVue = ev.pointerType === 'mouse' || ev.pointerType === 'pen'; }, true);
+  function survolPossible() { return sourisVue || peutSurvoler.matches; }
   document.addEventListener('mouseover', function (ev) {
-    if (!peutSurvoler.matches) return;
-    var c = ev.target.closest && ev.target.closest('.event');
+    if (!survolPossible()) return;
+    var c = ev.target.closest && ev.target.closest('.event, .film-fiche');
     if (!c || c.classList.contains('event-page') || c.closest('.apercu')) { return; }
     if (c === ev.relatedTarget || c.contains(ev.relatedTarget)) return;
     clearTimeout(delaiBulle);
     delaiBulle = setTimeout(function () { montrerBulle(c, false); }, 450);
   });
   document.addEventListener('mouseout', function (ev) {
-    if (!peutSurvoler.matches) return;
-    var c = ev.target.closest && ev.target.closest('.event');
+    if (!survolPossible()) return;
+    var c = ev.target.closest && ev.target.closest('.event, .film-fiche');
     if (!c || c.contains(ev.relatedTarget)) return;
     fermerBulle();
   });
@@ -388,7 +498,18 @@
     });
     if (!items.length) return;
     items.sort(function (a, b) { return a.h < b.h ? -1 : a.h > b.h ? 1 : 0; });
-    items.slice(0, 8).forEach(function (it) {
+    // Le titre suit l'heure des événements affichés : « Ce matin » (avant 12 h), « Cet après-midi » (12 h à 17 h),
+    // « Ce soir » (à partir de 17 h) ; « Aujourd'hui » si la liste mêle plusieurs moments de la journée.
+    var affiches = items.slice(0, 8);
+    var moments = affiches.map(function (it) { return it.h < '12:00' ? 'matin' : it.h < '17:00' ? 'apres_midi' : 'soir'; });
+    var cleTitre = moments.every(function (m) { return m === moments[0]; })
+      ? { matin: 'ce_soir_matin', apres_midi: 'ce_soir_apres_midi', soir: 'ce_soir_titre' }[moments[0]] : 'ce_soir_jour';
+    var titre = zone.querySelector('[data-t]');
+    if (titre && I18N[cleTitre]) {
+      titre.dataset.t = cleTitre; titre._fr = I18N[cleTitre].fr;
+      titre.textContent = t(cleTitre, I18N[cleTitre].fr);
+    }
+    affiches.forEach(function (it) {
       var min = Math.round((it.debut - maintenant) / 60000), reste;
       if (min <= 0) reste = t('en_cours_maintenant', 'a commencé');
       else if (min < 60) reste = t('dans', 'dans') + ' ' + min + ' min';
@@ -408,16 +529,33 @@
     navigator.serviceWorker.register((window.BASE || '/') + 'sw.js').catch(function () {});
   }
 
-  // ---- Bouton « Installer l'application » (Android/Chrome) ; sur iPhone, les consignes de la page suffisent
+  // ---- Bouton « Installer l'application » : un clic sur Chrome, Edge et Android (beforeinstallprompt) ;
+  // ailleurs (iPhone/Safari, Firefox), pas de clic unique possible : on affiche une aide pas à pas.
   var invite = null;
+  var zone = document.getElementById('installer-zone');
+  var boutons = document.querySelectorAll('[data-installer]');
+  var installee = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+  function montrerBoutons(v) { boutons.forEach(function (b) { b.hidden = !v; }); if (zone) zone.hidden = !v && !aideVisible; }
+  var aideVisible = false;
+  function montrerAide() {
+    var aide = document.getElementById('aide-installer'); if (!aide || installee) return;
+    var ua = navigator.userAgent, ios = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    document.getElementById('aide-ios').hidden = !ios;
+    document.getElementById('aide-autre').hidden = ios;
+    aide.hidden = false; aideVisible = true; if (zone) zone.hidden = false;
+  }
   window.addEventListener('beforeinstallprompt', function (e) {
     e.preventDefault(); invite = e;
-    var b = document.getElementById('bouton-installer'); if (b) b.hidden = false;
+    var aide = document.getElementById('aide-installer'); if (aide) aide.hidden = true; aideVisible = false;
+    montrerBoutons(true);
   });
-  var bi = document.getElementById('bouton-installer');
-  if (bi) bi.addEventListener('click', function () {
-    if (!invite) return;
-    invite.prompt(); invite = null; bi.hidden = true;
+  boutons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!invite) return;
+      invite.prompt(); invite = null; montrerBoutons(false);
+    });
   });
-  window.addEventListener('appinstalled', function () { if (bi) bi.hidden = true; });
+  window.addEventListener('appinstalled', function () { invite = null; montrerBoutons(false); if (zone) zone.hidden = true; });
+  // Si le navigateur n'a pas proposé l'installation au bout d'un moment, on montre l'aide (sauf appli déjà installée).
+  if (!installee) setTimeout(function () { if (!invite) montrerAide(); }, 1500);
 })();

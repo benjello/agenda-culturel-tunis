@@ -828,8 +828,13 @@ class PresseDatesTitres(unittest.TestCase):
         self.assertEqual(lieu_connu(texte, noms), "Théâtre Le 4ème Art")
         self.assertEqual(lieu_connu("Au 4ème art puis à la Maison des Arts du Belvédère", noms), "Théâtre Le 4ème Art")
         self.assertEqual(lieu_connu("Un festival à Tunis", noms), "")
-        # avec le vrai registre (_data/lieux.json)
-        self.assertEqual(lieu_connu("à la salle du Quatrième Art, à Tunis"), "Théâtre Le 4ème Art")
+        # avec le vrai registre (_data/lieux.json) : il change à chaque passage des scrapers,
+        # on vérifie donc seulement qu'un lieu qu'il contient est retrouvé dans un texte
+        from scrapers.sources.presse import noms_de_lieux
+        formes = noms_de_lieux()
+        if formes:
+            forme, nom = formes[0]
+            self.assertEqual(lieu_connu(f"Concert à {forme}, à Tunis", formes), nom)
 
     def test_festival_sans_lieu_devient_une_entree_festival(self):
         from scrapers.sources import presse
@@ -890,6 +895,23 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].debut, dt.datetime(j.year, j.month, j.day, 23, 0))
         self.assertEqual(evts[0].image, "assets/x.jpg")
         self.assertEqual(evts[0].lieu, "B7L9, La Marsa")
+
+    def test_festival_une_seule_fiche_sur_la_periode(self):
+        """Annonce « du 11 au 17 novembre » (L'Artisto) : un événement sur la période, pas un par date citée."""
+        from scrapers import lecteurs
+        pub = {"lien": "https://facebook.com/p/1", "date": "2026-11-02", "images": ["a.jpg"],
+               "texte": ("Les Rencontres théâtrales de Lartisto reviennent pour leur 12ème édition !\n\n"
+                         "Du 11 au 17 novembre, retrouvez six spectacles. Pack spécial à 35 DT pour les 6 représentations !")}
+        pub["ocr"] = "16 NOVEMBRE\nJIHED YAHYAOUT"
+        with mock.patch.object(lecteurs.dt, "date", wraps=dt.date) as d:
+            d.today.return_value = dt.date(2026, 11, 5)
+            d.fromisoformat = dt.date.fromisoformat
+            evts = lecteurs.une_affiche_par_evenement([pub], [], "Espace L'Artisto")
+        self.assertEqual(len(evts), 1)
+        self.assertEqual(evts[0].titre, "Les Rencontres théâtrales de Lartisto (12e édition)")
+        self.assertEqual(evts[0].debut, dt.datetime(2026, 11, 11))
+        self.assertEqual(evts[0].fin, dt.datetime(2026, 11, 17))
+        self.assertEqual(evts[0].prix, "35 DT")
 
     def test_titre_et_lieu_de_soiree(self):
         from scrapers import lecteurs
@@ -1326,3 +1348,33 @@ class RetourBeta(unittest.TestCase):
                   "Biennale 2026\" qui se tiendra du 23 octobre au 22 novembre.")
         self.assertTrue(commun.annonce_de_partenariat(notice))
         self.assertFalse(commun.annonce_de_partenariat("Concert de jazz. Entrée libre, avec le soutien de la mairie."))
+
+
+class Libelles(unittest.TestCase):
+    def test_textes_retenus(self):
+        from scrapers.libelles import retenu
+        self.assertTrue(retenu("Musée national du Bardo"))
+        self.assertTrue(retenu("11 rue Nelson Mandela, La Marsa"))
+        self.assertFalse(retenu("À partir de 20 DT"))
+        self.assertFalse(retenu("https://exemple.org/page web"))
+        self.assertFalse(retenu("Mo-Su 07:30 - 17:30"))
+        self.assertFalse(retenu("bardo"))
+
+    def test_traduction_gardee_une_fois(self):
+        from scrapers import libelles
+
+        class Faux:
+            appels = 0
+
+            def traduire(self, textes, de, vers):
+                Faux.appels += 1
+                return [f"{vers}:{t}" for t in textes]
+
+        cache = {}
+        n = libelles.traduire_libelles(Faux(), cache, {"Médiathèque de Tunis"})
+        self.assertEqual(n, 1)
+        self.assertEqual(cache["Médiathèque de Tunis"]["en"], "en:Médiathèque de Tunis")
+        self.assertEqual(cache["Médiathèque de Tunis"]["de"], "fr")
+        avant = Faux.appels
+        libelles.traduire_libelles(Faux(), cache, {"Médiathèque de Tunis"})
+        self.assertEqual(Faux.appels, avant)

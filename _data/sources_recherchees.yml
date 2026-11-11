@@ -111,3 +111,11 @@
   nom: Associations et festivals de quartier de la médina
   categorie: autre
   cherche: "Les comptes de L'Art Rue (Dream City), des associations de la médina et des festivals de quartier."
+
+- id: musique-arabophone
+  tache: trouver
+  niveau: facile
+  nom: Concerts pour le public arabophone (musique tunisienne et arabe, mezoued, rap tunisien)
+  categorie: musique
+  cherche: "Les pages Facebook ou Instagram (souvent écrites en arabe) des lieux et organisateurs de concerts de chanson tunisienne et arabe, de mezoued et de rap : La Rachidia, Théâtre Al Hamra, Orchestre symphonique tunisien, maisons de la culture, organisateurs de concerts populaires."
+  pistes: "Teskerti et tunis.events listent déjà une partie des concerts ; la presse en arabe (Kapitalis Anbaa Tounes, Mosaïque FM) vient d'être branchée. Tuniscope arabe : le flux RSS est vide, mais la rubrique /ar/categorie/96/culture-arabe répond (à lire si un scraper de page le permet)."

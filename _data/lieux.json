@@ -1,54 +1,46 @@
 {
  "index": {
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
-  "Ciné 350 (Cité de la Culture)": "cine-350-cite-de-la-culture",
   "L'Agora Marsa": "lagora-la-marsa",
-  "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
-  "El Teatro التياترو": "el-teatro",
   "Dar Ziqua, Zaghouan": "dar-ziqua-zaghouan",
+  "Espace L'Artisto": "espace-l-artisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
+  "Auditorium de l'IFT (20, avenue de Paris, Tunis)": "auditorium-de-l-ift-20-avenue-de-paris-tunis",
+  "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": "mediatheque-de-l-ift-20-avenue-de-paris-tunis",
   "Institut français de Tunisie": "institut-francais-de-tunisie",
   "Institut Français de Tunis": "institut-francais-de-tunis",
   "Institut français de Tunis": "institut-francais-de-tunis",
   "Institut français de Sfax": "institut-francais-de-sfax",
-  "Médiathèque de l'ift_tunisie": "mediatheque-institut-francais-de-tunis",
-  "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
-  "Institut français de Sousse": "institut-francais-de-sousse",
-  "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
-  "VOX Café, Institut français de Sousse": "vox-cafe-institut-francais-de-sousse",
-  "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
-  "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
+  "Institut français de Sousse": "institut-francais-de-sousse",
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
+  "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
+  "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
+  "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
+  "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
+  "L'Agora Djerba": "l-agora-djerba",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
-  "11 rue Nelson Mandela, Jinene Eddonia La Marsa, 2046": "11-rue-nelson-mandela-jinene-eddonia-la-marsa-2046",
+  "مركز الفنون B7L9": "b7l9",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
   "Creative Hub, Sidi Bou Saïd": "creative-hub-sidi-bou-said",
   "Galerie Insular, Erriadh (Djerbahood)": "galerie-insular-erriadh-djerbahood",
+  "Habibi Downtown, Tunis": "habibi-downtown-tunis",
+  "habibidowntown_": "habibidowntown",
   "La Boîte": "la-boite",
-  "L'art Rue 🎟️ Entrée sur inscription — lien en bio": "l-art-rue-entree-sur-inscription-lien-en-bio",
-  "La Chapelle, Dar Bach Hamba": "la-chapelle-dar-bach-hamba",
-  "Fondation Rosa Luxemburg, Tunis": "fondation-rosa-luxemburg-tunis",
   "Shanti": "shanti",
-  "رواق الفنون – قاعة الفن الرابع": "lieu-4d77648b",
-  "قاعة رشاد المناعي بقاعة الفن الرابع": "lieu-4d77648b",
-  "Théâtre Le 4ème Art": "theatre-le-4eme-art",
-  "Studio B52": "studio-b52",
-  "Steps Club Sousse": "steps-club-sousse",
-  "One Resort": "one-resort",
+  "Le Violon Bleu, Sidi Bou Saïd": "le-violon-bleu-sidi-bou-said",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
+  "Russian House": "russian-house",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
+  "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
   "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
-  "Cinéma Le Colisée": "cinema-le-colisee",
-  "Cinéma Le Palace": "cinema-le-palace",
-  "Pathé Azur City": "pathe-azur-city",
-  "Pathé Tunis City": "pathe-tunis-city",
+  "UTICA UNION TUN. THE IND. TRADE & ART": "utica-union-tun-the-ind-trade-art",
   "Douz": "douz",
   "One Resort, Monastir": "one-resort-monastir",
   "32bis": "le-32bis",
@@ -89,49 +81,31 @@
  },
  "carte": [
   {
-   "slug": "mediatheque-institut-francais-de-tunis",
-   "nom": "Médiathèque, Institut français de Tunis",
-   "type": "bibliotheque",
-   "ville": "tunis",
-   "lat": 36.85392,
-   "lon": 10.19632,
-   "n": 19
-  },
-  {
    "slug": "lagora-la-marsa",
    "nom": "L’Agora La Marsa",
    "type": "cinema",
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 14
+   "n": 18
   },
   {
-   "slug": "institut-francais-de-tunis",
-   "nom": "Institut français de Tunis",
-   "type": "centre",
+   "slug": "mediatheque-institut-francais-de-tunis",
+   "nom": "Médiathèque, Institut français de Tunis",
+   "type": "bibliotheque",
    "ville": "tunis",
-   "lat": 36.8021,
-   "lon": 10.18066,
-   "n": 9
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 13
   },
   {
-   "slug": "el-teatro",
-   "nom": "El Teatro",
+   "slug": "theatre-municipal-de-tunis",
+   "nom": "Théâtre municipal de Tunis",
    "type": "theatre",
    "ville": "tunis",
-   "lat": 36.81393,
-   "lon": 10.17371,
-   "n": 7
-  },
-  {
-   "slug": "galerie-institut-francais-de-sousse",
-   "nom": "Galerie, Institut français de Sousse",
-   "type": "galerie",
-   "ville": "sousse",
-   "lat": 36.83351,
-   "lon": 10.10422,
-   "n": 7
+   "lat": 36.79911,
+   "lon": 10.18081,
+   "n": 8
   },
   {
    "slug": "auditorium-institut-francais-de-tunis",
@@ -143,22 +117,22 @@
    "n": 7
   },
   {
-   "slug": "cinemadart",
-   "nom": "CinéMadart",
-   "type": "cinema",
+   "slug": "institut-francais-de-tunis",
+   "nom": "Institut français de Tunis",
+   "type": "centre",
    "ville": "tunis",
-   "lat": 36.854,
-   "lon": 10.324,
-   "n": 7
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 6
   },
   {
-   "slug": "theatre-municipal-de-tunis",
-   "nom": "Théâtre municipal de Tunis",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.79911,
-   "lon": 10.18081,
-   "n": 7
+   "slug": "galerie-institut-francais-de-sousse",
+   "nom": "Galerie, Institut français de Sousse",
+   "type": "galerie",
+   "ville": "sousse",
+   "lat": 36.83351,
+   "lon": 10.10422,
+   "n": 6
   },
   {
    "slug": "mediatheque-institut-francais-de-sfax",
@@ -167,69 +141,24 @@
    "ville": "sfax",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 6
-  },
-  {
-   "slug": "pathe-azur-city",
-   "nom": "Pathé Azur City",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.744,
-   "lon": 10.232,
-   "n": 6
-  },
-  {
-   "slug": "theatre-le-4eme-art",
-   "nom": "Théâtre Le 4ème Art",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.80189,
-   "lon": 10.18123,
    "n": 5
   },
   {
-   "slug": "pathe-tunis-city",
-   "nom": "Pathé Tunis City",
+   "slug": "cinemadart",
+   "nom": "CinéMadart",
    "type": "cinema",
    "ville": "tunis",
-   "lat": 36.89828,
-   "lon": 10.12451,
+   "lat": 36.854,
+   "lon": 10.324,
    "n": 5
   },
   {
-   "slug": "cinema-alhambra-zephyr",
-   "nom": "Cinéma Alhambra Zéphyr",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.878,
-   "lon": 10.3245,
-   "n": 4
-  },
-  {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
-   "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
-   "n": 4
-  },
-  {
-   "slug": "cinema-le-palace",
-   "nom": "Cinéma Le Palace",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.8,
-   "lon": 10.183,
-   "n": 4
-  },
-  {
-   "slug": "salle-albert-camus-institut-francais-de-sfax",
-   "nom": "Salle Albert Camus, Institut français de Sfax",
+   "slug": "beit-al-hikma-carthage",
+   "nom": "Beit al-Hikma, Carthage",
    "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
+   "ville": "tunis",
+   "lat": 35.6619,
+   "lon": 10.08999,
    "n": 3
   },
   {
@@ -242,40 +171,13 @@
    "n": 3
   },
   {
-   "slug": "b7l9-art-centre",
-   "nom": "B7L9 Art Centre",
-   "type": "centre_art",
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
    "ville": "tunis",
-   "lat": 36.889,
-   "lon": 10.307,
+   "lat": 34.59926,
+   "lon": 9.59188,
    "n": 3
-  },
-  {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
-   "n": 3
-  },
-  {
-   "slug": "beit-al-hikma-carthage",
-   "nom": "Beit al-Hikma, Carthage",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 35.6619,
-   "lon": 10.08999,
-   "n": 2
-  },
-  {
-   "slug": "institut-francais-de-tunisie",
-   "nom": "Institut français de Tunisie",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8021,
-   "lon": 10.18066,
-   "n": 2
   },
   {
    "slug": "institut-francais-de-sfax",
@@ -296,21 +198,30 @@
    "n": 2
   },
   {
-   "slug": "mediatheque-institut-francais-de-sousse",
-   "nom": "Médiathèque, Institut français de Sousse",
-   "type": "bibliotheque",
-   "ville": "sousse",
-   "lat": 36.85392,
-   "lon": 10.19632,
+   "slug": "salle-albert-camus-institut-francais-de-sfax",
+   "nom": "Salle Albert Camus, Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
    "n": 2
   },
   {
-   "slug": "la-chapelle-dar-bach-hamba",
-   "nom": "La Chapelle, Dar Bach Hamba",
-   "type": "centre",
+   "slug": "la-boite",
+   "nom": "La Boîte",
+   "type": "centre_art",
    "ville": "tunis",
-   "lat": 36.86183,
-   "lon": 10.33874,
+   "lat": 36.52364,
+   "lon": 10.55862,
+   "n": 2
+  },
+  {
+   "slug": "le-violon-bleu-sidi-bou-said",
+   "nom": "Le Violon Bleu, Sidi Bou Saïd",
+   "type": "autre",
+   "ville": "tunis",
+   "lat": 36.8718,
+   "lon": 10.34916,
    "n": 2
   },
   {
@@ -323,12 +234,30 @@
    "n": 2
   },
   {
-   "slug": "cine-350-cite-de-la-culture",
-   "nom": "Ciné 350 (Cité de la Culture)",
-   "type": "cinema",
+   "slug": "b7l9-art-centre",
+   "nom": "B7L9 Art Centre",
+   "type": "centre_art",
    "ville": "tunis",
-   "lat": 36.8125,
-   "lon": 10.1817,
+   "lat": 36.889,
+   "lon": 10.307,
+   "n": 2
+  },
+  {
+   "slug": "le-32bis",
+   "nom": "Le 32Bis",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.79509,
+   "lon": 10.1838,
+   "n": 2
+  },
+  {
+   "slug": "el-teatro",
+   "nom": "El Teatro",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.81393,
+   "lon": 10.17371,
    "n": 1
   },
   {
@@ -341,6 +270,24 @@
    "n": 1
   },
   {
+   "slug": "institut-francais-de-tunisie",
+   "nom": "Institut français de Tunisie",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 1
+  },
+  {
+   "slug": "mediatheque-institut-francais-de-sousse",
+   "nom": "Médiathèque, Institut français de Sousse",
+   "type": "bibliotheque",
+   "ville": "sousse",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 1
+  },
+  {
    "slug": "agorgi-gallery-sidi-bou-said",
    "nom": "Agorgi Gallery, Sidi Bou Saïd",
    "type": "galerie",
@@ -350,48 +297,12 @@
    "n": 1
   },
   {
-   "slug": "11-rue-nelson-mandela-jinene-eddonia-la-marsa-2046",
-   "nom": "11 rue Nelson Mandela, Jinene Eddonia La Marsa, 2046",
-   "type": "autre",
-   "ville": "tunis",
-   "lat": 36.76859,
-   "lon": 10.10317,
-   "n": 1
-  },
-  {
-   "slug": "la-boite",
-   "nom": "La Boîte",
-   "type": "centre_art",
-   "ville": "tunis",
-   "lat": 36.52364,
-   "lon": 10.55862,
-   "n": 1
-  },
-  {
-   "slug": "fondation-rosa-luxemburg-tunis",
-   "nom": "Fondation Rosa Luxemburg, Tunis",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.82627,
-   "lon": 10.17429,
-   "n": 1
-  },
-  {
    "slug": "shanti",
    "nom": "Shanti",
    "type": "club",
    "ville": "tunis",
    "lat": 36.82213,
    "lon": 10.18498,
-   "n": 1
-  },
-  {
-   "slug": "one-resort",
-   "nom": "One Resort",
-   "type": "club",
-   "ville": "monastir",
-   "lat": 35.76372,
-   "lon": 10.7399,
    "n": 1
   },
   {
@@ -422,12 +333,12 @@
    "n": 1
   },
   {
-   "slug": "le-32bis",
-   "nom": "Le 32Bis",
-   "type": "centre_art",
+   "slug": "cite-de-la-culture",
+   "nom": "Cité de la Culture",
+   "type": "centre",
    "ville": "tunis",
-   "lat": 36.79509,
-   "lon": 10.1838,
+   "lat": 36.8109,
+   "lon": 10.18608,
    "n": 1
   },
   {
@@ -437,15 +348,6 @@
    "ville": "tunis",
    "lat": 35.2976,
    "lon": 10.70592,
-   "n": 0
-  },
-  {
-   "slug": "cite-de-la-culture",
-   "nom": "Cité de la Culture",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8109,
-   "lon": 10.18608,
    "n": 0
   }
  ]

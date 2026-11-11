@@ -23,6 +23,7 @@ permalink: /evenements.json
     {
       "titre": {{ e.title | jsonify }},
       "debut": {{ e.date | date: "%Y-%m-%dT%H:%M:00+01:00" | jsonify }},
+      "heure_fin": {{ e.end_time | jsonify }},
       "fin": {% if e.end_date %}{{ e.end_date | date: "%Y-%m-%dT%H:%M:00+01:00" | jsonify }}{% else %}null{% endif %},
       "lieu": {{ e.venue | jsonify }},
       "adresse": {{ e.address | jsonify }},

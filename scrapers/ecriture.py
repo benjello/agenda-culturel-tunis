@@ -14,7 +14,7 @@ import json
 import re
 import shutil
 
-from .commun import RACINE, Evenement, Publication, est_discret, est_famille, pas_un_evenement, retours_ligne_casses, slug, titre_film
+from .commun import RACINE, Evenement, Publication, est_discret, est_famille, horaire_du_texte, pas_un_evenement, retours_ligne_casses, slug, titre_film
 from .pages import _cle, faux_lieux
 from .villes import mention, ville
 
@@ -24,6 +24,8 @@ FICHIER_ETAT = RACINE / "_data" / "etat_sources.json"
 
 
 LIEU_INCONNU = "Lieu à préciser"
+# Par source : (événements écrits, dont avec une heure). Lu par __main__ pour l'état des sources.
+STATS_HORAIRE: dict[str, tuple[int, int]] = {}
 
 
 def _yaml(v) -> str:
@@ -40,6 +42,32 @@ def _texte_brut(t: str) -> str:
 
 def _date(d: dt.datetime) -> str:
     return d.strftime("%Y-%m-%d %H:%M") if (d.hour or d.minute) else d.strftime("%Y-%m-%d")
+
+
+def _heure(h: tuple[int, int]) -> str:
+    return f"{h[0]:02d}:{h[1]:02d}"
+
+
+def completer_horaire(e: Evenement) -> str | None:
+    """Complète l'heure de début (dans e.debut) et renvoie l'heure de fin « HH:MM » : celles de la source,
+    sinon celles que dit la notice ou le titre. Pas d'heure inventée : sans indice, l'événement reste « sans heure »."""
+    sans_heure = not (e.debut.hour or e.debut.minute)
+    un_jour = not e.seances and (not e.fin or e.fin.date() == e.debut.date())
+    if sans_heure and un_jour and not e.film and e.categorie != "expo":
+        debut, fin = horaire_du_texte(f"{e.titre}\n{e.description}")
+        if debut:
+            e.debut = e.debut.replace(hour=debut[0], minute=debut[1])
+            if fin:
+                e.fin = e.debut.replace(hour=fin[0], minute=fin[1])
+    if sans_heure and not (e.debut.hour or e.debut.minute):
+        return None
+    if not e.fin or not (e.fin.hour or e.fin.minute) or e.seances:
+        return None
+    if e.fin.date() == e.debut.date() and e.fin > e.debut:
+        return _heure((e.fin.hour, e.fin.minute))
+    if e.fin.date() == e.debut.date() + dt.timedelta(days=1) and e.fin.hour < 8:
+        return _heure((e.fin.hour, e.fin.minute))  # soirée qui finit après minuit
+    return None
 
 
 def ecrire(source: dict, resultat: list) -> int:
@@ -75,6 +103,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
         shutil.rmtree(dossier)
     dossier.mkdir(parents=True)
     vus = set()
+    total = avec_heure = 0
     faux = faux_lieux([source])
     defaut = (source.get("options") or {}).get("lieu") or source["nom"]
     for e in a_venir:
@@ -93,10 +122,15 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
             ailleurs = mention(e.titre)
             if ailleurs and ailleurs[0] != ville(lieu if lieu != LIEU_INCONNU else source["nom"]):
                 lieu = f"{ailleurs[1]}, voir l'annonce"
+        fin_heure = completer_horaire(e)
+        if not (e.film or e.categorie == "expo"):  # films et expos : séances ou ouverture, pas une heure d'événement
+            total += 1
+            avec_heure += bool(e.debut.hour or e.debut.minute or e.seances)
         champs = {
             "title": e.titre,
             "date": _date(e.debut),
-            "end_date": _date(e.fin) if e.fin and e.fin.date() != e.debut.date() else None,
+            "end_time": fin_heure,
+            "end_date": _date(e.fin) if e.fin and e.fin.date() != e.debut.date() and not fin_heure else None,
             "venue": lieu,
             "address": e.adresse or None,
             "ville": ville(lieu if lieu != LIEU_INCONNU else source["nom"], e.adresse),
@@ -125,6 +159,7 @@ def ecrire_evenements(source: dict, evenements: list[Evenement]) -> int:
         # Le nom de fichier commence par la date ; on force la date complète dans le front matter.
         (dossier / f"{nom}.md").write_text("\n".join(lignes).replace(
             f'date: "{champs["date"]}"', f'date: {champs["date"]}'))
+    STATS_HORAIRE[source["id"]] = (total, avec_heure)
     return len(vus)
 
 

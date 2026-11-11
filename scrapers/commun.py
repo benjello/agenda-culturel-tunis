@@ -4,6 +4,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import time
 import unicodedata
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -31,7 +32,16 @@ class EnAttente(Exception):
 
 
 def telecharger(url: str) -> str:
-    r = _session.get(url, timeout=30)
+    # Un délai dépassé ou une coupure passagère n'est pas une panne du site : on réessaie
+    # (2 s, 5 s) avant d'abandonner. Les erreurs HTTP (404, 403…) ne sont pas réessayées.
+    for attente in (2, 5, None):
+        try:
+            r = _session.get(url, timeout=30)
+            break
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attente is None:
+                raise
+            time.sleep(attente)
     r.raise_for_status()
     r.encoding = r.encoding if r.encoding and r.encoding.lower() != "iso-8859-1" else "utf-8"
     if DEBUG_DIR:
@@ -113,6 +123,41 @@ def dates_num(texte: str) -> list[dt.datetime]:
 
 def toutes_dates(texte: str) -> list[dt.datetime]:
     return sorted(set(dates_fr(texte) + dates_num(texte)))
+
+
+_RE_PLAGE_HEURES = re.compile(
+    r"(?<![\d/.])(?:de\s+|from\s+|[àa]\s+partir\s+de\s+)?([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)?\s*"
+    r"(?:à|a|-|–|—|to|till|until|jusqu.[àa])\s*([01]?\d|2[0-3]|24)\s*[hH:]\s*([0-5]\d)?(?!\d)", re.I)
+_RE_HEURE_CUE = re.compile(
+    r"(?:\b(?:[àa]|dès|des|vers|at|from|@|starts?(?:\s+at)?|d[ée]but|ouverture(?:\s+des\s+portes)?|doors?|"
+    r"horaires?|heure|rdv|rendez-vous)\b\s*:?\s*|[🕒🕗🕖🕘🕕🕔⏰🕐🕑🕓🕙🕚🕛🕜🕝🕞🕟]\s*)"
+    r"([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)?(?!\d)", re.I)
+_RE_HEURE_AMPM = re.compile(r"(?<![\d:])(1[0-2]|0?[1-9])(?:[:h]([0-5]\d))?\s*([ap])\.?m\b", re.I)
+
+
+def horaire_du_texte(texte: str) -> tuple[tuple[int, int] | None, tuple[int, int] | None]:
+    """Heure de début (et de fin si le texte la donne) lue dans une annonce.
+
+    « de 19h à 21h30 », « 20:00 – 23:00 », « à 20h30 », « doors 9pm ».
+    Renvoie (None, None) s'il n'y a pas d'heure ou si le texte en donne plusieurs
+    qui diffèrent (séances multiples) : mieux vaut aucune heure qu'une heure fausse.
+    """
+    texte = texte or ""
+    plages = {(int(a), int(b or 0), int(c) % 24, int(d or 0)) for a, b, c, d in _RE_PLAGE_HEURES.findall(texte)}
+    plages = {p for p in plages if (p[0], p[1]) != (p[2], p[3])}
+    if len(plages) == 1:
+        a, b, c, d = plages.pop()
+        return (a, b), (c, d)
+    if plages:
+        return None, None
+    debuts = {(int(h), int(m or 0)) for h, m in _RE_HEURE_CUE.findall(texte)}
+    for h, m, ap in _RE_HEURE_AMPM.findall(texte):
+        h = int(h) % 12 + (12 if ap.lower() == "p" else 0)
+        debuts.add((h, int(m or 0)))
+    toutes = {(int(h), int(m or 0)) for h, m in re.findall(r"(?<![\d:.,/])([01]?\d|2[0-3])\s*[hH:]\s*([0-5]\d)?(?!\d)", texte)}
+    if len(debuts) == 1 and toutes <= debuts:  # une autre heure sans mot-clé : texte ambigu
+        return debuts.pop(), None
+    return None, None
 
 
 def json_ld_evenements(soup: BeautifulSoup) -> list[dict]:

@@ -10,6 +10,8 @@ Principe : chercher d'abord dans Wikidata et les autres sources ouvertes (voir `
 ## Tickets ouverts
 
 Les points restants sont suivis en issues GitHub : [liste des issues](https://github.com/benjello/agenda-culturel-tunis/issues).
+Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées de ce fichier aux issues ouvertes
+(`scrapers/synchro_tickets.py`) et signale les écarts dans son résumé.
 
 - Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107).
 - Étiquette **vérification humaine** (contrôles ouverts à tous) :
@@ -21,6 +23,23 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
   [#112 accès Facebook](https://github.com/benjello/agenda-culturel-tunis/issues/112),
   [#113 version anglaise ou arabe](https://github.com/benjello/agenda-culturel-tunis/issues/113),
   [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
+
+## Public arabophone
+
+Demande de Mahdi du 8 nov. 2026 : élargir aux concerts et événements pour le public arabophone. Fait : presse en arabe branchée
+(`presse-kapitalis-ar`, `presse-mosaique-ar`, flux RSS vérifiés). Les pages Facebook/Instagram des lieux arabophones restent à trouver
+(entrée `musique-arabophone` de `_data/sources_recherchees.yml`).
+
+- [ ] Trouver les comptes Facebook/Instagram des lieux et organisateurs de concerts arabophones (musique tunisienne et arabe, mezoued, rap), puis les brancher.
+
+## Horaires
+
+Chaque événement porte son heure de début (`date: AAAA-MM-JJ HH:MM`) et, si on la connaît, son heure de fin
+(`end_time: "HH:MM"`). Si la source ne donne pas l'heure, `scrapers/commun.py: horaire_du_texte` la cherche dans le
+titre et la notice (« de 19h à 21h », « à 20h30 », « doors 9pm ») ; un texte ambigu (plusieurs heures) ne donne rien.
+Les films ont leurs séances, les expos leurs jours d'ouverture : pas d'heure unique. Le nombre d'événements
+sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.json` (`sans_heure`).
+À vérifier au prochain passage des scrapers : lire le journal (`heures : N/M`) et repérer les sources à 0.
 
 ## Vérifier une nouvelle source (à refaire pour chaque entrée)
 
@@ -61,6 +80,7 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
 
 ## Fait
 
+- Référencement : plan du site (`sitemap.xml`), balises canonique, Open Graph et Twitter, données structurées `Event` (fiches) et `WebSite` (accueil).
 - Site Jekyll sur GitHub Pages, dates en français, événements passés masqués.
 - Registre des sources et page Sources avec l'état de chacune (à jour, en panne, en attente).
 - Scrapers génériques : `jsonld`, `rss`, `ical`, `liste_fiches` ; spécifiques : `teskerti`,
@@ -104,6 +124,8 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
 - [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
 
 ## À faire
+
+- [ ] Référencement : déclarer le site dans Google Search Console et Bing Webmaster, puis soumettre `sitemap.xml` (action de Mahdi, #127).
 
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
@@ -197,6 +219,7 @@ Fiabilité
 Comprendre sans cliquer (demandé le 2 novembre)
 - [x] Aperçu au survol (ordinateur) et bouton 👁 en feuille du bas (téléphone) : affiche, heure, lieu, prix, notice.
 - [x] « Ce soir à Tunis » en tête de l'accueil : événements du jour classés par heure, avec « dans 40 min ».
+- [x] Titre de « Ce soir à Tunis » adapté à l'heure affichée : « Ce matin », « Cet après-midi », « Ce soir », ou « Aujourd'hui » si la liste mêle les moments (fr, ar, en).
 - [x] Heure de début en évidence sous la date de chaque carte.
 - [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
 - [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.

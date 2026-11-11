@@ -1,6 +1,7 @@
 ---
 title: "STEPPERS SOUND SYSTEM Launch party"
-date: 2026-11-08
+date: 2026-11-08 12:00
+end_time: "21:00"
 venue: "Dar Ziqua, Zaghouan"
 ville: "autres"
 category: "musique"

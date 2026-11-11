@@ -140,6 +140,11 @@ genre.administration: { ar: "المندوبيات الجهوية للثقافة"
 genre.agenda: { ar: "أجندات ومنصات تذاكر", en: "Listings and ticketing" }
 genre.presse: { ar: "الصحف", en: "Newspapers" }
 traduction_auto: { ar: "ترجمة آلية.", en: "Machine translation." }
+lieu_preciser: { ar: "المكان سيُحدَّد لاحقًا", en: "Venue to be announced" }
+voir_annonce: { ar: "انظر الإعلان", en: "see the announcement" }
+voir_article: { ar: "انظر المقال", en: "see the article" }
+voir_original: { ar: "عرض النص الأصلي", en: "See the original text" }
+voir_traduction: { ar: "عرض الترجمة", en: "See the translation" }
 lu_dans: { ar: "مقال في", en: "Read in" }
 fest.presse: { ar: "رُصدت في الصحافة", en: "Spotted in the press" }
 presse_evt: { ar: "في الصحافة", en: "In the press" }
@@ -383,11 +388,13 @@ sante.apify: { ar: "رصيد Apify لهذا الشهر (إنستغرام، في�
 sante.recharge: { ar: "يتجدد في", en: "renews on" }
 sante.apify_epuise: { ar: "نفد: لم يعد إنستغرام وفيسبوك يقرآن", en: "used up: Instagram and Facebook are no longer read" }
 synopsis: { ar: "ملخص الفيلم", en: "Synopsis" }
+pas_de_synopsis: { ar: "لا يوجد ملخص متاح", en: "No synopsis available" }
 en_savoir_plus: { ar: "للمزيد", en: "Learn more" }
 acces.yes: { ar: "مهيأ للكراسي المتحركة", en: "Wheelchair accessible" }
 acces.limited: { ar: "تهيئة جزئية للكراسي المتحركة", en: "Partial wheelchair access" }
 acces.no: { ar: "غير مهيأ للكراسي المتحركة", en: "No wheelchair access" }
 horaires: { ar: "التوقيت", en: "Opening hours" }
+sans_heure: { ar: "بدون توقيت", en: "no time" }
 complet: { ar: "نفدت التذاكر", en: "Sold out" }
 langue.ar: { ar: "بالعربية", en: "In Arabic" }
 langue.fr: { ar: "بالفرنسية", en: "In French" }
@@ -438,6 +445,15 @@ apercu: { fr: "Aperçu", ar: "معاينة", en: "Preview" }
 
 apercu_rapide: { fr: "Aperçu rapide", ar: "معاينة سريعة", en: "Quick preview" }
 ce_soir_titre: { fr: "Ce soir à Tunis", ar: "هذا المساء في تونس", en: "Tonight in Tunis" }
+ce_soir_matin: { fr: "Ce matin à Tunis", ar: "هذا الصباح في تونس", en: "This morning in Tunis" }
+ce_soir_apres_midi: { fr: "Cet après-midi à Tunis", ar: "بعد ظهر اليوم في تونس", en: "This afternoon in Tunis" }
+ce_soir_jour: { fr: "Aujourd'hui à Tunis", ar: "اليوم في تونس", en: "Today in Tunis" }
 dans: { fr: "dans", ar: "بعد", en: "in" }
 en_cours_maintenant: { fr: "a commencé", ar: "بدأ", en: "started" }
 autres_seances: { ar: "تواريخ وأماكن أخرى", en: "Other dates and venues" }
+installer.bouton: { fr: "Installer l'application", ar: "ثبّت التطبيق", en: "Install the app" }
+installer.ios: { fr: "Sur iPhone ou iPad (Safari) : touchez le bouton Partager, puis « Sur l'écran d'accueil ».", ar: "على آيفون أو آيباد (سفاري): اضغط على زر المشاركة ثم «إضافة إلى الشاشة الرئيسية».", en: "On iPhone or iPad (Safari): tap the Share button, then “Add to Home Screen”." }
+installer.autre: { fr: "Dans le menu de votre navigateur, cherchez « Installer l'application » ou « Ajouter à l'écran d'accueil ». Firefox sur ordinateur ne sait pas installer le site : utilisez Chrome ou Edge.", ar: "ابحث في قائمة المتصفح عن «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية». فايرفوكس على الحاسوب لا يثبّت المواقع: استعمل كروم أو إيدج.", en: "In your browser menu, look for “Install app” or “Add to Home Screen”. Desktop Firefox cannot install the site: use Chrome or Edge." }
+programmes_facebook: { ar: "برامج منشورة على فيسبوك", en: "Programmes posted on Facebook" }
+publie_le: { ar: "نُشر في", en: "posted on" }
+voir_publication: { ar: "انظر المنشور على فيسبوك", en: "See the post on Facebook" }

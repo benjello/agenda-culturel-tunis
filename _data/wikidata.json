@@ -5,11 +5,11 @@
  },
  "2-jours-avec-papa": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "a-demain-sur-la-lune": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "avatar-de-feu-et-de-cendres": {
   "qid": null,
@@ -17,7 +17,7 @@
  },
  "bakma": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "biscuit-le-chien-fantastique": {
   "age": "Tous publics",
@@ -50,7 +50,7 @@
  },
  "dar-el-3ers": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "diamanti": {
   "age": "Tous publics",
@@ -127,6 +127,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "harakat-training-scratch-night": {
+  "qid": null,
+  "verifie": "2026-11-06"
+ },
  "hola-frida": {
   "age": "Tous publics",
   "annee": 2025,
@@ -183,6 +187,10 @@
  "jumpers": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "karma": {
+  "qid": null,
+  "verifie": "2026-11-09"
  },
  "klara-and-the-sun": {
   "age": "",
@@ -249,7 +257,7 @@
  },
  "last-chance": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "le-chant-des-forets": {
   "age": "Tous publics",
@@ -326,15 +334,30 @@
  },
  "les-malheurs-de-sophie": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "les-miserables": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "letranger": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "lile-des-souvenirs": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Fantastique",
+   "Aventure",
+   "Comédie"
+  ],
+  "imdb": "tt36583977",
+  "letterboxd": "forgotten-island-2026",
+  "qid": "Q138335503",
+  "titre_wikidata": "L'Île des souvenirs",
+  "tunisien": false,
+  "verifie": "2026-11-07"
  },
  "mars-express": {
   "age": "Tous publics",
@@ -385,6 +408,31 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "naza": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Documentaire"
+  ],
+  "imdb": "tt44766123",
+  "letterboxd": "naza",
+  "qid": "Q141168534",
+  "titre_wikidata": "NAZA",
+  "tunisien": false,
+  "verifie": "2026-11-07"
+ },
+ "nn-2026-eat-the-night": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
+ "nn-2026-un-monde-merveilleux": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
+ "nn2026-level-five": {
+  "qid": null,
+  "verifie": "2026-11-10"
+ },
  "nuremberg": {
   "age": "Tous publics",
   "annee": 2026,
@@ -426,6 +474,10 @@
   "qid": null,
   "verifie": "2026-11-03"
  },
+ "projection-debat-autour-du-film-save-our-souls": {
+  "qid": null,
+  "verifie": "2026-11-06"
+ },
  "projet-derniere-chance": {
   "age": "Tous publics",
   "annee": 2026,
@@ -454,7 +506,7 @@
  },
  "regarde-moi": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "regretting-you": {
   "age": "Tous publics",
@@ -495,6 +547,10 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "scrooge": {
+  "qid": null,
+  "verifie": "2026-11-07"
+ },
  "send-help": {
   "age": "-12",
   "annee": 2026,
@@ -513,7 +569,7 @@
  },
  "sous-les-etoiles-de-paris": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-10"
  },
  "springsteen-deliver-me-from-nowhere": {
   "qid": null,
@@ -546,11 +602,22 @@
  },
  "touskie-tounsi": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "un-fils": {
   "qid": null,
   "verifie": "2026-11-02"
+ },
+ "un-monde-fragile-et-merveilleux": {
+  "age": "Tous publics",
+  "annee": 2025,
+  "genres": [],
+  "imdb": "tt32622406",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "qid": "Q136379364",
+  "titre_wikidata": "Un monde fragile et merveilleux",
+  "tunisien": false,
+  "verifie": "2026-11-05"
  },
  "un-simple-accident": {
   "age": "Tous publics",
@@ -566,7 +633,7 @@
  },
  "van-gogh": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "verity": {
   "age": "",
@@ -596,11 +663,11 @@
  },
  "weekend": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "what-else": {
   "qid": null,
-  "verifie": "2026-11-01"
+  "verifie": "2026-11-09"
  },
  "where-the-wind-comes-from": {
   "age": "",

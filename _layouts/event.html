@@ -6,7 +6,8 @@ layout: default
 {%- assign billet = "" -%}{%- if src.type == "billetterie" -%}{%- assign billet = page.link -%}{%- endif -%}
 {%- for a in page.autres_sources -%}{%- assign s2 = site.data.sources | where: "id", a.source | first -%}{%- if billet == "" and s2.type == "billetterie" -%}{%- assign billet = a.link -%}{%- endif -%}{%- endfor -%}
 {%- assign heure = page.date | date: "%H:%M" -%}{%- if heure == "00:00" -%}{%- assign heure = "" -%}{%- endif -%}
-<article class="event-page event" data-date="{{ page.end_date | default: page.date | date: '%Y-%m-%d' }}" data-debut="{{ page.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-id="{{ page.url }}" data-titre="{{ page.title | escape }}" data-lieu="{{ page.venue | escape }}{% if page.address %}, {{ page.address | escape }}{% endif %}" data-lien="{{ page.url | absolute_url }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
+{%- assign heure_fin = page.end_time | default: "" -%}{%- if heure == "" -%}{%- assign heure_fin = "" -%}{%- endif -%}
+<article class="event-page event" data-date="{{ page.end_date | default: page.date | date: '%Y-%m-%d' }}" data-debut="{{ page.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-heure-fin="{{ heure_fin }}" data-id="{{ page.url }}" data-titre="{{ page.title | escape }}" data-lieu="{{ page.venue | escape }}{% if page.address %}, {{ page.address | escape }}{% endif %}" data-lien="{{ page.url | absolute_url }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
   <p><a href="{{ '/' | relative_url }}" data-t="retour">← Retour à l'agenda</a></p>
   {%- if page.image %}{% if page.image contains "://" %}{% assign img = page.image %}{% else %}{% assign img = page.image | relative_url %}{% endif %}
   <img class="affiche-grande" src="{{ img }}" alt="Affiche : {{ page.title | escape }}" decoding="async">
@@ -16,7 +17,7 @@ layout: default
   <h1{% for l in tr %} data-tr-{{ l[0] }}="{{ l[1] | escape }}"{% endfor %}>{{ page.title }}</h1>
   <dl class="details">
     <dt data-t="quand">Quand</dt>
-    <dd>{% include date-fr.html date=page.date %}{% if page.end_date %} → {% include date-fr.html date=page.end_date %}{% endif %}</dd>
+    <dd>{% include date-fr.html date=page.date %}{% if heure_fin != "" %} – {{ heure_fin | replace: ":", "h" | replace: "h00", "h" }}{% endif %}{% if page.end_date %} → {% include date-fr.html date=page.end_date %}{% endif %}</dd>
     <dt data-t="ou">Où</dt>
     <dd>{% include lien-carte.html lieu=page.venue adresse=page.address %}{% if page.address %}<br><small>{{ page.address }}</small>{% endif %}</dd>
     {% if page.price %}<dt data-t="prix">Prix</dt><dd>{{ page.price }}</dd>{% endif %}
@@ -26,7 +27,7 @@ layout: default
   <p class="actions grandes">
     {%- if billet != "" %}<a class="billets" href="{{ billet }}" rel="noopener"><span data-t="billets">🎟 Billets</span>{% if page.price %} · {{ page.price }}{% endif %}</a>{% endif %}
     <button type="button" class="ajout-agenda bouton" data-t="agenda_long">📅 Ajouter à mon agenda</button>
-    <a class="bouton google-agenda" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ page.title | url_encode }}&dates={{ page.date | date: '%Y%m%d' }}{% if heure != '' %}T{{ page.date | date: '%H%M' }}00{% endif %}/{% if page.end_date %}{{ page.end_date | date: '%Y%m%d' }}{% else %}{{ page.date | date: '%Y%m%d' }}{% endif %}{% if heure != '' %}T{{ page.date | date: '%H%M' }}00{% endif %}&ctz=Africa/Tunis&location={{ page.venue | append: ', ' | append: page.address | url_encode }}&details={{ page.url | absolute_url | url_encode }}">Google Agenda</a>
+    <a class="bouton google-agenda" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text={{ page.title | url_encode }}&dates={{ page.date | date: '%Y%m%d' }}{% if heure != '' %}T{{ page.date | date: '%H%M' }}00{% endif %}/{% if page.end_date %}{{ page.end_date | date: '%Y%m%d' }}{% else %}{{ page.date | date: '%Y%m%d' }}{% endif %}{% if heure_fin != '' %}T{{ heure_fin | remove: ':' }}00{% elsif heure != '' %}T{{ page.date | date: '%H%M' }}00{% endif %}&ctz=Africa/Tunis&location={{ page.venue | append: ', ' | append: page.address | url_encode }}&details={{ page.url | absolute_url | url_encode }}">Google Agenda</a>
     <button type="button" class="partager bouton" data-t="partager_long">↗ Partager</button>
     <button type="button" class="fav bouton" data-t-title="favori" title="Garder en favori">☆</button>
   </p>
@@ -61,7 +62,7 @@ layout: default
   {%- for l in trn %}{% if l[0] != "cle" %}
   <div class="description" data-tr-bloc="{{ l[0] }}" lang="{{ l[0] }}" hidden>{{ l[1] | escape | newline_to_br }}</div>
   {%- endif %}{% endfor %}
-  <p class="note-source">{% if page.notice_source %}<small>Texte : {{ page.notice_source }}.</small>{% else %}<small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% endif %}{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small>{% endif %}</p>
+  <p class="note-source">{% if page.notice_source %}<small>Texte : {{ page.notice_source }}.</small>{% else %}<small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% endif %}{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small> <button type="button" class="voir-original lien-bouton" hidden data-t="voir_original">Voir le texte d'origine</button>{% endif %}</p>
   {%- endif %}
 </article>
 {%- if film -%}{%- assign occurrences = site.events | where_exp: "e", "film.fichiers contains e.path" -%}

@@ -5,11 +5,14 @@
   10.10317
  ],
  "agorgi gallery sidi bou said": null,
+ "auditorium de l ift 20 avenue de paris tunis": null,
  "auditorium institut francais de tunis": [
   36.83088,
   10.18217
  ],
+ "b7l9": null,
  "b7l9 art centre": null,
+ "b7l9 art station": null,
  "beit al hikma carthage": [
   35.6619,
   10.08999
@@ -51,6 +54,7 @@
  ],
  "el warcha": null,
  "entre les rives": null,
+ "espace l artisto": null,
  "fondation rosa luxemburg tunis": [
   36.82627,
   10.17429
@@ -64,6 +68,8 @@
  "goethe institut tunis": null,
  "grafiflow": null,
  "grafiflow v7jh 6j7": null,
+ "habibi downtown tunis": null,
+ "habibidowntown": null,
  "institut culturel italien de tunis": null,
  "institut francais de sfax": null,
  "institut francais de sousse": null,
@@ -100,11 +106,19 @@
   36.86183,
   10.33874
  ],
+ "la verriere le sous sol cafe resto": null,
  "le 32bis": [
   36.79509,
   10.1838
  ],
+ "le violon bleu sidi bou said": [
+  36.8718,
+  10.34916
+ ],
+ "lieu 3 rue de damas le belvedere tunis": null,
  "maison des arts du belvedere": null,
+ "mediatheque de l ift 20 avenue de paris tunis": null,
+ "mediatheque de l iftunisie 202 avenue de paris tunis": null,
  "mediatheque institut francais de sfax": [
   36.85392,
   10.19632
@@ -131,6 +145,8 @@
   36.89828,
   10.12451
  ],
+ "quechlet el attarine": null,
+ "russian house": null,
  "salle albert camus institut francais de sfax": null,
  "salle de cinema institut francais de sousse": [
   35.63047,
@@ -156,5 +172,11 @@
   36.79911,
   10.18081
  ],
+ "theatre municipal institut francais de tunisie sfax": [
+  36.79911,
+  10.18081
+ ],
+ "twentyone": null,
+ "utica union tun the ind trade art": null,
  "vox cafe institut francais de sousse": null
 }

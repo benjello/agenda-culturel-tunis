@@ -42,6 +42,17 @@ class TestPwa(unittest.TestCase):
         self.assertIn("hors-ligne/", sw)
         self.assertTrue((RACINE / "hors-ligne.md").exists())
 
+    def test_bouton_installer_et_aide_traduits(self):
+        import yaml
+        pied = (RACINE / "_layouts" / "default.html").read_text(encoding="utf-8")
+        for repere in ("data-installer", "aide-ios", "aide-autre"):
+            self.assertIn(repere, pied)
+        js = (RACINE / "assets" / "site.js").read_text(encoding="utf-8")
+        self.assertIn("beforeinstallprompt", js)
+        i18n = yaml.safe_load((RACINE / "_data" / "i18n.yml").read_text(encoding="utf-8"))
+        for cle in ("installer.bouton", "installer.ios", "installer.autre"):
+            self.assertTrue({"fr", "ar", "en"} <= set(i18n[cle]), cle)
+
 
 if __name__ == "__main__":
     unittest.main()

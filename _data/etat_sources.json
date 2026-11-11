@@ -1,134 +1,148 @@
 {
   "beit-al-hikma": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 2,
+    "nb": 3,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 3
   },
   "cine-360": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:34:58",
-    "dernier_passage": "2026-11-01T07:34:58",
-    "dernier_succes": "2026-11-01T07:34:58",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 1,
-    "ok": true
+    "nb": 3,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "cine-agora": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 8,
+    "nb": 10,
     "ok": true,
     "premier_passage": "2026-11-01T10:35:29"
   },
   "cine-agora-djerba": {
-    "dernier_passage": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
     "erreur": "HTTPError: 404 Client Error: Not Found for url: https://www.lagoradjerba.tn/wp-json/wc/store/v1/products?per_page=100&page=1",
     "ok": false,
     "premier_passage": "2026-11-02T19:18:01"
   },
   "cine-alhambra": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:25:49",
-    "dernier_passage": "2026-11-01T07:25:49",
-    "dernier_succes": "2026-11-01T07:25:49",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 4,
-    "ok": true
+    "nb": 3,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "cine-amilcar": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:57:23",
-    "dernier_succes": "2026-11-01T06:57:23",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "cine-colisee": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:25:49",
-    "dernier_passage": "2026-11-01T07:25:49",
-    "dernier_succes": "2026-11-01T07:25:49",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 3,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "cine-madart": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T07:25:49",
-    "dernier_passage": "2026-11-01T07:25:49",
-    "dernier_succes": "2026-11-01T07:25:49",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 3,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "cine-vog": {
     "attente": null,
-    "dernier_passage": "2026-11-01T06:57:23",
-    "dernier_succes": "2026-11-01T06:57:23",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "el-teatro": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
-    "erreur": null,
-    "nb": 4,
-    "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
-  },
-  "fb-61595612945174": {
-    "attente": null,
-    "dernier_non_vide": "2026-11-02T13:23:36",
-    "dernier_passage": "2026-11-02T13:23:36",
-    "dernier_succes": "2026-11-02T13:23:36",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-02T11:54:47"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 0
+  },
+  "fb-61595612945174": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
+    "erreur": null,
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-02T11:54:47",
+    "sans_heure": 0
   },
   "fb-ajst": {
     "attente": null,
-    "dernier_passage": "2026-11-01T09:29:54",
-    "dernier_succes": "2026-11-01T09:29:54",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "fb-al-kitab": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:34:55",
-    "dernier_succes": "2026-11-01T08:34:55",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "fb-artisto": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T08:00:14",
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 2,
-    "ok": true
+    "nb": 3,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 3
   },
   "fb-cav-rades": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "fb-central-tunis": {
     "dernier_passage": "2026-11-01T08:00:14",
@@ -142,12 +156,14 @@
   },
   "fb-cite-sciences": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T09:29:54",
-    "dernier_passage": "2026-11-01T09:29:54",
-    "dernier_succes": "2026-11-01T09:29:54",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "fb-club-tahar-haddad": {
     "dernier_passage": "2026-11-01T08:00:14",
@@ -156,8 +172,8 @@
   },
   "fb-cr-gabes": {
     "attente": null,
-    "dernier_passage": "2026-11-02T10:11:41",
-    "dernier_succes": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -165,8 +181,8 @@
   },
   "fb-cr-kef": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -174,8 +190,8 @@
   },
   "fb-cr-mahdia": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -183,8 +199,8 @@
   },
   "fb-cr-manouba": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -192,8 +208,8 @@
   },
   "fb-cr-medenine": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -201,8 +217,8 @@
   },
   "fb-cr-sfax": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -211,21 +227,23 @@
   "fb-cr-sidibouzid": {
     "attente": null,
     "dernier_non_vide": "2026-11-01T10:35:29",
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 2,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-01T10:35:29"
   },
   "fb-cr-sousse": {
     "attente": null,
-    "dernier_passage": "2026-11-01T10:35:29",
-    "dernier_succes": "2026-11-01T10:35:29",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 0,
+    "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-01T10:35:29"
+    "premier_passage": "2026-11-01T10:35:29",
+    "sans_heure": 1
   },
   "fb-eddisco": {
     "dernier_passage": "2026-11-01T08:00:14",
@@ -239,20 +257,23 @@
   },
   "fb-ifest": {
     "attente": null,
-    "dernier_passage": "2026-11-01T09:29:54",
-    "dernier_succes": "2026-11-01T09:29:54",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "fb-ift-facebook": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T08:00:14",
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 3,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "fb-liberthe": {
     "dernier_passage": "2026-11-01T08:00:14",
@@ -271,8 +292,8 @@
   },
   "ftcc": {
     "attente": null,
-    "dernier_passage": "2026-11-02T10:11:41",
-    "dernier_succes": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -280,22 +301,25 @@
   },
   "goethe-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 0,
+    "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-01T13:29:52"
+    "premier_passage": "2026-11-01T13:29:52",
+    "sans_heure": 1
   },
   "ift-pdf": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 57,
+    "nb": 45,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 5
   },
   "ig-agora": {
     "attente": null,
@@ -309,19 +333,20 @@
   },
   "ig-agora-djerba": {
     "attente": null,
-    "dernier_non_vide": "2026-11-02T11:54:47",
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 5,
+    "nb": 2,
     "ok": true,
-    "premier_passage": "2026-11-02T11:54:47"
+    "premier_passage": "2026-11-02T11:54:47",
+    "sans_heure": 2
   },
   "ig-agorgi-gallery": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T11:53:01",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 1,
     "ok": true,
@@ -329,20 +354,21 @@
   },
   "ig-al-kitab": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T08:34:55",
-    "dernier_passage": "2026-11-01T08:34:55",
-    "dernier_succes": "2026-11-01T08:34:55",
+    "dernier_non_vide": "2026-11-04T12:58:49",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 3,
-    "ok": true
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-archivart": {
     "attente": null,
     "dernier_non_vide": "2026-11-02T19:18:01",
-    "dernier_passage": "2026-11-02T19:18:01",
-    "dernier_succes": "2026-11-02T19:18:01",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
-    "nb": 1,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T19:18:01"
   },
@@ -354,11 +380,14 @@
   },
   "ig-b7l9": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 0,
-    "ok": true
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "ig-balaclava": {
     "dernier_passage": "2026-11-01T08:00:14",
@@ -367,15 +396,15 @@
   },
   "ig-bardo": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
     "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T11:54:47"
   },
   "ig-cavr-rades": {
-    "dernier_passage": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/cavr_rades/', 'inputUrl': 'https://www.instagram.com/cavr_rades/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-02T19:18:01"
@@ -387,24 +416,26 @@
     "premier_passage": "2026-11-01T11:53:01"
   },
   "ig-cineclub-tunis": {
-    "dernier_passage": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/cineclub_de_tunis/', 'inputUrl': 'https://www.instagram.com/cineclub_de_tunis/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-cinemadart": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T08:54:52",
-    "dernier_passage": "2026-11-01T08:54:52",
-    "dernier_succes": "2026-11-01T08:54:52",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 3,
-    "ok": true
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 0
   },
   "ig-cite-sciences": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -412,26 +443,28 @@
   },
   "ig-creative-hub-sbs": {
     "attente": null,
-    "dernier_non_vide": "2026-11-02T19:18:01",
-    "dernier_passage": "2026-11-02T19:18:01",
-    "dernier_succes": "2026-11-02T19:18:01",
+    "dernier_non_vide": "2026-11-09T13:52:36",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
-    "nb": 3,
+    "nb": 4,
     "ok": true,
-    "premier_passage": "2026-11-02T19:18:01"
+    "premier_passage": "2026-11-02T19:18:01",
+    "sans_heure": 3
   },
   "ig-downtown-vibes": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:50:24",
-    "dernier_succes": "2026-11-01T08:50:24",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-echos-electrik": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -439,17 +472,18 @@
   },
   "ig-eddisco": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:50:24",
-    "dernier_succes": "2026-11-01T08:50:24",
-    "erreur": null,
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-07T11:42:38",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/eddisco_records/', 'inputUrl': 'https://www.instagram.com/eddisco_records/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "nb": 0,
-    "ok": true
+    "ok": false,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-entre-les-rives": {
     "attente": null,
     "dernier_non_vide": "2026-11-01T10:06:52",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -457,11 +491,13 @@
   },
   "ig-fabrika": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:50:24",
-    "dernier_succes": "2026-11-01T08:50:24",
+    "dernier_non_vide": "2026-11-07T11:42:38",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-festival-oasis-tozeur": {
     "dernier_passage": "2026-11-01T11:53:01",
@@ -471,15 +507,15 @@
   },
   "ig-fics-ksar-ghilane": {
     "attente": null,
-    "dernier_passage": "2026-11-02T10:11:41",
-    "dernier_succes": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-ftca": {
-    "dernier_passage": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
     "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/ftcafifak/', 'inputUrl': 'https://www.instagram.com/ftcafifak/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "ok": false,
     "premier_passage": "2026-11-02T10:11:41"
@@ -492,9 +528,9 @@
   },
   "ig-galerie-insular": {
     "attente": null,
-    "dernier_non_vide": "2026-11-02T11:54:47",
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
     "ok": true,
@@ -502,33 +538,40 @@
   },
   "ig-habibi-downtown": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:57:26",
-    "dernier_succes": "2026-11-01T07:57:26",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 0,
-    "ok": true
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "ig-hamdi-ryder": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:50:24",
-    "dernier_succes": "2026-11-01T08:50:24",
-    "erreur": null,
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-07T11:42:38",
+    "erreur": "RuntimeError: Apify : {'url': 'https://www.instagram.com/thehamditheryder/', 'inputUrl': 'https://www.instagram.com/thehamditheryder/', 'requestErrorMessages': [], 'error': 'no_items', 'errorDescription': 'Empty or private data for provided input'}",
     "nb": 0,
-    "ok": true
+    "ok": false,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-jaou-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 0,
-    "ok": true
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "ig-jcc": {
     "attente": null,
     "dernier_non_vide": "2026-11-01T09:29:54",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -536,17 +579,18 @@
   },
   "ig-kadhem": {
     "attente": null,
-    "dernier_passage": "2026-11-01T08:00:14",
-    "dernier_succes": "2026-11-01T08:00:14",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-la-boite": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T11:53:01",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 2,
     "ok": true,
@@ -554,50 +598,55 @@
   },
   "ig-lart-rue": {
     "attente": null,
-    "dernier_non_vide": "2026-11-02T11:54:47",
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
-    "erreur": null,
-    "nb": 3,
-    "ok": true,
-    "premier_passage": "2026-11-02T11:54:47"
-  },
-  "ig-le32bis": {
-    "attente": null,
-    "dernier_non_vide": "2026-11-02T19:18:01",
-    "dernier_passage": "2026-11-02T19:18:01",
-    "dernier_succes": "2026-11-02T19:18:01",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-02T19:18:01"
+    "premier_passage": "2026-11-02T11:54:47",
+    "sans_heure": 1
+  },
+  "ig-le32bis": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-09T13:52:36",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
+    "erreur": null,
+    "nb": 2,
+    "ok": true,
+    "premier_passage": "2026-11-02T19:18:01",
+    "sans_heure": 1
   },
   "ig-rock-n-rolla": {
     "attente": null,
-    "dernier_passage": "2026-11-01T07:57:26",
-    "dernier_succes": "2026-11-01T07:57:26",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49"
   },
   "ig-rosalux-afrique-nord": {
     "attente": null,
     "dernier_non_vide": "2026-11-02T10:11:41",
-    "dernier_passage": "2026-11-02T10:11:41",
-    "dernier_succes": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 1,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-shanti": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T10:06:52",
-    "dernier_passage": "2026-11-01T10:06:52",
-    "dernier_succes": "2026-11-01T10:06:52",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 1,
-    "ok": true
+    "ok": true,
+    "premier_passage": "2026-11-04T12:58:49",
+    "sans_heure": 1
   },
   "ig-sousse-culturelle": {
     "dernier_passage": "2026-11-01T11:53:01",
@@ -612,18 +661,18 @@
   },
   "ig-theatre-national": {
     "attente": null,
-    "dernier_non_vide": "2026-11-01T11:53:01",
-    "dernier_passage": "2026-11-01T11:53:01",
-    "dernier_succes": "2026-11-01T11:53:01",
+    "dernier_non_vide": "2026-11-07T11:42:38",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 3,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-01T11:53:01"
   },
   "ig-tounes-wijhetouna": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -632,26 +681,27 @@
   "ig-tunisia-podcasts-festival": {
     "attente": null,
     "dernier_non_vide": "2026-11-02T10:11:41",
-    "dernier_passage": "2026-11-02T10:11:41",
-    "dernier_succes": "2026-11-02T10:11:41",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 6,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
   "ig-violon-bleu": {
     "attente": null,
-    "dernier_passage": "2026-11-02T11:54:47",
-    "dernier_succes": "2026-11-02T11:54:47",
+    "dernier_non_vide": "2026-11-08T11:55:12",
+    "dernier_passage": "2026-11-08T11:55:12",
+    "dernier_succes": "2026-11-08T11:55:12",
     "erreur": null,
-    "nb": 0,
+    "nb": 2,
     "ok": true,
     "premier_passage": "2026-11-02T11:54:47"
   },
   "ig-yosr-ben-ammar": {
     "attente": null,
-    "dernier_passage": "2026-11-02T19:18:01",
-    "dernier_succes": "2026-11-02T19:18:01",
+    "dernier_passage": "2026-11-09T13:52:36",
+    "dernier_succes": "2026-11-09T13:52:36",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -664,18 +714,19 @@
   },
   "irmc": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 1
   },
   "kapitalis-cite-sciences": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -683,8 +734,8 @@
   },
   "opera-tunis": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -702,9 +753,9 @@
   },
   "presse-economiste-maghrebin": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
     "ok": true,
@@ -712,37 +763,59 @@
   },
   "presse-kapitalis": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 1
+  },
+  "presse-kapitalis-ar": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
+    "erreur": null,
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-08T15:43:37",
+    "sans_heure": 1
   },
   "presse-lapresse": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
-    "erreur": null,
-    "nb": 1,
-    "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
-  },
-  "presse-leaders": {
-    "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-05T13:10:30",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
+  "presse-leaders": {
+    "attente": null,
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
+    "erreur": null,
+    "nb": 1,
+    "ok": true,
+    "premier_passage": "2026-11-02T10:11:41"
+  },
+  "presse-mosaique-ar": {
+    "attente": null,
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-08T15:43:37"
+  },
   "presse-realites": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -755,28 +828,29 @@
   },
   "presse-webdo": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-06T12:55:49",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 1,
+    "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   },
   "resident-advisor": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 4,
+    "nb": 1,
     "ok": true,
-    "premier_passage": "2026-11-01T10:35:29"
+    "premier_passage": "2026-11-01T10:35:29",
+    "sans_heure": 0
   },
   "sat-astronomie": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -784,18 +858,19 @@
   },
   "teskerti": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 14,
+    "nb": 8,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 0
   },
   "tn-agenda-du-jour": {
     "attente": null,
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_passage": "2026-11-10T18:18:55",
+    "dernier_succes": "2026-11-10T18:18:55",
     "erreur": null,
     "nb": 0,
     "ok": true,
@@ -803,21 +878,22 @@
   },
   "tunis-events": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 13,
+    "nb": 19,
     "ok": true,
-    "premier_passage": "2026-11-02T10:11:41"
+    "premier_passage": "2026-11-02T10:11:41",
+    "sans_heure": 1
   },
   "tunis-events-cinema": {
     "attente": null,
-    "dernier_non_vide": "2026-11-03T20:39:53",
-    "dernier_passage": "2026-11-03T20:39:53",
-    "dernier_succes": "2026-11-03T20:39:53",
+    "dernier_non_vide": "2026-11-10T13:27:11",
+    "dernier_passage": "2026-11-10T13:27:11",
+    "dernier_succes": "2026-11-10T13:27:11",
     "erreur": null,
-    "nb": 28,
+    "nb": 12,
     "ok": true,
     "premier_passage": "2026-11-02T10:11:41"
   }

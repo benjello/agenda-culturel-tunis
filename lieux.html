@@ -42,7 +42,7 @@ description: Les lieux culturels de Tunisie et ce qu'ils programment, par type (
 (function () {
   var type = 'tous';
   function f() {
-    var v = document.documentElement.dataset.ville || 'tunis';
+    var v = document.documentElement.dataset.ville || 'toutes';
     document.querySelectorAll('.bloc-type').forEach(function (b) { b.hidden = type !== 'tous' && b.dataset.typeBloc !== type; });
     document.querySelectorAll('.bloc-ville').forEach(function (s) {
       s.hidden = (v !== 'toutes' && s.dataset.villeBloc !== v) || !s.querySelector('.bloc-type:not([hidden])');
