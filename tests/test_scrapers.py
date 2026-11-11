@@ -896,6 +896,23 @@ class Instagram(unittest.TestCase):
         self.assertEqual(evts[0].image, "assets/x.jpg")
         self.assertEqual(evts[0].lieu, "B7L9, La Marsa")
 
+    def test_festival_une_seule_fiche_sur_la_periode(self):
+        """Annonce « du 11 au 17 novembre » (L'Artisto) : un événement sur la période, pas un par date citée."""
+        from scrapers import lecteurs
+        pub = {"lien": "https://facebook.com/p/1", "date": "2026-11-02", "images": ["a.jpg"],
+               "texte": ("Les Rencontres théâtrales de Lartisto reviennent pour leur 12ème édition !\n\n"
+                         "Du 11 au 17 novembre, retrouvez six spectacles. Pack spécial à 35 DT pour les 6 représentations !")}
+        pub["ocr"] = "16 NOVEMBRE\nJIHED YAHYAOUT"
+        with mock.patch.object(lecteurs.dt, "date", wraps=dt.date) as d:
+            d.today.return_value = dt.date(2026, 11, 5)
+            d.fromisoformat = dt.date.fromisoformat
+            evts = lecteurs.une_affiche_par_evenement([pub], [], "Espace L'Artisto")
+        self.assertEqual(len(evts), 1)
+        self.assertEqual(evts[0].titre, "Les Rencontres théâtrales de Lartisto (12e édition)")
+        self.assertEqual(evts[0].debut, dt.datetime(2026, 11, 11))
+        self.assertEqual(evts[0].fin, dt.datetime(2026, 11, 17))
+        self.assertEqual(evts[0].prix, "35 DT")
+
     def test_titre_et_lieu_de_soiree(self):
         from scrapers import lecteurs
         j = dt.date.today() + dt.timedelta(days=6)

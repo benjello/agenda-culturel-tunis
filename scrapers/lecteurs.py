@@ -252,6 +252,42 @@ def _exposition(p: dict, texte: str, ocr: str, tout: str, jours: set, ref: dt.da
                      image=(p.get("images") or [""])[0], prix=prix_du_texte(tout), description=resume(p.get("texte", "")))
 
 
+_FESTIVAL = re.compile(r"\b(?:rencontres?|festival|journ[ée]es|biennale|semaine|cycle|saison)\b|مهرجان|أيام", re.I)
+_RE_DU_AU = re.compile(r"\bdu\s+(\d{1,2})(?:er)?\s*(?:(" + _MOIS + r")\s*)?(?:\d{4}\s*)?(?:au|[àa]|-)\s+(\d{1,2})(?:er)?\s+(" + _MOIS + r")\b", re.I)
+_RE_VERBE_RETOUR = re.compile(r"\s+(?:reviennent|revient|est de retour|sont de retour|returns?|is back|are back|arrivent?|d[ée]marre|commence)\b.*$", re.I)
+_RE_EDITION = re.compile(r"(\d{1,2})\s*(?:e|è|ème|eme|er|ère)\s+[ée]dition|(\d{1,2})(?:th|st|nd|rd)\s+edition", re.I)
+
+
+def _periode_festival(texte: str, ref: dt.date) -> tuple[dt.date, dt.date] | None:
+    """« Du 11 au 17 novembre » dans une annonce de festival : (premier jour, dernier jour)."""
+    if not _FESTIVAL.search(texte[:300]):
+        return None
+    m = _RE_DU_AU.search(texte)
+    if not m:
+        return None
+    j1, m1, j2, m2 = m.groups()
+    mois2 = MOIS[m2.lower()]
+    mois1 = MOIS[m1.lower()] if m1 else mois2
+    try:
+        fin = dt.date(_annee(mois2, ref), mois2, int(j2))
+        debut = dt.date(_annee(mois1, ref), mois1, int(j1))
+    except ValueError:
+        return None
+    return (debut, fin) if 0 <= (fin - debut).days <= 45 else None
+
+
+def _titre_festival(texte: str) -> str:
+    """« Les Rencontres théâtrales de Lartisto reviennent pour leur 12ème édition ! » →
+    « Les Rencontres théâtrales de Lartisto (12e édition) »."""
+    titre = _titre_affiche(texte)
+    e = _RE_EDITION.search(texte)
+    nom = _RE_VERBE_RETOUR.sub("", titre).strip(" .,:-!")
+    if nom and nom != titre and e:
+        n = e.group(1) or e.group(2)
+        return f"{nom} ({n}{'re' if n == '1' else 'e'} édition)"
+    return nom or titre
+
+
 def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu: str = "") -> list[Evenement]:
     """Une publication = une affiche = un événement (clubs, bars, concerts), à la date lue
     dans la légende ou sur l'image. Plusieurs dates sur une affiche : un événement par date."""
@@ -277,6 +313,19 @@ def une_affiche_par_evenement(publications: list[dict], connus: list[str], lieu:
             if e and (e.debut.date(), e.titre) not in vus:
                 vus.add((e.debut.date(), e.titre))
                 res.append(e)
+            continue
+        # Un festival annoncé « du 11 au 17 novembre » : un seul événement sur la période,
+        # pas une fiche par date citée dans la légende.
+        periode = _periode_festival(texte, ref)
+        if periode and periode[1] >= aujourd_hui:
+            debut, fin = periode
+            titre = _titre_festival(texte) or _titre_affiche(ocr) or f"Festival à {lieu}"
+            if (debut, titre) not in vus:
+                vus.add((debut, titre))
+                res.append(Evenement(titre=titre, debut=dt.datetime(debut.year, debut.month, debut.day),
+                                     fin=dt.datetime(fin.year, fin.month, fin.day), lien=p["lien"], lieu=lieu,
+                                     image=(p.get("images") or [""])[0], prix=prix_du_texte(tout),
+                                     description=resume(p.get("texte", ""))))
             continue
         jours = sorted(j for j in jours if aujourd_hui <= j <= aujourd_hui + dt.timedelta(days=120))
         jours = [j for j in jours if (j - jours[0]).days <= ECART_MAX][:7] if jours else []
