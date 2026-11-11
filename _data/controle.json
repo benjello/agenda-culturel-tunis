@@ -1,6 +1,6 @@
 {
- "date": "2026-11-10",
- "corriges": 1,
+ "date": "2026-11-11",
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "beit-al-hikma/2026-11-13-evenement.md",
@@ -103,21 +103,21 @@
    ]
   },
   {
-   "fichier": "ig-violon-bleu/2026-11-08-le-violon-bleu-gallery-a-le-plaisir-de-vous-inviter-a-decouv.md",
-   "source": "ig-violon-bleu",
-   "titre": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOURS , une rétrospecti",
-   "date": "2026-11-08",
-   "lien": "https://www.instagram.com/p/DfDBp-ziXMO/",
-   "problemes": [
-    "titre trop long (début d'une légende ?)"
-   ]
-  },
-  {
    "fichier": "ig-violon-bleu/2026-11-08-rafik-est-un-immense-artiste-qui-ne-se-prend-pas-au-serieux-.md",
    "source": "ig-violon-bleu",
    "titre": "Rafik est un immense artiste qui ne se prend pas au sérieux . La création chez lui est lud",
    "date": "2026-11-08",
    "lien": "https://www.instagram.com/p/DfVDO4tFNpI/",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ig-violon-bleu/2026-12-20-le-violon-bleu-gallery-a-le-plaisir-de-vous-inviter-a-decouv.md",
+   "source": "ig-violon-bleu",
+   "titre": "Le Violon Bleu Gallery a le plaisir de vous inviter à découvrir PARCOURS , une rétrospecti",
+   "date": "2026-12-20",
+   "lien": "https://www.instagram.com/p/DfDBp-ziXMO/",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
@@ -144,8 +144,8 @@
     ]
    },
    "cine-agora": {
-    "n": 10,
-    "precis": 10,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -160,6 +160,11 @@
       "code": "sans_image",
       "texte": "image",
       "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    },
@@ -171,17 +176,11 @@
     "manques": []
    },
    "fb-artisto": {
-    "n": 3,
-    "precis": 3,
+    "n": 2,
+    "precis": 2,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 3
-     }
-    ]
+    "manques": []
    },
    "fb-cite-sciences": {
     "n": 1,
@@ -253,9 +252,9 @@
     ]
    },
    "ift-pdf": {
-    "n": 42,
-    "precis": 14,
-    "pourcent": 33,
+    "n": 43,
+    "precis": 16,
+    "pourcent": 37,
     "defauts": [
      {
       "code": "titre_generique",
@@ -266,7 +265,7 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 28,
+      "n": 27,
       "exemple": "Cinéma d’Animation"
      },
      {
@@ -285,7 +284,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 28
+      "n": 27
      }
     ]
    },
@@ -378,7 +377,7 @@
       "code": "lieu_vague",
       "texte": "lieu à préciser",
       "n": 1,
-      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
+      "exemple": "Ayman Boujlida Mabrouka"
      }
     ],
     "manques": [
@@ -443,36 +442,24 @@
     ]
    },
    "presse-kapitalis": {
-    "n": 1,
-    "precis": 1,
+    "n": 3,
+    "precis": 3,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
+      "n": 3
      }
     ]
    },
-   "presse-kapitalis-ar": {
+   "presse-lapresse": {
     "n": 1,
-    "precis": 0,
-    "pourcent": 0,
-    "defauts": [
-     {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
-      "n": 1,
-      "exemple": "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي"
-     }
-    ],
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
     "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 1
-     },
      {
       "code": "sans_image",
       "texte": "image",
@@ -481,15 +468,22 @@
     ]
    },
    "presse-leaders": {
-    "n": 1,
+    "n": 2,
     "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
+    "pourcent": 50,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "J-30: les 40es Journées de l’Entreprise font de l’exécution le grand d"
+     }
+    ],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
+      "n": 2
      }
     ]
    },
@@ -526,10 +520,17 @@
     ]
    },
    "tunis-events": {
-    "n": 18,
+    "n": 19,
     "precis": 18,
-    "pourcent": 100,
-    "defauts": [],
+    "pourcent": 95,
+    "defauts": [
+     {
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
+      "n": 1,
+      "exemple": "Un Monde Fragile et Merveilleux"
+     }
+    ],
     "manques": [
      {
       "code": "sans_heure",
@@ -547,7 +548,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    }
@@ -568,9 +569,9 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 42,
-    "precis": 14,
-    "pourcent": 33,
+    "n": 43,
+    "precis": 16,
+    "pourcent": 37,
     "defauts": [
      {
       "code": "titre_generique",
@@ -581,7 +582,7 @@
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 28,
+      "n": 27,
       "exemple": "Cinéma d’Animation"
      },
      {
@@ -600,32 +601,52 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 28
+      "n": 27
      }
     ]
    },
    "presse": {
-    "n": 3,
-    "precis": 2,
-    "pourcent": 67,
+    "n": 6,
+    "precis": 5,
+    "pourcent": 83,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
       "n": 1,
-      "exemple": "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي"
+      "exemple": "J-30: les 40es Journées de l’Entreprise font de l’exécution le grand d"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 6
+     }
+    ]
+   },
+   "facebook_programmes": {
+    "n": 8,
+    "precis": 7,
+    "pourcent": 88,
+    "defauts": [
+     {
+      "code": "lieu_vague",
+      "texte": "lieu à préciser",
+      "n": 1,
+      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
      }
     ],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 1
+      "n": 3
      },
      {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 3
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 1
      }
     ]
    },
@@ -644,7 +665,7 @@
       "code": "lieu_vague",
       "texte": "lieu à préciser",
       "n": 1,
-      "exemple": "I ٤ ١٨ ٩ ٢ Bird, Act II"
+      "exemple": "Ayman Boujlida Mabrouka"
      }
     ],
     "manques": [
@@ -655,36 +676,18 @@
      }
     ]
    },
-   "facebook_programmes": {
-    "n": 9,
-    "precis": 8,
-    "pourcent": 89,
+   "tunis_events": {
+    "n": 19,
+    "precis": 18,
+    "pourcent": 95,
     "defauts": [
      {
-      "code": "lieu_vague",
-      "texte": "lieu à préciser",
+      "code": "expo_sans_fin",
+      "texte": "expo sans date de fin",
       "n": 1,
-      "exemple": "بلاغ صادر عن وزارة الشؤون الثقافية خاص"
+      "exemple": "Un Monde Fragile et Merveilleux"
      }
     ],
-    "manques": [
-     {
-      "code": "sans_heure",
-      "texte": "heure",
-      "n": 6
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 1
-     }
-    ]
-   },
-   "tunis_events": {
-    "n": 18,
-    "precis": 18,
-    "pourcent": 100,
-    "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
@@ -694,8 +697,8 @@
     ]
    },
    "woocommerce_seances": {
-    "n": 10,
-    "precis": 10,
+    "n": 11,
+    "precis": 11,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -745,7 +748,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 5
      }
     ]
    },
@@ -758,6 +761,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]

@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-10",
    "2026-11-11",
    "2026-11-13",
    "2026-11-14"
@@ -20,18 +19,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-10",
      "2026-11-11",
      "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-10",
-      "heures": [
-       "17:00"
-      ]
-     },
      {
       "jour": "2026-11-11",
       "heures": [
@@ -59,16 +51,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-10",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-10",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -79,9 +64,9 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-10-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-10-bakma.md"
+   "_events/auto/cine-agora/2026-11-14-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-11-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-14-bakma.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -93,7 +78,7 @@
     "date": "2026-10-17"
    }
   ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -300,7 +285,7 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-10",
+   "2026-11-11",
    "2026-11-12",
    "2026-11-14"
   ],
@@ -312,15 +297,15 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-10",
+     "2026-11-11",
      "2026-11-12",
      "2026-11-14"
     ],
     "heures": [
      {
-      "jour": "2026-11-10",
+      "jour": "2026-11-11",
       "heures": [
-       "21:15"
+       "18:45"
       ]
      },
      {
@@ -339,8 +324,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md",
-   "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md"
+   "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-11-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -796,6 +781,7 @@
   "genres": [],
   "jours": [
    "2026-11-11",
+   "2026-11-12",
    "2026-11-15"
   ],
   "salles": [
@@ -807,6 +793,7 @@
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
      "2026-11-11",
+     "2026-11-12",
      "2026-11-15"
     ],
     "heures": [
@@ -814,6 +801,12 @@
       "jour": "2026-11-11",
       "heures": [
        "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-12",
+      "heures": [
+       "18:30"
       ]
      },
      {
@@ -921,7 +914,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-10",
    "2026-11-11",
    "2026-11-12",
    "2026-11-13",
@@ -935,19 +927,12 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-10",
      "2026-11-11",
      "2026-11-12",
      "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-10",
-      "heures": [
-       "19:30"
-      ]
-     },
      {
       "jour": "2026-11-11",
       "heures": [
@@ -976,7 +961,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-10-un-monde-fragile-et-merveilleux.md"
+   "_events/auto/tunis-events-cinema/2026-11-11-un-monde-fragile-et-merveilleux.md"
   ],
   "wikidata": "Q136379364",
   "letterboxd": "a-sad-and-beautiful-world",
@@ -1035,6 +1020,54 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Verity",
+  "id": "verity",
+  "image": "https://lagora.tn/wp-content/uploads/2026/09/Film-Verity.webp",
+  "imdb": "tt32261958",
+  "duree": null,
+  "genres": [
+   "Policier",
+   "Drame",
+   "Thriller"
+  ],
+  "jours": [
+   "2026-11-15"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/verity/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-15"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-15",
+      "heures": [
+       "21:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-15-verity.md",
+   "_events/auto/tunis-events-cinema/2026-11-15-verity.md"
+  ],
+  "wikidata": "Q131523413",
+  "letterboxd": "verity-2026",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Verity est film américain réalisé par Michael Showalter et sorti en 2026. Il s'agit d'une adaptation du roman du même nom de Colleen Hoover.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Verity_(film)"
+ },
+ {
   "titre": "Weekend",
   "id": "weekend",
   "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
@@ -1042,6 +1075,7 @@
   "duree": null,
   "genres": [],
   "jours": [
+   "2026-11-14",
    "2026-11-15"
   ],
   "salles": [
@@ -1052,9 +1086,16 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
+     "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
+     {
+      "jour": "2026-11-14",
+      "heures": [
+       "19:15"
+      ]
+     },
      {
       "jour": "2026-11-15",
       "heures": [
@@ -1065,8 +1106,8 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-15-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-15-weekend.md"
+   "_events/auto/cine-agora/2026-11-14-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-14-weekend.md"
   ],
   "jeune": false,
   "presse": [],

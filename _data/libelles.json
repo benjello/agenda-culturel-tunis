@@ -64,6 +64,11 @@
   "ar": "20-22, avenue de Paris",
   "en": "20-22, avenue de Paris"
  },
+ "27ᵉ édition des JTC entre création, mémoire et ouverture": {
+  "de": "fr",
+  "ar": "الطبعة السابعة والعشرون للشبكة المشتركة بين الإبداع والذاكرة والافتتاح",
+  "en": "27th edition of JTC between creation, memory and opening"
+ },
  "3 Rue De Damas": {
   "de": "fr",
   "ar": "3 De Damascus Street",
@@ -79,15 +84,10 @@
   "ar": "32 Bis welcomes The Funambulist: For a reflection on the pedagogies of freedom",
   "en": "32 Bis welcomes The Funambulist: For a reflection on the pedagogies of liberation"
  },
- "34 Av. de La Liberté": {
+ "3e Festival international du cinéma au Sahara": {
   "de": "fr",
-  "ar": "34 Av. of Liberty",
-  "en": "34 Av. of Liberty"
- },
- "34 Av. de La Liberté, Tunis 1002, Tunis": {
-  "de": "fr",
-  "ar": "34 Av. Freedom, Tunis 1002, Tunis",
-  "en": "34 Av. Freedom, Tunis 1002, Tunis"
+  "ar": "مهرجان الأفلام الدولي الثالث في الصحراء",
+  "en": "3rd International Film Festival in the Sahara"
  },
  "40 TND · Complet": {
   "de": "fr",
@@ -289,6 +289,11 @@
   "ar": "نيسان/أبريل (في بعض الأحيان تشرين الأول/أكتوبر)",
   "en": "April (sometimes October)"
  },
+ "Ayman Boujlida Mabrouka": {
+  "de": "fr",
+  "ar": "أيمان بوجلاديا مابوروكا",
+  "en": "Ayman Boujlida Mabrouka"
+ },
  "Azza Filali": {
   "de": "fr",
   "ar": "Azza Filali",
@@ -398,16 +403,6 @@
   "de": "fr",
   "ar": "CAN 2027 : Mouine Chaâbani unveils its list, Tunisia faces a double challenge against Libya",
   "en": "CAN 2027 : Mouine Chaâbani unveils its list, Tunisia faces a double challenge against Libya"
- },
- "CE WEEK-END À L'AGORA CINÉMA DJERBA": {
-  "de": "fr",
-  "ar": "هذا الأسبوع في (أوغورا سينيما ديربا)",
-  "en": "THIS WEEKEND AT THE AGORA CINEMA DJERBA"
- },
- "CE WEEK-END À L'AGORA DJERBA samedi 7 & dimanche 8 novembre": {
-  "de": "fr",
-  "ar": "هذا الأسبوع في أوغورا ديربا يوم السبت، 8 تشرين الثاني/نوفمبر",
-  "en": "THIS WEEK-END AT AGORA DJERBA Saturday 7 & Sunday 8 November"
  },
  "Café Philo avec Azza Filali": {
   "de": "fr",
@@ -643,6 +638,11 @@
   "de": "fr",
   "ar": "حساب ضريبي واحد: تم تأجيل الإطلاق إلى عام 2027، ولم يسدد سوى 000 37 فاتورة إلكترونية",
   "en": "Single tax account: Launch postponed to 2027, only 37,000 electronic invoices paid"
+ },
+ "Concert : L’histoire de la Pologne en chansons": {
+  "de": "fr",
+  "ar": "Concert: History of Poland in songs",
+  "en": "Concert: History of Poland in songs"
  },
  "Concerts, Festivals, Expositions, Sport ▻ Réservez vos places sur Teskerti ! Le n°1 du E-ticket en Tunisie - Paiement 100% sécurisé.": {
   "de": "fr",
@@ -1064,6 +1064,11 @@
   "ar": "الإنتاج الأسري",
   "en": "Family Productions"
  },
+ "Fennel Fantasy with Rafram Chaddad": {
+  "de": "en",
+  "fr": "Fantasie du fenouil avec Rafram Tchaddad",
+  "ar": "Fennel Fantasy with Rafram Chaddad"
+ },
  "Festival International de Carthage": {
   "de": "fr",
   "ar": "المهرجان الدولي للحملة",
@@ -1414,15 +1419,25 @@
   "ar": "المعاهد والمراكز الثقافية",
   "en": "Cultural institutes and centres"
  },
- "Interlude 17 Sortie de Résidence Yellow Wasabi": {
+ "Interlude #17 : Yellow Wasabi": {
   "de": "fr",
-  "ar": "Interlude 17 Exit from Yellow Wasabi Residence",
-  "en": "Interlude 17 Exit from Yellow Wasabi Residence"
+  "ar": "Interlude #17 : Yellow Wasabi",
+  "en": "Interlude #17 : Yellow Wasabi"
+ },
+ "J-30: les 40es Journées de l’Entreprise font de l’exécution le grand défi de l’économie tunisienne (Vidéo)": {
+  "de": "fr",
+  "ar": "J-30: The 40th Days of the Enterprise make the execution the big challenge of the Tunisian economy (Video)",
+  "en": "J-30: The 40th Days of the Enterprise make the execution the big challenge of the Tunisian economy (Video)"
  },
  "JCC 2026 | Appel à candidatures pour le recrutement des bénévoles": {
   "de": "fr",
   "ar": "لجنة التنسيق المشتركة 2026: دعوة إلى تقديم طلبات توظيف المتطوعين",
   "en": "JCC 2026: Call for applications for volunteer recruitment"
+ },
+ "JTC 2026 : Douze spectacles de onze pays en lice pour le Tanit d’or": {
+  "de": "fr",
+  "ar": "JTC 2026: Twelve shows from eleven countries competing for the Golden Tanit",
+  "en": "JTC 2026: Twelve shows from eleven countries competing for the Golden Tanit"
  },
  "Jaou Tunis": {
   "de": "fr",
@@ -1764,6 +1779,11 @@
   "ar": "La Presse (culture)",
   "en": "La Presse (culture)"
  },
+ "La Rue": {
+  "de": "fr",
+  "ar": "الشارع",
+  "en": "The Street"
+ },
  "La poésie sicilienne du XVIe siècle en concert à la Manouba": {
   "de": "fr",
   "ar": "The Sixteenth Century Sicilian Poetry in Concert at the Manouba",
@@ -1779,10 +1799,20 @@
   "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité.",
   "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability."
  },
+ "Lartisto": {
+  "de": "fr",
+  "ar": "Lartisto",
+  "en": "Lartisto"
+ },
  "Lartisto théâtre et cinéma": {
   "de": "fr",
   "ar": "مسرح لارتستو وسينيما",
   "en": "Lartisto theatre and cinema"
+ },
+ "Lartisto — Lafayette": {
+  "de": "fr",
+  "ar": "لارتستو - لافاييت",
+  "en": "Lartisto — Lafayette"
  },
  "Layali el Qamar": {
   "de": "fr",
@@ -2044,6 +2074,11 @@
   "ar": "قادة الصحيفة الإلكترونية التي تعرض أخباراً وأخباراً من تونس والعالم: الأخبار السياسية والاقتصادية، والأخبار الوطنية والإقليمية.",
   "en": "Leaders the online newspaper that presents news and news from Tunisia and the world: Political and economic news, national and regional news."
  },
+ "League of Legends : vivez la grande finale des Worlds 2026 à l’IFT !": {
+  "de": "fr",
+  "ar": "عصبة الأساطير: يعيش العالم 2026 النهائي الكبير في IFT!",
+  "en": "League of Legends: live the Worlds 2026 Grand Final at the IFT!"
+ },
  "Les Journées cinématographiques de Carthage ou JCC sont un festival de cinéma créé en 1966. Il se tient à Tunis, capitale de la Tunisie, et a lieu au mois d'octobre ou de novembre tous les ans depuis 2015.": {
   "de": "fr",
   "ar": "إن أيام أفلام الكرتاج أو أيام السينما التي يقامها المجلس هي مهرجان سينمائي أنشئ في عام ١٩٦٦. وتُعقد في تونس العاصمة التونسية، وتُعقد في تشرين الأول/أكتوبر أو تشرين الثاني/نوفمبر من كل عام منذ عام 2015.",
@@ -2059,10 +2094,15 @@
   "ar": "(ووز) (صوفي)",
   "en": "The Woes of Sophie"
  },
- "Les Rencontres théâtrales de Lartisto reviennent pour leur 12ème édition !": {
+ "Les Rencontres Théâtrales de Lartisto commencent !": {
   "de": "fr",
-  "ar": "الاجتماعات المسرحية لـ(لارتيستو) عادت لطبعتها الثانية عشر",
-  "en": "The Theatrical Meetings of Lartisto are back for their 12th edition!"
+  "ar": "محاسبي (لارتيستو) يبدأون!",
+  "en": "The Teatro Encounters of Lartisto begin!"
+ },
+ "Les Rencontres Théâtrales de Lartisto continuent !": {
+  "de": "fr",
+  "ar": "جلسات مسرح لارتستو تستمر",
+  "en": "The Lartisto Theatre Meetings continue!"
  },
  "Les chaussures": {
   "de": "fr",
@@ -2273,11 +2313,6 @@
   "de": "fr",
   "ar": "الموسيقى",
   "en": "Music"
- },
- "Musique Russe": {
-  "de": "fr",
-  "ar": "الموسيقى الروسية",
-  "en": "Russian Music"
  },
  "Musée": {
   "de": "fr",
@@ -2559,11 +2594,6 @@
   "ar": "نازا، التي تُطلَق أحياناً كنازية، هي فيلم وثائقي بريطاني لعام 2026 موجه من صحفيين وصانعي أفلام إسرائيليين يوفال أبراهام ورايتشل زور، الذين كتبوا بالفعل الفيلم الفائز بالجائزة لا أرض أخرى في عام 2024.",
   "en": "Naza, sometimes stylized as NAZA, is a 2026 British documentary film directed by Israeli journalists and filmmakers Yuval Abraham and Rachel Szor, who already wrote the award-winning film No Other Land in 2024."
  },
- "Nicole Skarpness": {
-  "de": "fr",
-  "ar": "Nicole Skarpness",
-  "en": "Nicole Skarpness"
- },
  "Nino et Yasmina tombent amoureux dans la cour de leur école à Beyrouth, et rêvent à leur vie d’adulte, à un monde merveilleux. 20 ans plus tard, ils se retrouvent par accident et c’est à nouveau l’amour fou, magnétique, incandescent. Peut-on construire un avenir, dans un pays fracturé, qu’on tente de quitter mais qui vous retient de façon irrésistible ?": {
   "de": "fr",
   "ar": "يقع (نينو) و(ياسمينا) في الحب في فناء مدرستهم في (بيروت) ويحلمون بحياتهم البالغة بعد 20 عاماً، يجدون أنفسهم بالخطأ، ومرة أخرى، الحب المجنون، المغناطيسي، الوقح. أيمكننا بناء مستقبل في بلد ممزق، نحاول أن نغادر، لكن هذا يؤخرك بشكل لا رجعة فيه؟",
@@ -2639,6 +2669,21 @@
   "ar": "إعادة واحدة، موناستير",
   "en": "One Resort, Monastir"
  },
+ "Ouverture jeudi de la 3e édition du Festival international du cinéma au Sahara": {
+  "de": "fr",
+  "ar": "افتتاح يوم الخميس الطبعة الثالثة من مهرجان الأفلام الدولي في الصحراء",
+  "en": "Opening Thursday of the 3rd edition of the International Film Festival in Sahara"
+ },
+ "Ouvriers de chantiers : Où en est le processus de régularisation ?": {
+  "de": "fr",
+  "ar": "العاملون: ما هي حالة عملية التسوية؟",
+  "en": "Workmen: What is the status of the regularization process?"
+ },
+ "PROGRAMME DE LA SEMAINE À L'AGORA CINÉMA DJERBA": {
+  "de": "fr",
+  "ar": "برنامج أسبوعي في سينيما ديربا",
+  "en": "WEEK PROGRAMME AT AGORA CINEMA DJERBA"
+ },
  "Pack journée théatrales de LARTISTO": {
   "de": "fr",
   "ar": "حزمة مسرحية (لرتستو)",
@@ -2689,11 +2734,6 @@
   "ar": "يكرس مختبر &quot; ديرمان &quot; ، بمناسبة الذكرى السنوية العشرين لإنشائه، ندوة دولية لقانون الاستثمار",
   "en": "For its twenty-year anniversary, the DRIMAN laboratory devotes an international colloquium to investment law"
  },
- "Power Yoga with Nicole Skarpness @nskarp": {
-  "de": "en",
-  "fr": "Power Yoga avec Nicole Skarpness @nskarp",
-  "ar": "Power Yoga with Nicole Skarpness @nskarp"
- },
  "Programme. Programme et Billetterie en ligne pour les séances de théatre, cinéma et autres évènements, Théâtre de l'Opéra de Tunis": {
   "de": "fr",
   "ar": "البرنامج. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre",
@@ -2723,6 +2763,11 @@
   "de": "fr",
   "ar": "(رافيك) فنان ضخم لا يأخذ نفسه على محمل الجد الخلق فية هو مُحتَرم",
   "en": "Rafik is an immense artist who does not take himself seriously. The creation in him is lud"
+ },
+ "Rafram Chaddad": {
+  "de": "fr",
+  "ar": "رافرام تشادداد",
+  "en": "Rafram Chaddad"
  },
  "Ramadan (vers le 10 février en 2027)": {
   "de": "fr",
@@ -2793,11 +2838,6 @@
   "de": "fr",
   "ar": "Rue de Rome, Tunis",
   "en": "Rue de Rome, Tunis"
- },
- "Russian House": {
-  "de": "fr",
-  "ar": "الدار الروسية",
-  "en": "Russian House"
  },
  "Réalités (culture)": {
   "de": "fr",
@@ -3159,6 +3199,11 @@
   "fr": "UNION UTICA TUN. L'Inde. COMMERCE ET ART",
   "ar": "(تيكا يون تون) الرقم. TRADE"
  },
+ "Un Monde Fragile et Merveilleux": {
+  "de": "fr",
+  "ar": "عالم فاسد ورائع",
+  "en": "A Fragile and Wonderful World"
+ },
  "Un Monde Merveilleux": {
   "de": "fr",
   "ar": "عالم رائع",
@@ -3279,15 +3324,10 @@
   "ar": "Zaghuan",
   "en": "Zaghuan"
  },
- "_events/auto/cine-agora/2026-11-10-bakma.md": {
+ "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md": {
   "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-10-bakma.md",
-  "en": "_events/auto/cine-agora/2026-11-10-bakma.md"
- },
- "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md",
-  "en": "_events/auto/cine-agora/2026-11-10-dar-el-3ers.md"
+  "ar": "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md",
+  "en": "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md"
  },
  "_events/auto/cine-agora/2026-11-11-naza.md": {
   "de": "fr",
@@ -3304,20 +3344,30 @@
   "ar": "_أحداث/مناسبات/أوتو/سين -غورا/2026-11-13-للميسور",
   "en": "_events/auto/cine-agora/2026-11-13-les-miserables.md"
  },
+ "_events/auto/cine-agora/2026-11-14-bakma.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-agora/2026-11-14-bakma.md",
+  "en": "_events/auto/cine-agora/2026-11-14-bakma.md"
+ },
  "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md": {
   "de": "fr",
   "ar": "_event/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md",
   "en": "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md"
+ },
+ "_events/auto/cine-agora/2026-11-14-weekend.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-agora/2026-11-14-weekend.md",
+  "en": "_events/auto/cine-agora/2026-11-14-weekend.md"
  },
  "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md": {
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md",
   "en": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md"
  },
- "_events/auto/cine-agora/2026-11-15-weekend.md": {
+ "_events/auto/cine-agora/2026-11-15-verity.md": {
   "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-15-weekend.md",
-  "en": "_events/auto/cine-agora/2026-11-15-weekend.md"
+  "ar": "_event/auto/cine-agora/2026-11-15-verity.md",
+  "en": "_events/auto/cine-agora/2026-11-15-verity.md"
  },
  "_events/auto/cine-agora/2026-11-18-van-gogh.md": {
   "de": "fr",
@@ -3379,25 +3429,15 @@
   "ar": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md",
   "en": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md": {
+ "_events/auto/tunis-events-cinema/2026-11-11-bakma.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-10-bakma-l-agora-marsa.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-11-bakma.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-11-bakma.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-10-bakma.md": {
+ "_events/auto/tunis-events-cinema/2026-11-11-dar-el-3ers.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-10-bakma.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-10-bakma.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-10-dar-el-3ers.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-10-un-monde-fragile-et-merveilleux.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-10-un-world-fragile andwonderful.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-10-un-world-fragile-and-wonderful.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-11-dar-el-3ers.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-11-dar-el-3ers.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-11-naza.md": {
   "de": "fr",
@@ -3408,6 +3448,11 @@
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md"
+ },
+ "_events/auto/tunis-events-cinema/2026-11-11-un-monde-fragile-et-merveilleux.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-11-un-world-fragile andwonderful.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-11-un-world-fragile-and-wonderful.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-11-what-else.md": {
   "de": "fr",
@@ -3424,20 +3469,30 @@
   "ar": "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md"
  },
+ "_events/auto/tunis-events-cinema/2026-11-14-bakma.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-14-bakma.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-14-bakma.md"
+ },
  "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md": {
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md"
+ },
+ "_events/auto/tunis-events-cinema/2026-11-14-weekend.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-14-weekend.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-14-weekend.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md": {
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-15-weekend.md": {
+ "_events/auto/tunis-events-cinema/2026-11-15-verity.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-15-weekend.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-15-weekend.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-15-verity.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-15-verity.md"
  },
  "_events/auto/tunis-events/2026-11-12-regarde-moi.md": {
   "de": "fr",
@@ -3544,6 +3599,11 @@
   "ar": "الكهرباء: 50 ميغاوات إضافية بفضل تبريد التوربينات في تونس",
   "en": "Electricity: an additional 50 megawatts thanks to the cooling of turbines in Tunisia"
  },
+ "Été 2027 : Ce que la Tunisie prévoit réellement pour renforcer l’eau et l’électricité": {
+  "de": "fr",
+  "ar": "Summer 2027: What Tunisia really plans to strengthen water and electricity",
+  "en": "Summer 2027: What Tunisia really plans to strengthen water and electricity"
+ },
  "اختتام الدورة الرابعة للمهرجان الوطني للمسرح التونسي: تتويج مسرحية “جرس” بجائزة العمل المتكامل": {
   "de": "ar",
   "fr": "Clôture de la quatrième session du Festival national de théâtre tunisien : le couronnement du Prix d'action intégrée",
@@ -3588,11 +3648,6 @@
   "de": "ar",
   "fr": "Le Centre pour la promotion des exportations accueille des réunions professionnelles tunisiennes irakiennes",
   "en": "The Centre for Export Promotion embraces Iraqi Tunisian professional meetings"
- },
- "مهرجان بورسعيد السينمائي يكرّم الفنان الكبير حسين فهمي": {
-  "de": "ar",
-  "fr": "Le Porsche Festival honore le grand artiste, Hussein, ma compréhension.",
-  "en": "The Porsche Festival honors the great artist, Hussein, my understanding."
  },
  "ندوة يومي 19 و": {
   "de": "ar",

@@ -4,7 +4,8 @@
   "L'Agora Marsa": "lagora-la-marsa",
   "El Teatro": "el-teatro",
   "Dar Ziqua, Zaghouan": "dar-ziqua-zaghouan",
-  "Espace L'Artisto": "espace-l-artisto",
+  "Lartisto — Lafayette": "lartisto-lafayette",
+  "Lartisto": "lartisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
   "Auditorium de l'IFT (20, avenue de Paris, Tunis)": "auditorium-de-l-ift-20-avenue-de-paris-tunis",
   "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": "mediatheque-de-l-ift-20-avenue-de-paris-tunis",
@@ -35,7 +36,6 @@
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
-  "Russian House": "russian-house",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
   "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
@@ -87,7 +87,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 18
+   "n": 20
   },
   {
    "slug": "mediatheque-institut-francais-de-tunis",
@@ -108,6 +108,15 @@
    "n": 8
   },
   {
+   "slug": "institut-francais-de-tunis",
+   "nom": "Institut français de Tunis",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 7
+  },
+  {
    "slug": "auditorium-institut-francais-de-tunis",
    "nom": "Auditorium, Institut français de Tunis",
    "type": "centre",
@@ -117,15 +126,6 @@
    "n": 7
   },
   {
-   "slug": "institut-francais-de-tunis",
-   "nom": "Institut français de Tunis",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8021,
-   "lon": 10.18066,
-   "n": 6
-  },
-  {
    "slug": "galerie-institut-francais-de-sousse",
    "nom": "Galerie, Institut français de Sousse",
    "type": "galerie",
@@ -133,6 +133,15 @@
    "lat": 36.83351,
    "lon": 10.10422,
    "n": 6
+  },
+  {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
+   "n": 5
   },
   {
    "slug": "mediatheque-institut-francais-de-sfax",
@@ -159,15 +168,6 @@
    "ville": "tunis",
    "lat": 35.6619,
    "lon": 10.08999,
-   "n": 3
-  },
-  {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
-   "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
    "n": 3
   },
   {
@@ -252,12 +252,30 @@
    "n": 2
   },
   {
+   "slug": "cite-de-la-culture",
+   "nom": "Cité de la Culture",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8109,
+   "lon": 10.18608,
+   "n": 2
+  },
+  {
    "slug": "el-teatro",
    "nom": "El Teatro",
    "type": "theatre",
    "ville": "tunis",
    "lat": 36.81393,
    "lon": 10.17371,
+   "n": 1
+  },
+  {
+   "slug": "lartisto",
+   "nom": "Lartisto",
+   "type": "autre",
+   "ville": "tunis",
+   "lat": 32.92995,
+   "lon": 10.44757,
    "n": 1
   },
   {
@@ -330,15 +348,6 @@
    "ville": "monastir",
    "lat": 35.76372,
    "lon": 10.7399,
-   "n": 1
-  },
-  {
-   "slug": "cite-de-la-culture",
-   "nom": "Cité de la Culture",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8109,
-   "lon": 10.18608,
    "n": 1
   },
   {

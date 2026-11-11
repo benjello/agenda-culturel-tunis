@@ -40,6 +40,11 @@
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Moez_Echargui_(2026_US_Open)_03_(cropped).jpg?width=400",
    "qid": "Q29110073"
   },
+  "artiste:rafram-chaddad": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Rafram_Chaddad_P2070022-6.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafram_Chaddad_P2070022-6.jpg?width=400",
+   "qid": "Q12411441"
+  },
   "artiste:yasser-jradi": {
    "credit": "https://commons.wikimedia.org/wiki/File:Asma_Mansour_with_Yasser_Jradi.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Asma_Mansour_with_Yasser_Jradi.jpg?width=400",
@@ -255,6 +260,7 @@
   "artiste:pan-j": "2026-11-02",
   "artiste:picasso": "2026-11-02",
   "artiste:prichindel": "2026-11-02",
+  "artiste:rafram-chaddad": "2026-11-11",
   "artiste:raphael-merheb": "2026-11-02",
   "artiste:rome-it": "2026-11-02",
   "artiste:rslane": "2026-11-02",
@@ -314,6 +320,8 @@
   "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
   "lieu:la-verriere-le-sous-sol-cafe-resto": "2026-11-06",
   "lieu:lagora-la-marsa": "2026-11-02",
+  "lieu:lartisto": "2026-11-11",
+  "lieu:lartisto-lafayette": "2026-11-11",
   "lieu:le-32bis": "2026-11-02",
   "lieu:le-violon-bleu-sidi-bou-said": "2026-11-05",
   "lieu:lieu-3-rue-de-damas-le-belvedere-tunis": "2026-11-04",
