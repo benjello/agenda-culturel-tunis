@@ -10,8 +10,8 @@ source_name: "Institut français de Tunisie (programme PDF)"
 famille: true
 ajoute: "2026-11-01"
 serie: "cafe-philo"
-auto: true
 langues: ["fr"]
+auto: true
 ---
 
 animé par Rabeb Ben Romdhane, cet atelier associe lecture d’histoire, réflexion philosophique et création artistique pour les enfants de 8 à Sa 12 ans. Inscription par email : info.sousse@institutfrancais- tunisie.com
