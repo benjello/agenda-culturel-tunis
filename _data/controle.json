@@ -168,13 +168,6 @@
      }
     ]
    },
-   "fb-61595612945174": {
-    "n": 1,
-    "precis": 1,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": []
-   },
    "fb-artisto": {
     "n": 2,
     "precis": 2,
@@ -626,9 +619,9 @@
     ]
    },
    "facebook_programmes": {
-    "n": 8,
-    "precis": 7,
-    "pourcent": 88,
+    "n": 7,
+    "precis": 6,
+    "pourcent": 86,
     "defauts": [
      {
       "code": "lieu_vague",

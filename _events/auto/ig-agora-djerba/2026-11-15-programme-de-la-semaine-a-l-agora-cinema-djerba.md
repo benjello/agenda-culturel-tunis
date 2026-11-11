@@ -9,8 +9,8 @@ source: "ig-agora-djerba"
 source_name: "L'Agora Djerba (Instagram)"
 image: "assets/programmes/ig-agora-djerba/4595bc079318.jpg"
 ajoute: "2026-11-11"
-auto: true
 langues: ["fr"]
+auto: true
 ---
 
 🎬 PROGRAMME DE LA SEMAINE À L'AGORA CINÉMA DJERBA

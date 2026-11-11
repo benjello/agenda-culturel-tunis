@@ -754,16 +754,6 @@
   "ar": "دار سيباستيان، حمممت",
   "en": "Dar Sébastien, Hammamet"
  },
- "Dar Ziqua": {
-  "de": "fr",
-  "ar": "Dar Ziqua",
-  "en": "Dar Ziqua"
- },
- "Dar Ziqua, Zaghouan": {
-  "de": "fr",
-  "ar": "دار زيكوا، زغوان",
-  "en": "Dar Ziqua, Zaghwan"
- },
  "Dates à venir": {
   "de": "fr",
   "ar": "التواريخ المقبلة",
@@ -2844,11 +2834,6 @@
   "ar": "(الثقافة)",
   "en": "Realities (culture)"
  },
- "STEPPERS SOUND SYSTEM Launch party": {
-  "de": "en",
-  "fr": "SYSTEME SONDE DE STEPPERS Partie de lancement",
-  "ar": "حفلة إطلاق نظام (سيستيم)"
- },
  "Salakta, Ksour Essef": {
   "de": "fr",
   "ar": "Salakta, Ksour Essef",
@@ -3318,11 +3303,6 @@
   "de": "fr",
   "ar": "(زيولد) حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو منظمة &quot; زيولوان &quot; الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات اللازمة لتبادلها.\nالملاحظه , البحث , التخيل و التفرق كل اكتشاف يجعلهم يتقدمون في المغامره",
   "en": "ZYOLD — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!"
- },
- "Zaghouan": {
-  "de": "fr",
-  "ar": "Zaghuan",
-  "en": "Zaghuan"
  },
  "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md": {
   "de": "fr",
