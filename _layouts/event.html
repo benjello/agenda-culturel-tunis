@@ -64,6 +64,15 @@ layout: default
   <p class="note-source">{% if page.notice_source %}<small>Texte : {{ page.notice_source }}.</small>{% else %}<small data-t="notice_source">Texte repris de l'annonce d'origine.</small>{% endif %}{% if trn %} <small class="note-trad" hidden data-t="traduction_auto">Traduction automatique.</small>{% endif %}</p>
   {%- endif %}
 </article>
+{%- if film -%}{%- assign occurrences = site.events | where_exp: "e", "film.fichiers contains e.path" -%}
+{%- else -%}{%- assign occurrences = site.events | where: "title", page.title -%}{%- endif -%}
+{%- assign occurrences = occurrences | where_exp: "e", "e.path != page.path" | where_exp: "e", "e.doublon != true" -%}
+{%- if occurrences.size > 0 %}
+<section class="occurrences">
+  <h2 data-t="autres_seances">Autres dates et autres lieux</h2>
+  {% include liste-evenements.html evenements=occurrences %}
+</section>
+{%- endif %}
 {%- comment -%} Métadonnées schema.org : Google peut afficher l'événement dans ses résultats. {%- endcomment -%}
 {%- if heure != "" %}{% assign debut_iso = page.date | date: "%Y-%m-%dT%H:%M:00+01:00" %}{% else %}{% assign debut_iso = page.date | date: "%Y-%m-%d" %}{% endif -%}
 {%- assign prix_bas = page.price | default: "" | downcase -%}

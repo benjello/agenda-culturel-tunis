@@ -387,3 +387,6 @@ main:focus { outline: none; }
   .formulaire .bouton { min-height: 48px; }
 }
 .formulaire .plus-champs { display: grid; gap: 10px; }
+
+/* Autres occurrences d'un événement (autres salles, autres dates) */
+.occurrences { margin-top: 2rem; }
