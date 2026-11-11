@@ -219,8 +219,8 @@
  {
   "semaine": "2026-S46",
   "date": "2026-11-11",
-  "a_venir": 128,
-  "sept_jours": 75,
+  "a_venir": 129,
+  "sept_jours": 76,
   "sources_actives": 81,
   "sources_avec_evenements": 22,
   "sources_muettes": [
@@ -285,7 +285,7 @@
    "tn-agenda-du-jour"
   ],
   "par_ville": {
-   "tunis": 60,
+   "tunis": 61,
    "sousse": 8,
    "sfax": 5,
    "sud": 2
@@ -293,7 +293,7 @@
   "par_categorie": {
    "cinema": 27,
    "theatre": 16,
-   "expo": 12,
+   "expo": 13,
    "conference": 9,
    "autre": 8,
    "musique": 2,
@@ -301,14 +301,14 @@
   },
   "par_genre": {
    "lieu": 25,
-   "agenda": 24,
+   "agenda": 25,
    "institution": 21,
    "presse": 4,
    "festival": 1
   },
   "par_source": {
    "ift-pdf": 19,
-   "tunis-events": 14,
+   "tunis-events": 15,
    "cine-agora": 10,
    "teskerti": 6,
    "tunis-events-cinema": 4,

@@ -291,7 +291,7 @@
  },
  "Ayman Boujlida Mabrouka": {
   "de": "fr",
-  "ar": "أيمان بوجلاديا مابوروكا",
+  "ar": "أيمن بوجلاديا مابوروكا",
   "en": "Ayman Boujlida Mabrouka"
  },
  "Azza Filali": {
@@ -1066,7 +1066,7 @@
  },
  "Fennel Fantasy with Rafram Chaddad": {
   "de": "en",
-  "fr": "Fantasie du fenouil avec Rafram Tchaddad",
+  "fr": "Fantasie de fenouil avec Rafram Chaddad",
   "ar": "Fennel Fantasy with Rafram Chaddad"
  },
  "Festival International de Carthage": {
@@ -1421,13 +1421,13 @@
  },
  "Interlude #17 : Yellow Wasabi": {
   "de": "fr",
-  "ar": "Interlude #17 : Yellow Wasabi",
-  "en": "Interlude #17 : Yellow Wasabi"
+  "ar": "Interlude #17: Yellow Wasabi",
+  "en": "Interlude #17: Yellow Wasabi"
  },
  "J-30: les 40es Journées de l’Entreprise font de l’exécution le grand défi de l’économie tunisienne (Vidéo)": {
   "de": "fr",
-  "ar": "J-30: The 40th Days of the Enterprise make the execution the big challenge of the Tunisian economy (Video)",
-  "en": "J-30: The 40th Days of the Enterprise make the execution the big challenge of the Tunisian economy (Video)"
+  "ar": "J-30: The 40th Business Days make execution the big challenge of the Tunisian economy (Video)",
+  "en": "J-30: The 40th Business Days make execution the big challenge of the Tunisian economy (Video)"
  },
  "JCC 2026 | Appel à candidatures pour le recrutement des bénévoles": {
   "de": "fr",
@@ -1436,8 +1436,8 @@
  },
  "JTC 2026 : Douze spectacles de onze pays en lice pour le Tanit d’or": {
   "de": "fr",
-  "ar": "JTC 2026: Twelve shows from eleven countries competing for the Golden Tanit",
-  "en": "JTC 2026: Twelve shows from eleven countries competing for the Golden Tanit"
+  "ar": "اثنا عشر عرضاً من أحد عشر بلداً متنافساً على (تانت دو)",
+  "en": "JTC 2026: Twelve shows from eleven countries competing for the Tanit d'or"
  },
  "Jaou Tunis": {
   "de": "fr",
@@ -2076,8 +2076,8 @@
  },
  "League of Legends : vivez la grande finale des Worlds 2026 à l’IFT !": {
   "de": "fr",
-  "ar": "عصبة الأساطير: يعيش العالم 2026 النهائي الكبير في IFT!",
-  "en": "League of Legends: live the Worlds 2026 Grand Final at the IFT!"
+  "ar": "عصبة الأساطير: يعيش العالم العظيم 2026 النهائي في IFT!",
+  "en": "League of Legends: live the great Worlds 2026 final at the IFT!"
  },
  "Les Journées cinématographiques de Carthage ou JCC sont un festival de cinéma créé en 1966. Il se tient à Tunis, capitale de la Tunisie, et a lieu au mois d'octobre ou de novembre tous les ans depuis 2015.": {
   "de": "fr",
@@ -2101,8 +2101,8 @@
  },
  "Les Rencontres Théâtrales de Lartisto continuent !": {
   "de": "fr",
-  "ar": "جلسات مسرح لارتستو تستمر",
-  "en": "The Lartisto Theatre Meetings continue!"
+  "ar": "محاسبي (لارتيستو) يستمرون!",
+  "en": "The Teatro Encounters of Lartisto continue!"
  },
  "Les chaussures": {
   "de": "fr",
@@ -2676,13 +2676,13 @@
  },
  "Ouvriers de chantiers : Où en est le processus de régularisation ?": {
   "de": "fr",
-  "ar": "العاملون: ما هي حالة عملية التسوية؟",
-  "en": "Workmen: What is the status of the regularization process?"
+  "ar": "العمال الأشغالون: ما هي حالة عملية التسوية؟",
+  "en": "Worksite workers: What is the status of the regularization process?"
  },
  "PROGRAMME DE LA SEMAINE À L'AGORA CINÉMA DJERBA": {
   "de": "fr",
-  "ar": "برنامج أسبوعي في سينيما ديربا",
-  "en": "WEEK PROGRAMME AT AGORA CINEMA DJERBA"
+  "ar": "البرنامج الأسبوعي في سينيما ديربا",
+  "en": "WEEKLY PROGRAMME AT AGORA CINEMA DJERBA"
  },
  "Pack journée théatrales de LARTISTO": {
   "de": "fr",
@@ -2766,7 +2766,7 @@
  },
  "Rafram Chaddad": {
   "de": "fr",
-  "ar": "رافرام تشادداد",
+  "ar": "Rafram Chaddad",
   "en": "Rafram Chaddad"
  },
  "Ramadan (vers le 10 février en 2027)": {
@@ -3356,7 +3356,7 @@
  },
  "_events/auto/cine-agora/2026-11-14-weekend.md": {
   "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-14-weekend.md",
+  "ar": "_events/auto/cine-agora/2026-11-14-weekend.md",
   "en": "_events/auto/cine-agora/2026-11-14-weekend.md"
  },
  "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md": {
@@ -3366,7 +3366,7 @@
  },
  "_events/auto/cine-agora/2026-11-15-verity.md": {
   "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-15-verity.md",
+  "ar": "_events/auto/cine-agora/2026-11-15-verity.md",
   "en": "_events/auto/cine-agora/2026-11-15-verity.md"
  },
  "_events/auto/cine-agora/2026-11-18-van-gogh.md": {
@@ -3451,7 +3451,7 @@
  },
  "_events/auto/tunis-events-cinema/2026-11-11-un-monde-fragile-et-merveilleux.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-11-un-world-fragile andwonderful.md",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-un-world-fragile-and-wonderful.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-11-un-world-fragile-and-wonderful.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-11-what-else.md": {
