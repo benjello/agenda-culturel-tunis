@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-11",
    "2026-11-13",
    "2026-11-14"
   ],
@@ -19,17 +18,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-11",
      "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-13",
       "heures": [
@@ -285,7 +277,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-11",
    "2026-11-12",
    "2026-11-14"
   ],
@@ -297,17 +288,10 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-11",
      "2026-11-12",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "18:45"
-      ]
-     },
      {
       "jour": "2026-11-12",
       "heures": [
@@ -331,45 +315,6 @@
   "jeune": false,
   "presse": [],
   "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "Karma",
-  "id": "karma",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fdcphzpdlitz4odye3ah",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-11"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6533",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-11"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "18:30"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-11-karma.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Karma de Guillaume Canet.\nRésumé : (Interdit -12ans)\nDans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -556,7 +501,6 @@
    "Documentaire"
   ],
   "jours": [
-   "2026-11-11",
    "2026-11-12",
    "2026-11-14",
    "2026-11-15"
@@ -569,18 +513,11 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-11",
      "2026-11-12",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-12",
       "heures": [
@@ -652,45 +589,6 @@
   "jeune": false,
   "presse": [],
   "synopsis": "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Eat the Night de Caroline Poggi et Jonathan Vinel.\nRésumé :Pablo et sa sœur Apolline s’évadent de leur quotidien en jouant à Darknoon, un jeu vidéo qui les a vus grandir. Un jour, Pablo rencontre Night, qu’il initie à ses petits trafics, et s’éloigne d'Apolline.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "NN 2026 : Un monde merveilleux",
-  "id": "nn-2026-un-monde-merveilleux",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/wlgpphspztlwg77x2k95",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-11"
-  ],
-  "salles": [
-   {
-    "nom": "Salle de cinéma, Institut français de Sousse",
-    "adresse": "",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6512",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-11"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "18:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-11-nn-2026-un-monde-merveilleux.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Un monde merveilleux de Giulio Callegari.\nRésumé :\nDans un futur un peu trop proche où les humains dépendent des robots, Max, une ancienne prof réfractaire à la technologie, vivote avec sa fille grâce à des petites combines.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -780,7 +678,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-11",
    "2026-11-12",
    "2026-11-15"
   ],
@@ -792,17 +689,10 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-11",
      "2026-11-12",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "21:00"
-      ]
-     },
      {
       "jour": "2026-11-12",
       "heures": [
@@ -914,7 +804,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-11",
    "2026-11-12",
    "2026-11-13",
    "2026-11-14"
@@ -927,18 +816,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-11",
      "2026-11-12",
      "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-12",
       "heures": [
@@ -1123,7 +1005,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-11",
    "2026-11-12",
    "2026-11-13",
    "2026-11-14",
@@ -1137,19 +1018,12 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-11",
      "2026-11-12",
      "2026-11-13",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-11",
-      "heures": [
-       "17:00"
-      ]
-     },
      {
       "jour": "2026-11-12",
       "heures": [

@@ -719,11 +719,6 @@
   "ar": "في إطار \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سوس يقترح فرز فيلم \"كريس ماركر\" الخامس\nموجز تنفيذي:\nامرأة، كمبيوتر، محاور غير مرئي: هذا هو الجهاز الذي يُبنى منه المستوى الخامس.",
   "en": "In the framework of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sousse proposes the screening of Chris Marker's Level Five film.\nExecutive summary:\nA woman, a computer, an invisible interlocutor: this is the device from which Level Five is built."
  },
- "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Un monde merveilleux de Giulio Callegari.\nRésumé :\nDans un futur un peu trop proche où les humains dépendent des robots, Max, une ancienne prof réfractaire à la technologie, vivote avec sa fille grâce à des petites combines.": {
-  "de": "fr",
-  "ar": "في إطار \"نوفيمبري نوميريك 2026\" المعهد الفرنسي لتونس في سوس يعرض عليك عرض فيلم أون موندي الرائع من قبل جوليو كاليغاري\nموجز تنفيذي:\nفي مستقبل قريب جداً حيث يعتمد البشر على الروبوتات (ماكس)، المعلم السابق الذي يقاوم التكنولوجيا، يهتز مع ابنته من خلال تركيبات صغيرة.",
-  "en": "In the framework of \"Novembre Numérique 2026\", the French Institute of Tunisia in Sousse offers you the screening of the film Un monde wonderfule by Giulio Callegari.\nExecutive summary:\nIn a little too close a future where humans depend on robots, Max, a former teacher who is resistant to technology, is vibrating with his daughter through small combinations."
- },
  "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.": {
   "de": "fr",
   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم.\nفي وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
@@ -1679,11 +1674,6 @@
   "ar": "والمعهد الفرنسي لتونس هو جزء من الشبكة العالمية للمعاهد الفرنسية. ويقع المكتب الرئيسي في تونس، تونس، في حين أن فرعين محليين يكملان شبكتهما في سوس وسفاكس.",
   "en": "The French Institute of Tunisia (IFT) is part of the global network of French institutes. The main office is located in Tunis, Tunisia, while two local branches complete its network in Sousse and Sfax."
  },
- "L'Institut français de Tunisie vous propose la projection du film Karma de Guillaume Canet.\nRésumé : (Interdit -12ans)\nDans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.": {
-  "de": "fr",
-  "ar": "المعهد الفرنسي لتونس يقترح عرض فيلم (غييوم كانيت) لـ(كارما)\nخلاصة: (مُنِع - 12 سنة)\nفي قرية شمال إسبانيا، (جين) تحاول إعادة بناء حياتها مع (دانيال) التي لا تعرف شيئاً عن ماضيها المضطرب",
-  "en": "The French Institute of Tunisia proposes the screening of Guillaume Canet's film Karma.\nAbstract: (Forbidden -12years)\nIn a village north of Spain, Jeanne tries to rebuild her life with Daniel, who knows nothing of her troubled past."
- },
  "L'ascension fulgurante de Matt Hagen, de gamin des rues de Gotham à star hollywoodienne, est brutalement interrompue lorsqu'un baron du crime le laisse atrocement défiguré. Abandonné de tous et n'ayant plus rien à perdre, Matt se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.": {
   "de": "fr",
   "ar": "(مات هاغن) يُثير الشفقة من شارع (غوثام) إلى (هوليوود ستار) مُقاطعة بشكل مفاجئ عندما يتركه البارون للجريمة مشوّهًا بشدّة تَركَ مِنْ كُلّ شيءِ لتَفْقدُ، مات يَتحوّلُ إلى a علاج تجريبي الذي بشكل مُعجّل يَجْعلُه يَبْدو... لكن تغيير عميق في تصوره للواقع.",
@@ -2564,11 +2554,6 @@
   "fr": "NN 2026 : Manger la nuit",
   "ar": "NN 2026: تناول الليل"
  },
- "NN 2026 : Un monde merveilleux": {
-  "de": "fr",
-  "ar": "NN 2026: عالم رائع",
-  "en": "NN 2026: A Wonderful World"
- },
  "NN2026 : Level Five": {
   "de": "fr",
   "ar": "NN2026: Level Five",
@@ -3358,16 +3343,6 @@
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md",
   "en": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
- },
- "_events/auto/ift-pdf/2026-11-11-karma.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-11-karma.md",
-  "en": "_events/auto/ift-pdf/2026-11-11-karma.md"
- },
- "_events/auto/ift-pdf/2026-11-11-nn-2026-un-monde-merveilleux.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-11-nn-2026-un-world-wonderful.md",
-  "en": "_events/auto/ift-pdf/2026-11-11-nn-2026-un-world-wonderful.md"
  },
  "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md": {
   "de": "fr",
