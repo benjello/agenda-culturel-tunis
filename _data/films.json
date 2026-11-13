@@ -224,7 +224,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-12",
    "2026-11-14",
    "2026-11-15"
   ],
@@ -236,17 +235,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-12",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -277,7 +269,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-12",
    "2026-11-14"
   ],
   "salles": [
@@ -288,16 +279,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-12",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "20:30"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -501,7 +485,6 @@
    "Documentaire"
   ],
   "jours": [
-   "2026-11-12",
    "2026-11-14",
    "2026-11-15"
   ],
@@ -513,17 +496,10 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-12",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -632,45 +608,6 @@
   "synopsis_url": ""
  },
  {
-  "titre": "REGARDE MOI",
-  "id": "regarde-moi",
-  "image": "https://tunis.events/storage/d935fc22e6010a3802d5dc300358def32.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-12"
-  ],
-  "salles": [
-   {
-    "nom": "Sociale Sidi Bou Said",
-    "adresse": "V8CW+8GM, Carthage, Carthage",
-    "lien": "https://tunis.events/events/kQn7qm/movie-night-regarde-moi-sociale-sidi-bou-said",
-    "source": "tunis-events",
-    "source_nom": "tunis.events (agenda)",
-    "jours": [
-     "2026-11-12"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "19:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events/2026-11-12-regarde-moi.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nREGARDE MOIDirector: Nejib Belkadhi1h 36mVOSTFR",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "Scrooge",
   "id": "scrooge",
   "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
@@ -678,7 +615,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-12",
    "2026-11-15"
   ],
   "salles": [
@@ -689,16 +625,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-12",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "18:30"
-      ]
-     },
      {
       "jour": "2026-11-15",
       "heures": [
@@ -804,7 +733,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-12",
    "2026-11-13",
    "2026-11-14"
   ],
@@ -816,17 +744,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-12",
      "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-13",
       "heures": [
@@ -1005,7 +926,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-12",
    "2026-11-13",
    "2026-11-14",
    "2026-11-15"
@@ -1018,18 +938,11 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-12",
      "2026-11-13",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-12",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-13",
       "heures": [
