@@ -7,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-13",
    "2026-11-14"
   ],
   "salles": [
@@ -18,16 +17,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "16:30"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -71,148 +63,6 @@
    }
   ],
   "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "Le Mystère Lucy Lost",
-  "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
-  "imdb": "tt10569744",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-13",
-   "2026-11-14"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6534",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-13"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "18:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md",
-   "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md"
-  ],
-  "wikidata": "Q141827108",
-  "letterboxd": "",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
- },
- {
-  "titre": "2 Jours avec Papa",
-  "id": "2-jours-avec-papa",
-  "image": "",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-13"
-  ],
-  "salles": [
-   {
-    "nom": "Médiathèque, Institut français de Sfax",
-    "adresse": "",
-    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-13"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "A Demain sur la Lune",
-  "id": "a-demain-sur-la-lune",
-  "image": "",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-13"
-  ],
-  "salles": [
-   {
-    "nom": "Médiathèque, Institut français de Tunis",
-    "adresse": "",
-    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-13"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "14:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-lune.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -348,6 +198,50 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Chant_des_for%C3%AAts_(film)"
  },
  {
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "imdb": "tt10569744",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-14"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-14"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-14",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md"
+  ],
+  "wikidata": "Q141827108",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
+ },
+ {
   "titre": "Les Malheurs de Sophie",
   "id": "les-malheurs-de-sophie",
   "image": "",
@@ -383,47 +277,6 @@
   "jeune": false,
   "presse": [],
   "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "Les misérables",
-  "id": "les-miserables",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/les-miserables.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-13"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/les-miserables/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-13"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "20:15",
-       "20:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-13-les-miserables.md",
-   "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Venant en aide à Fantine, une ouvrière mourante, il promet de sauver sa fille, Cosette, des griffes des cruels Thénardier.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -733,7 +586,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-13",
    "2026-11-14"
   ],
   "salles": [
@@ -744,16 +596,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-13",
      "2026-11-14"
     ],
     "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "21:15"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [
@@ -926,7 +771,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-13",
    "2026-11-14",
    "2026-11-15"
   ],
@@ -938,17 +782,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-13",
      "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-13",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-14",
       "heures": [

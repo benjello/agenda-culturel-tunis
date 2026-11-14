@@ -34,11 +34,6 @@
   "ar": "الطبعة السادسة عشرة، سوس",
   "en": "16th edition, Sousse"
  },
- "2 Jours avec Papa": {
-  "de": "fr",
-  "ar": "يومان مع أبي",
-  "en": "2 Days with Dad"
- },
  "2 Rue de Greece": {
   "de": "fr",
   "ar": "2 Rue de Greece",
@@ -123,11 +118,6 @@
   "de": "fr",
   "ar": "الطبعة الثامنة، لجنة الثقافة",
   "en": "8th edition, Cité de la Culture"
- },
- "A Demain sur la Lune": {
-  "de": "fr",
-  "ar": "غداً على القمر",
-  "en": "Tomorrow on the Moon"
  },
  "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.": {
   "de": "fr",
@@ -2089,11 +2079,6 @@
   "ar": "الأحذية",
   "en": "Shoes"
  },
- "Les misérables": {
-  "de": "fr",
-  "ar": "المصارعة",
-  "en": "The wretch"
- },
  "Les toiles de Jellal Ben Abdallah s’entrelacent avec celles d’artistes de différentes générations, tissant ensemble les fils d’une même histoire : celle": {
   "de": "fr",
   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة:",
@@ -2113,11 +2098,6 @@
   "de": "fr",
   "ar": "(جان فالجان) قرر تغيير حياته وفعل الخير حوله تحت هوية زائفة، أصبح، بمرور الوقت، جديراً بالتقدير من الجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، يَعِدُ بأن يُنقذ إبنته، (كوسيت)...",
   "en": "Released after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, he became, over time, a respected notable of all. Coming to help Fantine, a dying worker, he promises to save his daughter, Cosette, [...]"
- },
- "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Venant en aide à Fantine, une ouvrière mourante, il promet de sauver sa fille, Cosette, des griffes des cruels Thénardier.": {
-  "de": "fr",
-  "ar": "(جان فالجان) قرر أن يغير حياته ويفعل الخير حوله تحت هوية زائفة، أصبح، بمرور الوقت، جديراً بالتقدير من الجميع. قادم لمساعدة (فانتين)، عامل مُحتضر، يُعد بأن ينقذ ابنته (كوسيت)، من مخالب (الثناردي) القاسي.",
-  "en": "Freed after 19 years of bounty for the theft of a bread, Jean Valjean decides to change his life and do good around him. Under a false identity, he became, over time, a respected notable of all. Coming to help Fantine, a dying worker, he promises to save his daughter, Cosette, from the claws of the cruel Thénardier."
  },
  "Lieu": {
   "de": "fr",
@@ -3304,11 +3284,6 @@
   "ar": "_events/auto/cine-agora/2026-11-11-scrooge.md",
   "en": "_events/auto/cine-agora/2026-11-11-scrooge.md"
  },
- "_events/auto/cine-agora/2026-11-13-les-miserables.md": {
-  "de": "fr",
-  "ar": "_أحداث/مناسبات/أوتو/سين -غورا/2026-11-13-للميسور",
-  "en": "_events/auto/cine-agora/2026-11-13-les-miserables.md"
- },
  "_events/auto/cine-agora/2026-11-14-bakma.md": {
   "de": "fr",
   "ar": "_event/auto/cine-agora/2026-11-14-bakma.md",
@@ -3343,21 +3318,6 @@
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md",
   "en": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
- },
- "_events/auto/ift-pdf/2026-11-13-2-jours-avec-papa.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-13-2-days-with-papa.md",
-  "en": "_events/auto/ift-pdf/2026-11-13-2-days-with-papa.md"
- },
- "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-lune.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-moon.md",
-  "en": "_events/auto/ift-pdf/2026-11-13-a-demain-sur-la-moon.md"
- },
- "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md": {
-  "de": "fr",
-  "ar": "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md",
-  "en": "_events/auto/ift-pdf/2026-11-13-le-mystere-lucy-lost.md"
  },
  "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-the-night.md": {
   "de": "en",
@@ -3418,11 +3378,6 @@
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-13-les-miserables.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-14-bakma.md": {
   "de": "fr",
