@@ -1,72 +1,5 @@
 [
  {
-  "titre": "Bakma",
-  "id": "bakma",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-14"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/kXEyBm/bakma-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "21:00"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/bakma/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "21:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-14-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-11-bakma.md",
-   "_events/auto/tunis-events-cinema/2026-11-14-bakma.md"
-  ],
-  "tunisien": true,
-  "jeune": false,
-  "presse": [
-   {
-    "titre": "« Bakma », le film d’Abdelhamid Bouchnak : face à l’inhumain",
-    "lien": "https://realites.com.tn/fr/bakma-le-film-dabdelhamid-bouchnak-face-a-linhumain/",
-    "source_nom": "Réalités (culture)",
-    "date": "2026-10-17"
-   }
-  ],
-  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble.\nAu centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "Dar el 3ers دار العرس",
   "id": "dar-el-3ers",
   "image": "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg",
@@ -74,7 +7,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-14",
    "2026-11-15"
   ],
   "salles": [
@@ -85,16 +17,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "14:30"
-      ]
-     },
      {
       "jour": "2026-11-15",
       "heures": [
@@ -110,47 +35,6 @@
   "tunisien": true,
   "jeune": false,
   "presse": []
- },
- {
-  "titre": "Dar El 3ers – دار العرس",
-  "id": "dar-el-3ers",
-  "image": "https://lagora.tn/wp-content/uploads/2026/09/dar-l-3ers--scaled.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-14"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/dar-el-3ers-%d8%af%d8%a7%d8%b1-%d8%a7%d9%84%d8%b9%d8%b1%d8%b3/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "16:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-11-dar-el-3ers.md",
-   "_events/auto/tunis-events-cinema/2026-11-11-dar-el-3ers.md"
-  ],
-  "tunisien": true,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Deux familles que tout oppose doivent préparer le mariage de leurs enfants en seulement une semaine. Entre traditions, rivalités, malentendus et situations hilarantes, cette union promet de ne pas être de tout repos… Pourquoi une telle urgence ? Venez le découvrir au cinéma dans Dar El 3ers ! عائلتان لا تشبه إحداهما الأخرى، تجدان نفسيهما مضطرّتين لتحضير زفاف ابنيهما في أسبوع واحد فقط.",
-  "synopsis_source": "",
-  "synopsis_url": ""
  },
  {
   "titre": "Le Chant des Forêts",
@@ -196,50 +80,6 @@
   "synopsis": "Le Chant des forêts est un documentaire français réalisé par Vincent Munier, sorti en 2025. Le film est un succès critique et en salles avec près d'1,3 million d'entrées. Il remporte deux récompenses lors de la 51e cérémonie des César.",
   "synopsis_source": "Wikipédia",
   "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Chant_des_for%C3%AAts_(film)"
- },
- {
-  "titre": "Le Mystère Lucy Lost",
-  "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
-  "imdb": "tt10569744",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-14"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "15:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-14-le-mystere-lucy-lost.md",
-   "_events/auto/tunis-events-cinema/2026-11-14-le-mystere-lucy-lost.md"
-  ],
-  "wikidata": "Q141827108",
-  "letterboxd": "",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
  },
  {
   "titre": "Les Malheurs de Sophie",
@@ -338,7 +178,6 @@
    "Documentaire"
   ],
   "jours": [
-   "2026-11-14",
    "2026-11-15"
   ],
   "salles": [
@@ -349,16 +188,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "19:15"
-      ]
-     },
      {
       "jour": "2026-11-15",
       "heures": [
@@ -579,56 +411,6 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Un monde fragile et merveilleux",
-  "id": "un-monde-fragile-et-merveilleux",
-  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
-  "imdb": "tt32622406",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-14"
-  ],
-  "salles": [
-   {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-14"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "17:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-11-un-monde-fragile-et-merveilleux.md"
-  ],
-  "wikidata": "Q136379364",
-  "letterboxd": "a-sad-and-beautiful-world",
-  "age": "Tous publics",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [
-   {
-    "titre": "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis",
-    "lien": "https://kapitalis.com/tunisie/2026/11/10/un-monde-fragile-et-merveilleux-de-cyril-aris-sort-en-salles-a-tunis/",
-    "source_nom": "Kapitalis (culture)",
-    "date": "2026-11-10"
-   }
-  ],
-  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
- },
- {
   "titre": "Van Gogh",
   "id": "van-gogh",
   "image": "https://lagora.tn/wp-content/uploads/2026/10/van-gogh.jpg",
@@ -723,7 +505,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-14",
    "2026-11-15"
   ],
   "salles": [
@@ -734,16 +515,9 @@
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "19:15"
-      ]
-     },
      {
       "jour": "2026-11-15",
       "heures": [
@@ -771,7 +545,6 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-14",
    "2026-11-15"
   ],
   "salles": [
@@ -782,16 +555,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-14",
      "2026-11-15"
     ],
     "heures": [
-     {
-      "jour": "2026-11-14",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-15",
       "heures": [
