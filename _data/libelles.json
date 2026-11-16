@@ -909,11 +909,6 @@
   "ar": "(إيبينيزر سكروج) رجل عجوز وفاريش ورجل منعزل بالطبع هو يكره ويحقر عيد الميلاد وكل شيء يولد السعادة ومن ثم فهو يتلقى زيارة شبح شريك سابق وكذلك أرواح عيد الميلاد في الماضي والحاضر والمستقبل.",
   "en": "Ebenezer Scrooge is an old, avarish, pincer and solitary man. Of course, he hates and despises Christmas and everything that generates happiness. It is then that he receives the visit of the ghost of an ex-partner as well as the Christmas spirits of the past, present and future."
  },
- "Ebenezer Scrooge est un vieil homme avare, pingre et solitaire. Bien évidemment, il déteste et méprise Noël et tout ce qui engendre le bonheur. C’est alors qu’il reçoit la visite du fantôme d’un ancien associé ainsi que par les esprits de Noëls du passé, du présent et du futur.": {
-  "de": "fr",
-  "ar": "(إيبينيزر سكروج) رجل عجوز وفاريش ورجل منعزل بالطبع هو يكره ويحقر عيد الميلاد وكل شيء يولد السعادة ومن ثم فهو يتلقى زيارة شبح شريك قديم وكذلك أرواح عيد الميلاد في الماضي والحاضر والمستقبل.",
-  "en": "Ebenezer Scrooge is an old, avarish, pincer and solitary man. Of course, he hates and despises Christmas and everything that generates happiness. It is then that he receives the visit of the ghost of an old associate as well as the Christmas spirits of the past, present and future."
- },
  "Echo des deux Rives": {
   "de": "fr",
   "ar": "Echo of the two Rives",
@@ -2184,11 +2179,6 @@
   "ar": "الفكري والإيطالي: صلة خطيرة",
   "en": "Intellectual and AI: A dangerous connection"
  },
- "L’Île des Souvenirs": {
-  "de": "fr",
-  "ar": "The Island of Remembrance",
-  "en": "The Island of Remembrance"
- },
  "MACAM, Musée national d'art moderne et contemporain": {
   "de": "fr",
   "ar": "MACAM, National Museum of Modern and Contemporary Art",
@@ -3159,11 +3149,6 @@
   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم، (نور)، سيحول هذا الهروب إلى كابوس، يكشف أسراراً مدفونة وجروح لم يمحوها ذلك الوقت.",
   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them, Nour, will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
  },
- "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.": {
-  "de": "fr",
-  "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-  "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
- },
  "Un jeune guide touristique de Louxor accepte une offre inhabituelle de la part d'un riche homme d'affaires : convaincre sa fille et l'aider à oublier son ex. Mais lorsque les choses ne se passent pas comme prévu, Hassan se retrouve pris dans une série comique de situations inattendues et dans une histoire d'amour qu'il n'avait jamais vue venir.": {
   "de": "fr",
   "ar": "مرشد سياحي شاب من (لوكسور) يقبل عرض غير عادي من رجل أعمال غني: إقناع ابنته ومساعدتها على نسيان زوجها السابق. لكن عندما لا تسير الأمور كما هو مخطط لها، (حسان) يجد نفسه محاصراً في سلسلة من الحالات المصورة و في قصة حب لم يراها تأتي.",
@@ -3239,11 +3224,6 @@
   "ar": "Webdo",
   "en": "Webdo"
  },
- "What Else": {
-  "de": "fr",
-  "ar": "ما الـ \"إلسي\"",
-  "en": "What Else"
- },
  "Yasser Jradi": {
   "de": "fr",
   "ar": "ياسر جراد",
@@ -3258,31 +3238,6 @@
   "de": "fr",
   "ar": "(زيولد) حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو منظمة &quot; زيولوان &quot; الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات اللازمة لتبادلها.\nالملاحظه , البحث , التخيل و التفرق كل اكتشاف يجعلهم يتقدمون في المغامره",
   "en": "ZYOLD — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!"
- },
- "_events/auto/cine-agora/2026-11-11-naza.md": {
-  "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-11-naza.md",
-  "en": "_events/auto/cine-agora/2026-11-11-naza.md"
- },
- "_events/auto/cine-agora/2026-11-11-scrooge.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-11-scrooge.md",
-  "en": "_events/auto/cine-agora/2026-11-11-scrooge.md"
- },
- "_events/auto/cine-agora/2026-11-14-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-14-weekend.md",
-  "en": "_events/auto/cine-agora/2026-11-14-weekend.md"
- },
- "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md",
-  "en": "_events/auto/cine-agora/2026-11-15-lile-des-souvenirs.md"
- },
- "_events/auto/cine-agora/2026-11-15-verity.md": {
-  "de": "fr",
-  "ar": "_events/auto/cine-agora/2026-11-15-verity.md",
-  "en": "_events/auto/cine-agora/2026-11-15-verity.md"
  },
  "_events/auto/cine-agora/2026-11-18-van-gogh.md": {
   "de": "fr",
@@ -3318,41 +3273,6 @@
   "de": "fr",
   "ar": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md",
   "en": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-11-naza.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-11-naza.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-11-naza.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-11-scrooge.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-11-what-else.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-11- What-else.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-11-what-else.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-12-dar-el-3ers.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-14-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-14-weekend.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-14-weekend.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-15-l-ile-des-souvenirs.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-15-verity.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-15-verity.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-15-verity.md"
  },
  "a Presse de Tunisie, quotidien de référence depuis 1936 : actualité nationale, économie, sport, culture et international.": {
   "de": "fr",
