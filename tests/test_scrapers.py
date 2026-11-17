@@ -570,6 +570,7 @@ class Traduction(unittest.TestCase):
         self.assertEqual((titres, notices), (["Concert de jazz"], []))
 
     def test_notice_d_un_doublon_traduite_ou_reprise(self):
+        from scrapers import traduire
         texte = "The unexpected departure of a long-time colleague shakes up her routine at the call centre."
         cle = traduire._cle(texte)
         cache = {"titres": {}, "notices": {"_events/a.md": {"cle": cle, "fr": "x"}}}
