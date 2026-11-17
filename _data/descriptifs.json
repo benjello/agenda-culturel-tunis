@@ -764,6 +764,11 @@
    "verifie": "2026-11-02",
    "vu": "2026-11-06"
   },
+  "https://teskerti.tn/evenement/hicham-haddad": {
+   "texte": "",
+   "verifie": "2026-11-17",
+   "vu": "2026-11-17"
+  },
   "https://teskerti.tn/evenement/kolna-nghani-saison-3": {
    "texte": "",
    "verifie": "2026-11-02",
@@ -2482,6 +2487,10 @@
   "lieux:quechlet-el-attarine": {
    "verifie": "2026-11-04",
    "vu": "2026-11-09"
+  },
+  "lieux:residence-du-consul-general-de-france": {
+   "verifie": "2026-11-17",
+   "vu": "2026-11-17"
   },
   "lieux:russian-house": {
    "verifie": "2026-11-10",

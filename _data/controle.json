@@ -123,6 +123,16 @@
    ]
   },
   {
+   "fichier": "tunis-events-cinema/2026-11-17-bakma.md",
+   "source": "tunis-events-cinema",
+   "titre": "BAKMA",
+   "date": "2026-11-17",
+   "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
    "fichier": "tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md",
    "source": "tunis-events-cinema",
    "titre": "LAST CHANCE - لص شايح",
@@ -138,6 +148,16 @@
    "titre": "LAST CHANCE - لص شايح",
    "date": "2026-11-17",
    "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-17-weekend.md",
+   "source": "tunis-events-cinema",
+   "titre": "weekend - ويكاند",
+   "date": "2026-11-17",
+   "lien": "https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace",
    "problemes": [
     "film sans horaire ni séance"
    ]
@@ -605,26 +625,26 @@
     "manques": []
    },
    "teskerti": {
-    "n": 7,
-    "precis": 7,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
+      "n": 8
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 8
      }
     ]
    },
    "tunis-events": {
-    "n": 16,
-    "precis": 16,
+    "n": 17,
+    "precis": 17,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -636,14 +656,14 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 17,
-    "precis": 14,
-    "pourcent": 82,
+    "n": 15,
+    "precis": 10,
+    "pourcent": 67,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 3,
+      "n": 5,
       "exemple": "BAKMA - بكمة"
      }
     ],
@@ -651,12 +671,12 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 5
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 17
+      "n": 15
      }
     ]
    }
@@ -789,14 +809,14 @@
     ]
    },
    "tunis_events_cinema": {
-    "n": 17,
-    "precis": 14,
-    "pourcent": 82,
+    "n": 15,
+    "precis": 10,
+    "pourcent": 67,
     "defauts": [
      {
       "code": "film_sans_seance",
       "texte": "film sans horaire ni séance",
-      "n": 3,
+      "n": 5,
       "exemple": "BAKMA - بكمة"
      }
     ],
@@ -804,12 +824,12 @@
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 3
+      "n": 5
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 17
+      "n": 15
      }
     ]
    },
@@ -840,8 +860,8 @@
     ]
    },
    "tunis_events": {
-    "n": 16,
-    "precis": 16,
+    "n": 17,
+    "precis": 17,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -859,6 +879,24 @@
     "defauts": [],
     "manques": []
    },
+   "teskerti": {
+    "n": 8,
+    "precis": 8,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 8
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 8
+     }
+    ]
+   },
    "rss": {
     "n": 7,
     "precis": 7,
@@ -873,24 +911,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
-     }
-    ]
-   },
-   "teskerti": {
-    "n": 7,
-    "precis": 7,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 7
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 7
      }
     ]

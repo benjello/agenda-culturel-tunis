@@ -56,14 +56,7 @@
     "jours": [
      "2026-11-17"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "15:30"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -241,116 +234,6 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Scrooge / Ebenezer",
-  "id": "scrooge-ebenezer",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
-  "imdb": "tt38773219",
-  "duree": null,
-  "genres": [
-   "Fantastique"
-  ],
-  "jours": [
-   "2026-11-17",
-   "2026-11-18",
-   "2026-11-19",
-   "2026-11-20",
-   "2026-11-21",
-   "2026-11-22",
-   "2026-11-23"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Alhambra Zéphyr",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
-    "source": "cine-alhambra",
-    "source_nom": "Alhambra Zéphyr (La Marsa)",
-    "jours": [
-     "2026-11-17",
-     "2026-11-18",
-     "2026-11-19",
-     "2026-11-20",
-     "2026-11-21",
-     "2026-11-22",
-     "2026-11-23"
-    ],
-    "heures": []
-   },
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
-    "lien": "https://tunis.events/fr/cinema/scrooge",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "15:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/scrooge/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "21:15"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/scrooge-ebenezer",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "16:45",
-       "19:20",
-       "21:35"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-17-scrooge.md",
-   "_events/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md"
-  ],
-  "wikidata": "Q136650058",
-  "letterboxd": "ebenezer-a-christmas-carol",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Scrooge est un film américain réalisé par Ti West sorti en 2026. Il s'agit d'une nouvelle adaptation du conte Un chant de Noël de Charles Dickens.",
-  "synopsis_source": "Wikipédia",
-  "synopsis_url": "https://fr.wikipedia.org/wiki/Scrooge_(film%2C_2026)"
- },
- {
   "titre": "Dar El 3ers - دار العرس",
   "id": "dar-el-3ers",
   "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
@@ -503,6 +386,96 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Scrooge / Ebenezer",
+  "id": "scrooge-ebenezer",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
+  "imdb": "tt38773219",
+  "duree": null,
+  "genres": [
+   "Fantastique"
+  ],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/scrooge/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "21:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/scrooge-ebenezer",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "19:20",
+       "21:35"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-17-scrooge.md",
+   "_events/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md"
+  ],
+  "wikidata": "Q136650058",
+  "letterboxd": "ebenezer-a-christmas-carol",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Scrooge est un film américain réalisé par Ti West sorti en 2026. Il s'agit d'une nouvelle adaptation du conte Un chant de Noël de Charles Dickens.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Scrooge_(film%2C_2026)"
+ },
+ {
   "titre": "weekend - ويكاند",
   "id": "weekend",
   "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
@@ -545,14 +518,7 @@
     "jours": [
      "2026-11-17"
     ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "17:30"
-      ]
-     }
-    ]
+    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -584,66 +550,6 @@
   "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
   "synopsis_source": "",
   "synopsis_url": ""
- },
- {
-  "titre": "HADOOTA / حدوتة",
-  "id": "hadoota",
-  "image": "https://api.tunis.events/storage/10662cd4610e86fd11d104a6e6e4f9c61061.jpg",
-  "imdb": "tt43638234",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-17"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
-    "lien": "https://tunis.events/fr/cinema/hadoota",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "17:45"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "Pathé Tunis City",
-    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
-    "lien": "https://tunis.events/fr/cinema/hadoota-%D8%AD%D8%AF%D9%88%D8%AA%D8%A9",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "15:20",
-       "21:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md"
-  ],
-  "wikidata": "Q142191539",
-  "letterboxd": "hadoota",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": []
  },
  {
   "titre": "Jupiter",
@@ -740,7 +646,6 @@
      {
       "jour": "2026-11-17",
       "heures": [
-       "16:50",
        "20:00"
       ]
      }
@@ -779,12 +684,6 @@
     ],
     "heures": [
      {
-      "jour": "2026-11-17",
-      "heures": [
-       "16:30"
-      ]
-     },
-     {
       "jour": "2026-11-18",
       "heures": [
        "14:30"
@@ -803,6 +702,46 @@
    "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinemadart.md"
   ],
   "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "HADOOTA / حدوتة",
+  "id": "hadoota",
+  "image": "https://api.tunis.events/storage/scraped/889148e8feaafadab19895af75eea3a1.jpg",
+  "imdb": "tt43638234",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/hadoota-%D8%AD%D8%AF%D9%88%D8%AA%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "21:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md"
+  ],
+  "wikidata": "Q142191539",
+  "letterboxd": "hadoota",
+  "age": "",
+  "tunisien": false,
   "jeune": false,
   "presse": []
  },

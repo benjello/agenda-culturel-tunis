@@ -14,4 +14,4 @@ ajoute: "2026-11-17"
 auto: true
 ---
 
-C’est une session spéciale, celle du 40ème anniversaire, des Journées de l’Entreprise qui se tiendra cette année du 10 au 12 décembre 2026, à Sousse. Placée sous le haut patronage du Président de la République, et organisée par l’Institut arabe des chefs d’entreprise (IACE), elle a pour thème : « L'Entreprise et le défi de l'exécution : de la réforme à la transformation ».
+C’est une session spéciale, celle du 40ème anniversaire, des Journées de l’Entreprise qui se tiendra cette année du 10 au 12 décembre 2026, à Sousse. Placée sous le haut patronage du Président de la République, Kais Saïed, et organisée par l’Institut arabe des chefs d’entreprise (IACE), elle a pour thème : « L'Entreprise et le défi de l'exécution : de la réforme à la transformation ».

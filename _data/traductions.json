@@ -104,6 +104,10 @@
    "ar": "GLIBETT ILUSTRATION MARKET",
    "en": "GLIBETT ILLUSTRATION MARKET"
   },
+  "HICHAM HADDAD": {
+   "ar": "HICHAM HADDAD",
+   "en": "HICHAM HADDAD"
+  },
   "Héritages croisés : 70 ans de coopération patrimoniale entre la Tunisie et la France": {
    "ar": "التراث عبر الحدود: 70 عاما من التعاون في مجال التراث بين تونس وفرنسا",
    "en": "Cross heritage: 70 years of heritage cooperation between Tunisia and France"
@@ -279,6 +283,10 @@
   "Rencontre-littéraire avec Hafida Ben Rejeb Latta": {
    "ar": "الاجتماع الأدبي مع حامدة بن ريجاب لاتا",
    "en": "Literary meeting with Hafida Ben Rejeb Latta"
+  },
+  "Soirée Beaujolais Nouveau 2026 !": {
+   "ar": "\"بيوجولايس نيو 2026 مساءاً\"",
+   "en": "Beaujolais New 2026 evening!"
   },
   "Spécial Novembre Numérique": {
    "ar": "Special November Digital",
@@ -864,9 +872,9 @@
    "en": "One month to the day of the opening, IACE unveils the challenges and new features of an anniversary edition of the Business Days which will be held from 10 to 12 December 2026 in Sousse, under the patronage of the President of the Republic. On the programme: fewer diagnoses, more concrete and directly applicable recommendations."
   },
   "_events/auto/presse-leaders/2026-12-10-miguel-angel-moratinos-segolene-royal-et-mohammed-bin-abdull.md": {
-   "cle": "d6c8274deb6c",
-   "ar": "إنها دورة استثنائية، الذكرى السنوية الأربعين، لأيام الأعمال التي ستعقد هذا العام في الفترة من 10 إلى 12 كانون الأول/ديسمبر 2026، في سوس. وتحت رعاية رئيس الجمهورية، وينظمه المعهد العربي لمنظمي المشاريع، كان موضوع المؤتمر هو &quot; المؤسسة وتحدي التنفيذ: من الإصلاح إلى التحول &quot; .",
-   "en": "It is a special session, the 40th anniversary, of the Business Days to be held this year from 10 to 12 December 2026, in Sousse. Under the patronage of the President of the Republic, and organized by the Arab Institute of Entrepreneurs (IACE), the theme of the conference is \"The Enterprise and the Challenge of Implementation: From Reform to Transformation\"."
+   "cle": "73a1b33a7f45",
+   "ar": "إنها دورة استثنائية، الذكرى السنوية الأربعين، لأيام الأعمال التي ستعقد هذا العام في الفترة من 10 إلى 12 كانون الأول/ديسمبر 2026، في سوس. تحت رعاية رئيس الجمهورية، كايس سعيد، الذي نظمه المعهد العربي لمباشري الأعمال الحرة، كان الموضوع هو &quot; المؤسسة وتحدي التنفيذ: من الإصلاح إلى التحول &quot; .",
+   "en": "It is a special session, the 40th anniversary, of the Business Days to be held this year from 10 to 12 December 2026, in Sousse. Under the patronage of the President of the Republic, Kais Saïed, and organized by the Arab Institute of Entrepreneurs (IACE), the theme is \"The Enterprise and the Challenge of Implementation: From Reform to Transformation\"."
   },
   "_events/auto/presse-realites/2026-11-19-le-salon-du-chocolat-et-de-la-patisserie-reunit-plus-de-150-.md": {
    "cle": "544b035ba1bb",
@@ -918,11 +926,6 @@
    "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
    "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md": {
-   "cle": "f181def148eb",
-   "ar": "HADOOTA at the cinema : 1 session this week at Le Colosseum. (الجلسة القادمة (تي Nov. 17 الساعة 17: 45 .",
-   "en": "HADOOTA at the cinema : 1 session this week at Le Colosseum. Next session Tue. Nov. 17. at 17:45. ."
-  },
   "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md": {
    "cle": "6b251eef1355",
    "ar": "HADOOTA /UR TO MELATED at the cinema: 2 screenings this week in Pathé Tunis City. (الجلسة القادمة (تي Nov. 17 الساعة 15: 20",
@@ -942,11 +945,6 @@
    "cle": "d9a2269cdc98",
    "ar": "1 h 56 · Fantastic · from Ti West · with Andrea Riseborough, Rupert Grint, John Depp, Ian McKellen...\n:: جميع الجمهور\nرحلة رجل يواجه ماضيه وحاضره ومستقبله في كفاحه من أجل فرصة ثانية",
    "en": "1 h 56 · Fantastic · from Ti West · with Andrea Riseborough, Rupert Grint, Johnny Depp, Ian McKellen...\n· All public\nThe journey of a man facing his past, his present and his future, in his struggle for a second chance."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md": {
-   "cle": "67abcfc49fbd",
-   "ar": "(إيبينيزر سكروج) رجل عجوز وفاريش ورجل منعزل بالطبع هو يكره ويحقر عيد الميلاد وكل شيء يولد السعادة ومن ثم فهو يتلقى زيارة شبح شريك سابق وكذلك أرواح عيد الميلاد في الماضي والحاضر والمستقبل.",
-   "en": "Ebenezer Scrooge is an old, avarish, pincer and solitary man. Of course, he hates and despises Christmas and everything that generates happiness. It is then that he receives the visit of the ghost of an ex-partner as well as the Christmas spirits of the past, present and future."
   },
   "_events/auto/tunis-events-cinema/2026-11-17-un-monde-fragile-et-merveilleux.md": {
    "cle": "41e0fa66ceb7",
@@ -1007,6 +1005,11 @@
    "cle": "5f9ad5fa6919",
    "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nLA BELLE ET LA MEUTEDirecteur: Kaouther Ben Hania1h 40mVOSTFR",
    "ar": ".\n<unk> + <unk>\n<unk>.<unk> انضموا إلينا في هذا تشرين الثاني/نوفمبر لسلسلة أفلام خاصة تم شفاؤها بواسطة @hakkadistribution واستضافها @so_sociale بالتعاون مع @cinematun\nالتذاكر هي 20 دي تي وتشمل الفشار والزجاجات.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR"
+  },
+  "_events/auto/tunis-events/2026-11-19-soiree-beaujolais-nouveau-2026.md": {
+   "cle": "4fb9c15f1b78",
+   "ar": "3rd Big Beaujolais New night of the UFE Carthage Coasts\nويُحتفل ببوجوليس نوفو يوم الخميس الثالث في تشرين الثاني/نوفمبر: اجتماع يوم الخميس 19 تشرين الثاني/نوفمبر 2026 في ردهة القنصل العام لفرنسا، في لا مارسا، لمساء تقاليده وحياته من الساعة 00/19 إلى الساعة 30/10.\nOn the programme: tasting of the Beaujolais Nouveau du Domaine Michaël Passot and gourmet country buffet of the Petit Coin de France.\nأعضاء وأصدقاء الاتحاد الفرنسي للجامعة الفرنسية ومجتمعنا وأزواجهم هم",
+   "en": "3rd Big Beaujolais New Night of the UFE Carthage Coasts\nBeaujolais Nouveau is celebrated on the third Thursday in November: meet on Thursday 19 November 2026 at the Residence of the Consul General of France, in La Marsa, for an evening of tradition and conviviality from 7pm to 10:30pm.\nOn the programme: tasting of the Beaujolais Nouveau du Domaine Michaël Passot and gourmet country buffet of the Petit Coin de France.\nMembers and friends of UFE, French of our community and their spouses are the"
   },
   "_events/auto/tunis-events/2026-11-20-la-rue.md": {
    "cle": "dff9989b4b61",

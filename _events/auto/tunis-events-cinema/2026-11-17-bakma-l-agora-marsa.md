@@ -1,5 +1,5 @@
 ---
-title: "BAKMA"
+title: "Bakma"
 date: 2026-11-17 19:00
 end_date: "2026-11-21 20:45"
 venue: "L'Agora Marsa"
@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/bakma"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-17 19:00", "2026-11-21 20:45"]
-image: "https://api.tunis.events/storage/8cf23cd50c02ce7712493c19dbe82f7e.jpeg"
+image: "https://api.tunis.events/storage/scraped/4639630403314665dce73bc1592ee821.png"
 film: true
 ajoute: "2026-11-17"
 doublon: true

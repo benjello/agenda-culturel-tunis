@@ -1334,6 +1334,11 @@
   "ar": "HADOOTA at the cinema : 1 session this week at Le Colosseum. (الجلسة القادمة (تي Nov. 17 الساعة 17: 45 .",
   "en": "HADOOTA at the cinema : 1 session this week at Le Colosseum. Next session Tue. Nov. 17. at 17:45. ."
  },
+ "HICHAM HADDAD": {
+  "de": "fr",
+  "ar": "HICHAM HADDAD",
+  "en": "HICHAM HADDAD"
+ },
  "Habibi Downtown (Instagram)": {
   "de": "fr",
   "ar": "Habi Downtown, Instagram",
@@ -2864,11 +2869,6 @@
   "ar": "R52J+3MQ, Av. حبيب بورغيبا، تونس، تونس",
   "en": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
  },
- "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie": {
-  "de": "fr",
-  "ar": "R52J+3MQ, Av. حبيب بورغيبا، تونس",
-  "en": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisia"
- },
  "R56P+C9J, Av. Mohamed 5, Tunis, Tunis": {
   "de": "fr",
   "ar": "R56P+C9J, Av. محمد 5، تونس، تونس",
@@ -2968,6 +2968,11 @@
   "de": "fr",
   "ar": "(الثقافة)",
   "en": "Realities (culture)"
+ },
+ "Résidence du Consul Général de France": {
+  "de": "fr",
+  "ar": "إقامة القنصل العام لفرنسا",
+  "en": "Residence of the Consul General of France"
  },
  "Salakta, Ksour Essef": {
   "de": "fr",
@@ -3118,6 +3123,11 @@
   "de": "fr",
   "ar": "الجمعية الفلكية في تونس",
   "en": "Astronomical Society of Tunisia"
+ },
+ "Soirée Beaujolais Nouveau 2026 !": {
+  "de": "fr",
+  "ar": "\"بيوجولايس نيو 2026 مساءاً\"",
+  "en": "Beaujolais New 2026 evening!"
  },
  "Soirées de Raqqada": {
   "de": "fr",
@@ -3414,6 +3424,16 @@
   "ar": "V8CW+8GM, Carthage, Carthage",
   "en": "V8CW+8GM, Carthage, Carthage"
  },
+ "V8PH+84X، Rue Kabadou، La Marsa": {
+  "de": "fr",
+  "ar": "V8PH+84X-Kabadou Street, La Marsa",
+  "en": "V8PH+84X-Kabadou Street, La Marsa"
+ },
+ "V8PH+84X، Rue Kabadou، La Marsa, La Marsa": {
+  "de": "fr",
+  "ar": "V8PH+84X-Kabadou Street, La Marsa, La Marsa",
+  "en": "V8PH+84X-Kabadou Street, La Marsa, La Marsa"
+ },
  "Van Gogh": {
   "de": "fr",
   "ar": "Van Gogh",
@@ -3639,11 +3659,6 @@
   "ar": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md"
- },
  "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md": {
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md",
@@ -3663,11 +3678,6 @@
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md": {
   "de": "fr",
@@ -3844,6 +3854,11 @@
   "fr": "Clôture de la quatrième session du Festival national de théâtre tunisien : le couronnement du Prix d'action intégrée",
   "en": "Closure of the fourth session of the Tunisian National Theatre Festival: The crowning of the &quot; Grace &quot; with the Integrated Action Prize"
  },
+ "اضطهاد النساء: الدستوري الحر يدعو الى وقفة احتجاجية امام وزارة المرأة": {
+  "de": "ar",
+  "fr": "Persécution des femmes : la Constitution libre appelle à une protestation contre le Ministère de la femme",
+  "en": "Persecution of women: Free Constitution calls for a protest against the Ministry of Women"
+ },
  "اعلام بتلقي هبة تعلم الجمعية التونسية لعلوم الفلك انه في نطاق الاستعداد للكسوف الكلي للشمس يوم 2 أوت 2027 و في نطاق تعاونها مع الاتحاد الدولي للفلك في نشر علم الفلك بين الناشئة أنها تلقت …": {
   "de": "ar",
   "fr": "Informations sur la réception d'un don que la Société tunisienne d'astronomie enseigne qu'elle est en préparation de l'éclipse solaire totale sur 2 ou 2027 et dans le cadre de sa coopération avec la Fédération internationale d'astronomie dans la diffusion de l'astronomie entre les jeunes qu'elle a reçus...",
@@ -3899,6 +3914,11 @@
   "fr": "La Maison de la culture est Hercule.",
   "en": "The House of Culture is Hercules."
  },
+ "شمس الشرق أرض واحدة… قلب واحد": {
+  "de": "ar",
+  "fr": "Le soleil de l'Est est une terre... Un cœur.",
+  "en": "The sun of the East is one land... One heart."
+ },
  "محاضرة بعنوان : القيم العربيّة في الشّعر الجاهلي للأستاذ مبروك المنّاعي": {
   "de": "ar",
   "fr": "Conférence : Les valeurs arabes dans le poète prédateur du professeur M.B.",
@@ -3943,5 +3963,10 @@
   "de": "fr",
   "ar": "\"العالم الهش والرائع من قبل \"سيريل آريس يخرج في مسرحيات تونس",
   "en": "‘‘A fragile and wonderful world' by Cyril Aris goes out in theaters in Tunis"
+ },
+ "“شمس الشرق أرض واحدة… قلب واحد”: تفتتح أيام قرطاج المسرحية": {
+  "de": "ar",
+  "fr": "\"Le soleil de l'Est est une terre... \"Un cœur\" : Les Journées théâtrales de Cartagena sont ouvertes.",
+  "en": "\"The sun of the East is one land... \"One heart\": Theatrical Cartagena Days open."
  }
 }

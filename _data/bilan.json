@@ -336,7 +336,7 @@
  {
   "semaine": "2026-S47",
   "date": "2026-11-17",
-  "a_venir": 142,
+  "a_venir": 143,
   "sept_jours": 92,
   "sources_actives": 73,
   "sources_avec_evenements": 28,
@@ -396,11 +396,11 @@
    "sud": 3
   },
   "par_categorie": {
-   "cinema": 33,
+   "cinema": 32,
    "expo": 15,
    "conference": 13,
    "theatre": 10,
-   "autre": 9,
+   "autre": 10,
    "musique": 6,
    "litterature": 5,
    "patrimoine": 1
@@ -417,9 +417,9 @@
   },
   "par_source": {
    "ift-pdf": 22,
-   "tunis-events": 14,
+   "tunis-events": 15,
    "cine-agora": 9,
-   "tunis-events-cinema": 8,
+   "tunis-events-cinema": 7,
    "cine-alhambra": 5,
    "beit-al-hikma": 3,
    "ig-b7l9": 3,

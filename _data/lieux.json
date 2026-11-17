@@ -40,6 +40,7 @@
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
   "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
+  "Résidence du Consul Général de France": "residence-du-consul-general-de-france",
   "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
   "AÏNA": "aina",
   "Espace \"L'Artisto\"": "espace-l-artisto",
@@ -114,6 +115,15 @@
    "n": 8
   },
   {
+   "slug": "theatre-municipal-de-tunis",
+   "nom": "Théâtre municipal de Tunis",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.79911,
+   "lon": 10.18081,
+   "n": 8
+  },
+  {
    "slug": "cinema-alhambra-zephyr",
    "nom": "Cinéma Alhambra Zéphyr",
    "type": "cinema",
@@ -129,15 +139,6 @@
    "ville": "tunis",
    "lat": 36.854,
    "lon": 10.324,
-   "n": 7
-  },
-  {
-   "slug": "theatre-municipal-de-tunis",
-   "nom": "Théâtre municipal de Tunis",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.79911,
-   "lon": 10.18081,
    "n": 7
   },
   {
@@ -174,15 +175,6 @@
    "ville": "tunis",
    "lat": 36.52364,
    "lon": 10.55862,
-   "n": 5
-  },
-  {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
    "n": 5
   },
   {
@@ -228,6 +220,15 @@
    "ville": "tunis",
    "lat": 34.59926,
    "lon": 9.59188,
+   "n": 3
+  },
+  {
+   "slug": "cinema-le-colisee",
+   "nom": "Cinéma Le Colisée",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.80014,
+   "lon": 10.18189,
    "n": 3
   },
   {
