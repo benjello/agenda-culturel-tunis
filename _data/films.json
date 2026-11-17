@@ -2,7 +2,7 @@
  {
   "titre": "BAKMA - بكمة",
   "id": "bakma",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png",
+  "image": "assets/images/5e2060567217.png",
   "imdb": "tt43666030",
   "duree": null,
   "genres": [
@@ -236,7 +236,7 @@
  {
   "titre": "Dar El 3ers - دار العرس",
   "id": "dar-el-3ers",
-  "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
+  "image": "assets/images/b5cc373e5cdf.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -319,7 +319,7 @@
  {
   "titre": "LAST CHANCE - لص شايح",
   "id": "last-chance",
-  "image": "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "image": "assets/images/b87fd03b9b45.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -388,7 +388,7 @@
  {
   "titre": "Scrooge / Ebenezer",
   "id": "scrooge-ebenezer",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
+  "image": "assets/images/0523b923705e.webp",
   "imdb": "tt38773219",
   "duree": null,
   "genres": [
@@ -478,7 +478,7 @@
  {
   "titre": "weekend - ويكاند",
   "id": "weekend",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "image": "assets/images/ce7c7b7cfe8d.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -554,7 +554,7 @@
  {
   "titre": "Jupiter",
   "id": "jupiter",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
+  "image": "assets/images/36d2d9a4c8ad.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -625,7 +625,7 @@
  {
   "titre": "Comment braquer une banque ?",
   "id": "comment-braquer-une-banque",
-  "image": "https://api.tunis.events/storage/scraped/740733fec3f5f04600a0fa080210c9f2.jpg",
+  "image": "assets/images/913d59a66384.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -656,12 +656,15 @@
    "_events/auto/tunis-events-cinema/2026-11-17-comment-braquer-une-banque.md"
   ],
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Comment braquer une banque ? au cinéma : 2 séances cette semaine à Pathé Tunis City. Prochaine séance mar. 17 nov. à 16:50.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Dar el 3ers دار العرس",
   "id": "dar-el-3ers",
-  "image": "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg",
+  "image": "assets/images/a98353ce7c46.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -708,7 +711,7 @@
  {
   "titre": "HADOOTA / حدوتة",
   "id": "hadoota",
-  "image": "https://api.tunis.events/storage/scraped/889148e8feaafadab19895af75eea3a1.jpg",
+  "image": "assets/images/7ee663cee1e5.jpg",
   "imdb": "tt43638234",
   "duree": null,
   "genres": [],
@@ -743,12 +746,15 @@
   "age": "",
   "tunisien": false,
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "HADOOTA / حدوتة au cinéma : 2 séances cette semaine à Pathé Tunis City. Prochaine séance mar. 17 nov. à 15:20.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Hope",
   "id": "hope",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/gnd9hzyunjtbowh1yphb",
+  "image": "assets/images/569783d0d51c.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -787,7 +793,7 @@
  {
   "titre": "LA BELLE ET LA MEUTE",
   "id": "la-belle-et-la-meute",
-  "image": "https://tunis.events/storage/a9a8780a69ef2a101f314f100390132380.jpg",
+  "image": "assets/images/8273289000cf.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -871,7 +877,7 @@
  {
   "titre": "Le Mystère Lucy Lost",
   "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "image": "assets/images/42400672d09b.webp",
   "imdb": "tt10569744",
   "duree": null,
   "genres": [],
@@ -923,7 +929,7 @@
  {
   "titre": "Le Secret des mésanges",
   "id": "le-secret-des-mesanges",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/luzoie8a1v3fhufv1gin",
+  "image": "assets/images/4c2343ebabf3.avif",
   "imdb": "tt29497084",
   "duree": null,
   "genres": [
@@ -1007,7 +1013,7 @@
  {
   "titre": "NN 2026 : Eat the Night",
   "id": "nn-2026-eat-the-night",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/h4ln4xzk5cd91ojeyjrb",
+  "image": "assets/images/ccb9e46a7608.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1046,7 +1052,7 @@
  {
   "titre": "NN2026 : Level Five",
   "id": "nn2026-level-five",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/y8dzvqmcp9ypaeu2qnx2",
+  "image": "assets/images/6e5ef08a9c59.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1085,7 +1091,7 @@
  {
   "titre": "Papa où t'es ?",
   "id": "papa-ou-t-es",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fn5gxvzzqw2c4tscsfvf",
+  "image": "assets/images/c2b9cb3082d4.avif",
   "imdb": "tt8784060",
   "duree": null,
   "genres": [
@@ -1130,7 +1136,7 @@
  {
   "titre": "Rue Málaga",
   "id": "rue-malaga",
-  "image": "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg",
+  "image": "assets/images/4c49a95d3dcd.jpg",
   "imdb": "tt32429174",
   "duree": null,
   "genres": [],
@@ -1189,7 +1195,7 @@
  {
   "titre": "Sous les étoiles de Paris",
   "id": "sous-les-etoiles-de-paris",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/saxyrd5uxztw4xigkxfm",
+  "image": "assets/images/bb25276097df.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1228,7 +1234,7 @@
  {
   "titre": "The Hunger Games: Sunrise on the Reaping",
   "id": "the-hunger-games-sunrise-on-the-reaping",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp",
+  "image": "assets/images/b0ccb061405b.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1284,7 +1290,7 @@
  {
   "titre": "Touskié Tounsi",
   "id": "touskie-tounsi",
-  "image": "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png",
+  "image": "assets/images/f738c4dcb71a.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1323,7 +1329,7 @@
  {
   "titre": "Un monde fragile et merveilleux",
   "id": "un-monde-fragile-et-merveilleux",
-  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
+  "image": "assets/images/90df52b196d1.jpg",
   "imdb": "tt32622406",
   "duree": null,
   "genres": [],
@@ -1441,7 +1447,7 @@
  {
   "titre": "Van Gogh",
   "id": "van-gogh",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/van-gogh.jpg",
+  "image": "assets/images/52f0c74a9c49.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1480,7 +1486,7 @@
  {
   "titre": "What Else",
   "id": "what-else",
-  "image": "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg",
+  "image": "assets/images/6183a6d14a92.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
