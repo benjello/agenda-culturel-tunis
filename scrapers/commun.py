@@ -58,6 +58,13 @@ def page(url: str) -> BeautifulSoup:
     return BeautifulSoup(telecharger(url), "html.parser")
 
 
+def masquer(texte: str) -> str:
+    """Retire les jetons d'accès d'un message d'erreur avant de l'écrire dans les fichiers
+    du dépôt (une erreur HTTP reprend l'adresse appelée, jeton compris)."""
+    texte = re.sub(r"apify_api_[A-Za-z0-9]+", "apify_api_***", texte)
+    return re.sub(r"(token|api_key|apikey)=[^&\s'\"]+", r"\1=***", texte, flags=re.I)
+
+
 def slug(texte: str) -> str:
     t = unicodedata.normalize("NFKD", texte).encode("ascii", "ignore").decode()
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-") or "evenement"

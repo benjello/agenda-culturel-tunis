@@ -81,7 +81,7 @@ def main(argv=None) -> int:
             print(f"… {s['id']} : en attente ({exc})")
         except Exception as exc:  # noqa: BLE001 — une source en panne ne doit pas arrêter les autres
             echecs += 1
-            e.update(ok=False, erreur=f"{type(exc).__name__}: {exc}"[:300])
+            e.update(ok=False, erreur=commun.masquer(f"{type(exc).__name__}: {exc}")[:300])
             print(f"✗ {s['id']} : {e['erreur']}", file=sys.stderr)
             if args.debug:
                 traceback.print_exc()
