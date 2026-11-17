@@ -11,9 +11,31 @@
   ],
   "jours": [
    "2026-11-17",
-   "2026-11-21"
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
   ],
   "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
    {
     "nom": "Cinéma Le Colisée",
     "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
@@ -71,6 +93,7 @@
   ],
   "fichiers": [
    "_events/auto/cine-agora/2026-11-17-bakma.md",
+   "_events/auto/cine-alhambra/2026-11-17-bakma.md",
    "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md",
    "_events/auto/tunis-events-cinema/2026-11-17-bakma-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-17-bakma.md"
@@ -93,6 +116,131 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Je m'appelle Clara",
+  "id": "je-m-appelle-clara",
+  "image": "assets/programmes/cine-360/9314b97cda39.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "salles": [
+   {
+    "nom": "Ciné 350 (Cité de la Culture)",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100057029246724/posts/1675696127674679",
+    "source": "cine-360",
+    "source_nom": "Ciné 350",
+    "jours": [
+     "2026-11-18",
+     "2026-11-20",
+     "2026-11-21"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "21:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/je-mappelle-clara/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-20",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "18:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-360/2026-11-18-je-m-appelle-clara.md",
+   "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md",
+   "_events/auto/cine-alhambra/2026-11-17-je-m-appelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Ayda est opératrice dans un centre d’appel depuis plusieurs années. Elle a la quarantaine et vit seule dans un quartier de Tunis. Elle passe ses journées à répéter les mêmes phrases à des inconnus au bout du fil, sous le pseudonyme de Clara, une conseillère client qui vend des forfaits vacances. Dans ce centre d’appel, le travail est très surveillé et seule la rentabilité compte.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
   "titre": "Scrooge / Ebenezer",
   "id": "scrooge-ebenezer",
   "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
@@ -102,9 +250,32 @@
    "Fantastique"
   ],
   "jours": [
-   "2026-11-17"
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
   ],
   "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
    {
     "nom": "Cinéma Le Colisée",
     "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
@@ -165,6 +336,7 @@
   ],
   "fichiers": [
    "_events/auto/cine-agora/2026-11-17-scrooge.md",
+   "_events/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md",
    "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
    "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md"
@@ -187,9 +359,32 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-17"
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
   ],
   "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
    {
     "nom": "Cinéma Le Colisée",
     "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
@@ -230,12 +425,162 @@
    }
   ],
   "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md",
    "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md",
    "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
   "presse": []
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": []
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-17-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "weekend - ويكاند",
+  "id": "weekend",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "17:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/weekend/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-weekend.md",
+   "_events/auto/cine-alhambra/2026-11-17-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "HADOOTA / حدوتة",
@@ -298,29 +643,48 @@
   "presse": []
  },
  {
-  "titre": "Je m’appelle Clara",
-  "id": "je-mappelle-clara",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Je-mappelle-Clara-.jpeg",
+  "titre": "Jupiter",
+  "id": "jupiter",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
+   "2026-11-17",
    "2026-11-18",
    "2026-11-19",
    "2026-11-20",
-   "2026-11-22"
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
   ],
   "salles": [
    {
-    "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Tunisie",
-    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
+     "2026-11-17",
      "2026-11-18",
      "2026-11-19",
-     "2026-11-20"
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/jupiter/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-22"
     ],
     "heures": [
      {
@@ -330,147 +694,7 @@
       ]
      },
      {
-      "jour": "2026-11-19",
-      "heures": [
-       "19:00"
-      ]
-     },
-     {
-      "jour": "2026-11-20",
-      "heures": [
-       "21:15"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/je-mappelle-clara/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-18",
-     "2026-11-20",
-     "2026-11-22"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "19:00"
-      ]
-     },
-     {
-      "jour": "2026-11-20",
-      "heures": [
-       "18:30"
-      ]
-     },
-     {
       "jour": "2026-11-22",
-      "heures": [
-       "16:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Ayda est opératrice dans un centre d’appel depuis plusieurs années. Elle a la quarantaine et vit seule dans un quartier de Tunis. Elle passe ses journées à répéter les mêmes phrases à des inconnus au bout du fil, sous le pseudonyme de Clara, une conseillère client qui vend des forfaits vacances. Dans ce centre d’appel, le travail est très surveillé et seule la rentabilité compte.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "LAST CHANCE - لص شايح",
-  "id": "last-chance",
-  "image": "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-17"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Le Colisée",
-    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
-    "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": []
-   },
-   {
-    "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": []
-   }
-  ],
-  "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md"
-  ],
-  "tunisien": true,
-  "jeune": false,
-  "presse": []
- },
- {
-  "titre": "weekend - ويكاند",
-  "id": "weekend",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-17",
-   "2026-11-21"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Le Palace",
-    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-    "lien": "https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace",
-    "source": "tunis-events-cinema",
-    "source_nom": "tunis.events (cinéma)",
-    "jours": [
-     "2026-11-17"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-17",
-      "heures": [
-       "17:30"
-      ]
-     }
-    ]
-   },
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/weekend/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-21"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-21",
       "heures": [
        "18:45"
       ]
@@ -479,13 +703,13 @@
    }
   ],
   "fichiers": [
-   "_events/auto/cine-agora/2026-11-21-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-17-weekend.md",
-   "_events/auto/tunis-events-cinema/2026-11-21-weekend.md"
+   "_events/auto/cine-agora/2026-11-18-jupiter.md",
+   "_events/auto/cine-alhambra/2026-11-17-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-jupiter.md"
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -615,54 +839,6 @@
   "jeune": false,
   "presse": [],
   "synopsis": "L'Institut français de Tunisie vous propose la projection du film Hope de Na Hong-jin.\nRésumé : (VOSTFR, Interdit au -12 ans avec avertissement)\nLes renforts sont partis maîtriser des feux de forêt et toutes les communications sont coupées.\nAu poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "Jupiter",
-  "id": "jupiter",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-18",
-   "2026-11-22"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/jupiter/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-18",
-     "2026-11-22"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "21:00"
-      ]
-     },
-     {
-      "jour": "2026-11-22",
-      "heures": [
-       "18:45"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-18-jupiter.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-jupiter.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
   "synopsis_source": "",
   "synopsis_url": ""
  },

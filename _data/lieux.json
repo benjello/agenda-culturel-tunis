@@ -1,13 +1,12 @@
 {
  "index": {
   "Beit al-Hikma, Carthage": "beit-al-hikma-carthage",
+  "Ciné 350 (Cité de la Culture)": "cine-350-cite-de-la-culture",
   "L'Agora Marsa": "lagora-la-marsa",
+  "Cinéma Alhambra Zéphyr": "cinema-alhambra-zephyr",
   "El Teatro": "el-teatro",
-  "Lartisto — Lafayette": "lartisto-lafayette",
   "Lartisto": "lartisto",
   "Cité des sciences de Tunis": "cite-des-sciences-de-tunis",
-  "Auditorium de l'IFT (20, avenue de Paris, Tunis)": "auditorium-de-l-ift-20-avenue-de-paris-tunis",
-  "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": "mediatheque-de-l-ift-20-avenue-de-paris-tunis",
   "Institut français de Tunisie": "institut-francais-de-tunisie",
   "Institut Français de Tunis": "institut-francais-de-tunis",
   "Institut français de Tunis": "institut-francais-de-tunis",
@@ -22,21 +21,22 @@
   "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "L'Agora Djerba": "l-agora-djerba",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
-  "مركز الفنون B7L9": "b7l9",
+  "B7L9 Art Station": "b7l9-art-station",
+  "Saturday 21 November": "saturday-21-november",
+  "B7L9 Art Centre": "b7l9-art-centre",
   "CinéMadart": "cinemadart",
   "CinéMadart, Carthage Dermech": "cinemadart",
   "Creative Hub, Sidi Bou Saïd": "creative-hub-sidi-bou-said",
+  "Lafayette Tunis": "lafayette-tunis",
   "Galerie Insular, Erriadh (Djerbahood)": "galerie-insular-erriadh-djerbahood",
-  "Habibi Downtown, Tunis": "habibi-downtown-tunis",
   "habibidowntown_": "habibidowntown",
   "La Boîte": "la-boite",
-  "Shanti": "shanti",
+  "44 • 46 rue du Niger, Montplaisir Tunis": "44-46-rue-du-niger-montplaisir-tunis",
   "Le Violon Bleu, Sidi Bou Saïd": "le-violon-bleu-sidi-bou-said",
   "Théâtre de l'Opéra de Tunis, Cité de la Culture": "theatre-de-l-opera-de-tunis-cite-de-la-culture",
   "TBA - studio 52": "tba-studio-52",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
-  "B7L9 Art Centre": "b7l9-art-centre",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
   "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
@@ -114,6 +114,24 @@
    "n": 8
   },
   {
+   "slug": "cinema-alhambra-zephyr",
+   "nom": "Cinéma Alhambra Zéphyr",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.878,
+   "lon": 10.3245,
+   "n": 7
+  },
+  {
+   "slug": "cinemadart",
+   "nom": "CinéMadart",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.854,
+   "lon": 10.324,
+   "n": 7
+  },
+  {
    "slug": "theatre-municipal-de-tunis",
    "nom": "Théâtre municipal de Tunis",
    "type": "theatre",
@@ -129,15 +147,6 @@
    "ville": "sousse",
    "lat": 36.83351,
    "lon": 10.10422,
-   "n": 6
-  },
-  {
-   "slug": "cinemadart",
-   "nom": "CinéMadart",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.854,
-   "lon": 10.324,
    "n": 6
   },
   {
@@ -159,6 +168,15 @@
    "n": 5
   },
   {
+   "slug": "la-boite",
+   "nom": "La Boîte",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.52364,
+   "lon": 10.55862,
+   "n": 5
+  },
+  {
    "slug": "cinema-le-colisee",
    "nom": "Cinéma Le Colisée",
    "type": "cinema",
@@ -166,6 +184,15 @@
    "lat": 36.80014,
    "lon": 10.18189,
    "n": 5
+  },
+  {
+   "slug": "b7l9-art-centre",
+   "nom": "B7L9 Art Centre",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.889,
+   "lon": 10.307,
+   "n": 4
   },
   {
    "slug": "cinema-le-palace",
@@ -195,15 +222,6 @@
    "n": 3
   },
   {
-   "slug": "b7l9-art-centre",
-   "nom": "B7L9 Art Centre",
-   "type": "centre_art",
-   "ville": "tunis",
-   "lat": 36.889,
-   "lon": 10.307,
-   "n": 3
-  },
-  {
    "slug": "sociale-sidi-bou-said",
    "nom": "Sociale Sidi Bou Said",
    "type": "club",
@@ -222,6 +240,33 @@
    "n": 3
   },
   {
+   "slug": "le-32bis",
+   "nom": "Le 32Bis",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.79509,
+   "lon": 10.1838,
+   "n": 3
+  },
+  {
+   "slug": "cite-des-sciences-de-tunis",
+   "nom": "Cité des sciences de Tunis",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.84767,
+   "lon": 10.18839,
+   "n": 2
+  },
+  {
+   "slug": "institut-francais-de-tunisie",
+   "nom": "Institut français de Tunisie",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8021,
+   "lon": 10.18066,
+   "n": 2
+  },
+  {
    "slug": "institut-francais-de-sousse",
    "nom": "Institut français de Sousse",
    "type": "centre",
@@ -237,15 +282,6 @@
    "ville": "sousse",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 2
-  },
-  {
-   "slug": "la-boite",
-   "nom": "La Boîte",
-   "type": "centre_art",
-   "ville": "tunis",
-   "lat": 36.52364,
-   "lon": 10.55862,
    "n": 2
   },
   {
@@ -267,15 +303,6 @@
    "n": 2
   },
   {
-   "slug": "le-32bis",
-   "nom": "Le 32Bis",
-   "type": "centre_art",
-   "ville": "tunis",
-   "lat": 36.79509,
-   "lon": 10.1838,
-   "n": 2
-  },
-  {
    "slug": "cite-de-la-culture",
    "nom": "Cité de la Culture",
    "type": "centre",
@@ -283,6 +310,15 @@
    "lat": 36.8109,
    "lon": 10.18608,
    "n": 2
+  },
+  {
+   "slug": "cine-350-cite-de-la-culture",
+   "nom": "Ciné 350 (Cité de la Culture)",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.8125,
+   "lon": 10.1817,
+   "n": 1
   },
   {
    "slug": "el-teatro",
@@ -300,24 +336,6 @@
    "ville": "tunis",
    "lat": 32.92995,
    "lon": 10.44757,
-   "n": 1
-  },
-  {
-   "slug": "cite-des-sciences-de-tunis",
-   "nom": "Cité des sciences de Tunis",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.84767,
-   "lon": 10.18839,
-   "n": 1
-  },
-  {
-   "slug": "institut-francais-de-tunisie",
-   "nom": "Institut français de Tunisie",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8021,
-   "lon": 10.18066,
    "n": 1
   },
   {
@@ -348,12 +366,21 @@
    "n": 1
   },
   {
-   "slug": "shanti",
-   "nom": "Shanti",
-   "type": "club",
+   "slug": "lafayette-tunis",
+   "nom": "Lafayette Tunis",
+   "type": "autre",
    "ville": "tunis",
-   "lat": 36.82213,
-   "lon": 10.18498,
+   "lat": 36.81321,
+   "lon": 10.18154,
+   "n": 1
+  },
+  {
+   "slug": "44-46-rue-du-niger-montplaisir-tunis",
+   "nom": "44 • 46 rue du Niger, Montplaisir Tunis",
+   "type": "autre",
+   "ville": "tunis",
+   "lat": 36.82117,
+   "lon": 10.185,
    "n": 1
   },
   {

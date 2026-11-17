@@ -109,6 +109,16 @@
   "ar": "الطبعة 43 (رامادان)",
   "en": "43rd edition (Ramadan)"
  },
+ "44 • 46 rue du Niger": {
+  "de": "fr",
+  "ar": "44 • 46 rue du Niger",
+  "en": "44 • 46 rue du Niger"
+ },
+ "44 • 46 rue du Niger, Montplaisir Tunis": {
+  "de": "fr",
+  "ar": "44 • 46 rue du Niger, Montplaisir Tunis",
+  "en": "44 • 46 rue du Niger, Montplaisir Tunis"
+ },
  "5 avenue Taïeb Mhiri": {
   "de": "fr",
   "ar": "5 Taïeb Mhiri Avenue",
@@ -134,15 +144,15 @@
   "ar": "في عيد القديسين، سكان مزرعة (موسي بوتوم) يبهجون في احتفالات، حتى يفرش المزارع الخبيث اليقطين المحبوب من القطيع. عندما يتحول (شون) إلى عالم مجنون لحل المشكلة الأمور تسوء",
   "en": "At Halloween, the inhabitants of Mossy Bottom's farm rejoice at the festivities, until the clumsy farmer ransacks the beloved pumpkins of the herd. When Shaun turns into a mad scientist to solve the problem, things go wrong: the farmer disappears and a wild beast wanders around the woods."
  },
+ "A big thank you to everyone who came to visit 'Kids of the World, Unite!', an exhibition c": {
+  "de": "en",
+  "fr": "Un grand merci à tous ceux qui sont venus visiter 'Les enfants du monde, Unite!', une exposition c",
+  "ar": "شكراً جزيلاً لكل من جاء لزيارته لـ (كايدز) من العالم يا (وحيد)"
+ },
  "AJST (Facebook)": {
   "de": "fr",
   "ar": "AJST (Facebook)",
   "en": "AJST (Facebook)"
- },
- "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS": {
-  "de": "fr",
-  "ar": "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS",
-  "en": "AKEN A: MATTER PHASE I: LAYERED SYSTEM DYNAMICS"
  },
  "ASECHS": {
   "de": "fr",
@@ -229,6 +239,11 @@
   "ar": "بعد متدربه في الملجأ، انتقل (فينسنت فان غوغ) إلى (أوفرس-أوز) إلى منزل الدكتور (غات) عاشق فني. الأيام الأخيرة للرسام كانت مُميزة بالعلاقات المتضاربة التي كان يُقيمها مع أخيه (ثيو)، وصحته العقلية كانت مُتشردة.",
   "en": "After his internment in the asylum, Vincent Van Gogh moved to Auvers-sur-Oise to the home of Dr.Gachet, an art lover. The painter's last days were marked by the conflicting relations he had with his brother Theo, and his mental health was vagrant."
  },
+ "Art Explora Festival": {
+  "de": "en",
+  "fr": "Festival d'Art Explora",
+  "ar": "مهرجان أكسبلورا"
+ },
  "ArtFusion célèbre la diversité et l’inclusion à travers l’exposition « Un autre regard sur le monde »": {
   "de": "fr",
   "ar": "(أرتفوسيون) يحتفل بالتنوع والإدماج من خلال المعرض \"القي نظرة أخرى على العالم\"",
@@ -253,16 +268,6 @@
   "de": "fr",
   "ar": "قاعة المحاضرات",
   "en": "Auditorium"
- },
- "Auditorium de l'IFT (20": {
-  "de": "fr",
-  "ar": "قاعة محاضرات الاتحاد الدولي للاتصالات (20",
-  "en": "IFT Auditorium (20"
- },
- "Auditorium de l'IFT (20, avenue de Paris, Tunis)": {
-  "de": "fr",
-  "ar": "قاعة محاضرات الاتحاد الدولي للاتصالات (20، مدخل باريس، تونس)",
-  "en": "IFT Auditorium (20, avenue de Paris, Tunis)"
  },
  "Auditorium, Institut français de Tunis": {
   "de": "fr",
@@ -338,6 +343,11 @@
   "de": "fr",
   "ar": "B7L9 مركز الفنون",
   "en": "B7L9 Art Centre"
+ },
+ "B7L9 Art Station": {
+  "de": "fr",
+  "ar": "B7L9 محطة الفنون",
+  "en": "B7L9 Art Station"
  },
  "B7L9 Art Station (Instagram)": {
   "de": "fr",
@@ -564,6 +574,11 @@
   "ar": "Chemtou, Jendouba",
   "en": "Chemtou, Jendouba"
  },
+ "Ciné 350 (Cité de la Culture)": {
+  "de": "fr",
+  "ar": "Ciné 350 (City of Culture)",
+  "en": "Ciné 350 (City of Culture)"
+ },
  "Ciné-club de Tunis (Instagram)": {
   "de": "fr",
   "ar": "Ciné-club de Tunis (Instagram)",
@@ -593,6 +608,11 @@
   "de": "fr",
   "ar": "سينما",
   "en": "Cinema"
+ },
+ "Cinéma Alhambra Zéphyr": {
+  "de": "fr",
+  "ar": "Cinema Alhambra Zephyr",
+  "en": "Cinema Alhambra Zephyr"
  },
  "Cinéma Amilcar (El Manar)": {
   "de": "fr",
@@ -694,6 +714,11 @@
   "ar": "كيف أسرق مصرفاً؟ في السينما: عرضان هذا الأسبوع في مدينة باثي تونس. (الجلسة القادمة (تي Nov. 17 في الساعة 16: 50",
   "en": "How do I rob a bank? at the cinema: 2 screenings this week in Pathé Tunis City. Next session Tue. Nov. 17. at 16:50."
  },
+ "Communiqué de presse": {
+  "de": "fr",
+  "ar": "بيان صحفي",
+  "en": "Press release"
+ },
  "Compte fiscal unique : Lancement reporté à 2027, seulement 37.000 factures électroniques réglées": {
   "de": "fr",
   "ar": "حساب ضريبي واحد: تم تأجيل الإطلاق إلى عام 2027، ولم يسدد سوى 000 37 فاتورة إلكترونية",
@@ -743,11 +768,6 @@
   "de": "en",
   "fr": "Initiatives culturelles en Afrique du Nord et au Moyen-Orient",
   "ar": "المبادرات الثقافية في شمال أفريقيا والشرق الأوسط"
- },
- "Cyril Aris sera avec nous pour une discussion en visioconférence après la projection en av": {
-  "de": "fr",
-  "ar": "سيريل آريس سيكون معنا لمناقشه في مؤتمر الفيديو بعد الفرز",
-  "en": "Cyril Aris will be with us for a discussion in video conference after the screening in"
  },
  "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le fantôme d’Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache. Ce fantôme farceur va entraîner Ducobu, Léonie, leurs parents et Kitrish dans une série de péripéties aussi drôles qu’inattendues.": {
   "de": "fr",
@@ -809,11 +829,6 @@
   "ar": "التواريخ المقبلة",
   "en": "Forthcoming dates"
  },
- "De novembre 2026 à Janvier 2027, la Médiathèque de l'Institut français de Tunisie organise": {
-  "de": "fr",
-  "ar": "في الفترة من تشرين الثاني/نوفمبر 2026 إلى كانون الثاني/يناير 2027، تنظم مكتبة وسائط الإعلام التابعة للمعهد التونسي الفرنسي مكتبة الإعلام",
-  "en": "From November 2026 to January 2027, the Media Library of the French Institute of Tunisia organizes"
- },
  "Designed as an invitation to participate, this exhibition seeks to think equally with our": {
   "de": "en",
   "fr": "Conçue comme une invitation à participer, cette exposition cherche à penser également avec notre",
@@ -843,6 +858,11 @@
   "de": "fr",
   "ar": "Diquadilà - min hne men ghadi",
   "en": "Diquadilà - min hne men ghadi"
+ },
+ "Diquadilà : Entre deux rives, des histoires de départs, d'attente et de traversées": {
+  "de": "fr",
+  "ar": "بين شاطئين، قصص المغادرة، الانتظار والعبور",
+  "en": "Diquadilà: Between two shores, stories of departures, waiting and crossings"
  },
  "Discussion avec Elgas": {
   "de": "fr",
@@ -1334,20 +1354,10 @@
   "ar": "HADOOTA at the cinema : 1 session this week at Le Colosseum. (الجلسة القادمة (تي Nov. 17 الساعة 17: 45 .",
   "en": "HADOOTA at the cinema : 1 session this week at Le Colosseum. Next session Tue. Nov. 17. at 17:45. ."
  },
- "Habibi Downtown": {
-  "de": "fr",
-  "ar": "حابي وسط المدينة",
-  "en": "Habibi Downtown"
- },
  "Habibi Downtown (Instagram)": {
   "de": "fr",
   "ar": "Habi Downtown, Instagram",
   "en": "Habibi Downtown, Instagram"
- },
- "Habibi Downtown, Tunis": {
-  "de": "fr",
-  "ar": "حبيبى داونتاون، تونس",
-  "en": "Habibi Downtown, Tunis"
  },
  "Hafida Ben Rejeb Latta": {
   "de": "fr",
@@ -1489,6 +1499,11 @@
   "ar": "J-30: The 40th Business Days make execution the big challenge of the Tunisian economy (Video)",
   "en": "J-30: The 40th Business Days make execution the big challenge of the Tunisian economy (Video)"
  },
+ "JAOU TUNIS 2026": {
+  "de": "fr",
+  "ar": "JAOU TUNIS 2026",
+  "en": "JAOU TUNIS 2026"
+ },
  "JCC 2026 | Appel à candidatures pour le recrutement des bénévoles": {
   "de": "fr",
   "ar": "لجنة التنسيق المشتركة 2026: دعوة إلى تقديم طلبات توظيف المتطوعين",
@@ -1544,7 +1559,7 @@
   "ar": "Jazz à Carthage is a Tunisian international fetival dedicated to jazz and similar music since 2005.",
   "en": "Jazz à Carthage is a Tunisian international festival dedicated to jazz and similar music since 2005."
  },
- "Je m’appelle Clara": {
+ "Je m'appelle Clara": {
   "de": "fr",
   "ar": "اسمي كلارا.",
   "en": "My name is Clara."
@@ -1824,6 +1839,11 @@
   "ar": "The City of Science in Tunis is a Tunisian institution specialized in the dissemination of scientific and technical culture at the national level.",
   "en": "The City of Science in Tunis is a Tunisian institution specialized in the dissemination of scientific and technical culture at the national level."
  },
+ "La Faculté des Sciences Juridiques, Politiques et Sociales de Tunis en partenariat avec L’": {
+  "de": "fr",
+  "ar": "كلية العلوم القانونية والسياسية والاجتماعية في تونس في شراكة مع لام",
+  "en": "The Faculty of Legal, Political and Social Sciences of Tunis in partnership with L"
+ },
  "La Galerie Insular a le privilège d’accueillir la 3ème édition de Petit pays, je t’aime be": {
   "de": "fr",
   "ar": "معرض الإنسولي له شرف استضافة الطبعة الثالثة من البلد الصغير، أحب أن أكون",
@@ -1874,6 +1894,11 @@
   "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité.",
   "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability."
  },
+ "Lafayette Tunis": {
+  "de": "fr",
+  "ar": "Lafayette Tunis",
+  "en": "Lafayette Tunis"
+ },
  "Lartisto": {
   "de": "fr",
   "ar": "Lartisto",
@@ -1883,11 +1908,6 @@
   "de": "fr",
   "ar": "مسرح لارتستو وسينيما",
   "en": "Lartisto theatre and cinema"
- },
- "Lartisto — Lafayette": {
-  "de": "fr",
-  "ar": "لارتستو - لافاييت",
-  "en": "Lartisto — Lafayette"
  },
  "Layali el Qamar": {
   "de": "fr",
@@ -2023,11 +2043,6 @@
   "de": "fr",
   "ar": "The Blue Violin, Sidi Bou Said",
   "en": "The Blue Violin, Sidi Bou Said"
- },
- "Le chemin se termine, la fête commence": {
-  "de": "fr",
-  "ar": "نهاية الطريق، تبدأ الحفلة",
-  "en": "The road ends, the party begins"
  },
  "Le cinéma Le Palace, anciennement appelé Politeama Rossini ou Rossini Palace, est un bâtiment tunisien situé sur l'avenue Habib-Bourguiba à Tunis. Il sert de nos jours de salle de cinéma.": {
   "de": "fr",
@@ -2179,16 +2194,6 @@
   "ar": "(ووز) (صوفي)",
   "en": "The Woes of Sophie"
  },
- "Les Rencontres Théâtrales de Lartisto commencent !": {
-  "de": "fr",
-  "ar": "محاسبي (لارتيستو) يبدأون!",
-  "en": "The Teatro Encounters of Lartisto begin!"
- },
- "Les Rencontres Théâtrales de Lartisto continuent !": {
-  "de": "fr",
-  "ar": "محاسبي (لارتيستو) يستمرون!",
-  "en": "The Teatro Encounters of Lartisto continue!"
- },
  "Les toiles de Jellal Ben Abdallah s’entrelacent avec celles d’artistes de différentes générations, tissant ensemble les fils d’une même histoire : celle": {
   "de": "fr",
   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة:",
@@ -2213,6 +2218,11 @@
   "de": "fr",
   "ar": "ليبيا - تونس: القنوات التي ستبث المباراة الحاسمة في طرابلس",
   "en": "Libya-Tunisia: The channels that will broadcast the decisive match in Tripoli"
+ },
+ "Libye-Tunisie : Mouine Chaâbani envisage des changements dans le onze de départ": {
+  "de": "fr",
+  "ar": "ليبيا - تونس: يتوخى موان شاباني إجراء تغييرات في البداية الحادية عشرة",
+  "en": "Libya-Tunisia: Mouine Chaâbani envisages changes in the 11th start"
  },
  "Libéré après 19 ans de bagne pour le vol d'un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Venant en aide à Fantine, une ouvrière mourante, il promet de sauver sa fille, Cosette, [...]": {
   "de": "fr",
@@ -2294,6 +2304,11 @@
   "ar": "وقت اللعبة",
   "en": "Time of the game"
  },
+ "L’Institut français de Tunisie lance un appel d’offres pour la réalisation d’une évaluatio": {
+  "de": "fr",
+  "ar": "ويطلق المعهد التونسي الفرنسي نداء لتقديم عطاءات لتنفيذ التقييم.",
+  "en": "The French Institute of Tunisia is launching a call for tenders for the implementation of an evaluation."
+ },
  "L’Université de La Manouba organise, du 3 au 5 décembre 2026, la 13 ème édition de son symposium international interdisciplinaire, dédiée cette année au binôme Incertitudes/Certitudes.": {
   "de": "fr",
   "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة.",
@@ -2344,11 +2359,6 @@
   "ar": "Marsa City",
   "en": "Marsa City"
  },
- "Masterclass de dessin d’après modèle vivant": {
-  "de": "fr",
-  "ar": "رسم درجة الماجستير بعد أن كان نموذجاً حياً",
-  "en": "Masterclass drawing after living model"
- },
  "May 1-Oct 30: 08:00-20:00": {
   "de": "fr",
   "ar": "May 1-Oct 30: 08:00-20:00",
@@ -2369,6 +2379,11 @@
   "ar": "الدير",
   "en": "Monastir"
  },
+ "Montplaisir Tunis": {
+  "de": "fr",
+  "ar": "مونتبليسير تونس",
+  "en": "Montplaisir Tunis"
+ },
  "Mosaïque FM (en arabe)": {
   "de": "fr",
   "ar": "موجة FM (عربية)",
@@ -2388,6 +2403,11 @@
   "de": "fr",
   "ar": "متعددة التخصصات",
   "en": "Multidisciplinary"
+ },
+ "Music Creation Workshop with Hyperculte": {
+  "de": "en",
+  "fr": "Atelier de création musicale avec Hyperculte",
+  "ar": "حلقة عمل بشأن إنتاج الموسيقى مع شركة هيبركولت"
  },
  "Musique": {
   "de": "fr",
@@ -2594,6 +2614,11 @@
   "ar": "المتاحف",
   "en": "Museums"
  },
+ "My House Is A Le Corbusier": {
+  "de": "fr",
+  "ar": "بيتي هو لو كوربوسييه",
+  "en": "My House Is A Le Corbusier"
+ },
  "Médenine (Facebook)": {
   "de": "fr",
   "ar": "Medenin (Facebook)",
@@ -2608,16 +2633,6 @@
   "de": "fr",
   "ar": "مكتبة وسائط الإعلام",
   "en": "Media Library"
- },
- "Médiathèque de l'IFT (20": {
-  "de": "fr",
-  "ar": "مكتبة وسائط الإعلام التابعة للاتحاد الدولي للاتصالات (20)",
-  "en": "IFT Media Library (20)"
- },
- "Médiathèque de l'IFT (20, avenue de Paris, Tunis)": {
-  "de": "fr",
-  "ar": "IFT Media Library (20, avenue de Paris, Tunis)",
-  "en": "IFT Media Library (20, avenue de Paris, Tunis)"
  },
  "Médiathèque, Institut français de Sfax": {
   "de": "fr",
@@ -2769,10 +2784,10 @@
   "ar": "العمال الأشغالون: ما هي حالة عملية التسوية؟",
   "en": "Worksite workers: What is the status of the regularization process?"
  },
- "PROGRAMME DE LA SEMAINE À L'AGORA CINÉMA DJERBA": {
+ "PROGRAMME DE LA SEMAINE À L'AGORA DJERBA du mardi 17 au dimanche 22 novembre (mis à jour)": {
   "de": "fr",
-  "ar": "البرنامج الأسبوعي في سينيما ديربا",
-  "en": "WEEKLY PROGRAMME AT AGORA CINEMA DJERBA"
+  "ar": "برنامج (ويك) في (أوغورا ديربا) من يوم الثلاثاء 17 إلى يوم الأحد 22 تشرين الثاني/نوفمبر (منتهي)",
+  "en": "WEEK'S PROGRAMME AT AGORA DJERBA from Tuesday 17 to Sunday 22 November (updated)"
  },
  "Pack Les Rencontres Théatrales de LARTISTO": {
   "de": "fr",
@@ -2843,6 +2858,11 @@
   "de": "fr",
   "ar": "البرنامج. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre",
   "en": "Programme. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre"
+ },
+ "Proud of this collaboration": {
+  "de": "en",
+  "fr": "Fier de cette collaboration",
+  "ar": "فخور بهذا التعاون"
  },
  "Près de 92 tonnes de produits impropres saisies en quinze jours": {
   "de": "fr",
@@ -3004,6 +3024,11 @@
   "ar": "صالة المبتكرين الشباب - لجنة الثقافة",
   "en": "Young Creators Hall - Cité de la Culture"
  },
+ "Saturday 21 November": {
+  "de": "fr",
+  "ar": "السبت 21 تشرين الثاني/نوفمبر",
+  "en": "Saturday 21 November"
+ },
  "Sbeïtla, Kasserine": {
   "de": "fr",
   "ar": "Sbeitla, Kasserine",
@@ -3039,10 +3064,10 @@
   "ar": "(سفاكس)، (ميدينا)",
   "en": "Sfax, medina"
  },
- "Shanti": {
+ "Sfax, voir l'annonce": {
   "de": "fr",
-  "ar": "Shanti",
-  "en": "Shanti"
+  "ar": "(سفاكس)، انظر الإعلان",
+  "en": "Sfax, see the announcement"
  },
  "Shanti (Instagram)": {
   "de": "fr",
@@ -3063,6 +3088,11 @@
   "de": "fr",
   "ar": "سيدي بوزيد (فيس بوك)",
   "en": "Sidi Bouzid (Facebook)"
+ },
+ "Sidi Bouzid, voir l'annonce": {
+  "de": "fr",
+  "ar": "سيدي بوزيد، انظر الإعلان",
+  "en": "Sidi Bouzid, see announcement"
  },
  "Sir James Creed was an English merchant and politician.": {
   "de": "en",
@@ -3118,11 +3148,6 @@
   "de": "fr",
   "ar": "مساءات الرقة",
   "en": "Evenings of Raqqada"
- },
- "Soixante-dix ans après l’indépendance de la Tunisie et pour célébrer l'amitié franco-tunis": {
-  "de": "fr",
-  "ar": "بعد سبعين عاماً من استقلال (تونس) والاحتفال بصداقة (فرانكو تونيس)",
-  "en": "Seventy years after Tunisia's independence and to celebrate Franco-Tunis friendship"
  },
  "Souk El Attarine": {
   "de": "fr",
@@ -3309,11 +3334,6 @@
   "ar": "Tunis, Avenue Mohamed V",
   "en": "Tunis, Avenue Mohamed V"
  },
- "Tunis, get ready for a night of good music & great vibes!": {
-  "de": "en",
-  "fr": "Tunis, préparez-vous pour une nuit de bonne musique et de grandes vibrations !",
-  "ar": "(تونس) استعدي لليلة من الموسيقى الجيدة"
- },
  "Tunisia Podcasts Festival (Instagram)": {
   "de": "en",
   "fr": "Festival de Podcasts en Tunisie (Instagram)",
@@ -3484,6 +3504,11 @@
   "ar": "Zied gharsa",
   "en": "Zied gharsa"
  },
+ "_events/auto/cine-360/2026-11-18-je-m-appelle-clara.md": {
+  "de": "fr",
+  "ar": "_events/auto/cine-360/2026-11-18-I-m-call-clara.md",
+  "en": "_events/auto/cine-360/2026-11-18-I-m-call-clara.md"
+ },
  "_events/auto/cine-agora/2026-11-17-bakma.md": {
   "de": "fr",
   "ar": "_event/auto/cine-agora/2026-11-17-bakma.md",
@@ -3533,6 +3558,41 @@
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md",
   "en": "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-bakma.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-alhambra/2026-11-17-bakma.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-bakma.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md": {
+  "de": "fr",
+  "ar": "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-je-m-appelle-clara.md": {
+  "de": "fr",
+  "ar": "_events/auto/cine-alhambra/2026-11-17-I-m-call-clara.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-I-m-call-clara.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-jupiter.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-alhambra/2026-11-17-jupiter.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-jupiter.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-last-chance.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-alhambra/2026-11-17-last-chance.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-last-chance.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-scrooge-ebenezer.md"
+ },
+ "_events/auto/cine-alhambra/2026-11-17-weekend.md": {
+  "de": "fr",
+  "ar": "_event/auto/cine-alhambra/2026-11-17-weekend.md",
+  "en": "_events/auto/cine-alhambra/2026-11-17-weekend.md"
  },
  "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-the-night.md": {
   "de": "en",
@@ -3764,6 +3824,11 @@
   "ar": "تونيس.أحداث (ملامح)",
   "en": "tunis.events (film)"
  },
+ "voir l'annonce": {
+  "de": "fr",
+  "ar": "انظر الإعلان",
+  "en": "see the announcement"
+ },
  "voir l'article": {
   "de": "fr",
   "ar": "انظر المادة",
@@ -3834,10 +3899,25 @@
   "fr": "Le résumé de cette conférence aborde les changements de l'artefact et du patrimoine en Tunisie depuis la fin du XIXe siècle jusqu'à aujourd'hui, en suivant l'évolution des programmes de [...]",
   "en": "The summary of this lecture addresses the changes in the artifact and heritage in Tunisia since the late nineteenth century to the day, by tracking the evolution of research curricula and its problems, [...]"
  },
- "بلاغ صادر عن وزارة الشؤون الثقافية خاص": {
+ "برنامج الأسبوع": {
   "de": "ar",
-  "fr": "Communication du Ministère de la culture en particulier",
-  "en": "Communication issued by the Ministry of Cultural Affairs in particular"
+  "fr": "Programme hebdomadaire",
+  "en": "Weekly programme"
+ },
+ "بلاغ تظاهرة تقمودا ...قوافي الفكر والفن": {
+  "de": "ar",
+  "fr": "Prononcez l'acte d'arrogance... Mon esprit et mon art...",
+  "en": "Pronounce the act of arrogance... my mind and art..."
+ },
+ "تكريما للكتاب المحتفى بهم خلال تظاهرة الحفل السنوي للاحتفاء بالمؤلفين لسنة 2025 تشر فنا دع": {
+  "de": "ar",
+  "fr": "En l'honneur du livre, ils ont été réservés lors de la célébration annuelle des auteurs pour 2025, Churchill, allons-y.",
+  "en": "In honor of the book they were booked during the yearly celebration of the authors for 2025, Churchill, let's go."
+ },
+ "جامعة الزيتونة تطلق تظاهرة 'ملتقى الثقافات' وتستقطب طلبة من 30 دولة": {
+  "de": "ar",
+  "fr": "L'Université des Oliviers lance le « Forum de la Culture » et attire des étudiants de 30 pays.",
+  "en": "The University of Olives is launching the 'Gulture Forum' and attracting students from 30 countries."
  },
  "جو تونس 2026": {
   "de": "ar",
@@ -3849,15 +3929,15 @@
   "fr": "Jo Tunis 2026 : une semaine dernière sur le rythme des spectacles de vie, des arts contemporains et des découvertes artistiques.",
   "en": "Jo Tunis 2026: one last week on the rhythm of life shows, contemporary arts and art discoveries."
  },
+ "دار الثقافة هرقلة": {
+  "de": "ar",
+  "fr": "La Maison de la culture est Hercule.",
+  "en": "The House of Culture is Hercules."
+ },
  "محاضرة بعنوان : القيم العربيّة في الشّعر الجاهلي للأستاذ مبروك المنّاعي": {
   "de": "ar",
   "fr": "Conférence : Les valeurs arabes dans le poète prédateur du professeur M.B.",
   "en": "Lecture: Arab values in the predatory poet of Professor M.B."
- },
- "مركز الفنون B7L9": {
-  "de": "ar",
-  "fr": "Centre des arts B7L9",
-  "en": "Arts Centre B7L9"
  },
  "مركز النهوض بالصادرات يحتضن لقاءات مهنية تونسية عراقية": {
   "de": "ar",
