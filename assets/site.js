@@ -177,10 +177,23 @@
     d.classList.toggle('leger');
     ecrire('leger', d.classList.contains('leger') ? '1' : '0');
     marquerLeger();
+    majImages();
   });
   marquerLeger();
   // Affichage léger : les images ne sont pas téléchargées du tout.
-  if (d.classList.contains('leger')) document.querySelectorAll('.vignette img, img.affiche-grande').forEach(function (i) { i.removeAttribute('src'); });
+  // Le src est gardé dans data-src pour le remettre quand on repasse en affichage normal
+  // (sinon les vignettes restaient vides jusqu'au rechargement de la page).
+  function majImages() {
+    var leger = d.classList.contains('leger');
+    document.querySelectorAll('.vignette img, img.affiche-grande').forEach(function (i) {
+      if (leger) {
+        if (i.getAttribute('src')) { i.dataset.src = i.getAttribute('src'); i.removeAttribute('src'); }
+      } else if (!i.getAttribute('src') && i.dataset.src) {
+        i.setAttribute('src', i.dataset.src);
+      }
+    });
+  }
+  majImages();
 
   // ---- Android : liens de carte vers l'appli du téléphone
   if (/Android/i.test(navigator.userAgent)) {
