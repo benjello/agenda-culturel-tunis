@@ -15,6 +15,7 @@ import sys
 
 import requests
 
+from . import commun
 from .commun import RACINE
 
 FICHIER = RACINE / "_data" / "apify.json"
@@ -22,7 +23,8 @@ SEUIL = 80
 
 
 def lire(token: str) -> dict:
-    r = requests.get("https://api.apify.com/v2/users/me/limits", params={"token": token}, timeout=30)
+    r = requests.get("https://api.apify.com/v2/users/me/limits",
+                     headers={"Authorization": f"Bearer {token}"}, timeout=30)
     r.raise_for_status()
     d = r.json().get("data") or {}
     depense = float((d.get("current") or {}).get("monthlyUsageUsd") or 0)
@@ -53,7 +55,7 @@ def main() -> int:
     try:
         c = lire(token)
     except (requests.RequestException, ValueError) as exc:
-        print(f"crédit Apify illisible : {exc}", file=sys.stderr)
+        print(f"crédit Apify illisible : {commun.masquer(str(exc))}", file=sys.stderr)
         return 0
     FICHIER.write_text(json.dumps(c, ensure_ascii=False, indent=1) + "\n")
     print(f"Apify : {c['depense']} $ sur {c['limite']} $ ({c['pourcent']} %)", file=sys.stderr)
