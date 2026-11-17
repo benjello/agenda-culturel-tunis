@@ -80,7 +80,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 
 ## Fait
 
-- [x] Vignettes vides : `scrapers/images.py` vérifie chaque image à chaque passage (cache `_data/images.json`) et retire de la fiche celle qui ne charge pas ; `referrerpolicy="no-referrer"` et cadre masqué si l'image échoue (PR #146, #147).
+- [x] Vignettes vides : `scrapers/images.py` (après chaque passage) copie chaque image dans `assets/images/` (les liens Instagram/Facebook/billetterie qui expirent ne cassent plus la carte) ; image cassée → visuel de la page de l'annonce (og:image, schema.org), autres sources, même événement ailleurs, puis seulement photo du lieu ou illustration de catégorie (`assets/categories/`). Bilan dans `_data/images.json` (PR #146, #147).
 - Référencement : plan du site (`sitemap.xml`), balises canonique, Open Graph et Twitter, données structurées `Event` (fiches) et `WebSite` (accueil).
 - Site Jekyll sur GitHub Pages, dates en français, événements passés masqués.
 - Registre des sources et page Sources avec l'état de chacune (à jour, en panne, en attente).
