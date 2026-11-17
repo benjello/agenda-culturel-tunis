@@ -57,10 +57,10 @@
 
 - id: el-teatro
   nom: El Teatro
-  url: https://billetterie.elteatrotunis.com/fr/programmes
+  url: https://elteatrotunisie.com/programme-de-la-saison/
   type: lieu
   genre: lieu
-  scraper: billetterie_sktech
+  scraper: elteatro_programme
   categorie: theatre
   actif: true
   options:
