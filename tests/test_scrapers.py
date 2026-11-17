@@ -569,6 +569,17 @@ class Traduction(unittest.TestCase):
         titres, notices = traduire.a_faire(evts, cache)
         self.assertEqual((titres, notices), (["Concert de jazz"], []))
 
+    def test_notice_d_un_doublon_traduite_ou_reprise(self):
+        texte = "The unexpected departure of a long-time colleague shakes up her routine at the call centre."
+        cle = traduire._cle(texte)
+        cache = {"titres": {}, "notices": {"_events/a.md": {"cle": cle, "fr": "x"}}}
+        evts = [("_events/b.md", {"title": "Film", "doublon": True}, texte),
+                ("_events/c.md", {"title": "Film", "doublon": True}, texte + " Plus long encore, autre texte différent.")]
+        titres, notices = traduire.a_faire(evts, cache)
+        self.assertEqual(titres, [])
+        self.assertEqual(cache["notices"]["_events/b.md"]["fr"], "x")   # même texte : reprise de la traduction
+        self.assertEqual([c for c, _ in notices], ["_events/c.md"])      # texte nouveau : à traduire
+
 
 class Films(unittest.TestCase):
     def test_regroupe_les_salles_par_film(self):

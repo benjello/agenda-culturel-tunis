@@ -126,7 +126,7 @@ def evenements() -> list[tuple[str, dict, str]]:
         if f.name == "README.md":
             continue
         champs, corps = _lire(f)
-        if champs and not champs.get("doublon"):
+        if champs:   # les doublons gardent leur fiche (adresse directe) : leur notice se traduit aussi
             res.append((str(f.relative_to(RACINE)), champs, corps.strip()))
     return res
 
@@ -142,14 +142,18 @@ def lire() -> dict:
 def a_faire(evts: list, cache: dict) -> tuple[list, list]:
     """(titres, notices) qui n'ont pas encore de traduction."""
     titres, notices = [], []
+    par_cle = {n["cle"]: n for n in cache["notices"].values() if n.get("cle")}   # même texte déjà traduit ailleurs
     for chemin, c, corps in evts:
         t = str(c.get("title") or "").strip()
-        if t and not c.get("film") and a_traduire(t) and t not in cache["titres"] and t not in titres:
+        if t and not c.get("doublon") and not c.get("film") and a_traduire(t) and t not in cache["titres"] and t not in titres:
             titres.append(t)
         if corps and len(re.findall(r"[^\W\d_]", corps)) >= 20:
             n = cache["notices"].get(chemin)
             if not n or n.get("cle") != _cle(corps):
-                notices.append((chemin, corps))
+                if _cle(corps) in par_cle:
+                    cache["notices"][chemin] = par_cle[_cle(corps)]
+                else:
+                    notices.append((chemin, corps))
     return titres, notices
 
 
