@@ -11,7 +11,7 @@ link: "https://lagora.tn/produit/je-mappelle-clara/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
 seances: ["2026-11-18 19:00", "2026-11-20 18:30", "2026-11-22 16:45"]
-image: "https://lagora.tn/wp-content/uploads/2026/11/Je-mappelle-Clara-.jpeg"
+image: "assets/images/5aeb2addb4ef.jpg"
 film: true
 ajoute: "2026-11-17"
 autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/je-mappelle-clara", "source": "tunis-events-cinema"}]

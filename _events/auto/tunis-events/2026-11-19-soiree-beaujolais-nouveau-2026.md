@@ -10,7 +10,7 @@ price: "110 TND"
 link: "https://tunis.events/events/3N5Bzm/soiree-beaujolais-nouveau-2026-residence-du-consul-general-de-france"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://api.tunis.events/storage/91c26dc306b6d49d57310c93ad846d43d.jpg"
+image: "assets/images/a6d7270a0393.jpg"
 ajoute: "2026-11-17"
 auto: true
 ---

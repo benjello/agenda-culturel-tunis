@@ -10,7 +10,7 @@ price: "45 TND"
 link: "https://tunis.events/events/kXErBm/power-yoga-with-nicole-skarpness-nskarp-sociale"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/ae19abdea2974720c3c69e1866bea188.jpg"
+image: "assets/images/2caff476a189.png"
 discret: true
 ajoute: "2026-11-17"
 auto: true

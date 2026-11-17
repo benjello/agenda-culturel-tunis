@@ -8,7 +8,7 @@ category: "cinema"
 link: "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-image: "https://tunis.events/storage/cf38a57f43f10b3c2186d9d557d1aaeb7.jpeg"
+image: "assets/images/7d0b849e85a8.png"
 film: true
 ajoute: "2026-11-17"
 auto: true

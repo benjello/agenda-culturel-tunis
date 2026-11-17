@@ -9,7 +9,7 @@ price: "35 DT"
 link: "https://lagora.tn/produit/touskie-tounsi/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
-image: "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png"
+image: "assets/images/f738c4dcb71a.png"
 film: true
 ajoute: "2026-11-08"
 auto: true

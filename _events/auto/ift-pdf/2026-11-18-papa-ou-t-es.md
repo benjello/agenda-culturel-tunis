@@ -9,7 +9,7 @@ price: "6 DT"
 link: "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6543"
 source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
-image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fn5gxvzzqw2c4tscsfvf"
+image: "assets/images/c2b9cb3082d4.avif"
 film: true
 ajoute: "2026-11-17"
 auto: true

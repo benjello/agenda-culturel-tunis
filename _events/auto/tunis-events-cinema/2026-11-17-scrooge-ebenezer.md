@@ -9,7 +9,7 @@ link: "https://tunis.events/fr/cinema/scrooge-ebenezer"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-17 19:20", "2026-11-17 21:35"]
-image: "https://api.tunis.events/storage/scraped/3ed0aabe782c1dbe61192a6e8325df4f.jpg"
+image: "assets/images/68106cae3bc9.jpg"
 film: true
 ajoute: "2026-11-17"
 auto: true

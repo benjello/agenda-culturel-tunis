@@ -8,7 +8,7 @@ price: "Gratuit"
 link: "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6546"
 source: "ift-pdf"
 source_name: "Institut français de Tunisie (programme PDF)"
-image: "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/tmp9xkhmzzsxcrdyd6gp"
+image: "assets/images/0c13e697ccda.avif"
 ajoute: "2026-11-17"
 serie: "kteb-tounsi"
 auto: true

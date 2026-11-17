@@ -1,656 +1,761 @@
 {
+ "_bilan": {
+  "autre fiche": 0,
+  "cassees": 21,
+  "categorie": 0,
+  "copiees": 53,
+  "date": "2026-11-17T17:59:40",
+  "images": 109,
+  "lien": 21,
+  "lieu": 0
+ },
  "assets/programmes/cine-360/9314b97cda39.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-artisto/c34f7b6de977.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-cite-sciences/8a3779e4b4a7.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-cite-sciences/ef18bd96d6f3.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-cr-sfax/3efd4db5f72b.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-cr-sidibouzid/dba355354b57.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-cr-sousse/5ff44c30cea4.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/fb-ift-facebook/858093183065.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-agora-djerba/1b1c7828d1e3.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-agorgi-gallery/068f3b4876dd.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-b7l9/3b42d1c7f1cf.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-b7l9/6b5c08b6fdcd.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-b7l9/8ab7077bc082.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-cinemadart/494dc189003c.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-cinemadart/d649a9606aac.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-creative-hub-sbs/380cea38dfc7.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-creative-hub-sbs/4be746c8cf5d.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-eddisco/663f24fc9c49.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-galerie-insular/441367072604.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-habibi-downtown/eec961ed51f1.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-jaou-tunis/8ab7077bc082.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-la-boite/25e2b854e178.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-la-boite/341d61bba657.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-la-boite/8b53cdb1d7fa.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-la-boite/cb26da9b8bd8.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-la-boite/d3ee178f0e34.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-lart-rue/2c6fcb203ff3.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-lart-rue/3bd2ebd45dca.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-lart-rue/8c45c814e4bd.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-le32bis/2806688b008e.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-le32bis/6b929405fbbc.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-le32bis/a839d6ea8557.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-shanti/63cabd5fab5d.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-violon-bleu/5720e913bdc1.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "assets/programmes/ig-violon-bleu/c2f92198b2e2.jpg": {
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
+ "copie:https://tunis.events/og/event/30l2e3/fr.png": "assets/images/946673c6a880.png",
+ "copie:https://tunis.events/og/event/31v1d8/fr.png": "assets/images/b87fd03b9b45.png",
+ "copie:https://tunis.events/og/event/37nj6m/fr.png": "assets/images/a0869f9b2077.png",
+ "copie:https://tunis.events/og/event/3G2Prm/fr.png": "assets/images/887ac6a4aaca.png",
+ "copie:https://tunis.events/og/event/3jQ5Ym/fr.png": "assets/images/8273289000cf.png",
+ "copie:https://tunis.events/og/event/3xO0Gm/fr.png": "assets/images/06476293207a.png",
+ "copie:https://tunis.events/og/event/8JQOa3/fr.png": "assets/images/189adc1fbb43.png",
+ "copie:https://tunis.events/og/event/8JQRw3/fr.png": "assets/images/7d0b849e85a8.png",
+ "copie:https://tunis.events/og/event/8KQRGm/fr.png": "assets/images/420d193e2b0f.png",
+ "copie:https://tunis.events/og/event/8RPgrm/fr.png": "assets/images/6ef714de682e.png",
+ "copie:https://tunis.events/og/event/8pQMOk/fr.png": "assets/images/702e46bff585.png",
+ "copie:https://tunis.events/og/event/8yXLv3/fr.png": "assets/images/d6e7278f2238.png",
+ "copie:https://tunis.events/og/event/kQnxqm/fr.png": "assets/images/b5cc373e5cdf.png",
+ "copie:https://tunis.events/og/event/kVy7Q8/fr.png": "assets/images/b68f16645aff.png",
+ "copie:https://tunis.events/og/event/kXEEzm/fr.png": "assets/images/438fe07c9e98.png",
+ "copie:https://tunis.events/og/event/kXErBm/fr.png": "assets/images/2caff476a189.png",
+ "copie:https://tunis.events/og/event/kYG7j3/fr.png": "assets/images/d18665bfbbdc.png",
+ "copie:https://tunis.events/og/event/klvgE3/fr.png": "assets/images/f438a6405157.png",
+ "copie:https://tunis.events/og/event/mZrNZm/fr.png": "assets/images/5b6dfd16c55d.png",
+ "copie:https://tunis.events/og/event/mnMOgk/fr.png": "assets/images/027b0e107f90.png",
+ "copie:https://tunis.events/og/event/mqEwBm/fr.png": "assets/images/89cd4e4414eb.png",
  "https://api.tunis.events/storage/010c4dceaee978a9d491b9e7106c5fb211.jpg": {
+  "copie": "assets/images/ab5b1bdbc56d.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/0b379c8882b9fedf74c6eab19d30c45e.jpg": {
+  "copie": "assets/images/114fe3259ed5.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg": {
+  "copie": "assets/images/90df52b196d1.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/2110726ee246d141e3dcf6d47afe825bd.jpg": {
+  "copie": "assets/images/2af35666ebcc.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg": {
+  "copie": "assets/images/6183a6d14a92.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/6fd410f87826c46897106db03b09f2de25.jpg": {
+  "copie": "assets/images/7ce2e2c5f6c0.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/91c26dc306b6d49d57310c93ad846d43d.jpg": {
+  "copie": "assets/images/a6d7270a0393.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg": {
+  "copie": "assets/images/4c49a95d3dcd.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg": {
+  "copie": "assets/images/a98353ce7c46.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/3ed0aabe782c1dbe61192a6e8325df4f.jpg": {
+  "copie": "assets/images/68106cae3bc9.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/4639630403314665dce73bc1592ee821.png": {
+  "copie": "assets/images/641d47eef7e4.png",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/684b618a42d1814f04284904483daa7c.png": {
+  "copie": "assets/images/acf5de1dd870.png",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/740733fec3f5f04600a0fa080210c9f2.jpg": {
+  "copie": "assets/images/913d59a66384.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/79478c07c2ecb3459a93a0ad982cf2bf.webp": {
+  "copie": "assets/images/661ee516a987.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/889148e8feaafadab19895af75eea3a1.jpg": {
+  "copie": "assets/images/7ee663cee1e5.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/99aa7cdedcc842b3c4ef3820f5c26644.webp": {
+  "copie": "assets/images/7f3f37c8f836.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/a9b1cb3ae9e8f37aa7ee5c24109f1342.webp": {
+  "copie": "assets/images/d986572ff577.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/c2e4c37a0ef73a6105ff093845063e7b.webp": {
+  "copie": "assets/images/83d1f0f0ba7f.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://api.tunis.events/storage/scraped/f576018c05b552a8a18d79ae7148aa03.webp": {
+  "copie": "assets/images/5aae1a7a83a4.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://images.ra.co/0f6c17b04753100d599d3a5c11c3c5cdb20d85dd.jpg": {
+  "copie": "assets/images/b0f14f7736b2.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://images.ra.co/5e85db421bf17f5279edd9f272af554c622d6ff6.png": {
+  "copie": "assets/images/842559d791c6.png",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png": {
+  "copie": "assets/images/f738c4dcb71a.png",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png": {
+  "copie": "assets/images/5e2060567217.png",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp": {
+  "copie": "assets/images/42400672d09b.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp": {
+  "copie": "assets/images/ce7c7b7cfe8d.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/10/van-gogh.jpg": {
+  "copie": "assets/images/52f0c74a9c49.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp": {
+  "copie": "assets/images/0523b923705e.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/11/Je-mappelle-Clara-.jpeg": {
+  "copie": "assets/images/5aeb2addb4ef.jpg",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp": {
+  "copie": "assets/images/36d2d9a4c8ad.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp": {
+  "copie": "assets/images/b0ccb061405b.webp",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://lagora.tn/wp-content/uploads/2026/11/نجوم-الأمل.png": {
-  "detail": "",
+  "detail": "trop lourde pour être copiée",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "trop_lourde": true,
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/a0drplag9wvq3vd3pedm": {
+  "copie": "assets/images/0f27df2c9ecd.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fn5gxvzzqw2c4tscsfvf": {
+  "copie": "assets/images/c2b9cb3082d4.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fwmvv1puqzjkud1huaaj": {
+  "copie": "assets/images/c188ea72d3d4.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fxazw3cvgd2dvwritmv7": {
+  "copie": "assets/images/74aae2fbfa8e.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/gnd9hzyunjtbowh1yphb": {
+  "copie": "assets/images/569783d0d51c.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/h4ln4xzk5cd91ojeyjrb": {
+  "copie": "assets/images/ccb9e46a7608.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/hlhslns75nydqlxsdbzg": {
+  "copie": "assets/images/de0399c618b0.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/hthozoxt6tswiqblq0pd": {
+  "copie": "assets/images/94d6c6fdd9cf.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/hzkqdxqgz5o59gcnlnsw": {
+  "copie": "assets/images/537b16e1197d.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/lquuivb221s4glbpwndn": {
+  "copie": "assets/images/8f6ec4e16ed7.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/luzoie8a1v3fhufv1gin": {
+  "copie": "assets/images/4c2343ebabf3.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/pwkiy6sodx0ihtfwoqud": {
+  "copie": "assets/images/bda66e383999.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/saxyrd5uxztw4xigkxfm": {
+  "copie": "assets/images/bb25276097df.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/t2dmv3cnld7mv6v1iral": {
+  "copie": "assets/images/a78c087c3bb6.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/tmp9xkhmzzsxcrdyd6gp": {
+  "copie": "assets/images/0c13e697ccda.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/u9p0sliscrysttbardrp": {
+  "copie": "assets/images/db0bab59ecb4.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/uossaqx67l5c79twekdi": {
+  "copie": "assets/images/5b7007f3af32.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/uvp8ewdrnxg2oh9ylimi": {
+  "copie": "assets/images/ddf94b3da635.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/uwlyx9isinzhihuocwf6": {
+  "copie": "assets/images/66301a5f801e.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/wnnjphvx1zgbwtapwylr": {
+  "copie": "assets/images/b3442c12d9e2.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/xpjotvvvcpfhkz1e8xnr": {
+  "copie": "assets/images/2c107a80fcbf.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/y8dzvqmcp9ypaeu2qnx2": {
+  "copie": "assets/images/6e5ef08a9c59.avif",
   "detail": "",
   "echecs": 0,
   "etat": "ok",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/044105ebe696124b41094f3f8310ce1c139.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/12b39edf8291e83832e28e7bc2fe4ee8.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/25655a577b15876786499182b51b53e7.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/2f10e8d97e4e8d25b49166110d61abec30.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/54656839d0e7cae0d56661e05932464e.png": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/59bb5d3c10bb10e6fd8910a118a3104af13d.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/5b65ec103a07d3f0fbec6b23107ac79c2.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/65959d2af596cdfa163bad733047171e.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/82ebca273eca6b0cb105cd0812ea952fe.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/8cf23cd50c02ce7712493c19dbe82f7e.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/92287ae264f6c90858f61079c98802bf6.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/939b5ff2de1703937b859cc6bd28ecf7.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/97c3f53a8c1069e6b564202e210532afd.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/a51efa26e7d4406e6687165101d5d6fc6.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/a9a8780a69ef2a101f314f100390132380.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/ae19abdea2974720c3c69e1866bea188.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/c1067789010dc70a3d4aa85f0ffcc3e849.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/cf38a57f43f10b3c2186d9d557d1aaeb7.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
+  "verifiee": "2026-11-17T17:59:40"
  },
  "https://tunis.events/storage/f03da9c4e21faf7c724b6810dbce9c178.jpg": {
   "detail": "HTTP 404",
-  "echecs": 1,
+  "echecs": 2,
   "etat": "cassee",
-  "verifiee": "2026-11-17T17:43:02"
- }
+  "verifiee": "2026-11-17T17:59:40"
+ },
+ "lien:https://tunis.events/events/30l2e3/connivences-211126-aina": "assets/images/946673c6a880.png",
+ "lien:https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace": "assets/images/b87fd03b9b45.png",
+ "lien:https://tunis.events/events/37nj6m/pack-les-rencontres-theatrales-de-lartisto-lartisto-theatre-et-cinema": "assets/images/a0869f9b2077.png",
+ "lien:https://tunis.events/events/3G2Prm/listening-session-screening-live-performance-b7l9-art-centre": "assets/images/887ac6a4aaca.png",
+ "lien:https://tunis.events/events/3jQ5Ym/movie-night-la-belle-et-la-meute-sociale-sidi-bou-said": "assets/images/8273289000cf.png",
+ "lien:https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee": "assets/images/06476293207a.png",
+ "lien:https://tunis.events/events/8JQOa3/onssouen-lartisto-theatre-et-cinema": "assets/images/189adc1fbb43.png",
+ "lien:https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee": "assets/images/7d0b849e85a8.png",
+ "lien:https://tunis.events/events/8KQRGm/yoga-for-busy-minds-with-judit-yoga_in_sidibousaid-sociale-sidi-bou-said": "assets/images/420d193e2b0f.png",
+ "lien:https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace": "assets/images/6ef714de682e.png",
+ "lien:https://tunis.events/events/8pQMOk/kpop-universe-edition-7-utica-union-tun-the-ind-trade-art": "assets/images/702e46bff585.png",
+ "lien:https://tunis.events/events/8yXLv3/la-rue-lartisto-theatre-et-cinema": "assets/images/d6e7278f2238.png",
+ "lien:https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee": "assets/images/b5cc373e5cdf.png",
+ "lien:https://tunis.events/events/kVy7Q8/labes-selim-ben-safia-salle-des-jeunes-createurs-cite-de-la-culture": "assets/images/b68f16645aff.png",
+ "lien:https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace": "assets/images/438fe07c9e98.png",
+ "lien:https://tunis.events/events/kXErBm/power-yoga-with-nicole-skarpness-nskarp-sociale": "assets/images/2caff476a189.png",
+ "lien:https://tunis.events/events/kYG7j3/the-last-shot-espace-lartisto": "assets/images/d18665bfbbdc.png",
+ "lien:https://tunis.events/events/klvgE3/hyperculte-b7l9-art-centre": "assets/images/f438a6405157.png",
+ "lien:https://tunis.events/events/mZrNZm/leffet-papillon-lartisto-theatre-et-cinema": "assets/images/5b6dfd16c55d.png",
+ "lien:https://tunis.events/events/mnMOgk/zyoland-grafiflow-v7jh6j7": "assets/images/027b0e107f90.png",
+ "lien:https://tunis.events/events/mqEwBm/bakma-cinema-le-palace": "assets/images/89cd4e4414eb.png"
 }

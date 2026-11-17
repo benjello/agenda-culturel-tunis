@@ -10,7 +10,7 @@ link: "https://tunis.events/events/klv2n3/dar-el-3ers-دار-العرس-cinemada
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-17", "2026-11-18 14:30", "2026-11-20 14:30"]
-image: "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg"
+image: "assets/images/a98353ce7c46.jpg"
 film: true
 ajoute: "2026-11-17"
 auto: true

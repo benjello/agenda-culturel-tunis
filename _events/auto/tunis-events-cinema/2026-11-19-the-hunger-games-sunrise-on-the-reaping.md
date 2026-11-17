@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/the-hunger-games-sunrise-on-the-reaping"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-19 20:30", "2026-11-20 20:30", "2026-11-22 20:30"]
-image: "https://api.tunis.events/storage/scraped/c2e4c37a0ef73a6105ff093845063e7b.webp"
+image: "assets/images/83d1f0f0ba7f.webp"
 film: true
 ajoute: "2026-11-17"
 doublon: true

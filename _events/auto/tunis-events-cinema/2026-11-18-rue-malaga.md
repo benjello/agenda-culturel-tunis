@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/rue-malaga"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-18 19:00", "2026-11-19 17:00", "2026-11-20 19:15"]
-image: "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg"
+image: "assets/images/4c49a95d3dcd.jpg"
 film: true
 ajoute: "2026-11-17"
 auto: true

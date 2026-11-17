@@ -9,7 +9,7 @@ category: "theatre"
 link: "https://tunis.events/events/kYG7j3/the-last-shot-espace-lartisto"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/939b5ff2de1703937b859cc6bd28ecf7.jpg"
+image: "assets/images/d18665bfbbdc.png"
 ajoute: "2026-11-17"
 auto: true
 ---

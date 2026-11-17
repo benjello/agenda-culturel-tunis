@@ -10,7 +10,7 @@ price: "5 TND"
 link: "https://tunis.events/events/kVy7Q8/labes-selim-ben-safia-salle-des-jeunes-createurs-cite-de-la-culture"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/82ebca273eca6b0cb105cd0812ea952fe.jpg"
+image: "assets/images/b68f16645aff.png"
 ajoute: "2026-11-01"
 auto: true
 ---

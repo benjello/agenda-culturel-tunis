@@ -11,7 +11,7 @@ link: "https://lagora.tn/produit/le-mystere-lucy-lost/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
 seances: ["2026-11-21 15:00", "2026-11-22 15:00"]
-image: "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp"
+image: "assets/images/42400672d09b.webp"
 film: true
 ajoute: "2026-11-17"
 autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/le-mystere-lucy-lost", "source": "tunis-events-cinema"}]

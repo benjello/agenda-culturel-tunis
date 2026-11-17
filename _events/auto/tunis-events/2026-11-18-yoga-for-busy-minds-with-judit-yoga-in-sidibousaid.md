@@ -10,7 +10,7 @@ price: "45 TND"
 link: "https://tunis.events/events/8KQRGm/yoga-for-busy-minds-with-judit-yoga_in_sidibousaid-sociale-sidi-bou-said"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/59bb5d3c10bb10e6fd8910a118a3104af13d.jpg"
+image: "assets/images/420d193e2b0f.png"
 discret: true
 ajoute: "2026-11-17"
 auto: true

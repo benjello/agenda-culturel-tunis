@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/le-mystere-lucy-lost"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-21 15:00", "2026-11-22 15:00"]
-image: "https://api.tunis.events/storage/scraped/99aa7cdedcc842b3c4ef3820f5c26644.webp"
+image: "assets/images/7f3f37c8f836.webp"
 film: true
 ajoute: "2026-11-17"
 doublon: true

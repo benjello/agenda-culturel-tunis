@@ -8,7 +8,7 @@ category: "cinema"
 link: "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-image: "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg"
+image: "assets/images/b87fd03b9b45.png"
 film: true
 ajoute: "2026-11-17"
 auto: true

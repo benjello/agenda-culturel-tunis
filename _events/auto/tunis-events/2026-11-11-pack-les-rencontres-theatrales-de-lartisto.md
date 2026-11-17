@@ -10,7 +10,7 @@ price: "35 TND"
 link: "https://tunis.events/events/37nj6m/pack-les-rencontres-theatrales-de-lartisto-lartisto-theatre-et-cinema"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/044105ebe696124b41094f3f8310ce1c139.jpg"
+image: "assets/images/a0869f9b2077.png"
 ajoute: "2026-11-17"
 auto: true
 ---

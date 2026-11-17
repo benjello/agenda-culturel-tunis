@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/un-monde-fragile-et-merveilleux-%D9%86%D8%
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-19 18:30", "2026-11-21 16:45"]
-image: "https://api.tunis.events/storage/scraped/684b618a42d1814f04284904483daa7c.png"
+image: "assets/images/acf5de1dd870.png"
 film: true
 ajoute: "2026-11-17"
 doublon: true

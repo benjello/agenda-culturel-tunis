@@ -11,7 +11,7 @@ link: "https://lagora.tn/produit/the-hunger-games-sunrise-on-the-reaping/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
 seances: ["2026-11-19 20:30", "2026-11-20 20:30", "2026-11-22 20:30"]
-image: "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp"
+image: "assets/images/b0ccb061405b.webp"
 film: true
 ajoute: "2026-11-17"
 autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/the-hunger-games-sunrise-on-the-reaping", "source": "tunis-events-cinema"}]

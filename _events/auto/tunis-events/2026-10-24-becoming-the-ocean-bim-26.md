@@ -9,7 +9,7 @@ category: "expo"
 link: "https://tunis.events/events/k4bdE3/becoming-the-ocean-bim26-caserne-el-attarine"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://api.tunis.events/storage/6fd410f87826c46897106db03b09f2de25.jpg"
+image: "assets/images/7ce2e2c5f6c0.jpg"
 ajoute: "2026-11-01"
 auto: true
 ---

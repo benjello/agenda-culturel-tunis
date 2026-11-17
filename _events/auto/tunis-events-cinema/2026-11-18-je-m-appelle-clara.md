@@ -10,7 +10,7 @@ link: "https://tunis.events/fr/cinema/je-mappelle-clara"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-18 19:00", "2026-11-20 18:30", "2026-11-22 16:45"]
-image: "https://api.tunis.events/storage/2110726ee246d141e3dcf6d47afe825bd.jpg"
+image: "assets/images/2af35666ebcc.jpg"
 film: true
 ajoute: "2026-11-17"
 doublon: true

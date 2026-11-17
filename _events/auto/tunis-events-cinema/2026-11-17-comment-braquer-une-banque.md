@@ -8,7 +8,7 @@ category: "cinema"
 link: "https://tunis.events/fr/cinema/comment-braquer-une-banque"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-image: "https://api.tunis.events/storage/scraped/740733fec3f5f04600a0fa080210c9f2.jpg"
+image: "assets/images/913d59a66384.jpg"
 film: true
 ajoute: "2026-11-17"
 auto: true

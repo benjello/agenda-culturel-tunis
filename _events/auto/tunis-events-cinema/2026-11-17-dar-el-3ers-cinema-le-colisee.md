@@ -9,7 +9,7 @@ link: "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-l
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
 seances: ["2026-11-17", "2026-11-17 19:45"]
-image: "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg"
+image: "assets/images/b5cc373e5cdf.png"
 film: true
 ajoute: "2026-11-17"
 auto: true

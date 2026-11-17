@@ -9,7 +9,7 @@ category: "musique"
 link: "https://tunis.events/events/8pQMOk/kpop-universe-edition-7-utica-union-tun-the-ind-trade-art"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://tunis.events/storage/f03da9c4e21faf7c724b6810dbce9c178.jpg"
+image: "assets/images/702e46bff585.png"
 ajoute: "2026-11-07"
 auto: true
 ---

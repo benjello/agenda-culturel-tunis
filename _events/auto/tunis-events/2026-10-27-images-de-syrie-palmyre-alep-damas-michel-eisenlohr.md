@@ -9,7 +9,7 @@ category: "expo"
 link: "https://tunis.events/events/krn29k/images-de-syrie-palmyre-alep-damas-michel-eisenlohr-institut-francais-de-tunis"
 source: "tunis-events"
 source_name: "tunis.events (agenda)"
-image: "https://api.tunis.events/storage/010c4dceaee978a9d491b9e7106c5fb211.jpg"
+image: "assets/images/ab5b1bdbc56d.jpg"
 ajoute: "2026-11-01"
 doublon: true
 auto: true
