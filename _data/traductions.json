@@ -176,6 +176,10 @@
    "ar": "مختبرات - سيليم بن صوفيا",
    "en": "Labs - Selim Ben Safia"
   },
+  "Le Quatrième Humain": {
+   "ar": "البشرية الرابعة",
+   "en": "The Fourth Human"
+  },
   "Le Salon du chocolat et de la pâtisserie réunit plus de 150 exposants à Tunis": {
    "ar": "The Chocolate and Pastry Fair brings together more than 150 exhibitors in Tunis",
    "en": "The Chocolate and Pastry Fair brings together more than 150 exhibitors in Tunis"
@@ -203,6 +207,10 @@
   "L’Œuvre amie : entre performance artistique et réflexion esthétique": {
    "ar": "عمل صديق: بين الأداء الفني والتفكير الاصطناعي",
    "en": "A friend work: between artistic performance and aesthetic reflection"
+  },
+  "Miguel Ángel Moratinos, Ségolène Royal et Mohammed bin Abdullah Al Rumaihi aux 40èmes Journées de l’Entreprise 2026": {
+   "ar": "ميغيل أنخيل موراتينوس، وسيغولين رويال، ومحمد بن عبد الله الروميهي في الأيام الأربعين للأعمال التجارية 2026",
+   "en": "Miguel Ángel Moratinos, Ségolène Royal and Mohammed bin Abdullah Al Rumaihi at the 40th Business Days 2026"
   },
   "Music Creation Workshop with Hyperculte": {
    "fr": "Atelier de création musicale avec Hyperculte",
@@ -336,6 +344,10 @@
    "fr": "Colloque international à l'occasion des neuf siècles de naissance du fils du 3ème",
    "en": "International symposium on the occasion of the nine centuries of birth of the son of the 3rd"
   },
+  "ندوة عبر الإنترنت": {
+   "fr": "Colloque sur l'Internet",
+   "en": "Internet symposium"
+  },
   "ندوة متعدّدة الاختصاصات 26 و": {
    "fr": "Colloque multidisciplinaire 26 et",
    "en": "Multidisciplinary symposium 26 and"
@@ -365,6 +377,11 @@
    "cle": "a7a3dc4a78c0",
    "fr": "Pour plus d'informations, L'article est un colloque multidisciplinaire 26 et 27 novembre 2026 est apparu en premier sur Beit Al-Hikma.",
    "en": "For further information, L’article is a multidisciplinary symposium 26 and 27 November 2026 est apparu en premier sur Beit Al-Hikma."
+  },
+  "_events/auto/beit-al-hikma/2026-11-27-evenement.md": {
+   "cle": "753eaf6b41db",
+   "ar": "بالنسبة للمادة المتعلقة بمسألة الاسترداد الواردة في مشروع القرار رقم 27 و2026، ظهرت أولاً في بيت الشيخما.",
+   "en": "للمزيد L的 article ندو的 عبر ال的نرن的 27 نوفمبر 2026 appeared first on Beit Al-Hikma ."
   },
   "_events/auto/beit-al-hikma/2026-12-04-3.md": {
    "cle": "034f951c73dd",
@@ -461,10 +478,10 @@
    "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ (إيليسي). في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
    "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
   },
-  "_events/auto/el-teatro/2026-11-12-le-fou.md": {
-   "cle": "6be25bf3fe33",
-   "ar": "نحتاج إلى صوت يدفعنا نحو إنسانيتنا، نحو (كليمنس)...\nصوت يرتفع فوق السلطه والاستبعاد\nصوت نبوء، صوت روحي...\nصوت أحمق...\nصوت (جيبران)...",
-   "en": "Need a voice pushing us towards our Humanity, towards Clemence...\nA voice rising above authoritarianism, exclusion...\nA prophetic voice, a spiritual voice...\nThe voice of a fool...\nGibran's voice..."
+  "_events/auto/el-teatro/2026-12-17-le-quatrieme-humain.md": {
+   "cle": "73cbf7d69cf2",
+   "ar": "Discover the Elteatro programme of the season: coming scene shows, contemporary creations and cultural and artistic events in Tunis.",
+   "en": "Discover the Elteatro programme of the season: upcoming theatre shows, contemporary creations and cultural and artistic events in Tunis."
   },
   "_events/auto/fb-artisto/2026-11-17-tete-a-tete.md": {
    "cle": "6fea5676ea33",
@@ -846,6 +863,11 @@
    "ar": "ويكشف المجلس، من شهر إلى يوم الافتتاح، عن التحديات والملامح الجديدة لطبعة الذكرى السنوية لأيام الأعمال التي ستعقد في الفترة من 10 إلى 12 كانون الأول/ديسمبر 2026 في سوس، تحت رعاية رئيس الجمهورية. وفيما يتعلق بالبرنامج: عدد أقل من التشخيصات، وتوصيات أكثر تحديداً وقابلية للتطبيق مباشرة.",
    "en": "One month to the day of the opening, IACE unveils the challenges and new features of an anniversary edition of the Business Days which will be held from 10 to 12 December 2026 in Sousse, under the patronage of the President of the Republic. On the programme: fewer diagnoses, more concrete and directly applicable recommendations."
   },
+  "_events/auto/presse-leaders/2026-12-10-miguel-angel-moratinos-segolene-royal-et-mohammed-bin-abdull.md": {
+   "cle": "d6c8274deb6c",
+   "ar": "إنها دورة استثنائية، الذكرى السنوية الأربعين، لأيام الأعمال التي ستعقد هذا العام في الفترة من 10 إلى 12 كانون الأول/ديسمبر 2026، في سوس. وتحت رعاية رئيس الجمهورية، وينظمه المعهد العربي لمنظمي المشاريع، كان موضوع المؤتمر هو &quot; المؤسسة وتحدي التنفيذ: من الإصلاح إلى التحول &quot; .",
+   "en": "It is a special session, the 40th anniversary, of the Business Days to be held this year from 10 to 12 December 2026, in Sousse. Under the patronage of the President of the Republic, and organized by the Arab Institute of Entrepreneurs (IACE), the theme of the conference is \"The Enterprise and the Challenge of Implementation: From Reform to Transformation\"."
+  },
   "_events/auto/presse-realites/2026-11-19-le-salon-du-chocolat-et-de-la-patisserie-reunit-plus-de-150-.md": {
    "cle": "544b035ba1bb",
    "ar": "وستُعقد الطبعة الثامنة من مجلة &quot; سالون دو تشوكولات دي لا باتسيري &quot; في الفترة من 19 إلى 21 تشرين الثاني/نوفمبر 2026 في مقر الاتحاد التونسي للصناعة والتجارة والحرف. وسيضم هذا الحدث أكثر من 150 من المتظاهرين التونسيين والدوليين، بمشاركة إيطاليا وفرنسا ومصر والجزائر والكاميرون.",
@@ -872,9 +894,9 @@
    "ar": "Line-up : ASECHS\nOrganisé par T.T.C\nلقد كنت في انتظار ذلك.\nلقد عدنا!\nBOUNCY CLUB - Third Edition Saturday, 28.11.2026 STUDIO 52 - Hôtel Les Ambassadeurs, Tunis A new chapter, the same energy.\nاستعدوا لليلة أخرى من القفز النقي.\n(آسيتشيس) - (إيدو) - (أوكيو) -\n.\n.\n.\n.\n.\n.\n.\n.\nTTC"
   },
   "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md": {
-   "cle": "94b2ba3b975b",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة.",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
+   "cle": "4736889a8113",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
   },
   "_events/auto/tunis-events-cinema/2026-11-17-bakma.md": {
    "cle": "c90df92f8069",
@@ -891,6 +913,11 @@
    "ar": "المذنبون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
    "en": "دار العرس\nDirector: Heifel Ben Youssef\nDuration: 135 min"
   },
+  "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md": {
+   "cle": "4736889a8113",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
+  },
   "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md": {
    "cle": "f181def148eb",
    "ar": "HADOOTA at the cinema : 1 session this week at Le Colosseum. (الجلسة القادمة (تي Nov. 17 الساعة 17: 45 .",
@@ -900,6 +927,16 @@
    "cle": "6b251eef1355",
    "ar": "HADOOTA /UR TO MELATED at the cinema: 2 screenings this week in Pathé Tunis City. (الجلسة القادمة (تي Nov. 17 الساعة 15: 20",
    "en": "HADOOTA / حدوю的 at the cinema: 2 screenings this week in Pathé Tunis City. Next session Tue. Nov. 17. At 15:20."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md": {
+   "cle": "4736889a8113",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md": {
+   "cle": "4736889a8113",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
   },
   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md": {
    "cle": "d9a2269cdc98",
@@ -917,9 +954,9 @@
    "en": "Nino and Yasmina fall in love in the courtyard of their school in Beirut, and dream of their adult life, of a wonderful world. 20 years later, they find themselves by accident and it's again mad love, magnetic, incandescent. Can we build a future, in a fractured country, that we are trying to leave, but that holds you back irresistibly?"
   },
   "_events/auto/tunis-events-cinema/2026-11-17-weekend.md": {
-   "cle": "aadab86f486f",
-   "ar": "مجموعة من الأصدقاء الشباب يجدون أنفسهم في فيلا محاطة بالبحر لعطلة نهاية أسبوع مسترخية لكن الإختفاء الغامض لأحدهم (نور) سيحول هذا الهروب إلى كابوس، يكشف عن الأسرار المدفونة والجروح التي لم يمحوها ذلك الوقت.",
-   "en": "A group of young friends find themselves in a secluded villa by the sea for a relaxing weekend. But the mysterious disappearance of one of them Nour will turn this escapade into a nightmare, revealing buried secrets and wounds that time has not erased."
+   "cle": "4736889a8113",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
   },
   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md": {
    "cle": "c6fd2e6f4c49",

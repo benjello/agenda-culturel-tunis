@@ -141,6 +141,15 @@
    "n": 7
   },
   {
+   "slug": "beit-al-hikma-carthage",
+   "nom": "Beit al-Hikma, Carthage",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 35.6619,
+   "lon": 10.08999,
+   "n": 6
+  },
+  {
    "slug": "galerie-institut-francais-de-sousse",
    "nom": "Galerie, Institut français de Sousse",
    "type": "galerie",
@@ -148,15 +157,6 @@
    "lat": 36.83351,
    "lon": 10.10422,
    "n": 6
-  },
-  {
-   "slug": "beit-al-hikma-carthage",
-   "nom": "Beit al-Hikma, Carthage",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 35.6619,
-   "lon": 10.08999,
-   "n": 5
   },
   {
    "slug": "auditorium-institut-francais-de-tunis",

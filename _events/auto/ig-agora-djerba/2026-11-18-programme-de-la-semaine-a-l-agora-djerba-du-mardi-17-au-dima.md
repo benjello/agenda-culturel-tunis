@@ -9,8 +9,8 @@ source: "ig-agora-djerba"
 source_name: "L'Agora Djerba (Instagram)"
 image: "assets/programmes/ig-agora-djerba/1b1c7828d1e3.jpg"
 ajoute: "2026-11-17"
-auto: true
 langues: ["fr", "vo"]
+auto: true
 ---
 
 🎬 PROGRAMME DE LA SEMAINE À L'AGORA DJERBA — du mardi 17 au dimanche 22 novembre (mis à jour)
