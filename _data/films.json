@@ -1,5 +1,711 @@
 [
  {
+  "titre": "BAKMA - بكمة",
+  "id": "bakma",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png",
+  "imdb": "tt43666030",
+  "duree": null,
+  "genres": [
+   "Horreur",
+   "Thriller"
+  ],
+  "jours": [
+   "2026-11-17",
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "15:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/bakma/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "20:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-17-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-bakma.md"
+  ],
+  "wikidata": "Q142120796",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": true,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "« Bakma », le film d’Abdelhamid Bouchnak : face à l’inhumain",
+    "lien": "https://realites.com.tn/fr/bakma-le-film-dabdelhamid-bouchnak-face-a-linhumain/",
+    "source_nom": "Réalités (culture)",
+    "date": "2026-10-17"
+   }
+  ],
+  "synopsis": "Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Scrooge / Ebenezer",
+  "id": "scrooge-ebenezer",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Film-scrooge.webp",
+  "imdb": "tt38773219",
+  "duree": null,
+  "genres": [
+   "Fantastique"
+  ],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/scrooge",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "15:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/scrooge/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "21:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/scrooge-ebenezer",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "13:10",
+       "16:45",
+       "19:20",
+       "21:35"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-17-scrooge.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-scrooge-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md"
+  ],
+  "wikidata": "Q136650058",
+  "letterboxd": "ebenezer-a-christmas-carol",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Scrooge est un film américain réalisé par Ti West sorti en 2026. Il s'agit d'une nouvelle adaptation du conte Un chant de Noël de Charles Dickens.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Scrooge_(film%2C_2026)"
+ },
+ {
+  "titre": "Dar El 3ers - دار العرس",
+  "id": "dar-el-3ers",
+  "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "13:30",
+       "19:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "13:15",
+       "19:15"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "HADOOTA / حدوتة",
+  "id": "hadoota",
+  "image": "https://api.tunis.events/storage/10662cd4610e86fd11d104a6e6e4f9c61061.jpg",
+  "imdb": "tt43638234",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/hadoota",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "17:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/hadoota-%D8%AD%D8%AF%D9%88%D8%AA%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "15:20",
+       "21:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-hadoota-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md"
+  ],
+  "wikidata": "Q142191539",
+  "letterboxd": "hadoota",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Je m’appelle Clara",
+  "id": "je-mappelle-clara",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Je-mappelle-Clara-.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "21:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/je-mappelle-clara/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-20",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "18:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Ayda est opératrice dans un centre d’appel depuis plusieurs années. Elle a la quarantaine et vit seule dans un quartier de Tunis. Elle passe ses journées à répéter les mêmes phrases à des inconnus au bout du fil, sous le pseudonyme de Clara, une conseillère client qui vend des forfaits vacances. Dans ce centre d’appel, le travail est très surveillé et seule la rentabilité compte.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "https://tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": []
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "weekend - ويكاند",
+  "id": "weekend",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "17:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/weekend/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-17-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un groupe de jeunes amis se retrouve dans une villa isolée en bord de mer pour un week-end de détente. Mais la disparition mystérieuse de l’une d’elles Nour va transformer cette escapade en cauchemar, révélant des secrets enfouis et des blessures que le temps n’a pas effacées.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Comment braquer une banque ?",
+  "id": "comment-braquer-une-banque",
+  "image": "https://api.tunis.events/storage/scraped/740733fec3f5f04600a0fa080210c9f2.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/comment-braquer-une-banque",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "16:50",
+       "20:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-comment-braquer-une-banque.md"
+  ],
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Dar el 3ers دار العرس",
+  "id": "dar-el-3ers",
+  "image": "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-20"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/klv2n3/dar-el-3ers-دار-العرس-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "16:30"
+      ]
+     },
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "14:30"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "14:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinemadart.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Hope",
+  "id": "hope",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/gnd9hzyunjtbowh1yphb",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-25"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6449",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-25"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-25",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-25-hope.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Hope de Na Hong-jin.\nRésumé : (VOSTFR, Interdit au -12 ans avec avertissement)\nLes renforts sont partis maîtriser des feux de forêt et toutes les communications sont coupées.\nAu poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Jupiter",
+  "id": "jupiter",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-18",
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/jupiter/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-18-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-18-jupiter.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "LA BELLE ET LA MEUTE",
+  "id": "la-belle-et-la-meute",
+  "image": "https://tunis.events/storage/a9a8780a69ef2a101f314f100390132380.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-19"
+  ],
+  "salles": [
+   {
+    "nom": "Sociale Sidi Bou Said",
+    "adresse": "V8CW+8GM, Carthage, Carthage",
+    "lien": "https://tunis.events/events/3jQ5Ym/movie-night-la-belle-et-la-meute-sociale-sidi-bou-said",
+    "source": "tunis-events",
+    "source_nom": "tunis.events (agenda)",
+    "jours": [
+     "2026-11-19"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events/2026-11-19-la-belle-et-la-meute.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": ". ݁₊ ⊹ . ️.ᐟ Join us this November for a special film series, curated by @hakkadistribution and hosted by @so_sociale in collaboration with @cinematun\nTickets are 20 DT and include popcorn and refreshments.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
   "titre": "Le Chant des Forêts",
   "id": "le-chant-des-forets",
   "image": "",
@@ -45,6 +751,103 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Chant_des_for%C3%AAts_(film)"
  },
  {
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "imdb": "tt10569744",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-le-mystere-lucy-lost.md"
+  ],
+  "wikidata": "Q141827108",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
+ },
+ {
+  "titre": "Le Secret des mésanges",
+  "id": "le-secret-des-mesanges",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/luzoie8a1v3fhufv1gin",
+  "imdb": "tt29497084",
+  "duree": null,
+  "genres": [
+   "Animation"
+  ],
+  "jours": [
+   "2026-11-20"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6544",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-20-le-secret-des-mesanges.md"
+  ],
+  "wikidata": "Q136647519",
+  "letterboxd": "the-songbirds-secret",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": true,
+  "presse": [],
+  "synopsis": "Le Secret des mésanges est un film d'animation franco-belge réalisé par Antoine Lanciaux et sorti en 2025. Il utilise la technique du papier découpé.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Secret_des_m%C3%A9sanges"
+ },
+ {
   "titre": "Les Malheurs de Sophie",
   "id": "les-malheurs-de-sophie",
   "image": "",
@@ -79,7 +882,7 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
+  "synopsis": "de Vincent Munier 2025, 1h26mn, documentaire.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -162,9 +965,113 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Sous les Étoiles de Paris",
+  "titre": "Papa où t'es ?",
+  "id": "papa-ou-t-es",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/fn5gxvzzqw2c4tscsfvf",
+  "imdb": "tt8784060",
+  "duree": null,
+  "genres": [
+   "Documentaire"
+  ],
+  "jours": [
+   "2026-11-18"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6543",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-18"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-18-papa-ou-t-es.md"
+  ],
+  "wikidata": "Q141237885",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Papa où t'es ? de Samy Bouyssié et Basile Monnot.\nRésumé :\nÀ 26 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Rue Málaga",
+  "id": "rue-malaga",
+  "image": "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg",
+  "imdb": "tt32429174",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/rue-malaga",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-18",
+     "2026-11-19",
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "17:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "19:15"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md"
+  ],
+  "wikidata": "Q135438796",
+  "letterboxd": "calle-malaga",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Rue Málaga est un film dramatique multinational réalisé par Maryam Touzani et sorti en 2025. Il s'agit d'une coproduction hispanophone entre le Maroc, la France, l'Espagne, l'Allemagne et la Belgique.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Rue_M%C3%A1laga"
+ },
+ {
+  "titre": "Sous les étoiles de Paris",
   "id": "sous-les-etoiles-de-paris",
-  "image": "",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/saxyrd5uxztw4xigkxfm",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -175,7 +1082,7 @@
    {
     "nom": "Médiathèque, Institut français de Sfax",
     "adresse": "",
-    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6542",
     "source": "ift-pdf",
     "source_nom": "Institut français de Tunisie (programme PDF)",
     "jours": [
@@ -196,7 +1103,63 @@
   ],
   "jeune": false,
   "presse": [],
-  "synopsis": "de Manuel Flurin Hendry 2017, 1h30mn, aventure, comédie, famille. CIN",
+  "synopsis": "L'Institut français de Tunisie à Sfax invite son jeune public à découvrir le film Sous les étoiles de Paris de Claude Drexel.\nRésumé :\nDepuis de nombreuses années, Christine vit sous un pont de Paris, isolée de toute famille et amis. Par une nuit comme il n’en existe que dans les contes, un jeune garçon de 8 ans fait irruption devant son abri.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "The Hunger Games: Sunrise on the Reaping",
+  "id": "the-hunger-games-sunrise-on-the-reaping",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/the-hunger-games-sunrise-on-the-reaping/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "20:30"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "20:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "20:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-19-the-hunger-games-sunrise-on-the-reaping.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-the-hunger-games-sunrise-on-the-reaping.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Alors que le jour se lève sur les 50e Hunger Games annuels, la peur s’empare des districts de Panem. Cette année, en l’honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d’être avec la fille qu’il aime. Mais lorsque qu’il est appelé, tous ses rêves s’effondrent.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -240,6 +1203,124 @@
   "synopsis_url": ""
  },
  {
+  "titre": "Un monde fragile et merveilleux",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-18",
+     "2026-11-19"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "19:00"
+      ]
+     },
+     {
+      "jour": "2026-11-18",
+      "heures": [
+       "17:00"
+      ]
+     },
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "21:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis",
+    "lien": "https://kapitalis.com/tunisie/2026/11/10/un-monde-fragile-et-merveilleux-de-cyril-aris-sort-en-salles-a-tunis/",
+    "source_nom": "Kapitalis (culture)",
+    "date": "2026-11-10"
+   }
+  ],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
+  "titre": "UN MONDE FRAGILE ET MERVEILLEUX نجوم الأمل",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/نجوم-الأمل.png",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-19",
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/un-monde-fragile-et-merveilleux-%d9%86%d8%ac%d9%88%d9%85-%d8%a7%d9%84%d8%a3%d9%85%d9%84/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "18:30"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-19-un-monde-fragile-et-merveilleux.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
   "titre": "Van Gogh",
   "id": "van-gogh",
   "image": "https://lagora.tn/wp-content/uploads/2026/10/van-gogh.jpg",
@@ -277,5 +1358,58 @@
   "synopsis": "Après son internement à l’asile, Vincent Van Gogh s’installe à Auvers-sur-Oise chez le docteur Gachet, amateur d’art. Les derniers jours du peintre, sont marqués par les relations conflictuelles qu’il entretient avec son frère Théo, et sa santé mentale vacillante.",
   "synopsis_source": "",
   "synopsis_url": ""
+ },
+ {
+  "titre": "What Else",
+  "id": "what-else",
+  "image": "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-17",
+   "2026-11-19",
+   "2026-11-20"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-17",
+     "2026-11-19",
+     "2026-11-20"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-17",
+      "heures": [
+       "21:00"
+      ]
+     },
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "14:30"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "17:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-17-what-else.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
  }
 ]

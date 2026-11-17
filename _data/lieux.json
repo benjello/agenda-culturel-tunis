@@ -14,12 +14,12 @@
   "Institut français de Sfax": "institut-francais-de-sfax",
   "Galerie, Institut français de Sousse": "galerie-institut-francais-de-sousse",
   "Institut français de Sousse": "institut-francais-de-sousse",
-  "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
-  "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "Auditorium, Institut français de Tunis": "auditorium-institut-francais-de-tunis",
-  "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
+  "Salle Albert Camus, Institut français de Sfax": "salle-albert-camus-institut-francais-de-sfax",
   "Médiathèque, Institut français de Tunis": "mediatheque-institut-francais-de-tunis",
+  "Médiathèque, Institut français de Sfax": "mediatheque-institut-francais-de-sfax",
   "Médiathèque, Institut français de Sousse": "mediatheque-institut-francais-de-sousse",
+  "Salle de cinéma, Institut français de Sousse": "salle-de-cinema-institut-francais-de-sousse",
   "L'Agora Djerba": "l-agora-djerba",
   "Agorgi Gallery, Sidi Bou Saïd": "agorgi-gallery-sidi-bou-said",
   "مركز الفنون B7L9": "b7l9",
@@ -32,6 +32,8 @@
   "La Boîte": "la-boite",
   "Shanti": "shanti",
   "Le Violon Bleu, Sidi Bou Saïd": "le-violon-bleu-sidi-bou-said",
+  "Théâtre de l'Opéra de Tunis, Cité de la Culture": "theatre-de-l-opera-de-tunis-cite-de-la-culture",
+  "TBA - studio 52": "tba-studio-52",
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "B7L9 Art Centre": "b7l9-art-centre",
@@ -39,7 +41,12 @@
   "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
   "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
+  "AÏNA": "aina",
+  "Espace \"L'Artisto\"": "espace-l-artisto",
   "UTICA UNION TUN. THE IND. TRADE & ART": "utica-union-tun-the-ind-trade-art",
+  "Cinéma Le Colisée": "cinema-le-colisee",
+  "Cinéma Le Palace": "cinema-le-palace",
+  "Pathé Tunis City": "pathe-tunis-city",
   "Douz": "douz",
   "One Resort, Monastir": "one-resort-monastir",
   "32bis": "le-32bis",
@@ -86,7 +93,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 20
+   "n": 18
   },
   {
    "slug": "mediatheque-institut-francais-de-tunis",
@@ -95,16 +102,7 @@
    "ville": "tunis",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 13
-  },
-  {
-   "slug": "theatre-municipal-de-tunis",
-   "nom": "Théâtre municipal de Tunis",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.79911,
-   "lon": 10.18081,
-   "n": 8
+   "n": 10
   },
   {
    "slug": "institut-francais-de-tunis",
@@ -113,15 +111,15 @@
    "ville": "tunis",
    "lat": 36.8021,
    "lon": 10.18066,
-   "n": 7
+   "n": 8
   },
   {
-   "slug": "auditorium-institut-francais-de-tunis",
-   "nom": "Auditorium, Institut français de Tunis",
-   "type": "centre",
+   "slug": "theatre-municipal-de-tunis",
+   "nom": "Théâtre municipal de Tunis",
+   "type": "theatre",
    "ville": "tunis",
-   "lat": 36.83088,
-   "lon": 10.18217,
+   "lat": 36.79911,
+   "lon": 10.18081,
    "n": 7
   },
   {
@@ -134,31 +132,13 @@
    "n": 6
   },
   {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
-   "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
-   "n": 5
-  },
-  {
-   "slug": "mediatheque-institut-francais-de-sfax",
-   "nom": "Médiathèque, Institut français de Sfax",
-   "type": "bibliotheque",
-   "ville": "sfax",
-   "lat": 36.85392,
-   "lon": 10.19632,
-   "n": 5
-  },
-  {
    "slug": "cinemadart",
    "nom": "CinéMadart",
    "type": "cinema",
    "ville": "tunis",
    "lat": 36.854,
    "lon": 10.324,
-   "n": 5
+   "n": 6
   },
   {
    "slug": "beit-al-hikma-carthage",
@@ -167,6 +147,60 @@
    "ville": "tunis",
    "lat": 35.6619,
    "lon": 10.08999,
+   "n": 5
+  },
+  {
+   "slug": "auditorium-institut-francais-de-tunis",
+   "nom": "Auditorium, Institut français de Tunis",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.83088,
+   "lon": 10.18217,
+   "n": 5
+  },
+  {
+   "slug": "cinema-le-colisee",
+   "nom": "Cinéma Le Colisée",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.80014,
+   "lon": 10.18189,
+   "n": 5
+  },
+  {
+   "slug": "cinema-le-palace",
+   "nom": "Cinéma Le Palace",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.8,
+   "lon": 10.183,
+   "n": 4
+  },
+  {
+   "slug": "institut-francais-de-sfax",
+   "nom": "Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 3
+  },
+  {
+   "slug": "mediatheque-institut-francais-de-sfax",
+   "nom": "Médiathèque, Institut français de Sfax",
+   "type": "bibliotheque",
+   "ville": "sfax",
+   "lat": 36.85392,
+   "lon": 10.19632,
+   "n": 3
+  },
+  {
+   "slug": "b7l9-art-centre",
+   "nom": "B7L9 Art Centre",
+   "type": "centre_art",
+   "ville": "tunis",
+   "lat": 36.889,
+   "lon": 10.307,
    "n": 3
   },
   {
@@ -179,13 +213,13 @@
    "n": 3
   },
   {
-   "slug": "institut-francais-de-sfax",
-   "nom": "Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
-   "n": 2
+   "slug": "pathe-tunis-city",
+   "nom": "Pathé Tunis City",
+   "type": "cinema",
+   "ville": "tunis",
+   "lat": 36.89828,
+   "lon": 10.12451,
+   "n": 3
   },
   {
    "slug": "institut-francais-de-sousse",
@@ -197,12 +231,12 @@
    "n": 2
   },
   {
-   "slug": "salle-albert-camus-institut-francais-de-sfax",
-   "nom": "Salle Albert Camus, Institut français de Sfax",
-   "type": "centre",
-   "ville": "sfax",
-   "lat": 34.74,
-   "lon": 10.76,
+   "slug": "mediatheque-institut-francais-de-sousse",
+   "nom": "Médiathèque, Institut français de Sousse",
+   "type": "bibliotheque",
+   "ville": "sousse",
+   "lat": 36.85392,
+   "lon": 10.19632,
    "n": 2
   },
   {
@@ -230,15 +264,6 @@
    "ville": "tunis",
    "lat": 36.79763,
    "lon": 10.1717,
-   "n": 2
-  },
-  {
-   "slug": "b7l9-art-centre",
-   "nom": "B7L9 Art Centre",
-   "type": "centre_art",
-   "ville": "tunis",
-   "lat": 36.889,
-   "lon": 10.307,
    "n": 2
   },
   {
@@ -296,12 +321,21 @@
    "n": 1
   },
   {
-   "slug": "mediatheque-institut-francais-de-sousse",
-   "nom": "Médiathèque, Institut français de Sousse",
-   "type": "bibliotheque",
+   "slug": "salle-albert-camus-institut-francais-de-sfax",
+   "nom": "Salle Albert Camus, Institut français de Sfax",
+   "type": "centre",
+   "ville": "sfax",
+   "lat": 34.74,
+   "lon": 10.76,
+   "n": 1
+  },
+  {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
    "ville": "sousse",
-   "lat": 36.85392,
-   "lon": 10.19632,
+   "lat": 35.63047,
+   "lon": 10.89844,
    "n": 1
   },
   {

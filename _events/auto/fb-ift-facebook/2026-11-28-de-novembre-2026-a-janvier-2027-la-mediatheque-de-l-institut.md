@@ -11,7 +11,7 @@ source: "fb-ift-facebook"
 source_name: "Institut français de Tunisie (Facebook)"
 image: "assets/programmes/fb-ift-facebook/bc3574c6a954.jpg"
 ajoute: "2026-11-10"
-autres_sources: [{"name": "Institut français de Tunisie (programme PDF)", "link": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf", "source": "ift-pdf"}]
+autres_sources: [{"name": "Institut français de Tunisie (programme PDF)", "link": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6539", "source": "ift-pdf"}]
 auto: true
 ---
 

@@ -1,0 +1,20 @@
+---
+title: "BAKMA"
+date: 2026-11-17 19:00
+end_date: "2026-11-21 20:45"
+venue: "L'Agora Marsa"
+address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
+ville: "tunis"
+category: "cinema"
+link: "https://tunis.events/fr/cinema/bakma"
+source: "tunis-events-cinema"
+source_name: "tunis.events (cinéma)"
+seances: ["2026-11-17 19:00", "2026-11-21 20:45"]
+image: "https://api.tunis.events/storage/8cf23cd50c02ce7712493c19dbe82f7e.jpeg"
+film: true
+ajoute: "2026-11-17"
+doublon: true
+auto: true
+---
+
+Dans une petite ville tunisienne calme, par une nuit d’hiver froide et pluvieuse, le commissaire Ali Mansour et Khaled sont appelés sur une scène de crime particulièrement macabre, au pied d’un vieil immeuble. Au centre d’un cercle tracé avec du sang gît ce qui semble être le corps mutilé d’une jeune femme.

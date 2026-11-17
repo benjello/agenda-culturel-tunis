@@ -16,8 +16,18 @@
   "verifie": "2026-11-01"
  },
  "bakma": {
-  "qid": null,
-  "verifie": "2026-11-09"
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Horreur",
+   "Thriller"
+  ],
+  "imdb": "tt43666030",
+  "letterboxd": "",
+  "qid": "Q142120796",
+  "titre_wikidata": "Bakma",
+  "tunisien": true,
+  "verifie": "2026-11-17"
  },
  "biscuit-le-chien-fantastique": {
   "age": "Tous publics",
@@ -48,9 +58,13 @@
   "tunisien": false,
   "verifie": "2026-11-02"
  },
+ "comment-braquer-une-banque": {
+  "qid": null,
+  "verifie": "2026-11-17"
+ },
  "dar-el-3ers": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "diamanti": {
   "age": "Tous publics",
@@ -127,6 +141,17 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "hadoota": {
+  "age": "",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt43638234",
+  "letterboxd": "hadoota",
+  "qid": "Q142191539",
+  "titre_wikidata": "A Story",
+  "tunisien": false,
+  "verifie": "2026-11-17"
+ },
  "harakat-training-scratch-night": {
   "qid": null,
   "verifie": "2026-11-06"
@@ -144,6 +169,10 @@
   "titre_wikidata": "Hola Frida",
   "tunisien": false,
   "verifie": "2026-11-01"
+ },
+ "hope": {
+  "qid": null,
+  "verifie": "2026-11-17"
  },
  "hurlevent": {
   "age": "Tous publics",
@@ -174,6 +203,10 @@
   "qid": null,
   "verifie": "2026-11-01"
  },
+ "je-mappelle-clara": {
+  "qid": null,
+  "verifie": "2026-11-17"
+ },
  "jean-valjean": {
   "age": "Tous publics",
   "annee": 2026,
@@ -187,6 +220,10 @@
  "jumpers": {
   "qid": null,
   "verifie": "2026-11-01"
+ },
+ "jupiter": {
+  "qid": null,
+  "verifie": "2026-11-17"
  },
  "karma": {
   "qid": null,
@@ -237,7 +274,7 @@
  },
  "la-belle-et-la-meute": {
   "qid": null,
-  "verifie": "2026-11-02"
+  "verifie": "2026-11-17"
  },
  "la-femme-de-menage": {
   "age": "-12",
@@ -257,7 +294,7 @@
  },
  "last-chance": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "le-chant-des-forets": {
   "age": "Tous publics",
@@ -315,6 +352,19 @@
   "titre_wikidata": "Le Réveil de la momie",
   "tunisien": false,
   "verifie": "2026-11-01"
+ },
+ "le-secret-des-mesanges": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [
+   "Animation"
+  ],
+  "imdb": "tt29497084",
+  "letterboxd": "the-songbirds-secret",
+  "qid": "Q136647519",
+  "titre_wikidata": "Le Secret des mésanges",
+  "tunisien": false,
+  "verifie": "2026-11-17"
  },
  "le-temps-suspendu": {
   "qid": null,
@@ -462,6 +512,19 @@
   "qid": null,
   "verifie": "2026-11-02"
  },
+ "papa-ou-t-es": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Documentaire"
+  ],
+  "imdb": "tt8784060",
+  "letterboxd": "",
+  "qid": "Q141237885",
+  "titre_wikidata": "Papa où t'es ?",
+  "tunisien": false,
+  "verifie": "2026-11-17"
+ },
  "parasol": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -520,6 +583,17 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "rue-malaga": {
+  "age": "Tous publics",
+  "annee": 2026,
+  "genres": [],
+  "imdb": "tt32429174",
+  "letterboxd": "calle-malaga",
+  "qid": "Q135438796",
+  "titre_wikidata": "Rue Málaga",
+  "tunisien": false,
+  "verifie": "2026-11-17"
+ },
  "running-man": {
   "qid": null,
   "verifie": "2026-11-01"
@@ -550,6 +624,19 @@
  "scrooge": {
   "qid": null,
   "verifie": "2026-11-15"
+ },
+ "scrooge-ebenezer": {
+  "age": "",
+  "annee": 2026,
+  "genres": [
+   "Fantastique"
+  ],
+  "imdb": "tt38773219",
+  "letterboxd": "ebenezer-a-christmas-carol",
+  "qid": "Q136650058",
+  "titre_wikidata": "Scrooge",
+  "tunisien": false,
+  "verifie": "2026-11-17"
  },
  "send-help": {
   "age": "-12",
@@ -600,9 +687,13 @@
   "tunisien": false,
   "verifie": "2026-11-01"
  },
+ "the-hunger-games-sunrise-on-the-reaping": {
+  "qid": null,
+  "verifie": "2026-11-17"
+ },
  "touskie-tounsi": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "un-fils": {
   "qid": null,
@@ -633,7 +724,7 @@
  },
  "van-gogh": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "verity": {
   "age": "",
@@ -663,11 +754,11 @@
  },
  "weekend": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "what-else": {
   "qid": null,
-  "verifie": "2026-11-09"
+  "verifie": "2026-11-17"
  },
  "where-the-wind-comes-from": {
   "age": "",

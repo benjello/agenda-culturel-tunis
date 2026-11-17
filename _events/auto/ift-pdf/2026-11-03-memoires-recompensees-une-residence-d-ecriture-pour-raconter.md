@@ -15,4 +15,4 @@ ajoute: "2026-11-04"
 auto: true
 ---
 
-Du 3 au 19 novembre, l’Institut français de Tunisie à  Sfax accueille Véronique Willmann et Sawsan Awada Jalu dans le cadre d’une résidence d’écriture dédiée à la découverte et à la valorisation de la richesse patrimoniale, culturelle et artistique de la ville de Sfax.
+Du 3 au 19 novembre, l’Institut français de Tunisie à Sfax accueille Véronique Willmann et Sawsan Awada Jalu dans le cadre d’une résidence d’écriture dédiée à la découverte et à la valorisation de la richesse patrimoniale, culturelle et artistique de la ville de Sfax.
