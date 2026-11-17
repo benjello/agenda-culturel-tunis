@@ -368,7 +368,8 @@
   genre: collectif
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false
+  # en pause : aucun contenu lisible depuis novembre (publications éphémères ou compte privé, Apify no_items)
   tous_les_jours: 3
   options:
     compte: "downtown.vibes.world"
@@ -430,7 +431,8 @@
   genre: collectif
   scraper: instagram
   categorie: musique
-  actif: true
+  actif: false
+  # en pause : aucun contenu lisible depuis novembre (publications éphémères ou compte privé, Apify no_items)
   tous_les_jours: 3
   options:
     compte: "kadhemusic"
@@ -653,7 +655,8 @@
   genre: lieu
   scraper: facebook_programmes
   categorie: theatre
-  actif: true
+  actif: false
+  # en pause : aucun contenu lisible depuis novembre (publications éphémères ou compte privé, Apify no_items)
   tous_les_jours: 3
   options:
     page: "cav.rades"
@@ -907,7 +910,8 @@
   genre: festival
   scraper: facebook_programmes
   categorie: conference
-  actif: true
+  actif: false
+  # en pause : aucun contenu lisible depuis novembre (publications éphémères ou compte privé, Apify no_items)
   tous_les_jours: 3
   options:
     page: "IFEST.TUNISIA"
@@ -1742,7 +1746,8 @@
   genre: lieu
   scraper: instagram
   categorie: expo
-  actif: true
+  actif: false
+  # en pause : aucun contenu lisible depuis novembre (publications éphémères ou compte privé, Apify no_items)
   tous_les_jours: 3
   options:
     compte: "galerieinsular"
