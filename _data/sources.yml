@@ -392,6 +392,7 @@
   note: "DJ, cofondateur de Downtown Vibes."
 
 - id: ig-balaclava
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Balaclava (Instagram)
   url: https://www.instagram.com/blcv.tunis/
   type: lieu
@@ -407,6 +408,7 @@
   note: "Collectif électro / rap, billetterie « lien en bio »."
 
 - id: ig-syndicate-of-love
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Syndicate of Love (Instagram)
   url: https://www.instagram.com/syndicateoflove.tn/
   type: lieu
@@ -467,6 +469,7 @@
   note: "Centre d'art à Bhar Lazreg : concerts, performances, projections."
 
 - id: fb-eddisco
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Eddisco
   url: https://www.facebook.com/eddiscorecordstore
   type: lieu
@@ -484,6 +487,7 @@
   note: "Disquaire et label, soirées sur liste d'invités."
 
 - id: fb-club-tahar-haddad
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Club culturel Tahar Haddad
   url: https://www.facebook.com/Club.Tahar.Haddad
   type: lieu
@@ -535,6 +539,7 @@
   note: "Sound system, soirées bass music (page STEPPERStn). Proposé par Mahdi."
 
 - id: fb-liberthe
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Liber'thé
   url: https://www.facebook.com/liberthelafayette
   type: lieu
@@ -552,6 +557,7 @@
   note: "Café culturel à Lafayette."
 
 - id: fb-central-tunis
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Central Tunis
   url: https://www.facebook.com/centraltunis
   type: lieu
@@ -569,6 +575,7 @@
   note: "Lieu culturel."
 
 - id: fb-centre-421
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Centre culturel 421
   url: https://www.facebook.com/CentreCulturel421
   type: lieu
@@ -586,6 +593,7 @@
   note: "Centre culturel à Cebalat."
 
 - id: fb-maison-image
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Maison de l'image
   url: https://www.facebook.com/maisonimagetn
   type: lieu
@@ -603,6 +611,7 @@
   note: "Photo, image : expos, ateliers."
 
 - id: fb-empreinte
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Atelier L'Empreinte
   url: https://www.facebook.com/atelier.l.empreinte
   type: lieu
@@ -620,6 +629,7 @@
   note: "Ateliers et expos, Manar 2."
 
 - id: fb-regards-croises
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Regards Croisés
   url: https://www.facebook.com/REGARDSCROISESTN
   type: lieu
@@ -908,6 +918,7 @@
   note: "Festival des sciences et technologies."
 
 - id: ig-atast
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: ATAST (Instagram)
   url: https://www.instagram.com/atast_/
   type: lieu
@@ -1485,7 +1496,7 @@
   genre: collectif
   scraper: instagram
   categorie: cinema
-  actif: true
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   tous_les_jours: 7
   options:
     compte: "ftcafifak"
@@ -1511,6 +1522,7 @@
 
 # Régions (recherche Instagram du 1er nov. 2026 : comptes actifs à Sfax, Sousse, Tozeur)
 - id: ig-chantarts-sfax
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: ChantArts, Sfax (Instagram)
   url: https://www.instagram.com/chantarts.culture/
   type: lieu
@@ -1526,6 +1538,7 @@
   note: "Espace de musique, d'arts et de culture à Sfax."
 
 - id: ig-sousse-culturelle
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Sousse Culturelle (Instagram)
   url: https://www.instagram.com/sousseculturelle/
   type: agenda
@@ -1541,6 +1554,7 @@
   note: "Plateforme qui relaie l'actualité culturelle de Sousse."
 
 - id: ig-festival-oasis-tozeur
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Festival international des oasis de Tozeur (Instagram)
   url: https://www.instagram.com/festivaldesoasistozeur/
   type: lieu
@@ -1647,6 +1661,7 @@
   note: Association d'art contemporain de la médina (Dream City, résidences, ateliers). Proposé par Mahdi.
 
 - id: ig-ftcc
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Fédération tunisienne des ciné-clubs (Instagram)
   url: https://www.instagram.com/ftcc_tunisienne/
   type: lieu
@@ -1698,7 +1713,7 @@
   genre: lieu
   scraper: woocommerce_seances
   categorie: cinema
-  actif: true
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   options:
     lieu: "L'Agora Djerba"
     adresse: "Djerba"
@@ -1802,7 +1817,7 @@
   genre: lieu
   scraper: instagram
   categorie: theatre
-  actif: true
+  actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   tous_les_jours: 3
   options:
     compte: "cavr_rades"
