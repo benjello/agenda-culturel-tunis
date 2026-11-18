@@ -1139,6 +1139,22 @@ class Lot7(unittest.TestCase):
         self.assertEqual([s["id"] for s, _, _ in liste], ["a"])
         self.assertIn("| 69 |", alerte.rapport(liste))
 
+    def test_alerte_panne(self):
+        import datetime as dt
+        from unittest import mock
+        from scrapers import alerte
+        etat = {"a": {"ok": False, "panne_depuis": "2026-11-10T06:00:00", "erreur": "HTTPError: 403"},
+                "b": {"ok": False, "panne_depuis": "2026-11-17T06:00:00"},          # panne trop récente
+                "c": {"ok": False, "attente": "clé manquante", "panne_depuis": "2026-10-01T06:00:00"},
+                "d": {"ok": True}, "e": {"ok": False, "panne_depuis": "2026-10-01T06:00:00"}}
+        sources = "".join(f"- {{id: {i}, nom: {i.upper()}, url: u{', actif: false' if i == 'e' else ''}}}\n" for i in "abcde")
+        with mock.patch.object(alerte, "lire_etat", return_value=etat), \
+             mock.patch("pathlib.Path.read_text", return_value=sources):
+            liste = alerte.en_panne(dt.datetime(2026, 11, 18))
+        self.assertEqual([s["id"] for s, _, _ in liste], ["a"])
+        self.assertIn("| 7 |", alerte.rapport_panne(liste))
+        self.assertEqual(alerte.rapport_panne([]), "")
+
 
 class Agora(unittest.TestCase):
     def test_billetterie_woocommerce(self):

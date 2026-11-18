@@ -125,6 +125,22 @@ jobs:
           elif [ -n "$num" ]; then
             gh issue close "$num" --comment "Toutes les sources ont de nouveau annoncé quelque chose ces 30 derniers jours."
           fi
+      - name: Alerte « Sources en panne » (lecture en échec depuis 2 jours)
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m scrapers.alerte panne > alerte-panne.md
+          titre="Sources en panne"
+          num=$(gh issue list --state open --search "in:title \"$titre\"" --json number,title --jq ".[] | select(.title == \"$titre\") | .number" | head -1)
+          if [ -s alerte-panne.md ] && grep -q . alerte-panne.md; then
+            if [ -n "$num" ]; then gh issue edit "$num" --body-file alerte-panne.md
+            else gh label create alerte --color B5442F --force >/dev/null 2>&1 || true
+                 gh issue create --title "$titre" --label alerte --assignee benjello --body-file alerte-panne.md; fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "Toutes les sources actives se lisent de nouveau."
+          fi
       - name: Alerte « Crédit Apify » (80 % de la limite du mois)
         if: github.ref == 'refs/heads/main'
         continue-on-error: true

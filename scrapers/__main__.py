@@ -67,6 +67,7 @@ def main(argv=None) -> int:
             # Les scrapers lèvent une erreur quand la page elle-même est méconnaissable.
             n = ecrire(s, resultat)
             e.update(ok=True, nb=n, erreur=None, attente=None, dernier_succes=maintenant)
+            e.pop("panne_depuis", None)
             if s["id"] in STATS_HORAIRE and STATS_HORAIRE[s["id"]][0]:
                 e["sans_heure"] = STATS_HORAIRE[s["id"]][0] - STATS_HORAIRE[s["id"]][1]
                 print(f"  heures : {STATS_HORAIRE[s['id']][1]}/{STATS_HORAIRE[s['id']][0]} événement(s) avec une heure")
@@ -82,6 +83,7 @@ def main(argv=None) -> int:
         except Exception as exc:  # noqa: BLE001 — une source en panne ne doit pas arrêter les autres
             echecs += 1
             e.update(ok=False, erreur=commun.masquer(f"{type(exc).__name__}: {exc}")[:300])
+            e.setdefault("panne_depuis", maintenant)  # point de départ du délai « en panne » (alerte)
             print(f"✗ {s['id']} : {e['erreur']}", file=sys.stderr)
             if args.debug:
                 traceback.print_exc()

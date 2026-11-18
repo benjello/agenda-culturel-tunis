@@ -62,7 +62,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 |---|---|---|---|
 | Teskerti | `teskerti` | ✅ marche | ~14 événements ; couvre aussi Théâtre municipal, 4ème Art, Le Rio, Zéphyr |
 | El Teatro | `billetterie_sktech` | ✅ marche | ~7 événements ; doublons avec Teskerti masqués |
-| Opéra de Tunis | `billetterie_sktech` | ⚠️ 0 événement | liste lue, fiches sans date reconnue ; dates ISO et balises `time` lues depuis, raison de chaque fiche rejetée dans le journal : à vérifier au prochain passage |
+| Opéra de Tunis | `billetterie_sktech` | ✅ | dates ISO et balises `time` lues ; programme court, peu d'événements annoncés |
 | Goethe-Institut | `rss` | ⚠️ 0 événement | flux lu, rien d'annoncé après le 1/11 |
 | Beit al-Hikma | `rss` | 🆕 branché | dates en arabe dans le titre |
 | IRMC | `rss` | 🆕 branché | `garder` écarte bourses et stages |
@@ -133,8 +133,8 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
   fiche ouverte dans un panneau à droite sans changer de page (le téléphone garde une colonne).
 - [x] Données : certaines notices contiennent « rn » à la place des retours à la ligne (\r\n mal décodé
   par un scraper, ex. El Teatro « FUITE ») : corrigé dans les textes partagés (`retours_ligne_casses`).
-- [ ] Opéra de Tunis : 0 événement. Liste trouvée, mais aucune fiche n'a donné de date reconnue. Dates ISO ajoutées ; à confirmer dans le journal du prochain passage (les fiches rejetées y sont listées avec la raison).
-- [ ] Contrôle de santé : ouvrir une alerte (issue GitHub) quand une source tombe en panne.
+- [x] Opéra de Tunis : réparé (dates ISO lues), 1 événement au passage du 18 nov. (Quintette Bolchoï).
+- [x] Contrôle de santé : issue GitHub « Sources en panne » ouverte (et fermée) automatiquement après 2 jours d'échec (`scrapers/alerte.py panne`, workflow des scrapers).
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
 - [ ] Version sans compte GitHub du formulaire.
 - [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
@@ -224,7 +224,7 @@ Comprendre sans cliquer (demandé le 2 novembre)
 - [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
 
 Entrées « Autre » à réduire (relevé du 2 novembre) : une entrée « Autre » devrait rester rare.
-- [ ] `ift-pdf` en produit 19 (programme PDF de l'Institut français : trouver la vraie catégorie dans le texte), puis `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
+- [x] `ift-pdf` : catégorie lue dans le titre puis la notice (5 « Autre » sur 40 au 18 nov., contre 19). Reste : `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
 - [x] Annonces hors culture (santé, prévention, caritatif…) : mots-clés dans `_data/hors_culture.yml`, appliqués à toutes les sources sur le titre.
 
 ## Téléphone : suite de l'audit d'ergonomie (3 nov. 2026)
