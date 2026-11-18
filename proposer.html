@@ -28,15 +28,31 @@ description: Annoncez gratuitement un concert, une expo, une projection ou une r
       <label><span data-t="f_description">Quelques lignes de description</span><textarea name="description" rows="4"></textarea></label>
     </div>
   </details>
+  {%- if site.proposition_api != "" %}
+  <input name="piege" tabindex="-1" autocomplete="off" aria-hidden="true" class="piege">
+  <div class="turnstile" data-sitekey="{{ site.turnstile_cle }}"></div>
+  <p class="envoi"><button type="button" class="bouton principal" id="envoyer-direct" data-t="f_envoyer">Envoyer</button></p>
+  <p class="aide" id="etat-envoi" role="status" aria-live="polite"></p>
+  {%- endif %}
   <p class="envoi">
-    <button type="submit" class="bouton principal" data-t="f_github">Envoyer (compte GitHub)</button>
+    <button type="submit" class="bouton{% if site.proposition_api == "" %} principal{% endif %}" data-t="f_github">Envoyer (compte GitHub)</button>
     {%- if site.contact_email != "" %}<button type="button" class="bouton" id="par-email" data-t="f_email">Envoyer par e-mail</button>{% endif %}
   </p>
-  <p class="aide"><small data-t="f_aide">L'envoi ouvre une page GitHub déjà remplie : il reste à cliquer « Submit new issue ». Vous pouvez y glisser l'affiche.</small></p>
+  <p class="aide"><small{% if site.proposition_api != "" %} hidden{% endif %} data-t="f_aide">L'envoi ouvre une page GitHub déjà remplie : il reste à cliquer « Submit new issue ». Vous pouvez y glisser l'affiche.</small></p>
 </form>
 <h2 data-t="proposer_source">Vous publiez souvent ?</h2>
 <p data-t="proposer_source_texte">Un lieu, un collectif ou un artiste qui annonce régulièrement ses dates sur un site, Facebook ou Instagram : donnez-nous l'adresse, l'agenda la lira tout seul chaque jour.</p>
-<p><a class="bouton" href="{{ site.depot }}/issues/new?template=source.yml" rel="noopener" data-t="proposer_source_bouton">Proposer une source</a> <a class="bouton" href="{{ '/contribuer/' | relative_url }}" data-t="contrib.voir">Les sources qu'on cherche</a></p>
+{%- if site.proposition_api != "" %}
+<form id="source-directe" class="formulaire">
+  <label><span data-t="f_source_nom">Lieu, collectif ou organisateur</span> *<input name="nom" required placeholder="Maison de la culture Ibn Khaldoun"></label>
+  <label><span data-t="f_source_lien">Adresse de la page (site, Facebook, Instagram, flux)</span> *<input name="lien" type="url" required placeholder="https://" inputmode="url" autocomplete="off"></label>
+  <input name="piege" tabindex="-1" autocomplete="off" aria-hidden="true" class="piege">
+  <div class="turnstile" data-sitekey="{{ site.turnstile_cle }}"></div>
+  <p class="envoi"><button type="submit" class="bouton principal" data-t="f_envoyer">Envoyer</button></p>
+  <p class="aide" id="etat-source" role="status" aria-live="polite"></p>
+</form>
+{%- endif %}
+<p><a class="bouton" href="{{ site.depot }}/issues/new?template=source.yml" rel="noopener" data-t="proposer_source_bouton">Proposer une source (compte GitHub)</a> <a class="bouton" href="{{ '/contribuer/' | relative_url }}" data-t="contrib.voir">Les sources qu'on cherche</a></p>
 <h2 id="fiche" data-t="proposer_fiche">Un nom manque, ou une information est fausse ?</h2>
 <p data-t="proposer_fiche_texte">Un lieu, un artiste, un conférencier ou un organisateur absent de l'agenda, ou une fiche à compléter (type de lieu, adresse, liens…) : dites-le-nous.</p>
 <p><a class="bouton" href="{{ site.depot }}/issues/new?template=fiche.yml&title={{ 'Fiche à ajouter : ' | url_encode }}" rel="noopener" data-t="proposer_fiche_ajouter">➕ Ajouter une fiche</a>
@@ -69,3 +85,63 @@ description: Annoncez gratuitement un concert, une expo, une projection ou une r
   });
 })();
 </script>
+
+{%- if site.proposition_api != "" %}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<script>
+(function () {
+  // Envoi sans compte GitHub : le relais vérifie le captcha puis ouvre la proposition pour l'équipe.
+  var api = {{ site.proposition_api | jsonify }}, cle = {{ site.turnstile_cle | jsonify }};
+  var jetons = new Map();
+  function widgets() {
+    if (!window.turnstile) return setTimeout(widgets, 300);
+    document.querySelectorAll('.turnstile').forEach(function (el) {
+      if (el.dataset.rendu) return; el.dataset.rendu = '1';
+      window.turnstile.render(el, { sitekey: cle, callback: function (t) { jetons.set(el.closest('form'), t); },
+        'expired-callback': function () { jetons.delete(el.closest('form')); } });
+    });
+  }
+  widgets();
+  function envoyer(form, type, etat) {
+    if (!form.reportValidity()) return;
+    var d = { type: type, jeton: jetons.get(form) };
+    new FormData(form).forEach(function (x, k) { d[k] = String(x).trim(); });
+    if (!d.jeton) { etat.textContent = 'Cochez d\u2019abord la vérification anti-robot.'; return; }
+    etat.textContent = 'Envoi…';
+    fetch(api + '/proposer', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(d) })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (r) {
+        if (r.ok) { etat.textContent = 'Merci ! Votre proposition est envoyée : un membre de l\u2019équipe la vérifie.'; form.reset(); if (window.turnstile) window.turnstile.reset(); jetons.delete(form); }
+        else { etat.textContent = r.j.erreur || 'Échec de l\u2019envoi.'; if (window.turnstile) window.turnstile.reset(); jetons.delete(form); }
+      })
+      .catch(function () { etat.textContent = 'Le service est injoignable : utilisez le bouton GitHub ou l\u2019e-mail.'; });
+  }
+  var f = document.getElementById('proposition');
+  document.getElementById('envoyer-direct').addEventListener('click', function () {
+    envoyer(f, 'evenement', document.getElementById('etat-envoi'));
+  });
+  document.getElementById('source-directe').addEventListener('submit', function (ev) {
+    ev.preventDefault(); envoyer(this, 'source', document.getElementById('etat-source'));
+  });
+  // Lien collé : le titre, la date, l'heure et le lieu se remplissent tout seuls (champs vides seulement)
+  var lien = f.elements.lien, dernier = '';
+  function lire() {
+    var u = lien.value.trim();
+    if (!u || u === dernier || !lien.checkValidity()) return;
+    dernier = u;
+    var etat = document.getElementById('etat-envoi'); etat.textContent = 'Lecture du lien…';
+    fetch(api + '/lire?url=' + encodeURIComponent(u)).then(function (r) { return r.json(); }).then(function (j) {
+      var rempli = [];
+      [['titre', j.titre], ['jour', j.jour], ['heure', j.heure], ['fin', j.fin], ['lieu', j.lieu]].forEach(function (c) {
+        var champ = f.elements[c[0]];
+        if (c[1] && champ && !champ.value) { champ.value = c[1]; rempli.push(c[0]); }
+      });
+      if (rempli.indexOf('heure') >= 0 || rempli.indexOf('lieu') >= 0 || rempli.indexOf('fin') >= 0) document.getElementById('plus-details').open = true;
+      etat.textContent = rempli.length ? 'Titre et date lus depuis le lien : vérifiez-les.' : '';
+    }).catch(function () { etat.textContent = ''; });
+  }
+  lien.addEventListener('change', lire);
+  lien.addEventListener('paste', function () { setTimeout(lire, 50); });
+})();
+</script>
+{%- endif %}

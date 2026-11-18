@@ -1,0 +1,54 @@
+name: Source validée
+
+# Quand un membre de l'équipe pose l'étiquette « valide » sur une issue « Proposer une source »,
+# la source est ajoutée au registre (_data/sources.yml) et l'issue est fermée.
+# Les scrapers la liront dès leur prochain passage ; l'état de la source apparaît sur la page Sources.
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ajouter:
+    if: github.event.label.name == 'valide' && contains(github.event.issue.labels.*.name, 'source')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Ajouter au registre
+        id: ajout
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: echo "id=$(python3 -m scrapers.propositions_source)" >> "$GITHUB_OUTPUT"
+      - name: Vérifier le registre
+        run: python3 -m unittest tests.test_registre
+      - name: Enregistrer
+        env:
+          IDENT: ${{ steps.ajout.outputs.id }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add _data/sources.yml
+          git commit -m "Source proposée : $IDENT (#$NUMERO)"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+      - name: Fermer l'issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.issue.number }}
+          IDENT: ${{ steps.ajout.outputs.id }}
+        run: gh issue close "$NUMERO" --repo "$GITHUB_REPOSITORY" --comment "Merci ! La source (« $IDENT ») est ajoutée au registre : les scrapers la liront au prochain passage, son état est visible sur la page Sources."
+      - name: Signaler une erreur
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMERO: ${{ github.event.issue.number }}
+        run: gh issue comment "$NUMERO" --repo "$GITHUB_REPOSITORY" --body "L'ajout automatique a échoué (adresse de page ou de publication, source déjà au registre ?). Voir le journal du workflow ; corrigez l'issue puis reposez l'étiquette « valide »."

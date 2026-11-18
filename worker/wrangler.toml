@@ -1,0 +1,9 @@
+# Relais de contribution (Cloudflare Workers, offre gratuite). Voir worker/README.md.
+name = "agenda-culturel-relais"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+DEPOT = "benjello/agenda-culturel-tunis"
+# Sites autorisés à appeler le relais (séparés par des virgules)
+ORIGINES = "https://benjello.github.io"
