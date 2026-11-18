@@ -13,6 +13,10 @@ url: "https://benjello.github.io"
 depot: "https://github.com/benjello/agenda-culturel-tunis"
 # Adresse e-mail pour proposer un événement ou signaler une erreur sans compte GitHub (vide : pas de bouton e-mail)
 contact_email: ""
+# Formulaire sans compte GitHub (worker/README.md) : adresse du relais Cloudflare et clé publique Turnstile.
+# Vides : le formulaire garde seulement l'envoi par GitHub ou par e-mail.
+proposition_api: ""
+turnstile_cle: ""
 
 # Plan du site (sitemap.xml) généré par GitHub Pages
 plugins:

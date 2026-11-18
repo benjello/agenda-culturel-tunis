@@ -13,7 +13,8 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
 Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées de ce fichier aux issues ouvertes
 (`scrapers/synchro_tickets.py`) et signale les écarts dans son résumé.
 
-- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107).
+- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107),
+  [#156 brancher le formulaire sans compte GitHub](https://github.com/benjello/agenda-culturel-tunis/issues/156).
 - Étiquette **vérification humaine** (contrôles ouverts à tous) :
   [#106 festivals et séries manquants](https://github.com/benjello/agenda-culturel-tunis/issues/106),
   [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
@@ -116,11 +117,11 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
         obligatoire, avec Mahdi et GitHub Actions dans la liste de contournement (les scrapers poussent sur `main`).
         Facultatif : seul Mahdi peut fusionner, ce qui protège déjà de l'extérieur.
   - [ ] En cas de vague de spam : Settings → Moderation → **Interaction limits** (24 h à 6 mois).
-- [ ] Formulaire sans compte GitHub : seulement avec un captcha (Cloudflare Turnstile, gratuit) et un relais
-      (ex. Formspree, Google Form) ; tant que tout passe par GitHub, le compte sert de protection.
+- [x] Formulaire sans compte GitHub : relais Cloudflare Workers + captcha Turnstile (gratuit), code dans `worker/`
+      (voir `worker/README.md`). Titre, date et lieu lus depuis le lien collé. **Reste à brancher** (clés, voir ci-dessous).
 - Décision (2 nov. 2026) : les propositions de sources par IA restent **à la demande** (conversation avec Claude, validation par Mahdi) ;
   pas de workflow hebdomadaire ni de clé d'API payante pour l'instant.
-- [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
+- [x] Issue « source » validée (étiquette `valide`) : ajoutée au registre par le workflow « Source validée » (`scrapers/propositions_source.py`).
 
 ## À faire
 
@@ -136,7 +137,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 - [x] Opéra de Tunis : réparé (dates ISO lues), 1 événement au passage du 18 nov. (Quintette Bolchoï).
 - [x] Contrôle de santé : issue GitHub « Sources en panne » ouverte (et fermée) automatiquement après 2 jours d'échec (`scrapers/alerte.py panne`, workflow des scrapers).
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
-- [ ] Version sans compte GitHub du formulaire.
+- [x] Version sans compte GitHub du formulaire (code prêt ; activée quand `proposition_api` est renseigné dans `_config.yml`).
 - [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
 - [x] Critiques de films : lien Letterboxd à côté d'IMDb (identifiant Wikidata P6127, jamais de lien vide). À faire : AlloCiné.
 - [ ] Brancher les sources « à étudier ».
@@ -213,7 +214,7 @@ Fiabilité
 
 - [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 8 pages Facebook branchées ; trouver les 16 autres.
 - [x] FTCC (ciné-clubs) : page Facebook FTCCTunisie, plus le Ciné-club de Tunis et la FTCA sur Instagram.
-- [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.
+- [ ] Formulaire sans compte GitHub : mise en route avec Mahdi (compte Cloudflare, clés Turnstile, jeton GitHub limité aux issues, secrets du dépôt, puis `proposition_api` et `turnstile_cle` dans `_config.yml`) : pas à pas dans `worker/README.md`. `contact_email` reste facultatif.
 
 - [ ] L'Agora Djerba : vérifier au premier passage que `www.lagoradjerba.tn` expose bien l'API WooCommerce (`/wp-json/wc/store/v1/products`, attribut « Séances ») ; sinon écrire un lecteur dédié (le site n'était pas joignable depuis l'environnement de développement).
 

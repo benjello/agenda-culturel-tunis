@@ -1,0 +1,36 @@
+name: Relais de contribution
+
+# Déploie worker/ sur Cloudflare Workers (offre gratuite) quand il change. Sans le secret
+# CLOUDFLARE_API_TOKEN, le travail ne fait rien. Voir worker/README.md pour la mise en route.
+on:
+  push:
+    branches: [main]
+    paths: ["worker/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deployer:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tests du relais
+        run: node --test worker/lecture.test.js
+      - name: Déployer
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        working-directory: worker
+        env:
+          RELAIS_GITHUB_TOKEN: ${{ secrets.RELAIS_GITHUB_TOKEN }}
+          TURNSTILE_SECRET: ${{ secrets.TURNSTILE_SECRET }}
+        run: |
+          npx --yes wrangler@4 deploy
+          printf '%s' "$RELAIS_GITHUB_TOKEN" | npx --yes wrangler@4 secret put GITHUB_TOKEN
+          printf '%s' "$TURNSTILE_SECRET" | npx --yes wrangler@4 secret put TURNSTILE_SECRET
