@@ -1009,9 +1009,24 @@ class Fiches(unittest.TestCase):
 
     def test_alerte_apify(self):
         from scrapers.credit_apify import alerte
-        self.assertEqual(alerte({"depense": 1, "limite": 5, "pourcent": 20, "fin_cycle": ""}), "")
-        self.assertIn("épuisé", alerte({"depense": 5.1, "limite": 5, "pourcent": 102, "fin_cycle": "2026-12-01"}))
-        self.assertIn("presque", alerte({"depense": 4.2, "limite": 5, "pourcent": 84, "fin_cycle": ""}))
+        # pas de risque : dépense modérée, prévision sous la limite
+        self.assertEqual(alerte({"depense": 1, "limite": 5, "pourcent": 20, "fin_cycle": "", "prevision": 3}), "")
+        # déjà épuisé
+        self.assertIn("épuisé", alerte({"depense": 5.1, "limite": 5, "pourcent": 102, "fin_cycle": "2026-12-01", "prevision": 9}))
+        # 84 % mais rythme qui ne dépasse pas la limite : pas d'alerte
+        self.assertEqual(alerte({"depense": 4.2, "limite": 5, "pourcent": 84, "fin_cycle": "", "prevision": 4.5}), "")
+        # 64 % mais rythme qui dépasse la limite avant le renouvellement : alerte
+        self.assertIn("avant le renouvellement", alerte({"depense": 12.24, "limite": 19, "pourcent": 64, "fin_cycle": "2026-12-01", "prevision": 21.6}))
+
+    def test_prevision_apify(self):
+        import datetime as dt
+        from scrapers.credit_apify import prevision
+        d = dt.date
+        # 10 jours sur 30 écoulés, 10 $ dépensés : 30 $ prévus
+        self.assertEqual(prevision(10, d(2026, 11, 1), d(2026, 12, 1), d(2026, 11, 11)), 30.0)
+        # sans date de début : cycle d'un mois supposé
+        self.assertEqual(prevision(10, None, d(2026, 12, 1), d(2026, 11, 11)), 30.0)
+        self.assertIsNone(prevision(10, None, None, d(2026, 11, 11)))
 
     def test_presse_sans_sorties_de_film(self):
         from scrapers.sources.presse import est_sortie_de_film
