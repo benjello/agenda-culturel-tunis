@@ -24,11 +24,6 @@
   "ar": "١٠ في المائة من السوق العالمية: تؤكد تونس مركزها كأكبر مصدر لزيت الزيتون التونسية - المعهد الوطني للزيتون: يصر قيس سعيد على الإلحاح.",
   "en": "10% of the world market: Tunisia confirms its position as the fourth largest exporter of olive oil Tunisia – INM: Plutometry of the last 24 hours Kais Saïed insists on the urgency..."
  },
- "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis": {
-  "de": "fr",
-  "ar": "1001, Tunis Republic, 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
-  "en": "1001, Tunis Republic, 54 Ave Habib Bourguiba, Tunis 1001, Tunis"
- },
  "13ème symposium de l’UMA: Incertitudes, certitudes": {
   "de": "fr",
   "ar": "الندوة الثالثة عشرة لوكالة الفضاء الدولية: حالات عدم اليقين",
@@ -69,16 +64,6 @@
   "ar": "20-22, avenue de Paris",
   "en": "20-22, avenue de Paris"
  },
- "2032 Cebalat Ben Ammar": {
-  "de": "fr",
-  "ar": "2032 Cebalat Ben Ammar",
-  "en": "2032 Cebalat Ben Ammar"
- },
- "27ᵉ édition des JTC entre création, mémoire et ouverture": {
-  "de": "fr",
-  "ar": "الطبعة السابعة والعشرون للشبكة المشتركة بين الإبداع والذاكرة والافتتاح",
-  "en": "27th edition of JTC between creation, memory and opening"
- },
  "3 Rue De Damas": {
   "de": "fr",
   "ar": "3 De Damascus Street",
@@ -118,6 +103,11 @@
   "de": "fr",
   "ar": "44 • 46 rue du Niger, Montplaisir Tunis",
   "en": "44 • 46 rue du Niger, Montplaisir Tunis"
+ },
+ "5 TND · Complet": {
+  "de": "fr",
+  "ar": "5 TND · Complete",
+  "en": "5 TND · Complete"
  },
  "5 avenue Taïeb Mhiri": {
   "de": "fr",
@@ -214,6 +204,11 @@
   "ar": "بينما يحتفلون بآخر مساء لهم معاً، تسقط الفتاتان على بوابة غامضة تنقلهما إلى جزيرة ناكالي الرائعة، مأهولة بمخلوقات سحرية مباشرة من القصص الخيالية الفلبينية في طفولتهما. وستنضم الفتيات مع بعضهن، بينما سيضطرن إلى مواجهة الآخرين.",
   "en": "As they celebrate their last evening together, the two girls fall on a mysterious portal that transports them to the fantastic island of Nakali, populated by magical creatures straight out of Filipino mythological tales of their childhood. Together, the girls will join forces with some of them, while they will have to face others."
  },
+ "Alzheimer : 500 spécialistes réunis à Tunis les 27 et 28 novembre": {
+  "de": "fr",
+  "ar": "Alzheimer: 500 أخصائي اجتمعوا في تونس في 27 و 28 تشرين الثاني/نوفمبر",
+  "en": "Alzheimer: 500 specialists gathered in Tunis on 27 and 28 November"
+ },
  "Amina Hanini": {
   "de": "fr",
   "ar": "Amina Hanini",
@@ -238,6 +233,11 @@
   "de": "fr",
   "ar": "بعد متدربه في الملجأ، انتقل (فينسنت فان غوغ) إلى (أوفرس-أوز) إلى منزل الدكتور (غات) عاشق فني. الأيام الأخيرة للرسام كانت مُميزة بالعلاقات المتضاربة التي كان يُقيمها مع أخيه (ثيو)، وصحته العقلية كانت مُتشردة.",
   "en": "After his internment in the asylum, Vincent Van Gogh moved to Auvers-sur-Oise to the home of Dr.Gachet, an art lover. The painter's last days were marked by the conflicting relations he had with his brother Theo, and his mental health was vagrant."
+ },
+ "Ariana": {
+  "de": "fr",
+  "ar": "Ariana",
+  "en": "Ariana"
  },
  "Art Explora Festival": {
   "de": "en",
@@ -288,11 +288,6 @@
   "de": "fr",
   "ar": "مناطق أخرى",
   "en": "Other regions"
- },
- "Av. Habib Bourguiba": {
-  "de": "fr",
-  "ar": "Av. Habib Bourguiba",
-  "en": "Av. Habib Bourguiba"
  },
  "Av. Mohamed 5": {
   "de": "fr",
@@ -373,6 +368,11 @@
   "de": "fr",
   "ar": "Beit El Hikma : The Mediterranean and its plural heritage",
   "en": "Beit El Hikma : The Mediterranean and its plural heritage"
+ },
+ "Beit El Hikma : Une rencontre autour de Jorge Luis Borges": {
+  "de": "fr",
+  "ar": "Beit El Hikma : A meeting around Jorge Luis Borges",
+  "en": "Beit El Hikma : A meeting around Jorge Luis Borges"
  },
  "Beit al-Hikma": {
   "de": "fr",
@@ -509,16 +509,6 @@
   "ar": "وسط تونس",
   "en": "Central Tunis"
  },
- "Centre Commercial Tunis City": {
-  "de": "fr",
-  "ar": "مركز تونس التجاري",
-  "en": "Tunis City Commercial Centre"
- },
- "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar": {
-  "de": "fr",
-  "ar": "مركز مدينة تونس التجارية، ٢٠٣٢ سيبالات بن عمر",
-  "en": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar"
- },
  "Centre culturel": {
   "de": "fr",
   "ar": "المركز الثقافي",
@@ -564,6 +554,11 @@
   "ar": "Chemtou, Jendouba",
   "en": "Chemtou, Jendouba"
  },
+ "ChichBich Au Sous-Sol 21 Novembre": {
+  "de": "fr",
+  "ar": "تشيتشيبيتش في سوب سول تشرين الثاني/نوفمبر 21",
+  "en": "ChichBich In Sub-Sol November 21"
+ },
  "Ciné 350 (Cité de la Culture)": {
   "de": "fr",
   "ar": "Ciné 350 (City of Culture)",
@@ -608,16 +603,6 @@
   "de": "fr",
   "ar": "سينيما أميلكار (إل مانار)",
   "en": "Cinema Amilcar (El Manar)"
- },
- "Cinéma Le Colisée": {
-  "de": "fr",
-  "ar": "Cinema Le Colosseum",
-  "en": "Cinema Le Colosseum"
- },
- "Cinéma Le Palace": {
-  "de": "fr",
-  "ar": "السينما لي بالاس",
-  "en": "Cinema Le Palace"
  },
  "Cinémas": {
   "de": "fr",
@@ -693,11 +678,6 @@
   "de": "fr",
   "ar": "التجمعات والجمعيات ورجال الدين والفنانين",
   "en": "Collectives, associations, DJs and artists"
- },
- "Comment braquer une banque ?": {
-  "de": "fr",
-  "ar": "كيف أسرق مصرفاً؟",
-  "en": "How do I rob a bank?"
  },
  "Comment braquer une banque ? au cinéma : 2 séances cette semaine à Pathé Tunis City. Prochaine séance mar. 17 nov. à 16:50.": {
   "de": "fr",
@@ -818,6 +798,11 @@
   "de": "fr",
   "ar": "التواريخ المقبلة",
   "en": "Forthcoming dates"
+ },
+ "Derrière l’écran d’un centre d’appels, le film de Sarra Abidi « Je m’appelle Clara » explore la solitude et la routine": {
+  "de": "fr",
+  "ar": "خلف شاشه مركز اتصال فيلم سارا عبيدي \"أنا كلارا\" يستكشف الوحدة والروتين",
+  "en": "Behind the screen of a call centre, Sarra Abidi's film \"I'm Clara\" explores loneliness and routine"
  },
  "Designed as an invitation to participate, this exhibition seeks to think equally with our": {
   "de": "en",
@@ -1204,6 +1189,11 @@
   "ar": "نهاية كانون الأول/ديسمبر (عطلات نهاية الأسبوع)",
   "en": "End of December (winter holidays)"
  },
+ "Flintlock 2027 : Tunis accueille 38 pays pour préparer l’exercice des forces spéciales": {
+  "de": "fr",
+  "ar": "Flintlock 2027 : Tunis welcomes 38 countries to prepare for the exercise of special forces",
+  "en": "Flintlock 2027 : Tunis welcomes 38 countries to prepare for the exercise of special forces"
+ },
  "Foire internationale du livre de Tunis": {
   "de": "fr",
   "ar": "معرض تونس الدولي للكتاب",
@@ -1394,6 +1384,11 @@
   "ar": "صور سوريا، بالميرا، حلب، دمشق",
   "en": "Images of Syria, Palmyra, Aleppo, Damascus"
  },
+ "Immersion artistique à Dar Ya, au cœur de la Médina de Tunis": {
+  "de": "fr",
+  "ar": "ازدراء فني في دار يا، في قلب مدينة تونس",
+  "en": "Artistic immersion in Dar Ya, in the heart of the Tunis Medina"
+ },
  "Inaugurée, le 24 octobre, à Kechlet El Attarine, ancienne caserne militaire ottomane du XIXe siècle située au cœur de la Médina de Tunis, dont une partie": {
   "de": "fr",
   "ar": "افتتاح في 24 تشرين الأول/أكتوبر، في كتشيلي العتارين، الثكنات العسكرية العثمانية السابقة في القرن التاسع عشر الواقعة في قلب ميدينا بتونس، الجزء منها",
@@ -1483,6 +1478,11 @@
   "de": "fr",
   "ar": "JAOU TUNIS 2026",
   "en": "JAOU TUNIS 2026"
+ },
+ "JCC 2026 : Une compétition aux couleurs arabes et africaines": {
+  "de": "fr",
+  "ar": "JCC 2026: A competition in Arab and African colours",
+  "en": "JCC 2026: A competition in Arab and African colours"
  },
  "JCC 2026 | Appel à candidatures pour le recrutement des bénévoles": {
   "de": "fr",
@@ -1779,11 +1779,6 @@
   "ar": "\"أويل يوفينير\" أو \"لولي دي إيوبلي\" في \"كيبيك\" فيلم أمريكي متحرك موجه من \"جول كراوفورد\" و \"جانويل بي\" Mercado and released in 2026",
   "en": "L'Île des souvenirs or L'Île de l'oubli in Quebec is an American animated film directed by Joel Crawford and Januel P. Mercado and released in 2026"
  },
- "LA BELLE ET LA MEUTE": {
-  "de": "fr",
-  "ar": "BELL AND WeATHER",
-  "en": "BELL AND WEATHER"
- },
  "La Boîte": {
   "de": "fr",
   "ar": "الصندوق",
@@ -1848,6 +1843,16 @@
   "de": "fr",
   "ar": "الشارع",
   "en": "The Street"
+ },
+ "La Tunisie , en forme longue la République tunisienne est un État arabophone et musulman d'Afrique du Nord, souverain depuis 1956, dont le territoire, en plein centre du bassin méditerranéen, au carrefour de l'Afrique, de l'Europe et du Moyen-Orient, témoigne d'une histoire plurimillénaire et pluricivilisationnelle.": {
+  "de": "fr",
+  "ar": "إن تونس، في شكل طويل، دولة ناطقة بالعربية ومسلمة في شمال أفريقيا، ذات سيادة منذ عام 1956، التي تشهد إقليمها، في مركز حوض البحر الأبيض المتوسط نفسه، على مفترق طرق أفريقيا وأوروبا والشرق الأوسط، تاريخا متعدد السنوات ومتعددا للحضارة.",
+  "en": "Tunisia , in long form the Tunisian Republic is an Arab-speaking and Muslim state of North Africa, sovereign since 1956, whose territory, in the very centre of the Mediterranean basin, at the crossroads of Africa, Europe and the Middle East, bears witness to a multi-year and multi-civilizational history."
+ },
+ "La Verrière (Le sous-sol)- Café Resto": {
+  "de": "fr",
+  "ar": "La Verrière (The basement) - Café Resto",
+  "en": "La Verrière (The basement) - Café Resto"
  },
  "La poésie sicilienne du XVIe siècle en concert à la Manouba": {
   "de": "fr",
@@ -2174,11 +2179,6 @@
   "ar": "لوحات جلال بن عبد الله بين مع صور فنانين من أجيال مختلفة، تشقق معاً أبناء نفس القصة:",
   "en": "The paintings of Jellal Ben Abdallah intertwine with those of artists of different generations, weaving together the sons of the same story: the one"
  },
- "Les œuvres vives de Clara Carvajal au palais Khereddine": {
-  "de": "fr",
-  "ar": "The living works of Clara Carvajal at the Khereddine Palace",
-  "en": "The living works of Clara Carvajal at the Khereddine Palace"
- },
  "Librairie Al Kitab (Facebook)": {
   "de": "fr",
   "ar": "Al Kitab Bookshop (Facebook)",
@@ -2338,6 +2338,11 @@
   "de": "fr",
   "ar": "May 1-Oct 30: 08:00-20:00",
   "en": "May 1-Oct 30: 08:00-20:00"
+ },
+ "Mediterraneo in movimento | Festival tuniso-italien dans la médina de Tunis": {
+  "de": "fr",
+  "ar": "Mediterraneo in movimento - Italian Tuniso Festival in the Tunis Medina",
+  "en": "Mediterraneo in movimento - Italian Tuniso Festival in the Tunis Medina"
  },
  "Mi-juillet à mi-août": {
   "de": "fr",
@@ -2669,11 +2674,6 @@
   "ar": "نازا، التي تُطلَق أحياناً كنازية، هي فيلم وثائقي بريطاني لعام 2026 موجه من صحفيين وصانعي أفلام إسرائيليين يوفال أبراهام ورايتشل زور، الذين كتبوا بالفعل الفيلم الفائز بالجائزة لا أرض أخرى في عام 2024.",
   "en": "Naza, sometimes stylized as NAZA, is a 2026 British documentary film directed by Israeli journalists and filmmakers Yuval Abraham and Rachel Szor, who already wrote the award-winning film No Other Land in 2024."
  },
- "Nicole Skarpness": {
-  "de": "fr",
-  "ar": "Nicole Skarpness",
-  "en": "Nicole Skarpness"
- },
  "Nino et Yasmina tombent amoureux dans la cour de leur école à Beyrouth, et rêvent à leur vie d’adulte, à un monde merveilleux. 20 ans plus tard, ils se retrouvent par accident et c’est à nouveau l’amour fou, magnétique, incandescent. Peut-on construire un avenir, dans un pays fracturé, qu’on tente de quitter mais qui vous retient de façon irrésistible ?": {
   "de": "fr",
   "ar": "يقع (نينو) و(ياسمينا) في الحب في فناء مدرستهم في (بيروت) ويحلمون بحياتهم البالغة بعد 20 عاماً، يجدون أنفسهم بالخطأ، ومرة أخرى، الحب المجنون، المغناطيسي، الوقح. أيمكننا بناء مستقبل في بلد ممزق، نحاول أن نغادر، لكن هذا يؤخرك بشكل لا رجعة فيه؟",
@@ -2769,11 +2769,6 @@
   "ar": "برنامج (ويك) في (أوغورا ديربا) من يوم الثلاثاء 17 إلى يوم الأحد 22 تشرين الثاني/نوفمبر (منتهي)",
   "en": "WEEK'S PROGRAMME AT AGORA DJERBA from Tuesday 17 to Sunday 22 November (updated)"
  },
- "Pack Les Rencontres Théatrales de LARTISTO": {
-  "de": "fr",
-  "ar": "LARTISTO Teatrine Encounter Pack",
-  "en": "LARTISTO Teatrine Encounter Pack"
- },
  "Papa où t'es ?": {
   "de": "fr",
   "ar": "أبي، أين أنت؟",
@@ -2783,11 +2778,6 @@
   "de": "fr",
   "ar": "شارك ديفوس في تشرين الأول/أكتوبر 2026 باكما في بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، المفوض علي منصور وخالد... المزيد من المعلومات الكتاب الآن شاغر بث في تشرين الأول/أكتوبر 2026 أسبوعاً من الأصدقاء الشباب يجدون أنفسهم في فيلا مُعزلة في واجهة البحر لعطلة نهاية الأسبوع",
   "en": "Share Diffuse à October 2026 Bakma In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are... More info Book now Share Broadcasted in October 2026 Weekend A group of young friends finds themselves in a secluded seafront villa for a weekend of ..."
- },
- "Pathé Tunis City": {
-  "de": "fr",
-  "ar": "Pathé Tunis City",
-  "en": "Pathé Tunis City"
  },
  "Patrimoine & traditions": {
   "de": "fr",
@@ -2829,11 +2819,6 @@
   "ar": "يكرس مختبر &quot; ديرمان &quot; ، بمناسبة الذكرى السنوية العشرين لإنشائه، ندوة دولية لقانون الاستثمار",
   "en": "For its twenty-year anniversary, the DRIMAN laboratory devotes an international colloquium to investment law"
  },
- "Power Yoga with Nicole Skarpness @nskarp": {
-  "de": "en",
-  "fr": "Power Yoga avec Nicole Skarpness @nskarp",
-  "ar": "Power Yoga with Nicole Skarpness @nskarp"
- },
  "Programme. Programme et Billetterie en ligne pour les séances de théatre, cinéma et autres évènements, Théâtre de l'Opéra de Tunis": {
   "de": "fr",
   "ar": "البرنامج. Program and Online Ticketing for Theatre Sessions, Cinema and Other Events, Tunis Opera Theatre",
@@ -2863,11 +2848,6 @@
   "de": "fr",
   "ar": "Quintet Bolshoi",
   "en": "Quintet Bolshoi"
- },
- "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis": {
-  "de": "fr",
-  "ar": "R52J+3MQ, Av. حبيب بورغيبا، تونس، تونس",
-  "en": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
  },
  "R56P+C9J, Av. Mohamed 5, Tunis, Tunis": {
   "de": "fr",
@@ -2928,11 +2908,6 @@
   "de": "fr",
   "ar": "Rte de La Goulette, Archaeological site of Carthage, Carthage",
   "en": "Rte de La Goulette, Archaeological site of Carthage, Carthage"
- },
- "Rte de La Goulette, Site archéologique de Carthage, Tunisie": {
-  "de": "fr",
-  "ar": "Rte de La Goulette, Archaeological site of Carthage, Tunisia",
-  "en": "Rte de La Goulette, Archaeological site of Carthage, Tunisia"
  },
  "Rue Ferjani Belhaj Ammar n°4 Cité Elkhadhra Tunis tunis": {
   "de": "fr",
@@ -3304,11 +3279,6 @@
   "ar": "تونس: ضبط 423 مكانا وعربة أثناء عملية ضد عرض الفوضى",
   "en": "Tunis: 423 stalls and carts seized during an operation against anarchic display"
  },
- "Tunis République، 54 Ave Habib Bourguiba": {
-  "de": "fr",
-  "ar": "تونس 54 ألف حبيب بورغيبا",
-  "en": "Tunis Republic的 54 Ave Habib Bourguiba"
- },
  "Tunis, Kasbah": {
   "de": "fr",
   "ar": "تونس، كاسبة",
@@ -3318,6 +3288,11 @@
   "de": "fr",
   "ar": "Tunis, Avenue Mohamed V",
   "en": "Tunis, Avenue Mohamed V"
+ },
+ "Tunisia": {
+  "de": "fr",
+  "ar": "تونس",
+  "en": "Tunisia"
  },
  "Tunisia Podcasts Festival (Instagram)": {
   "de": "en",
@@ -3409,6 +3384,11 @@
   "ar": "University of La Manouba and Amphitheatre Carthage Al Hadatha",
   "en": "University of La Manouba and Amphitheatre Carthage Al Hadatha"
  },
+ "V532+42X, Ariana, Ariana": {
+  "de": "fr",
+  "ar": "V532+42X, Ariana, Ariana",
+  "en": "V532+42X, Ariana, Ariana"
+ },
  "V7JH+6J7, La Marsa, La Marsa": {
   "de": "fr",
   "ar": "V7JH+6J7, La Marsa, La Marsa",
@@ -3499,16 +3479,6 @@
   "ar": "_events/auto/cine-360/2026-11-18-I-m-call-clara.md",
   "en": "_events/auto/cine-360/2026-11-18-I-m-call-clara.md"
  },
- "_events/auto/cine-agora/2026-11-17-bakma.md": {
-  "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-17-bakma.md",
-  "en": "_events/auto/cine-agora/2026-11-17-bakma.md"
- },
- "_events/auto/cine-agora/2026-11-17-scrooge.md": {
-  "de": "fr",
-  "ar": "_event/auto/cine-agora/2026-11-17-scrooge.md",
-  "en": "_events/auto/cine-agora/2026-11-17-scrooge.md"
- },
  "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md": {
   "de": "fr",
   "ar": "_events/auto/cine-agora/2026-11-18-mappelle-clara.md",
@@ -3533,6 +3503,11 @@
   "de": "fr",
   "ar": "_أحداث/أوتو/سينغورا/2026-11-19-من دون العالم - ذات فتحة وعمود.",
   "en": "_events/auto/cine-agora/2026-11-19-un-world-fragile-and-wonderful.md"
+ },
+ "_events/auto/cine-agora/2026-11-21-bakma.md": {
+  "de": "fr",
+  "ar": "_events/auto/cine-agora/2026-11-21-bakma.md",
+  "en": "_events/auto/cine-agora/2026-11-21-bakma.md"
  },
  "_events/auto/cine-agora/2026-11-21-le-mystere-lucy-lost.md": {
   "de": "fr",
@@ -3624,85 +3599,15 @@
   "ar": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md",
   "en": "_events/auto/ift-pdf/2026-11-27-sous-les-étoiles-de-paris.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md": {
+ "_events/auto/tunis-events-cinema/2026-11-18-dar-el-3ers.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-18-dar-el-3ers.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-18-dar-el-3ers.md"
  },
- "_events/auto/tunis-events-cinema/2026-11-17-bakma-l-agora-marsa.md": {
+ "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-l-agora-marsa.md": {
   "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-bakma-l-agora-marsa.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-bakma-l-agora-marsa.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-bakma.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-bakma.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-bakma.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-comment-braquer-une-banque.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-how-braquer-unebank.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-how-braquer-une-bank.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinemadart.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinemadart.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinemadart.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-scrooge.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-un-monde-fragile-et-merveilleux.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-un-world-fragile andwonderful.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-un-world-fragile-and-wonderful.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-weekend.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17-weekend.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-weekend.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-17-what-else.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-17- What-else.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-17-what-else.md"
- },
- "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events-cinema/2026-11-18-I-m-call-clara-cinemadart.md",
-  "en": "_events/auto/tunis-events-cinema/2026-11-18-I-m-call-clara-cinemadart.md"
+  "ar": "_events/auto/tunis-events-cinema/2026-11-18-I-m-call-clara-l-agora-marsa.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-18-I-m-call-clara-l-agora-marsa.md"
  },
  "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md": {
   "de": "fr",
@@ -3719,6 +3624,11 @@
   "ar": "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md"
  },
+ "_events/auto/tunis-events-cinema/2026-11-18-un-monde-fragile-et-merveilleux.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-18-un-world-fragile andwonderful.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-18-un-world-fragile-and-wonderful.md"
+ },
  "_events/auto/tunis-events-cinema/2026-11-19-the-hunger-games-sunrise-on-the-reaping.md": {
   "de": "en",
   "fr": "_events/auto/tunis-events-cinéma/2026-11-19-le-chasse-jeux-sunrise-on-the-reaping.md",
@@ -3729,6 +3639,16 @@
   "ar": "_events/auto/tunis-events-cinema/2026-11-19-un-world-fragile-and-wonderful.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-19-un-world-fragile-and-wonderful.md"
  },
+ "_events/auto/tunis-events-cinema/2026-11-19-what-else.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-19- What-else.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-19-what-else.md"
+ },
+ "_events/auto/tunis-events-cinema/2026-11-21-bakma.md": {
+  "de": "fr",
+  "ar": "_events/auto/tunis-events-cinema/2026-11-21-bakma.md",
+  "en": "_events/auto/tunis-events-cinema/2026-11-21-bakma.md"
+ },
  "_events/auto/tunis-events-cinema/2026-11-21-le-mystere-lucy-lost.md": {
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-21-le-mystere-lucy-lost.md",
@@ -3738,11 +3658,6 @@
   "de": "fr",
   "ar": "_events/auto/tunis-events-cinema/2026-11-21-weekend.md",
   "en": "_events/auto/tunis-events-cinema/2026-11-21-weekend.md"
- },
- "_events/auto/tunis-events/2026-11-19-la-belle-et-la-meute.md": {
-  "de": "fr",
-  "ar": "_events/auto/tunis-events/2026-11-19-la-belle-et-la-mute.md",
-  "en": "_events/auto/tunis-events/2026-11-19-la-belle-et-la-mute.md"
  },
  "a Presse de Tunisie, quotidien de référence depuis 1936 : actualité nationale, économie, sport, culture et international.": {
   "de": "fr",
@@ -3958,6 +3873,11 @@
   "de": "ar",
   "fr": "Un fabricant de contenu entre dans un endroit abandonné pour diffuser une aventure directe, collision avec un groupe d'enfants de la rue, transformant l'aventure en un conflit entre le faux monde virtuel et la cruauté de la réalité marginale.",
   "en": "A content manufacturer enters an abandoned place to broadcast a direct adventure, collision with a group of street children, turning the adventure into a clash between the virtual world's fake and the cruelty of the marginal reality."
+ },
+ "‘‘Soleil d’Orient’’ de la troupe syrienne Inana ouvre les JTC 2026": {
+  "de": "fr",
+  "ar": "‘The Sun of the East of Syria's Inana Troop opens the JTC 2026",
+  "en": "‘‘The Sun of the East of Syria's Inana Troop opens the JTC 2026"
  },
  "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis": {
   "de": "fr",

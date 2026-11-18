@@ -38,16 +38,14 @@
   "Théâtre municipal de Tunis": "theatre-municipal-de-tunis",
   "Caserne El Attarine": "caserne-el-attarine",
   "Sociale Sidi Bou Said": "sociale-sidi-bou-said",
-  "Sociale.": "sociale-sidi-bou-said",
   "Grafiflow": "grafiflow",
   "Résidence du Consul Général de France": "residence-du-consul-general-de-france",
   "Salle des Jeunes Créateurs - Cité de la Culture": "salle-des-jeunes-createurs-cite-de-la-culture",
+  "La Verrière (Le sous-sol)- Café Resto": "la-verriere-le-sous-sol-cafe-resto",
   "AÏNA": "aina",
   "Espace \"L'Artisto\"": "espace-l-artisto",
   "UTICA UNION TUN. THE IND. TRADE & ART": "utica-union-tun-the-ind-trade-art",
-  "Cinéma Le Colisée": "cinema-le-colisee",
-  "Cinéma Le Palace": "cinema-le-palace",
-  "Pathé Tunis City": "pathe-tunis-city",
+  "Tunisia": "tunisia",
   "Douz": "douz",
   "One Resort, Monastir": "one-resort-monastir",
   "32bis": "le-32bis",
@@ -94,7 +92,7 @@
    "ville": "tunis",
    "lat": 36.88133,
    "lon": 10.32585,
-   "n": 18
+   "n": 16
   },
   {
    "slug": "mediatheque-institut-francais-de-tunis",
@@ -115,15 +113,6 @@
    "n": 8
   },
   {
-   "slug": "theatre-municipal-de-tunis",
-   "nom": "Théâtre municipal de Tunis",
-   "type": "theatre",
-   "ville": "tunis",
-   "lat": 36.79911,
-   "lon": 10.18081,
-   "n": 8
-  },
-  {
    "slug": "cinema-alhambra-zephyr",
    "nom": "Cinéma Alhambra Zéphyr",
    "type": "cinema",
@@ -139,6 +128,15 @@
    "ville": "tunis",
    "lat": 36.854,
    "lon": 10.324,
+   "n": 7
+  },
+  {
+   "slug": "theatre-municipal-de-tunis",
+   "nom": "Théâtre municipal de Tunis",
+   "type": "theatre",
+   "ville": "tunis",
+   "lat": 36.79911,
+   "lon": 10.18081,
    "n": 7
   },
   {
@@ -187,15 +185,6 @@
    "n": 4
   },
   {
-   "slug": "cinema-le-palace",
-   "nom": "Cinéma Le Palace",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.8,
-   "lon": 10.183,
-   "n": 4
-  },
-  {
    "slug": "institut-francais-de-sfax",
    "nom": "Institut français de Sfax",
    "type": "centre",
@@ -211,33 +200,6 @@
    "ville": "sfax",
    "lat": 36.85392,
    "lon": 10.19632,
-   "n": 3
-  },
-  {
-   "slug": "sociale-sidi-bou-said",
-   "nom": "Sociale Sidi Bou Said",
-   "type": "club",
-   "ville": "tunis",
-   "lat": 34.59926,
-   "lon": 9.59188,
-   "n": 3
-  },
-  {
-   "slug": "cinema-le-colisee",
-   "nom": "Cinéma Le Colisée",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.80014,
-   "lon": 10.18189,
-   "n": 3
-  },
-  {
-   "slug": "pathe-tunis-city",
-   "nom": "Pathé Tunis City",
-   "type": "cinema",
-   "ville": "tunis",
-   "lat": 36.89828,
-   "lon": 10.12451,
    "n": 3
   },
   {
@@ -286,6 +248,15 @@
    "n": 2
   },
   {
+   "slug": "salle-de-cinema-institut-francais-de-sousse",
+   "nom": "Salle de cinéma, Institut français de Sousse",
+   "type": "cinema",
+   "ville": "sousse",
+   "lat": 35.63047,
+   "lon": 10.89844,
+   "n": 2
+  },
+  {
    "slug": "le-violon-bleu-sidi-bou-said",
    "nom": "Le Violon Bleu, Sidi Bou Saïd",
    "type": "autre",
@@ -301,15 +272,6 @@
    "ville": "tunis",
    "lat": 36.79763,
    "lon": 10.1717,
-   "n": 2
-  },
-  {
-   "slug": "cite-de-la-culture",
-   "nom": "Cité de la Culture",
-   "type": "centre",
-   "ville": "tunis",
-   "lat": 36.8109,
-   "lon": 10.18608,
    "n": 2
   },
   {
@@ -349,15 +311,6 @@
    "n": 1
   },
   {
-   "slug": "salle-de-cinema-institut-francais-de-sousse",
-   "nom": "Salle de cinéma, Institut français de Sousse",
-   "type": "cinema",
-   "ville": "sousse",
-   "lat": 35.63047,
-   "lon": 10.89844,
-   "n": 1
-  },
-  {
    "slug": "agorgi-gallery-sidi-bou-said",
    "nom": "Agorgi Gallery, Sidi Bou Saïd",
    "type": "galerie",
@@ -385,12 +338,30 @@
    "n": 1
   },
   {
+   "slug": "sociale-sidi-bou-said",
+   "nom": "Sociale Sidi Bou Said",
+   "type": "club",
+   "ville": "tunis",
+   "lat": 34.59926,
+   "lon": 9.59188,
+   "n": 1
+  },
+  {
    "slug": "salle-des-jeunes-createurs-cite-de-la-culture",
    "nom": "Salle des Jeunes Créateurs - Cité de la Culture",
    "type": "centre",
    "ville": "tunis",
    "lat": 36.8125,
    "lon": 10.1817,
+   "n": 1
+  },
+  {
+   "slug": "tunisia",
+   "nom": "Tunisia",
+   "type": "autre",
+   "ville": "tunis",
+   "lat": 36.80021,
+   "lon": 10.18578,
    "n": 1
   },
   {
@@ -409,6 +380,15 @@
    "ville": "monastir",
    "lat": 35.76372,
    "lon": 10.7399,
+   "n": 1
+  },
+  {
+   "slug": "cite-de-la-culture",
+   "nom": "Cité de la Culture",
+   "type": "centre",
+   "ville": "tunis",
+   "lat": 36.8109,
+   "lon": 10.18608,
    "n": 1
   },
   {

@@ -4,10 +4,6 @@
    "ar": "الندوة الثالثة عشرة لوكالة الفضاء الدولية: حالات عدم اليقين",
    "en": "13th UMA Symposium: Uncertainties, Certainties"
   },
-  "27ᵉ édition des JTC entre création, mémoire et ouverture": {
-   "ar": "الطبعة السابعة والعشرون للشبكة المشتركة بين الإبداع والذاكرة والافتتاح",
-   "en": "27th edition of JTC between creation, memory and opening"
-  },
   "A big thank you to everyone who came to visit 'Kids of the World, Unite!', an exhibition c": {
    "fr": "Un grand merci à tous ceux qui sont venus visiter 'Les enfants du monde, Unite!', une exposition c",
    "ar": "شكراً جزيلاً لكل من جاء لزيارته لـ (كايدز) من العالم يا (وحيد)"
@@ -59,6 +55,10 @@
   "Cercle de Lectur au Centre-Ville de Tunis": {
    "ar": "دائرة ليكتور في مركز مدينة تونس",
    "en": "Circle of Lectur in the city centre of Tunis"
+  },
+  "ChichBich Au Sous-Sol 21 Novembre": {
+   "ar": "تشيتشيبيتش في سوب سول تشرين الثاني/نوفمبر 21",
+   "en": "ChichBich In Sub-Sol November 21"
   },
   "Communiqué de presse": {
    "ar": "بيان صحفي",
@@ -119,6 +119,10 @@
   "Images de Syrie, Palmyre, Alep, Damas": {
    "ar": "صور سوريا، بالميرا، حلب، دمشق",
    "en": "Images of Syria, Palmyra, Aleppo, Damascus"
+  },
+  "Immersion artistique à Dar Ya, au cœur de la Médina de Tunis": {
+   "ar": "ازدراء فني في دار يا، في قلب مدينة تونس",
+   "en": "Artistic immersion in Dar Ya, in the heart of the Tunis Medina"
   },
   "Interlude #17 : Yellow Wasabi": {
    "ar": "Interlude #17: Yellow Wasabi",
@@ -192,10 +196,6 @@
    "ar": "معرض (فيولين بليو) سعيد بدعوتك لإكتشاف (باركورس)",
    "en": "The Violin Bleu Gallery is pleased to invite you to discover PARCOURS , a retrospective"
   },
-  "Les œuvres vives de Clara Carvajal au palais Khereddine": {
-   "ar": "The living works of Clara Carvajal at the Khereddine Palace",
-   "en": "The living works of Clara Carvajal at the Khereddine Palace"
-  },
   "Listening Session, Screening & Live Performance": {
    "fr": "Séance d'écoute, projection et performance en direct",
    "ar": "جلسة الاستماع، فرز الأداء الحي"
@@ -211,6 +211,10 @@
   "L’Œuvre amie : entre performance artistique et réflexion esthétique": {
    "ar": "عمل صديق: بين الأداء الفني والتفكير الاصطناعي",
    "en": "A friend work: between artistic performance and aesthetic reflection"
+  },
+  "Mediterraneo in movimento | Festival tuniso-italien dans la médina de Tunis": {
+   "ar": "Mediterraneo in movimento - Italian Tuniso Festival in the Tunis Medina",
+   "en": "Mediterraneo in movimento - Italian Tuniso Festival in the Tunis Medina"
   },
   "Miguel Ángel Moratinos, Ségolène Royal et Mohammed bin Abdullah Al Rumaihi aux 40èmes Journées de l’Entreprise 2026": {
    "ar": "ميغيل أنخيل موراتينوس، وسيغولين رويال، ومحمد بن عبد الله الروميهي في الأيام الأربعين للأعمال التجارية 2026",
@@ -252,17 +256,9 @@
    "ar": "برنامج (ويك) في (أوغورا ديربا) من يوم الثلاثاء 17 إلى يوم الأحد 22 تشرين الثاني/نوفمبر (منتهي)",
    "en": "WEEK'S PROGRAMME AT AGORA DJERBA from Tuesday 17 to Sunday 22 November (updated)"
   },
-  "Pack Les Rencontres Théatrales de LARTISTO": {
-   "ar": "LARTISTO Teatrine Encounter Pack",
-   "en": "LARTISTO Teatrine Encounter Pack"
-  },
   "Philo-Art pour Enfants en Français": {
    "ar": "فيلو - آرت للأطفال في الفرنسية",
    "en": "Philo-Art for Children in French"
-  },
-  "Power Yoga with Nicole Skarpness @nskarp": {
-   "fr": "Power Yoga avec Nicole Skarpness @nskarp",
-   "ar": "Power Yoga with Nicole Skarpness @nskarp"
   },
   "Proud of this collaboration": {
    "fr": "Fier de cette collaboration",
@@ -401,16 +397,6 @@
    "ar": "(آيدا) تعمل في مركز اتصال لعدة سنوات إنها في الأربعينات من عمرها وتعيش وحدها في حي من تونس تمضي أيامها في تكرار نفس العبارات للغرباء في نهاية الخط، تحت اسم كلارا، مستشار زبون الذي يبيع حزم الإجازات. وفي مركز الاتصال هذا، يجري رصد العمل رصداً شديداً ولا يحسب الربحية إلا.",
    "en": "Ayda has been operating in a call centre for several years. She's in her 40s and lives alone in a neighborhood of Tunis. She spends her days repeating the same phrases to strangers at the end of the line, under the pseudonym of Clara, a customer advisor who sells vacation packages. In this call centre, the work is very monitored and only profitability counts."
   },
-  "_events/auto/cine-agora/2026-11-17-bakma.md": {
-   "cle": "bd01c3eb7145",
-   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة. أعضاؤه تم قطع رأسها واختفى وبدلا من ذلك، القاتل يتستر على رأس كلب",
-   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, instead, the murderer grotesquely sewn a dog's head."
-  },
-  "_events/auto/cine-agora/2026-11-17-scrooge.md": {
-   "cle": "779a591269a7",
-   "ar": "(إيبينيزر سكروج) رجل عجوز وفاريش ورجل منعزل بالطبع هو يكره ويحقر عيد الميلاد وكل شيء يولد السعادة ومن ثم فهو يتلقى زيارة شبح شريك قديم وكذلك أرواح عيد الميلاد في الماضي والحاضر والمستقبل.",
-   "en": "Ebenezer Scrooge is an old, avarish, pincer and solitary man. Of course, he hates and despises Christmas and everything that generates happiness. It is then that he receives the visit of the ghost of an old associate as well as the Christmas spirits of the past, present and future."
-  },
   "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md": {
    "cle": "84dbf1ebc17d",
    "ar": "(آيدا) تعمل في مركز اتصال لعدة سنوات إنها في الأربعينات من عمرها وتعيش وحدها في حي من تونس تمضي أيامها في تكرار نفس العبارات للغرباء في نهاية الخط، تحت اسم كلارا، مستشار زبون الذي يبيع حزم الإجازات. وفي مركز الاتصال هذا، يجري رصد العمل رصداً كبيراً ولا يحسب الربحية إلا. على مر السنين حياته كانت فارغة ومفردة ووحدة",
@@ -435,6 +421,11 @@
    "cle": "f621834b92d6",
    "ar": "(نينو) و(ياسمينا) طفلان وقعا في حب في فناء مدرسي في (بيروت) يحلما بعالم رائع بعد 20 عاماً، ينتهي بهم الأمر بالخطأ و هو حب مجنون مرة أخرى أيمكننا بناء مستقبل في بلد ممزق، نحاول أن نغادر، لكن هذا يؤخرك بشكل لا رجعة فيه؟",
    "en": "Nino and Yasmina, two children who fell in love in a schoolyard in Beirut, dream of a wonderful world. 20 years later, they end up by accident and it's crazy love again. Can we build a future, in a fractured country, that we are trying to leave, but that holds you back irresistibly?"
+  },
+  "_events/auto/cine-agora/2026-11-21-bakma.md": {
+   "cle": "bd01c3eb7145",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدمّ يكذّب ما يبدو أنّه الجسم المشوّه لإمرأة شابة. أعضاؤه تم قطع رأسها واختفى وبدلا من ذلك، القاتل يتستر على رأس كلب",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman. Its members were cut off, its head disappeared and, instead, the murderer grotesquely sewn a dog's head."
   },
   "_events/auto/cine-agora/2026-11-21-le-mystere-lucy-lost.md": {
    "cle": "a66053e9d573",
@@ -525,6 +516,11 @@
    "cle": "72700eb658e5",
    "ar": "ويطلق المعهد التونسي الفرنسي نداء لتقديم عطاءات لإجراء تقييم نهائي خارجي ومستقل لمشروع &quot; سعدات - آل - موجتام3 &quot; ، الذي تم نشره في محافظتي غفسا وسيدي - بوزيد.\nويهدف هذا المشروع إلى تحسين إمكانية الحصول على الرعاية الجيدة على أساس مستدام، عن طريق تعزيز قدرة الهياكل الصحية وتعبئة المجتمع المدني حول الوقاية والتوعية ودعم المرضى.",
    "en": "The French Institute of Tunisia is launching a call for tenders for an external and independent final evaluation of the FEF project \"#Sahat_Al_Moujtam3\", deployed in the governorates of #Gafsa and #Sidi_Bouzid.\nThe aim of this project is to improve access to quality care on a sustainable basis, by strengthening the capacity of health structures and mobilizing civil society around prevention, awareness-raising and patient support."
+  },
+  "_events/auto/ift-pdf/2026-10-23-jaou-tunis-biennale-8e-edition.md": {
+   "cle": "1922fef2c82d",
+   "ar": "The French Institute of Tunisia is proud to be a partner in the 8th edition of \"Jaou Tunis Biennale 2026\" which will be held from 23 October to 22 November.\nبشأن البرنامج: المعارض والأداءات والحفلات الموسيقية والمحادثات والاجتماعات التي تجمع بين الفنانين والكتاب والموسيقيين والجمهور من جميع أنحاء العالم.",
+   "en": "The French Institute of Tunisia is proud to be a partner in the 8th edition of \"Jaou Tunis Biennale 2026\" which will be held from 23 October to 22 November.\nOn the programme: exhibitions, performances, concerts, conversations and meetings bringing together artists, writers, musicians and audiences from all over the world."
   },
   "_events/auto/ift-pdf/2026-10-27-images-de-syrie-palmyre-alep-damas.md": {
    "cle": "01408c4dc0ae",
@@ -625,6 +621,11 @@
    "cle": "0bafb5142f42",
    "ar": "مكتبة الإعلام في المعهد التونسي الفرنسي تقدم لكم، \"تونيس بلوز\"، حلقة عمل ثلاثية الدورة تستكشف الأبعاد الثلاثة للعلاج المكتبي: القراءة والكتابة وتبادل المعلومات.\nهذه التجربة تدعوك إلى الغوص في عالم روايات علي بيكور تونس بلو\nومع ظهور هذه القصة، سيسافر المشاركون عبر مدينة تمزقها ذكريات وتناقضات ودوافع مجتمع متغير.",
    "en": "The media library of the French Institute of Tunisia offers you, \"Tunis Blues\", a three-session workshop that explores the three dimensions of library therapy: reading, writing and exchanging.\nThis experience invites you to dive into the world of Ali Bécheur's novel Tunis Blues.\nAs the story unfolds, the participants will travel through a city that is traversed by the memories, contradictions and impulses of a changing society."
+  },
+  "_events/auto/ift-pdf/2026-11-22-journees-theatrales-de-carthage.md": {
+   "cle": "b8f719543797",
+   "ar": "لأسبوع، تتحول تونس إلى مشهد حي ضخم، يخلط المسابقات الرسمية، عروض الشوارع، حلقات عمل مهنية...",
+   "en": "For a week, Tunis is turning into a huge living scene, mixing official competitions, street shows, professional workshops..."
   },
   "_events/auto/ift-pdf/2026-11-23-discussion-avec-elgas.md": {
    "cle": "4ea08f8368a7",
@@ -786,6 +787,16 @@
    "ar": "فنانين\nكونين\nليلة من الموسيقى بالاسبانية\nوفي 17 تشرين الثاني/نوفمبر، التقى موزغو وبنجيمي في تونس مساء سيجمع عالمين موسيقيين مختلفين جدا.\nالسطح، فنانين، مشهد واحد...\nومساء لاكتشاف الحياة.\nالدخول الحر، في حدود الأماكن المتاحة\nالثلاثاء 17 تشرين الثاني/نوفمبر - الساعة 00/20\n@habibidowntown_\nRooftop of El Hana International Hotel, Tunis\nMüsgö + Benjemy",
    "en": "Two artists.\nTwo universes.\nA night of music in Spanish.\nOn 17 November, Müsgö and BenJemy met in Tunis for an evening that will bring together two very different musical worlds.\nA rooftop, two artists, one scene...\nand an evening to discover live.\nFree entry, within the limits of available places\nTuesday 17 November · 8 p.m.\n@habibidowntown_\nRooftop of El Hana International Hotel, Tunis\nMüsgö + Benjemy"
   },
+  "_events/auto/ig-jaou-tunis/2026-11-13-art-explora-festival.md": {
+   "cle": "b2cafbc72e94",
+   "fr": "Festival d'Art Explora\nSous-titre / Contre; Courant\nExposition collective\n25 octobre-31 décembre 2026\nB7L9 Centre d'art\nPrévu par Danielle Makhoul & Amanda Abi Khalil\nCoproduction par @artexplorafestival et @kamel_lazaar_fondation\nCofinancé par l'Union européenne\nLes données sont disponibles à l'adresse suivante :\nLara Tabet\nMarseille Débordement, Les Catalans, 2022\nLa toxicité et la violence aquatique sont généralement invisibles sous la surface de l'eau.",
+   "ar": "مهرجان أكسبلورا\nتحت سطح الأرض/الوحدة؛\nمعرض جماعي\n25 تشرين الأول/أكتوبر - 31 كانون الأول/ديسمبر 2026\nB7L9 مركز الفنون\nمن قبل دانييل ماخول أماندا أبي خليل\nCo-production by @artexplorafestival and @kamel_lazaar_foundation\nالتمويل المشترك من جانب الاتحاد الأوروبي\n<unk> @mehdi.ben.temessek\nLara Tabet\nMarseille Overflow, Les Catalans, 2022\nفالسموم والعنف المائي عادة ما يكونان غير مرئيين تحت سطح الماء يصبحان مرئيين."
+  },
+  "_events/auto/ig-la-boite/2026-10-31-oasis-days.md": {
+   "cle": "c6fc9d875a3c",
+   "fr": "Jours de 2026.\n&quot; Ce qui reste sous nos horizons &quot; (Ce qui demeure sous nos horizons), une exposition artistique appelée Ben Issa, qui explore à travers le tissu ce qu'est la mémoire et ce qui reste présent dans nos détails et histoires.\nLes images de la galerie, où les cordes et les matériaux se transforment en une zone d'expression et de mémoire.\nJOURS OASIS 2026 <unk> TEXTILE D'EXPOSITION\nRetour en images sur &quot; Ce qui demeure sous nos horizons &quot; , une exposition textile d-Asma Ben Aissa.",
+   "en": "Days of 2026.\n&quot; What remains under our horizons &quot; (Ce qui demeure sous nos horizons), a artistic exhibit named Ben Issa, which explores through fabric what memory is and what remains present in our details and stories.\nPictures from the gallery, where strings and materials turn into an area of expression and memory.\nOASIS DAYS 2026 <unk> EXPOSITION TEXTILE\nRetour en images sur &quot; Ce qui demeure sous nos horizons &quot; , une exposition textile d’Asma Ben Aissa."
+  },
   "_events/auto/ig-la-boite/2026-11-11-diquadila-entre-deux-rives-des-histoires-de-departs-d-attent.md": {
    "cle": "ca174328acb8",
    "ar": "بين شاطئين، قصص المغادرة، الانتظار والعبور.\nوفي لابويه، جمع أحمد بن نيسيب، وعمر شيخ، وستيفانو رتشي الرسومات والجراء، والحبال، والصوت، والشهادات في معرض ولد من محادثة بين ثلاثة فنانين وخبراتهم في المنفى.\nمعرض للمرور من خلال، للمشاهدة والاستماع إلى.\nديكواديلا هو مشروع من قبل أحمد بن نسيب، عمر شيخ وستيفانو رتشي، يعالج سلمى كوسميتيني.\nالافتتاح",
@@ -856,15 +867,20 @@
    "ar": "وفي الفترة من 3 إلى 5 كانون الأول/ديسمبر 2026، تنظم جامعة لا مانوبا الطبعة 13 من ندوتها الدولية المتعددة التخصصات، المكرسة هذا العام لحالات عدم اليقين/الخطوبة. المادة 13 من الندوة المشتركة بين الوكالات: حالات عدم اليقين، ظهرت حالات معينة أولاً في لجنة التنسيق المشتركة بين الوكالات والمعنية بإدارة المواد الكيميائية.",
    "en": "From December 3 to 5, 2026, the University of La Manouba organizes the 13th edition of its international interdisciplinary symposium, dedicated this year to the binome Uncertainties/Certitudes. Article 13th UMA Symposium: Uncertainties, Certainties appeared first on IRMC ."
   },
+  "_events/auto/presse-economiste-maghrebin/2026-10-27-a-linstitut-francais-de-tunis.md": {
+   "cle": "f2a8a8a7ab2f",
+   "ar": "وبمناسبة صدور الطبعة الثامنة من تونس، وهو الفن المعاصر الذي تنظمه مؤسسة كمال لازار، يستضيف المعهد التونسي الفرنسي معرض صور سوريا: بالميرا، حلب، دمشق، الذي يستضيفه المصور الفرنسي ميشيل إيزنلور.",
+   "en": "On the occasion of the eighth edition of Jaou Tunis, the biennial of contemporary art organized by the Kamel Lazaar Foundation, the French Institute of Tunisia hosts the exhibition \"Images of Syria: Palmyra, Aleppo, Damascus\" by French photographer Michel Eisenlohr."
+  },
+  "_events/auto/presse-kapitalis/2026-11-18-mediterraneo-in-movimento-festival-tuniso-italien-dans-la-me.md": {
+   "cle": "1caf1527f2be",
+   "ar": "وانطلقت في 16 تشرين الثاني/نوفمبر 2026، الطبعة الثانية من منطقة البحر الأبيض المتوسط في مهرجان المافيا، والروتة الإبداعية &quot; إيتاليا &quot; (البحر الأبيض المتوسط على الطريق الإبداعي بين إيطاليا وتونس) ستستمر حتى 21 تشرين الثاني/نوفمبر في المجمع الثقافي لسانت كروا، في قلب مدينة تونس العاصمة، مع الاستثمار في مساحات ثقافية أخرى ومؤسسات تعليمية في مدينة تونس. ...",
+   "en": "Opened on 16 November 2026, the second edition of the Mediterranean in movimento festival, creative rotte tra Italia e Tunisia (Mediterranean on the move, creative routes between Italy and Tunisia) will continue until 21 November in the cultural complex of Sainte-Croix, in the heart of the Tunis Medina, while investing other cultural spaces and educational institutions of the city of Tunis. ..."
+  },
   "_events/auto/presse-kapitalis/2026-11-19-ia-et-ecriture-litteraire-rencontres-debats-avec-hichem-ben-.md": {
    "cle": "3ad01500a5f3",
    "ar": "The bookshop Fahrenheit 451 in Carthage, on Saturday, November 14, 2026, at 4:30 p.m., hosts a panel discussion on the book of filmmaker and writer Hichem Ben Ammar ‘A troubling face-to-face at the threshold of the unknown, interview with ChatGPT, recently published by Sud Éditions. وسيدير المناقشة رضوف ميدلجي.",
    "en": "The bookshop Fahrenheit 451 in Carthage, on Saturday, November 14, 2026, at 4:30 p.m., hosts a panel discussion on the book of filmmaker and writer Hichem Ben Ammar ‘A troubling face-to-face at the threshold of the unknown, interview with ChatGPT, recently published by Sud Éditions. The debate will be moderated by Raouf Medelgi."
-  },
-  "_events/auto/presse-kapitalis/2026-11-21-27e-edition-des-jtc-entre-creation-memoire-et-ouverture.md": {
-   "cle": "681f8094833a",
-   "ar": "وستُعقد الطبعة السابعة والعشرون من أيام مسرح الحمل في الفترة من 21 تشرين الثاني/نوفمبر إلى 28 و 2026 في تونس. وفي مؤتمر صحفي عُقد في لجنة الثقافة، قدم سليم سانهاجي، المدير الفني ورئيس اللجنة التنظيمية، التوجهات الرئيسية لهذا الحدث، الذي يهدف إلى إقامة حوار بين المشاهد العربية والأفريقية والدولية، مع إعطاء ... في الوقت نفسه.",
-   "en": "The 27th edition of the Carthage Theatrical Days (JTC) will be held from November 21 to 28, 2026 in Tunis. At a press conference held at the Cité de la Culture, Slim Sanhaji, artistic director and chairman of the organizing committee, presented the main directions of this event, which aims to have a dialogue between Arab, African and international scenes, while at the same time giving ..."
   },
   "_events/auto/presse-leaders/2026-12-10-j-30-les-40es-journees-de-lentreprise-font-de-lexecution-le-.md": {
    "cle": "e8cbb1bcde33",
@@ -886,11 +902,6 @@
    "ar": "Mohamed Hedi Agrebi rejoins the Cité de la Culture scene on Saturday 14 November at 9pm, at the Théâtre des jeunes créateurs, with DADA, a concert that evolveds from one date to the next. وبين الشعر التونسي، وتراث الصوفي والجاز، يجمع هذا المشروع بين التراث الروحي والشعري التونسي بالجاز والارتجال والموسيقى المعاصرة.",
    "en": "Mohamed Hedi Agrebi rejoins the Cité de la Culture scene on Saturday 14 November at 9pm, at the Théâtre des jeunes créateurs, with DADA, a concert that evolves from one date to the next. Between Tunisian poetry, Sufi heritage and jazz, this project brings together Tunisian spiritual and poetic heritage with jazz, improvisation and contemporary music."
   },
-  "_events/auto/presse-webdo/2026-11-17-les-uvres-vives-de-clara-carvajal-au-palais-khereddine.md": {
-   "cle": "bc9aa8df0584",
-   "ar": "السفارة الإسبانية ومؤسسة سيرفانتيس، بالتعاون مع بلدية تونس، هما الشريكان اللذان ينظمان معرض \"باساجي\" من قبل الفنان كلارا كارفاجال، الحاضرين بيننا لهذا الحدث. وبعد افتتاح المعرض، سيتمكن الجمهور من اكتشاف أعمال كلارا كارفاجال حتى 23 كانون الأول/ديسمبر.",
-   "en": "The Spanish embassy and the Instituto Cervantes, in collaboration with the municipality of Tunis, are the partners organizing the exhibition \"Pasaje\" by artist Clara Carvajal, present among us for this event. After the opening of the exhibition, the public will be able to discover the works of Clara Carvajal until 23 December."
-  },
   "_events/auto/resident-advisor/2026-11-27-nomad-man-festival-2026.md": {
    "cle": "074fdd79fce1",
    "fr": "Ligne : Emine (2), Harrison Guyett, Kian OK, Omar Fayyad, Pan-J, Picasso\nPas de précipitation, pas de signal, juste être complètement présent dans les dunes avec de bonnes personnes.\nNous avons réuni quatre jours d'écoute profonde, de matinées lentes, de pratiques somatiques et de lumière du désert, gardant les choses simples et intentionnelles.\nFait par des amis, pour des amis.\nNé d'un amour commun pour le Sahara, Nōmad Man est une retraite intime et sélective où les âmes se rencontrent et se connectent sans aucune distraction extérieure.",
@@ -901,70 +912,50 @@
    "fr": "Linéarité : ASECHS\nOrganisé par T.T.C\nVous l'attendiez.\nNous revoilà !\nBOUNCY CLUB - Troisième édition samedi 28.11.2026 STUDIO 52 - Hôtel Les Ambassadeurs, Tunis Un nouveau chapitre, la même énergie.\nPréparez-vous pour une autre nuit de rebond pur.\nLine-up: -ASECHS -EMOU -IDO -UKIYO Rendez-vous sur le dancefloor.\n.\n.\n.\n.\n.\n.\n.\n.\nTTC",
    "ar": "Line-up : ASECHS\nOrganisé par T.T.C\nلقد كنت في انتظار ذلك.\nلقد عدنا!\nBOUNCY CLUB - Third Edition Saturday, 28.11.2026 STUDIO 52 - Hôtel Les Ambassadeurs, Tunis A new chapter, the same energy.\nاستعدوا لليلة أخرى من القفز النقي.\n(آسيتشيس) - (إيدو) - (أوكيو) -\n.\n.\n.\n.\n.\n.\n.\n.\nTTC"
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-bakma-cinema-le-colisee.md": {
-   "cle": "4736889a8113",
-   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
-   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
+  "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md": {
+   "cle": "bdfac4b718a3",
+   "ar": "(آيدا) تعمل في مركز اتصال لعدة سنوات إنها في الأربعينات من عمرها وتعيش وحدها في حي من تونس تمضي أيامها في تكرار نفس العبارات للغرباء في نهاية الخط، تحت اسم كلارا، مستشار زبون الذي يبيع حزم الإجازات. وفي مركز الاتصال هذا، يجري رصد العمل رصداً شديداً ولا يحسب الربحية إلا.",
+   "en": "Ayda has been operating in a call centre for several years. She's in her 40s and lives alone in a neighborhood of Tunis. She spends her days repeating the same phrases to strangers at the end of the line, under the pseudonym of Clara, a customer advisor who sells vacation packages. In this call centre, the work is very monitored and only profitability counts."
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-bakma.md": {
-   "cle": "c90df92f8069",
-   "ar": "BAKMA (2026)\nالمدير: عبد الحميد بوشناك\nرعب\nالمدة: 117 دقيقة",
-   "en": "BAKMA (2026)\nDirector: Abdelhamid Boushnak\nGenre: Horror\nDuration: 117 min"
+  "_events/auto/tunis-events-cinema/2026-11-18-jupiter.md": {
+   "cle": "787e9eb80929",
+   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. وفي مواجهة خطر التصعيد العسكري، جمع الرئيس موظفيه في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون ل...",
+   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. Faced with the risk of military escalation, the president gathered his staff in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to [...]"
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-comment-braquer-une-banque.md": {
-   "cle": "c92aefbe98f4",
-   "ar": "كيف أسرق مصرفاً؟ في السينما: عرضان هذا الأسبوع في مدينة باثي تونس. (الجلسة القادمة (تي Nov. 17 في الساعة 16: 50",
-   "en": "How do I rob a bank? at the cinema: 2 screenings this week in Pathé Tunis City. Next session Tue. Nov. 17. at 16:50."
+  "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md": {
+   "cle": "9e30e9a156d9",
+   "ar": "Rue Málaga is a 2025 multi-national dramatic movie directed by Maryam Touzani. وهذا إنتاج مشترك بين المغرب وفرنسا وإسبانيا وألمانيا وبلجيكا.",
+   "en": "Rue Málaga is a 2025 multi-national drama film directed by Maryam Touzani. This is a Spanish-speaking co-production between Morocco, France, Spain, Germany and Belgium."
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers-cinema-le-colisee.md": {
-   "cle": "0abda4052d24",
-   "ar": "المذنبون\nالمدير: هيفيل بن يوسف\nالمدة: 135 دقيقة",
-   "en": "دار العرس\nDirector: Heifel Ben Youssef\nDuration: 135 min"
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-dar-el-3ers.md": {
-   "cle": "4736889a8113",
-   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
-   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-hadoota.md": {
-   "cle": "6b251eef1355",
-   "ar": "HADOOTA /UR TO MELATED at the cinema: 2 screenings this week in Pathé Tunis City. (الجلسة القادمة (تي Nov. 17 الساعة 15: 20",
-   "en": "HADOOTA / حدوю的 at the cinema: 2 screenings this week in Pathé Tunis City. Next session Tue. Nov. 17. At 15:20."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-last-chance-cinema-le-palace.md": {
-   "cle": "4736889a8113",
-   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
-   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-last-chance.md": {
-   "cle": "4736889a8113",
-   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
-   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-scrooge-ebenezer.md": {
-   "cle": "d9a2269cdc98",
-   "ar": "1 h 56 · Fantastic · from Ti West · with Andrea Riseborough, Rupert Grint, John Depp, Ian McKellen...\n:: جميع الجمهور\nرحلة رجل يواجه ماضيه وحاضره ومستقبله في كفاحه من أجل فرصة ثانية",
-   "en": "1 h 56 · Fantastic · from Ti West · with Andrea Riseborough, Rupert Grint, Johnny Depp, Ian McKellen...\n· All public\nThe journey of a man facing his past, his present and his future, in his struggle for a second chance."
-  },
-  "_events/auto/tunis-events-cinema/2026-11-17-un-monde-fragile-et-merveilleux.md": {
+  "_events/auto/tunis-events-cinema/2026-11-18-un-monde-fragile-et-merveilleux.md": {
    "cle": "41e0fa66ceb7",
    "ar": "يقع (نينو) و(ياسمينا) في الحب في فناء مدرستهم في (بيروت) ويحلمون بحياتهم البالغة بعد 20 عاماً، يجدون أنفسهم بالخطأ، ومرة أخرى، الحب المجنون، المغناطيسي، الوقح. أيمكننا بناء مستقبل في بلد ممزق، نحاول أن نغادر، لكن هذا يؤخرك بشكل لا رجعة فيه؟",
    "en": "Nino and Yasmina fall in love in the courtyard of their school in Beirut, and dream of their adult life, of a wonderful world. 20 years later, they find themselves by accident and it's again mad love, magnetic, incandescent. Can we build a future, in a fractured country, that we are trying to leave, but that holds you back irresistibly?"
   },
-  "_events/auto/tunis-events-cinema/2026-11-17-weekend.md": {
-   "cle": "4736889a8113",
-   "ar": "وكان على الرئيس بول أرشامبالت، الذي انتُخب مؤخرا، أن يواجه أزمة لم يسبق لها مثيل: فقد كان نظيره الروسي، الذي كان هدفا لهجوم، يصفع إنذارا نوويا يهدد حليفا لفرنسا. في مواجهة خطر التصعيد العسكري، يجمع الرئيس موظفيه معاً في مخبأ إيليسيه. في سر مركز قيادة المشتري، بول سيكون عليه اتخاذ قرار مشوش.",
-   "en": "President Paul Archambault, who was recently elected, had to face an unprecedented crisis: his Russian counterpart, who was the target of an attack, was brandishing a nuclear ultimatum threatening an ally of France. In the face of the risk of military escalation, the president brings his staff together in the Elysée bunker. In the secret of the Jupiter Command Post, Paul will have to make a dizzying decision."
+  "_events/auto/tunis-events-cinema/2026-11-19-the-hunger-games-sunrise-on-the-reaping.md": {
+   "cle": "b61367d569b9",
+   "ar": "بينما يرتفع اليوم في الـ50 من ألعاب الجوع كل عام، يُخشى أن يُمسك بمناطق (بانم). هذا العام، تكريماً لقصر (كويل)، سيُقام إشادة باثنين من الثناءات. في المقاطعة 12، (هايمنتشي أبيرناثي) تحاول ألا تفكر كثيراً في فرصها كل ما يهم له...",
+   "en": "As the day rises on the 50th Hunger Games each year, fear takes hold of the districts of Panem. This year, in honour of the Quarter Quell, twice as many tributes will be drawn. In District 12, Haymitch Abernathy tries not to think too much about her chances. Everything that matters to him [...]"
   },
-  "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-cinemadart.md": {
-   "cle": "c6fd2e6f4c49",
-   "fr": "Le départ inattendu d'une collègue de longue date du centre d'appels d'Ayda bouleverse sa routine. Ayda, ayant des sentiments inexprimés pour lui, est jetée dans une série d'événements qui la forcent à repenser sa vie, sa relation avec le temps, son environnement et elle-même.",
-   "ar": "المغادرة غير المتوقعة لزميل طويل الأمد من مركز الإتصال الخاص بـ (آيدا) تهتز روتينها وبعد أن أوقعت أيدا مشاعر غير مسموعة تجاهه، تُلقى في سلسلة من الأحداث التي تجبرها على إعادة التفكير في حياتها، وعلاقتها مع الزمن، وضواحيها، ونفسها."
+  "_events/auto/tunis-events-cinema/2026-11-19-un-monde-fragile-et-merveilleux.md": {
+   "cle": "279d8c2b9ee3",
+   "ar": "(نينو) و(ياسمينا) طفلان وقعا في حب في فناء مدرسي في (بيروت) يحلما بعالم رائع بعد 20 عاماً، يجدون بعضهم عن طريق الصدفة و هو حب مجنون مرة أخرى. هل يمكننا بناء مستقبل في بلد محطم، أننا نحاول أن نغادر ولكن هذا يؤخرك بشكل لا رجعة فيه؟",
+   "en": "Nino and Yasmina, two children who fell in love in a schoolyard in Beirut, dream of a wonderful world. 20 years later, they find each other by accident and it's crazy love again. Can we build a future, in a fractured country, that we are trying to leave but that holds you back irresistibly?"
   },
-  "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md": {
-   "cle": "6046cf796878",
-   "ar": "ماريا أنجليس، وهي امرأة إسبانية تبلغ من العمر 79 عاما، تعيش بمفردها في تانجير، في شمال المغرب، حيث تستفيد من مدينتها وحياتها اليومية. حياتها تتغير عندما تصل ابنتها (كلارا) من (مدريد) لبيع الشقة التي عاشتها دائماً وتصميماً منها على البقاء في هذه المدينة التي شهدت نموها، تبذل قصارى جهدها لإبقائها في المنزل واستعادة أجسام الحياة.",
-   "en": "Maria Angeles, a 79-year-old Spanish woman, lives alone in Tangier, in northern Morocco, where she takes advantage of her city and her daily life. Her life changes when her daughter Clara arrives from Madrid to sell the apartment she has always lived in. Determined to stay in this city that saw her grow, she makes every effort to keep her home and recover the objects of a life."
+  "_events/auto/tunis-events-cinema/2026-11-21-bakma.md": {
+   "cle": "94b2ba3b975b",
+   "ar": "وفي بلدة تونسية هادئة، في ليلة شتاء باردة وممطرة، يُدعى المفوض علي منصور وخالد في مسرح جريمة مكتظة بوجه خاص، على قدم مبنى قديم. في وسط دائرة تُرسم بالدم يكُن ما يبدو أنه جسد مُشوّه لامرأة شابة",
+   "en": "In a quiet Tunisian town, on a cold and rainy winter night, Commissioner Ali Mansour and Khaled are called at a particularly macabre crime scene, at the foot of an old building. In the centre of a circle drawn with blood lies what seems to be the mutilated body of a young woman."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-21-le-mystere-lucy-lost.md": {
+   "cle": "8567d16625c8",
+   "ar": "(لوسي) تعيش مع عائلتها في قرية في جزيرة صغيرة معزولة وهباته غير العادية تحفز رفض السكان. عندما تلتقي بـ (ميلي) فتاة صغيرة يمكنها رؤيتها لوحدها (لوسي) تشرع بمغامرة عظيمة لكسر سرّ قوتها الغامضة",
+   "en": "Lucy lives with her family in a village on a small isolated island. Its extraordinary gifts provoke the rejection of the inhabitants. When she meets Milly - a little girl she can see alone - Lucy embarks on a great adventure to break the secret of her mysterious powers."
+  },
+  "_events/auto/tunis-events-cinema/2026-11-21-weekend.md": {
+   "cle": "322b19ae18d9",
+   "fr": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux mois de 14 ans\nWeEKENDSynopsis film combinant ambiguïté, confusion et enquête avec un héros: Mohamed Ali Ben Juma, Samarie, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi et la production de Fadil Ben Ammar al-Amur, Al-Qumatin",
+   "en": "1 h 40 · Thriller · de Moutii Dridi · Interdit aux moins de 14 ans\nWeEKENDSynopsis film combining ambiguity, confusion and investigation with a hero: Mohamed Ali Ben Juma, Samaria, Ziadiyah, Maryem Boukhdida, Khalil al-Abduli, Al-Qaqsi, Malak Haddosi, Rafiq al-Aoui, Sabr al-Budhali, Wail Al-Dididi and the production of Fadil Ben Ammar al-Amur, Al-Qumatin"
   },
   "_events/auto/tunis-events/2026-10-24-becoming-the-ocean-bim-26.md": {
    "cle": "d1b354352b89",
@@ -976,20 +967,10 @@
    "ar": "المعارضون؛ يشير تيار (أونديرتو) إلى تدفق المياه تحت السطح، متجهاً في الاتجاه المعاكس إلى ذلك المنظور على السطح.\nوفي حين أن الملاحة تتبع الاتجاه الحالي، والحالات المضادة، فإن ارتفاع المد والتدفقات العائدة كلها مخاطر محتملة على الرحلة.\nكيف نقترب من البحر الأبيض المتوسط ومن منطقته دون أن نبحر بأعماق تجارب البشر؟\nهذا البحر كان دائماً ممراً، قناة سابقة",
    "en": "Against; Current (Undertow) refers to the flow of water under the surface, moving in the opposite direction to that perceptible on the surface.\nWhile a navigation follows the direction of the current, counter-currents, rising tides and flow of return are all potential dangers for the voyage.\nHow to approach the Mediterranean Sea and its region without navigating the depths of the odysseys of human experiments?\nThis sea has always been a passageway; a canal of ex"
   },
-  "_events/auto/tunis-events/2026-11-11-pack-les-rencontres-theatrales-de-lartisto.md": {
-   "cle": "045051669356",
-   "ar": "Pack Les Rencontres Théatrales de LARTISTO in Lartisto scene and cinema, Nov. 2026.",
-   "en": "Pack Les Rencontres Théatrales de LARTISTO in Lartisto theatre and cinema, Nov. 2026."
-  },
-  "_events/auto/tunis-events/2026-11-17-onssouen.md": {
-   "cle": "e0ec98bd0fc7",
-   "ar": "Onssouen in Lartisto scene and cinema, Nov. 17 2026.",
-   "en": "Onssouen in Lartisto theatre and cinema, Nov. 17. 2026."
-  },
-  "_events/auto/tunis-events/2026-11-17-power-yoga-with-nicole-skarpness-nskarp.md": {
-   "cle": "3ae0bf0f1797",
-   "fr": "\\-Un flux dynamique, de mise à la terre pour se reconnecter avec votre corps offrant un équilibre parfait de force, de respiration et de mouvement dans un cadre de nuit calme.\nNiveau: intermédiaire et avancé\nTapis, thé et collations gratuits disponibles et accès au toit après la session!\nLes billets ne sont remboursables que 24 heures avant l'événement prévu.\nAprès la date limite de 24 heures, les billets ne seront plus admissibles à un remboursement.",
-   "ar": "تدفق ديناميكي، أرضي لإعادة التواصل مع جسدك يعرض توازناً مثالياً من القوّة، والتنفس، والحركة في بيئة ليلية هادئة.\nالمستوى: الوسيط والمتقدم\nفراشات مُملة، شاي ووجبات خفيفة، متاحة، ووصولها إلى السطح بعد الدورة!\nولا يمكن رد التذاكر إلا قبل 24 ساعة من انعقاد الحدث المقرر.\nوبعد انقضاء مهلة الـ 24 ساعة، لم تعد التذاكر مؤهلة للاسترداد."
+  "_events/auto/tunis-events/2026-10-27-images-de-syrie-palmyre-alep-damas-michel-eisenlohr.md": {
+   "cle": "1d9b570c3a17",
+   "ar": "معرض الصور الفوتوغرافية من قبل ميشيل ايزنلور. الافتتاح في 27 تشرين الأول/أكتوبر الساعة 00/18 مدخل مجاني",
+   "en": "Photographic exhibition by Michel Eisenlohr. Opening on October 27 at 6 p.m. Free entrance."
   },
   "_events/auto/tunis-events/2026-11-18-yoga-for-busy-minds-with-judit-yoga-in-sidibousaid.md": {
    "cle": "0a27831368f6",
@@ -1000,11 +981,6 @@
    "cle": "b2e09e9ad2b7",
    "ar": "(زيولد) حيث تأتي الكتب إلى الحياة\nماذا لو دخل طفلك كتاباً ليصبح بطل مغامرته؟\nوتدعو منظمة &quot; زيولوان &quot; الأطفال إلى استكشاف الظروف غير المفرغة التي تعيش فيها القصص من خلال الأحجية والتحديات والخبرات اللازمة لتبادلها.\nالملاحظه , البحث , التخيل و التفرق كل اكتشاف يجعلهم يتقدمون في المغامره\nحيزان مناسبان للسن:\n٥-١٠ سنوات: رحلة ممتعة بين الخيال والفضول والمفاجئات.\n* 10-15 سنة:",
    "en": "ZYOLD — Where books come to life\nWhat if your child enters a book to become the hero of his own adventure?\nZYOLAND invites children to explore immersive settings where stories are lived through puzzles, challenges and experiences to share.\nObserving, searching, imagining and teaming up: every discovery makes them advance in adventure!\nTwo age-appropriate spaces:\n5–10 years: a fun journey between fantasy, curiosity and surprises.\n* 10–15 years:"
-  },
-  "_events/auto/tunis-events/2026-11-19-la-belle-et-la-meute.md": {
-   "cle": "5f9ad5fa6919",
-   "fr": ".\n* * * *\nNous vous invitons en novembre prochain à participer à une série de films spéciaux, sous la direction de @hakkadistribution et hébergés par @so_sociale en collaboration avec @cinematun\nLes billets sont de 20 DT et comprennent du pop-corn et des rafraîchissements.\nLA BELLE ET LA MEUTEDirecteur: Kaouther Ben Hania1h 40mVOSTFR",
-   "ar": ".\n<unk> + <unk>\n<unk>.<unk> انضموا إلينا في هذا تشرين الثاني/نوفمبر لسلسلة أفلام خاصة تم شفاؤها بواسطة @hakkadistribution واستضافها @so_sociale بالتعاون مع @cinematun\nالتذاكر هي 20 دي تي وتشمل الفشار والزجاجات.\nLA BELLE ET LA MEUTEDirector: Kaouther Ben Hania1h 40mVOSTFR"
   },
   "_events/auto/tunis-events/2026-11-19-soiree-beaujolais-nouveau-2026.md": {
    "cle": "4fb9c15f1b78",
@@ -1020,6 +996,11 @@
    "cle": "ea05befc3a15",
    "fr": "Labes est une collaboration entre le chorégraphe Selim Ben Safia et l'artiste conceptuelle Nadia Kaabi-Linke explorant des notions antagonistes de statu quo et de résilience. En arabe, le titre signifie « tout va bien », et sur scène, cinq artistes de différents horizons incarnent la force de la vulnérabilité. La chorégraphie de Selim Ben Safia traverse des gestes de résilience à travers le dabke palestinien, les rythmes tunisiens et l'alto da gamba, alors que les corps s'opposent à la paralysie par impulsion.",
    "ar": "Labes is a collaboration between choreographer Selim Ben Safia and conceptual artist Nadia Kaabi-Linke exploring antagonistic notions of standstill and resilience. In Arabic, the title means ‘everything is fine,’ and on stage, five artists from different backgrounds embody the strength of vulnerability. The choreography by Selim Ben Safia traverses gestures of resilience through Palestinian dabke, Tunisian rhythms, and the viola da gamba, as the bodies oppose paralysis with impulse."
+  },
+  "_events/auto/tunis-events/2026-11-21-chichbich-au-sous-sol-21-novembre.md": {
+   "cle": "ac89b52658e9",
+   "ar": "سيّدي، نحن ذاهبون إلى (سباسول)!\nفرقة (تشيتش بيك) الحية تصل لمساء مليء بالموسيقى، مزاج جيد ومشاركة!\nيوم السبت، 21 تشرين الثاني/نوفمبر من الساعة 00/8 إلى الساعة 00/11 لا فيريري - منضه 7 بيس\nبالنسبة للتحفظات على شخصين، يمكنك أن تتشارك طاولة مع زوجين آخرين.\nThe Sub-Sol encourages meetings and sharing in a friendly atmosphere.\nLOS\nو دائماً في روح الـ (سوبر سول) أمسية إحتفالية ودودة",
+   "en": "SAY, WE'RE GOING BACK TO SUBSOL!\nChichBich Live Band arrives for an evening full of music, good mood and sharing!\nLive Band Saturday, November 21 From 8pm to 11pm La Verrière – Menzah 7 Bis\nNB: For reservations of 2 people, you may share your table with another couple.\nThe Sub-Sol encourages meetings and sharing in a friendly atmosphere.\n的\nAnd always in the spirit of the Sub-Sol: a festive, friendly evening"
   },
   "_events/auto/tunis-events/2026-11-21-connivences-21-11-26.md": {
    "cle": "491631c3c83a",
@@ -1050,6 +1031,11 @@
    "cle": "3ff85296fa16",
    "fr": "KPOP Universe Events Edition 7 arrive le 20 décembre 2026 de 09:00 à 17:00!\nPréparez-vous pour une journée entière consacrée à tout ce que nous aimons à la culture coréenne.\nQue vous soyez un fan de K-pop, un danseur, un créateur, ou simplement curieux de la Corée, ce jour est pour vous !\nEnjoy : Projections vidéo de musique K-Pop Talent shows and performance Jeux et défis amusants Ateliers et activités créatifs - Boutiques, artistes et produits d'inspiration coréenne Danse, rire et souvenirs inoubliables avec nos collègues UniS",
    "ar": "\"الأحداث الكونية في السابع من ديسمبر 20، 2026، من 9: 00 إلى 17: 00\"\nاستعدوا ليوم كامل مكرس لكل ما نحبه عن الثقافة الكورية\nسواء كنت من محبي الـ(ك-بوب)، راقصة، مبتكر، أو ببساطة فضول عن (كوريا)، هذا اليوم لك!\nتمتّع: K-Pop music video screenings Talent shows and performances Fun games and challenges Creative workshops and activities<unk> Shops, artists, and Korean-inspired products Dance, laughter, and unforgettable memory with fellow UniS"
+  },
+  "_events/auto/tunis-events/2027-03-27-immersion-artistique-a-dar-ya-au-cur-de-la-medina-de-tunis.md": {
+   "cle": "23c0075ea726",
+   "ar": "ازدراء فني في دار يا، في قلب مدينة تونس\nوفي الفترة من 27 آذار/مارس إلى 3 نيسان/أبريل 2027، يدعو الفنان الفرنسي - التونسي هايفا ميليتي الجمهور إلى العيش في نسيج فني وحيد في دار يا، في قلب مدينة تونس.\nهذه التجربة تجمع بين الرسم والموسيقى والإبداع غير المناسب والروحانية في مكان مليء بالتاريخ والذاكرة.\nآلهة النور، وشخصيات رمزية من عالم الفنان، سوف تستثمر في",
+   "en": "Artistic immersion in Dar Ya, in the heart of the Tunis Medina\nFrom 27 March to 3 April 2027, the French-Tunisian artist Haifa Melliti invites the public to live a singular artistic immersion in Dar Ya, in the heart of the Tunis Medina.\nThought as a true parenthesis out of time, this experience brings together painting, music, intuitive creation and spirituality in a place full of history and memory.\nThe Goddess of Light, emblematic figures of the artist's universe, will invest in the"
   },
   "_events/festivals/2026-11-21-jtc.md": {
    "cle": "57e4e4fa6c58",

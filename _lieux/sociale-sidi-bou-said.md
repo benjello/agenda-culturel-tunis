@@ -1,6 +1,6 @@
 ---
 title: "Sociale Sidi Bou Said"
-noms: ["Sociale Sidi Bou Said", "Sociale."]
+noms: ["Sociale Sidi Bou Said"]
 type: "club"
 adresse: "V8CW+8GM, Carthage, Carthage"
 ville: "tunis"

@@ -1,20 +1,19 @@
 ---
 title: "Je m'appelle Clara"
-date: 2026-11-18 19:00
-end_date: "2026-11-22 16:45"
-venue: "L'Agora Marsa"
-address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
+date: 2026-11-18
+end_date: "2026-11-20 21:15"
+venue: "CinéMadart"
+address: "Rte de La Goulette, Site archéologique de Carthage, Carthage"
 ville: "tunis"
 category: "cinema"
-link: "https://tunis.events/fr/cinema/je-mappelle-clara"
+link: "https://tunis.events/events/8B1Py3/je-mappelle-clara-cinemadart"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-18 19:00", "2026-11-20 18:30", "2026-11-22 16:45"]
+seances: ["2026-11-18", "2026-11-18 21:00", "2026-11-19 19:00", "2026-11-20 21:15"]
 image: "assets/images/2af35666ebcc.jpg"
 film: true
 ajoute: "2026-11-17"
-doublon: true
 auto: true
 ---
 
-The unexpected departure of a long-time colleague from Ayda's call centre shakes up her routine. Having harboured unspoken feelings for him, Ayda is thrown into a series of events that force her to rethink her life, her relationship with time, her surroundings, and herself.
+Ayda est opératrice dans un centre d’appel depuis plusieurs années. Elle a la quarantaine et vit seule dans un quartier de Tunis. Elle passe ses journées à répéter les mêmes phrases à des inconnus au bout du fil, sous le pseudonyme de Clara, une conseillère client qui vend des forfaits vacances. Dans ce centre d’appel, le travail est très surveillé et seule la rentabilité compte.

@@ -99,12 +99,14 @@
    "credit": "https://commons.wikimedia.org/wiki/File:Le_théâtre_de_Tunis_(3301451272).jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_théâtre_de_Tunis_(3301451272).jpg?width=400",
    "qid": "Q3527872"
+  },
+  "lieu:tunisia": {
+   "credit": "https://commons.wikimedia.org/wiki/File:Carthage_Palace_from_Sidi_Bou_Said.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carthage_Palace_from_Sidi_Bou_Said.jpg?width=400",
+   "qid": "Q948"
   }
  },
  "osm": {
-  "lieu:cinema-le-palace": {
-   "type": "cinema"
-  },
   "lieu:cite-de-la-culture": {
    "type": "centre_art"
   },
@@ -114,9 +116,6 @@
   },
   "lieu:le-32bis": {
    "type": "galerie"
-  },
-  "lieu:pathe-tunis-city": {
-   "type": "cinema"
   },
   "lieu:salle-de-cinema-institut-francais-de-sousse": {
    "type": "cinema"
@@ -364,6 +363,7 @@
   "lieu:theatre-le-4eme-art": "2026-11-02",
   "lieu:theatre-municipal-de-tunis": "2026-11-02",
   "lieu:theatre-municipal-institut-francais-de-tunisie-sfax": "2026-11-04",
+  "lieu:tunisia": "2026-11-18",
   "lieu:twentyone": "2026-11-09",
   "lieu:utica-union-tun-the-ind-trade-art": "2026-11-07",
   "lieu:vox-cafe-institut-francais-de-sousse": "2026-11-02"

@@ -1,6 +1,6 @@
 ---
 title: "Un monde fragile et merveilleux"
-date: 2026-11-17
+date: 2026-11-18
 end_date: "2026-11-19 21:00"
 venue: "CinéMadart"
 address: "Rte de La Goulette, Site archéologique de Carthage, Carthage"
@@ -9,10 +9,10 @@ category: "cinema"
 link: "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-17", "2026-11-17 19:00", "2026-11-18 17:00", "2026-11-19 21:00"]
+seances: ["2026-11-18", "2026-11-18 17:00", "2026-11-19 21:00"]
 image: "assets/images/90df52b196d1.jpg"
 film: true
-ajoute: "2026-11-17"
+ajoute: "2026-11-18"
 auto: true
 ---
 
