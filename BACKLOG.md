@@ -140,7 +140,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 - [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
 - [x] Critiques de films : lien Letterboxd à côté d'IMDb (identifiant Wikidata P6127, jamais de lien vide). À faire : AlloCiné.
 - [ ] Brancher les sources « à étudier ».
-- [ ] [#153](https://github.com/benjello/agenda-culturel-tunis/issues/153) Presse : vérifier 7 flux ajoutés inactifs le 18 nov. 2026 (`presse-letemps`, `-businessnews`, `-tap`, `-africanmanager`, `-mosaique-fr`, `-webmanagercenter`, `-lapresse-ar`) : lancer chacun seul (Actions → Scrapers → champ « sources »), activer ceux qui répondent. Tunisie Numérique est réactivé (flux mal formé réparé dans `rss.py`, à confirmer au prochain passage).
+- [ ] [#153](https://github.com/benjello/agenda-culturel-tunis/issues/153) Presse : activés le 18 nov. 2026 après sonde (workflow « Tester des sources ») : Africanmanager, Mosaïque FM (français), ambassade des États-Unis. Écartés : Le Temps, Business News (404), TAP (certificat), WebManagerCenter (pas de flux). Reste : Tunisie Numérique (ses flux renvoient la page d'accueil depuis GitHub), L'Art Rue (`lartrue.org`, pas de flux : scraper à écrire), Dream City (domaine à trouver), Goethe/Japon (403).
 - [ ] Synopsis des films : après le prochain passage des scrapers, compter les films sans synopsis
   (`_data/films.json`, champ `synopsis`). S'il en manque beaucoup, choisir une clé :
   **TMDb** (synopsis riches en français, inscription plus longue, conditions « usage personnel »)
