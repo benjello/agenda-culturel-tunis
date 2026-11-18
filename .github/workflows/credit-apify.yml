@@ -1,0 +1,27 @@
+name: Crédit Apify (vérification)
+
+# Lancement à la main : Actions → Crédit Apify (vérification) → Run workflow.
+# Lit seulement le solde du crédit Apify et l'affiche dans le journal. Rien n'est enregistré
+# ni commité, et le jeton APIFY_TOKEN n'est jamais affiché.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  credit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Lire le crédit
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          python3 -m scrapers.credit_apify
+          echo "--- contenu lu (_data/apify.json, non commité) ---"
+          cat _data/apify.json
