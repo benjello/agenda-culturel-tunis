@@ -807,7 +807,7 @@
   genre: presse
   scraper: presse
   categorie: autre
-  actif: false  # le flux ne renvoie aucun article lisible (protection anti-robots ?), à revoir
+  actif: true  # flux mal formé (« & » nu, entités HTML) : réparé dans scrapers/sources/rss.py (nov. 2026)
   note: "Publie aussi « Agenda culturel : où sortir… »."
 
 - id: tn-agenda-du-jour
@@ -1879,3 +1879,73 @@
   categorie: autre
   actif: true
   note: "Flux général en arabe (surtout actualité) : le scraper ne garde que les articles qui annoncent un événement daté. Flux vérifié le 8 nov. 2026 (RSS valide)."
+
+- id: presse-letemps
+  nom: Le Temps (culture)
+  url: https://www.letemps.news/category/culture/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-businessnews
+  nom: Business News (culture)
+  url: https://www.businessnews.com.tn/rss.xml
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-tap
+  nom: TAP (agence de presse, culture)
+  url: https://www.tap.info.tn/fr/rss.xml
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-africanmanager
+  nom: Africanmanager (culture)
+  url: https://africanmanager.com/category/culture/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-mosaique-fr
+  nom: Mosaïque FM (français)
+  url: https://www.mosaiquefm.net/fr/rss
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-webmanagercenter
+  nom: WebManagerCenter (culture)
+  url: https://www.webmanagercenter.com/category/culture/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
+
+- id: presse-lapresse-ar
+  nom: La Presse (flux général)
+  url: https://lapresse.tn/feed/
+  type: agenda
+  genre: presse
+  scraper: presse
+  categorie: autre
+  actif: true
+  note: "Ajouté le 18 nov. 2026, flux à vérifier au premier passage."
