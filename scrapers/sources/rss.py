@@ -14,6 +14,7 @@ Options :
 """
 from __future__ import annotations
 
+import html
 import re
 import xml.etree.ElementTree as ET
 
@@ -35,9 +36,22 @@ def _racine(xml: str):
     except ET.ParseError:
         # Flux suivi de texte parasite (liens injectés après </rss>, cas de l'IRMC) : on coupe.
         fin = max(xml.rfind("</rss>") + 6, xml.rfind("</feed>") + 7)
-        if fin <= 6:
-            raise
-        return ET.fromstring(xml[:fin].encode())
+        if fin > 6:
+            xml = xml[:fin]
+        try:
+            return ET.fromstring(xml.encode())
+        except ET.ParseError:
+            # Flux mal formé (« & » nu, caractères de contrôle, entités HTML inconnues : Tunisie Numérique) : on le répare.
+            return ET.fromstring(_reparer(xml).encode())
+
+
+def _reparer(xml: str) -> str:
+    xml = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", xml)
+    # entités HTML nommées (&eacute;…) → caractère ; « & » qui n'ouvre pas une entité : on l'échappe
+    xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)([A-Za-z][A-Za-z0-9]{1,8});", lambda m: html.unescape(m.group(0)).replace("&", "&amp;") if html.unescape(m.group(0)) != m.group(0) else m.group(0), xml)
+    xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)", lambda m: "&amp;", xml)
+    # texte de titre/description hors CDATA contenant « < » nu : rare, on le laisse
+    return xml
 
 
 def elements(xml: str) -> list[dict]:

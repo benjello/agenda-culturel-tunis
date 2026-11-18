@@ -1420,3 +1420,10 @@ class Libelles(unittest.TestCase):
         avant = Faux.appels
         libelles.traduire_libelles(Faux(), cache, {"Médiathèque de Tunis"})
         self.assertEqual(Faux.appels, avant)
+
+
+class FluxMalFormeTest(unittest.TestCase):
+    def test_flux_avec_esperluette_et_entite_html(self):
+        from scrapers.sources import rss
+        xml = '<?xml version="1.0"?><rss><channel><item><title>Concert & fête &eacute;</title><link>http://a</link></item></channel></rss>'
+        self.assertEqual(rss.elements(xml)[0]["titre"], "Concert & fête é")
