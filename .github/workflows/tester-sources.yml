@@ -1,0 +1,45 @@
+name: Tester des sources
+
+# Essai léger : sonde des adresses (code HTTP, type, taille, début) et lecture de sources du registre,
+# sans OCR, sans traduction, sans rien enregistrer. Résultat dans le journal et le résumé de l'exécution.
+on:
+  workflow_dispatch:
+    inputs:
+      adresses:
+        description: "Adresses à sonder, séparées par des espaces"
+        required: false
+        default: ""
+      sources:
+        description: "Ids de sources du registre à lancer (lecture seule), séparés par des espaces"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Sonder les adresses
+        env:
+          ADRESSES: ${{ inputs.adresses }}
+        run: |
+          for u in $ADRESSES; do
+            echo "=== $u"
+            curl -sSL -m 20 -A "Mozilla/5.0 (compatible; agenda-culturel-tunis)" -o /tmp/p.out -w "code=%{http_code} type=%{content_type} taille=%{size_download} final=%{url_effective}\n" "$u" || echo "échec curl"
+            head -c 300 /tmp/p.out | tr '\n' ' '; echo
+            echo "items/entrées : $(grep -o -E '<item>|<entry>|<item ' /tmp/p.out | wc -l)"
+          done | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Lancer des sources du registre (sans rien enregistrer)
+        if: inputs.sources != ''
+        env:
+          SOURCES: ${{ inputs.sources }}
+        run: python3 -m scrapers $SOURCES 2>&1 | tail -80 | tee -a "$GITHUB_STEP_SUMMARY"

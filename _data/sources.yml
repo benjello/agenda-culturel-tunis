@@ -807,7 +807,7 @@
   genre: presse
   scraper: presse
   categorie: autre
-  actif: true  # flux mal formé (« & » nu, entités HTML) : réparé dans scrapers/sources/rss.py (nov. 2026)
+  actif: false  # 18 nov. 2026 : depuis GitHub Actions, les flux du site renvoient la page d'accueil (« flux vide ou illisible »), pas du XML ; lecture RSS tolérante ajoutée (rss.py), site à sonder autrement
   note: "Publie aussi « Agenda culturel : où sortir… »."
 
 - id: tn-agenda-du-jour
@@ -1588,7 +1588,6 @@
     resultats: 8
   note: "Trouvé par la recherche Instagram du 1er nov. 2026 (Douz, Sahara)."
 
-
 # Trouvés le 1er nov. 2026 (bilans sciences et musées). Instagram : en pause jusqu'au retour
 # du crédit Apify (1er décembre).
 - id: ig-cite-sciences
@@ -1880,45 +1879,17 @@
   actif: true
   note: "Flux général en arabe (surtout actualité) : le scraper ne garde que les articles qui annoncent un événement daté. Flux vérifié le 8 nov. 2026 (RSS valide)."
 
-- id: presse-letemps
-  nom: Le Temps (culture)
-  url: https://www.letemps.news/category/culture/feed/
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
 
-- id: presse-businessnews
-  nom: Business News (culture)
-  url: https://www.businessnews.com.tn/rss.xml
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
-
-- id: presse-tap
-  nom: TAP (agence de presse, culture)
-  url: https://www.tap.info.tn/fr/rss.xml
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
 
 - id: presse-africanmanager
   nom: Africanmanager (culture)
-  url: https://africanmanager.com/category/culture/feed/
+  url: https://africanmanager.com/categorie/culture/feed/
   type: agenda
   genre: presse
   scraper: presse
   categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
+  actif: true
+  note: "Flux vérifié le 18 nov. 2026 (GitHub Actions, workflow « Tester des sources »)."
 
 - id: presse-mosaique-fr
   nom: Mosaïque FM (français)
@@ -1927,25 +1898,15 @@
   genre: presse
   scraper: presse
   categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
+  actif: true
+  note: "Flux vérifié le 18 nov. 2026 (GitHub Actions, workflow « Tester des sources »)."
 
-- id: presse-webmanagercenter
-  nom: WebManagerCenter (culture)
-  url: https://www.webmanagercenter.com/category/culture/feed/
+- id: presse-ambassade-usa
+  nom: Ambassade des États-Unis à Tunis
+  url: https://tn.usembassy.gov/feed/
   type: agenda
-  genre: presse
+  genre: institution
   scraper: presse
   categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
-
-- id: presse-lapresse-ar
-  nom: La Presse (flux général)
-  url: https://lapresse.tn/feed/
-  type: agenda
-  genre: presse
-  scraper: presse
-  categorie: autre
-  actif: false  # flux non vérifié (réseau fermé pendant l'ajout) : lancer la source seule, puis passer à true
-  note: "Ajouté le 18 nov. 2026, adresse du flux à vérifier."
+  actif: true
+  note: "Flux WordPress vérifié le 18 nov. 2026 (10 articles) ; le scraper ne garde que les articles qui annoncent un événement daté à Tunis."

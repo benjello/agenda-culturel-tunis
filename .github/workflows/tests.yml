@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths: ["scrapers/**", "tests/**", "requirements.txt", "_data/sources.yml", "_data/sources_recherchees.yml"]
+    paths: ["scrapers/**", "tests/**", "worker/**", "requirements.txt", "_data/sources.yml", "_data/sources_recherchees.yml"]
 
 # Lecture seule : une PR venant d'un fork ne reçoit de toute façon ni secrets ni droit d'écriture.
 permissions:
@@ -21,6 +21,8 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python3 -m unittest discover tests -v
+      - name: Tests du relais de contribution (JavaScript)
+        run: node --test worker/lecture.test.js
 
   traduction:
     # vérifie que les modèles de traduction se téléchargent et traduisent (seulement si traduire.py change)

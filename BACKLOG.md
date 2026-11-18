@@ -13,7 +13,8 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
 Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées de ce fichier aux issues ouvertes
 (`scrapers/synchro_tickets.py`) et signale les écarts dans son résumé.
 
-- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107).
+- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107),
+  [#156 brancher le formulaire sans compte GitHub](https://github.com/benjello/agenda-culturel-tunis/issues/156).
 - Étiquette **vérification humaine** (contrôles ouverts à tous) :
   [#106 festivals et séries manquants](https://github.com/benjello/agenda-culturel-tunis/issues/106),
   [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
@@ -116,11 +117,11 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
         obligatoire, avec Mahdi et GitHub Actions dans la liste de contournement (les scrapers poussent sur `main`).
         Facultatif : seul Mahdi peut fusionner, ce qui protège déjà de l'extérieur.
   - [ ] En cas de vague de spam : Settings → Moderation → **Interaction limits** (24 h à 6 mois).
-- [ ] Formulaire sans compte GitHub : seulement avec un captcha (Cloudflare Turnstile, gratuit) et un relais
-      (ex. Formspree, Google Form) ; tant que tout passe par GitHub, le compte sert de protection.
+- [x] Formulaire sans compte GitHub : relais Cloudflare Workers + captcha Turnstile (gratuit), code dans `worker/`
+      (voir `worker/README.md`). Titre, date et lieu lus depuis le lien collé. **Reste à brancher** (clés, voir ci-dessous).
 - Décision (2 nov. 2026) : les propositions de sources par IA restent **à la demande** (conversation avec Claude, validation par Mahdi) ;
   pas de workflow hebdomadaire ni de clé d'API payante pour l'instant.
-- [ ] Traiter automatiquement une issue « source » validée (étiquette `valide`) comme pour les événements.
+- [x] Issue « source » validée (étiquette `valide`) : ajoutée au registre par le workflow « Source validée » (`scrapers/propositions_source.py`).
 
 ## À faire
 
@@ -136,11 +137,11 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 - [x] Opéra de Tunis : réparé (dates ISO lues), 1 événement au passage du 18 nov. (Quintette Bolchoï).
 - [x] Contrôle de santé : issue GitHub « Sources en panne » ouverte (et fermée) automatiquement après 2 jours d'échec (`scrapers/alerte.py panne`, workflow des scrapers).
 - [x] Formulaire « Proposer un événement » : **prêt mais masqué** (issue GitHub + étiquette « valide »). À remettre dans le pied de page et la page À propos après les retours des premiers testeurs.
-- [ ] Version sans compte GitHub du formulaire.
+- [x] Version sans compte GitHub du formulaire (code prêt ; activée quand `proposition_api` est renseigné dans `_config.yml`).
 - [ ] Issues « fiche » : traitées à la main pour l'instant (`_data/artistes.yml`, `_data/types_lieux.yml`, `_data/lieux_alias.yml`) ; à automatiser si elles sont nombreuses.
 - [x] Critiques de films : lien Letterboxd à côté d'IMDb (identifiant Wikidata P6127, jamais de lien vide). À faire : AlloCiné.
 - [ ] Brancher les sources « à étudier ».
-- [ ] [#153](https://github.com/benjello/agenda-culturel-tunis/issues/153) Presse : vérifier 7 flux ajoutés inactifs le 18 nov. 2026 (`presse-letemps`, `-businessnews`, `-tap`, `-africanmanager`, `-mosaique-fr`, `-webmanagercenter`, `-lapresse-ar`) : lancer chacun seul (Actions → Scrapers → champ « sources »), activer ceux qui répondent. Tunisie Numérique est réactivé (flux mal formé réparé dans `rss.py`, à confirmer au prochain passage).
+- [ ] [#153](https://github.com/benjello/agenda-culturel-tunis/issues/153) Presse : activés le 18 nov. 2026 après sonde (workflow « Tester des sources ») : Africanmanager, Mosaïque FM (français), ambassade des États-Unis. Écartés : Le Temps, Business News (404), TAP (certificat), WebManagerCenter (pas de flux). Reste : Tunisie Numérique (ses flux renvoient la page d'accueil depuis GitHub), L'Art Rue (`lartrue.org`, pas de flux : scraper à écrire), Dream City (domaine à trouver), Goethe/Japon (403).
 - [ ] Synopsis des films : après le prochain passage des scrapers, compter les films sans synopsis
   (`_data/films.json`, champ `synopsis`). S'il en manque beaucoup, choisir une clé :
   **TMDb** (synopsis riches en français, inscription plus longue, conditions « usage personnel »)
@@ -195,8 +196,9 @@ Ouverture
 
 Présentation (demandé le 1er novembre)
 - [x] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
-- [ ] Fiche artiste : photo et courte bio depuis Wikidata / Wikipédia (licence libre), lien Instagram.
-- [ ] Image des lieux depuis Wikimedia Commons (Théâtre municipal, Cité de la culture…).
+- [x] Fiche artiste : photo (Wikidata P18 → Commons) et courte bio (Wikipédia). Une photo n'est gardée que si le nom de la fiche correspond à l'entité Wikidata (mêmes mots, jamais un prénom seul), si l'entité est tunisienne et du bon type (ni pays ni ville pour un lieu), et si la licence Commons est libre ; auteur et licence sont affichés sous la photo. Dans le doute, pas de photo. Corrections à la main : `_data/images_manuelles.yml` (`refuses`, `imposees`). Les photos déjà gardées sont revérifiées au prochain passage. À faire : lien Instagram.
+- [x] Image des lieux depuis Wikimedia Commons (mêmes règles que les artistes ; `scrapers/enrichir.py`).
+- [x] Heure de fin et durée : `end_time` lu dans le schema.org (`endDate`) ou le texte ; la fiche affiche « Durée : 2 h 30 » et `endDate` avec l'heure dans les données structurées.
 - [x] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
 - [ ] Catégories : affiner au fil des remarques (règles par mots du titre dans `commun.categorie_du_titre`).
 
@@ -212,7 +214,7 @@ Fiabilité
 
 - [ ] Délégations régionales de la culture : leurs sites cultureregions-*.gov.tn ne répondent pas depuis GitHub (en pause). 8 pages Facebook branchées ; trouver les 16 autres.
 - [x] FTCC (ciné-clubs) : page Facebook FTCCTunisie, plus le Ciné-club de Tunis et la FTCA sur Instagram.
-- [ ] Formulaire sans compte GitHub : renseigner `contact_email` dans `_config.yml`.
+- [ ] Formulaire sans compte GitHub : mise en route avec Mahdi (compte Cloudflare, clés Turnstile, jeton GitHub limité aux issues, secrets du dépôt, puis `proposition_api` et `turnstile_cle` dans `_config.yml`) : pas à pas dans `worker/README.md`. `contact_email` reste facultatif.
 
 - [ ] L'Agora Djerba : vérifier au premier passage que `www.lagoradjerba.tn` expose bien l'API WooCommerce (`/wp-json/wc/store/v1/products`, attribut « Séances ») ; sinon écrire un lecteur dédié (le site n'était pas joignable depuis l'environnement de développement).
 

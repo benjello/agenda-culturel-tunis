@@ -6,7 +6,7 @@
 {%- assign img = en.images[include.cle] -%}
 {%- assign o = en.osm[include.cle] -%}
 {%- if img and include.photo != false %}
-<figure class="photo-fiche"><img src="{{ img.image }}" alt="{{ include.nom | escape }}" loading="lazy" width="400"><figcaption><a href="{{ img.credit }}" rel="noopener">Wikimedia Commons</a></figcaption></figure>
+<figure class="photo-fiche"><img src="{{ img.image }}" alt="{{ include.nom | escape }}" loading="lazy" width="400"><figcaption>{% if img.auteur %}<span data-t="photo_de">Photo</span> : {{ img.auteur | escape }} · {% endif %}{% if img.licence %}{% if img.licence_url %}<a href="{{ img.licence_url }}" rel="noopener">{{ img.licence | escape }}</a>{% else %}{{ img.licence | escape }}{% endif %} · {% endif %}<a href="{{ img.credit }}" rel="noopener">Wikimedia Commons</a></figcaption></figure>
 {%- endif %}
 {%- if o.wheelchair or o.opening_hours or o.website %}
 <p class="infos-osm">

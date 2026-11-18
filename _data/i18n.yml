@@ -86,6 +86,8 @@ agenda_long: { ar: "📅 أضف إلى رزنامتي", en: "📅 Add to my cale
 partager_long: { ar: "↗ مشاركة", en: "↗ Share" }
 retour: { ar: "→ العودة إلى الأجندا", en: "← Back to the agenda" }
 quand: { ar: "متى", en: "When" }
+duree: { ar: "المدة", en: "Duration" }
+photo_de: { ar: "صورة", en: "Photo" }
 ou: { ar: "أين", en: "Where" }
 prix: { ar: "السعر", en: "Price" }
 source: { ar: "المصدر", en: "Source" }
@@ -181,6 +183,9 @@ f_prix: { ar: "السعر", en: "Price" }
 f_lien: { ar: "رابط (فيسبوك، إنستغرام، تذاكر)", en: "Link (Facebook, Instagram, tickets)" }
 f_description: { ar: "بضعة أسطر للتعريف", en: "A few lines of description" }
 f_github: { ar: "إرسال (حساب GitHub)", en: "Send (GitHub account)" }
+f_envoyer: { ar: "إرسال", en: "Send" }
+f_source_nom: { ar: "المكان أو الجمعية أو المنظم", en: "Venue, collective or organiser" }
+f_source_lien: { ar: "عنوان الصفحة (موقع، فيسبوك، إنستغرام)", en: "Page address (site, Facebook, Instagram)" }
 f_email: { ar: "إرسال بالبريد", en: "Send by e-mail" }
 f_aide: { ar: "يفتح الإرسال صفحة GitHub معبأة مسبقا.", en: "Sending opens a pre-filled GitHub page: just click « Submit new issue »." }
 proposer_source: { ar: "تنشر باستمرار؟", en: "You post often?" }
