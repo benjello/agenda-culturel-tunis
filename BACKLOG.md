@@ -19,7 +19,6 @@ Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées d
   [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
   [#109 fiches de l'Institut français](https://github.com/benjello/agenda-culturel-tunis/issues/109).
 - Étiquette **amélioration** : [#110 relecture par catégorie](https://github.com/benjello/agenda-culturel-tunis/issues/110),
-  [#111 rapport après les scrapers](https://github.com/benjello/agenda-culturel-tunis/issues/111),
   [#112 accès Facebook](https://github.com/benjello/agenda-culturel-tunis/issues/112),
   [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
 
