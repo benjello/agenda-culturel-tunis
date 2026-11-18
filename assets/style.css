@@ -407,3 +407,19 @@ main:focus { outline: none; }
 /* Titre et affiche d'un film : mènent à sa fiche (toutes les séances) */
 .film-corps h3 a { color: inherit; text-decoration: none; }
 .film-corps h3 a:hover, .film-corps h3 a:focus-visible { text-decoration: underline; }
+
+/* ---- Accueil léger, tri par distance, « Ma soirée » ---- */
+.tri-distance-bouton { margin-inline-start: auto; font: inherit; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: 999px; padding: 6px 12px; cursor: pointer; min-height: 36px; }
+.tri-distance-bouton.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.aide-tri { margin: -4px 0 8px; font-size: .85rem; color: var(--muted); }
+.distance { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.voir-suite-zone { text-align: center; margin: 16px 0; }
+.voir-suite { font: inherit; font-weight: 600; border: 1px solid var(--accent); background: var(--card); color: var(--accent); border-radius: 999px; padding: 10px 20px; min-height: 44px; cursor: pointer; }
+.voir-suite:hover { background: var(--accent); color: var(--bg); }
+.ma-soiree { border-left-color: #1f618d; }
+.ma-soiree .frise li { grid-template-columns: 96px minmax(0, 1fr) auto; }
+.ma-soiree .frise-heure small { font-weight: 400; color: var(--muted); }
+.ma-soiree .conflit { color: #b5442f; font-weight: 600; }
+.ma-soiree-note { margin: 4px 0 6px; font-size: .8rem; color: var(--muted); }
+.ma-soiree-note:empty { display: none; }
+@media (max-width: 700px) { .ma-soiree .frise li { grid-template-columns: 84px minmax(0, 1fr); } .ma-soiree .frise-reste { grid-column: 2; grid-row: auto; white-space: normal; } }
