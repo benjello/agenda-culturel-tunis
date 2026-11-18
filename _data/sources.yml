@@ -1908,5 +1908,5 @@
   genre: institution
   scraper: presse
   categorie: autre
-  actif: true
+  actif: false  # 18 nov. 2026 : 405 avec l'en-tête du scraper (le flux répond à curl) ; à reprendre avec un autre User-Agent
   note: "Flux WordPress vérifié le 18 nov. 2026 (10 articles) ; le scraper ne garde que les articles qui annoncent un événement daté à Tunis."
