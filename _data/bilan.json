@@ -338,7 +338,7 @@
   "date": "2026-11-18",
   "a_venir": 139,
   "sept_jours": 89,
-  "sources_actives": 76,
+  "sources_actives": 75,
   "sources_avec_evenements": 26,
   "sources_muettes": [
    "cine-amilcar",
@@ -383,7 +383,6 @@
    "kapitalis-cite-sciences",
    "opera-tunis",
    "presse-africanmanager",
-   "presse-ambassade-usa",
    "presse-kapitalis-ar",
    "presse-lapresse",
    "presse-leaders",
