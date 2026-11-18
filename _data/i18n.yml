@@ -462,3 +462,12 @@ installer.autre: { fr: "Dans le menu de votre navigateur, cherchez « Installer 
 programmes_facebook: { ar: "برامج منشورة على فيسبوك", en: "Programmes posted on Facebook" }
 publie_le: { ar: "نُشر في", en: "posted on" }
 voir_publication: { ar: "انظر المنشور على فيسبوك", en: "See the post on Facebook" }
+pres_de_moi: { fr: "📍 Près de moi", ar: "📍 الأقرب إليّ", en: "📍 Near me" }
+pos_indispo: { fr: "Position indisponible sur cet appareil.", ar: "الموقع غير متاح على هذا الجهاز.", en: "Location is not available on this device." }
+pos_recherche: { fr: "Recherche de votre position…", ar: "جارٍ تحديد موقعك…", en: "Finding your location…" }
+pos_ok: { fr: "Du plus proche au plus loin. Les lieux sans position connue sont à la fin.", ar: "من الأقرب إلى الأبعد. الفضاءات دون موقع معروف في الأخير.", en: "Nearest first. Venues with no known position come last." }
+pos_refus: { fr: "Position refusée : autorisez-la dans votre navigateur pour trier par distance.", ar: "تم رفض الموقع: اسمح به في المتصفح للترتيب حسب المسافة.", en: "Location refused: allow it in your browser to sort by distance." }
+voir_suite: { fr: "Voir la suite ({n} événements après le {date})", ar: "عرض المزيد ({n} نشاطا بعد {date})", en: "See more ({n} events after {date})" }
+ma_soiree: { fr: "Ma soirée", ar: "أمسيتي", en: "My evening" }
+ma_soiree_note: { fr: "* Heure de fin non annoncée : on compte 2 h.", ar: "* وقت النهاية غير معلن: نحسب ساعتين.", en: "* End time not announced: counted as 2 h." }
+chevauche: { fr: "chevauche", ar: "يتداخل مع", en: "overlaps" }

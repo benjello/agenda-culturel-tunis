@@ -53,10 +53,17 @@ layout: default
   </div>
   <div class="bande-dates" id="bande-dates" role="group" aria-label="Choisir un jour"></div>
 </div>
-<p class="compteur" id="compteur-zone"><span id="compteur" role="status" aria-live="polite"></span> <button type="button" class="effacer" id="effacer" hidden data-t="tout_effacer">Tout effacer</button></p>
+<p class="compteur" id="compteur-zone"><span id="compteur" role="status" aria-live="polite"></span> <button type="button" class="effacer" id="effacer" hidden data-t="tout_effacer">Tout effacer</button>
+  <button type="button" class="tri-distance-bouton" id="tri-distance" aria-pressed="false"><span data-t="pres_de_moi">📍 Près de moi</span></button></p>
+<p class="aide-tri" id="aide-tri" role="status" hidden></p>
 <section class="ce-soir" id="ce-soir" hidden aria-label="Ce soir">
   <h2><span data-t="ce_soir_titre">Ce soir à Tunis</span></h2>
   <ol class="frise" id="ce-soir-liste"></ol>
+</section>
+<section class="ce-soir ma-soiree" id="ma-soiree" hidden aria-label="Ma soirée">
+  <h2><span id="ma-soiree-titre" data-t="ma_soiree">Ma soirée</span></h2>
+  <ol class="frise" id="ma-soiree-liste"></ol>
+  <p class="ma-soiree-note" id="ma-soiree-note"></p>
 </section>
 <a class="nouveautes" id="nouveautes" href="{{ '/nouveau/' | relative_url }}" hidden></a>
 {%- comment -%} Bandeau Ramadan : deux semaines avant le début et pendant le mois (dates dans _data/ramadan.yml) {%- endcomment -%}
@@ -175,6 +182,8 @@ layout: default
   {%- if forloop.last %}</section>{% endif -%}
 {%- endfor %}
 </div>
+<div id="liste-distance" hidden></div>
+<p class="voir-suite-zone"><button type="button" class="voir-suite" id="voir-suite" hidden></button></p>
 <p id="empty" class="empty" hidden data-t="aucun">Aucun événement à venir pour l'instant.</p>
 </div>
 </div>
@@ -399,15 +408,25 @@ layout: default
     bandeRapide.querySelectorAll('button').forEach(function (b) { b.querySelector('.nb').textContent = n[b.dataset.moment] ? n[b.dataset.moment] : ''; });
     bandeDates.querySelectorAll('button[data-jour]').forEach(function (b) { b.classList.toggle('vide', !n[b.dataset.moment]); });
   }
+  var suite = false, bSuite = document.getElementById('voir-suite');
+  function dateCourte(iso) { var p = iso.split('-'); return (+p[2]) + ' ' + MOIS_C[+p[1] - 1]; }
+  if (bSuite) bSuite.addEventListener('click', function () { suite = true; refresh(); });
   function refresh() {
     var shown = 0;
     var favs = window.lireFavoris ? window.lireFavoris() : [];
     var evts = document.querySelectorAll('#agenda .event, #en-cours .event');
+    // Accueil léger : sans filtre de date ni recherche, on s'arrête aux 30 prochains jours ; « Voir la suite » montre le reste.
+    var limite = moment === 'tout' && !mots.length && !suite, plusLoin = 0, finLimite = jour(30);
     evts.forEach(function (el) {
       var visible = horsMoment(el, favs) && dansMoment(el);
+      if (visible && limite && el.dataset.debut > finLimite) { visible = false; plusLoin++; }
       el.hidden = !visible;
       if (visible) shown++;
     });
+    if (bSuite) {
+      bSuite.hidden = !plusLoin;
+      bSuite.textContent = tt('voir_suite', 'Voir la suite ({n} événements après le {date})').replace('{n}', plusLoin).replace('{date}', dateCourte(finLimite));
+    }
     majBandes(evts, favs);
     if (salles) { var nf = montrerFilms(); if (filter === 'cinema') shown += nf || 1; }
     document.querySelectorAll('.month').forEach(function (s) {
@@ -422,6 +441,7 @@ layout: default
   var cCompteur = document.getElementById('compteur'), bEffacer = document.getElementById('effacer');
   var bTiroir = document.getElementById('bouton-filtres'), nbF = document.getElementById('nb-filtres');
   var dernierN = 0;
+  function esc(x) { return (x || '').replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function tt(k, d) { return window.t ? window.t(k, d) : d; }
   function majAide(n) {
     if (n !== undefined) dernierN = n;
@@ -441,6 +461,7 @@ layout: default
     [caseGratuit, caseFamille, caseFavoris].forEach(function (c) { if (c) c.checked = false; });
     filter = 'all';
     document.querySelectorAll('#filters button').forEach(function (x) { x.classList.toggle('active', x.dataset.filter === 'all'); });
+    suite = false;
     choisirMoment('tout');
   });
   if (bTiroir) bTiroir.addEventListener('click', function () {
@@ -459,6 +480,107 @@ layout: default
     if (b) choisir(b.dataset.filter);
   });
   if (resume) resume.addEventListener('click', function () { choisir('cinema'); window.scrollTo(0, 0); });
+
+  // Tri par distance : la position reste dans le navigateur (jamais envoyée), les lieux viennent de _data/lieux.json.
+  var COORD = {};
+  {{ site.data.lieux.carte | jsonify }}.forEach(function (p) { COORD[p.slug] = [p.lat, p.lon]; });
+  var bTri = document.getElementById('tri-distance'), aideTri = document.getElementById('aide-tri');
+  var listeDist = document.getElementById('liste-distance'), agendaEl = document.getElementById('agenda');
+  var triActif = false, rangs = null;
+  function km(a, b) {
+    var r = Math.PI / 180, dLat = (b[0] - a[0]) * r, dLon = (b[1] - a[1]) * r;
+    var x = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(a[0] * r) * Math.cos(b[0] * r) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return 12742 * Math.asin(Math.sqrt(x));
+  }
+  function trier(pos) {
+    var evts = Array.prototype.slice.call(document.querySelectorAll('#agenda .event, #en-cours .event'));
+    if (!rangs) rangs = evts.map(function (el) { return { el: el, parent: el.parentNode }; });
+    evts.forEach(function (el) {
+      var c = COORD[el.dataset.slug];
+      el._km = c ? km(pos, c) : Infinity;
+      var meta = el.querySelector('.event-body .meta'), z = el.querySelector('.distance');
+      if (!z && meta) { z = document.createElement('span'); z.className = 'distance'; meta.appendChild(z); }
+      if (z) z.textContent = c ? ' · ' + (el._km < 1 ? Math.round(el._km * 10) * 100 + ' m' : el._km.toFixed(1).replace('.', ',') + ' km') : '';
+    });
+    evts.map(function (el, i) { return { el: el, i: i }; })
+      .sort(function (a, b) { return a.el._km - b.el._km || a.i - b.i; })
+      .forEach(function (x) { listeDist.appendChild(x.el); });
+    listeDist.hidden = false; triActif = true;
+    document.body.classList.add('tri-distance');
+    bTri.classList.add('active'); bTri.setAttribute('aria-pressed', 'true');
+    refresh();
+  }
+  function finTri() {
+    if (!rangs) return;
+    rangs.forEach(function (r) { r.parent.appendChild(r.el); var z = r.el.querySelector('.distance'); if (z) z.remove(); });
+    listeDist.hidden = true; triActif = false;
+    document.body.classList.remove('tri-distance');
+    bTri.classList.remove('active'); bTri.setAttribute('aria-pressed', 'false');
+    refresh();
+  }
+  if (bTri) bTri.addEventListener('click', function () {
+    if (triActif) { finTri(); aideTri.hidden = true; return; }
+    if (!navigator.geolocation) { aideTri.textContent = tt('pos_indispo', 'Position indisponible sur cet appareil.'); aideTri.hidden = false; return; }
+    aideTri.textContent = tt('pos_recherche', 'Recherche de votre position…'); aideTri.hidden = false;
+    navigator.geolocation.getCurrentPosition(function (p) {
+      aideTri.textContent = tt('pos_ok', 'Du plus proche au plus loin. Les lieux sans position connue sont à la fin.');
+      trier([p.coords.latitude, p.coords.longitude]);
+    }, function () {
+      aideTri.textContent = tt('pos_refus', 'Position refusée : autorisez-la dans votre navigateur pour trier par distance.');
+    }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+  });
+
+  // « Ma soirée » : les favoris du jour (ou du prochain jour qui en a) en plan, avec les chevauchements.
+  var zoneMS = document.getElementById('ma-soiree'), listeMS = document.getElementById('ma-soiree-liste');
+  function enMinutes(h) { var x = h.split(':'); return +x[0] * 60 + +x[1]; }
+  function hFr(m) { var h = Math.floor(m / 60) % 24, mn = m % 60; return h + 'h' + (mn ? ('0' + mn).slice(-2) : ''); }
+  function majMaSoiree() {
+    if (!zoneMS) return;
+    var favs = window.lireFavoris ? window.lireFavoris() : [], parJour = {}, vus = {};
+    document.querySelectorAll('#agenda .event, #en-cours .event, #liste-distance .event').forEach(function (el) {
+      if (favs.indexOf(el.dataset.id) < 0 || vus[el.dataset.id]) return;
+      // Un événement d'un seul jour ; les expos et festivals de plusieurs jours n'ont pas leur place dans un plan horaire
+      if (el.dataset.debut !== el.dataset.date || el.dataset.date < today || el.dataset.date > jour(7)) return;
+      vus[el.dataset.id] = 1;
+      (parJour[el.dataset.date] = parJour[el.dataset.date] || []).push(el);
+    });
+    // Aujourd'hui, ce qui est déjà fini ne fait plus partie de la soirée
+    var maintenant = new Date(), minutes = maintenant.getHours() * 60 + maintenant.getMinutes();
+    if (parJour[today]) {
+      parJour[today] = parJour[today].filter(function (el) { var h = el.dataset.heure, f = el.dataset.heureFin; return !h || minutes < (f ? enMinutes(f) : enMinutes(h) + 120); });
+      if (!parJour[today].length) delete parJour[today];
+    }
+    var jours = Object.keys(parJour).sort();
+    if (!jours.length) { zoneMS.hidden = true; return; }
+    var j = jours[0], items = parJour[j].map(function (el) {
+      var h = el.dataset.heure, d = h ? enMinutes(h) : null, f = el.dataset.heureFin;
+      var fin = d === null ? null : (f ? enMinutes(f) : d + 120);   // sans heure de fin : 2 h par défaut
+      if (fin !== null && fin <= d) fin += 24 * 60;
+      return { el: el, d: d, fin: fin, estimee: !f };
+    }).sort(function (a, b) { return (a.d === null) - (b.d === null) || a.d - b.d; });
+    listeMS.innerHTML = '';
+    var conflits = 0;
+    items.forEach(function (it, i) {
+      var chevauche = items.filter(function (o, k) { return k !== i && it.d !== null && o.d !== null && it.d < o.fin && o.d < it.fin; });
+      if (chevauche.length) conflits++;
+      var li = document.createElement('li');
+      var heure = it.d === null ? '?' : hFr(it.d) + '<small>–' + hFr(it.fin) + (it.estimee ? '*' : '') + '</small>';
+      li.innerHTML = '<span class="frise-heure">' + heure + '</span><a href="' + esc(it.el.dataset.lien) + '">' + esc(it.el.dataset.titre) + '</a>' +
+        '<span class="frise-lieu">' + esc((it.el.dataset.lieu || '').split(',')[0]) + '</span>' +
+        (chevauche.length ? '<span class="frise-reste conflit">⚠ ' + esc(tt('chevauche', 'chevauche')) + ' ' + esc(chevauche[0].el.dataset.titre.slice(0, 28)) + '</span>' : '');
+      if (chevauche.length) li.classList.add('en-conflit');
+      listeMS.appendChild(li);
+    });
+    var d = new Date(j + 'T12:00:00');
+    var titre = document.getElementById('ma-soiree-titre');
+    titre.textContent = tt('ma_soiree', 'Ma soirée') + (j === today ? '' : ' · ' + (j === demain ? tt('moment.demain', 'Demain') : JOURS[d.getDay()] + ' ' + d.getDate()));
+    document.getElementById('ma-soiree-note').textContent = items.some(function (x) { return x.estimee && x.d !== null; })
+      ? tt('ma_soiree_note', '* Heure de fin non annoncée : on compte 2 h.') : '';
+    zoneMS.hidden = false;
+  }
+  document.addEventListener('favoris', majMaSoiree);
+  document.addEventListener('langue', majMaSoiree);
+  window.addEventListener('load', majMaSoiree);  // site.js (favoris) se charge après ce script
   // Lien direct vers un thème : …/#cinema, …/#theatre
   var h = location.hash.slice(1);
   choisir(document.querySelector('#filters button[data-filter="' + h + '"]') ? h : 'all');

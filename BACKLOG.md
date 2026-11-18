@@ -224,7 +224,9 @@ Comprendre sans cliquer (demandé le 2 novembre)
 - [x] Titre de « Ce soir à Tunis » adapté à l'heure affichée : « Ce matin », « Cet après-midi », « Ce soir », ou « Aujourd'hui » si la liste mêle les moments (fr, ar, en).
 - [x] Heure de début en évidence sous la date de chaque carte.
 - [ ] Heure de fin et durée : aucune source ne la donne pour l'instant (seulement les films). À chercher dans les scrapers (schema.org `endDate`).
-- [ ] Frise horaire de la soirée, « Ma soirée » (favoris en plan avec chevauchements), « autour de ce lieu », sélection éditoriale, regroupement par quartier.
+- [x] « Ma soirée » : les favoris du jour en plan horaire avec chevauchements (fin estimée à 2 h si non annoncée).
+- [x] Accueil allégé : 30 prochains jours, puis « Voir la suite » ; tri « Près de moi » par distance (position gardée dans le navigateur).
+- [ ] Frise horaire complète, « autour de ce lieu », sélection éditoriale, regroupement par quartier.
 
 Entrées « Autre » à réduire (relevé du 2 novembre) : une entrée « Autre » devrait rester rare.
 - [x] `ift-pdf` : catégorie lue dans le titre puis la notice (5 « Autre » sur 40 au 18 nov., contre 19). Reste : `tunis-events` et `ig-lart-rue` (3 chacun), les sources de presse et `fb-cr-sidibouzid` (2 chacune).
