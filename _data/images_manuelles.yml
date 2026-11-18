@@ -1,0 +1,14 @@
+# Photos des fiches artistes et lieux : corrections à la main (lues par scrapers/enrichir.py).
+# Principe : mieux vaut aucune photo qu'une mauvaise. Toute photo vient de Wikimedia Commons, sous licence libre.
+#
+# refuses : clés (« artiste:<fiche> » ou « lieu:<fiche> ») dont la photo est écartée et jamais re-cherchée.
+# imposees : clé → nom exact du fichier Commons (sans « File: »), à utiliser à la place de la recherche Wikidata.
+#   lieu:cinema-le-palace: "Nom du fichier.jpg"
+refuses:
+  - artiste:moez                  # photo d'un joueur de tennis homonyme (Moez Echargui), pas l'artiste
+  - artiste:yasser-jradi          # photo de groupe (deux personnes) : on ne sait pas laquelle est l'artiste
+  - lieu:tunisia                  # un pays, pas un lieu : le paysage ne représente pas la salle
+  - lieu:douz                     # une ville, pas un lieu
+  - lieu:goethe-institut-tunis    # photo d'une place (« Africa square »), pas du bâtiment
+  - lieu:cinema-le-palace         # fichier « TNDEV » : sujet non confirmé
+imposees: {}

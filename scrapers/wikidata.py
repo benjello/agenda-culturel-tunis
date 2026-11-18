@@ -66,11 +66,11 @@ def _annee(entite: dict) -> int:
     return max(annees) if annees else 0
 
 
-def _entites(ids: list[str]) -> dict:
+def _entites(ids: list[str], props: str = "claims|labels", langues: str = "fr|en") -> dict:
     res = {}
     for i in range(0, len(ids), 40):
         res.update(_api(action="wbgetentities", ids="|".join(ids[i:i + 40]),
-                        props="claims|labels", languages="fr|en").get("entities", {}))
+                        props=props, languages=langues).get("entities", {}))
     return res
 
 

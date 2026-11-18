@@ -35,20 +35,10 @@
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LotfiBouchnak.jpg?width=400",
    "qid": "Q3259988"
   },
-  "artiste:moez": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Moez_Echargui_(2026_US_Open)_03_(cropped).jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Moez_Echargui_(2026_US_Open)_03_(cropped).jpg?width=400",
-   "qid": "Q29110073"
-  },
   "artiste:rafram-chaddad": {
    "credit": "https://commons.wikimedia.org/wiki/File:Rafram_Chaddad_P2070022-6.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafram_Chaddad_P2070022-6.jpg?width=400",
    "qid": "Q12411441"
-  },
-  "artiste:yasser-jradi": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Asma_Mansour_with_Yasser_Jradi.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Asma_Mansour_with_Yasser_Jradi.jpg?width=400",
-   "qid": "Q128904556"
   },
   "lieu:beit-al-hikma-carthage": {
    "credit": "https://commons.wikimedia.org/wiki/File:Beit_Hikma_Tunis.JPG",
@@ -65,25 +55,10 @@
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_colisé_-_Tunis_03.jpg?width=400",
    "qid": "Q35710133"
   },
-  "lieu:cinema-le-palace": {
-   "credit": "https://commons.wikimedia.org/wiki/File:TNDEV_08.JPG",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/TNDEV_08.JPG?width=400",
-   "qid": "Q29024306"
-  },
   "lieu:cite-de-la-culture": {
    "credit": "https://commons.wikimedia.org/wiki/File:Cité_de_la_culture,_Tunis_27_décembre_2014.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cité_de_la_culture,_Tunis_27_décembre_2014.jpg?width=400",
    "qid": "Q2974756"
-  },
-  "lieu:douz": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Douz-souk.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Douz-souk.jpg?width=400",
-   "qid": "Q1009268"
-  },
-  "lieu:goethe-institut-tunis": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Africa_square_07.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Africa_square_07.jpg?width=400",
-   "qid": "Q28227346"
   },
   "lieu:institut-francais-de-tunis": {
    "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
@@ -99,11 +74,6 @@
    "credit": "https://commons.wikimedia.org/wiki/File:Le_théâtre_de_Tunis_(3301451272).jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_théâtre_de_Tunis_(3301451272).jpg?width=400",
    "qid": "Q3527872"
-  },
-  "lieu:tunisia": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Carthage_Palace_from_Sidi_Bou_Said.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carthage_Palace_from_Sidi_Bou_Said.jpg?width=400",
-   "qid": "Q948"
   }
  },
  "osm": {

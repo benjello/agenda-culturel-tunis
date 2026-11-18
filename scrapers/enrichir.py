@@ -12,6 +12,7 @@ réinterroger chaque jour : un nom déjà cherché n'est recherché à nouveau q
 from __future__ import annotations
 
 import datetime as dt
+import html
 import json
 import re
 import unicodedata
@@ -21,15 +22,28 @@ import yaml
 
 from .commun import RACINE
 from .doublons import _lire
-from .wikidata import TUNISIE, UA, _api, _entites, _valeurs
+from .wikidata import TUNISIE, UA, _api, _valeurs
+from .wikidata import _entites as _entites_base
+
+
+def _entites(ids: list[str]) -> dict:
+    return _entites_base(ids, props="claims|labels|aliases", langues="fr|en|ar")
+
 
 FICHIER = RACINE / "_data" / "enrichi.json"
+MANUELLES = RACINE / "_data" / "images_manuelles.yml"
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter",
             "https://overpass.private.coffee/api/interpreter"]
 MAX_RECHERCHES = 60          # recherches Wikidata par passage
 REESSAI_JOURS = 30
 HUMAIN = "Q5"
 P_IMAGE, P_NATURE, P_PAYS, P_NATIONALITE = "P18", "P31", "P17", "P27"
+# Un « lieu » qui est en fait un pays, une ville ou une commune : sa photo (un paysage) ne représente pas la salle.
+NATURES_NON_LIEU = {"Q6256", "Q3624078", "Q515", "Q1549591", "Q486972", "Q532", "Q15284", "Q3957", "Q5119", "Q35657",
+                    "Q1620908", "Q15617994"}
+# Licences libres acceptées (nom court donné par Wikimedia Commons)
+LICENCE_LIBRE = re.compile(r"^(CC[ -]BY|CC0|CC[ -]ZERO|Public domain|PD|GFDL|FAL|Attribution)", re.I)
 
 # Lieux culturels dans OpenStreetMap
 REQUETE_OSM = """[out:json][timeout:120];
@@ -54,13 +68,77 @@ def commons(fichier: str, largeur: int = 400) -> dict:
 
 
 def acceptable(e: dict, genre: str) -> bool:
-    """Un artiste : une personne tunisienne ; un lieu : en Tunisie. Évite les homonymes."""
+    """Un artiste : une personne tunisienne ; un lieu : en Tunisie, et pas un pays ni une ville. Évite les homonymes."""
     if genre == "artiste":
         return HUMAIN in _valeurs(e, P_NATURE) and TUNISIE in _valeurs(e, P_NATIONALITE)
-    return TUNISIE in _valeurs(e, P_PAYS)
+    return TUNISIE in _valeurs(e, P_PAYS) and not (set(_valeurs(e, P_NATURE)) & NATURES_NON_LIEU)
+
+
+def noms_de(e: dict) -> set[str]:
+    """Libellés et alias Wikidata (fr, en, ar), normalisés."""
+    res = set()
+    for l in ("fr", "en", "ar"):
+        v = (e.get("labels") or {}).get(l, {}).get("value")
+        if v:
+            res.add(_norm(v))
+        res |= {_norm(a.get("value", "")) for a in (e.get("aliases") or {}).get(l, [])}
+    res.discard("")
+    return res
+
+
+def meme_nom(nom: str, e: dict) -> bool:
+    """Le nom de la fiche désigne bien cette entité Wikidata : mêmes mots, ou (au moins deux mots) tous les mots du
+    plus court dans le plus long. « Moez » seul ne suffit jamais : trop de homonymes (un joueur de tennis…)."""
+    n = set(_norm(nom).split())
+    for autre in noms_de(e):
+        a = set(autre.split())
+        if not n or not a:
+            continue
+        if n == a or (min(len(n), len(a)) >= 2 and (n <= a or a <= n)):
+            return True
+    return False
+
+
+def manuelles() -> dict:
+    """_data/images_manuelles.yml : « refuses » (clés dont la photo est écartée) et « imposees » (clé → fichier Commons)."""
+    try:
+        d = yaml.safe_load(MANUELLES.read_text(encoding="utf-8")) or {}
+    except FileNotFoundError:
+        d = {}
+    return {"refuses": set(d.get("refuses") or []), "imposees": d.get("imposees") or {}}
+
+
+def infos_commons(fichier: str) -> dict | None:
+    """Auteur et licence d'un fichier Wikimedia Commons ; None si l'API ne répond pas (on réessaiera)."""
+    nom = "File:" + fichier.replace("_", " ")
+    r = requests.get(COMMONS_API, params={"action": "query", "format": "json", "titles": nom, "prop": "imageinfo",
+                                           "iiprop": "extmetadata", "iiextmetadatafilter": "Artist|LicenseShortName|LicenseUrl"},
+                     headers=UA, timeout=30)
+    r.raise_for_status()
+    pages = (r.json().get("query") or {}).get("pages") or {}
+    meta = {}
+    for p in pages.values():
+        meta = ((p.get("imageinfo") or [{}])[0]).get("extmetadata") or {}
+    if not meta:
+        return None
+    nettoyer = lambda t: " ".join(html.unescape(re.sub(r"<[^>]+>", " ", t or "")).split())
+    return {"auteur": nettoyer((meta.get("Artist") or {}).get("value"))[:80],
+            "licence": nettoyer((meta.get("LicenseShortName") or {}).get("value")),
+            "licence_url": ((meta.get("LicenseUrl") or {}).get("value") or "").strip()}
+
+
+def licence_libre(infos: dict | None) -> bool:
+    return bool(infos and LICENCE_LIBRE.match(infos.get("licence", "")))
+
+
+def fichier_commons(entree: dict) -> str:
+    """Nom du fichier Commons, lu dans le lien de crédit d'une entrée."""
+    return requests.utils.unquote(entree["credit"].rsplit("File:", 1)[-1])
 
 
 def image_wikidata(nom: str, genre: str) -> dict | None:
+    """Première entité qui porte bien le nom de la fiche, au bon pays, avec une image sous licence libre.
+    Dans le doute, pas d'image : mieux vaut aucune photo qu'une mauvaise."""
     trouves = _api(action="wbsearchentities", search=nom, language="fr", uselang="fr", limit=5).get("search", [])
     ids = [t["id"] for t in trouves]
     if not ids:
@@ -69,9 +147,46 @@ def image_wikidata(nom: str, genre: str) -> dict | None:
     for i in ids:
         e = entites.get(i) or {}
         images = _valeurs(e, P_IMAGE)
-        if images and acceptable(e, genre):
-            return {"qid": i, **commons(images[0])}
+        if images and acceptable(e, genre) and meme_nom(nom, e):
+            r = {"qid": i, **commons(images[0])}
+            infos = infos_commons(images[0])
+            if not licence_libre(infos):
+                continue
+            return {**r, **infos}
     return None
+
+
+def imposee(fichier: str) -> dict | None:
+    """Photo choisie à la main (images_manuelles.yml) : on ne garde que si sa licence est libre."""
+    infos = infos_commons(fichier)
+    return {**commons(fichier), **infos, "manuelle": True} if licence_libre(infos) else None
+
+
+def reverifier(cache: dict, aujourd_hui: dt.date, noms: dict[str, str]) -> None:
+    """Photos déjà gardées : vérifie qu'elles portent le bon nom (Wikidata) et une licence libre, ajoute auteur et
+    licence. Une photo qui ne passe pas est retirée. Une panne réseau garde la photo et réessaie au prochain passage."""
+    a_voir = [k for k, v in cache["images"].items() if not v.get("manuelle") and v.get("verifie") != aujourd_hui.isoformat()
+              and not v.get("licence")]
+    if not a_voir:
+        return
+    entites = _entites(sorted({cache["images"][k]["qid"] for k in a_voir}))
+    for k in a_voir:
+        v = cache["images"][k]
+        e = entites.get(v["qid"]) or {}
+        genre = k.split(":", 1)[0]
+        if not (acceptable(e, genre) and meme_nom(noms.get(k, ""), e)):
+            print(f"  photo retirée (mauvais nom ou mauvais type) : {k}")
+            del cache["images"][k]
+            continue
+        infos = infos_commons(fichier_commons(v))
+        if infos is None:
+            continue
+        if not licence_libre(infos):
+            print(f"  photo retirée (licence non libre) : {k}")
+            del cache["images"][k]
+            continue
+        v.update(infos)
+        v["verifie"] = aujourd_hui.isoformat()
 
 
 def fiches(dossier: str) -> list[tuple[str, str]]:
@@ -144,12 +259,26 @@ def main() -> int:
     cache = lire()
     aujourd_hui = dt.date.today()
     limite = (aujourd_hui - dt.timedelta(days=REESSAI_JOURS)).isoformat()
-    # 1. Photos (Wikidata)
+    # 1. Photos (Wikidata), seulement si le nom correspond et la licence est libre ; sinon rien
     n = 0
+    mains = manuelles()
+    noms = {f"{g}:{c}": nom for g, d in (("artiste", "_artistes"), ("lieu", "_lieux")) for c, nom in fiches(d)}
+    for k in mains["refuses"]:
+        cache["images"].pop(k, None)
+    try:
+        for k, fichier in mains["imposees"].items():
+            if k not in cache["images"] or not cache["images"][k].get("manuelle"):
+                r = imposee(fichier)
+                if r:
+                    cache["images"][k] = r
+                    print(f"  photo choisie à la main : {k}")
+        reverifier(cache, aujourd_hui, noms)
+    except (requests.RequestException, ValueError) as exc:
+        print(f"  vérification des photos : {exc} (on garde celles d'avant, nouvel essai au prochain passage)")
     for genre, dossier in (("artiste", "_artistes"), ("lieu", "_lieux")):
         for cle, nom in fiches(dossier):
             k = f"{genre}:{cle}"
-            if k in cache["images"] or cache["vu"].get(k, "") > limite or n >= MAX_RECHERCHES:
+            if k in cache["images"] or k in mains["refuses"] or cache["vu"].get(k, "") > limite or n >= MAX_RECHERCHES:
                 continue
             n += 1
             try:
