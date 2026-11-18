@@ -338,7 +338,7 @@
   "date": "2026-11-18",
   "a_venir": 139,
   "sept_jours": 89,
-  "sources_actives": 73,
+  "sources_actives": 74,
   "sources_avec_evenements": 26,
   "sources_muettes": [
    "cine-amilcar",
@@ -386,6 +386,7 @@
    "presse-lapresse",
    "presse-leaders",
    "presse-mosaique-ar",
+   "presse-tunisie-numerique",
    "presse-webdo",
    "resident-advisor",
    "sat-astronomie",

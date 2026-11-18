@@ -830,9 +830,11 @@
     "sans_heure": 1
   },
   "presse-tunisie-numerique": {
-    "dernier_passage": "2026-11-01T09:07:34",
-    "erreur": "RuntimeError: flux illisible (not well-formed (invalid token): line 35, column 31)",
-    "ok": false
+    "dernier_passage": "2026-11-18T16:30:44",
+    "erreur": "RuntimeError: flux vide ou illisible",
+    "ok": false,
+    "panne_depuis": "2026-11-18T16:30:44",
+    "premier_passage": "2026-11-18T16:30:44"
   },
   "presse-webdo": {
     "attente": null,

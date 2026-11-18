@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "corriges": 2,
+ "corriges": 1,
  "a_verifier": [
   {
    "fichier": "fb-cr-sfax/2026-11-21-2025.md",
@@ -183,11 +183,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 1
      }
     ]
@@ -601,7 +596,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 5
+      "n": 2
      }
     ]
    }
@@ -623,11 +618,6 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 1
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
       "n": 1
      }
     ]
@@ -824,7 +814,7 @@
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 5
+      "n": 2
      }
     ]
    },
