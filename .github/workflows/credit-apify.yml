@@ -1,13 +1,21 @@
-name: Crédit Apify (vérification)
+name: Crédit Apify
 
-# Lancement à la main : Actions → Crédit Apify (vérification) → Run workflow.
-# Lit seulement le solde du crédit Apify et l'affiche dans le journal. Rien n'est enregistré
-# ni commité, et le jeton APIFY_TOKEN n'est jamais affiché.
+# Contrôle quotidien du crédit Apify (et lancement à la main : Actions → Crédit Apify → Run workflow).
+# Le solde s'affiche sur la page Santé (écrit par le workflow « Scrapers »).
+# Un ticket d'alerte n'est ouvert que si le crédit risque de manquer avant le renouvellement
+# (épuisé, ou dépense prévue en fin de cycle au-dessus de la limite) ; il se ferme tout seul ensuite.
 on:
+  schedule:
+    - cron: "15 6 * * *"
   workflow_dispatch:
 
 permissions:
   contents: read
+  issues: write
+
+concurrency:
+  group: credit-apify
+  cancel-in-progress: false
 
 jobs:
   credit:
@@ -18,10 +26,21 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Lire le crédit
+      - name: Lire le crédit et préparer l'alerte
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 -m scrapers.credit_apify > alerte-apify.md
+      - name: Alerte « Crédit Apify » (si le crédit risque de manquer)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          python3 -m scrapers.credit_apify
-          echo "--- contenu lu (_data/apify.json, non commité) ---"
-          cat _data/apify.json
+          titre="Crédit Apify"
+          num=$(gh issue list --state open --search "in:title \"$titre\"" --json number,title --jq ".[] | select(.title == \"$titre\") | .number" | head -1)
+          if [ -s alerte-apify.md ]; then
+            if [ -n "$num" ]; then gh issue edit "$num" --body-file alerte-apify.md
+            else gh label create alerte --color B5442F --force >/dev/null 2>&1 || true
+                 gh issue create --title "$titre" --label alerte --assignee benjello --body-file alerte-apify.md; fi
+          elif [ -n "$num" ] && grep -q "\"jour\": \"$(date +%F)\"" _data/apify.json 2>/dev/null; then
+            gh issue close "$num" --comment "Le crédit Apify ne risque plus de manquer avant le renouvellement."
+          fi

@@ -89,7 +89,8 @@ jobs:
         continue-on-error: true
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: python3 -m scrapers.credit_apify > alerte-apify.md
+        # met à jour _data/apify.json (page Santé) ; l'alerte est gérée par credit-apify.yml
+        run: python3 -m scrapers.credit_apify
       - name: Enregistrer s'il y a du nouveau
         # sur une branche d'essai, on lit sans rien enregistrer (pas d'échec de push)
         if: github.ref == 'refs/heads/main'
@@ -140,21 +141,6 @@ jobs:
                  gh issue create --title "$titre" --label alerte --assignee benjello --body-file alerte-panne.md; fi
           elif [ -n "$num" ]; then
             gh issue close "$num" --comment "Toutes les sources actives se lisent de nouveau."
-          fi
-      - name: Alerte « Crédit Apify » (80 % de la limite du mois)
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          titre="Crédit Apify"
-          num=$(gh issue list --state open --search "in:title \"$titre\"" --json number,title --jq ".[] | select(.title == \"$titre\") | .number" | head -1)
-          if [ -s alerte-apify.md ]; then
-            if [ -n "$num" ]; then gh issue edit "$num" --body-file alerte-apify.md
-            else gh label create alerte --color B5442F --force >/dev/null 2>&1 || true
-                 gh issue create --title "$titre" --label alerte --assignee benjello --body-file alerte-apify.md; fi
-          elif [ -n "$num" ] && grep -q "\"jour\": \"$(date +%F)\"" _data/apify.json 2>/dev/null; then
-            gh issue close "$num" --comment "La consommation Apify est repassée sous 80 %."
           fi
       - name: Signaler l'échec
         if: steps.run.outcome == 'failure'
