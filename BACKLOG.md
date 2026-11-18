@@ -195,8 +195,9 @@ Ouverture
 
 Présentation (demandé le 1er novembre)
 - [x] Récupérer les **notices et visuels** de chaque événement : texte et image de la page d'origine (balises `og:description` / `og:image`, champ `description` du schema.org), affiche Instagram déjà enregistrée.
-- [ ] Fiche artiste : photo et courte bio depuis Wikidata / Wikipédia (licence libre), lien Instagram.
-- [ ] Image des lieux depuis Wikimedia Commons (Théâtre municipal, Cité de la culture…).
+- [x] Fiche artiste : photo (Wikidata P18 → Commons) et courte bio (Wikipédia). Une photo n'est gardée que si le nom de la fiche correspond à l'entité Wikidata (mêmes mots, jamais un prénom seul), si l'entité est tunisienne et du bon type (ni pays ni ville pour un lieu), et si la licence Commons est libre ; auteur et licence sont affichés sous la photo. Dans le doute, pas de photo. Corrections à la main : `_data/images_manuelles.yml` (`refuses`, `imposees`). Les photos déjà gardées sont revérifiées au prochain passage. À faire : lien Instagram.
+- [x] Image des lieux depuis Wikimedia Commons (mêmes règles que les artistes ; `scrapers/enrichir.py`).
+- [x] Heure de fin et durée : `end_time` lu dans le schema.org (`endDate`) ou le texte ; la fiche affiche « Durée : 2 h 30 » et `endDate` avec l'heure dans les données structurées.
 - [x] Billets : afficher « Complet » ou « Gratuit » quand la billetterie le dit (`offers.availability`, prix 0).
 - [ ] Catégories : affiner au fil des remarques (règles par mots du titre dans `commun.categorie_du_titre`).
 

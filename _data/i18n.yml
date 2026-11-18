@@ -86,6 +86,8 @@ agenda_long: { ar: "📅 أضف إلى رزنامتي", en: "📅 Add to my cale
 partager_long: { ar: "↗ مشاركة", en: "↗ Share" }
 retour: { ar: "→ العودة إلى الأجندا", en: "← Back to the agenda" }
 quand: { ar: "متى", en: "When" }
+duree: { ar: "المدة", en: "Duration" }
+photo_de: { ar: "صورة", en: "Photo" }
 ou: { ar: "أين", en: "Where" }
 prix: { ar: "السعر", en: "Price" }
 source: { ar: "المصدر", en: "Source" }

@@ -7,6 +7,13 @@ layout: default
 {%- for a in page.autres_sources -%}{%- assign s2 = site.data.sources | where: "id", a.source | first -%}{%- if billet == "" and s2.type == "billetterie" -%}{%- assign billet = a.link -%}{%- endif -%}{%- endfor -%}
 {%- assign heure = page.date | date: "%H:%M" -%}{%- if heure == "00:00" -%}{%- assign heure = "" -%}{%- endif -%}
 {%- assign heure_fin = page.end_time | default: "" -%}{%- if heure == "" -%}{%- assign heure_fin = "" -%}{%- endif -%}
+{%- assign duree = "" -%}{%- if heure_fin != "" -%}
+  {%- assign d_h = heure | split: ":" -%}{%- assign f_h = heure_fin | split: ":" -%}
+  {%- assign d_min = d_h[0] | times: 60 | plus: d_h[1] -%}{%- assign f_min = f_h[0] | times: 60 | plus: f_h[1] -%}
+  {%- assign n_min = f_min | minus: d_min -%}{%- assign lendemain = false -%}{%- if n_min < 0 -%}{%- assign n_min = n_min | plus: 1440 -%}{%- assign lendemain = true -%}{%- endif -%}
+  {%- assign n_h = n_min | divided_by: 60 -%}{%- assign n_r = n_min | modulo: 60 -%}
+  {%- if n_min > 0 and n_min < 960 -%}{%- if n_h > 0 and n_r > 0 -%}{%- assign duree = n_h | append: " h " | append: n_r -%}{%- elsif n_h > 0 -%}{%- assign duree = n_h | append: " h" -%}{%- else -%}{%- assign duree = n_r | append: " min" -%}{%- endif -%}{%- endif -%}
+{%- endif -%}
 <article class="event-page event" data-date="{{ page.end_date | default: page.date | date: '%Y-%m-%d' }}" data-debut="{{ page.date | date: '%Y-%m-%d' }}" data-heure="{{ heure }}" data-heure-fin="{{ heure_fin }}" data-id="{{ page.url }}" data-titre="{{ page.title | escape }}" data-lieu="{{ page.venue | escape }}{% if page.address %}, {{ page.address | escape }}{% endif %}" data-lien="{{ page.url | absolute_url }}" data-couleur="{{ cat.color }}" data-categorie="{{ cat.label }}">
   <p><a href="{{ '/' | relative_url }}" data-t="retour">← Retour à l'agenda</a></p>
   {%- if page.image %}{% if page.image contains "://" %}{% assign img = page.image %}{% else %}{% assign img = page.image | relative_url %}{% endif %}
@@ -18,6 +25,7 @@ layout: default
   <dl class="details">
     <dt data-t="quand">Quand</dt>
     <dd>{% include date-fr.html date=page.date %}{% if heure_fin != "" %} – {{ heure_fin | replace: ":", "h" | replace: "h00", "h" }}{% endif %}{% if page.end_date %} → {% include date-fr.html date=page.end_date %}{% endif %}</dd>
+    {%- if duree != "" %}<dt data-t="duree">Durée</dt><dd>{{ duree }}</dd>{% endif %}
     <dt data-t="ou">Où</dt>
     <dd>{% include lien-carte.html lieu=page.venue adresse=page.address %}{% if page.address %}<br><small>{{ page.address }}</small>{% endif %}</dd>
     {% if page.price %}<dt data-t="prix">Prix</dt><dd>{{ page.price }}</dd>{% endif %}
@@ -83,7 +91,9 @@ layout: default
   "@type": "Event",
   "name": {{ page.title | jsonify }},
   "startDate": {{ debut_iso | jsonify }},
-  {%- if page.end_date %}
+  {%- if heure_fin != "" %}
+  "endDate": {% if lendemain %}{{ page.date | date: "%s" | plus: 86400 | date: "%Y-%m-%d" | append: "T" | append: heure_fin | append: ":00+01:00" | jsonify }}{% else %}{{ page.date | date: "%Y-%m-%d" | append: "T" | append: heure_fin | append: ":00+01:00" | jsonify }}{% endif %},
+  {%- elsif page.end_date %}
   "endDate": {{ page.end_date | date: "%Y-%m-%d" | jsonify }},
   {%- endif %}
   "eventStatus": "https://schema.org/EventScheduled",
