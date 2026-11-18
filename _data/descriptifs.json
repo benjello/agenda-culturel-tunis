@@ -97,6 +97,11 @@
    "texte": "Programme. Programme et Billetterie en ligne pour les séances de théatre, cinéma et autres évènements, Théâtre de l'Opéra de Tunis",
    "url": "https://www.tunisianopera.tn/fr/programmes"
   },
+  "presse-africanmanager": {
+   "source": "site officiel",
+   "texte": "Site d'information économique et financière en Tunisie et dans le monde, actualité liée aux domaines d’intérêt public....",
+   "url": "https://africanmanager.com/"
+  },
   "presse-economiste-maghrebin": {
    "source": "site officiel",
    "texte": "L'Économiste Maghrébin est votre journal en ligne qui couvre les news économiques et politiques. Nous présentons des éditoriaux, chroniques et interviews.",
@@ -123,6 +128,11 @@
    "url": "https://www.leaders.com.tn/"
   },
   "presse-mosaique-ar": {
+   "source": "Wikipédia",
+   "texte": "Mosaïque FM est la première station de radio privée de Tunisie.",
+   "url": "https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_(Tunisie)"
+  },
+  "presse-mosaique-fr": {
    "source": "Wikipédia",
    "texte": "Mosaïque FM est la première station de radio privée de Tunisie.",
    "url": "https://fr.wikipedia.org/wiki/Mosa%C3%AFque_FM_(Tunisie)"
@@ -1645,6 +1655,13 @@
   "artistes:zaida": {
    "verifie": "2026-11-02",
    "vu": "2026-11-08"
+  },
+  "collectifs:africanmanager": {
+   "source": "site officiel",
+   "texte": "Site d'information économique et financière en Tunisie et dans le monde, actualité liée aux domaines d’intérêt public....",
+   "url": "https://africanmanager.com/",
+   "verifie": "2026-11-18",
+   "vu": "2026-11-18"
   },
   "collectifs:agorgi-gallery": {
    "verifie": "2026-11-02",

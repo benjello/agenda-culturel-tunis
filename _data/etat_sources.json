@@ -757,6 +757,22 @@
     "erreur": "HTTPError: 403 Client Error: Forbidden for url: https://www.pathe.tn/fr/cinemas/cinema-pathe-tunis-city",
     "ok": false
   },
+  "presse-africanmanager": {
+    "attente": null,
+    "dernier_passage": "2026-11-18T16:37:33",
+    "dernier_succes": "2026-11-18T16:37:33",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-18T16:37:33"
+  },
+  "presse-ambassade-usa": {
+    "dernier_passage": "2026-11-18T16:37:33",
+    "erreur": "HTTPError: 405 Client Error: Not Allowed for url: https://tn.usembassy.gov/feed/",
+    "ok": false,
+    "panne_depuis": "2026-11-18T16:37:33",
+    "premier_passage": "2026-11-18T16:37:33"
+  },
   "presse-economiste-maghrebin": {
     "attente": null,
     "dernier_non_vide": "2026-11-18T13:55:33",
@@ -817,6 +833,15 @@
     "nb": 0,
     "ok": true,
     "premier_passage": "2026-11-08T15:43:37"
+  },
+  "presse-mosaique-fr": {
+    "attente": null,
+    "dernier_passage": "2026-11-18T16:37:33",
+    "dernier_succes": "2026-11-18T16:37:33",
+    "erreur": null,
+    "nb": 0,
+    "ok": true,
+    "premier_passage": "2026-11-18T16:37:33"
   },
   "presse-realites": {
     "attente": null,

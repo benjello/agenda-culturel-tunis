@@ -1,79 +1,121 @@
 {
  "images": {
   "artiste:anouar-brahem": {
+   "auteur": "Adel BRAHEM",
    "credit": "https://commons.wikimedia.org/wiki/File:Anouar_Brahem_(01).JPG",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anouar_Brahem_(01).JPG?width=400",
-   "qid": "Q548428"
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q548428",
+   "verifie": "2026-11-18"
   },
   "artiste:azza-filali": {
+   "auteur": "Sasha WITZ",
    "credit": "https://commons.wikimedia.org/wiki/File:Azza_Filali.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Azza_Filali.jpg?width=400",
-   "qid": "Q794425"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q794425",
+   "verifie": "2026-11-18"
   },
   "artiste:dhafer-youssef": {
+   "auteur": "Tore Sætre",
    "credit": "https://commons.wikimedia.org/wiki/File:Dhafer_Youssef_(223157).jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhafer_Youssef_(223157).jpg?width=400",
-   "qid": "Q957007"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q957007",
+   "verifie": "2026-11-18"
   },
   "artiste:emel-mathlouthi": {
+   "auteur": "Tore Sætre",
    "credit": "https://commons.wikimedia.org/wiki/File:Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg?width=400",
-   "qid": "Q469256"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q469256",
+   "verifie": "2026-11-18"
   },
   "artiste:fadhel-jaziri": {
+   "auteur": "M.Rais",
    "credit": "https://commons.wikimedia.org/wiki/File:Fadhel_Jaziri.JPG",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fadhel_Jaziri.JPG?width=400",
-   "qid": "Q3064377"
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q3064377",
+   "verifie": "2026-11-18"
   },
   "artiste:ghalia-benali": {
+   "auteur": "Alaa Helaly",
    "credit": "https://commons.wikimedia.org/wiki/File:Ghalia_Ben_Ali.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghalia_Ben_Ali.jpg?width=400",
-   "qid": "Q2777889"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q2777889",
+   "verifie": "2026-11-18"
   },
   "artiste:lotfi-bouchnak": {
+   "auteur": "https://www.flickr.com/people/magharebia/",
    "credit": "https://commons.wikimedia.org/wiki/File:LotfiBouchnak.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LotfiBouchnak.jpg?width=400",
-   "qid": "Q3259988"
-  },
-  "artiste:rafram-chaddad": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Rafram_Chaddad_P2070022-6.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rafram_Chaddad_P2070022-6.jpg?width=400",
-   "qid": "Q12411441"
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "qid": "Q3259988",
+   "verifie": "2026-11-18"
   },
   "lieu:beit-al-hikma-carthage": {
+   "auteur": "م ض",
    "credit": "https://commons.wikimedia.org/wiki/File:Beit_Hikma_Tunis.JPG",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beit_Hikma_Tunis.JPG?width=400",
-   "qid": "Q2822461"
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q2822461",
+   "verifie": "2026-11-18"
   },
   "lieu:caserne-el-attarine": {
+   "auteur": "Emnamizouni",
    "credit": "https://commons.wikimedia.org/wiki/File:Old_National_Library_of_Tunisia.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_National_Library_of_Tunisia.jpg?width=400",
-   "qid": "Q42595384"
-  },
-  "lieu:cinema-le-colisee": {
-   "credit": "https://commons.wikimedia.org/wiki/File:Le_colisé_-_Tunis_03.jpg",
-   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_colisé_-_Tunis_03.jpg?width=400",
-   "qid": "Q35710133"
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q42595384",
+   "verifie": "2026-11-18"
   },
   "lieu:cite-de-la-culture": {
+   "auteur": "Habib M'henni",
    "credit": "https://commons.wikimedia.org/wiki/File:Cité_de_la_culture,_Tunis_27_décembre_2014.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cité_de_la_culture,_Tunis_27_décembre_2014.jpg?width=400",
-   "qid": "Q2974756"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q2974756",
+   "verifie": "2026-11-18"
   },
   "lieu:institut-francais-de-tunis": {
+   "auteur": "SafoueneGharbi",
    "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
-   "qid": "Q17449190"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q17449190",
+   "verifie": "2026-11-18"
   },
   "lieu:institut-francais-de-tunisie": {
+   "auteur": "SafoueneGharbi",
    "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
-   "qid": "Q17449190"
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q17449190",
+   "verifie": "2026-11-18"
   },
   "lieu:theatre-municipal-de-tunis": {
+   "auteur": "Jean-Pierre Dalbéra from Paris, France",
    "credit": "https://commons.wikimedia.org/wiki/File:Le_théâtre_de_Tunis_(3301451272).jpg",
    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_théâtre_de_Tunis_(3301451272).jpg?width=400",
-   "qid": "Q3527872"
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "qid": "Q3527872",
+   "verifie": "2026-11-18"
   }
  },
  "osm": {

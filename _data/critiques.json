@@ -24,6 +24,14 @@
   "date": "2026-11-18"
  },
  {
+  "titre": "Al Nassr : Sadio Mané poussé vers la sortie...",
+  "film": "Al Nassr : Sadio Mané poussé vers la sortie...",
+  "lien": "https://www.mosaiquefm.net/fr/football/1537186/al-nassr-sadio-mane-pousse-vers-la-sortie",
+  "source": "presse-mosaique-fr",
+  "source_nom": "Mosaïque FM (français)",
+  "date": "2026-11-17"
+ },
+ {
   "titre": "Festival international du cinéma dans le désert : Bord à bord rafle l’or et le Prix du public",
   "film": "Festival international du cinéma dans le désert",
   "lien": "https://www.lapresse.tn/2026/11/17/festival-international-du-cinema-dans-le-desert-bord-a-bord-rafle-lor-et-le-prix-du-public/",
@@ -222,5 +230,21 @@
   "source": "presse-realites",
   "source_nom": "Réalités (culture)",
   "date": "2026-10-17"
+ },
+ {
+  "titre": "JCC 2026 : ouverture des inscriptions pour la section « Cinéma du Monde »",
+  "film": "Cinéma du Monde",
+  "lien": "https://africanmanager.com/jcc-2026-ouverture-des-inscriptions-pour-la-section-cinema-du-monde/",
+  "source": "presse-africanmanager",
+  "source_nom": "Africanmanager (culture)",
+  "date": "2026-09-11"
+ },
+ {
+  "titre": "Mostra de Venise 2026 : Présence renforcée du cinéma tunisien entre compétition, industrie et jury",
+  "film": "Mostra de Venise 2026",
+  "lien": "https://africanmanager.com/mostra-de-venise-2026-presence-renforcee-du-cinema-tunisien-entre-competition-industrie-et-jury/",
+  "source": "presse-africanmanager",
+  "source_nom": "Africanmanager (culture)",
+  "date": "2026-09-09"
  }
 ]
