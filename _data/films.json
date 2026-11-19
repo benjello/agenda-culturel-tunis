@@ -233,7 +233,7 @@
  {
   "titre": "BAKMA - بكمة",
   "id": "bakma",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png",
+  "image": "assets/images/5e2060567217.png",
   "imdb": "tt43666030",
   "duree": null,
   "genres": [
@@ -391,7 +391,7 @@
  {
   "titre": "weekend - ويكاند",
   "id": "weekend",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
+  "image": "assets/images/ce7c7b7cfe8d.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -511,7 +511,7 @@
  {
   "titre": "Dar El 3ers - دار العرس",
   "id": "dar-el-3ers",
-  "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
+  "image": "assets/images/b5cc373e5cdf.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -666,7 +666,7 @@
  {
   "titre": "Jupiter",
   "id": "jupiter",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
+  "image": "assets/images/36d2d9a4c8ad.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -753,7 +753,7 @@
  {
   "titre": "LAST CHANCE - لص شايح",
   "id": "last-chance",
-  "image": "https://api.tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "image": "assets/images/086ec8131a5e.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -820,7 +820,7 @@
  {
   "titre": "Dar el 3ers دار العرس",
   "id": "dar-el-3ers",
-  "image": "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg",
+  "image": "assets/images/a98353ce7c46.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -857,7 +857,7 @@
  {
   "titre": "HADOOTA",
   "id": "hadoota",
-  "image": "https://api.tunis.events/storage/10662cd4610e86fd11d104a6e6e4f9c61061.jpg",
+  "image": "assets/images/780534c7708c.jpg",
   "imdb": "tt43638234",
   "duree": null,
   "genres": [],
@@ -908,12 +908,15 @@
   "age": "",
   "tunisien": false,
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "HADOOTA au cinéma : 1 séance cette semaine à Le Colisée. Prochaine séance mar. 17 nov. à 17:45. .",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Hope",
   "id": "hope",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/gnd9hzyunjtbowh1yphb",
+  "image": "assets/images/569783d0d51c.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -952,7 +955,7 @@
  {
   "titre": "HUNGER GAMES: LEVER DE SOLEIL",
   "id": "hunger-games-lever-de-soleil",
-  "image": "https://api.tunis.events/storage/e2163cb570510e4ec3a9d69824cc09188.jpg",
+  "image": "assets/images/01734d4c174e.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -999,12 +1002,15 @@
    "_events/auto/tunis-events-cinema/2026-11-20-hunger-games-lever-de-soleil.md"
   ],
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "HUNGER GAMES: LEVER DE SOLEILAlors que le jour se lève sur les 50e Hunger Games annuels, la peur s'empare des districts de Panem. Cette année, en l'honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d'être avec la fille qu'il aime.",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "Josep",
   "id": "josep",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/cikcstr2t46ka6xqdwjc",
+  "image": "assets/images/a809c1cadfc4.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1088,7 +1094,7 @@
  {
   "titre": "Le Mystère Lucy Lost",
   "id": "le-mystere-lucy-lost",
-  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
+  "image": "assets/images/42400672d09b.webp",
   "imdb": "tt10569744",
   "duree": null,
   "genres": [],
@@ -1140,7 +1146,7 @@
  {
   "titre": "Le Secret des mésanges",
   "id": "le-secret-des-mesanges",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/luzoie8a1v3fhufv1gin",
+  "image": "assets/images/4c2343ebabf3.avif",
   "imdb": "tt29497084",
   "duree": null,
   "genres": [
@@ -1224,7 +1230,7 @@
  {
   "titre": "Mochy",
   "id": "mochy",
-  "image": "https://api.tunis.events/storage/85feea561689dcc48c66219765483e17.jpg",
+  "image": "assets/images/5d770ef37092.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1255,12 +1261,15 @@
    "_events/auto/tunis-events-cinema/2026-11-22-mochy.md"
   ],
   "jeune": false,
-  "presse": []
+  "presse": [],
+  "synopsis": "Mochy (2026)SynopsisMochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien. Défiant tous les obstacles, il va tout faire pour réaliser ce projet fou avec le secret espoir d’y trouver l’humain qui l’aimera pour la vie.Bande-annonce",
+  "synopsis_source": "",
+  "synopsis_url": ""
  },
  {
   "titre": "NN2026 : Level Five",
   "id": "nn2026-level-five",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/y8dzvqmcp9ypaeu2qnx2",
+  "image": "assets/images/6e5ef08a9c59.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1299,7 +1308,7 @@
  {
   "titre": "Rue Málaga",
   "id": "rue-malaga",
-  "image": "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg",
+  "image": "assets/images/4c49a95d3dcd.jpg",
   "imdb": "tt32429174",
   "duree": null,
   "genres": [],
@@ -1396,7 +1405,7 @@
  {
   "titre": "Sous les étoiles de Paris",
   "id": "sous-les-etoiles-de-paris",
-  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/saxyrd5uxztw4xigkxfm",
+  "image": "assets/images/bb25276097df.avif",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1435,7 +1444,7 @@
  {
   "titre": "The Hunger Games: Sunrise on the Reaping",
   "id": "the-hunger-games-sunrise-on-the-reaping",
-  "image": "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp",
+  "image": "assets/images/b0ccb061405b.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1491,7 +1500,7 @@
  {
   "titre": "Touskié Tounsi",
   "id": "touskie-tounsi",
-  "image": "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png",
+  "image": "assets/images/f738c4dcb71a.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1530,7 +1539,7 @@
  {
   "titre": "Un monde fragile et merveilleux",
   "id": "un-monde-fragile-et-merveilleux",
-  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
+  "image": "assets/images/90df52b196d1.jpg",
   "imdb": "tt32622406",
   "duree": null,
   "genres": [],
@@ -1632,7 +1641,7 @@
  {
   "titre": "What Else",
   "id": "what-else",
-  "image": "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg",
+  "image": "assets/images/6183a6d14a92.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
