@@ -1,6 +1,6 @@
 ---
 title: "Rue Málaga"
-date: 2026-11-18
+date: 2026-11-19
 end_date: "2026-11-20 19:15"
 venue: "CinéMadart"
 address: "Rte de La Goulette, Site archéologique de Carthage, Carthage"
@@ -9,10 +9,10 @@ category: "cinema"
 link: "https://tunis.events/events/mZr0Om/rue-malaga-cinemadart"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-18", "2026-11-18 19:00", "2026-11-19 17:00", "2026-11-20 19:15"]
+seances: ["2026-11-19", "2026-11-19 17:00", "2026-11-20 19:15"]
 image: "assets/images/4c49a95d3dcd.jpg"
 film: true
-ajoute: "2026-11-17"
+ajoute: "2026-11-19"
 notice_source: "Wikipédia"
 auto: true
 ---

@@ -1,20 +1,18 @@
 ---
-title: "Jupiter"
-date: 2026-11-18 21:00
-end_date: "2026-11-22 18:45"
-venue: "L'Agora Marsa"
-address: "La Marsa"
+title: "BAKMA - بكمة"
+date: 2026-11-19
+end_date: "2026-11-23 15:00"
+venue: "Cinéma Le Colisée"
+address: "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis"
 ville: "tunis"
 category: "cinema"
-price: "13 DT"
-link: "https://lagora.tn/produit/jupiter/"
-source: "cine-agora"
-source_name: "L'Agora (La Marsa)"
-seances: ["2026-11-18 21:00", "2026-11-22 18:45"]
-image: "assets/images/36d2d9a4c8ad.webp"
+link: "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee"
+source: "tunis-events-cinema"
+source_name: "tunis.events (cinéma)"
+seances: ["2026-11-19", "2026-11-21 15:45", "2026-11-23 15:00"]
+image: "assets/images/06476293207a.png"
 film: true
-ajoute: "2026-11-17"
-autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/jupiter", "source": "tunis-events-cinema"}]
+ajoute: "2026-11-19"
 auto: true
 ---
 

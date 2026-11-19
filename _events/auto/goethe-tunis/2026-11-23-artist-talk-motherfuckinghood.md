@@ -1,0 +1,15 @@
+---
+title: "Artist Talk : Motherfuckinghood"
+date: 2026-11-23
+venue: "Goethe-Institut Tunis"
+ville: "tunis"
+category: "conference"
+link: "https://www.goethe.de/ins/tn/fr/ver.cfm?fuseaction=events.detail&event_id=27393218"
+source: "goethe-tunis"
+source_name: "Goethe-Institut Tunis"
+ajoute: "2026-11-19"
+festival: "jtc"
+auto: true
+---
+
+En marge des Journées Théâtrales de Carthage ( JTC ) 2026 , le Goethe-Institut Tunis accueille un "Artist Talk" consacré à la pièce Motherfuckinghood du Berliner Ensemble. Cette rencontre exceptionnelle réunira la metteuse en scène Jorinde Dröse, l’actrice Claude De Demo et la dramaturge Karolin Trachte pour un échange autour de la création de la pièce, de ses thématiques et des questions artistiques et sociétales qu’elle soulève.

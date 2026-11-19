@@ -1,6 +1,6 @@
 ---
 title: "Je m’appelle Clara"
-date: 2026-11-18 19:00
+date: 2026-11-20 18:30
 end_date: "2026-11-22 16:45"
 venue: "L'Agora Marsa"
 address: "La Marsa"
@@ -10,10 +10,10 @@ price: "13 DT"
 link: "https://lagora.tn/produit/je-mappelle-clara/"
 source: "cine-agora"
 source_name: "L'Agora (La Marsa)"
-seances: ["2026-11-18 19:00", "2026-11-20 18:30", "2026-11-22 16:45"]
+seances: ["2026-11-20 18:30", "2026-11-22 16:45"]
 image: "assets/images/5aeb2addb4ef.jpg"
 film: true
-ajoute: "2026-11-17"
+ajoute: "2026-11-19"
 autres_sources: [{"name": "tunis.events (cinéma)", "link": "https://tunis.events/fr/cinema/je-mappelle-clara", "source": "tunis-events-cinema"}]
 auto: true
 ---

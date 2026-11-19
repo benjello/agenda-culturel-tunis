@@ -1,6 +1,6 @@
 {
- "date": "2026-11-18",
- "corriges": 1,
+ "date": "2026-11-19",
+ "corriges": 2,
  "a_verifier": [
   {
    "fichier": "fb-cr-sfax/2026-11-21-2025.md",
@@ -18,6 +18,16 @@
    "titre": "L’Institut français de Tunisie lance un appel d’offres pour la réalisation d’une évaluatio",
    "date": "2026-12-06",
    "lien": "https://www.facebook.com/100064556987464/posts/1579670110861540",
+   "problemes": [
+    "titre trop long (début d'une légende ?)"
+   ]
+  },
+  {
+   "fichier": "ift-pdf/2026-11-24-nn-2026-ia-la-mort-de-lauteur-ce-que-lintelligence-artificie.md",
+   "source": "ift-pdf",
+   "titre": "NN 2026 : IA, la mort de l’auteur ? Ce que l’intelligence artificielle fait à la littérature",
+   "date": "2026-11-24",
+   "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6547",
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
@@ -111,6 +121,28 @@
    "problemes": [
     "titre trop long (début d'une légende ?)"
    ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-19-je-mappelle-clara-cinema-le-palace.md",
+   "source": "tunis-events-cinema",
+   "titre": "JE M’APPELLE CLARA",
+   "date": "2026-11-19",
+   "lien": "https://tunis.events/events/kW1zz3/je-mappelle-clara-cinema-le-palace",
+   "problemes": [
+    "film sans horaire ni séance",
+    "deux fois dans la source (voir 2026-11-19-je-m-appelle-clara-cinema-le-palace.md)"
+   ]
+  },
+  {
+   "fichier": "tunis-events-cinema/2026-11-19-je-mappelle-clara.md",
+   "source": "tunis-events-cinema",
+   "titre": "JE M’APPELLE CLARA",
+   "date": "2026-11-19",
+   "lien": "https://tunis.events/events/8RPLPm/je-mappelle-clara-cinema-le-colisee",
+   "problemes": [
+    "film sans horaire ni séance",
+    "deux fois dans la source (voir 2026-11-19-je-m-appelle-clara-cinema-le-colisee.md)"
+   ]
   }
  ],
  "granularite": {
@@ -141,8 +173,8 @@
     "manques": []
    },
    "cine-agora": {
-    "n": 9,
-    "precis": 9,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": []
@@ -183,6 +215,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]
@@ -273,16 +310,34 @@
     "defauts": [],
     "manques": []
    },
+   "goethe-tunis": {
+    "n": 1,
+    "precis": 1,
+    "pourcent": 100,
+    "defauts": [],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 1
+     },
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 1
+     }
+    ]
+   },
    "ift-pdf": {
-    "n": 38,
+    "n": 37,
     "precis": 21,
-    "pourcent": 55,
+    "pourcent": 57,
     "defauts": [
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 17,
-      "exemple": "Philo-Art pour Enfants en Français"
+      "n": 16,
+      "exemple": "Avec Lotfi Mlayah"
      },
      {
       "code": "expo_sans_fin",
@@ -300,7 +355,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 17
+      "n": 16
      }
     ]
    },
@@ -503,22 +558,22 @@
     ]
    },
    "presse-leaders": {
-    "n": 2,
+    "n": 1,
     "precis": 0,
     "pourcent": 0,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 2,
-      "exemple": "J-30: les 40es Journées de l’Entreprise font de l’exécution le grand d"
+      "n": 1,
+      "exemple": "Miguel Ángel Moratinos, Ségolène Royal et Mohammed bin Abdullah Al Rum"
      }
     ],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 2
+      "n": 1
      }
     ]
    },
@@ -557,26 +612,26 @@
     "manques": []
    },
    "teskerti": {
-    "n": 7,
-    "precis": 7,
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
+      "n": 10
      },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 7
+      "n": 10
      }
     ]
    },
    "tunis-events": {
-    "n": 15,
-    "precis": 15,
+    "n": 14,
+    "precis": 14,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -588,15 +643,27 @@
     ]
    },
    "tunis-events-cinema": {
-    "n": 5,
-    "precis": 5,
-    "pourcent": 100,
-    "defauts": [],
+    "n": 20,
+    "precis": 18,
+    "pourcent": 90,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 2,
+      "exemple": "JE M’APPELLE CLARA"
+     }
+    ],
     "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
      {
       "code": "sans_notice",
       "texte": "notice",
-      "n": 2
+      "n": 20
      }
     ]
    }
@@ -618,6 +685,11 @@
      {
       "code": "sans_image",
       "texte": "image",
+      "n": 1
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
       "n": 1
      }
     ]
@@ -659,14 +731,14 @@
     ]
    },
    "presse": {
-    "n": 6,
+    "n": 5,
     "precis": 2,
-    "pourcent": 33,
+    "pourcent": 40,
     "defauts": [
      {
       "code": "lieu_vague",
       "texte": "lieu à préciser",
-      "n": 4,
+      "n": 3,
       "exemple": "IA et écriture littéraire | Rencontres-débats avec Hichem Ben Ammar"
      }
     ],
@@ -674,7 +746,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 6
+      "n": 5
      }
     ]
    },
@@ -693,15 +765,15 @@
     "manques": []
    },
    "pdf_programme": {
-    "n": 38,
+    "n": 37,
     "precis": 21,
-    "pourcent": 55,
+    "pourcent": 57,
     "defauts": [
      {
       "code": "lien_general",
       "texte": "lien vers une page générale (programme, PDF, accueil), pas une fiche",
-      "n": 17,
-      "exemple": "Philo-Art pour Enfants en Français"
+      "n": 16,
+      "exemple": "Avec Lotfi Mlayah"
      },
      {
       "code": "expo_sans_fin",
@@ -719,7 +791,7 @@
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 17
+      "n": 16
      }
     ]
    },
@@ -749,9 +821,34 @@
      }
     ]
    },
+   "tunis_events_cinema": {
+    "n": 20,
+    "precis": 18,
+    "pourcent": 90,
+    "defauts": [
+     {
+      "code": "film_sans_seance",
+      "texte": "film sans horaire ni séance",
+      "n": 2,
+      "exemple": "JE M’APPELLE CLARA"
+     }
+    ],
+    "manques": [
+     {
+      "code": "sans_heure",
+      "texte": "heure",
+      "n": 2
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 20
+     }
+    ]
+   },
    "tunis_events": {
-    "n": 15,
-    "precis": 15,
+    "n": 14,
+    "precis": 14,
     "pourcent": 100,
     "defauts": [],
     "manques": [
@@ -762,61 +859,48 @@
      }
     ]
    },
-   "woocommerce_seances": {
-    "n": 9,
-    "precis": 9,
+   "teskerti": {
+    "n": 10,
+    "precis": 10,
     "pourcent": 100,
     "defauts": [],
-    "manques": []
+    "manques": [
+     {
+      "code": "sans_image",
+      "texte": "image",
+      "n": 10
+     },
+     {
+      "code": "sans_notice",
+      "texte": "notice",
+      "n": 10
+     }
+    ]
    },
    "rss": {
-    "n": 7,
-    "precis": 7,
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
     "manques": [
      {
       "code": "sans_heure",
       "texte": "heure",
-      "n": 6
+      "n": 7
      },
      {
       "code": "sans_image",
       "texte": "image",
-      "n": 7
+      "n": 8
      }
     ]
    },
-   "teskerti": {
-    "n": 7,
-    "precis": 7,
+   "woocommerce_seances": {
+    "n": 8,
+    "precis": 8,
     "pourcent": 100,
     "defauts": [],
-    "manques": [
-     {
-      "code": "sans_image",
-      "texte": "image",
-      "n": 7
-     },
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 7
-     }
-    ]
-   },
-   "tunis_events_cinema": {
-    "n": 5,
-    "precis": 5,
-    "pourcent": 100,
-    "defauts": [],
-    "manques": [
-     {
-      "code": "sans_notice",
-      "texte": "notice",
-      "n": 2
-     }
-    ]
+    "manques": []
    },
    "billetterie_sktech": {
     "n": 1,

@@ -1,18 +1,19 @@
 ---
 title: "Je m'appelle Clara"
-date: 2026-11-18
-end_date: "2026-11-20 21:15"
-venue: "CinéMadart"
-address: "Rte de La Goulette, Site archéologique de Carthage, Carthage"
+date: 2026-11-20 18:30
+end_date: "2026-11-22 16:45"
+venue: "L'Agora Marsa"
+address: "5 avenue Taïeb Mhiri, Marsa Ville, La Marsa"
 ville: "tunis"
 category: "cinema"
-link: "https://tunis.events/events/8B1Py3/je-mappelle-clara-cinemadart"
+link: "https://tunis.events/fr/cinema/je-mappelle-clara"
 source: "tunis-events-cinema"
 source_name: "tunis.events (cinéma)"
-seances: ["2026-11-18", "2026-11-18 21:00", "2026-11-19 19:00", "2026-11-20 21:15"]
+seances: ["2026-11-20 18:30", "2026-11-22 16:45"]
 image: "assets/images/2af35666ebcc.jpg"
 film: true
-ajoute: "2026-11-17"
+ajoute: "2026-11-19"
+doublon: true
 auto: true
 ---
 

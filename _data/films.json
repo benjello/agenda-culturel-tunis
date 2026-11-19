@@ -7,12 +7,12 @@
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
    "2026-11-22",
-   "2026-11-23"
+   "2026-11-23",
+   "2026-11-24"
   ],
   "salles": [
    {
@@ -22,7 +22,6 @@
     "source": "cine-360",
     "source_nom": "Ciné 350",
     "jours": [
-     "2026-11-18",
      "2026-11-20",
      "2026-11-21"
     ],
@@ -35,17 +34,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20"
     ],
     "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "21:00"
-      ]
-     },
      {
       "jour": "2026-11-19",
       "heures": [
@@ -67,7 +59,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20",
      "2026-11-21",
@@ -77,23 +68,129 @@
     "heures": []
    },
    {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "12:15"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "11:30"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:30",
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "11:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "13:30",
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "13:30",
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     }
+    ]
+   },
+   {
     "nom": "L'Agora Marsa",
     "adresse": "La Marsa",
     "lien": "https://lagora.tn/produit/je-mappelle-clara/",
     "source": "cine-agora",
     "source_nom": "L'Agora (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-20",
      "2026-11-22"
     ],
     "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-20",
       "heures": [
@@ -111,10 +208,14 @@
   ],
   "fichiers": [
    "_events/auto/cine-360/2026-11-18-je-m-appelle-clara.md",
-   "_events/auto/cine-agora/2026-11-18-je-mappelle-clara.md",
+   "_events/auto/cine-agora/2026-11-20-je-mappelle-clara.md",
    "_events/auto/cine-alhambra/2026-11-17-je-m-appelle-clara.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara-l-agora-marsa.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-je-m-appelle-clara.md"
+   "_events/auto/tunis-events-cinema/2026-11-19-je-m-appelle-clara-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-je-m-appelle-clara-cinema-le-palace.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-je-m-appelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-je-mappelle-clara-cinema-le-palace.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-je-mappelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-20-je-m-appelle-clara.md"
   ],
   "jeune": false,
   "presse": [
@@ -132,7 +233,7 @@
  {
   "titre": "BAKMA - بكمة",
   "id": "bakma",
-  "image": "assets/images/5e2060567217.png",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Capture-decran-2026-10-16-120405.png",
   "imdb": "tt43666030",
   "duree": null,
   "genres": [
@@ -140,12 +241,12 @@
    "Thriller"
   ],
   "jours": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
    "2026-11-22",
-   "2026-11-23"
+   "2026-11-23",
+   "2026-11-24"
   ],
   "salles": [
    {
@@ -155,7 +256,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20",
      "2026-11-21",
@@ -163,6 +263,87 @@
      "2026-11-23"
     ],
     "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:45"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "16:15"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "16:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "16:15"
+      ]
+     }
+    ]
    },
    {
     "nom": "L'Agora Marsa",
@@ -186,6 +367,8 @@
   "fichiers": [
    "_events/auto/cine-agora/2026-11-21-bakma.md",
    "_events/auto/cine-alhambra/2026-11-17-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-bakma-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-bakma.md",
    "_events/auto/tunis-events-cinema/2026-11-21-bakma.md"
   ],
   "wikidata": "Q142120796",
@@ -206,19 +389,19 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Jupiter",
-  "id": "jupiter",
-  "image": "assets/images/36d2d9a4c8ad.webp",
+  "titre": "weekend - ويكاند",
+  "id": "weekend",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/df214603-f891-7454-08a7-cc5baaebfd8f.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
    "2026-11-22",
-   "2026-11-23"
+   "2026-11-23",
+   "2026-11-24"
   ],
   "salles": [
    {
@@ -228,7 +411,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20",
      "2026-11-21",
@@ -238,73 +420,61 @@
     "heures": []
    },
    {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/jupiter/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/weekend-%D9%88%D9%8A%D9%83%D8%A7%D9%86%D8%AF",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
-     "2026-11-22"
+     "2026-11-21",
+     "2026-11-23"
     ],
     "heures": [
      {
-      "jour": "2026-11-18",
+      "jour": "2026-11-21",
       "heures": [
-       "21:00"
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "13:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/weekend-%D9%88%D9%8A%D9%83%D8%A7%D9%86%D8%AF",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-20",
+     "2026-11-22",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "18:15"
       ]
      },
      {
       "jour": "2026-11-22",
       "heures": [
-       "18:45"
+       "18:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "18:15"
       ]
      }
     ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-18-jupiter.md",
-   "_events/auto/cine-alhambra/2026-11-17-jupiter.md",
-   "_events/auto/tunis-events-cinema/2026-11-18-jupiter.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
-  "titre": "weekend - ويكاند",
-  "id": "weekend",
-  "image": "assets/images/ce7c7b7cfe8d.webp",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-18",
-   "2026-11-19",
-   "2026-11-20",
-   "2026-11-21",
-   "2026-11-22",
-   "2026-11-23"
-  ],
-  "salles": [
-   {
-    "nom": "Cinéma Alhambra Zéphyr",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
-    "source": "cine-alhambra",
-    "source_nom": "Alhambra Zéphyr (La Marsa)",
-    "jours": [
-     "2026-11-18",
-     "2026-11-19",
-     "2026-11-20",
-     "2026-11-21",
-     "2026-11-22",
-     "2026-11-23"
-    ],
-    "heures": []
    },
    {
     "nom": "L'Agora Marsa",
@@ -328,6 +498,8 @@
   "fichiers": [
    "_events/auto/cine-agora/2026-11-21-weekend.md",
    "_events/auto/cine-alhambra/2026-11-17-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-20-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend-l-agora-marsa.md",
    "_events/auto/tunis-events-cinema/2026-11-21-weekend.md"
   ],
   "jeune": false,
@@ -339,12 +511,253 @@
  {
   "titre": "Dar El 3ers - دار العرس",
   "id": "dar-el-3ers",
-  "image": "",
+  "image": "https://tunis.events/storage/56c67280979910562fb6d9f10b773dde4a.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "17:00"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "10:00",
+       "16:00"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "10:00",
+       "17:45"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "17:00"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "15:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-19",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "10:00",
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:00",
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:00",
+       "14:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-dar-el-3ers-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-19-dar-el-3ers.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Jupiter",
+  "id": "jupiter",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/Jupiter.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-19",
+     "2026-11-20",
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/jupiter",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/jupiter/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-22-jupiter.md",
+   "_events/auto/cine-alhambra/2026-11-17-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-23-jupiter.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "https://api.tunis.events/storage/d45787b7103c510ceb567c5c2152c27767.jpeg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
@@ -359,7 +772,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20",
      "2026-11-21",
@@ -367,10 +779,36 @@
      "2026-11-23"
     ],
     "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/%D9%84%D8%B5-%D8%B4%D8%A7%D9%8A%D8%AD",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
    }
   ],
   "fichiers": [
-   "_events/auto/cine-alhambra/2026-11-17-dar-el-3ers.md"
+   "_events/auto/cine-alhambra/2026-11-17-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-evenement.md"
   ],
   "tunisien": true,
   "jeune": false,
@@ -382,23 +820,21 @@
  {
   "titre": "Dar el 3ers دار العرس",
   "id": "dar-el-3ers",
-  "image": "assets/images/a98353ce7c46.jpg",
+  "image": "https://api.tunis.events/storage/f97f1260cca780a342fce89078ef7a10e.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
    "2026-11-20"
   ],
   "salles": [
    {
     "nom": "CinéMadart",
-    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
-    "lien": "https://tunis.events/events/klv2n3/dar-el-3ers-دار-العرس-cinemadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/klv2n3",
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
      "2026-11-20"
     ],
     "heures": [
@@ -412,16 +848,72 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-18-dar-el-3ers.md"
+   "_events/auto/tunis-events-cinema/2026-11-20-dar-el-3ers.md"
   ],
   "tunisien": true,
   "jeune": false,
   "presse": []
  },
  {
+  "titre": "HADOOTA",
+  "id": "hadoota",
+  "image": "https://api.tunis.events/storage/10662cd4610e86fd11d104a6e6e4f9c61061.jpg",
+  "imdb": "tt43638234",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-20",
+   "2026-11-22",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/hadoota",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-20",
+     "2026-11-22",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "13:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "13:15"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-20-hadoota.md"
+  ],
+  "wikidata": "Q142191539",
+  "letterboxd": "hadoota",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": []
+ },
+ {
   "titre": "Hope",
   "id": "hope",
-  "image": "assets/images/569783d0d51c.avif",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/gnd9hzyunjtbowh1yphb",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -458,45 +950,93 @@
   "synopsis_url": ""
  },
  {
-  "titre": "LAST CHANCE - لص شايح",
-  "id": "last-chance",
-  "image": "",
+  "titre": "HUNGER GAMES: LEVER DE SOLEIL",
+  "id": "hunger-games-lever-de-soleil",
+  "image": "https://api.tunis.events/storage/e2163cb570510e4ec3a9d69824cc09188.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
-   "2026-11-19",
    "2026-11-20",
-   "2026-11-21",
    "2026-11-22",
-   "2026-11-23"
+   "2026-11-24"
   ],
   "salles": [
    {
-    "nom": "Cinéma Alhambra Zéphyr",
-    "adresse": "",
-    "lien": "https://www.facebook.com/100064660932929/posts/1590047323160617",
-    "source": "cine-alhambra",
-    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/hunger-games-lever-de-soleil",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
-     "2026-11-19",
      "2026-11-20",
-     "2026-11-21",
      "2026-11-22",
-     "2026-11-23"
+     "2026-11-24"
     ],
-    "heures": []
+    "heures": [
+     {
+      "jour": "2026-11-20",
+      "heures": [
+       "18:15"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "17:30"
+      ]
+     }
+    ]
    }
   ],
   "fichiers": [
-   "_events/auto/cine-alhambra/2026-11-17-last-chance.md"
+   "_events/auto/tunis-events-cinema/2026-11-20-hunger-games-lever-de-soleil.md"
   ],
-  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Josep",
+  "id": "josep",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/cikcstr2t46ka6xqdwjc",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6548",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-27-josep.md"
+  ],
   "jeune": false,
   "presse": [],
-  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film d'animation Josep de Aurel.\nRésumé : (Public adulte)\nFévrier 1939. Submergé par le flot de Républicains fuyant la dictature franquiste, le gouvernement français les parque dans des camps. Deux hommes séparés par les barbelés vont se lier d’amitié. L’un est gendarme, l’autre est dessinateur.",
   "synopsis_source": "",
   "synopsis_url": ""
  },
@@ -548,7 +1088,7 @@
  {
   "titre": "Le Mystère Lucy Lost",
   "id": "le-mystere-lucy-lost",
-  "image": "assets/images/42400672d09b.webp",
+  "image": "https://lagora.tn/wp-content/uploads/2026/10/Le-Mystere-Lucy-Lost.webp",
   "imdb": "tt10569744",
   "duree": null,
   "genres": [],
@@ -600,7 +1140,7 @@
  {
   "titre": "Le Secret des mésanges",
   "id": "le-secret-des-mesanges",
-  "image": "assets/images/4c2343ebabf3.avif",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/luzoie8a1v3fhufv1gin",
   "imdb": "tt29497084",
   "duree": null,
   "genres": [
@@ -682,48 +1222,45 @@
   "synopsis_url": ""
  },
  {
-  "titre": "NN 2026 : Eat the Night",
-  "id": "nn-2026-eat-the-night",
-  "image": "assets/images/ccb9e46a7608.avif",
+  "titre": "Mochy",
+  "id": "mochy",
+  "image": "https://api.tunis.events/storage/85feea561689dcc48c66219765483e17.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18"
+   "2026-11-22"
   ],
   "salles": [
    {
-    "nom": "Institut français de Sousse",
-    "adresse": "Institut français de Sousse 15 rue Hamed Ghazali",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6513",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/mochy",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18"
+     "2026-11-22"
     ],
     "heures": [
      {
-      "jour": "2026-11-18",
+      "jour": "2026-11-22",
       "heures": [
-       "18:00"
+       "10:00"
       ]
      }
     ]
    }
   ],
   "fichiers": [
-   "_events/auto/ift-pdf/2026-11-18-nn-2026-eat-the-night.md"
+   "_events/auto/tunis-events-cinema/2026-11-22-mochy.md"
   ],
   "jeune": false,
-  "presse": [],
-  "synopsis": "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Eat the Night de Caroline Poggi et Jonathan Vinel.\nRésumé :Pablo et sa sœur Apolline s’évadent de leur quotidien en jouant à Darknoon, un jeu vidéo qui les a vus grandir. Un jour, Pablo rencontre Night, qu’il initie à ses petits trafics, et s’éloigne d'Apolline.",
-  "synopsis_source": "",
-  "synopsis_url": ""
+  "presse": []
  },
  {
   "titre": "NN2026 : Level Five",
   "id": "nn2026-level-five",
-  "image": "assets/images/6e5ef08a9c59.avif",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/y8dzvqmcp9ypaeu2qnx2",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -760,59 +1297,13 @@
   "synopsis_url": ""
  },
  {
-  "titre": "Papa où t'es ?",
-  "id": "papa-ou-t-es",
-  "image": "assets/images/c2b9cb3082d4.avif",
-  "imdb": "tt8784060",
-  "duree": null,
-  "genres": [
-   "Documentaire"
-  ],
-  "jours": [
-   "2026-11-18"
-  ],
-  "salles": [
-   {
-    "nom": "Institut français de Tunis",
-    "adresse": "20-22, avenue de Paris",
-    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6543",
-    "source": "ift-pdf",
-    "source_nom": "Institut français de Tunisie (programme PDF)",
-    "jours": [
-     "2026-11-18"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "18:30"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/ift-pdf/2026-11-18-papa-ou-t-es.md"
-  ],
-  "wikidata": "Q141237885",
-  "letterboxd": "",
-  "age": "",
-  "tunisien": false,
-  "jeune": false,
-  "presse": [],
-  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Papa où t'es ? de Samy Bouyssié et Basile Monnot.\nRésumé :\nÀ 26 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Séparé de sa mère à l’âge de trois ans, il a grandi placé entre familles d’accueil et foyers.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "Rue Málaga",
   "id": "rue-malaga",
-  "image": "assets/images/4c49a95d3dcd.jpg",
+  "image": "https://api.tunis.events/storage/9e2dbe104215965170ecf44bfe5ec786.jpg",
   "imdb": "tt32429174",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20"
   ],
@@ -824,17 +1315,10 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20"
     ],
     "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "19:00"
-      ]
-     },
      {
       "jour": "2026-11-19",
       "heures": [
@@ -851,7 +1335,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-18-rue-malaga.md"
+   "_events/auto/tunis-events-cinema/2026-11-19-rue-malaga.md"
   ],
   "wikidata": "Q135438796",
   "letterboxd": "calle-malaga",
@@ -873,7 +1357,6 @@
    "Fantastique"
   ],
   "jours": [
-   "2026-11-18",
    "2026-11-19",
    "2026-11-20",
    "2026-11-21",
@@ -888,7 +1371,6 @@
     "source": "cine-alhambra",
     "source_nom": "Alhambra Zéphyr (La Marsa)",
     "jours": [
-     "2026-11-18",
      "2026-11-19",
      "2026-11-20",
      "2026-11-21",
@@ -914,7 +1396,7 @@
  {
   "titre": "Sous les étoiles de Paris",
   "id": "sous-les-etoiles-de-paris",
-  "image": "assets/images/bb25276097df.avif",
+  "image": "https://res.cloudinary.com/aec/image/upload/c_fit,f_auto,h_360,q_auto,w_640/v1/tunisie/images/products/saxyrd5uxztw4xigkxfm",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -953,7 +1435,7 @@
  {
   "titre": "The Hunger Games: Sunrise on the Reaping",
   "id": "the-hunger-games-sunrise-on-the-reaping",
-  "image": "assets/images/b0ccb061405b.webp",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/The-Hunger-Games-Sunrise-on-the-Reaping.webp",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1009,7 +1491,7 @@
  {
   "titre": "Touskié Tounsi",
   "id": "touskie-tounsi",
-  "image": "assets/images/f738c4dcb71a.png",
+  "image": "https://lagora.tn/wp-content/uploads/2026/04/Touskie-tounsi.png",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1048,12 +1530,11 @@
  {
   "titre": "Un monde fragile et merveilleux",
   "id": "un-monde-fragile-et-merveilleux",
-  "image": "assets/images/90df52b196d1.jpg",
+  "image": "https://api.tunis.events/storage/1e6b3c6c10a826aeb53c7f22f72c336f2.jpg",
   "imdb": "tt32622406",
   "duree": null,
   "genres": [],
   "jours": [
-   "2026-11-18",
    "2026-11-19"
   ],
   "salles": [
@@ -1064,16 +1545,9 @@
     "source": "tunis-events-cinema",
     "source_nom": "tunis.events (cinéma)",
     "jours": [
-     "2026-11-18",
      "2026-11-19"
     ],
     "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "17:00"
-      ]
-     },
      {
       "jour": "2026-11-19",
       "heures": [
@@ -1084,7 +1558,7 @@
    }
   ],
   "fichiers": [
-   "_events/auto/tunis-events-cinema/2026-11-18-un-monde-fragile-et-merveilleux.md"
+   "_events/auto/tunis-events-cinema/2026-11-19-un-monde-fragile-et-merveilleux.md"
   ],
   "wikidata": "Q136379364",
   "letterboxd": "a-sad-and-beautiful-world",
@@ -1143,7 +1617,7 @@
   ],
   "fichiers": [
    "_events/auto/cine-agora/2026-11-19-un-monde-fragile-et-merveilleux.md",
-   "_events/auto/tunis-events-cinema/2026-11-19-un-monde-fragile-et-merveilleux.md"
+   "_events/auto/tunis-events-cinema/2026-11-19-un-monde-fragile-et-merveilleux-l-agora-marsa.md"
   ],
   "wikidata": "Q136379364",
   "letterboxd": "a-sad-and-beautiful-world",
@@ -1156,48 +1630,9 @@
   "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
  },
  {
-  "titre": "Van Gogh",
-  "id": "van-gogh",
-  "image": "assets/images/52f0c74a9c49.jpg",
-  "imdb": "",
-  "duree": null,
-  "genres": [],
-  "jours": [
-   "2026-11-18"
-  ],
-  "salles": [
-   {
-    "nom": "L'Agora Marsa",
-    "adresse": "La Marsa",
-    "lien": "https://lagora.tn/produit/van-gogh/",
-    "source": "cine-agora",
-    "source_nom": "L'Agora (La Marsa)",
-    "jours": [
-     "2026-11-18"
-    ],
-    "heures": [
-     {
-      "jour": "2026-11-18",
-      "heures": [
-       "16:00"
-      ]
-     }
-    ]
-   }
-  ],
-  "fichiers": [
-   "_events/auto/cine-agora/2026-11-18-van-gogh.md"
-  ],
-  "jeune": false,
-  "presse": [],
-  "synopsis": "Après son internement à l’asile, Vincent Van Gogh s’installe à Auvers-sur-Oise chez le docteur Gachet, amateur d’art. Les derniers jours du peintre, sont marqués par les relations conflictuelles qu’il entretient avec son frère Théo, et sa santé mentale vacillante.",
-  "synopsis_source": "",
-  "synopsis_url": ""
- },
- {
   "titre": "What Else",
   "id": "what-else",
-  "image": "assets/images/6183a6d14a92.jpg",
+  "image": "https://api.tunis.events/storage/5156de67fd1b5efad6834ef7610f093af.jpg",
   "imdb": "",
   "duree": null,
   "genres": [],
@@ -1217,12 +1652,6 @@
      "2026-11-20"
     ],
     "heures": [
-     {
-      "jour": "2026-11-19",
-      "heures": [
-       "14:30"
-      ]
-     },
      {
       "jour": "2026-11-20",
       "heures": [

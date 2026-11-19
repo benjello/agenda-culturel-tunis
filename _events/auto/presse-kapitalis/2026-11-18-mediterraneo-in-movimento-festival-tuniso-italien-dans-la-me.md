@@ -2,8 +2,8 @@
 title: "Mediterraneo in movimento | Festival tuniso-italien dans la médina de Tunis"
 date: 2026-11-18
 end_date: "2026-11-21"
-venue: "Salle de cinéma, Institut français de Sousse"
-ville: "sousse"
+venue: "Tunisia"
+ville: "tunis"
 category: "spectacle"
 price: "Gratuit"
 link: "https://kapitalis.com/tunisie/2026/11/18/mediterraneo-in-movimento-festival-tuniso-italien-dans-la-medina-de-tunis/"
