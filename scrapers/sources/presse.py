@@ -325,7 +325,7 @@ def articles_de_film(xml: str, source: dict) -> list[dict]:
 
 
 def recuperer(source: dict) -> list[Evenement]:
-    xml = telecharger(source["url"])
+    xml = telecharger(source["url"], (source.get("options") or {}).get("entetes"))
     if not _items(xml):
         raise RuntimeError("flux vide ou illisible")
     if source.get("genre") == "presse":

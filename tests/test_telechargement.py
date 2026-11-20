@@ -32,6 +32,12 @@ class Reessai(unittest.TestCase):
                 commun.telecharger("https://exemple.tn/")
         self.assertEqual(get.call_count, 1)
 
+    def test_entetes_propres_a_la_source(self):
+        reponse = mock.Mock(encoding="utf-8", text="ok")
+        with mock.patch.object(commun._session, "get", return_value=reponse) as get:
+            commun.telecharger("https://exemple.tn/", {"User-Agent": "autre"})
+        self.assertEqual(get.call_args.kwargs["headers"], {"User-Agent": "autre"})
+
 
 if __name__ == "__main__":
     unittest.main()

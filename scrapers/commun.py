@@ -40,12 +40,12 @@ class EnAttente(Exception):
     (clé d'accès pas encore configurée…). Les événements déjà récupérés sont gardés."""
 
 
-def telecharger(url: str) -> str:
+def telecharger(url: str, entetes: dict | None = None) -> str:
     # Un délai dépassé ou une coupure passagère n'est pas une panne du site : on réessaie
     # (2 s, 5 s) avant d'abandonner. Les erreurs HTTP (404, 403…) ne sont pas réessayées.
     for attente in (2, 5, None):
         try:
-            r = _session.get(url, timeout=30)
+            r = _session.get(url, timeout=30, headers=entetes)
             break
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
             if attente is None:
