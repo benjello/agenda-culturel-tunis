@@ -27,3 +27,11 @@ GitHub Actions (`.github/workflows/scrapers.yml`). Voir `README.md` et `BACKLOG.
   (relecture, veille), reste seulement dans `BACKLOG.md`, sans case ni issue. Pas plus d'une dizaine d'issues
   ouvertes : au-delà, on ferme ou on reporte avant d'en ouvrir une. Le workflow « Synchro tickets »
   (chaque lundi) lance `scrapers/synchro_tickets.py` et signale les écarts dans son résumé.
+- Tickets : un agent qui termine un travail ferme ce qu'il traite. Dans sa PR : « Closes #N » pour chaque issue
+  résolue (GitHub la ferme à la fusion) et la case correspondante de `BACKLOG.md` cochée. Une issue obsolète
+  ou en double se ferme avec un commentaire en français et `state_reason` (`not_planned` ou `duplicate`).
+  Avant d'ouvrir une issue, lister les ouvertes : au-delà d'une dizaine, on ferme ou on reporte d'abord.
+- Le workflow « Tickets » (`.github/workflows/tickets.yml`) fait le reste sans agent : le 1er de chaque mois,
+  il avertit les issues inactives depuis 60 jours (étiquette « à-trier »), puis les ferme 14 jours plus tard
+  (`scrapers/tickets.py`). Il n'agit pas sur les issues « alerte ». Sur chaque PR, il signale l'absence de
+  « Closes #N ». Ne pas contourner ce garde-fou en rouvrant sans raison une issue fermée automatiquement.

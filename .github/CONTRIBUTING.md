@@ -45,3 +45,9 @@ relecture plus longue.
 - Pas de publicité, pas de liens sans rapport : ces PR et issues sont fermées sans réponse.
 - Tout en français (code, commentaires, messages de commit).
 - Une PR = un sujet. Une petite PR de données est relue en quelques jours.
+
+## Tickets
+
+- Une PR qui résout une issue écrit « Closes #N » dans sa description : l'issue se ferme à la fusion.
+- Une issue sans activité depuis 60 jours reçoit un avertissement (étiquette « à-trier ») ; sans réponse 14 jours
+  plus tard, elle est fermée comme « non planifiée ». Un commentaire suffit à la garder ouverte.

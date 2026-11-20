@@ -81,6 +81,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 
 ## Fait
 
+- [x] Tickets : balayage mensuel (`scrapers/tickets.py`, workflow « Tickets ») : avertissement à 60 jours sans activité, fermeture à 14 jours de plus ; contrôle « Closes #N » sur chaque PR.
 - [x] Vignettes vides : `scrapers/images.py` (après chaque passage) copie chaque image dans `assets/images/` (les liens Instagram/Facebook/billetterie qui expirent ne cassent plus la carte) ; image cassée → visuel de la page de l'annonce (og:image, schema.org), autres sources, même événement ailleurs, puis seulement photo du lieu ou illustration de catégorie (`assets/categories/`). Bilan dans `_data/images.json` (PR #146, #147).
 - Référencement : plan du site (`sitemap.xml`), balises canonique, Open Graph et Twitter, données structurées `Event` (fiches) et `WebSite` (accueil).
 - Site Jekyll sur GitHub Pages, dates en français, événements passés masqués.

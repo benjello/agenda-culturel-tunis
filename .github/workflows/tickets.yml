@@ -1,0 +1,55 @@
+name: Tickets
+
+# Hygiène des tickets : balayage mensuel des issues inactives, et avertissement sur les PR
+# qui ne citent aucune issue à fermer (« Closes #N »). Le balayage ferme les issues sans
+# activité : 60 jours sans activité, puis avertissement, puis 14 jours de plus avant fermeture.
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # le 1er de chaque mois, vers 7h heure de Tunis
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      appliquer:
+        description: "Appliquer le balayage (sinon, seulement le rapport)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  balayage:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Balayer les issues inactives
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          EVENEMENT: ${{ github.event_name }}
+          APPLIQUER: ${{ inputs.appliquer }}
+        run: |
+          ARGS=""
+          if [ "$EVENEMENT" = "schedule" ] || [ "$APPLIQUER" = "true" ]; then
+            ARGS="--appliquer"
+          fi
+          python3 -m scrapers.tickets balayage $ARGS
+
+  pr:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Vérifier que la PR cite l'issue qu'elle ferme
+        run: python3 -m scrapers.tickets pr
