@@ -25,6 +25,11 @@ conservation_jours: 30
 # Désactivé en attendant la décision de Mahdi (#136).
 purger_manuels: false
 
+# Référencement (#127) : codes de vérification donnés par Google Search Console et Bing Webmaster
+# (méthode « balise HTML » : coller seulement la valeur de content="…").
+google_verification: ""
+bing_verification: ""
+
 # Plan du site (sitemap.xml) généré par GitHub Pages
 plugins:
   - jekyll-sitemap
