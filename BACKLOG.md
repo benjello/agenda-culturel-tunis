@@ -25,6 +25,15 @@ Chantiers permanents, sans issue (fermées « non planifiées » le 20 nov. 2026
 relecture des entrées catégorie par catégorie (ex-#110), fiabiliser l'accès aux pages Facebook (ex-#112). Ils restent
 listés ici, sans case à cocher, pour que la synchro ne les signale pas.
 
+## Données hors git (#136)
+
+Les données générées vont sur la branche `donnees` (un seul commit remplacé à chaque passage) ; `main` ne garde que le code.
+- [x] Module `scrapers/donnees.py` (`recuperer`, `enregistrer`), branche `donnees` créée, archives limitées à `conservation_jours` jours.
+- [x] Workflow `publier.yml` (construit le site ; publie si GitHub Pages est sur « GitHub Actions »).
+- [ ] Mahdi : Settings → Pages → Source : « GitHub Actions » (https://github.com/benjello/agenda-culturel-tunis/settings/pages).
+- [ ] Retirer les données de `main` (`.gitignore`, `git rm --cached`), le robot ne commite plus que sur `donnees`.
+- [ ] Décision de Mahdi : supprimer aussi les événements saisis à la main à J-30 (réglage `purger_manuels` dans `_config.yml`, faux pour l'instant).
+
 ## Public arabophone
 
 Demande de Mahdi du 8 nov. 2026 : élargir aux concerts et événements pour le public arabophone. Fait : presse en arabe branchée
