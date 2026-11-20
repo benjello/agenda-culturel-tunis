@@ -173,6 +173,32 @@
   instagram: https://www.instagram.com/lartruetunisie/
   mots: "Dream City"
 
+# Ajoutés le 20 novembre 2026 (#106), repérés dans la presse ; dates de la prochaine édition pas encore publiées.
+- id: oud-tunis
+  nom: Festival international du Oud (Médina de Tunis)
+  genre: musique
+  edition: "4e édition en octobre 2026"
+  periode: Octobre
+  programme: false
+  source_dates: https://fr.allafrica.com/stories/202610030145.html
+  mots: "Festival international du Oud|Festival du Oud"
+
+- id: jazzmean
+  nom: Jazzmean Festival
+  genre: musique
+  periode: Octobre
+  programme: false
+  source_dates: https://fr.allafrica.com/stories/202510150265.html
+  mots: "Jazzmean"
+
+- id: jazzit
+  nom: Jazzit Festival
+  genre: musique
+  periode: Avril
+  programme: false
+  source_dates: https://fr.allafrica.com/stories/202603290061.html
+  mots: "Jazzit"
+
 # Festivals des régions (ajoutés le 1er novembre 2026). lieu et ville : pour l'agenda et le choix de ville.
 - id: douz
   nom: Festival international du Sahara de Douz

@@ -1914,3 +1914,17 @@
       User-Agent: "Mozilla/5.0 (compatible; agenda-culturel-tunis)"
       Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8"
   note: "Flux WordPress vérifié le 18 nov. 2026 (10 articles) ; le scraper ne garde que les articles qui annoncent un événement daté à Tunis."
+
+- id: ig-kenza-tritar
+  nom: Kennzie, @kenza.tritar (Instagram)
+  url: https://www.instagram.com/kenza.tritar/
+  type: lieu
+  genre: collectif
+  scraper: instagram
+  categorie: autre
+  actif: true
+  tous_les_jours: 3
+  options:
+    compte: kenza.tritar
+    resultats: 8
+  note: Compte proposé dans le ticket #137 (repéré par la recherche par hashtags de l'agenda de la nuit) ; Mahdi l'a jugé culturel. Une affiche datée = un événement.

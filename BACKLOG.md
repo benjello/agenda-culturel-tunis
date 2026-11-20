@@ -15,11 +15,13 @@ Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées d
 
 - Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107),
   [#156 brancher le formulaire sans compte GitHub](https://github.com/benjello/agenda-culturel-tunis/issues/156).
-- Étiquette **vérification humaine** (contrôles ouverts à tous) :
-  [#106 festivals et séries manquants](https://github.com/benjello/agenda-culturel-tunis/issues/106),
-  [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
-  [#109 fiches de l'Institut français](https://github.com/benjello/agenda-culturel-tunis/issues/109).
 - Étiquette **amélioration** : [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
+- Aussi : [#127 Search Console et Bing](https://github.com/benjello/agenda-culturel-tunis/issues/127) (compte de Mahdi requis),
+  [#153 flux de presse inactifs](https://github.com/benjello/agenda-culturel-tunis/issues/153),
+  [#163 crédit Apify](https://github.com/benjello/agenda-culturel-tunis/issues/163) (alerte automatique, se ferme seule).
+
+Traités le 20 nov. 2026 : #106 (festivals ajoutés : Oud, Jazzmean, Jazzit), #108 (propositions triées : TGM, Belvédère
+et Ibn Rachiq passent dans « Sources recherchées »), #109 (fiches de l'Institut français contrôlées), #137 (@kenza.tritar branché).
 
 Chantiers permanents, sans issue (fermées « non planifiées » le 20 nov. 2026 ; à rouvrir si un point devient actionnable) :
 relecture des entrées catégorie par catégorie (ex-#110), fiabiliser l'accès aux pages Facebook (ex-#112). Ils restent
@@ -138,6 +140,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 ## À faire
 
 - [ ] Référencement : déclarer le site dans Google Search Console et Bing Webmaster, puis soumettre `sitemap.xml` (action de Mahdi, #127).
+      Le site lit déjà `google_verification` et `bing_verification` dans `_config.yml` : il reste à y coller les codes.
 
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
