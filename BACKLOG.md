@@ -19,9 +19,11 @@ Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées d
   [#106 festivals et séries manquants](https://github.com/benjello/agenda-culturel-tunis/issues/106),
   [#108 sources proposées à trier](https://github.com/benjello/agenda-culturel-tunis/issues/108),
   [#109 fiches de l'Institut français](https://github.com/benjello/agenda-culturel-tunis/issues/109).
-- Étiquette **amélioration** : [#110 relecture par catégorie](https://github.com/benjello/agenda-culturel-tunis/issues/110),
-  [#112 accès Facebook](https://github.com/benjello/agenda-culturel-tunis/issues/112),
-  [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
+- Étiquette **amélioration** : [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
+
+Chantiers permanents, sans issue (fermées « non planifiées » le 20 nov. 2026 ; à rouvrir si un point devient actionnable) :
+relecture des entrées catégorie par catégorie (ex-#110), fiabiliser l'accès aux pages Facebook (ex-#112). Ils restent
+listés ici, sans case à cocher, pour que la synchro ne les signale pas.
 
 ## Public arabophone
 
