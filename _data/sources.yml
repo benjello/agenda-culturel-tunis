@@ -1908,5 +1908,9 @@
   genre: institution
   scraper: presse
   categorie: autre
-  actif: false  # 18 nov. 2026 : 405 avec l'en-tête du scraper (le flux répond à curl) ; à reprendre avec un autre User-Agent
+  actif: true
+  options:  # 20 nov. 2026 : le site répond 405 à l'en-tête navigateur, 200 avec cet en-tête (sonde GitHub Actions)
+    entetes:
+      User-Agent: "Mozilla/5.0 (compatible; agenda-culturel-tunis)"
+      Accept: "application/rss+xml, application/xml;q=0.9, */*;q=0.8"
   note: "Flux WordPress vérifié le 18 nov. 2026 (10 articles) ; le scraper ne garde que les articles qui annoncent un événement daté à Tunis."
