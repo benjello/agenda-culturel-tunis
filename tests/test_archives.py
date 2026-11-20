@@ -48,6 +48,41 @@ class TestArchives(unittest.TestCase):
             with mock.patch.object(archives, "DOSSIER", Path(d)):
                 self.assertEqual(list(archives._charger()), ["2026"])
 
+    def _depot(self, d, fiches):
+        racine = Path(d)
+        (racine / "archives").mkdir()
+        for dossier, nom, fin in fiches:
+            f = racine / "_events" / dossier / nom
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(FICHE.replace("date: 2026-10-07 20:30:00", f"date: {fin} 20:30:00").replace('title: "Concert de oud"', f'title: "{nom}"'))
+        return racine
+
+    def test_archiver_ecarte_les_evenements_trop_anciens(self):
+        import datetime as dt
+        from scrapers import archives
+        with tempfile.TemporaryDirectory() as d:
+            racine = self._depot(d, [("auto/x", "recent.md", "2026-11-05"), ("auto/x", "ancien.md", "2026-09-01")])
+            with mock.patch.object(archives, "RACINE", racine), mock.patch.object(archives, "DOSSIER", racine / "archives" / "donnees"):
+                archives.archiver(jours=30, aujourd_hui=dt.date(2026, 11, 20))
+                titres = [e["titre"] for e in json.loads((racine / "archives" / "donnees" / "2026.json").read_text())]
+                self.assertEqual(titres, ["recent.md"])
+                # plus tard, l'événement récent sort à son tour et le fichier d'année disparaît
+                archives.archiver(jours=30, aujourd_hui=dt.date(2026, 12, 20))
+                self.assertFalse((racine / "archives" / "donnees" / "2026.json").exists())
+                self.assertEqual(json.loads((racine / "archives" / "donnees" / "index.json").read_text()), {})
+
+    def test_purger_supprime_seulement_les_fichiers_manuels_trop_anciens(self):
+        import datetime as dt
+        from scrapers import archives
+        with tempfile.TemporaryDirectory() as d:
+            racine = self._depot(d, [("manuel", "ancien.md", "2026-09-01"), ("manuel", "recent.md", "2026-11-10"),
+                                     ("propositions", "ancienne.md", "2026-09-01"), ("auto/x", "auto-ancien.md", "2026-09-01")])
+            with mock.patch.object(archives, "RACINE", racine):
+                self.assertEqual(archives.purger(jours=30, aujourd_hui=dt.date(2026, 11, 20)), 2)
+                self.assertEqual(sorted(p.name for p in (racine / "_events").rglob("*.md")), ["auto-ancien.md", "recent.md"])
+                # un délai plus long garde tout ce qui reste
+                self.assertEqual(archives.purger(jours=200, aujourd_hui=dt.date(2026, 11, 20)), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

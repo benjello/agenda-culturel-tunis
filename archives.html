@@ -10,7 +10,7 @@ description: Tous les événements passés de l'agenda culturel, avec une recher
 {%- endcomment -%}
 <section class="intro">
   <h1 data-t="arch.titre">Archives</h1>
-  <p data-t="arch.intro">Les événements passés, gardés depuis novembre 2026. Cherchez un artiste, un lieu, un festival…</p>
+  <p data-tn="arch.intro" data-n="{{ site.conservation_jours }}" data-tn-fr="Les événements terminés depuis moins de %n jours. Cherchez un artiste, un lieu, un festival…">Les événements terminés depuis moins de {{ site.conservation_jours }} jours. Cherchez un artiste, un lieu, un festival…</p>
 </section>
 <input type="search" id="arch-recherche" class="recherche" placeholder="Chercher dans les archives…" data-t-placeholder="arch.chercher" aria-label="Chercher" autocomplete="off">
 <div class="filters" id="arch-annees" role="group" aria-label="Année"></div>

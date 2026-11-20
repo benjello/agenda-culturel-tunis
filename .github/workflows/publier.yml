@@ -1,0 +1,64 @@
+name: Publier le site
+
+# Construit le site Jekyll et le publie avec GitHub Pages (source « GitHub Actions »).
+# - push sur main (code, événements saisis à la main) : construit et publie ;
+# - appelé par scrapers.yml à la fin d'un passage du robot (un push fait avec GITHUB_TOKEN ne déclenche rien) ;
+# - pull_request : construit seulement, pour vérifier que le site se construit.
+# La publication n'a lieu que si GitHub Pages est réglé sur « GitHub Actions »
+# (Settings → Pages → Source) ; sinon on construit seulement et le site reste servi depuis la branche main.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    outputs:
+      publier: ${{ steps.mode.outputs.publier }}
+    steps:
+      - uses: actions/checkout@v4
+      # DONNEES_ICI
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Construire le site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          PAGES_REPO_NWO: ${{ github.repository }}
+      - name: Faut-il publier ?
+        id: mode
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mode=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq .build_type 2>/dev/null || echo inconnu)
+          echo "Source de GitHub Pages : $mode"
+          if [ "$mode" = "workflow" ] && [ "$GITHUB_REF" = "refs/heads/main" ]; then echo "publier=oui" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.mode.outputs.publier == 'oui'
+        with:
+          path: _site
+
+  publier:
+    needs: construire
+    if: needs.construire.outputs.publier == 'oui'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

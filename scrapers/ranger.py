@@ -16,7 +16,10 @@ from .villes import ville
 
 
 def _date_ajout(f) -> str:
-    """Premier commit qui a ajouté le fichier, sinon aujourd'hui."""
+    """Premier commit qui a ajouté le fichier, sinon aujourd'hui.
+
+    Ne sert que si `ajoute` manque : ecriture.py le pose pour les événements auto, dont les fichiers
+    viennent de la branche « donnees » (sans historique). Seuls les fichiers saisis à la main ont un historique."""
     try:
         r = subprocess.run(["git", "log", "--diff-filter=A", "--format=%as", "--", str(f)],
                            cwd=RACINE, capture_output=True, text=True, timeout=20)
