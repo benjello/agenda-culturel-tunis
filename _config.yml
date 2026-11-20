@@ -18,6 +18,13 @@ contact_email: ""
 proposition_api: ""
 turnstile_cle: ""
 
+# Événements terminés gardés N jours : page Archives (et, si « purger_manuels » est vrai, suppression des
+# événements saisis à la main). Lu par Jekyll (site.conservation_jours) et par scrapers/commun.py : reglage().
+conservation_jours: 30
+# Supprimer aussi les événements saisis à la main (_events/manuel, _events/propositions) une fois passé ce délai ?
+# Désactivé en attendant la décision de Mahdi (#136).
+purger_manuels: false
+
 # Plan du site (sitemap.xml) généré par GitHub Pages
 plugins:
   - jekyll-sitemap

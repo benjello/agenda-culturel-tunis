@@ -13,6 +13,15 @@ import requests
 from bs4 import BeautifulSoup
 
 RACINE = Path(__file__).resolve().parent.parent
+
+
+def reglage(nom: str, defaut):
+    """Valeur d'un réglage de _config.yml (lu aussi par Jekyll), ou la valeur par défaut."""
+    import yaml
+    try:
+        return (yaml.safe_load((RACINE / "_config.yml").read_text()) or {}).get(nom, defaut)
+    except (OSError, yaml.YAMLError):
+        return defaut
 DEBUG_DIR: Path | None = None  # rempli par --debug
 
 # En-têtes d'un navigateur ordinaire : certains sites refusent les robots trop visibles.

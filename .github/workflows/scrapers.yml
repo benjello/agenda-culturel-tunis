@@ -110,6 +110,13 @@ jobs:
             sleep 5
           done
           exit 1
+      - name: Enregistrer les données sur la branche « donnees » (un seul commit, remplacé à chaque passage)
+        if: github.ref == 'refs/heads/main'
+        continue-on-error: true   # pendant la transition, main garde aussi les données
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          python3 -m scrapers.donnees enregistrer
       - name: Alerte « Sources silencieuses » (rien depuis 30 jours)
         if: github.ref == 'refs/heads/main'
         continue-on-error: true
@@ -145,3 +152,13 @@ jobs:
       - name: Signaler l'échec
         if: steps.run.outcome == 'failure'
         run: echo "::error::Toutes les sources ont échoué, voir l'étape « Lancer les scrapers »." && exit 1
+
+  publier:
+    # un push fait avec GITHUB_TOKEN ne déclenche pas publier.yml : on l'appelle ici
+    needs: scrapers
+    if: always() && github.ref == 'refs/heads/main' && needs.scrapers.result != 'cancelled'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/publier.yml
