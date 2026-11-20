@@ -33,6 +33,8 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Récupérer les données de la branche « donnees » (arrêt si elle manque, pas de départ à zéro)
+        run: python3 -m scrapers.donnees recuperer
       - name: Installer l'OCR (lecture des programmes en image)
         # l'index des paquets de l'image peut être périmé (404) : on le rafraîchit ; sans OCR, les scrapers tournent quand même
         continue-on-error: true
@@ -91,32 +93,27 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         # met à jour _data/apify.json (page Santé) ; l'alerte est gérée par credit-apify.yml
         run: python3 -m scrapers.credit_apify
-      - name: Enregistrer s'il y a du nouveau
+      - name: Enregistrer les données sur la branche « donnees » (un seul commit, remplacé à chaque passage)
         # sur une branche d'essai, on lit sans rien enregistrer (pas d'échec de push)
         if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
-          git add -A _events _data/etat_sources.json _data/films.json _data/critiques.json _data/presse.json _data/wikidata.json _data/controle.json _data/images.json _data/traductions.json _data/libelles.json _data/bilan.json _data/apify.json _data/descriptifs.json _data/enrichi.json \
-            _lieux _collectifs _artistes _data/lieux.json _data/geo.json archives/donnees
-          for d in _data/programmes _cache/publications assets/programmes assets/images; do
-            if [ -d "$d" ]; then git add -A "$d"; fi
-          done
-          git diff --cached --quiet && echo "Rien de nouveau." && exit 0
-          git commit -m "Scrapers : mise à jour automatique"
+          python3 -m scrapers.donnees enregistrer
+      - name: Événements saisis à la main terminés depuis trop longtemps (si « purger_manuels » est vrai)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
+          git add -A _events/manuel _events/propositions
+          git diff --cached --quiet && echo "Rien à retirer." && exit 0
+          git commit -m "Événements terminés depuis plus de $(python3 -c 'from scrapers.commun import reglage; print(reglage("conservation_jours", 30))') jours retirés"
           # main a pu bouger pendant le passage (merge d'une PR) : on rejoue notre commit par-dessus.
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
             sleep 5
           done
           exit 1
-      - name: Enregistrer les données sur la branche « donnees » (un seul commit, remplacé à chaque passage)
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true   # pendant la transition, main garde aussi les données
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898099+github-actions[bot]@users.noreply.github.com"
-          python3 -m scrapers.donnees enregistrer
       - name: Alerte « Sources silencieuses » (rien depuis 30 jours)
         if: github.ref == 'refs/heads/main'
         continue-on-error: true

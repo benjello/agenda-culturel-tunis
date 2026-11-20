@@ -85,11 +85,12 @@ pip install -r requirements.txt
 python3 -m scrapers              # toutes les sources actives
 python3 -m scrapers teskerti     # une seule source
 python3 -m scrapers --debug      # garde les pages téléchargées dans debug/
-git add _events/auto _data/films.json _data/programmes assets/programmes _data/etat_sources.json && git commit -m "Scrapers" && git push
+python3 -m scrapers.donnees recuperer    # d'abord : reprend les données de la branche « donnees »
+python3 -m scrapers.donnees enregistrer  # ensuite : remplace la branche « donnees » (un seul commit)
 ```
 
 Exemple de ligne cron (tous les jours à 6h) :
-`0 6 * * * cd ~/agenda-culturel-tunis && git pull -q && python3 -m scrapers && git add -A _events/auto _data && git commit -qm Scrapers && git push -q`
+`0 6 * * * cd ~/agenda-culturel-tunis && git pull -q && python3 -m scrapers.donnees recuperer && python3 -m scrapers && python3 -m scrapers.donnees enregistrer`
 
 Certains sites (pathe.tn par exemple) refusent les requêtes venant des serveurs de GitHub.
 Ces sources marchent mieux depuis un cron sur une machine ordinaire.
@@ -146,7 +147,7 @@ générés à chaque construction. Licence des données : CC BY 4.0 (voir la pag
 | Dossier / fichier | Rôle |
 |---|---|
 | `_events/` | un fichier par événement |
-| `_events/auto/` | événements récupérés par les scrapers (généré) |
+| `_events/auto/` | événements récupérés par les scrapers (généré, branche `donnees`) |
 | `_data/sources.yml` | registre des sources |
 | `_data/programmes/`, `assets/programmes/`, `_data/etat_sources.json` | programmes en image et état des sources (générés) |
 | `scrapers/` | les scrapers (Python) |
@@ -158,9 +159,17 @@ générés à chaque construction. Licence des données : CC BY 4.0 (voir la pag
 | `index.html` | page d'accueil (l'agenda) |
 | `a-propos.md` | page « À propos » |
 
+**Données hors de `main`.** Tout ce que le robot produit (événements auto, affiches, JSON, caches Wikidata, traductions
+et géo, fiches lieux, archives ; liste dans `scrapers/donnees.py`, `CHEMINS`) vit sur la branche `donnees`, qui n'a
+qu'un seul commit, remplacé à chaque passage : le dépôt ne grossit plus. `main` garde le code, les événements saisis à la
+main (`_events/manuel/`) et son historique. Le site est construit et publié par `.github/workflows/publier.yml`
+(GitHub Pages, source « GitHub Actions »). Si la branche `donnees` manque, le robot s'arrête au lieu de repartir de zéro.
+Le réglage `conservation_jours` de `_config.yml` fixe combien de jours les événements terminés restent dans les archives.
+
 ## Voir le site sur son ordinateur (facultatif)
 
 ```bash
+python3 -m scrapers.donnees recuperer   # reprend les données générées (branche « donnees »)
 bundle install
 bundle exec jekyll serve
 ```

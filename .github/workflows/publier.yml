@@ -29,7 +29,11 @@ jobs:
       publier: ${{ steps.mode.outputs.publier }}
     steps:
       - uses: actions/checkout@v4
-      # DONNEES_ICI
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Récupérer les données du robot (branche « donnees »)
+        run: python3 -m scrapers.donnees recuperer
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
