@@ -30,9 +30,9 @@ listés ici, sans case à cocher, pour que la synchro ne les signale pas.
 Les données générées vont sur la branche `donnees` (un seul commit remplacé à chaque passage) ; `main` ne garde que le code.
 - [x] Module `scrapers/donnees.py` (`recuperer`, `enregistrer`), branche `donnees` créée, archives limitées à `conservation_jours` jours.
 - [x] Workflow `publier.yml` (construit le site ; publie si GitHub Pages est sur « GitHub Actions »).
-- [ ] Mahdi : Settings → Pages → Source : « GitHub Actions » (https://github.com/benjello/agenda-culturel-tunis/settings/pages).
+- [x] Mahdi : Settings → Pages → Source : « GitHub Actions » (https://github.com/benjello/agenda-culturel-tunis/settings/pages).
 - [x] Retirer les données de `main` (`.gitignore`, `git rm --cached`), le robot ne commite plus que sur `donnees`.
-- [ ] Décision de Mahdi : supprimer aussi les événements saisis à la main à J-30 (réglage `purger_manuels` dans `_config.yml`, faux pour l'instant).
+- Décision de Mahdi (20 nov. 2026) : on garde les événements saisis à la main ; `purger_manuels` reste faux dans `_config.yml` (la purge est codée, désactivée).
 
 ## Public arabophone
 

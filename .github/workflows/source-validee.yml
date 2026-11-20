@@ -45,7 +45,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           NUMERO: ${{ github.event.issue.number }}
           IDENT: ${{ steps.ajout.outputs.id }}
-        run: gh issue close "$NUMERO" --repo "$GITHUB_REPOSITORY" --comment "Merci ! La source (« $IDENT ») est ajoutée au registre : les scrapers la liront au prochain passage, son état est visible sur la page Sources."
+        run: |
+          gh issue close "$NUMERO" --repo "$GITHUB_REPOSITORY" --comment "Merci ! La source (« $IDENT ») est ajoutée au registre : les scrapers la liront au prochain passage, son état est visible sur la page Sources."
       - name: Signaler une erreur
         if: failure()
         env:
