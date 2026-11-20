@@ -1,12 +1,14 @@
 name: Tickets
 
-# Hygiène des tickets : balayage mensuel des issues inactives, et avertissement sur les PR
-# qui ne citent aucune issue à fermer (« Closes #N »). Le balayage ferme les issues sans
-# activité : 60 jours sans activité, puis avertissement, puis 14 jours de plus avant fermeture.
+# Hygiène des tickets. À chaque fusion sur main (push) : fermer les issues résolues par une PR
+# fusionnée (« Closes #N »). Chaque mois : avertir les issues inactives depuis 60 jours, puis les
+# fermer 14 jours plus tard. Sur chaque PR : signaler l'absence de « Closes #N ».
 
 on:
   schedule:
     - cron: "0 6 1 * *"   # le 1er de chaque mois, vers 7h heure de Tunis
+  push:
+    branches: [main]      # à chaque fusion : ferme les issues résolues par la PR fusionnée
   pull_request:
     types: [opened, edited, synchronize, reopened]
   workflow_dispatch:
@@ -38,7 +40,7 @@ jobs:
           APPLIQUER: ${{ inputs.appliquer }}
         run: |
           ARGS=""
-          if [ "$EVENEMENT" = "schedule" ] || [ "$APPLIQUER" = "true" ]; then
+          if [ "$EVENEMENT" != "workflow_dispatch" ] || [ "$APPLIQUER" = "true" ]; then
             ARGS="--appliquer"
           fi
           python3 -m scrapers.tickets balayage $ARGS

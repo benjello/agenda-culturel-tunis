@@ -46,6 +46,20 @@ class Plan(unittest.TestCase):
         self.assertEqual(tickets.plan([issue(6, 200, pr=True)], MAINTENANT), [])
 
 
+class Resolues(unittest.TestCase):
+    def test_pr_fusionnee_ferme_l_issue(self):
+        prs = [{"number": 9, "merged_at": "2026-11-19T10:00:00Z", "body": "Résumé\n\nCloses #7"}]
+        self.assertEqual(tickets.resolues(prs), {7})
+
+    def test_pr_non_fusionnee_ignoree(self):
+        prs = [{"number": 9, "merged_at": None, "body": "Closes #7"}]
+        self.assertEqual(tickets.resolues(prs), set())
+
+    def test_issue_resolue_fermee_au_balayage(self):
+        actions = tickets.plan([issue(7, 1)], MAINTENANT, {7})
+        self.assertEqual(actions, [(7, "resolue")])
+
+
 class Fermeture(unittest.TestCase):
     def test_closes_reconnu(self):
         self.assertFalse(tickets.pr_sans_fermeture("Résumé.\n\nCloses #12"))

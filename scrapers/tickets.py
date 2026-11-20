@@ -5,6 +5,8 @@
   python3 -m scrapers.tickets pr                    # signale une PR qui ne cite aucune issue à fermer
 
 Règles du balayage (lancé chaque mois par le workflow « Tickets ») :
+- une issue ouverte que une PR fusionnée ferme (« Closes #N ») encore ouverte est fermée : filet de sécurité
+  si l'agent a oublié le mot-clé ou si la PR ne visait pas la branche principale ;
 - une issue ouverte sans activité depuis AVERTIR_APRES jours reçoit un commentaire et l'étiquette « à-trier » ;
 - une issue « à-trier » sans activité depuis FERMER_APRES jours est fermée « non planifiée » ;
 - les issues « alerte » (tickets automatiques) ne sont jamais touchées ;
@@ -37,7 +39,12 @@ FERMETURE_TEXTE = (
     "Fermé comme « non planifié » : aucune activité depuis plus de {apres} jours après l'étiquette « à-trier ». "
     "Rouvrez-le si le sujet reste d'actualité."
 )
-LIBELLES = {"avertir": "avertissement et étiquette « à-trier »", "fermer": "fermeture « non planifiée »"}
+RESOLUE_TEXTE = "Fermé : le travail est fusionné (PR fusionnée qui cite « Closes #N »). Rouvrez-le si ce n'est pas le cas."
+LIBELLES = {
+    "avertir": "avertissement et étiquette « à-trier »",
+    "fermer": "fermeture « non planifiée »",
+    "resolue": "fermeture, résolue par une PR fusionnée",
+}
 
 
 def age_en_jours(iso, maintenant):
@@ -46,7 +53,18 @@ def age_en_jours(iso, maintenant):
     return (maintenant - date).days
 
 
-def plan(issues, maintenant):
+def resolues(prs):
+    """Numéros d'issues fermées par une PR fusionnée (« Closes #N », « Fixes #N », « Resolves #N »)."""
+    trouvees = set()
+    for pr in prs:
+        if not pr.get("merged_at"):
+            continue
+        for trouve in FERMETURE.finditer(pr.get("body") or ""):
+            trouvees.add(int(re.search(r"\d+", trouve.group(0)).group(0)))
+    return trouvees
+
+
+def plan(issues, maintenant, resolues_par_pr=frozenset()):
     """Liste des (numéro, action) à mener. Ne touche à rien : c'est `executer` qui agit."""
     actions = []
     for issue in issues:
@@ -54,6 +72,9 @@ def plan(issues, maintenant):
             continue
         etiquettes = {etiquette["name"] for etiquette in issue.get("labels", [])}
         if ETIQUETTE_EXCLUE in etiquettes:
+            continue
+        if issue["number"] in resolues_par_pr:
+            actions.append((issue["number"], "resolue"))
             continue
         age = age_en_jours(issue["updated_at"], maintenant)
         if ETIQUETTE_TRI in etiquettes:
@@ -108,6 +129,17 @@ def api(methode, url, jeton, corps=None):
     return json.loads(contenu) if contenu else None
 
 
+def prs_fermees(depot, jeton, pages=3):
+    """Pull requests fermées récentes (les plus récentes d'abord, 100 par page)."""
+    tous = []
+    for page in range(1, pages + 1):
+        lot = api("GET", f"https://api.github.com/repos/{depot}/pulls?state=closed&per_page=100&page={page}", jeton)
+        tous += lot
+        if len(lot) < 100:
+            break
+    return tous
+
+
 def issues_ouvertes(depot, jeton):
     """Toutes les issues et PR ouvertes du dépôt (pagination par 100)."""
     tous, page = [], 1
@@ -124,7 +156,10 @@ def executer(depot, jeton, actions):
     """Commente, étiquette ou ferme les issues du plan."""
     base = f"https://api.github.com/repos/{depot}/issues"
     for numero, action in actions:
-        if action == "avertir":
+        if action == "resolue":
+            api("POST", f"{base}/{numero}/comments", jeton, {"body": RESOLUE_TEXTE})
+            api("PATCH", f"{base}/{numero}", jeton, {"state": "closed", "state_reason": "completed"})
+        elif action == "avertir":
             texte = AVERTISSEMENT.format(jours=AVERTIR_APRES, apres=FERMER_APRES)
             api("POST", f"{base}/{numero}/comments", jeton, {"body": texte})
             api("POST", f"{base}/{numero}/labels", jeton, {"labels": [ETIQUETTE_TRI]})
@@ -170,7 +205,7 @@ def main(argv=None):
             return 1
         maintenant = datetime.now(timezone.utc)
         issues = issues_ouvertes(depot, jeton)
-        actions = plan(issues, maintenant)
+        actions = plan(issues, maintenant, resolues(prs_fermees(depot, jeton)))
         if appliquer:
             executer(depot, jeton, actions)
         texte = rapport(issues, actions, maintenant, appliquees=appliquer)
