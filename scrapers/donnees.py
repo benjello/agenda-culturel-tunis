@@ -16,7 +16,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from .commun import RACINE
+RACINE = Path(__file__).resolve().parent.parent  # sans importer commun : pas besoin de pip pour récupérer les données
 
 BRANCHE = "donnees"
 
