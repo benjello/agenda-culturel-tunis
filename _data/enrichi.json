@@ -1,0 +1,390 @@
+{
+ "images": {
+  "artiste:anouar-brahem": {
+   "auteur": "Adel BRAHEM",
+   "credit": "https://commons.wikimedia.org/wiki/File:Anouar_Brahem_(01).JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anouar_Brahem_(01).JPG?width=400",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q548428",
+   "verifie": "2026-11-18"
+  },
+  "artiste:azza-filali": {
+   "auteur": "Sasha WITZ",
+   "credit": "https://commons.wikimedia.org/wiki/File:Azza_Filali.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Azza_Filali.jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q794425",
+   "verifie": "2026-11-18"
+  },
+  "artiste:dhafer-youssef": {
+   "auteur": "Tore Sætre",
+   "credit": "https://commons.wikimedia.org/wiki/File:Dhafer_Youssef_(223157).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhafer_Youssef_(223157).jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q957007",
+   "verifie": "2026-11-18"
+  },
+  "artiste:emel-mathlouthi": {
+   "auteur": "Tore Sætre",
+   "credit": "https://commons.wikimedia.org/wiki/File:Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Emel_Mathlouthi_Cosmopolite_2017_(212802).jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q469256",
+   "verifie": "2026-11-18"
+  },
+  "artiste:fadhel-jaziri": {
+   "auteur": "M.Rais",
+   "credit": "https://commons.wikimedia.org/wiki/File:Fadhel_Jaziri.JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fadhel_Jaziri.JPG?width=400",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q3064377",
+   "verifie": "2026-11-18"
+  },
+  "artiste:ghalia-benali": {
+   "auteur": "Alaa Helaly",
+   "credit": "https://commons.wikimedia.org/wiki/File:Ghalia_Ben_Ali.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghalia_Ben_Ali.jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q2777889",
+   "verifie": "2026-11-18"
+  },
+  "artiste:lotfi-bouchnak": {
+   "auteur": "https://www.flickr.com/people/magharebia/",
+   "credit": "https://commons.wikimedia.org/wiki/File:LotfiBouchnak.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/LotfiBouchnak.jpg?width=400",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "qid": "Q3259988",
+   "verifie": "2026-11-18"
+  },
+  "lieu:beit-al-hikma-carthage": {
+   "auteur": "م ض",
+   "credit": "https://commons.wikimedia.org/wiki/File:Beit_Hikma_Tunis.JPG",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Beit_Hikma_Tunis.JPG?width=400",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q2822461",
+   "verifie": "2026-11-18"
+  },
+  "lieu:caserne-el-attarine": {
+   "auteur": "Emnamizouni",
+   "credit": "https://commons.wikimedia.org/wiki/File:Old_National_Library_of_Tunisia.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_National_Library_of_Tunisia.jpg?width=400",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "qid": "Q42595384",
+   "verifie": "2026-11-18"
+  },
+  "lieu:cite-de-la-culture": {
+   "auteur": "Habib M'henni",
+   "credit": "https://commons.wikimedia.org/wiki/File:Cité_de_la_culture,_Tunis_27_décembre_2014.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cité_de_la_culture,_Tunis_27_décembre_2014.jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q2974756",
+   "verifie": "2026-11-18"
+  },
+  "lieu:institut-francais-de-tunis": {
+   "auteur": "SafoueneGharbi",
+   "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q17449190",
+   "verifie": "2026-11-18"
+  },
+  "lieu:institut-francais-de-tunisie": {
+   "auteur": "SafoueneGharbi",
+   "credit": "https://commons.wikimedia.org/wiki/File:CourIFT.jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CourIFT.jpg?width=400",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "qid": "Q17449190",
+   "verifie": "2026-11-18"
+  },
+  "lieu:theatre-municipal-de-tunis": {
+   "auteur": "Jean-Pierre Dalbéra from Paris, France",
+   "credit": "https://commons.wikimedia.org/wiki/File:Le_théâtre_de_Tunis_(3301451272).jpg",
+   "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_théâtre_de_Tunis_(3301451272).jpg?width=400",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "qid": "Q3527872",
+   "verifie": "2026-11-18"
+  }
+ },
+ "osm": {
+  "lieu:cinema-le-palace": {
+   "type": "cinema"
+  },
+  "lieu:cite-de-la-culture": {
+   "type": "centre_art"
+  },
+  "lieu:el-teatro": {
+   "type": "theatre",
+   "website": "https://www.elteatro.net/"
+  },
+  "lieu:le-32bis": {
+   "type": "galerie"
+  },
+  "lieu:pathe-tunis-city": {
+   "type": "cinema"
+  },
+  "lieu:salle-de-cinema-institut-francais-de-sousse": {
+   "type": "cinema"
+  },
+  "lieu:theatre-municipal-de-tunis": {
+   "type": "theatre",
+   "wheelchair": "no"
+  },
+  "musee:Musée Dar Ben Abdallah (arts et traditions populaires)": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Cherait": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Essid": {
+   "type": "musee"
+  },
+  "musee:Musée Dar Jallouli (arts et traditions populaires)": {
+   "type": "musee"
+  },
+  "musee:Musée Lalla Hadria": {
+   "type": "musee"
+  },
+  "musee:Musée archéologique d'El Jem": {
+   "opening_hours": "Sep 16-Apr 30: Mo-Su 07:30 - 17:30; May 01-Sep 15: Mo-Su 07:30 - 18:30; 08:00-17:00 \"Openings hours at Ramadan's month\"",
+   "type": "musee",
+   "website": "https://eljem.virtualexperience.net/"
+  },
+  "musee:Musée archéologique de Sousse (Kasbah)": {
+   "type": "musee",
+   "website": "https://www.patrimoinedetunisie.com.tn/eng/musees/sousse.php"
+  },
+  "musee:Musée de Chemtou": {
+   "type": "musee"
+  },
+  "musee:Musée de Dar Sebastian (Centre culturel international)": {
+   "type": "centre_art"
+  },
+  "musee:Musée de Salakta": {
+   "type": "musee"
+  },
+  "musee:Musée de Zarzis": {
+   "type": "musee",
+   "website": "https://www.tunisiepatrimoine.tn/ar/%D9%85%D8%AA%D8%A7%D8%AD%D9%81/%D9%85%D8%AA%D8%AD%D9%81-%D8%AC%D8%B1%D8%AC%D9%8A%D8%B3/%D9%86%D8%B8%D8%B1%D8%A9-%D8%B9%D8%A7%D9%85%D8%A9/"
+  },
+  "musee:Musée de la monnaie (Banque centrale)": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires de Gabès": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires de Houmt Souk": {
+   "type": "musee"
+  },
+  "musee:Musée des arts et traditions populaires du Kef": {
+   "type": "musee"
+  },
+  "musee:Musée du mouvement national": {
+   "type": "musee"
+  },
+  "musee:Musée national de Carthage": {
+   "type": "musee"
+  },
+  "musee:Musée national du Bardo": {
+   "type": "musee",
+   "website": "http://www.bardomuseum.tn/"
+  },
+  "musee:Musée paléochrétien de Carthage": {
+   "type": "musee"
+  },
+  "musee:Site et musée de Bulla Regia": {
+   "opening_hours": "May 1-Oct 30: 08:00-20:00",
+   "type": "musee"
+  }
+ },
+ "vu": {
+  "artiste:abdelhamid-largueche": "2026-11-02",
+  "artiste:adema": "2026-11-02",
+  "artiste:ahmed-touj": "2026-11-02",
+  "artiste:alexander-skancke": "2026-11-02",
+  "artiste:aline-umber": "2026-11-02",
+  "artiste:always-late": "2026-11-02",
+  "artiste:amin": "2026-11-02",
+  "artiste:amina-hanini": "2026-11-02",
+  "artiste:anouar-brahem": "2026-11-02",
+  "artiste:asechs": "2026-11-17",
+  "artiste:atef": "2026-11-02",
+  "artiste:automatic-writing": "2026-11-02",
+  "artiste:azza-filali": "2026-11-02",
+  "artiste:baban": "2026-11-02",
+  "artiste:baloo": "2026-11-02",
+  "artiste:bendir-man": "2026-11-02",
+  "artiste:bila": "2026-11-02",
+  "artiste:bochra-taboubi": "2026-11-02",
+  "artiste:cabanne": "2026-11-02",
+  "artiste:cap": "2026-11-02",
+  "artiste:chedy": "2026-11-02",
+  "artiste:cristi-cons": "2026-11-02",
+  "artiste:daox": "2026-11-02",
+  "artiste:dhafer-youssef": "2026-11-02",
+  "artiste:dj-senc": "2026-11-02",
+  "artiste:elena-moroder": "2026-11-02",
+  "artiste:elise-jilian": "2026-11-02",
+  "artiste:emel-mathlouthi": "2026-11-02",
+  "artiste:emine-2": "2026-11-02",
+  "artiste:fadhel-jaziri": "2026-11-02",
+  "artiste:familia-productions": "2026-11-02",
+  "artiste:fares-a": "2026-11-02",
+  "artiste:foehn-jerome": "2026-11-02",
+  "artiste:formiq": "2026-11-02",
+  "artiste:ghalia-benali": "2026-11-02",
+  "artiste:gojnea76": "2026-11-02",
+  "artiste:gusik": "2026-11-02",
+  "artiste:hafida-ben-rejeb-latta": "2026-11-02",
+  "artiste:hamdi-ryder": "2026-11-02",
+  "artiste:harrison-guyett": "2026-11-02",
+  "artiste:hearthug": "2026-11-02",
+  "artiste:hichem-ben-ammar": "2026-11-17",
+  "artiste:hitsh": "2026-11-02",
+  "artiste:houz": "2026-11-02",
+  "artiste:hugo-martinez": "2026-11-02",
+  "artiste:ion-ludwig": "2026-11-02",
+  "artiste:james-creed": "2026-11-02",
+  "artiste:jonn": "2026-11-02",
+  "artiste:kby": "2026-11-02",
+  "artiste:kian-ok": "2026-11-02",
+  "artiste:krol": "2026-11-02",
+  "artiste:lil-jack": "2026-11-02",
+  "artiste:lotfi-bouchnak": "2026-11-02",
+  "artiste:lotfi-mlayah": "2026-11-02",
+  "artiste:lowris": "2026-11-02",
+  "artiste:maher-daniel": "2026-11-02",
+  "artiste:maiora": "2026-11-02",
+  "artiste:majid": "2026-11-02",
+  "artiste:maks": "2026-11-02",
+  "artiste:manon": "2026-11-02",
+  "artiste:markus-nikolai": "2026-11-02",
+  "artiste:maya-cherif": "2026-11-08",
+  "artiste:mihnea-rog": "2026-11-02",
+  "artiste:miller": "2026-11-02",
+  "artiste:min8": "2026-11-02",
+  "artiste:moez": "2026-11-02",
+  "artiste:n4bz": "2026-11-02",
+  "artiste:nicole-skarpness": "2026-11-02",
+  "artiste:olivier-romero": "2026-11-02",
+  "artiste:omar-c": "2026-11-02",
+  "artiste:omar-fayyad": "2026-11-02",
+  "artiste:omar-uy": "2026-11-02",
+  "artiste:pan-j": "2026-11-02",
+  "artiste:picasso": "2026-11-02",
+  "artiste:prichindel": "2026-11-02",
+  "artiste:rafram-chaddad": "2026-11-11",
+  "artiste:raphael-merheb": "2026-11-02",
+  "artiste:rome-it": "2026-11-02",
+  "artiste:rslane": "2026-11-02",
+  "artiste:saadoon": "2026-11-02",
+  "artiste:serenne": "2026-11-02",
+  "artiste:sonia-hanihina": "2026-11-02",
+  "artiste:sweed": "2026-11-02",
+  "artiste:taieb-chekir": "2026-11-02",
+  "artiste:tatler": "2026-11-02",
+  "artiste:trent-voyage": "2026-11-02",
+  "artiste:wednesday": "2026-11-02",
+  "artiste:yasmin-sun": "2026-11-02",
+  "artiste:yasser-jradi": "2026-11-02",
+  "artiste:zaida": "2026-11-02",
+  "lieu:11-rue-nelson-mandela-jinene-eddonia-la-marsa-2046": "2026-11-02",
+  "lieu:44-46-rue-du-niger-montplaisir-tunis": "2026-11-17",
+  "lieu:agorgi-gallery-sidi-bou-said": "2026-11-02",
+  "lieu:aina": "2026-11-17",
+  "lieu:auditorium-de-l-ift-20-avenue-de-paris-tunis": "2026-11-10",
+  "lieu:auditorium-institut-francais-de-tunis": "2026-11-02",
+  "lieu:b7l9": "2026-11-10",
+  "lieu:b7l9-art-centre": "2026-11-02",
+  "lieu:b7l9-art-station": "2026-11-04",
+  "lieu:beit-al-hikma-carthage": "2026-11-02",
+  "lieu:caserne-el-attarine": "2026-11-02",
+  "lieu:central-tunis": "2026-11-03",
+  "lieu:cine-350-cite-de-la-culture": "2026-11-02",
+  "lieu:cinema-alhambra-zephyr": "2026-11-02",
+  "lieu:cinema-le-colisee": "2026-11-02",
+  "lieu:cinema-le-palace": "2026-11-02",
+  "lieu:cinemadart": "2026-11-02",
+  "lieu:cite-de-la-culture": "2026-11-03",
+  "lieu:cite-des-sciences-de-tunis": "2026-11-02",
+  "lieu:creative-hub-sidi-bou-said": "2026-11-02",
+  "lieu:dar-ziqua-zaghouan": "2026-11-02",
+  "lieu:douz": "2026-11-02",
+  "lieu:echos-electrik": "2026-11-03",
+  "lieu:el-teatro": "2026-11-02",
+  "lieu:el-warcha": "2026-11-03",
+  "lieu:espace-l-artisto": "2026-11-04",
+  "lieu:fondation-rosa-luxemburg-tunis": "2026-11-02",
+  "lieu:galerie-institut-francais-de-sousse": "2026-11-02",
+  "lieu:galerie-insular-erriadh-djerbahood": "2026-11-02",
+  "lieu:galerie-tgm": "2026-11-02",
+  "lieu:goethe-institut-tunis": "2026-11-03",
+  "lieu:grafiflow": "2026-11-02",
+  "lieu:habibi-downtown-tunis": "2026-11-07",
+  "lieu:habibidowntown": "2026-11-10",
+  "lieu:institut-culturel-italien-de-tunis": "2026-11-03",
+  "lieu:institut-francais-de-sfax": "2026-11-02",
+  "lieu:institut-francais-de-sousse": "2026-11-02",
+  "lieu:institut-francais-de-tunis": "2026-11-02",
+  "lieu:institut-francais-de-tunisie": "2026-11-02",
+  "lieu:instituto-cervantes-de-tunez": "2026-11-03",
+  "lieu:jardin-institut-francais-de-sfax": "2026-11-02",
+  "lieu:l-agora-djerba": "2026-11-02",
+  "lieu:l-art-rue-entree-sur-inscription-lien-en-bio": "2026-11-02",
+  "lieu:la-boite": "2026-11-02",
+  "lieu:la-chapelle-dar-bach-hamba": "2026-11-02",
+  "lieu:la-verriere-le-sous-sol-cafe-resto": "2026-11-06",
+  "lieu:lafayette-tunis": "2026-11-17",
+  "lieu:lagora-la-marsa": "2026-11-02",
+  "lieu:lartisto": "2026-11-11",
+  "lieu:lartisto-lafayette": "2026-11-11",
+  "lieu:le-32bis": "2026-11-02",
+  "lieu:le-violon-bleu-sidi-bou-said": "2026-11-05",
+  "lieu:librairie-alkitab-tunisie-la-marsa": "2026-11-20",
+  "lieu:lieu-3-rue-de-damas-le-belvedere-tunis": "2026-11-04",
+  "lieu:lieu-4d77648b": "2026-11-02",
+  "lieu:maison-des-arts-du-belvedere": "2026-11-02",
+  "lieu:mediatheque-de-l-ift-20-avenue-de-paris-tunis": "2026-11-10",
+  "lieu:mediatheque-de-l-iftunisie-202-avenue-de-paris-tunis": "2026-11-04",
+  "lieu:mediatheque-institut-francais-de-sfax": "2026-11-02",
+  "lieu:mediatheque-institut-francais-de-sousse": "2026-11-02",
+  "lieu:mediatheque-institut-francais-de-tunis": "2026-11-02",
+  "lieu:mouhit": "2026-11-03",
+  "lieu:one-resort": "2026-11-02",
+  "lieu:one-resort-monastir": "2026-11-02",
+  "lieu:pathe-azur-city": "2026-11-02",
+  "lieu:pathe-tunis-city": "2026-11-02",
+  "lieu:quechlet-el-attarine": "2026-11-04",
+  "lieu:residence-du-consul-general-de-france": "2026-11-17",
+  "lieu:russian-house": "2026-11-10",
+  "lieu:salle-albert-camus-institut-francais-de-sfax": "2026-11-02",
+  "lieu:salle-de-cinema-institut-francais-de-sousse": "2026-11-02",
+  "lieu:salle-des-jeunes-createurs-cite-de-la-culture": "2026-11-02",
+  "lieu:saturday-21-november": "2026-11-17",
+  "lieu:shanti": "2026-11-02",
+  "lieu:sociale-sidi-bou-said": "2026-11-02",
+  "lieu:steps-club-sousse": "2026-11-02",
+  "lieu:studio-b52": "2026-11-02",
+  "lieu:tba-studio-52": "2026-11-17",
+  "lieu:theatre-de-l-opera-de-tunis-cite-de-la-culture": "2026-11-17",
+  "lieu:theatre-le-4eme-art": "2026-11-02",
+  "lieu:theatre-municipal-de-tunis": "2026-11-02",
+  "lieu:theatre-municipal-institut-francais-de-tunisie-sfax": "2026-11-04",
+  "lieu:tunisia": "2026-11-18",
+  "lieu:twentyone": "2026-11-09",
+  "lieu:utica-union-tun-the-ind-trade-art": "2026-11-07",
+  "lieu:vox-cafe-institut-francais-de-sousse": "2026-11-02"
+ }
+}

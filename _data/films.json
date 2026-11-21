@@ -1,0 +1,2165 @@
+[
+ {
+  "titre": "Je m'appelle Clara",
+  "id": "je-m-appelle-clara",
+  "image": "assets/programmes/cine-360/9314b97cda39.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Ciné 350 (Cité de la Culture)",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100057029246724/posts/1675696127674679",
+    "source": "cine-360",
+    "source_nom": "Ciné 350",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/8B1Py3/je-mappelle-clara-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "20:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "11:30"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:30",
+       "19:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "11:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "13:30",
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "12:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/je-mappelle-clara/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Azur City",
+    "adresse": "Autoroute A1, entrée de Radès, 2098 Ben Arous",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:05",
+       "22:45"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "15:00",
+       "22:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:05",
+       "17:50",
+       "22:35"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:05"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "20:15"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "13:30",
+       "20:15",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:10",
+       "13:05",
+       "20:15",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:10",
+       "13:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-360/2026-11-20-je-m-appelle-clara.md",
+   "_events/auto/cine-agora/2026-11-20-je-mappelle-clara.md",
+   "_events/auto/cine-alhambra/2026-11-23-je-m-appelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-je-m-appelle-clara-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-je-m-appelle-clara-cinema-le-palace.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-je-m-appelle-clara-pathe-azur-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-je-m-appelle-clara-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-je-m-appelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-je-m-appelle-clara.md"
+  ],
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "Derrière l’écran d’un centre d’appels, le film de Sarra Abidi « Je m’appelle Clara » explore la solitude et la routine",
+    "lien": "https://www.lapresse.tn/2026/11/18/derriere-lecran-dun-centre-dappels-le-film-de-sarra-abidi-je-mappelle-clara-explore-la-solitude-et-la-routine/",
+    "source_nom": "La Presse (culture)",
+    "date": "2026-11-18"
+   }
+  ],
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d’un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d’escalade militaire, le président réunit son état-major dans le bunker de l’Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir prendre une décision vertigineuse.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "BAKMA - بكمة",
+  "id": "bakma",
+  "image": "assets/images/5e2060567217.png",
+  "imdb": "tt43666030",
+  "duree": null,
+  "genres": [
+   "Horreur",
+   "Thriller"
+  ],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:45"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "16:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/bakma/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "20:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/bakma",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "16:45",
+       "19:15",
+       "22:35"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "12:00",
+       "14:30",
+       "17:00",
+       "19:30",
+       "22:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:30",
+       "14:00",
+       "16:30",
+       "19:00",
+       "21:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "11:30",
+       "14:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-bakma.md",
+   "_events/auto/cine-alhambra/2026-11-23-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-bakma-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-bakma-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-bakma-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-bakma.md"
+  ],
+  "wikidata": "Q142120796",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": true,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "« Bakma », le film d’Abdelhamid Bouchnak : face à l’inhumain",
+    "lien": "https://realites.com.tn/fr/bakma-le-film-dabdelhamid-bouchnak-face-a-linhumain/",
+    "source_nom": "Réalités (culture)",
+    "date": "2026-10-17"
+   }
+  ],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "weekend - ويكاند",
+  "id": "weekend",
+  "image": "assets/images/ce7c7b7cfe8d.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/moEQl8/weekend-ويكاند-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "13:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunisia",
+    "lien": "https://tunis.events/fr/cinema/weekend-%D9%88%D9%8A%D9%83%D8%A7%D9%86%D8%AF",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "18:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/weekend/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/weekend",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:50",
+       "19:00",
+       "23:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:00",
+       "15:40",
+       "18:05",
+       "19:00",
+       "23:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:00",
+       "17:30",
+       "19:00",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-weekend.md",
+   "_events/auto/cine-alhambra/2026-11-23-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend-l-agora-marsa.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-weekend.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Dar El 3ers - دار العرس",
+  "id": "dar-el-3ers",
+  "image": "assets/images/b5cc373e5cdf.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "17:45"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "17:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:00",
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:00",
+       "14:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/dar-el-3ers-%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%B3",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "16:55",
+       "19:40",
+       "22:25"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:50",
+       "13:35",
+       "16:20",
+       "20:15",
+       "21:55"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "11:35",
+       "14:20",
+       "17:05",
+       "19:40",
+       "22:30"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "11:00",
+       "13:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-23-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-dar-el-3ers-cinema-le-colisee.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-dar-el-3ers-pathe-tunis-city.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-dar-el-3ers.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Jupiter",
+  "id": "jupiter",
+  "image": "assets/images/36d2d9a4c8ad.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/jupiter",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/jupiter/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "18:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-22-jupiter.md",
+   "_events/auto/cine-alhambra/2026-11-23-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-11-23-jupiter.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "HADOOTA / حدوتة",
+  "id": "hadoota",
+  "image": "assets/images/7ee663cee1e5.jpg",
+  "imdb": "tt43638234",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/hadoota",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "13:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "13:15"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/hadoota-%D8%AD%D8%AF%D9%88%D8%AA%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "14:30",
+       "15:20",
+       "17:00",
+       "18:00",
+       "19:30",
+       "20:30",
+       "21:45",
+       "22:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "14:50",
+       "15:35",
+       "17:20",
+       "19:00",
+       "19:50",
+       "22:20"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "12:05",
+       "14:35",
+       "17:05",
+       "19:35",
+       "20:05",
+       "22:05"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "12:00",
+       "14:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-hadoota.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-hadoota.md"
+  ],
+  "wikidata": "Q142191539",
+  "letterboxd": "hadoota",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "HADOOTA au cinéma : 1 séance cette semaine à Le Colisée. Prochaine séance mar. 17 nov. à 17:45. .",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "assets/images/b87fd03b9b45.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-23-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-23-evenement.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Rue Málaga / زنقة مالقة",
+  "id": "rue-malaga",
+  "image": "assets/images/4c49a95d3dcd.jpg",
+  "imdb": "tt32429174",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-23"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/mZr0Om/rue-malaga-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "17:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/rue-malaga-%D8%B2%D9%86%D9%82%D8%A9-%D9%85%D8%A7%D9%84%D9%82%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-23"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "15:05"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-rue-malaga.md",
+   "_events/auto/tunis-events-cinema/2026-11-23-rue-malaga.md"
+  ],
+  "wikidata": "Q135438796",
+  "letterboxd": "calle-malaga",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Rue Málaga est un film dramatique multinational réalisé par Maryam Touzani et sorti en 2025. Il s'agit d'une coproduction hispanophone entre le Maroc, la France, l'Espagne, l'Allemagne et la Belgique.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Rue_M%C3%A1laga"
+ },
+ {
+  "titre": "Billie à la croisée des mondes",
+  "id": "billie-a-la-croisee-des-mondes",
+  "image": "",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-23-billie-a-la-croisee-des-mondes.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Comment braquer une banque ?",
+  "id": "comment-braquer-une-banque",
+  "image": "assets/images/913d59a66384.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/comment-braquer-une-banque",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "22:25"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "13:20"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "13:20",
+       "15:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "13:20"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-comment-braquer-une-banque.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Comment braquer une banque ? au cinéma : 2 séances cette semaine à Pathé Tunis City. Prochaine séance mar. 17 nov. à 16:50.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Godzilla Minus Zero",
+  "id": "godzilla-minus-zero",
+  "image": "assets/images/753cc2a66e34.jpg",
+  "imdb": "tt34384661",
+  "duree": null,
+  "genres": [
+   "Action",
+   "Drame",
+   "Horreur"
+  ],
+  "jours": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/godzilla-minus-zero",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "12:50"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "12:20"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "12:20"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-godzilla-minus-zero.md"
+  ],
+  "wikidata": "Q136700760",
+  "letterboxd": "godzilla-minus-zero",
+  "age": "-12",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Godzilla Minus Zero (ゴジラ-0.0 , Gojira Mainasu Zero) ou Godzilla-0.0 au Québec, est un film japonais réalisé par Takashi Yamazaki et sorti en 2026. Il s'agit du 39e film mettant en scène Godzilla, le 34e produit par Tōhō Studios. Sixième opus de l'ère Reiwa de la franchise, il est la suite directe de Godzilla Minus One, du même réalisateur, sorti en 2023.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Godzilla_Minus_Zero"
+ },
+ {
+  "titre": "Hope",
+  "id": "hope",
+  "image": "assets/images/569783d0d51c.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-25"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6449",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-25"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-25",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-25-hope.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film Hope de Na Hong-jin.\nRésumé : (VOSTFR, Interdit au -12 ans avec avertissement)\nLes renforts sont partis maîtriser des feux de forêt et toutes les communications sont coupées.\nAu poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "HUNGER GAMES: LEVER DE SOLEIL",
+  "id": "hunger-games-lever-de-soleil",
+  "image": "assets/images/01734d4c174e.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/hunger-games-lever-de-soleil",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "17:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-hunger-games-lever-de-soleil.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "HUNGER GAMES: LEVER DE SOLEILAlors que le jour se lève sur les 50e Hunger Games annuels, la peur s'empare des districts de Panem. Cette année, en l'honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d'être avec la fille qu'il aime.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Il faut brûler Maman",
+  "id": "il-faut-bruler-maman",
+  "image": "assets/images/4a784a3d66b6.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/il-faut-bruler-maman",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:15"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:15"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:05"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-il-faut-bruler-maman.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Il faut brûler Maman au cinéma : 3 séances cette semaine à Pathé Tunis City. Prochaine séance dim. 22 nov. à 10:15.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Josep",
+  "id": "josep",
+  "image": "assets/images/a809c1cadfc4.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6548",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-27-josep.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film d'animation Josep de Aurel.\nRésumé : (Public adulte)\nFévrier 1939. Submergé par le flot de Républicains fuyant la dictature franquiste, le gouvernement français les parque dans des camps. Deux hommes séparés par les barbelés vont se lier d’amitié. L’un est gendarme, l’autre est dessinateur.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "L'île des souvenirs / Forgotten Island",
+  "id": "l-ile-des-souvenirs-forgotten-island",
+  "image": "assets/images/457720e71e1f.jpg",
+  "imdb": "tt36583977",
+  "duree": null,
+  "genres": [
+   "Animation",
+   "Aventure",
+   "Comédie"
+  ],
+  "jours": [
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/lile-des-souvenirs-forgotten-island",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-l-ile-des-souvenirs-forgotten-island.md"
+  ],
+  "wikidata": "Q138335503",
+  "letterboxd": "forgotten-island-2026",
+  "age": "",
+  "tunisien": false,
+  "jeune": true,
+  "presse": [],
+  "synopsis": "L'Île des souvenirs ou L'Île de l'oubli au Québec est un film d'animation américain réalisé par Joel Crawford et Januel P. Mercado et sorti en 2026",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/L'%C3%8Ele_des_souvenirs"
+ },
+ {
+  "titre": "Le Mystère Lucy Lost",
+  "id": "le-mystere-lucy-lost",
+  "image": "assets/images/42400672d09b.webp",
+  "imdb": "tt10569744",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/le-mystere-lucy-lost/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "15:00"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-21-le-mystere-lucy-lost.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-le-mystere-lucy-lost.md"
+  ],
+  "wikidata": "Q141827108",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Le Mystère Lucy Lost est un film d'animation français réalisé par Olivier Clert sorti en 2026. Il s'agit d'une adaptation du roman Listen to the Moon de Michael Morpurgo.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Le_Myst%C3%A8re_Lucy_Lost"
+ },
+ {
+  "titre": "Les Malheurs de Sophie",
+  "id": "les-malheurs-de-sophie",
+  "image": "",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "Médiathèque, Institut français de Tunis",
+    "adresse": "",
+    "lien": "https://www.institutfrancais-tunisie.com/wp-content/uploads/2026/10/CALENDRIER-11-2026.pdf",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "14:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-21-les-malheurs-de-sophie.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "de Christophe Honoré 2016, 1h46mn, comédie.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Level Five",
+  "id": "level-five",
+  "image": "assets/images/6e5ef08a9c59.avif",
+  "imdb": "tt37231032",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-25"
+  ],
+  "salles": [
+   {
+    "nom": "Salle de cinéma, Institut français de Sousse",
+    "adresse": "",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6514",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-25"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-25",
+      "heures": [
+       "18:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-25-level-five.md"
+  ],
+  "wikidata": "Q141161968",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Dans le cadre de \"Novembre Numérique 2026\", l'Institut français de Tunisie à Sousse vous propose la projection du film Level Five de Chris Marker.\nRésumé :\nUne femme, un ordinateur, un interlocuteur invisible : tel est le dispositif à partir duquel Level Five se construit.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Mochy",
+  "id": "mochy",
+  "image": "assets/images/5d770ef37092.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/mochy",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-mochy.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Mochy (2026)SynopsisMochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien. Défiant tous les obstacles, il va tout faire pour réaliser ce projet fou avec le secret espoir d’y trouver l’humain qui l’aimera pour la vie.Bande-annonce",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Mon beau-père, ma belle-fille et moi",
+  "id": "mon-beau-pere-ma-belle-fille-et-moi",
+  "image": "",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-23-mon-beau-pere-ma-belle-fille-et-moi.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Paper Tiger",
+  "id": "paper-tiger",
+  "image": "",
+  "imdb": "tt34385689",
+  "duree": null,
+  "genres": [
+   "Policier"
+  ],
+  "jours": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-23",
+     "2026-11-24",
+     "2026-11-25",
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-23-paper-tiger.md"
+  ],
+  "wikidata": "Q134708172",
+  "letterboxd": "paper-tiger-1",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Paper_Tiger"
+ },
+ {
+  "titre": "Scrooge / Ebenezer",
+  "id": "scrooge-ebenezer",
+  "image": "assets/images/68106cae3bc9.jpg",
+  "imdb": "tt38773219",
+  "duree": null,
+  "genres": [
+   "Fantastique"
+  ],
+  "jours": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/scrooge-ebenezer",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "17:50"
+      ]
+     },
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "12:25",
+       "17:50"
+      ]
+     },
+     {
+      "jour": "2026-11-23",
+      "heures": [
+       "10:55",
+       "17:50"
+      ]
+     },
+     {
+      "jour": "2026-11-24",
+      "heures": [
+       "10:55"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-scrooge-ebenezer.md"
+  ],
+  "wikidata": "Q136650058",
+  "letterboxd": "ebenezer-a-christmas-carol",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Scrooge est un film américain réalisé par Ti West sorti en 2026. Il s'agit d'une nouvelle adaptation du conte Un chant de Noël de Charles Dickens.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Scrooge_(film%2C_2026)"
+ },
+ {
+  "titre": "Shaun le Mouton : La Bêêête d'Halloween",
+  "id": "shaun-le-mouton-la-beeete-d-halloween",
+  "image": "assets/images/e2841be404a6.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [
+   "Animation"
+  ],
+  "jours": [
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "Pathé Tunis City",
+    "adresse": "Centre Commercial Tunis City, 2032 Cebalat Ben Ammar",
+    "lien": "https://tunis.events/fr/cinema/shaun-le-mouton-la-beeete-dhalloween",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "10:35"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-22-shaun-le-mouton-la-beeete-d-halloween.md"
+  ],
+  "jeune": true,
+  "presse": [],
+  "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Sous les étoiles de Paris",
+  "id": "sous-les-etoiles-de-paris",
+  "image": "assets/images/bb25276097df.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "Médiathèque, Institut français de Sfax",
+    "adresse": "",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6542",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-27-sous-les-etoiles-de-paris.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie à Sfax invite son jeune public à découvrir le film Sous les étoiles de Paris de Claude Drexel.\nRésumé :\nDepuis de nombreuses années, Christine vit sous un pont de Paris, isolée de toute famille et amis. Par une nuit comme il n’en existe que dans les contes, un jeune garçon de 8 ans fait irruption devant son abri.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "The Hunger Games: Sunrise on the Reaping",
+  "id": "the-hunger-games-sunrise-on-the-reaping",
+  "image": "assets/images/b0ccb061405b.webp",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-22"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/the-hunger-games-sunrise-on-the-reaping/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-22"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-22",
+      "heures": [
+       "20:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-19-the-hunger-games-sunrise-on-the-reaping.md",
+   "_events/auto/tunis-events-cinema/2026-11-22-the-hunger-games-sunrise-on-the-reaping.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Alors que le jour se lève sur les 50e Hunger Games annuels, la peur s’empare des districts de Panem. Cette année, en l’honneur du Quarter Quell, deux fois plus de tributs seront tirés au sort. Dans le District 12, Haymitch Abernathy essaie de ne pas trop penser à ses chances. Tout ce qui lui importe est d’être avec la fille qu’il aime. Mais lorsque qu’il est appelé, tous ses rêves s’effondrent.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Touskié Tounsi",
+  "id": "touskie-tounsi",
+  "image": "assets/images/f738c4dcb71a.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/touskie-tounsi/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Plongez dans l’univers drôle et percutant de « Touskié Tounsi », le spectacle de Mehdi Bachtarzi ! À travers des anecdotes savoureuses et un regard tendre sur les cultures et le quotidien, il nous embarque dans un voyage hilarant entre traditions, identité et modernité. Un moment de partage, de rires et d’émotions à ne pas manquer.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Un monde fragile et merveilleux",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "assets/images/90df52b196d1.jpg",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/mnMEyk/un-monde-fragile-et-merveilleux-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "21:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis",
+    "lien": "https://kapitalis.com/tunisie/2026/11/10/un-monde-fragile-et-merveilleux-de-cyril-aris-sort-en-salles-a-tunis/",
+    "source_nom": "Kapitalis (culture)",
+    "date": "2026-11-10"
+   }
+  ],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
+  "titre": "UN MONDE FRAGILE ET MERVEILLEUX نجوم الأمل",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "https://lagora.tn/wp-content/uploads/2026/11/نجوم-الأمل.png",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/un-monde-fragile-et-merveilleux-%d9%86%d8%ac%d9%88%d9%85-%d8%a7%d9%84%d8%a3%d9%85%d9%84/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "16:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-19-un-monde-fragile-et-merveilleux.md",
+   "_events/auto/tunis-events-cinema/2026-11-21-un-monde-fragile-et-merveilleux-l-agora-marsa.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
+  "titre": "What Else",
+  "id": "what-else",
+  "image": "assets/images/6183a6d14a92.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-21"
+  ],
+  "salles": [
+   {
+    "nom": "CinéMadart",
+    "adresse": "Rte de La Goulette, Site archéologique de Carthage, Carthage",
+    "lien": "https://tunis.events/events/3xOGGm/what-else-cinemadart",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-21"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-21",
+      "heures": [
+       "14:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-21-what-else.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ }
+]
