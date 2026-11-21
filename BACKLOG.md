@@ -13,12 +13,13 @@ Les points restants sont suivis en issues GitHub : [liste des issues](https://gi
 Chaque lundi, le workflow « Synchro tickets » compare les cases non cochées de ce fichier aux issues ouvertes
 (`scrapers/synchro_tickets.py`) et signale les écarts dans son résumé.
 
-- Étiquette **décision** (choix de conception) : [#107 Page « Presse »](https://github.com/benjello/agenda-culturel-tunis/issues/107),
-  [#156 brancher le formulaire sans compte GitHub](https://github.com/benjello/agenda-culturel-tunis/issues/156).
+- Étiquette **décision** (choix de conception) : [#156 brancher le formulaire sans compte GitHub](https://github.com/benjello/agenda-culturel-tunis/issues/156).
 - Étiquette **amélioration** : [#114 test du formulaire de contribution](https://github.com/benjello/agenda-culturel-tunis/issues/114).
 - Aussi : [#127 Search Console et Bing](https://github.com/benjello/agenda-culturel-tunis/issues/127) (compte de Mahdi requis),
   [#153 flux de presse inactifs](https://github.com/benjello/agenda-culturel-tunis/issues/153),
   [#163 crédit Apify](https://github.com/benjello/agenda-culturel-tunis/issues/163) (alerte automatique, se ferme seule).
+
+Décision de Mahdi (21 nov. 2026) : pas de page « Presse » (#107 fermé, non planifié).
 
 Traités le 20 nov. 2026 : #106 (festivals ajoutés : Oud, Jazzmean, Jazzit), #108 (propositions triées : TGM, Belvédère
 et Ibn Rachiq passent dans « Sources recherchées »), #109 (fiches de l'Institut français contrôlées), #137 (@kenza.tritar branché).
