@@ -145,6 +145,8 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 
 - [x] Cinéma : lire les horaires de chaque séance (fiches film de tunis.events).
 - [x] Page Festivals : calendrier annuel (JTC, JCC…) avec statut du programme.
+- [x] JTC 2026 : programme du 24 au 28 novembre saisi à la main (`_events/manuel/*-jtc-*.md`, 85 séances), lu à la main dans le PDF
+  officiel (scan sans texte, donc pas de scraper). Reste à faire pour 2027 : OCR du PDF (`pdftoppm` + `tesseract`) si le format reste le même.
 - [x] Institut français : lire le PDF mensuel du programme.
 - [x] Grand écran : filtres en colonne fixe à gauche, cartes sur 2-3 colonnes avec début de notice,
   fiche ouverte dans un panneau à droite sans changer de page (le téléphone garde une colonne).
