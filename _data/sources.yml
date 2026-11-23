@@ -1663,6 +1663,18 @@
     resultats: 8
   note: Association d'art contemporain de la médina (Dream City, résidences, ateliers). Proposé par Mahdi.
 
+- id: lartrue
+  nom: L'Art Rue (site)
+  url: https://lartrue.org/fr/agenda
+  type: lieu
+  genre: collectif
+  scraper: lartrue
+  categorie: multidisciplinaire
+  actif: true
+  options:
+    lieu: "L'Art Rue, Dar Bach Hamba, Médina de Tunis"
+  note: Agenda du site de l'association (Dream City, résidences). Liste HTML sans flux ; les projets datés par années (« 2023-2027 ») sont ignorés. Au 23 nov. 2026 l'agenda ne montrait qu'un projet de coopération, donc 0 événement attendu hors temps fort.
+
 - id: ig-ftcc
   actif: false   # en pause : compte introuvable, privé ou jamais lu (Apify)
   nom: Fédération tunisienne des ciné-clubs (Instagram)

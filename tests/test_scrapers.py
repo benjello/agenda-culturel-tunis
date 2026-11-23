@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 from scrapers import commun, ecriture
 from scrapers.commun import slug
-from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, tunis_events_cinema, jsonld, liste_fiches, pathe, rss, teskerti
+from scrapers.sources import billetterie_sktech, facebook, facebook_programmes, ical, tunis_events_cinema, jsonld, liste_fiches, lartrue, pathe, rss, teskerti
 
 FIX = Path(__file__).parent / "fixtures"
 FUTUR = dt.date.today().year + 1
@@ -171,6 +171,23 @@ class ListeFiches(unittest.TestCase):
         self.assertEqual(evs[0].titre, "What else ?")
         self.assertEqual(evs[0].debut, dt.datetime(FUTUR, 11, 4, 18, 0))
         self.assertEqual(evs[0].lieu, "Institut français de Tunis")
+
+
+class LArtRue(unittest.TestCase):
+    def test_agenda(self):
+        src = {"id": "lartrue", "nom": "L'Art Rue", "url": "https://lartrue.org/fr/agenda"}
+        html = fixture("lartrue-agenda.html").replace("{an}", str(FUTUR))
+        with mock.patch.object(commun, "telecharger", lambda url: html):
+            evs = lartrue.recuperer(src)
+        # « Slash Transition » (2023-2027) n'a pas de date précise : ignoré.
+        self.assertEqual([(e.titre, e.debut, e.fin) for e in evs],
+                         [("Exemple : concert dans la médina", dt.datetime(FUTUR, 11, 12), dt.datetime(FUTUR, 11, 14))])
+        self.assertEqual(evs[0].genres, ["Musique"])
+        self.assertIn("Dar Bach Hamba", evs[0].lieu)
+
+    def test_plages(self):
+        self.assertEqual(lartrue.dates_de_la_vignette("2023-2027"), [])
+        self.assertEqual(lartrue.dates_de_la_vignette("12 novembre 2026"), [dt.datetime(2026, 11, 12)])
 
 
 class Pathe(unittest.TestCase):
