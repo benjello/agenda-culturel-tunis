@@ -2,7 +2,7 @@
 title: "La Princesse et le plombier (JTC)"
 date: "2026-11-28 16:00"
 venue: "Centre des arts dramatiques et scéniques de Médenine"
-ville: "autres"
+ville: "sud"
 category: "theatre"
 link: "https://jtcarthage.tn/"
 source: "jtc-programme"
