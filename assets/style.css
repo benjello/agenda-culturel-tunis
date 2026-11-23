@@ -67,7 +67,11 @@ table.sources small { color: var(--muted); }
 .jours-choix button.active { background: #c0392b; border-color: #c0392b; color: #fff; }
 .film-fiche { display: flex; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; }
 .film-fiche .affiche { flex: 0 0 92px; width: 92px; height: 136px; object-fit: cover; border-radius: 6px; background: var(--line); }
-.film-fiche .affiche.vide { display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.film-fiche .affiche.vide { display: flex; align-items: center; justify-content: center; padding: 6px; box-sizing: border-box; text-align: center; overflow: hidden;
+  background: linear-gradient(160deg, var(--line), transparent), var(--line); border: 1px solid var(--line); }
+.film-fiche .affiche.vide span { font-size: .78rem; font-weight: 600; line-height: 1.2; overflow-wrap: anywhere; max-height: 100%; }
+.film-fiche .affiche.vide::before { content: "🎬"; display: block; position: absolute; opacity: .15; font-size: 3rem; }
+.film-fiche .affiche.vide { position: relative; }
 .film-corps { min-width: 0; }
 .film-corps h3 { margin: 0 0 4px; font-size: 1.05rem; }
 .film-salles { list-style: none; margin: 8px 0 0; padding: 0; }
