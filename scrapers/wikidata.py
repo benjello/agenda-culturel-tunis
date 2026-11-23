@@ -6,6 +6,8 @@ en ne gardant que les films récents qui ont un identifiant IMDb. On en tire :
   genres   ramenés à une liste courte (Drame, Comédie, Animation…)
   age      classement français : Tous publics, -12, -16, -18 (quand Wikidata le connaît)
   tunisien film produit en Tunisie (pays d'origine)
+  affiche  fichier Wikimedia Commons de l'affiche (P3383), à défaut l'image du film (P18) ou la
+           vignette de son article Wikipédia : repli quand la salle n'a publié aucune affiche
 
 Les réponses sont gardées dans _data/wikidata.json pour ne pas réinterroger Wikidata chaque
 jour ; un film introuvable est recherché de nouveau après une semaine.
@@ -15,6 +17,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+from urllib.parse import quote
 
 import requests
 
@@ -25,6 +28,7 @@ API = "https://www.wikidata.org/w/api.php"
 UA = {"User-Agent": "agenda-culturel-tunis/1.0 (https://github.com/benjello/agenda-culturel-tunis)"}
 TUNISIE = "Q948"
 P_IMDB, P_GENRE, P_PAYS, P_DATE, P_NATURE = "P345", "P136", "P495", "P577", "P31"
+P_AFFICHE, P_IMAGE = "P3383", "P18"  # affiche de film, image (Wikimedia Commons)
 P_LETTERBOXD = "P6127"  # identifiant Letterboxd du film (sa « slug », CC0 comme le reste de Wikidata)
 FILM = "Q11424"
 P_AGE_CNC = "P2758"  # classement CNC (France)
@@ -66,7 +70,7 @@ def _annee(entite: dict) -> int:
     return max(annees) if annees else 0
 
 
-def _entites(ids: list[str], props: str = "claims|labels", langues: str = "fr|en") -> dict:
+def _entites(ids: list[str], props: str = "claims|labels|sitelinks", langues: str = "fr|en") -> dict:
     res = {}
     for i in range(0, len(ids), 40):
         res.update(_api(action="wbgetentities", ids="|".join(ids[i:i + 40]),
@@ -77,6 +81,38 @@ def _entites(ids: list[str], props: str = "claims|labels", langues: str = "fr|en
 def _libelle(e: dict) -> str:
     lab = e.get("labels", {})
     return (lab.get("fr") or lab.get("en") or {}).get("value", "")
+
+
+def url_commons(fichier: str, largeur: int = 400) -> str:
+    """Adresse d'une image de Wikimedia Commons à partir de son nom de fichier."""
+    return "https://commons.wikimedia.org/wiki/Special:FilePath/" + quote(fichier.replace(" ", "_")) + f"?width={largeur}"
+
+
+def vignette_wikipedia(e: dict) -> str:
+    """Image principale de l'article Wikipédia du film (français puis anglais), ou ''."""
+    for wiki, domaine in (("frwiki", "fr"), ("enwiki", "en")):
+        titre = e.get("sitelinks", {}).get(wiki, {}).get("title")
+        if not titre:
+            continue
+        pages = requests.get(f"https://{domaine}.wikipedia.org/w/api.php", headers=UA, timeout=30, params={
+            "format": "json", "action": "query", "prop": "pageimages", "piprop": "thumbnail",
+            "pithumbsize": 400, "titles": titre}).json().get("query", {}).get("pages", {})
+        for p in pages.values():
+            if p.get("thumbnail", {}).get("source"):
+                return p["thumbnail"]["source"]
+    return ""
+
+
+def affiche(e: dict) -> str:
+    """Affiche libre du film : P3383, puis P18, puis la vignette Wikipédia ; '' si rien."""
+    for prop in (P_AFFICHE, P_IMAGE):
+        for v in _valeurs(e, prop):
+            if isinstance(v, str) and v:
+                return url_commons(v)
+    try:
+        return vignette_wikipedia(e)
+    except (requests.RequestException, ValueError):
+        return ""
 
 
 def chercher(morceaux: list[str], annee_min: int) -> dict | None:
@@ -122,7 +158,7 @@ def fiche(qid: str, e: dict) -> dict:
     return {"qid": qid, "imdb": next((v for v in _valeurs(e, P_IMDB) if str(v).startswith("tt")), ""),
             "letterboxd": next((str(v) for v in _valeurs(e, P_LETTERBOXD) if isinstance(v, str) and v), ""),
             "genres": genres[:3], "age": age, "tunisien": TUNISIE in _valeurs(e, P_PAYS),
-            "annee": _annee(e), "titre_wikidata": _libelle(e)}
+            "affiche": affiche(e), "annee": _annee(e), "titre_wikidata": _libelle(e)}
 
 
 def lire_cache() -> dict:
@@ -140,7 +176,7 @@ def completer(films: list[dict], morceaux_de) -> None:
         c = cache.get(cle)
         a_refaire = c is None or (c.get("qid") is None and
                                   aujourd_hui - dt.date.fromisoformat(c["verifie"]) > dt.timedelta(days=7)) \
-            or (c.get("qid") and "letterboxd" not in c)  # notices écrites avant l'ajout de Letterboxd
+            or (c.get("qid") and ("letterboxd" not in c or "affiche" not in c))  # notices écrites avant ces ajouts
         if a_refaire:
             try:
                 trouve = chercher(sorted(morceaux_de(f["titre"])), aujourd_hui.year - 3)
@@ -156,6 +192,7 @@ def completer(films: list[dict], morceaux_de) -> None:
             f["wikidata"] = c["qid"]
             f["imdb"] = f.get("imdb") or c.get("imdb", "")
             f["letterboxd"] = c.get("letterboxd", "")
+            f["affiche_libre"] = c.get("affiche", "")
             f["genres"] = f.get("genres") or c.get("genres", [])
             f["age"] = c.get("age", "")
             f["tunisien"] = bool(c.get("tunisien"))

@@ -127,11 +127,33 @@ def typologie(films: list[dict]) -> None:
         f["jeune"] = bool(f.get("jeune") or (_JEUNE.search(genres) and f.get("age", "") in ("", "Tous publics", None)))
 
 
+def affiches_libres(films: list[dict]) -> None:
+    """Un film sans affiche reprend celle de Wikidata/Commons/Wikipédia, copiée dans assets/images/
+    (le lien externe peut changer). Introuvable : l'accueil affiche un cadre avec le titre."""
+    from . import images
+    for f in films:
+        url = f.pop("affiche_libre", "")
+        if f.get("image") or not url:
+            continue
+        try:
+            etat, detail, octets, ext = images.recuperer(url)
+        except Exception as exc:  # noqa: BLE001 — un repli en panne ne doit pas arrêter les scrapers
+            print(f"  affiche · {f['titre']} : {type(exc).__name__}")
+            continue
+        if etat == "ok" and octets:
+            f["image"] = images.copier(url, octets, ext)
+            print(f"  affiche · {f['titre']} → {f['image']} (Wikimedia/Wikipédia)")
+        else:
+            print(f"  affiche · {f['titre']} : {detail or etat}")
+
+
 def ecrire(dossier: Path = DOSSIER_AUTO, fichier: Path = FICHIER, enrichir: bool = True) -> int:
     films = regrouper(dossier)
     if enrichir:
         from . import wikidata
         wikidata.completer(films, morceaux)  # genres, âge, IMDb, film tunisien
+    if enrichir:
+        affiches_libres(films)
     typologie(films)
     from . import critiques
     critiques.rattacher(films)  # « Ce qu'en dit la presse »

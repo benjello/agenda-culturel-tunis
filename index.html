@@ -105,8 +105,8 @@ layout: default
     {%- comment -%} Fiche du film : la dernière séance connue ; elle liste toutes les autres salles et dates (« Autres dates et autres lieux »). {%- endcomment -%}
     {%- assign dernier = f.fichiers | last -%}{%- assign fiche_ev = site.events | where: "path", dernier | first -%}
     {%- if f.image != "" %}{% if f.image contains "://" %}{% assign src = f.image %}{% else %}{% assign src = f.image | relative_url %}{% endif %}
-    {%- if fiche_ev %}<a class="affiche-lien" href="{{ fiche_ev.url | relative_url }}" tabindex="-1" aria-hidden="true">{% endif %}<img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy">{% if fiche_ev %}</a>{% endif %}
-    {%- else %}<div class="affiche vide">🎬</div>{% endif %}
+    {%- if fiche_ev %}<a class="affiche-lien" href="{{ fiche_ev.url | relative_url }}" tabindex="-1" aria-hidden="true">{% endif %}<img class="affiche" src="{{ src }}" alt="Affiche de {{ f.titre | escape }}" loading="lazy" onerror="this.outerHTML=this.dataset.repli" data-repli="&lt;div class=&quot;affiche vide&quot;&gt;&lt;span&gt;{{ f.titre | escape | escape }}&lt;/span&gt;&lt;/div&gt;">{% if fiche_ev %}</a>{% endif %}
+    {%- else %}<div class="affiche vide" role="img" aria-label="Pas d'affiche pour {{ f.titre | escape }}"><span>{{ f.titre | escape }}</span></div>{% endif %}
     <div class="film-corps">
       <h3>{% if fiche_ev %}<a href="{{ fiche_ev.url | relative_url }}" class="film-titre">{{ f.titre }}</a>{% else %}{{ f.titre }}{% endif %}</h3>
       <p class="badges">
