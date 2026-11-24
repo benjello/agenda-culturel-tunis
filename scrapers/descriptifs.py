@@ -105,7 +105,7 @@ def lire_cache() -> dict:
         d = json.loads(CACHE.read_text())
     except (OSError, ValueError):
         d = {}
-    for k in ("pages", "recherches", "lieux", "festivals", "musees", "films", "artistes", "collectifs"):
+    for k in ("pages", "recherches", "lieux", "festivals", "musees", "films", "artistes", "collectifs", "affiches"):
         d.setdefault(k, {})
     return d
 
@@ -309,6 +309,61 @@ def tmdb(film: dict, cle: str) -> dict | None:
             return {"texte": _nettoyer(x["overview"]), "source": "TMDb",
                     "url": f"https://www.themoviedb.org/movie/{x['id']}"}
     return None
+
+
+def tmdb_affiche(film: dict, cle: str) -> str:
+    """URL de l'affiche TMDb du film (par IMDb, sinon par le titre), ou ''."""
+    params = {"api_key": cle, "language": "fr-FR"}
+    resultats = []
+    if film.get("imdb"):
+        r = requests.get(f"{TMDB}/find/{film['imdb']}", params={**params, "external_source": "imdb_id"}, timeout=30)
+        r.raise_for_status()
+        resultats = r.json().get("movie_results", [])
+    if not resultats:
+        titre = re.split(r"\s+[-–/|]\s+", film["titre"])[0]
+        r = requests.get(f"{TMDB}/search/movie", params={**params, "query": titre}, timeout=30)
+        r.raise_for_status()
+        annee_min = str(dt.date.today().year - 3)
+        resultats = [x for x in r.json().get("results", []) if (x.get("release_date") or "9999")[:4] >= annee_min]
+    for x in resultats:
+        if x.get("poster_path"):
+            return "https://image.tmdb.org/t/p/w342" + x["poster_path"]
+    return ""
+
+
+def affiches_tmdb(films: list[dict], cache: dict, budget: "Budget") -> int:
+    """Les films sans affiche prennent celle de TMDb (copiée dans assets/images/). Ne lève jamais d'erreur.
+    Le résultat est gardé dans cache["affiches"] : un échec n'est réessayé qu'après REESSAI."""
+    cle = os.environ.get("TMDB_API_KEY", "").strip()
+    if not cle:
+        return 0
+    from . import images
+    n = 0
+    for f in films:
+        if f.get("image"):
+            continue
+        c = cache["affiches"].get(f["id"])
+        if c and c.get("image") and (RACINE / c["image"]).is_file():
+            f["image"] = c["image"]
+            n += 1
+            continue
+        if c and not c.get("image") and dt.date.today() - dt.date.fromisoformat(c["verifie"]) <= REESSAI:
+            continue
+        if not budget.prendre():
+            continue
+        try:
+            url = tmdb_affiche(f, cle)
+            etat, detail, octets, ext = images.recuperer(url) if url else ("cassee", "aucune affiche TMDb", b"", "")
+        except Exception as exc:  # noqa: BLE001
+            print(f"  affiche TMDb · {f['titre']} : {type(exc).__name__}")
+            continue
+        chemin = images.copier(url, octets, ext) if etat == "ok" and octets else ""
+        cache["affiches"][f["id"]] = {"image": chemin, "verifie": _aujourd_hui(), "source": "TMDb"}
+        print(f"  affiche TMDb · {f['titre']} → {chemin or detail}")
+        if chemin:
+            f["image"] = chemin
+            n += 1
+    return n
 
 
 # ---------------------------------------------------------------- les étapes
@@ -548,6 +603,8 @@ def main(argv=None) -> int:
     lire_pages(evts, cache, Budget(MAX_PAGES, not args.sans_web))
     recherches = Budget(MAX_RECHERCHES, not args.sans_web)
     films = completer_films(cache, recherches, evts, mains)
+    if affiches_tmdb(films, cache, recherches):
+        FILMS.write_text(json.dumps(films, ensure_ascii=False, indent=1) + "\n")
     n = ecrire_notices(evts, cache, films, mains)
     completer_lieux(cache, recherches, mains)
     oublier(cache)

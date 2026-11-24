@@ -106,6 +106,7 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 - Données ouvertes : `agenda.ics` et `evenements.json`, licence CC BY 4.0.
 - Thème Cinéma : une fiche par film (affiche, lien IMDb), puis les salles du jour choisi (`_data/films.json`).
 - [x] Films sans affiche (salle qui ne publie qu'un programme Facebook) : repli sur l'affiche libre de Wikidata (P3383, P18) ou la vignette Wikipédia, copiée dans `assets/images/` ; sinon cadre avec le titre du film (plus de 🎬 vide). Limite connue : un film absent de Wikidata (ex. sorties très récentes) n'a que le cadre titré ; TMDb exigerait une clé (à décider avec Mahdi).
+- [x] Affiches TMDb pour les films sans affiche (secret `TMDB_API_KEY`, étape « Descriptifs »), copiées dans `assets/images/` et mises en cache dans `descriptifs.json`.
 - Clé Apify configurée (secret `APIFY_TOKEN`).
 - Abonnements : calendriers `.ics` par catégorie et par ville (`calendriers/`), fil RSS `feed.xml`, page S'abonner.
 - Page « Cette semaine » avec message WhatsApp prêt à partager.
