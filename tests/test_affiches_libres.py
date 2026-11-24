@@ -50,3 +50,30 @@ class TestAffichesLibres(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestAffichesTmdb(unittest.TestCase):
+    def test_tmdb_remplit_et_garde_en_cache(self):
+        import os
+        from scrapers import descriptifs as d
+        with tempfile.TemporaryDirectory() as t, mock.patch.object(images, "DOSSIER", Path(t) / "assets" / "images"), \
+                mock.patch.object(images, "RACINE", Path(t)), mock.patch.object(d, "RACINE", Path(t)), \
+                mock.patch.dict(os.environ, {"TMDB_API_KEY": "k"}), \
+                mock.patch.object(d, "tmdb_affiche", return_value="https://image.tmdb.org/t/p/w342/a.jpg") as api, \
+                mock.patch.object(images, "recuperer", return_value=("ok", "", b"\xff\xd8\xff....", "jpg")):
+            cache = {"affiches": {}}
+            liste = [{"id": "a", "titre": "A", "image": ""}, {"id": "b", "titre": "B", "image": "x.jpg"}]
+            self.assertEqual(d.affiches_tmdb(liste, cache, d.Budget(5, True)), 1)
+            self.assertTrue(liste[0]["image"].startswith("assets/images/"))
+            self.assertEqual(liste[1]["image"], "x.jpg")
+            # passage suivant : films.json refait, l'affiche revient du cache sans nouvel appel
+            liste = [{"id": "a", "titre": "A", "image": ""}]
+            self.assertEqual(d.affiches_tmdb(liste, cache, d.Budget(5, True)), 1)
+            self.assertEqual(api.call_count, 1)
+
+    def test_sans_cle_rien_ne_change(self):
+        import os
+        from scrapers import descriptifs as d
+        with mock.patch.dict(os.environ, {"TMDB_API_KEY": ""}):
+            liste = [{"id": "a", "titre": "A", "image": ""}]
+            self.assertEqual(d.affiches_tmdb(liste, {"affiches": {}}, d.Budget(5, True)), 0)
