@@ -575,11 +575,12 @@ class Traduction(unittest.TestCase):
         class Faux(traduire.Traducteur):
             def __init__(self):
                 self.appels = []
-            def _direct(self, phrases, de, vers):
+            def _direct(self, phrases, de, vers, beam=2):
                 self.appels.append((de, vers))
                 return [f"{vers}:{p}" for p in phrases]
         t = Faux()
-        self.assertEqual(t.traduire(["Bonjour. Au revoir."], "fr", "ar"), ["ar:en:Bonjour. ar:en:Au revoir."])
+        with mock.patch.object(traduire, "est_dans", return_value=True):   # le faux modèle ne produit pas de vraie langue
+            self.assertEqual(t.traduire(["Bonjour. Au revoir."], "fr", "ar"), ["ar:en:Bonjour. ar:en:Au revoir."])
         self.assertEqual(t.appels, [("fr", "en"), ("en", "ar")])
         cache = {"titres": {"Déjà traduit ici": {"en": "x"}}, "notices": {}}
         evts = [("_events/a.md", {"title": "Déjà traduit ici"}, ""), ("_events/b.md", {"title": "Concert de jazz"}, "")]
