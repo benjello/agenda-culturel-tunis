@@ -424,6 +424,10 @@ def completer_films(cache: dict, budget: Budget, evts, mains: dict) -> list[dict
     for _, c, corps in evts:
         if c.get("film") and corps.strip() and c.get("link"):
             notices_salles.setdefault(c["link"], corps.strip())
+    liens_films: dict[str, int] = {}
+    for f in films:
+        for lien in {s.get("lien") for s in f.get("salles", [])}:
+            liens_films[lien] = liens_films.get(lien, 0) + 1
     for f in films:
         if f["id"] in mains["films"]:
             f.update(synopsis=_nettoyer(mains["films"][f["id"]]), synopsis_source="", synopsis_url="")
@@ -447,7 +451,9 @@ def completer_films(cache: dict, budget: Budget, evts, mains: dict) -> list[dict
         if entree and entree.get("texte"):
             f.update(synopsis=entree["texte"], synopsis_source=entree.get("source", ""), synopsis_url=entree.get("url", ""))
         else:
-            notice = next((notices_salles[s["lien"]] for s in f.get("salles", []) if s.get("lien") in notices_salles), "")
+            # Un lien partagé par plusieurs films (post de programme) ne donne la notice d'aucun d'eux.
+            notice = next((notices_salles[s["lien"]] for s in f.get("salles", [])
+                           if s.get("lien") in notices_salles and liens_films[s["lien"]] == 1), "")
             if notice:
                 f.update(synopsis=_nettoyer(notice), synopsis_source="", synopsis_url="")
     FILMS.write_text(json.dumps(films, ensure_ascii=False, indent=1) + "\n")
@@ -457,13 +463,28 @@ def completer_films(cache: dict, budget: Budget, evts, mains: dict) -> list[dict
 def ecrire_notices(evts, cache: dict, films: list[dict], mains: dict) -> int:
     """Écrit la notice trouvée dans chaque événement qui n'en a pas."""
     generiques = textes_generiques(cache["pages"])
+    # Par fiche de séance, pas par lien : plusieurs films partagent parfois le même post Facebook
+    # (programme de la semaine), et chacun doit garder son propre synopsis.
     synopsis = {}
     for f in films:
         if f.get("synopsis"):
-            for s in f.get("salles", []):
-                synopsis[s.get("lien")] = (f["synopsis"], f.get("synopsis_source") or None)
+            for chemin in f.get("fichiers", []):
+                synopsis[chemin] = (f["synopsis"], f.get("synopsis_source") or None)
     n = 0
     for fichier, c, corps in evts:
+        chemin = fichier.relative_to(RACINE).as_posix() if fichier.is_relative_to(RACINE) else fichier.as_posix()
+        if corps.strip() and c.get("film") and c.get("auto") and c.get("notice_source") is not None:
+            # Réparation : notice de film écrite à tort (ancien rattachement par lien partagé) ; elle
+            # doit être le synopsis de CE film, ou rien.
+            attendu = _texte_brut(synopsis[chemin][0]).strip() if chemin in synopsis else ""
+            if attendu != corps.strip():
+                brut = fichier.read_text()
+                tete = brut.split("\n---\n", 1)[0]
+                if not attendu:
+                    tete = re.sub(r"\nnotice_source:[^\n]*", "", tete)
+                fichier.write_text(tete + "\n---\n" + (("\n" + attendu + "\n") if attendu else ""))
+                n += 1
+            continue
         if corps.strip():
             continue
         lien, source = c.get("link", ""), None
@@ -472,8 +493,8 @@ def ecrire_notices(evts, cache: dict, films: list[dict], mains: dict) -> int:
             texte = (cache["pages"].get(lien) or {}).get("texte", "")
             if texte in generiques:
                 texte = ""
-        if not texte and c.get("film") and lien in synopsis:
-            texte, source = synopsis[lien]
+        if not texte and c.get("film") and chemin in synopsis:
+            texte, source = synopsis[chemin]
         if not texte:
             continue
         brut = fichier.read_text()

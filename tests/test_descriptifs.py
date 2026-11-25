@@ -75,12 +75,39 @@ class Ecriture(unittest.TestCase):
 
     def test_synopsis_d_un_film(self):
         films = [{"id": "weekend", "synopsis": NOTICE, "synopsis_source": "Wikipédia",
-                  "salles": [{"lien": "https://t.tn/weekend"}]}]
+                  "salles": [{"lien": "https://t.tn/weekend"}], "fichiers": [self.film.as_posix()]}]
         d.ecrire_notices(d._evenements(self.tmp), {"pages": {}}, films, {"evenements": {}})
         champs, corps = d._lire(self.film)
         self.assertEqual(champs["notice_source"], "Wikipédia")
         self.assertTrue(champs["auto"])
         self.assertEqual(corps.strip(), NOTICE)
+
+    def test_post_partage_par_plusieurs_films(self):
+        """Deux films annoncés par le même post : chacun garde son synopsis, pas celui de l'autre."""
+        autre = self.tmp / "teskerti" / "2030-01-01-billie.md"
+        autre.write_text('---\ntitle: "Billie"\ndate: 2030-01-01\nlink: "https://t.tn/weekend"\nfilm: true\n'
+                         'auto: true\n---\n')
+        films = [{"id": "weekend", "synopsis": NOTICE, "synopsis_source": "Wikipédia",
+                  "salles": [{"lien": "https://t.tn/weekend"}], "fichiers": [self.film.as_posix()]},
+                 {"id": "billie", "synopsis": "Résumé de Billie.", "synopsis_source": "TMDb",
+                  "salles": [{"lien": "https://t.tn/weekend"}], "fichiers": [autre.as_posix()]}]
+        d.ecrire_notices(d._evenements(self.tmp), {"pages": {}}, films, {"evenements": {}})
+        self.assertEqual(d._lire(self.film)[1].strip(), NOTICE)
+        self.assertEqual(d._lire(autre)[1].strip(), "Résumé de Billie.")
+
+    def test_repare_la_notice_d_un_autre_film(self):
+        """Notice écrite à tort par l'ancien rattachement : remplacée par la bonne, ou retirée."""
+        autre = self.tmp / "teskerti" / "2030-01-01-billie.md"
+        autre.write_text('---\ntitle: "Billie"\ndate: 2030-01-01\nlink: "https://t.tn/weekend"\nfilm: true\n'
+                         'notice_source: "Wikipédia"\nauto: true\n---\n\nRésumé de Paper Tiger.\n')
+        d.ecrire_notices(d._evenements(self.tmp), {"pages": {}}, [], {"evenements": {}})
+        champs, corps = d._lire(autre)
+        self.assertEqual(corps.strip(), "")
+        self.assertNotIn("notice_source", champs)
+        films = [{"id": "billie", "synopsis": "Résumé de Billie.", "synopsis_source": "TMDb",
+                  "salles": [], "fichiers": [autre.as_posix()]}]
+        d.ecrire_notices(d._evenements(self.tmp), {"pages": {}}, films, {"evenements": {}})
+        self.assertEqual(d._lire(autre)[1].strip(), "Résumé de Billie.")
 
     def test_films_json(self):
         films = self.tmp / "films.json"
