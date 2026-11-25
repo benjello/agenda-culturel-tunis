@@ -22,6 +22,7 @@ import yaml
 
 from .commun import RACINE
 from .doublons import _lire
+from .langues import est_dans
 from .traduire import LANGUES, Traducteur, a_traduire, langue
 
 FICHIER = RACINE / "_data" / "libelles.json"
@@ -115,6 +116,17 @@ def lire() -> dict:
         return {}
 
 
+def purger(cache: dict) -> int:
+    """Retire les traductions déjà enregistrées qui ne sont pas dans leur langue ; elles seront refaites."""
+    n = 0
+    for t, e in list(cache.items()):
+        mauvais = [x for x in ("en", "ar", "fr") if isinstance(e.get(x), str) and not est_dans(e[x], x)]
+        if mauvais:
+            n += len(mauvais)
+            del cache[t]      # toute l'entrée est refaite
+    return n
+
+
 def traduire_libelles(traducteur, cache: dict, textes: set[str]) -> int:
     debut, n = time.monotonic(), 0
     restants = sorted((t for t in textes if t not in cache), key=lambda t: (len(t), t))[:MAX_TEXTES]
@@ -129,7 +141,8 @@ def traduire_libelles(traducteur, cache: dict, textes: set[str]) -> int:
             for vers in LANGUES:
                 if vers != de:
                     for e, tr in zip(entrees, traducteur.traduire(paquet, de, vers)):
-                        e[vers] = tr
+                        if tr:       # traduction ratée : le site garde le texte d'origine
+                            e[vers] = tr
             for t, e in zip(paquet, entrees):
                 cache[t] = e
             n += len(paquet)
@@ -143,6 +156,9 @@ def main(argv=None) -> int:
         print("libellés : installer ctranslate2 et sentencepiece (pip install -r requirements-traduction.txt)")
         return 0
     cache, textes = lire(), textes_du_site()
+    retirees = purger(cache)
+    if retirees:
+        print(f"Libellés : {retirees} traduction(s) hors de leur langue retirées, à refaire")
     from .traduire import lire as lire_titres
     for t, v in lire_titres()["titres"].items():   # déjà traduits : rien à refaire
         de = langue(t)

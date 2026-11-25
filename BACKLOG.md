@@ -93,6 +93,8 @@ sans heure par source apparaît sur la page Sources et dans `_data/etat_sources.
 
 ## Fait
 
+- [x] Descriptions aux langues mélangées (25 nov. 2026) : la traduction part de la langue de chaque phrase (annonce arabe + synopsis français), retire les liens avant de traduire, rejette une phrase restée dans l'autre langue (le site garde alors l'original) et refait les anciennes traductions fautives (`scrapers/langues.py`, `purger`). Les textes d'origine bilingues sont aussi traduits vers leur langue dominante. Contrôle quotidien dans le résumé du workflow et `_data/controle_langues.json`.
+
 - [x] Tickets : balayage mensuel (`scrapers/tickets.py`, workflow « Tickets ») : avertissement à 60 jours sans activité, fermeture à 14 jours de plus ; contrôle « Closes #N » sur chaque PR.
 - [x] Vignettes vides : `scrapers/images.py` (après chaque passage) copie chaque image dans `assets/images/` (les liens Instagram/Facebook/billetterie qui expirent ne cassent plus la carte) ; image cassée → visuel de la page de l'annonce (og:image, schema.org), autres sources, même événement ailleurs, puis seulement photo du lieu ou illustration de catégorie (`assets/categories/`). Bilan dans `_data/images.json` (PR #146, #147).
 - Référencement : plan du site (`sitemap.xml`), balises canonique, Open Graph et Twitter, données structurées `Event` (fiches) et `WebSite` (accueil).

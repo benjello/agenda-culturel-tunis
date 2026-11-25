@@ -80,6 +80,10 @@ jobs:
           python3 -m scrapers.traduire
           python3 -m scrapers.libelles
         continue-on-error: true
+      - name: Contrôler les langues (textes mêlés, traductions restées dans l'autre langue)
+        continue-on-error: true
+        run: |
+          python3 -m scrapers.langues | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Garder les pages téléchargées
         if: inputs.debug
         uses: actions/upload-artifact@v4
