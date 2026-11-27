@@ -1,0 +1,685 @@
+{
+ "_bilan": {
+  "autre fiche": 0,
+  "cassees": 0,
+  "categorie": 0,
+  "copiees": 0,
+  "date": "2026-11-27T19:41:34",
+  "images": 98,
+  "lien": 0,
+  "lieu": 0
+ },
+ "assets/images/027b0e107f90.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/044f5eea09fa.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/086ec8131a5e.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/0a9e36886e07.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/0c13e697ccda.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/0cda4d0e69c5.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/114fe3259ed5.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/1cb460f0ad7c.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/1cb841d98f26.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/21d25efdad9c.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/247c3668439e.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/2c107a80fcbf.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/33219404a610.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/33e5e95138ee.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/36d2d9a4c8ad.webp": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/3b9512bcef68.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/3be2660bf8f1.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/42400672d09b.webp": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/438fe07c9e98.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/4aaa55b1c026.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/4cb0f8eacd5a.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/4d00ac278168.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/5aeb2addb4ef.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/5c3215d9457f.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/5e2060567217.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/6ef714de682e.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/702e46bff585.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/712b2504049d.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/738d905a455b.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/74aae2fbfa8e.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/842559d791c6.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/89cd4e4414eb.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/94ccd208c8bc.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/9ad71a077781.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/9b055d673542.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/a78c087c3bb6.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/a809c1cadfc4.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/a811282fb527.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/ab5b1bdbc56d.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b0ccb061405b.webp": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b0f14f7736b2.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b2fc4d93ee39.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b3442c12d9e2.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b5cc373e5cdf.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/b87fd03b9b45.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/bb25276097df.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/ce7c7b7cfe8d.webp": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/d18665bfbbdc.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/de0399c618b0.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/df627d1bcafb.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/df8202808b44.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/e9a6a34d8428.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/ebee226d06d1.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/efdb5d7abf00.avif": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/f738c4dcb71a.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/images/fc689642d2e9.png": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-al-kitab/1439d0ed5232.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cite-sciences/798b7ec47a99.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cite-sciences/d5619ba0b09e.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cr-medenine/5cc511133138.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cr-sfax/5b0d1846453d.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cr-sfax/9e6a3c12ed25.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-cr-sidibouzid/dba355354b57.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-ift-facebook/25baa45e3aeb.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-ift-facebook/464e877d6b36.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-ift-facebook/88ca914fc72d.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/fb-ift-facebook/91a30c422254.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-agora-djerba/e0a91a38d913.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-agora-djerba/f0247b7e809a.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-al-kitab/e780f5eaeea2.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-archivart/b8b19c510058.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-archivart/cabcc72482c5.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-b7l9/8ab7077bc082.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-creative-hub-sbs/4be746c8cf5d.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-eddisco/13fc151d2435.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-eddisco/663f24fc9c49.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-eddisco/6f6443516fdb.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-entre-les-rives/15d2d259b5f4.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-fics-ksar-ghilane/38888ec9100c.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-galerie-insular/441367072604.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-habibi-downtown/07c1ec9210e7.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-habibi-downtown/7235d56154f0.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-hamdi-ryder/a60907fcccb8.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-jaou-tunis/9ada4b5008fd.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-la-boite/341d61bba657.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-la-boite/bfbaf16ac281.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-la-boite/cb26da9b8bd8.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-la-boite/d3ee178f0e34.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-lart-rue/1b068e649e9b.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-le32bis/2806688b008e.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-le32bis/6b929405fbbc.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-le32bis/a503059c8f8b.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-le32bis/a839d6ea8557.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-rosalux-afrique-nord/dd9d2566d174.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-rosalux-afrique-nord/fb1b60dd6301.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-theatre-national/b3111f8114f7.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "assets/programmes/ig-theatre-national/b81869e3bff6.jpg": {
+  "detail": "",
+  "echecs": 0,
+  "etat": "ok",
+  "verifiee": "2026-11-27T19:41:34"
+ },
+ "copie:https://tunis.events/og/event/30l2e3/fr.png": "assets/images/946673c6a880.png",
+ "copie:https://tunis.events/og/event/31v1d8/fr.png": "assets/images/b87fd03b9b45.png",
+ "copie:https://tunis.events/og/event/31vjP8/fr.png": "assets/images/fc689642d2e9.png",
+ "copie:https://tunis.events/og/event/37nj6m/fr.png": "assets/images/a0869f9b2077.png",
+ "copie:https://tunis.events/og/event/39Ej23/fr.png": "assets/images/21d25efdad9c.png",
+ "copie:https://tunis.events/og/event/3DRQ6k/fr.png": "assets/images/afcf02da94db.png",
+ "copie:https://tunis.events/og/event/3G2Prm/fr.png": "assets/images/887ac6a4aaca.png",
+ "copie:https://tunis.events/og/event/3G2d9m/fr.png": "assets/images/a811282fb527.png",
+ "copie:https://tunis.events/og/event/3jQ5Ym/fr.png": "assets/images/8273289000cf.png",
+ "copie:https://tunis.events/og/event/3jQzem/fr.png": "assets/images/33e5e95138ee.png",
+ "copie:https://tunis.events/og/event/3xO0Gm/fr.png": "assets/images/06476293207a.png",
+ "copie:https://tunis.events/og/event/3xO9qm/fr.png": "assets/images/0a9e36886e07.png",
+ "copie:https://tunis.events/og/event/8JQEa3/fr.png": "assets/images/712b2504049d.png",
+ "copie:https://tunis.events/og/event/8JQOQ3/fr.png": "assets/images/df8202808b44.png",
+ "copie:https://tunis.events/og/event/8JQOa3/fr.png": "assets/images/189adc1fbb43.png",
+ "copie:https://tunis.events/og/event/8JQRw3/fr.png": "assets/images/7d0b849e85a8.png",
+ "copie:https://tunis.events/og/event/8KQ6Xm/fr.png": "assets/images/e58480e59526.png",
+ "copie:https://tunis.events/og/event/8KQRGm/fr.png": "assets/images/420d193e2b0f.png",
+ "copie:https://tunis.events/og/event/8RPLPm/fr.png": "assets/images/e5be9a98337b.png",
+ "copie:https://tunis.events/og/event/8RPgrm/fr.png": "assets/images/6ef714de682e.png",
+ "copie:https://tunis.events/og/event/8pQMOk/fr.png": "assets/images/702e46bff585.png",
+ "copie:https://tunis.events/og/event/8yXLv3/fr.png": "assets/images/d6e7278f2238.png",
+ "copie:https://tunis.events/og/event/kM6P1m/fr.png": "assets/images/ac40ec661a25.png",
+ "copie:https://tunis.events/og/event/kQnxqm/fr.png": "assets/images/b5cc373e5cdf.png",
+ "copie:https://tunis.events/og/event/kVy7Q8/fr.png": "assets/images/b68f16645aff.png",
+ "copie:https://tunis.events/og/event/kW1G53/fr.png": "assets/images/ba07abed00d7.png",
+ "copie:https://tunis.events/og/event/kW1zz3/fr.png": "assets/images/94ccd208c8bc.png",
+ "copie:https://tunis.events/og/event/kXEEzm/fr.png": "assets/images/438fe07c9e98.png",
+ "copie:https://tunis.events/og/event/kXEQam/fr.png": "assets/images/247c3668439e.png",
+ "copie:https://tunis.events/og/event/kXErBm/fr.png": "assets/images/2caff476a189.png",
+ "copie:https://tunis.events/og/event/kYG7j3/fr.png": "assets/images/d18665bfbbdc.png",
+ "copie:https://tunis.events/og/event/klvE43/fr.png": "assets/images/626ae0fd44b8.png",
+ "copie:https://tunis.events/og/event/klvgE3/fr.png": "assets/images/f438a6405157.png",
+ "copie:https://tunis.events/og/event/mE2Ov3/fr.png": "assets/images/86836cb9615b.png",
+ "copie:https://tunis.events/og/event/mZrNZm/fr.png": "assets/images/5b6dfd16c55d.png",
+ "copie:https://tunis.events/og/event/mnMKyk/fr.png": "assets/images/aa58d5965a97.png",
+ "copie:https://tunis.events/og/event/mnMOgk/fr.png": "assets/images/027b0e107f90.png",
+ "copie:https://tunis.events/og/event/moEQl8/fr.png": "assets/images/0cda4d0e69c5.png",
+ "copie:https://tunis.events/og/event/mqEPKm/fr.png": "assets/images/9ad71a077781.png",
+ "copie:https://tunis.events/og/event/mqEwBm/fr.png": "assets/images/89cd4e4414eb.png",
+ "copie:https://tunis.events/og/event/mwJM0k/fr.png": "assets/images/145b603f6647.png",
+ "copie:https://tunis.events/og/event/mwZ0bk/fr.png": "assets/images/044f5eea09fa.png",
+ "https://lagora.tn/wp-content/uploads/2026/11/نجوم-الأمل.png": {
+  "detail": "trop lourde pour être copiée",
+  "echecs": 0,
+  "etat": "ok",
+  "trop_lourde": true,
+  "verifiee": "2026-11-24T20:54:51"
+ },
+ "lien:https://tunis.events/events/30l2e3/connivences-211126-aina": "assets/images/946673c6a880.png",
+ "lien:https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace": "assets/images/b87fd03b9b45.png",
+ "lien:https://tunis.events/events/31vjP8/tunis-is-a-frequency-by-tunis-nouveau-club-saint-georges-tunis-hotel": "assets/images/fc689642d2e9.png",
+ "lien:https://tunis.events/events/37nj6m/pack-les-rencontres-theatrales-de-lartisto-lartisto-theatre-et-cinema": "assets/images/a0869f9b2077.png",
+ "lien:https://tunis.events/events/39Ej23/hadoota-cinema-le-colisee": "assets/images/21d25efdad9c.png",
+ "lien:https://tunis.events/events/3DRQ6k/hunger-games-lever-de-soleil-cinema-le-colisee": "assets/images/afcf02da94db.png",
+ "lien:https://tunis.events/events/3G2Prm/listening-session-screening-live-performance-b7l9-art-centre": "assets/images/887ac6a4aaca.png",
+ "lien:https://tunis.events/events/3G2d9m/black-friday-sale-stretch-yoga-flow-ame-studio": "assets/images/a811282fb527.png",
+ "lien:https://tunis.events/events/3jQ5Ym/movie-night-la-belle-et-la-meute-sociale-sidi-bou-said": "assets/images/8273289000cf.png",
+ "lien:https://tunis.events/events/3jQzem/fantasy-off-aina-aina": "assets/images/33e5e95138ee.png",
+ "lien:https://tunis.events/events/3xO0Gm/bakma-بكمة-cinema-le-colisee": "assets/images/06476293207a.png",
+ "lien:https://tunis.events/events/3xO9qm/billie-a-la-croisee-des-mondes-cinema-le-colisee": "assets/images/0a9e36886e07.png",
+ "lien:https://tunis.events/events/8JQEa3/mon-beau-perema-belle-fille-et-moi-cinema-le-colisee": "assets/images/712b2504049d.png",
+ "lien:https://tunis.events/events/8JQOQ3/convivial-couscous-zarda-with-couscous-apero-sociale": "assets/images/df8202808b44.png",
+ "lien:https://tunis.events/events/8JQOa3/onssouen-lartisto-theatre-et-cinema": "assets/images/189adc1fbb43.png",
+ "lien:https://tunis.events/events/8JQRw3/last-chance-لص-شايح-cinema-le-colisee": "assets/images/7d0b849e85a8.png",
+ "lien:https://tunis.events/events/8KQ6Xm/jupiter-cinema-le-colisee": "assets/images/e58480e59526.png",
+ "lien:https://tunis.events/events/8KQRGm/yoga-for-busy-minds-with-judit-yoga_in_sidibousaid-sociale-sidi-bou-said": "assets/images/420d193e2b0f.png",
+ "lien:https://tunis.events/events/8RPLPm/je-mappelle-clara-cinema-le-colisee": "assets/images/e5be9a98337b.png",
+ "lien:https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace": "assets/images/6ef714de682e.png",
+ "lien:https://tunis.events/events/8pQMOk/kpop-universe-edition-7-utica-union-tun-the-ind-trade-art": "assets/images/702e46bff585.png",
+ "lien:https://tunis.events/events/8yXLv3/la-rue-lartisto-theatre-et-cinema": "assets/images/d6e7278f2238.png",
+ "lien:https://tunis.events/events/kM6P1m/mounassabat-bouabena-el-mazar-rue-de-marseille": "assets/images/ac40ec661a25.png",
+ "lien:https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee": "assets/images/b5cc373e5cdf.png",
+ "lien:https://tunis.events/events/kVy7Q8/labes-selim-ben-safia-salle-des-jeunes-createurs-cite-de-la-culture": "assets/images/b68f16645aff.png",
+ "lien:https://tunis.events/events/kW1G53/yoga-for-busy-minds-with-judit-yoga_in_sidibousaid-sociale-sidi-bou-said": "assets/images/ba07abed00d7.png",
+ "lien:https://tunis.events/events/kW1zz3/je-mappelle-clara-cinema-le-palace": "assets/images/94ccd208c8bc.png",
+ "lien:https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace": "assets/images/438fe07c9e98.png",
+ "lien:https://tunis.events/events/kXEQam/chichbich-au-sous-sol-28-novembre-la-verriere-le-sous-sol-cafe-resto": "assets/images/247c3668439e.png",
+ "lien:https://tunis.events/events/kXErBm/power-yoga-with-nicole-skarpness-nskarp-sociale": "assets/images/2caff476a189.png",
+ "lien:https://tunis.events/events/kYG7j3/the-last-shot-espace-lartisto": "assets/images/d18665bfbbdc.png",
+ "lien:https://tunis.events/events/klvE43/fabrika-at-aina-tunis-aina": "assets/images/626ae0fd44b8.png",
+ "lien:https://tunis.events/events/klvgE3/hyperculte-b7l9-art-centre": "assets/images/f438a6405157.png",
+ "lien:https://tunis.events/events/mE2Ov3/chichbich-au-sous-sol-21-novembre-la-verriere-le-sous-sol-cafe-resto": "assets/images/86836cb9615b.png",
+ "lien:https://tunis.events/events/mZrNZm/leffet-papillon-lartisto-theatre-et-cinema": "assets/images/5b6dfd16c55d.png",
+ "lien:https://tunis.events/events/mnMKyk/thursday-2611-le-28-lafayette": "assets/images/aa58d5965a97.png",
+ "lien:https://tunis.events/events/mnMOgk/zyoland-grafiflow-v7jh6j7": "assets/images/027b0e107f90.png",
+ "lien:https://tunis.events/events/moEQl8/weekend-ويكاند-cinema-le-colisee": "assets/images/0cda4d0e69c5.png",
+ "lien:https://tunis.events/events/mqEPKm/saturday-2811-le-28-lafayette": "assets/images/9ad71a077781.png",
+ "lien:https://tunis.events/events/mqEwBm/bakma-cinema-le-palace": "assets/images/89cd4e4414eb.png",
+ "lien:https://tunis.events/events/mwJM0k/under-the-full-moon-supermoon-in-gemini-two-hour-hatha-vinyasa-flow-with-sarah-f": "assets/images/145b603f6647.png",
+ "lien:https://tunis.events/events/mwZ0bk/nomad-man-nov-27-dec-1-tiniri-camp": "assets/images/044f5eea09fa.png"
+}

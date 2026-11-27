@@ -1,0 +1,37 @@
+{
+  "id": "cine-360",
+  "nom": "Ciné 350",
+  "url": "https://www.facebook.com/sallecine350",
+  "mis_a_jour": "2026-11-27",
+  "publications": [
+    {
+      "lien": "https://www.facebook.com/100057029246724/posts/1682368610340764",
+      "date": "2026-11-23",
+      "texte": "برنامج الأسبوع بقاعة Ciné 350 🎞️🍿",
+      "images": [
+        "assets/programmes/cine-360/711e7a7193f2.jpg"
+      ],
+      "ocr_facebook": "May be a graphic of television and text",
+      "ocr": "PROGRAMME\nlis aachin 89a hi 7 fad\nMARDI 24 NOVEMBRE MERCREDI 25 NOVEMBRE JEUDI 26 NOVEMBRE\n3\n70 028 405"
+    },
+    {
+      "lien": "https://www.facebook.com/100057029246724/posts/1675696127674679",
+      "date": "2026-11-17",
+      "texte": "تذكير 🎞️ أوقات عرض الفيلم التونسي الروائي الجديد \"اسمي كلارا\" للمخرجة سارة عبيدي بقاعة Ciné 350 🍿✨",
+      "images": [
+        "assets/programmes/cine-360/9314b97cda39.jpg",
+        "assets/programmes/cine-360/c493e6b364b4.jpg"
+      ],
+      "ocr_facebook": "May be an image of text\n\nMay be an image of text",
+      "ocr": "= : ees\nSeas\n‏ممع‎\nAr\nناا الالا \"\n‎Uy‏\n\nCine À\n350\n70 028 405\nLES HORAIRES DE PROJECTION\nnm #10 WELLES\nMy,\nJE M'APPELLE CLARA\n‏اسمي كلدرا‎\nDe Sarra Abia\nMercredi 18 Novembre 19H00\nVendredi 20 Novembre 16H00 =\nSamedi 21 Novembre 19H00 )—\nأسعار التذاكر 7 دينارات للتعريفة الكاملة و 5"
+    },
+    {
+      "lien": "https://www.facebook.com/100057029246724/posts/1675038954407063",
+      "date": "2026-11-16",
+      "texte": "برنامج الأسبوع بقاعة Ciné 350 🎞️🍿",
+      "images": [],
+      "ocr_facebook": "",
+      "ocr": ""
+    }
+  ]
+}

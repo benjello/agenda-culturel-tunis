@@ -1,0 +1,1148 @@
+[
+ {
+  "titre": "BAKMA - بكمة",
+  "id": "bakma",
+  "image": "assets/images/89cd4e4414eb.png",
+  "imdb": "tt43666030",
+  "duree": null,
+  "genres": [
+   "Horreur",
+   "Thriller"
+  ],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/bakma-%D8%A8%D9%83%D9%85%D8%A9",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "11:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/mqEwBm/bakma-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "13:45"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "12:15",
+       "18:15"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "13:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-11-27-bakma.md",
+   "_events/auto/tunis-events-cinema/2026-12-01-bakma.md"
+  ],
+  "wikidata": "Q142120796",
+  "letterboxd": "",
+  "age": "",
+  "tunisien": true,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "« Bakma », le film d’Abdelhamid Bouchnak : face à l’inhumain",
+    "lien": "https://realites.com.tn/fr/bakma-le-film-dabdelhamid-bouchnak-face-a-linhumain/",
+    "source_nom": "Réalités (culture)",
+    "date": "2026-10-17"
+   }
+  ],
+  "synopsis": "1 h 57 · Horreur · de Abdelhamid Bouchnak · avec Aziz Jebali, Hedy Krissane, Mounira Zakraoui, Mahmoud Essaidi",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Dar El 3ers - دار العرس",
+  "id": "dar-el-3ers",
+  "image": "assets/images/438fe07c9e98.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/kQnxqm/dar-el-3ers-دار-العرس-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "11:45",
+       "16:00"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "13:45"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "10:00",
+       "16:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kXEEzm/dar-el-3ers-دار-العرس-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "13:30",
+       "19:30"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "10:00",
+       "16:00"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "11:30",
+       "17:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-27-dar-el-3ers.md",
+   "_events/auto/tunis-events-cinema/2026-11-28-dar-el-3ers.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "دار العرس\nRéalisateur : Heifel Ben Youssef\nDurée : 135 min",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Je m'appelle Clara",
+  "id": "je-m-appelle-clara",
+  "image": "assets/images/94ccd208c8bc.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/je-mappelle-clara",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-30"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "12:15",
+       "20:00"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/kW1zz3/je-mappelle-clara-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-29",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "15:45"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "20:15"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "15:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-je-m-appelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-27-je-mappelle-clara.md",
+   "_events/auto/tunis-events-cinema/2026-11-30-je-mappelle-clara.md"
+  ],
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "Derrière l’écran d’un centre d’appels, le film de Sarra Abidi « Je m’appelle Clara » explore la solitude et la routine",
+    "lien": "https://www.lapresse.tn/2026/11/18/derriere-lecran-dun-centre-dappels-le-film-de-sarra-abidi-je-mappelle-clara-explore-la-solitude-et-la-routine/",
+    "source_nom": "La Presse (culture)",
+    "date": "2026-11-18"
+   }
+  ],
+  "synopsis": "JE M’APPELLE CLARA (2026)\nSynopsis\nAyda est opératrice dans un centre d'appel depuis plusieurs années. Elle a la quarantaine et vit seule dans un quartier de Tunis. Elle passe ses journées à répéter les mêmes phrases à des inconnus au bout du fil, sous le pseudonyme de Clara, une conseillère client qui vend des forfaits vacances.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "weekend - ويكاند",
+  "id": "weekend",
+  "image": "assets/images/6ef714de682e.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/moEQl8/weekend-ويكاند-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-29",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "16:00"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "15:30"
+      ]
+     }
+    ]
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/8RPgrm/weekend-ويكاند-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "19:45"
+      ]
+     },
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "15:45"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "19:45"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "14:15"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "19:45"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-27-weekend.md",
+   "_events/auto/tunis-events-cinema/2026-11-29-weekend.md"
+  ],
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Billie à la croisée des mondes",
+  "id": "billie-a-la-croisee-des-mondes",
+  "image": "assets/images/0a9e36886e07.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/3xO9qm/billie-a-la-croisee-des-mondes-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-28",
+     "2026-11-29"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-billie-a-la-croisee-des-mondes.md",
+   "_events/auto/tunis-events-cinema/2026-11-28-billie-a-la-croisee-des-mondes.md"
+  ],
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "JUPITER",
+  "id": "jupiter",
+  "image": "assets/images/4d00ac278168.jpg",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/jupiter",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-jupiter.md",
+   "_events/auto/tunis-events-cinema/2026-12-01-jupiter.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Fraîchement élu, le président Paul Archambault doit affronter une crise sans précédent : son homologue russe, cible d'un attentat, brandit un ultimatum nucléaire menaçant un allié de la France. Face au risque d'escalade militaire, le président réunit son état-major dans le bunker de l'Elysée. Dans le secret du Poste de Commandement Jupiter, Paul va devoir [...]",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "LAST CHANCE - لص شايح",
+  "id": "last-chance",
+  "image": "assets/images/b87fd03b9b45.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Palace",
+    "adresse": "1001, Tunis République، 54 Ave Habib Bourguiba, Tunis 1001, Tunis",
+    "lien": "https://tunis.events/events/31v1d8/last-chance-لص-شايح-cinema-le-palace",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "10:00"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "10:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-27-last-chance.md",
+   "_events/auto/tunis-events-cinema/2026-11-28-evenement.md"
+  ],
+  "tunisien": true,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Mon beau-père, ma belle-fille et moi",
+  "id": "mon-beau-pere-ma-belle-fille-et-moi",
+  "image": "assets/images/712b2504049d.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/8JQEa3/mon-beau-perema-belle-fille-et-moi-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-28",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "20:15"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "18:15"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "17:15"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-mon-beau-pere-ma-belle-fille-et-moi.md",
+   "_events/auto/tunis-events-cinema/2026-11-28-mon-beau-pere-ma-belle-fille-et-moi.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un nouveau film de la franchise Mon beau-père et moi.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Paper Tiger",
+  "id": "paper-tiger",
+  "image": "assets/images/738d905a455b.jpg",
+  "imdb": "tt34385689",
+  "duree": null,
+  "genres": [
+   "Policier"
+  ],
+  "jours": [
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Alhambra Zéphyr",
+    "adresse": "",
+    "lien": "https://www.facebook.com/100064660932929/posts/1598237255674957",
+    "source": "cine-alhambra",
+    "source_nom": "Alhambra Zéphyr (La Marsa)",
+    "jours": [
+     "2026-11-27",
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30"
+    ],
+    "heures": []
+   },
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunisie",
+    "lien": "https://tunis.events/fr/cinema/paper-tiger",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-29",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "19:45"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-alhambra/2026-11-24-paper-tiger.md",
+   "_events/auto/tunis-events-cinema/2026-11-29-paper-tiger.md"
+  ],
+  "wikidata": "Q134708172",
+  "letterboxd": "paper-tiger-1",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Paper Tiger est un film américain réalisé par James Gray et sorti en 2026.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Paper_Tiger"
+ },
+ {
+  "titre": "HADOOTA",
+  "id": "hadoota",
+  "image": "assets/images/21d25efdad9c.png",
+  "imdb": "tt43638234",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "salles": [
+   {
+    "nom": "Cinéma Le Colisée",
+    "adresse": "R52J+3MQ, Av. Habib Bourguiba, Tunis, Tunis",
+    "lien": "https://tunis.events/events/39Ej23/hadoota-cinema-le-colisee",
+    "source": "tunis-events-cinema",
+    "source_nom": "tunis.events (cinéma)",
+    "jours": [
+     "2026-11-28",
+     "2026-11-29",
+     "2026-11-30",
+     "2026-12-01"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "14:00",
+       "18:15"
+      ]
+     },
+     {
+      "jour": "2026-11-29",
+      "heures": [
+       "11:45",
+       "17:45"
+      ]
+     },
+     {
+      "jour": "2026-11-30",
+      "heures": [
+       "14:00"
+      ]
+     },
+     {
+      "jour": "2026-12-01",
+      "heures": [
+       "13:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/tunis-events-cinema/2026-11-28-hadoota.md"
+  ],
+  "wikidata": "Q142191539",
+  "letterboxd": "hadoota",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": []
+ },
+ {
+  "titre": "Il était encore une fois",
+  "id": "il-etait-encore-une-fois",
+  "image": "assets/images/9b055d673542.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-12-11"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6555",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-12-11"
+    ],
+    "heures": [
+     {
+      "jour": "2026-12-11",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-12-11-il-etait-encore-une-fois.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film documentaire Il était encore une fois de Serena Rainaldi et Serge Sandor.\nRésumé :\nCe film retrace la genèse d'une création théâtrale peu ordinaire : quinze femmes, détenues à la Maison d'arrêt de Fleury-Mérogis, vivront l'expérience d'une création théâtrale, guidées par Serge Sandor, auteur de théâtre et metteur en scène de …",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Josep",
+  "id": "josep",
+  "image": "assets/images/a809c1cadfc4.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6548",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-27-josep.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie vous propose la projection du film d'animation Josep de Aurel.\nRésumé : (Public adulte)\nFévrier 1939. Submergé par le flot de Républicains fuyant la dictature franquiste, le gouvernement français les parque dans des camps. Deux hommes séparés par les barbelés vont se lier d’amitié. L’un est gendarme, l’autre est dessinateur.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "L'Île des souvenirs",
+  "id": "l-ile-des-souvenirs",
+  "image": "assets/images/ebee226d06d1.avif",
+  "imdb": "tt36583977",
+  "duree": null,
+  "genres": [
+   "Fantastique",
+   "Aventure",
+   "Comédie"
+  ],
+  "jours": [
+   "2026-11-28"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6549",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-28"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-28",
+      "heures": [
+       "17:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-28-l-ile-des-souvenirs.md"
+  ],
+  "wikidata": "Q138335503",
+  "letterboxd": "forgotten-island-2026",
+  "age": "",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Île des souvenirs ou L'Île de l'oubli au Québec est un film d'animation américain réalisé par Joel Crawford et Januel P. Mercado et sorti en 2026",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/L'%C3%8Ele_des_souvenirs"
+ },
+ {
+  "titre": "Sous les étoiles de Paris",
+  "id": "sous-les-etoiles-de-paris",
+  "image": "assets/images/bb25276097df.avif",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "Médiathèque, Institut français de Sfax",
+    "adresse": "",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6542",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "15:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-11-27-sous-les-etoiles-de-paris.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "L'Institut français de Tunisie à Sfax invite son jeune public à découvrir le film Sous les étoiles de Paris de Claude Drexel.\nRésumé :\nDepuis de nombreuses années, Christine vit sous un pont de Paris, isolée de toute famille et amis. Par une nuit comme il n’en existe que dans les contes, un jeune garçon de 8 ans fait irruption devant son abri.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Touskié Tounsi",
+  "id": "touskie-tounsi",
+  "image": "assets/images/f738c4dcb71a.png",
+  "imdb": "",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-11-27"
+  ],
+  "salles": [
+   {
+    "nom": "L'Agora Marsa",
+    "adresse": "La Marsa",
+    "lien": "https://lagora.tn/produit/touskie-tounsi/",
+    "source": "cine-agora",
+    "source_nom": "L'Agora (La Marsa)",
+    "jours": [
+     "2026-11-27"
+    ],
+    "heures": [
+     {
+      "jour": "2026-11-27",
+      "heures": [
+       "19:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/cine-agora/2026-11-27-touskie-tounsi.md"
+  ],
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Plongez dans l’univers drôle et percutant de « Touskié Tounsi », le spectacle de Mehdi Bachtarzi ! À travers des anecdotes savoureuses et un regard tendre sur les cultures et le quotidien, il nous embarque dans un voyage hilarant entre traditions, identité et modernité. Un moment de partage, de rires et d’émotions à ne pas manquer.",
+  "synopsis_source": "",
+  "synopsis_url": ""
+ },
+ {
+  "titre": "Un monde fragile et merveilleux",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "assets/images/391e4d2402c3.webp",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-12-11"
+  ],
+  "salles": [
+   {
+    "nom": "Salle de cinéma, Institut français de Sousse",
+    "adresse": "",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6556",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-12-11"
+    ],
+    "heures": [
+     {
+      "jour": "2026-12-11",
+      "heures": [
+       "18:00"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-12-11-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [
+   {
+    "titre": "‘‘Un monde fragile et merveilleux’’ de Cyril Aris sort en salles à Tunis",
+    "lien": "https://kapitalis.com/tunisie/2026/11/10/un-monde-fragile-et-merveilleux-de-cyril-aris-sort-en-salles-a-tunis/",
+    "source_nom": "Kapitalis (culture)",
+    "date": "2026-11-10"
+   }
+  ],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ },
+ {
+  "titre": "Un monde fragile et merveilleux (نجوم الأمل و الألم)",
+  "id": "un-monde-fragile-et-merveilleux",
+  "image": "assets/images/33219404a610.avif",
+  "imdb": "tt32622406",
+  "duree": null,
+  "genres": [],
+  "jours": [
+   "2026-12-02"
+  ],
+  "salles": [
+   {
+    "nom": "Institut français de Tunis",
+    "adresse": "20-22, avenue de Paris",
+    "lien": "https://www.institutfrancais-tunisie.com/details-agenda/?eventId=6554",
+    "source": "ift-pdf",
+    "source_nom": "Institut français de Tunisie (programme PDF)",
+    "jours": [
+     "2026-12-02"
+    ],
+    "heures": [
+     {
+      "jour": "2026-12-02",
+      "heures": [
+       "18:30"
+      ]
+     }
+    ]
+   }
+  ],
+  "fichiers": [
+   "_events/auto/ift-pdf/2026-12-02-un-monde-fragile-et-merveilleux.md"
+  ],
+  "wikidata": "Q136379364",
+  "letterboxd": "a-sad-and-beautiful-world",
+  "age": "Tous publics",
+  "tunisien": false,
+  "jeune": false,
+  "presse": [],
+  "synopsis": "Un monde fragile et merveilleux est une comédie dramatique et romantique réalisée par Cyril Aris et sortie en 2025.",
+  "synopsis_source": "Wikipédia",
+  "synopsis_url": "https://fr.wikipedia.org/wiki/Un_monde_fragile_et_merveilleux"
+ }
+]
